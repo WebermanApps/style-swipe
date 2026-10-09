@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#14161a">
+<title>Style Swipe · Max Weberman</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&family=Playfair+Display:wght@700&family=DM+Serif+Display&family=Fraunces:wght@700&family=Lora:wght@400;700&family=Libre+Baskerville:wght@400;700&family=Cormorant+Garamond:wght@600&family=Montserrat:wght@700;800&family=Work+Sans:wght@400;600&family=Oswald:wght@600&family=Bebas+Neue&family=Archivo+Black&family=IBM+Plex+Mono:wght@400;600&family=Prompt:wght@400;600&family=Sarabun:wght@400&family=Caveat:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#14161a;--panel:#1d2026;--line:#2c313a;--text:#eef0f3;--muted:#9aa3b2;--a:#4cc9f0;--b:#f72585;--ok:#7bd88f}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-tap-highlight-color:transparent}
+body{display:flex;flex-direction:column;min-height:100dvh}
+header{padding:12px 16px 6px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+header h1{font-size:18px;margin:0;letter-spacing:.01em}
+header .sub{color:var(--muted);font-size:12px}
+.progress{flex:1 1 100%;height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+.progress>div{height:100%;width:0;background:linear-gradient(90deg,var(--a),var(--b));transition:width .3s}
+main{flex:1;display:flex;flex-direction:column;align-items:center;padding:6px 10px 10px;overflow:hidden}
+.stage{position:relative;width:100%;max-width:760px;flex:1;display:flex;min-height:0}
+.card{position:absolute;inset:0;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:12px;display:flex;flex-direction:column;gap:8px;touch-action:pan-y;user-select:none;transition:transform .25s ease, opacity .25s;will-change:transform;overflow:hidden}
+.card.dragging{transition:none}
+.card .cat{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.pill{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:3px 9px}
+.card h2{margin:0;font-size:16px;font-weight:700}
+.opts{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:10px;min-height:0}
+.opt{position:relative;border:2px solid var(--line);border-radius:14px;padding:8px;display:flex;flex-direction:column;gap:6px;min-height:0;overflow:auto;cursor:pointer;transition:border-color .15s, box-shadow .15s, transform .15s;background:#171a1f}
+.opt:hover{border-color:#3d4450}
+.opt.hot-a{border-color:var(--a);box-shadow:0 0 0 3px rgba(76,201,240,.25)}
+.opt.hot-b{border-color:var(--b);box-shadow:0 0 0 3px rgba(247,37,133,.25)}
+.opt .side{font-size:10px;font-weight:800;letter-spacing:.1em}
+.opt.A .side{color:var(--a)}.opt.B .side{color:var(--b)}
+.opt h3{margin:2px 0 0;font-size:14px;line-height:1.2}
+.opt p{margin:0;color:var(--muted);font-size:12px;line-height:1.35}
+.tags{display:flex;flex-wrap:wrap;gap:4px}
+.tag{font-size:10px;padding:2px 6px;border-radius:999px;background:#262a31;color:#c9cfd8}
+.vis{border-radius:10px;overflow:hidden;flex:0 0 auto;min-height:120px;position:relative;background:#0e1013}
+.stamp{position:absolute;top:40%;font-size:28px;font-weight:900;padding:4px 14px;border:4px solid;border-radius:10px;opacity:0;transform:rotate(-12deg);pointer-events:none;z-index:5;background:rgba(0,0,0,.35)}
+.stamp.l{left:16px;color:var(--a)}.stamp.r{right:16px;color:var(--b);transform:rotate(12deg)}
+.controls{display:flex;gap:6px;justify-content:center;flex-wrap:nowrap;max-width:760px;width:100%;margin:0 auto;padding:10px 10px calc(12px + env(safe-area-inset-bottom))}
+button{font:inherit;border:1px solid var(--line);background:var(--panel);color:var(--text);padding:12px 16px;border-radius:12px;font-weight:700;cursor:pointer;min-width:64px}
+button:active{transform:scale(.97)}
+button.a{border-color:var(--a);color:var(--a)}button.b{border-color:var(--b);color:var(--b)}
+button.primary{background:linear-gradient(90deg,var(--a),var(--b));border:0;color:#0b0b0b}
+button.small{padding:8px 10px;font-size:13px;min-width:0}
+.hint{color:var(--muted);font-size:11px;text-align:center;padding:0 10px}
+/* visual renderers */
+.v-ui{padding:10px;height:100%;min-height:150px;display:flex;flex-direction:column;gap:8px}
+.v-ui .bar{display:flex;justify-content:space-between;align-items:center;font-weight:700;font-size:13px}
+.v-ui .dot{width:18px;height:18px;border-radius:50%}
+.v-ui .cardm{padding:10px;display:flex;flex-direction:column;gap:6px}
+.v-ui .btn{align-self:flex-start;padding:6px 12px;font-size:11px;font-weight:700}
+.v-ui .row{display:flex;gap:6px}.v-ui .chip{font-size:10px;padding:3px 7px;opacity:.85}
+.v-pal{display:flex;height:150px}
+.v-pal div{flex:1;display:flex;align-items:flex-end;justify-content:center;font:600 9px/1 'IBM Plex Mono',monospace;padding-bottom:6px;writing-mode:vertical-rl;transform:rotate(180deg)}
+.v-type{background:#faf8f3;color:#141414;padding:12px;min-height:150px}
+.v-type .h{font-size:24px;line-height:1.05;margin-bottom:6px}
+.v-type .s{font-size:13px;opacity:.7;margin-bottom:6px}
+.v-type .b{font-size:12px;line-height:1.45}
+.v-tone{background:#f3f4f6;color:#111;padding:10px;display:flex;flex-direction:column;gap:6px;min-height:150px;font-size:13px;line-height:1.35}
+.v-tone .msg{background:#fff;border-radius:12px 12px 12px 3px;padding:8px 10px;box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.v-tone .from{font-size:10px;color:#6b7280;font-weight:600}
+.v-img img{width:100%;height:170px;object-fit:cover;display:block}
+.sw{display:flex;gap:4px;padding:6px;background:#0e1013}.sw span{flex:1;height:14px;border-radius:4px}
+.mats{display:flex;flex-wrap:wrap;gap:4px;padding:0 6px 6px;background:#0e1013}
+.v-mood{display:grid;grid-template-columns:2fr 1fr 1fr;grid-auto-rows:52px;gap:3px;padding:3px;background:#0e1013}
+.v-mood div:first-child{grid-row:span 2}
+.v-mood .m{display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#111;background:#f2f2f2;border-radius:3px;text-align:center;padding:2px}
+.v-logo{height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px}
+.v-logo .mk{width:62px;height:62px;display:flex;align-items:center;justify-content:center;font-size:34px;position:relative}
+.v-logo .wd{font-size:20px;text-align:center;line-height:1}
+.v-thumb{position:relative;aspect-ratio:16/9;overflow:hidden}
+.v-thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.v-thumb .ov{position:absolute;inset:0;display:flex;padding:8px}
+/* end screen */
+.end{max-width:760px;width:100%;flex:1;min-height:0;overflow:auto;-webkit-overflow-scrolling:touch;padding:4px 4px 30px}
+.end h2{margin:10px 0 6px}.end h3{margin:16px 0 6px;font-size:15px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px;text-align:center}
+.stat b{display:block;font-size:22px}.stat span{color:var(--muted);font-size:11px}
+.bars .r{display:grid;grid-template-columns:110px 1fr 34px;gap:8px;align-items:center;font-size:13px;margin:3px 0}
+.bars .t{height:10px;border-radius:5px;background:var(--line);position:relative;overflow:hidden}
+.bars .t i{position:absolute;top:0;bottom:0;border-radius:5px}
+.catlist{font-size:13px;color:#cfd5de}.catlist div{margin:4px 0}.catlist b{color:var(--text)}
+textarea{width:100%;height:220px;background:#0e1013;color:#cde;border:1px solid var(--line);border-radius:10px;font:12px/1.4 'IBM Plex Mono',monospace;padding:10px}
+.btnrow{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:#000;color:#fff;padding:8px 14px;border-radius:10px;font-size:13px;opacity:0;transition:opacity .2s;pointer-events:none;z-index:99}
+footer{color:var(--muted);font-size:11px;text-align:center;padding:4px 10px 10px}
+footer a{color:var(--muted)}
+details{font-size:11px;color:var(--muted)}
+@media (max-width:560px){
+  .opt{padding:6px}.opt h3{font-size:13px}.opt p{font-size:11px}
+  .v-type .h{font-size:19px}.v-logo .wd{font-size:15px}.v-tone{font-size:12px}
+  .v-img img{height:130px}.bars .r{grid-template-columns:90px 1fr 30px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .controls button{flex:1;padding:12px 4px;min-width:0;font-size:13px}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Style Swipe</h1>
+  <span class="sub" id="sub">Loading…</span>
+  <span style="flex:1"></span>
+  <button class="small" id="btnExportTop" title="Export what you have so far">Export</button>
+  <div class="progress"><div id="prog"></div></div>
+</header>
+<main id="main">
+  <div class="stage" id="stage"></div>
+</main>
+<div class="controls" id="controls">
+  <button class="a" id="bA" title="Left arrow">◀ Left</button>
+  <button id="bN" title="Down arrow / N">Neither</button>
+  <button id="bS" title="S">Skip</button>
+  <button id="bU" title="Backspace / Z">↶ Undo</button>
+  <button class="b" id="bB" title="Right arrow">Right ▶</button>
+</div>
+<div class="hint" id="hint">Swipe the card toward the option you prefer, or tap it. Neither = dislike both · Skip = no opinion.</div>
+<footer>
+  <label style="cursor:pointer;text-decoration:underline">Load Another Deck (JSON)<input type="file" id="deckFile" accept=".json,application/json" hidden></label>
+  · <a href="#" id="creditsLink">Image Credits</a>
+</footer>
+<div class="toast" id="toast"></div>
+<script>
+const EMBEDDED_DECK = /*__DECK_JSON__*/null;
+const EMBEDDED_IMAGES = /*__IMAGES_JSON__*/{};
+let deck = null, picks = [], idx = 0, shownAt = 0;
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const imgSrc = k => EMBEDDED_IMAGES[k] || `img/${k}.jpg`;
+const storeKey = () => `styleSwipe:${deck.date}`;
+function toast(m){const t=$('#toast');t.textContent=m;t.style.opacity=1;clearTimeout(t._h);t._h=setTimeout(()=>t.style.opacity=0,1600)}
+
+/* ---------- visual renderers ---------- */
+function shadowCss(s){return {soft:'0 4px 14px rgba(0,0,0,.12)',neu:'6px 6px 12px #c8cbd2,-6px -6px 12px #ffffff',glow:'0 0 0 1px rgba(45,212,191,.25),0 0 18px rgba(45,212,191,.15)',hard:'4px 4px 0 #000',none:'none'}[s]||'none'}
+function rUI(v){const r=v.radius+'px', sh=shadowCss(v.shadow), br=v.border||'none';
+ return `<div class="v-ui" style="background:${v.bg};color:${v.text};font-family:${v.font}">
+  <div class="bar"><span>Weberman</span><span class="dot" style="background:${v.accent}"></span></div>
+  <div class="cardm" style="background:${v.surface};border-radius:${r};box-shadow:${sh};border:${br}">
+   <div style="font-weight:700;font-size:14px">Unit 4B · Riverside</div>
+   <div style="font-size:11px;opacity:.75">Rent received · Inspection Fri 10:00</div>
+   <div class="row"><span class="chip" style="border-radius:${r};border:${br==='none'?'1px solid '+v.accent:br};color:${v.text}">Occupied</span><span class="chip" style="border-radius:${r};background:${v.accent}22;color:${v.text}">94%</span></div>
+   <span class="btn" style="background:${v.accent};color:${/linear|#0|#1|#2|#3/.test(v.accent)?'#fff':'#111'};border-radius:${r};${v.shadow==='hard'?'box-shadow:3px 3px 0 #000;border:2px solid #000':''}">Open Work Order</span>
+  </div></div>`}
+function rPal(v){return `<div class="v-pal">${v.colors.map(c=>`<div style="background:${c};color:${lum(c)>.55?'#111':'#fff'}">${c}</div>`).join('')}</div>`}
+function lum(h){h=h.replace('#','');if(h.length<6)return .5;const [r,g,b]=[0,2,4].map(i=>parseInt(h.substr(i,2),16)/255);return .299*r+.587*g+.114*b}
+function rType(v){return `<div class="v-type"><div class="h" style="font-family:${v.head};font-weight:${v.headWeight};${v.upper?'text-transform:uppercase;':''}letter-spacing:${v.tracking}">A Moment In Thai</div>
+ <div class="s" style="font-family:${v.body}">Weberman Construction · Est. 2026</div>
+ <div class="b" style="font-family:${v.body}">We build homes that hold up to monsoon season, and we show you every step of how it's done. 0123456789</div></div>`}
+function rTone(v){return `<div class="v-tone"><div class="from">Max → Client</div>${v.lines.map(l=>`<div class="msg">${esc(l)}</div>`).join('')}</div>`}
+function swatches(v){return (v.colors&&v.colors.length?`<div class="sw">${v.colors.map(c=>`<span style="background:${c}"></span>`).join('')}</div>`:'')+(v.materials&&v.materials.length?`<div class="mats">${v.materials.map(m=>`<span class="tag">${esc(m)}</span>`).join('')}</div>`:'')}
+function rImg(v){return `<div class="v-img"><img alt="" loading="lazy" src="${imgSrc(v.key)}" style="filter:${v.filter||'none'}" onerror="this.style.display='none'">${swatches(v)}</div>`}
+function rMood(v){const c=v.colors, m=v.materials||[];
+ const cells=[`<div style="background:${c[0]}"></div>`];
+ for(let i=1;i<c.length;i++) cells.push(`<div style="background:${c[i]}"></div>`);
+ m.forEach((x,i)=>cells.push(`<div class="m" style="background:${c[(i+1)%c.length]};color:${lum(c[(i+1)%c.length])>.55?'#111':'#fff'}">${esc(x)}</div>`));
+ return `<div class="v-mood">${cells.join('')}</div>`}
+function rLogo(v){const s=v.shape;let st=`font-family:${v.font};font-weight:${v.weight};color:${v.fg};`;
+ let mk='';
+ if(v.mark){let ms='';
+  if(s==='circle') ms=`background:${v.fg};color:${v.bg};border-radius:50%`;
+  else if(s==='square') ms=`background:${v.fg};color:${v.bg};border-radius:4px;transform:rotate(-3deg)`;
+  else if(s==='rounded') ms=`background:${v.fg};color:${v.bg};border-radius:18px 4px 18px 4px`;
+  else if(s==='shield') ms=`background:${v.fg};color:${v.bg};clip-path:polygon(0 0,100% 0,100% 62%,50% 100%,0 62%);height:72px`;
+  else if(s==='ring') ms=`border:2px solid ${v.fg};border-radius:50%;box-shadow:inset 0 0 0 5px ${v.bg},inset 0 0 0 6px ${v.fg}`;
+  else if(s==='outline') ms=`border:2px solid ${v.fg};color:transparent;-webkit-text-stroke:1.5px ${v.fg};background-image:linear-gradient(${v.fg}22 1px,transparent 1px),linear-gradient(90deg,${v.fg}22 1px,transparent 1px);background-size:8px 8px`;
+  else if(s==='split') ms=`background:linear-gradient(135deg,${v.accent} 50%,${v.fg} 50%);color:${v.bg};border-radius:3px`;
+  mk=`<div class="mk" style="font-family:${v.font};font-weight:${v.weight};${ms}">${esc(v.mark)}</div>`}
+ const word=`<div class="wd" style="${st}letter-spacing:${v.spacing};${v.upper?'text-transform:uppercase;':''}${v.italic?'font-style:italic;':''}${/Caveat/.test(v.font)?'font-size:32px;':''}">${esc(v.word).replace(/\.$/,`<span style="color:${v.accent}">.</span>`)}</div>`;
+ return `<div class="v-logo" style="background:${v.bg}">${mk}${word}</div>`}
+function rThumb(v){const im=v.key?`<img alt="" src="${imgSrc(v.key)}" style="filter:${v.filter||'none'}">`:'';const f=`font-family:${v.font};`;let ov='';
+ switch(v.layout){
+  case'bigtext':ov=`<div class="ov" style="align-items:flex-end"><div style="${f}font-size:34px;line-height:.9;color:${v.fg};text-shadow:3px 3px 0 #000"><span style="background:${v.accent};color:#000;padding:0 4px">${esc(v.text.split(' ')[0])}</span><br>${esc(v.text.split(' ').slice(1).join(' '))}</div></div>`;break;
+  case'cinematic':ov=`<div class="ov" style="flex-direction:column;justify-content:space-between;padding:0"><div style="height:14%;background:#000"></div><div style="height:14%;background:#000"></div></div>`;break;
+  case'split':ov=`<div class="ov" style="padding:0"><div style="flex:1;filter:grayscale(1) brightness(.6);background:rgba(0,0,0,.35)"></div><div style="width:3px;background:${v.accent}"></div><div style="flex:1"></div></div><div class="ov" style="align-items:flex-start;justify-content:center"><span style="${f}background:${v.accent};color:#000;padding:2px 8px;font-size:14px">${esc(v.text)}</span></div>`;break;
+  case'lower':ov=`<div class="ov" style="align-items:flex-end;background:linear-gradient(transparent 50%,rgba(0,0,0,.75))"><div><div style="${f}font-size:22px;color:${v.fg}">${esc(v.text)}</div><div style="height:2px;width:40px;background:${v.accent};margin-top:4px"></div></div></div>`;break;
+  case'face':ov=`<div class="ov" style="align-items:center;gap:8px"><div style="width:62px;height:62px;border-radius:50%;background:${v.bg};border:4px solid #fff;display:flex;align-items:center;justify-content:center;font-size:32px">😮</div><div style="${f}font-weight:800;font-size:20px;color:${v.fg};text-shadow:2px 2px 0 #000;line-height:1">${esc(v.text)}</div></div>`;break;
+  case'number':ov=`<div class="ov" style="align-items:center"><div style="${f}font-size:60px;color:#000;background:${v.accent};width:76px;height:76px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:4px solid ${v.fg}">${esc(v.text)}</div><div style="${f}color:${v.fg};font-size:14px;margin-left:8px;text-shadow:2px 2px 0 #000">MISTAKES<br>BUILDERS MAKE</div></div>`;break;
+  case'hand':ov=`<div class="ov" style="align-items:flex-end"><div style="${f}font-size:26px;color:${v.fg};transform:rotate(-4deg);text-shadow:1px 1px 3px rgba(0,0,0,.6)">${esc(v.text)}</div></div>`;break;
+  case'bilingual':{const [en,th]=v.text.split('|');ov=`<div class="ov" style="flex-direction:column;justify-content:flex-end"><div style="${f}font-weight:600;background:${v.bg};color:${v.fg};padding:2px 6px;font-size:14px;align-self:flex-start">${esc(en)}</div><div style="${f}background:${v.accent};color:#000;padding:2px 6px;font-size:15px;align-self:flex-start">${esc(th)}</div></div>`;break}
+ }
+ return `<div class="v-thumb" style="background:${v.bg}">${im}${ov}</div>`}
+const R={ui:rUI,palette:rPal,type:rType,tone:rTone,image:rImg,mood:rMood,logo:rLogo,thumb:rThumb};
+function optHtml(o,side){const v=o.visual||{};return `<div class="opt ${side}" data-side="${side}"><div class="vis">${(R[v.type]||(()=>''))(v)}</div><span class="side">${side==='A'?'◀ LEFT':'RIGHT ▶'}</span><h3>${esc(o.label)}</h3><p>${esc(o.desc)}</p>
+  <div class="tags">${(o.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</div></div>`}
+
+/* ---------- flow ---------- */
+function save(){localStorage.setItem(storeKey(),JSON.stringify({picks,idx,updated:new Date().toISOString()}))}
+function load(){try{const s=JSON.parse(localStorage.getItem(storeKey())||'null');if(s){picks=s.picks||[];idx=Math.min(s.idx||picks.length,deck.pairs.length)}else{picks=[];idx=0}}catch(e){picks=[];idx=0}}
+function setDeck(d){deck=d;load();$('#sub').textContent=`Deck ${d.date} · ${d.pairs.length} pairs`;render()}
+function render(){
+ $('#prog').style.width=(100*idx/deck.pairs.length)+'%';
+ const stage=$('#stage');
+ if(idx>=deck.pairs.length){showEnd();return}
+ $('#controls').style.display='';$('#hint').style.display='';
+ if(!stage.isConnected){$('#main').innerHTML='';$('#main').appendChild(stage)}
+ const p=deck.pairs[idx];
+ stage.innerHTML=`<div class="card" id="card"><div class="cat"><span class="pill">${esc(p.category)}</span><span class="pill">${idx+1} / ${deck.pairs.length}</span></div>
+  <h2>Which Feels More Like You?</h2><div class="opts">${optHtml(p.optionA,'A')}${optHtml(p.optionB,'B')}</div>
+  <div class="stamp l">LEFT</div><div class="stamp r">RIGHT</div></div>`;
+ shownAt=performance.now();bindDrag($('#card'));
+}
+function choose(choice){
+ if(!deck||idx>=deck.pairs.length)return;
+ const p=deck.pairs[idx], A=p.optionA, B=p.optionB;
+ const chosen=choice==='A'?A:choice==='B'?B:null;
+ picks=picks.filter(x=>x.pair_id!==p.id);
+ picks.push({pair_id:p.id,category:p.category,choice,optionA:A.id,optionB:B.id,labelA:A.label,labelB:B.label,
+  chosen_id:chosen?chosen.id:null,chosen_label:chosen?chosen.label:null,tagsA:A.tags,tagsB:B.tags,
+  ms:Math.round(performance.now()-shownAt),at:new Date().toISOString()});
+ const card=$('#card');
+ if(card){const dx=choice==='A'?-1:choice==='B'?1:0;card.style.transform=dx?`translateX(${dx*120}%) rotate(${dx*14}deg)`:(choice==='neither'?'translateY(110%)':'translateY(-110%)');card.style.opacity=0}
+ idx++;save();setTimeout(render,choice?220:0);
+}
+function undo(){if(!deck||idx===0)return;idx--;const p=deck.pairs[idx];picks=picks.filter(x=>x.pair_id!==p.id);save();render();toast('Undone')}
+function bindDrag(card){
+ let sx=0,sy=0,dx=0,dragging=false,id=null;const hl=(v)=>{card.querySelector('.opt.A').classList.toggle('hot-a',v<-30);card.querySelector('.opt.B').classList.toggle('hot-b',v>30);card.querySelector('.stamp.l').style.opacity=Math.min(1,Math.max(0,-v/110));card.querySelector('.stamp.r').style.opacity=Math.min(1,Math.max(0,v/110))};
+ card.addEventListener('pointerdown',e=>{if(e.button>0)return;sx=e.clientX;sy=e.clientY;dx=0;dragging=true;id=e.pointerId});
+ card.addEventListener('pointermove',e=>{if(!dragging||e.pointerId!==id)return;dx=e.clientX-sx;const dy=e.clientY-sy;
+  if(Math.abs(dx)>10&&Math.abs(dx)>Math.abs(dy)){card.classList.add('dragging');try{card.setPointerCapture(id)}catch(_){}}
+  if(card.classList.contains('dragging')){card.style.transform=`translateX(${dx}px) rotate(${dx/22}deg)`;hl(dx)}});
+ const end=e=>{if(!dragging)return;dragging=false;const wasDrag=card.classList.contains('dragging');card.classList.remove('dragging');
+  if(wasDrag){if(dx<-90)return choose('A');if(dx>90)return choose('B');card.style.transform='';hl(0);return}
+  const opt=e.target.closest&&e.target.closest('.opt');if(opt&&e.type==='pointerup'){opt.classList.add(opt.dataset.side==='A'?'hot-a':'hot-b');setTimeout(()=>choose(opt.dataset.side),140)}};
+ card.addEventListener('pointerup',end);card.addEventListener('pointercancel',end);
+}
+
+/* ---------- results ---------- */
+function buildResults(){
+ const tally={A:0,B:0,neither:0,skip:0},tags={},byCat={};
+ for(const p of picks){tally[p.choice]=(tally[p.choice]||0)+1;
+  if(p.choice==='A'||p.choice==='B'){const w=p.choice==='A'?p.tagsA:p.tagsB,l=p.choice==='A'?p.tagsB:p.tagsA;
+   w.filter(t=>!l.includes(t)).forEach(t=>tags[t]=(tags[t]||0)+1);l.filter(t=>!w.includes(t)).forEach(t=>tags[t]=(tags[t]||0)-1);
+   (byCat[p.category]=byCat[p.category]||[]).push(p.chosen_label)}
+  else if(p.choice==='neither'){[...new Set([...p.tagsA,...p.tagsB])].forEach(t=>tags[t]=(tags[t]||0)-.5);(byCat[p.category]=byCat[p.category]||[]).push(`✗ neither (${p.labelA} / ${p.labelB})`)}}
+ const ranked=Object.entries(tags).sort((a,b)=>b[1]-a[1]);
+ return {app:'style-swipe',version:1,owner:deck.owner||'Max Weberman',deck:deck.date,
+  exported_at:new Date().toISOString(),complete:idx>=deck.pairs.length,answered:picks.length,total_pairs:deck.pairs.length,
+  totals:tally,top_tags:ranked.filter(x=>x[1]>0).slice(0,12).map(([t,s])=>({tag:t,score:s})),
+  avoided_tags:ranked.filter(x=>x[1]<0).slice(-8).reverse().map(([t,s])=>({tag:t,score:s})),
+  chosen_by_category:byCat,picks}}
+function resultsJson(){return JSON.stringify(buildResults(),null,1)}
+function download(){const blob=new Blob([resultsJson()],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`style-swipe-results-${deck.date}.json`;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},500);toast('Downloaded')}
+async function copy(){const txt=resultsJson();try{await navigator.clipboard.writeText(txt);toast('Copied JSON')}catch(e){const ta=$('#resText');if(ta){ta.select();document.execCommand('copy');toast('Copied JSON')}else toast('Copy failed: use the text box')}}
+async function share(){const txt=resultsJson();const file=new File([txt],`style-swipe-results-${deck.date}.json`,{type:'application/json'});
+ try{if(navigator.canShare&&navigator.canShare({files:[file]}))await navigator.share({files:[file],title:`Style Swipe ${deck.date}`});
+  else if(navigator.share)await navigator.share({title:`Style Swipe ${deck.date}`,text:txt});else{copy();}}catch(e){}}
+function showEnd(){
+ $('#controls').style.display='none';$('#hint').style.display='none';
+ const r=buildResults(),max=Math.max(1,...r.top_tags.map(x=>x.score),...r.avoided_tags.map(x=>-x.score));
+ const bar=(x,col)=>`<div class="r"><span>${esc(x.tag)}</span><div class="t"><i style="left:0;width:${100*Math.abs(x.score)/max}%;background:${col}"></i></div><span>${x.score>0?'+':''}${x.score}</span></div>`;
+ $('#main').innerHTML=`<div class="end"><h2>Your Style Summary</h2>
+ <div class="stats"><div class="stat"><b>${r.totals.A+r.totals.B}</b><span>Picks</span></div><div class="stat"><b>${r.totals.neither}</b><span>Neither</span></div><div class="stat"><b>${r.totals.skip}</b><span>Skipped</span></div><div class="stat"><b>${r.answered}/${r.total_pairs}</b><span>Answered</span></div></div>
+ <h3>Tags You Lean Toward</h3><div class="bars">${r.top_tags.map(x=>bar(x,'var(--ok)')).join('')||'<span class="hint">None yet</span>'}</div>
+ <h3>Tags You Avoid</h3><div class="bars">${r.avoided_tags.map(x=>bar(x,'#ff6b6b')).join('')||'<span class="hint">None yet</span>'}</div>
+ <h3>Your Picks By Category</h3><div class="catlist">${Object.entries(r.chosen_by_category).map(([c,l])=>`<div><b>${esc(c)}:</b> ${l.map(esc).join(' · ')}</div>`).join('')}</div>
+ <h3>Send Results Back</h3><div class="hint" style="text-align:left;padding:0">Download the JSON file, or copy the text below and paste it into a chat with your agent.</div>
+ <div class="btnrow"><button class="primary" id="eDl">⬇ Export JSON</button><button id="eCp">Copy JSON</button><button id="eSh">Share…</button><button id="eBack">↶ Back To Last Card</button><button id="eReset">Start Over</button></div>
+ <textarea id="resText" readonly>${esc(JSON.stringify(r,null,1))}</textarea></div>`;
+ $('#eDl').onclick=download;$('#eCp').onclick=copy;$('#eSh').onclick=share;$('#eBack').onclick=undo;
+ $('#eReset').onclick=()=>{if(confirm('Clear all picks for this deck?')){picks=[];idx=0;save();render()}};
+}
+
+/* ---------- wiring ---------- */
+$('#bA').onclick=()=>choose('A');$('#bB').onclick=()=>choose('B');$('#bN').onclick=()=>choose('neither');$('#bS').onclick=()=>choose('skip');$('#bU').onclick=undo;
+$('#btnExportTop').onclick=()=>{if(deck)download()};
+document.addEventListener('keydown',e=>{if(e.target.tagName==='TEXTAREA')return;const k=e.key;
+ if(k==='ArrowLeft')choose('A');else if(k==='ArrowRight')choose('B');else if(k==='ArrowDown'||k==='n')choose('neither');else if(k==='s'||k==='ArrowUp')choose('skip');else if(k==='Backspace'||k==='z'){e.preventDefault();undo()}});
+$('#deckFile').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{const d=JSON.parse(await f.text());if(!d.pairs)throw 0;setDeck(d);toast(`Loaded deck ${d.date}`)}catch(_){toast('Not a valid deck file')}};
+$('#creditsLink').onclick=e=>{e.preventDefault();const c=(deck&&deck.image_credits)||{};$('#main').innerHTML=`<div class="end"><h2>Image Credits</h2><div class="catlist">${Object.values(c).map(x=>`<div><a style="color:#9cf" href="${esc(x.source)}" target="_blank" rel="noopener">${esc(x.title)}</a> · ${esc(x.artist||'Unknown')} · ${esc(x.license)}</div>`).join('')||'None'}</div><div class="btnrow"><button id="cBack">Back</button></div></div>`;$('#controls').style.display='none';$('#cBack').onclick=()=>render()};
+(async()=>{
+ const want=new URLSearchParams(location.search).get('date');
+ if(want&&(!EMBEDDED_DECK||EMBEDDED_DECK.date!==want)){try{const r=await fetch(`decks/${want}.json`);if(r.ok)return setDeck(await r.json())}catch(_){}toast(`Deck ${want} not found; showing embedded deck`)}
+ if(EMBEDDED_DECK)return setDeck(EMBEDDED_DECK);
+ try{const r=await fetch(`decks/${new Date().toISOString().slice(0,10)}.json`);if(r.ok)return setDeck(await r.json())}catch(_){}
+ $('#sub').textContent='No deck found. Use "Load Another Deck" below.';
+})();
+</script>
+</body>
+</html>
