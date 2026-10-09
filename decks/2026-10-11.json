@@ -1,6 +1,6 @@
 {
  "date": "2026-10-11",
- "version": 1,
+ "version": 2,
  "owner": "Max Weberman",
  "brands": [
   "YouTube @AMomentInThai",
@@ -8,258 +8,292 @@
   "Property Management",
   "AI Agents"
  ],
- "generated_at": "2026-10-09T20:50:25+07:00",
+ "generated_at": "2026-10-09T20:55:59+07:00",
  "allocation": {
-  "App / UI Style": 5,
-  "Color Palette": 6,
-  "Typography": 5,
-  "Business Communication Tone": 6,
-  "Home / Interior Style": 5,
-  "Logo / Mark": 7,
-  "Photography Style": 4,
-  "Fashion / Personal Look": 4,
-  "YouTube Thumbnail Style": 5,
-  "Icon & Illustration Style": 3
+  "App / UI Style": 2,
+  "Color Palette": 3,
+  "Typography": 3,
+  "Business Communication Tone": 3,
+  "Home / Interior Style": 3,
+  "Logo / Mark": 3,
+  "Photography Style": 2,
+  "Fashion / Personal Look": 2,
+  "YouTube Thumbnail Style": 2,
+  "Icon & Illustration Style": 2,
+  "Brand Voice & Taglines": 3,
+  "Social Post Layouts": 3,
+  "Video Editing & Pacing": 3,
+  "Website Hero Sections": 3,
+  "Packaging & Merch": 2,
+  "Workspace": 2,
+  "Cars & Gear": 2,
+  "Food Styling": 2,
+  "Music & Mood": 2,
+  "Bangkok Vs Japan Aesthetics": 3
  },
+ "freshness": {
+  "option_slots": 100,
+  "never_shown_before": 100,
+  "share": 1.0
+ },
+ "warnings": [],
  "pairs": [
   {
    "id": "2026-10-11-01",
-   "category": "Color Palette",
+   "category": "Brand Voice & Taglines",
    "optionA": {
-    "id": "pal_concrete",
-    "label": "Concrete & Oak",
-    "desc": "Raw concrete greys with pale oak and black steel.",
+    "id": "bv_sabai",
+    "label": "Live Sabai",
+    "desc": "Thai ease and comfort as the promise.",
     "tags": [
-     "minimal",
-     "industrial",
-     "natural",
-     "modern"
+     "thai",
+     "warm",
+     "relaxed",
+     "bilingual"
     ],
     "visual": {
-     "type": "palette",
-     "colors": [
-      "#8d8d8a",
-      "#b9b8b3",
-      "#dedbd2",
-      "#c8a97e",
-      "#1f1f1f"
-     ]
+     "type": "tone",
+     "lines": [
+      "Live sabai.",
+      "Homes that feel like a deep breath."
+     ],
+     "from": "Tagline"
     }
    },
    "optionB": {
-    "id": "pal_pastel",
-    "label": "Pastel Pop",
-    "desc": "Peach, lilac, mint, butter yellow.",
+    "id": "bv_human_landlord",
+    "label": "The Landlord Who Answers",
+    "desc": "Funny-true property-management promise.",
     "tags": [
+     "friendly",
+     "direct",
      "playful",
-     "soft",
-     "light",
-     "friendly"
+     "personal"
     ],
     "visual": {
-     "type": "palette",
-     "colors": [
-      "#ffcdb2",
-      "#cdb4db",
-      "#b9fbc0",
-      "#fff3b0",
-      "#ffffff"
-     ]
+     "type": "tone",
+     "lines": [
+      "A landlord who actually answers.",
+      "Usually within the hour."
+     ],
+     "from": "Tagline"
     }
    },
    "repeat": false
   },
   {
    "id": "2026-10-11-02",
-   "category": "YouTube Thumbnail Style",
+   "category": "Music & Mood",
    "optionA": {
-    "id": "yt_minimal",
-    "label": "Minimal Cinematic",
-    "desc": "No text, one striking frame, letterbox bars.",
+    "id": "mm_field",
+    "label": "Field Recordings Only",
+    "desc": "Birds, rain, cicadas, tools. No music.",
     "tags": [
+     "natural",
      "minimal",
-     "cinematic",
-     "editorial",
+     "raw",
      "calm"
     ],
     "visual": {
-     "type": "thumb",
-     "bg": "#000",
-     "fg": "#ffffff",
-     "accent": "#ffffff",
-     "font": "'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif",
-     "layout": "cinematic",
-     "text": "",
-     "key": "base_temple",
-     "filter": "contrast(1.1) saturate(.85)"
+     "type": "mood",
+     "colors": [
+      "#2f5d3a",
+      "#8fb08c",
+      "#c2dfe3",
+      "#f7f3ea",
+      "#5c4033"
+     ],
+     "materials": [
+      "cicadas",
+      "rain",
+      "birdsong"
+     ]
     }
    },
    "optionB": {
-    "id": "yt_vlog",
-    "label": "Personal Vlog Face",
-    "desc": "Big expressive face circle + short caption.",
+    "id": "mm_reggae",
+    "label": "Island Reggae",
+    "desc": "Laid-back offbeat, beach afternoons.",
     "tags": [
-     "personal",
-     "playful",
-     "friendly",
-     "youtube"
+     "tropical",
+     "relaxed",
+     "warm",
+     "playful"
     ],
     "visual": {
-     "type": "thumb",
-     "bg": "#ff6f59",
-     "fg": "#ffffff",
-     "accent": "#ffd400",
-     "font": "'Montserrat', 'Helvetica Neue', Arial, sans-serif",
-     "layout": "face",
-     "text": "I MOVED HERE",
-     "key": "base_temple",
-     "filter": null
+     "type": "mood",
+     "colors": [
+      "#2f9e44",
+      "#ffd43b",
+      "#e03131",
+      "#f4efe6",
+      "#1b1b1b"
+     ],
+     "materials": [
+      "offbeat skank",
+      "bass",
+      "75 BPM"
+     ]
     }
    },
    "repeat": false
   },
   {
    "id": "2026-10-11-03",
-   "category": "Color Palette",
+   "category": "YouTube Thumbnail Style",
    "optionA": {
-    "id": "pal_teak_jungle",
-    "label": "Teak & Jungle",
-    "desc": "Teak brown, jungle green, rice-paper cream.",
+    "id": "yt_clean_white",
+    "label": "Clean White Caption",
+    "desc": "Small, clean caption on a white tab.",
     "tags": [
-     "earthy",
-     "warm",
-     "natural",
-     "tropical"
+     "minimal",
+     "light",
+     "calm",
+     "editorial"
     ],
     "visual": {
-     "type": "palette",
-     "colors": [
-      "#6b4226",
-      "#a0522d",
-      "#2f5d3a",
-      "#8fb08c",
-      "#f4ecd8"
-     ]
+     "type": "thumb",
+     "bg": "#ffffff",
+     "fg": "#111111",
+     "accent": "#111111",
+     "font": "'DM Sans', 'Inter', system-ui, sans-serif",
+     "layout": "tab",
+     "text": "Building a teak house",
+     "key": "int_thai",
+     "filter": "sepia(.2)"
     }
    },
    "optionB": {
-    "id": "pal_concrete",
-    "label": "Concrete & Oak",
-    "desc": "Raw concrete greys with pale oak and black steel.",
+    "id": "yt_progress",
+    "label": "Build Progress Bar",
+    "desc": "Day counter with progress bar.",
     "tags": [
-     "minimal",
-     "industrial",
-     "natural",
-     "modern"
+     "construction",
+     "direct",
+     "clear",
+     "practical"
     ],
     "visual": {
-     "type": "palette",
-     "colors": [
-      "#8d8d8a",
-      "#b9b8b3",
-      "#dedbd2",
-      "#c8a97e",
-      "#1f1f1f"
-     ]
+     "type": "thumb",
+     "bg": "#111",
+     "fg": "#ffffff",
+     "accent": "#ff6b00",
+     "font": "'Anton', 'Bebas Neue', Impact, sans-serif",
+     "layout": "progress",
+     "text": "DAY 47 / 120",
+     "key": "base_site",
+     "filter": "saturate(1.1)"
     }
    },
    "repeat": false
   },
   {
    "id": "2026-10-11-04",
-   "category": "Typography",
+   "category": "Logo / Mark",
    "optionA": {
-    "id": "ty_inter",
-    "label": "Neutral Sans (Inter)",
-    "desc": "Clean, invisible, very legible UI type.",
+    "id": "lg_palm_line",
+    "label": "Palm Line Mark",
+    "desc": "Thin green outlined 'W' like a palm frond sketch.",
     "tags": [
+     "natural",
+     "tropical",
      "minimal",
-     "modern",
-     "technical",
-     "neutral"
+     "light"
     ],
     "visual": {
-     "type": "type",
-     "head": "'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif",
-     "body": "'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif",
-     "headWeight": 700,
-     "upper": false,
-     "tracking": "0"
+     "type": "logo",
+     "mark": "W",
+     "word": "Weberman",
+     "font": "'Outfit', 'Inter', system-ui, sans-serif",
+     "fg": "#3a7d44",
+     "bg": "#f6f3ec",
+     "shape": "outline",
+     "weight": 500,
+     "spacing": "0.12em",
+     "italic": false,
+     "upper": true,
+     "accent": "#3a7d44"
     }
    },
    "optionB": {
-    "id": "ty_playfair_inter",
-    "label": "Editorial Serif + Sans",
-    "desc": "Playfair headlines with Inter body.",
+    "id": "lg_roofline",
+    "label": "Roofline Mark",
+    "desc": "'W' tucked under a simple roof peak.",
     "tags": [
-     "editorial",
-     "classic",
-     "luxe",
-     "contrast"
+     "construction",
+     "friendly",
+     "modern",
+     "clean"
     ],
     "visual": {
-     "type": "type",
-     "head": "'Playfair Display', Georgia, serif",
-     "body": "'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif",
-     "headWeight": 700,
-     "upper": false,
-     "tracking": "0"
+     "type": "logo",
+     "mark": "W",
+     "word": "Weberman",
+     "font": "'Montserrat', 'Helvetica Neue', Arial, sans-serif",
+     "fg": "#b5651d",
+     "bg": "#fbf6ee",
+     "shape": "house",
+     "weight": 800,
+     "spacing": "0.02em",
+     "italic": false,
+     "upper": true,
+     "accent": "#b5651d"
     }
    },
    "repeat": false
   },
   {
    "id": "2026-10-11-05",
-   "category": "Fashion / Personal Look",
+   "category": "Workspace",
    "optionA": {
-    "id": "fs_workwear",
-    "label": "Rugged Workwear",
-    "desc": "Canvas jackets, work boots, denim, utility pockets.",
+    "id": "ws_cafe",
+    "label": "Café Nomad",
+    "desc": "Corner table, flat white, headphones.",
     "tags": [
-     "rugged",
-     "industrial",
-     "practical",
-     "construction"
+     "personal",
+     "casual",
+     "warm",
+     "urban"
     ],
     "visual": {
      "type": "mood",
      "colors": [
-      "#7a5c3a",
-      "#2f3e46",
-      "#c2a878",
-      "#1b1b1b",
-      "#e9e2d0"
+      "#6f4e37",
+      "#d8c3a5",
+      "#2b2b2b",
+      "#f2efe8",
+      "#9caf88"
      ],
      "materials": [
-      "duck canvas",
-      "denim",
-      "leather boots"
+      "espresso",
+      "headphones",
+      "notebook"
      ]
     }
    },
    "optionB": {
-    "id": "fs_thai_fusion",
-    "label": "Thai Fusion",
-    "desc": "Mor hom indigo, local textiles, modern cuts.",
+    "id": "ws_tatami_desk",
+    "label": "Floor Desk On Tatami",
+    "desc": "Low desk, cushion, shoji light.",
     "tags": [
-     "thai",
-     "craft",
-     "natural",
-     "personal"
+     "japanese",
+     "calm",
+     "minimal",
+     "natural"
     ],
     "visual": {
      "type": "mood",
      "colors": [
-      "#1f3b73",
-      "#2c2c54",
-      "#d4a017",
-      "#e8dcc2",
-      "#7a5230"
+      "#d8c8a8",
+      "#8c6e4a",
+      "#f2ede3",
+      "#3b3b3b",
+      "#9caf88"
      ],
      "materials": [
-      "indigo cotton",
-      "handwoven silk",
-      "teak buttons"
+      "tatami",
+      "zabuton",
+      "shoji"
      ]
     }
    },
@@ -267,97 +301,105 @@
   },
   {
    "id": "2026-10-11-06",
-   "category": "Home / Interior Style",
+   "category": "Social Post Layouts",
    "optionA": {
-    "id": "hm_boho",
-    "label": "Bohemian Eclectic",
-    "desc": "Plants, layered rugs, macramé, collected treasures.",
+    "id": "sp_polaroid",
+    "label": "Polaroid Snapshot",
+    "desc": "Instant-photo frame with handwriting.",
     "tags": [
-     "playful",
+     "retro",
      "warm",
-     "eclectic",
-     "natural"
+     "personal",
+     "craft"
     ],
     "visual": {
-     "type": "mood",
-     "colors": [
-      "#c1502e",
-      "#e9c46a",
-      "#2a9d8f",
-      "#f4a261",
-      "#264653"
-     ],
-     "materials": [
-      "jute",
-      "macramé",
-      "terracotta",
-      "plants"
-     ]
+     "type": "post",
+     "bg": "#d8c3a5",
+     "fg": "#1b1b1b",
+     "accent": "#ffffff",
+     "font": "'Caveat', 'Comic Sans MS', cursive",
+     "layout": "polaroid",
+     "text": "first sunrise on site",
+     "key": "ext_tropical",
+     "filter": "sepia(.3)"
     }
    },
    "optionB": {
-    "id": "hm_coastal",
-    "label": "Coastal Breezy",
-    "desc": "Whitewash, rattan, sea-glass blues.",
+    "id": "sp_checklist",
+    "label": "Checklist Card",
+    "desc": "Ticked list, practical and saveable.",
     "tags": [
-     "light",
-     "tropical",
-     "calm",
-     "natural"
+     "practical",
+     "friendly",
+     "clear",
+     "light"
     ],
     "visual": {
-     "type": "mood",
-     "colors": [
-      "#ffffff",
-      "#cfe8ef",
-      "#7fb7c9",
-      "#d8c3a5",
-      "#2c5d73"
-     ],
-     "materials": [
-      "rattan",
-      "whitewash",
-      "linen",
-      "driftwood"
-     ]
+     "type": "post",
+     "bg": "#fffaf0",
+     "fg": "#1b1b1b",
+     "accent": "#2bb673",
+     "font": "'DM Sans', 'Inter', system-ui, sans-serif",
+     "layout": "checklist",
+     "text": "Rainy-Season Prep|Clear gutters|Seal windows|Check drainage|Trim trees",
+     "key": null,
+     "filter": null
     }
    },
    "repeat": false
   },
   {
    "id": "2026-10-11-07",
-   "category": "Business Communication Tone",
+   "category": "Home / Interior Style",
    "optionA": {
-    "id": "tn_warm",
-    "label": "Warm & Personal",
-    "desc": "Friendly, first-name, a bit of heart.",
+    "id": "hm_spanish",
+    "label": "Spanish Colonial Revival",
+    "desc": "Stucco, clay tile, arches and courtyards.",
     "tags": [
      "warm",
-     "friendly",
-     "personal"
+     "classic",
+     "rustic",
+     "mediterranean"
     ],
     "visual": {
-     "type": "tone",
-     "lines": [
-      "Hi Sarah, hope your week's going great!",
-      "Just a heads-up: we'll be by Tuesday morning to take care of that roof."
+     "type": "image",
+     "key": "ext_spanish",
+     "filter": null,
+     "colors": [
+      "#d9b38c",
+      "#a0522d",
+      "#4b6043"
+     ],
+     "materials": [
+      "stucco",
+      "clay tile",
+      "iron"
      ]
     }
    },
    "optionB": {
-    "id": "tn_witty",
-    "label": "Dry Wit",
-    "desc": "Understated humor, still professional.",
+    "id": "hm_maximalist",
+    "label": "Maximalist Pattern",
+    "desc": "Clashing prints, bold color, more is more.",
     "tags": [
+     "bold",
      "playful",
-     "direct",
-     "personal"
+     "vibrant",
+     "eclectic"
     ],
     "visual": {
-     "type": "tone",
-     "lines": [
-      "Good news: the roof is fixed. Bad news: no more indoor waterfall.",
-      "Invoice attached. No charge for the jokes."
+     "type": "mood",
+     "colors": [
+      "#e63946",
+      "#f4a261",
+      "#2a9d8f",
+      "#7b2cbf",
+      "#ffbe0b"
+     ],
+     "materials": [
+      "wallpaper",
+      "velvet",
+      "patterned tile"
      ]
     }
    },
@@ -365,111 +407,123 @@
   },
   {
    "id": "2026-10-11-08",
-   "category": "Logo / Mark",
+   "category": "Video Editing & Pacing",
    "optionA": {
-    "id": "lg_monogram_circle",
-    "label": "Circle Monogram",
-    "desc": "Single 'W' in a solid circle. Clean, app-icon ready.",
+    "id": "vp_split",
+    "label": "Split-Screen Compare",
+    "desc": "Side-by-side shots for comparison.",
     "tags": [
-     "minimal",
-     "modern",
-     "geometric",
-     "bold"
+     "clear",
+     "technical",
+     "bold",
+     "comparison"
     ],
     "visual": {
-     "type": "logo",
-     "mark": "W",
-     "word": "Weberman",
-     "font": "'Montserrat', 'Helvetica Neue', Arial, sans-serif",
-     "fg": "#ffffff",
-     "bg": "#111111",
-     "shape": "circle",
-     "weight": 800,
-     "spacing": "0.02em",
-     "italic": false,
-     "upper": true,
-     "accent": "#ffffff"
+     "type": "pace",
+     "cuts": [
+      3,
+      3,
+      3,
+      3,
+      3
+     ],
+     "colors": [
+      "#d1495b",
+      "#00a6a6"
+     ],
+     "notes": [
+      "split screen",
+      "synced action",
+      "labels"
+     ]
     }
    },
    "optionB": {
-    "id": "lg_construction_badge",
-    "label": "Construction Badge",
-    "desc": "Shield badge, heavy caps, 'EST.' energy.",
+    "id": "vp_three_act",
+    "label": "Three-Act Story",
+    "desc": "Setup, struggle, payoff with music swell.",
     "tags": [
-     "industrial",
-     "bold",
-     "traditional",
-     "construction"
+     "cinematic",
+     "warm",
+     "editorial",
+     "story"
     ],
     "visual": {
-     "type": "logo",
-     "mark": "W",
-     "word": "Weberman Co.",
-     "font": "'Archivo Black', 'Arial Black', Impact, sans-serif",
-     "fg": "#ffffff",
-     "bg": "#ff6b00",
-     "shape": "shield",
-     "weight": 400,
-     "spacing": "0.04em",
-     "italic": false,
-     "upper": true,
-     "accent": "#ffffff"
+     "type": "pace",
+     "cuts": [
+      6,
+      4,
+      3,
+      2,
+      2,
+      5,
+      8
+     ],
+     "colors": [
+      "#5b2a86",
+      "#f7b32b"
+     ],
+     "notes": [
+      "story arc",
+      "music swell",
+      "slow open"
+     ]
     }
    },
    "repeat": false
   },
   {
    "id": "2026-10-11-09",
-   "category": "Fashion / Personal Look",
+   "category": "Music & Mood",
    "optionA": {
-    "id": "fs_linen",
-    "label": "Tropical Linen",
-    "desc": "Relaxed linen shirts, sandals, light neutrals.",
+    "id": "mm_citypop",
+    "label": "Japanese City Pop",
+    "desc": "80s Tokyo night-drive funk.",
     "tags": [
-     "tropical",
-     "relaxed",
-     "natural",
-     "light"
-    ],
-    "visual": {
-     "type": "mood",
-     "colors": [
-      "#f4efe6",
-      "#d8c8a8",
-      "#9caf88",
-      "#c1502e",
-      "#ffffff"
-     ],
-     "materials": [
-      "linen",
-      "cotton",
-      "leather sandals"
-     ]
-    }
-   },
-   "optionB": {
-    "id": "fs_streetwear",
-    "label": "Creator Streetwear",
-    "desc": "Graphic tees, overshirts, bold sneakers.",
-    "tags": [
+     "japanese",
+     "retro",
      "playful",
-     "bold",
-     "youtube",
      "urban"
     ],
     "visual": {
      "type": "mood",
      "colors": [
-      "#ff006e",
-      "#3a86ff",
-      "#ffbe0b",
-      "#1b1b1b",
-      "#ffffff"
+      "#ff7eb6",
+      "#7c3aed",
+      "#00e5ff",
+      "#ffd166",
+      "#1a1a40"
      ],
      "materials": [
-      "heavy cotton",
-      "nylon",
-      "rubber"
+      "slap bass",
+      "synth brass",
+      "night drive"
+     ]
+    }
+   },
+   "optionB": {
+    "id": "mm_acoustic",
+    "label": "Acoustic Folk",
+    "desc": "Fingerpicked guitar, warm and human.",
+    "tags": [
+     "warm",
+     "natural",
+     "craft",
+     "personal"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#c8a97e",
+      "#6b4226",
+      "#9caf88",
+      "#f4ecd8",
+      "#3b2a1a"
+     ],
+     "materials": [
+      "acoustic guitar",
+      "harmonica",
+      "100 BPM"
      ]
     }
    },
@@ -477,26 +531,561 @@
   },
   {
    "id": "2026-10-11-10",
+   "category": "Home / Interior Style",
+   "optionA": {
+    "id": "hm_aframe",
+    "label": "A-Frame Cabin",
+    "desc": "Steep triangle roof, loft bed, woodstove.",
+    "tags": [
+     "rustic",
+     "cozy",
+     "natural",
+     "playful"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#5c4033",
+      "#a0784e",
+      "#2f4f2f",
+      "#efe6d8",
+      "#c1502e"
+     ],
+     "materials": [
+      "cedar",
+      "wool",
+      "cast iron"
+     ]
+    }
+   },
+   "optionB": {
+    "id": "hm_rammed_earth",
+    "label": "Rammed Earth Modern",
+    "desc": "Layered earth walls, flat roofs, warm and solid.",
+    "tags": [
+     "earthy",
+     "natural",
+     "modern",
+     "warm"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#b9825a",
+      "#d4a373",
+      "#8c5a3c",
+      "#efe1cf",
+      "#3d3a2e"
+     ],
+     "materials": [
+      "rammed earth",
+      "concrete",
+      "oak"
+     ]
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-11",
+   "category": "Typography",
+   "optionA": {
+    "id": "ty_nunito",
+    "label": "Nunito Rounded",
+    "desc": "Rounded terminals, soft and kind.",
+    "tags": [
+     "friendly",
+     "soft",
+     "playful",
+     "light"
+    ],
+    "visual": {
+     "type": "type",
+     "head": "'Nunito', 'Inter', system-ui, sans-serif",
+     "body": "'Nunito', 'Inter', system-ui, sans-serif",
+     "headWeight": 800,
+     "upper": false,
+     "tracking": "0"
+    }
+   },
+   "optionB": {
+    "id": "ty_notoserifjp",
+    "label": "Noto Serif JP Calm",
+    "desc": "Japanese Mincho-style serif, quiet and literary.",
+    "tags": [
+     "japanese",
+     "calm",
+     "editorial",
+     "minimal"
+    ],
+    "visual": {
+     "type": "type",
+     "head": "'Noto Serif JP', 'Hiragino Mincho ProN', Georgia, serif",
+     "body": "'Noto Sans JP', 'Hiragino Sans', system-ui, sans-serif",
+     "headWeight": 600,
+     "upper": false,
+     "tracking": "0"
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-12",
    "category": "Logo / Mark",
    "optionA": {
-    "id": "lg_construction_badge",
-    "label": "Construction Badge",
-    "desc": "Shield badge, heavy caps, 'EST.' energy.",
+    "id": "lg_mincho",
+    "label": "Mincho Brush Mark",
+    "desc": "Japanese-serif 'W' in a vermillion square.",
     "tags": [
-     "industrial",
-     "bold",
-     "traditional",
-     "construction"
+     "japanese",
+     "craft",
+     "calm",
+     "minimal"
     ],
     "visual": {
      "type": "logo",
      "mark": "W",
-     "word": "Weberman Co.",
-     "font": "'Archivo Black', 'Arial Black', Impact, sans-serif",
+     "word": "Weberman",
+     "font": "'Noto Serif JP', 'Hiragino Mincho ProN', Georgia, serif",
      "fg": "#ffffff",
-     "bg": "#ff6b00",
-     "shape": "shield",
+     "bg": "#d1495b",
+     "shape": "square",
+     "weight": 600,
+     "spacing": "0.2em",
+     "italic": false,
+     "upper": true,
+     "accent": "#ffffff"
+    }
+   },
+   "optionB": {
+    "id": "lg_travel_badge",
+    "label": "Round Travel Badge",
+    "desc": "'A Moment In Thai' in a round souvenir badge.",
+    "tags": [
+     "personal",
+     "playful",
+     "retro",
+     "travel"
+    ],
+    "visual": {
+     "type": "logo",
+     "mark": "AMIT",
+     "word": "A Moment In Thai",
+     "font": "'Bebas Neue', 'Arial Narrow', Impact, sans-serif",
+     "fg": "#f4ecd8",
+     "bg": "#c1502e",
+     "shape": "ring",
      "weight": 400,
+     "spacing": "0.1em",
+     "italic": false,
+     "upper": true,
+     "accent": "#f4ecd8"
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-13",
+   "category": "Workspace",
+   "optionA": {
+    "id": "ws_jungle",
+    "label": "Jungle Office",
+    "desc": "Plants everywhere, humid and green.",
+    "tags": [
+     "natural",
+     "tropical",
+     "playful",
+     "fresh"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#1b3a2b",
+      "#355e3b",
+      "#83b735",
+      "#f4efe6",
+      "#c1502e"
+     ],
+     "materials": [
+      "monstera",
+      "hanging pots",
+      "terracotta"
+     ]
+    }
+   },
+   "optionB": {
+    "id": "ws_rooftop",
+    "label": "Bangkok Rooftop Desk",
+    "desc": "Laptop on a rooftop at golden hour, skyline behind.",
+    "tags": [
+     "bangkok",
+     "urban",
+     "warm",
+     "personal"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#ff6f59",
+      "#f7b32b",
+      "#5b2a86",
+      "#2b2b2b",
+      "#fff1e6"
+     ],
+     "materials": [
+      "skyline",
+      "string lights",
+      "outdoor table"
+     ]
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-14",
+   "category": "Brand Voice & Taglines",
+   "optionA": {
+    "id": "bv_build_better_th",
+    "label": "Build Better / สร้างดีกว่า",
+    "desc": "Bilingual two-word line.",
+    "tags": [
+     "bilingual",
+     "thai",
+     "modern",
+     "direct"
+    ],
+    "visual": {
+     "type": "tone",
+     "lines": [
+      "Build better.",
+      "สร้างดีกว่า"
+     ],
+     "from": "Tagline"
+    }
+   },
+   "optionB": {
+    "id": "bv_inside_out",
+    "label": "Open To Air, Closed To Rain",
+    "desc": "Tropical-architecture poetry.",
+    "tags": [
+     "tropical",
+     "natural",
+     "editorial",
+     "calm"
+    ],
+    "visual": {
+     "type": "tone",
+     "lines": [
+      "Open to the air. Closed to the rain.",
+      "Tropical homes, properly engineered."
+     ],
+     "from": "Tagline"
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-15",
+   "category": "Packaging & Merch",
+   "optionA": {
+    "id": "pm_kraft_box",
+    "label": "Kraft Box + Ink Stamp",
+    "desc": "Recycled kraft box, one-color stamped mark.",
+    "tags": [
+     "craft",
+     "rustic",
+     "natural",
+     "raw"
+    ],
+    "visual": {
+     "type": "merch",
+     "item": "box",
+     "base": "#c8a97e",
+     "ink": "#1b1b1b",
+     "mark": "W",
+     "font": "'Space Mono', ui-monospace, Menlo, monospace",
+     "accent": "#1b1b1b"
+    }
+   },
+   "optionB": {
+    "id": "pm_minimal_tee",
+    "label": "Tiny Chest Logo Tee",
+    "desc": "Off-white tee, small chest mark.",
+    "tags": [
+     "minimal",
+     "light",
+     "modern",
+     "clean"
+    ],
+    "visual": {
+     "type": "merch",
+     "item": "tee",
+     "base": "#f6f3ec",
+     "ink": "#1b1b1b",
+     "mark": "w.",
+     "font": "'DM Sans', 'Inter', system-ui, sans-serif",
+     "accent": "#1b1b1b"
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-16",
+   "category": "Brand Voice & Taglines",
+   "optionA": {
+    "id": "bv_no_surprises",
+    "label": "No Surprises",
+    "desc": "Reliability as the whole brand.",
+    "tags": [
+     "direct",
+     "trust",
+     "practical",
+     "minimal"
+    ],
+    "visual": {
+     "type": "tone",
+     "lines": [
+      "No surprises. Just good buildings.",
+      "Fixed prices. Real schedules. Straight answers."
+     ],
+     "from": "Tagline"
+    }
+   },
+   "optionB": {
+    "id": "bv_one_moment",
+    "label": "One Moment At A Time",
+    "desc": "Slow, personal channel voice.",
+    "tags": [
+     "calm",
+     "personal",
+     "warm",
+     "editorial"
+    ],
+    "visual": {
+     "type": "tone",
+     "lines": [
+      "One moment at a time.",
+      "Slow travel and honest building in Thailand."
+     ],
+     "from": "Tagline"
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-17",
+   "category": "Business Communication Tone",
+   "optionA": {
+    "id": "tn_two_word",
+    "label": "Two-Word SMS",
+    "desc": "As short as humanly possible.",
+    "tags": [
+     "minimal",
+     "direct",
+     "efficient",
+     "raw"
+    ],
+    "visual": {
+     "type": "tone",
+     "lines": [
+      "Done. ✓",
+      "Invoice sent."
+     ]
+    }
+   },
+   "optionB": {
+    "id": "tn_thai_polite",
+    "label": "Polite Thai-English",
+    "desc": "Thai politeness particles, gentle and respectful.",
+    "tags": [
+     "thai",
+     "bilingual",
+     "warm",
+     "polite"
+    ],
+    "visual": {
+     "type": "tone",
+     "lines": [
+      "Khun Somchai krab, the contract is ready for your review.",
+      "Please take your time. Happy to explain anything krab."
+     ]
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-18",
+   "category": "Color Palette",
+   "optionA": {
+    "id": "pal_jasmine",
+    "label": "Jasmine Rice",
+    "desc": "Near-white, rice cream, straw, soft leaf.",
+    "tags": [
+     "light",
+     "minimal",
+     "natural",
+     "soft"
+    ],
+    "visual": {
+     "type": "palette",
+     "colors": [
+      "#fffdf7",
+      "#f3ead3",
+      "#d9cba3",
+      "#a3b18a",
+      "#4a4a3a"
+     ]
+    }
+   },
+   "optionB": {
+    "id": "pal_mango_sticky",
+    "label": "Mango Sticky Rice",
+    "desc": "Mango yellow, coconut cream, pandan green, palm-sugar brown.",
+    "tags": [
+     "thai",
+     "warm",
+     "tropical",
+     "playful"
+    ],
+    "visual": {
+     "type": "palette",
+     "colors": [
+      "#f6b93b",
+      "#fff5e1",
+      "#3c8d2f",
+      "#6b4226",
+      "#ffffff"
+     ]
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-19",
+   "category": "Cars & Gear",
+   "optionA": {
+    "id": "cg_scooter",
+    "label": "Scooter Life",
+    "desc": "Thai-everyday automatic scooter.",
+    "tags": [
+     "thai",
+     "practical",
+     "playful",
+     "urban"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#d62828",
+      "#ffffff",
+      "#2b2b2b",
+      "#fcbf49",
+      "#c5ccd0"
+     ],
+     "materials": [
+      "125cc",
+      "basket",
+      "helmet"
+     ]
+    }
+   },
+   "optionB": {
+    "id": "cg_cinema_rig",
+    "label": "Cinema Camera Rig",
+    "desc": "Full-frame cinema camera, cage, matte box.",
+    "tags": [
+     "technical",
+     "cinematic",
+     "bold",
+     "pro"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#1b1b1b",
+      "#3a3a3a",
+      "#d62828",
+      "#c0c0c0",
+      "#ffffff"
+     ],
+     "materials": [
+      "cinema camera",
+      "matte box",
+      "follow focus"
+     ]
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-20",
+   "category": "Color Palette",
+   "optionA": {
+    "id": "pal_lotus",
+    "label": "Lotus Pond",
+    "desc": "Lotus pink, deep rose, pad green, lime, pond-white.",
+    "tags": [
+     "thai",
+     "natural",
+     "soft",
+     "playful"
+    ],
+    "visual": {
+     "type": "palette",
+     "colors": [
+      "#f4a6b7",
+      "#e56b8a",
+      "#3a7d44",
+      "#a7c957",
+      "#f7f7f2"
+     ]
+    }
+   },
+   "optionB": {
+    "id": "pal_rebar",
+    "label": "Rebar & Rust",
+    "desc": "Oxide rust, burnt orange, steel grey, cement.",
+    "tags": [
+     "industrial",
+     "raw",
+     "warm",
+     "construction"
+    ],
+    "visual": {
+     "type": "palette",
+     "colors": [
+      "#8b3a1a",
+      "#b5651d",
+      "#4a4a48",
+      "#a9a9a2",
+      "#e8e4dc"
+     ]
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-21",
+   "category": "Logo / Mark",
+   "optionA": {
+    "id": "lg_mw",
+    "label": "MW Ligature",
+    "desc": "M and W joined in one rounded tile.",
+    "tags": [
+     "modern",
+     "personal",
+     "geometric",
+     "clean"
+    ],
+    "visual": {
+     "type": "logo",
+     "mark": "MW",
+     "word": "Max Weberman",
+     "font": "'Outfit', 'Inter', system-ui, sans-serif",
+     "fg": "#ffffff",
+     "bg": "#2f5d3a",
+     "shape": "rounded",
+     "weight": 800,
      "spacing": "0.04em",
      "italic": false,
      "upper": true,
@@ -504,606 +1093,84 @@
     }
    },
    "optionB": {
-    "id": "lg_signature",
-    "label": "Personal Signature",
-    "desc": "Hand-signed name, creator/personal brand feel.",
+    "id": "lg_hex_bolt",
+    "label": "Hex Bolt Mark",
+    "desc": "'W' inside a hex nut. Engineering through and through.",
     "tags": [
-     "personal",
-     "warm",
-     "playful",
-     "casual"
-    ],
-    "visual": {
-     "type": "logo",
-     "mark": "",
-     "word": "Max Weberman",
-     "font": "'Caveat', 'Comic Sans MS', cursive",
-     "fg": "#1b1b1b",
-     "bg": "#fffaf0",
-     "shape": "none",
-     "weight": 700,
-     "spacing": "0",
-     "italic": false,
-     "upper": false,
-     "accent": "#1b1b1b"
-    }
-   },
-   "repeat": false
-  },
-  {
-   "id": "2026-10-11-11",
-   "category": "Fashion / Personal Look",
-   "optionA": {
-    "id": "fs_thai_fusion",
-    "label": "Thai Fusion",
-    "desc": "Mor hom indigo, local textiles, modern cuts.",
-    "tags": [
-     "thai",
-     "craft",
-     "natural",
-     "personal"
-    ],
-    "visual": {
-     "type": "mood",
-     "colors": [
-      "#1f3b73",
-      "#2c2c54",
-      "#d4a017",
-      "#e8dcc2",
-      "#7a5230"
-     ],
-     "materials": [
-      "indigo cotton",
-      "handwoven silk",
-      "teak buttons"
-     ]
-    }
-   },
-   "optionB": {
-    "id": "fs_smart_casual",
-    "label": "Smart Casual",
-    "desc": "Oxford shirt, chinos, clean sneakers.",
-    "tags": [
-     "classic",
-     "clean",
-     "trust",
-     "modern"
-    ],
-    "visual": {
-     "type": "mood",
-     "colors": [
-      "#1d3c6e",
-      "#ffffff",
-      "#c8b593",
-      "#6c757d",
-      "#2b2b2b"
-     ],
-     "materials": [
-      "oxford cotton",
-      "chino",
-      "suede"
-     ]
-    }
-   },
-   "repeat": false
-  },
-  {
-   "id": "2026-10-11-12",
-   "category": "Business Communication Tone",
-   "optionA": {
-    "id": "tn_nononsense",
-    "label": "No-Nonsense Contractor",
-    "desc": "Plain talk, straight from the job site.",
-    "tags": [
-     "direct",
      "industrial",
-     "raw",
-     "construction"
-    ],
-    "visual": {
-     "type": "tone",
-     "lines": [
-      "Slab's poured. Framing starts Monday if weather holds.",
-      "Need your tile pick by Friday or we slip a week."
-     ]
-    }
-   },
-   "optionB": {
-    "id": "tn_direct",
-    "label": "Direct & Brief",
-    "desc": "Short, no fluff, action first.",
-    "tags": [
-     "direct",
-     "minimal",
-     "efficient"
-    ],
-    "visual": {
-     "type": "tone",
-     "lines": [
-      "Roof repair is booked for Tuesday, 8am.",
-      "Reply YES to confirm or call me with changes."
-     ]
-    }
-   },
-   "repeat": false
-  },
-  {
-   "id": "2026-10-11-13",
-   "category": "App / UI Style",
-   "optionA": {
-    "id": "ui_soft",
-    "label": "Soft Neumorphic",
-    "desc": "Pillowy cards, gentle shadows, rounded everything.",
-    "tags": [
-     "soft",
-     "light",
-     "friendly",
-     "modern"
-    ],
-    "visual": {
-     "type": "ui",
-     "bg": "#eef0f4",
-     "surface": "#eef0f4",
-     "text": "#3b4252",
-     "accent": "#5e81ac",
-     "radius": 22,
-     "font": "'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif",
-     "shadow": "neu",
-     "border": "none",
-     "muted": "#3b4252"
-    }
-   },
-   "optionB": {
-    "id": "ui_warm_paper",
-    "label": "Warm Paper",
-    "desc": "Cream background, serif headings, ink-brown text.",
-    "tags": [
-     "warm",
-     "classic",
-     "editorial",
-     "light"
-    ],
-    "visual": {
-     "type": "ui",
-     "bg": "#f6f0e4",
-     "surface": "#fffaf0",
-     "text": "#3a2e22",
-     "accent": "#b5651d",
-     "radius": 6,
-     "font": "'Lora', Georgia, serif",
-     "shadow": "soft",
-     "border": "1px solid #e3d6bf",
-     "muted": "#3a2e22"
-    }
-   },
-   "repeat": false
-  },
-  {
-   "id": "2026-10-11-14",
-   "category": "Typography",
-   "optionA": {
-    "id": "ty_mono",
-    "label": "Monospace Engineer",
-    "desc": "IBM Plex Mono for a builder/engineer feel.",
-    "tags": [
      "technical",
-     "raw",
-     "minimal",
-     "industrial"
-    ],
-    "visual": {
-     "type": "type",
-     "head": "'IBM Plex Mono', ui-monospace, Menlo, monospace",
-     "body": "'IBM Plex Mono', ui-monospace, Menlo, monospace",
-     "headWeight": 600,
-     "upper": false,
-     "tracking": "0"
-    }
-   },
-   "optionB": {
-    "id": "ty_hand",
-    "label": "Handwritten Accent",
-    "desc": "Caveat script accents over a simple sans.",
-    "tags": [
-     "playful",
-     "personal",
-     "warm",
-     "casual"
-    ],
-    "visual": {
-     "type": "type",
-     "head": "'Caveat', 'Comic Sans MS', cursive",
-     "body": "'Work Sans', 'Helvetica Neue', Arial, sans-serif",
-     "headWeight": 700,
-     "upper": false,
-     "tracking": "0"
-    }
-   },
-   "repeat": false
-  },
-  {
-   "id": "2026-10-11-15",
-   "category": "App / UI Style",
-   "optionA": {
-    "id": "ui_brutal",
-    "label": "Neo-Brutalist",
-    "desc": "Thick black borders, hard offset shadows, loud yellow.",
-    "tags": [
      "bold",
-     "playful",
-     "raw",
-     "light"
-    ],
-    "visual": {
-     "type": "ui",
-     "bg": "#fff8e1",
-     "surface": "#ffffff",
-     "text": "#000000",
-     "accent": "#ffd400",
-     "radius": 4,
-     "font": "'Archivo Black', 'Arial Black', Impact, sans-serif",
-     "shadow": "hard",
-     "border": "3px solid #000",
-     "muted": "#000000"
-    }
-   },
-   "optionB": {
-    "id": "ui_earthy",
-    "label": "Earthy Craft",
-    "desc": "Clay, olive and sand with rounded friendly cards.",
-    "tags": [
-     "earthy",
-     "warm",
-     "natural",
-     "friendly"
-    ],
-    "visual": {
-     "type": "ui",
-     "bg": "#efe6d8",
-     "surface": "#faf5ec",
-     "text": "#3d3a2e",
-     "accent": "#6b7f3a",
-     "radius": 14,
-     "font": "'Work Sans', 'Helvetica Neue', Arial, sans-serif",
-     "shadow": "soft",
-     "border": "none",
-     "muted": "#3d3a2e"
-    }
-   },
-   "repeat": false
-  },
-  {
-   "id": "2026-10-11-16",
-   "category": "Typography",
-   "optionA": {
-    "id": "ty_fraunces",
-    "label": "Soft Warm Serif",
-    "desc": "Fraunces: chunky, friendly, a little quirky.",
-    "tags": [
-     "warm",
-     "friendly",
-     "editorial",
-     "craft"
-    ],
-    "visual": {
-     "type": "type",
-     "head": "'Fraunces', Georgia, serif",
-     "body": "'Lora', Georgia, serif",
-     "headWeight": 700,
-     "upper": false,
-     "tracking": "0"
-    }
-   },
-   "optionB": {
-    "id": "ty_montserrat",
-    "label": "Geometric Sans Caps",
-    "desc": "Montserrat wide caps: clean corporate.",
-    "tags": [
-     "modern",
-     "formal",
-     "geometric",
-     "clean"
-    ],
-    "visual": {
-     "type": "type",
-     "head": "'Montserrat', 'Helvetica Neue', Arial, sans-serif",
-     "body": "'Montserrat', 'Helvetica Neue', Arial, sans-serif",
-     "headWeight": 700,
-     "upper": true,
-     "tracking": "0.08em"
-    }
-   },
-   "repeat": false
-  },
-  {
-   "id": "2026-10-11-17",
-   "category": "App / UI Style",
-   "optionA": {
-    "id": "ui_brutal",
-    "label": "Neo-Brutalist",
-    "desc": "Thick black borders, hard offset shadows, loud yellow.",
-    "tags": [
-     "bold",
-     "playful",
-     "raw",
-     "light"
-    ],
-    "visual": {
-     "type": "ui",
-     "bg": "#fff8e1",
-     "surface": "#ffffff",
-     "text": "#000000",
-     "accent": "#ffd400",
-     "radius": 4,
-     "font": "'Archivo Black', 'Arial Black', Impact, sans-serif",
-     "shadow": "hard",
-     "border": "3px solid #000",
-     "muted": "#000000"
-    }
-   },
-   "optionB": {
-    "id": "ui_glass",
-    "label": "Glassmorphism",
-    "desc": "Frosted translucent panels over a gradient.",
-    "tags": [
-     "modern",
-     "luxe",
-     "cool",
-     "vibrant"
-    ],
-    "visual": {
-     "type": "ui",
-     "bg": "linear-gradient(135deg,#6a5acd,#00b4d8)",
-     "surface": "rgba(255,255,255,.22)",
-     "text": "#ffffff",
-     "accent": "#ffe066",
-     "radius": 18,
-     "font": "'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif",
-     "shadow": "soft",
-     "border": "1px solid rgba(255,255,255,.45)",
-     "muted": "#ffffff"
-    }
-   },
-   "repeat": false
-  },
-  {
-   "id": "2026-10-11-18",
-   "category": "Photography Style",
-   "optionA": {
-    "id": "ph_natural",
-    "label": "True-To-Life Natural",
-    "desc": "Honest color, no grading. What you see.",
-    "tags": [
-     "natural",
-     "minimal",
-     "trust",
-     "neutral"
-    ],
-    "visual": {
-     "type": "image",
-     "key": "base_temple",
-     "filter": null,
-     "colors": [],
-     "materials": []
-    }
-   },
-   "optionB": {
-    "id": "ph_cool_teal",
-    "label": "Teal & Cool Cinematic",
-    "desc": "Cool shadows, desaturated, moody.",
-    "tags": [
-     "cool",
-     "cinematic",
-     "dark",
-     "modern"
-    ],
-    "visual": {
-     "type": "image",
-     "key": "base_temple",
-     "filter": "hue-rotate(-12deg) saturate(.8) brightness(.9) contrast(1.15)",
-     "colors": [],
-     "materials": []
-    }
-   },
-   "repeat": false
-  },
-  {
-   "id": "2026-10-11-19",
-   "category": "Logo / Mark",
-   "optionA": {
-    "id": "lg_stamp",
-    "label": "Hand Stamp / Seal",
-    "desc": "Thai-seal-inspired red square chop.",
-    "tags": [
-     "thai",
-     "craft",
-     "traditional",
-     "bold"
+     "construction"
     ],
     "visual": {
      "type": "logo",
      "mark": "W",
      "word": "Weberman",
-     "font": "'DM Serif Display', Georgia, serif",
-     "fg": "#ffffff",
-     "bg": "#a4161a",
-     "shape": "square",
-     "weight": 400,
-     "spacing": "0.05em",
+     "font": "'Chakra Petch', 'Space Grotesk', system-ui, sans-serif",
+     "fg": "#2f3a40",
+     "bg": "#e9ecee",
+     "shape": "hex",
+     "weight": 700,
+     "spacing": "0.08em",
      "italic": false,
      "upper": true,
-     "accent": "#ffffff"
-    }
-   },
-   "optionB": {
-    "id": "lg_lowercase",
-    "label": "Friendly Lowercase",
-    "desc": "Rounded lowercase wordmark with a dot accent.",
-    "tags": [
-     "friendly",
-     "modern",
-     "playful",
-     "soft"
-    ],
-    "visual": {
-     "type": "logo",
-     "mark": "",
-     "word": "weberman.",
-     "font": "'Montserrat', 'Helvetica Neue', Arial, sans-serif",
-     "fg": "#2b2d42",
-     "bg": "#edf2f4",
-     "shape": "none",
-     "weight": 800,
-     "spacing": "-0.02em",
-     "italic": false,
-     "upper": false,
-     "accent": "#ef8354"
-    }
-   },
-   "repeat": false
-  },
-  {
-   "id": "2026-10-11-20",
-   "category": "YouTube Thumbnail Style",
-   "optionA": {
-    "id": "yt_bigtext",
-    "label": "Big Bold Text",
-    "desc": "Huge 2–3 word caption, high contrast.",
-    "tags": [
-     "bold",
-     "loud",
-     "youtube",
-     "vibrant"
-    ],
-    "visual": {
-     "type": "thumb",
-     "bg": "#111",
-     "fg": "#ffffff",
-     "accent": "#ffd400",
-     "font": "'Bebas Neue', 'Arial Narrow', Impact, sans-serif",
-     "layout": "bigtext",
-     "text": "THAI HOUSE BUILD",
-     "key": "base_temple",
-     "filter": "saturate(1.5) contrast(1.2)"
-    }
-   },
-   "optionB": {
-    "id": "yt_documentary",
-    "label": "Documentary Title Card",
-    "desc": "Serif title in lower third, calm and premium.",
-    "tags": [
-     "editorial",
-     "classic",
-     "calm",
-     "cinematic"
-    ],
-    "visual": {
-     "type": "thumb",
-     "bg": "#000",
-     "fg": "#f2ead8",
-     "accent": "#c9a227",
-     "font": "'Playfair Display', Georgia, serif",
-     "layout": "lower",
-     "text": "A Moment in Thai",
-     "key": "base_temple",
-     "filter": "sepia(.25) contrast(1.05)"
-    }
-   },
-   "repeat": false
-  },
-  {
-   "id": "2026-10-11-21",
-   "category": "Home / Interior Style",
-   "optionA": {
-    "id": "hm_thai_teak",
-    "label": "Traditional Thai Teak House",
-    "desc": "Raised stilts, steep gables, teak panels.",
-    "tags": [
-     "thai",
-     "traditional",
-     "natural",
-     "craft"
-    ],
-    "visual": {
-     "type": "image",
-     "key": "int_thai",
-     "filter": null,
-     "colors": [
-      "#6b4226",
-      "#3b2a1a",
-      "#e8dcc2"
-     ],
-     "materials": [
-      "teak",
-      "stilts",
-      "palm"
-     ]
-    }
-   },
-   "optionB": {
-    "id": "hm_scandi",
-    "label": "Scandinavian Light",
-    "desc": "Pale birch, white walls, wool throws, hygge.",
-    "tags": [
-     "minimal",
-     "light",
-     "natural",
-     "soft"
-    ],
-    "visual": {
-     "type": "mood",
-     "colors": [
-      "#f7f5f0",
-      "#e3d9c6",
-      "#c2a878",
-      "#9aa5a0",
-      "#3a3a3a"
-     ],
-     "materials": [
-      "birch",
-      "wool",
-      "linen",
-      "white oak"
-     ]
+     "accent": "#2f3a40"
     }
    },
    "repeat": false
   },
   {
    "id": "2026-10-11-22",
-   "category": "Business Communication Tone",
+   "category": "Fashion / Personal Look",
    "optionA": {
-    "id": "tn_storyteller",
-    "label": "Reflective Storyteller",
-    "desc": "Slow, observational, a little poetic.",
+    "id": "fs_noragi",
+    "label": "Japanese Workwear",
+    "desc": "Indigo noragi jacket, wide trousers, tabi-style shoes.",
     "tags": [
-     "editorial",
-     "warm",
-     "calm",
-     "personal"
+     "japanese",
+     "craft",
+     "natural",
+     "calm"
     ],
     "visual": {
-     "type": "tone",
-     "lines": [
-      "Some mornings in Chiang Mai the mist doesn't lift until nine.",
-      "That's when I like to walk the site and just listen."
+     "type": "mood",
+     "colors": [
+      "#1f3b73",
+      "#2c2c54",
+      "#e8dcc2",
+      "#5c4033",
+      "#f7f5ef"
+     ],
+     "materials": [
+      "sashiko indigo",
+      "hemp",
+      "tabi"
      ]
     }
    },
    "optionB": {
-    "id": "tn_formal",
-    "label": "Formal & Polished",
-    "desc": "Corporate-correct, complete sentences.",
+    "id": "fs_camp_collar",
+    "label": "Retro Camp Collar",
+    "desc": "Printed camp-collar shirts, loose fit.",
     "tags": [
-     "formal",
-     "classic",
-     "trust"
+     "playful",
+     "retro",
+     "tropical",
+     "vibrant"
     ],
     "visual": {
-     "type": "tone",
-     "lines": [
-      "Dear Ms. Johnson, we are pleased to confirm your roof repair appointment.",
-      "Our crew will arrive on Tuesday at 8:00 a.m. Please let us know of any access requirements."
+     "type": "mood",
+     "colors": [
+      "#f77f00",
+      "#2a9d8f",
+      "#e9c46a",
+      "#264653",
+      "#fff8e7"
+     ],
+     "materials": [
+      "rayon print",
+      "pleated trousers",
+      "loafers"
      ]
     }
    },
@@ -1111,154 +1178,146 @@
   },
   {
    "id": "2026-10-11-23",
-   "category": "Color Palette",
+   "category": "Social Post Layouts",
    "optionA": {
-    "id": "pal_pastel",
-    "label": "Pastel Pop",
-    "desc": "Peach, lilac, mint, butter yellow.",
+    "id": "sp_meme",
+    "label": "Builder Meme",
+    "desc": "Top caption over a site photo.",
     "tags": [
      "playful",
-     "soft",
-     "light",
-     "friendly"
+     "casual",
+     "raw",
+     "personal"
     ],
     "visual": {
-     "type": "palette",
-     "colors": [
-      "#ffcdb2",
-      "#cdb4db",
-      "#b9fbc0",
-      "#fff3b0",
-      "#ffffff"
-     ]
+     "type": "post",
+     "bg": "#111",
+     "fg": "#ffffff",
+     "accent": "#ffffff",
+     "font": "'Anton', 'Bebas Neue', Impact, sans-serif",
+     "layout": "meme",
+     "text": "WHEN THE CLIENT SAYS 'SMALL CHANGE'",
+     "key": "base_site",
+     "filter": null
     }
    },
    "optionB": {
-    "id": "pal_forest",
-    "label": "Deep Forest",
-    "desc": "Forest green, moss, bark and mist.",
+    "id": "sp_photo_bar",
+    "label": "Photo + Thin Caption Bar",
+    "desc": "Full photo, slim caption strip.",
     "tags": [
+     "minimal",
      "natural",
-     "dark",
-     "calm",
-     "earthy"
+     "light",
+     "editorial"
     ],
     "visual": {
-     "type": "palette",
-     "colors": [
-      "#1b3a2b",
-      "#355e3b",
-      "#6b8f71",
-      "#5c4033",
-      "#e8efe9"
-     ]
+     "type": "post",
+     "bg": "#ffffff",
+     "fg": "#1b1b1b",
+     "accent": "#1b1b1b",
+     "font": "'DM Sans', 'Inter', system-ui, sans-serif",
+     "layout": "photo",
+     "text": "Teak, rain, and patience.",
+     "key": "int_thai",
+     "filter": "sepia(.2)"
     }
    },
    "repeat": false
   },
   {
    "id": "2026-10-11-24",
-   "category": "Logo / Mark",
+   "category": "Business Communication Tone",
    "optionA": {
-    "id": "lg_blueprint",
-    "label": "Blueprint Line Mark",
-    "desc": "Outlined 'W' like a technical drawing.",
+    "id": "tn_teacher",
+    "label": "Patient Teacher",
+    "desc": "Uses analogies, explains the why.",
     "tags": [
+     "calm",
      "technical",
-     "minimal",
-     "cool",
-     "architectural"
+     "friendly",
+     "educational"
     ],
     "visual": {
-     "type": "logo",
-     "mark": "W",
-     "word": "Weberman",
-     "font": "'Space Grotesk', 'Inter', system-ui, sans-serif",
-     "fg": "#ffffff",
-     "bg": "#0b3d91",
-     "shape": "outline",
-     "weight": 500,
-     "spacing": "0.1em",
-     "italic": false,
-     "upper": true,
-     "accent": "#ffffff"
+     "type": "tone",
+     "lines": [
+      "Think of the vapor barrier as a raincoat for your walls.",
+      "In Bangkok's humidity, it's the difference between 5 years and 30."
+     ]
     }
    },
    "optionB": {
-    "id": "lg_stamp",
-    "label": "Hand Stamp / Seal",
-    "desc": "Thai-seal-inspired red square chop.",
+    "id": "tn_site_update",
+    "label": "Site Update Bullets",
+    "desc": "Checklist-style status, zero padding.",
     "tags": [
-     "thai",
-     "craft",
-     "traditional",
-     "bold"
+     "direct",
+     "practical",
+     "construction",
+     "efficient"
     ],
     "visual": {
-     "type": "logo",
-     "mark": "W",
-     "word": "Weberman",
-     "font": "'DM Serif Display', Georgia, serif",
-     "fg": "#ffffff",
-     "bg": "#a4161a",
-     "shape": "square",
-     "weight": 400,
-     "spacing": "0.05em",
-     "italic": false,
-     "upper": true,
-     "accent": "#ffffff"
+     "type": "tone",
+     "lines": [
+      "Today: footing rebar inspected ✓. Pour Thursday 7am.",
+      "Photos attached. Nothing needed from you."
+     ]
     }
    },
    "repeat": false
   },
   {
    "id": "2026-10-11-25",
-   "category": "Icon & Illustration Style",
+   "category": "Bangkok Vs Japan Aesthetics",
    "optionA": {
-    "id": "ic_thai_ornament",
-    "label": "Thai Ornamental",
-    "desc": "Kranok-inspired flourishes as accents.",
+    "id": "bj_jp_shotengai",
+    "label": "Japan: Shōtengai Retro",
+    "desc": "Covered shopping arcades, Showa-era signage.",
     "tags": [
+     "japan",
+     "retro",
+     "playful",
+     "warm"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#d1495b",
+      "#edae49",
+      "#00798c",
+      "#f2efe8",
+      "#30638e"
+     ],
+     "materials": [
+      "arcade roof",
+      "Showa signs",
+      "kissaten"
+     ]
+    }
+   },
+   "optionB": {
+    "id": "bj_bkk_temple",
+    "label": "Bangkok: Temple Gold & Mosaic",
+    "desc": "Glass mosaic, gold leaf, layered roofs.",
+    "tags": [
+     "bangkok",
      "thai",
      "traditional",
-     "luxe",
-     "craft"
+     "bold"
     ],
     "visual": {
      "type": "mood",
      "colors": [
       "#d4a017",
       "#a4161a",
-      "#1b1b1b"
+      "#0b6e4f",
+      "#1f3b73",
+      "#fff4d6"
      ],
      "materials": [
-      "❦ kranok",
-      "✾ lotus",
-      "❀ motif"
-     ]
-    }
-   },
-   "optionB": {
-    "id": "ic_filled",
-    "label": "Solid Filled Icons",
-    "desc": "Chunky filled shapes, high legibility.",
-    "tags": [
-     "bold",
-     "friendly",
-     "clear",
-     "modern"
-    ],
-    "visual": {
-     "type": "mood",
-     "colors": [
-      "#2563eb",
-      "#ffffff",
-      "#1f2937"
-     ],
-     "materials": [
-      "■ solid",
-      "● fill",
-      "▲ bold"
+      "gold leaf",
+      "glass mosaic",
+      "naga roofs"
      ]
     }
    },
@@ -1266,39 +1325,46 @@
   },
   {
    "id": "2026-10-11-26",
-   "category": "Business Communication Tone",
+   "category": "Color Palette",
    "optionA": {
-    "id": "tn_witty",
-    "label": "Dry Wit",
-    "desc": "Understated humor, still professional.",
+    "id": "pal_sakura",
+    "label": "Sakura Dusk",
+    "desc": "Cherry blossom pinks fading into evening blue.",
     "tags": [
-     "playful",
-     "direct",
-     "personal"
+     "japanese",
+     "soft",
+     "calm",
+     "light"
     ],
     "visual": {
-     "type": "tone",
-     "lines": [
-      "Good news: the roof is fixed. Bad news: no more indoor waterfall.",
-      "Invoice attached. No charge for the jokes."
+     "type": "palette",
+     "colors": [
+      "#f8c8d8",
+      "#e4a3b8",
+      "#6d597a",
+      "#355070",
+      "#fdf6f0"
      ]
     }
    },
    "optionB": {
-    "id": "tn_bilingual",
-    "label": "Bilingual Friendly",
-    "desc": "English with natural Thai touches.",
+    "id": "pal_laterite",
+    "label": "Laterite Earth",
+    "desc": "Red laterite, ochre, rice-field green, wheat, soil.",
     "tags": [
-     "thai",
-     "friendly",
+     "earthy",
      "warm",
-     "bilingual"
+     "rustic",
+     "natural"
     ],
     "visual": {
-     "type": "tone",
-     "lines": [
-      "Sawasdee krab! Your unit inspection is all set for Friday.",
-      "Khob khun for your patience. Any questions, just message me."
+     "type": "palette",
+     "colors": [
+      "#a0522d",
+      "#cd853f",
+      "#6b8e23",
+      "#f5deb3",
+      "#3b2a1a"
      ]
     }
    },
@@ -1306,196 +1372,215 @@
   },
   {
    "id": "2026-10-11-27",
-   "category": "Color Palette",
+   "category": "Website Hero Sections",
    "optionA": {
-    "id": "pal_sage",
-    "label": "Sage Calm",
-    "desc": "Sage, eucalyptus, oat, soft charcoal.",
+    "id": "wh_magazine",
+    "label": "Magazine Cover Hero",
+    "desc": "Masthead and cover lines on a photo.",
     "tags": [
-     "soft",
-     "natural",
-     "minimal",
-     "calm"
+     "editorial",
+     "classic",
+     "bold",
+     "storytelling"
     ],
     "visual": {
-     "type": "palette",
-     "colors": [
-      "#9caf88",
-      "#c7d3bf",
-      "#e9e4d8",
-      "#f7f5ef",
-      "#3f4540"
-     ]
+     "type": "hero",
+     "bg": "#000",
+     "fg": "#ffffff",
+     "accent": "#d62828",
+     "font": "'Playfair Display', Georgia, serif",
+     "layout": "magazine",
+     "head": "A MOMENT IN THAI",
+     "sub": "Issue 12 · The Teak House",
+     "cta": "Read",
+     "key": "int_thai",
+     "filter": "sepia(.3)"
     }
    },
    "optionB": {
-    "id": "pal_sunset_bkk",
-    "label": "Bangkok Sunset",
-    "desc": "Coral, magenta, deep violet, warm gold.",
+    "id": "wh_personal",
+    "label": "Personal Intro + Portrait",
+    "desc": "Hi, I'm Max. Founder-led and human.",
     "tags": [
-     "vibrant",
+     "personal",
+     "friendly",
      "warm",
-     "bold",
-     "thai"
+     "trust"
     ],
     "visual": {
-     "type": "palette",
-     "colors": [
-      "#ff6f59",
-      "#e23e7c",
-      "#5b2a86",
-      "#f7b32b",
-      "#fff1e6"
-     ]
+     "type": "hero",
+     "bg": "#fff4e6",
+     "fg": "#4a3426",
+     "accent": "#e07a3f",
+     "font": "'Nunito', 'Inter', system-ui, sans-serif",
+     "layout": "split",
+     "head": "Hi, I'm Max.",
+     "sub": "I build homes and film the journey.",
+     "cta": "Watch The Channel",
+     "key": "base_temple",
+     "filter": null
     }
    },
    "repeat": false
   },
   {
    "id": "2026-10-11-28",
-   "category": "App / UI Style",
+   "category": "Video Editing & Pacing",
    "optionA": {
-    "id": "ui_warm_paper",
-    "label": "Warm Paper",
-    "desc": "Cream background, serif headings, ink-brown text.",
+    "id": "vp_bilingual_subs",
+    "label": "Burned-In Bilingual Subs",
+    "desc": "Medium pace with English + Thai subtitles.",
     "tags": [
-     "warm",
-     "classic",
-     "editorial",
-     "light"
+     "bilingual",
+     "thai",
+     "friendly",
+     "practical"
     ],
     "visual": {
-     "type": "ui",
-     "bg": "#f6f0e4",
-     "surface": "#fffaf0",
-     "text": "#3a2e22",
-     "accent": "#b5651d",
-     "radius": 6,
-     "font": "'Lora', Georgia, serif",
-     "shadow": "soft",
-     "border": "1px solid #e3d6bf",
-     "muted": "#3a2e22"
+     "type": "pace",
+     "cuts": [
+      4,
+      3,
+      4,
+      3,
+      4
+     ],
+     "colors": [
+      "#a4161a",
+      "#d4a017"
+     ],
+     "notes": [
+      "EN + TH subs",
+      "medium pace",
+      "subtitle styling"
+     ]
     }
    },
    "optionB": {
-    "id": "ui_pastel",
-    "label": "Pastel Playful",
-    "desc": "Candy pastels, bubbly corners, emoji-friendly.",
+    "id": "vp_vhs",
+    "label": "VHS Home-Video",
+    "desc": "Tracking lines, date stamp, nostalgic.",
     "tags": [
+     "retro",
      "playful",
-     "soft",
-     "friendly",
-     "light"
+     "warm",
+     "personal"
     ],
     "visual": {
-     "type": "ui",
-     "bg": "#fff0f6",
-     "surface": "#ffffff",
-     "text": "#5a3d5c",
-     "accent": "#ff7eb6",
-     "radius": 24,
-     "font": "'Montserrat', 'Helvetica Neue', Arial, sans-serif",
-     "shadow": "soft",
-     "border": "none",
-     "muted": "#5a3d5c"
+     "type": "pace",
+     "cuts": [
+      3,
+      5,
+      2,
+      4,
+      3
+     ],
+     "colors": [
+      "#7b2cbf",
+      "#f9e79f"
+     ],
+     "notes": [
+      "VHS grain",
+      "date stamp",
+      "4:3 crop"
+     ]
     }
    },
    "repeat": false
   },
   {
    "id": "2026-10-11-29",
-   "category": "Photography Style",
+   "category": "Food Styling",
    "optionA": {
-    "id": "ph_site_warm_film",
-    "label": "Warm Film Grain",
-    "desc": "Kodak-ish warmth on real work.",
+    "id": "fd_family_feast",
+    "label": "Family-Style Feast",
+    "desc": "Many shared dishes, hands reaching in.",
     "tags": [
      "warm",
-     "retro",
-     "craft",
-     "natural"
+     "friendly",
+     "thai",
+     "social"
     ],
     "visual": {
-     "type": "image",
-     "key": "base_site",
-     "filter": "sepia(.4) contrast(1.1) saturate(1.1)",
-     "colors": [],
-     "materials": []
+     "type": "mood",
+     "colors": [
+      "#c1502e",
+      "#f6b93b",
+      "#3c8d2f",
+      "#fff5e1",
+      "#6b4226"
+     ],
+     "materials": [
+      "shared plates",
+      "sticky rice baskets",
+      "laughter"
+     ]
     }
    },
    "optionB": {
-    "id": "ph_site_clean",
-    "label": "Clean Commercial",
-    "desc": "Bright, crisp, brochure-ready.",
+    "id": "fd_flatlay",
+    "label": "Bright Overhead Flat-Lay",
+    "desc": "Clean top-down, bright colors, crisp shadows.",
     "tags": [
      "light",
-     "corporate",
-     "clean",
-     "trust"
+     "vibrant",
+     "modern",
+     "clean"
     ],
     "visual": {
-     "type": "image",
-     "key": "base_site",
-     "filter": "brightness(1.15) contrast(1.05) saturate(1.1)",
-     "colors": [],
-     "materials": []
+     "type": "mood",
+     "colors": [
+      "#ffffff",
+      "#ff8c42",
+      "#83b735",
+      "#ffd60a",
+      "#e56b8a"
+     ],
+     "materials": [
+      "overhead",
+      "white marble",
+      "hard light"
+     ]
     }
    },
    "repeat": false
   },
   {
    "id": "2026-10-11-30",
-   "category": "Home / Interior Style",
+   "category": "Business Communication Tone",
    "optionA": {
-    "id": "hm_scandi",
-    "label": "Scandinavian Light",
-    "desc": "Pale birch, white walls, wool throws, hygge.",
+    "id": "tn_explorer",
+    "label": "Curious Explorer",
+    "desc": "Wonder-driven, adventurous, first person.",
     "tags": [
-     "minimal",
-     "light",
-     "natural",
-     "soft"
+     "playful",
+     "energetic",
+     "personal",
+     "adventurous"
     ],
     "visual": {
-     "type": "mood",
-     "colors": [
-      "#f7f5f0",
-      "#e3d9c6",
-      "#c2a878",
-      "#9aa5a0",
-      "#3a3a3a"
-     ],
-     "materials": [
-      "birch",
-      "wool",
-      "linen",
-      "white oak"
+     "type": "tone",
+     "lines": [
+      "Took a wrong turn outside Nan and found the best khao soi of my life.",
+      "Then I found the guy who built the restaurant. By hand."
      ]
     }
    },
    "optionB": {
-    "id": "hm_brick_loft",
-    "label": "Brick Warehouse Loft",
-    "desc": "Converted industrial brick with big steel windows.",
+    "id": "tn_transparent",
+    "label": "Radically Transparent",
+    "desc": "Bad news first, with the plan attached.",
     "tags": [
-     "industrial",
-     "rustic",
-     "urban",
-     "warm"
+     "trust",
+     "direct",
+     "honest",
+     "calm"
     ],
     "visual": {
-     "type": "image",
-     "key": "int_industrial",
-     "filter": null,
-     "colors": [
-      "#9c4a2f",
-      "#2e2e2e",
-      "#d8c3a5"
-     ],
-     "materials": [
-      "brick",
-      "steel",
-      "timber"
+     "type": "tone",
+     "lines": [
+      "Honest update: we're 4 days behind because of the rain.",
+      "Here's the new schedule. Cost to you: nothing."
      ]
     }
    },
@@ -1503,46 +1588,56 @@
   },
   {
    "id": "2026-10-11-31",
-   "category": "Color Palette",
+   "category": "Food Styling",
    "optionA": {
-    "id": "pal_mono_ink",
-    "label": "Monochrome Ink",
-    "desc": "Black, greys and white. Nothing else.",
+    "id": "fd_fresh_bowl",
+    "label": "Fresh Clean Bowl",
+    "desc": "Grain bowl, bright greens, healthy.",
     "tags": [
+     "light",
+     "fresh",
      "minimal",
-     "classic",
-     "cool",
-     "formal"
+     "natural"
     ],
     "visual": {
-     "type": "palette",
+     "type": "mood",
      "colors": [
-      "#0a0a0a",
-      "#3a3a3a",
-      "#7a7a7a",
-      "#c9c9c9",
-      "#ffffff"
+      "#a7c957",
+      "#ffffff",
+      "#f6b93b",
+      "#e56b8a",
+      "#f2efe8"
+     ],
+     "materials": [
+      "grain bowl",
+      "greens",
+      "sesame"
      ]
     }
    },
    "optionB": {
-    "id": "pal_sunset_bkk",
-    "label": "Bangkok Sunset",
-    "desc": "Coral, magenta, deep violet, warm gold.",
+    "id": "fd_site_bbq",
+    "label": "Job-Site Lunch BBQ",
+    "desc": "Grill on a tailgate, crew lunch.",
     "tags": [
-     "vibrant",
-     "warm",
-     "bold",
-     "thai"
+     "industrial",
+     "casual",
+     "raw",
+     "social"
     ],
     "visual": {
-     "type": "palette",
+     "type": "mood",
      "colors": [
-      "#ff6f59",
-      "#e23e7c",
-      "#5b2a86",
-      "#f7b32b",
-      "#fff1e6"
+      "#2b2d31",
+      "#ff6b00",
+      "#8b3a1a",
+      "#c5ccd0",
+      "#f6b93b"
+     ],
+     "materials": [
+      "tailgate",
+      "charcoal",
+      "paper plates"
      ]
     }
    },
@@ -1550,97 +1645,105 @@
   },
   {
    "id": "2026-10-11-32",
-   "category": "Home / Interior Style",
+   "category": "YouTube Thumbnail Style",
    "optionA": {
-    "id": "hm_brick_loft",
-    "label": "Brick Warehouse Loft",
-    "desc": "Converted industrial brick with big steel windows.",
+    "id": "yt_th_vs_jp",
+    "label": "Thailand Vs Japan Split",
+    "desc": "Two-country comparison split.",
     "tags": [
-     "industrial",
-     "rustic",
-     "urban",
-     "warm"
+     "bold",
+     "comparison",
+     "bilingual",
+     "travel"
     ],
     "visual": {
-     "type": "image",
-     "key": "int_industrial",
-     "filter": null,
-     "colors": [
-      "#9c4a2f",
-      "#2e2e2e",
-      "#d8c3a5"
-     ],
-     "materials": [
-      "brick",
-      "steel",
-      "timber"
-     ]
+     "type": "thumb",
+     "bg": "#111",
+     "fg": "#ffffff",
+     "accent": "#d1495b",
+     "font": "'Kanit', 'Prompt', system-ui, sans-serif",
+     "layout": "split",
+     "text": "THAI vs JAPAN",
+     "key": "int_japandi",
+     "filter": null
     }
    },
    "optionB": {
-    "id": "hm_coastal",
-    "label": "Coastal Breezy",
-    "desc": "Whitewash, rattan, sea-glass blues.",
+    "id": "yt_duo",
+    "label": "Reaction Duo",
+    "desc": "Two faces reacting plus a short line.",
     "tags": [
-     "light",
-     "tropical",
-     "calm",
-     "natural"
+     "playful",
+     "personal",
+     "energetic",
+     "youtube"
     ],
     "visual": {
-     "type": "mood",
-     "colors": [
-      "#ffffff",
-      "#cfe8ef",
-      "#7fb7c9",
-      "#d8c3a5",
-      "#2c5d73"
-     ],
-     "materials": [
-      "rattan",
-      "whitewash",
-      "linen",
-      "driftwood"
-     ]
+     "type": "thumb",
+     "bg": "#3a86ff",
+     "fg": "#ffffff",
+     "accent": "#ffbe0b",
+     "font": "'Nunito', 'Inter', system-ui, sans-serif",
+     "layout": "face",
+     "text": "WE DID IT",
+     "key": "ext_modern",
+     "filter": null
     }
    },
    "repeat": false
   },
   {
    "id": "2026-10-11-33",
-   "category": "Business Communication Tone",
+   "category": "Home / Interior Style",
    "optionA": {
-    "id": "tn_data",
-    "label": "Data-First Report",
-    "desc": "Numbers and bullets, minimal adjectives.",
+    "id": "hm_wabi",
+    "label": "Wabi-Sabi",
+    "desc": "Imperfect, aged, quiet beauty.",
     "tags": [
-     "technical",
-     "direct",
-     "efficient",
-     "minimal"
+     "japanese",
+     "natural",
+     "calm",
+     "raw"
     ],
     "visual": {
-     "type": "tone",
-     "lines": [
-      "Occupancy 94% (+3% MoM). 2 open work orders, both under 48h.",
-      "Next action: renew Unit 4B lease by Oct 30."
+     "type": "mood",
+     "colors": [
+      "#d6cfc4",
+      "#a39b8b",
+      "#6e6658",
+      "#3e3a33",
+      "#f2eee8"
+     ],
+     "materials": [
+      "aged wood",
+      "stoneware",
+      "washi"
      ]
     }
    },
    "optionB": {
-    "id": "tn_warm",
-    "label": "Warm & Personal",
-    "desc": "Friendly, first-name, a bit of heart.",
+    "id": "hm_shophouse",
+    "label": "Bangkok Shophouse Reno",
+    "desc": "Narrow old shophouse, exposed brick, steel stairs, plants.",
     "tags": [
-     "warm",
-     "friendly",
-     "personal"
+     "industrial",
+     "bangkok",
+     "urban",
+     "warm"
     ],
     "visual": {
-     "type": "tone",
-     "lines": [
-      "Hi Sarah, hope your week's going great!",
-      "Just a heads-up: we'll be by Tuesday morning to take care of that roof."
+     "type": "mood",
+     "colors": [
+      "#9c4a2f",
+      "#2e2e2e",
+      "#d8c3a5",
+      "#5a7d4f",
+      "#f2efe8"
+     ],
+     "materials": [
+      "old brick",
+      "black steel",
+      "terrazzo"
      ]
     }
    },
@@ -1648,601 +1751,615 @@
   },
   {
    "id": "2026-10-11-34",
-   "category": "Icon & Illustration Style",
+   "category": "Photography Style",
    "optionA": {
-    "id": "ic_isometric",
-    "label": "Isometric 3D",
-    "desc": "Little 3D buildings and tools, tech-forward.",
+    "id": "ph_airy",
+    "label": "Bright & Airy",
+    "desc": "Lifted exposure, soft contrast, breezy.",
     "tags": [
-     "technical",
-     "playful",
-     "geometric",
-     "construction"
+     "light",
+     "soft",
+     "natural",
+     "fresh"
     ],
     "visual": {
-     "type": "mood",
-     "colors": [
-      "#00b4d8",
-      "#ffd166",
-      "#ef476f",
-      "#073b4c"
-     ],
-     "materials": [
-      "◇ iso",
-      "⬡ block",
-      "▱ plane"
-     ]
+     "type": "image",
+     "key": "ext_tropical",
+     "filter": "brightness(1.2) contrast(.88) saturate(.9)",
+     "colors": [],
+     "materials": []
     }
    },
    "optionB": {
-    "id": "ic_filled",
-    "label": "Solid Filled Icons",
-    "desc": "Chunky filled shapes, high legibility.",
+    "id": "ph_matte_earth",
+    "label": "Matte Earth Tones",
+    "desc": "Muted, earthy, slightly warm matte finish.",
     "tags": [
-     "bold",
-     "friendly",
-     "clear",
-     "modern"
+     "earthy",
+     "natural",
+     "calm",
+     "warm"
     ],
     "visual": {
-     "type": "mood",
-     "colors": [
-      "#2563eb",
-      "#ffffff",
-      "#1f2937"
-     ],
-     "materials": [
-      "■ solid",
-      "● fill",
-      "▲ bold"
-     ]
+     "type": "image",
+     "key": "ext_tropical",
+     "filter": "sepia(.3) saturate(.8) contrast(.9) brightness(1.03)",
+     "colors": [],
+     "materials": []
     }
    },
    "repeat": false
   },
   {
    "id": "2026-10-11-35",
-   "category": "Logo / Mark",
+   "category": "Cars & Gear",
    "optionA": {
-    "id": "lg_lowercase",
-    "label": "Friendly Lowercase",
-    "desc": "Rounded lowercase wordmark with a dot accent.",
+    "id": "cg_tuktuk",
+    "label": "Custom Tuk-Tuk",
+    "desc": "Branded tuk-tuk for shoots and promos.",
     "tags": [
-     "friendly",
-     "modern",
+     "bangkok",
      "playful",
-     "soft"
+     "vibrant",
+     "bold"
     ],
     "visual": {
-     "type": "logo",
-     "mark": "",
-     "word": "weberman.",
-     "font": "'Montserrat', 'Helvetica Neue', Arial, sans-serif",
-     "fg": "#2b2d42",
-     "bg": "#edf2f4",
-     "shape": "none",
-     "weight": 800,
-     "spacing": "-0.02em",
-     "italic": false,
-     "upper": false,
-     "accent": "#ef8354"
+     "type": "mood",
+     "colors": [
+      "#00a8e8",
+      "#ff006e",
+      "#ffd60a",
+      "#1b1b1b",
+      "#ffffff"
+     ],
+     "materials": [
+      "3 wheels",
+      "neon trim",
+      "sound system"
+     ]
     }
    },
    "optionB": {
-    "id": "lg_mono_text",
-    "label": "Mono Terminal Tag",
-    "desc": "Code-style handle: >_ weberman",
+    "id": "cg_adv_bike",
+    "label": "Adventure Touring Bike",
+    "desc": "Panniers, crash bars, mountain passes.",
     "tags": [
+     "adventurous",
      "technical",
-     "minimal",
-     "raw",
-     "dark"
+     "rugged",
+     "outdoor"
     ],
     "visual": {
-     "type": "logo",
-     "mark": ">_",
-     "word": "weberman",
-     "font": "'IBM Plex Mono', ui-monospace, Menlo, monospace",
-     "fg": "#39ff14",
-     "bg": "#050805",
-     "shape": "none",
-     "weight": 600,
-     "spacing": "0",
-     "italic": false,
-     "upper": false,
-     "accent": "#39ff14"
+     "type": "mood",
+     "colors": [
+      "#ff8c42",
+      "#2b2d31",
+      "#a3b18a",
+      "#f8f9fa",
+      "#3a86ff"
+     ],
+     "materials": [
+      "panniers",
+      "crash bars",
+      "GPS"
+     ]
     }
    },
    "repeat": false
   },
   {
    "id": "2026-10-11-36",
-   "category": "YouTube Thumbnail Style",
+   "category": "Icon & Illustration Style",
    "optionA": {
-    "id": "yt_handwritten",
-    "label": "Handwritten Journal",
-    "desc": "Script note over warm photo, diary feel.",
+    "id": "ic_stamp",
+    "label": "Rubber Stamp Icons",
+    "desc": "Inky, slightly misregistered stamp marks.",
     "tags": [
-     "warm",
-     "personal",
      "craft",
-     "soft"
+     "rustic",
+     "raw",
+     "warm"
     ],
     "visual": {
-     "type": "thumb",
-     "bg": "#f6f0e4",
-     "fg": "#ffffff",
-     "accent": "#ffffff",
-     "font": "'Caveat', 'Comic Sans MS', cursive",
-     "layout": "hand",
-     "text": "rainy season diaries",
-     "key": "base_temple",
-     "filter": "sepia(.3) brightness(1.05)"
+     "type": "mood",
+     "colors": [
+      "#c8a97e",
+      "#1b1b1b",
+      "#a4161a"
+     ],
+     "materials": [
+      "✪ stamp",
+      "✚ mark",
+      "✔ ink"
+     ]
     }
    },
    "optionB": {
-    "id": "yt_bilingual",
-    "label": "Bilingual Caption",
-    "desc": "English + Thai text stack, local flavour.",
+    "id": "ic_emoji",
+    "label": "Native Emoji Only",
+    "desc": "Just use emoji. Universal and zero effort.",
     "tags": [
-     "thai",
-     "bilingual",
      "friendly",
-     "vibrant"
+     "practical",
+     "casual",
+     "playful"
     ],
     "visual": {
-     "type": "thumb",
-     "bg": "#a4161a",
-     "fg": "#ffffff",
-     "accent": "#d4a017",
-     "font": "'Prompt', 'Montserrat', system-ui, sans-serif",
-     "layout": "bilingual",
-     "text": "BUILDING IN THAILAND|สร้างบ้านในไทย",
-     "key": "base_temple",
-     "filter": "saturate(1.2)"
+     "type": "mood",
+     "colors": [
+      "#ffd60a",
+      "#ffffff",
+      "#2b2b2b"
+     ],
+     "materials": [
+      "🏠 home",
+      "🔧 fix",
+      "🌴 trip"
+     ]
     }
    },
    "repeat": false
   },
   {
    "id": "2026-10-11-37",
-   "category": "Logo / Mark",
+   "category": "Typography",
    "optionA": {
-    "id": "lg_split",
-    "label": "Split Geometric",
-    "desc": "Two-tone diagonal square, modern holding-company look.",
+    "id": "ty_anton",
+    "label": "Anton Poster",
+    "desc": "Tall heavy poster caps. Reads from across a job site.",
     "tags": [
-     "geometric",
-     "modern",
+     "loud",
      "bold",
-     "corporate"
+     "industrial",
+     "direct"
     ],
     "visual": {
-     "type": "logo",
-     "mark": "W",
-     "word": "WEBERMAN GROUP",
-     "font": "'Space Grotesk', 'Inter', system-ui, sans-serif",
-     "fg": "#ffffff",
-     "bg": "#1d3c6e",
-     "shape": "split",
-     "weight": 700,
-     "spacing": "0.12em",
-     "italic": false,
+     "type": "type",
+     "head": "'Anton', 'Bebas Neue', Impact, sans-serif",
+     "body": "'Work Sans', 'Helvetica Neue', Arial, sans-serif",
+     "headWeight": 400,
      "upper": true,
-     "accent": "#b08d57"
+     "tracking": "0.02em"
     }
    },
    "optionB": {
-    "id": "lg_leaf",
-    "label": "Organic Leaf Mark",
-    "desc": "Soft green rounded square with leaf-like 'W'.",
+    "id": "ty_dmsans",
+    "label": "DM Sans Friendly Geometric",
+    "desc": "Low-contrast geometric sans, approachable.",
     "tags": [
-     "natural",
      "friendly",
-     "soft",
-     "tropical"
+     "modern",
+     "light",
+     "clean"
     ],
     "visual": {
-     "type": "logo",
-     "mark": "W",
-     "word": "Weberman",
-     "font": "'Fraunces', Georgia, serif",
-     "fg": "#ffffff",
-     "bg": "#3a7d44",
-     "shape": "rounded",
-     "weight": 700,
-     "spacing": "0.02em",
-     "italic": false,
-     "upper": true,
-     "accent": "#ffffff"
+     "type": "type",
+     "head": "'DM Sans', 'Inter', system-ui, sans-serif",
+     "body": "'DM Sans', 'Inter', system-ui, sans-serif",
+     "headWeight": 700,
+     "upper": false,
+     "tracking": "0"
     }
    },
    "repeat": false
   },
   {
    "id": "2026-10-11-38",
-   "category": "YouTube Thumbnail Style",
+   "category": "Fashion / Personal Look",
    "optionA": {
-    "id": "yt_bigtext",
-    "label": "Big Bold Text",
-    "desc": "Huge 2–3 word caption, high contrast.",
+    "id": "fs_athleisure",
+    "label": "Clean Athleisure",
+    "desc": "Technical joggers, performance tee, minimal sneakers.",
     "tags": [
-     "bold",
-     "loud",
-     "youtube",
-     "vibrant"
+     "modern",
+     "active",
+     "minimal",
+     "light"
     ],
     "visual": {
-     "type": "thumb",
-     "bg": "#111",
-     "fg": "#ffffff",
-     "accent": "#ffd400",
-     "font": "'Bebas Neue', 'Arial Narrow', Impact, sans-serif",
-     "layout": "bigtext",
-     "text": "THAI HOUSE BUILD",
-     "key": "base_temple",
-     "filter": "saturate(1.5) contrast(1.2)"
+     "type": "mood",
+     "colors": [
+      "#f1f3f5",
+      "#adb5bd",
+      "#343a40",
+      "#ffffff",
+      "#4dabf7"
+     ],
+     "materials": [
+      "tech jersey",
+      "joggers",
+      "knit runners"
+     ]
     }
    },
    "optionB": {
-    "id": "yt_minimal",
-    "label": "Minimal Cinematic",
-    "desc": "No text, one striking frame, letterbox bars.",
+    "id": "fs_fisherman",
+    "label": "Fisherman Pants & Tee",
+    "desc": "Wrap fisherman pants, plain tee, flip-flops.",
     "tags": [
-     "minimal",
-     "cinematic",
-     "editorial",
-     "calm"
+     "thai",
+     "relaxed",
+     "tropical",
+     "natural"
     ],
     "visual": {
-     "type": "thumb",
-     "bg": "#000",
-     "fg": "#ffffff",
-     "accent": "#ffffff",
-     "font": "'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif",
-     "layout": "cinematic",
-     "text": "",
-     "key": "base_temple",
-     "filter": "contrast(1.1) saturate(.85)"
+     "type": "mood",
+     "colors": [
+      "#2f4858",
+      "#f2efe8",
+      "#c8a97e",
+      "#6b8f71",
+      "#1b1b1b"
+     ],
+     "materials": [
+      "cotton wrap pants",
+      "plain tee",
+      "flip-flops"
+     ]
     }
    },
    "repeat": false
   },
   {
    "id": "2026-10-11-39",
-   "category": "Color Palette",
+   "category": "Packaging & Merch",
    "optionA": {
-    "id": "pal_safety",
-    "label": "Safety & Steel",
-    "desc": "Hi-vis orange, steel grey, concrete, asphalt.",
+    "id": "pm_white_card",
+    "label": "Clean White Business Card",
+    "desc": "Bright white, one accent edge.",
     "tags": [
-     "industrial",
-     "bold",
-     "technical",
-     "construction"
+     "minimal",
+     "modern",
+     "light",
+     "clean"
     ],
     "visual": {
-     "type": "palette",
-     "colors": [
-      "#ff6b00",
-      "#2b2d31",
-      "#6c757d",
-      "#cfd4da",
-      "#f8f9fa"
-     ]
+     "type": "merch",
+     "item": "card",
+     "base": "#ffffff",
+     "ink": "#1b1b1b",
+     "mark": "WEBERMAN",
+     "font": "'Outfit', 'Inter', system-ui, sans-serif",
+     "accent": "#139a8f"
     }
    },
    "optionB": {
-    "id": "pal_sage",
-    "label": "Sage Calm",
-    "desc": "Sage, eucalyptus, oat, soft charcoal.",
+    "id": "pm_bilingual_tote",
+    "label": "Bilingual Tote",
+    "desc": "Canvas tote with EN/TH type.",
     "tags": [
-     "soft",
-     "natural",
-     "minimal",
-     "calm"
+     "thai",
+     "bilingual",
+     "practical",
+     "natural"
     ],
     "visual": {
-     "type": "palette",
-     "colors": [
-      "#9caf88",
-      "#c7d3bf",
-      "#e9e4d8",
-      "#f7f5ef",
-      "#3f4540"
-     ]
+     "type": "merch",
+     "item": "tote",
+     "base": "#efe6d2",
+     "ink": "#3b2a1a",
+     "mark": "สวัสดี|HELLO",
+     "font": "'Kanit', 'Prompt', system-ui, sans-serif",
+     "accent": "#3b2a1a"
     }
    },
    "repeat": false
   },
   {
    "id": "2026-10-11-40",
-   "category": "Logo / Mark",
+   "category": "App / UI Style",
    "optionA": {
-    "id": "lg_mono_text",
-    "label": "Mono Terminal Tag",
-    "desc": "Code-style handle: >_ weberman",
+    "id": "ui_bilingual_dash",
+    "label": "Bilingual Dashboard",
+    "desc": "Every label in English and Thai, Sarabun body, calm teal.",
     "tags": [
-     "technical",
-     "minimal",
-     "raw",
-     "dark"
+     "bilingual",
+     "thai",
+     "practical",
+     "friendly"
     ],
     "visual": {
-     "type": "logo",
-     "mark": ">_",
-     "word": "weberman",
-     "font": "'IBM Plex Mono', ui-monospace, Menlo, monospace",
-     "fg": "#39ff14",
-     "bg": "#050805",
-     "shape": "none",
-     "weight": 600,
-     "spacing": "0",
-     "italic": false,
-     "upper": false,
-     "accent": "#39ff14"
+     "type": "ui",
+     "bg": "#eef6f5",
+     "surface": "#ffffff",
+     "text": "#16302e",
+     "accent": "#139a8f",
+     "radius": 12,
+     "font": "'Sarabun', 'Inter', system-ui, sans-serif",
+     "shadow": "soft",
+     "border": "none",
+     "muted": "#16302e"
     }
    },
    "optionB": {
-    "id": "lg_signature",
-    "label": "Personal Signature",
-    "desc": "Hand-signed name, creator/personal brand feel.",
+    "id": "ui_bento",
+    "label": "Bento Grid",
+    "desc": "Modular tiles of different sizes, tidy Japanese-box layout.",
     "tags": [
-     "personal",
-     "warm",
-     "playful",
-     "casual"
+     "japanese",
+     "minimal",
+     "modern",
+     "light"
     ],
     "visual": {
-     "type": "logo",
-     "mark": "",
-     "word": "Max Weberman",
-     "font": "'Caveat', 'Comic Sans MS', cursive",
-     "fg": "#1b1b1b",
-     "bg": "#fffaf0",
-     "shape": "none",
-     "weight": 700,
-     "spacing": "0",
-     "italic": false,
-     "upper": false,
-     "accent": "#1b1b1b"
+     "type": "ui",
+     "bg": "#f2f0eb",
+     "surface": "#ffffff",
+     "text": "#222222",
+     "accent": "#d1495b",
+     "radius": 16,
+     "font": "'DM Sans', 'Inter', system-ui, sans-serif",
+     "shadow": "soft",
+     "border": "1px solid #e4e1da",
+     "muted": "#222222"
     }
    },
    "repeat": false
   },
   {
    "id": "2026-10-11-41",
-   "category": "YouTube Thumbnail Style",
+   "category": "Bangkok Vs Japan Aesthetics",
    "optionA": {
-    "id": "yt_documentary",
-    "label": "Documentary Title Card",
-    "desc": "Serif title in lower third, calm and premium.",
+    "id": "bj_jp_muji",
+    "label": "Japan: Muji Utility Minimal",
+    "desc": "Undyed, unbranded, perfectly useful.",
     "tags": [
-     "editorial",
-     "classic",
-     "calm",
-     "cinematic"
+     "japan",
+     "minimal",
+     "light",
+     "practical"
     ],
     "visual": {
-     "type": "thumb",
-     "bg": "#000",
-     "fg": "#f2ead8",
-     "accent": "#c9a227",
-     "font": "'Playfair Display', Georgia, serif",
-     "layout": "lower",
-     "text": "A Moment in Thai",
-     "key": "base_temple",
-     "filter": "sepia(.25) contrast(1.05)"
+     "type": "mood",
+     "colors": [
+      "#f7f5ef",
+      "#e3d9c6",
+      "#a39b8b",
+      "#ffffff",
+      "#7f2e2e"
+     ],
+     "materials": [
+      "undyed cotton",
+      "PP boxes",
+      "oak"
+     ]
     }
    },
    "optionB": {
-    "id": "yt_bilingual",
-    "label": "Bilingual Caption",
-    "desc": "English + Thai text stack, local flavour.",
+    "id": "bj_bkk_shophouse",
+    "label": "Bangkok: Old Shophouse Patina",
+    "desc": "Peeling paint, rolling shutters, potted plants.",
     "tags": [
-     "thai",
-     "bilingual",
-     "friendly",
-     "vibrant"
+     "bangkok",
+     "rustic",
+     "warm",
+     "urban"
     ],
     "visual": {
-     "type": "thumb",
-     "bg": "#a4161a",
-     "fg": "#ffffff",
-     "accent": "#d4a017",
-     "font": "'Prompt', 'Montserrat', system-ui, sans-serif",
-     "layout": "bilingual",
-     "text": "BUILDING IN THAILAND|สร้างบ้านในไทย",
-     "key": "base_temple",
-     "filter": "saturate(1.2)"
+     "type": "mood",
+     "colors": [
+      "#e9c46a",
+      "#5a7d4f",
+      "#9c4a2f",
+      "#d8c3a5",
+      "#2b2b2b"
+     ],
+     "materials": [
+      "roller shutters",
+      "patina",
+      "potted plants"
+     ]
     }
    },
    "repeat": false
   },
   {
    "id": "2026-10-11-42",
-   "category": "Icon & Illustration Style",
+   "category": "App / UI Style",
    "optionA": {
-    "id": "ic_isometric",
-    "label": "Isometric 3D",
-    "desc": "Little 3D buildings and tools, tech-forward.",
+    "id": "ui_jobsite",
+    "label": "Job-Site Tablet",
+    "desc": "Huge touch targets, hi-vis orange on concrete grey. Works with gloves on.",
     "tags": [
-     "technical",
-     "playful",
-     "geometric",
-     "construction"
+     "industrial",
+     "direct",
+     "practical",
+     "light"
     ],
     "visual": {
-     "type": "mood",
-     "colors": [
-      "#00b4d8",
-      "#ffd166",
-      "#ef476f",
-      "#073b4c"
-     ],
-     "materials": [
-      "◇ iso",
-      "⬡ block",
-      "▱ plane"
-     ]
+     "type": "ui",
+     "bg": "#d9dcd6",
+     "surface": "#f4f4f1",
+     "text": "#1f1f1f",
+     "accent": "#ff6b00",
+     "radius": 6,
+     "font": "'Archivo Black', 'Arial Black', Impact, sans-serif",
+     "shadow": "hard",
+     "border": "2px solid #1f1f1f",
+     "muted": "#1f1f1f"
     }
    },
    "optionB": {
-    "id": "ic_thai_ornament",
-    "label": "Thai Ornamental",
-    "desc": "Kranok-inspired flourishes as accents.",
+    "id": "ui_sunlit_linen",
+    "label": "Sunlit Linen",
+    "desc": "Off-white linen texture, sage accent, airy spacing.",
     "tags": [
-     "thai",
-     "traditional",
-     "luxe",
-     "craft"
+     "natural",
+     "light",
+     "calm",
+     "soft"
     ],
     "visual": {
-     "type": "mood",
-     "colors": [
-      "#d4a017",
-      "#a4161a",
-      "#1b1b1b"
-     ],
-     "materials": [
-      "❦ kranok",
-      "✾ lotus",
-      "❀ motif"
-     ]
+     "type": "ui",
+     "bg": "#f6f3ec",
+     "surface": "#fbfaf6",
+     "text": "#3f4540",
+     "accent": "#7d9a6f",
+     "radius": 14,
+     "font": "'Outfit', 'Inter', system-ui, sans-serif",
+     "shadow": "soft",
+     "border": "none",
+     "muted": "#3f4540"
     }
    },
    "repeat": false
   },
   {
    "id": "2026-10-11-43",
-   "category": "App / UI Style",
+   "category": "Icon & Illustration Style",
    "optionA": {
-    "id": "ui_tropical",
-    "label": "Tropical Fresh",
-    "desc": "Lagoon teal, mango accent, airy rounded layout.",
+    "id": "ic_sticker",
+    "label": "Die-Cut Stickers",
+    "desc": "Thick white outline sticker icons.",
     "tags": [
-     "tropical",
+     "playful",
+     "bold",
      "vibrant",
-     "friendly",
-     "light"
+     "friendly"
     ],
     "visual": {
-     "type": "ui",
-     "bg": "#e9fbf7",
-     "surface": "#ffffff",
-     "text": "#0b3b3a",
-     "accent": "#ff9f1c",
-     "radius": 20,
-     "font": "'Prompt', 'Montserrat', system-ui, sans-serif",
-     "shadow": "soft",
-     "border": "none",
-     "muted": "#0b3b3a"
+     "type": "mood",
+     "colors": [
+      "#ff006e",
+      "#ffbe0b",
+      "#3a86ff",
+      "#ffffff"
+     ],
+     "materials": [
+      "★ sticker",
+      "♥ badge",
+      "⚑ flag"
+     ]
     }
    },
    "optionB": {
-    "id": "ui_soft",
-    "label": "Soft Neumorphic",
-    "desc": "Pillowy cards, gentle shadows, rounded everything.",
+    "id": "ic_watercolor",
+    "label": "Watercolor Spots",
+    "desc": "Loose watercolor blobs behind simple icons.",
     "tags": [
      "soft",
-     "light",
-     "friendly",
-     "modern"
+     "natural",
+     "craft",
+     "warm"
     ],
     "visual": {
-     "type": "ui",
-     "bg": "#eef0f4",
-     "surface": "#eef0f4",
-     "text": "#3b4252",
-     "accent": "#5e81ac",
-     "radius": 22,
-     "font": "'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif",
-     "shadow": "neu",
-     "border": "none",
-     "muted": "#3b4252"
+     "type": "mood",
+     "colors": [
+      "#a3c4bc",
+      "#f2c6b4",
+      "#e9e4d8",
+      "#6b8f71"
+     ],
+     "materials": [
+      "❀ wash",
+      "☁ bleed",
+      "✿ bloom"
+     ]
     }
    },
    "repeat": false
   },
   {
    "id": "2026-10-11-44",
-   "category": "Typography",
+   "category": "Social Post Layouts",
    "optionA": {
-    "id": "ty_hand",
-    "label": "Handwritten Accent",
-    "desc": "Caveat script accents over a simple sans.",
+    "id": "sp_carousel",
+    "label": "Swipe Carousel Cover",
+    "desc": "Numbered hook that begs a swipe.",
     "tags": [
-     "playful",
-     "personal",
-     "warm",
-     "casual"
+     "friendly",
+     "practical",
+     "youtube",
+     "clear"
     ],
     "visual": {
-     "type": "type",
-     "head": "'Caveat', 'Comic Sans MS', cursive",
-     "body": "'Work Sans', 'Helvetica Neue', Arial, sans-serif",
-     "headWeight": 700,
-     "upper": false,
-     "tracking": "0"
+     "type": "post",
+     "bg": "#139a8f",
+     "fg": "#ffffff",
+     "accent": "#ffd60a",
+     "font": "'Kanit', 'Prompt', system-ui, sans-serif",
+     "layout": "carousel",
+     "text": "5 Things I Wish I Knew Before Building In Thailand",
+     "key": null,
+     "filter": null
     }
    },
    "optionB": {
-    "id": "ty_inter",
-    "label": "Neutral Sans (Inter)",
-    "desc": "Clean, invisible, very legible UI type.",
+    "id": "sp_collage",
+    "label": "Scrapbook Collage",
+    "desc": "Taped photos, scribbles, stickers.",
     "tags": [
-     "minimal",
-     "modern",
-     "technical",
-     "neutral"
+     "playful",
+     "craft",
+     "warm",
+     "personal"
     ],
     "visual": {
-     "type": "type",
-     "head": "'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif",
-     "body": "'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif",
-     "headWeight": 700,
-     "upper": false,
-     "tracking": "0"
+     "type": "post",
+     "bg": "#f6f0e4",
+     "fg": "#1b1b1b",
+     "accent": "#e56b8a",
+     "font": "'Caveat', 'Comic Sans MS', cursive",
+     "layout": "collage",
+     "text": "week 12 on site",
+     "key": "base_temple",
+     "filter": null
     }
    },
    "repeat": false
   },
   {
    "id": "2026-10-11-45",
-   "category": "Business Communication Tone",
+   "category": "Bangkok Vs Japan Aesthetics",
    "optionA": {
-    "id": "tn_nononsense",
-    "label": "No-Nonsense Contractor",
-    "desc": "Plain talk, straight from the job site.",
+    "id": "bj_bkk_modernism",
+    "label": "Bangkok: Tropical Modernism",
+    "desc": "60s concrete brise-soleil and breeze blocks.",
     "tags": [
-     "direct",
-     "industrial",
-     "raw",
-     "construction"
+     "bangkok",
+     "modern",
+     "tropical",
+     "architectural"
     ],
     "visual": {
-     "type": "tone",
-     "lines": [
-      "Slab's poured. Framing starts Monday if weather holds.",
-      "Need your tile pick by Friday or we slip a week."
+     "type": "mood",
+     "colors": [
+      "#e8e4dc",
+      "#a9a9a2",
+      "#2f5d3a",
+      "#c1502e",
+      "#4a4a48"
+     ],
+     "materials": [
+      "breeze blocks",
+      "brise-soleil",
+      "terrazzo"
      ]
     }
    },
    "optionB": {
-    "id": "tn_storyteller",
-    "label": "Reflective Storyteller",
-    "desc": "Slow, observational, a little poetic.",
+    "id": "bj_jp_konbini",
+    "label": "Japan: Konbini Pop",
+    "desc": "Bright packaging, perfect shelves, cute mascots.",
     "tags": [
-     "editorial",
-     "warm",
-     "calm",
-     "personal"
+     "japan",
+     "playful",
+     "vibrant",
+     "light"
     ],
     "visual": {
-     "type": "tone",
-     "lines": [
-      "Some mornings in Chiang Mai the mist doesn't lift until nine.",
-      "That's when I like to walk the site and just listen."
+     "type": "mood",
+     "colors": [
+      "#ffffff",
+      "#2a9d8f",
+      "#e63946",
+      "#ffbe0b",
+      "#3a86ff"
+     ],
+     "materials": [
+      "onigiri",
+      "mascots",
+      "fluorescent"
      ]
     }
    },
@@ -2250,240 +2367,254 @@
   },
   {
    "id": "2026-10-11-46",
-   "category": "Home / Interior Style",
+   "category": "Website Hero Sections",
    "optionA": {
-    "id": "hm_japandi",
-    "label": "Japanese Minimal",
-    "desc": "Tatami, low furniture, paper and timber calm.",
+    "id": "wh_bigtype",
+    "label": "Giant Type Only",
+    "desc": "Massive headline, nothing else.",
     "tags": [
+     "bold",
      "minimal",
-     "natural",
-     "calm",
-     "japanese"
+     "direct",
+     "modern"
     ],
     "visual": {
-     "type": "image",
-     "key": "int_japandi",
-     "filter": null,
-     "colors": [
-      "#d8c8a8",
-      "#8c6e4a",
-      "#f2ede3"
-     ],
-     "materials": [
-      "tatami",
-      "paper",
-      "pale wood"
-     ]
+     "type": "hero",
+     "bg": "#ffffff",
+     "fg": "#111111",
+     "accent": "#ff6b00",
+     "font": "'Anton', 'Bebas Neue', Impact, sans-serif",
+     "layout": "bigtype",
+     "head": "WE BUILD.",
+     "sub": "",
+     "cta": "Talk To Us",
+     "key": null,
+     "filter": null
     }
    },
    "optionB": {
-    "id": "hm_boho",
-    "label": "Bohemian Eclectic",
-    "desc": "Plants, layered rugs, macramé, collected treasures.",
+    "id": "wh_cards",
+    "label": "Service Cards Up Top",
+    "desc": "Three service cards right under a short headline.",
     "tags": [
-     "playful",
-     "warm",
-     "eclectic",
-     "natural"
+     "practical",
+     "clear",
+     "friendly",
+     "corporate"
     ],
     "visual": {
-     "type": "mood",
-     "colors": [
-      "#c1502e",
-      "#e9c46a",
-      "#2a9d8f",
-      "#f4a261",
-      "#264653"
-     ],
-     "materials": [
-      "jute",
-      "macramé",
-      "terracotta",
-      "plants"
-     ]
+     "type": "hero",
+     "bg": "#f5f7fb",
+     "fg": "#1f2937",
+     "accent": "#2563eb",
+     "font": "'DM Sans', 'Inter', system-ui, sans-serif",
+     "layout": "cards",
+     "head": "What Do You Need?",
+     "sub": "Build|Renovate|Rent",
+     "cta": "",
+     "key": null,
+     "filter": null
     }
    },
    "repeat": false
   },
   {
    "id": "2026-10-11-47",
-   "category": "Photography Style",
+   "category": "Video Editing & Pacing",
    "optionA": {
-    "id": "ph_cool_teal",
-    "label": "Teal & Cool Cinematic",
-    "desc": "Cool shadows, desaturated, moody.",
+    "id": "vp_walk_talk",
+    "label": "Walk-And-Talk Vlog",
+    "desc": "Handheld, one long ramble with light trims.",
     "tags": [
-     "cool",
-     "cinematic",
-     "dark",
-     "modern"
+     "personal",
+     "friendly",
+     "casual",
+     "raw"
     ],
     "visual": {
-     "type": "image",
-     "key": "base_temple",
-     "filter": "hue-rotate(-12deg) saturate(.8) brightness(.9) contrast(1.15)",
-     "colors": [],
-     "materials": []
+     "type": "pace",
+     "cuts": [
+      9,
+      3,
+      10,
+      4,
+      8
+     ],
+     "colors": [
+      "#139a8f",
+      "#ffd166"
+     ],
+     "notes": [
+      "handheld",
+      "natural light",
+      "light trims"
+     ]
     }
    },
    "optionB": {
-    "id": "ph_faded",
-    "label": "Faded Film",
-    "desc": "Lifted blacks, low contrast, nostalgic.",
+    "id": "vp_natural_sound",
+    "label": "No Talking, Natural Sound",
+    "desc": "Birds, rain, tools. Let the place speak.",
     "tags": [
-     "soft",
-     "retro",
+     "natural",
      "calm",
-     "editorial"
+     "minimal",
+     "tropical"
     ],
     "visual": {
-     "type": "image",
-     "key": "base_temple",
-     "filter": "contrast(.75) brightness(1.12) saturate(.7) sepia(.15)",
-     "colors": [],
-     "materials": []
+     "type": "pace",
+     "cuts": [
+      7,
+      6,
+      9,
+      8
+     ],
+     "colors": [
+      "#2f5d3a",
+      "#c2dfe3"
+     ],
+     "notes": [
+      "nat sound",
+      "no VO",
+      "long fades"
+     ]
     }
    },
    "repeat": false
   },
   {
    "id": "2026-10-11-48",
-   "category": "Typography",
+   "category": "Website Hero Sections",
    "optionA": {
-    "id": "ty_grotesk",
-    "label": "Techy Grotesk",
-    "desc": "Space Grotesk: geometric with personality.",
+    "id": "wh_warm_gradient",
+    "label": "Warm Gradient + Illustration",
+    "desc": "Sunset gradient, friendly illustration.",
     "tags": [
-     "technical",
-     "modern",
-     "bold",
-     "geometric"
+     "warm",
+     "friendly",
+     "playful",
+     "tropical"
     ],
     "visual": {
-     "type": "type",
-     "head": "'Space Grotesk', 'Inter', system-ui, sans-serif",
-     "body": "'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif",
-     "headWeight": 700,
-     "upper": false,
-     "tracking": "0"
+     "type": "hero",
+     "bg": "linear-gradient(135deg,#ffd8b8,#ff9f6e)",
+     "fg": "#4a3426",
+     "accent": "#ffffff",
+     "font": "'Nunito', 'Inter', system-ui, sans-serif",
+     "layout": "illus",
+     "head": "Find Your Place In The Sun",
+     "sub": "Rentals and builds",
+     "cta": "Explore",
+     "key": null,
+     "filter": null
     }
    },
    "optionB": {
-    "id": "ty_playfair_inter",
-    "label": "Editorial Serif + Sans",
-    "desc": "Playfair headlines with Inter body.",
+    "id": "wh_center_min",
+    "label": "Centered Minimal",
+    "desc": "One line, one button, lots of white.",
     "tags": [
-     "editorial",
-     "classic",
-     "luxe",
-     "contrast"
+     "minimal",
+     "light",
+     "calm",
+     "modern"
     ],
     "visual": {
-     "type": "type",
-     "head": "'Playfair Display', Georgia, serif",
-     "body": "'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif",
-     "headWeight": 700,
-     "upper": false,
-     "tracking": "0"
+     "type": "hero",
+     "bg": "#ffffff",
+     "fg": "#1b1b1b",
+     "accent": "#1b1b1b",
+     "font": "'Outfit', 'Inter', system-ui, sans-serif",
+     "layout": "center",
+     "head": "Thoughtful Homes In Thailand",
+     "sub": "",
+     "cta": "Start A Project",
+     "key": null,
+     "filter": null
     }
    },
    "repeat": false
   },
   {
    "id": "2026-10-11-49",
-   "category": "Photography Style",
+   "category": "Typography",
    "optionA": {
-    "id": "ph_site_raw",
-    "label": "Gritty Job-Site Raw",
-    "desc": "Harsh, desaturated, real work in progress.",
+    "id": "ty_spacemono",
+    "label": "Space Mono Retro-Tech",
+    "desc": "Quirky monospace with a 70s-computer feel.",
     "tags": [
-     "industrial",
+     "technical",
+     "retro",
      "raw",
-     "construction",
-     "direct"
+     "playful"
     ],
     "visual": {
-     "type": "image",
-     "key": "base_site",
-     "filter": "saturate(.55) contrast(1.3) brightness(.95)",
-     "colors": [],
-     "materials": []
+     "type": "type",
+     "head": "'Space Mono', ui-monospace, Menlo, monospace",
+     "body": "'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif",
+     "headWeight": 700,
+     "upper": false,
+     "tracking": "0"
     }
    },
    "optionB": {
-    "id": "ph_faded",
-    "label": "Faded Film",
-    "desc": "Lifted blacks, low contrast, nostalgic.",
+    "id": "ty_pridi",
+    "label": "Pridi Thai Serif",
+    "desc": "Soft Thai-friendly serif for storytelling.",
     "tags": [
-     "soft",
-     "retro",
-     "calm",
-     "editorial"
+     "thai",
+     "warm",
+     "editorial",
+     "calm"
     ],
     "visual": {
-     "type": "image",
-     "key": "base_temple",
-     "filter": "contrast(.75) brightness(1.12) saturate(.7) sepia(.15)",
-     "colors": [],
-     "materials": []
+     "type": "type",
+     "head": "'Pridi', 'Lora', Georgia, serif",
+     "body": "'Sarabun', 'Inter', system-ui, sans-serif",
+     "headWeight": 600,
+     "upper": false,
+     "tracking": "0"
     }
    },
    "repeat": false
   },
   {
    "id": "2026-10-11-50",
-   "category": "Fashion / Personal Look",
+   "category": "Photography Style",
    "optionA": {
-    "id": "fs_outdoor",
-    "label": "Outdoor Tech",
-    "desc": "Performance fabrics, hiking shoes, caps.",
+    "id": "ph_overcast",
+    "label": "Soft Overcast",
+    "desc": "Flat gentle light, low saturation, quiet.",
     "tags": [
-     "technical",
-     "practical",
-     "natural",
-     "active"
+     "calm",
+     "soft",
+     "japanese",
+     "natural"
     ],
     "visual": {
-     "type": "mood",
-     "colors": [
-      "#355e3b",
-      "#ff6b00",
-      "#2b2d31",
-      "#a3b18a",
-      "#f8f9fa"
-     ],
-     "materials": [
-      "ripstop",
-      "merino",
-      "Gore-Tex"
-     ]
+     "type": "image",
+     "key": "int_japandi",
+     "filter": "brightness(1.1) contrast(.85) saturate(.75)",
+     "colors": [],
+     "materials": []
     }
    },
    "optionB": {
-    "id": "fs_all_black",
-    "label": "All-Black Minimal",
-    "desc": "Black tee, black trousers, one good watch.",
+    "id": "ph_highkey",
+    "label": "High-Key White",
+    "desc": "Overexposed whites, minimal shadows.",
     "tags": [
+     "light",
      "minimal",
-     "dark",
-     "modern",
-     "bold"
+     "clean",
+     "modern"
     ],
     "visual": {
-     "type": "mood",
-     "colors": [
-      "#000000",
-      "#1c1c1c",
-      "#3a3a3a",
-      "#c0c0c0",
-      "#ffffff"
-     ],
-     "materials": [
-      "merino",
-      "technical cotton",
-      "steel watch"
-     ]
+     "type": "image",
+     "key": "ext_modern",
+     "filter": "brightness(1.35) contrast(.85) saturate(.9)",
+     "colors": [],
+     "materials": []
     }
    },
    "repeat": false
