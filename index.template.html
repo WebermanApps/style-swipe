@@ -3,13 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#14161a">
+<meta name="theme-color" content="#FAF3EB">
+<meta name="color-scheme" content="light only">
 <title>Style Swipe · Max Weberman</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&family=Playfair+Display:wght@700&family=DM+Serif+Display&family=Fraunces:wght@700&family=Lora:wght@400;700&family=Libre+Baskerville:wght@400;700&family=Cormorant+Garamond:wght@600&family=Montserrat:wght@700;800&family=Work+Sans:wght@400;600&family=Oswald:wght@600&family=Bebas+Neue&family=Archivo+Black&family=IBM+Plex+Mono:wght@400;600&family=Prompt:wght@400;600&family=Sarabun:wght@400&family=Caveat:wght@700&family=Kanit:wght@400;600;700&family=Mitr:wght@500&family=Chakra+Petch:wght@600;700&family=Pridi:wght@600&family=Noto+Serif+JP:wght@600&family=Noto+Sans+JP:wght@400&family=DM+Sans:wght@400;700&family=Syne:wght@800&family=Anton&family=Nunito:wght@800&family=Outfit:wght@700&family=Space+Mono:wght@700&family=Manrope:wght@800&family=Bai+Jamjuree:wght@600&family=IBM+Plex+Sans+Thai:wght@500&family=Noto+Serif+Thai:wght@500&family=Noto+Sans+Thai:wght@500&family=Taviraj:wght@500&family=Trirong:wght@500&family=Athiti:wght@600&family=Krub:wght@600&family=K2D:wght@600&family=Niramit:wght@500&family=Charm:wght@700&family=Chonburi&family=Itim&family=Sriracha&family=Mali:wght@600&family=Charmonman&family=Khand:wght@600;700&family=Hind:wght@400;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#17140f;--panel:#221d17;--line:#3a3128;--text:#f4efe6;--muted:#b3a897;--a:#05668D;--b:#C1502E;--ok:#0B6E4F;
- --no:#A4161A;--maybe:#D4A017;--love:#E0245E;--yes:#0B6E4F;--terracotta:#C1502E;--lagoon:#05668D}
+:root{color-scheme:light;--bg:#FAF3EB;--panel:#FFFDF7;--line:#E4D6C4;--text:#1F1F1F;--muted:#6B5E50;--a:#05668D;--b:#C1502E;--ok:#0B6E4F;
+ --no:#A4161A;--maybe:#D4A017;--maybe-dk:#9A6F00;--love:#E0245E;--yes:#0B6E4F;--terracotta:#C1502E;--lagoon:#05668D}
 /* Max Weberman brand hover motion (brand-tokens.css .mw-hover) */
 :root{--mw-ease:cubic-bezier(.2,.8,.2,1);--mw-dur:180ms}
 .mw-hover{transition:transform var(--mw-dur) var(--mw-ease),box-shadow var(--mw-dur) var(--mw-ease),background-color var(--mw-dur) var(--mw-ease)}
@@ -17,7 +18,7 @@
 .mw-hover:focus-visible{transform:translateY(-1px) scale(1.03);box-shadow:0 6px 18px rgba(10,10,10,.12)}
 .mw-hover:active{transform:scale(.98)}
 .card.mw-card{transition:transform .25s ease,opacity .25s,box-shadow var(--mw-dur) var(--mw-ease)}
-@media (hover:hover){.card.mw-card:not(.dragging):hover{box-shadow:0 10px 26px rgba(0,0,0,.35)}}
+@media (hover:hover){.card.mw-card:not(.dragging):hover{box-shadow:0 10px 26px rgba(80,50,20,.14)}}
 @media (prefers-reduced-motion:reduce){.mw-hover,.mw-hover:hover,.mw-hover:focus-visible{transition:none;transform:none}}
 h1,h2,.card h2{font-family:Khand,Inter,sans-serif;letter-spacing:.01em}
 *{box-sizing:border-box}
@@ -36,8 +37,8 @@ main{flex:1;display:flex;flex-direction:column;align-items:center;padding:6px 10
 .pill{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:3px 9px}
 .card h2{margin:0;font-size:16px;font-weight:700}
 .opts{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:10px;min-height:0}
-.opt{position:relative;border:2px solid var(--line);border-radius:14px;padding:8px;display:flex;flex-direction:column;gap:6px;min-height:0;overflow:auto;cursor:pointer;transition:border-color .15s, box-shadow .15s, transform .15s;background:#171a1f}
-.opt:hover{border-color:#3d4450}
+.opt{position:relative;border:2px solid var(--line);border-radius:14px;padding:8px;display:flex;flex-direction:column;gap:6px;min-height:0;overflow:auto;cursor:pointer;transition:border-color .15s, box-shadow .15s, transform .15s;background:#FFFFFF}
+.opt:hover{border-color:#cdb9a0}
 .opt.hot-a{border-color:var(--a);box-shadow:0 0 0 3px rgba(76,201,240,.25)}
 .opt.hot-b{border-color:var(--b);box-shadow:0 0 0 3px rgba(247,37,133,.25)}
 .opt .side{font-size:10px;font-weight:800;letter-spacing:.1em}
@@ -45,15 +46,15 @@ main{flex:1;display:flex;flex-direction:column;align-items:center;padding:6px 10
 .opt h3{margin:2px 0 0;font-size:14px;line-height:1.2}
 .opt p{margin:0;color:var(--muted);font-size:12px;line-height:1.35}
 .tags{display:flex;flex-wrap:wrap;gap:4px}
-.tag{font-size:10px;padding:2px 6px;border-radius:999px;background:#262a31;color:#c9cfd8}
-.vis{border-radius:10px;overflow:hidden;flex:0 0 auto;min-height:120px;position:relative;background:#0e1013}
+.tag{font-size:10px;padding:2px 6px;border-radius:999px;background:#F1E6D6;color:#4A3F35}
+.vis{border-radius:10px;overflow:hidden;flex:0 0 auto;min-height:120px;position:relative;background:#EFE6D8}
 .stamp{position:absolute;top:40%;font-size:28px;font-weight:900;padding:4px 14px;border:4px solid;border-radius:10px;opacity:0;transform:rotate(-12deg);pointer-events:none;z-index:5;background:rgba(0,0,0,.35)}
 .stamp.l{left:16px;color:var(--a)}.stamp.r{right:16px;color:var(--b);transform:rotate(12deg)}
 .controls{display:flex;gap:6px;justify-content:center;flex-wrap:nowrap;max-width:760px;width:100%;margin:0 auto;padding:10px 10px calc(12px + env(safe-area-inset-bottom))}
 button{font:inherit;border:1px solid var(--line);background:var(--panel);color:var(--text);padding:12px 16px;border-radius:12px;font-weight:700;cursor:pointer;min-width:64px}
 button:active{transform:scale(.97)}
 button.a{border-color:var(--a);color:var(--a)}button.b{border-color:var(--b);color:var(--b)}
-button.primary{background:linear-gradient(90deg,var(--a),var(--b));border:0;color:#0b0b0b}
+button.primary{background:linear-gradient(90deg,var(--terracotta),var(--lagoon));border:0;color:#fff}
 button.small{padding:8px 10px;font-size:13px;min-width:0}
 .hint{color:var(--muted);font-size:11px;text-align:center;padding:0 10px}
 /* visual renderers */
@@ -73,9 +74,9 @@ button.small{padding:8px 10px;font-size:13px;min-width:0}
 .v-tone .msg{background:#fff;border-radius:12px 12px 12px 3px;padding:8px 10px;box-shadow:0 1px 2px rgba(0,0,0,.08)}
 .v-tone .from{font-size:10px;color:#6b7280;font-weight:600}
 .v-img img{width:100%;height:170px;object-fit:cover;display:block}
-.sw{display:flex;gap:4px;padding:6px;background:#0e1013}.sw span{flex:1;height:14px;border-radius:4px}
-.mats{display:flex;flex-wrap:wrap;gap:4px;padding:0 6px 6px;background:#0e1013}
-.v-mood{display:grid;grid-template-columns:2fr 1fr 1fr;grid-auto-rows:52px;gap:3px;padding:3px;background:#0e1013}
+.sw{display:flex;gap:4px;padding:6px;background:#EFE6D8}.sw span{flex:1;height:14px;border-radius:4px}
+.mats{display:flex;flex-wrap:wrap;gap:4px;padding:0 6px 6px;background:#EFE6D8}
+.v-mood{display:grid;grid-template-columns:2fr 1fr 1fr;grid-auto-rows:52px;gap:3px;padding:3px;background:#EFE6D8}
 .v-mood div:first-child{grid-row:span 2}
 .v-mood .m{display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#111;background:#f2f2f2;border-radius:3px;text-align:center;padding:2px}
 .v-logo{height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px}
@@ -110,9 +111,9 @@ button.small{padding:8px 10px;font-size:13px;min-width:0}
 @keyframes mo-type{from{width:0}to{width:14ch}}
 .v-sound{min-height:170px;display:flex;flex-direction:column;justify-content:center;gap:6px;padding:10px}
 .v-sound .eq{animation-play-state:paused}.v-sound:not(.playing) .eq i{animation-play-state:paused}
-.play{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;min-height:54px;font-size:18px;font-weight:800;border-radius:14px;border:0;background:#ffffff;color:#111;box-shadow:0 2px 0 rgba(0,0,0,.4);touch-action:manipulation;cursor:pointer}
-.play .pi{font-size:20px}.v-sound.playing .play{background:#7bd88f}
-.silent{color:#ffd166;font-weight:700}
+.play{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;min-height:54px;font-size:18px;font-weight:800;border-radius:14px;border:0;background:#05668D;color:#fff;box-shadow:0 2px 0 rgba(0,0,0,.4);touch-action:manipulation;cursor:pointer}
+.play .pi{font-size:20px}.v-sound.playing .play{background:#0B6E4F;color:#fff}
+.silent{color:#6E4F00;font-weight:700}
 .v-sound .eq{display:flex;align-items:flex-end;gap:3px;height:60px}.v-sound .eq i{flex:1;border-radius:2px}
 @keyframes eq{from{transform:scaleY(.25)}to{transform:scaleY(1)}}.v-sound .eq i{transform-origin:bottom}
 .v-thai{padding:12px;min-height:150px}
@@ -129,15 +130,15 @@ button.small{padding:8px 10px;font-size:13px;min-width:0}
 .opts.single .opt .vis{min-height:180px}
 .opts.single .opt h3{font-size:18px}.opts.single .opt p{font-size:13px}
 .stamp.no{right:16px;color:var(--no);border-color:var(--no);transform:rotate(12deg)}.stamp.yes{left:16px;color:var(--yes);border-color:var(--yes)}
-.stamp.maybe{left:50%;top:22%;transform:translateX(-50%) rotate(-4deg);color:var(--maybe);border-color:var(--maybe)}
+.stamp.maybe{left:50%;top:22%;transform:translateX(-50%) rotate(-4deg);color:#9A6F00;border-color:#9A6F00}
 .stamp.love{left:50%;top:22%;transform:translateX(-50%) rotate(4deg);color:var(--love);border-color:var(--love)}
 .stamp{background:rgba(255,255,255,.92)!important;transition:opacity .12s}
 .controls.v3 button{font-weight:800;text-transform:uppercase;letter-spacing:.06em;border-width:2px}
-button.no{background:#2a1513;border-color:var(--no);color:#f3b3ae}
-button.maybe{background:#2a2412;border-color:var(--maybe);color:var(--maybe)}
-button.love{background:#2a1219;border-color:var(--love);color:#fff}button.love .h{color:var(--love);font-size:18px}
+button.no{background:#FBE8E7;border-color:var(--no);color:#A4161A}
+button.maybe{background:#D4A017;border-color:#B88A0E;color:#1F1F1F}
+button.love{background:#FDE8EF;border-color:var(--love);color:#9E1240}button.love .h{color:var(--love);font-size:18px}
 button.yes{background:var(--yes);border-color:var(--yes);color:#fff}
-button.undo{border-color:var(--lagoon);color:#9fd3e6}
+button.undo{background:#fff;border-color:var(--lagoon);color:#044F6D}
 .ans{display:inline-block;font-size:10px;font-weight:800;padding:1px 6px;border-radius:999px;margin-right:3px;color:#fff}
 .ans.love{background:var(--love)}.ans.yes{background:var(--yes)}.ans.maybe{background:var(--maybe);color:#111}.ans.no{background:var(--no)}
 /* responsive: phone-first, centered card, 44px tap targets */
@@ -152,12 +153,12 @@ footer label,footer a{display:inline-flex;align-items:center;min-height:44px;pad
 .controls.v4 .row1,.controls.v4 .row2{display:flex;gap:6px;justify-content:center}
 .controls.v4 .row1 button{flex:1;min-height:48px;padding:10px 4px;min-width:0;font-weight:800;text-transform:uppercase;letter-spacing:.05em;border-width:2px}
 .controls.v4 .row2 button{flex:0 1 auto!important;min-width:130px;min-height:44px;padding:8px 18px!important;font-size:13px}
-button.this{background:#0d2a36;border-color:var(--lagoon);color:#bfe6f5}
-button.that{background:#33190f;border-color:var(--terracotta);color:#f6c8b6}
-button.both{background:#0f2a20;border-color:var(--yes);color:#9fe0c4}
-button.neither{background:#2a1513;border-color:var(--no);color:#f3b3ae}
+button.this{background:#E2F0F5;border-color:var(--lagoon);color:#044F6D}
+button.that{background:#FBEAE3;border-color:var(--terracotta);color:#8E3518}
+button.both{background:#E2F2EB;border-color:var(--yes);color:#0B6E4F}
+button.neither{background:#FBE8E7;border-color:var(--no);color:#A4161A}
 button.love.armed{background:var(--love);color:#fff}button.love.armed .h{color:#fff}
-.opt.A .side{color:#7cc6e3}.opt.B .side{color:#ee9a7c}
+.opt.A .side{color:#044F6D}.opt.B .side{color:#8E3518}
 .opt.hot-a{border-color:var(--lagoon);box-shadow:0 0 0 3px rgba(5,102,141,.35)}
 .opt.hot-b{border-color:var(--terracotta);box-shadow:0 0 0 3px rgba(193,80,46,.35)}
 .card.love-armed .opt{border-color:var(--love);box-shadow:0 0 0 3px rgba(224,36,94,.25)}
@@ -196,10 +197,10 @@ body.pairs .stage{max-width:760px;max-height:620px}
 .bars .r{display:grid;grid-template-columns:110px 1fr 34px;gap:8px;align-items:center;font-size:13px;margin:3px 0}
 .bars .t{height:10px;border-radius:5px;background:var(--line);position:relative;overflow:hidden}
 .bars .t i{position:absolute;top:0;bottom:0;border-radius:5px}
-.catlist{font-size:13px;color:#cfd5de}.catlist div{margin:4px 0}.catlist b{color:var(--text)}
-textarea{width:100%;height:220px;background:#0e1013;color:#cde;border:1px solid var(--line);border-radius:10px;font:12px/1.4 'IBM Plex Mono',monospace;padding:10px}
+.catlist{font-size:13px;color:#3A332C}.catlist div{margin:4px 0}.catlist b{color:var(--text)}
+textarea{width:100%;height:220px;background:#fff;color:#1F1F1F;border:1px solid var(--line);border-radius:10px;font:12px/1.4 'IBM Plex Mono',monospace;padding:10px}
 .btnrow{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
-.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:#000;color:#fff;padding:8px 14px;border-radius:10px;font-size:13px;opacity:0;transition:opacity .2s;pointer-events:none;z-index:99}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:#05668D;color:#fff;padding:8px 14px;border-radius:10px;font-size:13px;opacity:0;transition:opacity .2s;pointer-events:none;z-index:99}
 footer{color:var(--muted);font-size:11px;text-align:center;padding:4px 10px 10px}
 footer a{color:var(--muted)}
 details{font-size:11px;color:var(--muted)}
@@ -359,10 +360,10 @@ function rPost(v){const f=`font-family:${v.font};`,im=v.key?`<img alt="" src="${
  }
  return `<div class="v-post" style="background:${v.bg};color:${v.fg}">${b}</div>`}
 function rPace(v){const tot=v.cuts.reduce((a,b)=>a+b,0);
- return `<div class="v-pace"><div style="font-size:9px;color:#9aa3b2;display:flex;justify-content:space-between"><span>TIMELINE · 30s</span><span>${v.cuts.length} shot${v.cuts.length>1?'s':''}</span></div>
+ return `<div class="v-pace"><div style="font-size:9px;color:#6B5E50;display:flex;justify-content:space-between"><span>TIMELINE · 30s</span><span>${v.cuts.length} shot${v.cuts.length>1?'s':''}</span></div>
  <div style="display:flex;gap:2px;height:34px">${v.cuts.map((c,i)=>`<div style="flex:${c};background:${v.colors[i%v.colors.length]};border-radius:3px"></div>`).join('')}</div>
  <div style="display:flex;gap:2px;height:10px;opacity:.6">${v.cuts.map((c,i)=>`<div style="flex:${c};background:repeating-linear-gradient(90deg,#7bd88f 0 1px,transparent 1px ${3+((i*7)%5)}px);border-radius:2px"></div>`).join('')}</div>
- <div style="font-size:10px;color:#cfd5de">avg shot ≈ ${(30/v.cuts.length).toFixed(1)}s</div>
+ <div style="font-size:10px;color:#4A3F35">avg shot ≈ ${(30/v.cuts.length).toFixed(1)}s</div>
  <div class="tags">${v.notes.map(n=>`<span class="tag">${esc(n)}</span>`).join('')}</div></div>`}
 function rMerch(v){const f=`font-family:${v.font};`,ink=v.ink,base=v.base,mk=String(v.mark).split('|');
  const label=`<div style="${f}color:${ink};font-weight:700;text-align:center;line-height:1.05;font-size:${mk[0].length>6?11:20}px">${esc(mk[0])}${mk[1]?`<br><span style="font-size:11px;color:${v.accent}">${esc(mk[1])}</span>`:''}</div>`;
@@ -386,11 +387,11 @@ function rMotion(v){const k=v.kind;let el='';const a=`animation:mo-${k} ${v.dur}
  if(k==='type') el=`<div style="font:600 16px 'IBM Plex Mono',monospace;color:${v.color};white-space:nowrap;overflow:hidden;width:14ch;border-right:2px solid ${v.color};animation:mo-type ${v.dur}s ${v.easing} infinite">Hello, builder.</div>`;
  else el=`<div style="display:flex;gap:8px;align-items:center">${[0,1,2].map(i=>`<div style="width:28px;height:28px;border-radius:${k==='bounce'?'50%':'6px'};background:${v.color};${a};animation-delay:${i*0.15}s"></div>`).join('')}</div>`;
  return `<div class="v-motion" style="background:${v.bg}">${el}<div class="mlab" style="color:${lum(v.bg)>.5?'#555':'#aaa'}">${esc(v.easing)} · ${v.dur}s</div></div>`}
-function rSound(v,o){const d=(60/v.bpm).toFixed(2),id=o?o.id:'';return `<div class="v-sound" style="background:${v.bg}">
+function rSound(v,o){const sbg=(!v.bg||v.bg==='#14161a')?'#F4ECE0':v.bg;const d=(60/v.bpm).toFixed(2),id=o?o.id:'';return `<div class="v-sound" style="background:${sbg}">
  <button type="button" class="play" data-audio="${esc(id)}" aria-label="Play sound"><span class="pi">▶</span><span class="pl">Play</span></button>
  <audio preload="auto" playsinline data-id="${esc(id)}" src="${audioSrc(id)}"></audio>
  <div class="eq">${[...Array(14)].map((_,i)=>`<i style="background:${v.color};animation:eq ${d}s ease-in-out ${(i*0.07).toFixed(2)}s infinite alternate;height:${20+((i*37)%60)}%"></i>`).join('')}</div>
- <div style="color:#cfd5de;font-size:10px">🔊 ${v.bpm} BPM · <span class="silent">Turn off silent mode</span></div><div class="tags">${v.words.map(w=>`<span class="tag">${esc(w)}</span>`).join('')}</div></div>`}
+ <div style="color:${lum(sbg)>.5?'#4A3F35':'#ddd'};font-size:10px">🔊 ${v.bpm} BPM · <span class="silent">Turn off silent mode</span></div><div class="tags">${v.words.map(w=>`<span class="tag">${esc(w)}</span>`).join('')}</div></div>`}
 function rThaiType(v){return `<div class="v-thai" style="background:${v.bg};color:${v.fg};font-family:${v.font}"><div style="font-size:24px;font-weight:${v.weight};line-height:1.35;word-break:break-word">${esc(v.sample)}</div><div style="font-size:15px;line-height:1.5;opacity:.85">สวัสดีครับ ยินดีต้อนรับ<br>กขฃค ๑๒๓ ABC 2569</div></div>`}
 function rTexture(v){return `<div class="v-texture" style="background:${v.css}"><span>${esc(v.note)}</span></div>`}
 function rLight(v){return `<div class="v-light" style="background:${v.css}"><div class="room"></div><span>${esc(v.kelvin)}</span></div>`}
@@ -432,7 +433,7 @@ function rControls(v){const W=v.words,I=v.icons,C=v.colors,n=W.length,st=v.style
   case'segmented':bar=`<div class="bar" style="gap:0;background:${st==='slide'?'#dcdcdc':'transparent'};border-radius:10px;padding:3px;position:relative">${W.map((w,i)=>`<div class="b" style="${d(i)}${st==='slide'?`color:#222;background:${i===n-1?'#fff':'transparent'};box-shadow:${i===n-1?'0 1px 3px rgba(0,0,0,.2)':'none'};`:fill(i)}${f}flex:1;padding:8px 1px;font-size:min(12px,5.2cqw);border-radius:${i===0?'8px 0 0 8px':i===n-1?'0 8px 8px 0':'0'}">${w?esc(w):esc(I[i])}</div>`).join('')}</div>`;break;
   case'slider':bar=`<div style="position:relative;height:44px;margin:0 6px"><div style="position:absolute;left:0;right:0;top:18px;height:8px;border-radius:4px;background:linear-gradient(90deg,${C.join(',')})"></div><div class="knob" style="position:absolute;top:8px;width:28px;height:28px;border-radius:50%;background:#fff;border:3px solid ${C[n-1]};box-shadow:0 2px 5px rgba(0,0,0,.3)"></div><div style="position:absolute;left:0;right:0;bottom:-4px;display:flex;justify-content:space-between;${f}font-size:9px;color:${dark?'#ddd':'#333'}">${W.map(w=>`<span>${esc(w)}</span>`).join('')}</div></div>`;break;
   case'dial':bar='';scr=`<div class="scr" style="display:flex;align-items:flex-end;justify-content:center;background:none"><div style="position:relative;width:150px;height:75px;border-radius:150px 150px 0 0;background:conic-gradient(from -90deg at 50% 100%,${C.map((c,i)=>`${c} ${i*45}deg ${(i+1)*45}deg`).join(',')},transparent 180deg)"><div style="position:absolute;left:18px;right:18px;bottom:0;top:18px;border-radius:120px 120px 0 0;background:${v.bg}"></div><div class="needle" style="position:absolute;left:calc(50% - 2px);bottom:0;width:4px;height:62px;background:${dark?'#fff':'#111'};border-radius:2px"></div>${W.map((w,i)=>`<span style="position:absolute;${f}font-size:9px;font-weight:700;color:${dark?'#fff':'#111'};left:${[0,22,62,92][i]}%;top:${[70,10,10,70][i]}%">${esc(w)}</span>`).join('')}</div></div>`;break;
-  case'rail':scr=`<div class="scr" style="background:linear-gradient(160deg,#6d6253,#2d2a26)"><div style="position:absolute;right:6px;top:6px;bottom:6px;display:flex;flex-direction:column;justify-content:space-around;align-items:center">${W.map((w,i)=>`<div style="display:flex;flex-direction:column;align-items:center"><div class="b" data-e="${esc(I[i])}" style="${d(i)}${fill(i)}width:28px;height:28px;border-radius:50%;font-size:13px">${esc(I[i])}</div><span style="font-size:8px;color:#fff">${w?esc(w):['12','4','98','31'][i]}</span></div>`).join('')}</div></div>`;break;
+  case'rail':scr=`<div class="scr" style="background:linear-gradient(160deg,#cdbda5,#8f7c66)"><div style="position:absolute;right:6px;top:6px;bottom:6px;display:flex;flex-direction:column;justify-content:space-around;align-items:center">${W.map((w,i)=>`<div style="display:flex;flex-direction:column;align-items:center"><div class="b" data-e="${esc(I[i])}" style="${d(i)}${fill(i)}width:28px;height:28px;border-radius:50%;font-size:13px">${esc(I[i])}</div><span style="font-size:8px;color:#fff">${w?esc(w):['12','4','98','31'][i]}</span></div>`).join('')}</div></div>`;break;
   case'gesture':scr=`<div class="scr"><div class="ph" style="right:10px"></div><div class="hand" style="position:absolute;left:50%;bottom:16px;margin-left:-11px;font-size:22px">👆</div></div>`;bar=`<div style="display:flex;justify-content:space-between;${f}font-size:13px;font-weight:700;opacity:.75;color:${dark?'#fff':'#333'}"><span style="color:${C[0]}">← ${esc(W[0])}</span>${n===3?`<span style="color:${C[1]}">${esc(W[1])}</span>`:''}<span style="color:${C[n-1]}">${esc(W[n-1])} →</span></div>`;break;
   case'thumb':{const L=0,Rr=n-1,mid=W.slice(1,n-1).map((w,j)=>`<div class="b" style="${d(j+1)}${fill(j+1)}${f}border-radius:999px;padding:4px 7px;font-size:10px">${esc(w||I[j+1])}</div>`).join('');
    bar=`<div class="bar" style="align-items:center"><div class="b" style="${d(L)}${fill(L)}${f}flex:1;height:52px;border-radius:16px;font-size:16px">${esc(W[L]||I[L])}</div><div style="display:flex;flex-direction:column;gap:4px">${mid}</div><div class="b" style="${d(Rr)}${fill(Rr)}${f}flex:1;height:52px;border-radius:16px;font-size:16px">${esc(W[Rr]||I[Rr])}</div></div>`;break}
@@ -594,10 +595,10 @@ function showEnd(){
  const bar=(x,col)=>`<div class="r"><span>${esc(x.tag)}</span><div class="t"><i style="left:0;width:${100*Math.abs(x.score)/max}%;background:${col}"></i></div><span>${x.score>0?'+':''}${x.score}</span></div>`;
  let stats,cats;
  if(single){const t=r.totals;
-  stats=`<div class="stat"><b style="color:var(--love)">❤ ${t.love}</b><span>Love</span></div><div class="stat"><b style="color:#4fc79a">${t.yes}</b><span>Yes</span></div><div class="stat"><b style="color:var(--maybe)">${t.maybe}</b><span>Maybe</span></div><div class="stat"><b style="color:#e8746f">${t.no}</b><span>No</span></div>`;
+  stats=`<div class="stat"><b style="color:var(--love)">❤ ${t.love}</b><span>Love</span></div><div class="stat"><b style="color:#0B6E4F">${t.yes}</b><span>Yes</span></div><div class="stat"><b style="color:#9A6F00">${t.maybe}</b><span>Maybe</span></div><div class="stat"><b style="color:#A4161A">${t.no}</b><span>No</span></div>`;
   cats=`<h3>Your Answers By Category</h3><div class="catlist">${Object.entries(r.answers_by_category).map(([c,a])=>`<div><b>${esc(c)}:</b> ${['love','yes','maybe','no'].flatMap(k=>a[k].map(l=>`<span class="ans ${k}">${k==='love'?'❤':k.toUpperCase()}</span>${esc(l)}`)).join(' · ')}</div>`).join('')}</div>`;
  }else{
-  const t=r.totals;stats=`<div class="stat"><b>${t.A+t.B}</b><span>This / That</span></div><div class="stat"><b style="color:var(--love)">❤ ${t.loveA+t.loveB}</b><span>Loved</span></div><div class="stat"><b style="color:#4fc79a">${t.both}</b><span>Both</span></div><div class="stat"><b style="color:#e8746f">${t.neither}</b><span>Neither</span></div>`;
+  const t=r.totals;stats=`<div class="stat"><b>${t.A+t.B}</b><span>This / That</span></div><div class="stat"><b style="color:var(--love)">❤ ${t.loveA+t.loveB}</b><span>Loved</span></div><div class="stat"><b style="color:#0B6E4F">${t.both}</b><span>Both</span></div><div class="stat"><b style="color:#A4161A">${t.neither}</b><span>Neither</span></div>`;
   cats=`<h3>Your Picks By Category</h3><div class="catlist">${Object.entries(r.chosen_by_category).map(([c,l])=>`<div><b>${esc(c)}:</b> ${l.map(esc).join(' · ')}</div>`).join('')}</div>`;
  }
  $('#main').innerHTML=`<div class="end"><h2>Your Style Summary</h2>
@@ -623,7 +624,7 @@ document.addEventListener('keydown',e=>{if(e.target.tagName==='TEXTAREA'||!deck)
  if(single){if(k==='ArrowLeft')answer('no');else if(k==='ArrowRight')answer('yes');else if(k==='m'||k==='ArrowDown')answer('maybe');else if(k==='l'||k==='ArrowUp')answer('love');return}
  if(k==='ArrowLeft')choose('A');else if(k==='ArrowRight')choose('B');else if(k==='ArrowDown'||k==='n')choose('neither');else if(k==='b'||k==='ArrowUp')choose('both');else if(k==='l')setLove(!loveArmed);else if(k==='Escape')setLove(false)});
 $('#deckFile').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{const d=JSON.parse(await f.text());if(!d.pairs&&!d.cards)throw 0;setDeck(d);toast(`Loaded deck ${d.date}`)}catch(_){toast('Not a valid deck file')}};
-$('#creditsLink').onclick=e=>{e.preventDefault();const c=(deck&&deck.image_credits)||{};$('#main').innerHTML=`<div class="end"><h2>Image Credits</h2><div class="catlist">${Object.values(c).map(x=>`<div><a style="color:#9cf" href="${esc(x.source)}" target="_blank" rel="noopener">${esc(x.title)}</a> · ${esc(x.artist||'Unknown')} · ${esc(x.license)}</div>`).join('')||'None'}</div><div class="btnrow"><button class="mw-hover" id="cBack">Back</button></div></div>`;showControls(false);$('#cBack').onclick=()=>render()};
+$('#creditsLink').onclick=e=>{e.preventDefault();const c=(deck&&deck.image_credits)||{};$('#main').innerHTML=`<div class="end"><h2>Image Credits</h2><div class="catlist">${Object.values(c).map(x=>`<div><a style="color:#05668D" href="${esc(x.source)}" target="_blank" rel="noopener">${esc(x.title)}</a> · ${esc(x.artist||'Unknown')} · ${esc(x.license)}</div>`).join('')||'None'}</div><div class="btnrow"><button class="mw-hover" id="cBack">Back</button></div></div>`;showControls(false);$('#cBack').onclick=()=>render()};
 (async()=>{
  const want=new URLSearchParams(location.search).get('date');
  if(want&&(!EMBEDDED_DECK||EMBEDDED_DECK.date!==want)){try{const r=await fetch(`decks/${want}.json`,{cache:'no-cache'});if(r.ok)return setDeck(await r.json())}catch(_){}toast(`Deck ${want} not found; showing embedded deck`)}
