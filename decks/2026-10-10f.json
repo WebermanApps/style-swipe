@@ -10,31 +10,32 @@
  ],
  "generated_at": "2026-10-10T19:50:46+07:00",
  "allocation": {
-  "SiteAgent Brand Marks": 2,
-  "SiteAgent Product Voice": 2,
-  "Shorts Cover Styles": 1,
-  "Tenant & Partner Messages": 2,
-  "Dream Home Finishes": 1,
-  "Japan Cottage Makeover": 1,
-  "Akiya Garden & Exterior": 2,
-  "Shorts Pacing & Captions": 2,
-  "Travel & Hotel Vibes": 3,
-  "Café & Coffee Shop Design": 2,
-  "Signage & Wayfinding": 2,
-  "Uniforms & Workwear": 2,
-  "Book & Magazine Covers": 3,
-  "Textures & Materials": 2,
-  "Lighting Moods": 2,
-  "Outdoor Spaces & Gardens": 2,
-  "Thai Script Typefaces": 2,
-  "Motion & Animation Styles": 1,
   "Emoji & Sticker Styles": 2,
-  "Event & Party Styling": 3,
-  "Watches & EDC": 3,
-  "Kids' Room & Nursery": 2,
   "Podcast & Audio Branding": 2,
+  "SiteAgent Brand Marks": 2,
+  "Motion & Animation Styles": 1,
+  "Café & Coffee Shop Design": 2,
+  "Event & Party Styling": 2,
+  "Travel & Hotel Vibes": 3,
+  "Signage & Wayfinding": 2,
+  "Textures & Materials": 2,
+  "Thai Script Typefaces": 2,
   "This Or That: Words": 2,
-  "Quick-Fire Picks": 2
+  "Book & Magazine Covers": 2,
+  "Kids' Room & Nursery": 2,
+  "Watches & EDC": 3,
+  "Tenant & Partner Messages": 2,
+  "Shorts Pacing & Captions": 2,
+  "Quick-Fire Picks": 2,
+  "Akiya Garden & Exterior": 2,
+  "Uniforms & Workwear": 2,
+  "Japan Cottage Makeover": 1,
+  "SiteAgent Product Voice": 1,
+  "Lighting Moods": 1,
+  "Dream Home Finishes": 1,
+  "Outdoor Spaces & Gardens": 2,
+  "Swipe Controls": 4,
+  "Shorts Cover Styles": 1
  },
  "focus": {
   "categories": [
@@ -51,7 +52,7 @@
    "SiteAgent Product Voice",
    "Tenant & Partner Messages"
   ],
-  "note": "Variety pair deck (This or That): ~30% work focus, ~70% other categories, unseen options only."
+  "note": "Variety pair deck (This or That): ~30% work focus, ~70% other categories, unseen options only. Includes 4 Swipe Controls pairs (new category)."
  },
  "pair_mix": {
   "refine": 33,
@@ -2065,51 +2066,77 @@
   },
   {
    "id": "2026-10-10f-41",
-   "category": "Book & Magazine Covers",
+   "category": "Swipe Controls",
    "optionA": {
-    "id": "bk_magazine_editorial",
-    "label": "Glossy Magazine",
-    "desc": "Masthead, cover lines, portrait photo.",
+    "id": "sc_round_brand",
+    "label": "Round Color Icons",
+    "desc": "Four round icon buttons in brand colors, labels under.",
     "tags": [
-     "editorial",
-     "bold",
-     "vibrant",
-     "cinematic"
+     "clear",
+     "warm",
+     "modern",
+     "friendly"
     ],
     "visual": {
-     "type": "cover",
-     "bg": "#000",
-     "fg": "#ffffff",
-     "accent": "#ff006e",
-     "font": "'Playfair Display', Georgia, serif",
-     "layout": "mag",
-     "title": "BUILDER",
-     "sub": "The tropical issue",
-     "key": "base_temple",
-     "filter": "saturate(1.4)"
+     "type": "controls",
+     "fmt": "round",
+     "words": [
+      "No",
+      "Maybe",
+      "Love",
+      "Yes"
+     ],
+     "icons": [
+      "✕",
+      "?",
+      "❤",
+      "✓"
+     ],
+     "colors": [
+      "#A4161A",
+      "#D4A017",
+      "#E0245E",
+      "#0B6E4F"
+     ],
+     "style": "filled",
+     "bg": "#f4f1ea",
+     "font": "Hind"
     }
    },
    "optionB": {
-    "id": "bk_blueprint",
-    "label": "Blueprint Cover",
-    "desc": "Floor plan line art on blue.",
+    "id": "sc_pill_mono",
+    "label": "Monochrome Pills",
+    "desc": "Black outline pills, uppercase, wide tracking (site style).",
     "tags": [
-     "technical",
-     "construction",
-     "clear",
-     "industrial"
+     "minimal",
+     "monochrome",
+     "formal",
+     "clear"
     ],
     "visual": {
-     "type": "cover",
-     "bg": "#0b3d91",
-     "fg": "#ffffff",
-     "accent": "#ffd166",
-     "font": "'Space Grotesk', 'Inter', system-ui, sans-serif",
-     "layout": "plan",
-     "title": "THE TEAK HOUSE",
-     "sub": "Plans + process",
-     "key": null,
-     "filter": null
+     "type": "controls",
+     "fmt": "pill",
+     "words": [
+      "No",
+      "Maybe",
+      "Love",
+      "Yes"
+     ],
+     "icons": [
+      "✕",
+      "?",
+      "❤",
+      "✓"
+     ],
+     "colors": [
+      "#1b1b1b",
+      "#1b1b1b",
+      "#1b1b1b",
+      "#1b1b1b"
+     ],
+     "style": "outline",
+     "bg": "#ffffff",
+     "font": "Khand"
     }
    },
    "repeat": false,
@@ -2225,41 +2252,81 @@
   },
   {
    "id": "2026-10-10f-44",
-   "category": "Lighting Moods",
+   "category": "Swipe Controls",
    "optionA": {
-    "id": "lt_golden_hour",
-    "label": "Golden-Hour Glow",
-    "desc": "Low warm sun through the windows.",
+    "id": "sc_thumb_brand",
+    "label": "Big Thumb Pads",
+    "desc": "Two big pads at thumb height (No / Yes), small Maybe and Love between.",
     "tags": [
-     "warm",
-     "natural",
-     "light",
-     "calm"
+     "practical",
+     "bold",
+     "clear",
+     "warm"
     ],
     "visual": {
-     "type": "light",
-     "css": "linear-gradient(160deg,#ffcf8a,#f6a65d 45%,#6b4226)",
-     "kelvin": "2700K sunset"
+     "type": "controls",
+     "fmt": "thumb",
+     "words": [
+      "No",
+      "Maybe",
+      "Love",
+      "Yes"
+     ],
+     "icons": [
+      "✕",
+      "?",
+      "❤",
+      "✓"
+     ],
+     "colors": [
+      "#A4161A",
+      "#D4A017",
+      "#E0245E",
+      "#0B6E4F"
+     ],
+     "style": "haptic",
+     "bg": "#f4f1ea",
+     "font": "Hind"
     }
    },
    "optionB": {
-    "id": "lt_moody_spot",
-    "label": "Moody Spotlights",
-    "desc": "Dark room, a few dramatic pools of light.",
+    "id": "sc_gesture_arrows",
+    "label": "Gesture Hints Only",
+    "desc": "No buttons: faint ← No · Yes → arrows and a moving thumb.",
     "tags": [
-     "dark",
-     "cinematic",
-     "luxe",
-     "bold"
+     "minimal",
+     "modern",
+     "calm",
+     "light"
     ],
     "visual": {
-     "type": "light",
-     "css": "radial-gradient(circle at 30% 40%,#f5d48a 0 10%,transparent 25%),radial-gradient(circle at 75% 55%,#f5d48a 0 8%,transparent 22%),#0b0b0b",
-     "kelvin": "2700K accent"
+     "type": "controls",
+     "fmt": "gesture",
+     "words": [
+      "No",
+      "Maybe",
+      "Love",
+      "Yes"
+     ],
+     "icons": [
+      "✕",
+      "?",
+      "❤",
+      "✓"
+     ],
+     "colors": [
+      "#A4161A",
+      "#D4A017",
+      "#E0245E",
+      "#0B6E4F"
+     ],
+     "style": "slide",
+     "bg": "#f4f1ea",
+     "font": "Hind"
     }
    },
    "repeat": false,
-   "purpose": "check"
+   "purpose": "refine"
   },
   {
    "id": "2026-10-10f-45",
@@ -2362,61 +2429,81 @@
   },
   {
    "id": "2026-10-10f-47",
-   "category": "Event & Party Styling",
+   "category": "Swipe Controls",
    "optionA": {
-    "id": "ev_garden_lanterns",
-    "label": "Garden Lantern Dinner",
-    "desc": "Long table under lanterns and string lights.",
+    "id": "sc_seg_thai",
+    "label": "Thai Segmented Bar",
+    "desc": "Segmented bar with Thai words.",
     "tags": [
-     "warm",
-     "natural",
-     "friendly",
-     "light"
+     "thai",
+     "bilingual",
+     "clear",
+     "modern"
     ],
     "visual": {
-     "type": "mood",
-     "colors": [
-      "#f6b93b",
-      "#5a7d4f",
-      "#f4ecd8",
-      "#8b5a2b",
-      "#ffffff"
+     "type": "controls",
+     "fmt": "segmented",
+     "words": [
+      "ไม่",
+      "อาจจะ",
+      "รัก",
+      "ใช่"
      ],
-     "materials": [
-      "string lights",
-      "long table",
-      "lanterns"
-     ]
+     "icons": [
+      "✕",
+      "?",
+      "❤",
+      "✓"
+     ],
+     "colors": [
+      "#A4161A",
+      "#D4A017",
+      "#E0245E",
+      "#0B6E4F"
+     ],
+     "style": "filled",
+     "bg": "#f4f1ea",
+     "font": "Kanit"
     }
    },
    "optionB": {
-    "id": "ev_site_bbq",
-    "label": "Topping-Out BBQ",
-    "desc": "Celebrate the roof going up: grill, crew, cold drinks.",
+    "id": "sc_rail_emoji",
+    "label": "Emoji Side Rail",
+    "desc": "Emoji rail with counts, like a Shorts screen.",
     "tags": [
-     "construction",
-     "friendly",
-     "warm",
-     "rustic"
+     "playful",
+     "youtube",
+     "creator",
+     "casual"
     ],
     "visual": {
-     "type": "mood",
-     "colors": [
-      "#2b2d31",
-      "#ff6b00",
-      "#c8a97e",
-      "#f2efe8",
-      "#83b735"
+     "type": "controls",
+     "fmt": "rail",
+     "words": [
+      "",
+      "",
+      "",
+      ""
      ],
-     "materials": [
-      "grill",
-      "plywood tables",
-      "crew photo"
-     ]
+     "icons": [
+      "👎",
+      "🤔",
+      "😍",
+      "👍"
+     ],
+     "colors": [
+      "#f4a6a6",
+      "#f6d58e",
+      "#f7a1c4",
+      "#9fd8b5"
+     ],
+     "style": "haptic",
+     "bg": "#1e1e1e",
+     "font": "Hind"
     }
    },
    "repeat": false,
-   "purpose": "refine"
+   "purpose": "check"
   },
   {
    "id": "2026-10-10f-48",
@@ -2522,43 +2609,74 @@
   },
   {
    "id": "2026-10-10f-50",
-   "category": "SiteAgent Product Voice",
+   "category": "Swipe Controls",
    "optionA": {
-    "id": "sa2_v_lender_ready",
-    "label": "Lender-Ready Progress",
-    "desc": "Structured draw-request style progress note.",
+    "id": "sc_stamp_inspect",
+    "label": "Inspection Stamps",
+    "desc": "PASS / SAVE / FIRE / KEEP as site-inspection stamps.",
     "tags": [
-     "trust",
-     "clear",
-     "modern",
-     "construction"
+     "construction",
+     "industrial",
+     "rustic",
+     "bold"
     ],
     "visual": {
-     "type": "tone",
-     "lines": [
-      "Milestone 3 (structure) complete. Photos and inspection attached.",
-      "Requesting draw #3 per schedule."
+     "type": "controls",
+     "fmt": "stamp",
+     "words": [
+      "Pass",
+      "Save",
+      "Fire",
+      "Keep"
      ],
-     "from": "SiteAgent → Lender"
+     "icons": [
+      "✕",
+      "⌑",
+      "🔥",
+      "✓"
+     ],
+     "colors": [
+      "#8a5a44",
+      "#b08d57",
+      "#b5523b",
+      "#5a7d4f"
+     ],
+     "style": "outline",
+     "bg": "#e8e0cc",
+     "font": "Khand"
     }
    },
    "optionB": {
-    "id": "sa2_v_quick_fix",
-    "label": "Problem + Fix",
-    "desc": "Every issue arrives with a suggested fix.",
+    "id": "sc_tbt_round",
+    "label": "This / Both / That Circles",
+    "desc": "Three round buttons for pair cards.",
     "tags": [
-     "direct",
-     "practical",
+     "clear",
      "friendly",
-     "clear"
+     "warm",
+     "modern"
     ],
     "visual": {
-     "type": "tone",
-     "lines": [
-      "Drain on the north side is pooling.",
-      "Suggested fix: add 2% fall and a gravel trench. Approve?"
+     "type": "controls",
+     "fmt": "round",
+     "words": [
+      "This",
+      "Both",
+      "That"
      ],
-     "from": "SiteAgent → Foreman"
+     "icons": [
+      "◀",
+      "⇄",
+      "▶"
+     ],
+     "colors": [
+      "#C1502E",
+      "#05668D",
+      "#E0245E"
+     ],
+     "style": "filled",
+     "bg": "#f4f1ea",
+     "font": "Hind"
     }
    },
    "repeat": false,

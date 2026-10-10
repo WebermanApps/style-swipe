@@ -1176,6 +1176,89 @@ for _cat, _opts in POOL_2026_10_10D.items():
     POOL.setdefault(_cat, []).extend(_opts)
 CATEGORY_WEIGHT.update({c: 1.0 for c in POOL_2026_10_10D})
 
+# ---- Swipe Controls (Oct 10, 2026): Max brands the swipe bar itself --------------------------------
+SC_WORDS = {
+    "nmly":  (["No", "Maybe", "Love", "Yes"], ["✕", "?", "❤", "✓"]),
+    "nhoy":  (["Nope", "Hmm", "Obsessed", "Yep"], ["✕", "〜", "★", "✓"]),
+    "psfk":  (["Pass", "Save", "Fire", "Keep"], ["✕", "⌑", "🔥", "✓"]),
+    "thai":  (["ไม่", "อาจจะ", "รัก", "ใช่"], ["✕", "?", "❤", "✓"]),
+    "smwy":  (["Skip", "Meh", "Wow", "Yes"], ["»", "–", "!", "✓"]),
+    "tbt":   (["This", "Both", "That"], ["◀", "⇄", "▶"]),
+    "emoji": (["", "", "", ""], ["👎", "🤔", "😍", "👍"]),
+}
+SC_PAL = {
+    "brand":  ["#A4161A", "#D4A017", "#E0245E", "#0B6E4F"],
+    "warm":   ["#C1502E", "#D4A017", "#E0245E", "#05668D"],
+    "mono":   ["#1b1b1b", "#1b1b1b", "#1b1b1b", "#1b1b1b"],
+    "monol":  ["#f4f1ea", "#f4f1ea", "#f4f1ea", "#f4f1ea"],
+    "pastel": ["#f4a6a6", "#f6d58e", "#f7a1c4", "#9fd8b5"],
+    "neon":   ["#ff3b5c", "#ffd23f", "#ff2e88", "#2bff88"],
+    "tropic": ["#ef6f3c", "#f2c14e", "#e84a7f", "#2a9d8f"],
+    "earth":  ["#8a5a44", "#b08d57", "#b5523b", "#5a7d4f"],
+}
+def ctl(i, label, desc, tags, fmt, words, pal, style, bg="#f4f1ea", font="Hind"):
+    w, ic = SC_WORDS[words]
+    cols = SC_PAL[pal]
+    if len(w) == 3: cols = [cols[0], cols[3], cols[2]] if words == "tbt" else cols[:3]
+    return {"id": i, "label": label, "desc": desc, "tags": tags,
+            "visual": {"type": "controls", "fmt": fmt, "words": w, "icons": ic, "colors": cols, "style": style, "bg": bg, "font": font}}
+
+POOL_SWIPE = {"Swipe Controls": [
+    ctl("sc_round_brand", "Round Color Icons", "Four round icon buttons in brand colors, labels under.", ["clear", "warm", "modern", "friendly"], "round", "nmly", "brand", "filled"),
+    ctl("sc_round_outline", "Round Outline Icons", "Thin outlined circles, color only on the icon.", ["minimal", "light", "clear", "modern"], "round", "nmly", "brand", "outline"),
+    ctl("sc_round_mono", "Round Mono Icons", "Black circles, white icons. No color at all.", ["minimal", "monochrome", "industrial", "bold"], "round", "nmly", "mono", "filled"),
+    ctl("sc_round_emoji", "Emoji Bubbles", "Emoji-only round buttons, no words.", ["playful", "friendly", "casual", "vibrant"], "round", "emoji", "pastel", "filled"),
+    ctl("sc_round_haptic", "Haptic Press Circles", "Round buttons that squash on press like a phone tap.", ["modern", "playful", "warm", "tactile"], "round", "nhoy", "tropic", "haptic"),
+    ctl("sc_round_glow", "Neon Glow Circles", "Dark bar, glowing neon ring buttons.", ["dark", "vibrant", "bold", "tech"], "round", "smwy", "neon", "glow", "#121212"),
+    ctl("sc_round_thai", "Thai Round Icons", "Round icons with Thai labels: ไม่ / อาจจะ / รัก / ใช่.", ["thai", "bilingual", "warm", "friendly"], "round", "thai", "warm", "filled", "#f4f1ea", "Kanit"),
+    ctl("sc_pill_brand", "Filled Pills", "Four filled pill buttons with words.", ["clear", "warm", "friendly", "modern"], "pill", "nmly", "brand", "filled"),
+    ctl("sc_pill_outline", "Outline Pills", "Outlined pills, colored text, airy.", ["minimal", "light", "clear", "calm"], "pill", "nmly", "warm", "outline"),
+    ctl("sc_pill_slang", "Slang Pills", "Nope / Hmm / Obsessed / Yep in chunky pills.", ["playful", "casual", "youtube", "bold"], "pill", "nhoy", "tropic", "filled"),
+    ctl("sc_pill_pass", "Pass / Save / Fire / Keep", "Collector vocabulary on rounded pills.", ["playful", "creator", "bold", "modern"], "pill", "psfk", "warm", "filled"),
+    ctl("sc_pill_thai", "Thai Pills", "Thai-only pill buttons in Kanit.", ["thai", "bilingual", "clear", "friendly"], "pill", "thai", "tropic", "filled", "#fff8ee", "Kanit"),
+    ctl("sc_pill_mono", "Monochrome Pills", "Black outline pills, uppercase, wide tracking (site style).", ["minimal", "monochrome", "formal", "clear"], "pill", "nmly", "mono", "outline", "#ffffff", "Khand"),
+    ctl("sc_pill_earth", "Earthy Pills", "Clay, ochre and moss pills.", ["natural", "rustic", "warm", "craft"], "pill", "smwy", "earth", "filled"),
+    ctl("sc_pill_glow", "Glow Pills", "Pills that glow on press on a dark bar.", ["dark", "vibrant", "tech", "bold"], "pill", "nhoy", "neon", "glow", "#141414"),
+    ctl("sc_seg_brand", "Segmented Bar", "One bar split into four colored segments.", ["clear", "modern", "warm", "practical"], "segmented", "nmly", "brand", "filled"),
+    ctl("sc_seg_mono", "Mono Segmented Bar", "iOS-style segmented control, gray with a sliding white thumb.", ["minimal", "monochrome", "calm", "modern"], "segmented", "nmly", "mono", "slide", "#e9e9e9"),
+    ctl("sc_seg_thai", "Thai Segmented Bar", "Segmented bar with Thai words.", ["thai", "bilingual", "clear", "modern"], "segmented", "thai", "brand", "filled", "#f4f1ea", "Kanit"),
+    ctl("sc_seg_tbt", "This / Both / That Bar", "Three-way segmented bar for A vs B cards.", ["clear", "modern", "direct", "practical"], "segmented", "tbt", "warm", "slide"),
+    ctl("sc_seg_emoji", "Emoji Segments", "Emoji-only segmented strip.", ["playful", "casual", "friendly", "vibrant"], "segmented", "emoji", "pastel", "filled"),
+    ctl("sc_slider_brand", "Swipe Slider", "A single slider: drag from No to Yes, Love at the far end.", ["modern", "tactile", "clear", "warm"], "slider", "nmly", "brand", "slide"),
+    ctl("sc_slider_mono", "Mono Slider", "Thin gray track, black knob gliding across.", ["minimal", "monochrome", "calm", "light"], "slider", "smwy", "mono", "slide", "#ffffff"),
+    ctl("sc_slider_tbt", "This-That Slider", "Knob slides between This and That; middle is Both.", ["direct", "clear", "modern", "practical"], "slider", "tbt", "warm", "slide"),
+    ctl("sc_dial", "Rating Dial", "A half-circle dial: needle swings from No to Love.", ["industrial", "technical", "bold", "tactile"], "dial", "nmly", "brand", "slide", "#1d1d1d"),
+    ctl("sc_dial_thai", "Thai Gauge Dial", "Gauge dial with Thai words around the arc.", ["thai", "industrial", "playful", "bold"], "dial", "thai", "tropic", "slide", "#f4f1ea", "Kanit"),
+    ctl("sc_rail_brand", "Side Rail (Right)", "Vertical stack on the right edge, TikTok-style.", ["modern", "youtube", "creator", "vibrant"], "rail", "nmly", "brand", "filled", "#2b2b2b"),
+    ctl("sc_rail_emoji", "Emoji Side Rail", "Emoji rail with counts, like a Shorts screen.", ["playful", "youtube", "creator", "casual"], "rail", "emoji", "pastel", "haptic", "#1e1e1e"),
+    ctl("sc_rail_mono", "Mono Side Rail", "White outline icons on a photo, no fills.", ["minimal", "monochrome", "modern", "calm"], "rail", "nmly", "monol", "outline", "#3a3a3a"),
+    ctl("sc_gesture_arrows", "Gesture Hints Only", "No buttons: faint ← No · Yes → arrows and a moving thumb.", ["minimal", "modern", "calm", "light"], "gesture", "nmly", "brand", "slide"),
+    ctl("sc_gesture_thai", "Thai Gesture Hints", "Swipe hints in Thai only: ← ไม่ · ใช่ →.", ["thai", "minimal", "calm", "bilingual"], "gesture", "thai", "warm", "slide", "#f4f1ea", "Kanit"),
+    ctl("sc_gesture_tbt", "This ← → That Hint", "Just a hand hint between This and That.", ["minimal", "direct", "clear", "light"], "gesture", "tbt", "warm", "slide"),
+    ctl("sc_thumb_brand", "Big Thumb Pads", "Two big pads at thumb height (No / Yes), small Maybe and Love between.", ["practical", "bold", "clear", "warm"], "thumb", "nmly", "brand", "haptic"),
+    ctl("sc_thumb_psfk", "Pass / Keep Pads", "Huge Pass and Keep pads, Save and Fire as chips.", ["bold", "practical", "creator", "playful"], "thumb", "psfk", "tropic", "haptic"),
+    ctl("sc_thumb_mono", "Mono Thumb Pads", "Heavy black pads, white words, workboot-tough.", ["industrial", "bold", "monochrome", "construction"], "thumb", "smwy", "mono", "filled", "#d9d4c7", "Khand"),
+    ctl("sc_thumb_thai", "Thai Thumb Pads", "Big Thai pads: ไม่ and ใช่.", ["thai", "bold", "practical", "friendly"], "thumb", "thai", "brand", "haptic", "#f4f1ea", "Kanit"),
+    ctl("sc_stamp_brand", "Rubber Stamps", "Buttons drawn as tilted rubber stamps.", ["rustic", "craft", "playful", "warm"], "stamp", "nmly", "brand", "outline", "#efe6d2"),
+    ctl("sc_stamp_inspect", "Inspection Stamps", "PASS / SAVE / FIRE / KEEP as site-inspection stamps.", ["construction", "industrial", "rustic", "bold"], "stamp", "psfk", "earth", "outline", "#e8e0cc", "Khand"),
+    ctl("sc_stamp_thai", "Thai Hanko Stamps", "Red seal stamps with Thai words.", ["thai", "craft", "traditional", "warm"], "stamp", "thai", "brand", "filled", "#f6efe2", "Kanit"),
+    ctl("sc_stamp_slang", "Sticker Stamps", "Nope / Yep as die-cut stickers.", ["playful", "vibrant", "casual", "youtube"], "stamp", "nhoy", "neon", "filled", "#fff6e5"),
+    ctl("sc_square_khand", "Square Uppercase Buttons", "Square outlined buttons, uppercase Khand (maxweberman.com style).", ["minimal", "formal", "clear", "monochrome"], "square", "nmly", "mono", "outline", "#ffffff", "Khand"),
+    ctl("sc_square_color", "Square Color Blocks", "Flat square color blocks, no radius.", ["bold", "industrial", "modern", "clear"], "square", "smwy", "warm", "filled", "#ffffff", "Khand"),
+    ctl("sc_square_haptic", "Square Haptic Keys", "Chunky keyboard-key buttons that press down.", ["tactile", "industrial", "playful", "bold"], "square", "nmly", "earth", "haptic", "#d8d2c4"),
+    ctl("sc_emoji_float", "Floating Emoji", "Emoji float up from the bar on tap, like live reactions.", ["playful", "vibrant", "youtube", "friendly"], "round", "emoji", "tropic", "float", "#1d1d1d"),
+    ctl("sc_bilingual_pill", "Bilingual Pills", "Each pill shows English over Thai.", ["bilingual", "thai", "clear", "friendly"], "pill", "nmly", "brand", "bilingual"),
+    ctl("sc_tbt_round", "This / Both / That Circles", "Three round buttons for pair cards.", ["clear", "friendly", "warm", "modern"], "round", "tbt", "warm", "filled"),
+    ctl("sc_tbt_glow", "This / That Glow", "Glowing This and That buttons on a dark bar.", ["dark", "tech", "vibrant", "bold"], "pill", "tbt", "neon", "glow", "#121212"),
+]}
+POOL.update(POOL_SWIPE)
+CATEGORY_WEIGHT.update({"Swipe Controls": 1.0})
+SWIPE_CONTROLS = "Swipe Controls"
+SC_TH = {"No": "ไม่", "Maybe": "อาจจะ", "Love": "รัก", "Yes": "ใช่"}
+for _o in POOL_SWIPE["Swipe Controls"]:
+    if _o["visual"]["style"] == "bilingual":
+        _o["visual"]["sub"] = [SC_TH.get(w, "") for w in _o["visual"]["words"]]
+
 # Loose "family" of each category so the deck order can avoid putting similar things back-to-back.
 CATEGORY_GROUP = {
     "work": ["SiteAgent Brand Marks", "SiteAgent Pitch Page", "SiteAgent Product Voice", "SiteAgent App Screens", "SMART Visa Pitch Deck"],
@@ -1189,6 +1272,7 @@ CATEGORY_GROUP = {
                "Quick-Fire Picks", "Event & Party Styling", "Food Styling"],
 }
 GROUP_OF = {c: g for g, cs in CATEGORY_GROUP.items() for c in cs}
+GROUP_OF.setdefault("Swipe Controls", "Swipe Controls")
 
 
 # Categories whose pairs must contrast on a tag: one option carries tag X, the other tag Y.
@@ -1324,6 +1408,12 @@ def save_shown():
     with open(SHOWN, "w") as f: json.dump(data, f, indent=1)
     return data
 
+def swipe_controls_unclear(profile, min_answered=16, max_uncertainty=0.35):
+    """Keep 2-4 Swipe Controls pairs in every deck until Max has answered enough of them and the
+    category's tags show a clear lean."""
+    st = profile.get("categories", {}).get(SWIPE_CONTROLS, {})
+    return st.get("answered", 0) < min_answered or category_uncertainty(profile, SWIPE_CONTROLS) > max_uncertainty
+
 def is_check(profile, opt, threshold=-0.35):
     """An option that carries a tag Max has clearly rejected (used sparingly as a re-test)."""
     return any(tag_pref(profile, t)[0] <= threshold for t in opt["tags"])
@@ -1354,6 +1444,16 @@ def build_deck(date, n_pairs, seed=None, allow_repeats=False, focus=None, focus_
         alloc = allocate_mixed(profile, n_pairs, caps, focus, focus_share if focus_share is not None else 0.3, max_per, rng)
     else:
         alloc = allocate(profile, n_pairs, caps, focus)
+    sc = SWIPE_CONTROLS
+    if swipe_controls_unclear(profile) and caps.get(sc, 0) >= 2:
+        want = min(caps[sc], max(2, min(4, alloc.get(sc, 0) or 3)))
+        alloc[sc] = alloc.get(sc, 0)
+        while alloc[sc] < want:       # take slots from the biggest other categories
+            big = max((c for c in alloc if c != sc and alloc[c] > 0), key=lambda c: alloc[c])
+            alloc[big] -= 1; alloc[sc] += 1
+        while alloc[sc] > 4:
+            small = min((c for c in POOL if c != sc and caps[c] > alloc.get(c, 0)), key=lambda c: alloc.get(c, 0))
+            alloc[sc] -= 1; alloc[small] = alloc.get(small, 0) + 1
     pairs = []
     def pick(cat, opts, k, used):
         cands = list(itertools.combinations(opts, 2))

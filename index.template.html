@@ -167,6 +167,26 @@ button.love.armed{background:var(--love);color:#fff}button.love.armed .h{color:#
 .stamp.lovea{left:16px;top:22%;color:var(--love);border-color:var(--love)}.stamp.loveb{right:16px;top:22%;color:var(--love);border-color:var(--love);transform:rotate(8deg)}
 body.pairs .stage{max-width:760px;max-height:620px}
 @media (max-width:420px){.controls.v4 .row1 button{font-size:12px;letter-spacing:.02em}}
+/* swipe controls mock (category: Swipe Controls) */
+.v-ctl{container-type:inline-size;position:relative;height:190px;padding:8px;display:flex;flex-direction:column;gap:6px;overflow:hidden}
+.v-ctl .scr{flex:1;border-radius:10px;background:linear-gradient(135deg,rgba(0,0,0,.08),rgba(0,0,0,.18));position:relative;overflow:hidden}
+.v-ctl .scr .ph{position:absolute;inset:10px 30% 10px 10px;border-radius:8px;background:rgba(255,255,255,.35);animation:ctlcard 3.2s ease-in-out infinite}
+@keyframes ctlcard{0%,20%{transform:none}40%{transform:translateX(30%) rotate(6deg)}60%,100%{transform:none}}
+.v-ctl .bar{display:flex;gap:min(5px,1.2cqw);justify-content:center;align-items:flex-end}
+.v-ctl .b{display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:700;line-height:1.05;text-align:center;animation:ctlpress 3.2s ease-in-out infinite;white-space:nowrap;flex:0 1 auto;min-width:0}
+.v-ctl .b small{font-size:8px;font-weight:600;opacity:.85}
+@keyframes ctlpress{0%,8%,100%{transform:none;filter:none}4%{transform:scale(.86);filter:brightness(1.15)}}
+.v-ctl.haptic .b{animation-name:ctlsquash}@keyframes ctlsquash{0%,10%,100%{transform:none}3%{transform:scale(1.12,.78)}6%{transform:scale(.94,1.06)}}
+.v-ctl.glow .b{animation-name:ctlglow}@keyframes ctlglow{0%,12%,100%{box-shadow:0 0 0 transparent}5%{box-shadow:0 0 14px 4px var(--g)}}
+.v-ctl.float .b{position:relative;overflow:visible}.v-ctl.float .b::after{content:attr(data-e);position:absolute;bottom:100%;font-size:16px;opacity:0;animation:ctlfloat 3.2s ease-out infinite;animation-delay:inherit}
+@keyframes ctlfloat{0%{opacity:0;transform:none}5%{opacity:1}30%{opacity:0;transform:translateY(-50px)}100%{opacity:0}}
+.v-ctl .knob{animation:ctlknob 3.2s ease-in-out infinite alternate}
+@keyframes ctlknob{from{left:4%}to{left:84%}}
+.v-ctl .needle{transform-origin:50% 100%;animation:ctlneedle 3.2s ease-in-out infinite alternate}
+@keyframes ctlneedle{from{transform:rotate(-80deg)}to{transform:rotate(80deg)}}
+.v-ctl .hand{animation:ctlhand 2.4s ease-in-out infinite}
+@keyframes ctlhand{0%,100%{transform:translateX(-40px)}50%{transform:translateX(40px)}}
+@media (prefers-reduced-motion:reduce){.v-ctl *{animation:none!important}}
 /* end screen */
 .end{max-width:760px;width:100%;flex:1;min-height:0;overflow:auto;-webkit-overflow-scrolling:touch;padding:4px 4px 30px}
 .end h2{margin:10px 0 6px}.end h3{margin:16px 0 6px;font-size:15px}
@@ -400,7 +420,26 @@ function rSign(v){const f=`font-family:${v.font};`;let st='',wall='#d9d4c7';
   case'glass':st=`background:rgba(255,255,255,.06)!important;border:1px solid rgba(255,255,255,.25);`;wall='#1b1b1b';break;
  }
  return `<div class="v-sign" style="background:${wall}"><div style="background:${v.bg};color:${v.fg};${f}${st}padding:10px 14px;text-align:center;max-width:90%"><div style="font-size:${v.shape==='picto'?26:18}px;font-weight:700;line-height:1.05">${esc(v.text)}</div>${v.sub?`<div style="font-size:11px;margin-top:4px;opacity:.85">${esc(v.sub)}</div>`:''}</div></div>`}
-const R={ui:rUI,palette:rPal,type:rType,tone:rTone,image:rImg,mood:rMood,logo:rLogo,thumb:rThumb,hero:rHero,post:rPost,pace:rPace,merch:rMerch,bleed:rBleed,word:rWord,mini:rMini,motion:rMotion,sound:rSound,thaitype:rThaiType,texture:rTexture,light:rLight,cover:rCover,sign:rSign};
+function rControls(v){const W=v.words,I=v.icons,C=v.colors,n=W.length,st=v.style,f=`font-family:${v.font},Hind,sans-serif;`,dark=lum(v.bg)<.4;
+ const txt=c=>lum(c)>.6?'#111':'#fff',lab=i=>W[i]?`${esc(W[i])}${v.sub&&v.sub[i]?`<small>${esc(v.sub[i])}</small>`:''}`:'';
+ const d=i=>`animation-delay:${(i*0.8).toFixed(1)}s;--g:${C[i]};`;
+ const fill=(i,extra='')=>st==='outline'?`background:transparent;border:2px solid ${C[i]};color:${dark?'#fff':C[i]===C[0]&&C[1]===C[0]?C[i]:C[i]};${extra}`:st==='glow'?`background:transparent;border:2px solid ${C[i]};color:${C[i]};text-shadow:0 0 6px ${C[i]};${extra}`:`background:${C[i]};color:${txt(C[i])};${extra}`;
+ let bar='',scr='<div class="scr"><div class="ph"></div></div>';
+ switch(v.fmt){
+  case'round':bar=`<div class="bar">${W.map((w,i)=>`<div style="display:flex;flex-direction:column;align-items:center;gap:2px"><div class="b" data-e="${esc(I[i])}" style="${d(i)}${fill(i)}width:min(40px,20cqw);height:min(40px,20cqw);border-radius:50%;font-size:17px">${esc(I[i])}</div>${w?`<span style="${f}font-size:9px;color:${dark?'#ddd':'#333'}">${esc(w)}</span>`:''}</div>`).join('')}</div>`;break;
+  case'pill':bar=`<div class="bar">${W.map((w,i)=>`<div class="b" style="${d(i)}${fill(i)}${f}border-radius:999px;padding:6px min(9px,1.8cqw);font-size:min(12px,5.4cqw)">${w?lab(i):esc(I[i])}</div>`).join('')}</div>`;break;
+  case'square':bar=`<div class="bar">${W.map((w,i)=>`<div class="b" style="${d(i)}${fill(i)}${f}border-radius:0;padding:7px min(8px,1.6cqw);font-size:min(12px,5cqw);text-transform:uppercase;letter-spacing:.08em;${st==='haptic'?'box-shadow:0 4px 0 rgba(0,0,0,.35);':''}">${w?esc(w):esc(I[i])}</div>`).join('')}</div>`;break;
+  case'segmented':bar=`<div class="bar" style="gap:0;background:${st==='slide'?'#dcdcdc':'transparent'};border-radius:10px;padding:3px;position:relative">${W.map((w,i)=>`<div class="b" style="${d(i)}${st==='slide'?`color:#222;background:${i===n-1?'#fff':'transparent'};box-shadow:${i===n-1?'0 1px 3px rgba(0,0,0,.2)':'none'};`:fill(i)}${f}flex:1;padding:8px 1px;font-size:min(12px,5.2cqw);border-radius:${i===0?'8px 0 0 8px':i===n-1?'0 8px 8px 0':'0'}">${w?esc(w):esc(I[i])}</div>`).join('')}</div>`;break;
+  case'slider':bar=`<div style="position:relative;height:44px;margin:0 6px"><div style="position:absolute;left:0;right:0;top:18px;height:8px;border-radius:4px;background:linear-gradient(90deg,${C.join(',')})"></div><div class="knob" style="position:absolute;top:8px;width:28px;height:28px;border-radius:50%;background:#fff;border:3px solid ${C[n-1]};box-shadow:0 2px 5px rgba(0,0,0,.3)"></div><div style="position:absolute;left:0;right:0;bottom:-4px;display:flex;justify-content:space-between;${f}font-size:9px;color:${dark?'#ddd':'#333'}">${W.map(w=>`<span>${esc(w)}</span>`).join('')}</div></div>`;break;
+  case'dial':bar='';scr=`<div class="scr" style="display:flex;align-items:flex-end;justify-content:center;background:none"><div style="position:relative;width:150px;height:75px;border-radius:150px 150px 0 0;background:conic-gradient(from -90deg at 50% 100%,${C.map((c,i)=>`${c} ${i*45}deg ${(i+1)*45}deg`).join(',')},transparent 180deg)"><div style="position:absolute;left:18px;right:18px;bottom:0;top:18px;border-radius:120px 120px 0 0;background:${v.bg}"></div><div class="needle" style="position:absolute;left:calc(50% - 2px);bottom:0;width:4px;height:62px;background:${dark?'#fff':'#111'};border-radius:2px"></div>${W.map((w,i)=>`<span style="position:absolute;${f}font-size:9px;font-weight:700;color:${dark?'#fff':'#111'};left:${[0,22,62,92][i]}%;top:${[70,10,10,70][i]}%">${esc(w)}</span>`).join('')}</div></div>`;break;
+  case'rail':scr=`<div class="scr" style="background:linear-gradient(160deg,#6d6253,#2d2a26)"><div style="position:absolute;right:6px;top:6px;bottom:6px;display:flex;flex-direction:column;justify-content:space-around;align-items:center">${W.map((w,i)=>`<div style="display:flex;flex-direction:column;align-items:center"><div class="b" data-e="${esc(I[i])}" style="${d(i)}${fill(i)}width:28px;height:28px;border-radius:50%;font-size:13px">${esc(I[i])}</div><span style="font-size:8px;color:#fff">${w?esc(w):['12','4','98','31'][i]}</span></div>`).join('')}</div></div>`;break;
+  case'gesture':scr=`<div class="scr"><div class="ph" style="right:10px"></div><div class="hand" style="position:absolute;left:50%;bottom:16px;margin-left:-11px;font-size:22px">👆</div></div>`;bar=`<div style="display:flex;justify-content:space-between;${f}font-size:13px;font-weight:700;opacity:.75;color:${dark?'#fff':'#333'}"><span style="color:${C[0]}">← ${esc(W[0])}</span>${n===3?`<span style="color:${C[1]}">${esc(W[1])}</span>`:''}<span style="color:${C[n-1]}">${esc(W[n-1])} →</span></div>`;break;
+  case'thumb':{const L=0,Rr=n-1,mid=W.slice(1,n-1).map((w,j)=>`<div class="b" style="${d(j+1)}${fill(j+1)}${f}border-radius:999px;padding:4px 7px;font-size:10px">${esc(w||I[j+1])}</div>`).join('');
+   bar=`<div class="bar" style="align-items:center"><div class="b" style="${d(L)}${fill(L)}${f}flex:1;height:52px;border-radius:16px;font-size:16px">${esc(W[L]||I[L])}</div><div style="display:flex;flex-direction:column;gap:4px">${mid}</div><div class="b" style="${d(Rr)}${fill(Rr)}${f}flex:1;height:52px;border-radius:16px;font-size:16px">${esc(W[Rr]||I[Rr])}</div></div>`;break}
+  case'stamp':bar=`<div class="bar" style="gap:min(7px,1.5cqw)">${W.map((w,i)=>`<div class="b" style="${d(i)}${st==='filled'?`background:${C[i]};color:#fff;`:`color:${C[i]};`}border:2.5px solid ${C[i]};${f}border-radius:${st==='filled'&&v.words[0]==='ไม่'?'50%':'5px'};padding:4px min(6px,1.2cqw);font-size:min(12px,5cqw);letter-spacing:.06em;text-transform:uppercase;transform:rotate(${[-8,5,-4,7][i]}deg);${st==='filled'&&v.words[0]==='ไม่'?'width:42px;height:42px;':''}">${esc(w||I[i])}</div>`).join('')}</div>`;break;
+ }
+ return `<div class="v-ctl ${esc(st)}" style="background:${v.bg}">${scr}${bar}</div>`}
+const R={ui:rUI,palette:rPal,type:rType,tone:rTone,image:rImg,mood:rMood,logo:rLogo,thumb:rThumb,hero:rHero,post:rPost,pace:rPace,merch:rMerch,bleed:rBleed,word:rWord,mini:rMini,motion:rMotion,sound:rSound,thaitype:rThaiType,texture:rTexture,light:rLight,cover:rCover,sign:rSign,controls:rControls};
 function optHtml(o,side){const v=o.visual||{};return `<div class="opt mw-hover ${side} fmt-${v.type||'x'}" data-side="${side}"><div class="vis">${(R[v.type]||(()=>''))(v,o)}</div>${side==='S'?'':`<span class="side">${side==='A'?'◀ THIS':'THAT ▶'}</span>`}<h3>${esc(o.label)}</h3><p>${esc(o.desc)}</p>
   <div class="tags">${(o.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</div></div>`}
 
