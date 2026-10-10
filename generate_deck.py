@@ -1287,6 +1287,27 @@ def deck_options(deck):
     for c in deck.get("cards", []):
         if "option" in c: yield c["option"]
 
+# ---- English-only rule (Max, Oct 10, 2026) ------------------------------------------------------
+# The brand is English only for now. Options that show Thai or Japanese script, bilingual wordmarks or
+# copy, EN/TH layouts or language toggles are never put in a deck. Place-based looks (Bangkok, Japan,
+# Isan...) are fine when their text is English.
+import re as _re_lang
+_SCRIPT_RX = _re_lang.compile("[\u0E00-\u0E7F\u3040-\u30FF\u3400-\u9FFF\uFF66-\uFF9F]")
+_LANG_TEXT_RX = _re_lang.compile(r"EN\s*/\s*TH|TH\s*/\s*EN|EN\s*\|\s*TH|bilingual|two languages|three languages|language toggle|lang(uage)? switch", _re_lang.I)
+NON_ENGLISH_TAGS = {"bilingual", "thai-script", "japanese-script", "multilingual"}
+IGNORED_TAGS = {"bilingual", "thai-script", "japanese-script", "multilingual"}   # history kept, no longer scored
+
+def non_english_reasons(opt):
+    """Why an option breaks the English-only rule ([] if it is fine)."""
+    blob = json.dumps(opt, ensure_ascii=False); v = opt.get("visual", {}); why = []
+    if _SCRIPT_RX.search(blob): why.append("Thai/Japanese script")
+    if NON_ENGLISH_TAGS & set(opt.get("tags", [])): why.append("bilingual tag")
+    if v.get("type") == "thaitype" or "bilingual" in (v.get("layout"), v.get("shape"), v.get("style")): why.append("bilingual/Thai layout")
+    if _LANG_TEXT_RX.search(blob): why.append("bilingual copy or language toggle")
+    return why
+
+def english_only(opt): return not non_english_reasons(opt)
+
 def load_json(path, default):
     try:
         with open(path) as f: return json.load(f)
@@ -1310,6 +1331,7 @@ def seen_pairs(exclude_date=None):
 
 def tag_pref(profile, tag):
     """Returns (preference in [-1,1], uncertainty in [0,1])."""
+    if tag in IGNORED_TAGS: return 0.0, 0.0   # English-only: 'bilingual' is no longer a direction
     t = profile["tags"].get(tag)
     if not t: return 0.0, 1.0
     w, l, n = t.get("wins", 0), t.get("losses", 0), t.get("shown", 0)
@@ -1427,7 +1449,7 @@ def build_deck(date, n_pairs, seed=None, allow_repeats=False, focus=None, focus_
     check_budget = [max(2, round(n_pairs * check_share))]
     seen = seen_pairs(exclude_date=date)
     shown = shown_options(exclude_date=date)
-    avail = {c: [o for o in opts if o["id"] not in shown] for c, opts in POOL.items()}
+    avail = {c: [o for o in opts if o["id"] not in shown and english_only(o)] for c, opts in POOL.items()}
     def cap(c, opts):
         if c in PAIR_RULES:
             x, y = PAIR_RULES[c]
@@ -1550,7 +1572,7 @@ def build_deck(date, n_pairs, seed=None, allow_repeats=False, focus=None, focus_
         for cat in sorted(POOL, key=lambda c: -CATEGORY_WEIGHT.get(c, 0.8)):
             need = n_pairs - len(pairs)
             if need <= 0: break
-            for a, b in pick(cat, POOL[cat], min(need, 2), used):
+            for a, b in pick(cat, [o for o in POOL[cat] if english_only(o)], min(need, 2), used):
                 pairs.append({"category": cat, "optionA": a, "optionB": b, "repeat": True})
     rng.shuffle(pairs)
     if mixed:   # greedy order: never the same category twice in a row, and avoid the same family back-to-back
@@ -1656,6 +1678,7 @@ def ingest(results_path):
         print(f"Deck {deck_date} already ingested; skipping (delete it from profile.decks_ingested to redo).")
         return
     def bump(d, key, field, amt=1):
+        if d is profile["tags"] and key in IGNORED_TAGS: return   # English-only: stop scoring these
         d.setdefault(key, {}).setdefault(field, 0); d[key][field] += amt
     for p in res.get("picks", []):
         if "answer" in p:          # v3 single-card pick: Love +2, Yes +1, Maybe 0 (still shown), No -1

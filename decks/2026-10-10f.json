@@ -10,30 +10,28 @@
  ],
  "generated_at": "2026-10-10T19:50:46+07:00",
  "allocation": {
-  "Emoji & Sticker Styles": 2,
+  "Emoji & Sticker Styles": 1,
   "Podcast & Audio Branding": 2,
   "SiteAgent Brand Marks": 2,
   "Motion & Animation Styles": 1,
   "Café & Coffee Shop Design": 2,
   "Event & Party Styling": 2,
   "Travel & Hotel Vibes": 3,
-  "Signage & Wayfinding": 2,
+  "Signage & Wayfinding": 1,
   "Textures & Materials": 2,
-  "Thai Script Typefaces": 2,
+  "Japan Cottage Makeover": 2,
   "This Or That: Words": 2,
+  "SiteAgent Product Voice": 2,
   "Book & Magazine Covers": 2,
   "Kids' Room & Nursery": 2,
   "Watches & EDC": 3,
-  "Tenant & Partner Messages": 2,
-  "Shorts Pacing & Captions": 2,
+  "Lighting Moods": 2,
+  "Tenant & Partner Messages": 3,
+  "Dream Home Finishes": 3,
   "Quick-Fire Picks": 2,
-  "Akiya Garden & Exterior": 2,
-  "Uniforms & Workwear": 2,
-  "Japan Cottage Makeover": 1,
-  "SiteAgent Product Voice": 1,
-  "Lighting Moods": 1,
-  "Dream Home Finishes": 1,
+  "Akiya Garden & Exterior": 3,
   "Outdoor Spaces & Gardens": 2,
+  "Uniforms & Workwear": 1,
   "Swipe Controls": 4,
   "Shorts Cover Styles": 1
  },
@@ -55,8 +53,8 @@
   "note": "Variety pair deck (This or That): ~30% work focus, ~70% other categories, unseen options only. Includes 4 Swipe Controls pairs (new category)."
  },
  "pair_mix": {
-  "refine": 33,
-  "check": 17
+  "refine": 30,
+  "check": 20
  },
  "freshness": {
   "option_slots": 100,
@@ -500,43 +498,57 @@
   },
   {
    "id": "2026-10-10f-10",
-   "category": "Thai Script Typefaces",
+   "category": "Japan Cottage Makeover",
    "optionA": {
-    "id": "th_athiti",
-    "label": "Athiti",
-    "desc": "Soft loopless sans, light and airy.",
+    "id": "jc2_thai_textiles",
+    "label": "Thai Textiles Warm-Up",
+    "desc": "Indigo and handwoven Thai fabrics in a Japanese house.",
     "tags": [
-     "light",
-     "friendly",
-     "modern",
-     "soft"
+     "thai",
+     "warm",
+     "craft",
+     "natural"
     ],
     "visual": {
-     "type": "thaitype",
-     "font": "'Athiti', 'Prompt', system-ui, sans-serif",
-     "weight": 600,
-     "sample": "บ้านไม้สักริมน้ำ",
-     "bg": "#faf8f3",
-     "fg": "#1b1b1b"
+     "type": "mood",
+     "colors": [
+      "#1f3b73",
+      "#d4a017",
+      "#e8dcc2",
+      "#8b5a2b",
+      "#f7f3ea"
+     ],
+     "materials": [
+      "indigo",
+      "handwoven cotton",
+      "teak"
+     ]
     }
    },
    "optionB": {
-    "id": "th_noto_sans",
-    "label": "Noto Sans Thai",
-    "desc": "Classic looped Thai, friendly and readable.",
+    "id": "jc2_garden_veg",
+    "label": "Vegetable Garden Yard",
+    "desc": "Raised beds, compost, a small greenhouse.",
     "tags": [
-     "clear",
-     "friendly",
-     "bilingual",
-     "practical"
+     "natural",
+     "rustic",
+     "practical",
+     "friendly"
     ],
     "visual": {
-     "type": "thaitype",
-     "font": "'Noto Sans Thai', 'Sarabun', system-ui, sans-serif",
-     "weight": 500,
-     "sample": "บ้านไม้สักริมน้ำ",
-     "bg": "#faf8f3",
-     "fg": "#1b1b1b"
+     "type": "mood",
+     "colors": [
+      "#4e7d4a",
+      "#8a7f5a",
+      "#c8a97e",
+      "#f2efe8",
+      "#c1502e"
+     ],
+     "materials": [
+      "raised beds",
+      "greenhouse",
+      "compost"
+     ]
     }
    },
    "repeat": false,
@@ -546,41 +558,41 @@
    "id": "2026-10-10f-11",
    "category": "This Or That: Words",
    "optionA": {
-    "id": "wd_together",
-    "label": "Together",
-    "desc": "Community, crew, family.",
+    "id": "wd_bright",
+    "label": "Bright",
+    "desc": "Light-filled, open, optimistic.",
     "tags": [
+     "light",
+     "modern",
      "friendly",
-     "warm",
-     "bilingual",
-     "personal"
+     "clear"
     ],
     "visual": {
      "type": "word",
-     "word": "Together",
-     "sub": "ด้วยกัน",
-     "bg": "#139a8f",
-     "fg": "#ffffff",
-     "font": "'Prompt', 'Montserrat', system-ui, sans-serif"
+     "word": "bright",
+     "sub": "open + optimistic",
+     "bg": "#fff3b0",
+     "fg": "#3b2a1a",
+     "font": "'Outfit', 'Inter', system-ui, sans-serif"
     }
    },
    "optionB": {
-    "id": "wd_sturdy",
-    "label": "Sturdy",
-    "desc": "Built to take a beating.",
+    "id": "wd_home",
+    "label": "Home",
+    "desc": "Belonging, family, rest.",
     "tags": [
-     "industrial",
-     "construction",
-     "practical",
-     "rustic"
+     "warm",
+     "friendly",
+     "natural",
+     "light"
     ],
     "visual": {
      "type": "word",
-     "word": "STURDY",
-     "sub": "takes a beating",
-     "bg": "#6c757d",
-     "fg": "#ffffff",
-     "font": "'Archivo Black', 'Arial Black', Impact, sans-serif"
+     "word": "home",
+     "sub": "where it starts",
+     "bg": "#fff8f0",
+     "fg": "#3b2a1a",
+     "font": "'Nunito', 'Inter', system-ui, sans-serif"
     }
    },
    "repeat": false,
@@ -588,47 +600,43 @@
   },
   {
    "id": "2026-10-10f-12",
-   "category": "Signage & Wayfinding",
+   "category": "SiteAgent Product Voice",
    "optionA": {
-    "id": "sg_floor_graphic",
-    "label": "Painted Floor Lines",
-    "desc": "Wayfinding painted on the floor in colored lanes.",
+    "id": "sa2_v_quick_fix",
+    "label": "Problem + Fix",
+    "desc": "Every issue arrives with a suggested fix.",
     "tags": [
-     "modern",
-     "clear",
-     "playful",
-     "industrial"
+     "direct",
+     "practical",
+     "friendly",
+     "clear"
     ],
     "visual": {
-     "type": "sign",
-     "bg": "#d9dcd6",
-     "fg": "#1f1f1f",
-     "accent": "#ff6b00",
-     "font": "'Manrope', 'Inter', system-ui, sans-serif",
-     "shape": "floor",
-     "text": "Workshop",
-     "sub": "Office · Store"
+     "type": "tone",
+     "lines": [
+      "Drain on the north side is pooling.",
+      "Suggested fix: add 2% fall and a gravel trench. Approve?"
+     ],
+     "from": "SiteAgent → Foreman"
     }
    },
    "optionB": {
-    "id": "sg_bilingual_blade",
-    "label": "Bilingual Blade Sign",
-    "desc": "Projecting sign, English and Thai, lit at night.",
+    "id": "sa_v_formal",
+    "label": "Formal Report",
+    "desc": "Reads like an official document.",
     "tags": [
-     "bilingual",
-     "thai",
-     "clear",
-     "friendly"
+     "formal",
+     "trust",
+     "classic",
+     "calm"
     ],
     "visual": {
-     "type": "sign",
-     "bg": "#ffffff",
-     "fg": "#16302e",
-     "accent": "#139a8f",
-     "font": "'Kanit', 'Prompt', system-ui, sans-serif",
-     "shape": "blade",
-     "text": "Reception",
-     "sub": "แผนกต้อนรับ"
+     "type": "tone",
+     "lines": [
+      "Daily Site Report, October 10.",
+      "Work is on schedule. No incidents were recorded."
+     ],
+     "from": "SiteAgent → Owner"
     }
    },
    "repeat": false,
@@ -676,47 +684,47 @@
    "id": "2026-10-10f-14",
    "category": "Book & Magazine Covers",
    "optionA": {
-    "id": "bk_illustrated",
-    "label": "Illustrated Picture-Book",
-    "desc": "Soft illustration, rounded title.",
+    "id": "bk_magazine_editorial",
+    "label": "Glossy Magazine",
+    "desc": "Masthead, cover lines, portrait photo.",
     "tags": [
-     "friendly",
-     "warm",
-     "playful",
-     "soft"
+     "editorial",
+     "bold",
+     "vibrant",
+     "cinematic"
     ],
     "visual": {
      "type": "cover",
-     "bg": "#ffd8b8",
-     "fg": "#4a3426",
-     "accent": "#e07a3f",
-     "font": "'Nunito', 'Inter', system-ui, sans-serif",
-     "layout": "illus",
-     "title": "Our House",
-     "sub": "For little builders",
-     "key": null,
-     "filter": null
+     "bg": "#000",
+     "fg": "#ffffff",
+     "accent": "#ff006e",
+     "font": "'Playfair Display', Georgia, serif",
+     "layout": "mag",
+     "title": "BUILDER",
+     "sub": "The tropical issue",
+     "key": "base_temple",
+     "filter": "saturate(1.4)"
     }
    },
    "optionB": {
-    "id": "bk_bilingual_type",
-    "label": "Bilingual Type Cover",
-    "desc": "Type-only, English and Thai stacked.",
+    "id": "bk_blueprint",
+    "label": "Blueprint Cover",
+    "desc": "Floor plan line art on blue.",
     "tags": [
-     "bilingual",
-     "thai",
+     "technical",
+     "construction",
      "clear",
-     "modern"
+     "industrial"
     ],
     "visual": {
      "type": "cover",
-     "bg": "#fff8f0",
-     "fg": "#3b2a1a",
-     "accent": "#d9693b",
-     "font": "'Kanit', 'Prompt', system-ui, sans-serif",
-     "layout": "type",
-     "title": "Home|บ้าน",
-     "sub": "Max Weberman",
+     "bg": "#0b3d91",
+     "fg": "#ffffff",
+     "accent": "#ffd166",
+     "font": "'Space Grotesk', 'Inter', system-ui, sans-serif",
+     "layout": "plan",
+     "title": "THE TEAK HOUSE",
+     "sub": "Plans + process",
      "key": null,
      "filter": null
     }
@@ -890,47 +898,41 @@
   },
   {
    "id": "2026-10-10f-18",
-   "category": "Thai Script Typefaces",
+   "category": "Lighting Moods",
    "optionA": {
-    "id": "th_niramit",
-    "label": "Niramit",
-    "desc": "Calligraphic-touch sans, gentle and warm.",
+    "id": "lt_golden_hour",
+    "label": "Golden-Hour Glow",
+    "desc": "Low warm sun through the windows.",
     "tags": [
      "warm",
      "natural",
-     "friendly",
-     "craft"
+     "light",
+     "calm"
     ],
     "visual": {
-     "type": "thaitype",
-     "font": "'Niramit', 'Sarabun', system-ui, sans-serif",
-     "weight": 500,
-     "sample": "บ้านไม้สักริมน้ำ",
-     "bg": "#faf8f3",
-     "fg": "#1b1b1b"
+     "type": "light",
+     "css": "linear-gradient(160deg,#ffcf8a,#f6a65d 45%,#6b4226)",
+     "kelvin": "2700K sunset"
     }
    },
    "optionB": {
-    "id": "th_krub",
-    "label": "Krub",
-    "desc": "Squarish, sturdy, a little industrial.",
+    "id": "lt_rgb_gamer",
+    "label": "RGB Color Wash",
+    "desc": "Purple-teal LED wash.",
     "tags": [
-     "industrial",
-     "modern",
-     "clear",
-     "construction"
+     "vibrant",
+     "playful",
+     "technical",
+     "dark"
     ],
     "visual": {
-     "type": "thaitype",
-     "font": "'Krub', 'Kanit', system-ui, sans-serif",
-     "weight": 600,
-     "sample": "บ้านไม้สักริมน้ำ",
-     "bg": "#faf8f3",
-     "fg": "#1b1b1b"
+     "type": "light",
+     "css": "linear-gradient(135deg,#7c3aed,#00e5ff 55%,#ff006e)",
+     "kelvin": "RGB"
     }
    },
    "repeat": false,
-   "purpose": "refine"
+   "purpose": "check"
   },
   {
    "id": "2026-10-10f-19",
@@ -978,67 +980,56 @@
   },
   {
    "id": "2026-10-10f-20",
-   "category": "Shorts Pacing & Captions",
+   "category": "Dream Home Finishes",
    "optionA": {
-    "id": "sp2_bilingual_caps",
-    "label": "Bilingual Captions Always",
-    "desc": "EN on top, TH under, every line.",
+    "id": "dh2_teak_concrete",
+    "label": "Teak & Polished Concrete",
+    "desc": "Teak doors and ceilings over polished concrete floors.",
     "tags": [
-     "bilingual",
-     "clear",
-     "friendly",
-     "thai"
+     "industrial",
+     "warm",
+     "modern",
+     "natural"
     ],
     "visual": {
-     "type": "pace",
-     "cuts": [
-      2,
-      3,
-      2,
-      3,
-      2,
-      3
-     ],
+     "type": "mood",
      "colors": [
-      "#139a8f",
-      "#f6b93b"
+      "#8b5a2b",
+      "#bdbcb6",
+      "#e8e4dc",
+      "#3a3a3a",
+      "#c19a6b"
      ],
-     "notes": [
-      "EN + TH captions",
-      "medium pace",
-      "clean font"
+     "materials": [
+      "teak",
+      "polished concrete",
+      "black steel"
      ]
     }
    },
    "optionB": {
-    "id": "sp2_hook_build",
-    "label": "Hook + Build Steps",
-    "desc": "1s hook, then 5 quick steps, end on the result.",
+    "id": "dh2_engawa_light",
+    "label": "Light-Oak Engawa",
+    "desc": "Pale oak veranda with sliding glass, garden view.",
     "tags": [
-     "clear",
-     "direct",
-     "construction",
-     "modern"
+     "light",
+     "natural",
+     "modern",
+     "calm"
     ],
     "visual": {
-     "type": "pace",
-     "cuts": [
-      1,
-      2,
-      2,
-      2,
-      2,
-      2,
-      3
-     ],
+     "type": "mood",
      "colors": [
-      "#ff6b00",
-      "#2f3a40"
+      "#e3d9c6",
+      "#c2a878",
+      "#ffffff",
+      "#7d9a6f",
+      "#3a3a3a"
      ],
-     "notes": [
-      "1s hook",
-      "step captions",
-      "result last"
+     "materials": [
+      "light oak deck",
+      "sliding glass",
+      "moss garden"
      ]
     }
    },
@@ -1255,56 +1246,56 @@
   },
   {
    "id": "2026-10-10f-25",
-   "category": "Uniforms & Workwear",
+   "category": "Dream Home Finishes",
    "optionA": {
-    "id": "uw_indigo_mohom",
-    "label": "Indigo Mor Hom Crew",
-    "desc": "Thai farmer-indigo work shirts as uniform.",
+    "id": "dh2_bath_stone",
+    "label": "Bath: Warm Stone & Plants",
+    "desc": "Travertine, wood slats, a big window to plants.",
     "tags": [
-     "thai",
      "natural",
-     "craft",
-     "bilingual"
+     "warm",
+     "calm",
+     "light"
     ],
     "visual": {
      "type": "mood",
      "colors": [
-      "#1f3b73",
-      "#3e5c99",
-      "#f3efe6",
-      "#b5651d",
-      "#ffffff"
+      "#e8dcc6",
+      "#c9b49a",
+      "#7d9a6f",
+      "#ffffff",
+      "#5c4033"
      ],
      "materials": [
-      "mor hom indigo",
-      "cotton",
-      "embroidered name"
+      "travertine",
+      "wood slats",
+      "indoor plants"
      ]
     }
    },
    "optionB": {
-    "id": "uw_hivis_modern",
-    "label": "Modern Hi-Vis Kit",
-    "desc": "Slim hi-vis polos, grey pants, clean logo.",
+    "id": "dh2_terrazzo_light",
+    "label": "Light Terrazzo & Rattan",
+    "desc": "Pale terrazzo floors, rattan furniture, palms.",
     "tags": [
-     "construction",
-     "modern",
-     "clear",
-     "industrial"
+     "light",
+     "tropical",
+     "natural",
+     "modern"
     ],
     "visual": {
      "type": "mood",
      "colors": [
-      "#ff6b00",
-      "#2b2d31",
-      "#c5ccd0",
-      "#ffffff",
-      "#ffd400"
+      "#f2efe8",
+      "#d9d4c7",
+      "#c8a97e",
+      "#5a7d4f",
+      "#ffffff"
      ],
      "materials": [
-      "hi-vis polo",
-      "stretch pants",
-      "reflective tape"
+      "terrazzo",
+      "rattan",
+      "palms"
      ]
     }
    },
@@ -1463,39 +1454,39 @@
    "id": "2026-10-10f-29",
    "category": "SiteAgent Product Voice",
    "optionA": {
-    "id": "sa2_v_luxe_concierge",
-    "label": "Concierge Formal",
-    "desc": "Five-star hotel register. (Luxe/formal check.)",
+    "id": "sa2_v_lender_ready",
+    "label": "Lender-Ready Progress",
+    "desc": "Structured draw-request style progress note.",
     "tags": [
-     "luxe",
-     "formal",
-     "calm",
-     "classic"
+     "trust",
+     "clear",
+     "modern",
+     "construction"
     ],
     "visual": {
      "type": "tone",
      "lines": [
-      "Good morning. Your residence progresses gracefully.",
-      "Should you wish, a private site viewing can be arranged."
+      "Milestone 3 (structure) complete. Photos and inspection attached.",
+      "Requesting draw #3 per schedule."
      ],
-     "from": "SiteAgent → Owner"
+     "from": "SiteAgent → Lender"
     }
    },
    "optionB": {
-    "id": "sa2_v_morning_brief",
-    "label": "Morning Brief, Bilingual",
-    "desc": "Three lines, EN then TH, sent at 7am.",
+    "id": "sa2_v_hype",
+    "label": "Hype Announcer",
+    "desc": "All caps celebration. (Playful/vibrant check.)",
     "tags": [
-     "bilingual",
-     "clear",
-     "construction",
-     "friendly"
+     "playful",
+     "vibrant",
+     "loud",
+     "energetic"
     ],
     "visual": {
      "type": "tone",
      "lines": [
-      "Today: formwork L3, rebar delivery 10am, rain after 4.",
-      "วันนี้: แบบหล่อชั้น 3, เหล็กมาส่ง 10 โมง, ฝนหลัง 4 โมง"
+      "LET'S GOOO! SLAB DAY! 🔥🔥",
+      "Crew is CRUSHING it today!!"
      ],
      "from": "SiteAgent → Crew"
     }
@@ -1645,68 +1636,61 @@
   },
   {
    "id": "2026-10-10f-33",
-   "category": "Shorts Pacing & Captions",
+   "category": "Akiya Garden & Exterior",
    "optionA": {
-    "id": "sp2_before_after_snap",
-    "label": "Before/After Snap",
-    "desc": "Hold before, beat drop, snap to after.",
+    "id": "ak_charred_black",
+    "label": "All-Black Charred Exterior",
+    "desc": "Fully charred cladding, black on black. (Dark check.)",
     "tags": [
-     "clear",
-     "construction",
+     "dark",
+     "japanese",
      "bold",
-     "modern"
+     "minimal"
     ],
     "visual": {
-     "type": "pace",
-     "cuts": [
-      6,
-      1,
-      8
-     ],
+     "type": "mood",
      "colors": [
-      "#6c757d",
-      "#ff8c42"
+      "#1b1b1b",
+      "#2b2b2b",
+      "#3a3a3a",
+      "#8e8e8a",
+      "#f2f0eb"
      ],
-     "notes": [
-      "beat drop",
-      "snap cut",
-      "hold after"
+     "materials": [
+      "yakisugi",
+      "black roof",
+      "black fence"
      ]
     }
    },
    "optionB": {
-    "id": "sp2_three_lang",
-    "label": "Three-Language Caption Pop",
-    "desc": "EN, TH, JP captions pop in turn for the akiya series.",
+    "id": "ak_cedar_fence",
+    "label": "Cedar Fence & Gravel",
+    "desc": "Simple cedar fence, gravel paths, a few maples.",
     "tags": [
-     "bilingual",
-     "clear",
-     "friendly",
-     "modern"
+     "natural",
+     "rustic",
+     "calm",
+     "warm"
     ],
     "visual": {
-     "type": "pace",
-     "cuts": [
-      2,
-      2,
-      2,
-      2,
-      2,
-      2
-     ],
+     "type": "mood",
      "colors": [
-      "#139a8f",
-      "#d9693b"
+      "#a0784e",
+      "#bdbcb6",
+      "#4e7d4a",
+      "#f2efe8",
+      "#3b2a1a"
      ],
-     "notes": [
-      "EN/TH/JP",
-      "caption pops",
-      "steady pace"
+     "materials": [
+      "cedar fence",
+      "gravel",
+      "maple"
      ]
     }
    },
    "repeat": false,
-   "purpose": "refine"
+   "purpose": "check"
   },
   {
    "id": "2026-10-10f-34",
@@ -2202,53 +2186,47 @@
   },
   {
    "id": "2026-10-10f-43",
-   "category": "Emoji & Sticker Styles",
+   "category": "Tenant & Partner Messages",
    "optionA": {
-    "id": "em_bilingual_words",
-    "label": "Bilingual Word Stickers",
-    "desc": "Short words: OK / โอเค, Thanks / ขอบคุณ.",
+    "id": "tm2_emoji_landlord",
+    "label": "Emoji-Heavy Landlord",
+    "desc": "Very chatty with emoji. (Playful check.)",
     "tags": [
-     "bilingual",
-     "thai",
-     "clear",
+     "playful",
+     "vibrant",
+     "casual",
      "friendly"
     ],
     "visual": {
-     "type": "mini",
-     "icon": "💬",
-     "items": [
-      "OK / โอเค",
-      "ขอบคุณ",
-      "สู้ๆ"
+     "type": "tone",
+     "lines": [
+      "Rent day tomorrow!! 🏠💸🎉",
+      "You're the best tenants ever 🙌✨"
      ],
-     "bg": "#e6f3f1",
-     "fg": "#1b1b1b"
+     "from": "Max → Tenant"
     }
    },
    "optionB": {
-    "id": "em_baby_cute",
-    "label": "Baby & Family Stickers",
-    "desc": "Soft pastel baby, bottle, sleepy moon.",
+    "id": "tm2_repair_eta",
+    "label": "Repair With ETA",
+    "desc": "Exact time, who's coming, what to expect.",
     "tags": [
-     "soft",
+     "clear",
+     "direct",
      "friendly",
-     "warm",
-     "personal"
+     "practical"
     ],
     "visual": {
-     "type": "mini",
-     "icon": "👶",
-     "items": [
-      "sleepy moon",
-      "bottle",
-      "first steps"
+     "type": "tone",
+     "lines": [
+      "Aircon tech Khun Lek is coming Tue 10-11am.",
+      "About 30 minutes. No need to be home if the key box is OK."
      ],
-     "bg": "#fdf0f3",
-     "fg": "#1b1b1b"
+     "from": "Max → Tenant"
     }
    },
    "repeat": false,
-   "purpose": "refine"
+   "purpose": "check"
   },
   {
    "id": "2026-10-10f-44",
@@ -2431,23 +2409,23 @@
    "id": "2026-10-10f-47",
    "category": "Swipe Controls",
    "optionA": {
-    "id": "sc_seg_thai",
-    "label": "Thai Segmented Bar",
-    "desc": "Segmented bar with Thai words.",
+    "id": "sc_stamp_brand",
+    "label": "Rubber Stamps",
+    "desc": "Buttons drawn as tilted rubber stamps.",
     "tags": [
-     "thai",
-     "bilingual",
-     "clear",
-     "modern"
+     "rustic",
+     "craft",
+     "playful",
+     "warm"
     ],
     "visual": {
      "type": "controls",
-     "fmt": "segmented",
+     "fmt": "stamp",
      "words": [
-      "ไม่",
-      "อาจจะ",
-      "รัก",
-      "ใช่"
+      "No",
+      "Maybe",
+      "Love",
+      "Yes"
      ],
      "icons": [
       "✕",
@@ -2461,44 +2439,44 @@
       "#E0245E",
       "#0B6E4F"
      ],
-     "style": "filled",
-     "bg": "#f4f1ea",
-     "font": "Kanit"
+     "style": "outline",
+     "bg": "#efe6d2",
+     "font": "Hind"
     }
    },
    "optionB": {
-    "id": "sc_rail_emoji",
-    "label": "Emoji Side Rail",
-    "desc": "Emoji rail with counts, like a Shorts screen.",
+    "id": "sc_rail_mono",
+    "label": "Mono Side Rail",
+    "desc": "White outline icons on a photo, no fills.",
     "tags": [
-     "playful",
-     "youtube",
-     "creator",
-     "casual"
+     "minimal",
+     "monochrome",
+     "modern",
+     "calm"
     ],
     "visual": {
      "type": "controls",
      "fmt": "rail",
      "words": [
-      "",
-      "",
-      "",
-      ""
+      "No",
+      "Maybe",
+      "Love",
+      "Yes"
      ],
      "icons": [
-      "👎",
-      "🤔",
-      "😍",
-      "👍"
+      "✕",
+      "?",
+      "❤",
+      "✓"
      ],
      "colors": [
-      "#f4a6a6",
-      "#f6d58e",
-      "#f7a1c4",
-      "#9fd8b5"
+      "#f4f1ea",
+      "#f4f1ea",
+      "#f4f1ea",
+      "#f4f1ea"
      ],
-     "style": "haptic",
-     "bg": "#fff8ee",
+     "style": "outline",
+     "bg": "#f4f1ea",
      "font": "Hind"
     }
    },
@@ -2922,5 +2900,6 @@
    "artist": "Rosser1954",
    "source": "https://commons.wikimedia.org/wiki/File:Wildflower_meadow,_Gibson_Street,_Glasgow_University.jpg"
   }
- }
+ },
+ "english_only": true
 }
