@@ -188,6 +188,8 @@ body.pairs .stage{max-width:760px;max-height:620px}
 .v-ctl .hand{animation:ctlhand 2.4s ease-in-out infinite}
 @keyframes ctlhand{0%,100%{transform:translateX(-40px)}50%{transform:translateX(40px)}}
 @media (prefers-reduced-motion:reduce){.v-ctl *{animation:none!important}}
+button.skip,.controls.v4 .row2 button.skip{background:transparent;border:1px solid transparent;color:#6B5E50;font-weight:600;min-width:72px!important;min-height:44px;padding:8px 12px!important}
+button.skip:hover{border-color:var(--line)}
 /* end screen */
 .end{max-width:760px;width:100%;flex:1;min-height:0;overflow:auto;-webkit-overflow-scrolling:touch;padding:4px 4px 30px}
 .end h2{margin:10px 0 6px}.end h3{margin:16px 0 6px;font-size:15px}
@@ -242,6 +244,7 @@ details{font-size:11px;color:var(--muted)}
   </div><div class="row2">
   <button class="neither mw-hover" id="bN" title="Down arrow / N">✕ Neither</button>
   <button class="undo mw-hover" id="bU" title="Backspace / Z">↶ Undo</button>
+  <button class="skip mw-hover" id="bSkip" title="S: skip without answering">Skip ›</button>
   </div>
 </div>
 <div class="hint" id="hint"></div>
@@ -462,7 +465,7 @@ function onPlayTap(e){const btn=e.target.closest&&e.target.closest('.play');if(!
 
 /* ---------- flow ---------- */
 // Two deck formats: v3 single cards (deck.cards; No / Maybe / Love / Yes) and legacy v2 pairs (deck.pairs; A vs B).
-const SCORE={love:2,yes:1,maybe:0,no:-1};
+const SCORE={love:2,yes:1,maybe:0,no:-1,skip:null};
 let single=false, items=[];
 const storeKey = () => single?`styleSwipe:v3:${deck.date}`:`styleSwipe:${deck.date}`;
 function save(){try{localStorage.setItem(storeKey(),JSON.stringify({v:single?3:2,picks,idx,order:single?items.map(c=>c.id):undefined,updated:new Date().toISOString()}))}catch(_){}}
@@ -566,15 +569,16 @@ function buildResults(){
   const r=rank(tags);
   return {app:'style-swipe',version:4,format:'pairs',owner:deck.owner||'Max Weberman',deck:deck.date,
    scoring:{this_or_that:'+1 picked, -1 other',both:'+1 each',love:'+2 loved, -1 other',neither:'-1 each'},
-   exported_at:new Date().toISOString(),complete:idx>=items.length,answered:picks.length,total_pairs:items.length,
+   exported_at:new Date().toISOString(),complete:idx>=items.length,answered:picks.filter(p=>p.choice!=='skip').length,total_pairs:items.length,
+   skipped:picks.filter(p=>p.choice==='skip').map(p=>({pair_id:p.pair_id,category:p.category,labelA:p.labelA,labelB:p.labelB,status:'skipped'})),
    totals,top_tags:r.top,avoided_tags:r.avoid,loved,chosen_by_category:byCat,picks}}
  if(single){
   const totals={love:0,yes:0,maybe:0,no:0},tags={},byCat={};
-  for(const p of picks){totals[p.answer]=(totals[p.answer]||0)+1;(p.tags||[]).forEach(t=>tags[t]=(tags[t]||0)+(SCORE[p.answer]||0));
+  for(const p of picks){totals[p.answer]=(totals[p.answer]||0)+1;if(p.answer==='skip')continue;(p.tags||[]).forEach(t=>tags[t]=(tags[t]||0)+(SCORE[p.answer]||0));
    const c=byCat[p.category]=byCat[p.category]||{love:[],yes:[],maybe:[],no:[]};c[p.answer].push(p.label)}
   const r=rank(tags);
   return {app:'style-swipe',version:3,format:'single',owner:deck.owner||'Max Weberman',deck:deck.date,source_deck:deck.source_deck||undefined,
-   scoring:SCORE,exported_at:new Date().toISOString(),complete:idx>=items.length,answered:picks.length,total_cards:items.length,
+   scoring:SCORE,exported_at:new Date().toISOString(),complete:idx>=items.length,answered:picks.filter(p=>p.answer!=='skip').length,skipped:picks.filter(p=>p.answer==='skip').map(p=>({card_id:p.card_id,label:p.label,status:'skipped'})),total_cards:items.length,
    totals,top_tags:r.top,avoided_tags:r.avoid,loved:picks.filter(p=>p.answer==='love').map(p=>p.label),answers_by_category:byCat,picks}}
  const tally={A:0,B:0,neither:0,skip:0},tags={},byCat={};
  for(const p of picks){tally[p.choice]=(tally[p.choice]||0)+1;
@@ -596,7 +600,7 @@ function shareSummary(){
  const r=buildResults(),t=r.totals||{},top=(r.top_tags||[]).slice(0,5).map(x=>x.tag).join(', '),loved=(r.loved||[]).slice(0,5).join(', ');
  const counts=single?`${t.yes||0} Yes, ${t.love||0} Love, ${t.maybe||0} Maybe, ${t.no||0} No`
   :`${t.A||0} This, ${t.B||0} That, ${t.both||0} Both, ${(t.loveA||0)+(t.loveB||0)} Love, ${t.neither||0} Neither`;
- return `My Style Swipe picks (deck ${deck.date}, ${picks.length}/${items.length}): ${counts}.`+(top?` Top tags: ${top}.`:'')+(loved?` Loved: ${loved}.`:'')}
+ return `My Style Swipe picks (deck ${deck.date}, ${r.answered}/${items.length}): ${counts}${(r.skipped||[]).length?`, ${r.skipped.length} skipped`:''}.`+(top?` Top tags: ${top}.`:'')+(loved?` Loved: ${loved}.`:'')}
 function openSms(u){location.href=u}
 const isPhone=()=>/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)||(navigator.maxTouchPoints>1&&/Macintosh/.test(navigator.userAgent));
 async function copyText(txt,msg){try{await navigator.clipboard.writeText(txt);toast(msg||'Copied')}catch(_){const ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity=0;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');toast(msg||'Copied')}catch(e){toast('Copy failed')}ta.remove()}}
@@ -639,15 +643,15 @@ function showEnd(){
 }
 
 /* ---------- wiring ---------- */
-$('#bA').onclick=()=>choose('A');$('#bB').onclick=()=>choose('B');$('#bN').onclick=()=>choose('neither');$('#bBoth').onclick=()=>choose('both');$('#bU').onclick=()=>{setLove(false);undo()};
+$('#bA').onclick=()=>choose('A');$('#bB').onclick=()=>choose('B');$('#bN').onclick=()=>choose('neither');$('#bBoth').onclick=()=>choose('both');$('#bSkip').onclick=()=>{setLove(false);choose('skip')};$('#bU').onclick=()=>{setLove(false);undo()};
 $('#bLoveP').onclick=()=>{setLove(!loveArmed);if(loveArmed)toast('Now tap the option you love')};
 $('#bNo').onclick=()=>answer('no');$('#bMaybe').onclick=()=>answer('maybe');$('#bLove').onclick=()=>answer('love');$('#bYes').onclick=()=>answer('yes');$('#bU3').onclick=undo;
 $('#btnExportTop').onclick=()=>{if(deck)download()};
 $('#shareBtn').onclick=share;
 document.addEventListener('keydown',e=>{if(e.target.tagName==='TEXTAREA'||!deck)return;const k=e.key;
  if(k==='Backspace'||k==='z'){e.preventDefault();return undo()}
- if(single){if(k==='ArrowLeft')answer('no');else if(k==='ArrowRight')answer('yes');else if(k==='m'||k==='ArrowDown')answer('maybe');else if(k==='l'||k==='ArrowUp')answer('love');return}
- if(k==='ArrowLeft')choose('A');else if(k==='ArrowRight')choose('B');else if(k==='ArrowDown'||k==='n')choose('neither');else if(k==='b'||k==='ArrowUp')choose('both');else if(k==='l')setLove(!loveArmed);else if(k==='Escape')setLove(false)});
+ if(single){if(k==='s')answer('skip');else if(k==='ArrowLeft')answer('no');else if(k==='ArrowRight')answer('yes');else if(k==='m'||k==='ArrowDown')answer('maybe');else if(k==='l'||k==='ArrowUp')answer('love');return}
+ if(k==='ArrowLeft')choose('A');else if(k==='ArrowRight')choose('B');else if(k==='ArrowDown'||k==='n')choose('neither');else if(k==='b'||k==='ArrowUp')choose('both');else if(k==='s')choose('skip');else if(k==='l')setLove(!loveArmed);else if(k==='Escape')setLove(false)});
 $('#deckFile').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{const d=JSON.parse(await f.text());if(!d.pairs&&!d.cards)throw 0;setDeck(d);toast(`Loaded deck ${d.date}`)}catch(_){toast('Not a valid deck file')}};
 $('#creditsLink').onclick=e=>{e.preventDefault();const c=(deck&&deck.image_credits)||{};$('#main').innerHTML=`<div class="end"><h2>Image Credits</h2><div class="catlist">${Object.values(c).map(x=>`<div><a style="color:#05668D" href="${esc(x.source)}" target="_blank" rel="noopener">${esc(x.title)}</a> · ${esc(x.artist||'Unknown')} · ${esc(x.license)}</div>`).join('')||'None'}</div><div class="btnrow"><button class="mw-hover" id="cBack">Back</button></div></div>`;showControls(false);$('#cBack').onclick=()=>render()};
 (async()=>{
