@@ -1531,13 +1531,28 @@ def inline_images(deck):
         imgs[k] = "data:image/jpeg;base64," + base64.b64encode(data).decode()
     return imgs
 
+def inline_audio(deck):
+    """Render (or reuse) a real MP3 clip for every sound option in the deck; return {option_id: data URI}."""
+    out = {}
+    try:
+        import audio_synth
+    except Exception as e:
+        print("WARNING: audio clips not generated:", e); return out
+    for p in deck["pairs"]:
+        for o in (p["optionA"], p["optionB"]):
+            if o["visual"].get("type") == "sound":
+                path = audio_synth.render(o)
+                out[o["id"]] = "data:audio/mpeg;base64," + base64.b64encode(open(path, "rb").read()).decode()
+    return out
+
 def render_index(deck):
     if not os.path.exists(TEMPLATE):
         print("No index.template.html; skipping HTML render."); return
     html = open(TEMPLATE).read()
     payload = json.dumps(deck, ensure_ascii=False).replace("</", "<\\/")
     imgs = json.dumps(inline_images(deck)).replace("</", "<\\/")
-    html = html.replace("/*__DECK_JSON__*/null", payload).replace("/*__IMAGES_JSON__*/{}", imgs)
+    auds = json.dumps(inline_audio(deck))
+    html = html.replace("/*__DECK_JSON__*/null", payload).replace("/*__IMAGES_JSON__*/{}", imgs).replace("/*__AUDIO_JSON__*/{}", auds)
     with open(INDEX, "w") as f: f.write(html)
     print(f"Rendered {INDEX} ({os.path.getsize(INDEX)//1024} KB) with deck {deck['date']} embedded")
 
