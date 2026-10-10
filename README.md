@@ -6,6 +6,8 @@ Daily A/B taste test for Max Weberman's personal brand.
 - Swipe or tap left/right, or use Neither / Skip / Undo (keys: ← → ↓ S Z).
 - At the end: Export JSON, Copy JSON, or Share. Progress auto-saves in localStorage per deck date.
 
+Live: https://webermanapps.github.io/style-swipe/ (older decks: add `?date=<deck id>`, e.g. `?date=2026-10-12`).
+
 Daily loop:
     python3 generate_deck.py --ingest ~/Downloads/style-swipe-results-2026-10-09.json --date 2026-10-10
 This updates `profile.json`, writes `decks/2026-10-10.json`, and re-renders `index.html` with that deck embedded.
@@ -16,3 +18,7 @@ Freshness:
   ledger (option id -> dates shown); it is updated automatically each time a deck is generated.
 - Each option appears at most once per deck. When the unseen pool runs low the generator warns and makes a
   shorter deck (or use `--allow-repeats`). Extend `POOL_EXTRA` in `generate_deck.py` to add runway.
+
+Focus and deck ids:
+- `--focus "Cat A,Cat B"` boosts those categories x3 so most pairs match what Max is working on now; `--focus-note` saves why. Add each day's work-specific options as a new `POOL_<date>` block in `generate_deck.py`.
+- Without `--date`, the deck id is today's date, or the next free suffix (`2026-10-10b`, `c`, ...) if today's id is taken.
