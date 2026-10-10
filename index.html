@@ -140,6 +140,13 @@ button.yes{background:var(--yes);border-color:var(--yes);color:#fff}
 button.undo{border-color:var(--lagoon);color:#9fd3e6}
 .ans{display:inline-block;font-size:10px;font-weight:800;padding:1px 6px;border-radius:999px;margin-right:3px;color:#fff}
 .ans.love{background:var(--love)}.ans.yes{background:var(--yes)}.ans.maybe{background:var(--maybe);color:#111}.ans.no{background:var(--no)}
+/* responsive: phone-first, centered card, 44px tap targets */
+body.single .stage{max-width:520px;max-height:640px}
+body.single .controls{max-width:540px}
+.opts.single .opt{min-height:100%}
+#btnExportTop{min-height:44px;min-width:64px}
+footer label,footer a{display:inline-flex;align-items:center;min-height:44px;padding:0 6px}
+.end .btnrow button{min-height:44px}
 /* end screen */
 .end{max-width:760px;width:100%;flex:1;min-height:0;overflow:auto;-webkit-overflow-scrolling:touch;padding:4px 4px 30px}
 .end h2{margin:10px 0 6px}.end h3{margin:16px 0 6px;font-size:15px}
@@ -394,7 +401,7 @@ const storeKey = () => single?`styleSwipe:v3:${deck.date}`:`styleSwipe:${deck.da
 function save(){try{localStorage.setItem(storeKey(),JSON.stringify({v:single?3:2,picks,idx,order:single?items.map(c=>c.id):undefined,updated:new Date().toISOString()}))}catch(_){}}
 function readStore(k){try{const s=JSON.parse(localStorage.getItem(k)||'null');return s&&typeof s==='object'?s:null}catch(_){return null}}
 function setDeck(d){
- deck=d;single=Array.isArray(d.cards);picks=[];idx=0;
+ deck=d;single=Array.isArray(d.cards);document.body.classList.toggle('single',single);picks=[];idx=0;
  const s=readStore(storeKey());
  if(single){
   let order=s&&Array.isArray(s.order)?s.order:null;
