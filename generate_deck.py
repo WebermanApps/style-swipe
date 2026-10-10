@@ -701,6 +701,196 @@ POOL_2026_10_10 = {
 for _cat, _opts in POOL_2026_10_10.items():
     POOL.setdefault(_cat, []).extend(_opts)
 
+# ---------------------------------------------------------------------------
+# 2026-10-10 (round 2) additions: deeper refinement inside Max's liked space (warm, light, modern,
+# industrial, construction, clear, bilingual, friendly, rustic, natural) for SiteAgent + SMART visa,
+# the Japanese-modern dream home, the Japan akiya, @AMomentInThai Shorts, and tenant/lender messages.
+# A few disliked directions (playful, vibrant, luxe, editorial, japanese+minimal, dark) are kept as checks.
+# ---------------------------------------------------------------------------
+POOL_2026_10_10C = {
+ "SiteAgent Brand Marks": [
+  logo("sa2_roof_s", "Roof-Peak S", "An S tucked under a simple roof line, warm terracotta.", ["construction","warm","friendly","clear"], "S", "SiteAgent", "montserrat", "#c1502e", "#fbf6ee", "house", 800, "0.01em", False, False),
+  logo("sa2_hex_light", "Light Hex Nut", "Steel-grey hex on off-white: industrial but light.", ["industrial","light","modern","construction"], "S", "SiteAgent", "chakra", "#4a4a48", "#f4f4f1", "hex", 700, "0.04em", False, False),
+  logo("sa2_bilingual_kanit", "Kanit Bilingual Stack", "Bold Kanit English over Thai, teal rule.", ["bilingual","thai","modern","clear"], "", "SiteAgent|ไซต์เอเจนต์", "kanit", "#1b1b1b", "#f6f3ec", "bilingual", 700, "0.02em", False, False, "#139a8f"),
+  logo("sa2_tape_measure", "Tape-Measure Underline", "Clean name on a yellow tape-measure bar.", ["construction","clear","friendly","practical"], "", "SiteAgent", "manrope", "#1f1f1f", "#ffffff", "underline", 800, "0.01em", False, False, "#ffc300"),
+  logo("sa2_rounded_tile", "Rounded App Tile", "Soft-cornered SA app icon in clay orange.", ["modern","friendly","warm","clean"], "SA", "SiteAgent", "outfit", "#d9693b", "#fff8f0", "rounded", 800, "0.02em", False, False),
+  logo("sa2_kraft_stamp", "Kraft Site Stamp", "Ink ring stamp on kraft: approved on site.", ["rustic","craft","construction","warm"], "SA", "SiteAgent · Approved", "spacemono", "#1b1b1b", "#c8a97e", "ring", 700, "0.05em"),
+  logo("sa2_blueprint_light", "Light Blueprint Line", "Blue outline letter on pale graph paper.", ["technical","light","clear","construction"], "S", "SiteAgent", "grotesk", "#0b3d91", "#eef3f9", "outline", 600, "0.06em"),
+  logo("sa2_sun_teal", "Morning Shift Arc", "Teal half-sun behind the name: early starts.", ["warm","friendly","natural","light"], "", "SiteAgent", "nunito", "#16302e", "#f4fbfa", "sun", 800, "0.01em", False, False, "#7fd1c7"),
+  logo("sa2_wood_circle", "Timber Circle", "Oiled-wood brown circle mark, natural feel.", ["natural","rustic","warm","modern"], "S", "SiteAgent", "fraunces", "#8b5a2b", "#f7f1e3", "circle", 700, "0.02em", False, False),
+  logo("sa2_split_steel", "Steel & Safety Split", "Diagonal steel-grey and safety-orange tile.", ["industrial","construction","modern","bold"], "SA", "SITEAGENT", "oswald", "#2f3a40", "#f4f4f1", "split", 700, "0.08em", False, True, "#ff6b00"),
+  logo("sa2_neon_play", "Neon Pop Bubble", "Hot-pink bubble icon. (Playful/vibrant check.)", ["playful","vibrant","bold","youtube"], "S", "SiteAgent", "syne", "#ff006e", "#fff0f6", "circle", 800, "0", False, False),
+  logo("sa2_gold_luxe", "Gold Serif Crest", "Gold ring on black, serif caps. (Luxe/dark check.)", ["luxe","dark","classic","formal"], "SA", "SITEAGENT", "cormorant", "#c9a227", "#0b0b0b", "ring", 600, "0.2em"),
+ ],
+ "SiteAgent Pitch Page": [
+  hero("sa2_hero_photo_light", "Bright Site Photo", "Airy daylight site photo, short promise, orange button.", ["construction","light","natural","clear"], "#000", "#ffffff", "#ff8c42", "dmsans", "fullbleed", "Site Reports In Two Minutes", "Photos in, Thai and English report out.", "Book A Pilot", "base_site", "brightness(1.15) saturate(.9)"),
+  hero("sa2_hero_bilingual_warm", "Warm Bilingual Hero", "Cream background, Kanit headline, Thai under it.", ["bilingual","warm","thai","friendly"], "#fff8f0", "#3b2a1a", "#d9693b", "kanit", "bilingual", "Your AI Site Assistant|ผู้ช่วยงานก่อสร้างของคุณ", "SiteAgent", "Try It"),
+  hero("sa2_hero_cards_steel", "Steel Feature Cards", "Three cards on concrete grey: Report, Safety, Client.", ["industrial","clear","modern","practical"], "#e9ecee", "#1f1f1f", "#ff6b00", "manrope", "cards", "One Assistant For Every Site", "Report|Safety|Client", ""),
+  hero("sa2_hero_split_portrait", "Founder Split", "Max on the right, builder-to-builder promise left.", ["personal","friendly","trust","warm"], "#f6f3ec", "#3b2a1a", "#8b5a2b", "outfit", "split", "Built By A Builder", "I run real sites. SiteAgent is what I wanted.", "Talk To Max", "base_site"),
+  hero("sa2_hero_form_light", "Light Pilot Form", "White page, form right, nothing else to read.", ["clear","light","direct","modern"], "#ffffff", "#1b1b1b", "#139a8f", "dmsans", "form", "Start A Free Pilot", "Set up in one afternoon.", "Start"),
+  hero("sa2_hero_blueprint_light", "Pale Blueprint", "Light-blue graph paper, sketch plan, dark text.", ["technical","construction","light","clear"], "#dce8f5", "#0b3d91", "#ff8c42", "grotesk", "blueprint", "Every Site, One Clear Report", "Structural · Safety · Progress", "See Sample"),
+  hero("sa2_hero_map_thai", "Thai Sites Map", "Map with pins across Thailand and a site list.", ["practical","clear","thai","modern"], "#f4fbfa", "#16302e", "#139a8f", "sarabun", "map", "All Your Sites", "Bangkok · Chiang Mai · Phuket", "Open Dashboard"),
+  hero("sa2_hero_chat_warm", "Warm Chat Hero", "Chat box on cream: 'Ask your site anything'.", ["friendly","warm","modern","clear"], "#fbf6ee", "#3b2a1a", "#d9693b", "nunito", "chat", "Ask Your Site Anything", "In English or Thai.", "Ask"),
+  hero("sa2_hero_trust_numbers", "Pilot Results Strip", "Headline plus three pilot numbers.", ["trust","clear","construction","direct"], "#ffffff", "#1f1f1f", "#2bb673", "manrope", "trust", "Pilots Saved 6 Hours A Week", "★★★★★ from Thai foremen", "Read Case Study"),
+  hero("sa2_hero_bigtype_warm", "Warm Giant Line", "Huge headline on sand, one orange rule.", ["bold","warm","direct","modern"], "#f6e7d0", "#3b2a1a", "#d9693b", "anton", "bigtype", "LESS PAPER. MORE BUILDING.", "", "Book Demo"),
+  hero("sa2_hero_dark_video", "Dark Cinematic Demo", "Black page, moody demo video. (Dark check.)", ["dark","cinematic","bold","modern"], "#0b0b0b", "#ffffff", "#2dd4bf", "inter", "video", "The Future Of The Job Site", "90-second film", "Play", "base_site", "brightness(.55)"),
+  hero("sa2_hero_vibrant_illus", "Candy Gradient Illustration", "Bright pink-purple gradient. (Vibrant/playful check.)", ["vibrant","playful","friendly","bold"], "linear-gradient(135deg,#ff7eb6,#7c3aed)", "#ffffff", "#ffe066", "syne", "illus", "Sites, But Fun", "AI for builders", "Let's Go"),
+ ],
+ "SiteAgent Product Voice": [
+  tone2("sa2_v_morning_brief", "Morning Brief, Bilingual", "Three lines, EN then TH, sent at 7am.", ["bilingual","clear","construction","friendly"], "Today: formwork L3, rebar delivery 10am, rain after 4.", "วันนี้: แบบหล่อชั้น 3, เหล็กมาส่ง 10 โมง, ฝนหลัง 4 โมง", "SiteAgent → Crew"),
+  tone2("sa2_v_plain_owner", "Plain Owner Update", "Plain words, one photo, no jargon.", ["clear","warm","friendly","natural"], "Your roof frame is up. It's level and on schedule.", "Next week we start the tiles.", "SiteAgent → Homeowner"),
+  tone2("sa2_v_foreman_peer", "Foreman-To-Foreman", "Talks like a seasoned site boss.", ["direct","construction","rustic","practical"], "Mesh on the east slab is sitting on the dirt.", "Chair it up before the pour. 20 minutes, tops.", "SiteAgent → Foreman"),
+  tone2("sa2_v_safety_kind", "Kind Safety Reminder", "Firm on safety, warm in tone.", ["friendly","construction","warm","clear"], "Quick one: two guys on the scaffold without harnesses.", "Let's get them clipped in before break. Thanks, team.", "SiteAgent → Foreman"),
+  tone2("sa2_v_summary_numbers", "Week In Numbers", "Numbers with one plain-English line.", ["clear","modern","direct","practical"], "Week 6: 71% done (+9). 0 incidents. 2 open issues.", "Biggest risk: window delivery next Tuesday.", "SiteAgent → Owner"),
+  tone2("sa2_v_thai_polite", "Polite Thai Partner", "Krab-polite, respectful to subcontractors.", ["thai","bilingual","warm","friendly"], "Khun Somsak krab, the tile delivery is confirmed for Friday.", "Please let me know if your team needs anything krab.", "SiteAgent → Subcontractor"),
+  tone2("sa2_v_lender_ready", "Lender-Ready Progress", "Structured draw-request style progress note.", ["trust","clear","modern","construction"], "Milestone 3 (structure) complete. Photos and inspection attached.", "Requesting draw #3 per schedule.", "SiteAgent → Lender"),
+  tone2("sa2_v_quick_fix", "Problem + Fix", "Every issue arrives with a suggested fix.", ["direct","practical","friendly","clear"], "Drain on the north side is pooling.", "Suggested fix: add 2% fall and a gravel trench. Approve?", "SiteAgent → Foreman"),
+  tone2("sa2_v_rustic_humor", "Dry Site Humor", "A bit of site banter, still useful.", ["rustic","casual","warm","direct"], "The cement mixer is back from vacation.", "Pour's on for 7am. Bring coffee.", "SiteAgent → Crew"),
+  tone2("sa2_v_visual_first", "Photo-First Caption", "Short caption under a marked-up photo.", ["clear","modern","natural","practical"], "📷 Crack at column C4, hairline, 0.2 mm.", "Monitor only. Re-check in 7 days.", "SiteAgent → Engineer"),
+  tone2("sa2_v_hype", "Hype Announcer", "All caps celebration. (Playful/vibrant check.)", ["playful","vibrant","loud","energetic"], "LET'S GOOO! SLAB DAY! 🔥🔥", "Crew is CRUSHING it today!!", "SiteAgent → Crew"),
+  tone2("sa2_v_luxe_concierge", "Concierge Formal", "Five-star hotel register. (Luxe/formal check.)", ["luxe","formal","calm","classic"], "Good morning. Your residence progresses gracefully.", "Should you wish, a private site viewing can be arranged.", "SiteAgent → Owner"),
+ ],
+ "SMART Visa Pitch Deck": [
+  hero("sv_title_bilingual", "Bilingual Title Slide", "Name, one-line pitch, EN/TH.", ["bilingual","clear","thai","modern"], "#ffffff", "#16302e", "#139a8f", "kanit", "bilingual", "SiteAgent|AI สำหรับงานก่อสร้างไทย", "SMART Visa application · 2026", ""),
+  hero("sv_problem_bigtype", "Problem In One Line", "Giant statement of the problem.", ["direct","bold","clear","construction"], "#f4f4f1", "#1f1f1f", "#ff6b00", "anton", "bigtype", "THAI SITES LOSE 1 DAY A WEEK TO PAPER.", "", ""),
+  hero("sv_market_map", "Market Map Slide", "Thailand map with site density and numbers.", ["clear","technical","modern","thai"], "#f4fbfa", "#16302e", "#139a8f", "sarabun", "map", "Market: 90,000 Active Sites", "Bangkok · EEC · North · South", ""),
+  hero("sv_product_cards", "Product In Three Cards", "Capture, Report, Act.", ["clear","modern","friendly","practical"], "#ffffff", "#1f2937", "#2563eb", "dmsans", "cards", "How SiteAgent Works", "Capture|Report|Act", ""),
+  hero("sv_founder", "Founder Credibility", "Max's photo, years building, why him.", ["personal","trust","warm","construction"], "#fbf6ee", "#3b2a1a", "#8b5a2b", "outfit", "split", "Founder: Max Weberman", "US contractor (LLC) · building in Thailand", "", "base_site"),
+  hero("sv_traction_numbers", "Traction Numbers", "Pilots, hours saved, sites live.", ["trust","clear","direct","modern"], "#ffffff", "#0f2340", "#2bb673", "manrope", "trust", "3 Pilots · 14 Sites · 6 h/week Saved", "Letters of intent attached", ""),
+  hero("sv_blueprint_tech", "Tech Architecture Slide", "Blueprint-style system diagram.", ["technical","construction","clear","industrial"], "#0b3d91", "#ffffff", "#ffd166", "chakra", "blueprint", "Technology & IP", "On-device vision · Thai NLP · Offline-first", ""),
+  hero("sv_jobs_thai", "Thai Jobs Impact", "How many Thai jobs and skills it creates.", ["thai","warm","clear","trust"], "#fff8f0", "#3b2a1a", "#d9693b", "kanit", "center", "12 Thai Hires In 24 Months", "Engineering · Support · Field trainers", ""),
+  hero("sv_warm_photo", "Warm Site Photo Cover", "Golden-hour site photo as cover slide.", ["warm","natural","construction","storytelling"], "#000", "#ffffff", "#f6b93b", "dmsans", "fullbleed", "Building Thailand, Smarter", "SMART Visa · Startup category", "", "base_site", "sepia(.3) saturate(1.2)"),
+  hero("sv_ask_form", "The Ask Slide", "Clear ask: visa, funding, partners.", ["direct","clear","practical","modern"], "#f4f4f1", "#1f1f1f", "#139a8f", "manrope", "form", "What We Need", "SMART Visa · 5M THB seed · 2 pilot partners", ""),
+  hero("sv_editorial_cover", "Magazine-Style Cover", "Big serif masthead cover. (Editorial check.)", ["editorial","classic","bold","formal"], "#000", "#ffffff", "#d62828", "playfair", "magazine", "THE NEW FOREMAN", "A SiteAgent story", "", "base_site", "contrast(1.1)"),
+  hero("sv_dark_luxe", "Black & Gold Deck", "Black slides, gold lines. (Dark/luxe check.)", ["dark","luxe","formal","classic"], "#0b0b0b", "#f2ead8", "#c9a227", "cormorant", "center", "SiteAgent Holdings", "Confidential", ""),
+ ],
+ "SiteAgent App Screens": [
+  ui("sa2_ui_light_teal", "Light Teal Field App", "White cards, teal actions, big touch targets.", ["light","clear","modern","friendly"], "#f4fbfa","#ffffff","#16302e","#139a8f",14,"dmsans","soft","1px solid #d7ebe8"),
+  ui("sa2_ui_concrete_orange", "Concrete & Orange", "Concrete grey surfaces, safety-orange buttons.", ["industrial","construction","clear","modern"], "#e9ecee","#f8f9fa","#1f1f1f","#ff6b00",8,"manrope","soft","1px solid #cfd4da"),
+  ui("sa2_ui_warm_sand", "Warm Sand", "Sand and clay tones, rounded, homey.", ["warm","friendly","natural","light"], "#f6efe4","#fffaf3","#3b2a1a","#d9693b",16,"nunito","soft"),
+  ui("sa2_ui_bilingual", "Bilingual Labels", "Every label in English and Thai, Sarabun body.", ["bilingual","thai","clear","practical"], "#ffffff","#f7f8fa","#1f2937","#2563eb",10,"sarabun","soft","1px solid #e5e7eb"),
+  ui("sa2_ui_kraft", "Kraft Clipboard", "Clipboard-and-kraft look, stamped type.", ["rustic","craft","construction","warm"], "#d8bf96","#efe1c6","#1b1b1b","#8b3a1a",4,"spacemono","none","2px solid #1b1b1b"),
+  ui("sa2_ui_glove", "Glove-Friendly Big Buttons", "Huge buttons, high contrast, works with gloves.", ["construction","clear","direct","practical"], "#ffffff","#ffffff","#111111","#ffc300",6,"archivo","hard","2px solid #111"),
+  ui("sa2_ui_timber", "Timber & Cream", "Cream app with oak-brown accents.", ["natural","warm","modern","rustic"], "#f7f1e3","#fffaf0","#3b2a1a","#8b5a2b",12,"outfit","soft","1px solid #eadfc8"),
+  ui("sa2_ui_blueprint_light", "Pale Blueprint App", "Light blueprint blue with white cards.", ["technical","light","construction","clear"], "#dce8f5","#ffffff","#0b3d91","#ff8c42",8,"grotesk","soft","1px dashed #9db4d8"),
+  ui("sa2_ui_line_green", "LINE-Style Chat Green", "Familiar chat-app green, friendly bubbles.", ["friendly","thai","modern","clear"], "#f2f7f2","#ffffff","#1b1b1b","#06c755",18,"prompt","soft"),
+  ui("sa2_ui_steel_minimal", "Steel Minimal", "Cool steel greys, thin lines, very calm.", ["industrial","modern","minimal","light"], "#f1f3f5","#ffffff","#212529","#495057",4,"inter","none","1px solid #dee2e6"),
+  ui("sa2_ui_dark_ops", "Dark Ops Dashboard", "Night-mode command center. (Dark check.)", ["dark","technical","bold","modern"], "#0f1115","#1a1d24","#e6e8ee","#ff6b00",10,"grotesk","glow","1px solid #2a2f3a"),
+  ui("sa2_ui_candy", "Candy Gradient App", "Pink-violet gradient, bubbly. (Playful/vibrant check.)", ["playful","vibrant","soft","bold"], "linear-gradient(135deg,#ff7eb6,#7c3aed)","rgba(255,255,255,.85)","#2b1b3a","#ff006e",22,"syne","soft"),
+ ],
+ "Tenant & Partner Messages": [
+  tone2("tm2_rent_bilingual", "Rent Reminder, Bilingual", "Friendly reminder in English and Thai.", ["bilingual","friendly","clear","warm"], "Hi Ploy, rent for November is due on the 5th.", "ค่าเช่าเดือนพฤศจิกายนครบกำหนดวันที่ 5 นะครับ ขอบคุณครับ", "Max → Tenant"),
+  tone2("tm2_repair_eta", "Repair With ETA", "Exact time, who's coming, what to expect.", ["clear","direct","friendly","practical"], "Aircon tech Khun Lek is coming Tue 10-11am.", "About 30 minutes. No need to be home if the key box is OK.", "Max → Tenant"),
+  tone2("tm2_move_in", "Warm Move-In Welcome", "Welcome note with the three things that matter.", ["warm","friendly","natural","clear"], "Welcome home! WiFi, trash day and my number are on the fridge.", "Message me anytime, I usually reply within the hour.", "Max → Tenant"),
+  tone2("tm2_rent_rise", "Rent Increase, Plain & Fair", "Explains the why, gives time, offers options.", ["clear","trust","warm","direct"], "Next year's rent goes up 3%, from 12,000 to 12,360 THB.", "Costs went up 6%; I kept it at half. Happy to chat.", "Max → Tenant"),
+  tone2("tm2_late_firm", "Late Payment, Firm & Kind", "Firm deadline, open door.", ["direct","clear","friendly","trust"], "Rent is 7 days late now. I need it by Friday.", "If something's going on, tell me and we'll make a plan.", "Max → Tenant"),
+  tone2("tm2_inspection", "Inspection Notice", "Advance notice, purpose, duration.", ["clear","practical","polite","friendly"], "Quick heads-up: yearly safety check on Sat 9am, about 20 min.", "Smoke alarms, water heater, breaker panel. Thanks!", "Max → Tenant"),
+  tone2("tm2_lender_monthly", "Lender Monthly Snapshot", "Occupancy, collections, issues in four lines.", ["clear","trust","modern","direct"], "October: 96% occupied, 100% collected, NOI 184k THB.", "One roof repair (38k) done and paid from reserve.", "Max → Lender"),
+  tone2("tm2_lender_draw", "Construction Draw Request", "Milestone, proof, amount, date.", ["construction","clear","trust","practical"], "Draw #4 request: framing complete, inspection passed 10/8.", "Amount 1.2M THB per schedule. Photos and invoices attached.", "Max → Lender"),
+  tone2("tm2_lender_bad_news", "Lender: Delay, Owned Early", "Bad news first, cause, new date, cost.", ["trust","direct","clear","calm"], "Heads-up: completion moves from Dec 15 to Jan 10.", "Cause: window supplier. No budget impact; plan attached.", "Max → Lender"),
+  tone2("tm2_partner_casual", "Partner: Quick & Friendly", "Short, friendly, still has the numbers.", ["friendly","casual","clear","warm"], "Good news: unit 3 rented at 14k, two weeks early.", "Want to grab coffee Friday and plan unit 4?", "Max → Partner"),
+  tone2("tm2_emoji_landlord", "Emoji-Heavy Landlord", "Very chatty with emoji. (Playful check.)", ["playful","vibrant","casual","friendly"], "Rent day tomorrow!! 🏠💸🎉", "You're the best tenants ever 🙌✨", "Max → Tenant"),
+  tone2("tm2_formal_notice", "Formal Legal Notice", "Formal letter register. (Formal/classic check.)", ["formal","classic","trust","calm"], "Dear Tenant, please be advised that the rental rate will be adjusted.", "This notice is provided in accordance with Clause 7 of your lease.", "Max → Tenant"),
+ ],
+ "Dream Home Finishes": [
+  mood("dh2_oak_plaster", "White Oak & Warm Plaster", "Light oak floors, warm-white plaster, linen.", ["warm","light","natural","modern"], ["#f4efe6","#e3d4bc","#c8a97e","#9caf88","#3f4540"], ["white oak","warm plaster","linen"]),
+  mood("dh2_teak_concrete", "Teak & Polished Concrete", "Teak doors and ceilings over polished concrete floors.", ["industrial","warm","modern","natural"], ["#8b5a2b","#bdbcb6","#e8e4dc","#3a3a3a","#c19a6b"], ["teak","polished concrete","black steel"]),
+  mood("dh2_cedar_steel", "Cedar & Black Steel Windows", "Cedar cladding with slim black steel frames.", ["industrial","natural","modern","rustic"], ["#a0784e","#2b2b2b","#e8dcc6","#6b8f71","#f7f3ea"], ["cedar","steel windows","stone"]),
+  mood("dh2_clay_tile_roof", "Clay Tile Roof, Deep Eaves", "Thai-Japanese deep eaves with clay tiles.", ["warm","rustic","thai","natural"], ["#a0522d","#c1502e","#e8dcc2","#5c4033","#4e7d4a"], ["clay roof tiles","deep eaves","teak brackets"]),
+  mood("dh2_engawa_light", "Light-Oak Engawa", "Pale oak veranda with sliding glass, garden view.", ["light","natural","modern","calm"], ["#e3d9c6","#c2a878","#ffffff","#7d9a6f","#3a3a3a"], ["light oak deck","sliding glass","moss garden"]),
+  mood("dh2_reclaimed", "Reclaimed Timber Beams", "Old teak beams reused in a modern frame.", ["rustic","craft","warm","construction"], ["#6b4226","#3b2a1a","#d8c3a5","#f4ecd8","#8a7f5a"], ["reclaimed teak","iron straps","lime wash"]),
+  mood("dh2_terrazzo_light", "Light Terrazzo & Rattan", "Pale terrazzo floors, rattan furniture, palms.", ["light","tropical","natural","modern"], ["#f2efe8","#d9d4c7","#c8a97e","#5a7d4f","#ffffff"], ["terrazzo","rattan","palms"]),
+  mood("dh2_kitchen_oak_steel", "Kitchen: Oak & Stainless", "Oak fronts, stainless counters, open shelves.", ["industrial","modern","warm","clear"], ["#c8a97e","#c0c4c8","#f4f4f1","#2b2b2b","#9caf88"], ["oak fronts","stainless top","open shelving"]),
+  mood("dh2_bath_stone", "Bath: Warm Stone & Plants", "Travertine, wood slats, a big window to plants.", ["natural","warm","calm","light"], ["#e8dcc6","#c9b49a","#7d9a6f","#ffffff","#5c4033"], ["travertine","wood slats","indoor plants"]),
+  mood("dh2_studio_brick", "Music Studio: Brick & Oak", "Brick wall, oak floor, warm lamps, gear wall.", ["industrial","warm","rustic","personal"], ["#9c4a2f","#c8a97e","#2e2e2e","#f2efe8","#b5651d"], ["old brick","oak","pegboard gear wall"]),
+  mood("dh2_courtyard", "Inner Courtyard Garden", "Open courtyard with a maple, stone path, rain chain.", ["natural","calm","light","modern"], ["#5a7d4f","#d9cba3","#f7f5ef","#8e8e8a","#c1502e"], ["courtyard","stone path","rain chain"]),
+  mood("dh2_carport_workshop", "Carport + Workshop Wing", "Steel carport with a tool workshop behind.", ["construction","industrial","practical","rustic"], ["#2f3a40","#c5ccd0","#a0784e","#f4f4f1","#ff6b00"], ["steel carport","workbench","tool wall"]),
+  mood("dh2_ma_minimal", "Pure Ma Minimalism", "Empty rooms, white walls, single object. (Japanese-minimal check.)", ["japanese","minimal","calm","light"], ["#ffffff","#f2f0eb","#d9d4c7","#2b2b2b","#e8e4dc"], ["empty space","white walls","one vase"]),
+  mood("dh2_dark_onyx", "Onyx & Brass Luxe", "Black marble, brass, moody lights. (Luxe/dark check.)", ["luxe","dark","bold","formal"], ["#0b0b0b","#2b2b2b","#c9a227","#5c4033","#efe6d2"], ["black onyx","brass","velvet"]),
+ ],
+ "Japan Cottage Makeover": [
+  mood("jc2_warm_wood_refresh", "Warm Wood Refresh", "Sand the old cedar, keep it warm, add soft lighting.", ["warm","natural","rustic","light"], ["#c8a97e","#e8dcc6","#8b5a2b","#f7f3ea","#3b2a1a"], ["sanded cedar","paper lamps","linen"]),
+  mood("jc2_modern_kitchen_insert", "Modern Kitchen In Old Shell", "New stainless/oak kitchen inside the old frame.", ["modern","industrial","warm","practical"], ["#c0c4c8","#c8a97e","#3a2e22","#f4f4f1","#7d9a6f"], ["stainless counter","oak fronts","old beams"]),
+  mood("jc2_insulated_cozy", "Insulated & Cozy", "Double glazing, wood stove, wool rugs: winter-proof.", ["warm","practical","rustic","natural"], ["#8c3b1f","#d8c3a5","#5c4033","#efe6d2","#2b2b2b"], ["wood stove","double glazing","wool"]),
+  mood("jc2_doma_workshop", "Doma Workshop Entry", "Earth-floor entry turned into a tool workshop.", ["construction","rustic","craft","practical"], ["#8e8e8a","#a0784e","#3a2e22","#e8e4dc","#ff6b00"], ["earthen floor","workbench","tool wall"]),
+  mood("jc2_engawa_cafe", "Engawa Coffee Corner", "Sunny veranda bench with a little coffee bar.", ["warm","friendly","natural","light"], ["#c19a6b","#f4ecd8","#6f4e37","#9caf88","#ffffff"], ["veranda bench","pour-over","garden view"]),
+  mood("jc2_guest_suite_clean", "Clean Guest Suite", "Simple bed, good light, bookable photos.", ["clean","light","modern","practical"], ["#f7f5ef","#e3d9c6","#9aa5a0","#c19a6b","#3f4540"], ["platform bed","linen","task light"]),
+  mood("jc2_steel_beam_open", "Open Plan With Steel Beam", "Remove a wall, add a black steel beam, open it up.", ["industrial","construction","modern","clear"], ["#2b2b2b","#c8a97e","#e8e4dc","#6b6e70","#ffffff"], ["steel beam","open plan","exposed joists"]),
+  mood("jc2_garden_veg", "Vegetable Garden Yard", "Raised beds, compost, a small greenhouse.", ["natural","rustic","practical","friendly"], ["#4e7d4a","#8a7f5a","#c8a97e","#f2efe8","#c1502e"], ["raised beds","greenhouse","compost"]),
+  mood("jc2_thai_textiles", "Thai Textiles Warm-Up", "Indigo and handwoven Thai fabrics in a Japanese house.", ["thai","warm","craft","natural"], ["#1f3b73","#d4a017","#e8dcc2","#8b5a2b","#f7f3ea"], ["indigo","handwoven cotton","teak"]),
+  mood("jc2_bilingual_signage", "Bilingual House Signage", "Small EN/JP/TH wooden signs for guests.", ["bilingual","friendly","craft","clear"], ["#c8a97e","#3b2a1a","#f4ecd8","#7d9a6f","#ffffff"], ["burned wood signs","3 languages","house manual"]),
+  mood("jc2_solar_practical", "Solar + Rain Tank", "Solar roof and rainwater tank, off-grid-ish.", ["practical","modern","natural","construction"], ["#2f3a40","#7d9a6f","#e9ecee","#c8a97e","#ffffff"], ["solar panels","rain tank","LED"]),
+  mood("jc2_rustic_barn", "Barn-Style Rustic", "Big doors, raw wood, farmhouse sink.", ["rustic","warm","natural","craft"], ["#7a5230","#c9a77c","#efe6d2","#3b2a1a","#6b7f3a"], ["barn doors","raw wood","farmhouse sink"]),
+  mood("jc2_zen_minimal", "Zen Minimal Strip-Back", "Remove everything, white and tatami only. (Japanese-minimal check.)", ["japanese","minimal","calm","light"], ["#ffffff","#e3d9c6","#d8c8a8","#2b2b2b","#f2ede3"], ["tatami","white walls","nothing else"]),
+  mood("jc2_pop_colour", "Colour-Pop Retro Makeover", "Bright Showa-retro colors. (Vibrant/playful check.)", ["vibrant","playful","retro","bold"], ["#d1495b","#edae49","#00798c","#f2efe8","#30638e"], ["retro tiles","color doors","neon sign"]),
+ ],
+ "Akiya Garden & Exterior": [
+  mood("ak_cedar_fence", "Cedar Fence & Gravel", "Simple cedar fence, gravel paths, a few maples.", ["natural","rustic","calm","warm"], ["#a0784e","#bdbcb6","#4e7d4a","#f2efe8","#3b2a1a"], ["cedar fence","gravel","maple"]),
+  mood("ak_repaint_light", "Light Repaint", "Pale grey siding, white trim, bright and fresh.", ["light","clean","modern","practical"], ["#e9ecee","#ffffff","#9aa5ab","#c8a97e","#3a3a3a"], ["siding paint","white trim","new gutters"]),
+  mood("ak_steel_roof", "Galvalume Roof Swap", "Replace old tiles with a standing-seam metal roof.", ["industrial","practical","construction","modern"], ["#9aa5ab","#c5ccd0","#2f3a40","#e9ecee","#c19a6b"], ["standing seam","galvalume","new flashing"]),
+  mood("ak_wood_deck", "Big Timber Deck", "Wide wood deck off the living room.", ["warm","natural","friendly","rustic"], ["#c19a6b","#8b5a2b","#4e7d4a","#f7f3ea","#2b2b2b"], ["timber deck","outdoor table","string lights"]),
+  mood("ak_carport_solar", "Solar Carport", "Steel carport with solar panels on top.", ["modern","practical","industrial","clear"], ["#2f3a40","#4dabf7","#e9ecee","#c5ccd0","#ffffff"], ["steel frame","solar panels","EV charger"]),
+  mood("ak_wild_garden", "Wild Meadow Garden", "Let it go natural: grasses, wildflowers, a bench.", ["natural","rustic","calm","warm"], ["#83b735","#c6e377","#f6b93b","#8a7f5a","#f2efe8"], ["grasses","wildflowers","bench"]),
+  mood("ak_tropical_twist", "Tropical Plant Twist", "Hardy palms and bananas in a Japanese yard.", ["tropical","natural","warm","friendly"], ["#2f5d3a","#83b735","#c8a97e","#f4ecd8","#c1502e"], ["hardy palms","banana plants","stone lantern"]),
+  mood("ak_workshop_shed", "Workshop Shed", "Small timber shed for tools and projects.", ["construction","rustic","practical","craft"], ["#8b5a2b","#c8a97e","#2b2b2b","#f2efe8","#ff6b00"], ["timber shed","workbench","pegboard"]),
+  mood("ak_stone_wall", "Old Stone Wall Restored", "Repoint the old stone retaining wall, add moss.", ["rustic","natural","craft","construction"], ["#8e8e8a","#6e6658","#4e7d4a","#e9e4d8","#3b2a1a"], ["dry stone","lime mortar","moss"]),
+  mood("ak_entry_canopy", "Steel & Cedar Entry Canopy", "New entry canopy in black steel with cedar soffit.", ["industrial","modern","warm","construction"], ["#2b2b2b","#a0784e","#e8e4dc","#7d9a6f","#ffffff"], ["steel canopy","cedar soffit","stone step"]),
+  mood("ak_bilingual_gate", "Bilingual Name Gate", "Wooden gate with a small EN/JP house name plate.", ["bilingual","friendly","natural","craft"], ["#c8a97e","#3b2a1a","#f4ecd8","#5a7d4f","#ffffff"], ["timber gate","name plate","lantern"]),
+  mood("ak_fire_pit", "Gravel Fire-Pit Corner", "Steel fire pit, benches, string lights.", ["warm","friendly","rustic","natural"], ["#8c3b1f","#bdbcb6","#c8a97e","#2b2b2b","#f6b93b"], ["steel fire pit","timber benches","string lights"]),
+  mood("ak_charred_black", "All-Black Charred Exterior", "Fully charred cladding, black on black. (Dark check.)", ["dark","japanese","bold","minimal"], ["#1b1b1b","#2b2b2b","#3a3a3a","#8e8e8a","#f2f0eb"], ["yakisugi","black roof","black fence"]),
+  mood("ak_zen_gravel", "Strict Zen Gravel Garden", "Raked gravel, one stone. (Japanese-minimal check.)", ["japanese","minimal","calm","light"], ["#e9e4d8","#a39b8b","#3a5a40","#6e6658","#f7f5ef"], ["raked gravel","single stone","moss"]),
+ ],
+ "Shorts Cover Styles": [
+  thumb("sh2_bilingual_warm", "Warm Bilingual Stack", "Warm photo, EN line over TH line.", ["bilingual","warm","clear","friendly"], "#3b2a1a", "#ffffff", "#f6b93b", "kanit", "bilingual", "Building In Thailand|สร้างบ้านในไทย", "base_site", "sepia(.25) saturate(1.1)"),
+  thumb("sh2_progress_day", "Day Counter", "Build-day counter with progress bar.", ["construction","clear","direct","modern"], "#111", "#ffffff", "#ff8c42", "anton", "progress", "DAY 12 / 90", "base_site", None),
+  thumb("sh2_clean_tab", "Clean White Tab", "Small clean label on a bright photo.", ["clean","light","natural","modern"], "#ffffff", "#1b1b1b", "#1b1b1b", "dmsans", "tab", "Teak vs concrete?", "ext_tropical", "brightness(1.1)"),
+  thumb("sh2_pin_akiya", "Akiya Pin", "Map pin over an old Japanese house.", ["natural","friendly","clear","travel"], "#3e5641", "#ffffff", "#ff8c42", "outfit", "pin", "¥1M Japan house?", "int_japandi", "brightness(1.05)"),
+  thumb("sh2_split_before", "Before / After Split", "Clean split, orange label.", ["construction","clear","bold","direct"], "#111", "#ffffff", "#ff6b00", "archivo", "split", "BEFORE → AFTER", "int_cabin", None),
+  thumb("sh2_question_warm", "Warm Question Hook", "One question, warm tones.", ["warm","direct","clear","friendly"], "#3b2a1a", "#ffffff", "#f6b93b", "kanit", "bigtext", "WORTH BUILDING HERE?", "ext_tropical", "sepia(.2)"),
+  thumb("sh2_hand_rustic", "Rustic Handwritten", "Handwriting on a warm wood photo.", ["rustic","personal","warm","natural"], "#c8a97e", "#ffffff", "#ffffff", "caveat", "hand", "fixing the old beams", "int_cabin", "sepia(.3)"),
+  thumb("sh2_price_baht", "Baht Price Sticker", "Price sticker, clear and direct.", ["direct","clear","thai","construction"], "#2f3a40", "#ffffff", "#ffc300", "kanit", "price", "฿380K", "base_site", None),
+  thumb("sh2_lower_industrial", "Industrial Lower Third", "Steel-grey lower third, orange rule.", ["industrial","clear","modern","construction"], "#2f3a40", "#ffffff", "#ff6b00", "manrope", "lower", "Steel Frame, Day 3", "base_site", "saturate(.8)"),
+  thumb("sh2_number_tips", "Number Tips", "Big number badge: 3 tips.", ["clear","friendly","practical","bold"], "#139a8f", "#ffffff", "#ffd166", "archivo", "number", "3", "base_site", None),
+  thumb("sh2_neon_arrows", "Neon Circles & Arrows", "Loud red circles. (Playful/vibrant check.)", ["playful","vibrant","loud","youtube"], "#111", "#ffffff", "#ff1f1f", "anton", "arrows", "NO WAY!!", "base_temple", "saturate(1.6)"),
+  thumb("sh2_cinematic_dark", "Dark Cinematic Bars", "Moody letterbox, no text. (Dark/editorial check.)", ["dark","cinematic","editorial","calm"], "#000", "#ffffff", "#ffffff", "inter", "cinematic", "", "base_temple", "brightness(.6) contrast(1.2)"),
+ ],
+ "Shorts Pacing & Captions": [
+  pace("sp2_hook_build", "Hook + Build Steps", "1s hook, then 5 quick steps, end on the result.", ["clear","direct","construction","modern"], [1,2,2,2,2,2,3], ["#ff6b00","#2f3a40"], ["1s hook","step captions","result last"]),
+  pace("sp2_bilingual_caps", "Bilingual Captions Always", "EN on top, TH under, every line.", ["bilingual","clear","friendly","thai"], [2,3,2,3,2,3], ["#139a8f","#f6b93b"], ["EN + TH captions","medium pace","clean font"]),
+  pace("sp2_warm_story", "Warm Mini-Story", "Slow open, 3 beats, warm music.", ["warm","natural","storytelling","personal"], [4,3,3,4,5], ["#d9693b","#f6e7d0"], ["slow open","acoustic","3 beats"]),
+  pace("sp2_timelapse_loop", "Timelapse Loop", "Build timelapse that loops seamlessly.", ["construction","modern","clear","industrial"], [3,3,3,3,3], ["#2f3a40","#ffc300"], ["timelapse","seamless loop","no talking"]),
+  pace("sp2_talk_to_cam", "Talk-To-Camera Tips", "Face to camera, jump cuts, text keywords.", ["friendly","direct","clear","personal"], [2,1,2,1,2,1,2], ["#2563eb","#e5e7eb"], ["face cam","keyword text","jump cuts"]),
+  pace("sp2_asmr_site", "Site ASMR", "Natural tool sounds, close-ups, no music.", ["natural","rustic","construction","calm"], [4,5,4,5], ["#8b5a2b","#d8c3a5"], ["tool sounds","macro","no music"]),
+  pace("sp2_before_after_snap", "Before/After Snap", "Hold before, beat drop, snap to after.", ["clear","construction","bold","modern"], [6,1,8], ["#6c757d","#ff8c42"], ["beat drop","snap cut","hold after"]),
+  pace("sp2_walkthrough", "One-Take Walkthrough", "Gimbal walk-through, captions name each room.", ["natural","clear","modern","warm"], [15], ["#7d9a6f","#f4ecd8"], ["one take","room labels","gimbal"]),
+  pace("sp2_qa_reply", "Reply-To-Comment", "Shows a viewer comment, then answers fast.", ["friendly","clear","direct","personal"], [2,3,3,3], ["#06c755","#ffffff"], ["comment sticker","quick answer","CTA end"]),
+  pace("sp2_cost_breakdown", "Cost Breakdown", "Numbers pop on screen as items appear.", ["clear","direct","construction","practical"], [2,2,2,2,2,3], ["#2bb673","#1f1f1f"], ["number pops","baht totals","receipt end"]),
+  pace("sp2_three_lang", "Three-Language Caption Pop", "EN, TH, JP captions pop in turn for the akiya series.", ["bilingual","clear","friendly","modern"], [2,2,2,2,2,2], ["#139a8f","#d9693b"], ["EN/TH/JP","caption pops","steady pace"]),
+  pace("sp2_tenant_tip", "Landlord Tip In 20s", "Problem, fix, result, in three beats.", ["clear","practical","friendly","direct"], [3,4,4,3], ["#2bb673","#f4f4f1"], ["3 beats","on-screen tip","calm music"]),
+  pace("sp2_hyper", "Hyper Meme Edit", "Zooms, sound effects, flashing text. (Playful/vibrant check.)", ["playful","vibrant","loud","energetic"], [1,1,1,1,1,1,1,1,1,1], ["#ff006e","#ffbe0b"], ["zoom punches","SFX","flashing text"]),
+  pace("sp2_moody_film", "Moody Film Essay", "Slow, dark grade, voiceover. (Dark/editorial check.)", ["dark","editorial","cinematic","calm"], [8,9,7], ["#1b1b1b","#5b2a86"], ["dark grade","VO essay","slow"]),
+ ],
+ "Investor & Lender Messages": [
+  tone2("il_onepager", "One-Page Summary", "Everything a lender needs on one page.", ["clear","trust","modern","direct"], "Project: 4-unit rental, Chiang Mai. Cost 9.8M, value 14M.", "Ask: 6.5M THB, 7 years. DSCR 1.4.", "Max → Lender"),
+  tone2("il_story_numbers", "Story, Then Numbers", "Why first, then the numbers.", ["warm","storytelling","clear","trust"], "Young families here can't find decent rentals.", "We build 4 units at 12k/month, 95% expected occupancy.", "Max → Investor"),
+  tone2("il_bilingual_bank", "Bilingual Bank Note", "English summary, Thai line for the Thai bank.", ["bilingual","thai","clear","trust"], "Attached: updated budget and permit approval.", "แนบงบประมาณและใบอนุญาตก่อสร้างฉบับล่าสุดครับ", "Max → Bank"),
+  tone2("il_risk_upfront", "Risks Up Front", "Names the top risks and the mitigations.", ["trust","direct","clear","construction"], "Top risk: rainy-season delays. Buffer: 6 weeks in schedule.", "Second: material prices. Locked 70% of steel already.", "Max → Investor"),
+  tone2("il_quarterly_friendly", "Friendly Quarterly Update", "Warm opener, 3 bullets, photo.", ["friendly","warm","clear","natural"], "Hi all, quick Q3 update with a photo from site.", "On budget, 2 weeks ahead, units pre-leased: 3 of 4.", "Max → Investors"),
+  tone2("il_builder_cred", "Builder Credibility", "Leans on hands-on construction experience.", ["construction","trust","rustic","direct"], "I've built and managed rentals for years, I'm on site daily.", "That's why my cost estimates hold.", "Max → Lender"),
+  tone2("il_follow_up", "Polite Follow-Up", "Gentle nudge with a deadline.", ["friendly","clear","polite","direct"], "Just following up on the term sheet from last week.", "Could we confirm by Friday so we keep the pour date?", "Max → Lender"),
+  tone2("il_thanks_close", "Closing Thank-You", "Thanks + what happens next.", ["warm","friendly","trust","clear"], "Thank you for closing this so smoothly.", "First draw request goes in next Monday, with photos.", "Max → Lender"),
+  tone2("il_data_table", "Data-Table Style", "Mostly numbers, one line of context.", ["modern","clear","technical","direct"], "LTC 66% · DSCR 1.42 · IRR 14.8% · Payback 6.1 yrs", "Assumes 12k rent, 5% vacancy, 3% annual increase.", "Max → Investor"),
+  tone2("il_casual_text", "Casual Text Message", "Short, informal, for a lender he knows well.", ["casual","friendly","direct","natural"], "Permit's approved 🎉", "Sending the paperwork tonight.", "Max → Lender"),
+  tone2("il_hype_pitch", "Big Hype Pitch", "Superlatives and exclamation marks. (Playful/vibrant check.)", ["playful","vibrant","bold","energetic"], "This is THE deal of the year!!", "Massive upside, can't-miss returns 🚀", "Max → Investor"),
+  tone2("il_banker_formal", "Formal Banker Letter", "Old-school formal letter. (Formal/luxe check.)", ["formal","classic","luxe","calm"], "Dear Sir, I respectfully submit the enclosed proposal for your esteemed consideration.", "I remain at your disposal for any further particulars.", "Max → Bank"),
+ ],
+}
+for _cat, _opts in POOL_2026_10_10C.items():
+    POOL.setdefault(_cat, []).extend(_opts)
+CATEGORY_WEIGHT_EXTRA_10C = {"SMART Visa Pitch Deck": 1.0, "SiteAgent App Screens": 1.0, "Shorts Pacing & Captions": 0.9,
+                             "Akiya Garden & Exterior": 0.9, "Investor & Lender Messages": 1.0}
+
+
 CATEGORY_WEIGHT = {  # base share of the deck
     "App / UI Style": 1.0, "Color Palette": 1.1, "Typography": 1.0, "Business Communication Tone": 1.1,
     "Home / Interior Style": 1.0, "Logo / Mark": 1.0, "Photography Style": 0.8, "Fashion / Personal Look": 0.8,
@@ -709,6 +899,8 @@ CATEGORY_WEIGHT = {  # base share of the deck
     "Website Hero Sections": 0.9, "Packaging & Merch": 0.8, "Workspace": 0.8, "Cars & Gear": 0.7,
     "Food Styling": 0.7, "Music & Mood": 0.8, "Bangkok Vs Japan Aesthetics": 0.9,
 }
+
+CATEGORY_WEIGHT.update(CATEGORY_WEIGHT_EXTRA_10C)
 
 # Categories whose pairs must contrast on a tag: one option carries tag X, the other tag Y.
 PAIR_RULES = {"Bangkok Vs Japan Aesthetics": ("bangkok", "japan")}
@@ -810,9 +1002,16 @@ def save_shown():
     with open(SHOWN, "w") as f: json.dump(data, f, indent=1)
     return data
 
-def build_deck(date, n_pairs, seed=None, allow_repeats=False, focus=None, focus_note=None):
+def is_check(profile, opt, threshold=-0.35):
+    """An option that carries a tag Max has clearly rejected (used sparingly as a re-test)."""
+    return any(tag_pref(profile, t)[0] <= threshold for t in opt["tags"])
+
+def build_deck(date, n_pairs, seed=None, allow_repeats=False, focus=None, focus_note=None, check_share=0.12):
     rng = random.Random(seed if seed is not None else date)
     profile = load_json(PROFILE, empty_profile())
+    # Most pairs refine inside the liked space; only a small budget re-tests disliked directions,
+    # always as disliked-vs-liked (never two disliked options against each other).
+    check_budget = [max(2, round(n_pairs * check_share))]
     seen = seen_pairs(exclude_date=date)
     shown = shown_options(exclude_date=date)
     avail = {c: [o for o in opts if o["id"] not in shown] for c, opts in POOL.items()}
@@ -835,18 +1034,39 @@ def build_deck(date, n_pairs, seed=None, allow_repeats=False, focus=None, focus_
             x, y = PAIR_RULES[cat]
             cands = [(a, b) for a, b in cands if (x in a["tags"] and y in b["tags"]) or (y in a["tags"] and x in b["tags"])]
         cands = [ab for ab in cands if pair_key(ab[0]["id"], ab[1]["id"]) not in seen]
-        cands.sort(key=lambda ab: -pair_priority(profile, ab[0], ab[1], rng))
+        def score(ab):
+            checks = is_check(profile, ab[0]) + is_check(profile, ab[1])
+            return pair_priority(profile, ab[0], ab[1], rng) + (1.0 if checks == 0 else 0.0)
+        cands.sort(key=lambda ab: -score(ab))
         chosen = []
         for a, b in cands:                     # each option at most once per deck
             if len(chosen) >= k: break
             if a["id"] in used or b["id"] in used: continue
+            checks = is_check(profile, a) + is_check(profile, b)
+            if checks == 2: continue
+            if checks == 1:
+                if check_budget[0] <= 0: continue
+                check_budget[0] -= 1
             chosen.append((a, b)); used.update((a["id"], b["id"]))
         return chosen
     used = set()
-    for cat, k in alloc.items():
-        for a, b in pick(cat, avail[cat], k, used):
+    order = [c for c in alloc if alloc[c]]; rng.shuffle(order)
+    for cat in order:
+        k = alloc[cat]
+        got = pick(cat, avail[cat], k, used)
+        if len(got) < k:   # not enough refine-able pairs here; re-offer the shortfall to other categories
+            alloc[cat] = len(got)
+        for a, b in got:
             if rng.random() < 0.5: a, b = b, a
-            pairs.append({"category": cat, "optionA": a, "optionB": b, "repeat": False})
+            purpose = "check" if (is_check(profile, a) or is_check(profile, b)) else "refine"
+            pairs.append({"category": cat, "optionA": a, "optionB": b, "repeat": False, "purpose": purpose})
+    for cat in sorted(order, key=lambda c: -(focus or {}).get(c, 1.0)):   # top up any shortfall
+        need = n_pairs - len(pairs)
+        if need <= 0: break
+        for a, b in pick(cat, avail[cat], need, used):
+            alloc[cat] += 1
+            purpose = "check" if (is_check(profile, a) or is_check(profile, b)) else "refine"
+            pairs.append({"category": cat, "optionA": a, "optionB": b, "repeat": False, "purpose": purpose})
     if allow_repeats and len(pairs) < n_pairs:     # explicit opt-in only
         for cat in sorted(POOL, key=lambda c: -CATEGORY_WEIGHT.get(c, 0.8)):
             need = n_pairs - len(pairs)
@@ -867,6 +1087,7 @@ def build_deck(date, n_pairs, seed=None, allow_repeats=False, focus=None, focus_
             "generated_at": dt.datetime.now().astimezone().isoformat(timespec="seconds"),
             "allocation": {c: n for c, n in alloc.items() if n},
             "focus": {"categories": sorted(focus or {}), "note": focus_note or ""},
+            "pair_mix": {"refine": sum(p.get("purpose") == "refine" for p in pairs), "check": sum(p.get("purpose") == "check" for p in pairs)},
             "freshness": {"option_slots": len(opt_ids), "never_shown_before": fresh,
                           "share": round(fresh / max(1, len(opt_ids)), 3)},
             "warnings": warnings, "pairs": pairs,
@@ -949,6 +1170,7 @@ def main():
     ap.add_argument("--seed")
     ap.add_argument("--focus", help="comma-separated category names to boost (x3) for this deck, i.e. what Max is working on now")
     ap.add_argument("--focus-note", help="one-line note on why these categories are in focus (saved in the deck)")
+    ap.add_argument("--check-share", type=float, default=0.12, help="share of pairs that re-test disliked directions (default 0.12)")
     ap.add_argument("--allow-repeats", action="store_true", help="if the fresh pool runs out, top up with previously shown options")
     a = ap.parse_args()
     os.makedirs(DECKS, exist_ok=True)
@@ -978,7 +1200,7 @@ def main():
         print(f"{out} exists (use --force to regenerate). Re-rendering HTML from it.")
         deck = load_json(out, None)
     else:
-        deck = build_deck(date, a.pairs, a.seed, a.allow_repeats, focus, a.focus_note)
+        deck = build_deck(date, a.pairs, a.seed, a.allow_repeats, focus, a.focus_note, a.check_share)
         with open(out, "w") as f: json.dump(deck, f, indent=1, ensure_ascii=False)
         fr = deck["freshness"]
         print(f"Wrote {out}: {len(deck['pairs'])} pairs; {fr['never_shown_before']}/{fr['option_slots']} option slots never shown before ({fr['share']:.0%}).")
