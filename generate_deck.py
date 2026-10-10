@@ -1252,6 +1252,273 @@ POOL_SWIPE = {"Swipe Controls": [
     ctl("sc_tbt_glow", "This / That Glow", "Glowing This and That buttons on a dark bar (deliberate dark test).", ["dark", "tech", "vibrant", "bold"], "pill", "tbt", "neon", "glow", "#121212"),
 ]}
 POOL.update(POOL_SWIPE)
+
+# ---- Polish deck (2026-10-10g): mini-mocks of polish choices for Max's real apps -------------------
+TERRA, LAGOON, JUNGLE = "#C1502E", "#05668D", "#0B6E4F"
+APPS = {
+ "hg":  {"name": "Home Guide", "title": "Your Home Guide", "sub": "Moschouris Residence · For Niko and Vivian", "cta": "Call Max", "item": "Maintenance Schedule", "mark": "HG", "img": "ext_craftsman"},
+ "fq":  {"name": "Finish Questions", "title": "Finish Questions", "sub": "19 questions in 15 stops", "cta": "Start", "item": "Kitchen: cabinet pulls?", "mark": "FQ", "img": "int_modernkitchen"},
+ "sw":  {"name": "Site Walk", "title": "Site Walk", "sub": "Moschouris house · 7 stops", "cta": "Finish & Share", "item": "Stop 1: Mechanical Room", "mark": "SW", "img": "base_site"},
+ "rp":  {"name": "Room Photos", "title": "Room Photos", "sub": "Pick the photos you took of each room", "cta": "Add Photos", "item": "Living Area 004", "mark": "RP", "img": "int_concrete"},
+ "jao": {"name": "Jane's Amex Offers", "title": "Jane's Amex Offers", "sub": "Updated Oct 10 · 4 offers", "cta": "Add to Card", "item": "Macy's · +5 Miles", "mark": "JA", "img": "tr_boutique_lobby"},
+ "jsq": {"name": "Jane's Shopping Quiz", "title": "Which Brands Do You Love?", "sub": "50 brands · 2 minutes", "cta": "Start", "item": "Saks Fifth Avenue", "mark": "JQ", "img": "tr_boutique_lobby"},
+ "jhc": {"name": "Japan House Crew", "title": "Japan House Crew", "sub": "Swipe countryside houses together", "cta": "Join the Crew", "item": "Farmhouse, Nagano · $26K", "mark": "JH", "img": "gd_japanese"},
+ "ak":  {"name": "Akiya Swipe", "title": "Akiya Keep or Toss", "sub": "199 cheap houses in Japan", "cta": "Keep", "item": "Old Kominka, Okayama · $18K", "mark": "AK", "img": "int_japandi"},
+ "sa":  {"name": "SiteAgent Pitch", "title": "The AI Site Assistant for Builders", "sub": "Seven agents. One assistant. Zero extra admin.", "cta": "Book a Demo", "item": "Daily Report ready to approve", "mark": "SA", "img": "base_site"},
+ "wr":  {"name": "Weberman Residence", "title": "Weberman Residence", "sub": "Spatial Study · 5,272 sf courtyard house", "cta": "Walk Through", "item": "103 Living + Conversation Pit", "mark": "WR", "img": "gd_courtyard"},
+ "bs":  {"name": "Blueprint Swipe", "title": "Pick a Room", "sub": "Find your dream home taste", "cta": "Start Swiping", "item": "Office and Music Studio", "mark": "BS", "img": "int_cabin"},
+ "br":  {"name": "Brief", "title": "Morning Brief", "sub": "Saturday, Oct 10 · 3 items need you", "cta": "Sync", "item": "Steadily EOI ready to send", "mark": "B", "img": "int_japandi"},
+}
+def pz(kind, app, i, label, desc, tags, **p):
+    c = APPS[app]
+    return {"id": f"pz_{kind}_{i}", "label": label, "desc": desc, "tags": tags, "app": c["name"],
+            "visual": {"type": "polish", "kind": kind, "app": c["name"], "c": c, "p": p}}
+
+# Each entry: (app, optionA, optionB). Checks carry a disliked tag (playful, vibrant, bold, formal, luxe, editorial, geometric).
+PZ = {}
+def add(cat, pairs): PZ[cat] = pairs
+
+add("App Icon & Favicon", [
+ ("hg", pz("icon","hg",1,"Black Square, Khand Initials","Square black tile, white HG in Khand.",["modern","clear","minimal","direct"],shape="square",bg="#171717",fg="#fff",mark="HG"),
+        pz("icon","hg",2,"Cream Tile, Terracotta House","Cream rounded tile with a terracotta roof line.",["warm","natural","friendly","craft"],shape="squircle",bg="#FAF3EB",fg=TERRA,mark="⌂",line=True)),
+ ("sw", pz("icon","sw",3,"Lagoon Circle, White Check","Round lagoon icon with a check mark.",["clear","modern","light","practical"],shape="round",bg=LAGOON,fg="#fff",mark="✓"),
+        pz("icon","sw",4,"Outlined Square, Black SW","White tile, thin black border, SW.",["minimal","light","clear","modern"],shape="square",bg="#fff",fg="#171717",mark="SW",border=True)),
+ ("ak", pz("icon","ak",5,"Jungle Tile, Leaf Mark","Green squircle with a small leaf.",["natural","warm","soft","friendly"],shape="squircle",bg=JUNGLE,fg="#fff",mark="❦"),
+        pz("icon","ak",6,"Neon Gradient Tile","Bright pink-orange gradient, bold AK.",["vibrant","playful","bold","loud"],shape="squircle",bg="linear-gradient(135deg,#ff2e88,#ffb800)",fg="#fff",mark="AK")),
+ ("sa", pz("icon","sa",7,"Hard-Hat Badge","Terracotta circle, white SA, hard-hat line.",["construction","warm","bold","clear"],shape="round",bg=TERRA,fg="#fff",mark="SA",line=True),
+        pz("icon","sa",8,"Grey Blueprint Grid","Light grey tile with grid lines and SA.",["construction","technical","light","modern"],shape="square",bg="#EDEDED",fg="#171717",mark="SA",grid=True)),
+ ("br", pz("icon","br",9,"Single Letter B","Black B on white, nothing else.",["minimal","direct","clear","modern"],shape="squircle",bg="#fff",fg="#171717",mark="B",border=True),
+        pz("icon","br",10,"Sunrise Bar","Cream tile, lagoon B, thin terracotta sunrise bar.",["warm","personal","soft","light"],shape="squircle",bg="#FFFDF7",fg=LAGOON,mark="B",bar=TERRA)),
+])
+add("Splash & Loading", [
+ ("hg", pz("splash","hg",1,"Wordmark Fade-In","MAX WEBERMAN fades in, then the guide.",["minimal","modern","clear","calm"],style="wordmark"),
+        pz("splash","hg",2,"Photo + Thin Progress Bar","House photo with a thin lagoon progress bar.",["warm","natural","personal","light"],style="photo",accent=LAGOON)),
+ ("fq", pz("splash","fq",3,"Skeleton Cards","Grey placeholder cards shimmer while loading.",["modern","clear","practical","light"],style="skeleton"),
+        pz("splash","fq",4,"Spinner Only","A centered spinner, nothing else.",["minimal","plain","practical","calm"],style="spinner")),
+ ("jhc", pz("splash","jhc",5,"Three Bouncing Dots","Terracotta dots bounce under the name.",["friendly","warm","soft","playful"],style="dots",accent=TERRA),
+         pz("splash","jhc",6,"House Outline Draws Itself","A line drawing of a house draws in.",["craft","natural","warm","personal"],style="draw",accent=JUNGLE)),
+ ("sa", pz("splash","sa",7,"Blueprint Grid Build","Grid lines draw, then the logo drops in.",["construction","technical","modern","clear"],style="grid",accent=LAGOON),
+        pz("splash","sa",8,"Big Bold Count-Up","Huge 0→100% counter in black.",["bold","loud","modern","direct"],style="count")),
+ ("wr", pz("splash","wr",9,"Soft Cream Wash","Cream background warms in with the title.",["soft","warm","calm","light"],style="wash",accent=TERRA),
+        pz("splash","wr",10,"Bar Under Wordmark","Wordmark with a jungle bar filling under it.",["clear","modern","natural","direct"],style="bar",accent=JUNGLE)),
+])
+add("Header & Navigation", [
+ ("hg", pz("header","hg",1,"Wordmark Left, Share Right","MAX WEBERMAN left, square SHARE right, thin rule.",["clear","modern","minimal","direct"],layout="left",border="line"),
+        pz("header","hg",2,"Centered Title, Back Arrow","Centered title, back arrow left, soft shadow.",["friendly","soft","clear","light"],layout="center",border="shadow")),
+ ("sw", pz("header","sw",3,"Stop Counter Header","Title with 'Stop 2 of 7' and a jungle progress line.",["practical","clear","construction","modern"],layout="progress",accent=JUNGLE),
+        pz("header","sw",4,"Tabs Under Title","Title with Stops / Notes / Photos tabs.",["practical","clear","modern","light"],layout="tabs",accent=LAGOON)),
+ ("jao", pz("header","jao",5,"Small Caps Kicker","Small grey kicker over a big Khand title.",["editorial","formal","minimal","clear"],layout="stacked"),
+         pz("header","jao",6,"Friendly Greeting","'Hi Jane' with the date underneath.",["personal","friendly","warm","soft"],layout="greet",accent=TERRA)),
+ ("jhc", pz("header","jhc",7,"Bottom Tab Bar","Swipe · Matches · Map · Group tabs at the bottom.",["practical","clear","modern","friendly"],layout="bottomtabs",accent=TERRA),
+         pz("header","jhc",8,"Hamburger Menu","Title with a menu icon; nav hidden.",["minimal","clear","calm","modern"],layout="burger")),
+ ("bs", pz("header","bs",9,"Accent Underline Title","Title with a short terracotta underline.",["warm","clear","craft","modern"],layout="underline",accent=TERRA),
+        pz("header","bs",10,"Breadcrumb Header","Rooms › Office and Music Studio breadcrumb.",["clear","practical","light","technical"],layout="crumb")),
+])
+add("Button Styles", [
+ ("hg", pz("button","hg",1,"Square Outline Uppercase","Square, 2px black outline, uppercase (site style).",["minimal","clear","modern","direct"],radius=0,fill="outline",color="#171717",case="upper"),
+        pz("button","hg",2,"Filled Terracotta Pill","Rounded terracotta pill, white text.",["warm","friendly","soft","clear"],radius=99,fill="solid",color=TERRA,case="title")),
+ ("fq", pz("button","fq",3,"Big Full-Width Black","Full-width black bar button, 52px.",["direct","bold","clear","practical"],radius=6,fill="solid",color="#171717",case="upper",full=True),
+        pz("button","fq",4,"Tinted Lagoon Block","Light lagoon tint, lagoon text.",["soft","light","clear","modern"],radius=10,fill="tint",color=LAGOON,case="title",full=True)),
+ ("jao", pz("button","jao",5,"Ghost Text Button With Arrow","No box, underlined text and an arrow.",["minimal","light","calm","clear"],radius=0,fill="ghost",color="#171717",case="upper",arrow=True),
+         pz("button","jao",6,"Gold Luxe Button","Black button, gold serif-ish caps.",["luxe","formal","dark","editorial"],radius=2,fill="solid",color="#171717",text="#C9A54A",case="upper")),
+ ("sa", pz("button","sa",7,"Jungle Solid With Icon","Jungle green, calendar icon, Book a Demo.",["natural","clear","direct","modern"],radius=8,fill="solid",color=JUNGLE,case="title",icon="▦"),
+        pz("button","sa",8,"Outline + Solid Pair","Primary solid black plus secondary outline.",["clear","modern","practical","minimal"],radius=4,fill="pair",color="#171717",case="upper")),
+ ("jsq", pz("button","jsq",9,"Soft Shadow Rounded","White rounded button lifted by a soft shadow.",["soft","friendly","light","modern"],radius=14,fill="shadow",color="#171717",case="title"),
+         pz("button","jsq",10,"Chunky 3D Press","Thick bottom edge, presses down.",["playful","bold","tactile","vibrant"],radius=10,fill="3d",color=TERRA,case="upper")),
+])
+add("Card Styles", [
+ ("ak", pz("card","ak",1,"Photo Top, Rounded 16","Big photo, rounded 16px card, soft shadow.",["soft","natural","warm","modern"],radius=16,img="top",shadow="soft",border=False),
+        pz("card","ak",2,"Photo Left, Square Corners","Square card, photo on the left, hairline border.",["minimal","clear","modern","practical"],radius=0,img="left",shadow="none",border=True)),
+ ("hg", pz("card","hg",3,"Icon Row Cards","Small icon, title, chevron; light grey border.",["clear","practical","light","friendly"],radius=12,img="icon",shadow="none",border=True),
+        pz("card","hg",4,"Accent Edge Cards","Terracotta left edge, cream fill.",["warm","craft","clear","soft"],radius=8,img="none",accent=TERRA,fill="#FFFDF7",border=False)),
+ ("rp", pz("card","rp",5,"Photo Grid Tiles","Three-up square photo tiles per room.",["natural","modern","clear","light"],radius=6,img="grid",border=False),
+        pz("card","rp",6,"List With Count Badge","Room name with a lagoon photo-count badge.",["clear","practical","minimal","modern"],radius=10,img="badge",accent=LAGOON,border=True)),
+ ("jhc", pz("card","jhc",7,"Full-Bleed Photo Card","Photo fills the card, white text on a fade.",["natural","warm","personal","modern"],radius=18,img="bleed"),
+         pz("card","jhc",8,"Polaroid Card","White frame, handwritten-style caption.",["playful","personal","craft","warm"],radius=2,img="polaroid")),
+ ("br", pz("card","br",9,"Flat Grey Panels","Flat F5F5F5 panels, no border, no shadow.",["minimal","calm","light","modern"],radius=10,img="none",fill="#F5F5F5",border=False),
+        pz("card","br",10,"Bold Color Blocks","Each section in a saturated color block.",["vibrant","bold","playful","loud"],radius=12,img="none",fill="#FFB800",border=False,loud=True)),
+])
+add("Empty States", [
+ ("rp", pz("empty","rp",1,"Camera Icon + One Line","Grey camera icon: 'No photos yet. Add the first one.'",["clear","minimal","friendly","light"],art="icon",icon="📷",copy="No photos yet. Add the first one."),
+        pz("empty","rp",2,"Line Drawing Of The Room","Thin line sketch of a room with an Add Photos button.",["craft","warm","personal","natural"],art="sketch",copy="This room is waiting for photos.")),
+ ("jao", pz("empty","jao",3,"Plain Text Only","'No offers today. Check back tomorrow.'",["minimal","direct","plain","calm"],art="none",copy="No offers today. Check back tomorrow."),
+         pz("empty","jao",4,"Friendly Note From Max","'Nothing new yet, Jane. I'll update this soon. – Max'",["personal","warm","friendly","soft"],art="note",copy="Nothing new yet, Jane. I'll update this soon. – Max")),
+ ("br", pz("empty","br",5,"Sun Icon, All Clear","Small sun icon: 'All clear this morning.'",["warm","light","soft","friendly"],art="icon",icon="☀",copy="All clear this morning."),
+        pz("empty","br",6,"Big Zero","A huge 0 in Khand: 'items need you'.",["bold","direct","modern","clear"],art="zero",copy="items need you")),
+ ("jhc", pz("empty","jhc",7,"Photo Of A Quiet Village","Soft photo: 'No matches yet. Keep swiping.'",["natural","warm","calm","personal"],art="photo",copy="No matches yet. Keep swiping."),
+         pz("empty","jhc",8,"Cartoon Mascot","A cartoon house waving: 'No matches yet!'",["playful","cute","vibrant","casual"],art="emoji",icon="🏠👋",copy="No matches yet!")),
+ ("fq", pz("empty","fq",9,"Checklist All Done","Green check: 'All 19 answered. Thank you.'",["clear","friendly","natural","direct"],art="icon",icon="✓",copy="All 19 answered. Thank you.",accent=JUNGLE),
+        pz("empty","fq",10,"Progress Ring Empty","Grey ring at 0/19 with 'Start with the kitchen.'",["practical","modern","clear","light"],art="ring",copy="Start with the kitchen.")),
+])
+add("Hover & Micro-Interactions", [
+ ("hg", pz("micro","hg",1,"Lift + Soft Shadow","Card lifts 2px with a soft shadow.",["soft","modern","light","clear"],effect="lift"),
+        pz("micro","hg",2,"Underline Slides In","Link underline grows from left to right.",["minimal","clear","modern","calm"],effect="underline")),
+ ("sa", pz("micro","sa",3,"Arrow Nudge","Button arrow nudges right on hover.",["direct","modern","clear","friendly"],effect="nudge"),
+        pz("micro","sa",4,"Fill Sweep","Outline button fills black from the left.",["bold","modern","direct","clear"],effect="fill")),
+ ("jsq", pz("micro","jsq",5,"Squash Press","Button squashes like a phone tap.",["tactile","friendly","playful","warm"],effect="press"),
+         pz("micro","jsq",6,"Gentle Scale 1.03","Button grows 3%, nothing else (brand .mw-hover).",["minimal","soft","modern","calm"],effect="scale")),
+ ("wr", pz("micro","wr",7,"Room Tile Tilt","Room tile tilts slightly toward the cursor.",["playful","modern","geometric","bold"],effect="tilt"),
+        pz("micro","wr",8,"Photo Zoom On Hover","Room photo zooms 5% inside its frame.",["natural","warm","soft","modern"],effect="zoom")),
+ ("bs", pz("micro","bs",9,"Color Wash On Hover","Card background warms to cream.",["warm","soft","light","calm"],effect="wash"),
+        pz("micro","bs",10,"Icon Spin","The room icon spins a quarter turn.",["playful","casual","friendly","vibrant"],effect="spin")),
+])
+add("Screen Transitions", [
+ ("sw", pz("trans","sw",1,"Slide Left Like Pages","Next stop slides in from the right.",["clear","modern","practical","calm"],t="slide"),
+        pz("trans","sw",2,"Quick Fade","Screens cross-fade in 150ms.",["minimal","soft","calm","light"],t="fade")),
+ ("fq", pz("trans","fq",3,"Card Stack Peel","Each question peels off a stack.",["tactile","friendly","modern","warm"],t="stack"),
+        pz("trans","fq",4,"Scale Up From Tap","New screen grows out of the tapped row.",["modern","clear","soft","light"],t="scale")),
+ ("jhc", pz("trans","jhc",5,"Bouncy Spring","Screens spring in with a bounce.",["playful","vibrant","bold","casual"],t="bounce"),
+         pz("trans","jhc",6,"Slide Up Sheet","Details slide up as a bottom sheet.",["clear","modern","practical","soft"],t="sheet")),
+ ("wr", pz("trans","wr",7,"Camera Fly-Through","Plan zooms into the room like a camera move.",["modern","technical","natural","bold"],t="zoom"),
+        pz("trans","wr",8,"Curtain Wipe","A cream panel wipes across between rooms.",["warm","craft","calm","soft"],t="curtain")),
+ ("br", pz("trans","br",9,"No Animation","Instant swap. Fastest possible.",["direct","minimal","practical","plain"],t="none"),
+        pz("trans","br",10,"Sections Fade Up In Order","Each section fades up one after another.",["soft","modern","calm","light"],t="stagger")),
+])
+add("Typography Scale", [
+ ("hg", pz("type","hg",1,"Big Khand Title, Small Hind","Large tight Khand headings, 15px Hind body.",["modern","bold","clear","construction"],h=30,body=13,weight=700,case="title"),
+        pz("type","hg",2,"Moderate Scale","Calm 22px headings, 15px body, more air.",["calm","soft","clear","light"],h=22,body=13,weight=600,case="title")),
+ ("sa", pz("type","sa",3,"Uppercase Tracked Labels","Uppercase labels with wide tracking above titles.",["formal","clear","modern","minimal"],h=24,body=12,weight=700,case="title",kicker=True),
+        pz("type","sa",4,"Huge Hero Number","One giant number leads: '6 voice notes → 1 log'.",["bold","direct","construction","modern"],h=40,body=12,weight=700,case="title",number=True)),
+ ("jao", pz("type","jao",5,"Readable Large Body","17px body for easy reading on a phone.",["friendly","clear","practical","soft"],h=22,body=15,weight=600,case="title"),
+         pz("type","jao",6,"Editorial Serif Mix","Serif headline over sans body, magazine feel.",["editorial","luxe","formal","classic"],h=24,body=12,weight=600,case="title",serif=True)),
+ ("bs", pz("type","bs",7,"All Caps Khand Titles","Every heading uppercase Khand.",["bold","construction","direct","modern"],h=26,body=12,weight=700,case="upper"),
+        pz("type","bs",8,"Title Case Khand","Title Case Khand, normal tracking.",["clear","modern","warm","friendly"],h=26,body=12,weight=700,case="title")),
+ ("fq", pz("type","fq",9,"Question As Headline","The question itself is the big headline.",["direct","clear","practical","modern"],h=24,body=12,weight=700,case="title",question=True),
+        pz("type","fq",10,"Small Header, Big Answers","Small question text, large answer buttons.",["practical","friendly","clear","light"],h=15,body=14,weight=600,case="title",answers=True)),
+])
+add("Spacing & Density", [
+ ("sw", pz("density","sw",1,"Airy Rows","Generous 16px padding, few rows per screen.",["calm","light","soft","modern"],pad=12,rows=4),
+        pz("density","sw",2,"Compact Checklist","Tight 8px rows, more stops visible.",["practical","clear","construction","direct"],pad=5,rows=7)),
+ ("rp", pz("density","rp",3,"Comfortable List","Medium spacing with dividers.",["clear","practical","light","friendly"],pad=8,rows=5,divider=True),
+        pz("density","rp",4,"Spacious Cards","Each room a separate airy card.",["soft","modern","light","calm"],pad=10,rows=3,cards=True)),
+ ("br", pz("density","br",5,"Dense Dashboard","Many small rows, like a cockpit.",["technical","practical","bold","modern"],pad=4,rows=8),
+        pz("density","br",6,"One Thing Per Row","Big rows, one item each.",["calm","clear","direct","soft"],pad=11,rows=3)),
+ ("jao", pz("density","jao",7,"Two-Column Grid","Offers in a 2-up grid.",["modern","clear","light","practical"],pad=6,rows=6,grid=True),
+         pz("density","jao",8,"Single Column Feed","One offer per row, full width.",["clear","friendly","calm","direct"],pad=9,rows=4)),
+ ("hg", pz("density","hg",9,"Generous Margins","Wide side margins, narrow column.",["calm","soft","light","editorial"],pad=10,rows=4,margin=22),
+        pz("density","hg",10,"Edge To Edge","Content runs to the screen edges.",["modern","direct","practical","bold"],pad=8,rows=5,margin=2)),
+])
+add("Accent Color Usage", [
+ ("hg", pz("accent","hg",1,"Monochrome Only","Black, white and grey. No accent at all.",["minimal","clear","modern","formal"],mode="none"),
+        pz("accent","hg",2,"Terracotta On The Main Button Only","One terracotta call button; rest grey.",["warm","clear","direct","minimal"],mode="cta",color=TERRA)),
+ ("sa", pz("accent","sa",3,"Lagoon Links And Icons","Lagoon for links and small icons.",["clear","modern","light","calm"],mode="links",color=LAGOON),
+        pz("accent","sa",4,"Jungle Status Dots","Jungle green only for done and ready states.",["natural","practical","clear","construction"],mode="status",color=JUNGLE)),
+ ("jhc", pz("accent","jhc",5,"Cream + Terracotta Warmth","Cream background, terracotta headings.",["warm","natural","soft","personal"],mode="warm",color=TERRA),
+         pz("accent","jhc",6,"All Three Accents","Terracotta, lagoon and jungle on different tabs.",["vibrant","playful","bold","friendly"],mode="all")),
+ ("br", pz("accent","br",7,"Thin Accent Rule","A thin lagoon line under each section title.",["minimal","clear","modern","calm"],mode="rule",color=LAGOON),
+        pz("accent","br",8,"Tinted Section Backgrounds","Each section in a pale accent tint.",["soft","warm","light","friendly"],mode="tint")),
+ ("fq", pz("accent","fq",9,"Selected Answer In Jungle","Only the picked answer turns jungle green.",["clear","natural","direct","modern"],mode="selected",color=JUNGLE),
+        pz("accent","fq",10,"Progress Bar In Terracotta","Terracotta progress bar is the only color.",["warm","clear","practical","minimal"],mode="progress",color=TERRA)),
+])
+add("Imagery Treatment", [
+ ("ak", pz("image","ak",1,"Natural, Rounded 12","True-color photo, rounded 12px corners.",["natural","warm","soft","modern"],key="int_japandi",frame="round",filt="none"),
+        pz("image","ak",2,"Warm Film Grade","Slightly warm, softer contrast photo.",["warm","natural","personal","soft"],key="int_japandi",frame="round",filt="sepia(.25) saturate(1.1) contrast(.95)")),
+ ("hg", pz("image","hg",3,"Full-Bleed Hero","Photo runs edge to edge under the title.",["natural","modern","bold","personal"],key="ext_craftsman",frame="bleed",filt="none"),
+        pz("image","hg",4,"Square Crop With Caption","Square crop, small grey caption below.",["clear","minimal","practical","light"],key="ext_craftsman",frame="square",filt="none",caption="Front elevation, Oct 2026")),
+ ("sa", pz("image","sa",5,"Site Photo, Black And White","Construction site in black and white.",["construction","formal","editorial","minimal"],key="base_site",frame="square",filt="grayscale(1) contrast(1.1)"),
+        pz("image","sa",6,"Site Photo, True Color","Construction site in natural color.",["construction","natural","warm","clear"],key="base_site",frame="round",filt="none")),
+ ("wr", pz("image","wr",7,"Circle Crops","Room photos in small circles.",["friendly","soft","playful","light"],key="gd_courtyard",frame="circle",filt="none"),
+        pz("image","wr",8,"Wide Panorama Strip","Wide 3:1 strip across the screen.",["natural","modern","calm","clear"],key="gd_courtyard",frame="strip",filt="none")),
+ ("bs", pz("image","bs",9,"Light Duotone","Photos washed to cream and lagoon.",["soft","modern","geometric","editorial"],key="int_cabin",frame="round",filt="grayscale(1) sepia(.3) hue-rotate(160deg) saturate(.6) brightness(1.1)"),
+        pz("image","bs",10,"Bright And Airy","Lifted exposure, light and clean.",["light","natural","soft","warm"],key="int_cabin",frame="round",filt="brightness(1.12) saturate(.95)")),
+])
+add("Share Preview (OG Card)", [
+ ("hg", pz("og","hg",1,"Photo Left, Title Right","House photo left, title and site right.",["clear","natural","modern","practical"],layout="left"),
+        pz("og","hg",2,"Big Khand Title On White","Huge black title, small wordmark, no photo.",["minimal","bold","direct","modern"],layout="text")),
+ ("sa", pz("og","sa",3,"Photo With Dark-Free Fade","Site photo, light fade, black title.",["construction","natural","light","clear"],layout="bleed"),
+        pz("og","sa",4,"Split With Terracotta Panel","Photo half, terracotta panel with the claim.",["warm","bold","construction","modern"],layout="split",accent=TERRA)),
+ ("jhc", pz("og","jhc",5,"Personal Invite","'Max invited you to Japan House Crew' with house photo.",["personal","friendly","warm","natural"],layout="invite"),
+         pz("og","jhc",6,"Collage Of Four Houses","Four house photos in a grid with the name.",["natural","playful","warm","casual"],layout="collage")),
+ ("jsq", pz("og","jsq",7,"Question As Title","'Which brands do you love?' in big type.",["direct","clear","friendly","modern"],layout="question"),
+         pz("og","jsq",8,"Luxe Black And Gold","Black card, gold serif title.",["luxe","formal","dark","editorial"],layout="luxe")),
+ ("wr", pz("og","wr",9,"Floor Plan Thumbnail","Plan drawing with the house name.",["technical","construction","modern","clear"],layout="plan"),
+        pz("og","wr",10,"Courtyard Photo, Wordmark Corner","Photo with a small MAX WEBERMAN corner mark.",["natural","personal","calm","warm"],layout="corner")),
+])
+add("Onboarding First Screen", [
+ ("jhc", pz("onboard","jhc",1,"One Sentence + Start","'Swipe houses with your crew.' and a Start button.",["direct","clear","minimal","friendly"],layout="single"),
+         pz("onboard","jhc",2,"Three Steps With Icons","Swipe · Match · Visit, three icon steps.",["clear","practical","friendly","modern"],layout="steps")),
+ ("fq", pz("onboard","fq",3,"Letter From Max","'Hi Niko and Vivian, a few quick questions…' – Max.",["personal","warm","friendly","soft"],layout="letter"),
+        pz("onboard","fq",4,"Checklist Preview","Shows the 15 stops as a checklist.",["practical","clear","construction","direct"],layout="checklist")),
+ ("ak", pz("onboard","ak",5,"Photo Hero + Gesture Hint","House photo, faint swipe hint arrows.",["natural","warm","modern","calm"],layout="photo"),
+        pz("onboard","ak",6,"Animated Tutorial Card","A demo card swipes itself to teach you.",["playful","modern","friendly","tactile"],layout="demo")),
+ ("jsq", pz("onboard","jsq",7,"Hi Jane","'Hi Jane! 50 brands, 2 minutes.' Start button.",["personal","friendly","warm","direct"],layout="greet"),
+         pz("onboard","jsq",8,"Formal Instructions","Numbered rules in small text.",["formal","practical","plain","clear"],layout="rules")),
+ ("sa", pz("onboard","sa",9,"Problem First","'Sites run on chat threads, paper and memory.'",["direct","construction","bold","clear"],layout="problem"),
+        pz("onboard","sa",10,"Demo Video Frame","Play button over a site video still.",["modern","construction","natural","clear"],layout="video")),
+])
+add("Success & Confirmation", [
+ ("fq", pz("success","fq",1,"Check Draws In","Jungle check mark draws, 'Sent to Max.'",["clear","natural","friendly","modern"],style="check",copy="Sent to Max."),
+        pz("success","fq",2,"Stamp: Done","A terracotta DONE stamp thumps down.",["craft","warm","construction","bold"],style="stamp",copy="DONE")),
+ ("sw", pz("success","sw",3,"Toast At The Bottom","Small toast: 'Stop 3 saved'.",["minimal","clear","calm","practical"],style="toast",copy="Stop 3 saved"),
+        pz("success","sw",4,"Full Screen Thank You","Full screen: 'Walk complete. Thank you!'",["personal","warm","friendly","soft"],style="full",copy="Walk complete. Thank you!")),
+ ("jsq", pz("success","jsq",5,"Confetti Burst","Confetti bursts over 'All done!'",["playful","vibrant","bold","casual"],style="confetti",copy="All done!"),
+         pz("success","jsq",6,"Heart Pulse","A red heart pulses once: 'Thanks, Jane.'",["personal","warm","friendly","soft"],style="heart",copy="Thanks, Jane.")),
+ ("rp", pz("success","rp",7,"Progress Ring Completes","Ring fills to 100%: 'All rooms done.'",["clear","modern","practical","light"],style="ring",copy="All rooms done."),
+        pz("success","rp",8,"Green Banner","Jungle banner across the top: 'Uploaded.'",["direct","clear","natural","practical"],style="banner",copy="Uploaded.")),
+ ("jao", pz("success","jao",9,"Check + Next Step","'Added. Open Amex to use it.'",["clear","direct","practical","friendly"],style="next",copy="Added. Open Amex to use it."),
+         pz("success","jao",10,"Signature Thank You","'Enjoy, Jane. – Max' with a small signature line.",["personal","warm","craft","soft"],style="sign",copy="Enjoy, Jane.")),
+])
+add("Error States", [
+ ("rp", pz("error","rp",1,"Inline Under The Field","Small terracotta text under the upload box.",["clear","minimal","calm","practical"],style="inline",copy="That photo is too big. Try one under 20 MB."),
+        pz("error","rp",2,"Friendly Card With Retry","Card: 'Upload didn't go through. Try again?'",["friendly","warm","soft","clear"],style="card",copy="Upload didn't go through. Try again?")),
+ ("br", pz("error","br",3,"Top Banner","Thin banner: 'Not connected to Dropbox.'",["direct","clear","practical","modern"],style="banner",copy="Not connected to Dropbox."),
+        pz("error","br",4,"Blunt Red Alert","Bright red box, ERROR in caps.",["bold","loud","formal","vibrant"],style="alert",copy="ERROR: SYNC FAILED")),
+ ("jhc", pz("error","jhc",5,"Explain + Fix","'Open the full group link you were sent (ends in ?g=…).'",["clear","friendly","practical","direct"],style="explain",copy="Open the full group link you were sent. It ends in ?g=…"),
+         pz("error","jhc",6,"Lock Icon Screen","Big lock icon with one line.",["minimal","clear","calm","modern"],style="lock",copy="Group link needed.")),
+ ("sw", pz("error","sw",7,"Offline Toast","'Offline. Your notes are saved on this phone.'",["calm","practical","clear","soft"],style="toast",copy="Offline. Notes saved on this phone."),
+        pz("error","sw",8,"Warning Strip, Amber","Amber strip with dark text.",["clear","practical","construction","direct"],style="strip",copy="2 stops still need a photo.")),
+ ("fq", pz("error","fq",9,"Gentle Nudge","Unanswered question gets a soft terracotta outline.",["soft","warm","clear","friendly"],style="nudge",copy="Pick one, or tap Not Sure."),
+        pz("error","fq",10,"Shake + Message","The answer box shakes once.",["playful","tactile","direct","modern"],style="shake",copy="Pick an answer first.")),
+])
+add("Footer", [
+ ("hg", pz("footer","hg",1,"Wordmark + Phone Button","MAX WEBERMAN and a Call Max square button.",["clear","direct","personal","modern"],style="contact"),
+        pz("footer","hg",2,"Tiny Grey Credit","'Made by Max Weberman' in small grey.",["minimal","calm","light","plain"],style="credit")),
+ ("sa", pz("footer","sa",3,"Links Row","Product · Pricing · Contact links in a row.",["clear","practical","modern","minimal"],style="links"),
+        pz("footer","sa",4,"Cream Block With Email","Cream footer block with an email line.",["warm","soft","clear","friendly"],style="cream")),
+ ("jao", pz("footer","jao",5,"Updated Date Stamp","'Updated Oct 10, 2026' only.",["minimal","practical","direct","clear"],style="date"),
+         pz("footer","jao",6,"Share + Signature","Share button and '– Max' side by side.",["personal","friendly","warm","clear"],style="share")),
+ ("wr", pz("footer","wr",7,"Drawing Title Block","Architect-style title block: sheet, scale, date.",["technical","construction","craft","formal"],style="titleblock"),
+        pz("footer","wr",8,"Thin Rule + Wordmark","A hairline and the wordmark, centered.",["minimal","modern","calm","light"],style="rule")),
+ ("bs", pz("footer","bs",9,"Progress Saved Note","'Progress saves on this device.' plus Share.",["practical","clear","friendly","light"],style="saved"),
+        pz("footer","bs",10,"Big Bold Wordmark","Huge MAX WEBERMAN across the bottom.",["bold","editorial","modern","loud"],style="big")),
+])
+add("Share Message Copy", [
+ ("jhc", pz("msg","jhc",1,"Short And Direct","'Join my Japan house crew: [link]'",["direct","clear","casual","friendly"],text="Join my Japan house crew: webermanapps.github.io/japan-house-crew"),
+         pz("msg","jhc",2,"Warm Invite","'Found some great old houses in Japan. Swipe with me? [link]'",["warm","personal","friendly","soft"],text="Found some great old houses in Japan. Want to swipe through them with me? webermanapps.github.io/japan-house-crew")),
+ ("fq", pz("msg","fq",3,"Task-Focused","'19 quick questions about your finishes, about 10 minutes: [link]'",["practical","direct","clear","construction"],text="19 quick questions about your finishes, about 10 minutes: webermanapps.github.io/finish-questions"),
+        pz("msg","fq",4,"Personal From Max","'Hi Niko and Vivian, this helps me order the right finishes. Thanks! – Max'",["personal","warm","friendly","craft"],text="Hi Niko and Vivian, this helps me order the right finishes for your house. Thanks! – Max webermanapps.github.io/finish-questions")),
+ ("jsq", pz("msg","jsq",5,"Playful Emoji","'🛍️ Quick quiz for you, Jane! 😍 [link]'",["playful","vibrant","casual","cute"],text="🛍️ Quick quiz for you, Jane! Which brands do you love? 😍 webermanapps.github.io/amex-brand-swipe"),
+         pz("msg","jsq",6,"Plain And Kind","'Jane, a 2-minute quiz so I can find you better offers.'",["friendly","clear","personal","soft"],text="Jane, here's a 2-minute quiz so I can find you better Amex offers: webermanapps.github.io/amex-brand-swipe")),
+ ("sa", pz("msg","sa",7,"One-Line Pitch","'SiteAgent: one AI assistant for your whole site. Preview: [link]'",["direct","clear","construction","modern"],text="SiteAgent: one AI assistant for your whole site. Partner preview: webermanapps.github.io/ai-construction-pitch"),
+        pz("msg","sa",8,"Formal Introduction","'Dear partner, please find attached our proposal…'",["formal","classic","practical","editorial"],text="Dear partner, please find our proposal for SiteAgent at the link below. Kind regards, Max Weberman")),
+ ("wr", pz("msg","wr",9,"Show-And-Tell","'Here's the house I'm designing. Walk through it in 3D: [link]'",["personal","warm","natural","friendly"],text="Here's the house I'm designing. You can walk through it in 3D: webermanapps.github.io/weberman-residence"),
+        pz("msg","wr",10,"Just The Link","Only the link, no text.",["minimal","direct","plain","clear"],text="webermanapps.github.io/weberman-residence")),
+])
+add("From Max Sign-Off", [
+ ("hg", pz("sign","hg",1,"– Max","A simple dash and first name.",["personal","direct","minimal","warm"],style="dash"),
+        pz("sign","hg",2,"Small Photo + Name","Small round photo placeholder and 'Max Weberman, builder'.",["personal","friendly","warm","clear"],style="avatar")),
+ ("fq", pz("sign","fq",3,"Handwritten-Style Line","Italic 'Thanks, Max' with a pen-stroke underline.",["personal","craft","warm","soft"],style="pen"),
+        pz("sign","fq",4,"Initials Stamp","A small MW stamp in terracotta.",["craft","construction","warm","modern"],style="stamp")),
+ ("jao", pz("sign","jao",5,"Made For Jane","'Made for Jane by Max' at the top.",["personal","warm","friendly","soft"],style="madefor"),
+         pz("sign","jao",6,"Corporate Footer","'© 2026 Max Weberman. All rights reserved.'",["formal","plain","classic","minimal"],style="legal")),
+ ("sa", pz("sign","sa",7,"Founder Note","'I built SiteAgent after 10 years on site. – Max, founder'",["personal","construction","direct","warm"],style="founder"),
+        pz("sign","sa",8,"Team Sign-Off","'– The SiteAgent team'",["clear","modern","formal","practical"],style="team")),
+ ("br", pz("sign","br",9,"Good Morning, Max","Greeting at the top: 'Good morning, Max.'",["personal","warm","soft","friendly"],style="greet"),
+        pz("sign","br",10,"No Personal Touch","Just the date. No greeting.",["minimal","direct","plain","practical"],style="none")),
+])
+
+# ~15% checks: only these options keep the directions Max has rejected; incidental tags elsewhere are softened
+PZ_CHECKS = {"pz_icon_6", "pz_button_6", "pz_button_10", "pz_card_10", "pz_empty_8", "pz_micro_7", "pz_trans_5",
+             "pz_type_6", "pz_accent_6", "pz_og_8", "pz_error_4", "pz_msg_5", "pz_msg_8", "pz_success_5"}
+_SOFTEN = {"bold": "strong", "formal": "tidy", "editorial": "refined", "playful": "lively", "geometric": "precise",
+           "loud": "punchy", "classic": "traditional", "vibrant": "colorful", "luxe": "premium", "dark": "contrast", "cute": "sweet"}
+for _lst in PZ.values():
+    for _app, _a, _b in _lst:
+        for _o in (_a, _b):
+            if _o["id"] not in PZ_CHECKS:
+                _o["tags"] = list(dict.fromkeys(_SOFTEN.get(t, t) for t in _o["tags"]))
+POOL.update({cat: [o for _, a, b in pairs for o in (a, b)] for cat, pairs in PZ.items()})
+CATEGORY_WEIGHT.update({cat: 1.0 for cat in PZ})
 CATEGORY_WEIGHT.update({"Swipe Controls": 1.0})
 SWIPE_CONTROLS = "Swipe Controls"
 SC_TH = {"No": "ไม่", "Maybe": "อาจจะ", "Love": "รัก", "Yes": "ใช่"}
@@ -1273,6 +1540,7 @@ CATEGORY_GROUP = {
 }
 GROUP_OF = {c: g for g, cs in CATEGORY_GROUP.items() for c in cs}
 GROUP_OF.setdefault("Swipe Controls", "Swipe Controls")
+for _c in PZ: GROUP_OF.setdefault(_c, _c)
 
 
 # Categories whose pairs must contrast on a tag: one option carries tag X, the other tag Y.
@@ -1666,6 +1934,56 @@ def convert_pair_deck(src_id, new_id, n_cards=50):
                  "cards": cards})
     return deck
 
+SC_POLISH_PAIRS = [("sc_round_outline", "sc_round_haptic"), ("sc_gesture_tbt", "sc_slider_tbt"), ("sc_stamp_brand", "sc_square_khand"),
+                   ("sc_pill_brand", "sc_seg_brand"), ("sc_rail_mono", "sc_pill_earth")]
+
+def build_polish_deck(date, seed=None):
+    """Polish deck: 95 this-or-that pairs of polish choices for Max's real apps (PZ) + 5 Swipe Controls pairs.
+    Every pair is labelled with the app it applies to. All options must be unseen and English-only."""
+    rng = random.Random(seed if seed is not None else date)
+    profile = load_json(PROFILE, empty_profile())
+    shown = shown_options(exclude_date=date)
+    sc = {o["id"]: o for o in POOL[SWIPE_CONTROLS]}
+    pairs = []
+    for cat, lst in PZ.items():
+        for app, a, b in lst:
+            if rng.random() < 0.5: a, b = b, a
+            pairs.append({"category": cat, "app": APPS[app]["name"], "optionA": a, "optionB": b})
+    for x, y in SC_POLISH_PAIRS:
+        a, b = sc[x], sc[y]
+        if rng.random() < 0.5: a, b = b, a
+        pairs.append({"category": SWIPE_CONTROLS, "app": "All Swipe Apps", "optionA": a, "optionB": b})
+    for p in pairs:
+        for o in (p["optionA"], p["optionB"]):
+            assert o["id"] not in shown, f"{o['id']} already shown"
+            assert english_only(o), f"{o['id']} is not English-only"
+        p["repeat"] = False
+        p["purpose"] = "check" if (is_check(profile, p["optionA"]) or is_check(profile, p["optionB"])) else "refine"
+    rng.shuffle(pairs)
+    # spread: never the same category or the same app back to back; Swipe Controls spaced out
+    rest, seq = pairs[:], []
+    while rest:
+        last = seq[-1] if seq else {"category": None, "app": None}
+        since_sc = next((i for i, q in enumerate(reversed(seq)) if q["category"] == SWIPE_CONTROLS), 99)
+        ok = lambda q: q["category"] != last["category"] and q["app"] != last["app"] and (q["category"] != SWIPE_CONTROLS or since_sc >= 14)
+        nxt = next((q for q in rest if ok(q)), None) or next((q for q in rest if q["category"] != last["category"]), None) or rest[0]
+        rest.remove(nxt); seq.append(nxt)
+    pairs = [{"id": f"{date}-{i:03d}", **p} for i, p in enumerate(seq, 1)]
+    alloc = {}
+    for p in pairs: alloc[p["category"]] = alloc.get(p["category"], 0) + 1
+    apps = {}
+    for p in pairs: apps[p["app"]] = apps.get(p["app"], 0) + 1
+    ids = [p[o]["id"] for p in pairs for o in ("optionA", "optionB")]
+    return {"date": date, "version": 4, "owner": "Max Weberman", "format": "pairs", "english_only": True, "light_only": True,
+            "title": "Polish Picks For Max's Apps",
+            "brands": ["maxweberman.com base: Khand/Hind, black/white/grey + terracotta, lagoon, jungle"],
+            "generated_at": dt.datetime.now().astimezone().isoformat(timespec="seconds"),
+            "allocation": alloc, "apps": apps,
+            "focus": {"categories": sorted(PZ), "note": "Polish deck: choices that make Max's shareable apps look sharp, mocked with each app's real name and content."},
+            "pair_mix": {"refine": sum(p["purpose"] == "refine" for p in pairs), "check": sum(p["purpose"] == "check" for p in pairs)},
+            "freshness": {"option_slots": len(ids), "never_shown_before": sum(i not in shown for i in ids), "share": 1.0},
+            "warnings": [], "pairs": pairs, "image_credits": load_json(CREDITS, {})}
+
 SINGLE_SCORE = {"love": 2, "yes": 1, "maybe": 0, "no": -1}
 
 # ---------------------------------------------------------------------------
@@ -1745,7 +2063,11 @@ def ingest(results_path):
 def inline_images(deck):
     """Return a copy of the deck with image keys mapped to small data URIs (for a self-contained HTML)."""
     imgs = {}
-    keys = {o["visual"].get("key") for o in deck_options(deck)} - {None}
+    keys = set()
+    for o in deck_options(deck):
+        v = o["visual"]; keys |= {v.get("key"), (v.get("p") or {}).get("key"), (v.get("c") or {}).get("img")}
+        if v.get("type") == "polish" and (v.get("p") or {}).get("layout") == "collage": keys |= {"gd_japanese", "int_japandi", "gd_cottage", "int_cabin"}
+    keys -= {None}
     try:
         from PIL import Image
     except ImportError:
@@ -1790,6 +2112,7 @@ def main():
     ap.add_argument("--date", help="YYYY-MM-DD (default: today, local time)")
     ap.add_argument("--pairs", type=int, default=50, help="deck size: cards (single format) or pairs (--format pairs)")
     ap.add_argument("--format", choices=["pairs", "single"], default="pairs", help="A-vs-B pairs (default: This / That / Both / Love / Neither) or single-option cards (No/Maybe/Love/Yes)")
+    ap.add_argument("--polish", action="store_true", help="build the app-polish deck (95 polish pairs for Max's real apps + 5 Swipe Controls pairs)")
     ap.add_argument("--convert-from", help="build this deck id as a single-card version of an existing pair deck (e.g. 2026-10-10d)")
     ap.add_argument("--ingest", help="results JSON exported from the app")
     ap.add_argument("--no-embed", action="store_true")
@@ -1829,7 +2152,9 @@ def main():
         print(f"{out} exists (use --force to regenerate). Re-rendering HTML from it.")
         deck = load_json(out, None)
     else:
-        if a.convert_from:
+        if a.polish:
+            deck = build_polish_deck(date, a.seed)
+        elif a.convert_from:
             deck = convert_pair_deck(a.convert_from, date, a.pairs)
             print(f"Wrote {out}: {deck['deck_size']} cards from {len(deck['cards'])} options of {a.convert_from}")
         elif a.format == "pairs":
