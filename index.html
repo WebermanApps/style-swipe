@@ -201,7 +201,9 @@ body.pairs .stage{max-width:760px;max-height:620px}
 textarea{width:100%;height:220px;background:#fff;color:#1F1F1F;border:1px solid var(--line);border-radius:10px;font:12px/1.4 'IBM Plex Mono',monospace;padding:10px}
 .btnrow{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
 .toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:#05668D;color:#fff;padding:8px 14px;border-radius:10px;font-size:13px;opacity:0;transition:opacity .2s;pointer-events:none;z-index:99}
-footer{color:var(--muted);font-size:11px;text-align:center;padding:4px 10px 10px}
+footer{color:var(--muted);font-size:11px;text-align:center;padding:4px 10px calc(8px + env(safe-area-inset-bottom));display:flex;align-items:center;justify-content:center;gap:4px;flex-wrap:wrap}
+.sharebtn{min-height:44px;min-width:110px;padding:0 18px;border:2px solid #1F1F1F;border-radius:0;background:#FFFDF7;color:#1F1F1F;font-family:Khand,Hind,sans-serif;font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.1em;margin-right:6px}
+.sharebtn:hover{background:#1F1F1F;color:#FFFDF7}
 footer a{color:var(--muted)}
 details{font-size:11px;color:var(--muted)}
 @media (max-width:560px){
@@ -244,6 +246,7 @@ details{font-size:11px;color:var(--muted)}
 </div>
 <div class="hint" id="hint"></div>
 <footer>
+  <button class="sharebtn mw-hover" id="shareBtn" type="button" aria-label="Share this app and your picks">⇪ Share</button>
   <label style="cursor:pointer;text-decoration:underline">Load Another Deck (JSON)<input type="file" id="deckFile" accept=".json,application/json" hidden></label>
   · <a href="#" id="creditsLink">Image Credits</a>
 </footer>
@@ -586,9 +589,30 @@ function buildResults(){
 function resultsJson(){return JSON.stringify(buildResults(),null,1)}
 function download(){const blob=new Blob([resultsJson()],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`style-swipe-results-${deck.date}.json`;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},500);toast('Downloaded')}
 async function copy(){const txt=resultsJson();try{await navigator.clipboard.writeText(txt);toast('Copied JSON')}catch(e){const ta=$('#resText');if(ta){ta.select();document.execCommand('copy');toast('Copied JSON')}else toast('Copy failed: use the text box')}}
-async function share(){const txt=resultsJson();const file=new File([txt],`style-swipe-results-${deck.date}.json`,{type:'application/json'});
- try{if(navigator.canShare&&navigator.canShare({files:[file]}))await navigator.share({files:[file],title:`Style Swipe ${deck.date}`});
-  else if(navigator.share)await navigator.share({title:`Style Swipe ${deck.date}`,text:txt});else{copy();}}catch(e){}}
+/* ---------- Share (brand standard): share sheet -> sms: -> copy link. No phone number in code. ---------- */
+function appLink(){return location.origin+location.pathname+(deck?`?date=${encodeURIComponent(deck.date)}`:'')}
+function shareSummary(){
+ if(!deck||!picks.length)return 'Try my Style Swipe: pick This or That.';
+ const r=buildResults(),t=r.totals||{},top=(r.top_tags||[]).slice(0,5).map(x=>x.tag).join(', '),loved=(r.loved||[]).slice(0,5).join(', ');
+ const counts=single?`${t.yes||0} Yes, ${t.love||0} Love, ${t.maybe||0} Maybe, ${t.no||0} No`
+  :`${t.A||0} This, ${t.B||0} That, ${t.both||0} Both, ${(t.loveA||0)+(t.loveB||0)} Love, ${t.neither||0} Neither`;
+ return `My Style Swipe picks (deck ${deck.date}, ${picks.length}/${items.length}): ${counts}.`+(top?` Top tags: ${top}.`:'')+(loved?` Loved: ${loved}.`:'')}
+function openSms(u){location.href=u}
+const isPhone=()=>/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)||(navigator.maxTouchPoints>1&&/Macintosh/.test(navigator.userAgent));
+async function copyText(txt,msg){try{await navigator.clipboard.writeText(txt);toast(msg||'Copied')}catch(_){const ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity=0;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');toast(msg||'Copied')}catch(e){toast('Copy failed')}ta.remove()}}
+async function share(){
+ const link=appLink(),sum=shareSummary(),text=`${sum}\n${link}`;
+ const json=deck&&picks.length?resultsJson():'';
+ if(navigator.share){
+  try{
+   if(json){const file=new File([json],`style-swipe-results-${deck.date}.json`,{type:'application/json'});
+    if(navigator.canShare&&navigator.canShare({files:[file]})){await navigator.share({title:`Style Swipe ${deck.date}`,text,files:[file]});return}}
+   const full=json&&json.length<=2000?`${text}\n\n${json}`:text;   // full JSON only if short enough for a message
+   await navigator.share({title:'Style Swipe',text:full});return
+  }catch(e){if(e&&e.name==='AbortError')return}
+ }
+ if(isPhone()){openSms(`sms:?&body=${encodeURIComponent(text)}`);return}
+ await copyText(text,'Copied link and summary')}
 function showEnd(){
  showControls(false);
  const r=buildResults(),max=Math.max(1,...r.top_tags.map(x=>x.score),...r.avoided_tags.map(x=>-x.score));
@@ -608,7 +632,7 @@ function showEnd(){
  <h3>Tags You Avoid</h3><div class="bars">${r.avoided_tags.map(x=>bar(x,'var(--no)')).join('')||'<span class="hint">None yet</span>'}</div>
  ${cats}
  <h3>Send Results Back</h3><div class="hint" style="text-align:left;padding:0">Download the JSON file, or copy the text below and paste it into a chat with your agent.</div>
- <div class="btnrow"><button class="primary mw-hover" id="eDl">⬇ Export JSON</button><button class="mw-hover" id="eCp">Copy JSON</button><button class="mw-hover" id="eSh">Share…</button><button class="mw-hover" id="eBack">↶ Back To Last Card</button><button class="mw-hover" id="eReset">Start Over</button></div>
+ <div class="btnrow"><button class="primary mw-hover" id="eDl">⬇ Export JSON</button><button class="mw-hover" id="eCp">Copy JSON</button><button class="sharebtn mw-hover" id="eSh">⇪ Share</button><button class="mw-hover" id="eBack">↶ Back To Last Card</button><button class="mw-hover" id="eReset">Start Over</button></div>
  <textarea id="resText" readonly>${esc(JSON.stringify(r,null,1))}</textarea></div>`;
  $('#eDl').onclick=download;$('#eCp').onclick=copy;$('#eSh').onclick=share;$('#eBack').onclick=undo;
  $('#eReset').onclick=()=>{if(confirm('Clear all answers for this deck?')){picks=[];idx=0;save();render()}};
@@ -619,6 +643,7 @@ $('#bA').onclick=()=>choose('A');$('#bB').onclick=()=>choose('B');$('#bN').oncli
 $('#bLoveP').onclick=()=>{setLove(!loveArmed);if(loveArmed)toast('Now tap the option you love')};
 $('#bNo').onclick=()=>answer('no');$('#bMaybe').onclick=()=>answer('maybe');$('#bLove').onclick=()=>answer('love');$('#bYes').onclick=()=>answer('yes');$('#bU3').onclick=undo;
 $('#btnExportTop').onclick=()=>{if(deck)download()};
+$('#shareBtn').onclick=share;
 document.addEventListener('keydown',e=>{if(e.target.tagName==='TEXTAREA'||!deck)return;const k=e.key;
  if(k==='Backspace'||k==='z'){e.preventDefault();return undo()}
  if(single){if(k==='ArrowLeft')answer('no');else if(k==='ArrowRight')answer('yes');else if(k==='m'||k==='ArrowDown')answer('maybe');else if(k==='l'||k==='ArrowUp')answer('love');return}
