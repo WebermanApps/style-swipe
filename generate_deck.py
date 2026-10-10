@@ -1575,6 +1575,26 @@ def ingest(results_path):
             continue
         choice, cat = p.get("choice"), p.get("category")
         if choice == "skip": continue
+        if res.get("version", 1) >= 4 and choice in ("both", "loveA", "loveB", "neither"):
+            # v4 pairs: Both +1 each, Love +2 to the loved option (the other counts as a normal loss), Neither -1 each
+            bump(profile["categories"], cat, "answered"); bump(profile["categories"], cat, choice)
+            sides = {"A": (p.get("optionA"), set(p.get("tagsA", []))), "B": (p.get("optionB"), set(p.get("tagsB", [])))}
+            for oid, tags in sides.values():
+                bump(profile["options"], oid, "shown")
+                for t in tags: bump(profile["tags"], t, "shown")
+            def give(side, amt):
+                oid, tags = sides[side]
+                field = "wins" if amt > 0 else "losses"
+                bump(profile["options"], oid, field, abs(amt))
+                for t in tags: bump(profile["tags"], t, field, abs(amt))
+            if choice == "both": give("A", 1); give("B", 1)
+            elif choice == "neither": give("A", -1); give("B", -1)
+            else:
+                win = choice[-1]; lose = "B" if win == "A" else "A"
+                give(win, 2); bump(profile["options"], sides[win][0], "loves")
+                bump(profile["options"], sides[lose][0], "losses")
+                for t in sides[lose][1] - sides[win][1]: bump(profile["tags"], t, "losses")
+            continue
         bump(profile["categories"], cat, "answered")
         a_tags, b_tags = p.get("tagsA", []), p.get("tagsB", [])
         for t in set(a_tags) | set(b_tags): bump(profile["tags"], t, "shown")
@@ -1646,7 +1666,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--date", help="YYYY-MM-DD (default: today, local time)")
     ap.add_argument("--pairs", type=int, default=50, help="deck size: cards (single format) or pairs (--format pairs)")
-    ap.add_argument("--format", choices=["single", "pairs"], default="single", help="single-option cards (default, No/Maybe/Love/Yes) or legacy A-vs-B pairs")
+    ap.add_argument("--format", choices=["pairs", "single"], default="pairs", help="A-vs-B pairs (default: This / That / Both / Love / Neither) or single-option cards (No/Maybe/Love/Yes)")
     ap.add_argument("--convert-from", help="build this deck id as a single-card version of an existing pair deck (e.g. 2026-10-10d)")
     ap.add_argument("--ingest", help="results JSON exported from the app")
     ap.add_argument("--no-embed", action="store_true")

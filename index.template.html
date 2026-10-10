@@ -147,6 +147,26 @@ body.single .controls{max-width:540px}
 #btnExportTop{min-height:44px;min-width:64px}
 footer label,footer a{display:inline-flex;align-items:center;min-height:44px;padding:0 6px}
 .end .btnrow button{min-height:44px}
+/* v4 pair controls */
+.controls.v4{flex-direction:column;gap:6px;max-width:560px}
+.controls.v4 .row1,.controls.v4 .row2{display:flex;gap:6px;justify-content:center}
+.controls.v4 .row1 button{flex:1;min-height:48px;padding:10px 4px;min-width:0;font-weight:800;text-transform:uppercase;letter-spacing:.05em;border-width:2px}
+.controls.v4 .row2 button{flex:0 1 auto!important;min-width:130px;min-height:44px;padding:8px 18px!important;font-size:13px}
+button.this{background:#0d2a36;border-color:var(--lagoon);color:#bfe6f5}
+button.that{background:#33190f;border-color:var(--terracotta);color:#f6c8b6}
+button.both{background:#0f2a20;border-color:var(--yes);color:#9fe0c4}
+button.neither{background:#2a1513;border-color:var(--no);color:#f3b3ae}
+button.love.armed{background:var(--love);color:#fff}button.love.armed .h{color:#fff}
+.opt.A .side{color:#7cc6e3}.opt.B .side{color:#ee9a7c}
+.opt.hot-a{border-color:var(--lagoon);box-shadow:0 0 0 3px rgba(5,102,141,.35)}
+.opt.hot-b{border-color:var(--terracotta);box-shadow:0 0 0 3px rgba(193,80,46,.35)}
+.card.love-armed .opt{border-color:var(--love);box-shadow:0 0 0 3px rgba(224,36,94,.25)}
+.stamp.l{right:16px;color:var(--lagoon);border-color:var(--lagoon);transform:rotate(12deg)}.stamp.r{left:16px;color:var(--terracotta);border-color:var(--terracotta);transform:rotate(-12deg)}
+.stamp.both{left:50%;top:22%;transform:translateX(-50%) rotate(-4deg);color:var(--yes);border-color:var(--yes)}
+.stamp.neither{left:50%;top:22%;transform:translateX(-50%) rotate(4deg);color:var(--no);border-color:var(--no)}
+.stamp.lovea{left:16px;top:22%;color:var(--love);border-color:var(--love)}.stamp.loveb{right:16px;top:22%;color:var(--love);border-color:var(--love);transform:rotate(8deg)}
+body.pairs .stage{max-width:760px;max-height:620px}
+@media (max-width:420px){.controls.v4 .row1 button{font-size:12px;letter-spacing:.02em}}
 /* end screen */
 .end{max-width:760px;width:100%;flex:1;min-height:0;overflow:auto;-webkit-overflow-scrolling:touch;padding:4px 4px 30px}
 .end h2{margin:10px 0 6px}.end h3{margin:16px 0 6px;font-size:15px}
@@ -190,12 +210,16 @@ details{font-size:11px;color:var(--muted)}
   <button class="yes mw-hover" id="bYes" title="Right arrow">Yes ✓</button>
   <button class="undo mw-hover" id="bU3" title="Backspace / Z">↶</button>
 </div>
-<div class="controls" id="controls">
-  <button class="a mw-hover" id="bA" title="Left arrow">◀ Left</button>
-  <button class="mw-hover" id="bN" title="Down arrow / N">Neither</button>
-  <button class="mw-hover" id="bS" title="S">Skip</button>
-  <button class="mw-hover" id="bU" title="Backspace / Z">↶ Undo</button>
-  <button class="b mw-hover" id="bB" title="Right arrow">Right ▶</button>
+<div class="controls v4" id="controls">
+  <div class="row1">
+  <button class="this mw-hover" id="bA" title="Left arrow">◀ This</button>
+  <button class="both mw-hover" id="bBoth" title="B">Both</button>
+  <button class="love mw-hover" id="bLoveP" title="L, then tap an option"><span class="h">❤</span> Love</button>
+  <button class="that mw-hover" id="bB" title="Right arrow">That ▶</button>
+  </div><div class="row2">
+  <button class="neither mw-hover" id="bN" title="Down arrow / N">✕ Neither</button>
+  <button class="undo mw-hover" id="bU" title="Backspace / Z">↶ Undo</button>
+  </div>
 </div>
 <div class="hint" id="hint"></div>
 <footer>
@@ -377,7 +401,7 @@ function rSign(v){const f=`font-family:${v.font};`;let st='',wall='#d9d4c7';
  }
  return `<div class="v-sign" style="background:${wall}"><div style="background:${v.bg};color:${v.fg};${f}${st}padding:10px 14px;text-align:center;max-width:90%"><div style="font-size:${v.shape==='picto'?26:18}px;font-weight:700;line-height:1.05">${esc(v.text)}</div>${v.sub?`<div style="font-size:11px;margin-top:4px;opacity:.85">${esc(v.sub)}</div>`:''}</div></div>`}
 const R={ui:rUI,palette:rPal,type:rType,tone:rTone,image:rImg,mood:rMood,logo:rLogo,thumb:rThumb,hero:rHero,post:rPost,pace:rPace,merch:rMerch,bleed:rBleed,word:rWord,mini:rMini,motion:rMotion,sound:rSound,thaitype:rThaiType,texture:rTexture,light:rLight,cover:rCover,sign:rSign};
-function optHtml(o,side){const v=o.visual||{};return `<div class="opt mw-hover ${side} fmt-${v.type||'x'}" data-side="${side}"><div class="vis">${(R[v.type]||(()=>''))(v,o)}</div>${side==='S'?'':`<span class="side">${side==='A'?'◀ LEFT':'RIGHT ▶'}</span>`}<h3>${esc(o.label)}</h3><p>${esc(o.desc)}</p>
+function optHtml(o,side){const v=o.visual||{};return `<div class="opt mw-hover ${side} fmt-${v.type||'x'}" data-side="${side}"><div class="vis">${(R[v.type]||(()=>''))(v,o)}</div>${side==='S'?'':`<span class="side">${side==='A'?'◀ THIS':'THAT ▶'}</span>`}<h3>${esc(o.label)}</h3><p>${esc(o.desc)}</p>
   <div class="tags">${(o.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</div></div>`}
 
 /* ---------- sound cards: real <audio> playback, started inside the tap ---------- */
@@ -401,7 +425,7 @@ const storeKey = () => single?`styleSwipe:v3:${deck.date}`:`styleSwipe:${deck.da
 function save(){try{localStorage.setItem(storeKey(),JSON.stringify({v:single?3:2,picks,idx,order:single?items.map(c=>c.id):undefined,updated:new Date().toISOString()}))}catch(_){}}
 function readStore(k){try{const s=JSON.parse(localStorage.getItem(k)||'null');return s&&typeof s==='object'?s:null}catch(_){return null}}
 function setDeck(d){
- deck=d;single=Array.isArray(d.cards);document.body.classList.toggle('single',single);picks=[];idx=0;
+ deck=d;single=Array.isArray(d.cards);document.body.classList.toggle('single',single);document.body.classList.toggle('pairs',!single);setLove(false);picks=[];idx=0;
  const s=readStore(storeKey());
  if(single){
   let order=s&&Array.isArray(s.order)?s.order:null;
@@ -416,7 +440,7 @@ function setDeck(d){
  }else items=Array.isArray(d.pairs)?d.pairs:[];
  if(s&&Array.isArray(s.picks)&&s.picks.every(p=>p&&typeof p==='object')&&(!single||s.v===3)){picks=s.picks;idx=Math.min(Number.isFinite(s.idx)?s.idx:picks.length,items.length)}
  $('#sub').textContent=`Deck ${d.date} · ${items.length} ${single?'cards':'pairs'}`;
- $('#hint').textContent=single?'Swipe left = No, right = Yes. Tap Maybe or ❤ Love in the middle. Arrow keys: ← No, → Yes.':'Swipe the card toward the option you prefer, or tap it. Neither = dislike both · Skip = no opinion.';
+ $('#hint').textContent=single?'Swipe left = No, right = Yes. Tap Maybe or ❤ Love in the middle. Arrow keys: ← No, → Yes.':'Swipe or tap: left = This, right = That. Both = like both. ❤ Love: tap Love, then tap the option.';
  save();render()}
 function showControls(on){$('#controls3').style.display=on&&single?'':'none';$('#controls').style.display=on&&!single?'':'none';$('#hint').style.display=on?'':'none'}
 function render(){stopAllAudio();
@@ -433,7 +457,7 @@ function render(){stopAllAudio();
  }else{
   stage.innerHTML=`<div class="card mw-card" id="card"><div class="cat"><span class="pill">${esc(p.category)}</span><span class="pill">${idx+1} / ${items.length}</span></div>
   <h2>Which Feels More Like You?</h2><div class="opts">${optHtml(p.optionA,'A')}${optHtml(p.optionB,'B')}</div>
-  <div class="stamp l">LEFT</div><div class="stamp r">RIGHT</div></div>`;
+  <div class="stamp l">THIS</div><div class="stamp r">THAT</div><div class="stamp both">BOTH</div><div class="stamp neither">NEITHER</div><div class="stamp lovea">LOVE ❤</div><div class="stamp loveb">LOVE ❤</div></div>`;
  }
  shownAt=performance.now();bindDrag($('#card'));
 }
@@ -449,17 +473,24 @@ function answer(ans){ // v3
   setTimeout(()=>{card.style.transform=t;card.style.opacity=0},160)}
  idx++;save();setTimeout(render,400);
 }
-function choose(choice){ // v2 pairs
+let loveArmed=false;
+function setLove(on){loveArmed=on;const b=document.getElementById('bLoveP');if(b)b.classList.toggle('armed',on);const c=document.getElementById('card');if(c)c.classList.toggle('love-armed',on)}
+const PAIR_SCORE={A:'+1 / -1',B:'-1 / +1',both:'+1 / +1',neither:'-1 / -1',loveA:'+2 / -1',loveB:'-1 / +2',skip:'0'};
+function choose(choice){ // pairs: A (This), B (That), both, neither, loveA, loveB
  if(!deck||single||idx>=items.length)return;
+ if(loveArmed&&(choice==='A'||choice==='B'))choice='love'+choice;
+ setLove(false);
  const p=items[idx], A=p.optionA, B=p.optionB;
- const chosen=choice==='A'?A:choice==='B'?B:null;
+ const ch=choice.replace('love','');const chosen=ch==='A'?A:ch==='B'?B:null;
  picks=picks.filter(x=>x.pair_id!==p.id);
  picks.push({pair_id:p.id,category:p.category,choice,optionA:A.id,optionB:B.id,labelA:A.label,labelB:B.label,
   chosen_id:chosen?chosen.id:null,chosen_label:chosen?chosen.label:null,tagsA:A.tags,tagsB:B.tags,
-  ms:Math.round(performance.now()-shownAt),at:new Date().toISOString()});
+  purpose:p.purpose||null,ms:Math.round(performance.now()-shownAt),at:new Date().toISOString()});
  const card=$('#card');
- if(card){const dx=choice==='A'?-1:choice==='B'?1:0;card.style.transform=dx?`translateX(${dx*120}%) rotate(${dx*14}deg)`:(choice==='neither'?'translateY(110%)':'translateY(-110%)');card.style.opacity=0}
- idx++;save();setTimeout(render,choice?220:0);
+ if(card){const st=card.querySelector({A:'.stamp.l',B:'.stamp.r',both:'.stamp.both',neither:'.stamp.neither',loveA:'.stamp.lovea',loveB:'.stamp.loveb'}[choice]||'.none');if(st)st.style.opacity=1;
+  const t={A:'translateX(-120%) rotate(-14deg)',B:'translateX(120%) rotate(14deg)',loveA:'translateX(-120%) rotate(-14deg)',loveB:'translateX(120%) rotate(14deg)',both:'translateY(-110%)',neither:'translateY(110%)'}[choice]||'translateY(-110%)';
+  setTimeout(()=>{card.style.transform=t;card.style.opacity=0},160)}
+ idx++;save();setTimeout(render,400);
 }
 function undo(){if(!deck||idx===0)return;idx--;const p=items[idx];picks=picks.filter(x=>single?x.card_id!==p.id:x.pair_id!==p.id);save();render();toast('Undone')}
 function bindDrag(card){
@@ -480,7 +511,20 @@ function bindDrag(card){
 /* ---------- results ---------- */
 function rank(tags){const ranked=Object.entries(tags).sort((a,b)=>b[1]-a[1]);
  return {top:ranked.filter(x=>x[1]>0).slice(0,12).map(([t,s])=>({tag:t,score:s})),avoid:ranked.filter(x=>x[1]<0).slice(-8).reverse().map(([t,s])=>({tag:t,score:s}))}}
+function pairScores(c){return {A:[1,-1],B:[-1,1],both:[1,1],neither:[-1,-1],loveA:[2,-1],loveB:[-1,2]}[c]||[0,0]}
 function buildResults(){
+ if(!single){
+  const totals={A:0,B:0,both:0,loveA:0,loveB:0,neither:0,skip:0},tags={},byCat={},loved=[];
+  for(const p of picks){totals[p.choice]=(totals[p.choice]||0)+1;const [sa,sb]=pairScores(p.choice);
+   (p.tagsA||[]).forEach(t=>tags[t]=(tags[t]||0)+sa);(p.tagsB||[]).forEach(t=>tags[t]=(tags[t]||0)+sb);
+   const lab={A:p.labelA,B:p.labelB,loveA:'❤ '+p.labelA,loveB:'❤ '+p.labelB,both:`both: ${p.labelA} + ${p.labelB}`,neither:`✗ neither (${p.labelA} / ${p.labelB})`}[p.choice];
+   if(p.choice==='loveA')loved.push(p.labelA);if(p.choice==='loveB')loved.push(p.labelB);
+   if(lab)(byCat[p.category]=byCat[p.category]||[]).push(lab)}
+  const r=rank(tags);
+  return {app:'style-swipe',version:4,format:'pairs',owner:deck.owner||'Max Weberman',deck:deck.date,
+   scoring:{this_or_that:'+1 picked, -1 other',both:'+1 each',love:'+2 loved, -1 other',neither:'-1 each'},
+   exported_at:new Date().toISOString(),complete:idx>=items.length,answered:picks.length,total_pairs:items.length,
+   totals,top_tags:r.top,avoided_tags:r.avoid,loved,chosen_by_category:byCat,picks}}
  if(single){
   const totals={love:0,yes:0,maybe:0,no:0},tags={},byCat={};
   for(const p of picks){totals[p.answer]=(totals[p.answer]||0)+1;(p.tags||[]).forEach(t=>tags[t]=(tags[t]||0)+(SCORE[p.answer]||0));
@@ -514,12 +558,12 @@ function showEnd(){
   stats=`<div class="stat"><b style="color:var(--love)">❤ ${t.love}</b><span>Love</span></div><div class="stat"><b style="color:#4fc79a">${t.yes}</b><span>Yes</span></div><div class="stat"><b style="color:var(--maybe)">${t.maybe}</b><span>Maybe</span></div><div class="stat"><b style="color:#e8746f">${t.no}</b><span>No</span></div>`;
   cats=`<h3>Your Answers By Category</h3><div class="catlist">${Object.entries(r.answers_by_category).map(([c,a])=>`<div><b>${esc(c)}:</b> ${['love','yes','maybe','no'].flatMap(k=>a[k].map(l=>`<span class="ans ${k}">${k==='love'?'❤':k.toUpperCase()}</span>${esc(l)}`)).join(' · ')}</div>`).join('')}</div>`;
  }else{
-  stats=`<div class="stat"><b>${r.totals.A+r.totals.B}</b><span>Picks</span></div><div class="stat"><b>${r.totals.neither}</b><span>Neither</span></div><div class="stat"><b>${r.totals.skip}</b><span>Skipped</span></div><div class="stat"><b>${r.answered}/${r.total_pairs}</b><span>Answered</span></div>`;
+  const t=r.totals;stats=`<div class="stat"><b>${t.A+t.B}</b><span>This / That</span></div><div class="stat"><b style="color:var(--love)">❤ ${t.loveA+t.loveB}</b><span>Loved</span></div><div class="stat"><b style="color:#4fc79a">${t.both}</b><span>Both</span></div><div class="stat"><b style="color:#e8746f">${t.neither}</b><span>Neither</span></div>`;
   cats=`<h3>Your Picks By Category</h3><div class="catlist">${Object.entries(r.chosen_by_category).map(([c,l])=>`<div><b>${esc(c)}:</b> ${l.map(esc).join(' · ')}</div>`).join('')}</div>`;
  }
  $('#main').innerHTML=`<div class="end"><h2>Your Style Summary</h2>
  <div class="stats">${stats}</div>
- ${single&&r.loved.length?`<h3>❤ Loved</h3><div class="catlist">${r.loved.map(esc).join(' · ')}</div>`:''}
+ ${r.loved&&r.loved.length?`<h3>❤ Loved</h3><div class="catlist">${r.loved.map(esc).join(' · ')}</div>`:''}
  <h3>Tags You Lean Toward</h3><div class="bars">${r.top_tags.map(x=>bar(x,'var(--ok)')).join('')||'<span class="hint">None yet</span>'}</div>
  <h3>Tags You Avoid</h3><div class="bars">${r.avoided_tags.map(x=>bar(x,'var(--no)')).join('')||'<span class="hint">None yet</span>'}</div>
  ${cats}
@@ -531,13 +575,14 @@ function showEnd(){
 }
 
 /* ---------- wiring ---------- */
-$('#bA').onclick=()=>choose('A');$('#bB').onclick=()=>choose('B');$('#bN').onclick=()=>choose('neither');$('#bS').onclick=()=>choose('skip');$('#bU').onclick=undo;
+$('#bA').onclick=()=>choose('A');$('#bB').onclick=()=>choose('B');$('#bN').onclick=()=>choose('neither');$('#bBoth').onclick=()=>choose('both');$('#bU').onclick=()=>{setLove(false);undo()};
+$('#bLoveP').onclick=()=>{setLove(!loveArmed);if(loveArmed)toast('Now tap the option you love')};
 $('#bNo').onclick=()=>answer('no');$('#bMaybe').onclick=()=>answer('maybe');$('#bLove').onclick=()=>answer('love');$('#bYes').onclick=()=>answer('yes');$('#bU3').onclick=undo;
 $('#btnExportTop').onclick=()=>{if(deck)download()};
 document.addEventListener('keydown',e=>{if(e.target.tagName==='TEXTAREA'||!deck)return;const k=e.key;
  if(k==='Backspace'||k==='z'){e.preventDefault();return undo()}
  if(single){if(k==='ArrowLeft')answer('no');else if(k==='ArrowRight')answer('yes');else if(k==='m'||k==='ArrowDown')answer('maybe');else if(k==='l'||k==='ArrowUp')answer('love');return}
- if(k==='ArrowLeft')choose('A');else if(k==='ArrowRight')choose('B');else if(k==='ArrowDown'||k==='n')choose('neither');else if(k==='s'||k==='ArrowUp')choose('skip')});
+ if(k==='ArrowLeft')choose('A');else if(k==='ArrowRight')choose('B');else if(k==='ArrowDown'||k==='n')choose('neither');else if(k==='b'||k==='ArrowUp')choose('both');else if(k==='l')setLove(!loveArmed);else if(k==='Escape')setLove(false)});
 $('#deckFile').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{const d=JSON.parse(await f.text());if(!d.pairs&&!d.cards)throw 0;setDeck(d);toast(`Loaded deck ${d.date}`)}catch(_){toast('Not a valid deck file')}};
 $('#creditsLink').onclick=e=>{e.preventDefault();const c=(deck&&deck.image_credits)||{};$('#main').innerHTML=`<div class="end"><h2>Image Credits</h2><div class="catlist">${Object.values(c).map(x=>`<div><a style="color:#9cf" href="${esc(x.source)}" target="_blank" rel="noopener">${esc(x.title)}</a> · ${esc(x.artist||'Unknown')} · ${esc(x.license)}</div>`).join('')||'None'}</div><div class="btnrow"><button class="mw-hover" id="cBack">Back</button></div></div>`;showControls(false);$('#cBack').onclick=()=>render()};
 (async()=>{
