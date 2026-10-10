@@ -6,17 +6,28 @@
 <meta name="theme-color" content="#14161a">
 <title>Style Swipe · Max Weberman</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&family=Playfair+Display:wght@700&family=DM+Serif+Display&family=Fraunces:wght@700&family=Lora:wght@400;700&family=Libre+Baskerville:wght@400;700&family=Cormorant+Garamond:wght@600&family=Montserrat:wght@700;800&family=Work+Sans:wght@400;600&family=Oswald:wght@600&family=Bebas+Neue&family=Archivo+Black&family=IBM+Plex+Mono:wght@400;600&family=Prompt:wght@400;600&family=Sarabun:wght@400&family=Caveat:wght@700&family=Kanit:wght@400;600;700&family=Mitr:wght@500&family=Chakra+Petch:wght@600;700&family=Pridi:wght@600&family=Noto+Serif+JP:wght@600&family=Noto+Sans+JP:wght@400&family=DM+Sans:wght@400;700&family=Syne:wght@800&family=Anton&family=Nunito:wght@800&family=Outfit:wght@700&family=Space+Mono:wght@700&family=Manrope:wght@800&family=Bai+Jamjuree:wght@600&family=IBM+Plex+Sans+Thai:wght@500&family=Noto+Serif+Thai:wght@500&family=Noto+Sans+Thai:wght@500&family=Taviraj:wght@500&family=Trirong:wght@500&family=Athiti:wght@600&family=Krub:wght@600&family=K2D:wght@600&family=Niramit:wght@500&family=Charm:wght@700&family=Chonburi&family=Itim&family=Sriracha&family=Mali:wght@600&family=Charmonman&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&family=Playfair+Display:wght@700&family=DM+Serif+Display&family=Fraunces:wght@700&family=Lora:wght@400;700&family=Libre+Baskerville:wght@400;700&family=Cormorant+Garamond:wght@600&family=Montserrat:wght@700;800&family=Work+Sans:wght@400;600&family=Oswald:wght@600&family=Bebas+Neue&family=Archivo+Black&family=IBM+Plex+Mono:wght@400;600&family=Prompt:wght@400;600&family=Sarabun:wght@400&family=Caveat:wght@700&family=Kanit:wght@400;600;700&family=Mitr:wght@500&family=Chakra+Petch:wght@600;700&family=Pridi:wght@600&family=Noto+Serif+JP:wght@600&family=Noto+Sans+JP:wght@400&family=DM+Sans:wght@400;700&family=Syne:wght@800&family=Anton&family=Nunito:wght@800&family=Outfit:wght@700&family=Space+Mono:wght@700&family=Manrope:wght@800&family=Bai+Jamjuree:wght@600&family=IBM+Plex+Sans+Thai:wght@500&family=Noto+Serif+Thai:wght@500&family=Noto+Sans+Thai:wght@500&family=Taviraj:wght@500&family=Trirong:wght@500&family=Athiti:wght@600&family=Krub:wght@600&family=K2D:wght@600&family=Niramit:wght@500&family=Charm:wght@700&family=Chonburi&family=Itim&family=Sriracha&family=Mali:wght@600&family=Charmonman&family=Khand:wght@600;700&family=Hind:wght@400;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#14161a;--panel:#1d2026;--line:#2c313a;--text:#eef0f3;--muted:#9aa3b2;--a:#4cc9f0;--b:#f72585;--ok:#7bd88f}
+:root{--bg:#17140f;--panel:#221d17;--line:#3a3128;--text:#f4efe6;--muted:#b3a897;--a:#05668D;--b:#C1502E;--ok:#0B6E4F;
+ --no:#A4161A;--maybe:#D4A017;--love:#E0245E;--yes:#0B6E4F;--terracotta:#C1502E;--lagoon:#05668D}
+/* Max Weberman brand hover motion (brand-tokens.css .mw-hover) */
+:root{--mw-ease:cubic-bezier(.2,.8,.2,1);--mw-dur:180ms}
+.mw-hover{transition:transform var(--mw-dur) var(--mw-ease),box-shadow var(--mw-dur) var(--mw-ease),background-color var(--mw-dur) var(--mw-ease)}
+@media (hover:hover){.mw-hover:hover{transform:translateY(-1px) scale(1.03);box-shadow:0 6px 18px rgba(10,10,10,.12)}}
+.mw-hover:focus-visible{transform:translateY(-1px) scale(1.03);box-shadow:0 6px 18px rgba(10,10,10,.12)}
+.mw-hover:active{transform:scale(.98)}
+.card.mw-card{transition:transform .25s ease,opacity .25s,box-shadow var(--mw-dur) var(--mw-ease)}
+@media (hover:hover){.card.mw-card:not(.dragging):hover{box-shadow:0 10px 26px rgba(0,0,0,.35)}}
+@media (prefers-reduced-motion:reduce){.mw-hover,.mw-hover:hover,.mw-hover:focus-visible{transition:none;transform:none}}
+h1,h2,.card h2{font-family:Khand,Inter,sans-serif;letter-spacing:.01em}
 *{box-sizing:border-box}
-html,body{margin:0;height:100%;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--text);font-family:Hind,Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-tap-highlight-color:transparent}
 body{display:flex;flex-direction:column;min-height:100dvh}
 header{padding:12px 16px 6px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 header h1{font-size:18px;margin:0;letter-spacing:.01em}
 header .sub{color:var(--muted);font-size:12px}
 .progress{flex:1 1 100%;height:6px;background:var(--line);border-radius:3px;overflow:hidden}
-.progress>div{height:100%;width:0;background:linear-gradient(90deg,var(--a),var(--b));transition:width .3s}
+.progress>div{height:100%;width:0;background:linear-gradient(90deg,var(--terracotta),var(--lagoon));transition:width .3s}
 main{flex:1;display:flex;flex-direction:column;align-items:center;padding:6px 10px 10px;overflow:hidden}
 .stage{position:relative;width:100%;max-width:760px;flex:1;display:flex;min-height:0}
 .card{position:absolute;inset:0;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:12px;display:flex;flex-direction:column;gap:8px;touch-action:pan-y;user-select:none;transition:transform .25s ease, opacity .25s;will-change:transform;overflow:hidden}
@@ -112,6 +123,23 @@ button.small{padding:8px 10px;font-size:13px;min-width:0}
 .v-cover-wrap{padding:8px;background:#e9e4d8;display:flex;justify-content:center}
 .v-cover{position:relative;width:118px;aspect-ratio:2/3;padding:8px;display:flex;flex-direction:column;overflow:hidden;box-shadow:3px 4px 10px rgba(0,0,0,.35)}
 .v-sign{height:150px;display:flex;align-items:center;justify-content:center}
+/* single-card mode (v3) */
+.opts.single{grid-template-columns:1fr;overflow:auto}
+.opts.single .opt{cursor:grab;max-width:520px;width:100%;margin:0 auto}
+.opts.single .opt .vis{min-height:180px}
+.opts.single .opt h3{font-size:18px}.opts.single .opt p{font-size:13px}
+.stamp.no{right:16px;color:var(--no);border-color:var(--no);transform:rotate(12deg)}.stamp.yes{left:16px;color:var(--yes);border-color:var(--yes)}
+.stamp.maybe{left:50%;top:22%;transform:translateX(-50%) rotate(-4deg);color:var(--maybe);border-color:var(--maybe)}
+.stamp.love{left:50%;top:22%;transform:translateX(-50%) rotate(4deg);color:var(--love);border-color:var(--love)}
+.stamp{background:rgba(255,255,255,.92)!important;transition:opacity .12s}
+.controls.v3 button{font-weight:800;text-transform:uppercase;letter-spacing:.06em;border-width:2px}
+button.no{background:#2a1513;border-color:var(--no);color:#f3b3ae}
+button.maybe{background:#2a2412;border-color:var(--maybe);color:var(--maybe)}
+button.love{background:#2a1219;border-color:var(--love);color:#fff}button.love .h{color:var(--love);font-size:18px}
+button.yes{background:var(--yes);border-color:var(--yes);color:#fff}
+button.undo{border-color:var(--lagoon);color:#9fd3e6}
+.ans{display:inline-block;font-size:10px;font-weight:800;padding:1px 6px;border-radius:999px;margin-right:3px;color:#fff}
+.ans.love{background:var(--love)}.ans.yes{background:var(--yes)}.ans.maybe{background:var(--maybe);color:#111}.ans.no{background:var(--no)}
 /* end screen */
 .end{max-width:760px;width:100%;flex:1;min-height:0;overflow:auto;-webkit-overflow-scrolling:touch;padding:4px 4px 30px}
 .end h2{margin:10px 0 6px}.end h3{margin:16px 0 6px;font-size:15px}
@@ -142,20 +170,27 @@ details{font-size:11px;color:var(--muted)}
   <h1>Style Swipe</h1>
   <span class="sub" id="sub">Loading…</span>
   <span style="flex:1"></span>
-  <button class="small" id="btnExportTop" title="Export what you have so far">Export</button>
+  <button class="small mw-hover" id="btnExportTop" title="Export what you have so far">Export</button>
   <div class="progress"><div id="prog"></div></div>
 </header>
 <main id="main">
   <div class="stage" id="stage"></div>
 </main>
-<div class="controls" id="controls">
-  <button class="a" id="bA" title="Left arrow">◀ Left</button>
-  <button id="bN" title="Down arrow / N">Neither</button>
-  <button id="bS" title="S">Skip</button>
-  <button id="bU" title="Backspace / Z">↶ Undo</button>
-  <button class="b" id="bB" title="Right arrow">Right ▶</button>
+<div class="controls v3" id="controls3" style="display:none">
+  <button class="no mw-hover" id="bNo" title="Left arrow">✕ No</button>
+  <button class="maybe mw-hover" id="bMaybe" title="M / Down arrow">Maybe</button>
+  <button class="love mw-hover" id="bLove" title="L / Up arrow"><span class="h">❤</span> Love</button>
+  <button class="yes mw-hover" id="bYes" title="Right arrow">Yes ✓</button>
+  <button class="undo mw-hover" id="bU3" title="Backspace / Z">↶</button>
 </div>
-<div class="hint" id="hint">Swipe the card toward the option you prefer, or tap it. Neither = dislike both · Skip = no opinion.</div>
+<div class="controls" id="controls">
+  <button class="a mw-hover" id="bA" title="Left arrow">◀ Left</button>
+  <button class="mw-hover" id="bN" title="Down arrow / N">Neither</button>
+  <button class="mw-hover" id="bS" title="S">Skip</button>
+  <button class="mw-hover" id="bU" title="Backspace / Z">↶ Undo</button>
+  <button class="b mw-hover" id="bB" title="Right arrow">Right ▶</button>
+</div>
+<div class="hint" id="hint"></div>
 <footer>
   <label style="cursor:pointer;text-decoration:underline">Load Another Deck (JSON)<input type="file" id="deckFile" accept=".json,application/json" hidden></label>
   · <a href="#" id="creditsLink">Image Credits</a>
@@ -170,7 +205,6 @@ let deck = null, picks = [], idx = 0, shownAt = 0;
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const imgSrc = k => EMBEDDED_IMAGES[k] || `img/${k}.jpg`;
-const storeKey = () => `styleSwipe:${deck.date}`;
 function toast(m){const t=$('#toast');t.textContent=m;t.style.opacity=1;clearTimeout(t._h);t._h=setTimeout(()=>t.style.opacity=0,1600)}
 
 /* ---------- visual renderers ---------- */
@@ -336,7 +370,7 @@ function rSign(v){const f=`font-family:${v.font};`;let st='',wall='#d9d4c7';
  }
  return `<div class="v-sign" style="background:${wall}"><div style="background:${v.bg};color:${v.fg};${f}${st}padding:10px 14px;text-align:center;max-width:90%"><div style="font-size:${v.shape==='picto'?26:18}px;font-weight:700;line-height:1.05">${esc(v.text)}</div>${v.sub?`<div style="font-size:11px;margin-top:4px;opacity:.85">${esc(v.sub)}</div>`:''}</div></div>`}
 const R={ui:rUI,palette:rPal,type:rType,tone:rTone,image:rImg,mood:rMood,logo:rLogo,thumb:rThumb,hero:rHero,post:rPost,pace:rPace,merch:rMerch,bleed:rBleed,word:rWord,mini:rMini,motion:rMotion,sound:rSound,thaitype:rThaiType,texture:rTexture,light:rLight,cover:rCover,sign:rSign};
-function optHtml(o,side){const v=o.visual||{};return `<div class="opt ${side} fmt-${v.type||'x'}" data-side="${side}"><div class="vis">${(R[v.type]||(()=>''))(v,o)}</div><span class="side">${side==='A'?'◀ LEFT':'RIGHT ▶'}</span><h3>${esc(o.label)}</h3><p>${esc(o.desc)}</p>
+function optHtml(o,side){const v=o.visual||{};return `<div class="opt mw-hover ${side} fmt-${v.type||'x'}" data-side="${side}"><div class="vis">${(R[v.type]||(()=>''))(v,o)}</div>${side==='S'?'':`<span class="side">${side==='A'?'◀ LEFT':'RIGHT ▶'}</span>`}<h3>${esc(o.label)}</h3><p>${esc(o.desc)}</p>
   <div class="tags">${(o.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</div></div>`}
 
 /* ---------- sound cards: real <audio> playback, started inside the tap ---------- */
@@ -353,24 +387,64 @@ function onPlayTap(e){const btn=e.target.closest&&e.target.closest('.play');if(!
 ['pointerdown','pointerup','click'].forEach(t=>document.addEventListener(t,e=>{if(e.target.closest&&e.target.closest('.play')){e.stopPropagation();if(t==='click')onPlayTap(e)}},true));
 
 /* ---------- flow ---------- */
-function save(){localStorage.setItem(storeKey(),JSON.stringify({picks,idx,updated:new Date().toISOString()}))}
-function load(){try{const s=JSON.parse(localStorage.getItem(storeKey())||'null');if(s){picks=s.picks||[];idx=Math.min(s.idx||picks.length,deck.pairs.length)}else{picks=[];idx=0}}catch(e){picks=[];idx=0}}
-function setDeck(d){deck=d;load();$('#sub').textContent=`Deck ${d.date} · ${d.pairs.length} pairs`;render()}
-function render(){stopAllAudio&&stopAllAudio();
- $('#prog').style.width=(100*idx/deck.pairs.length)+'%';
+// Two deck formats: v3 single cards (deck.cards; No / Maybe / Love / Yes) and legacy v2 pairs (deck.pairs; A vs B).
+const SCORE={love:2,yes:1,maybe:0,no:-1};
+let single=false, items=[];
+const storeKey = () => single?`styleSwipe:v3:${deck.date}`:`styleSwipe:${deck.date}`;
+function save(){try{localStorage.setItem(storeKey(),JSON.stringify({v:single?3:2,picks,idx,order:single?items.map(c=>c.id):undefined,updated:new Date().toISOString()}))}catch(_){}}
+function readStore(k){try{const s=JSON.parse(localStorage.getItem(k)||'null');return s&&typeof s==='object'?s:null}catch(_){return null}}
+function setDeck(d){
+ deck=d;single=Array.isArray(d.cards);picks=[];idx=0;
+ const s=readStore(storeKey());
+ if(single){
+  let order=s&&Array.isArray(s.order)?s.order:null;
+  const byId=Object.fromEntries(d.cards.map(c=>[c.id,c]));
+  if(order&&order.every(id=>byId[id]))items=order.map(id=>byId[id]);
+  else{ // first visit: drop options from pairs already answered in the source pair deck on this device
+   let list=d.cards;
+   if(d.source_deck){const old=readStore(`styleSwipe:${d.source_deck}`);const done=new Set(((old&&Array.isArray(old.picks))?old.picks:[]).map(p=>p&&p.pair_id).filter(Boolean));
+    list=list.filter(c=>!done.has(c.source_pair));}
+   items=list.slice(0,d.deck_size||50);
+  }
+ }else items=Array.isArray(d.pairs)?d.pairs:[];
+ if(s&&Array.isArray(s.picks)&&s.picks.every(p=>p&&typeof p==='object')&&(!single||s.v===3)){picks=s.picks;idx=Math.min(Number.isFinite(s.idx)?s.idx:picks.length,items.length)}
+ $('#sub').textContent=`Deck ${d.date} · ${items.length} ${single?'cards':'pairs'}`;
+ $('#hint').textContent=single?'Swipe left = No, right = Yes. Tap Maybe or ❤ Love in the middle. Arrow keys: ← No, → Yes.':'Swipe the card toward the option you prefer, or tap it. Neither = dislike both · Skip = no opinion.';
+ save();render()}
+function showControls(on){$('#controls3').style.display=on&&single?'':'none';$('#controls').style.display=on&&!single?'':'none';$('#hint').style.display=on?'':'none'}
+function render(){stopAllAudio();
+ $('#prog').style.width=(100*idx/Math.max(1,items.length))+'%';
  const stage=$('#stage');
- if(idx>=deck.pairs.length){showEnd();return}
- $('#controls').style.display='';$('#hint').style.display='';
+ if(idx>=items.length){showEnd();return}
+ showControls(true);
  if(!stage.isConnected){$('#main').innerHTML='';$('#main').appendChild(stage)}
- const p=deck.pairs[idx];
- stage.innerHTML=`<div class="card" id="card"><div class="cat"><span class="pill">${esc(p.category)}</span><span class="pill">${idx+1} / ${deck.pairs.length}</span></div>
+ const p=items[idx];
+ if(single){
+  stage.innerHTML=`<div class="card mw-card" id="card"><div class="cat"><span class="pill">${esc(p.category)}</span><span class="pill">${idx+1} / ${items.length}</span></div>
+  <h2>Is This You?</h2><div class="opts single">${optHtml(p.option,'S')}</div>
+  <div class="stamp no">NO</div><div class="stamp yes">YES</div><div class="stamp maybe">MAYBE</div><div class="stamp love">LOVE ❤</div></div>`;
+ }else{
+  stage.innerHTML=`<div class="card mw-card" id="card"><div class="cat"><span class="pill">${esc(p.category)}</span><span class="pill">${idx+1} / ${items.length}</span></div>
   <h2>Which Feels More Like You?</h2><div class="opts">${optHtml(p.optionA,'A')}${optHtml(p.optionB,'B')}</div>
   <div class="stamp l">LEFT</div><div class="stamp r">RIGHT</div></div>`;
+ }
  shownAt=performance.now();bindDrag($('#card'));
 }
-function choose(choice){
- if(!deck||idx>=deck.pairs.length)return;
- const p=deck.pairs[idx], A=p.optionA, B=p.optionB;
+function answer(ans){ // v3
+ if(!deck||!single||idx>=items.length)return;
+ const c=items[idx],o=c.option;
+ picks=picks.filter(x=>x.card_id!==c.id);
+ picks.push({card_id:c.id,category:c.category,option_id:o.id,label:o.label,answer:ans,score:SCORE[ans],tags:o.tags||[],
+  purpose:c.purpose||null,source_pair:c.source_pair||undefined,ms:Math.round(performance.now()-shownAt),at:new Date().toISOString()});
+ const card=$('#card');
+ if(card){const st=card.querySelector('.stamp.'+ans);if(st)st.style.opacity=1;
+  const t={no:'translateX(-120%) rotate(-14deg)',yes:'translateX(120%) rotate(14deg)',love:'translateY(-110%) scale(1.03)',maybe:'translateY(110%)'}[ans];
+  setTimeout(()=>{card.style.transform=t;card.style.opacity=0},160)}
+ idx++;save();setTimeout(render,400);
+}
+function choose(choice){ // v2 pairs
+ if(!deck||single||idx>=items.length)return;
+ const p=items[idx], A=p.optionA, B=p.optionB;
  const chosen=choice==='A'?A:choice==='B'?B:null;
  picks=picks.filter(x=>x.pair_id!==p.id);
  picks.push({pair_id:p.id,category:p.category,choice,optionA:A.id,optionB:B.id,labelA:A.label,labelB:B.label,
@@ -380,33 +454,44 @@ function choose(choice){
  if(card){const dx=choice==='A'?-1:choice==='B'?1:0;card.style.transform=dx?`translateX(${dx*120}%) rotate(${dx*14}deg)`:(choice==='neither'?'translateY(110%)':'translateY(-110%)');card.style.opacity=0}
  idx++;save();setTimeout(render,choice?220:0);
 }
-function undo(){if(!deck||idx===0)return;idx--;const p=deck.pairs[idx];picks=picks.filter(x=>x.pair_id!==p.id);save();render();toast('Undone')}
+function undo(){if(!deck||idx===0)return;idx--;const p=items[idx];picks=picks.filter(x=>single?x.card_id!==p.id:x.pair_id!==p.id);save();render();toast('Undone')}
 function bindDrag(card){
- let sx=0,sy=0,dx=0,dragging=false,id=null;const hl=(v)=>{card.querySelector('.opt.A').classList.toggle('hot-a',v<-30);card.querySelector('.opt.B').classList.toggle('hot-b',v>30);card.querySelector('.stamp.l').style.opacity=Math.min(1,Math.max(0,-v/110));card.querySelector('.stamp.r').style.opacity=Math.min(1,Math.max(0,v/110))};
+ let sx=0,sy=0,dx=0,dragging=false,id=null;
+ const hl=(v)=>{if(single){card.querySelector('.stamp.no').style.opacity=Math.min(1,Math.max(0,-v/110));card.querySelector('.stamp.yes').style.opacity=Math.min(1,Math.max(0,v/110));return}
+  card.querySelector('.opt.A').classList.toggle('hot-a',v<-30);card.querySelector('.opt.B').classList.toggle('hot-b',v>30);card.querySelector('.stamp.l').style.opacity=Math.min(1,Math.max(0,-v/110));card.querySelector('.stamp.r').style.opacity=Math.min(1,Math.max(0,v/110))};
  card.addEventListener('pointerdown',e=>{if(e.button>0)return;if(e.target.closest&&e.target.closest('.play'))return;sx=e.clientX;sy=e.clientY;dx=0;dragging=true;id=e.pointerId});
  card.addEventListener('pointermove',e=>{if(!dragging||e.pointerId!==id)return;dx=e.clientX-sx;const dy=e.clientY-sy;
   if(Math.abs(dx)>10&&Math.abs(dx)>Math.abs(dy)){card.classList.add('dragging');try{card.setPointerCapture(id)}catch(_){}}
   if(card.classList.contains('dragging')){card.style.transform=`translateX(${dx}px) rotate(${dx/22}deg)`;hl(dx)}});
  const end=e=>{if(!dragging)return;dragging=false;const wasDrag=card.classList.contains('dragging');card.classList.remove('dragging');
-  if(wasDrag){if(dx<-90)return choose('A');if(dx>90)return choose('B');card.style.transform='';hl(0);return}
+  if(wasDrag){if(single){if(dx<-90)return answer('no');if(dx>90)return answer('yes')}else{if(dx<-90)return choose('A');if(dx>90)return choose('B')}card.style.transform='';hl(0);return}
+  if(single)return; // single cards: a tap does nothing (use the buttons)
   const opt=e.target.closest&&e.target.closest('.opt');if(opt&&e.type==='pointerup'){opt.classList.add(opt.dataset.side==='A'?'hot-a':'hot-b');setTimeout(()=>choose(opt.dataset.side),140)}};
  card.addEventListener('pointerup',end);card.addEventListener('pointercancel',end);
 }
 
 /* ---------- results ---------- */
+function rank(tags){const ranked=Object.entries(tags).sort((a,b)=>b[1]-a[1]);
+ return {top:ranked.filter(x=>x[1]>0).slice(0,12).map(([t,s])=>({tag:t,score:s})),avoid:ranked.filter(x=>x[1]<0).slice(-8).reverse().map(([t,s])=>({tag:t,score:s}))}}
 function buildResults(){
+ if(single){
+  const totals={love:0,yes:0,maybe:0,no:0},tags={},byCat={};
+  for(const p of picks){totals[p.answer]=(totals[p.answer]||0)+1;(p.tags||[]).forEach(t=>tags[t]=(tags[t]||0)+(SCORE[p.answer]||0));
+   const c=byCat[p.category]=byCat[p.category]||{love:[],yes:[],maybe:[],no:[]};c[p.answer].push(p.label)}
+  const r=rank(tags);
+  return {app:'style-swipe',version:3,format:'single',owner:deck.owner||'Max Weberman',deck:deck.date,source_deck:deck.source_deck||undefined,
+   scoring:SCORE,exported_at:new Date().toISOString(),complete:idx>=items.length,answered:picks.length,total_cards:items.length,
+   totals,top_tags:r.top,avoided_tags:r.avoid,loved:picks.filter(p=>p.answer==='love').map(p=>p.label),answers_by_category:byCat,picks}}
  const tally={A:0,B:0,neither:0,skip:0},tags={},byCat={};
  for(const p of picks){tally[p.choice]=(tally[p.choice]||0)+1;
   if(p.choice==='A'||p.choice==='B'){const w=p.choice==='A'?p.tagsA:p.tagsB,l=p.choice==='A'?p.tagsB:p.tagsA;
    w.filter(t=>!l.includes(t)).forEach(t=>tags[t]=(tags[t]||0)+1);l.filter(t=>!w.includes(t)).forEach(t=>tags[t]=(tags[t]||0)-1);
    (byCat[p.category]=byCat[p.category]||[]).push(p.chosen_label)}
   else if(p.choice==='neither'){[...new Set([...p.tagsA,...p.tagsB])].forEach(t=>tags[t]=(tags[t]||0)-.5);(byCat[p.category]=byCat[p.category]||[]).push(`✗ neither (${p.labelA} / ${p.labelB})`)}}
- const ranked=Object.entries(tags).sort((a,b)=>b[1]-a[1]);
- return {app:'style-swipe',version:1,owner:deck.owner||'Max Weberman',deck:deck.date,
-  exported_at:new Date().toISOString(),complete:idx>=deck.pairs.length,answered:picks.length,total_pairs:deck.pairs.length,
-  totals:tally,top_tags:ranked.filter(x=>x[1]>0).slice(0,12).map(([t,s])=>({tag:t,score:s})),
-  avoided_tags:ranked.filter(x=>x[1]<0).slice(-8).reverse().map(([t,s])=>({tag:t,score:s})),
-  chosen_by_category:byCat,picks}}
+ const r=rank(tags);
+ return {app:'style-swipe',version:2,format:'pairs',owner:deck.owner||'Max Weberman',deck:deck.date,
+  exported_at:new Date().toISOString(),complete:idx>=items.length,answered:picks.length,total_pairs:items.length,
+  totals:tally,top_tags:r.top,avoided_tags:r.avoid,chosen_by_category:byCat,picks}}
 function resultsJson(){return JSON.stringify(buildResults(),null,1)}
 function download(){const blob=new Blob([resultsJson()],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`style-swipe-results-${deck.date}.json`;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},500);toast('Downloaded')}
 async function copy(){const txt=resultsJson();try{await navigator.clipboard.writeText(txt);toast('Copied JSON')}catch(e){const ta=$('#resText');if(ta){ta.select();document.execCommand('copy');toast('Copied JSON')}else toast('Copy failed: use the text box')}}
@@ -414,31 +499,43 @@ async function share(){const txt=resultsJson();const file=new File([txt],`style-
  try{if(navigator.canShare&&navigator.canShare({files:[file]}))await navigator.share({files:[file],title:`Style Swipe ${deck.date}`});
   else if(navigator.share)await navigator.share({title:`Style Swipe ${deck.date}`,text:txt});else{copy();}}catch(e){}}
 function showEnd(){
- $('#controls').style.display='none';$('#hint').style.display='none';
+ showControls(false);
  const r=buildResults(),max=Math.max(1,...r.top_tags.map(x=>x.score),...r.avoided_tags.map(x=>-x.score));
  const bar=(x,col)=>`<div class="r"><span>${esc(x.tag)}</span><div class="t"><i style="left:0;width:${100*Math.abs(x.score)/max}%;background:${col}"></i></div><span>${x.score>0?'+':''}${x.score}</span></div>`;
+ let stats,cats;
+ if(single){const t=r.totals;
+  stats=`<div class="stat"><b style="color:var(--love)">❤ ${t.love}</b><span>Love</span></div><div class="stat"><b style="color:#4fc79a">${t.yes}</b><span>Yes</span></div><div class="stat"><b style="color:var(--maybe)">${t.maybe}</b><span>Maybe</span></div><div class="stat"><b style="color:#e8746f">${t.no}</b><span>No</span></div>`;
+  cats=`<h3>Your Answers By Category</h3><div class="catlist">${Object.entries(r.answers_by_category).map(([c,a])=>`<div><b>${esc(c)}:</b> ${['love','yes','maybe','no'].flatMap(k=>a[k].map(l=>`<span class="ans ${k}">${k==='love'?'❤':k.toUpperCase()}</span>${esc(l)}`)).join(' · ')}</div>`).join('')}</div>`;
+ }else{
+  stats=`<div class="stat"><b>${r.totals.A+r.totals.B}</b><span>Picks</span></div><div class="stat"><b>${r.totals.neither}</b><span>Neither</span></div><div class="stat"><b>${r.totals.skip}</b><span>Skipped</span></div><div class="stat"><b>${r.answered}/${r.total_pairs}</b><span>Answered</span></div>`;
+  cats=`<h3>Your Picks By Category</h3><div class="catlist">${Object.entries(r.chosen_by_category).map(([c,l])=>`<div><b>${esc(c)}:</b> ${l.map(esc).join(' · ')}</div>`).join('')}</div>`;
+ }
  $('#main').innerHTML=`<div class="end"><h2>Your Style Summary</h2>
- <div class="stats"><div class="stat"><b>${r.totals.A+r.totals.B}</b><span>Picks</span></div><div class="stat"><b>${r.totals.neither}</b><span>Neither</span></div><div class="stat"><b>${r.totals.skip}</b><span>Skipped</span></div><div class="stat"><b>${r.answered}/${r.total_pairs}</b><span>Answered</span></div></div>
+ <div class="stats">${stats}</div>
+ ${single&&r.loved.length?`<h3>❤ Loved</h3><div class="catlist">${r.loved.map(esc).join(' · ')}</div>`:''}
  <h3>Tags You Lean Toward</h3><div class="bars">${r.top_tags.map(x=>bar(x,'var(--ok)')).join('')||'<span class="hint">None yet</span>'}</div>
- <h3>Tags You Avoid</h3><div class="bars">${r.avoided_tags.map(x=>bar(x,'#ff6b6b')).join('')||'<span class="hint">None yet</span>'}</div>
- <h3>Your Picks By Category</h3><div class="catlist">${Object.entries(r.chosen_by_category).map(([c,l])=>`<div><b>${esc(c)}:</b> ${l.map(esc).join(' · ')}</div>`).join('')}</div>
+ <h3>Tags You Avoid</h3><div class="bars">${r.avoided_tags.map(x=>bar(x,'var(--no)')).join('')||'<span class="hint">None yet</span>'}</div>
+ ${cats}
  <h3>Send Results Back</h3><div class="hint" style="text-align:left;padding:0">Download the JSON file, or copy the text below and paste it into a chat with your agent.</div>
- <div class="btnrow"><button class="primary" id="eDl">⬇ Export JSON</button><button id="eCp">Copy JSON</button><button id="eSh">Share…</button><button id="eBack">↶ Back To Last Card</button><button id="eReset">Start Over</button></div>
+ <div class="btnrow"><button class="primary mw-hover" id="eDl">⬇ Export JSON</button><button class="mw-hover" id="eCp">Copy JSON</button><button class="mw-hover" id="eSh">Share…</button><button class="mw-hover" id="eBack">↶ Back To Last Card</button><button class="mw-hover" id="eReset">Start Over</button></div>
  <textarea id="resText" readonly>${esc(JSON.stringify(r,null,1))}</textarea></div>`;
  $('#eDl').onclick=download;$('#eCp').onclick=copy;$('#eSh').onclick=share;$('#eBack').onclick=undo;
- $('#eReset').onclick=()=>{if(confirm('Clear all picks for this deck?')){picks=[];idx=0;save();render()}};
+ $('#eReset').onclick=()=>{if(confirm('Clear all answers for this deck?')){picks=[];idx=0;save();render()}};
 }
 
 /* ---------- wiring ---------- */
 $('#bA').onclick=()=>choose('A');$('#bB').onclick=()=>choose('B');$('#bN').onclick=()=>choose('neither');$('#bS').onclick=()=>choose('skip');$('#bU').onclick=undo;
+$('#bNo').onclick=()=>answer('no');$('#bMaybe').onclick=()=>answer('maybe');$('#bLove').onclick=()=>answer('love');$('#bYes').onclick=()=>answer('yes');$('#bU3').onclick=undo;
 $('#btnExportTop').onclick=()=>{if(deck)download()};
-document.addEventListener('keydown',e=>{if(e.target.tagName==='TEXTAREA')return;const k=e.key;
- if(k==='ArrowLeft')choose('A');else if(k==='ArrowRight')choose('B');else if(k==='ArrowDown'||k==='n')choose('neither');else if(k==='s'||k==='ArrowUp')choose('skip');else if(k==='Backspace'||k==='z'){e.preventDefault();undo()}});
-$('#deckFile').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{const d=JSON.parse(await f.text());if(!d.pairs)throw 0;setDeck(d);toast(`Loaded deck ${d.date}`)}catch(_){toast('Not a valid deck file')}};
-$('#creditsLink').onclick=e=>{e.preventDefault();const c=(deck&&deck.image_credits)||{};$('#main').innerHTML=`<div class="end"><h2>Image Credits</h2><div class="catlist">${Object.values(c).map(x=>`<div><a style="color:#9cf" href="${esc(x.source)}" target="_blank" rel="noopener">${esc(x.title)}</a> · ${esc(x.artist||'Unknown')} · ${esc(x.license)}</div>`).join('')||'None'}</div><div class="btnrow"><button id="cBack">Back</button></div></div>`;$('#controls').style.display='none';$('#cBack').onclick=()=>render()};
+document.addEventListener('keydown',e=>{if(e.target.tagName==='TEXTAREA'||!deck)return;const k=e.key;
+ if(k==='Backspace'||k==='z'){e.preventDefault();return undo()}
+ if(single){if(k==='ArrowLeft')answer('no');else if(k==='ArrowRight')answer('yes');else if(k==='m'||k==='ArrowDown')answer('maybe');else if(k==='l'||k==='ArrowUp')answer('love');return}
+ if(k==='ArrowLeft')choose('A');else if(k==='ArrowRight')choose('B');else if(k==='ArrowDown'||k==='n')choose('neither');else if(k==='s'||k==='ArrowUp')choose('skip')});
+$('#deckFile').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{const d=JSON.parse(await f.text());if(!d.pairs&&!d.cards)throw 0;setDeck(d);toast(`Loaded deck ${d.date}`)}catch(_){toast('Not a valid deck file')}};
+$('#creditsLink').onclick=e=>{e.preventDefault();const c=(deck&&deck.image_credits)||{};$('#main').innerHTML=`<div class="end"><h2>Image Credits</h2><div class="catlist">${Object.values(c).map(x=>`<div><a style="color:#9cf" href="${esc(x.source)}" target="_blank" rel="noopener">${esc(x.title)}</a> · ${esc(x.artist||'Unknown')} · ${esc(x.license)}</div>`).join('')||'None'}</div><div class="btnrow"><button class="mw-hover" id="cBack">Back</button></div></div>`;showControls(false);$('#cBack').onclick=()=>render()};
 (async()=>{
  const want=new URLSearchParams(location.search).get('date');
- if(want&&(!EMBEDDED_DECK||EMBEDDED_DECK.date!==want)){try{const r=await fetch(`decks/${want}.json`);if(r.ok)return setDeck(await r.json())}catch(_){}toast(`Deck ${want} not found; showing embedded deck`)}
+ if(want&&(!EMBEDDED_DECK||EMBEDDED_DECK.date!==want)){try{const r=await fetch(`decks/${want}.json`,{cache:'no-cache'});if(r.ok)return setDeck(await r.json())}catch(_){}toast(`Deck ${want} not found; showing embedded deck`)}
  if(EMBEDDED_DECK)return setDeck(EMBEDDED_DECK);
  try{const r=await fetch(`decks/${new Date().toISOString().slice(0,10)}.json`);if(r.ok)return setDeck(await r.json())}catch(_){}
  $('#sub').textContent='No deck found. Use "Load Another Deck" below.';

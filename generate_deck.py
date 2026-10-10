@@ -1195,6 +1195,14 @@ GROUP_OF = {c: g for g, cs in CATEGORY_GROUP.items() for c in cs}
 PAIR_RULES = {"Bangkok Vs Japan Aesthetics": ("bangkok", "japan")}
 
 # ---------------------------------------------------------------------------
+def deck_options(deck):
+    """Every option in a deck, for both formats: v2 pairs (optionA/optionB) and v3 single cards (option)."""
+    for p in deck.get("pairs", []):
+        for o in ("optionA", "optionB"):
+            if o in p: yield p[o]
+    for c in deck.get("cards", []):
+        if "option" in c: yield c["option"]
+
 def load_json(path, default):
     try:
         with open(path) as f: return json.load(f)
@@ -1295,9 +1303,8 @@ def shown_options(exclude_date=None):
     out = {k: set(v) for k, v in load_json(SHOWN, {}).get("options", {}).items()}
     for p in glob.glob(os.path.join(DECKS, "*.json")):
         date = os.path.basename(p)[:-5]
-        for pr in load_json(p, {}).get("pairs", []):
-            for o in ("optionA", "optionB"):
-                out.setdefault(pr[o]["id"], set()).add(date)
+        for o in deck_options(load_json(p, {})):
+            out.setdefault(o["id"], set()).add(date)
     if exclude_date:
         for k in list(out):
             out[k].discard(exclude_date)
@@ -1474,6 +1481,71 @@ def build_deck(date, n_pairs, seed=None, allow_repeats=False, focus=None, focus_
             "warnings": warnings, "pairs": pairs,
             "image_credits": load_json(CREDITS, {})}
 
+def order_cards(cards):
+    """Greedy order: never the same category twice in a row, avoid the same family back-to-back."""
+    rest, seq = cards[:], []
+    while rest:
+        last = seq[-1]["category"] if seq else None
+        lg = GROUP_OF.get(last, last)
+        nxt = (next((c for c in rest if c["category"] != last and GROUP_OF.get(c["category"], c["category"]) != lg), None)
+               or next((c for c in rest if c["category"] != last), None) or rest[0])
+        rest.remove(nxt); seq.append(nxt)
+    return seq
+
+def build_single_deck(date, n_cards, seed=None, allow_repeats=False, focus=None, focus_note=None, check_share=0.24,
+                      max_per=None, focus_share=None):
+    """v3 deck: n_cards single-option cards (answer No / Maybe / Love / Yes).
+    Reuses the pair selector (same rules: unseen only, variety mix, focus share, refine vs check),
+    asking for n_cards/2 pairs and splitting each pair into two cards. In a check pair one option is
+    'check' (likely disliked) and the other 'refine' (likely liked); max_per counts cards."""
+    pd = build_deck(date, (n_cards + 1) // 2, seed, allow_repeats, focus, focus_note, check_share,
+                    None if max_per is None else max(1, max_per // 2), focus_share)
+    profile = load_json(PROFILE, empty_profile())
+    rng = random.Random(f"{seed if seed is not None else date}-cards")
+    cards = []
+    for p in pd["pairs"]:
+        for o in (p["optionA"], p["optionB"]):
+            cards.append({"category": p["category"], "option": o, "repeat": p.get("repeat", False),
+                          "purpose": "check" if is_check(profile, o) else "refine"})
+    rng.shuffle(cards)
+    cards = [{"id": f"{date}-{i:02d}", **c} for i, c in enumerate(order_cards(cards)[:n_cards], 1)]
+    shown = shown_options(exclude_date=date)
+    fresh = sum(c["option"]["id"] not in shown for c in cards)
+    alloc = {}
+    for c in cards: alloc[c["category"]] = alloc.get(c["category"], 0) + 1
+    deck = {k: v for k, v in pd.items() if k not in ("pairs", "pair_mix", "allocation", "freshness")}
+    deck.update({"version": 3, "format": "single", "deck_size": len(cards),
+                 "answers": {"love": 2, "yes": 1, "maybe": 0, "no": -1},
+                 "allocation": alloc,
+                 "card_mix": {"refine": sum(c["purpose"] == "refine" for c in cards), "check": sum(c["purpose"] == "check" for c in cards)},
+                 "freshness": {"option_slots": len(cards), "never_shown_before": fresh, "share": round(fresh / max(1, len(cards)), 3)},
+                 "cards": cards, "image_credits": pd["image_credits"]})
+    return deck
+
+def convert_pair_deck(src_id, new_id, n_cards=50):
+    """Turn an existing pair deck into a single-card deck. The deck keeps ALL of the source options
+    as a reserve (A sides first, then B sides, same order); the app drops options from pairs Max
+    already answered in the source deck on that device and shows the first n_cards of the rest."""
+    src = load_json(os.path.join(DECKS, f"{src_id}.json"), None)
+    if not src or "pairs" not in src: sys.exit(f"No pair deck {src_id}")
+    profile = load_json(PROFILE, empty_profile())
+    cards = []
+    for side in ("optionA", "optionB"):
+        for p in src["pairs"]:
+            o = p[side]
+            cards.append({"id": f"{new_id}-{len(cards)+1:03d}", "category": p["category"], "option": o,
+                          "source_pair": p["id"], "purpose": "check" if is_check(profile, o) else "refine"})
+    deck = {k: v for k, v in src.items() if k not in ("pairs", "pair_mix", "freshness")}
+    deck.update({"date": new_id, "version": 3, "format": "single", "deck_size": n_cards, "source_deck": src_id,
+                 "converted_at": dt.datetime.now().astimezone().isoformat(timespec="seconds"),
+                 "note": f"Single-card version of {src_id}. {n_cards} cards shown, drawn from the {len(cards)} source options, skipping pairs already answered in {src_id}.",
+                 "answers": {"love": 2, "yes": 1, "maybe": 0, "no": -1},
+                 "card_mix_first_n": {"refine": sum(c["purpose"] == "refine" for c in cards[:n_cards]), "check": sum(c["purpose"] == "check" for c in cards[:n_cards])},
+                 "cards": cards})
+    return deck
+
+SINGLE_SCORE = {"love": 2, "yes": 1, "maybe": 0, "no": -1}
+
 # ---------------------------------------------------------------------------
 def ingest(results_path):
     res = load_json(results_path, None)
@@ -1486,6 +1558,21 @@ def ingest(results_path):
     def bump(d, key, field, amt=1):
         d.setdefault(key, {}).setdefault(field, 0); d[key][field] += amt
     for p in res.get("picks", []):
+        if "answer" in p:          # v3 single-card pick: Love +2, Yes +1, Maybe 0 (still shown), No -1
+            ans, cat = p.get("answer"), p.get("category")
+            if ans not in SINGLE_SCORE: continue
+            sc, oid, tags = SINGLE_SCORE[ans], p.get("option_id"), set(p.get("tags", []))
+            bump(profile["categories"], cat, "answered"); bump(profile["categories"], cat, ans)
+            bump(profile["options"], oid, "shown")
+            for t in tags: bump(profile["tags"], t, "shown")
+            if sc > 0:
+                bump(profile["options"], oid, "wins", sc)
+                for t in tags: bump(profile["tags"], t, "wins", sc)
+            elif sc < 0:
+                bump(profile["options"], oid, "losses", -sc)
+                for t in tags: bump(profile["tags"], t, "losses", -sc)
+            if ans == "love": bump(profile["options"], oid, "loves")
+            continue
         choice, cat = p.get("choice"), p.get("category")
         if choice == "skip": continue
         bump(profile["categories"], cat, "answered")
@@ -1515,7 +1602,7 @@ def ingest(results_path):
 def inline_images(deck):
     """Return a copy of the deck with image keys mapped to small data URIs (for a self-contained HTML)."""
     imgs = {}
-    keys = {p[o]["visual"].get("key") for p in deck["pairs"] for o in ("optionA", "optionB")} - {None}
+    keys = {o["visual"].get("key") for o in deck_options(deck)} - {None}
     try:
         from PIL import Image
     except ImportError:
@@ -1538,11 +1625,10 @@ def inline_audio(deck):
         import audio_synth
     except Exception as e:
         print("WARNING: audio clips not generated:", e); return out
-    for p in deck["pairs"]:
-        for o in (p["optionA"], p["optionB"]):
-            if o["visual"].get("type") == "sound":
-                path = audio_synth.render(o)
-                out[o["id"]] = "data:audio/mpeg;base64," + base64.b64encode(open(path, "rb").read()).decode()
+    for o in deck_options(deck):
+        if o["visual"].get("type") == "sound":
+            path = audio_synth.render(o)
+            out[o["id"]] = "data:audio/mpeg;base64," + base64.b64encode(open(path, "rb").read()).decode()
     return out
 
 def render_index(deck):
@@ -1559,7 +1645,9 @@ def render_index(deck):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--date", help="YYYY-MM-DD (default: today, local time)")
-    ap.add_argument("--pairs", type=int, default=50)
+    ap.add_argument("--pairs", type=int, default=50, help="deck size: cards (single format) or pairs (--format pairs)")
+    ap.add_argument("--format", choices=["single", "pairs"], default="single", help="single-option cards (default, No/Maybe/Love/Yes) or legacy A-vs-B pairs")
+    ap.add_argument("--convert-from", help="build this deck id as a single-card version of an existing pair deck (e.g. 2026-10-10d)")
     ap.add_argument("--ingest", help="results JSON exported from the app")
     ap.add_argument("--no-embed", action="store_true")
     ap.add_argument("--force", action="store_true")
@@ -1598,12 +1686,20 @@ def main():
         print(f"{out} exists (use --force to regenerate). Re-rendering HTML from it.")
         deck = load_json(out, None)
     else:
-        deck = build_deck(date, a.pairs, a.seed, a.allow_repeats, focus, a.focus_note, a.check_share,
-                          a.max_per_category, a.focus_share)
+        if a.convert_from:
+            deck = convert_pair_deck(a.convert_from, date, a.pairs)
+            print(f"Wrote {out}: {deck['deck_size']} cards from {len(deck['cards'])} options of {a.convert_from}")
+        elif a.format == "pairs":
+            deck = build_deck(date, a.pairs, a.seed, a.allow_repeats, focus, a.focus_note, a.check_share,
+                              a.max_per_category, a.focus_share)
+        else:
+            deck = build_single_deck(date, a.pairs, a.seed, a.allow_repeats, focus, a.focus_note,
+                                     a.check_share if a.check_share != 0.12 else 0.24, a.max_per_category, a.focus_share)
         with open(out, "w") as f: json.dump(deck, f, indent=1, ensure_ascii=False)
-        fr = deck["freshness"]
-        print(f"Wrote {out}: {len(deck['pairs'])} pairs; {fr['never_shown_before']}/{fr['option_slots']} option slots never shown before ({fr['share']:.0%}).")
-        print(f"Allocation: {deck['allocation']}")
+        if not a.convert_from:
+            fr = deck["freshness"]
+            print(f"Wrote {out}: {len(deck.get('cards', deck.get('pairs')))} {deck.get('format', 'pair')} items; {fr['never_shown_before']}/{fr['option_slots']} option slots never shown before ({fr['share']:.0%}).")
+            print(f"Allocation: {deck['allocation']}")
     led = save_shown()
     print(f"shown_options.json: {led['shown_count']} shown, {led['unseen_remaining']} of {led['pool_size']} still unseen")
     if not a.no_embed: render_index(deck)
