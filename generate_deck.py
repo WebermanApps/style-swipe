@@ -1295,7 +1295,7 @@ import re as _re_lang
 _SCRIPT_RX = _re_lang.compile("[\u0E00-\u0E7F\u3040-\u30FF\u3400-\u9FFF\uFF66-\uFF9F]")
 _LANG_TEXT_RX = _re_lang.compile(r"EN\s*/\s*TH|TH\s*/\s*EN|EN\s*\|\s*TH|bilingual|two languages|three languages|language toggle|lang(uage)? switch", _re_lang.I)
 NON_ENGLISH_TAGS = {"bilingual", "thai-script", "japanese-script", "multilingual"}
-IGNORED_TAGS = {"bilingual", "thai-script", "japanese-script", "multilingual"}   # history kept, no longer scored
+IGNORED_TAGS = {"bilingual", "thai", "thai-script", "japanese-script", "multilingual"}   # history kept, no longer scored
 
 def non_english_reasons(opt):
     """Why an option breaks the English-only rule ([] if it is fine)."""
@@ -1735,7 +1735,7 @@ def ingest(results_path):
     profile["decks_ingested"].append(deck_date)
     profile["updated"] = dt.datetime.now().astimezone().isoformat(timespec="seconds")
     # convenience view: top tags
-    ranked = sorted(profile["tags"].items(), key=lambda kv: -(kv[1].get("wins", 0) - kv[1].get("losses", 0)))
+    ranked = sorted(((t, v) for t, v in profile["tags"].items() if t not in IGNORED_TAGS), key=lambda kv: -(kv[1].get("wins", 0) - kv[1].get("losses", 0)))
     profile["top_tags"] = [t for t, _ in ranked[:12]]
     profile["bottom_tags"] = [t for t, _ in ranked[-8:]]
     with open(PROFILE, "w") as f: json.dump(profile, f, indent=1)
