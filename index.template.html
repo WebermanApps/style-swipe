@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#14161a">
 <title>Style Swipe · Max Weberman</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&family=Playfair+Display:wght@700&family=DM+Serif+Display&family=Fraunces:wght@700&family=Lora:wght@400;700&family=Libre+Baskerville:wght@400;700&family=Cormorant+Garamond:wght@600&family=Montserrat:wght@700;800&family=Work+Sans:wght@400;600&family=Oswald:wght@600&family=Bebas+Neue&family=Archivo+Black&family=IBM+Plex+Mono:wght@400;600&family=Prompt:wght@400;600&family=Sarabun:wght@400&family=Caveat:wght@700&family=Kanit:wght@400;600;700&family=Mitr:wght@500&family=Chakra+Petch:wght@600;700&family=Pridi:wght@600&family=Noto+Serif+JP:wght@600&family=Noto+Sans+JP:wght@400&family=DM+Sans:wght@400;700&family=Syne:wght@800&family=Anton&family=Nunito:wght@800&family=Outfit:wght@700&family=Space+Mono:wght@700&family=Manrope:wght@800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&family=Playfair+Display:wght@700&family=DM+Serif+Display&family=Fraunces:wght@700&family=Lora:wght@400;700&family=Libre+Baskerville:wght@400;700&family=Cormorant+Garamond:wght@600&family=Montserrat:wght@700;800&family=Work+Sans:wght@400;600&family=Oswald:wght@600&family=Bebas+Neue&family=Archivo+Black&family=IBM+Plex+Mono:wght@400;600&family=Prompt:wght@400;600&family=Sarabun:wght@400&family=Caveat:wght@700&family=Kanit:wght@400;600;700&family=Mitr:wght@500&family=Chakra+Petch:wght@600;700&family=Pridi:wght@600&family=Noto+Serif+JP:wght@600&family=Noto+Sans+JP:wght@400&family=DM+Sans:wght@400;700&family=Syne:wght@800&family=Anton&family=Nunito:wght@800&family=Outfit:wght@700&family=Space+Mono:wght@700&family=Manrope:wght@800&family=Bai+Jamjuree:wght@600&family=IBM+Plex+Sans+Thai:wght@500&family=Noto+Serif+Thai:wght@500&family=Noto+Sans+Thai:wght@500&family=Taviraj:wght@500&family=Trirong:wght@500&family=Athiti:wght@600&family=Krub:wght@600&family=K2D:wght@600&family=Niramit:wght@500&family=Charm:wght@700&family=Chonburi&family=Itim&family=Sriracha&family=Mali:wght@600&family=Charmonman&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#14161a;--panel:#1d2026;--line:#2c313a;--text:#eef0f3;--muted:#9aa3b2;--a:#4cc9f0;--b:#f72585;--ok:#7bd88f}
 *{box-sizing:border-box}
@@ -78,6 +78,36 @@ button.small{padding:8px 10px;font-size:13px;min-width:0}
 .v-post{position:relative;aspect-ratio:1;padding:10px;display:flex;flex-direction:column;gap:4px;overflow:hidden}
 .v-pace{padding:8px;display:flex;flex-direction:column;gap:6px;min-height:150px;justify-content:center}
 .v-merch{height:160px;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 40%,#f4f4f4,#cfcfcf)}
+/* round-3 formats */
+.opt.fmt-bleed .vis{height:250px}
+.v-bleed{position:absolute;inset:0}.v-bleed img{width:100%;height:100%;object-fit:cover;display:block}
+.v-bleed .cap{position:absolute;left:0;right:0;bottom:0;padding:18px 8px 6px;background:linear-gradient(transparent,rgba(0,0,0,.75));color:#fff;font-size:12px;font-weight:700}
+
+.v-word{height:100%;min-height:170px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:10px}
+.v-mini{height:100%;min-height:150px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:8px}
+.v-mini .ic{font-size:46px;line-height:1}.v-mini .its{display:flex;flex-wrap:wrap;gap:4px;justify-content:center}
+.v-mini .its span{font-size:11px;font-weight:600;padding:2px 7px;border-radius:999px;background:rgba(0,0,0,.08)}
+.v-motion{height:150px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;overflow:hidden}
+.v-motion .mlab{font:9px 'IBM Plex Mono',monospace;text-align:center;padding:0 4px;word-break:break-all}
+@keyframes mo-slide{from{transform:translateX(-40px)}to{transform:translateX(40px)}}
+@keyframes mo-fade{from{opacity:.1}to{opacity:1}}
+@keyframes mo-scale{from{transform:scale(.2)}to{transform:scale(1.1)}}
+@keyframes mo-bounce{from{transform:translateY(20px) scale(1.2,.8)}to{transform:translateY(-25px) scale(.9,1.1)}}
+@keyframes mo-wiggle{from{transform:rotate(-6deg) translateY(1px)}to{transform:rotate(6deg) translateY(-1px)}}
+@keyframes mo-zoom{from{transform:scale(.8);opacity:.5}to{transform:scale(1.4);opacity:1}}
+@keyframes mo-glitch{0%{transform:translate(0)}25%{transform:translate(-4px,2px);filter:hue-rotate(90deg)}50%{transform:translate(3px,-2px)}75%{transform:translate(-2px,0);filter:hue-rotate(-90deg)}100%{transform:translate(0)}}
+@keyframes mo-type{from{width:0}to{width:14ch}}
+.v-sound{height:150px;display:flex;flex-direction:column;justify-content:center;gap:6px;padding:10px}
+.v-sound .eq{display:flex;align-items:flex-end;gap:3px;height:60px}.v-sound .eq i{flex:1;border-radius:2px}
+@keyframes eq{from{transform:scaleY(.25)}to{transform:scaleY(1)}}.v-sound .eq i{transform-origin:bottom}
+.v-thai{padding:12px;min-height:150px}
+.v-texture{height:160px;display:flex;align-items:flex-end;justify-content:flex-end}
+.v-texture span,.v-light span{font:600 10px 'IBM Plex Mono',monospace;background:rgba(0,0,0,.55);color:#fff;padding:2px 6px;margin:6px;border-radius:4px}
+.v-light{height:160px;position:relative;display:flex;align-items:flex-end;justify-content:flex-end}
+.v-light .room{position:absolute;left:12%;right:12%;bottom:0;height:28%;background:rgba(0,0,0,.25);clip-path:polygon(10% 0,90% 0,100% 100%,0 100%)}
+.v-cover-wrap{padding:8px;background:#e9e4d8;display:flex;justify-content:center}
+.v-cover{position:relative;width:118px;aspect-ratio:2/3;padding:8px;display:flex;flex-direction:column;overflow:hidden;box-shadow:3px 4px 10px rgba(0,0,0,.35)}
+.v-sign{height:150px;display:flex;align-items:center;justify-content:center}
 /* end screen */
 .end{max-width:760px;width:100%;flex:1;min-height:0;overflow:auto;-webkit-overflow-scrolling:touch;padding:4px 4px 30px}
 .end h2{margin:10px 0 6px}.end h3{margin:16px 0 6px;font-size:15px}
@@ -258,8 +288,45 @@ function rMerch(v){const f=`font-family:${v.font};`,ink=v.ink,base=v.base,mk=Str
   case'bottle':shape=`<div style="width:44px;height:110px;position:relative"><div style="position:absolute;left:12px;top:0;width:20px;height:14px;background:#333;border-radius:3px"></div><div style="position:absolute;left:0;top:12px;width:44px;height:98px;background:${base};border-radius:12px 12px 8px 8px;display:flex;align-items:center;justify-content:center">${label}</div></div>`;break;
  }
  return `<div class="v-merch">${shape}</div>`}
-const R={ui:rUI,palette:rPal,type:rType,tone:rTone,image:rImg,mood:rMood,logo:rLogo,thumb:rThumb,hero:rHero,post:rPost,pace:rPace,merch:rMerch};
-function optHtml(o,side){const v=o.visual||{};return `<div class="opt ${side}" data-side="${side}"><div class="vis">${(R[v.type]||(()=>''))(v)}</div><span class="side">${side==='A'?'◀ LEFT':'RIGHT ▶'}</span><h3>${esc(o.label)}</h3><p>${esc(o.desc)}</p>
+function rBleed(v){return `<div class="v-bleed"><img alt="" src="${imgSrc(v.key)}" style="filter:${v.filter||'none'}" onerror="this.style.display='none'"><div class="cap">${esc(v.caption||'')}</div></div>`}
+function rWord(v){return `<div class="v-word" style="background:${v.bg};color:${v.fg}"><div style="font-family:${v.font};font-size:${v.word.length<=5?40:v.word.length<=7?30:24}px;line-height:1;font-weight:800;word-break:break-word">${esc(v.word)}</div>${v.sub?`<div style="font-size:11px;opacity:.75;margin-top:8px">${esc(v.sub)}</div>`:''}</div>`}
+function rMini(v){return `<div class="v-mini" style="background:${v.bg};color:${v.fg}"><div class="ic">${esc(v.icon)}</div><div class="its">${v.items.map(x=>`<span>${esc(x)}</span>`).join('')}</div></div>`}
+function rMotion(v){const k=v.kind;let el='';const a=`animation:mo-${k} ${v.dur}s ${v.easing} infinite alternate`;
+ if(k==='type') el=`<div style="font:600 16px 'IBM Plex Mono',monospace;color:${v.color};white-space:nowrap;overflow:hidden;width:14ch;border-right:2px solid ${v.color};animation:mo-type ${v.dur}s ${v.easing} infinite">Hello, builder.</div>`;
+ else el=`<div style="display:flex;gap:8px;align-items:center">${[0,1,2].map(i=>`<div style="width:28px;height:28px;border-radius:${k==='bounce'?'50%':'6px'};background:${v.color};${a};animation-delay:${i*0.15}s"></div>`).join('')}</div>`;
+ return `<div class="v-motion" style="background:${v.bg}">${el}<div class="mlab" style="color:${lum(v.bg)>.5?'#555':'#aaa'}">${esc(v.easing)} · ${v.dur}s</div></div>`}
+function rSound(v){const d=(60/v.bpm).toFixed(2);return `<div class="v-sound" style="background:${v.bg}"><div class="eq">${[...Array(14)].map((_,i)=>`<i style="background:${v.color};animation:eq ${d}s ease-in-out ${(i*0.07).toFixed(2)}s infinite alternate;height:${20+((i*37)%60)}%"></i>`).join('')}</div><div style="color:#cfd5de;font-size:10px">🔊 ${v.bpm} BPM</div><div class="tags">${v.words.map(w=>`<span class="tag">${esc(w)}</span>`).join('')}</div></div>`}
+function rThaiType(v){return `<div class="v-thai" style="background:${v.bg};color:${v.fg};font-family:${v.font}"><div style="font-size:24px;font-weight:${v.weight};line-height:1.35;word-break:break-word">${esc(v.sample)}</div><div style="font-size:15px;line-height:1.5;opacity:.85">สวัสดีครับ ยินดีต้อนรับ<br>กขฃค ๑๒๓ ABC 2569</div></div>`}
+function rTexture(v){return `<div class="v-texture" style="background:${v.css}"><span>${esc(v.note)}</span></div>`}
+function rLight(v){return `<div class="v-light" style="background:${v.css}"><div class="room"></div><span>${esc(v.kelvin)}</span></div>`}
+function rCover(v){const f=`font-family:${v.font};`,im=v.key?`<img alt="" src="${imgSrc(v.key)}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:${v.filter||'none'}">`:'';let b='';
+ switch(v.layout){
+  case'band':b=`${im}<div style="position:absolute;left:0;right:0;top:55%;background:${v.accent};color:#111;${f}font-size:20px;padding:4px 8px;line-height:1">${esc(v.title)}</div><div style="position:absolute;bottom:6px;left:8px;font-size:9px;color:#fff">${esc(v.sub)}</div>`;break;
+  case'stamp':b=`<div style="margin:auto;text-align:center;border:2px solid ${v.accent};padding:10px 6px;transform:rotate(-2deg)"><div style="${f}font-size:15px;font-weight:700">${esc(v.title)}</div><div style="font-size:9px;margin-top:4px">${esc(v.sub)}</div></div><div style="font-size:22px;text-align:center">⌂</div>`;break;
+  case'type':{const [en,th]=v.title.split('|');b=`<div style="margin-top:auto;${f}font-size:44px;font-weight:700;line-height:.9">${esc(en)}</div><div style="${f}font-size:30px;color:${v.accent}">${esc(th)}</div><div style="font-size:9px;margin-top:6px">${esc(v.sub)}</div>`;break}
+  case'plan':b=`<div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.12) 1px,transparent 1px);background-size:10px 10px"></div><div style="position:relative;margin:18px auto;width:70%;height:70px;border:1.5px solid #fff"><div style="position:absolute;left:40%;top:0;bottom:0;border-left:1.5px solid #fff"></div><div style="position:absolute;left:40%;right:0;top:50%;border-top:1.5px solid #fff"></div></div><div style="position:relative;margin-top:auto;${f}font-size:15px;font-weight:700">${esc(v.title)}</div><div style="position:relative;font-size:9px;color:${v.accent}">${esc(v.sub)}</div>`;break;
+  case'small':b=`${im}<div style="position:relative;margin-top:auto;text-align:center;${f}font-size:13px;letter-spacing:.08em">${esc(v.title)}</div><div style="position:relative;text-align:center;font-size:8px">${esc(v.sub)}</div>`;break;
+  case'grid':b=`<div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;flex:1"><div style="${f}font-size:56px;font-weight:800;line-height:1">${esc(v.title)}</div><div style="background:${v.accent}"></div><div style="border-top:2px solid ${v.fg};font-size:9px;padding-top:3px">${esc(v.sub)}</div><div></div></div>`;break;
+  case'illus':b=`<div style="width:70px;height:70px;border-radius:50%;background:#fff8;margin:10px auto 0;position:relative"><div style="position:absolute;left:15px;top:28px;width:40px;height:30px;background:${v.accent};clip-path:polygon(50% 0,100% 40%,100% 100%,0 100%,0 40%)"></div></div><div style="margin-top:auto;text-align:center;${f}font-size:20px;font-weight:800">${esc(v.title)}</div><div style="text-align:center;font-size:9px">${esc(v.sub)}</div>`;break;
+  case'foil':b=`<div style="margin:auto;text-align:center;border-top:1px solid ${v.accent};border-bottom:1px solid ${v.accent};padding:8px 0;width:85%"><div style="${f}font-size:17px;letter-spacing:.2em">${esc(v.title)}</div><div style="font-size:8px;letter-spacing:.2em;margin-top:3px">${esc(v.sub)}</div></div>`;break;
+  case'mag':b=`${im}<div style="position:relative;${f}font-size:28px;font-weight:900;text-align:center;letter-spacing:.05em">${esc(v.title)}</div><div style="position:relative;margin-top:auto;background:${v.accent};align-self:flex-start;font-size:9px;padding:2px 5px">${esc(v.sub)}</div>`;break;
+  case'zine':b=`${im}<div style="position:relative;display:flex;flex-wrap:wrap;gap:2px">${[...v.title].map((ch,i)=>`<span style="${f}background:${i%2?'#fff':'#111'};color:${i%2?'#111':'#fff'};font-size:${16+(i*5)%8}px;padding:0 3px;transform:rotate(${(i%3-1)*5}deg)">${esc(ch)}</span>`).join('')}</div><div style="position:relative;margin-top:auto;font-size:9px;background:#fff;align-self:flex-start;padding:1px 4px">${esc(v.sub)}</div>`;break;
+ }
+ return `<div class="v-cover-wrap"><div class="v-cover" style="background:${v.bg};color:${v.fg}">${b}</div></div>`}
+function rSign(v){const f=`font-family:${v.font};`;let st='',wall='#d9d4c7';
+ switch(v.shape){
+  case'plate':st=`border-radius:3px;box-shadow:0 3px 0 rgba(0,0,0,.25);`;break;
+  case'board':st=`border-radius:6px;transform:rotate(-2deg);box-shadow:2px 3px 6px rgba(0,0,0,.25);`;wall='#5a7d4f';break;
+  case'blade':st=`border-radius:4px;border-left:8px solid ${v.accent};`;wall='#9c4a2f';break;
+  case'picto':st=`border-radius:10px;font-size:26px;`;wall='#e9ecee';break;
+  case'enamel':st=`border-radius:14px;border:4px solid #fff;outline:2px solid ${v.bg};`;wall='#e8dcc6';break;
+  case'floor':st=`border-radius:0;transform:perspective(200px) rotateX(40deg);border-bottom:10px solid ${v.accent};`;wall='#bdbcb6';break;
+  case'neon':st=`background:transparent!important;text-shadow:0 0 6px ${v.accent},0 0 14px ${v.accent};`;wall='#2b1d1d';break;
+  case'glass':st=`background:rgba(255,255,255,.06)!important;border:1px solid rgba(255,255,255,.25);`;wall='#1b1b1b';break;
+ }
+ return `<div class="v-sign" style="background:${wall}"><div style="background:${v.bg};color:${v.fg};${f}${st}padding:10px 14px;text-align:center;max-width:90%"><div style="font-size:${v.shape==='picto'?26:18}px;font-weight:700;line-height:1.05">${esc(v.text)}</div>${v.sub?`<div style="font-size:11px;margin-top:4px;opacity:.85">${esc(v.sub)}</div>`:''}</div></div>`}
+const R={ui:rUI,palette:rPal,type:rType,tone:rTone,image:rImg,mood:rMood,logo:rLogo,thumb:rThumb,hero:rHero,post:rPost,pace:rPace,merch:rMerch,bleed:rBleed,word:rWord,mini:rMini,motion:rMotion,sound:rSound,thaitype:rThaiType,texture:rTexture,light:rLight,cover:rCover,sign:rSign};
+function optHtml(o,side){const v=o.visual||{};return `<div class="opt ${side} fmt-${v.type||'x'}" data-side="${side}"><div class="vis">${(R[v.type]||(()=>''))(v)}</div><span class="side">${side==='A'?'◀ LEFT':'RIGHT ▶'}</span><h3>${esc(o.label)}</h3><p>${esc(o.desc)}</p>
   <div class="tags">${(o.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</div></div>`}
 
 /* ---------- flow ---------- */

@@ -902,6 +902,295 @@ CATEGORY_WEIGHT = {  # base share of the deck
 
 CATEGORY_WEIGHT.update(CATEGORY_WEIGHT_EXTRA_10C)
 
+# ---------------------------------------------------------------------------
+# 2026-10-10 (round 3) "variety" additions: 17 brand-new categories and 9 new card formats
+# (full-bleed photo, word-only, quick-fire mini, motion, sound, Thai type, texture, light, cover, sign).
+# ~70% of each category sits inside Max's liked space; ~30% are deliberate contrasts.
+# ---------------------------------------------------------------------------
+F.update({
+    "baijam": "'Bai Jamjuree', 'Kanit', system-ui, sans-serif",
+    "plexthai": "'IBM Plex Sans Thai', 'Sarabun', system-ui, sans-serif",
+    "notoserifthai": "'Noto Serif Thai', 'Pridi', Georgia, serif",
+    "notosansthai": "'Noto Sans Thai', 'Sarabun', system-ui, sans-serif",
+    "taviraj": "'Taviraj', 'Pridi', Georgia, serif",
+    "trirong": "'Trirong', 'Pridi', Georgia, serif",
+    "athiti": "'Athiti', 'Prompt', system-ui, sans-serif",
+    "krub": "'Krub', 'Kanit', system-ui, sans-serif",
+    "k2d": "'K2D', 'Kanit', system-ui, sans-serif",
+    "niramit": "'Niramit', 'Sarabun', system-ui, sans-serif",
+    "charm": "'Charm', 'Pridi', cursive",
+    "chonburi": "'Chonburi', 'Kanit', serif",
+    "itim": "'Itim', 'Mitr', cursive",
+    "sriracha": "'Sriracha', 'Mitr', cursive",
+    "mali": "'Mali', 'Mitr', system-ui, sans-serif",
+    "charmonman": "'Charmonman', 'Pridi', cursive",
+})
+
+def _o(i, label, desc, tags, **visual):
+    return dict(id=i, label=label, desc=desc, tags=tags, visual=visual)
+def bleed(i, label, desc, tags, key, caption="", filt=None):
+    return _o(i, label, desc, tags, type="bleed", key=key, caption=caption or label, filter=filt)
+def word(i, label, desc, tags, w, sub, bg, fg, font="inter"):
+    return _o(i, label, desc, tags, type="word", word=w, sub=sub, bg=bg, fg=fg, font=F[font])
+def mini(i, label, desc, tags, icon, items, bg, fg="#1b1b1b"):
+    return _o(i, label, desc, tags, type="mini", icon=icon, items=items, bg=bg, fg=fg)
+def motion(i, label, desc, tags, kind, easing, dur, color, bg="#f4f4f1"):
+    return _o(i, label, desc, tags, type="motion", kind=kind, easing=easing, dur=dur, color=color, bg=bg)
+def sound(i, label, desc, tags, bpm, color, words, bg="#14161a"):
+    return _o(i, label, desc, tags, type="sound", bpm=bpm, color=color, words=words, bg=bg)
+def thaitype(i, label, desc, tags, font, weight=400, sample="บ้านไม้สักริมน้ำ", bg="#faf8f3", fg="#1b1b1b"):
+    return _o(i, label, desc, tags, type="thaitype", font=F[font], weight=weight, sample=sample, bg=bg, fg=fg)
+def texture(i, label, desc, tags, css, note=""):
+    return _o(i, label, desc, tags, type="texture", css=css, note=note)
+def light(i, label, desc, tags, css, kelvin):
+    return _o(i, label, desc, tags, type="light", css=css, kelvin=kelvin)
+def cover(i, label, desc, tags, bg, fg, accent, font, layout, title, sub, key=None, filt=None):
+    return _o(i, label, desc, tags, type="cover", bg=bg, fg=fg, accent=accent, font=F[font], layout=layout,
+              title=title, sub=sub, key=key, filter=filt)
+def sign(i, label, desc, tags, bg, fg, accent, font, shape, text, sub=""):
+    return _o(i, label, desc, tags, type="sign", bg=bg, fg=fg, accent=accent, font=F[font], shape=shape, text=text, sub=sub)
+
+POOL_2026_10_10D = {
+ "Travel & Hotel Vibes": [
+  bleed("tv_beach_barefoot", "Barefoot Beach Bungalow", "Simple hut, sand floor, hammock, no shoes for a week.", ["natural","tropical","rustic","light"], "tr_beach_bungalow", "Koh Lanta, no shoes"),
+  bleed("tv_heritage_boutique", "Heritage Boutique Hotel", "Restored colonial house, teak floors, ceiling fans.", ["warm","classic","natural","craft"], "tr_boutique_lobby", "Luang Prabang heritage"),
+  bleed("tv_glamping", "Glamping Tent", "Canvas tent, real bed, stone wall, forest outside.", ["natural","rustic","warm","friendly"], "tr_glamping", "Canvas + real bed"),
+  bleed("tv_timber_lodge", "Big Timber Lodge", "Massive beams, stone fireplace, communal tables.", ["rustic","warm","craft","construction"], "tr_mountain_lodge", "Timber + stone"),
+  bleed("tv_desert_camp", "Desert Bedouin Camp", "Tents under red cliffs, stars, total silence.", ["natural","adventurous","warm","raw"], "tr_desert_camp", "Wadi Rum"),
+  bleed("tv_sleeper_train", "Overnight Sleeper Train", "Bunk, window, rattle: the journey is the hotel.", ["practical","adventurous","rustic","clear"], "tr_sleeper_train", "Bunk with a view"),
+  bleed("tv_pool_villa", "Private Pool Villa", "Thatched sala, plunge pool, outdoor shower.", ["tropical","warm","natural","resort"], "ext_tropical", "Sala + pool"),
+  bleed("tv_tatami_inn", "Tatami Inn", "Futon on tatami, paper doors, onsen down the hall.", ["japanese","calm","natural","minimal"], "int_japandi", "Futon night"),
+  bleed("tv_glass_retreat", "Glass Forest Retreat", "Glass walls, trees on every side.", ["modern","light","natural","minimal"], "ext_modern", "Trees on all sides"),
+  bleed("tv_icon_resort", "Mega-Resort Skyline", "Rooftop infinity pool, big-city icon hotel.", ["luxe","vibrant","bold","urban"], "tr_treehouse", "Rooftop infinity pool"),
+  bleed("tv_temple_stay", "Temple-Town Guesthouse", "Small family guesthouse near the temple, bikes at the door.", ["thai","friendly","warm","natural"], "base_temple", "Bikes at the door"),
+  mood("tv_city_neon_capsule", "Neon Capsule Hotel", "Pod beds, LED strips, city at 2am.", ["dark","vibrant","technical","urban"], ["#0b0f1a","#7c3aed","#00e5ff","#ff006e","#2b2b2b"], ["pod beds","LED strips","2am city"]),
+ ],
+ "Café & Coffee Shop Design": [
+  bleed("cf_bamboo_garden", "Bamboo Garden Café", "Bamboo seating under trees, blossoms beyond the rail.", ["natural","tropical","warm","friendly"], "cf_garden", "Shade + bamboo"),
+  bleed("cf_roaster_showpiece", "Vintage Roaster Showpiece", "Old cast-iron roaster as the centerpiece, wood and brick.", ["rustic","craft","warm","industrial"], "cf_industrial", "Cast-iron roaster"),
+  bleed("cf_street_cart", "Street Coffee Cart", "Coffee on wheels, cups for 20 baht.", ["practical","friendly","raw","clear"], "cf_kiosk", "Coffee on wheels"),
+  bleed("cf_craft_roastery", "Working Roastery", "Aprons, sacks, roasting drum: you watch it happen.", ["industrial","craft","construction","warm"], "cf_roastery", "Watch it roast"),
+  mood("cf_white_tile", "White-Tile Minimal Café", "White tile, one pale wood bar, nothing on the walls.", ["japanese","minimal","light","calm"], ["#ffffff","#f2f0eb","#d9c3a0","#e5e5e5","#2b2b2b"], ["white tile","pale wood","no decor"]),
+  mood("cf_shophouse", "Shophouse Café", "Old Thai shophouse, terrazzo floor, plants on the stairs.", ["thai","warm","rustic","natural"], ["#e9c46a","#5a7d4f","#9c4a2f","#d8c3a5","#f2efe8"], ["terrazzo","old shutters","plants"]),
+  mood("cf_concrete_block", "Concrete Block Café", "Raw concrete counter, steel stools, big window.", ["industrial","modern","construction","clear"], ["#bdbcb6","#8e8e8a","#2b2b2b","#f2f0eb","#c8a97e"], ["poured concrete","steel stools","big glass"]),
+  mood("cf_farm_bakery", "Farmhouse Bakery Café", "Long wood tables, bread on display, flour in the air.", ["rustic","warm","friendly","natural"], ["#c9a77c","#f4ecd8","#7a5230","#efe6d2","#6b7f3a"], ["long tables","bread shelves","linen"]),
+  mood("cf_neon_night", "Neon Night Café", "Dark room, pink neon sign, late-night playlist.", ["dark","vibrant","playful","urban"], ["#1a1a40","#ff006e","#7c3aed","#00e5ff","#2b2b2b"], ["neon sign","dark walls","vinyl"]),
+  mood("cf_library", "Library Café", "Bookshelves to the ceiling, armchairs, quiet hours.", ["warm","classic","calm","editorial"], ["#5c4033","#a47551","#efe6d2","#1b3a2b","#c9a227"], ["bookshelves","armchairs","green lamps"]),
+ ],
+ "Signage & Wayfinding": [
+  sign("sg_steel_plate", "Laser-Cut Steel Plate", "Raw steel sign, cut-out letters, rusting slowly.", ["industrial","rustic","construction","modern"], "#6b4f3a", "#f2efe8", "#b5651d", "grotesk", "plate", "SITE OFFICE", "→ 50 m"),
+  sign("sg_painted_wood", "Hand-Painted Wood Board", "Brush-painted letters on a reclaimed board.", ["rustic","craft","warm","friendly"], "#c8a97e", "#3b2a1a", "#c1502e", "caveat", "board", "Fresh Coffee", "open 7-4"),
+  sign("sg_bilingual_blade", "Bilingual Blade Sign", "Projecting sign, English and Thai, lit at night.", ["bilingual","thai","clear","friendly"], "#ffffff", "#16302e", "#139a8f", "kanit", "blade", "Reception", "แผนกต้อนรับ"),
+  sign("sg_hi_vis", "Hi-Vis Site Board", "Yellow-black safety board, huge type.", ["construction","clear","direct","industrial"], "#ffd400", "#111111", "#111111", "archivo", "plate", "HARD HATS", "beyond this point"),
+  sign("sg_pictogram", "Pictogram Only", "Icons, arrows, no words. Universal.", ["clear","modern","minimal","practical"], "#1d4ed8", "#ffffff", "#ffffff", "inter", "picto", "🚻 ↗  🅿 ←", ""),
+  sign("sg_wood_burned", "Burned Timber Plaque", "Letters branded into cedar.", ["natural","craft","rustic","warm"], "#a0784e", "#2b1d12", "#2b1d12", "fraunces", "board", "Garden House", "est. 2026"),
+  sign("sg_enamel", "Enamel Street Plate", "Blue-white enamel, rounded corners, old-school.", ["classic","clear","friendly","retro"], "#1f3b73", "#ffffff", "#ffffff", "montserrat", "enamel", "Soi Weberman", "ซอย"),
+  sign("sg_floor_graphic", "Painted Floor Lines", "Wayfinding painted on the floor in colored lanes.", ["modern","clear","playful","industrial"], "#d9dcd6", "#1f1f1f", "#ff6b00", "manrope", "floor", "Workshop", "Office · Store"),
+  sign("sg_neon_script", "Neon Script Sign", "Pink neon script on black brick.", ["vibrant","playful","dark","urban"], "#141414", "#ff7eb6", "#ff006e", "caveat", "neon", "good vibes", ""),
+  sign("sg_gold_leaf", "Gold-Leaf Window Lettering", "Gilded serif on glass, tailor-shop style.", ["luxe","classic","formal","editorial"], "#1b1b1b", "#d4af37", "#d4af37", "cormorant", "glass", "WEBERMAN & CO.", "Builders since 2026"),
+ ],
+ "Uniforms & Workwear": [
+  mood("uw_canvas_chore", "Canvas Chore Coat Crew", "Duck-canvas chore coats with a small chest logo.", ["rustic","construction","warm","practical"], ["#a07040","#2f3e46","#e8dcc2","#1b1b1b","#c1502e"], ["duck canvas","chest patch","brass snaps"]),
+  mood("uw_hivis_modern", "Modern Hi-Vis Kit", "Slim hi-vis polos, grey pants, clean logo.", ["construction","modern","clear","industrial"], ["#ff6b00","#2b2d31","#c5ccd0","#ffffff","#ffd400"], ["hi-vis polo","stretch pants","reflective tape"]),
+  mood("uw_linen_hospitality", "Linen Hospitality Uniform", "Sand linen shirts and aprons for guests.", ["natural","light","warm","friendly"], ["#e9e2d0","#c3b091","#ffffff","#7d9a6f","#3b2a1a"], ["linen shirt","waxed apron","sandals"]),
+  mood("uw_indigo_mohom", "Indigo Mor Hom Crew", "Thai farmer-indigo work shirts as uniform.", ["thai","natural","craft","bilingual"], ["#1f3b73","#3e5c99","#f3efe6","#b5651d","#ffffff"], ["mor hom indigo","cotton","embroidered name"]),
+  mood("uw_coverall", "Grey Coveralls", "One-piece grey coveralls, name tape, orange stitch.", ["industrial","practical","clear","construction"], ["#6c757d","#2b2d31","#ff6b00","#e9ecee","#ffffff"], ["coverall","name tape","knee pads"]),
+  mood("uw_olive_utility", "Olive Utility Set", "Olive ripstop shirt and cargo pants.", ["natural","practical","rustic","modern"], ["#4b5320","#8a7f5a","#e8e2d0","#2b2b2b","#c3b091"], ["ripstop","cargo pockets","boots"]),
+  mood("uw_white_tee_logo", "White Tee + Cap", "Plain white tee, navy cap, small logo. That's it.", ["clear","light","friendly","minimal"], ["#ffffff","#1d3c6e","#e5e5e5","#c8a97e","#2b2b2b"], ["white tee","navy cap","small logo"]),
+  mood("uw_black_tech", "All-Black Tech Uniform", "Black technical shell and pants, black boots.", ["dark","technical","modern","bold"], ["#0b0b0b","#1c1c1c","#3a3a3a","#c0c0c0","#ff6b00"], ["tech shell","black boots","tonal logo"]),
+  mood("uw_colorblock", "Bright Color-Block Crew", "Primary-color panels so every crew member pops on camera.", ["vibrant","playful","bold","youtube"], ["#e63946","#ffbe0b","#3a86ff","#ffffff","#1b1b1b"], ["color-block","bold logo","sneakers"]),
+  mood("uw_tailored_site", "Tailored Site Manager", "Blazer over a polo, chinos, clean boots.", ["formal","classic","trust","luxe"], ["#0f2340","#e8dcc2","#5c4033","#ffffff","#b08d57"], ["blazer","polo","leather boots"]),
+ ],
+ "Book & Magazine Covers": [
+  cover("bk_photo_band", "Photo + Bold Band", "Full photo, one bold title band.", ["clear","modern","construction","bold"], "#111", "#ffffff", "#ff6b00", "anton", "band", "BUILT IN THAILAND", "A field guide", "base_site"),
+  cover("bk_kraft_field", "Kraft Field Guide", "Kraft paper, stamped title, small drawing.", ["rustic","craft","natural","warm"], "#c8a97e", "#1b1b1b", "#8b3a1a", "spacemono", "stamp", "Tropical Building", "Notes from the site"),
+  cover("bk_bilingual_type", "Bilingual Type Cover", "Type-only, English and Thai stacked.", ["bilingual","thai","clear","modern"], "#fff8f0", "#3b2a1a", "#d9693b", "kanit", "type", "Home|บ้าน", "Max Weberman"),
+  cover("bk_blueprint", "Blueprint Cover", "Floor plan line art on blue.", ["technical","construction","clear","industrial"], "#0b3d91", "#ffffff", "#ffd166", "grotesk", "plan", "THE TEAK HOUSE", "Plans + process"),
+  cover("bk_warm_photo", "Warm Photo, Small Title", "Golden photo, tiny serif title.", ["warm","natural","calm","light"], "#000", "#ffffff", "#f6b93b", "lora", "small", "A Moment In Thai", "Stories", "ext_tropical", "sepia(.3)"),
+  cover("bk_swiss_grid", "Swiss Grid Cover", "Strict grid, big number, red accent.", ["modern","clear","minimal","bold"], "#f4f1e8", "#111111", "#e63312", "inter", "grid", "07", "Building Better"),
+  cover("bk_illustrated", "Illustrated Picture-Book", "Soft illustration, rounded title.", ["friendly","warm","playful","soft"], "#ffd8b8", "#4a3426", "#e07a3f", "nunito", "illus", "Our House", "For little builders"),
+  cover("bk_luxury_coffee", "Coffee-Table Luxe", "Black linen, gold foil serif.", ["luxe","dark","formal","classic"], "#141414", "#c9a227", "#c9a227", "cormorant", "foil", "RESIDENCES", "Volume I"),
+  cover("bk_magazine_editorial", "Glossy Magazine", "Masthead, cover lines, portrait photo.", ["editorial","bold","vibrant","cinematic"], "#000", "#ffffff", "#ff006e", "playfair", "mag", "BUILDER", "The tropical issue", "base_temple", "saturate(1.4)"),
+  cover("bk_zine", "Photocopied Zine", "Black-and-white collage, taped letters.", ["raw","playful","craft","retro"], "#f2efe8", "#111111", "#111111", "anton", "zine", "SITE LIFE", "issue #1", "base_site", "grayscale(1) contrast(1.6)"),
+ ],
+ "Textures & Materials": [
+  texture("tx_board_concrete", "Board-Formed Concrete", "Wood-grain imprint in grey concrete.", ["industrial","modern","construction","raw"], "repeating-linear-gradient(0deg,#a9a9a2 0 14px,#9a9a93 14px 15px,#b3b3ac 15px 30px),#a9a9a2", "concrete"),
+  texture("tx_teak_grain", "Oiled Teak Grain", "Warm golden-brown wood grain.", ["warm","natural","craft","rustic"], "repeating-linear-gradient(95deg,#8b5a2b 0 6px,#9c6a37 6px 9px,#7a4d23 9px 16px)", "teak"),
+  texture("tx_lime_plaster", "Lime Plaster", "Soft cloudy off-white wall.", ["light","natural","calm","warm"], "radial-gradient(circle at 30% 30%,#f7f3ea,#e8e0d0 60%,#efe7d8)", "lime"),
+  texture("tx_corrugated", "Corrugated Steel", "Ribbed galvanized metal.", ["industrial","construction","practical","clear"], "repeating-linear-gradient(90deg,#c5ccd0 0 6px,#9aa5ab 6px 10px,#e9ecee 10px 14px)", "zinc"),
+  texture("tx_rattan", "Woven Rattan", "Cane weave, light and airy.", ["natural","tropical","craft","light"], "repeating-linear-gradient(45deg,#d9b77e 0 4px,transparent 4px 8px),repeating-linear-gradient(-45deg,#c79d5d 0 4px,#f1e2c4 4px 8px)", "rattan"),
+  texture("tx_brick", "Old Red Brick", "Running-bond brick with grey mortar.", ["rustic","industrial","warm","construction"], "linear-gradient(#cfc9bf 2px,transparent 2px) 0 0/40px 16px,linear-gradient(90deg,#cfc9bf 2px,transparent 2px) 0 0/40px 32px,linear-gradient(90deg,#cfc9bf 2px,transparent 2px) 20px 16px/40px 32px,#9c4a2f", "brick"),
+  texture("tx_terrazzo", "Terrazzo Chips", "Speckled stone chips in cream.", ["modern","light","friendly","thai"], "radial-gradient(circle at 20% 30%,#c1502e 3px,transparent 4px),radial-gradient(circle at 70% 60%,#5a7d4f 4px,transparent 5px),radial-gradient(circle at 40% 80%,#8e8e8a 3px,transparent 4px),radial-gradient(circle at 85% 20%,#d4a017 2px,transparent 3px),#efe9de", "terrazzo"),
+  texture("tx_linen", "Natural Linen", "Fine crosshatch fabric in oat.", ["natural","light","soft","warm"], "repeating-linear-gradient(0deg,#e9e2d0 0 1px,#ded5bf 1px 2px),repeating-linear-gradient(90deg,rgba(0,0,0,.03) 0 1px,transparent 1px 3px),#e9e2d0", "linen"),
+  texture("tx_rammed_earth", "Rammed Earth Layers", "Striped earth bands in ochre and clay.", ["earthy","natural","modern","rustic"], "repeating-linear-gradient(0deg,#b9825a 0 9px,#c99668 9px 15px,#a87250 15px 22px,#d4a373 22px 28px)", "earth"),
+  texture("tx_black_marble", "Black Marble", "Polished black stone with white veins.", ["luxe","dark","formal","bold"], "linear-gradient(115deg,transparent 45%,rgba(255,255,255,.5) 46%,transparent 48%),linear-gradient(160deg,transparent 60%,rgba(255,255,255,.3) 61%,transparent 62%),#141414", "marble"),
+  texture("tx_neon_acrylic", "Neon Acrylic", "Glossy fluorescent plastic.", ["vibrant","playful","modern","bold"], "linear-gradient(135deg,#ff006e,#ffbe0b 50%,#3a86ff)", "acrylic"),
+  texture("tx_charred_wood", "Charred Timber", "Black alligator-cracked wood.", ["dark","japanese","craft","raw"], "repeating-linear-gradient(0deg,#1b1b1b 0 10px,#2b2b2b 10px 11px),repeating-linear-gradient(90deg,transparent 0 18px,#000 18px 19px)", "yakisugi"),
+ ],
+ "Lighting Moods": [
+  light("lt_golden_hour", "Golden-Hour Glow", "Low warm sun through the windows.", ["warm","natural","light","calm"], "linear-gradient(160deg,#ffcf8a,#f6a65d 45%,#6b4226)", "2700K sunset"),
+  light("lt_daylight_clear", "Bright Clear Daylight", "Even, cool-white daylight. Everything visible.", ["light","clear","modern","practical"], "linear-gradient(180deg,#ffffff,#eef3f7 70%,#d9e2ea)", "5000K daylight"),
+  light("lt_edison_warm", "Edison Bulb Warmth", "Bare filament bulbs over a workbench.", ["warm","industrial","rustic","craft"], "radial-gradient(circle at 30% 25%,#ffd27a 0 8%,transparent 30%),radial-gradient(circle at 70% 25%,#ffd27a 0 8%,transparent 30%),linear-gradient(#3b2a1a,#1f1610)", "2200K filament"),
+  light("lt_paper_lantern", "Paper Lantern Diffuse", "Soft round glow, no hard shadows.", ["soft","warm","natural","friendly"], "radial-gradient(circle at 50% 40%,#fff3d6 0 20%,#f1d9a8 40%,#8c6e4a 90%)", "2700K diffused"),
+  light("lt_workshop_led", "Workshop LED Strips", "Bright linear LEDs, shadow-free bench.", ["industrial","clear","construction","modern"], "linear-gradient(180deg,#ffffff 0 6%,#e9ecee 6% 10%,#ffffff 10% 16%,#cfd4da 16% 100%)", "4000K task"),
+  light("lt_candle", "Candlelit Evening", "Flickering low light, warm pockets.", ["warm","calm","rustic","soft"], "radial-gradient(circle at 50% 70%,#ffb347 0 6%,#a0522d 25%,#1b1208 70%)", "1800K candle"),
+  light("lt_overcast_skylight", "Overcast Skylight", "Grey-soft top light, calm and flat.", ["calm","light","natural","clear"], "linear-gradient(180deg,#e9ecef,#d7dbe0 60%,#c2c8ce)", "6500K overcast"),
+  light("lt_moody_spot", "Moody Spotlights", "Dark room, a few dramatic pools of light.", ["dark","cinematic","luxe","bold"], "radial-gradient(circle at 30% 40%,#f5d48a 0 10%,transparent 25%),radial-gradient(circle at 75% 55%,#f5d48a 0 8%,transparent 22%),#0b0b0b", "2700K accent"),
+  light("lt_rgb_gamer", "RGB Color Wash", "Purple-teal LED wash.", ["vibrant","playful","technical","dark"], "linear-gradient(135deg,#7c3aed,#00e5ff 55%,#ff006e)", "RGB"),
+  light("lt_moon_garden", "Moonlit Garden", "Cool blue night with low path lights.", ["calm","natural","cool","dark"], "radial-gradient(circle at 80% 15%,#e0fbfc 0 6%,transparent 18%),linear-gradient(#1b2a3a,#253237 60%,#2f5d3a)", "4100K path"),
+ ],
+ "Outdoor Spaces & Gardens": [
+  bleed("gd_tropical_path", "Tropical Garden Path", "Palms, ferns and a shaded gravel path.", ["tropical","natural","warm","calm"], "gd_tropical", "Shade + ferns"),
+  bleed("gd_kitchen_beds", "Raised Kitchen Beds", "Timber raised beds, greenhouse, real food.", ["practical","natural","rustic","construction"], "gd_vegetable", "Grow your own"),
+  bleed("gd_cottage_border", "Cottage Flower Border", "Overflowing flowers by a white house.", ["natural","friendly","warm","light"], "gd_cottage", "Flowers everywhere"),
+  bleed("gd_wild_meadow", "Wildflower Meadow", "Let it grow: grasses and wildflowers.", ["natural","rustic","light","calm"], "gd_meadow", "Let it grow"),
+  bleed("gd_rooftop_green", "Rooftop Garden Terrace", "Planters, shade sails, city around.", ["modern","natural","urban","friendly"], "gd_rooftop", "Green roof"),
+  bleed("gd_courtyard_fountain", "Formal Courtyard Fountain", "Clipped hedges, fountain, symmetry.", ["classic","formal","calm","luxe"], "gd_courtyard", "Symmetry"),
+  bleed("gd_japanese_pond", "Japanese Pond Garden", "Moss, maples, lantern, waterfall.", ["japanese","calm","natural","craft"], "gd_japanese", "Moss + water"),
+  bleed("gd_cactus_dry", "Dry Cactus Garden", "Sand, rocks, cacti: almost no watering.", ["practical","bold","natural","playful"], "gd_xeriscape", "No watering"),
+  mood("gd_outdoor_kitchen", "Outdoor Kitchen & BBQ Deck", "Concrete counter, grill, long table under a pergola.", ["industrial","warm","friendly","construction"], ["#bdbcb6","#8b5a2b","#2b2b2b","#f2efe8","#c1502e"], ["concrete counter","grill","pergola"]),
+  mood("gd_play_lawn", "Family Play Lawn", "Soft lawn, shade tree, swing, sandbox.", ["friendly","natural","light","warm"], ["#83b735","#c6e377","#c8a97e","#ffffff","#f6b93b"], ["lawn","tree swing","sandbox"]),
+ ],
+ "Thai Script Typefaces": [
+  thaitype("th_baijam", "Bai Jamjuree", "Loopless modern Thai, clean and technical.", ["modern","clear","technical","thai"], "baijam", 600),
+  thaitype("th_plex", "IBM Plex Sans Thai", "Engineered and neutral, very legible.", ["clear","modern","technical","practical"], "plexthai", 500),
+  thaitype("th_noto_sans", "Noto Sans Thai", "Classic looped Thai, friendly and readable.", ["clear","friendly","bilingual","practical"], "notosansthai", 500),
+  thaitype("th_noto_serif", "Noto Serif Thai", "Traditional looped serif for long reading.", ["classic","calm","editorial","thai"], "notoserifthai", 500),
+  thaitype("th_taviraj", "Taviraj", "Elegant high-contrast serif, magazine-like.", ["editorial","luxe","classic","formal"], "taviraj", 500),
+  thaitype("th_trirong", "Trirong", "Bookish serif, warm and traditional.", ["warm","classic","craft","thai"], "trirong", 500),
+  thaitype("th_athiti", "Athiti", "Soft loopless sans, light and airy.", ["light","friendly","modern","soft"], "athiti", 600),
+  thaitype("th_krub", "Krub", "Squarish, sturdy, a little industrial.", ["industrial","modern","clear","construction"], "krub", 600),
+  thaitype("th_k2d", "K2D", "Rounded geometric, friendly signage feel.", ["friendly","modern","clear","warm"], "k2d", 600),
+  thaitype("th_niramit", "Niramit", "Calligraphic-touch sans, gentle and warm.", ["warm","natural","friendly","craft"], "niramit", 500),
+  thaitype("th_chonburi", "Chonburi", "Heavy poster display with thick-thin strokes.", ["bold","vibrant","retro","playful"], "chonburi", 400, "ร้านกาแฟสด"),
+  thaitype("th_charm", "Charm", "Brush-script Thai, ceremonial.", ["luxe","classic","formal","craft"], "charm", 700),
+  thaitype("th_itim", "Itim", "Hand-drawn marker Thai, casual.", ["playful","friendly","casual","personal"], "itim", 400, "วันนี้ไปไซต์งาน"),
+  thaitype("th_mali", "Mali", "Rounded, cheerful, kids-book friendly.", ["friendly","soft","playful","warm"], "mali", 600, "ห้องของลูกสาว"),
+ ],
+ "Motion & Animation Styles": [
+  motion("mo_ease_slide", "Smooth Ease Slide", "Elements glide in and settle, no fuss.", ["modern","clear","calm","light"], "slide", "cubic-bezier(.22,1,.36,1)", 1.4, "#139a8f"),
+  motion("mo_snappy", "Snappy & Quick", "Fast, crisp, gets out of the way.", ["clear","direct","modern","practical"], "slide", "cubic-bezier(.4,0,.2,1)", .6, "#ff6b00"),
+  motion("mo_soft_fade", "Soft Fade", "Gentle opacity fades, very calm.", ["soft","calm","natural","light"], "fade", "ease-in-out", 2.0, "#c8a97e"),
+  motion("mo_mechanical", "Mechanical Steps", "Stepped motion like a machine or crane.", ["industrial","construction","technical","bold"], "slide", "steps(5,end)", 1.5, "#2f3a40"),
+  motion("mo_handdrawn", "Hand-Drawn Wiggle", "Boiling line wiggle, stop-motion feel.", ["craft","warm","friendly","rustic"], "wiggle", "steps(3,end)", .5, "#8b5a2b"),
+  motion("mo_grow", "Organic Grow", "Things grow from the center like a plant.", ["natural","warm","soft","friendly"], "scale", "cubic-bezier(.34,1.3,.64,1)", 1.6, "#5a7d4f"),
+  motion("mo_typewriter", "Typewriter Text", "Letters type on one by one.", ["clear","retro","direct","editorial"], "type", "steps(14,end)", 2.2, "#1b1b1b"),
+  motion("mo_bouncy", "Bouncy Cartoon", "Squash-and-stretch bounces everywhere.", ["playful","vibrant","friendly","bold"], "bounce", "cubic-bezier(.5,-0.5,.5,1.5)", .8, "#ff006e"),
+  motion("mo_cinematic_slow", "Slow Cinematic Push", "Slow zoom and long dissolves.", ["cinematic","dark","luxe","calm"], "zoom", "linear", 4.0, "#c9a227", "#141414"),
+  motion("mo_glitch", "Glitch / Digital", "Jitters, RGB splits, techy.", ["technical","vibrant","dark","bold"], "glitch", "steps(2,end)", .4, "#00e5ff", "#0b0f1a"),
+ ],
+ "Emoji & Sticker Styles": [
+  mini("em_classic_native", "Native Emoji", "Plain phone emoji, nothing custom.", ["clear","friendly","practical","casual"], "👍", ["universal","zero effort","LINE-ready"], "#fff8e1"),
+  mini("em_line_stickers", "LINE-Style Stickers", "Big expressive character stickers for chats.", ["friendly","thai","playful","warm"], "🐻", ["character","big reactions","Thai chat"], "#e8f8ee"),
+  mini("em_construction_set", "Construction Sticker Set", "Hard hats, cones, thumbs-up crew.", ["construction","friendly","clear","industrial"], "👷", ["hard hat","cone","done ✓"], "#fff3d6"),
+  mini("em_handdrawn", "Hand-Drawn Doodles", "Pen-doodle stickers, wobbly lines.", ["craft","warm","personal","rustic"], "✍️", ["doodle","ink","wobbly"], "#f6f0e4"),
+  mini("em_bilingual_words", "Bilingual Word Stickers", "Short words: OK / โอเค, Thanks / ขอบคุณ.", ["bilingual","thai","clear","friendly"], "💬", ["OK / โอเค","ขอบคุณ","สู้ๆ"], "#e6f3f1"),
+  mini("em_minimal_mono", "Mono Line Icons", "Single-color line icons instead of emoji.", ["minimal","modern","clear","light"], "◯", ["line only","one color","calm"], "#f4f4f1"),
+  mini("em_baby_cute", "Baby & Family Stickers", "Soft pastel baby, bottle, sleepy moon.", ["soft","friendly","warm","personal"], "👶", ["sleepy moon","bottle","first steps"], "#fdf0f3"),
+  mini("em_meme_reaction", "Meme Reaction Faces", "Loud meme faces and caps text.", ["playful","vibrant","loud","youtube"], "😱", ["NO WAY","bruh","caps text"], "#ffe5ec"),
+  mini("em_3d_glossy", "3D Glossy Emoji", "Shiny 3D-rendered icons.", ["vibrant","modern","bold","playful"], "💎", ["glossy","3D","gradients"], "#ede7ff"),
+  mini("em_dark_neon", "Dark Neon Stickers", "Neon outlines on black.", ["dark","vibrant","urban","bold"], "⚡", ["neon","black","glow"], "#1a1a2e", "#f0f0f0"),
+ ],
+ "Event & Party Styling": [
+  mood("ev_site_bbq", "Topping-Out BBQ", "Celebrate the roof going up: grill, crew, cold drinks.", ["construction","friendly","warm","rustic"], ["#2b2d31","#ff6b00","#c8a97e","#f2efe8","#83b735"], ["grill","plywood tables","crew photo"]),
+  mood("ev_garden_lanterns", "Garden Lantern Dinner", "Long table under lanterns and string lights.", ["warm","natural","friendly","light"], ["#f6b93b","#5a7d4f","#f4ecd8","#8b5a2b","#ffffff"], ["string lights","long table","lanterns"]),
+  mood("ev_thai_housewarming", "Thai Housewarming (Khuen Baan Mai)", "Monks' blessing, marigolds, family feast.", ["thai","warm","natural","friendly"], ["#f6a21a","#ffffff","#d4a017","#3c8d2f","#c1502e"], ["marigolds","white string","family feast"]),
+  mood("ev_open_house", "Clean Open House", "Bright, simple, plans on easels, coffee bar.", ["clear","light","modern","practical"], ["#ffffff","#f4f4f1","#139a8f","#c8a97e","#2b2b2b"], ["easels","coffee bar","name tags"]),
+  mood("ev_rustic_barn", "Rustic Barn Party", "Hay bales, wood crates, acoustic band.", ["rustic","warm","natural","craft"], ["#a0784e","#e9c46a","#6b4226","#efe6d2","#3b2a1a"], ["wood crates","hay","acoustic"]),
+  mood("ev_baby_first_birthday", "Soft First Birthday", "Pastel balloons, picnic blankets, cake smash.", ["soft","friendly","warm","light"], ["#f8c8d8","#fff3b0","#cfe8ef","#ffffff","#c8a97e"], ["pastel balloons","picnic","cake smash"]),
+  mood("ev_industrial_launch", "Warehouse Product Launch", "Concrete floor, steel stage, big screen.", ["industrial","modern","bold","technical"], ["#2b2b2b","#bdbcb6","#ff6b00","#ffffff","#6c757d"], ["steel stage","big screen","concrete"]),
+  mood("ev_black_tie", "Black-Tie Gala", "Black, gold, crystal, string quartet.", ["luxe","formal","dark","classic"], ["#0b0b0b","#c9a227","#ffffff","#3a3a3a","#efe6d2"], ["black tie","gold","crystal"]),
+  mood("ev_neon_rave", "Neon Rooftop Party", "UV paint, DJ, neon everything.", ["vibrant","playful","dark","urban"], ["#ff006e","#00e5ff","#7c3aed","#ffbe0b","#0b0f1a"], ["UV paint","DJ","neon"]),
+  mood("ev_beach_bonfire", "Beach Bonfire", "Driftwood, bonfire, guitar, mats on sand.", ["natural","tropical","rustic","warm"], ["#f6b93b","#c1502e","#f0e6d2","#05668d","#3b2a1a"], ["bonfire","driftwood","mats"]),
+ ],
+ "Watches & EDC": [
+  mini("ed_field_watch", "Field Watch", "Simple, legible, canvas strap.", ["practical","rustic","clear","natural"], "⌚", ["38 mm","canvas strap","lume"], "#e8e2d0"),
+  mini("ed_digital_tough", "Tough Digital", "Shock-proof digital, does everything.", ["practical","industrial","construction","clear"], "⏱", ["shockproof","solar","alarm"], "#e9ecee"),
+  mini("ed_smartwatch", "Smartwatch", "Notifications, calls, fitness on the wrist.", ["modern","technical","practical","clear"], "📟", ["notifications","GPS","health"], "#eef3f7"),
+  mini("ed_dress_gold", "Gold Dress Watch", "Thin gold case, leather strap.", ["luxe","formal","classic","editorial"], "🕰", ["gold","thin","leather"], "#1b1b1b", "#d4af37"),
+  mini("ed_dive_steel", "Steel Dive Watch", "Rotating bezel, steel bracelet.", ["bold","modern","industrial","classic"], "🌊", ["200 m","steel","bezel"], "#dfe6ea"),
+  mini("ed_multitool", "Multi-Tool + Tape", "Multi-tool, 5 m tape, pencil.", ["construction","practical","rustic","industrial"], "🛠", ["multi-tool","5 m tape","carpenter pencil"], "#fff3d6"),
+  mini("ed_minimal_carry", "Minimal Carry", "Phone, slim wallet, one key. Done.", ["minimal","clear","modern","light"], "🔑", ["slim wallet","one key","phone"], "#f4f4f1"),
+  mini("ed_creator_kit", "Creator Pocket Kit", "Pocket camera, lav mic, power bank.", ["technical","friendly","modern","youtube"], "🎥", ["pocket cam","lav mic","power bank"], "#e6f3f1"),
+  mini("ed_leather_notebook", "Leather Notebook & Pen", "Worn leather notebook, brass pen.", ["craft","warm","rustic","classic"], "📓", ["leather","brass pen","sketches"], "#efe1c6"),
+  mini("ed_neon_gadgets", "Colorful Gadgets", "Translucent neon tech toys.", ["vibrant","playful","technical","bold"], "🎮", ["translucent","neon","fidget"], "#ffe5ec"),
+ ],
+ "Kids' Room & Nursery": [
+  mood("kd_warm_wood", "Warm Wood Nursery", "Solid wood crib, oat linen, soft rug.", ["warm","natural","soft","craft"], ["#c8a97e","#efe6d8","#8b5a2b","#ffffff","#9caf88"], ["wood crib","oat linen","wool rug"]),
+  mood("kd_light_airy", "Light & Airy", "White walls, sheer curtains, pale oak.", ["light","calm","natural","soft"], ["#ffffff","#f6f3ec","#e3d9c6","#cfe8ef","#c2a878"], ["sheer curtains","pale oak","white"]),
+  mood("kd_jungle_mural", "Jungle Mural Room", "Hand-painted palms and animals on one wall.", ["tropical","friendly","natural","warm"], ["#2f5d3a","#83b735","#f6b93b","#f4ecd8","#c1502e"], ["mural","palms","animals"]),
+  mood("kd_thai_textile", "Thai Textile Nursery", "Handwoven cotton, indigo, little elephant motifs.", ["thai","craft","warm","bilingual"], ["#1f3b73","#d4a017","#f3efe6","#c1502e","#ffffff"], ["indigo cotton","elephant motif","bilingual books"]),
+  mood("kd_montessori", "Montessori Low Room", "Floor bed, low shelves, everything reachable.", ["practical","natural","clear","calm"], ["#e9e4d8","#c8a97e","#9caf88","#ffffff","#5c4033"], ["floor bed","low shelves","open toys"]),
+  mood("kd_builder_play", "Little Builder Corner", "Wooden blocks, tool bench, kid hard hat.", ["construction","friendly","warm","playful"], ["#ffc300","#c8a97e","#ff6b00","#ffffff","#2b2b2b"], ["wood blocks","tool bench","kid hard hat"]),
+  mood("kd_sage_cloud", "Sage & Cloud", "Sage walls, cloud shelf, soft lamp.", ["soft","calm","natural","modern"], ["#9caf88","#c7d3bf","#ffffff","#e9e4d8","#c8a97e"], ["sage paint","cloud shelf","soft lamp"]),
+  mood("kd_reading_nook", "Reading Nook", "Window seat, cushions, bookshelf wall.", ["warm","friendly","craft","light"], ["#f6e7d0","#c8a97e","#7d9a6f","#ffffff","#c1502e"], ["window seat","cushions","book wall"]),
+  mood("kd_rainbow_bright", "Rainbow Bright", "Primary colors, rainbow rug, toys everywhere.", ["vibrant","playful","bold","friendly"], ["#e63946","#ffbe0b","#3a86ff","#2ec4b6","#ffffff"], ["rainbow rug","primary colors","toys"]),
+  mood("kd_princess_luxe", "Princess Luxe", "Canopy bed, pink velvet, gold mirror.", ["luxe","playful","soft","classic"], ["#f8c8d8","#e4a3b8","#d4af37","#ffffff","#cdb4db"], ["canopy","velvet","gold mirror"]),
+  mood("kd_scandi_mono", "Monochrome Scandi", "Black-and-white prints, grey felt.", ["minimal","modern","calm","cool"], ["#ffffff","#2b2b2b","#c9c9c9","#e5e5e5","#7a7a7a"], ["B&W prints","felt","grey"]),
+  mood("kd_dark_moody", "Moody Dark Nursery", "Deep navy walls, brass, starry ceiling.", ["dark","calm","luxe","bold"], ["#0f2340","#1d3c6e","#c9a227","#e8dcc2","#ffffff"], ["navy walls","star ceiling","brass"]),
+ ],
+ "Podcast & Audio Branding": [
+  sound("pd_acoustic_intro", "Acoustic Guitar Intro", "5-second fingerpicked sting, warm room tone.", ["warm","natural","craft","friendly"], 92, "#c8a97e", ["fingerpicked","5 s sting","room tone"]),
+  sound("pd_site_foley", "Job-Site Sound Logo", "Hammer-hit + drill whirr as the audio logo.", ["construction","industrial","clear","rustic"], 120, "#ff6b00", ["hammer hit","drill whirr","2 s"]),
+  sound("pd_bilingual_host", "Bilingual Host Hello", "'Hello / สวัสดีครับ' spoken over a soft pad.", ["bilingual","thai","friendly","clear"], 80, "#139a8f", ["spoken hello","EN/TH","soft pad"]),
+  sound("pd_khaen_loop", "Khaen Loop", "Isan mouth-organ loop, modern beat under it.", ["thai","warm","natural","friendly"], 100, "#d4a017", ["khaen","light beat","Isan"]),
+  sound("pd_lofi_bed", "Lo-Fi Music Bed", "Dusty beat under the whole episode.", ["calm","soft","modern","personal"], 78, "#cdb4db", ["vinyl crackle","78 BPM","bed"]),
+  sound("pd_clean_chime", "Clean Two-Note Chime", "Simple bright two-note brand chime.", ["clear","modern","light","minimal"], 60, "#4dabf7", ["two notes","bright","1 s"]),
+  sound("pd_nature_bed", "Nature Ambience", "Rain, birds, cicadas under the voice.", ["natural","calm","tropical","light"], 50, "#5a7d4f", ["rain","birds","cicadas"]),
+  sound("pd_news_drums", "Big News Drums", "Dramatic newsroom drums and brass.", ["bold","formal","cinematic","editorial"], 128, "#d62828", ["timpani","brass","newsroom"]),
+  sound("pd_synth_dark", "Dark Synth Drone", "Low synth drone, thriller vibe.", ["dark","cinematic","technical","bold"], 70, "#7c3aed", ["drone","sub bass","thriller"]),
+  sound("pd_ukulele_happy", "Happy Ukulele", "Bouncy ukulele and whistles.", ["playful","vibrant","friendly","light"], 140, "#ffbe0b", ["ukulele","whistle","claps"]),
+ ],
+ "This Or That: Words": [
+  word("wd_build", "Build", "Making something real.", ["construction","clear","direct","industrial"], "BUILD", "make it real", "#2f3a40", "#ffffff", "anton"),
+  word("wd_craft", "Craft", "Doing it slowly and well.", ["craft","rustic","warm","natural"], "Craft", "slow and right", "#c8a97e", "#3b2a1a", "fraunces"),
+  word("wd_home", "Home", "Belonging, family, rest.", ["warm","friendly","natural","light"], "home", "where it starts", "#fff8f0", "#3b2a1a", "nunito"),
+  word("wd_sabai", "Sabai", "Thai for easy, comfortable, at ease.", ["thai","calm","bilingual","warm"], "สบาย", "sabai · at ease", "#f4ecd8", "#6b4226", "kanit"),
+  word("wd_honest", "Honest", "Straight talk, no surprises.", ["clear","direct","trust","friendly"], "Honest.", "no surprises", "#ffffff", "#1b1b1b", "manrope"),
+  word("wd_sturdy", "Sturdy", "Built to take a beating.", ["industrial","construction","practical","rustic"], "STURDY", "takes a beating", "#6c757d", "#ffffff", "archivo"),
+  word("wd_bright", "Bright", "Light-filled, open, optimistic.", ["light","modern","friendly","clear"], "bright", "open + optimistic", "#fff3b0", "#3b2a1a", "outfit"),
+  word("wd_grounded", "Grounded", "Earthy, steady, close to nature.", ["natural","rustic","calm","warm"], "grounded", "earth + steady", "#5a4632", "#efe6d2", "lora"),
+  word("wd_together", "Together", "Community, crew, family.", ["friendly","warm","bilingual","personal"], "Together", "ด้วยกัน", "#139a8f", "#ffffff", "prompt"),
+  word("wd_quiet", "Quiet", "Low noise, stillness, restraint.", ["japanese","minimal","calm","light"], "quiet", "", "#ffffff", "#9a9a9a", "notoserifjp"),
+  word("wd_iconic", "Iconic", "Head-turning, status, stand-out.", ["luxe","bold","editorial","formal"], "ICONIC", "", "#0b0b0b", "#d4af37", "playfair"),
+  word("wd_wild", "Wild", "Loud, colorful, unpredictable.", ["vibrant","playful","bold","energetic"], "WILD!", "", "#ff006e", "#ffe066", "syne"),
+  word("wd_mysterious", "Mysterious", "Shadowy, moody, withheld.", ["dark","cinematic","editorial","calm"], "mysterious", "", "#141414", "#9aa3b2", "cormorant"),
+  word("wd_useful", "Useful", "Function first, every time.", ["practical","clear","modern","industrial"], "useful", "function first", "#e9ecee", "#1f1f1f", "plexmono"),
+ ],
+ "Quick-Fire Picks": [
+  mini("qf_morning", "Early Mornings", "Up at 5:30, site by 7.", ["construction","natural","clear","practical"], "🌅", ["5:30 alarm","coffee","site by 7"], "#fff1e6"),
+  mini("qf_late_nights", "Late Nights", "Best ideas after 10pm.", ["dark","cinematic","personal","calm"], "🌙", ["10pm ideas","quiet","screens"], "#1a1a2e", "#f0f0f0"),
+  mini("qf_pickup", "Pickup Truck", "Bed full of tools, mud on the tires.", ["construction","rustic","practical","industrial"], "🛻", ["tools","mud","tow"], "#e9ecee"),
+  mini("qf_scooter", "Scooter", "Weaving through Bangkok traffic.", ["thai","friendly","practical","urban"], "🛵", ["125cc","basket","fast"], "#e6f3f1"),
+  mini("qf_mountains", "Mountains", "Cool air, forests, fog.", ["natural","calm","rustic","light"], "⛰", ["fog","pine","cool air"], "#e9efe9"),
+  mini("qf_beach", "Beach", "Sand, salt, sun.", ["tropical","light","natural","warm"], "🏝", ["sand","salt","sun"], "#e0fbfc"),
+  mini("qf_cook_home", "Cook At Home", "Big pot, family table.", ["warm","friendly","natural","practical"], "🍲", ["family table","big pot","leftovers"], "#fff5e1"),
+  mini("qf_street_food", "Street Food", "Plastic stool, wok fire.", ["thai","raw","friendly","warm"], "🍜", ["wok hei","plastic stool","40 baht"], "#fff1e6"),
+  mini("qf_vinyl", "Vinyl Records", "Physical music, slow listening.", ["warm","craft","retro","personal"], "💿", ["crate digging","slow","warm sound"], "#efe1c6"),
+  mini("qf_streaming", "Streaming Playlists", "Infinite music, zero friction.", ["modern","clear","practical","technical"], "🎧", ["playlists","shuffle","everywhere"], "#eef3f7"),
+  mini("qf_fine_dining", "Tasting Menu", "12 tiny courses, wine pairing.", ["luxe","formal","editorial","calm"], "🍷", ["12 courses","pairing","tweezers"], "#1b1b1b", "#d4af37"),
+  mini("qf_theme_park", "Theme Park Day", "Rides, crowds, sugar, noise.", ["vibrant","playful","loud","energetic"], "🎢", ["rides","crowds","sugar"], "#ffe5ec"),
+ ],
+}
+for _cat, _opts in POOL_2026_10_10D.items():
+    POOL.setdefault(_cat, []).extend(_opts)
+CATEGORY_WEIGHT.update({c: 1.0 for c in POOL_2026_10_10D})
+
+# Loose "family" of each category so the deck order can avoid putting similar things back-to-back.
+CATEGORY_GROUP = {
+    "work": ["SiteAgent Brand Marks", "SiteAgent Pitch Page", "SiteAgent Product Voice", "SiteAgent App Screens", "SMART Visa Pitch Deck"],
+    "homes": ["Home / Interior Style", "Dream Home Finishes", "Japan Cottage Makeover", "Akiya Garden & Exterior", "Outdoor Spaces & Gardens",
+              "Kids' Room & Nursery", "Café & Coffee Shop Design", "Workspace", "Textures & Materials", "Lighting Moods", "Travel & Hotel Vibes"],
+    "type": ["Typography", "Thai Script Typefaces", "Logo / Mark", "Signage & Wayfinding", "Book & Magazine Covers"],
+    "media": ["YouTube Thumbnail Style", "Shorts Cover Styles", "Shorts Pacing & Captions", "Video Editing & Pacing", "Motion & Animation Styles",
+              "Podcast & Audio Branding", "Social Post Layouts", "Channel Trailer Pacing", "Music & Mood"],
+    "words": ["Business Communication Tone", "Brand Voice & Taglines", "Tenant & Partner Messages", "Investor & Lender Messages", "This Or That: Words"],
+    "things": ["Fashion / Personal Look", "Uniforms & Workwear", "Watches & EDC", "Cars & Gear", "Packaging & Merch", "Emoji & Sticker Styles",
+               "Quick-Fire Picks", "Event & Party Styling", "Food Styling"],
+}
+GROUP_OF = {c: g for g, cs in CATEGORY_GROUP.items() for c in cs}
+
+
 # Categories whose pairs must contrast on a tag: one option carries tag X, the other tag Y.
 PAIR_RULES = {"Bangkok Vs Japan Aesthetics": ("bangkok", "japan")}
 
@@ -962,6 +1251,32 @@ def allocate(profile, total, caps, focus=None):
         alloc[c] += 1
     return alloc
 
+def allocate_mixed(profile, total, caps, focus, focus_share, max_per, rng):
+    """Variety mode: ~focus_share of pairs from focus categories, the rest spread over everything else.
+    No category gets more than max_per pairs. Weights get a little jitter so decks differ day to day."""
+    focus = focus or {}
+    capm = {c: min(caps[c], max_per) for c in POOL}
+    alloc = {c: 0 for c in POOL}
+    w = {c: CATEGORY_WEIGHT.get(c, 0.8) * (0.5 + category_uncertainty(profile, c)) * (0.75 + 0.5 * rng.random()) for c in POOL}
+    def fill(cats, n):
+        cats = [c for c in cats if capm[c] > alloc[c]]
+        start = sum(alloc[c] for c in cats)
+        while n > 0 and cats:
+            room = [c for c in cats if alloc[c] < capm[c]]
+            if not room: break
+            sw = sum(w[c] for c in room)
+            target = start + n
+            c = max(room, key=lambda c: target * w[c] / sw - alloc[c])
+            alloc[c] += 1; n -= 1
+        return n
+    fcats = [c for c in POOL if c in focus]
+    ocats = [c for c in POOL if c not in focus]
+    nf = round(total * focus_share) if fcats else 0
+    left = fill(fcats, nf)
+    left = fill(ocats, total - nf + left)
+    if left: fill(fcats, left)        # variety pool ran dry: hand the rest back to focus
+    return alloc
+
 def pair_priority(profile, a, b, rng):
     """Higher = more informative. Contrast on uncertain tags; plus refinement among liked options."""
     diff = set(a["tags"]) ^ set(b["tags"])
@@ -1006,7 +1321,8 @@ def is_check(profile, opt, threshold=-0.35):
     """An option that carries a tag Max has clearly rejected (used sparingly as a re-test)."""
     return any(tag_pref(profile, t)[0] <= threshold for t in opt["tags"])
 
-def build_deck(date, n_pairs, seed=None, allow_repeats=False, focus=None, focus_note=None, check_share=0.12):
+def build_deck(date, n_pairs, seed=None, allow_repeats=False, focus=None, focus_note=None, check_share=0.12,
+               max_per=None, focus_share=None):
     rng = random.Random(seed if seed is not None else date)
     profile = load_json(PROFILE, empty_profile())
     # Most pairs refine inside the liked space; only a small budget re-tests disliked directions,
@@ -1026,7 +1342,11 @@ def build_deck(date, n_pairs, seed=None, allow_repeats=False, focus=None, focus_
         msg = (f"Only {sum(caps.values())} fresh pairs left in the pool (wanted {n_pairs}). "
                "Add more options to POOL" + (", topping up with previously shown options." if allow_repeats else "; deck will be shorter."))
         print("WARNING:", msg); warnings.append(msg)
-    alloc = allocate(profile, n_pairs, caps, focus)
+    mixed = max_per is not None
+    if mixed:
+        alloc = allocate_mixed(profile, n_pairs, caps, focus, focus_share if focus_share is not None else 0.3, max_per, rng)
+    else:
+        alloc = allocate(profile, n_pairs, caps, focus)
     pairs = []
     def pick(cat, opts, k, used):
         cands = list(itertools.combinations(opts, 2))
@@ -1050,7 +1370,59 @@ def build_deck(date, n_pairs, seed=None, allow_repeats=False, focus=None, focus_
             chosen.append((a, b)); used.update((a["id"], b["id"]))
         return chosen
     used = set()
-    order = [c for c in alloc if alloc[c]]; rng.shuffle(order)
+    if mixed:
+        def has_both(c):
+            return any(is_check(profile, o) for o in avail[c]) and any(not is_check(profile, o) for o in avail[c])
+        slots = [c for c in alloc for _ in range(alloc[c])]
+        rng.shuffle(slots)
+        n_chk = round(n_pairs * check_share)
+        k_chk = {c: 0 for c in alloc}
+        for c in slots:
+            if n_chk <= 0: break
+            if has_both(c) and k_chk[c] < alloc[c] and k_chk[c] < 2:
+                k_chk[c] += 1; n_chk -= 1
+        def pick_quota(cat, k_ref, k_ck):
+            opts = avail[cat]
+            cands = [ab for ab in itertools.combinations(opts, 2) if pair_key(ab[0]["id"], ab[1]["id"]) not in seen]
+            if cat in PAIR_RULES:
+                x, y = PAIR_RULES[cat]
+                cands = [(a, b) for a, b in cands if (x in a["tags"] and y in b["tags"]) or (y in a["tags"] and x in b["tags"])]
+            cands.sort(key=lambda ab: -pair_priority(profile, ab[0], ab[1], rng))
+            out, need = [], k_ref + k_ck
+            # phases: fill the check quota, then the refine quota, then any shortfall (refine first)
+            for phase in ("check", "refine", "extra-refine", "extra-check"):
+                for a, b in cands:
+                    if len(out) >= need: break
+                    if a["id"] in used or b["id"] in used: continue
+                    ck = is_check(profile, a) + is_check(profile, b)
+                    if ck == 2: continue
+                    if phase == "check" and not (ck == 1 and k_ck > 0): continue
+                    if phase == "refine" and not (ck == 0 and k_ref > 0): continue
+                    if phase == "extra-refine" and ck != 0: continue
+                    if phase == "extra-check" and ck != 1: continue
+                    out.append((a, b, "check" if ck else "refine")); used.update((a["id"], b["id"]))
+                    if phase == "check": k_ck -= 1
+                    if phase == "refine": k_ref -= 1
+            return out
+        for cat in [c for c in alloc if alloc[c]]:
+            for a, b, purpose in pick_quota(cat, alloc[cat] - k_chk[cat], k_chk[cat]):
+                if rng.random() < 0.5: a, b = b, a
+                pairs.append({"category": cat, "optionA": a, "optionB": b, "repeat": False, "purpose": purpose})
+        for c in alloc: alloc[c] = sum(p["category"] == c for p in pairs)
+        # top up any shortfall from categories that still have room under the cap
+        for _ in range(3):
+            if len(pairs) >= n_pairs: break
+            for cat in sorted(POOL, key=lambda c: (c in (focus or {}), alloc[c])):   # variety first, emptiest first
+                if len(pairs) >= n_pairs: break
+                if alloc[cat] >= max_per: continue
+                n_ck = sum(p["purpose"] == "check" for p in pairs)
+                want_ck = 1 if n_ck < round(n_pairs * check_share) else 0
+                for a, b, purpose in pick_quota(cat, 1 - want_ck, want_ck):
+                    if rng.random() < 0.5: a, b = b, a
+                    pairs.append({"category": cat, "optionA": a, "optionB": b, "repeat": False, "purpose": purpose})
+                    alloc[cat] += 1
+    order = [] if mixed else [c for c in alloc if alloc[c]]
+    rng.shuffle(order)
     for cat in order:
         k = alloc[cat]
         got = pick(cat, avail[cat], k, used)
@@ -1074,6 +1446,15 @@ def build_deck(date, n_pairs, seed=None, allow_repeats=False, focus=None, focus_
             for a, b in pick(cat, POOL[cat], min(need, 2), used):
                 pairs.append({"category": cat, "optionA": a, "optionB": b, "repeat": True})
     rng.shuffle(pairs)
+    if mixed:   # greedy order: never the same category twice in a row, and avoid the same family back-to-back
+        rest, seq = pairs[:], []
+        while rest:
+            last = seq[-1]["category"] if seq else None
+            lg = GROUP_OF.get(last, last)
+            nxt = (next((p for p in rest if p["category"] != last and GROUP_OF.get(p["category"], p["category"]) != lg), None)
+                   or next((p for p in rest if p["category"] != last), None) or rest[0])
+            rest.remove(nxt); seq.append(nxt)
+        pairs = seq
     for i in range(1, len(pairs)):              # avoid back-to-back same category
         if pairs[i]["category"] == pairs[i-1]["category"]:
             for j in range(i + 1, len(pairs)):
@@ -1170,6 +1551,8 @@ def main():
     ap.add_argument("--seed")
     ap.add_argument("--focus", help="comma-separated category names to boost (x3) for this deck, i.e. what Max is working on now")
     ap.add_argument("--focus-note", help="one-line note on why these categories are in focus (saved in the deck)")
+    ap.add_argument("--max-per-category", type=int, help="variety mode: cap pairs per category (e.g. 4)")
+    ap.add_argument("--focus-share", type=float, help="variety mode: share of pairs from --focus categories (default 0.3)")
     ap.add_argument("--check-share", type=float, default=0.12, help="share of pairs that re-test disliked directions (default 0.12)")
     ap.add_argument("--allow-repeats", action="store_true", help="if the fresh pool runs out, top up with previously shown options")
     a = ap.parse_args()
@@ -1200,7 +1583,8 @@ def main():
         print(f"{out} exists (use --force to regenerate). Re-rendering HTML from it.")
         deck = load_json(out, None)
     else:
-        deck = build_deck(date, a.pairs, a.seed, a.allow_repeats, focus, a.focus_note, a.check_share)
+        deck = build_deck(date, a.pairs, a.seed, a.allow_repeats, focus, a.focus_note, a.check_share,
+                          a.max_per_category, a.focus_share)
         with open(out, "w") as f: json.dump(deck, f, indent=1, ensure_ascii=False)
         fr = deck["freshness"]
         print(f"Wrote {out}: {len(deck['pairs'])} pairs; {fr['never_shown_before']}/{fr['option_slots']} option slots never shown before ({fr['share']:.0%}).")
