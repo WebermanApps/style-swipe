@@ -270,6 +270,8 @@ footer{color:var(--muted);font-size:11px;text-align:center;padding:4px 10px calc
 .sharebtn{min-height:44px;min-width:110px;padding:0 18px;border:2px solid #1F1F1F;border-radius:0;background:#FFFDF7;color:#1F1F1F;font-family:Khand,Hind,sans-serif;font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.1em;margin-right:6px}
 .sharebtn:hover{background:#1F1F1F;color:#FFFDF7}
 footer a{color:var(--muted)}
+footer .builtby{flex-basis:100%;justify-content:center;min-height:44px;margin-top:0;font-family:Hind,system-ui,sans-serif;font-size:11px;color:#8A8A8A;text-decoration:none;letter-spacing:.02em}
+footer .builtby:hover{color:#1F1F1F}
 details{font-size:11px;color:var(--muted)}
 @media (max-width:560px){
   .opt{padding:6px}.opt h3{font-size:13px}.opt p{font-size:11px}
@@ -335,6 +337,7 @@ html{color-scheme:light only}
   <button class="sharebtn mw-hover" id="shareBtn" type="button" aria-label="Share this app and your picks">⇪ Share</button>
   <label style="cursor:pointer;text-decoration:underline">Load Another Deck (JSON)<input type="file" id="deckFile" accept=".json,application/json" hidden></label>
   · <a href="#" id="creditsLink">Image Credits</a>
+  <a class="builtby mw-hover" href="https://maxweberman.com" target="_blank" rel="noopener">Built by Max Weberman</a>
 </footer>
 <div class="toast" id="toast"></div>
 <script>
