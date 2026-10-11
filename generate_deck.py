@@ -2349,11 +2349,41 @@ def polish_set_unseen(name, date):
 SINGLE_SCORE = {"love": 2, "yes": 1, "maybe": 0, "no": -1}
 
 # ---------------------------------------------------------------------------
+NOTES = os.path.join(ROOT, "results", "notes.json")   # private (results/ is gitignored); never published
+
+def save_notes(res):
+    """Notes on Votes: store every note from a results export in results/notes.json and print the new or changed ones."""
+    deck = res.get("deck") or "?"
+    found = list(res.get("notes") or [])
+    seen_ids = {n.get("pair_id") or n.get("card_id") for n in found}
+    for p in res.get("picks", []):                      # older exports: notes only inside picks
+        pid = p.get("pair_id") or p.get("card_id")
+        if p.get("note") and pid not in seen_ids:
+            lab = p.get("label") or f"{p.get('labelA')} vs {p.get('labelB')}"
+            found.append({"pair_id" if "pair_id" in p else "card_id": pid, "category": p.get("category"), "label": lab,
+                          "answer": p.get("choice") or p.get("answer"), "note": p["note"], "at": p.get("at")})
+    if not found:
+        print("Notes: none in this export."); return
+    os.makedirs(os.path.dirname(NOTES), exist_ok=True)
+    store = load_json(NOTES, {"note": "Private Style Swipe vote notes from Max. Not published.", "decks": {}})
+    d = store.setdefault("decks", {}).setdefault(deck, {})
+    new = []
+    for n in found:
+        key = n.get("pair_id") or n.get("card_id")
+        if d.get(key, {}).get("note") != n.get("note"): new.append(n)
+        d[key] = {k: v for k, v in n.items() if v is not None}
+    store["updated"] = dt.datetime.now().astimezone().isoformat(timespec="seconds")
+    with open(NOTES, "w") as f: json.dump(store, f, indent=1, ensure_ascii=False)
+    print(f"Notes: {len(found)} in export, {len(new)} new or changed (saved to {NOTES}).")
+    for n in new:
+        print(f"  NOTE [{deck} {n.get('pair_id') or n.get('card_id')}] {n.get('category')}: {n.get('label')} -> {n.get('answer')}\n    \"{n.get('note')}\"")
+
 def ingest(results_path):
     res = load_json(results_path, None)
     if not res: sys.exit(f"Could not read results JSON: {results_path}")
     profile = load_json(PROFILE, empty_profile())
     deck_date = res.get("deck")
+    save_notes(res)
     if deck_date in profile["decks_ingested"]:
         print(f"Deck {deck_date} already ingested; skipping (delete it from profile.decks_ingested to redo).")
         return

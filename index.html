@@ -236,6 +236,23 @@ button.skip:hover{border-color:var(--line)}
 .pz-shake{animation:pzshk 2s ease-in-out infinite}@keyframes pzshk{0%,60%,100%{transform:none}65%,75%,85%{transform:translateX(-4px)}70%,80%{transform:translateX(4px)}}
 @media (prefers-reduced-motion:reduce){.v-pz *{animation:none!important}}
 .pill.app{background:#FFFDF7;color:#1F1F1F;border-color:#1F1F1F;font-weight:700}
+/* Notes on Votes (brand guide, Oct 11 2026): private, localStorage only */
+.notebtn{display:inline-flex;align-items:center;gap:4px;min-height:44px;min-width:44px;padding:0 10px;border:1px solid var(--line);background:#fff;color:#1F1F1F;border-radius:999px;font:600 12px Hind,system-ui,sans-serif;cursor:pointer}
+.notebtn.has{border-color:#05668D;color:#05668D;background:#05668D12}
+.notebtn .ni{font-size:14px}
+#noteSheet{position:fixed;inset:0;z-index:200;display:none;align-items:flex-end;justify-content:center;background:rgba(31,31,31,.18)}
+#noteSheet.on{display:flex}
+#noteSheet .box{width:100%;max-width:560px;background:#FFFDF7;border:1px solid var(--line);border-radius:16px 16px 0 0;padding:14px 14px calc(14px + env(safe-area-inset-bottom));box-shadow:0 -8px 24px rgba(10,10,10,.12)}
+#noteSheet h3{font:700 20px Khand,Hind,sans-serif;margin:0 0 2px;color:#1F1F1F}
+#noteSheet .sub{font-size:12px;color:#6B5E50;margin-bottom:8px}
+#noteSheet textarea{width:100%;min-height:96px;font:16px Hind,system-ui,sans-serif;color:#1F1F1F;background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px;box-sizing:border-box;resize:vertical}
+#noteSheet .nrow{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+#noteSheet .nrow button{min-height:44px;padding:0 16px;border-radius:10px;border:1px solid var(--line);background:#fff;color:#1F1F1F;font:700 13px Hind,system-ui,sans-serif;cursor:pointer}
+#noteSheet .nrow button.save{background:#1F1F1F;color:#fff;border-color:#1F1F1F;margin-left:auto}
+#noteSheet .nrow button.del{color:#A4161A}
+.notes-list>div{display:flex;gap:8px;align-items:flex-start;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--line)}
+.notes-list .nt{font-size:13px}.notes-list .nt i{display:block;color:#1F1F1F;font-style:normal;margin-top:2px;white-space:pre-wrap}
+.notes-add{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}.notes-add select{min-height:44px;flex:1 1 200px;border:1px solid var(--line);border-radius:10px;background:#fff;color:#1F1F1F;font:14px Hind,system-ui,sans-serif;padding:0 8px;max-width:100%}
 /* end screen */
 .end{max-width:760px;width:100%;flex:1;min-height:0;overflow:auto;-webkit-overflow-scrolling:touch;padding:4px 4px 30px}
 .end h2{margin:10px 0 6px}.end h3{margin:16px 0 6px;font-size:15px}
@@ -310,6 +327,10 @@ html{color-scheme:light only}
   </div>
 </div>
 <div class="hint" id="hint"></div>
+<div id="noteSheet" role="dialog" aria-modal="true" aria-labelledby="noteTitle"><div class="box"><h3 id="noteTitle">Add Note</h3><div class="sub" id="noteSub"></div>
+<textarea id="noteText" maxlength="1000" placeholder="Optional: what do you like or not like here?"></textarea>
+<div class="sub" style="margin:6px 0 0">Private: saved on this device only, and in your Export / Copy / Share.</div>
+<div class="nrow"><button class="del mw-hover" id="noteDel">Delete</button><button class="mw-hover" id="noteCancel">Cancel</button><button class="save mw-hover" id="noteSave">Save Note</button></div></div></div>
 <footer>
   <button class="sharebtn mw-hover" id="shareBtn" type="button" aria-label="Share this app and your picks">⇪ Share</button>
   <label style="cursor:pointer;text-decoration:underline">Load Another Deck (JSON)<input type="file" id="deckFile" accept=".json,application/json" hidden></label>
@@ -860,22 +881,22 @@ function render(){stopAllAudio();
  if(!stage.isConnected){$('#main').innerHTML='';$('#main').appendChild(stage)}
  const p=items[idx];
  if(single){
-  stage.innerHTML=`<div class="card mw-card" id="card"><div class="cat"><span class="pill">${esc(p.category)}</span><span class="pill">${idx+1} / ${items.length}</span></div>
+  stage.innerHTML=`<div class="card mw-card" id="card"><div class="cat"><span class="pill">${esc(p.category)}</span><span style="display:flex;gap:6px;align-items:center">${noteBtn(p.id)}<span class="pill">${idx+1} / ${items.length}</span></span></div>
   <h2>Is This You?</h2><div class="opts single">${optHtml(p.option,'S')}</div>
   <div class="stamp no">NO</div><div class="stamp yes">YES</div><div class="stamp maybe">MAYBE</div><div class="stamp love">LOVE ❤</div></div>`;
  }else{
-  stage.innerHTML=`<div class="card mw-card" id="card"><div class="cat"><span style="display:flex;gap:4px;flex-wrap:wrap;min-width:0">${p.app?`<span class="pill app">${esc(p.app)}</span>`:''}<span class="pill">${esc(p.category)}</span>${p.retest?'<span class="pill">Retest</span>':''}</span><span class="pill">${idx+1} / ${items.length}</span></div>
+  stage.innerHTML=`<div class="card mw-card" id="card"><div class="cat"><span style="display:flex;gap:4px;flex-wrap:wrap;min-width:0">${p.app?`<span class="pill app">${esc(p.app)}</span>`:''}<span class="pill">${esc(p.category)}</span>${p.retest?'<span class="pill">Retest</span>':''}</span><span style="display:flex;gap:6px;align-items:center;flex:none">${noteBtn(p.id)}<span class="pill">${idx+1} / ${items.length}</span></span></div>
   <h2>${p.ask?esc(p.ask):p.app?`Which Is Sharper For ${esc(p.app)}?`:'Which Feels More Like You?'}</h2><div class="opts">${optHtml(p.optionA,'A')}${optHtml(p.optionB,'B')}</div>
   <div class="stamp l">THIS</div><div class="stamp r">THAT</div><div class="stamp both">BOTH</div><div class="stamp neither">NEITHER</div><div class="stamp lovea">LOVE ❤</div><div class="stamp loveb">LOVE ❤</div></div>`;
  }
- shownAt=performance.now();bindDrag($('#card'));
+ shownAt=performance.now();bindDrag($('#card'));const nb=$('#card .notebtn');if(nb)nb.onclick=e=>{e.stopPropagation();openNote(p.id)};
 }
 function answer(ans){ // v3
  if(!deck||!single||idx>=items.length)return;
  const c=items[idx],o=c.option;
  picks=picks.filter(x=>x.card_id!==c.id);
  picks.push({card_id:c.id,category:c.category,option_id:o.id,label:o.label,answer:ans,score:SCORE[ans],tags:o.tags||[],
-  purpose:c.purpose||null,source_pair:c.source_pair||undefined,ms:Math.round(performance.now()-shownAt),at:new Date().toISOString()});
+  purpose:c.purpose||null,source_pair:c.source_pair||undefined,note:noteOf(c.id)||undefined,ms:Math.round(performance.now()-shownAt),at:new Date().toISOString()});
  const card=$('#card');
  if(card){const st=card.querySelector('.stamp.'+ans);if(st)st.style.opacity=1;
   const t={no:'translateX(-120%) rotate(-14deg)',yes:'translateX(120%) rotate(14deg)',love:'translateY(-110%) scale(1.03)',maybe:'translateY(110%)'}[ans];
@@ -894,7 +915,7 @@ function choose(choice){ // pairs: A (This), B (That), both, neither, loveA, lov
  picks=picks.filter(x=>x.pair_id!==p.id);
  picks.push({pair_id:p.id,category:p.category,choice,optionA:A.id,optionB:B.id,labelA:A.label,labelB:B.label,
   chosen_id:chosen?chosen.id:null,chosen_label:chosen?chosen.label:null,tagsA:A.tags,tagsB:B.tags,
-  purpose:p.purpose||null,ms:Math.round(performance.now()-shownAt),at:new Date().toISOString()});
+  purpose:p.purpose||null,note:noteOf(p.id)||undefined,ms:Math.round(performance.now()-shownAt),at:new Date().toISOString()});
  const card=$('#card');
  if(card){const st=card.querySelector({A:'.stamp.l',B:'.stamp.r',both:'.stamp.both',neither:'.stamp.neither',loveA:'.stamp.lovea',loveB:'.stamp.loveb'}[choice]||'.none');if(st)st.style.opacity=1;
   const t={A:'translateX(-120%) rotate(-14deg)',B:'translateX(120%) rotate(14deg)',loveA:'translateX(-120%) rotate(-14deg)',loveB:'translateX(120%) rotate(14deg)',both:'translateY(-110%)',neither:'translateY(110%)'}[choice]||'translateY(-110%)';
@@ -906,11 +927,11 @@ function bindDrag(card){
  let sx=0,sy=0,dx=0,dragging=false,id=null;
  const hl=(v)=>{if(single){card.querySelector('.stamp.no').style.opacity=Math.min(1,Math.max(0,-v/110));card.querySelector('.stamp.yes').style.opacity=Math.min(1,Math.max(0,v/110));return}
   card.querySelector('.opt.A').classList.toggle('hot-a',v<-30);card.querySelector('.opt.B').classList.toggle('hot-b',v>30);card.querySelector('.stamp.l').style.opacity=Math.min(1,Math.max(0,-v/110));card.querySelector('.stamp.r').style.opacity=Math.min(1,Math.max(0,v/110))};
- card.addEventListener('pointerdown',e=>{if(e.button>0)return;if(e.target.closest&&e.target.closest('.play'))return;sx=e.clientX;sy=e.clientY;dx=0;dragging=true;id=e.pointerId});
+ card.addEventListener('pointerdown',e=>{if(e.button>0)return;if(e.target.closest&&e.target.closest('.play,.notebtn'))return;sx=e.clientX;sy=e.clientY;dx=0;dragging=true;id=e.pointerId});
  card.addEventListener('pointermove',e=>{if(!dragging||e.pointerId!==id)return;dx=e.clientX-sx;const dy=e.clientY-sy;
   if(Math.abs(dx)>10&&Math.abs(dx)>Math.abs(dy)){card.classList.add('dragging');try{card.setPointerCapture(id)}catch(_){}}
   if(card.classList.contains('dragging')){card.style.transform=`translateX(${dx}px) rotate(${dx/22}deg)`;hl(dx)}});
- const end=e=>{if(!dragging)return;dragging=false;const wasDrag=card.classList.contains('dragging');card.classList.remove('dragging');
+ const end=e=>{if(!dragging)return;if(e.target.closest&&e.target.closest('.notebtn')){dragging=false;return}dragging=false;const wasDrag=card.classList.contains('dragging');card.classList.remove('dragging');
   if(wasDrag){if(single){if(dx<-90)return answer('no');if(dx>90)return answer('yes')}else{if(dx<-90)return choose('A');if(dx>90)return choose('B')}card.style.transform='';hl(0);return}
   if(single)return; // single cards: a tap does nothing (use the buttons)
   const opt=e.target.closest&&e.target.closest('.opt');if(opt&&e.type==='pointerup'){opt.classList.add(opt.dataset.side==='A'?'hot-a':'hot-b');setTimeout(()=>choose(opt.dataset.side),140)}};
@@ -921,7 +942,8 @@ function bindDrag(card){
 function rank(tags){const ranked=Object.entries(tags).sort((a,b)=>b[1]-a[1]);
  return {top:ranked.filter(x=>x[1]>0).slice(0,12).map(([t,s])=>({tag:t,score:s})),avoid:ranked.filter(x=>x[1]<0).slice(-8).reverse().map(([t,s])=>({tag:t,score:s}))}}
 function pairScores(c){return {A:[1,-1],B:[-1,1],both:[1,1],neither:[-1,-1],loveA:[2,-1],loveB:[-1,2]}[c]||[0,0]}
-function buildResults(){
+function buildResults(){const r0=buildResults0();return withNotes(r0)}
+function buildResults0(){
  if(!single){
   const totals={A:0,B:0,both:0,loveA:0,loveB:0,neither:0,skip:0},tags={},byCat={},loved=[];
   for(const p of picks){totals[p.choice]=(totals[p.choice]||0)+1;const [sa,sb]=pairScores(p.choice);
@@ -963,7 +985,7 @@ function shareSummary(){
  const r=buildResults(),t=r.totals||{},top=(r.top_tags||[]).slice(0,5).map(x=>x.tag).join(', '),loved=(r.loved||[]).slice(0,5).join(', ');
  const counts=single?`${t.yes||0} Yes, ${t.love||0} Love, ${t.maybe||0} Maybe, ${t.no||0} No`
   :`${t.A||0} This, ${t.B||0} That, ${t.both||0} Both, ${(t.loveA||0)+(t.loveB||0)} Love, ${t.neither||0} Neither`;
- return `My Style Swipe picks (deck ${deck.date}, ${r.answered}/${items.length}): ${counts}${(r.skipped||[]).length?`, ${r.skipped.length} skipped`:''}.`+(top?` Top tags: ${top}.`:'')+(loved?` Loved: ${loved}.`:'')}
+ return `My Style Swipe picks (deck ${deck.date}, ${r.answered}/${items.length}): ${counts}${(r.skipped||[]).length?`, ${r.skipped.length} skipped`:''}.`+(top?` Top tags: ${top}.`:'')+(loved?` Loved: ${loved}.`:'')+((r.notes||[]).length?` Notes: ${r.notes.map(n=>`[${n.label}] ${n.note}`).join(' | ').slice(0,600)}`:'')}
 function openSms(u){location.href=u}
 const isPhone=()=>/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)||(navigator.maxTouchPoints>1&&/Macintosh/.test(navigator.userAgent));
 async function copyText(txt,msg){try{await navigator.clipboard.writeText(txt);toast(msg||'Copied')}catch(_){const ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity=0;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');toast(msg||'Copied')}catch(e){toast('Copy failed')}ta.remove()}}
@@ -998,12 +1020,43 @@ function showEnd(){
  <h3>Tags You Lean Toward</h3><div class="bars">${r.top_tags.map(x=>bar(x,'var(--ok)')).join('')||'<span class="hint">None yet</span>'}</div>
  <h3>Tags You Avoid</h3><div class="bars">${r.avoided_tags.map(x=>bar(x,'var(--no)')).join('')||'<span class="hint">None yet</span>'}</div>
  ${cats}
+ ${notesSection(r)}
  <h3>Send Results Back</h3><div class="hint" style="text-align:left;padding:0">Download the JSON file, or copy the text below and paste it into a chat with your agent.</div>
  <div class="btnrow"><button class="primary mw-hover" id="eDl">⬇ Export JSON</button><button class="mw-hover" id="eCp">Copy JSON</button><button class="sharebtn mw-hover" id="eSh">⇪ Share</button><button class="mw-hover" id="eBack">↶ Back To Last Card</button><button class="mw-hover" id="eReset">Start Over</button></div>
  <textarea id="resText" readonly>${esc(JSON.stringify(r,null,1))}</textarea></div>`;
- $('#eDl').onclick=download;$('#eCp').onclick=copy;$('#eSh').onclick=share;$('#eBack').onclick=undo;
+ wireNotesSection();$('#eDl').onclick=download;$('#eCp').onclick=copy;$('#eSh').onclick=share;$('#eBack').onclick=undo;
  $('#eReset').onclick=()=>{if(confirm('Clear all answers for this deck?')){picks=[];idx=0;save();render()}};
 }
+
+/* ---------- Notes on Votes: private, localStorage only (never in the deck, page or repo) ---------- */
+const notesKey=()=>`styleSwipe:notes:${deck.date}`;
+function readNotes(){try{const n=JSON.parse(localStorage.getItem(notesKey())||'{}');return n&&typeof n==='object'?n:{}}catch(_){return {}}}
+function writeNotes(n){try{localStorage.setItem(notesKey(),JSON.stringify(n))}catch(_){}}
+function noteOf(id){const n=readNotes()[id];return n&&n.note?n.note:''}
+function itemLabel(it){return single?it.option.label:`${it.optionA.label} vs ${it.optionB.label}`}
+function noteBtn(id){const has=!!noteOf(id);return `<button type="button" class="notebtn mw-hover${has?' has':''}" aria-label="${has?'Edit note':'Add note'}" title="E: note"><span class="ni">${has?'📝':'✎'}</span>${has?'Note':'Add Note'}</button>`}
+let noteFor=null,noteAfter=null;
+function openNote(id,after){const it=items.find(x=>x.id===id);if(!it)return;noteFor=id;noteAfter=after||null;
+ $('#noteTitle').textContent=noteOf(id)?'Edit Note':'Add Note';$('#noteSub').textContent=`${it.category} · ${itemLabel(it)}`;
+ $('#noteText').value=noteOf(id);$('#noteDel').style.display=noteOf(id)?'':'none';$('#noteSheet').classList.add('on');setTimeout(()=>$('#noteText').focus(),30)}
+function closeNote(){$('#noteText').blur();$('#noteSheet').classList.remove('on');noteFor=null;const f=noteAfter;noteAfter=null;if(f)f();else if(deck&&idx<items.length){const c=$('#card');if(c){const it=items[idx];const nb=c.querySelector('.notebtn');if(nb){nb.outerHTML=noteBtn(it.id);const n2=c.querySelector('.notebtn');n2.onclick=e=>{e.stopPropagation();openNote(it.id)}}}}}
+function setNote(id,txt){const n=readNotes();txt=(txt||'').trim();if(txt)n[id]={note:txt,at:new Date().toISOString()};else delete n[id];writeNotes(n);
+ const p=picks.find(x=>(x.pair_id||x.card_id)===id);if(p){if(txt)p.note=txt;else delete p.note;save()}}
+function withNotes(r){const n=readNotes();
+ (r.picks||[]).forEach(p=>{const id=p.pair_id||p.card_id;if(n[id])p.note=n[id].note;else delete p.note});
+ r.notes=Object.entries(n).filter(([id])=>items.some(x=>x.id===id)).map(([id,v])=>{const it=items.find(x=>x.id===id),p=picks.find(x=>(x.pair_id||x.card_id)===id);
+  return {[single?'card_id':'pair_id']:id,category:it.category,label:itemLabel(it),answer:p?(p.choice||p.answer):null,note:v.note,at:v.at}});
+ return r}
+function notesSection(r){const ns=r.notes||[];
+ const opts=items.filter(it=>!noteOf(it.id)).map(it=>`<option value="${esc(it.id)}">${esc(itemLabel(it)).slice(0,70)}</option>`).join('');
+ return `<h3>Your Notes</h3><div class="notes-list">${ns.map(n=>{const id=n.pair_id||n.card_id;return `<div><span class="nt"><b>${esc(n.label)}</b>${n.answer?` · ${esc(n.answer)}`:''}<i>${esc(n.note)}</i></span><button class="notebtn has mw-hover" data-note="${esc(id)}"><span class="ni">📝</span>Edit</button></div>`}).join('')||'<div class="hint" style="padding:0;text-align:left">No notes yet. Notes are optional.</div>'}</div>
+ ${opts?`<div class="notes-add"><select id="noteAddSel" aria-label="Pick a pair to add a note to">${opts}</select><button class="notebtn mw-hover" id="noteAddBtn"><span class="ni">✎</span>Add Note</button></div>`:''}`}
+function wireNotesSection(){document.querySelectorAll('.notes-list [data-note]').forEach(b=>b.onclick=()=>openNote(b.dataset.note,showEnd));
+ const ab=$('#noteAddBtn');if(ab)ab.onclick=()=>openNote($('#noteAddSel').value,showEnd)}
+$('#noteSave').onclick=()=>{if(noteFor){setNote(noteFor,$('#noteText').value);toast('Note saved')}closeNote()};
+$('#noteCancel').onclick=()=>closeNote();
+$('#noteDel').onclick=()=>{if(noteFor){setNote(noteFor,'');toast('Note deleted')}closeNote()};
+$('#noteSheet').addEventListener('click',e=>{if(e.target.id==='noteSheet')closeNote()});
 
 /* ---------- wiring ---------- */
 $('#bA').onclick=()=>choose('A');$('#bB').onclick=()=>choose('B');$('#bN').onclick=()=>choose('neither');$('#bBoth').onclick=()=>choose('both');$('#bSkip').onclick=()=>{setLove(false);choose('skip')};$('#bU').onclick=()=>{setLove(false);undo()};
@@ -1011,7 +1064,7 @@ $('#bLoveP').onclick=()=>{setLove(!loveArmed);if(loveArmed)toast('Now tap the op
 $('#bNo').onclick=()=>answer('no');$('#bMaybe').onclick=()=>answer('maybe');$('#bLove').onclick=()=>answer('love');$('#bYes').onclick=()=>answer('yes');$('#bU3').onclick=undo;
 $('#btnExportTop').onclick=()=>{if(deck)download()};
 $('#shareBtn').onclick=share;
-document.addEventListener('keydown',e=>{if(e.target.tagName==='TEXTAREA'||!deck)return;const k=e.key;
+document.addEventListener('keydown',e=>{if($('#noteSheet').classList.contains('on')){if(e.key==='Escape')closeNote();return}if(e.target.tagName==='TEXTAREA'||e.target.tagName==='SELECT'||!deck)return;const k=e.key;if(k==='e'&&!e.metaKey&&!e.ctrlKey&&idx<items.length){e.preventDefault();openNote(items[idx].id);return}
  if(k==='Backspace'||k==='z'){e.preventDefault();return undo()}
  if(single){if(k==='s')answer('skip');else if(k==='ArrowLeft')answer('no');else if(k==='ArrowRight')answer('yes');else if(k==='m'||k==='ArrowDown')answer('maybe');else if(k==='l'||k==='ArrowUp')answer('love');return}
  if(k==='ArrowLeft')choose('A');else if(k==='ArrowRight')choose('B');else if(k==='ArrowDown'||k==='n')choose('neither');else if(k==='b'||k==='ArrowUp')choose('both');else if(k==='s')choose('skip');else if(k==='l')setLove(!loveArmed);else if(k==='Escape')setLove(false)});
