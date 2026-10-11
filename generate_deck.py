@@ -1542,6 +1542,305 @@ GROUP_OF = {c: g for g, cs in CATEGORY_GROUP.items() for c in cs}
 GROUP_OF.setdefault("Swipe Controls", "Swipe Controls")
 for _c in PZ: GROUP_OF.setdefault(_c, _c)
 
+# ---- Niko & Vivian deck (2026-10-11b): visual AND functional choices for the apps Max built for his clients ----
+# Home Guide (Moschouris Residence), Finish Questions, Site Walk and Room Photos, mocked with each app's real
+# room names, questions, checklist items and buttons (no links, no contact details). Plus retests of the
+# app-polish-spec 'Topics To Retest' and 4 Swipe Controls pairs inside Max's current lean. Light mode only.
+NVAPPS = {
+ "hg": {"name": "Home Guide", "title": "Your Home Guide", "sub": "Moschouris Residence", "cta": "Call Max", "item": "Maintenance Schedule", "mark": "HG", "img": "ext_craftsman"},
+ "fq": {"name": "Finish Questions", "title": "Finish Questions", "sub": "19 questions in 15 rooms", "cta": "Send Answers", "item": "Mud room floor tile?", "mark": "FQ", "img": "int_modernkitchen"},
+ "sw": {"name": "Site Walk", "title": "Moschouris Site Walk", "sub": "7 stops · Basement to Exterior", "cta": "Finish and Share", "item": "Stop 1: Basement Mechanical Room", "mark": "SW", "img": "base_site"},
+ "rp": {"name": "Room Photos", "title": "Room Photos", "sub": "Moschouris room photos", "cta": "Add Photos", "item": "Living Area 004", "mark": "RP", "img": "tr_boutique_lobby"},
+ "sa": {"name": "SiteAgent Pitch", "title": "The AI Site Assistant for Builders", "sub": "Seven agents. One assistant. Zero extra admin.", "cta": "Book a Demo", "item": "Daily Report ready to approve", "mark": "SA", "img": "base_site"},
+}
+def nv(kind, app, i, label, desc, tags, **p):
+    c = NVAPPS[app]
+    return {"id": f"nv_{kind}_{i}", "label": label, "desc": desc, "tags": tags, "app": c["name"],
+            "visual": {"type": "polish", "kind": kind, "app": c["name"], "c": c, "p": p}}
+
+HG_AZ = ["1/2 Bath", "Coatroom", "Dining Room", "Foyer", "Gallery", "Greatroom", "Kitchen", "Lanai", "Mud Room", "Office"]
+HG_LEVELS = [["Basement", ["Gym", "Mech Room"]], ["First Floor", ["Foyer", "Kitchen"]], ["Second Floor", ["Shoe Den"]]]
+HG_MAINT = ["Furnace 1 Humidifier", "Sump Pump 1", "Water Filter System", "ERV System", "Water Heater 1", "Irrigation Controller"]
+HG_SECTIONS = ["Emergencies", "Who to Call", "Maintenance Schedule", "Warranties", "Shutoffs & Key Locations", "Home Systems & Equipment"]
+FQ_ROOMS = ["Foyer 110", "Mud Room 116", "Half Bath 115", "Laundry 203", "Bedroom 201", "Bathroom 204", "Closet 209"]
+FQ_AZ = ["Bathroom 204", "Bedroom 201", "Bedroom 206", "Closet 209", "Foyer 110", "Gym 012", "Half Bath 115", "Laundry 203", "Living Area 004", "Mud Room 116"]
+FQ_WALK = [["Basement", ["Living Area 004", "Gym 012"]], ["First Floor", ["Foyer 110", "Mud Room 116"]], ["Second Floor", ["Laundry 203"]]]
+SW_ITEMS = ["Water Filter System", "Sump Pump 1 (Check)", "ERV System", "Furnace 1 Humidifier", "Water Heater 1 (Rinnai)", "Electrical Panels (2)"]
+SW_STOPS = ["Basement Mechanical Room", "Unfinished Basement Area", "Finished Basement Area", "Main Level", "Master Suite", "Upper Level", "Exterior"]
+RP_AZ = [["Bathroom 005", 3], ["Family Suite 002", 6], ["Gym 012", 0], ["Kitchen 006", 8], ["Living Area 004", 4], ["Mud Room 116", 0]]
+RP_LEVELS = [["Basement", 14], ["First Floor", 22], ["Second Floor", 18]]
+SLABS = [["Carrara Fina quartz", "linear-gradient(135deg,#f4f4f2 0,#e6e6e3 40%,#cfd0cf 42%,#f1f1ef 46%,#e9e9e6 100%)"],
+         ["Calacatta Vivo quartz", "linear-gradient(120deg,#fbf8f2 0,#f1e9da 35%,#c9a978 37%,#f6f0e4 40%,#efe6d4 100%)"],
+         ["Mystery White marble", "linear-gradient(150deg,#f2f2f2 0,#d9dbdc 30%,#9aa0a4 31%,#e3e4e5 36%,#f0f0f0 100%)"],
+         ["Porcelain slab", "linear-gradient(135deg,#f3efe8,#e7e1d6)"]]
+
+NV = []   # (category, app key, option A, option B)
+def nvadd(cat, app, a, b): NV.append((cat, app, a, b))
+
+# --- Home Guide (Moschouris Residence) ---
+nvadd("List Sorting", "hg",
+ nv("sort", "hg", 1, "A–Z Rooms, Sort Chips On Top", "Rooms A to Z by default. Chips switch to By Level or By Trade.", ["clear", "direct", "practical", "modern"],
+    mode="az", chips=["A–Z", "By Level", "By Trade"], items=HG_AZ, head="Finishes by Room"),
+ nv("sort", "hg", 2, "Grouped By Level, A–Z Inside", "Basement, First Floor, Second Floor headers, rooms A to Z under each.", ["practical", "clear", "architectural", "friendly"],
+    mode="level", chips=["A–Z", "By Level", "By Trade"], groups=HG_LEVELS, head="Finishes by Room"))
+nvadd("Condensed Lists", "hg",
+ nv("rows", "hg", 1, "Tap A Row, It Expands In Place", "One compact row per task. The tapped row opens right there.", ["practical", "clear", "minimal", "direct"],
+    mode="expand", items=HG_MAINT, open=0, detail=["Replace the pad", "Every fall · Mech Room"], head="Maintenance Schedule"),
+ nv("rows", "hg", 2, "Tap A Row, Details Slide Up", "Same compact rows. Details open in a bottom sheet over the list.", ["clear", "modern", "soft", "tactile"],
+    mode="sheet", items=HG_MAINT, open=0, detail=["Replace the pad", "Every fall · Mech Room"], head="Maintenance Schedule"))
+nvadd("Condensed Lists", "hg",
+ nv("rows", "hg", 3, "Expand All And Collapse All Buttons", "Rows can all open at once. Two small buttons open or close everything.", ["practical", "direct", "clear", "efficient"],
+    mode="toggle", items=HG_SECTIONS[1:5], details=["Plumber · Electrician · HVAC", "6 tasks this fall", "Appliances · Roof · Windows", "Water · Gas · Power"], head="Good to Know"),
+ nv("rows", "hg", 4, "Only One Row Open At A Time", "Opening a row closes the last one, so the list stays short.", ["minimal", "tidy", "clear", "calm"],
+    mode="onlyone", items=HG_SECTIONS[1:6], open=4, detail=["Furnace 1 · Water Heater 1", "Sump Pump 1 · ERV System"], head="Good to Know"))
+nvadd("Notifications", "hg",
+ nv("notify", "hg", 1, "Add All To My Calendar", "One tap puts every maintenance task in their phone calendar.", ["practical", "calm", "clear", "personal"],
+    mode="calendar", events=[["Oct 15", "Change furnace filters"], ["Nov 1", "Test sump pumps"], ["Nov 20", "Shut off irrigation"]]),
+ nv("notify", "hg", 2, "Remind Me: A Push From The App", "The guide pings them on the day, with the task and how long it takes.", ["direct", "modern", "practical", "friendly"],
+    mode="push", copy="Time to test Sump Pump 1. Takes about 2 minutes."))
+nvadd("Navigation", "hg",
+ nv("nav", "hg", 1, "Floor Plan First", "Opens on the floor plan. Tap a room to see its finishes.", ["architectural", "tactile", "modern", "natural"],
+    mode="plan", head="First Floor", rooms=["Kitchen", "Pantry", "Greatroom", "Lanai", "Foyer", "Mud Room"], toggle=["Floor Plan", "Room List"]),
+ nv("nav", "hg", 2, "Room List First", "Opens on a list of rooms. The floor plan is one tap away.", ["clear", "practical", "direct", "minimal"],
+    mode="list", head="First Floor", rooms=["Dining Room", "Foyer", "Greatroom", "Kitchen", "Lanai", "Mud Room"], toggle=["Room List", "Floor Plan"]))
+nvadd("Feature Options", "hg",
+ nv("feature", "hg", 1, "Offline Copy On Their Phones", "The whole guide saves on the phone and works with no signal.", ["practical", "calm", "clear", "honest"],
+    mode="offline", copy="Saved on this phone. Works with no signal.", head="Your Home Guide"),
+ nv("feature", "hg", 2, "Live Updates From Max", "Max can add or fix things and they see it right away.", ["personal", "modern", "friendly", "direct"],
+    mode="live", copy="New: warranty info for the Kitchen Cooktop", stamp="Updated by Max · 2 hours ago", head="Your Home Guide"))
+nvadd("Feature Options", "hg",
+ nv("feature", "hg", 3, "Emergencies Pinned On Top", "A red-outlined Emergencies card always sits above every section.", ["direct", "practical", "clear", "construction"],
+    mode="pin", items=HG_SECTIONS[1:5], copy="Emergencies: water, gas and power shutoffs"),
+ nv("feature", "hg", 4, "Search Bar On Top", "Type what you need and jump straight to it.", ["modern", "clear", "practical", "minimal"],
+    mode="search", query="water shut", results=["Water Shutoff for Niko", "Shutoffs & Key Locations", "Water Filter System"]))
+nvadd("App Icon & Favicon", "hg",
+ nv("icon", "hg", 11, "White Tile, Black HG, Faint Grid", "The interim rule: white tile, thin black border, Khand initials, faint grid.", ["minimal", "clear", "technical", "light"],
+    shape="square", bg="#fff", fg="#171717", mark="HG", border=True, grid=True),
+ nv("icon", "hg", 12, "Light Grey Tile, Roofline Over HG", "#EDEDED tile with a thin black roof line above the initials.", ["architectural", "clear", "warm", "personal"],
+    shape="square", bg="#EDEDED", fg="#171717", mark="HG", roof=True))
+nvadd("Imagery Treatment", "hg",
+ nv("image", "hg", 11, "Full-Width Photo, Rounded 14", "True-color room photo across the screen, 14px corners.", ["natural", "clear", "honest", "modern"],
+    key="int_modernkitchen", frame="round", filt="none", room="Kitchen"),
+ nv("image", "hg", 12, "Photo With A Caption Line", "True-color square crop with a small grey caption under it.", ["clear", "practical", "tidy", "light"],
+    key="int_modernkitchen", frame="square", filt="none", caption="Kitchen · First Floor · Oct 2026", room="Kitchen"))
+nvadd("From Max Sign-Off", "hg",
+ nv("signoff", "hg", 1, "Note From Max At The Top", "A short plain note above the sections, signed – Max.", ["personal", "warm", "friendly", "direct"],
+    mode="top", copy="Niko and Vivian, everything about your house is in here. Call me anytime."),
+ nv("signoff", "hg", 2, "Name And Call Max In The Footer", "No note on top. The footer says who built it, with a Call Max button.", ["clear", "direct", "practical", "personal"],
+    mode="footer", copy="Built by Max Weberman"))
+nvadd("Header & Navigation", "hg",
+ nv("hdr", "hg", 1, "Wordmark Left, Share Right, Thin Rule", "The spec header: MAX WEBERMAN, square SHARE, 1px grey rule.", ["light", "clear", "minimal", "modern"],
+    mode="rule"),
+ nv("hdr", "hg", 2, "Gold Monogram Crest Header", "Centered serif MR monogram in gold over the title.", ["luxe", "formal", "classic", "elegant"],
+    mode="crest"))
+nvadd("Onboarding First Screen", "hg",
+ nv("onb", "hg", 1, "Welcome Note, Then Start", "'Welcome home, Niko and Vivian.' One line and a Start button.", ["personal", "warm", "friendly", "clear"],
+    mode="welcome", copy="Welcome home, Niko and Vivian.", sub2="Shutoffs, contacts and upkeep for your house."),
+ nv("onb", "hg", 2, "Numbered Instructions Page", "A formal page of numbered rules before the guide.", ["formal", "plain", "practical", "traditional"],
+    mode="rules", items=["This guide is provided for reference only.", "Consult the Documents Index for warranties.", "Contact the listed trades for service.", "Retain this guide for your records."]))
+
+# --- Finish Questions ---
+nvadd("Navigation", "fq",
+ nv("nav", "fq", 3, "One Question Per Screen", "Big question, answer buttons, Next. Nothing else on screen.", ["clear", "direct", "calm", "practical"],
+    mode="onepage", room="Mud Room 116", step="6 of 19", q="Mud room floor tile?", answers=["Cala Vi. Calacatta 24x24", "Jem Aria Gold 24x48", "Hardwood (no tile)"]),
+ nv("nav", "fq", 4, "All Questions In One Scroll", "Every room and question on one page, grouped by room.", ["practical", "efficient", "clear", "modern"],
+    mode="scroll", qs=[["Mud Room 116", "Mud room floor tile?"], ["Half Bath 115", "Vanity top here?"], ["Bedroom 201", "Carpet in this room?"]]))
+nvadd("Checklists", "fq",
+ nv("check", "fq", 1, "Room Chips Turn Green When Done", "Each room is a chip. Answered rooms turn jungle with a check.", ["clear", "natural", "practical", "modern"],
+    mode="chips", items=FQ_ROOMS, done=3),
+ nv("check", "fq", 2, "Progress Ring: 7 Of 19", "One ring shows how many questions are answered.", ["clear", "modern", "calm", "practical"],
+    mode="ring", done=7, total=19, next="Next: Laundry 203"))
+nvadd("Answer Style", "fq",
+ nv("answer", "fq", 1, "Photo Answer Tiles", "Each answer is a tile with a picture of the material.", ["natural", "tactile", "friendly", "clear"],
+    mode="tiles", q="Shower wall slab material?", answers=SLABS),
+ nv("answer", "fq", 2, "Text Answer Blocks", "Full-width tinted lagoon blocks with the product names.", ["clear", "practical", "direct", "minimal"],
+    mode="text", q="Shower wall slab material?", answers=[s[0] for s in SLABS]))
+nvadd("Feature Options", "fq",
+ nv("feature", "fq", 5, "Not Sure? Snap A Photo", "Next to Not Sure, a camera button: take a photo and Max checks it.", ["practical", "friendly", "tactile", "personal"],
+    mode="notsure-photo", q="Penny tile on shower floor and main floor?", copy="Snap the floor and I'll check it."),
+ nv("feature", "fq", 6, "Not Sure? Leave Max A Note", "Next to Not Sure, a short note box for what they remember.", ["personal", "warm", "friendly", "calm"],
+    mode="notsure-note", q="Penny tile on shower floor and main floor?", copy="I think it's the white one from the showroom…"))
+nvadd("Share Message Copy", "fq",
+ nv("msg2", "fq", 1, "Plain Sentence, Then The Link", "Hi Niko and Vivian, here are the finish questions for your house.", ["personal", "clear", "friendly", "direct"],
+    text="Hi Niko and Vivian, here are the finish questions for your house.", card="Finish Questions · 19 questions"),
+ nv("msg2", "fq", 2, "Count And Time, Then The Link", "19 questions, about 10 minutes. Answer what you know.", ["practical", "direct", "clear", "construction"],
+    text="19 finish questions for the house, about 10 minutes. Answer what you know.", card="Finish Questions · 19 questions"))
+nvadd("Screen Transitions", "fq",
+ nv("trans", "fq", 11, "Next Question Slides In", "The next question slides in from the right, like turning a page.", ["clear", "modern", "practical", "direct"], t="slide", next="Half Bath 115: Vanity top here?"),
+ nv("trans", "fq", 12, "Next Question Rises As A Sheet", "Each question slides up from the bottom as a sheet.", ["soft", "modern", "clear", "tactile"], t="sheet", next="Half Bath 115: Vanity top here?"))
+nvadd("Success & Confirmation", "fq",
+ nv("done", "fq", 1, "Check Plus What Happens Next", "Check draws in: 'Sent to Max.' and what he will do with it.", ["clear", "friendly", "direct", "personal"],
+    mode="next", copy="Sent to Max.", sub2="He will confirm your finishes this week."),
+ nv("done", "fq", 2, "Summary Of Your Answers", "A short list of every answer they gave, with a check on top.", ["practical", "clear", "honest", "calm"],
+    mode="summary", rows=[["Mud Room 116", "Cala Vi. Calacatta 24x24"], ["Bedroom 201", "Bixley Premium, Grounded"], ["Closet 209", "Duchateau Savanna hardwood"], ["Bathroom 204", "Not sure"]]))
+nvadd("Checklists", "fq",
+ nv("check", "fq", 3, "Room List With Jungle Checks", "When all 19 are done, every room shows a quiet jungle check.", ["clear", "natural", "calm", "practical"],
+    mode="alldone", items=FQ_ROOMS[:6]),
+ nv("check", "fq", 4, "Confetti At 19 Of 19", "Bright confetti bursts when the last answer goes in.", ["playful", "vibrant", "loud", "casual"],
+    mode="confetti"))
+nvadd("List Sorting", "fq",
+ nv("sort", "fq", 3, "Walk Order, Room By Room", "Rooms in the order you walk the house, level by level.", ["practical", "construction", "clear", "natural"],
+    mode="walk", groups=FQ_WALK, chips=["Walk Order", "A–Z"], head="Rooms"),
+ nv("sort", "fq", 4, "A–Z Rooms With Sort Chips", "Rooms A to Z by default, with a chip for walk order.", ["clear", "direct", "practical", "modern"],
+    mode="az", items=FQ_AZ, chips=["A–Z", "Walk Order"], head="Rooms"))
+nvadd("From Max Sign-Off", "fq",
+ nv("signoff", "fq", 3, "Thanks Line Under Send", "Under the Send Answers button: 'Thanks, Niko and Vivian. – Max'", ["personal", "warm", "direct", "friendly"],
+    mode="under", copy="Thanks, Niko and Vivian. – Max"),
+ nv("signoff", "fq", 4, "Why It Matters, From Max", "First screen: 'I need these to order the right replacements. – Max'", ["personal", "practical", "clear", "honest"],
+    mode="why", copy="I need these to order the right replacements later. – Max"))
+nvadd("Typography Scale", "fq",
+ nv("qtype", "fq", 1, "Khand Question, Hind Answers", "Tight Khand question, plain Hind answer buttons.", ["clear", "modern", "direct", "friendly"], serif=False),
+ nv("qtype", "fq", 2, "Serif Question, Magazine Style", "A large serif italic question like a magazine page.", ["editorial", "classic", "refined", "soft"], serif=True))
+
+# --- Site Walk ---
+nvadd("Checklists", "sw",
+ nv("check", "sw", 5, "Tap The Row To Check It Off", "The whole row is the button. Done rows turn jungle.", ["practical", "clear", "direct", "modern"],
+    mode="tap", items=SW_ITEMS[:5], done=2, head="Stop 1: Mechanical Room"),
+ nv("check", "sw", 6, "Checkbox Plus A Photo Slot", "Each item has a checkbox and a small photo slot to fill.", ["practical", "construction", "clear", "honest"],
+    mode="photo", items=SW_ITEMS[:5], done=2, head="Stop 1: Mechanical Room"))
+nvadd("Photo Handling", "sw",
+ nv("photo", "sw", 1, "Photo Markup: Draw On It", "Circle and arrow right on the photo to show the spot.", ["tactile", "construction", "practical", "direct"],
+    mode="markup", eq="heater", room="Water Heater 1", copy="Label here"),
+ nv("photo", "sw", 2, "Photo Notes: Type Under It", "A short note under each photo, no drawing.", ["clear", "calm", "practical", "honest"],
+    mode="notes", eq="heater", room="Water Heater 1", copy="Rinnai. New label photo. Gas line on the left."))
+nvadd("Navigation", "sw",
+ nv("nav", "sw", 5, "Big Next Stop Button", "One wide Next Stop button at the bottom of each stop.", ["direct", "clear", "practical", "calm"],
+    mode="nextbtn", stop=2, stops=SW_STOPS),
+ nv("nav", "sw", 6, "Stop Dots To Jump Around", "Numbered dots 1 to 7 on top. Tap any stop, done ones are green.", ["modern", "clear", "tactile", "practical"],
+    mode="dots", stop=2, stops=SW_STOPS))
+nvadd("Feature Options", "sw",
+ nv("feature", "sw", 7, "Offline Mode: Saves On The Phone", "No signal in the basement? Notes and photos save on the phone.", ["practical", "calm", "honest", "construction"],
+    mode="offline", copy="No signal down here. Notes and photos are saved on this phone.", head="Stop 2: Unfinished Basement"),
+ nv("feature", "sw", 8, "Live Sync To Max", "Every check and photo reaches Max as soon as it is taken.", ["modern", "direct", "personal", "friendly"],
+    mode="live", copy="Sump Pump 1 (Check) · photo sent", stamp="Synced to Max · just now", head="Stop 2: Unfinished Basement"))
+nvadd("Feature Options", "sw",
+ nv("feature", "sw", 9, "Voice Note Per Item", "Hold the mic and talk. The app types it out.", ["direct", "tactile", "personal", "modern"],
+    mode="voice", item="Furnace 1 Humidifier", copy="Pad looks fine, water line is dry."),
+ nv("feature", "sw", 10, "Typed Note Per Item", "A small text box under each item.", ["clear", "calm", "practical", "honest"],
+    mode="typed", item="Furnace 1 Humidifier", copy="Pad looks fine, water line is dry."))
+nvadd("Condensed Lists", "sw",
+ nv("rows", "sw", 5, "Compact Equipment Rows That Expand", "One line per item. Tap to see the model and notes.", ["practical", "clear", "minimal", "direct"],
+    mode="expand", items=SW_ITEMS, open=4, detail=["Rinnai · new label photo", "Check the gas valve"], head="Stop 1: Mechanical Room"),
+ nv("rows", "sw", 6, "Equipment Cards With A Photo", "Each item is a card with a photo and its name.", ["natural", "friendly", "clear", "tactile"],
+    mode="cards", items=SW_ITEMS[:3], eqs=["filter", "pump", "erv"], head="Stop 1: Mechanical Room"))
+nvadd("Notifications", "sw",
+ nv("notify", "sw", 3, "Text Max When The Walk Is Done", "Max gets a short text with the stop and photo count.", ["direct", "personal", "casual", "practical"],
+    mode="sms", copy="Niko finished the site walk: 7 of 7 stops, 23 photos."),
+ nv("notify", "sw", 4, "Email Summary With Photos", "An email with every stop, note and photo thumbnail.", ["clear", "practical", "calm", "honest"],
+    mode="email", subject="Moschouris site walk · 7 stops, 23 photos", eqs=["heater", "filter", "pump"]))
+nvadd("Share & Sign-Off", "sw",
+ nv("sharef", "sw", 1, "Finish And Share: One PDF Report", "Finish makes one tidy PDF with every stop and photo.", ["practical", "clear", "construction", "tidy"],
+    mode="pdf"),
+ nv("sharef", "sw", 2, "Finish And Share: A Link", "Finish sends a link to the photos and notes, nothing to download.", ["modern", "direct", "clear", "friendly"],
+    mode="link"))
+nvadd("App Icon & Favicon", "sw",
+ nv("icon", "sw", 13, "Outlined Square, Jungle Check Dot", "White tile, 2px black border, SW, small jungle check in the corner.", ["clear", "natural", "practical", "modern"],
+    shape="square", bg="#fff", fg="#171717", mark="SW", border=True, dot="#0B6E4F"),
+ nv("icon", "sw", 14, "Outlined Square, Faint Grid", "White tile, 2px black border, SW over a faint grid.", ["technical", "construction", "minimal", "clear"],
+    shape="square", bg="#fff", fg="#171717", mark="SW", border=True, grid=True))
+nvadd("Checklists", "sw",
+ nv("check", "sw", 7, "Stop Rows With A Jungle Done Dot", "Plain rows; a small jungle dot marks each finished stop.", ["clear", "calm", "natural", "practical"],
+    mode="dots", items=SW_STOPS[:6], done=3),
+ nv("check", "sw", 8, "Bold Color Stop Tiles", "Each stop is a big saturated color tile.", ["vibrant", "loud", "bold", "lively"],
+    mode="tiles", items=SW_STOPS[:6]))
+nvadd("Feature Options", "sw",
+ nv("feature", "sw", 11, "Simple Stop 3 Of 7 Progress", "Just the stop count and a thin jungle line.", ["clear", "calm", "practical", "minimal"],
+    mode="progress", stop=3, total=7, head="Stop 3: Finished Basement"),
+ nv("feature", "sw", 12, "Points And Badges For Each Stop", "+50 points per stop and a badge at the end.", ["playful", "loud", "vibrant", "casual"],
+    mode="points", head="Stop 3: Finished Basement"))
+
+# --- Room Photos ---
+nvadd("Photo Handling", "rp",
+ nv("photo", "rp", 3, "Three-Up Grid Per Room", "Square thumbnails, three across, under each room name.", ["clear", "practical", "modern", "natural"],
+    mode="grid", room="Living Area 004", keys=["tr_boutique_lobby"] * 6),
+ nv("photo", "rp", 4, "Swipeable Carousel Per Room", "One big photo per room; swipe through, dots show how many.", ["natural", "personal", "tactile", "modern"],
+    mode="carousel", room="Living Area 004", key="tr_boutique_lobby", n=4))
+nvadd("Photo Handling", "rp",
+ nv("photo", "rp", 5, "Shrink Photos Before Upload", "Photos are resized on the phone so they upload fast.", ["practical", "clear", "efficient", "direct"],
+    mode="shrink", copy="12 photos · 48 MB → 9 MB"),
+ nv("photo", "rp", 6, "Keep Full-Size Originals", "Every photo goes up at full quality, even if it is slower.", ["honest", "practical", "natural", "calm"],
+    mode="full", copy="12 photos · 48 MB · full quality"))
+nvadd("List Sorting", "rp",
+ nv("sort", "rp", 5, "Rooms A–Z With Photo Counts", "A to Z by default, each room with its photo count.", ["clear", "direct", "practical", "minimal"],
+    mode="azcount", rooms=RP_AZ, chips=["A–Z", "Level", "Needs Photos"], head="All Rooms", nosub=True),
+ nv("sort", "rp", 6, "Rooms Missing Photos First", "Rooms with no photos float to the top under 'Needs Photos'.", ["practical", "direct", "construction", "clear"],
+    mode="need", rooms=RP_AZ, chips=["A–Z", "Level", "Needs Photos"], head="All Rooms", nosub=True))
+nvadd("Feature Options", "rp",
+ nv("feature", "rp", 13, "Camera Opens Right Away", "Add Photos jumps straight to the camera.", ["direct", "tactile", "practical", "modern"],
+    mode="camera", item="Kitchen 006"),
+ nv("feature", "rp", 14, "Pick From The Photo Library", "Add Photos opens their library to pick photos they already took.", ["calm", "practical", "friendly", "clear"],
+    mode="library", item="Kitchen 006", keys=["int_modernkitchen", "tr_boutique_lobby", "int_boho", "int_midcentury", "tr_glamping", "ext_craftsman"]))
+nvadd("Navigation", "rp",
+ nv("nav", "rp", 7, "Tap A Room On The Floor Plan", "Floor plan with photo counts; tap a room to add photos.", ["architectural", "tactile", "natural", "modern"],
+    mode="plan", head="Basement", rooms=["Gym 012", "Wine 008", "Living Area 004", "Bathroom 005", "Family Suite 002", "Mech Room"], counts=[0, 2, 4, 3, 6, 1], toggle=["Floor Plan", "Room List"]),
+ nv("nav", "rp", 8, "Room List By Level", "Levels as headers, rooms listed under each.", ["clear", "practical", "direct", "calm"],
+    mode="levellist", groups=[["Basement", ["Bathroom 005", "Family Suite 002", "Gym 012", "Living Area 004"]], ["First Floor", ["Kitchen 006", "Mud Room 116"]]]))
+nvadd("Condensed Lists", "rp",
+ nv("rows", "rp", 7, "Room Rows With A Thumbnail Strip", "Each row shows the first few photos as tiny thumbnails.", ["natural", "clear", "friendly", "practical"],
+    mode="thumbs", rooms=RP_AZ[:4], keys=["tr_boutique_lobby", "int_boho", "int_modernkitchen", "int_midcentury"]),
+ nv("rows", "rp", 8, "Room Rows With A Count Badge", "Each row shows only a lagoon badge with the photo count.", ["minimal", "clear", "practical", "direct"],
+    mode="badges", rooms=RP_AZ[:6]))
+nvadd("Share & Sign-Off", "rp",
+ nv("sharef", "rp", 3, "Share By Level", "One Share button per level, with its photo count.", ["practical", "clear", "tidy", "construction"],
+    mode="levels", levels=RP_LEVELS),
+ nv("sharef", "rp", 4, "Share All Photos At Once", "One big Share All button for every room.", ["direct", "clear", "minimal", "modern"],
+    mode="all", total=54))
+nvadd("Imagery Treatment", "rp",
+ nv("image", "rp", 13, "True Color, No Filter", "Photos exactly as taken, 12px corners.", ["natural", "honest", "clear", "modern"],
+    key="tr_boutique_lobby", frame="round", filt="none", room="Living Area 004"),
+ nv("image", "rp", 14, "Bright Lift (+15% Exposure)", "Photos brightened a little so dim rooms read clearly.", ["light", "soft", "warm", "natural"],
+    key="tr_boutique_lobby", frame="round", filt="brightness(1.15) saturate(.95)", room="Living Area 004"))
+nvadd("Share Message Copy", "rp",
+ nv("msg2", "rp", 3, "Plain: Every Room, Sorted By Level", "Here are the room photos, sorted by level.", ["clear", "practical", "direct", "friendly"],
+    text="Here are the room photos, sorted by level.", card="Room Photos · 54 photos"),
+ nv("msg2", "rp", 4, "Personal Note From Max", "Niko, here are today's photos. Every room is in there. – Max", ["personal", "warm", "friendly", "casual"],
+    text="Niko, here are today's photos. Every room is in there. – Max", card="Room Photos · 54 photos"))
+nvadd("Photo Handling", "rp",
+ nv("photo", "rp", 7, "Clean Grid With Room Labels", "Straight square tiles, room name above each set.", ["clear", "natural", "calm", "practical"],
+    mode="grid", room="Kitchen 006", keys=["int_modernkitchen"] * 6),
+ nv("photo", "rp", 8, "Vintage Film Frames", "Photos in sepia film-strip frames with sprocket holes.", ["retro", "editorial", "warm", "craft"],
+    mode="film", room="Kitchen 006", key="int_modernkitchen"))
+nvadd("Empty States", "rp",
+ nv("empty2", "rp", 1, "Camera Icon And One Line", "Grey camera in a circle: 'No photos yet. Add the first one.'", ["clear", "friendly", "minimal", "direct"],
+    mode="icon", copy="No photos yet. Add the first one.", item="Gym 012"),
+ nv("empty2", "rp", 2, "Cartoon Camera Mascot", "A waving cartoon camera: 'Say cheese!'.", ["playful", "cute", "vibrant", "casual"],
+    mode="mascot", copy="Say cheese! No photos yet.", item="Gym 012"))
+
+# --- SiteAgent share card (retest) ---
+nvadd("Share Preview (OG Card)", "sa",
+ nv("og2", "sa", 1, "Site Photo Left, Claim Right", "Site photo on the left, Khand claim and grey subline on the right.", ["construction", "clear", "natural", "practical"],
+    mode="left"),
+ nv("og2", "sa", 2, "Light Grid Card, Big Claim", "Light grey blueprint grid, big Khand claim, small wordmark.", ["construction", "technical", "direct", "modern"],
+    mode="grid"))
+
+# --- Swipe Controls: refine inside the lean (earthy round or pill, gesture hint visible, stamp on swipe) ---
+SC_WORDS["tblt"] = (["This", "Both", "Love", "That"], ["◀", "⇄", "❤", "▶"])
+SC_PAL["earth4"] = ["#3F6E7D", "#5A7D4F", "#B5523B", "#A0703C"]   # dusty lagoon, moss, clay, ochre
+def ctl2(i, label, desc, tags, fmt, style, hint="above", stampov="word", press=None, bg="#FAF3EB"):
+    o = ctl(i, label, desc, tags, fmt, "tblt", "earth4", style, bg)
+    o["visual"].update({"hint": hint, "stampov": stampov, "press": press})
+    return o
+NV_SC = [
+ (ctl2("sc_nv_round_filled", "Earthy Round Buttons, Filled", "Filled clay, moss, ochre circles; hint above; stamp on swipe.", ["warm", "natural", "clear", "colorful"], "round", "filled"),
+  ctl2("sc_nv_round_outline", "Earthy Round Buttons, Outline", "Same circles as outlines, color on the ring and icon only.", ["light", "natural", "minimal", "clear"], "round", "outline")),
+ (ctl2("sc_nv_pill_filled", "Earthy Pills, Filled", "Filled earthy pills with words; hint above; stamp on swipe.", ["warm", "clear", "friendly", "natural"], "pill", "filled"),
+  ctl2("sc_nv_pill_fillpress", "Earthy Pills, Outline Until Pressed", "Outline pills that fill with color when tapped.", ["light", "tactile", "clear", "natural"], "pill", "outline", press="fill")),
+ (ctl2("sc_nv_hint_above", "Hint Line Above The Buttons", "'← This · That →' sits just above the round buttons.", ["clear", "minimal", "practical", "light"], "round", "outline", hint="above"),
+  ctl2("sc_nv_hint_card", "Hint Arrows On The Card Edges", "Faint ← and → arrows sit on the card's left and right edges.", ["minimal", "light", "modern", "calm"], "round", "outline", hint="edges")),
+ (ctl2("sc_nv_stamp_word", "Stamp: Word In Khand Caps", "Swiping shows a tilted outline stamp: THIS or THAT.", ["construction", "craft", "clear", "warm"], "pill", "outline", stampov="word"),
+  ctl2("sc_nv_stamp_icon", "Stamp: Check Icon Plus Word", "Swiping shows a round stamp with a check over the word.", ["clear", "friendly", "natural", "craft"], "pill", "outline", stampov="icon")),
+]
+for _a, _b in NV_SC: POOL[SWIPE_CONTROLS].extend([_a, _b])
+
+for _cat, _app, _a, _b in NV:
+    POOL.setdefault(_cat, []).extend([_a, _b])
+    CATEGORY_WEIGHT.setdefault(_cat, 1.0)
+    GROUP_OF.setdefault(_cat, _cat)
+NV_RETEST = {"App Icon & Favicon", "Imagery Treatment", "Share Message Copy", "From Max Sign-Off", "Screen Transitions", "Share Preview (OG Card)"}
+NV_ASK = {"Feature Options": "Which Should {app} Do?", "Navigation": "Which Works Better For {app}?", "List Sorting": "Which Works Better For {app}?",
+          "Condensed Lists": "Which Works Better For {app}?", "Checklists": "Which Works Better For {app}?", "Notifications": "Which Should {app} Do?",
+          "Photo Handling": "Which Works Better For {app}?", "Share & Sign-Off": "Which Should {app} Do?", "Answer Style": "Which Works Better For {app}?"}
+
 
 # Categories whose pairs must contrast on a tag: one option carries tag X, the other tag Y.
 PAIR_RULES = {"Bangkok Vs Japan Aesthetics": ("bangkok", "japan")}
@@ -1984,6 +2283,69 @@ def build_polish_deck(date, seed=None):
             "freshness": {"option_slots": len(ids), "never_shown_before": sum(i not in shown for i in ids), "share": 1.0},
             "warnings": [], "pairs": pairs, "image_credits": load_json(CREDITS, {})}
 
+def build_nv_deck(date, seed=None):
+    """Niko & Vivian deck (first built 2026-10-11b): 45 hand-paired visual + functional choices for Home Guide,
+    Finish Questions, Site Walk and Room Photos (incl. app-polish-spec retests), 1 SiteAgent share-card retest
+    and 4 Swipe Controls pairs. Every option must be unseen, English-only and light-mode."""
+    rng = random.Random(seed if seed is not None else date)
+    profile = load_json(PROFILE, empty_profile())
+    shown = shown_options(exclude_date=date)
+    pairs = []
+    for cat, app, a, b in NV:
+        if rng.random() < 0.5: a, b = b, a
+        nm = NVAPPS[app]["name"]
+        pairs.append({"category": cat, "app": nm, "ask": NV_ASK.get(cat, "Which Is Sharper For {app}?").format(app=nm),
+                      "retest": cat in NV_RETEST, "optionA": a, "optionB": b})
+    for a, b in NV_SC:
+        if rng.random() < 0.5: a, b = b, a
+        pairs.append({"category": SWIPE_CONTROLS, "app": "All Swipe Apps", "ask": "Which Swipe Controls Feel More Like You?",
+                      "retest": False, "optionA": a, "optionB": b})
+    seen_ids = set()
+    for p in pairs:
+        for o in (p["optionA"], p["optionB"]):
+            assert o["id"] not in shown, f"{o['id']} already shown"
+            assert o["id"] not in seen_ids, f"{o['id']} twice in this deck"
+            assert english_only(o), f"{o['id']} is not English-only: {non_english_reasons(o)}"
+            seen_ids.add(o["id"])
+        p["repeat"] = False
+        ck = is_check(profile, p["optionA"]) + is_check(profile, p["optionB"])
+        assert ck < 2, f"two disliked options in one pair: {p['optionA']['id']} / {p['optionB']['id']}"
+        p["purpose"] = "check" if ck else "refine"
+    rng.shuffle(pairs)
+    rest, seq = pairs[:], []
+    while rest:   # never the same category or app back to back; Swipe Controls spaced out
+        last = seq[-1] if seq else {"category": None, "app": None}
+        since_sc = next((i for i, q in enumerate(reversed(seq)) if q["category"] == SWIPE_CONTROLS), 99)
+        since_ck = next((i for i, q in enumerate(reversed(seq)) if q["purpose"] == "check"), 99)
+        ok = lambda q: (q["category"] != last["category"] and q["app"] != last["app"]
+                        and (q["category"] != SWIPE_CONTROLS or since_sc >= 10) and (q["purpose"] != "check" or since_ck >= 3))
+        nxt = (next((q for q in rest if ok(q)), None) or next((q for q in rest if q["category"] != last["category"] and q["app"] != last["app"]), None)
+               or next((q for q in rest if q["category"] != last["category"]), None) or rest[0])
+        rest.remove(nxt); seq.append(nxt)
+    pairs = [{"id": f"{date}-{i:02d}", **p} for i, p in enumerate(seq, 1)]
+    alloc, apps = {}, {}
+    for p in pairs:
+        alloc[p["category"]] = alloc.get(p["category"], 0) + 1
+        apps[p["app"]] = apps.get(p["app"], 0) + 1
+    ids = [p[o]["id"] for p in pairs for o in ("optionA", "optionB")]
+    return {"date": date, "version": 4, "owner": "Max Weberman", "format": "pairs", "english_only": True, "light_only": True,
+            "title": "Niko And Vivian's Apps: Look And Function",
+            "brands": ["maxweberman.com base: Khand/Hind, black/white/grey + terracotta, lagoon, jungle"],
+            "generated_at": dt.datetime.now().astimezone().isoformat(timespec="seconds"),
+            "allocation": alloc, "apps": apps,
+            "focus": {"categories": sorted({c for c, *_ in NV}), "note": "Standing focus (from Oct 11, 2026): visual and functional choices for Niko and Vivian's apps (Home Guide, Finish Questions, Site Walk, Room Photos), mocked with each app's real rooms, questions and checklist items; plus app-polish-spec retests and Swipe Controls."},
+            "retests": sorted({p["category"] for p in pairs if p["retest"]}),
+            "pair_mix": {"refine": sum(p["purpose"] == "refine" for p in pairs), "check": sum(p["purpose"] == "check" for p in pairs)},
+            "freshness": {"option_slots": len(ids), "never_shown_before": sum(i not in shown for i in ids), "share": round(sum(i not in shown for i in ids) / len(ids), 3)},
+            "warnings": [], "pairs": pairs, "image_credits": load_json(CREDITS, {})}
+
+POLISH_SETS = {"2026-10-10g": lambda date, seed: build_polish_deck(date, seed), "nv": lambda date, seed: build_nv_deck(date, seed)}
+def polish_set_unseen(name, date):
+    shown = shown_options(exclude_date=date)
+    if name == "nv": ids = [o["id"] for _, _, a, b in NV for o in (a, b)] + [o["id"] for a, b in NV_SC for o in (a, b)]
+    else: ids = [o["id"] for lst in PZ.values() for _, a, b in lst for o in (a, b)]
+    return not any(i in shown for i in ids)
+
 SINGLE_SCORE = {"love": 2, "yes": 1, "maybe": 0, "no": -1}
 
 # ---------------------------------------------------------------------------
@@ -2066,6 +2428,7 @@ def inline_images(deck):
     keys = set()
     for o in deck_options(deck):
         v = o["visual"]; keys |= {v.get("key"), (v.get("p") or {}).get("key"), (v.get("c") or {}).get("img")}
+        keys |= set((v.get("p") or {}).get("keys") or [])
         if v.get("type") == "polish" and (v.get("p") or {}).get("layout") == "collage": keys |= {"gd_japanese", "int_japandi", "gd_cottage", "int_cabin"}
     keys -= {None}
     try:
@@ -2112,7 +2475,8 @@ def main():
     ap.add_argument("--date", help="YYYY-MM-DD (default: today, local time)")
     ap.add_argument("--pairs", type=int, default=50, help="deck size: cards (single format) or pairs (--format pairs)")
     ap.add_argument("--format", choices=["pairs", "single"], default="pairs", help="A-vs-B pairs (default: This / That / Both / Love / Neither) or single-option cards (No/Maybe/Love/Yes)")
-    ap.add_argument("--polish", action="store_true", help="build the app-polish deck (95 polish pairs for Max's real apps + 5 Swipe Controls pairs)")
+    ap.add_argument("--polish", action="store_true", help="build a hand-paired app-polish deck: the newest unseen set (Niko & Vivian apps: 45 + 1 retest + 4 Swipe Controls = 50 pairs; or the 10-10g set: 95 + 5)")
+    ap.add_argument("--polish-set", choices=["nv", "2026-10-10g"], help="with --polish: which hand-paired set (default: newest set that is still unseen; 'nv' = Niko & Vivian apps, 50 pairs)")
     ap.add_argument("--convert-from", help="build this deck id as a single-card version of an existing pair deck (e.g. 2026-10-10d)")
     ap.add_argument("--ingest", help="results JSON exported from the app")
     ap.add_argument("--no-embed", action="store_true")
@@ -2153,7 +2517,10 @@ def main():
         deck = load_json(out, None)
     else:
         if a.polish:
-            deck = build_polish_deck(date, a.seed)
+            # newest polish set whose options are all still unseen (Niko & Vivian set first, then the 10-10g set)
+            name = a.polish_set or next((n for n in ("nv", "2026-10-10g") if polish_set_unseen(n, date)), None)
+            if not name: sys.exit("Every polish set has already been shown. Add a new NV/PZ block to generate_deck.py.")
+            deck = POLISH_SETS[name](date, a.seed)
         elif a.convert_from:
             deck = convert_pair_deck(a.convert_from, date, a.pairs)
             print(f"Wrote {out}: {deck['deck_size']} cards from {len(deck['cards'])} options of {a.convert_from}")

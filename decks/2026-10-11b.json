@@ -1,0 +1,4420 @@
+{
+ "date": "2026-10-11b",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Niko And Vivian's Apps: Look And Function",
+ "brands": [
+  "maxweberman.com base: Khand/Hind, black/white/grey + terracotta, lagoon, jungle"
+ ],
+ "generated_at": "2026-10-11T07:48:13+07:00",
+ "allocation": {
+  "Swipe Controls": 4,
+  "Notifications": 2,
+  "Photo Handling": 4,
+  "List Sorting": 3,
+  "Typography Scale": 1,
+  "Imagery Treatment": 2,
+  "Feature Options": 7,
+  "Condensed Lists": 4,
+  "Checklists": 4,
+  "From Max Sign-Off": 2,
+  "Navigation": 4,
+  "Share & Sign-Off": 2,
+  "App Icon & Favicon": 2,
+  "Empty States": 1,
+  "Answer Style": 1,
+  "Share Message Copy": 2,
+  "Onboarding First Screen": 1,
+  "Header & Navigation": 1,
+  "Success & Confirmation": 1,
+  "Screen Transitions": 1,
+  "Share Preview (OG Card)": 1
+ },
+ "apps": {
+  "All Swipe Apps": 4,
+  "Home Guide": 12,
+  "Site Walk": 11,
+  "Finish Questions": 11,
+  "Room Photos": 11,
+  "SiteAgent Pitch": 1
+ },
+ "focus": {
+  "categories": [
+   "Answer Style",
+   "App Icon & Favicon",
+   "Checklists",
+   "Condensed Lists",
+   "Empty States",
+   "Feature Options",
+   "From Max Sign-Off",
+   "Header & Navigation",
+   "Imagery Treatment",
+   "List Sorting",
+   "Navigation",
+   "Notifications",
+   "Onboarding First Screen",
+   "Photo Handling",
+   "Screen Transitions",
+   "Share & Sign-Off",
+   "Share Message Copy",
+   "Share Preview (OG Card)",
+   "Success & Confirmation",
+   "Typography Scale"
+  ],
+  "note": "Standing focus (from Oct 11, 2026): visual and functional choices for Niko and Vivian's apps (Home Guide, Finish Questions, Site Walk, Room Photos), mocked with each app's real rooms, questions and checklist items; plus app-polish-spec retests and Swipe Controls."
+ },
+ "retests": [
+  "App Icon & Favicon",
+  "From Max Sign-Off",
+  "Imagery Treatment",
+  "Screen Transitions",
+  "Share Message Copy",
+  "Share Preview (OG Card)"
+ ],
+ "pair_mix": {
+  "refine": 42,
+  "check": 8
+ },
+ "freshness": {
+  "option_slots": 100,
+  "never_shown_before": 100,
+  "share": 1.0
+ },
+ "warnings": [],
+ "pairs": [
+  {
+   "id": "2026-10-11b-01",
+   "category": "Swipe Controls",
+   "app": "All Swipe Apps",
+   "ask": "Which Swipe Controls Feel More Like You?",
+   "retest": false,
+   "optionA": {
+    "id": "sc_nv_pill_filled",
+    "label": "Earthy Pills, Filled",
+    "desc": "Filled earthy pills with words; hint above; stamp on swipe.",
+    "tags": [
+     "warm",
+     "clear",
+     "friendly",
+     "natural"
+    ],
+    "visual": {
+     "type": "controls",
+     "fmt": "pill",
+     "words": [
+      "This",
+      "Both",
+      "Love",
+      "That"
+     ],
+     "icons": [
+      "◀",
+      "⇄",
+      "❤",
+      "▶"
+     ],
+     "colors": [
+      "#3F6E7D",
+      "#5A7D4F",
+      "#B5523B",
+      "#A0703C"
+     ],
+     "style": "filled",
+     "bg": "#FAF3EB",
+     "font": "Hind",
+     "hint": "above",
+     "stampov": "word",
+     "press": null
+    }
+   },
+   "optionB": {
+    "id": "sc_nv_pill_fillpress",
+    "label": "Earthy Pills, Outline Until Pressed",
+    "desc": "Outline pills that fill with color when tapped.",
+    "tags": [
+     "light",
+     "tactile",
+     "clear",
+     "natural"
+    ],
+    "visual": {
+     "type": "controls",
+     "fmt": "pill",
+     "words": [
+      "This",
+      "Both",
+      "Love",
+      "That"
+     ],
+     "icons": [
+      "◀",
+      "⇄",
+      "❤",
+      "▶"
+     ],
+     "colors": [
+      "#3F6E7D",
+      "#5A7D4F",
+      "#B5523B",
+      "#A0703C"
+     ],
+     "style": "outline",
+     "bg": "#FAF3EB",
+     "font": "Hind",
+     "hint": "above",
+     "stampov": "word",
+     "press": "fill"
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-02",
+   "category": "Notifications",
+   "app": "Home Guide",
+   "ask": "Which Should Home Guide Do?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_notify_2",
+    "label": "Remind Me: A Push From The App",
+    "desc": "The guide pings them on the day, with the task and how long it takes.",
+    "tags": [
+     "direct",
+     "modern",
+     "practical",
+     "friendly"
+    ],
+    "app": "Home Guide",
+    "visual": {
+     "type": "polish",
+     "kind": "notify",
+     "app": "Home Guide",
+     "c": {
+      "name": "Home Guide",
+      "title": "Your Home Guide",
+      "sub": "Moschouris Residence",
+      "cta": "Call Max",
+      "item": "Maintenance Schedule",
+      "mark": "HG",
+      "img": "ext_craftsman"
+     },
+     "p": {
+      "mode": "push",
+      "copy": "Time to test Sump Pump 1. Takes about 2 minutes."
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_notify_1",
+    "label": "Add All To My Calendar",
+    "desc": "One tap puts every maintenance task in their phone calendar.",
+    "tags": [
+     "practical",
+     "calm",
+     "clear",
+     "personal"
+    ],
+    "app": "Home Guide",
+    "visual": {
+     "type": "polish",
+     "kind": "notify",
+     "app": "Home Guide",
+     "c": {
+      "name": "Home Guide",
+      "title": "Your Home Guide",
+      "sub": "Moschouris Residence",
+      "cta": "Call Max",
+      "item": "Maintenance Schedule",
+      "mark": "HG",
+      "img": "ext_craftsman"
+     },
+     "p": {
+      "mode": "calendar",
+      "events": [
+       [
+        "Oct 15",
+        "Change furnace filters"
+       ],
+       [
+        "Nov 1",
+        "Test sump pumps"
+       ],
+       [
+        "Nov 20",
+        "Shut off irrigation"
+       ]
+      ]
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-03",
+   "category": "Photo Handling",
+   "app": "Site Walk",
+   "ask": "Which Works Better For Site Walk?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_photo_2",
+    "label": "Photo Notes: Type Under It",
+    "desc": "A short note under each photo, no drawing.",
+    "tags": [
+     "clear",
+     "calm",
+     "practical",
+     "honest"
+    ],
+    "app": "Site Walk",
+    "visual": {
+     "type": "polish",
+     "kind": "photo",
+     "app": "Site Walk",
+     "c": {
+      "name": "Site Walk",
+      "title": "Moschouris Site Walk",
+      "sub": "7 stops · Basement to Exterior",
+      "cta": "Finish and Share",
+      "item": "Stop 1: Basement Mechanical Room",
+      "mark": "SW",
+      "img": "base_site"
+     },
+     "p": {
+      "mode": "notes",
+      "eq": "heater",
+      "room": "Water Heater 1",
+      "copy": "Rinnai. New label photo. Gas line on the left."
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_photo_1",
+    "label": "Photo Markup: Draw On It",
+    "desc": "Circle and arrow right on the photo to show the spot.",
+    "tags": [
+     "tactile",
+     "construction",
+     "practical",
+     "direct"
+    ],
+    "app": "Site Walk",
+    "visual": {
+     "type": "polish",
+     "kind": "photo",
+     "app": "Site Walk",
+     "c": {
+      "name": "Site Walk",
+      "title": "Moschouris Site Walk",
+      "sub": "7 stops · Basement to Exterior",
+      "cta": "Finish and Share",
+      "item": "Stop 1: Basement Mechanical Room",
+      "mark": "SW",
+      "img": "base_site"
+     },
+     "p": {
+      "mode": "markup",
+      "eq": "heater",
+      "room": "Water Heater 1",
+      "copy": "Label here"
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-04",
+   "category": "List Sorting",
+   "app": "Home Guide",
+   "ask": "Which Works Better For Home Guide?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_sort_2",
+    "label": "Grouped By Level, A–Z Inside",
+    "desc": "Basement, First Floor, Second Floor headers, rooms A to Z under each.",
+    "tags": [
+     "practical",
+     "clear",
+     "architectural",
+     "friendly"
+    ],
+    "app": "Home Guide",
+    "visual": {
+     "type": "polish",
+     "kind": "sort",
+     "app": "Home Guide",
+     "c": {
+      "name": "Home Guide",
+      "title": "Your Home Guide",
+      "sub": "Moschouris Residence",
+      "cta": "Call Max",
+      "item": "Maintenance Schedule",
+      "mark": "HG",
+      "img": "ext_craftsman"
+     },
+     "p": {
+      "mode": "level",
+      "chips": [
+       "A–Z",
+       "By Level",
+       "By Trade"
+      ],
+      "groups": [
+       [
+        "Basement",
+        [
+         "Gym",
+         "Mech Room"
+        ]
+       ],
+       [
+        "First Floor",
+        [
+         "Foyer",
+         "Kitchen"
+        ]
+       ],
+       [
+        "Second Floor",
+        [
+         "Shoe Den"
+        ]
+       ]
+      ],
+      "head": "Finishes by Room"
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_sort_1",
+    "label": "A–Z Rooms, Sort Chips On Top",
+    "desc": "Rooms A to Z by default. Chips switch to By Level or By Trade.",
+    "tags": [
+     "clear",
+     "direct",
+     "practical",
+     "modern"
+    ],
+    "app": "Home Guide",
+    "visual": {
+     "type": "polish",
+     "kind": "sort",
+     "app": "Home Guide",
+     "c": {
+      "name": "Home Guide",
+      "title": "Your Home Guide",
+      "sub": "Moschouris Residence",
+      "cta": "Call Max",
+      "item": "Maintenance Schedule",
+      "mark": "HG",
+      "img": "ext_craftsman"
+     },
+     "p": {
+      "mode": "az",
+      "chips": [
+       "A–Z",
+       "By Level",
+       "By Trade"
+      ],
+      "items": [
+       "1/2 Bath",
+       "Coatroom",
+       "Dining Room",
+       "Foyer",
+       "Gallery",
+       "Greatroom",
+       "Kitchen",
+       "Lanai",
+       "Mud Room",
+       "Office"
+      ],
+      "head": "Finishes by Room"
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-05",
+   "category": "Typography Scale",
+   "app": "Finish Questions",
+   "ask": "Which Is Sharper For Finish Questions?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_qtype_2",
+    "label": "Serif Question, Magazine Style",
+    "desc": "A large serif italic question like a magazine page.",
+    "tags": [
+     "editorial",
+     "classic",
+     "refined",
+     "soft"
+    ],
+    "app": "Finish Questions",
+    "visual": {
+     "type": "polish",
+     "kind": "qtype",
+     "app": "Finish Questions",
+     "c": {
+      "name": "Finish Questions",
+      "title": "Finish Questions",
+      "sub": "19 questions in 15 rooms",
+      "cta": "Send Answers",
+      "item": "Mud room floor tile?",
+      "mark": "FQ",
+      "img": "int_modernkitchen"
+     },
+     "p": {
+      "serif": true
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_qtype_1",
+    "label": "Khand Question, Hind Answers",
+    "desc": "Tight Khand question, plain Hind answer buttons.",
+    "tags": [
+     "clear",
+     "modern",
+     "direct",
+     "friendly"
+    ],
+    "app": "Finish Questions",
+    "visual": {
+     "type": "polish",
+     "kind": "qtype",
+     "app": "Finish Questions",
+     "c": {
+      "name": "Finish Questions",
+      "title": "Finish Questions",
+      "sub": "19 questions in 15 rooms",
+      "cta": "Send Answers",
+      "item": "Mud room floor tile?",
+      "mark": "FQ",
+      "img": "int_modernkitchen"
+     },
+     "p": {
+      "serif": false
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "check"
+  },
+  {
+   "id": "2026-10-11b-06",
+   "category": "Imagery Treatment",
+   "app": "Home Guide",
+   "ask": "Which Is Sharper For Home Guide?",
+   "retest": true,
+   "optionA": {
+    "id": "nv_image_12",
+    "label": "Photo With A Caption Line",
+    "desc": "True-color square crop with a small grey caption under it.",
+    "tags": [
+     "clear",
+     "practical",
+     "tidy",
+     "light"
+    ],
+    "app": "Home Guide",
+    "visual": {
+     "type": "polish",
+     "kind": "image",
+     "app": "Home Guide",
+     "c": {
+      "name": "Home Guide",
+      "title": "Your Home Guide",
+      "sub": "Moschouris Residence",
+      "cta": "Call Max",
+      "item": "Maintenance Schedule",
+      "mark": "HG",
+      "img": "ext_craftsman"
+     },
+     "p": {
+      "key": "int_modernkitchen",
+      "frame": "square",
+      "filt": "none",
+      "caption": "Kitchen · First Floor · Oct 2026",
+      "room": "Kitchen"
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_image_11",
+    "label": "Full-Width Photo, Rounded 14",
+    "desc": "True-color room photo across the screen, 14px corners.",
+    "tags": [
+     "natural",
+     "clear",
+     "honest",
+     "modern"
+    ],
+    "app": "Home Guide",
+    "visual": {
+     "type": "polish",
+     "kind": "image",
+     "app": "Home Guide",
+     "c": {
+      "name": "Home Guide",
+      "title": "Your Home Guide",
+      "sub": "Moschouris Residence",
+      "cta": "Call Max",
+      "item": "Maintenance Schedule",
+      "mark": "HG",
+      "img": "ext_craftsman"
+     },
+     "p": {
+      "key": "int_modernkitchen",
+      "frame": "round",
+      "filt": "none",
+      "room": "Kitchen"
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-07",
+   "category": "Feature Options",
+   "app": "Finish Questions",
+   "ask": "Which Should Finish Questions Do?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_feature_6",
+    "label": "Not Sure? Leave Max A Note",
+    "desc": "Next to Not Sure, a short note box for what they remember.",
+    "tags": [
+     "personal",
+     "warm",
+     "friendly",
+     "calm"
+    ],
+    "app": "Finish Questions",
+    "visual": {
+     "type": "polish",
+     "kind": "feature",
+     "app": "Finish Questions",
+     "c": {
+      "name": "Finish Questions",
+      "title": "Finish Questions",
+      "sub": "19 questions in 15 rooms",
+      "cta": "Send Answers",
+      "item": "Mud room floor tile?",
+      "mark": "FQ",
+      "img": "int_modernkitchen"
+     },
+     "p": {
+      "mode": "notsure-note",
+      "q": "Penny tile on shower floor and main floor?",
+      "copy": "I think it's the white one from the showroom…"
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_feature_5",
+    "label": "Not Sure? Snap A Photo",
+    "desc": "Next to Not Sure, a camera button: take a photo and Max checks it.",
+    "tags": [
+     "practical",
+     "friendly",
+     "tactile",
+     "personal"
+    ],
+    "app": "Finish Questions",
+    "visual": {
+     "type": "polish",
+     "kind": "feature",
+     "app": "Finish Questions",
+     "c": {
+      "name": "Finish Questions",
+      "title": "Finish Questions",
+      "sub": "19 questions in 15 rooms",
+      "cta": "Send Answers",
+      "item": "Mud room floor tile?",
+      "mark": "FQ",
+      "img": "int_modernkitchen"
+     },
+     "p": {
+      "mode": "notsure-photo",
+      "q": "Penny tile on shower floor and main floor?",
+      "copy": "Snap the floor and I'll check it."
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-08",
+   "category": "Condensed Lists",
+   "app": "Site Walk",
+   "ask": "Which Works Better For Site Walk?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_rows_6",
+    "label": "Equipment Cards With A Photo",
+    "desc": "Each item is a card with a photo and its name.",
+    "tags": [
+     "natural",
+     "friendly",
+     "clear",
+     "tactile"
+    ],
+    "app": "Site Walk",
+    "visual": {
+     "type": "polish",
+     "kind": "rows",
+     "app": "Site Walk",
+     "c": {
+      "name": "Site Walk",
+      "title": "Moschouris Site Walk",
+      "sub": "7 stops · Basement to Exterior",
+      "cta": "Finish and Share",
+      "item": "Stop 1: Basement Mechanical Room",
+      "mark": "SW",
+      "img": "base_site"
+     },
+     "p": {
+      "mode": "cards",
+      "items": [
+       "Water Filter System",
+       "Sump Pump 1 (Check)",
+       "ERV System"
+      ],
+      "eqs": [
+       "filter",
+       "pump",
+       "erv"
+      ],
+      "head": "Stop 1: Mechanical Room"
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_rows_5",
+    "label": "Compact Equipment Rows That Expand",
+    "desc": "One line per item. Tap to see the model and notes.",
+    "tags": [
+     "practical",
+     "clear",
+     "minimal",
+     "direct"
+    ],
+    "app": "Site Walk",
+    "visual": {
+     "type": "polish",
+     "kind": "rows",
+     "app": "Site Walk",
+     "c": {
+      "name": "Site Walk",
+      "title": "Moschouris Site Walk",
+      "sub": "7 stops · Basement to Exterior",
+      "cta": "Finish and Share",
+      "item": "Stop 1: Basement Mechanical Room",
+      "mark": "SW",
+      "img": "base_site"
+     },
+     "p": {
+      "mode": "expand",
+      "items": [
+       "Water Filter System",
+       "Sump Pump 1 (Check)",
+       "ERV System",
+       "Furnace 1 Humidifier",
+       "Water Heater 1 (Rinnai)",
+       "Electrical Panels (2)"
+      ],
+      "open": 4,
+      "detail": [
+       "Rinnai · new label photo",
+       "Check the gas valve"
+      ],
+      "head": "Stop 1: Mechanical Room"
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-09",
+   "category": "List Sorting",
+   "app": "Room Photos",
+   "ask": "Which Works Better For Room Photos?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_sort_6",
+    "label": "Rooms Missing Photos First",
+    "desc": "Rooms with no photos float to the top under 'Needs Photos'.",
+    "tags": [
+     "practical",
+     "direct",
+     "construction",
+     "clear"
+    ],
+    "app": "Room Photos",
+    "visual": {
+     "type": "polish",
+     "kind": "sort",
+     "app": "Room Photos",
+     "c": {
+      "name": "Room Photos",
+      "title": "Room Photos",
+      "sub": "Moschouris room photos",
+      "cta": "Add Photos",
+      "item": "Living Area 004",
+      "mark": "RP",
+      "img": "tr_boutique_lobby"
+     },
+     "p": {
+      "mode": "need",
+      "rooms": [
+       [
+        "Bathroom 005",
+        3
+       ],
+       [
+        "Family Suite 002",
+        6
+       ],
+       [
+        "Gym 012",
+        0
+       ],
+       [
+        "Kitchen 006",
+        8
+       ],
+       [
+        "Living Area 004",
+        4
+       ],
+       [
+        "Mud Room 116",
+        0
+       ]
+      ],
+      "chips": [
+       "A–Z",
+       "Level",
+       "Needs Photos"
+      ],
+      "head": "All Rooms",
+      "nosub": true
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_sort_5",
+    "label": "Rooms A–Z With Photo Counts",
+    "desc": "A to Z by default, each room with its photo count.",
+    "tags": [
+     "clear",
+     "direct",
+     "practical",
+     "minimal"
+    ],
+    "app": "Room Photos",
+    "visual": {
+     "type": "polish",
+     "kind": "sort",
+     "app": "Room Photos",
+     "c": {
+      "name": "Room Photos",
+      "title": "Room Photos",
+      "sub": "Moschouris room photos",
+      "cta": "Add Photos",
+      "item": "Living Area 004",
+      "mark": "RP",
+      "img": "tr_boutique_lobby"
+     },
+     "p": {
+      "mode": "azcount",
+      "rooms": [
+       [
+        "Bathroom 005",
+        3
+       ],
+       [
+        "Family Suite 002",
+        6
+       ],
+       [
+        "Gym 012",
+        0
+       ],
+       [
+        "Kitchen 006",
+        8
+       ],
+       [
+        "Living Area 004",
+        4
+       ],
+       [
+        "Mud Room 116",
+        0
+       ]
+      ],
+      "chips": [
+       "A–Z",
+       "Level",
+       "Needs Photos"
+      ],
+      "head": "All Rooms",
+      "nosub": true
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-10",
+   "category": "Checklists",
+   "app": "Site Walk",
+   "ask": "Which Works Better For Site Walk?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_check_7",
+    "label": "Stop Rows With A Jungle Done Dot",
+    "desc": "Plain rows; a small jungle dot marks each finished stop.",
+    "tags": [
+     "clear",
+     "calm",
+     "natural",
+     "practical"
+    ],
+    "app": "Site Walk",
+    "visual": {
+     "type": "polish",
+     "kind": "check",
+     "app": "Site Walk",
+     "c": {
+      "name": "Site Walk",
+      "title": "Moschouris Site Walk",
+      "sub": "7 stops · Basement to Exterior",
+      "cta": "Finish and Share",
+      "item": "Stop 1: Basement Mechanical Room",
+      "mark": "SW",
+      "img": "base_site"
+     },
+     "p": {
+      "mode": "dots",
+      "items": [
+       "Basement Mechanical Room",
+       "Unfinished Basement Area",
+       "Finished Basement Area",
+       "Main Level",
+       "Master Suite",
+       "Upper Level"
+      ],
+      "done": 3
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_check_8",
+    "label": "Bold Color Stop Tiles",
+    "desc": "Each stop is a big saturated color tile.",
+    "tags": [
+     "vibrant",
+     "loud",
+     "bold",
+     "lively"
+    ],
+    "app": "Site Walk",
+    "visual": {
+     "type": "polish",
+     "kind": "check",
+     "app": "Site Walk",
+     "c": {
+      "name": "Site Walk",
+      "title": "Moschouris Site Walk",
+      "sub": "7 stops · Basement to Exterior",
+      "cta": "Finish and Share",
+      "item": "Stop 1: Basement Mechanical Room",
+      "mark": "SW",
+      "img": "base_site"
+     },
+     "p": {
+      "mode": "tiles",
+      "items": [
+       "Basement Mechanical Room",
+       "Unfinished Basement Area",
+       "Finished Basement Area",
+       "Main Level",
+       "Master Suite",
+       "Upper Level"
+      ]
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "check"
+  },
+  {
+   "id": "2026-10-11b-11",
+   "category": "From Max Sign-Off",
+   "app": "Finish Questions",
+   "ask": "Which Is Sharper For Finish Questions?",
+   "retest": true,
+   "optionA": {
+    "id": "nv_signoff_3",
+    "label": "Thanks Line Under Send",
+    "desc": "Under the Send Answers button: 'Thanks, Niko and Vivian. – Max'",
+    "tags": [
+     "personal",
+     "warm",
+     "direct",
+     "friendly"
+    ],
+    "app": "Finish Questions",
+    "visual": {
+     "type": "polish",
+     "kind": "signoff",
+     "app": "Finish Questions",
+     "c": {
+      "name": "Finish Questions",
+      "title": "Finish Questions",
+      "sub": "19 questions in 15 rooms",
+      "cta": "Send Answers",
+      "item": "Mud room floor tile?",
+      "mark": "FQ",
+      "img": "int_modernkitchen"
+     },
+     "p": {
+      "mode": "under",
+      "copy": "Thanks, Niko and Vivian. – Max"
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_signoff_4",
+    "label": "Why It Matters, From Max",
+    "desc": "First screen: 'I need these to order the right replacements. – Max'",
+    "tags": [
+     "personal",
+     "practical",
+     "clear",
+     "honest"
+    ],
+    "app": "Finish Questions",
+    "visual": {
+     "type": "polish",
+     "kind": "signoff",
+     "app": "Finish Questions",
+     "c": {
+      "name": "Finish Questions",
+      "title": "Finish Questions",
+      "sub": "19 questions in 15 rooms",
+      "cta": "Send Answers",
+      "item": "Mud room floor tile?",
+      "mark": "FQ",
+      "img": "int_modernkitchen"
+     },
+     "p": {
+      "mode": "why",
+      "copy": "I need these to order the right replacements later. – Max"
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-12",
+   "category": "Navigation",
+   "app": "Site Walk",
+   "ask": "Which Works Better For Site Walk?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_nav_5",
+    "label": "Big Next Stop Button",
+    "desc": "One wide Next Stop button at the bottom of each stop.",
+    "tags": [
+     "direct",
+     "clear",
+     "practical",
+     "calm"
+    ],
+    "app": "Site Walk",
+    "visual": {
+     "type": "polish",
+     "kind": "nav",
+     "app": "Site Walk",
+     "c": {
+      "name": "Site Walk",
+      "title": "Moschouris Site Walk",
+      "sub": "7 stops · Basement to Exterior",
+      "cta": "Finish and Share",
+      "item": "Stop 1: Basement Mechanical Room",
+      "mark": "SW",
+      "img": "base_site"
+     },
+     "p": {
+      "mode": "nextbtn",
+      "stop": 2,
+      "stops": [
+       "Basement Mechanical Room",
+       "Unfinished Basement Area",
+       "Finished Basement Area",
+       "Main Level",
+       "Master Suite",
+       "Upper Level",
+       "Exterior"
+      ]
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_nav_6",
+    "label": "Stop Dots To Jump Around",
+    "desc": "Numbered dots 1 to 7 on top. Tap any stop, done ones are green.",
+    "tags": [
+     "modern",
+     "clear",
+     "tactile",
+     "practical"
+    ],
+    "app": "Site Walk",
+    "visual": {
+     "type": "polish",
+     "kind": "nav",
+     "app": "Site Walk",
+     "c": {
+      "name": "Site Walk",
+      "title": "Moschouris Site Walk",
+      "sub": "7 stops · Basement to Exterior",
+      "cta": "Finish and Share",
+      "item": "Stop 1: Basement Mechanical Room",
+      "mark": "SW",
+      "img": "base_site"
+     },
+     "p": {
+      "mode": "dots",
+      "stop": 2,
+      "stops": [
+       "Basement Mechanical Room",
+       "Unfinished Basement Area",
+       "Finished Basement Area",
+       "Main Level",
+       "Master Suite",
+       "Upper Level",
+       "Exterior"
+      ]
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-13",
+   "category": "Condensed Lists",
+   "app": "Room Photos",
+   "ask": "Which Works Better For Room Photos?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_rows_7",
+    "label": "Room Rows With A Thumbnail Strip",
+    "desc": "Each row shows the first few photos as tiny thumbnails.",
+    "tags": [
+     "natural",
+     "clear",
+     "friendly",
+     "practical"
+    ],
+    "app": "Room Photos",
+    "visual": {
+     "type": "polish",
+     "kind": "rows",
+     "app": "Room Photos",
+     "c": {
+      "name": "Room Photos",
+      "title": "Room Photos",
+      "sub": "Moschouris room photos",
+      "cta": "Add Photos",
+      "item": "Living Area 004",
+      "mark": "RP",
+      "img": "tr_boutique_lobby"
+     },
+     "p": {
+      "mode": "thumbs",
+      "rooms": [
+       [
+        "Bathroom 005",
+        3
+       ],
+       [
+        "Family Suite 002",
+        6
+       ],
+       [
+        "Gym 012",
+        0
+       ],
+       [
+        "Kitchen 006",
+        8
+       ]
+      ],
+      "keys": [
+       "tr_boutique_lobby",
+       "int_boho",
+       "int_modernkitchen",
+       "int_midcentury"
+      ]
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_rows_8",
+    "label": "Room Rows With A Count Badge",
+    "desc": "Each row shows only a lagoon badge with the photo count.",
+    "tags": [
+     "minimal",
+     "clear",
+     "practical",
+     "direct"
+    ],
+    "app": "Room Photos",
+    "visual": {
+     "type": "polish",
+     "kind": "rows",
+     "app": "Room Photos",
+     "c": {
+      "name": "Room Photos",
+      "title": "Room Photos",
+      "sub": "Moschouris room photos",
+      "cta": "Add Photos",
+      "item": "Living Area 004",
+      "mark": "RP",
+      "img": "tr_boutique_lobby"
+     },
+     "p": {
+      "mode": "badges",
+      "rooms": [
+       [
+        "Bathroom 005",
+        3
+       ],
+       [
+        "Family Suite 002",
+        6
+       ],
+       [
+        "Gym 012",
+        0
+       ],
+       [
+        "Kitchen 006",
+        8
+       ],
+       [
+        "Living Area 004",
+        4
+       ],
+       [
+        "Mud Room 116",
+        0
+       ]
+      ]
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-14",
+   "category": "Feature Options",
+   "app": "Home Guide",
+   "ask": "Which Should Home Guide Do?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_feature_4",
+    "label": "Search Bar On Top",
+    "desc": "Type what you need and jump straight to it.",
+    "tags": [
+     "modern",
+     "clear",
+     "practical",
+     "minimal"
+    ],
+    "app": "Home Guide",
+    "visual": {
+     "type": "polish",
+     "kind": "feature",
+     "app": "Home Guide",
+     "c": {
+      "name": "Home Guide",
+      "title": "Your Home Guide",
+      "sub": "Moschouris Residence",
+      "cta": "Call Max",
+      "item": "Maintenance Schedule",
+      "mark": "HG",
+      "img": "ext_craftsman"
+     },
+     "p": {
+      "mode": "search",
+      "query": "water shut",
+      "results": [
+       "Water Shutoff for Niko",
+       "Shutoffs & Key Locations",
+       "Water Filter System"
+      ]
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_feature_3",
+    "label": "Emergencies Pinned On Top",
+    "desc": "A red-outlined Emergencies card always sits above every section.",
+    "tags": [
+     "direct",
+     "practical",
+     "clear",
+     "construction"
+    ],
+    "app": "Home Guide",
+    "visual": {
+     "type": "polish",
+     "kind": "feature",
+     "app": "Home Guide",
+     "c": {
+      "name": "Home Guide",
+      "title": "Your Home Guide",
+      "sub": "Moschouris Residence",
+      "cta": "Call Max",
+      "item": "Maintenance Schedule",
+      "mark": "HG",
+      "img": "ext_craftsman"
+     },
+     "p": {
+      "mode": "pin",
+      "items": [
+       "Who to Call",
+       "Maintenance Schedule",
+       "Warranties",
+       "Shutoffs & Key Locations"
+      ],
+      "copy": "Emergencies: water, gas and power shutoffs"
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-15",
+   "category": "Photo Handling",
+   "app": "Room Photos",
+   "ask": "Which Works Better For Room Photos?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_photo_6",
+    "label": "Keep Full-Size Originals",
+    "desc": "Every photo goes up at full quality, even if it is slower.",
+    "tags": [
+     "honest",
+     "practical",
+     "natural",
+     "calm"
+    ],
+    "app": "Room Photos",
+    "visual": {
+     "type": "polish",
+     "kind": "photo",
+     "app": "Room Photos",
+     "c": {
+      "name": "Room Photos",
+      "title": "Room Photos",
+      "sub": "Moschouris room photos",
+      "cta": "Add Photos",
+      "item": "Living Area 004",
+      "mark": "RP",
+      "img": "tr_boutique_lobby"
+     },
+     "p": {
+      "mode": "full",
+      "copy": "12 photos · 48 MB · full quality"
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_photo_5",
+    "label": "Shrink Photos Before Upload",
+    "desc": "Photos are resized on the phone so they upload fast.",
+    "tags": [
+     "practical",
+     "clear",
+     "efficient",
+     "direct"
+    ],
+    "app": "Room Photos",
+    "visual": {
+     "type": "polish",
+     "kind": "photo",
+     "app": "Room Photos",
+     "c": {
+      "name": "Room Photos",
+      "title": "Room Photos",
+      "sub": "Moschouris room photos",
+      "cta": "Add Photos",
+      "item": "Living Area 004",
+      "mark": "RP",
+      "img": "tr_boutique_lobby"
+     },
+     "p": {
+      "mode": "shrink",
+      "copy": "12 photos · 48 MB → 9 MB"
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-16",
+   "category": "Share & Sign-Off",
+   "app": "Site Walk",
+   "ask": "Which Should Site Walk Do?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_sharef_2",
+    "label": "Finish And Share: A Link",
+    "desc": "Finish sends a link to the photos and notes, nothing to download.",
+    "tags": [
+     "modern",
+     "direct",
+     "clear",
+     "friendly"
+    ],
+    "app": "Site Walk",
+    "visual": {
+     "type": "polish",
+     "kind": "sharef",
+     "app": "Site Walk",
+     "c": {
+      "name": "Site Walk",
+      "title": "Moschouris Site Walk",
+      "sub": "7 stops · Basement to Exterior",
+      "cta": "Finish and Share",
+      "item": "Stop 1: Basement Mechanical Room",
+      "mark": "SW",
+      "img": "base_site"
+     },
+     "p": {
+      "mode": "link"
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_sharef_1",
+    "label": "Finish And Share: One PDF Report",
+    "desc": "Finish makes one tidy PDF with every stop and photo.",
+    "tags": [
+     "practical",
+     "clear",
+     "construction",
+     "tidy"
+    ],
+    "app": "Site Walk",
+    "visual": {
+     "type": "polish",
+     "kind": "sharef",
+     "app": "Site Walk",
+     "c": {
+      "name": "Site Walk",
+      "title": "Moschouris Site Walk",
+      "sub": "7 stops · Basement to Exterior",
+      "cta": "Finish and Share",
+      "item": "Stop 1: Basement Mechanical Room",
+      "mark": "SW",
+      "img": "base_site"
+     },
+     "p": {
+      "mode": "pdf"
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-17",
+   "category": "Photo Handling",
+   "app": "Room Photos",
+   "ask": "Which Works Better For Room Photos?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_photo_7",
+    "label": "Clean Grid With Room Labels",
+    "desc": "Straight square tiles, room name above each set.",
+    "tags": [
+     "clear",
+     "natural",
+     "calm",
+     "practical"
+    ],
+    "app": "Room Photos",
+    "visual": {
+     "type": "polish",
+     "kind": "photo",
+     "app": "Room Photos",
+     "c": {
+      "name": "Room Photos",
+      "title": "Room Photos",
+      "sub": "Moschouris room photos",
+      "cta": "Add Photos",
+      "item": "Living Area 004",
+      "mark": "RP",
+      "img": "tr_boutique_lobby"
+     },
+     "p": {
+      "mode": "grid",
+      "room": "Kitchen 006",
+      "keys": [
+       "int_modernkitchen",
+       "int_modernkitchen",
+       "int_modernkitchen",
+       "int_modernkitchen",
+       "int_modernkitchen",
+       "int_modernkitchen"
+      ]
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_photo_8",
+    "label": "Vintage Film Frames",
+    "desc": "Photos in sepia film-strip frames with sprocket holes.",
+    "tags": [
+     "retro",
+     "editorial",
+     "warm",
+     "craft"
+    ],
+    "app": "Room Photos",
+    "visual": {
+     "type": "polish",
+     "kind": "photo",
+     "app": "Room Photos",
+     "c": {
+      "name": "Room Photos",
+      "title": "Room Photos",
+      "sub": "Moschouris room photos",
+      "cta": "Add Photos",
+      "item": "Living Area 004",
+      "mark": "RP",
+      "img": "tr_boutique_lobby"
+     },
+     "p": {
+      "mode": "film",
+      "room": "Kitchen 006",
+      "key": "int_modernkitchen"
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "check"
+  },
+  {
+   "id": "2026-10-11b-18",
+   "category": "Swipe Controls",
+   "app": "All Swipe Apps",
+   "ask": "Which Swipe Controls Feel More Like You?",
+   "retest": false,
+   "optionA": {
+    "id": "sc_nv_hint_card",
+    "label": "Hint Arrows On The Card Edges",
+    "desc": "Faint ← and → arrows sit on the card's left and right edges.",
+    "tags": [
+     "minimal",
+     "light",
+     "modern",
+     "calm"
+    ],
+    "visual": {
+     "type": "controls",
+     "fmt": "round",
+     "words": [
+      "This",
+      "Both",
+      "Love",
+      "That"
+     ],
+     "icons": [
+      "◀",
+      "⇄",
+      "❤",
+      "▶"
+     ],
+     "colors": [
+      "#3F6E7D",
+      "#5A7D4F",
+      "#B5523B",
+      "#A0703C"
+     ],
+     "style": "outline",
+     "bg": "#FAF3EB",
+     "font": "Hind",
+     "hint": "edges",
+     "stampov": "word",
+     "press": null
+    }
+   },
+   "optionB": {
+    "id": "sc_nv_hint_above",
+    "label": "Hint Line Above The Buttons",
+    "desc": "'← This · That →' sits just above the round buttons.",
+    "tags": [
+     "clear",
+     "minimal",
+     "practical",
+     "light"
+    ],
+    "visual": {
+     "type": "controls",
+     "fmt": "round",
+     "words": [
+      "This",
+      "Both",
+      "Love",
+      "That"
+     ],
+     "icons": [
+      "◀",
+      "⇄",
+      "❤",
+      "▶"
+     ],
+     "colors": [
+      "#3F6E7D",
+      "#5A7D4F",
+      "#B5523B",
+      "#A0703C"
+     ],
+     "style": "outline",
+     "bg": "#FAF3EB",
+     "font": "Hind",
+     "hint": "above",
+     "stampov": "word",
+     "press": null
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-19",
+   "category": "Checklists",
+   "app": "Finish Questions",
+   "ask": "Which Works Better For Finish Questions?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_check_1",
+    "label": "Room Chips Turn Green When Done",
+    "desc": "Each room is a chip. Answered rooms turn jungle with a check.",
+    "tags": [
+     "clear",
+     "natural",
+     "practical",
+     "modern"
+    ],
+    "app": "Finish Questions",
+    "visual": {
+     "type": "polish",
+     "kind": "check",
+     "app": "Finish Questions",
+     "c": {
+      "name": "Finish Questions",
+      "title": "Finish Questions",
+      "sub": "19 questions in 15 rooms",
+      "cta": "Send Answers",
+      "item": "Mud room floor tile?",
+      "mark": "FQ",
+      "img": "int_modernkitchen"
+     },
+     "p": {
+      "mode": "chips",
+      "items": [
+       "Foyer 110",
+       "Mud Room 116",
+       "Half Bath 115",
+       "Laundry 203",
+       "Bedroom 201",
+       "Bathroom 204",
+       "Closet 209"
+      ],
+      "done": 3
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_check_2",
+    "label": "Progress Ring: 7 Of 19",
+    "desc": "One ring shows how many questions are answered.",
+    "tags": [
+     "clear",
+     "modern",
+     "calm",
+     "practical"
+    ],
+    "app": "Finish Questions",
+    "visual": {
+     "type": "polish",
+     "kind": "check",
+     "app": "Finish Questions",
+     "c": {
+      "name": "Finish Questions",
+      "title": "Finish Questions",
+      "sub": "19 questions in 15 rooms",
+      "cta": "Send Answers",
+      "item": "Mud room floor tile?",
+      "mark": "FQ",
+      "img": "int_modernkitchen"
+     },
+     "p": {
+      "mode": "ring",
+      "done": 7,
+      "total": 19,
+      "next": "Next: Laundry 203"
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-20",
+   "category": "App Icon & Favicon",
+   "app": "Home Guide",
+   "ask": "Which Is Sharper For Home Guide?",
+   "retest": true,
+   "optionA": {
+    "id": "nv_icon_11",
+    "label": "White Tile, Black HG, Faint Grid",
+    "desc": "The interim rule: white tile, thin black border, Khand initials, faint grid.",
+    "tags": [
+     "minimal",
+     "clear",
+     "technical",
+     "light"
+    ],
+    "app": "Home Guide",
+    "visual": {
+     "type": "polish",
+     "kind": "icon",
+     "app": "Home Guide",
+     "c": {
+      "name": "Home Guide",
+      "title": "Your Home Guide",
+      "sub": "Moschouris Residence",
+      "cta": "Call Max",
+      "item": "Maintenance Schedule",
+      "mark": "HG",
+      "img": "ext_craftsman"
+     },
+     "p": {
+      "shape": "square",
+      "bg": "#fff",
+      "fg": "#171717",
+      "mark": "HG",
+      "border": true,
+      "grid": true
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_icon_12",
+    "label": "Light Grey Tile, Roofline Over HG",
+    "desc": "#EDEDED tile with a thin black roof line above the initials.",
+    "tags": [
+     "architectural",
+     "clear",
+     "warm",
+     "personal"
+    ],
+    "app": "Home Guide",
+    "visual": {
+     "type": "polish",
+     "kind": "icon",
+     "app": "Home Guide",
+     "c": {
+      "name": "Home Guide",
+      "title": "Your Home Guide",
+      "sub": "Moschouris Residence",
+      "cta": "Call Max",
+      "item": "Maintenance Schedule",
+      "mark": "HG",
+      "img": "ext_craftsman"
+     },
+     "p": {
+      "shape": "square",
+      "bg": "#EDEDED",
+      "fg": "#171717",
+      "mark": "HG",
+      "roof": true
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-21",
+   "category": "Empty States",
+   "app": "Room Photos",
+   "ask": "Which Is Sharper For Room Photos?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_empty2_1",
+    "label": "Camera Icon And One Line",
+    "desc": "Grey camera in a circle: 'No photos yet. Add the first one.'",
+    "tags": [
+     "clear",
+     "friendly",
+     "minimal",
+     "direct"
+    ],
+    "app": "Room Photos",
+    "visual": {
+     "type": "polish",
+     "kind": "empty2",
+     "app": "Room Photos",
+     "c": {
+      "name": "Room Photos",
+      "title": "Room Photos",
+      "sub": "Moschouris room photos",
+      "cta": "Add Photos",
+      "item": "Living Area 004",
+      "mark": "RP",
+      "img": "tr_boutique_lobby"
+     },
+     "p": {
+      "mode": "icon",
+      "copy": "No photos yet. Add the first one.",
+      "item": "Gym 012"
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_empty2_2",
+    "label": "Cartoon Camera Mascot",
+    "desc": "A waving cartoon camera: 'Say cheese!'.",
+    "tags": [
+     "playful",
+     "cute",
+     "vibrant",
+     "casual"
+    ],
+    "app": "Room Photos",
+    "visual": {
+     "type": "polish",
+     "kind": "empty2",
+     "app": "Room Photos",
+     "c": {
+      "name": "Room Photos",
+      "title": "Room Photos",
+      "sub": "Moschouris room photos",
+      "cta": "Add Photos",
+      "item": "Living Area 004",
+      "mark": "RP",
+      "img": "tr_boutique_lobby"
+     },
+     "p": {
+      "mode": "mascot",
+      "copy": "Say cheese! No photos yet.",
+      "item": "Gym 012"
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "check"
+  },
+  {
+   "id": "2026-10-11b-22",
+   "category": "Feature Options",
+   "app": "Site Walk",
+   "ask": "Which Should Site Walk Do?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_feature_10",
+    "label": "Typed Note Per Item",
+    "desc": "A small text box under each item.",
+    "tags": [
+     "clear",
+     "calm",
+     "practical",
+     "honest"
+    ],
+    "app": "Site Walk",
+    "visual": {
+     "type": "polish",
+     "kind": "feature",
+     "app": "Site Walk",
+     "c": {
+      "name": "Site Walk",
+      "title": "Moschouris Site Walk",
+      "sub": "7 stops · Basement to Exterior",
+      "cta": "Finish and Share",
+      "item": "Stop 1: Basement Mechanical Room",
+      "mark": "SW",
+      "img": "base_site"
+     },
+     "p": {
+      "mode": "typed",
+      "item": "Furnace 1 Humidifier",
+      "copy": "Pad looks fine, water line is dry."
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_feature_9",
+    "label": "Voice Note Per Item",
+    "desc": "Hold the mic and talk. The app types it out.",
+    "tags": [
+     "direct",
+     "tactile",
+     "personal",
+     "modern"
+    ],
+    "app": "Site Walk",
+    "visual": {
+     "type": "polish",
+     "kind": "feature",
+     "app": "Site Walk",
+     "c": {
+      "name": "Site Walk",
+      "title": "Moschouris Site Walk",
+      "sub": "7 stops · Basement to Exterior",
+      "cta": "Finish and Share",
+      "item": "Stop 1: Basement Mechanical Room",
+      "mark": "SW",
+      "img": "base_site"
+     },
+     "p": {
+      "mode": "voice",
+      "item": "Furnace 1 Humidifier",
+      "copy": "Pad looks fine, water line is dry."
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-23",
+   "category": "Navigation",
+   "app": "Room Photos",
+   "ask": "Which Works Better For Room Photos?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_nav_8",
+    "label": "Room List By Level",
+    "desc": "Levels as headers, rooms listed under each.",
+    "tags": [
+     "clear",
+     "practical",
+     "direct",
+     "calm"
+    ],
+    "app": "Room Photos",
+    "visual": {
+     "type": "polish",
+     "kind": "nav",
+     "app": "Room Photos",
+     "c": {
+      "name": "Room Photos",
+      "title": "Room Photos",
+      "sub": "Moschouris room photos",
+      "cta": "Add Photos",
+      "item": "Living Area 004",
+      "mark": "RP",
+      "img": "tr_boutique_lobby"
+     },
+     "p": {
+      "mode": "levellist",
+      "groups": [
+       [
+        "Basement",
+        [
+         "Bathroom 005",
+         "Family Suite 002",
+         "Gym 012",
+         "Living Area 004"
+        ]
+       ],
+       [
+        "First Floor",
+        [
+         "Kitchen 006",
+         "Mud Room 116"
+        ]
+       ]
+      ]
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_nav_7",
+    "label": "Tap A Room On The Floor Plan",
+    "desc": "Floor plan with photo counts; tap a room to add photos.",
+    "tags": [
+     "architectural",
+     "tactile",
+     "natural",
+     "modern"
+    ],
+    "app": "Room Photos",
+    "visual": {
+     "type": "polish",
+     "kind": "nav",
+     "app": "Room Photos",
+     "c": {
+      "name": "Room Photos",
+      "title": "Room Photos",
+      "sub": "Moschouris room photos",
+      "cta": "Add Photos",
+      "item": "Living Area 004",
+      "mark": "RP",
+      "img": "tr_boutique_lobby"
+     },
+     "p": {
+      "mode": "plan",
+      "head": "Basement",
+      "rooms": [
+       "Gym 012",
+       "Wine 008",
+       "Living Area 004",
+       "Bathroom 005",
+       "Family Suite 002",
+       "Mech Room"
+      ],
+      "counts": [
+       0,
+       2,
+       4,
+       3,
+       6,
+       1
+      ],
+      "toggle": [
+       "Floor Plan",
+       "Room List"
+      ]
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-24",
+   "category": "Checklists",
+   "app": "Site Walk",
+   "ask": "Which Works Better For Site Walk?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_check_6",
+    "label": "Checkbox Plus A Photo Slot",
+    "desc": "Each item has a checkbox and a small photo slot to fill.",
+    "tags": [
+     "practical",
+     "construction",
+     "clear",
+     "honest"
+    ],
+    "app": "Site Walk",
+    "visual": {
+     "type": "polish",
+     "kind": "check",
+     "app": "Site Walk",
+     "c": {
+      "name": "Site Walk",
+      "title": "Moschouris Site Walk",
+      "sub": "7 stops · Basement to Exterior",
+      "cta": "Finish and Share",
+      "item": "Stop 1: Basement Mechanical Room",
+      "mark": "SW",
+      "img": "base_site"
+     },
+     "p": {
+      "mode": "photo",
+      "items": [
+       "Water Filter System",
+       "Sump Pump 1 (Check)",
+       "ERV System",
+       "Furnace 1 Humidifier",
+       "Water Heater 1 (Rinnai)"
+      ],
+      "done": 2,
+      "head": "Stop 1: Mechanical Room"
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_check_5",
+    "label": "Tap The Row To Check It Off",
+    "desc": "The whole row is the button. Done rows turn jungle.",
+    "tags": [
+     "practical",
+     "clear",
+     "direct",
+     "modern"
+    ],
+    "app": "Site Walk",
+    "visual": {
+     "type": "polish",
+     "kind": "check",
+     "app": "Site Walk",
+     "c": {
+      "name": "Site Walk",
+      "title": "Moschouris Site Walk",
+      "sub": "7 stops · Basement to Exterior",
+      "cta": "Finish and Share",
+      "item": "Stop 1: Basement Mechanical Room",
+      "mark": "SW",
+      "img": "base_site"
+     },
+     "p": {
+      "mode": "tap",
+      "items": [
+       "Water Filter System",
+       "Sump Pump 1 (Check)",
+       "ERV System",
+       "Furnace 1 Humidifier",
+       "Water Heater 1 (Rinnai)"
+      ],
+      "done": 2,
+      "head": "Stop 1: Mechanical Room"
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-25",
+   "category": "Answer Style",
+   "app": "Finish Questions",
+   "ask": "Which Works Better For Finish Questions?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_answer_1",
+    "label": "Photo Answer Tiles",
+    "desc": "Each answer is a tile with a picture of the material.",
+    "tags": [
+     "natural",
+     "tactile",
+     "friendly",
+     "clear"
+    ],
+    "app": "Finish Questions",
+    "visual": {
+     "type": "polish",
+     "kind": "answer",
+     "app": "Finish Questions",
+     "c": {
+      "name": "Finish Questions",
+      "title": "Finish Questions",
+      "sub": "19 questions in 15 rooms",
+      "cta": "Send Answers",
+      "item": "Mud room floor tile?",
+      "mark": "FQ",
+      "img": "int_modernkitchen"
+     },
+     "p": {
+      "mode": "tiles",
+      "q": "Shower wall slab material?",
+      "answers": [
+       [
+        "Carrara Fina quartz",
+        "linear-gradient(135deg,#f4f4f2 0,#e6e6e3 40%,#cfd0cf 42%,#f1f1ef 46%,#e9e9e6 100%)"
+       ],
+       [
+        "Calacatta Vivo quartz",
+        "linear-gradient(120deg,#fbf8f2 0,#f1e9da 35%,#c9a978 37%,#f6f0e4 40%,#efe6d4 100%)"
+       ],
+       [
+        "Mystery White marble",
+        "linear-gradient(150deg,#f2f2f2 0,#d9dbdc 30%,#9aa0a4 31%,#e3e4e5 36%,#f0f0f0 100%)"
+       ],
+       [
+        "Porcelain slab",
+        "linear-gradient(135deg,#f3efe8,#e7e1d6)"
+       ]
+      ]
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_answer_2",
+    "label": "Text Answer Blocks",
+    "desc": "Full-width tinted lagoon blocks with the product names.",
+    "tags": [
+     "clear",
+     "practical",
+     "direct",
+     "minimal"
+    ],
+    "app": "Finish Questions",
+    "visual": {
+     "type": "polish",
+     "kind": "answer",
+     "app": "Finish Questions",
+     "c": {
+      "name": "Finish Questions",
+      "title": "Finish Questions",
+      "sub": "19 questions in 15 rooms",
+      "cta": "Send Answers",
+      "item": "Mud room floor tile?",
+      "mark": "FQ",
+      "img": "int_modernkitchen"
+     },
+     "p": {
+      "mode": "text",
+      "q": "Shower wall slab material?",
+      "answers": [
+       "Carrara Fina quartz",
+       "Calacatta Vivo quartz",
+       "Mystery White marble",
+       "Porcelain slab"
+      ]
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-26",
+   "category": "Photo Handling",
+   "app": "Room Photos",
+   "ask": "Which Works Better For Room Photos?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_photo_3",
+    "label": "Three-Up Grid Per Room",
+    "desc": "Square thumbnails, three across, under each room name.",
+    "tags": [
+     "clear",
+     "practical",
+     "modern",
+     "natural"
+    ],
+    "app": "Room Photos",
+    "visual": {
+     "type": "polish",
+     "kind": "photo",
+     "app": "Room Photos",
+     "c": {
+      "name": "Room Photos",
+      "title": "Room Photos",
+      "sub": "Moschouris room photos",
+      "cta": "Add Photos",
+      "item": "Living Area 004",
+      "mark": "RP",
+      "img": "tr_boutique_lobby"
+     },
+     "p": {
+      "mode": "grid",
+      "room": "Living Area 004",
+      "keys": [
+       "tr_boutique_lobby",
+       "tr_boutique_lobby",
+       "tr_boutique_lobby",
+       "tr_boutique_lobby",
+       "tr_boutique_lobby",
+       "tr_boutique_lobby"
+      ]
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_photo_4",
+    "label": "Swipeable Carousel Per Room",
+    "desc": "One big photo per room; swipe through, dots show how many.",
+    "tags": [
+     "natural",
+     "personal",
+     "tactile",
+     "modern"
+    ],
+    "app": "Room Photos",
+    "visual": {
+     "type": "polish",
+     "kind": "photo",
+     "app": "Room Photos",
+     "c": {
+      "name": "Room Photos",
+      "title": "Room Photos",
+      "sub": "Moschouris room photos",
+      "cta": "Add Photos",
+      "item": "Living Area 004",
+      "mark": "RP",
+      "img": "tr_boutique_lobby"
+     },
+     "p": {
+      "mode": "carousel",
+      "room": "Living Area 004",
+      "key": "tr_boutique_lobby",
+      "n": 4
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-27",
+   "category": "List Sorting",
+   "app": "Finish Questions",
+   "ask": "Which Works Better For Finish Questions?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_sort_4",
+    "label": "A–Z Rooms With Sort Chips",
+    "desc": "Rooms A to Z by default, with a chip for walk order.",
+    "tags": [
+     "clear",
+     "direct",
+     "practical",
+     "modern"
+    ],
+    "app": "Finish Questions",
+    "visual": {
+     "type": "polish",
+     "kind": "sort",
+     "app": "Finish Questions",
+     "c": {
+      "name": "Finish Questions",
+      "title": "Finish Questions",
+      "sub": "19 questions in 15 rooms",
+      "cta": "Send Answers",
+      "item": "Mud room floor tile?",
+      "mark": "FQ",
+      "img": "int_modernkitchen"
+     },
+     "p": {
+      "mode": "az",
+      "items": [
+       "Bathroom 204",
+       "Bedroom 201",
+       "Bedroom 206",
+       "Closet 209",
+       "Foyer 110",
+       "Gym 012",
+       "Half Bath 115",
+       "Laundry 203",
+       "Living Area 004",
+       "Mud Room 116"
+      ],
+      "chips": [
+       "A–Z",
+       "Walk Order"
+      ],
+      "head": "Rooms"
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_sort_3",
+    "label": "Walk Order, Room By Room",
+    "desc": "Rooms in the order you walk the house, level by level.",
+    "tags": [
+     "practical",
+     "construction",
+     "clear",
+     "natural"
+    ],
+    "app": "Finish Questions",
+    "visual": {
+     "type": "polish",
+     "kind": "sort",
+     "app": "Finish Questions",
+     "c": {
+      "name": "Finish Questions",
+      "title": "Finish Questions",
+      "sub": "19 questions in 15 rooms",
+      "cta": "Send Answers",
+      "item": "Mud room floor tile?",
+      "mark": "FQ",
+      "img": "int_modernkitchen"
+     },
+     "p": {
+      "mode": "walk",
+      "groups": [
+       [
+        "Basement",
+        [
+         "Living Area 004",
+         "Gym 012"
+        ]
+       ],
+       [
+        "First Floor",
+        [
+         "Foyer 110",
+         "Mud Room 116"
+        ]
+       ],
+       [
+        "Second Floor",
+        [
+         "Laundry 203"
+        ]
+       ]
+      ],
+      "chips": [
+       "Walk Order",
+       "A–Z"
+      ],
+      "head": "Rooms"
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-28",
+   "category": "Feature Options",
+   "app": "Site Walk",
+   "ask": "Which Should Site Walk Do?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_feature_11",
+    "label": "Simple Stop 3 Of 7 Progress",
+    "desc": "Just the stop count and a thin jungle line.",
+    "tags": [
+     "clear",
+     "calm",
+     "practical",
+     "minimal"
+    ],
+    "app": "Site Walk",
+    "visual": {
+     "type": "polish",
+     "kind": "feature",
+     "app": "Site Walk",
+     "c": {
+      "name": "Site Walk",
+      "title": "Moschouris Site Walk",
+      "sub": "7 stops · Basement to Exterior",
+      "cta": "Finish and Share",
+      "item": "Stop 1: Basement Mechanical Room",
+      "mark": "SW",
+      "img": "base_site"
+     },
+     "p": {
+      "mode": "progress",
+      "stop": 3,
+      "total": 7,
+      "head": "Stop 3: Finished Basement"
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_feature_12",
+    "label": "Points And Badges For Each Stop",
+    "desc": "+50 points per stop and a badge at the end.",
+    "tags": [
+     "playful",
+     "loud",
+     "vibrant",
+     "casual"
+    ],
+    "app": "Site Walk",
+    "visual": {
+     "type": "polish",
+     "kind": "feature",
+     "app": "Site Walk",
+     "c": {
+      "name": "Site Walk",
+      "title": "Moschouris Site Walk",
+      "sub": "7 stops · Basement to Exterior",
+      "cta": "Finish and Share",
+      "item": "Stop 1: Basement Mechanical Room",
+      "mark": "SW",
+      "img": "base_site"
+     },
+     "p": {
+      "mode": "points",
+      "head": "Stop 3: Finished Basement"
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "check"
+  },
+  {
+   "id": "2026-10-11b-29",
+   "category": "Share Message Copy",
+   "app": "Finish Questions",
+   "ask": "Which Is Sharper For Finish Questions?",
+   "retest": true,
+   "optionA": {
+    "id": "nv_msg2_1",
+    "label": "Plain Sentence, Then The Link",
+    "desc": "Hi Niko and Vivian, here are the finish questions for your house.",
+    "tags": [
+     "personal",
+     "clear",
+     "friendly",
+     "direct"
+    ],
+    "app": "Finish Questions",
+    "visual": {
+     "type": "polish",
+     "kind": "msg2",
+     "app": "Finish Questions",
+     "c": {
+      "name": "Finish Questions",
+      "title": "Finish Questions",
+      "sub": "19 questions in 15 rooms",
+      "cta": "Send Answers",
+      "item": "Mud room floor tile?",
+      "mark": "FQ",
+      "img": "int_modernkitchen"
+     },
+     "p": {
+      "text": "Hi Niko and Vivian, here are the finish questions for your house.",
+      "card": "Finish Questions · 19 questions"
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_msg2_2",
+    "label": "Count And Time, Then The Link",
+    "desc": "19 questions, about 10 minutes. Answer what you know.",
+    "tags": [
+     "practical",
+     "direct",
+     "clear",
+     "construction"
+    ],
+    "app": "Finish Questions",
+    "visual": {
+     "type": "polish",
+     "kind": "msg2",
+     "app": "Finish Questions",
+     "c": {
+      "name": "Finish Questions",
+      "title": "Finish Questions",
+      "sub": "19 questions in 15 rooms",
+      "cta": "Send Answers",
+      "item": "Mud room floor tile?",
+      "mark": "FQ",
+      "img": "int_modernkitchen"
+     },
+     "p": {
+      "text": "19 finish questions for the house, about 10 minutes. Answer what you know.",
+      "card": "Finish Questions · 19 questions"
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-30",
+   "category": "Feature Options",
+   "app": "Home Guide",
+   "ask": "Which Should Home Guide Do?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_feature_1",
+    "label": "Offline Copy On Their Phones",
+    "desc": "The whole guide saves on the phone and works with no signal.",
+    "tags": [
+     "practical",
+     "calm",
+     "clear",
+     "honest"
+    ],
+    "app": "Home Guide",
+    "visual": {
+     "type": "polish",
+     "kind": "feature",
+     "app": "Home Guide",
+     "c": {
+      "name": "Home Guide",
+      "title": "Your Home Guide",
+      "sub": "Moschouris Residence",
+      "cta": "Call Max",
+      "item": "Maintenance Schedule",
+      "mark": "HG",
+      "img": "ext_craftsman"
+     },
+     "p": {
+      "mode": "offline",
+      "copy": "Saved on this phone. Works with no signal.",
+      "head": "Your Home Guide"
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_feature_2",
+    "label": "Live Updates From Max",
+    "desc": "Max can add or fix things and they see it right away.",
+    "tags": [
+     "personal",
+     "modern",
+     "friendly",
+     "direct"
+    ],
+    "app": "Home Guide",
+    "visual": {
+     "type": "polish",
+     "kind": "feature",
+     "app": "Home Guide",
+     "c": {
+      "name": "Home Guide",
+      "title": "Your Home Guide",
+      "sub": "Moschouris Residence",
+      "cta": "Call Max",
+      "item": "Maintenance Schedule",
+      "mark": "HG",
+      "img": "ext_craftsman"
+     },
+     "p": {
+      "mode": "live",
+      "copy": "New: warranty info for the Kitchen Cooktop",
+      "stamp": "Updated by Max · 2 hours ago",
+      "head": "Your Home Guide"
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-31",
+   "category": "App Icon & Favicon",
+   "app": "Site Walk",
+   "ask": "Which Is Sharper For Site Walk?",
+   "retest": true,
+   "optionA": {
+    "id": "nv_icon_14",
+    "label": "Outlined Square, Faint Grid",
+    "desc": "White tile, 2px black border, SW over a faint grid.",
+    "tags": [
+     "technical",
+     "construction",
+     "minimal",
+     "clear"
+    ],
+    "app": "Site Walk",
+    "visual": {
+     "type": "polish",
+     "kind": "icon",
+     "app": "Site Walk",
+     "c": {
+      "name": "Site Walk",
+      "title": "Moschouris Site Walk",
+      "sub": "7 stops · Basement to Exterior",
+      "cta": "Finish and Share",
+      "item": "Stop 1: Basement Mechanical Room",
+      "mark": "SW",
+      "img": "base_site"
+     },
+     "p": {
+      "shape": "square",
+      "bg": "#fff",
+      "fg": "#171717",
+      "mark": "SW",
+      "border": true,
+      "grid": true
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_icon_13",
+    "label": "Outlined Square, Jungle Check Dot",
+    "desc": "White tile, 2px black border, SW, small jungle check in the corner.",
+    "tags": [
+     "clear",
+     "natural",
+     "practical",
+     "modern"
+    ],
+    "app": "Site Walk",
+    "visual": {
+     "type": "polish",
+     "kind": "icon",
+     "app": "Site Walk",
+     "c": {
+      "name": "Site Walk",
+      "title": "Moschouris Site Walk",
+      "sub": "7 stops · Basement to Exterior",
+      "cta": "Finish and Share",
+      "item": "Stop 1: Basement Mechanical Room",
+      "mark": "SW",
+      "img": "base_site"
+     },
+     "p": {
+      "shape": "square",
+      "bg": "#fff",
+      "fg": "#171717",
+      "mark": "SW",
+      "border": true,
+      "dot": "#0B6E4F"
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-32",
+   "category": "Imagery Treatment",
+   "app": "Room Photos",
+   "ask": "Which Is Sharper For Room Photos?",
+   "retest": true,
+   "optionA": {
+    "id": "nv_image_14",
+    "label": "Bright Lift (+15% Exposure)",
+    "desc": "Photos brightened a little so dim rooms read clearly.",
+    "tags": [
+     "light",
+     "soft",
+     "warm",
+     "natural"
+    ],
+    "app": "Room Photos",
+    "visual": {
+     "type": "polish",
+     "kind": "image",
+     "app": "Room Photos",
+     "c": {
+      "name": "Room Photos",
+      "title": "Room Photos",
+      "sub": "Moschouris room photos",
+      "cta": "Add Photos",
+      "item": "Living Area 004",
+      "mark": "RP",
+      "img": "tr_boutique_lobby"
+     },
+     "p": {
+      "key": "tr_boutique_lobby",
+      "frame": "round",
+      "filt": "brightness(1.15) saturate(.95)",
+      "room": "Living Area 004"
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_image_13",
+    "label": "True Color, No Filter",
+    "desc": "Photos exactly as taken, 12px corners.",
+    "tags": [
+     "natural",
+     "honest",
+     "clear",
+     "modern"
+    ],
+    "app": "Room Photos",
+    "visual": {
+     "type": "polish",
+     "kind": "image",
+     "app": "Room Photos",
+     "c": {
+      "name": "Room Photos",
+      "title": "Room Photos",
+      "sub": "Moschouris room photos",
+      "cta": "Add Photos",
+      "item": "Living Area 004",
+      "mark": "RP",
+      "img": "tr_boutique_lobby"
+     },
+     "p": {
+      "key": "tr_boutique_lobby",
+      "frame": "round",
+      "filt": "none",
+      "room": "Living Area 004"
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-33",
+   "category": "Onboarding First Screen",
+   "app": "Home Guide",
+   "ask": "Which Is Sharper For Home Guide?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_onb_2",
+    "label": "Numbered Instructions Page",
+    "desc": "A formal page of numbered rules before the guide.",
+    "tags": [
+     "formal",
+     "plain",
+     "practical",
+     "traditional"
+    ],
+    "app": "Home Guide",
+    "visual": {
+     "type": "polish",
+     "kind": "onb",
+     "app": "Home Guide",
+     "c": {
+      "name": "Home Guide",
+      "title": "Your Home Guide",
+      "sub": "Moschouris Residence",
+      "cta": "Call Max",
+      "item": "Maintenance Schedule",
+      "mark": "HG",
+      "img": "ext_craftsman"
+     },
+     "p": {
+      "mode": "rules",
+      "items": [
+       "This guide is provided for reference only.",
+       "Consult the Documents Index for warranties.",
+       "Contact the listed trades for service.",
+       "Retain this guide for your records."
+      ]
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_onb_1",
+    "label": "Welcome Note, Then Start",
+    "desc": "'Welcome home, Niko and Vivian.' One line and a Start button.",
+    "tags": [
+     "personal",
+     "warm",
+     "friendly",
+     "clear"
+    ],
+    "app": "Home Guide",
+    "visual": {
+     "type": "polish",
+     "kind": "onb",
+     "app": "Home Guide",
+     "c": {
+      "name": "Home Guide",
+      "title": "Your Home Guide",
+      "sub": "Moschouris Residence",
+      "cta": "Call Max",
+      "item": "Maintenance Schedule",
+      "mark": "HG",
+      "img": "ext_craftsman"
+     },
+     "p": {
+      "mode": "welcome",
+      "copy": "Welcome home, Niko and Vivian.",
+      "sub2": "Shutoffs, contacts and upkeep for your house."
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "check"
+  },
+  {
+   "id": "2026-10-11b-34",
+   "category": "Notifications",
+   "app": "Site Walk",
+   "ask": "Which Should Site Walk Do?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_notify_3",
+    "label": "Text Max When The Walk Is Done",
+    "desc": "Max gets a short text with the stop and photo count.",
+    "tags": [
+     "direct",
+     "personal",
+     "casual",
+     "practical"
+    ],
+    "app": "Site Walk",
+    "visual": {
+     "type": "polish",
+     "kind": "notify",
+     "app": "Site Walk",
+     "c": {
+      "name": "Site Walk",
+      "title": "Moschouris Site Walk",
+      "sub": "7 stops · Basement to Exterior",
+      "cta": "Finish and Share",
+      "item": "Stop 1: Basement Mechanical Room",
+      "mark": "SW",
+      "img": "base_site"
+     },
+     "p": {
+      "mode": "sms",
+      "copy": "Niko finished the site walk: 7 of 7 stops, 23 photos."
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_notify_4",
+    "label": "Email Summary With Photos",
+    "desc": "An email with every stop, note and photo thumbnail.",
+    "tags": [
+     "clear",
+     "practical",
+     "calm",
+     "honest"
+    ],
+    "app": "Site Walk",
+    "visual": {
+     "type": "polish",
+     "kind": "notify",
+     "app": "Site Walk",
+     "c": {
+      "name": "Site Walk",
+      "title": "Moschouris Site Walk",
+      "sub": "7 stops · Basement to Exterior",
+      "cta": "Finish and Share",
+      "item": "Stop 1: Basement Mechanical Room",
+      "mark": "SW",
+      "img": "base_site"
+     },
+     "p": {
+      "mode": "email",
+      "subject": "Moschouris site walk · 7 stops, 23 photos",
+      "eqs": [
+       "heater",
+       "filter",
+       "pump"
+      ]
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-35",
+   "category": "Swipe Controls",
+   "app": "All Swipe Apps",
+   "ask": "Which Swipe Controls Feel More Like You?",
+   "retest": false,
+   "optionA": {
+    "id": "sc_nv_stamp_word",
+    "label": "Stamp: Word In Khand Caps",
+    "desc": "Swiping shows a tilted outline stamp: THIS or THAT.",
+    "tags": [
+     "construction",
+     "craft",
+     "clear",
+     "warm"
+    ],
+    "visual": {
+     "type": "controls",
+     "fmt": "pill",
+     "words": [
+      "This",
+      "Both",
+      "Love",
+      "That"
+     ],
+     "icons": [
+      "◀",
+      "⇄",
+      "❤",
+      "▶"
+     ],
+     "colors": [
+      "#3F6E7D",
+      "#5A7D4F",
+      "#B5523B",
+      "#A0703C"
+     ],
+     "style": "outline",
+     "bg": "#FAF3EB",
+     "font": "Hind",
+     "hint": "above",
+     "stampov": "word",
+     "press": null
+    }
+   },
+   "optionB": {
+    "id": "sc_nv_stamp_icon",
+    "label": "Stamp: Check Icon Plus Word",
+    "desc": "Swiping shows a round stamp with a check over the word.",
+    "tags": [
+     "clear",
+     "friendly",
+     "natural",
+     "craft"
+    ],
+    "visual": {
+     "type": "controls",
+     "fmt": "pill",
+     "words": [
+      "This",
+      "Both",
+      "Love",
+      "That"
+     ],
+     "icons": [
+      "◀",
+      "⇄",
+      "❤",
+      "▶"
+     ],
+     "colors": [
+      "#3F6E7D",
+      "#5A7D4F",
+      "#B5523B",
+      "#A0703C"
+     ],
+     "style": "outline",
+     "bg": "#FAF3EB",
+     "font": "Hind",
+     "hint": "above",
+     "stampov": "icon",
+     "press": null
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-36",
+   "category": "Navigation",
+   "app": "Finish Questions",
+   "ask": "Which Works Better For Finish Questions?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_nav_4",
+    "label": "All Questions In One Scroll",
+    "desc": "Every room and question on one page, grouped by room.",
+    "tags": [
+     "practical",
+     "efficient",
+     "clear",
+     "modern"
+    ],
+    "app": "Finish Questions",
+    "visual": {
+     "type": "polish",
+     "kind": "nav",
+     "app": "Finish Questions",
+     "c": {
+      "name": "Finish Questions",
+      "title": "Finish Questions",
+      "sub": "19 questions in 15 rooms",
+      "cta": "Send Answers",
+      "item": "Mud room floor tile?",
+      "mark": "FQ",
+      "img": "int_modernkitchen"
+     },
+     "p": {
+      "mode": "scroll",
+      "qs": [
+       [
+        "Mud Room 116",
+        "Mud room floor tile?"
+       ],
+       [
+        "Half Bath 115",
+        "Vanity top here?"
+       ],
+       [
+        "Bedroom 201",
+        "Carpet in this room?"
+       ]
+      ]
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_nav_3",
+    "label": "One Question Per Screen",
+    "desc": "Big question, answer buttons, Next. Nothing else on screen.",
+    "tags": [
+     "clear",
+     "direct",
+     "calm",
+     "practical"
+    ],
+    "app": "Finish Questions",
+    "visual": {
+     "type": "polish",
+     "kind": "nav",
+     "app": "Finish Questions",
+     "c": {
+      "name": "Finish Questions",
+      "title": "Finish Questions",
+      "sub": "19 questions in 15 rooms",
+      "cta": "Send Answers",
+      "item": "Mud room floor tile?",
+      "mark": "FQ",
+      "img": "int_modernkitchen"
+     },
+     "p": {
+      "mode": "onepage",
+      "room": "Mud Room 116",
+      "step": "6 of 19",
+      "q": "Mud room floor tile?",
+      "answers": [
+       "Cala Vi. Calacatta 24x24",
+       "Jem Aria Gold 24x48",
+       "Hardwood (no tile)"
+      ]
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-37",
+   "category": "Header & Navigation",
+   "app": "Home Guide",
+   "ask": "Which Is Sharper For Home Guide?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_hdr_2",
+    "label": "Gold Monogram Crest Header",
+    "desc": "Centered serif MR monogram in gold over the title.",
+    "tags": [
+     "luxe",
+     "formal",
+     "classic",
+     "elegant"
+    ],
+    "app": "Home Guide",
+    "visual": {
+     "type": "polish",
+     "kind": "hdr",
+     "app": "Home Guide",
+     "c": {
+      "name": "Home Guide",
+      "title": "Your Home Guide",
+      "sub": "Moschouris Residence",
+      "cta": "Call Max",
+      "item": "Maintenance Schedule",
+      "mark": "HG",
+      "img": "ext_craftsman"
+     },
+     "p": {
+      "mode": "crest"
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_hdr_1",
+    "label": "Wordmark Left, Share Right, Thin Rule",
+    "desc": "The spec header: MAX WEBERMAN, square SHARE, 1px grey rule.",
+    "tags": [
+     "light",
+     "clear",
+     "minimal",
+     "modern"
+    ],
+    "app": "Home Guide",
+    "visual": {
+     "type": "polish",
+     "kind": "hdr",
+     "app": "Home Guide",
+     "c": {
+      "name": "Home Guide",
+      "title": "Your Home Guide",
+      "sub": "Moschouris Residence",
+      "cta": "Call Max",
+      "item": "Maintenance Schedule",
+      "mark": "HG",
+      "img": "ext_craftsman"
+     },
+     "p": {
+      "mode": "rule"
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "check"
+  },
+  {
+   "id": "2026-10-11b-38",
+   "category": "Share & Sign-Off",
+   "app": "Room Photos",
+   "ask": "Which Should Room Photos Do?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_sharef_3",
+    "label": "Share By Level",
+    "desc": "One Share button per level, with its photo count.",
+    "tags": [
+     "practical",
+     "clear",
+     "tidy",
+     "construction"
+    ],
+    "app": "Room Photos",
+    "visual": {
+     "type": "polish",
+     "kind": "sharef",
+     "app": "Room Photos",
+     "c": {
+      "name": "Room Photos",
+      "title": "Room Photos",
+      "sub": "Moschouris room photos",
+      "cta": "Add Photos",
+      "item": "Living Area 004",
+      "mark": "RP",
+      "img": "tr_boutique_lobby"
+     },
+     "p": {
+      "mode": "levels",
+      "levels": [
+       [
+        "Basement",
+        14
+       ],
+       [
+        "First Floor",
+        22
+       ],
+       [
+        "Second Floor",
+        18
+       ]
+      ]
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_sharef_4",
+    "label": "Share All Photos At Once",
+    "desc": "One big Share All button for every room.",
+    "tags": [
+     "direct",
+     "clear",
+     "minimal",
+     "modern"
+    ],
+    "app": "Room Photos",
+    "visual": {
+     "type": "polish",
+     "kind": "sharef",
+     "app": "Room Photos",
+     "c": {
+      "name": "Room Photos",
+      "title": "Room Photos",
+      "sub": "Moschouris room photos",
+      "cta": "Add Photos",
+      "item": "Living Area 004",
+      "mark": "RP",
+      "img": "tr_boutique_lobby"
+     },
+     "p": {
+      "mode": "all",
+      "total": 54
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-39",
+   "category": "Feature Options",
+   "app": "Site Walk",
+   "ask": "Which Should Site Walk Do?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_feature_7",
+    "label": "Offline Mode: Saves On The Phone",
+    "desc": "No signal in the basement? Notes and photos save on the phone.",
+    "tags": [
+     "practical",
+     "calm",
+     "honest",
+     "construction"
+    ],
+    "app": "Site Walk",
+    "visual": {
+     "type": "polish",
+     "kind": "feature",
+     "app": "Site Walk",
+     "c": {
+      "name": "Site Walk",
+      "title": "Moschouris Site Walk",
+      "sub": "7 stops · Basement to Exterior",
+      "cta": "Finish and Share",
+      "item": "Stop 1: Basement Mechanical Room",
+      "mark": "SW",
+      "img": "base_site"
+     },
+     "p": {
+      "mode": "offline",
+      "copy": "No signal down here. Notes and photos are saved on this phone.",
+      "head": "Stop 2: Unfinished Basement"
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_feature_8",
+    "label": "Live Sync To Max",
+    "desc": "Every check and photo reaches Max as soon as it is taken.",
+    "tags": [
+     "modern",
+     "direct",
+     "personal",
+     "friendly"
+    ],
+    "app": "Site Walk",
+    "visual": {
+     "type": "polish",
+     "kind": "feature",
+     "app": "Site Walk",
+     "c": {
+      "name": "Site Walk",
+      "title": "Moschouris Site Walk",
+      "sub": "7 stops · Basement to Exterior",
+      "cta": "Finish and Share",
+      "item": "Stop 1: Basement Mechanical Room",
+      "mark": "SW",
+      "img": "base_site"
+     },
+     "p": {
+      "mode": "live",
+      "copy": "Sump Pump 1 (Check) · photo sent",
+      "stamp": "Synced to Max · just now",
+      "head": "Stop 2: Unfinished Basement"
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-40",
+   "category": "Success & Confirmation",
+   "app": "Finish Questions",
+   "ask": "Which Is Sharper For Finish Questions?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_done_1",
+    "label": "Check Plus What Happens Next",
+    "desc": "Check draws in: 'Sent to Max.' and what he will do with it.",
+    "tags": [
+     "clear",
+     "friendly",
+     "direct",
+     "personal"
+    ],
+    "app": "Finish Questions",
+    "visual": {
+     "type": "polish",
+     "kind": "done",
+     "app": "Finish Questions",
+     "c": {
+      "name": "Finish Questions",
+      "title": "Finish Questions",
+      "sub": "19 questions in 15 rooms",
+      "cta": "Send Answers",
+      "item": "Mud room floor tile?",
+      "mark": "FQ",
+      "img": "int_modernkitchen"
+     },
+     "p": {
+      "mode": "next",
+      "copy": "Sent to Max.",
+      "sub2": "He will confirm your finishes this week."
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_done_2",
+    "label": "Summary Of Your Answers",
+    "desc": "A short list of every answer they gave, with a check on top.",
+    "tags": [
+     "practical",
+     "clear",
+     "honest",
+     "calm"
+    ],
+    "app": "Finish Questions",
+    "visual": {
+     "type": "polish",
+     "kind": "done",
+     "app": "Finish Questions",
+     "c": {
+      "name": "Finish Questions",
+      "title": "Finish Questions",
+      "sub": "19 questions in 15 rooms",
+      "cta": "Send Answers",
+      "item": "Mud room floor tile?",
+      "mark": "FQ",
+      "img": "int_modernkitchen"
+     },
+     "p": {
+      "mode": "summary",
+      "rows": [
+       [
+        "Mud Room 116",
+        "Cala Vi. Calacatta 24x24"
+       ],
+       [
+        "Bedroom 201",
+        "Bixley Premium, Grounded"
+       ],
+       [
+        "Closet 209",
+        "Duchateau Savanna hardwood"
+       ],
+       [
+        "Bathroom 204",
+        "Not sure"
+       ]
+      ]
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-41",
+   "category": "Navigation",
+   "app": "Home Guide",
+   "ask": "Which Works Better For Home Guide?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_nav_2",
+    "label": "Room List First",
+    "desc": "Opens on a list of rooms. The floor plan is one tap away.",
+    "tags": [
+     "clear",
+     "practical",
+     "direct",
+     "minimal"
+    ],
+    "app": "Home Guide",
+    "visual": {
+     "type": "polish",
+     "kind": "nav",
+     "app": "Home Guide",
+     "c": {
+      "name": "Home Guide",
+      "title": "Your Home Guide",
+      "sub": "Moschouris Residence",
+      "cta": "Call Max",
+      "item": "Maintenance Schedule",
+      "mark": "HG",
+      "img": "ext_craftsman"
+     },
+     "p": {
+      "mode": "list",
+      "head": "First Floor",
+      "rooms": [
+       "Dining Room",
+       "Foyer",
+       "Greatroom",
+       "Kitchen",
+       "Lanai",
+       "Mud Room"
+      ],
+      "toggle": [
+       "Room List",
+       "Floor Plan"
+      ]
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_nav_1",
+    "label": "Floor Plan First",
+    "desc": "Opens on the floor plan. Tap a room to see its finishes.",
+    "tags": [
+     "architectural",
+     "tactile",
+     "modern",
+     "natural"
+    ],
+    "app": "Home Guide",
+    "visual": {
+     "type": "polish",
+     "kind": "nav",
+     "app": "Home Guide",
+     "c": {
+      "name": "Home Guide",
+      "title": "Your Home Guide",
+      "sub": "Moschouris Residence",
+      "cta": "Call Max",
+      "item": "Maintenance Schedule",
+      "mark": "HG",
+      "img": "ext_craftsman"
+     },
+     "p": {
+      "mode": "plan",
+      "head": "First Floor",
+      "rooms": [
+       "Kitchen",
+       "Pantry",
+       "Greatroom",
+       "Lanai",
+       "Foyer",
+       "Mud Room"
+      ],
+      "toggle": [
+       "Floor Plan",
+       "Room List"
+      ]
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-42",
+   "category": "Checklists",
+   "app": "Finish Questions",
+   "ask": "Which Works Better For Finish Questions?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_check_4",
+    "label": "Confetti At 19 Of 19",
+    "desc": "Bright confetti bursts when the last answer goes in.",
+    "tags": [
+     "playful",
+     "vibrant",
+     "loud",
+     "casual"
+    ],
+    "app": "Finish Questions",
+    "visual": {
+     "type": "polish",
+     "kind": "check",
+     "app": "Finish Questions",
+     "c": {
+      "name": "Finish Questions",
+      "title": "Finish Questions",
+      "sub": "19 questions in 15 rooms",
+      "cta": "Send Answers",
+      "item": "Mud room floor tile?",
+      "mark": "FQ",
+      "img": "int_modernkitchen"
+     },
+     "p": {
+      "mode": "confetti"
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_check_3",
+    "label": "Room List With Jungle Checks",
+    "desc": "When all 19 are done, every room shows a quiet jungle check.",
+    "tags": [
+     "clear",
+     "natural",
+     "calm",
+     "practical"
+    ],
+    "app": "Finish Questions",
+    "visual": {
+     "type": "polish",
+     "kind": "check",
+     "app": "Finish Questions",
+     "c": {
+      "name": "Finish Questions",
+      "title": "Finish Questions",
+      "sub": "19 questions in 15 rooms",
+      "cta": "Send Answers",
+      "item": "Mud room floor tile?",
+      "mark": "FQ",
+      "img": "int_modernkitchen"
+     },
+     "p": {
+      "mode": "alldone",
+      "items": [
+       "Foyer 110",
+       "Mud Room 116",
+       "Half Bath 115",
+       "Laundry 203",
+       "Bedroom 201",
+       "Bathroom 204"
+      ]
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "check"
+  },
+  {
+   "id": "2026-10-11b-43",
+   "category": "Condensed Lists",
+   "app": "Home Guide",
+   "ask": "Which Works Better For Home Guide?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_rows_4",
+    "label": "Only One Row Open At A Time",
+    "desc": "Opening a row closes the last one, so the list stays short.",
+    "tags": [
+     "minimal",
+     "tidy",
+     "clear",
+     "calm"
+    ],
+    "app": "Home Guide",
+    "visual": {
+     "type": "polish",
+     "kind": "rows",
+     "app": "Home Guide",
+     "c": {
+      "name": "Home Guide",
+      "title": "Your Home Guide",
+      "sub": "Moschouris Residence",
+      "cta": "Call Max",
+      "item": "Maintenance Schedule",
+      "mark": "HG",
+      "img": "ext_craftsman"
+     },
+     "p": {
+      "mode": "onlyone",
+      "items": [
+       "Who to Call",
+       "Maintenance Schedule",
+       "Warranties",
+       "Shutoffs & Key Locations",
+       "Home Systems & Equipment"
+      ],
+      "open": 4,
+      "detail": [
+       "Furnace 1 · Water Heater 1",
+       "Sump Pump 1 · ERV System"
+      ],
+      "head": "Good to Know"
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_rows_3",
+    "label": "Expand All And Collapse All Buttons",
+    "desc": "Rows can all open at once. Two small buttons open or close everything.",
+    "tags": [
+     "practical",
+     "direct",
+     "clear",
+     "efficient"
+    ],
+    "app": "Home Guide",
+    "visual": {
+     "type": "polish",
+     "kind": "rows",
+     "app": "Home Guide",
+     "c": {
+      "name": "Home Guide",
+      "title": "Your Home Guide",
+      "sub": "Moschouris Residence",
+      "cta": "Call Max",
+      "item": "Maintenance Schedule",
+      "mark": "HG",
+      "img": "ext_craftsman"
+     },
+     "p": {
+      "mode": "toggle",
+      "items": [
+       "Who to Call",
+       "Maintenance Schedule",
+       "Warranties",
+       "Shutoffs & Key Locations"
+      ],
+      "details": [
+       "Plumber · Electrician · HVAC",
+       "6 tasks this fall",
+       "Appliances · Roof · Windows",
+       "Water · Gas · Power"
+      ],
+      "head": "Good to Know"
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-44",
+   "category": "Screen Transitions",
+   "app": "Finish Questions",
+   "ask": "Which Is Sharper For Finish Questions?",
+   "retest": true,
+   "optionA": {
+    "id": "nv_trans_12",
+    "label": "Next Question Rises As A Sheet",
+    "desc": "Each question slides up from the bottom as a sheet.",
+    "tags": [
+     "soft",
+     "modern",
+     "clear",
+     "tactile"
+    ],
+    "app": "Finish Questions",
+    "visual": {
+     "type": "polish",
+     "kind": "trans",
+     "app": "Finish Questions",
+     "c": {
+      "name": "Finish Questions",
+      "title": "Finish Questions",
+      "sub": "19 questions in 15 rooms",
+      "cta": "Send Answers",
+      "item": "Mud room floor tile?",
+      "mark": "FQ",
+      "img": "int_modernkitchen"
+     },
+     "p": {
+      "t": "sheet",
+      "next": "Half Bath 115: Vanity top here?"
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_trans_11",
+    "label": "Next Question Slides In",
+    "desc": "The next question slides in from the right, like turning a page.",
+    "tags": [
+     "clear",
+     "modern",
+     "practical",
+     "direct"
+    ],
+    "app": "Finish Questions",
+    "visual": {
+     "type": "polish",
+     "kind": "trans",
+     "app": "Finish Questions",
+     "c": {
+      "name": "Finish Questions",
+      "title": "Finish Questions",
+      "sub": "19 questions in 15 rooms",
+      "cta": "Send Answers",
+      "item": "Mud room floor tile?",
+      "mark": "FQ",
+      "img": "int_modernkitchen"
+     },
+     "p": {
+      "t": "slide",
+      "next": "Half Bath 115: Vanity top here?"
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-45",
+   "category": "Feature Options",
+   "app": "Room Photos",
+   "ask": "Which Should Room Photos Do?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_feature_13",
+    "label": "Camera Opens Right Away",
+    "desc": "Add Photos jumps straight to the camera.",
+    "tags": [
+     "direct",
+     "tactile",
+     "practical",
+     "modern"
+    ],
+    "app": "Room Photos",
+    "visual": {
+     "type": "polish",
+     "kind": "feature",
+     "app": "Room Photos",
+     "c": {
+      "name": "Room Photos",
+      "title": "Room Photos",
+      "sub": "Moschouris room photos",
+      "cta": "Add Photos",
+      "item": "Living Area 004",
+      "mark": "RP",
+      "img": "tr_boutique_lobby"
+     },
+     "p": {
+      "mode": "camera",
+      "item": "Kitchen 006"
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_feature_14",
+    "label": "Pick From The Photo Library",
+    "desc": "Add Photos opens their library to pick photos they already took.",
+    "tags": [
+     "calm",
+     "practical",
+     "friendly",
+     "clear"
+    ],
+    "app": "Room Photos",
+    "visual": {
+     "type": "polish",
+     "kind": "feature",
+     "app": "Room Photos",
+     "c": {
+      "name": "Room Photos",
+      "title": "Room Photos",
+      "sub": "Moschouris room photos",
+      "cta": "Add Photos",
+      "item": "Living Area 004",
+      "mark": "RP",
+      "img": "tr_boutique_lobby"
+     },
+     "p": {
+      "mode": "library",
+      "item": "Kitchen 006",
+      "keys": [
+       "int_modernkitchen",
+       "tr_boutique_lobby",
+       "int_boho",
+       "int_midcentury",
+       "tr_glamping",
+       "ext_craftsman"
+      ]
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-46",
+   "category": "Swipe Controls",
+   "app": "All Swipe Apps",
+   "ask": "Which Swipe Controls Feel More Like You?",
+   "retest": false,
+   "optionA": {
+    "id": "sc_nv_round_filled",
+    "label": "Earthy Round Buttons, Filled",
+    "desc": "Filled clay, moss, ochre circles; hint above; stamp on swipe.",
+    "tags": [
+     "warm",
+     "natural",
+     "clear",
+     "colorful"
+    ],
+    "visual": {
+     "type": "controls",
+     "fmt": "round",
+     "words": [
+      "This",
+      "Both",
+      "Love",
+      "That"
+     ],
+     "icons": [
+      "◀",
+      "⇄",
+      "❤",
+      "▶"
+     ],
+     "colors": [
+      "#3F6E7D",
+      "#5A7D4F",
+      "#B5523B",
+      "#A0703C"
+     ],
+     "style": "filled",
+     "bg": "#FAF3EB",
+     "font": "Hind",
+     "hint": "above",
+     "stampov": "word",
+     "press": null
+    }
+   },
+   "optionB": {
+    "id": "sc_nv_round_outline",
+    "label": "Earthy Round Buttons, Outline",
+    "desc": "Same circles as outlines, color on the ring and icon only.",
+    "tags": [
+     "light",
+     "natural",
+     "minimal",
+     "clear"
+    ],
+    "visual": {
+     "type": "controls",
+     "fmt": "round",
+     "words": [
+      "This",
+      "Both",
+      "Love",
+      "That"
+     ],
+     "icons": [
+      "◀",
+      "⇄",
+      "❤",
+      "▶"
+     ],
+     "colors": [
+      "#3F6E7D",
+      "#5A7D4F",
+      "#B5523B",
+      "#A0703C"
+     ],
+     "style": "outline",
+     "bg": "#FAF3EB",
+     "font": "Hind",
+     "hint": "above",
+     "stampov": "word",
+     "press": null
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-47",
+   "category": "Share Message Copy",
+   "app": "Room Photos",
+   "ask": "Which Is Sharper For Room Photos?",
+   "retest": true,
+   "optionA": {
+    "id": "nv_msg2_4",
+    "label": "Personal Note From Max",
+    "desc": "Niko, here are today's photos. Every room is in there. – Max",
+    "tags": [
+     "personal",
+     "warm",
+     "friendly",
+     "casual"
+    ],
+    "app": "Room Photos",
+    "visual": {
+     "type": "polish",
+     "kind": "msg2",
+     "app": "Room Photos",
+     "c": {
+      "name": "Room Photos",
+      "title": "Room Photos",
+      "sub": "Moschouris room photos",
+      "cta": "Add Photos",
+      "item": "Living Area 004",
+      "mark": "RP",
+      "img": "tr_boutique_lobby"
+     },
+     "p": {
+      "text": "Niko, here are today's photos. Every room is in there. – Max",
+      "card": "Room Photos · 54 photos"
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_msg2_3",
+    "label": "Plain: Every Room, Sorted By Level",
+    "desc": "Here are the room photos, sorted by level.",
+    "tags": [
+     "clear",
+     "practical",
+     "direct",
+     "friendly"
+    ],
+    "app": "Room Photos",
+    "visual": {
+     "type": "polish",
+     "kind": "msg2",
+     "app": "Room Photos",
+     "c": {
+      "name": "Room Photos",
+      "title": "Room Photos",
+      "sub": "Moschouris room photos",
+      "cta": "Add Photos",
+      "item": "Living Area 004",
+      "mark": "RP",
+      "img": "tr_boutique_lobby"
+     },
+     "p": {
+      "text": "Here are the room photos, sorted by level.",
+      "card": "Room Photos · 54 photos"
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-48",
+   "category": "Condensed Lists",
+   "app": "Home Guide",
+   "ask": "Which Works Better For Home Guide?",
+   "retest": false,
+   "optionA": {
+    "id": "nv_rows_2",
+    "label": "Tap A Row, Details Slide Up",
+    "desc": "Same compact rows. Details open in a bottom sheet over the list.",
+    "tags": [
+     "clear",
+     "modern",
+     "soft",
+     "tactile"
+    ],
+    "app": "Home Guide",
+    "visual": {
+     "type": "polish",
+     "kind": "rows",
+     "app": "Home Guide",
+     "c": {
+      "name": "Home Guide",
+      "title": "Your Home Guide",
+      "sub": "Moschouris Residence",
+      "cta": "Call Max",
+      "item": "Maintenance Schedule",
+      "mark": "HG",
+      "img": "ext_craftsman"
+     },
+     "p": {
+      "mode": "sheet",
+      "items": [
+       "Furnace 1 Humidifier",
+       "Sump Pump 1",
+       "Water Filter System",
+       "ERV System",
+       "Water Heater 1",
+       "Irrigation Controller"
+      ],
+      "open": 0,
+      "detail": [
+       "Replace the pad",
+       "Every fall · Mech Room"
+      ],
+      "head": "Maintenance Schedule"
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_rows_1",
+    "label": "Tap A Row, It Expands In Place",
+    "desc": "One compact row per task. The tapped row opens right there.",
+    "tags": [
+     "practical",
+     "clear",
+     "minimal",
+     "direct"
+    ],
+    "app": "Home Guide",
+    "visual": {
+     "type": "polish",
+     "kind": "rows",
+     "app": "Home Guide",
+     "c": {
+      "name": "Home Guide",
+      "title": "Your Home Guide",
+      "sub": "Moschouris Residence",
+      "cta": "Call Max",
+      "item": "Maintenance Schedule",
+      "mark": "HG",
+      "img": "ext_craftsman"
+     },
+     "p": {
+      "mode": "expand",
+      "items": [
+       "Furnace 1 Humidifier",
+       "Sump Pump 1",
+       "Water Filter System",
+       "ERV System",
+       "Water Heater 1",
+       "Irrigation Controller"
+      ],
+      "open": 0,
+      "detail": [
+       "Replace the pad",
+       "Every fall · Mech Room"
+      ],
+      "head": "Maintenance Schedule"
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-49",
+   "category": "Share Preview (OG Card)",
+   "app": "SiteAgent Pitch",
+   "ask": "Which Is Sharper For SiteAgent Pitch?",
+   "retest": true,
+   "optionA": {
+    "id": "nv_og2_2",
+    "label": "Light Grid Card, Big Claim",
+    "desc": "Light grey blueprint grid, big Khand claim, small wordmark.",
+    "tags": [
+     "construction",
+     "technical",
+     "direct",
+     "modern"
+    ],
+    "app": "SiteAgent Pitch",
+    "visual": {
+     "type": "polish",
+     "kind": "og2",
+     "app": "SiteAgent Pitch",
+     "c": {
+      "name": "SiteAgent Pitch",
+      "title": "The AI Site Assistant for Builders",
+      "sub": "Seven agents. One assistant. Zero extra admin.",
+      "cta": "Book a Demo",
+      "item": "Daily Report ready to approve",
+      "mark": "SA",
+      "img": "base_site"
+     },
+     "p": {
+      "mode": "grid"
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_og2_1",
+    "label": "Site Photo Left, Claim Right",
+    "desc": "Site photo on the left, Khand claim and grey subline on the right.",
+    "tags": [
+     "construction",
+     "clear",
+     "natural",
+     "practical"
+    ],
+    "app": "SiteAgent Pitch",
+    "visual": {
+     "type": "polish",
+     "kind": "og2",
+     "app": "SiteAgent Pitch",
+     "c": {
+      "name": "SiteAgent Pitch",
+      "title": "The AI Site Assistant for Builders",
+      "sub": "Seven agents. One assistant. Zero extra admin.",
+      "cta": "Book a Demo",
+      "item": "Daily Report ready to approve",
+      "mark": "SA",
+      "img": "base_site"
+     },
+     "p": {
+      "mode": "left"
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-11b-50",
+   "category": "From Max Sign-Off",
+   "app": "Home Guide",
+   "ask": "Which Is Sharper For Home Guide?",
+   "retest": true,
+   "optionA": {
+    "id": "nv_signoff_2",
+    "label": "Name And Call Max In The Footer",
+    "desc": "No note on top. The footer says who built it, with a Call Max button.",
+    "tags": [
+     "clear",
+     "direct",
+     "practical",
+     "personal"
+    ],
+    "app": "Home Guide",
+    "visual": {
+     "type": "polish",
+     "kind": "signoff",
+     "app": "Home Guide",
+     "c": {
+      "name": "Home Guide",
+      "title": "Your Home Guide",
+      "sub": "Moschouris Residence",
+      "cta": "Call Max",
+      "item": "Maintenance Schedule",
+      "mark": "HG",
+      "img": "ext_craftsman"
+     },
+     "p": {
+      "mode": "footer",
+      "copy": "Built by Max Weberman"
+     }
+    }
+   },
+   "optionB": {
+    "id": "nv_signoff_1",
+    "label": "Note From Max At The Top",
+    "desc": "A short plain note above the sections, signed – Max.",
+    "tags": [
+     "personal",
+     "warm",
+     "friendly",
+     "direct"
+    ],
+    "app": "Home Guide",
+    "visual": {
+     "type": "polish",
+     "kind": "signoff",
+     "app": "Home Guide",
+     "c": {
+      "name": "Home Guide",
+      "title": "Your Home Guide",
+      "sub": "Moschouris Residence",
+      "cta": "Call Max",
+      "item": "Maintenance Schedule",
+      "mark": "HG",
+      "img": "ext_craftsman"
+     },
+     "p": {
+      "mode": "top",
+      "copy": "Niko and Vivian, everything about your house is in here. Call me anytime."
+     }
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  }
+ ],
+ "image_credits": {
+  "int_midcentury": {
+   "file": "img/int_midcentury.jpg",
+   "title": "File:California Mid-Century Modern Home with open-beam ceiling 1960.jpg",
+   "license": "CC BY-SA 3.0",
+   "artist": "GeorgeLouis",
+   "source": "https://commons.wikimedia.org/wiki/File:California_Mid-Century_Modern_Home_with_open-beam_ceiling_1960.jpg"
+  },
+  "int_industrial": {
+   "file": "img/int_industrial.jpg",
+   "title": "File:Vintage Flats Apartments - fmr Visco-Meter Corporation, Buerk Tool et al. - Buffalo, New York - 20230204.jpg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Andre Carrotflower",
+   "source": "https://commons.wikimedia.org/wiki/File:Vintage_Flats_Apartments_-_fmr_Visco-Meter_Corporation,_Buerk_Tool_et_al._-_Buffalo,_New_York_-_20230204.jpg"
+  },
+  "int_concrete": {
+   "file": "img/int_concrete.jpg",
+   "title": "File:Winnipeg (6408514033).jpg",
+   "license": "CC BY 2.0",
+   "artist": "Herb Neufeld",
+   "source": "https://commons.wikimedia.org/wiki/File:Winnipeg_(6408514033).jpg"
+  },
+  "int_thai": {
+   "file": "img/int_thai.jpg",
+   "title": "File:Native House in the Interior of Siam Photo 1892.png",
+   "license": "Public domain",
+   "artist": "Jacob T. Child (1832 - 1905)",
+   "source": "https://commons.wikimedia.org/wiki/File:Native_House_in_the_Interior_of_Siam_Photo_1892.png"
+  },
+  "int_boho": {
+   "file": "img/int_boho.jpg",
+   "title": "File:Balanced Modern Bedroom Design with Neutral Tones and Layered Lighting.jpg",
+   "license": "CC BY 4.0",
+   "artist": "SPL Interiors1",
+   "source": "https://commons.wikimedia.org/wiki/File:Balanced_Modern_Bedroom_Design_with_Neutral_Tones_and_Layered_Lighting.jpg"
+  },
+  "int_artdeco": {
+   "file": "img/int_artdeco.jpg",
+   "title": "File:Spiral stairs (Art Deco, Nebotičnik, Ljubljana).jpg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Petar Milošević",
+   "source": "https://commons.wikimedia.org/wiki/File:Spiral_stairs_(Art_Deco,_Neboti%C4%8Dnik,_Ljubljana).jpg"
+  },
+  "int_modernkitchen": {
+   "file": "img/int_modernkitchen.jpg",
+   "title": "File:Modern kitchen and dining area in a simple home setting showing light colors and minimal decor.jpg",
+   "license": "CC BY 2.0",
+   "artist": "Shixart1985",
+   "source": "https://commons.wikimedia.org/wiki/File:Modern_kitchen_and_dining_area_in_a_simple_home_setting_showing_light_colors_and_minimal_decor.jpg"
+  },
+  "int_cabin": {
+   "file": "img/int_cabin.jpg",
+   "title": "File:Milwaukee Public Museum April 2023 123 (Streets of Old Milwaukee--Ahner Log Cabin interior).jpg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Michael Barera",
+   "source": "https://commons.wikimedia.org/wiki/File:Milwaukee_Public_Museum_April_2023_123_(Streets_of_Old_Milwaukee--Ahner_Log_Cabin_interior).jpg"
+  },
+  "ext_modern": {
+   "file": "img/ext_modern.jpg",
+   "title": "File:The 1951 Mies van der Rohe-designed Farnsworth House, an icon of 20th century modern architecture in Plano, Illinois, is owned by the National Trust for Historic Preservation LCCN2011636469.tif",
+   "license": "Public domain",
+   "artist": "Carol M. Highsmith",
+   "source": "https://commons.wikimedia.org/wiki/File:The_1951_Mies_van_der_Rohe-designed_Farnsworth_House,_an_icon_of_20th_century_modern_architecture_in_Plano,_Illinois,_is_owned_by_the_National_Trust_for_Historic_Preservation_LCCN2011636469.tif"
+  },
+  "ext_craftsman": {
+   "file": "img/ext_craftsman.jpg",
+   "title": "File:Goodwillie-Allen House - Bend Oregon.jpg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Ian Poellet",
+   "source": "https://commons.wikimedia.org/wiki/File:Goodwillie-Allen_House_-_Bend_Oregon.jpg"
+  },
+  "ext_spanish": {
+   "file": "img/ext_spanish.jpg",
+   "title": "File:Spanish Colonial Revival - Wauwatosa, WI - Wittenberg House (1).jpg",
+   "license": "CC BY 4.0",
+   "artist": "Bmzuckerman",
+   "source": "https://commons.wikimedia.org/wiki/File:Spanish_Colonial_Revival_-_Wauwatosa,_WI_-_Wittenberg_House_(1).jpg"
+  },
+  "ext_tropical": {
+   "file": "img/ext_tropical.jpg",
+   "title": "File:Villa pool (3119319057).jpg",
+   "license": "CC BY-SA 2.0",
+   "artist": "Matt @ PEK from Taipei, Taiwan",
+   "source": "https://commons.wikimedia.org/wiki/File:Villa_pool_(3119319057).jpg"
+  },
+  "base_site": {
+   "file": "img/base_site.jpg",
+   "title": "File:2025 - free image of a building worker at a construction site - drilling rusty piles in the peat soil for the foundation. Construction photography Amsterdam city by Fons Heijnsbroek; free download urban photo, The Netherlands.tif",
+   "license": "CC0",
+   "artist": "Fons Heijnsbroek",
+   "source": "https://commons.wikimedia.org/wiki/File:2025_-_free_image_of_a_building_worker_at_a_construction_site_-_drilling_rusty_piles_in_the_peat_soil_for_the_foundation._Construction_photography_Amsterdam_city_by_Fons_Heijnsbroek;_free_download_urban_photo,_The_Netherlands.tif"
+  },
+  "base_temple": {
+   "file": "img/base_temple.jpg",
+   "title": "File:Templo Wat Arun, Bangkok, Tailandia, 2013-08-22, DD 30.jpg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Diego Delso",
+   "source": "https://commons.wikimedia.org/wiki/File:Templo_Wat_Arun,_Bangkok,_Tailandia,_2013-08-22,_DD_30.jpg"
+  },
+  "int_japandi": {
+   "file": "img/int_japandi.jpg",
+   "title": "File:Tatami room in Dogo Onsen (22408557315).jpg",
+   "license": "CC BY 2.0",
+   "artist": "RachelH_",
+   "source": "https://commons.wikimedia.org/wiki/File:Tatami_room_in_Dogo_Onsen_(22408557315).jpg"
+  },
+  "tr_beach_bungalow": {
+   "file": "img/tr_beach_bungalow.jpg",
+   "title": "File:Klong Nin Beach, Koh Lanta.jpg",
+   "license": "CC BY 2.0",
+   "artist": "Fabio Achilli",
+   "source": "https://commons.wikimedia.org/wiki/File:Klong_Nin_Beach,_Koh_Lanta.jpg"
+  },
+  "tr_boutique_lobby": {
+   "file": "img/tr_boutique_lobby.jpg",
+   "title": "File:Lobby lounge of Amantaka Suite Amantaka luxury Resort & Hotel Luang Prabang Laos.jpg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Basile Morin",
+   "source": "https://commons.wikimedia.org/wiki/File:Lobby_lounge_of_Amantaka_Suite_Amantaka_luxury_Resort_%26_Hotel_Luang_Prabang_Laos.jpg"
+  },
+  "tr_treehouse": {
+   "file": "img/tr_treehouse.jpg",
+   "title": "File:Cricket match and Marina Bay Sands Hotel in Singapore.jpg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Basile Morin",
+   "source": "https://commons.wikimedia.org/wiki/File:Cricket_match_and_Marina_Bay_Sands_Hotel_in_Singapore.jpg"
+  },
+  "tr_glamping": {
+   "file": "img/tr_glamping.jpg",
+   "title": "File:Nimmu House - Glamping Tent - Interior.jpg",
+   "license": "CC BY 4.0",
+   "artist": "Unbiased Contributors",
+   "source": "https://commons.wikimedia.org/wiki/File:Nimmu_House_-_Glamping_Tent_-_Interior.jpg"
+  },
+  "tr_mountain_lodge": {
+   "file": "img/tr_mountain_lodge.jpg",
+   "title": "File:Timberline Lodge - DPLA - 8cb2790a646b896c776e6799cad81124.jpg",
+   "license": "CC BY 4.0",
+   "artist": "Gary Halvorson, Oregon State Archives",
+   "source": "https://commons.wikimedia.org/wiki/File:Timberline_Lodge_-_DPLA_-_8cb2790a646b896c776e6799cad81124.jpg"
+  },
+  "tr_desert_camp": {
+   "file": "img/tr_desert_camp.jpg",
+   "title": "File:Wadi Rum Traditional Desert Bedouin Camp in Jordan.jpg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Irina Alexandra S.",
+   "source": "https://commons.wikimedia.org/wiki/File:Wadi_Rum_Traditional_Desert_Bedouin_Camp_in_Jordan.jpg"
+  },
+  "tr_sleeper_train": {
+   "file": "img/tr_sleeper_train.jpg",
+   "title": "File:Hard sleeper compartment on YW25G 674792 (20150625163119).JPG",
+   "license": "CC BY-SA 4.0",
+   "artist": "N509FZ",
+   "source": "https://commons.wikimedia.org/wiki/File:Hard_sleeper_compartment_on_YW25G_674792_(20150625163119).JPG"
+  },
+  "cf_industrial": {
+   "file": "img/cf_industrial.jpg",
+   "title": "File:Vashon Island Coffee Roasterie - interior 03.jpg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Joe Mabel",
+   "source": "https://commons.wikimedia.org/wiki/File:Vashon_Island_Coffee_Roasterie_-_interior_03.jpg"
+  },
+  "cf_garden": {
+   "file": "img/cf_garden.jpg",
+   "title": "File:DSCF0817 Shaded bamboo seating in a cozy outdoor café with leafy greenery and a burst of pink blossoms beyond the railing.jpg",
+   "license": "CC BY-SA 4.0",
+   "artist": "PattayaPatrol",
+   "source": "https://commons.wikimedia.org/wiki/File:DSCF0817_Shaded_bamboo_seating_in_a_cozy_outdoor_caf%C3%A9_with_leafy_greenery_and_a_burst_of_pink_blossoms_beyond_the_railing.jpg"
+  },
+  "cf_kiosk": {
+   "file": "img/cf_kiosk.jpg",
+   "title": "File:Vendeur ambulant de café à Douala.jpg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Minette Lontsie",
+   "source": "https://commons.wikimedia.org/wiki/File:Vendeur_ambulant_de_caf%C3%A9_%C3%A0_Douala.jpg"
+  },
+  "cf_roastery": {
+   "file": "img/cf_roastery.jpg",
+   "title": "File:Starbucks Reserve Roastery interior 11.jpg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Joe Mabel",
+   "source": "https://commons.wikimedia.org/wiki/File:Starbucks_Reserve_Roastery_interior_11.jpg"
+  },
+  "gd_tropical": {
+   "file": "img/gd_tropical.jpg",
+   "title": "File:Madeira - Funchal, Monte Palace Tropical Garden - panoramio (5).jpg",
+   "license": "CC BY 3.0",
+   "artist": "Banja-Frans Mulder",
+   "source": "https://commons.wikimedia.org/wiki/File:Madeira_-_Funchal,_Monte_Palace_Tropical_Garden_-_panoramio_(5).jpg"
+  },
+  "gd_japanese": {
+   "file": "img/gd_japanese.jpg",
+   "title": "File:Portland Japanese Garden October 2019 005.jpg",
+   "license": "CC BY-SA 4.0",
+   "artist": "King of Hearts",
+   "source": "https://commons.wikimedia.org/wiki/File:Portland_Japanese_Garden_October_2019_005.jpg"
+  },
+  "gd_cottage": {
+   "file": "img/gd_cottage.jpg",
+   "title": "File:Cottage garden border at Boreham, Essex, England.jpg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Acabashi",
+   "source": "https://commons.wikimedia.org/wiki/File:Cottage_garden_border_at_Boreham,_Essex,_England.jpg"
+  },
+  "gd_xeriscape": {
+   "file": "img/gd_xeriscape.jpg",
+   "title": "File:Canet-en-Roussillon arboretum the cactus garden.jpg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Alan Mattingly",
+   "source": "https://commons.wikimedia.org/wiki/File:Canet-en-Roussillon_arboretum_the_cactus_garden.jpg"
+  },
+  "gd_vegetable": {
+   "file": "img/gd_vegetable.jpg",
+   "title": "File:Raised vegetable beds for disabled access - geograph.org.uk - 1411061.jpg",
+   "license": "CC BY-SA 2.0",
+   "artist": "David Hawgood",
+   "source": "https://commons.wikimedia.org/wiki/File:Raised_vegetable_beds_for_disabled_access_-_geograph.org.uk_-_1411061.jpg"
+  },
+  "gd_rooftop": {
+   "file": "img/gd_rooftop.jpg",
+   "title": "File:Davao City Library Rooftop garden.jpg",
+   "license": "CC BY-SA 4.0",
+   "artist": "MadayawDavao",
+   "source": "https://commons.wikimedia.org/wiki/File:Davao_City_Library_Rooftop_garden.jpg"
+  },
+  "gd_courtyard": {
+   "file": "img/gd_courtyard.jpg",
+   "title": "File:Fountain and courtyard, Warwick House - geograph.org.uk - 1925236.jpg",
+   "license": "CC BY-SA 2.0",
+   "artist": "PAUL FARMER",
+   "source": "https://commons.wikimedia.org/wiki/File:Fountain_and_courtyard,_Warwick_House_-_geograph.org.uk_-_1925236.jpg"
+  },
+  "gd_meadow": {
+   "file": "img/gd_meadow.jpg",
+   "title": "File:Wildflower meadow, Gibson Street, Glasgow University.jpg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Rosser1954",
+   "source": "https://commons.wikimedia.org/wiki/File:Wildflower_meadow,_Gibson_Street,_Glasgow_University.jpg"
+  }
+ }
+}
