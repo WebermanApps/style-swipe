@@ -2666,9 +2666,42 @@ def save_notes(res):
     for n in new:
         print(f"  NOTE [{deck} {n.get('pair_id') or n.get('card_id')}] {n.get('category')}: {n.get('label')} -> {n.get('answer')}\n    \"{n.get('note')}\"")
 
+def parse_results_text(txt):
+    """Results from the app: a plain JSON export, or shared text (summary line, then the JSON, then maybe a URL)."""
+    txt = txt.strip()
+    try: return json.loads(txt)
+    except ValueError: pass
+    dec = json.JSONDecoder()
+    for i, ch in enumerate(txt):
+        if ch != "{": continue
+        try:
+            obj, _ = dec.raw_decode(txt[i:])
+        except ValueError: continue
+        if isinstance(obj, dict) and "picks" in obj: return obj
+    return None
+
+def enrich_compact(res):
+    """Shared (compact) results carry only ids, choice/answer and note; fill labels, option ids, tags and
+    category from the deck file so the rest of ingest works unchanged."""
+    deck = load_json(os.path.join(DECKS, f"{res.get('deck')}.json"), None)
+    if not deck: return res
+    pairs = {p["id"]: p for p in deck.get("pairs", [])}
+    cards = {c["id"]: c for c in deck.get("cards", [])}
+    for p in res.get("picks", []):
+        if "pair_id" in p and p["pair_id"] in pairs and "optionA" not in p:
+            d = pairs[p["pair_id"]]; A, B = d["optionA"], d["optionB"]
+            p.update({"category": d["category"], "optionA": A["id"], "optionB": B["id"], "labelA": A.get("label"),
+                      "labelB": B.get("label"), "tagsA": A.get("tags", []), "tagsB": B.get("tags", [])})
+        elif "card_id" in p and p["card_id"] in cards and "option_id" not in p:
+            c = cards[p["card_id"]]; o = c["option"]
+            p.update({"category": c["category"], "option_id": o["id"], "label": o.get("label"), "tags": o.get("tags", [])})
+    return res
+
 def ingest(results_path):
-    res = load_json(results_path, None)
+    try: res = parse_results_text(open(results_path, encoding="utf-8").read())
+    except OSError: res = None
     if not res: sys.exit(f"Could not read results JSON: {results_path}")
+    res = enrich_compact(res)
     profile = load_json(PROFILE, empty_profile())
     deck_date = res.get("deck")
     save_notes(res)

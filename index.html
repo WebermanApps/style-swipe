@@ -197,6 +197,11 @@ button.skip:hover{border-color:var(--line)}
 .v-hm>div{height:100%}
 .v-hm *{min-width:0;overflow-wrap:anywhere}
 .v-svg svg{max-width:100%;max-height:100%;width:auto;height:auto;display:block}
+/* larger SVG mock screens (scoped to .v-svg so other visual types are unchanged): the screen fills the card width, capped by viewport height */
+.v-hm.v-svg{height:auto;min-height:210px}
+.v-hm.v-svg>div{padding:2px!important;height:auto!important}
+.opt:has(.v-svg){padding:5px}
+.v-svg svg{width:100%!important;height:auto!important;max-height:min(34vh,380px)!important}
 .v-pz{position:relative;height:210px;overflow:hidden;background:#fff;font-family:Hind,system-ui,sans-serif;color:#171717;text-align:left}
 .v-pz>div:last-child{height:100%}
 .v-pz .pz-app{position:absolute;right:5px;top:5px;z-index:3;font-size:8px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#ffffffe6;border:1px solid #E5E5E5;padding:1px 5px;color:#525252}
@@ -244,6 +249,13 @@ button.skip:hover{border-color:var(--line)}
 .notebtn{display:inline-flex;align-items:center;gap:4px;min-height:44px;min-width:44px;padding:0 10px;border:1px solid var(--line);background:#fff;color:#1F1F1F;border-radius:999px;font:600 12px Hind,system-ui,sans-serif;cursor:pointer}
 .notebtn.has{border-color:#05668D;color:#05668D;background:#05668D12}
 .notebtn .ni{font-size:14px}
+.controls button.notectl{border:2px solid #05668D;color:#05668D;background:#fff;font-weight:700}
+.controls button.notectl.has{background:#05668D12}
+.notesaved{display:none;text-align:center;font:600 12px Hind,system-ui,sans-serif;color:#05668D;margin:-2px auto 0}
+.notesaved.on{display:block}
+.notesaved.flash{animation:nsflash 1.2s ease}
+@keyframes nsflash{0%{transform:scale(1.15)}100%{transform:scale(1)}}
+@media (max-width:480px){.controls.v4 .row2 button{min-width:0!important;flex:1 1 0!important;padding:8px 4px!important;font-size:12px;white-space:nowrap}.controls.v4 .row2 button.skip{flex:0 0 auto!important;min-width:52px!important}.controls.v3 button.notectl{font-size:11px;padding:8px 2px;letter-spacing:0}}
 #noteSheet{position:fixed;inset:0;z-index:200;display:none;align-items:flex-end;justify-content:center;background:rgba(31,31,31,.18)}
 #noteSheet.on{display:flex}
 #noteSheet .box{width:100%;max-width:560px;background:#FFFDF7;border:1px solid var(--line);border-radius:16px 16px 0 0;padding:14px 14px calc(14px + env(safe-area-inset-bottom));box-shadow:0 -8px 24px rgba(10,10,10,.12)}
@@ -318,6 +330,7 @@ html{color-scheme:light only}
   <button class="maybe mw-hover" id="bMaybe" title="M / Down arrow">Maybe</button>
   <button class="love mw-hover" id="bLove" title="L / Up arrow"><span class="h">❤</span> Love</button>
   <button class="yes mw-hover" id="bYes" title="Right arrow">Yes ✓</button>
+  <button class="notectl mw-hover" id="bNote3" type="button" title="E: add a note">✎ Add Note</button>
   <button class="undo mw-hover" id="bU3" title="Backspace / Z">↶</button>
 </div>
 <div class="controls v4" id="controls">
@@ -329,9 +342,11 @@ html{color-scheme:light only}
   </div><div class="row2">
   <button class="neither mw-hover" id="bN" title="Down arrow / N">✕ Neither</button>
   <button class="undo mw-hover" id="bU" title="Backspace / Z">↶ Undo</button>
+  <button class="notectl mw-hover" id="bNote" type="button" title="E: add a note">✎ Add Note</button>
   <button class="skip mw-hover" id="bSkip" title="S: skip without answering">Skip ›</button>
   </div>
 </div>
+<div class="notesaved" id="noteSaved" role="status" aria-live="polite">✓ Note saved</div>
 <div class="hint" id="hint"></div>
 <div id="noteSheet" role="dialog" aria-modal="true" aria-labelledby="noteTitle"><div class="box"><h3 id="noteTitle">Add Note</h3><div class="sub" id="noteSub"></div>
 <textarea id="noteText" maxlength="1000" placeholder="Optional: what do you like or not like here?"></textarea>
@@ -1012,7 +1027,7 @@ function setDeck(d){
  $('#sub').textContent=`Deck ${d.date} · ${items.length} ${single?'cards':'pairs'}`;
  $('#hint').textContent=single?'Swipe left = No, right = Yes. Tap Maybe or ❤ Love in the middle. Arrow keys: ← No, → Yes.':'Swipe or tap: left = This, right = That. Both = like both. ❤ Love: tap Love, then tap the option.';
  save();render()}
-function showControls(on){$('#controls3').style.display=on&&single?'':'none';$('#controls').style.display=on&&!single?'':'none';$('#hint').style.display=on?'':'none'}
+function showControls(on){$('#controls3').style.display=on&&single?'':'none';$('#controls').style.display=on&&!single?'':'none';$('#hint').style.display=on?'':'none';if(!on)$('#noteSaved').classList.remove('on')}
 function render(){stopAllAudio();
  $('#prog').style.width=(100*idx/Math.max(1,items.length))+'%';
  const stage=$('#stage');
@@ -1029,7 +1044,7 @@ function render(){stopAllAudio();
   <h2>${p.ask?esc(p.ask):p.app?`Which Is Sharper For ${esc(p.app)}?`:'Which Feels More Like You?'}</h2><div class="opts">${optHtml(p.optionA,'A')}${optHtml(p.optionB,'B')}</div>
   <div class="stamp l">THIS</div><div class="stamp r">THAT</div><div class="stamp both">BOTH</div><div class="stamp neither">NEITHER</div><div class="stamp lovea">LOVE ❤</div><div class="stamp loveb">LOVE ❤</div></div>`;
  }
- shownAt=performance.now();bindDrag($('#card'));const nb=$('#card .notebtn');if(nb)nb.onclick=e=>{e.stopPropagation();openNote(p.id)};
+ shownAt=performance.now();bindDrag($('#card'));const nb=$('#card .notebtn');if(nb)nb.onclick=e=>{e.stopPropagation();openNote(p.id)};updateNoteUi();
 }
 function answer(ans){ // v3
  if(!deck||!single||idx>=items.length)return;
@@ -1129,19 +1144,25 @@ function shareSummary(){
 function openSms(u){location.href=u}
 const isPhone=()=>/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)||(navigator.maxTouchPoints>1&&/Macintosh/.test(navigator.userAgent));
 async function copyText(txt,msg){try{await navigator.clipboard.writeText(txt);toast(msg||'Copied')}catch(_){const ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity=0;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');toast(msg||'Copied')}catch(e){toast('Copy failed')}ta.remove()}}
+/* compact full results for Share: same picks as Copy JSON (deck id, each pair/card id, choice/answer, note) */
+function shareJson(){const r=buildResults();
+ return JSON.stringify({app:'style-swipe',version:r.version,format:r.format,deck:r.deck,answered:r.answered,total:items.length,
+  picks:(r.picks||[]).map(p=>single?{card_id:p.card_id,answer:p.answer,note:p.note||undefined}:{pair_id:p.pair_id,choice:p.choice,note:p.note||undefined})})}
+const SHARE_MAX=1800;   // longer than this and many share sheets / SMS apps truncate
 async function share(){
- const link=appLink(),sum=shareSummary(),text=`${sum}\n${link}`;
- const json=deck&&picks.length?resultsJson():'';
+ const link=appLink(),sum=shareSummary(),has=deck&&picks.length,cj=has?shareJson():'';
+ const text=has?`${sum}\n${cj}\n${link}`:`${sum}\n${link}`,long=text.length>SHARE_MAX;
+ const shortText=`${sum}\n(Full results JSON copied to clipboard${long?' and attached':''}.)\n${link}`;
+ if(long&&has)await copyText(`${sum}\n${cj}`,'Full results copied');
  if(navigator.share){
   try{
-   if(json){const file=new File([json],`style-swipe-results-${deck.date}.json`,{type:'application/json'});
-    if(navigator.canShare&&navigator.canShare({files:[file]})){await navigator.share({title:`Style Swipe ${deck.date}`,text,files:[file]});return}}
-   const full=json&&json.length<=2000?`${text}\n\n${json}`:text;   // full JSON only if short enough for a message
-   await navigator.share({title:'Style Swipe',text:full});return
+   if(long&&has){const file=new File([cj],`style-swipe-results-${deck.date}.json`,{type:'application/json'});
+    if(navigator.canShare&&navigator.canShare({files:[file]})){await navigator.share({title:`Style Swipe ${deck.date}`,text:shortText,files:[file]});return}}
+   await navigator.share({title:'Style Swipe',text});return
   }catch(e){if(e&&e.name==='AbortError')return}
  }
  if(isPhone()){openSms(`sms:?&body=${encodeURIComponent(text)}`);return}
- await copyText(text,'Copied link and summary')}
+ await copyText(text,has?'Copied summary and full results':'Copied link and summary')}
 function showEnd(){
  showControls(false);
  const r=buildResults(),max=Math.max(1,...r.top_tags.map(x=>x.score),...r.avoided_tags.map(x=>-x.score));
@@ -1176,10 +1197,14 @@ function noteOf(id){const n=readNotes()[id];return n&&n.note?n.note:''}
 function itemLabel(it){return single?it.option.label:`${it.optionA.label} vs ${it.optionB.label}`}
 function noteBtn(id){const has=!!noteOf(id);return `<button type="button" class="notebtn mw-hover${has?' has':''}" aria-label="${has?'Edit note':'Add note'}" title="E: note"><span class="ni">${has?'📝':'✎'}</span>${has?'Note':'Add Note'}</button>`}
 let noteFor=null,noteAfter=null;
+function updateNoteUi(flash){const el=$('#noteSaved');if(!el)return;const it=deck&&idx<items.length?items[idx]:null,has=!!(it&&noteOf(it.id));
+ el.classList.toggle('on',has);if(has&&flash){el.classList.remove('flash');void el.offsetWidth;el.classList.add('flash')}
+ ['#bNote','#bNote3'].forEach(q=>{const b=$(q);if(b){b.classList.toggle('has',has);b.textContent=has?'📝 Edit Note':'✎ Add Note'}})}
+function noteCtl(){if(deck&&idx<items.length)openNote(items[idx].id)}
 function openNote(id,after){const it=items.find(x=>x.id===id);if(!it)return;noteFor=id;noteAfter=after||null;
  $('#noteTitle').textContent=noteOf(id)?'Edit Note':'Add Note';$('#noteSub').textContent=`${it.category} · ${itemLabel(it)}`;
  $('#noteText').value=noteOf(id);$('#noteDel').style.display=noteOf(id)?'':'none';$('#noteSheet').classList.add('on');setTimeout(()=>$('#noteText').focus(),30)}
-function closeNote(){$('#noteText').blur();$('#noteSheet').classList.remove('on');noteFor=null;const f=noteAfter;noteAfter=null;if(f)f();else if(deck&&idx<items.length){const c=$('#card');if(c){const it=items[idx];const nb=c.querySelector('.notebtn');if(nb){nb.outerHTML=noteBtn(it.id);const n2=c.querySelector('.notebtn');n2.onclick=e=>{e.stopPropagation();openNote(it.id)}}}}}
+function closeNote(){$('#noteText').blur();$('#noteSheet').classList.remove('on');noteFor=null;const f=noteAfter;noteAfter=null;if(f)f();else if(deck&&idx<items.length){const c=$('#card');if(c){const it=items[idx];const nb=c.querySelector('.notebtn');if(nb){nb.outerHTML=noteBtn(it.id);const n2=c.querySelector('.notebtn');n2.onclick=e=>{e.stopPropagation();openNote(it.id)}}}updateNoteUi(true)}}
 function setNote(id,txt){const n=readNotes();txt=(txt||'').trim();if(txt)n[id]={note:txt,at:new Date().toISOString()};else delete n[id];writeNotes(n);
  const p=picks.find(x=>(x.pair_id||x.card_id)===id);if(p){if(txt)p.note=txt;else delete p.note;save()}}
 function withNotes(r){const n=readNotes();
@@ -1203,7 +1228,7 @@ $('#bA').onclick=()=>choose('A');$('#bB').onclick=()=>choose('B');$('#bN').oncli
 $('#bLoveP').onclick=()=>{setLove(!loveArmed);if(loveArmed)toast('Now tap the option you love')};
 $('#bNo').onclick=()=>answer('no');$('#bMaybe').onclick=()=>answer('maybe');$('#bLove').onclick=()=>answer('love');$('#bYes').onclick=()=>answer('yes');$('#bU3').onclick=undo;
 $('#btnExportTop').onclick=()=>{if(deck)download()};
-$('#shareBtn').onclick=share;
+$('#shareBtn').onclick=share;$('#bNote').onclick=noteCtl;$('#bNote3').onclick=noteCtl;
 document.addEventListener('keydown',e=>{if($('#noteSheet').classList.contains('on')){if(e.key==='Escape')closeNote();return}if(e.target.tagName==='TEXTAREA'||e.target.tagName==='SELECT'||!deck)return;const k=e.key;if(k==='e'&&!e.metaKey&&!e.ctrlKey&&idx<items.length){e.preventDefault();openNote(items[idx].id);return}
  if(k==='Backspace'||k==='z'){e.preventDefault();return undo()}
  if(single){if(k==='s')answer('skip');else if(k==='ArrowLeft')answer('no');else if(k==='ArrowRight')answer('yes');else if(k==='m'||k==='ArrowDown')answer('maybe');else if(k==='l'||k==='ArrowUp')answer('love');return}
