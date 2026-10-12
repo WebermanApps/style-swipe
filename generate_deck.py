@@ -1842,6 +1842,287 @@ NV_ASK = {"Feature Options": "Which Should {app} Do?", "Navigation": "Which Work
           "Photo Handling": "Which Works Better For {app}?", "Share & Sign-Off": "Which Should {app} Do?", "Answer Style": "Which Works Better For {app}?"}
 
 
+# ---- Niko & Vivian deck, round 2 (2026-10-12b): look AND function for the same four client apps ----
+# Retests the 10 pairs Max skipped in 2026-10-11b (as fresh, sharper options), the app-polish-spec retest topics
+# (icon, imagery, share copy, sign-off, transitions, SiteAgent share card), plus new function questions:
+# warranties, shutoffs, who to call, task tracking, install card, edit-after-send, reminders, resume, problem flags,
+# viewer, before/after, upload progress, select and download. Most screens use the generic 'scr' composer. Light mode only.
+def nv2(kind, app, slug, label, desc, tags, **p):
+    c = NVAPPS[app]
+    return {"id": f"nv2_{app}_{slug}", "label": label, "desc": desc, "tags": tags, "app": c["name"],
+            "visual": {"type": "polish", "kind": kind, "app": c["name"], "c": c, "p": p}}
+def scr(app, slug, label, desc, tags, blocks, **p): return nv2("scr", app, slug, label, desc, tags, blocks=blocks, **p)
+
+NV2 = []   # (category, app key, option A, option B, retest?)
+def nv2add(cat, app, a, b, retest=False): NV2.append((cat, app, a, b, retest))
+FQ_SWATCH = ["#ECEBE8", "#F3ECDD", "#DDDFE0", "#EDE7DC"]
+
+# --- Retests of the 10 pairs skipped in deck 2026-10-11b ---
+nv2add("Feature Options", "fq",
+ scr("fq", "notsure_both", "Not Sure: Add A Photo Or A Note", "Tapping Not Sure shows two small buttons. They pick either one, or neither.", ["practical", "friendly", "personal", "clear"],
+     [["q", "Penny tile on shower floor and main floor?", 13], ["ans", ['Carrara Catalina 1" penny', "Aquarius White penny"], None], ["ans", ["Not Sure"], 0], ["btns", ["📷 Add Photo", "✎ Add Note"]], ["small", "Optional. Max can check it for you."]], head="Bathroom 204", sub=""),
+ scr("fq", "notsure_mark", "Not Sure: Just Mark It, Max Follows Up", "Not Sure is one tap. No photo or note. Max sorts it out later.", ["direct", "calm", "clear", "personal"],
+     [["q", "Penny tile on shower floor and main floor?", 13], ["ans", ['Carrara Catalina 1" penny', "Aquarius White penny"], None], ["ans", ["Not Sure"], 0], ["small", "Got it. Max will look at this one with you."], ["spacer"], ["btn", "Next →", "full"]], head="Bathroom 204", sub=""), True)
+nv2add("Navigation", "sw",
+ scr("sw", "next_only", "One Big Next Stop Button", "Only the next stop. The stop count sits above, and there's nothing else to tap.", ["direct", "clear", "calm", "practical"],
+     [["progress", 2, 7, "Stop 2"], ["q", "Unfinished Basement Area", 13], ["ph", 4], ["spacer"], ["btn", "Next Stop →", "full"]], sub=""),
+ scr("sw", "next_dots", "Next Stop Button Plus Stop Dots", "The same button at the bottom, plus dots 1 to 7 on top to jump back.", ["practical", "clear", "tactile", "modern"],
+     [["chips", ["✓ 1", "2", "3", "4", "5", "6", "7"], 1], ["q", "Unfinished Basement Area", 13], ["ph", 3], ["spacer"], ["btn", "Next Stop →", "full"]], sub=""), True)
+nv2add("Feature Options", "hg",
+ scr("hg", "pin_and_search", "Emergencies Pinned, Search Under It", "Both: a red-outlined Emergencies card on top, and a search bar right below.", ["practical", "clear", "direct", "construction"],
+     [["pin", "Water, gas and power shutoffs"], ["search", ""], ["row", "Who to Call"], ["row", "Maintenance Schedule"], ["row", "Warranties"]]),
+ scr("hg", "search_only", "Search On Top, Emergencies In The List", "One search bar. Emergencies is the first row, styled like the rest.", ["minimal", "clear", "modern", "calm"],
+     [["search", ""], ["row", "Emergencies", "›", "b"], ["row", "Who to Call"], ["row", "Maintenance Schedule"], ["row", "Warranties"], ["row", "Shutoffs & Key Locations"]]), True)
+nv2add("Answer Style", "fq",
+ scr("fq", "ans_tiles", "Material Photo Tiles, Name Underneath", "Two-up tiles with a picture of each material and its name under it.", ["natural", "tactile", "clear", "friendly"],
+     [["q", "Shower wall slab material?", 13], ["tilesans", SLABS, 1, 34]], head="Bathroom 204", sub=""),
+ scr("fq", "ans_swatch", "Text Rows With A Small Swatch", "Full-width rows with the product name and a small color chip on the left.", ["clear", "practical", "direct", "minimal"],
+     [["q", "Shower wall slab material?", 13], ["ans", [s[0] for s in SLABS], 1, "swatch", FQ_SWATCH]], head="Bathroom 204", sub=""), True)
+nvadd_msg = [
+ nv2("msg2", "fq", "msg_warm_count", "Hi, Count And Time, Then The Link", "A greeting plus how many questions and how long they take.", ["personal", "clear", "friendly", "practical"],
+     text="Hi Niko and Vivian, 19 quick finish questions for the house, about 10 minutes. Answer what you know.", card="Finish Questions · 19 questions"),
+ nv2("msg2", "fq", "msg_short", "One Short Line, Then The Link", "Just: Finish questions for the house. About 10 minutes.", ["direct", "minimal", "clear", "calm"],
+     text="Finish questions for the house. About 10 minutes.", card="Finish Questions · 19 questions")]
+nv2add("Share Message Copy", "fq", *nvadd_msg, True)
+nv2add("App Icon & Favicon", "sw",
+ nv2("icon", "sw", "icon_roof", "Light Grey Tile, Roofline Over SW", "Matches the Home Guide icon: light grey tile, thin black roof line above SW.", ["architectural", "clear", "personal", "light"],
+     shape="square", bg="#EDEDED", fg="#171717", mark="SW", roof=True),
+ nv2("icon", "sw", "icon_white_dot", "White Tile, Thin Border, Jungle Dot", "White tile, 1px border, SW in Khand, small jungle check in the corner.", ["clear", "natural", "minimal", "light"],
+     shape="square", bg="#fff", fg="#171717", mark="SW", border=True, dot="#0B6E4F"), True)
+nv2add("Feature Options", "sw",
+ scr("sw", "offline_queue", "Saves On The Phone, Sends When Back Online", "A quiet line says what's waiting. It sends on its own when signal returns.", ["practical", "calm", "honest", "clear"],
+     [["strip", "No signal. 3 photos are waiting to send.", "grey", "⤓"], ["row", "Sump Pump 1 (Check)", "boxon"], ["row", "ERV System", "boxon"], ["row", "Furnace 1 Humidifier", "box"], ["row", "Water Heater 1 (Rinnai)", "box"], ["small", "Everything is saved on this phone."]], head="Stop 2: Unfinished Basement", sub=""),
+ scr("sw", "live_line", "Live Status Line: Sent To Max", "A small line under the header shows each check and photo reaching Max.", ["modern", "direct", "personal", "clear"],
+     [["strip", "Sent to Max · just now", "ok", "●"], ["row", "Sump Pump 1 (Check)", "boxon"], ["row", "ERV System", "boxon"], ["row", "Furnace 1 Humidifier", "box"], ["row", "Water Heater 1 (Rinnai)", "box"], ["small", "Max sees each photo as you take it."]], head="Stop 2: Unfinished Basement", sub=""), True)
+nv2add("Feature Options", "rp",
+ scr("rp", "add_ask", "Add Photos Asks: Camera Or Library", "One tap opens a small sheet with Take Photos and Choose From Library.", ["clear", "practical", "friendly", "calm"],
+     [["row", "Kitchen 006", "badge:8"], ["row", "Living Area 004", "badge:4"], ["row", "Mud Room 116", "badge:0"], ["sheet", "Add Photos to Mud Room 116", [], ["📷 Take Photos", "▦ Choose From Library"], "first"]], sub=""),
+ scr("rp", "add_camera_lib", "Camera Opens, Library Button In The Corner", "Straight to the camera, with a small Library button bottom-left.", ["direct", "tactile", "practical", "modern"],
+     [["photo", "int_modernkitchen", 128, "Mud Room 116"], ["btns", ["▦ Library", "◉ Shoot", "Done"]]], head="Add Photos", sub=""), True)
+nv2add("Share Preview (OG Card)", "sa",
+ nv2("og", "sa", "og_bleed", "Site Photo, Claim On A Light Fade", "Full site photo with the Khand claim on a white fade at the bottom.", ["construction", "natural", "clear", "modern"], layout="bleed"),
+ nv2("og", "sa", "og_text", "Clean White Card, Big Claim, Wordmark", "No photo. Big Khand claim and the small MAX WEBERMAN wordmark.", ["clear", "direct", "minimal", "light"], layout="text"), True)
+
+# --- Home Guide (Moschouris Residence) ---
+nv2add("List Sorting", "hg",
+ nv("sort", "hg", 21, "Warranties: Ending Soonest First", "Warranties that run out soonest float to the top.", ["practical", "direct", "clear", "honest"],
+    mode="level", chips=["Ending Soon", "By System", "A–Z"], groups=[["Ending Soon", ["Water Heater 1 (Rinnai)"]], ["Later", ["Furnace 1", "Kitchen Appliances", "Roof", "Windows"]]], head="Warranties"),
+ nv("sort", "hg", 22, "Warranties: Grouped By System", "Heating, Water, Kitchen, Exterior, with each warranty under its system.", ["clear", "practical", "calm", "architectural"],
+    mode="level", chips=["Ending Soon", "By System", "A–Z"], groups=[["Heating", ["Furnace 1"]], ["Water", ["Water Heater 1 (Rinnai)", "Sump Pump 1"]], ["Exterior", ["Roof", "Windows"]]], head="Warranties"))
+nv2add("Feature Options", "hg",
+ scr("hg", "shutoff_photo", "Shutoff With A Photo Of The Valve", "Each shutoff shows where it is, with a photo and a marked spot.", ["practical", "clear", "natural", "honest"],
+     [["photo", "eq:filter", 92, "Main water valve"], ["txt", "Mech Room, by the water filter system.", 10], ["small", "Turn the handle a quarter turn to close."]], head="Water Shutoff", sub="Shutoffs & Key Locations"),
+ scr("hg", "shutoff_steps", "Shutoff As Three Short Steps", "Numbered steps in big type, no photo.", ["direct", "clear", "calm", "practical"],
+     [["q", "1. Go to the Mech Room.", 13], ["q", "2. Find the main water valve by the filter.", 13], ["q", "3. Turn the handle a quarter turn.", 13], ["small", "Then call the plumber from Who to Call."]], head="Water Shutoff", sub="Shutoffs & Key Locations"))
+nv2add("Condensed Lists", "hg",
+ scr("hg", "call_trade", "Who To Call: One Row Per Trade, Call Button", "Plumber, Electrician, HVAC, each with a small Call button.", ["direct", "practical", "clear", "construction"],
+     [["row", "Plumber", "chip:Call"], ["row", "Electrician", "chip:Call"], ["row", "HVAC", "chip:Call"], ["row", "Water Heater (Rinnai)", "chip:Call"], ["row", "Builder: Max", "chip:Call"]], head="Who to Call", sub=""),
+ scr("hg", "call_system", "Who To Call: Listed Under Each System", "Open a system, like Water Heater 1, and its service contact is right there.", ["practical", "clear", "calm", "architectural"],
+     [["rowx", "Water Heater 1 (Rinnai)", ["Service: Rinnai dealer", "Call · Model and serial"]], ["row", "Furnace 1"], ["row", "Sump Pump 1"], ["row", "ERV System"], ["row", "Irrigation Controller"]], head="Home Systems & Equipment", sub=""))
+nv2add("Checklists", "hg",
+ scr("hg", "task_done", "Tap A Task To Mark It Done", "Each task gets a box. Tapping it saves the date it was done.", ["practical", "clear", "honest", "tactile"],
+     [["row", "Change furnace filters", "grey:Done Oct 3", "mute"], ["row", "Test Sump Pump 1", "box"], ["row", "Replace humidifier pad", "box"], ["row", "Shut off irrigation", "box"], ["small", "1 of 4 done this fall"]], head="Maintenance Schedule", sub="Fall"),
+ scr("hg", "task_list", "Just The List, No Tracking", "The schedule is a reference list. Nothing to check off.", ["minimal", "calm", "clear", "direct"],
+     [["row", "Change furnace filters", "grey:Every 3 months"], ["row", "Test Sump Pump 1", "grey:Every fall"], ["row", "Replace humidifier pad", "grey:Every fall"], ["row", "Shut off irrigation", "grey:Before frost"]], head="Maintenance Schedule", sub="Fall"))
+nv2add("Onboarding First Screen", "hg",
+ scr("hg", "install_card", "Keep This Guide On Your Phone Card", "Right after sign-in, a small card offers Add to Home Screen once.", ["practical", "friendly", "clear", "personal"],
+     [["install", "Keep this guide on your phone", "One tap from your home screen, like an app."], ["row", "Emergencies"], ["row", "Who to Call"], ["row", "Maintenance Schedule"]]),
+ scr("hg", "install_footer", "Small Add To Home Screen Tip In The Footer", "No popup. A one-line tip sits in the footer, always there.", ["minimal", "calm", "clear", "light"],
+     [["row", "Emergencies"], ["row", "Who to Call"], ["row", "Maintenance Schedule"], ["row", "Warranties"], ["spacer"], ["small", "Tip: add this guide to your home screen."], ["small", "Built by Max Weberman"]]))
+nv2add("Feature Options", "hg",
+ scr("hg", "pw_remember", "Password Once, Remember This Phone", "They type the password once. A box keeps the phone signed in.", ["practical", "friendly", "calm", "clear"],
+     [["q", "Welcome back.", 16], ["input", "••••", 16], ["row", "Remember this phone", "boxon", "b"], ["btn", "Open the Guide", "full", "solid"]], sub=""),
+ scr("hg", "pw_every", "Password Every Time", "The guide always asks for the password. Nothing is kept on the phone.", ["honest", "clear", "direct", "construction"],
+     [["q", "Enter the password.", 16], ["input", "••••", 16], ["small", "For privacy, this guide asks every time."], ["btn", "Open the Guide", "full", "solid"]], sub=""))
+nv2add("Condensed Lists", "hg",
+ scr("hg", "eq_labelphoto", "Equipment: Label Photo Plus Model And Serial", "The equipment page shows a photo of the label, then the numbers.", ["practical", "honest", "natural", "clear"],
+     [["photo", "eq:heater", 70, "Label photo"], ["kv", [["Model", "Rinnai tankless"], ["Location", "Mech Room"]]]], head="Water Heater 1", sub="Home Systems & Equipment"),
+ scr("hg", "eq_copy", "Equipment: Model And Serial With Copy Buttons", "No photo. The model and serial each have a Copy button for calls.", ["direct", "clear", "minimal", "practical"],
+     [["kv", [["Model", "Rinnai tankless"], ["Serial", "On label"], ["Location", "Mech Room"]], True], ["small", "Copy the numbers when you call for service."]], head="Water Heater 1", sub="Home Systems & Equipment"))
+nv2add("Layout", "hg",
+ scr("hg", "rows_icons", "Calm Rows With Small Line Icons", "White rows, a thin line icon on each, one accent only.", ["clear", "calm", "minimal", "light"],
+     [["row", "🚨  Emergencies"], ["row", "☎  Who to Call"], ["row", "▦  Maintenance Schedule"], ["row", "✓  Warranties"], ["row", "⌂  Shutoffs & Key Locations"]], hdr="mw"),
+ scr("hg", "tiles_bright", "Big Bright Section Tiles", "Every section is a big saturated color tile.", ["vibrant", "loud", "playful", "bold"],
+     [["tiles", ["Emergencies", "Who to Call", "Maintenance", "Warranties", "Shutoffs", "Equipment"]]], hdr="mw"))
+
+# --- Finish Questions ---
+nv2add("Feature Options", "fq",
+ scr("fq", "edit_until", "Change Answers Until Max Confirms", "After sending, answers stay editable until Max marks them confirmed.", ["friendly", "practical", "calm", "honest"],
+     [["banner", "Sent to Max. You can still change answers until he confirms.", "ok", "✓"], ["row", "Mud Room 116", "chip:Edit"], ["row", "Bedroom 201", "chip:Edit"], ["row", "Bathroom 204", "chip:Edit"]], sub="All 19 answered"),
+ scr("fq", "lock_sent", "Answers Lock Once Sent", "Once sent, the answers are final. Changes go through Max.", ["direct", "clear", "honest", "construction"],
+     [["banner", "Sent to Max. To change an answer, text Max.", "grey", "🔒"], ["row", "Mud Room 116", "tick"], ["row", "Bedroom 201", "tick"], ["row", "Bathroom 204", "tick"]], sub="All 19 answered"))
+nv2add("Notifications", "fq",
+ scr("fq", "remind_text", "A Gentle Text If It Sits For 3 Days", "If answers aren't sent after 3 days, they get one short reminder text.", ["practical", "friendly", "personal", "direct"],
+     [["spacer"], ["small", "Text Message · Thursday 10:02 AM"], ["bubble", "Hi Niko and Vivian, 12 of 19 finish questions are done. The rest take about 4 minutes.", "in", True], ["small", "Sent once. No more reminders after this."]], nohead=True),
+ scr("fq", "remind_none", "No Reminders, Max Follows Up Himself", "The app never nudges. Max checks in when he needs the answers.", ["calm", "personal", "honest", "clear"],
+     [["progress", 12, 19, "Answered"], ["note", "No rush. I'll check in with you before I order anything.", "– Max"], ["row", "Laundry 203", "odot"], ["row", "Bedroom 206", "odot"]], sub=""))
+nv2add("Feature Options", "fq",
+ scr("fq", "save_auto", "Saves As You Go, Picks Up Where You Left Off", "Every answer saves on its own. Opening it again starts at the next question.", ["practical", "calm", "clear", "friendly"],
+     [["banner", "Welcome back. You're on question 8 of 19.", "info"], ["q", "Laundry 203: Floor tile?", 14], ["ans", ["Jem Aria Gold 24x48", "Same as Mud Room", "Not Sure"], None], ["small", "Answers save on this phone as you go."]], sub=""),
+ scr("fq", "save_room", "Save Button At The End Of Each Room", "A Save Room button at the bottom of each room. Nothing saves until it is tapped.", ["direct", "clear", "honest", "construction"],
+     [["q", "Laundry 203: Floor tile?", 14], ["ans", ["Jem Aria Gold 24x48", "Same as Mud Room", "Not Sure"], 0], ["spacer"], ["btn", "Save Laundry 203", "full", "solid"]], sub=""))
+nv2add("Feature Options", "fq",
+ scr("fq", "two_answer", "Niko And Vivian Each Answer, Then Compare", "Each answers on their own phone. Different answers show up side by side.", ["personal", "friendly", "practical", "clear"],
+     [["q", "Mud room floor tile?", 13], ["kv", [["Niko", "Cala Vi. Calacatta 24x24"], ["Vivian", "Jem Aria Gold 24x48"]]], ["banner", "You picked different tiles. Pick one together?", "clay"], ["btns", ["Use Niko's", "Use Vivian's"]]], sub="Mud Room 116"),
+ scr("fq", "one_shared", "One Shared Set Of Answers", "One link, one set of answers. Whoever answers, it counts for both.", ["clear", "direct", "calm", "minimal"],
+     [["q", "Mud room floor tile?", 13], ["ans", ["Cala Vi. Calacatta 24x24", "Jem Aria Gold 24x48", "Hardwood (no tile)"], 0], ["small", "Answered by Vivian · shared with Niko"]], sub="Mud Room 116"))
+nv2add("Question Context", "fq",
+ scr("fq", "ctx_photo", "Show A Photo Of The Room", "Each question has a small photo of that room on top.", ["natural", "clear", "friendly", "tactile"],
+     [["photo", "int_concrete", 62, "Mud Room 116"], ["q", "Mud room floor tile?", 13], ["ans", ["Cala Vi. Calacatta 24x24", "Jem Aria Gold 24x48"], None]], sub=""),
+ scr("fq", "ctx_plan", "Show Where It Is On The Plan", "A tiny floor plan with the room shaded.", ["architectural", "clear", "practical", "construction"],
+     [["plan", ["Kitchen", "Greatroom", "Foyer", "Mud Room", "Half Bath"], 3, 58], ["q", "Mud room floor tile?", 13], ["ans", ["Cala Vi. Calacatta 24x24", "Jem Aria Gold 24x48"], None]], sub=""))
+nv2add("Answer Style", "fq",
+ scr("fq", "sel_fill", "Picked Answer Fills Jungle", "The picked answer turns solid jungle green with white text.", ["clear", "natural", "direct", "modern"],
+     [["q", "Vanity top here?", 14], ["ans", ["Carrara Fina quartz", "Calacatta Vivo quartz", "Not Sure"], 1]], head="Half Bath 115", sub=""),
+ scr("fq", "sel_check", "Picked Answer Gets An Outline And A Check", "White rows. The picked one gets a jungle outline and a check on the right.", ["light", "clear", "calm", "minimal"],
+     [["q", "Vanity top here?", 14], ["ans", ["Carrara Fina quartz", "Calacatta Vivo quartz", "Not Sure"], 1, "check"]], head="Half Bath 115", sub=""))
+nv2add("Error States", "fq",
+ nv2("error", "fq", "err_card", "Couldn't Send: Saved, Try Again", "A calm card says the answers are safe on the phone, with Try Again.", ["calm", "clear", "honest", "friendly"],
+     style="card", copy="Couldn't send just now. Your answers are saved on this phone."),
+ scr("fq", "err_banner", "Couldn't Send: Red Banner On Top", "A thin red banner across the top, with the screen still usable.", ["direct", "clear", "practical", "honest"],
+     [["strip", "Not sent. No connection. Trying again.", "err", "⚠"], ["row", "Mud Room 116", "tick"], ["row", "Bedroom 201", "tick"], ["row", "Bathroom 204", "tick"], ["btn", "Send Answers", "full", "solid"]], sub="All 19 answered"))
+nv2add("Answer Style", "fq",
+ scr("fq", "ans_emoji", "Fun Emoji Answer Buttons", "Each answer is a candy-colored pill with an emoji.", ["playful", "vibrant", "casual", "loud"],
+     [["q", "Carpet in this room?", 14], ["ans", ["Bixley Premium, Grounded", "Hardwood instead", "Not Sure"], None, "emoji"]], head="Bedroom 201", sub=""),
+ scr("fq", "ans_text", "Calm Text Answer Buttons", "Tinted lagoon rows with the product names.", ["clear", "calm", "direct", "practical"],
+     [["q", "Carpet in this room?", 14], ["ans", ["Bixley Premium, Grounded", "Hardwood instead", "Not Sure"], None]], head="Bedroom 201", sub=""))
+nv2add("Onboarding First Screen", "fq",
+ scr("fq", "onb_time", "Welcome Note With How Long It Takes", "Welcome line, '19 questions, about 10 minutes', then Start.", ["personal", "clear", "friendly", "practical"],
+     [["spacer"], ["q", "Hi Niko and Vivian.", 18], ["txt", "19 questions, about 10 minutes. Answer what you know.", 10.5], ["btn", "Start"], ["spacer"]], sub=""),
+ scr("fq", "onb_cover", "Formal Cover Page With Project Number", "A serif cover page: project number, revision and date, then Begin.", ["formal", "traditional", "classic", "corporate"],
+     [["spacer"], ["serif", "MOSCHOURIS RESIDENCE", 13, "letter-spacing:.14em"], ["serif", "Finish Selection Questionnaire · Rev. 2", 10, "font-style:italic"], ["serif", "Project No. 2026-114 · October 12, 2026", 9, "color:#737373"], ["btn", "Begin"], ["spacer"]], sub="", bg="#FFFDF7"))
+
+# --- Site Walk ---
+nv2add("Feature Options", "sw",
+ scr("sw", "resume_banner", "Pick Up At The Stop You Left", "Opening it again shows one line: Continue at Stop 3.", ["practical", "clear", "direct", "calm"],
+     [["banner", "Welcome back. Continue at Stop 3: Finished Basement Area.", "info"], ["btn", "Continue →", "full", "solid"], ["link", "See all stops"]], sub="2 of 7 stops done"),
+ scr("sw", "resume_list", "Start Screen Lists Every Stop With Status", "Opening it again shows all 7 stops with done dots. Tap any one.", ["clear", "practical", "calm", "natural"],
+     [["row", "1. Basement Mechanical Room", "dot"], ["row", "2. Unfinished Basement Area", "dot"], ["row", "3. Finished Basement Area", "odot", "b"], ["row", "4. Main Level", "odot"], ["row", "5. Master Suite", "odot"], ["row", "6. Upper Level", "odot"]], sub="2 of 7 stops done"))
+nv2add("Checklists", "sw",
+ scr("sw", "notfound_note", "Can't Find It? Mark Not Found With A Note", "Each item has a Not Found choice that asks for one line about it.", ["practical", "honest", "clear", "construction"],
+     [["row", "ERV System", "boxon"], ["rowx", "Electrical Panels (2)", ["Not found · 'Only saw one panel by the stairs.'"]], ["row", "Water Heater 1 (Rinnai)", "box"]], head="Stop 1: Mechanical Room", sub=""),
+ scr("sw", "notfound_skip", "Skip The Item, It Is Flagged For Max", "Skip moves on. Skipped items show as a list for Max at the end.", ["direct", "calm", "clear", "minimal"],
+     [["row", "ERV System", "boxon"], ["row", "Electrical Panels (2)", "clay:Skipped"], ["row", "Water Heater 1 (Rinnai)", "box"], ["spacer"], ["small", "1 skipped item goes to Max with the walk."]], head="Stop 1: Mechanical Room", sub=""))
+nv2add("Photo Handling", "sw",
+ scr("sw", "photo_required", "Photo Required To Check It Off", "The checkbox stays locked until a photo is added.", ["practical", "honest", "construction", "direct"],
+     [["photo", "eq:pump", 84, "Sump Pump 1 (Check)"], ["btn", "📷 Add Photo to Check Off", "full"], ["small", "A photo is needed for this item."]], head="Stop 2: Unfinished Basement", sub=""),
+ scr("sw", "photo_optional", "Photo Optional, Check Anytime", "They can check it off right away. The photo slot is there if they want it.", ["calm", "friendly", "clear", "practical"],
+     [["row", "Sump Pump 1 (Check)", "boxon", "b"], ["thumbs", ["eq:pump"], 3, 40], ["small", "Add a photo if you like."]], head="Stop 2: Unfinished Basement", sub=""))
+nv2add("Imagery Treatment", "sw",
+ scr("sw", "img_caption", "True-Color Photo, Caption Below", "The photo as taken, 10px corners, a small grey caption under it.", ["natural", "honest", "clear", "light"],
+     [["photo", "eq:heater", 110], ["cap", "Water Heater 1 (Rinnai) · Stop 1 · Oct 12"]], head="Stop 1: Mechanical Room", sub=""),
+ scr("sw", "img_tag", "Photo With A White Name Tag On It", "The same photo with a small white tag in the corner naming the item.", ["clear", "practical", "modern", "construction"],
+     [["photo", "eq:heater", 120, "Water Heater 1 (Rinnai)"]], head="Stop 1: Mechanical Room", sub=""), True)
+nv2add("Screen Transitions", "sw",
+ nv2("trans", "sw", "tr_slide", "Next Stop Slides In From The Right", "Like turning a page, one stop to the next.", ["clear", "modern", "practical", "direct"], t="slide", next="Stop 3: Finished Basement Area"),
+ nv2("trans", "sw", "tr_bounce", "Next Stop Bounces In With A Zoom", "A springy zoom-and-bounce between stops.", ["playful", "energetic", "lively", "casual"], t="bounce", next="Stop 3: Finished Basement Area"), True)
+nv2add("Success & Confirmation", "sw",
+ scr("sw", "done_next", "Walk Done: Check And What Max Does Next", "A check draws in. One line on what Max does with it.", ["clear", "friendly", "personal", "direct"],
+     [["spacer"], ["check", 46], ["big", "Walk done. Sent to Max.", 15, "He'll go through the photos and text you this week."], ["spacer"]], sub=""),
+ scr("sw", "done_summary", "Walk Done: Stop-By-Stop Summary", "A list of the 7 stops with photo counts, and anything skipped.", ["practical", "clear", "honest", "calm"],
+     [["row", "1. Basement Mechanical Room", "badge:6"], ["row", "2. Unfinished Basement Area", "badge:4"], ["row", "3. Finished Basement Area", "badge:3"], ["row", "4. Main Level", "badge:5"], ["row", "Skipped", "clay:1 item"], ["btn", "Finish and Share", "full"]], sub="7 of 7 stops · 23 photos"))
+nv2add("Feature Options", "sw",
+ scr("sw", "flag_outline", "Problem? Flag Turns The Item Terracotta", "A small Flag button outlines the item in terracotta for Max.", ["clear", "practical", "construction", "calm"],
+     [["row", "Water Filter System", "boxon"], ["row", "Sump Pump 1", "clay:⚑ Flagged", "clay"], ["row", "ERV System", "box"], ["small", "Flagged: 'Pump hums but doesn't start.'"]], head="Stop 2: Unfinished Basement", sub=""),
+ scr("sw", "flag_alarm", "Problem? Big Flashing Red Alert", "A flashing red banner fills the top of the screen.", ["loud", "vibrant", "bold", "energetic"],
+     [["alert", "⚠ PROBLEM FOUND!"], ["row", "Water Filter System", "boxon"], ["row", "Sump Pump 1 (Check)", "box"], ["row", "ERV System", "box"]], head="Stop 2: Unfinished Basement", sub=""))
+nv2add("From Max Sign-Off", "sw",
+ scr("sw", "so_thanks", "Thank-You Line From Max On Finish", "Above Finish and Share: 'Thanks for walking the house. – Max'", ["personal", "friendly", "direct", "clear"],
+     [["spacer"], ["note", "Thanks for walking the house with me.", "– Max"], ["btn", "Finish and Share", "full", "solid"], ["spacer"]], sub="7 of 7 stops done"),
+ scr("sw", "so_none", "No Note, Just Finish And Share", "The last screen is only the summary line and the button.", ["minimal", "clear", "direct", "calm"],
+     [["spacer"], ["big", "7 of 7 stops done", 18, "23 photos · 14 notes"], ["btn", "Finish and Share", "full", "solid"], ["spacer"]], sub=""), True)
+
+# --- Room Photos ---
+nv2add("Photo Handling", "rp",
+ scr("rp", "view_full", "Tap A Photo: Full Screen, Swipe Through", "Opens big on cream, with arrows and swipe to the next one.", ["natural", "tactile", "clear", "modern"],
+     [["viewer", "int_modernkitchen", "Kitchen 006", "3 of 8"]], nohead=True),
+ scr("rp", "view_zoom", "Tap A Photo: Zooms In Place", "The photo grows right where it is. Pinch for more.", ["direct", "tactile", "practical", "minimal"],
+     [["zoom", "int_modernkitchen", 120], ["cap", "Kitchen 006 · 3 of 8"]], head="Kitchen 006", sub=""))
+nv2add("Imagery Treatment", "rp",
+ scr("rp", "img_date", "Small Date Under Each Photo", "A quiet grey date line under every photo.", ["clear", "honest", "practical", "light"],
+     [["photo", "tr_boutique_lobby", 112, None, "f:brightness(1.15) saturate(.95)"], ["cap", "Living Area 004 · Oct 12, 2026"]], head="Living Area 004", sub=""),
+ scr("rp", "img_stamp", "Orange Film-Camera Date Stamp", "A glowing orange '26 10 12 stamp in the corner, like an old camera.", ["retro", "warm", "casual", "craft"],
+     [["datestamp", "tr_boutique_lobby", 118]], head="Living Area 004", sub="", ), True)
+nv2add("Feature Options", "rp",
+ scr("rp", "upl_each", "Upload: A Bar For Each Photo", "Every photo shows its own small progress bar.", ["practical", "clear", "honest", "tactile"],
+     [["upl", "int_modernkitchen", "IMG_2041.jpg", 100], ["upl", "int_modernkitchen", "IMG_2042.jpg", 100], ["upl", "int_modernkitchen", "IMG_2043.jpg", 64], ["upl", "int_modernkitchen", "IMG_2044.jpg", 20], ["upl", "int_modernkitchen", "IMG_2045.jpg", 0]], head="Adding to Kitchen 006", sub=""),
+ scr("rp", "upl_one", "Upload: One Overall Line", "One line: 'Adding 5 photos', with a single bar.", ["minimal", "calm", "clear", "direct"],
+     [["thumbs", ["int_modernkitchen"] * 3, 3, 36], ["big", "Adding 5 photos", 15], ["progress", 3, 5, "Kitchen 006", True], ["small", "You can keep using the app."]], head="Adding to Kitchen 006", sub=""))
+nv2add("Success & Confirmation", "rp",
+ scr("rp", "ok_toast", "Quiet Toast: 5 Photos Added", "A small jungle toast at the bottom. The room list stays on screen.", ["calm", "clear", "minimal", "natural"],
+     [["row", "Kitchen 006", "badge:13"], ["row", "Living Area 004", "badge:4"], ["row", "Mud Room 116", "badge:0"], ["toast", "✓ 5 photos added to Kitchen 006", "ok"]], sub=""),
+ scr("rp", "ok_screen", "Check Screen With The New Photos", "A full screen with a check, the count and the new thumbnails.", ["clear", "friendly", "personal", "direct"],
+     [["check", 40], ["big", "5 photos added", 15, "Kitchen 006"], ["thumbs", ["int_modernkitchen"] * 3, 3, 32], ["btn", "Done", "full"]], nohead=True))
+nv2add("Feature Options", "rp",
+ scr("rp", "ba_slider", "Before And After: Drag A Slider", "One photo, drag the line to compare before and after.", ["tactile", "modern", "natural", "clear"],
+     [["slider", "int_midcentury", 118], ["cap", "Drag to compare"]], head="Living Area 004", sub="Before and After"),
+ scr("rp", "ba_side", "Before And After: Side By Side", "Two photos next to each other, labeled.", ["clear", "practical", "honest", "calm"],
+     [["sbs", "int_midcentury", 110], ["cap", "Same angle, Oct 2026"]], head="Living Area 004", sub="Before and After"))
+nv2add("App Icon & Favicon", "rp",
+ nv2("icon", "rp", "icon_roof", "Light Grey Tile, Roofline Over RP", "Same family as Home Guide: light grey tile with a thin roof line.", ["architectural", "clear", "personal", "light"],
+     shape="square", bg="#EDEDED", fg="#171717", mark="RP", roof=True),
+ nv2("icon", "rp", "icon_grid", "White Tile, Black RP, Faint Grid", "White tile, thin black border, Khand initials over a faint grid.", ["minimal", "clear", "technical", "light"],
+     shape="square", bg="#fff", fg="#171717", mark="RP", border=True, grid=True), True)
+nv2add("From Max Sign-Off", "rp",
+ scr("rp", "so_footer", "Footer: Built By Max Weberman, Call Max", "The standard footer line with a small Call Max button.", ["clear", "direct", "personal", "practical"],
+     [["row", "Kitchen 006", "badge:8"], ["row", "Living Area 004", "badge:4"], ["row", "Family Suite 002", "badge:6"], ["spacer"], ["small", "Built by Max Weberman"], ["btn", "📞 Call Max"]], sub=""),
+ scr("rp", "so_title", "Line Under The Title: Photos From Max", "Under the title: 'Photos from Max, October 2026.' Nothing in the footer.", ["personal", "friendly", "calm", "light"],
+     [["row", "Kitchen 006", "badge:8"], ["row", "Living Area 004", "badge:4"], ["row", "Family Suite 002", "badge:6"], ["row", "Bathroom 005", "badge:3"]], sub="Photos from Max, October 2026"), True)
+nv2add("Feature Options", "rp",
+ scr("rp", "sel_long", "Long-Press A Photo To Select Several", "Press and hold one photo, then tap others to pick them.", ["tactile", "modern", "direct", "practical"],
+     [["small", "Hold a photo to select"], ["thumbs", ["int_modernkitchen"] * 6, 3, 38, ["sel", "sel", "unsel", "unsel", "sel", "unsel"]], ["btns", ["Share 3", "Download 3"]]], head="Kitchen 006", sub=""),
+ scr("rp", "sel_button", "A Select Button Up Top", "Tap Select, then tap photos. Easy to find, one extra tap.", ["clear", "practical", "calm", "friendly"],
+     [["chips", ["Select", "All Photos"], 0], ["thumbs", ["int_modernkitchen"] * 6, 3, 38, ["sel", "sel", "unsel", "unsel", "sel", "unsel"]], ["btns", ["Share 3", "Download 3"]]], head="Kitchen 006", sub=""))
+nv2add("Photo Handling", "rp",
+ scr("rp", "frame_clean", "Clean Photos, 10px Corners", "True photos, rounded a little, nothing on top.", ["natural", "clear", "calm", "light"],
+     [["photo", "int_modernkitchen", 120]], head="Kitchen 006", sub="8 photos"),
+ scr("rp", "frame_sticker", "Sticker Frames And Stars", "Candy-striped frames with star and house stickers.", ["playful", "vibrant", "cute", "loud"],
+     [["sticker", "int_modernkitchen", 112]], head="Kitchen 006", sub="8 photos"))
+nv2add("Share & Sign-Off", "rp",
+ scr("rp", "dl_zip", "Download Everything As One File", "One button saves every photo in one zip file, sorted by room.", ["practical", "clear", "direct", "construction"],
+     [["spacer"], ["big", "54 photos, 15 rooms", 16, "One zip file · folders by room"], ["btn", "⤓ Download All", "full", "solid"], ["spacer"]], sub=""),
+ scr("rp", "dl_each", "Save Photos To The Phone, Room By Room", "Each room has a Save button that puts its photos in the phone's library.", ["friendly", "practical", "calm", "personal"],
+     [["row", "Kitchen 006", "chip:Save 8"], ["row", "Living Area 004", "chip:Save 4"], ["row", "Family Suite 002", "chip:Save 6"], ["row", "Bathroom 005", "chip:Save 3"], ["small", "Saves to Photos on this phone."]], sub=""))
+
+nv2add("Empty States", "hg",
+ scr("hg", "empty_soon", "Empty Section Says: Max Is Adding This", "Sections without info yet show one line, so they know it's coming.", ["honest", "personal", "clear", "calm"],
+     [["row", "Water Heater 1 (Rinnai)", "grey:Ends early Nov"], ["row", "Furnace 1", "›"], ["rowx", "Roof", ["Max is adding this warranty."]], ["row", "Windows", "›"]], head="Warranties", sub=""),
+ scr("hg", "empty_hide", "Hide Sections Until They Have Info", "Empty sections don't show at all. The list only has what's ready.", ["minimal", "clear", "direct", "light"],
+     [["row", "Water Heater 1 (Rinnai)", "grey:Ends early Nov"], ["row", "Furnace 1", "›"], ["row", "Windows", "›"], ["small", "More warranties appear here as Max adds them."]], head="Warranties", sub=""))
+nv2add("Share & Sign-Off", "fq",
+ scr("fq", "share_pdf", "After Sending: Save A Copy As A PDF", "The done screen offers a PDF of their answers to keep.", ["practical", "clear", "honest", "construction"],
+     [["check", 38], ["big", "Sent to Max.", 15], ["btn", "⤓ Save a Copy (PDF)", "full"], ["small", "19 answers · 15 rooms"]], nohead=True),
+ scr("fq", "share_none", "After Sending: Nothing Else To Do", "The done screen just closes. Max has the answers.", ["minimal", "calm", "direct", "clear"],
+     [["spacer"], ["check", 44], ["big", "Sent to Max.", 16, "That's it. You're done."], ["spacer"]], nohead=True))
+nv2add("Onboarding First Screen", "sw",
+ scr("sw", "onb_intro", "Short Intro: 7 Stops, About 30 Minutes", "One screen with the stop count, the time, and Start the Walk.", ["clear", "friendly", "practical", "personal"],
+     [["spacer"], ["q", "Moschouris Site Walk", 18], ["txt", "7 stops, Basement to Exterior. About 30 minutes. Bring your phone charged.", 10.5], ["btn", "Start the Walk", "", "solid"], ["spacer"]], nohead=True),
+ scr("sw", "onb_straight", "Straight Into Stop 1", "No intro. The app opens on Stop 1 with the first item.", ["direct", "minimal", "practical", "clear"],
+     [["progress", 1, 7, "Stop 1"], ["q", "Basement Mechanical Room", 13], ["row", "Water Filter System", "box"], ["row", "Sump Pump 1 (Check)", "box"], ["row", "ERV System", "box"], ["row", "Furnace 1 Humidifier", "box"]], sub=""))
+
+# --- Swipe Controls: inside the lean (earthy, outline until pressed, edge arrows); stamp retest ---
+SC_PAL["earth4s"] = ["#6E97A4", "#86A27A", "#C98270", "#BF9767"]   # the same earthy four, one step softer
+def ctl3(i, label, desc, tags, fmt, pal="earth4", hint="edges", stampov="word", press="fill", style="outline", bg="#FAF3EB"):
+    o = ctl(i, label, desc, tags, fmt, "tblt", pal, style, bg)
+    o["visual"].update({"hint": hint, "stampov": stampov, "press": press})
+    return o
+NV2_SC = [
+ (ctl3("sc_nv2_stamp_word", "Stamp: THIS Or THAT In Khand Caps", "Round outline buttons and edge arrows. Swiping shows a tilted word stamp.", ["clear", "craft", "construction", "natural"], "round", stampov="word"),
+  ctl3("sc_nv2_stamp_icon", "Stamp: Round Check Over The Word", "Same buttons. Swiping shows a round stamp with a check over the word.", ["clear", "friendly", "natural", "craft"], "round", stampov="icon")),
+ (ctl3("sc_nv2_round_press", "Round Outline Buttons, Fill On Press", "Earthy circles with icons and small words under them.", ["light", "natural", "tactile", "clear"], "round"),
+  ctl3("sc_nv2_pill_press", "Pill Outline Buttons, Fill On Press", "Earthy pills with the words inside.", ["light", "natural", "clear", "friendly"], "pill")),
+ (ctl3("sc_nv2_tone_deep", "Earthy Tones, As They Are", "Dusty lagoon, moss, clay and ochre at full depth.", ["natural", "clear", "warm", "light"], "pill"),
+  ctl3("sc_nv2_tone_soft", "Earthy Tones, One Step Softer", "The same four colors, a little lighter and quieter.", ["soft", "light", "natural", "calm"], "pill", pal="earth4s")),
+]
+for _a, _b in NV2_SC: POOL[SWIPE_CONTROLS].extend([_a, _b])
+for _cat, _app, _a, _b, _r in NV2:
+    POOL.setdefault(_cat, []).extend([_a, _b])
+    CATEGORY_WEIGHT.setdefault(_cat, 1.0)
+    GROUP_OF.setdefault(_cat, _cat)
+NV_ASK.update({"Layout": "Which Works Better For {app}?", "Question Context": "Which Works Better For {app}?", "Error States": "Which Is Sharper For {app}?",
+               "Success & Confirmation": "Which Is Sharper For {app}?", "Onboarding First Screen": "Which Is Sharper For {app}?"})
+
+
 # Categories whose pairs must contrast on a tag: one option carries tag X, the other tag Y.
 PAIR_RULES = {"Bangkok Vs Japan Aesthetics": ("bangkok", "japan")}
 
@@ -2283,7 +2564,7 @@ def build_polish_deck(date, seed=None):
             "freshness": {"option_slots": len(ids), "never_shown_before": sum(i not in shown for i in ids), "share": 1.0},
             "warnings": [], "pairs": pairs, "image_credits": load_json(CREDITS, {})}
 
-def build_nv_deck(date, seed=None):
+def build_nv_deck(date, seed=None, nvlist=None, sclist=None, title="Niko And Vivian's Apps: Look And Function", note=None):
     """Niko & Vivian deck (first built 2026-10-11b): 45 hand-paired visual + functional choices for Home Guide,
     Finish Questions, Site Walk and Room Photos (incl. app-polish-spec retests), 1 SiteAgent share-card retest
     and 4 Swipe Controls pairs. Every option must be unseen, English-only and light-mode."""
@@ -2291,12 +2572,14 @@ def build_nv_deck(date, seed=None):
     profile = load_json(PROFILE, empty_profile())
     shown = shown_options(exclude_date=date)
     pairs = []
-    for cat, app, a, b in NV:
+    for item in (nvlist if nvlist is not None else NV):
+        cat, app, a, b = item[:4]
+        rt = item[4] if len(item) > 4 else cat in NV_RETEST
         if rng.random() < 0.5: a, b = b, a
         nm = NVAPPS[app]["name"]
         pairs.append({"category": cat, "app": nm, "ask": NV_ASK.get(cat, "Which Is Sharper For {app}?").format(app=nm),
-                      "retest": cat in NV_RETEST, "optionA": a, "optionB": b})
-    for a, b in NV_SC:
+                      "retest": rt, "optionA": a, "optionB": b})
+    for a, b in (sclist if sclist is not None else NV_SC):
         if rng.random() < 0.5: a, b = b, a
         pairs.append({"category": SWIPE_CONTROLS, "app": "All Swipe Apps", "ask": "Which Swipe Controls Feel More Like You?",
                       "retest": False, "optionA": a, "optionB": b})
@@ -2329,20 +2612,25 @@ def build_nv_deck(date, seed=None):
         apps[p["app"]] = apps.get(p["app"], 0) + 1
     ids = [p[o]["id"] for p in pairs for o in ("optionA", "optionB")]
     return {"date": date, "version": 4, "owner": "Max Weberman", "format": "pairs", "english_only": True, "light_only": True,
-            "title": "Niko And Vivian's Apps: Look And Function",
+            "title": title,
             "brands": ["maxweberman.com base: Khand/Hind, black/white/grey + terracotta, lagoon, jungle"],
             "generated_at": dt.datetime.now().astimezone().isoformat(timespec="seconds"),
             "allocation": alloc, "apps": apps,
-            "focus": {"categories": sorted({c for c, *_ in NV}), "note": "Standing focus (from Oct 11, 2026): visual and functional choices for Niko and Vivian's apps (Home Guide, Finish Questions, Site Walk, Room Photos), mocked with each app's real rooms, questions and checklist items; plus app-polish-spec retests and Swipe Controls."},
+            "focus": {"categories": sorted({c for c, *_ in (nvlist if nvlist is not None else NV)}), "note": note or "Standing focus (from Oct 11, 2026): visual and functional choices for Niko and Vivian's apps (Home Guide, Finish Questions, Site Walk, Room Photos), mocked with each app's real rooms, questions and checklist items; plus app-polish-spec retests and Swipe Controls."},
             "retests": sorted({p["category"] for p in pairs if p["retest"]}),
             "pair_mix": {"refine": sum(p["purpose"] == "refine" for p in pairs), "check": sum(p["purpose"] == "check" for p in pairs)},
             "freshness": {"option_slots": len(ids), "never_shown_before": sum(i not in shown for i in ids), "share": round(sum(i not in shown for i in ids) / len(ids), 3)},
             "warnings": [], "pairs": pairs, "image_credits": load_json(CREDITS, {})}
 
-POLISH_SETS = {"2026-10-10g": lambda date, seed: build_polish_deck(date, seed), "nv": lambda date, seed: build_nv_deck(date, seed)}
+NV2_NOTE = ("Niko and Vivian's apps, round 2 (Oct 12, 2026): retests of the 10 pairs skipped in 2026-10-11b as sharper options, the app-polish-spec retests "
+            "(icon, imagery, share copy, sign-off, transitions, SiteAgent share card), and new function choices: warranties, shutoffs, who to call, task tracking, "
+            "install card, password, edit after sending, reminders, resume, problem flags, photo viewer, before and after, uploads, select and download. Plus 3 Swipe Controls pairs.")
+POLISH_SETS = {"2026-10-10g": lambda date, seed: build_polish_deck(date, seed), "nv": lambda date, seed: build_nv_deck(date, seed),
+               "nv2": lambda date, seed: build_nv_deck(date, seed, NV2, NV2_SC, "Niko And Vivian's Apps, Round 2: Look And Function", NV2_NOTE)}
 def polish_set_unseen(name, date):
     shown = shown_options(exclude_date=date)
     if name == "nv": ids = [o["id"] for _, _, a, b in NV for o in (a, b)] + [o["id"] for a, b in NV_SC for o in (a, b)]
+    elif name == "nv2": ids = [o["id"] for _, _, a, b, _ in NV2 for o in (a, b)] + [o["id"] for a, b in NV2_SC for o in (a, b)]
     else: ids = [o["id"] for lst in PZ.values() for _, a, b in lst for o in (a, b)]
     return not any(i in shown for i in ids)
 
@@ -2506,7 +2794,7 @@ def main():
     ap.add_argument("--pairs", type=int, default=50, help="deck size: cards (single format) or pairs (--format pairs)")
     ap.add_argument("--format", choices=["pairs", "single"], default="pairs", help="A-vs-B pairs (default: This / That / Both / Love / Neither) or single-option cards (No/Maybe/Love/Yes)")
     ap.add_argument("--polish", action="store_true", help="build a hand-paired app-polish deck: the newest unseen set (Niko & Vivian apps: 45 + 1 retest + 4 Swipe Controls = 50 pairs; or the 10-10g set: 95 + 5)")
-    ap.add_argument("--polish-set", choices=["nv", "2026-10-10g"], help="with --polish: which hand-paired set (default: newest set that is still unseen; 'nv' = Niko & Vivian apps, 50 pairs)")
+    ap.add_argument("--polish-set", choices=["nv2", "nv", "2026-10-10g"], help="with --polish: which hand-paired set (default: newest set that is still unseen; 'nv' = Niko & Vivian apps, 50 pairs)")
     ap.add_argument("--convert-from", help="build this deck id as a single-card version of an existing pair deck (e.g. 2026-10-10d)")
     ap.add_argument("--ingest", help="results JSON exported from the app")
     ap.add_argument("--no-embed", action="store_true")
@@ -2548,7 +2836,7 @@ def main():
     else:
         if a.polish:
             # newest polish set whose options are all still unseen (Niko & Vivian set first, then the 10-10g set)
-            name = a.polish_set or next((n for n in ("nv", "2026-10-10g") if polish_set_unseen(n, date)), None)
+            name = a.polish_set or next((n for n in ("nv2", "nv", "2026-10-10g") if polish_set_unseen(n, date)), None)
             if not name: sys.exit("Every polish set has already been shown. Add a new NV/PZ block to generate_deck.py.")
             deck = POLISH_SETS[name](date, a.seed)
         elif a.convert_from:
