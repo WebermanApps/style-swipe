@@ -197,6 +197,11 @@ button.skip:hover{border-color:var(--line)}
 .v-hm>div{height:100%}
 .v-hm *{min-width:0;overflow-wrap:anywhere}
 .v-svg svg{max-width:100%;max-height:100%;width:auto;height:auto;display:block}
+/* larger SVG mock screens (scoped to .v-svg so other visual types are unchanged): the screen fills the card width, capped by viewport height */
+.v-hm.v-svg{height:auto;min-height:210px}
+.v-hm.v-svg>div{padding:2px!important;height:auto!important}
+.opt:has(.v-svg){padding:5px}
+.v-svg svg{width:100%!important;height:auto!important;max-height:min(34vh,380px)!important}
 .v-pz{position:relative;height:210px;overflow:hidden;background:#fff;font-family:Hind,system-ui,sans-serif;color:#171717;text-align:left}
 .v-pz>div:last-child{height:100%}
 .v-pz .pz-app{position:absolute;right:5px;top:5px;z-index:3;font-size:8px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#ffffffe6;border:1px solid #E5E5E5;padding:1px 5px;color:#525252}
