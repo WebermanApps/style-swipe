@@ -11,7 +11,7 @@ SIZES = [(393, 660), (393, 852)]
 decks = []
 for f in sorted(glob.glob(os.path.join(ROOT, "decks/*.json"))):
     d = os.path.basename(f)[:-5]
-    if d == "submit-test": continue
+    if d in ("submit-test", "sizes"): continue
     j = json.load(open(f)); decks.append((d, j))
 # the 2 pair decks with the longest labels: also test their longest-label pair
 def lablen(p): return max(len(p["optionA"].get("label", "")), len(p["optionB"].get("label", "")))
@@ -39,6 +39,11 @@ JS = """() => {
  document.querySelectorAll('#card .opt .vis').forEach((h, i) => inside(h, 'vis' + i));
  inside(document.querySelector('#card .notebtn'), 'notes');
  inside(document.querySelector('.progress'), 'progress');
+ const sb = document.getElementById('btnSubmitTop');   // Oct 13 rule: mid-deck Submit always visible, never over photo/vote buttons
+ if (!sb || getComputedStyle(sb).display === 'none' || sb.getBoundingClientRect().width < 1) bad.push('submit hidden'); else { inside(sb, 'submit');
+   const s = sb.getBoundingClientRect(), hit = (q) => !(s.right <= q.left || s.left >= q.right || s.bottom <= q.top || s.top >= q.bottom);
+   if (s.height < 32) bad.push(`submit too small ${s.height|0}px`);
+   [...document.querySelectorAll('#card .opt .vis, #card, .controls button')].forEach(e => { if (e.offsetParent && hit(e.getBoundingClientRect())) bad.push('submit overlaps ' + (e.id || e.className)) }) }
  return bad }"""
 res = []
 with sync_playwright() as p:
