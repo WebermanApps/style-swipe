@@ -1030,7 +1030,8 @@ function setDeck(d){
  $('#hint').textContent=single?'Swipe left = No, right = Yes. Tap Maybe or ❤ Love in the middle. Arrow keys: ← No, → Yes.':'Swipe or tap: left = This, right = That. Both = like both. ❤ Love: tap Love, then tap the option.';
  save();render()}
 function showControls(on){$('#controls3').style.display=on&&single?'':'none';$('#controls').style.display=on&&!single?'':'none';$('#hint').style.display=on?'':'none';if(!on)$('#noteSaved').classList.remove('on')}
-function render(){stopAllAudio();
+let endView=false;
+function render(){endView=false;stopAllAudio();
  $('#prog').style.width=(100*idx/Math.max(1,items.length))+'%';
  const stage=$('#stage');
  if(idx>=items.length){showEnd();return}
@@ -1058,7 +1059,7 @@ function answer(ans){ // v3
  if(card){const st=card.querySelector('.stamp.'+ans);if(st)st.style.opacity=1;
   const t={no:'translateX(-120%) rotate(-14deg)',yes:'translateX(120%) rotate(14deg)',love:'translateY(-110%) scale(1.03)',maybe:'translateY(110%)'}[ans];
   setTimeout(()=>{card.style.transform=t;card.style.opacity=0},160)}
- idx++;save();setTimeout(render,400);
+ idx++;save();setTimeout(()=>{if(!endView)render()},400);
 }
 let loveArmed=false;
 function setLove(on){loveArmed=on;const b=document.getElementById('bLoveP');if(b)b.classList.toggle('armed',on);const c=document.getElementById('card');if(c)c.classList.toggle('love-armed',on)}
@@ -1077,7 +1078,7 @@ function choose(choice){ // pairs: A (This), B (That), both, neither, loveA, lov
  if(card){const st=card.querySelector({A:'.stamp.l',B:'.stamp.r',both:'.stamp.both',neither:'.stamp.neither',loveA:'.stamp.lovea',loveB:'.stamp.loveb'}[choice]||'.none');if(st)st.style.opacity=1;
   const t={A:'translateX(-120%) rotate(-14deg)',B:'translateX(120%) rotate(14deg)',loveA:'translateX(-120%) rotate(-14deg)',loveB:'translateX(120%) rotate(14deg)',both:'translateY(-110%)',neither:'translateY(110%)'}[choice]||'translateY(-110%)';
   setTimeout(()=>{card.style.transform=t;card.style.opacity=0},160)}
- idx++;save();setTimeout(render,400);
+ idx++;save();setTimeout(()=>{if(!endView)render()},400);
 }
 function undo(){if(!deck||idx===0)return;idx--;const p=items[idx];picks=picks.filter(x=>single?x.card_id!==p.id:x.pair_id!==p.id);save();render();toast('Undone')}
 function bindDrag(card){
@@ -1166,7 +1167,7 @@ async function share(){
  if(isPhone()){openSms(`sms:?&body=${encodeURIComponent(text)}`);return}
  await copyText(text,has?'Copied summary and full results':'Copied link and summary')}
 function showEnd(){
- showControls(false);
+ endView=true;showControls(false);
  const r=buildResults(),max=Math.max(1,...r.top_tags.map(x=>x.score),...r.avoided_tags.map(x=>-x.score));
  const bar=(x,col)=>`<div class="r"><span>${esc(x.tag)}</span><div class="t"><i style="left:0;width:${100*Math.abs(x.score)/max}%;background:${col}"></i></div><span>${x.score>0?'+':''}${x.score}</span></div>`;
  let stats,cats;
