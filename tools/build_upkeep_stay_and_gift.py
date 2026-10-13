@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
-"""Build Style Swipe deck upkeep-8 (PUBLISHED): 50 pairs for the UpKeep agent built from Max's upkeep-7 picks (35/50,
+"""Build Style Swipe deck upkeep-stay-and-gift, "Upkeep Stay & Gift Deck" (PUBLISHED): 50 pairs for the UpKeep agent built from Max's upkeep-7 picks (35/50,
 /workspace/smartkeep/branding/upkeep-7-picks.md). Refines the winners, retests every 'both' tie head to head, adds a drawn
 gift graphic (pair 18 note), a one-time lawn option (pair 13 note) and retention-offer cards (pair 26 note: one month free
 to stay after 6+ months, two months free after 1+ year). Certification Badges dropped (skipped en masse).
 Rules: no byline, no AI / health score / forecast / tier names, only price 'Membership Starting at $99/Month',
 'Your Licensed Tech' with no named tech or license numbers. Example data only. Pattern: build_upkeep_7.py + team_kit.py + draft_svg.py.
-Renderers below are copied from build_upkeep_7.py so upkeep-8 screens match round 7."""
+Renderers below are copied from build_upkeep_7.py so these screens match round 7."""
 import sys, os, re, json
 sys.path.insert(0, os.path.dirname(__file__))
 from team_kit import *
-DID = "upkeep-8"; pairs, O, add = deck("uk8_", "UpKeep")
+DID = "upkeep-stay-and-gift"; pairs, O, add = deck("uksg_", "UpKeep")
 def pr(G, ask, fn, a, b, purpose="refine"):
     add(G, G, O(a[0], a[1], a[2], a[3], fn(a[4])), O(b[0], b[1], b[2], b[3], fn(b[4])), ask, purpose)
     if purpose == "retest": pairs[-1]["retest"] = True
@@ -377,7 +377,7 @@ for p in pairs:
     if "Retention" in p["ask"]:
         for s in "AB": assert "$" not in json.dumps(p["option" + s])
 assert "Certification Badges" not in {p["group"] for p in pairs}
-publish(DID, "UpKeep Round 8: Refined Winners From Round 7, Head-To-Head Retests, Gift Drawing, One-Time Lawn Mow, Retention Offer", "UpKeep", pairs,
+publish(DID, "Upkeep Stay & Gift Deck", "UpKeep", pairs,
         {"brands": ["Smart UpKeep home maintenance membership; built from upkeep-7 picks (35/50)", "White light mode, Khand/Hind, Title Case, no emoji, accents only #C1502E #05668D #0B6E4F #D4A017; only price 'Membership Starting at $99/Month'; 'Your Licensed Tech', no named tech, no license numbers; no byline"],
          "feelings": {"visual": "Visual", "focused": "Focused", "quick": "Quick", "action": "Action-first", "calm": "Calm"}, "based_on": "upkeep-7 picks",
          "sources": {"picks": "/workspace/smartkeep/branding/upkeep-7-picks.md", "results": "results/upkeep-7.txt (local, not committed)", "prior_deck": "decks/upkeep-7.json"}}, seed=38)
