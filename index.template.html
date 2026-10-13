@@ -365,6 +365,8 @@ html{color-scheme:light only}
 <script src="submit.js"></script>
 <script src="ptr.js" defer></script>
 <script>
+/* Pull-to-refresh guard: the summary scrolls inside .end, so do not refresh while an inner scroller is not at its top */
+document.addEventListener('touchstart',e=>{for(let el=e.target;el&&el!==document.body;el=el.parentElement){if(el.scrollTop>0){e.stopPropagation();return}}},{passive:true});
 /* Back link: ?from= only https://webermanapps.github.io/... */
 (function(){try{const f=new URLSearchParams(location.search).get('from');if(!f)return;const u=new URL(f);
  if(u.protocol==='https:'&&u.hostname==='webermanapps.github.io')document.getElementById('backLink').href=u.href}catch(_){}})();
