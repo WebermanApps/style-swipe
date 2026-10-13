@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+"""Build Style Swipe deck miles-1 (PUBLISHED): Miles Round 1: Points Chart, Bonus Tracker, Card Wallet, Transfer Partners, Redeem Steps, Decisions, Bonus Alerts, Navigation, Page Titles, Bonus Progress (all example data).
+Based on the Miles Agent agent's current work (team-feed, team-sync recaps, latest files; source: /workspace/miles).
+Pattern: tools/build_dashboard_2.py + draft_svg.py via tools/personal_kit.py. Example data only. Run from the repo root."""
+import sys, os; sys.path.insert(0, os.path.dirname(__file__))
+from personal_kit import *
+D = Deck("miles-1", "mi1_", 'Miles Agent', 'Points Projects · Example', "card", JUNGLE)
+D.topic("pc", 'Charts', 'Points Chart', "chart", [('Points, Example', 'Example totals only', 'Example'), ('Earned This Month', 'Example', '+ Some'), ('Used', 'Example', 'None')], "corners")
+D.topic("bt", 'Bonuses', 'Bonus Tracker', "list", [('Example Store Bonus', 'Waiting to post', 'Pending'), ('Example Dining Bonus', 'Posted', 'Done'), ('Example Travel Bonus', 'Spend left', 'Open'), ('Example Shop Bonus', 'Waiting', 'Pending'), ('Example Hotel Bonus', 'Ends soon', 'Open')], "accent")
+D.topic("cw", 'Cards', 'Card Wallet', "tiles", [('Example Card A', 'Travel points', 'Main'), ('Example Card B', 'Dining', 'Second'), ('Example Card C', 'Business', 'Third'), ('Example Card D', 'Hotel', 'Fourth'), ('Card E', 'Example', 'Spare'), ('Card F', 'Example', 'Spare'), ('Card G', 'Example', 'Spare'), ('Card H', 'Example', 'Spare')], "density")
+D.topic("tp", 'Transfers', 'Transfer Partners', "list", [('Example Airline A', '1 to 1', 'Fast'), ('Example Airline B', '1 to 1', '2 Days'), ('Example Hotel A', '1 to 2', 'Fast'), ('Example Airline C', '1 to 1', 'Fast'), ('Example Hotel B', '1 to 1', '1 Day')], "corners")
+D.topic("rd", 'Redeem', 'Redeem Steps', "detail", [('Book A Flight With Points', 'Example steps only', 'Example'), ('Find Award Space', '', ''), ('Move Points', '', ''), ('Book The Seat', '', ''), ('Save The Receipt', '', '')], "accent2")
+D.topic("dc", 'Decisions', 'Decision Card', "buttons", [("Add Brand Rules To Mom's Apps", 'Footer, notes, small color', 'Asks Max'), ('Yes', '', ''), ('Not Yet', '', ''), ('Next', 'Offers refresh', 'Waiting')], "header")
+D.topic("ba", 'Bonuses', 'Bonus Posted Alert', "notice", [('Bonus Posted, Example', 'Example bonus points arrived', 'Now'), ('Store Bonus', 'Example', 'Done'), ('Dining Bonus', 'Example', 'Done'), ('Travel Bonus', 'Example', 'Open')], "density")
+D.topic("nv", 'App Layout', 'Navigation', "nav", [('Points Overview', 'Totals', '1'), ('Bonuses Tracker', 'Open', '3'), ('Cards Wallet', 'All', '4'), ("Mom's Apps", 'Offers, quiz', '2')], "header2")
+D.topic("tt", 'Branding', 'Page Title', "type", [('Every Point In One Place', 'Example data only', 'Miles Agent'), ('Projects', '4', ''), ('Open Bonuses', '3', '')], "accent")
+D.topic("bp", 'Bonuses', 'Bonus Progress', "chart", [('Spend To Bonus, Example', 'Example progress', '68%'), ('Spent', 'Example', 'Some'), ('Left', 'Example', 'Some')], "accent2")
+D.publish_meta('Miles Round 1: Points Chart, Bonus Tracker, Card Wallet, Transfer Partners, Redeem Steps, Decisions, Bonus Alerts, Navigation, Page Titles, Bonus Progress (all example data)', ["Miles Agent: open design, branding, content and app decisions with drawn SVG mockups", "White light mode, Khand/Hind, Title Case, English only, no emoji, accents only #C1502E #05668D #0B6E4F #D4A017", "Example data only"], {"team_feed": "/workspace/ops/team-feed.md", "recaps": "/workspace/ops/team-sync/2026-10-13.md", "chart": "/workspace/ops/team-sync/reorg-chart-2026-10-13.md", "source": '/workspace/miles'}, 36)
