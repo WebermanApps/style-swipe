@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+"""Build Style Swipe deck portfolio-1 (PUBLISHED): Portfolio Round 1: Lane Status, Allocation Chart, Tax Pack Steps, Decisions, Spending Categories, Navigation, Upload Asks, Monthly Summary, Lane Progress, Due Dates (all example data).
+Based on the Portfolio agent's current work (team-feed, team-sync recaps, latest files; source: /workspace/ops/folio/dashboard).
+Pattern: tools/build_dashboard_2.py + draft_svg.py via tools/personal_kit.py. Example data only. Run from the repo root."""
+import sys, os; sys.path.insert(0, os.path.dirname(__file__))
+from personal_kit import *
+D = Deck("portfolio-1", "pf1_", 'Portfolio', 'All Financials · Example Data', "chart", SAFFRON)
+D.topic("ln", 'Dashboard', 'Lane Status', "list", [('Taxes', 'Research pack in review', 'Waiting'), ('Cards', 'Autopay checks', 'On Track'), ('Investments', 'Cost basis', 'Needs File'), ('Property', 'Monthly costs', 'On Track'), ('Business', 'Model review', 'Done')], "corners")
+D.topic("al", 'Charts', 'Allocation Chart', "chart", [('Allocation, Example', 'Example split only', '60 / 40'), ('Stocks, Example', 'Share', '60%'), ('Cash, Example', 'Share', '40%')], "accent")
+D.topic("tx", 'Taxes', 'Tax Pack Steps', "detail", [('Tax Research Pack', 'Outline and CPA questions', 'In Review'), ('Verify Sources', '', ''), ('Check The Rules', '', ''), ('Draft CPA Questions', '', ''), ('Send When Ready', '', '')], "density")
+D.topic("dc", 'Decisions', 'Decision Card', "buttons", [('Sort Leftover Categories', 'A few items need a home', 'Today'), ('Sort Now', '', ''), ('Later', '', ''), ('Next Ask', 'Upload a CSV', 'Queued')], "accent2")
+D.topic("sp", 'Spending', 'Spending Categories', "tiles", [('Home', 'Example', 'Up'), ('Travel', 'Example', 'Flat'), ('Food', 'Example', 'Down'), ('Business', 'Example', 'Flat'), ('Health', 'Example', 'Flat'), ('Fun', 'Example', 'Up'), ('Gifts', 'Example', 'Flat'), ('Other', 'Example', 'Down')], "corners")
+D.topic("nv", 'Dashboard', 'Navigation', "nav", [('Lanes Overview', 'All areas', '5'), ('Taxes Lane', 'Research', '1'), ('Cards Lane', 'Due dates', '3'), ('Investments Lane', 'Files', '2')], "header")
+D.topic("up", 'Decisions', 'Upload Ask', "notice", [('File Needed', 'Upload an example cost-basis CSV', 'Now'), ('Taxes', 'Lane', 'Waiting'), ('Cards', 'Lane', 'On Track'), ('Property', 'Lane', 'On Track')], "header2")
+D.topic("ms", 'Reports', 'Monthly Summary', "type", [('October At A Glance', 'Example summary, no real figures', 'Monthly'), ('Lanes On Track', '4 of 5', ''), ('Asks Open', '2', '')], "accent")
+D.topic("lp", 'Charts', 'Lane Progress', "chart", [('Lane Progress, Example', 'Example', '4 of 5'), ('Taxes', 'Waiting', '50%'), ('Cards', 'On Track', '90%')], "density")
+D.topic("dd", 'Dashboard', 'Due Dates', "list", [('Example Card A', 'Autopay on', 'Oct 20'), ('Example Card B', 'Check autopay', 'Oct 25'), ('Property Tax, Example', 'Reminder', 'Nov 1'), ('Insurance, Example', 'Reminder', 'Nov 15'), ('Estimated Tax, Example', 'Reminder', 'Jan 15')], "accent2")
+D.publish_meta('Portfolio Round 1: Lane Status, Allocation Chart, Tax Pack Steps, Decisions, Spending Categories, Navigation, Upload Asks, Monthly Summary, Lane Progress, Due Dates (all example data)', ["Portfolio: open design, branding, content and app decisions with drawn SVG mockups", "White light mode, Khand/Hind, Title Case, English only, no emoji, accents only #C1502E #05668D #0B6E4F #D4A017", "Example data only"], {"team_feed": "/workspace/ops/team-feed.md", "recaps": "/workspace/ops/team-sync/2026-10-13.md", "chart": "/workspace/ops/team-sync/reorg-chart-2026-10-13.md", "source": '/workspace/ops/folio/dashboard'}, 34)
