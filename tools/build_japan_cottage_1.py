@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+"""Build Style Swipe deck japan-cottage-1 (PUBLISHED): Japan Cottage Round 1: Listing Cards, Listing Detail, Votes, Area Chart, Navigation, New Listing Alerts, Areas List, Page Titles, Exterior Colors, Filters.
+Based on the Japan Cottage agent's current work (team-feed, team-sync recaps, latest files; source: /workspace/japan-cottage).
+Pattern: tools/build_dashboard_2.py + draft_svg.py via tools/personal_kit.py. Example data only. Run from the repo root."""
+import sys, os; sys.path.insert(0, os.path.dirname(__file__))
+from personal_kit import *
+D = Deck("japan-cottage-1", "jc1_", 'Japan Cottage', 'Akiya Listings · Example', "cottage", LAGOON)
+D.topic("lc", 'Listings', 'Listing Cards', "tiles", [('Onsen Town House', 'Built 1985', 'Example'), ('Ski Area Cabin', 'Built 1992', 'Example'), ('Village House', 'Built 1978', 'Example'), ('Lake View House', 'Built 2001', 'Example'), ('Hill House', 'Built 1988', 'Example'), ('Corner House', 'Built 1995', 'Example'), ('River House', 'Built 1983', 'Example'), ('Forest Cabin', 'Built 1999', 'Example')], "corners")
+D.topic("ld", 'Listings', 'Listing Detail', "detail", [('Onsen Town House', '3 rooms, garden, near hot springs', 'Example Price'), ('See The Rooms', '', ''), ('Check The Area', '', ''), ('Ask The Agent', '', ''), ('Vote', '', '')], "density")
+D.topic("vt", 'Voting', 'Vote Buttons', "buttons", [('Ski Area Cabin', 'Example listing, built 1992', 'Example'), ('Love', '', ''), ('No', '', ''), ('Next House', 'Village House', '1 of 99')], "accent")
+D.topic("ar", 'Areas', 'Area Chart', "chart", [('Houses By Area, Example', 'Example counts', '5 Areas'), ('Top Area', 'Onsen town', 'Most'), ('Newest', 'Ski area', 'Today')], "accent2")
+D.topic("nv", 'App Layout', 'Navigation', "nav", [('Houses List', 'All', '99'), ('Loved Houses', 'Saved', '8'), ('Maybe Houses', 'Later', '12'), ('Areas Map', 'Five', '5')], "header")
+D.topic("nw", 'Alerts', 'New Listing Alert', "notice", [('New House Found', 'Morning listings check found one', '8:03'), ('Onsen Town', 'Area', 'New'), ('Ski Area', 'Area', 'Same'), ('Village', 'Area', 'Same')], "corners")
+D.topic("al", 'Areas', 'Areas List', "list", [('Onsen Town', 'Hot springs', '32'), ('Ski Area', 'Near slopes', '24'), ('Lake Town', 'Water views', '18'), ('Mountain Village', 'Quiet', '15'), ('Coast Town', 'Sea air', '10')], "density")
+D.topic("tt", 'Branding', 'Page Title', "type", [('Find A Cottage In Japan', 'Example listings under budget, built 1960 or later', 'Japan Cottage'), ('Houses', '99', ''), ('Areas', '5', '')], "header2")
+D.topic("ex", 'Cottage Look', 'Exterior Color', "swatch", [('Charred Cedar', 'Dark burnt wood', '#3B3530'), ('Natural Cedar', 'Warm bare wood', '#B98A5E'), ('White Plaster', 'Bright walls', '#F3F1EC'), ('Gray Stucco', 'Soft gray', '#A9A6A0'), ('Indigo Trim', 'Deep blue accents', '#2E4A6B')], "accent")
+D.topic("fl", 'Listings', 'Filters', "list", [('Under Budget', 'Example limit', 'On'), ('Built 1960 Or Later', 'Newer homes', 'On'), ('No Land Only', 'Houses only', 'On'), ('Near Onsen', 'Hot springs', 'Off'), ('Near Skiing', 'Slopes', 'Off')], "header")
+D.publish_meta('Japan Cottage Round 1: Listing Cards, Listing Detail, Votes, Area Chart, Navigation, New Listing Alerts, Areas List, Page Titles, Exterior Colors, Filters', ["Japan Cottage: open design, branding, content and app decisions with drawn SVG mockups", "White light mode, Khand/Hind, Title Case, English only, no emoji, accents only #C1502E #05668D #0B6E4F #D4A017", "Example data only"], {"team_feed": "/workspace/ops/team-feed.md", "recaps": "/workspace/ops/team-sync/2026-10-13.md", "chart": "/workspace/ops/team-sync/reorg-chart-2026-10-13.md", "source": '/workspace/japan-cottage'}, 35)
