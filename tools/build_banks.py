@@ -343,6 +343,11 @@ def main(refill):
     if not os.path.exists("banks/used.json"):
         json.dump({"note": "Add served/shown bank pair ids (pairs) or option ids (options); --refill drops them.", "pairs": [], "options": []}, open("banks/used.json", "w"), indent=1)
     for k, v in report.items(): print(f"{k:14s} count={v[0]} added={v[1]} dropped={v[2]} retired={v[3]}")
+    try:
+        from write_sizes import main as write_sizes
+        write_sizes()
+    except Exception as e:
+        print("write_sizes:", e)
 
 if __name__ == "__main__":
     main("--refill" in sys.argv)

@@ -77,6 +77,11 @@ def finish(did, title, app, pairs, first_fixed, extra_meta, seed=7, n=None):
     ledger["options"] = dict(sorted(opts.items())); ledger["shown_count"] = len(opts); ledger["updated"] = now
     json.dump(ledger, open("shown_options.json", "w"), indent=1)
     print(did, len(order), "pairs", groups)
+    try:
+        from write_sizes import main as write_sizes
+        write_sizes()
+    except Exception as e:
+        print("write_sizes:", e)
 def mk(prefix, app):
     pairs = []
     def O(i, label, desc, tags, feel, svg): return {"id": prefix + i, "label": label, "desc": desc, "tags": tags + [feel], "feeling": feel, "notes": True, "visual": {"type": "hm", "m": "svg", "svg": svg, "bg": "#F7F4EF"}}

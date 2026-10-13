@@ -227,3 +227,8 @@ def publish(did, title, app, pairs, meta, seed):
     import re
     bad = re.findall(r"[\U0001F300-\U0001FAFF\u2600-\u27BF]", txt); assert not bad, bad
     json.dump(d, open(f"decks/{did}.json", "w"), indent=1, ensure_ascii=False)
+    try:
+        from write_sizes import main as write_sizes
+        write_sizes()
+    except Exception as e:
+        print("write_sizes:", e)
