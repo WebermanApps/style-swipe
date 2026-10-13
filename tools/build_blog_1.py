@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+"""Build Style Swipe deck blog-1 (PUBLISHED): Blog Round 1: Article Headers, Post List, Topic Picker, Draft Review, Post Layout, Categories, Draft Notices, Topic Votes, Pull Quotes, Reading Page.
+Based on the Blog agent's current work (team-feed, team-sync recaps, latest files; source: /workspace/blog/drafts).
+Pattern: tools/build_dashboard_2.py + draft_svg.py via tools/personal_kit.py. Example data only. Run from the repo root."""
+import sys, os; sys.path.insert(0, os.path.dirname(__file__))
+from personal_kit import *
+D = Deck("blog-1", "bl1_", 'Blog', 'maxweberman.com · Drafts', "page", TERRA)
+D.topic("hd", 'Article Style', 'Article Header', "type", [('What A Flat Fee Covers', 'How we price a custom home build', 'Contracts'), ('Read Time', '5 min', ''), ('Updated', 'Oct 13', '')], "accent")
+D.topic("pl", 'Site Layout', 'Post List', "list", [('Flat Fee Building', 'Pricing, plain words', 'Draft'), ('Allowances', 'What they really mean', 'Draft'), ('Pool With A New Home', 'Timing and cost', 'Draft'), ('Lien Waivers', 'Why they protect you', 'Draft'), ('Loans And Draws', 'How money moves', 'Draft')], "corners")
+D.topic("tp", 'Topics', 'Topic Picker', "tiles", [('Flat Fee', 'Pricing', 'Draft'), ('Allowances', 'Budget', 'Draft'), ('Pools', 'Add-ons', 'Draft'), ('Lien Waivers', 'Legal', 'Draft'), ('Draws', 'Money', 'Draft'), ('Warranty', 'After move-in', 'Draft'), ('Contracts', 'Basics', 'Live'), ('Upkeep', 'Care', 'Idea')], "density")
+D.topic("rv", 'Draft Review', 'Draft Review', "buttons", [('Lien Waivers', 'Rewrite in the contracts style', 'Draft 2'), ('Approve', '', ''), ('Needs Edits', '', ''), ('Next Draft', 'Construction Loans', 'Queued')], "accent2")
+D.topic("pst", 'Article Style', 'Post Layout', "detail", [('Construction Loans And Draws', 'How each draw is checked and paid', '5 Min Read'), ('Why Draws Exist', '', ''), ('Who Checks The Work', '', ''), ('When Money Moves', '', ''), ('What You Sign', '', '')], "corners")
+D.topic("cat", 'Site Layout', 'Categories', "nav", [('Pricing Posts', 'Flat fee, allowances', '3'), ('Legal Posts', 'Liens, contracts', '2'), ('Money Posts', 'Loans, draws', '1'), ('Care Posts', 'Warranty, upkeep', '2')], "header")
+D.topic("nt", 'Draft Review', 'Draft Ready Notice', "notice", [('New Draft Ready', 'Warranty And Upkeep is ready to read', 'Now'), ('Flat Fee', 'Draft', 'Ready'), ('Allowances', 'Draft', 'Ready'), ('Pools', 'Draft', 'Ready')], "accent")
+D.topic("vt", 'Topics', 'Topic Votes', "chart", [('Topic Interest, Example', 'Example votes', '6 Topics'), ('Top Pick', 'Flat Fee', 'Most'), ('Next', 'Allowances', 'Second')], "density")
+D.topic("pq", 'Article Style', 'Pull Quote', "type", [('Ask For Lien Waivers Every Draw', 'A simple habit that protects your home', 'Pull Quote'), ('From', 'Lien Waivers post', ''), ('Style', 'Callout', '')], "header2")
+D.topic("rd", 'Site Layout', 'Reading Page Top', "tiles", [('Warranty And Upkeep', 'What happens after move-in', '6 Min Read'), ('Flat Fee', 'Related', 'Read'), ('Contracts', 'Related', 'Read'), ('Allowances', 'Related', 'Read')], "header")
+D.publish_meta('Blog Round 1: Article Headers, Post List, Topic Picker, Draft Review, Post Layout, Categories, Draft Notices, Topic Votes, Pull Quotes, Reading Page', ["Blog: open design, branding, content and app decisions with drawn SVG mockups", "White light mode, Khand/Hind, Title Case, English only, no emoji, accents only #C1502E #05668D #0B6E4F #D4A017", "Example data only"], {"team_feed": "/workspace/ops/team-feed.md", "recaps": "/workspace/ops/team-sync/2026-10-13.md", "chart": "/workspace/ops/team-sync/reorg-chart-2026-10-13.md", "source": '/workspace/blog/drafts'}, 33)
