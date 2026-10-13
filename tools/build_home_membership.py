@@ -167,6 +167,8 @@ first = pairs[:2]; rest = pairs[2:]; random.shuffle(rest); seq = first + rest
 order=[]; pool=seq[:]                       # avoid same category twice in a row
 while pool:
     k = next((i for i,p in enumerate(pool) if not order or p["category"]!=order[-1]["category"]), 0); order.append(pool.pop(k))
+from trim_deck import DECK_SIZE, select, save_overflow  # decks are 25 pairs; extras go to banks/overflow
+order, _cut = select(order, DECK_SIZE); save_overflow(DID, _cut)
 for i,p in enumerate(order,1):
     p["id"]=f"{DID}-{i:02d}"; p["retest"]=False; p["repeat"]=False
     p["optionA"].setdefault("feeling",None); p["ask"]=p["ask"] or ("Which Name Fits?" if p["category"]=="Brand Name" else f"Which {p['category']} Feels Right?")

@@ -169,6 +169,9 @@ assert len(vis) == len(set(vis)), "repeated visual"
 rep = [i for i in ids if i in shown]; assert not rep, f"repeats: {rep}"
 txt = json.dumps(pairs).lower()
 for bad in [" ai ", "health score", "forecast", "smartkeep", "silver", "gold", "platinum", "a la carte"]: assert bad not in txt, bad
+from trim_deck import DECK_SIZE, select, save_overflow  # decks are 25 pairs; extras go to banks/overflow
+pairs, _cut = select(pairs, DECK_SIZE); save_overflow(DID, _cut)
+ids = [p["option" + s]["id"] for p in pairs for s in "AB"]
 groups = {}
 for p in pairs: groups[p["group"]] = groups.get(p["group"], 0) + 1
 now = dt.datetime.now().astimezone().isoformat(timespec="seconds")

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Style Swipe deck wellnest-1 (PUBLISHED): 50 pairs for the WellNest agent (a Chiang Mai wellness business, registered
+"""Build Style Swipe deck wellnest-1 (PUBLISHED): 25 pairs for the WellNest agent (a Chiang Mai wellness business, registered
 but not open yet; name follow-up with a lawyer in progress). Based on the Oct 13 reorg chart, team feed, team-sync recaps
 and WellNest's dashboard. Example data only. Pattern: tools/build_dashboard_2.py + draft_svg.py via team_kit.py."""
 import sys, os

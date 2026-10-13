@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Style Swipe deck construction-1 (PUBLISHED): 50 pairs for the Construction agent (Weberman Construction: close-out
+"""Build Style Swipe deck construction-1 (PUBLISHED): 25 pairs for the Construction agent (Weberman Construction: close-out
 of a finished custom home, the live Home Guide, warranty registration, open finish choices, site walks, trade directory).
 Based on the Oct 13 team-sync recap, team feed and Construction's latest files. Example data only (Example Home, Example
 Owner, sample serials). Pattern: tools/build_dashboard_2.py + draft_svg.py via team_kit.py. Run from repo root."""

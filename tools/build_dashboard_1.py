@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Style Swipe deck dashboard-1 (PUBLISHED): 50 this-or-that pairs on the command-center dashboard app every one of
+"""Build Style Swipe deck dashboard-1 (PUBLISHED): 25 this-or-that pairs on the command-center dashboard app every one of
 Max's agents builds (spec: /workspace/ops/apps-home/AGENT-DASHBOARD-SPEC.md; example: /workspace/branding-dashboard/).
 All options are drawn SVG phone/desktop mockups: white light mode, Khand/Hind, Title Case, no emoji (small drawn icons),
 small pops of terracotta, lagoon, jungle, saffron. Uses tools/draft_svg.py helpers. Run from the style-swipe repo root."""

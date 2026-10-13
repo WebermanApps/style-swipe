@@ -1,0 +1,1284 @@
+{
+ "deck": "2026-10-11",
+ "cut_at": "2026-10-13T20:10:23+07:00",
+ "count": 25,
+ "note": "Pairs cut when the deck went to 25; banks/<category>.json will absorb these.",
+ "pairs": [
+  {
+   "id": "2026-10-11-16",
+   "category": "Brand Voice & Taglines",
+   "optionA": {
+    "id": "bv_no_surprises",
+    "label": "No Surprises",
+    "desc": "Reliability as the whole brand.",
+    "tags": [
+     "direct",
+     "trust",
+     "practical",
+     "minimal"
+    ],
+    "visual": {
+     "type": "tone",
+     "lines": [
+      "No surprises. Just good buildings.",
+      "Fixed prices. Real schedules. Straight answers."
+     ],
+     "from": "Tagline"
+    }
+   },
+   "optionB": {
+    "id": "bv_one_moment",
+    "label": "One Moment At A Time",
+    "desc": "Slow, personal channel voice.",
+    "tags": [
+     "calm",
+     "personal",
+     "warm",
+     "editorial"
+    ],
+    "visual": {
+     "type": "tone",
+     "lines": [
+      "One moment at a time.",
+      "Slow travel and honest building in Thailand."
+     ],
+     "from": "Tagline"
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-20",
+   "category": "Color Palette",
+   "optionA": {
+    "id": "pal_lotus",
+    "label": "Lotus Pond",
+    "desc": "Lotus pink, deep rose, pad green, lime, pond-white.",
+    "tags": [
+     "thai",
+     "natural",
+     "soft",
+     "playful"
+    ],
+    "visual": {
+     "type": "palette",
+     "colors": [
+      "#f4a6b7",
+      "#e56b8a",
+      "#3a7d44",
+      "#a7c957",
+      "#f7f7f2"
+     ]
+    }
+   },
+   "optionB": {
+    "id": "pal_rebar",
+    "label": "Rebar & Rust",
+    "desc": "Oxide rust, burnt orange, steel grey, cement.",
+    "tags": [
+     "industrial",
+     "raw",
+     "warm",
+     "construction"
+    ],
+    "visual": {
+     "type": "palette",
+     "colors": [
+      "#8b3a1a",
+      "#b5651d",
+      "#4a4a48",
+      "#a9a9a2",
+      "#e8e4dc"
+     ]
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-21",
+   "category": "Logo / Mark",
+   "optionA": {
+    "id": "lg_mw",
+    "label": "MW Ligature",
+    "desc": "M and W joined in one rounded tile.",
+    "tags": [
+     "modern",
+     "personal",
+     "geometric",
+     "clean"
+    ],
+    "visual": {
+     "type": "logo",
+     "mark": "MW",
+     "word": "Max Weberman",
+     "font": "'Outfit', 'Inter', system-ui, sans-serif",
+     "fg": "#ffffff",
+     "bg": "#2f5d3a",
+     "shape": "rounded",
+     "weight": 800,
+     "spacing": "0.04em",
+     "italic": false,
+     "upper": true,
+     "accent": "#ffffff"
+    }
+   },
+   "optionB": {
+    "id": "lg_hex_bolt",
+    "label": "Hex Bolt Mark",
+    "desc": "'W' inside a hex nut. Engineering through and through.",
+    "tags": [
+     "industrial",
+     "technical",
+     "bold",
+     "construction"
+    ],
+    "visual": {
+     "type": "logo",
+     "mark": "W",
+     "word": "Weberman",
+     "font": "'Chakra Petch', 'Space Grotesk', system-ui, sans-serif",
+     "fg": "#2f3a40",
+     "bg": "#e9ecee",
+     "shape": "hex",
+     "weight": 700,
+     "spacing": "0.08em",
+     "italic": false,
+     "upper": true,
+     "accent": "#2f3a40"
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-23",
+   "category": "Social Post Layouts",
+   "optionA": {
+    "id": "sp_meme",
+    "label": "Builder Meme",
+    "desc": "Top caption over a site photo.",
+    "tags": [
+     "playful",
+     "casual",
+     "raw",
+     "personal"
+    ],
+    "visual": {
+     "type": "post",
+     "bg": "#111",
+     "fg": "#ffffff",
+     "accent": "#ffffff",
+     "font": "'Anton', 'Bebas Neue', Impact, sans-serif",
+     "layout": "meme",
+     "text": "WHEN THE CLIENT SAYS 'SMALL CHANGE'",
+     "key": "base_site",
+     "filter": null
+    }
+   },
+   "optionB": {
+    "id": "sp_photo_bar",
+    "label": "Photo + Thin Caption Bar",
+    "desc": "Full photo, slim caption strip.",
+    "tags": [
+     "minimal",
+     "natural",
+     "light",
+     "editorial"
+    ],
+    "visual": {
+     "type": "post",
+     "bg": "#ffffff",
+     "fg": "#1b1b1b",
+     "accent": "#1b1b1b",
+     "font": "'DM Sans', 'Inter', system-ui, sans-serif",
+     "layout": "photo",
+     "text": "Teak, rain, and patience.",
+     "key": "int_thai",
+     "filter": "sepia(.2)"
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-24",
+   "category": "Business Communication Tone",
+   "optionA": {
+    "id": "tn_teacher",
+    "label": "Patient Teacher",
+    "desc": "Uses analogies, explains the why.",
+    "tags": [
+     "calm",
+     "technical",
+     "friendly",
+     "educational"
+    ],
+    "visual": {
+     "type": "tone",
+     "lines": [
+      "Think of the vapor barrier as a raincoat for your walls.",
+      "In Bangkok's humidity, it's the difference between 5 years and 30."
+     ]
+    }
+   },
+   "optionB": {
+    "id": "tn_site_update",
+    "label": "Site Update Bullets",
+    "desc": "Checklist-style status, zero padding.",
+    "tags": [
+     "direct",
+     "practical",
+     "construction",
+     "efficient"
+    ],
+    "visual": {
+     "type": "tone",
+     "lines": [
+      "Today: footing rebar inspected ✓. Pour Thursday 7am.",
+      "Photos attached. Nothing needed from you."
+     ]
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-26",
+   "category": "Color Palette",
+   "optionA": {
+    "id": "pal_sakura",
+    "label": "Sakura Dusk",
+    "desc": "Cherry blossom pinks fading into evening blue.",
+    "tags": [
+     "japanese",
+     "soft",
+     "calm",
+     "light"
+    ],
+    "visual": {
+     "type": "palette",
+     "colors": [
+      "#f8c8d8",
+      "#e4a3b8",
+      "#6d597a",
+      "#355070",
+      "#fdf6f0"
+     ]
+    }
+   },
+   "optionB": {
+    "id": "pal_laterite",
+    "label": "Laterite Earth",
+    "desc": "Red laterite, ochre, rice-field green, wheat, soil.",
+    "tags": [
+     "earthy",
+     "warm",
+     "rustic",
+     "natural"
+    ],
+    "visual": {
+     "type": "palette",
+     "colors": [
+      "#a0522d",
+      "#cd853f",
+      "#6b8e23",
+      "#f5deb3",
+      "#3b2a1a"
+     ]
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-28",
+   "category": "Video Editing & Pacing",
+   "optionA": {
+    "id": "vp_bilingual_subs",
+    "label": "Burned-In Bilingual Subs",
+    "desc": "Medium pace with English + Thai subtitles.",
+    "tags": [
+     "bilingual",
+     "thai",
+     "friendly",
+     "practical"
+    ],
+    "visual": {
+     "type": "pace",
+     "cuts": [
+      4,
+      3,
+      4,
+      3,
+      4
+     ],
+     "colors": [
+      "#a4161a",
+      "#d4a017"
+     ],
+     "notes": [
+      "EN + TH subs",
+      "medium pace",
+      "subtitle styling"
+     ]
+    }
+   },
+   "optionB": {
+    "id": "vp_vhs",
+    "label": "VHS Home-Video",
+    "desc": "Tracking lines, date stamp, nostalgic.",
+    "tags": [
+     "retro",
+     "playful",
+     "warm",
+     "personal"
+    ],
+    "visual": {
+     "type": "pace",
+     "cuts": [
+      3,
+      5,
+      2,
+      4,
+      3
+     ],
+     "colors": [
+      "#7b2cbf",
+      "#f9e79f"
+     ],
+     "notes": [
+      "VHS grain",
+      "date stamp",
+      "4:3 crop"
+     ]
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-30",
+   "category": "Business Communication Tone",
+   "optionA": {
+    "id": "tn_explorer",
+    "label": "Curious Explorer",
+    "desc": "Wonder-driven, adventurous, first person.",
+    "tags": [
+     "playful",
+     "energetic",
+     "personal",
+     "adventurous"
+    ],
+    "visual": {
+     "type": "tone",
+     "lines": [
+      "Took a wrong turn outside Nan and found the best khao soi of my life.",
+      "Then I found the guy who built the restaurant. By hand."
+     ]
+    }
+   },
+   "optionB": {
+    "id": "tn_transparent",
+    "label": "Radically Transparent",
+    "desc": "Bad news first, with the plan attached.",
+    "tags": [
+     "trust",
+     "direct",
+     "honest",
+     "calm"
+    ],
+    "visual": {
+     "type": "tone",
+     "lines": [
+      "Honest update: we're 4 days behind because of the rain.",
+      "Here's the new schedule. Cost to you: nothing."
+     ]
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-31",
+   "category": "Food Styling",
+   "optionA": {
+    "id": "fd_fresh_bowl",
+    "label": "Fresh Clean Bowl",
+    "desc": "Grain bowl, bright greens, healthy.",
+    "tags": [
+     "light",
+     "fresh",
+     "minimal",
+     "natural"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#a7c957",
+      "#ffffff",
+      "#f6b93b",
+      "#e56b8a",
+      "#f2efe8"
+     ],
+     "materials": [
+      "grain bowl",
+      "greens",
+      "sesame"
+     ]
+    }
+   },
+   "optionB": {
+    "id": "fd_site_bbq",
+    "label": "Job-Site Lunch BBQ",
+    "desc": "Grill on a tailgate, crew lunch.",
+    "tags": [
+     "industrial",
+     "casual",
+     "raw",
+     "social"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#2b2d31",
+      "#ff6b00",
+      "#8b3a1a",
+      "#c5ccd0",
+      "#f6b93b"
+     ],
+     "materials": [
+      "tailgate",
+      "charcoal",
+      "paper plates"
+     ]
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-32",
+   "category": "YouTube Thumbnail Style",
+   "optionA": {
+    "id": "yt_th_vs_jp",
+    "label": "Thailand Vs Japan Split",
+    "desc": "Two-country comparison split.",
+    "tags": [
+     "bold",
+     "comparison",
+     "bilingual",
+     "travel"
+    ],
+    "visual": {
+     "type": "thumb",
+     "bg": "#111",
+     "fg": "#ffffff",
+     "accent": "#d1495b",
+     "font": "'Kanit', 'Prompt', system-ui, sans-serif",
+     "layout": "split",
+     "text": "THAI vs JAPAN",
+     "key": "int_japandi",
+     "filter": null
+    }
+   },
+   "optionB": {
+    "id": "yt_duo",
+    "label": "Reaction Duo",
+    "desc": "Two faces reacting plus a short line.",
+    "tags": [
+     "playful",
+     "personal",
+     "energetic",
+     "youtube"
+    ],
+    "visual": {
+     "type": "thumb",
+     "bg": "#3a86ff",
+     "fg": "#ffffff",
+     "accent": "#ffbe0b",
+     "font": "'Nunito', 'Inter', system-ui, sans-serif",
+     "layout": "face",
+     "text": "WE DID IT",
+     "key": "ext_modern",
+     "filter": null
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-33",
+   "category": "Home / Interior Style",
+   "optionA": {
+    "id": "hm_wabi",
+    "label": "Wabi-Sabi",
+    "desc": "Imperfect, aged, quiet beauty.",
+    "tags": [
+     "japanese",
+     "natural",
+     "calm",
+     "raw"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#d6cfc4",
+      "#a39b8b",
+      "#6e6658",
+      "#3e3a33",
+      "#f2eee8"
+     ],
+     "materials": [
+      "aged wood",
+      "stoneware",
+      "washi"
+     ]
+    }
+   },
+   "optionB": {
+    "id": "hm_shophouse",
+    "label": "Bangkok Shophouse Reno",
+    "desc": "Narrow old shophouse, exposed brick, steel stairs, plants.",
+    "tags": [
+     "industrial",
+     "bangkok",
+     "urban",
+     "warm"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#9c4a2f",
+      "#2e2e2e",
+      "#d8c3a5",
+      "#5a7d4f",
+      "#f2efe8"
+     ],
+     "materials": [
+      "old brick",
+      "black steel",
+      "terrazzo"
+     ]
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-35",
+   "category": "Cars & Gear",
+   "optionA": {
+    "id": "cg_tuktuk",
+    "label": "Custom Tuk-Tuk",
+    "desc": "Branded tuk-tuk for shoots and promos.",
+    "tags": [
+     "bangkok",
+     "playful",
+     "vibrant",
+     "bold"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#00a8e8",
+      "#ff006e",
+      "#ffd60a",
+      "#1b1b1b",
+      "#ffffff"
+     ],
+     "materials": [
+      "3 wheels",
+      "neon trim",
+      "sound system"
+     ]
+    }
+   },
+   "optionB": {
+    "id": "cg_adv_bike",
+    "label": "Adventure Touring Bike",
+    "desc": "Panniers, crash bars, mountain passes.",
+    "tags": [
+     "adventurous",
+     "technical",
+     "rugged",
+     "outdoor"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#ff8c42",
+      "#2b2d31",
+      "#a3b18a",
+      "#f8f9fa",
+      "#3a86ff"
+     ],
+     "materials": [
+      "panniers",
+      "crash bars",
+      "GPS"
+     ]
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-37",
+   "category": "Typography",
+   "optionA": {
+    "id": "ty_anton",
+    "label": "Anton Poster",
+    "desc": "Tall heavy poster caps. Reads from across a job site.",
+    "tags": [
+     "loud",
+     "bold",
+     "industrial",
+     "direct"
+    ],
+    "visual": {
+     "type": "type",
+     "head": "'Anton', 'Bebas Neue', Impact, sans-serif",
+     "body": "'Work Sans', 'Helvetica Neue', Arial, sans-serif",
+     "headWeight": 400,
+     "upper": true,
+     "tracking": "0.02em"
+    }
+   },
+   "optionB": {
+    "id": "ty_dmsans",
+    "label": "DM Sans Friendly Geometric",
+    "desc": "Low-contrast geometric sans, approachable.",
+    "tags": [
+     "friendly",
+     "modern",
+     "light",
+     "clean"
+    ],
+    "visual": {
+     "type": "type",
+     "head": "'DM Sans', 'Inter', system-ui, sans-serif",
+     "body": "'DM Sans', 'Inter', system-ui, sans-serif",
+     "headWeight": 700,
+     "upper": false,
+     "tracking": "0"
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-38",
+   "category": "Fashion / Personal Look",
+   "optionA": {
+    "id": "fs_athleisure",
+    "label": "Clean Athleisure",
+    "desc": "Technical joggers, performance tee, minimal sneakers.",
+    "tags": [
+     "modern",
+     "active",
+     "minimal",
+     "light"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#f1f3f5",
+      "#adb5bd",
+      "#343a40",
+      "#ffffff",
+      "#4dabf7"
+     ],
+     "materials": [
+      "tech jersey",
+      "joggers",
+      "knit runners"
+     ]
+    }
+   },
+   "optionB": {
+    "id": "fs_fisherman",
+    "label": "Fisherman Pants & Tee",
+    "desc": "Wrap fisherman pants, plain tee, flip-flops.",
+    "tags": [
+     "thai",
+     "relaxed",
+     "tropical",
+     "natural"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#2f4858",
+      "#f2efe8",
+      "#c8a97e",
+      "#6b8f71",
+      "#1b1b1b"
+     ],
+     "materials": [
+      "cotton wrap pants",
+      "plain tee",
+      "flip-flops"
+     ]
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-39",
+   "category": "Packaging & Merch",
+   "optionA": {
+    "id": "pm_white_card",
+    "label": "Clean White Business Card",
+    "desc": "Bright white, one accent edge.",
+    "tags": [
+     "minimal",
+     "modern",
+     "light",
+     "clean"
+    ],
+    "visual": {
+     "type": "merch",
+     "item": "card",
+     "base": "#ffffff",
+     "ink": "#1b1b1b",
+     "mark": "WEBERMAN",
+     "font": "'Outfit', 'Inter', system-ui, sans-serif",
+     "accent": "#139a8f"
+    }
+   },
+   "optionB": {
+    "id": "pm_bilingual_tote",
+    "label": "Bilingual Tote",
+    "desc": "Canvas tote with EN/TH type.",
+    "tags": [
+     "thai",
+     "bilingual",
+     "practical",
+     "natural"
+    ],
+    "visual": {
+     "type": "merch",
+     "item": "tote",
+     "base": "#efe6d2",
+     "ink": "#3b2a1a",
+     "mark": "สวัสดี|HELLO",
+     "font": "'Kanit', 'Prompt', system-ui, sans-serif",
+     "accent": "#3b2a1a"
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-41",
+   "category": "Bangkok Vs Japan Aesthetics",
+   "optionA": {
+    "id": "bj_jp_muji",
+    "label": "Japan: Muji Utility Minimal",
+    "desc": "Undyed, unbranded, perfectly useful.",
+    "tags": [
+     "japan",
+     "minimal",
+     "light",
+     "practical"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#f7f5ef",
+      "#e3d9c6",
+      "#a39b8b",
+      "#ffffff",
+      "#7f2e2e"
+     ],
+     "materials": [
+      "undyed cotton",
+      "PP boxes",
+      "oak"
+     ]
+    }
+   },
+   "optionB": {
+    "id": "bj_bkk_shophouse",
+    "label": "Bangkok: Old Shophouse Patina",
+    "desc": "Peeling paint, rolling shutters, potted plants.",
+    "tags": [
+     "bangkok",
+     "rustic",
+     "warm",
+     "urban"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#e9c46a",
+      "#5a7d4f",
+      "#9c4a2f",
+      "#d8c3a5",
+      "#2b2b2b"
+     ],
+     "materials": [
+      "roller shutters",
+      "patina",
+      "potted plants"
+     ]
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-42",
+   "category": "App / UI Style",
+   "optionA": {
+    "id": "ui_jobsite",
+    "label": "Job-Site Tablet",
+    "desc": "Huge touch targets, hi-vis orange on concrete grey. Works with gloves on.",
+    "tags": [
+     "industrial",
+     "direct",
+     "practical",
+     "light"
+    ],
+    "visual": {
+     "type": "ui",
+     "bg": "#d9dcd6",
+     "surface": "#f4f4f1",
+     "text": "#1f1f1f",
+     "accent": "#ff6b00",
+     "radius": 6,
+     "font": "'Archivo Black', 'Arial Black', Impact, sans-serif",
+     "shadow": "hard",
+     "border": "2px solid #1f1f1f",
+     "muted": "#1f1f1f"
+    }
+   },
+   "optionB": {
+    "id": "ui_sunlit_linen",
+    "label": "Sunlit Linen",
+    "desc": "Off-white linen texture, sage accent, airy spacing.",
+    "tags": [
+     "natural",
+     "light",
+     "calm",
+     "soft"
+    ],
+    "visual": {
+     "type": "ui",
+     "bg": "#f6f3ec",
+     "surface": "#fbfaf6",
+     "text": "#3f4540",
+     "accent": "#7d9a6f",
+     "radius": 14,
+     "font": "'Outfit', 'Inter', system-ui, sans-serif",
+     "shadow": "soft",
+     "border": "none",
+     "muted": "#3f4540"
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-43",
+   "category": "Icon & Illustration Style",
+   "optionA": {
+    "id": "ic_sticker",
+    "label": "Die-Cut Stickers",
+    "desc": "Thick white outline sticker icons.",
+    "tags": [
+     "playful",
+     "bold",
+     "vibrant",
+     "friendly"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#ff006e",
+      "#ffbe0b",
+      "#3a86ff",
+      "#ffffff"
+     ],
+     "materials": [
+      "★ sticker",
+      "♥ badge",
+      "⚑ flag"
+     ]
+    }
+   },
+   "optionB": {
+    "id": "ic_watercolor",
+    "label": "Watercolor Spots",
+    "desc": "Loose watercolor blobs behind simple icons.",
+    "tags": [
+     "soft",
+     "natural",
+     "craft",
+     "warm"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#a3c4bc",
+      "#f2c6b4",
+      "#e9e4d8",
+      "#6b8f71"
+     ],
+     "materials": [
+      "❀ wash",
+      "☁ bleed",
+      "✿ bloom"
+     ]
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-44",
+   "category": "Social Post Layouts",
+   "optionA": {
+    "id": "sp_carousel",
+    "label": "Swipe Carousel Cover",
+    "desc": "Numbered hook that begs a swipe.",
+    "tags": [
+     "friendly",
+     "practical",
+     "youtube",
+     "clear"
+    ],
+    "visual": {
+     "type": "post",
+     "bg": "#139a8f",
+     "fg": "#ffffff",
+     "accent": "#ffd60a",
+     "font": "'Kanit', 'Prompt', system-ui, sans-serif",
+     "layout": "carousel",
+     "text": "5 Things I Wish I Knew Before Building In Thailand",
+     "key": null,
+     "filter": null
+    }
+   },
+   "optionB": {
+    "id": "sp_collage",
+    "label": "Scrapbook Collage",
+    "desc": "Taped photos, scribbles, stickers.",
+    "tags": [
+     "playful",
+     "craft",
+     "warm",
+     "personal"
+    ],
+    "visual": {
+     "type": "post",
+     "bg": "#f6f0e4",
+     "fg": "#1b1b1b",
+     "accent": "#e56b8a",
+     "font": "'Caveat', 'Comic Sans MS', cursive",
+     "layout": "collage",
+     "text": "week 12 on site",
+     "key": "base_temple",
+     "filter": null
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-45",
+   "category": "Bangkok Vs Japan Aesthetics",
+   "optionA": {
+    "id": "bj_bkk_modernism",
+    "label": "Bangkok: Tropical Modernism",
+    "desc": "60s concrete brise-soleil and breeze blocks.",
+    "tags": [
+     "bangkok",
+     "modern",
+     "tropical",
+     "architectural"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#e8e4dc",
+      "#a9a9a2",
+      "#2f5d3a",
+      "#c1502e",
+      "#4a4a48"
+     ],
+     "materials": [
+      "breeze blocks",
+      "brise-soleil",
+      "terrazzo"
+     ]
+    }
+   },
+   "optionB": {
+    "id": "bj_jp_konbini",
+    "label": "Japan: Konbini Pop",
+    "desc": "Bright packaging, perfect shelves, cute mascots.",
+    "tags": [
+     "japan",
+     "playful",
+     "vibrant",
+     "light"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#ffffff",
+      "#2a9d8f",
+      "#e63946",
+      "#ffbe0b",
+      "#3a86ff"
+     ],
+     "materials": [
+      "onigiri",
+      "mascots",
+      "fluorescent"
+     ]
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-46",
+   "category": "Website Hero Sections",
+   "optionA": {
+    "id": "wh_bigtype",
+    "label": "Giant Type Only",
+    "desc": "Massive headline, nothing else.",
+    "tags": [
+     "bold",
+     "minimal",
+     "direct",
+     "modern"
+    ],
+    "visual": {
+     "type": "hero",
+     "bg": "#ffffff",
+     "fg": "#111111",
+     "accent": "#ff6b00",
+     "font": "'Anton', 'Bebas Neue', Impact, sans-serif",
+     "layout": "bigtype",
+     "head": "WE BUILD.",
+     "sub": "",
+     "cta": "Talk To Us",
+     "key": null,
+     "filter": null
+    }
+   },
+   "optionB": {
+    "id": "wh_cards",
+    "label": "Service Cards Up Top",
+    "desc": "Three service cards right under a short headline.",
+    "tags": [
+     "practical",
+     "clear",
+     "friendly",
+     "corporate"
+    ],
+    "visual": {
+     "type": "hero",
+     "bg": "#f5f7fb",
+     "fg": "#1f2937",
+     "accent": "#2563eb",
+     "font": "'DM Sans', 'Inter', system-ui, sans-serif",
+     "layout": "cards",
+     "head": "What Do You Need?",
+     "sub": "Build|Renovate|Rent",
+     "cta": "",
+     "key": null,
+     "filter": null
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-47",
+   "category": "Video Editing & Pacing",
+   "optionA": {
+    "id": "vp_walk_talk",
+    "label": "Walk-And-Talk Vlog",
+    "desc": "Handheld, one long ramble with light trims.",
+    "tags": [
+     "personal",
+     "friendly",
+     "casual",
+     "raw"
+    ],
+    "visual": {
+     "type": "pace",
+     "cuts": [
+      9,
+      3,
+      10,
+      4,
+      8
+     ],
+     "colors": [
+      "#139a8f",
+      "#ffd166"
+     ],
+     "notes": [
+      "handheld",
+      "natural light",
+      "light trims"
+     ]
+    }
+   },
+   "optionB": {
+    "id": "vp_natural_sound",
+    "label": "No Talking, Natural Sound",
+    "desc": "Birds, rain, tools. Let the place speak.",
+    "tags": [
+     "natural",
+     "calm",
+     "minimal",
+     "tropical"
+    ],
+    "visual": {
+     "type": "pace",
+     "cuts": [
+      7,
+      6,
+      9,
+      8
+     ],
+     "colors": [
+      "#2f5d3a",
+      "#c2dfe3"
+     ],
+     "notes": [
+      "nat sound",
+      "no VO",
+      "long fades"
+     ]
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-48",
+   "category": "Website Hero Sections",
+   "optionA": {
+    "id": "wh_warm_gradient",
+    "label": "Warm Gradient + Illustration",
+    "desc": "Sunset gradient, friendly illustration.",
+    "tags": [
+     "warm",
+     "friendly",
+     "playful",
+     "tropical"
+    ],
+    "visual": {
+     "type": "hero",
+     "bg": "linear-gradient(135deg,#ffd8b8,#ff9f6e)",
+     "fg": "#4a3426",
+     "accent": "#ffffff",
+     "font": "'Nunito', 'Inter', system-ui, sans-serif",
+     "layout": "illus",
+     "head": "Find Your Place In The Sun",
+     "sub": "Rentals and builds",
+     "cta": "Explore",
+     "key": null,
+     "filter": null
+    }
+   },
+   "optionB": {
+    "id": "wh_center_min",
+    "label": "Centered Minimal",
+    "desc": "One line, one button, lots of white.",
+    "tags": [
+     "minimal",
+     "light",
+     "calm",
+     "modern"
+    ],
+    "visual": {
+     "type": "hero",
+     "bg": "#ffffff",
+     "fg": "#1b1b1b",
+     "accent": "#1b1b1b",
+     "font": "'Outfit', 'Inter', system-ui, sans-serif",
+     "layout": "center",
+     "head": "Thoughtful Homes In Thailand",
+     "sub": "",
+     "cta": "Start A Project",
+     "key": null,
+     "filter": null
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-49",
+   "category": "Typography",
+   "optionA": {
+    "id": "ty_spacemono",
+    "label": "Space Mono Retro-Tech",
+    "desc": "Quirky monospace with a 70s-computer feel.",
+    "tags": [
+     "technical",
+     "retro",
+     "raw",
+     "playful"
+    ],
+    "visual": {
+     "type": "type",
+     "head": "'Space Mono', ui-monospace, Menlo, monospace",
+     "body": "'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif",
+     "headWeight": 700,
+     "upper": false,
+     "tracking": "0"
+    }
+   },
+   "optionB": {
+    "id": "ty_pridi",
+    "label": "Pridi Thai Serif",
+    "desc": "Soft Thai-friendly serif for storytelling.",
+    "tags": [
+     "thai",
+     "warm",
+     "editorial",
+     "calm"
+    ],
+    "visual": {
+     "type": "type",
+     "head": "'Pridi', 'Lora', Georgia, serif",
+     "body": "'Sarabun', 'Inter', system-ui, sans-serif",
+     "headWeight": 600,
+     "upper": false,
+     "tracking": "0"
+    }
+   },
+   "repeat": false
+  },
+  {
+   "id": "2026-10-11-50",
+   "category": "Photography Style",
+   "optionA": {
+    "id": "ph_overcast",
+    "label": "Soft Overcast",
+    "desc": "Flat gentle light, low saturation, quiet.",
+    "tags": [
+     "calm",
+     "soft",
+     "japanese",
+     "natural"
+    ],
+    "visual": {
+     "type": "image",
+     "key": "int_japandi",
+     "filter": "brightness(1.1) contrast(.85) saturate(.75)",
+     "colors": [],
+     "materials": []
+    }
+   },
+   "optionB": {
+    "id": "ph_highkey",
+    "label": "High-Key White",
+    "desc": "Overexposed whites, minimal shadows.",
+    "tags": [
+     "light",
+     "minimal",
+     "clean",
+     "modern"
+    ],
+    "visual": {
+     "type": "image",
+     "key": "ext_modern",
+     "filter": "brightness(1.35) contrast(.85) saturate(.9)",
+     "colors": [],
+     "materials": []
+    }
+   },
+   "repeat": false
+  }
+ ]
+}

@@ -16,7 +16,7 @@
   "Text Size": 2,
   "Headline Wording": 3,
   "Opening Hook": 2,
-  "Moisture Scan": 3,
+  "Moisture Scan": 2,
   "Tech Look": 2,
   "License Badge": 1,
   "Refund Promise": 2,
@@ -28,22 +28,22 @@
   "Format": 1
  },
  "allocation": {
-  "Smart Upkeep Video V.2: Text Size": 1,
-  "Smart Upkeep Video V.2: Headline Wording": 1,
-  "Smart Upkeep Video V.2: Opening Hook": 1,
-  "Smart Upkeep Video V.2: Moisture Scan": 1,
-  "Smart Upkeep Video V.2: Tech Look": 1,
+  "Smart Upkeep Video V.2: Text Size": 2,
+  "Smart Upkeep Video V.2: Headline Wording": 3,
+  "Smart Upkeep Video V.2: Opening Hook": 2,
+  "Smart Upkeep Video V.2: Moisture Scan": 2,
+  "Smart Upkeep Video V.2: Tech Look": 2,
   "Smart Upkeep Video V.2: License Badge": 1,
-  "Smart Upkeep Video V.2: Refund Promise": 1,
-  "Smart Upkeep Video V.2: Logo": 1,
-  "Smart Upkeep Video V.2: End Card": 1,
-  "Smart Upkeep Video V.2: Color Amount": 1,
-  "Smart Upkeep Video V.2: Motion": 1,
-  "Smart Upkeep Video V.2: Music": 1,
+  "Smart Upkeep Video V.2: Refund Promise": 2,
+  "Smart Upkeep Video V.2: Logo": 2,
+  "Smart Upkeep Video V.2: End Card": 2,
+  "Smart Upkeep Video V.2: Color Amount": 2,
+  "Smart Upkeep Video V.2: Motion": 2,
+  "Smart Upkeep Video V.2: Music": 2,
   "Smart Upkeep Video V.2: Format": 1
  },
  "apps": {
-  "Smart Upkeep Video V.2": 26
+  "Smart Upkeep Video V.2": 25
  },
  "sources": {
   "v1_video": "/workspace/smartkeep/video/SmartKeep_V1.mp4",
@@ -53,8 +53,8 @@
   "logos": "/workspace/brand/smart-upkeep/logos"
  },
  "freshness": {
-  "option_slots": 52,
-  "never_shown_before": 52,
+  "option_slots": 50,
+  "never_shown_before": 50,
   "share": 1.0
  },
  "warnings": [],
@@ -462,51 +462,6 @@
    "retest": false,
    "notes": true,
    "id": "video-v2-09",
-   "repeat": false
-  },
-  {
-   "group": "Moisture Scan",
-   "category": "Smart Upkeep Video V.2: Moisture Scan",
-   "app": "Smart Upkeep Video V.2",
-   "ask": "Which 'Caught Early' Check?",
-   "optionA": {
-    "id": "vv2_ce_stamp",
-    "label": "Round Stamp",
-    "desc": "A tilted jungle-green stamp lands on the spot.",
-    "tags": [
-     "bold",
-     "stamp"
-    ],
-    "feeling": null,
-    "notes": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1280 720\" width=\"1280\" height=\"720\"><image href=\"img/vv2_ce_stamp.jpg\" width=\"1280\" height=\"720\"/></svg>",
-     "bg": "#FAF3EB"
-    }
-   },
-   "optionB": {
-    "id": "vv2_ce_chip",
-    "label": "Check Chip",
-    "desc": "A white card with a green check and where it was found.",
-    "tags": [
-     "clean",
-     "calm"
-    ],
-    "feeling": null,
-    "notes": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1280 720\" width=\"1280\" height=\"720\"><image href=\"img/vv2_ce_chip.jpg\" width=\"1280\" height=\"720\"/></svg>",
-     "bg": "#FAF3EB"
-    }
-   },
-   "purpose": "refine",
-   "retest": false,
-   "notes": true,
-   "id": "video-v2-10",
    "repeat": false
   },
   {
@@ -1249,5 +1204,12 @@
    "id": "video-v2-26",
    "repeat": false
   }
- ]
+ ],
+ "deck_size": 25,
+ "trimmed": {
+  "from": 26,
+  "to": 25,
+  "at": "2026-10-13T20:10:23+07:00",
+  "overflow": "banks/overflow/video-v2.json"
+ }
 }

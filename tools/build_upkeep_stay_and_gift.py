@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Style Swipe deck upkeep-stay-and-gift, "Upkeep Stay & Gift Deck" (PUBLISHED): 50 pairs for the UpKeep agent built from Max's upkeep-7 picks (35/50,
+"""Build Style Swipe deck upkeep-stay-and-gift, "Upkeep Stay & Gift Deck" (PUBLISHED): 25 pairs for the UpKeep agent built from Max's upkeep-7 picks (35/50,
 /workspace/smartkeep/branding/upkeep-7-picks.md). Refines the winners, retests every 'both' tie head to head, adds a drawn
 gift graphic (pair 18 note), a one-time lawn option (pair 13 note) and retention-offer cards (pair 26 note: one month free
 to stay after 6+ months, two months free after 1+ year). Certification Badges dropped (skipped en masse).

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Style Swipe deck blueprint-2 (PUBLISHED): 50 Blueprint pairs built on Max's blueprint-1 results
+"""Build Style Swipe deck blueprint-2 (PUBLISHED): 25 Blueprint pairs built on Max's blueprint-1 results
 (results/blueprint-1.txt, 42/50; top tags airy, simple, natural, lively, clean). Mix: lean into his A/B picks (refine the
 winner), resolve his 'both' answers (where does each go / combine), re-ask the 8 skipped pairs in fresh forms, and add new
 open Blueprint decisions. Reuses the blueprint-1 drawing helpers + tools/draft_svg.py. Run from the style-swipe repo root."""

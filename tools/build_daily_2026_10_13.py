@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Style Swipe daily deck 2026-10-13: 50 pairs.
+"""Build Style Swipe daily deck 2026-10-13: 25 pairs.
 Blog topics (10), blog writing style (6), micro-dose color (7), Up Keep features (12),
 swipe controls (3), variety (9), Niko/Vivian function (3). All option ids prefixed d13_.
 Run from style-swipe repo root."""
@@ -792,6 +792,8 @@ order = []
 while seq:
     k = next((i for i, p in enumerate(seq) if not order or p["group"] != order[-1]["group"]), 0)
     order.append(seq.pop(k))
+from trim_deck import DECK_SIZE, select, save_overflow  # decks are 25 pairs; extras go to banks/overflow
+order, _cut = select(order, DECK_SIZE); save_overflow(DID, _cut)
 for i, p in enumerate(order, 1):
     p.update(id=f"{DID}-{i:02d}", repeat=False)
 
@@ -803,7 +805,7 @@ apps = {}
 for p in order:
     apps[p["app"]] = apps.get(p["app"], 0) + 1
 ids = [p["option" + s]["id"] for p in order for s in "AB"]
-assert len(order) == 50, len(order)
+assert len(order) == DECK_SIZE, len(order)
 assert len(ids) == len(set(ids)), "duplicate option id"
 ledger = json.load(open("shown_options.json"))
 shown = {k for k, v in ledger.get("options", {}).items() if v != [DID]}

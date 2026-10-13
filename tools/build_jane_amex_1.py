@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""DRAFT Style Swipe deck jane-amex-1: 50 this-or-that pairs for Mom's Amex Offers (Jane's phone; info only, not selling).
+"""DRAFT Style Swipe deck jane-amex-1: 25 this-or-that pairs for Mom's Amex Offers (Jane's phone; info only, not selling).
 Starts from the queued Mom's Amex pairs in queue/blog-topics.md and expands toward big readable, simple, elder-friendly options.
 All offers shown are fake examples; no account data. Run from the repo root."""
 import sys; sys.path.insert(0, "tools")

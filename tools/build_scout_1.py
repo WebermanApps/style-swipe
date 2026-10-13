@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Style Swipe deck scout-1 (PUBLISHED): 50 pairs for the Scout agent (YouTube Shorts channel about daily life in
+"""Build Style Swipe deck scout-1 (PUBLISHED): 25 pairs for the Scout agent (YouTube Shorts channel about daily life in
 Thailand). Based on the Oct 13 team-sync recap (post package workflow, publish-time test, competitor title finding, 30-day
 plan, Style C thumbnails, Thumbnail Taste app) and Scout's dashboard. Example numbers only.
 Pattern: tools/build_dashboard_2.py + draft_svg.py via team_kit.py. Run from repo root."""

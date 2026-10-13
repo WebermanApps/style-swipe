@@ -8,7 +8,7 @@ Usage:
   python3 generate_deck.py --ingest results.json # fold exported swipe results into profile.json
   python3 generate_deck.py --ingest r.json --date 2026-10-10   # ingest, then generate next deck
 Options:
-  --pairs N        number of pairs (default 50)
+  --pairs N        number of pairs (default 25)
   --no-embed       don't rebuild index.html with the new deck embedded
   --force          overwrite an existing deck file for that date
   --seed S         random seed (default: derived from date)
@@ -2492,7 +2492,7 @@ def build_single_deck(date, n_cards, seed=None, allow_repeats=False, focus=None,
                  "cards": cards, "image_credits": pd["image_credits"]})
     return deck
 
-def convert_pair_deck(src_id, new_id, n_cards=50):
+def convert_pair_deck(src_id, new_id, n_cards=25):
     """Turn an existing pair deck into a single-card deck. The deck keeps ALL of the source options
     as a reserve (A sides first, then B sides, same order); the app drops options from pairs Max
     already answered in the source deck on that device and shows the first n_cards of the rest."""
@@ -2824,7 +2824,7 @@ def render_index(deck):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--date", help="YYYY-MM-DD (default: today, local time)")
-    ap.add_argument("--pairs", type=int, default=50, help="deck size: cards (single format) or pairs (--format pairs)")
+    ap.add_argument("--pairs", type=int, default=25, help="deck size: cards (single format) or pairs (--format pairs)")
     ap.add_argument("--format", choices=["pairs", "single"], default="pairs", help="A-vs-B pairs (default: This / That / Both / Love / Neither) or single-option cards (No/Maybe/Love/Yes)")
     ap.add_argument("--polish", action="store_true", help="build a hand-paired app-polish deck: the newest unseen set (Niko & Vivian apps: 45 + 1 retest + 4 Swipe Controls = 50 pairs; or the 10-10g set: 95 + 5)")
     ap.add_argument("--polish-set", choices=["nv2", "nv", "2026-10-10g"], help="with --polish: which hand-paired set (default: newest set that is still unseen; 'nv' = Niko & Vivian apps, 50 pairs)")

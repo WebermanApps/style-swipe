@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Style Swipe deck upkeep-6 (PUBLISHED): 50 Up Keep pairs built on Max's upkeep-5 picks (reconstructed in
+"""Build Style Swipe deck upkeep-6 (PUBLISHED): 25 Up Keep pairs built on Max's upkeep-5 picks (reconstructed in
 /workspace/smartkeep/branding/upkeep-5-picks.md). Mix: 9 follow-ups that lean into his picks, 9 skipped pairs re-asked in new
 forms (van stripe: medium settled, test medium vs medium + saffron pinline), and 32 pairs across 8 new areas (dashboard, plan
 change, neighbor referral, seasonal checklist, tech photo capture, operator console, empty and success states, QR landing page).

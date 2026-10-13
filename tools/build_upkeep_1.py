@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Style Swipe deck upkeep-1: 50 this-or-that pairs centered on the Up Keep / Smart Upkeep home maintenance
+"""Build Style Swipe deck upkeep-1: 25 this-or-that pairs centered on the Up Keep / Smart Upkeep home maintenance
 membership app (https://webermanapps.github.io/smart-upkeep/). Mock screens are drawn as SVG in Up Keep's own style
 (white base, #0A0A0A ink, square black buttons, Khand headings, Hind body, terracotta accent, #E5E0D8 rules) and
 rendered through the 'hm' svg renderer. Run from the style-swipe repo root."""
@@ -381,6 +381,8 @@ add(G7, "Swipe Controls", C("sc_micro_pill", "White Pills, One Color Each", "Whi
 random.seed(12); first = pairs[:1]; rest = pairs[1:]; random.shuffle(rest); seq = first + rest; order = []
 while seq:
     k = next((i for i, p in enumerate(seq) if not order or p["category"] != order[-1]["category"]), 0); order.append(seq.pop(k))
+from trim_deck import DECK_SIZE, select, save_overflow  # decks are 25 pairs; extras go to banks/overflow
+order, _cut = select(order, DECK_SIZE); save_overflow(DID, _cut)
 for i, p in enumerate(order, 1):
     p.update(id=f"{DID}-{i:02d}", repeat=False)
 alloc, feel, groups = {}, {}, {}

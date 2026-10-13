@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Style Swipe daily deck "Flat Fee & Lagoon Deck" (slug flat-fee-and-lagoon): 50 pairs built from Max's
+"""Build Style Swipe daily deck "Flat Fee & Lagoon Deck" (slug flat-fee-and-lagoon): 25 pairs built from Max's
 daily 2026-10-13 picks (32/50, results/2026-10-13.txt). Copied from build_daily_2026_10_13.py (same helpers + asserts).
 Groups: Up Keep features (14), Blog Topics follow-ups (10), Blog Style (4), Color Accents (6), Swipe Controls (3),
 Home Guide (4), Variety (9). Refines winners, retests 'both' ties head to head, re-asks key skips in a fresher way.
@@ -829,6 +829,8 @@ order = []
 while seq:
     k = next((i for i, p in enumerate(seq) if not order or p["group"] != order[-1]["group"]), 0)
     order.append(seq.pop(k))
+from trim_deck import DECK_SIZE, select, save_overflow  # decks are 25 pairs; extras go to banks/overflow
+order, _cut = select(order, DECK_SIZE); save_overflow(DID, _cut)
 for i, p in enumerate(order, 1):
     p.update(id=f"{DID}-{i:02d}", repeat=False)
 
@@ -838,7 +840,7 @@ for p in order:
     groups[p["group"]] = groups.get(p["group"], 0) + 1
     apps[p["app"]] = apps.get(p["app"], 0) + 1
 ids = [p["option" + s]["id"] for p in order for s in "AB"]
-assert len(order) == 50, len(order)
+assert len(order) == DECK_SIZE, len(order)
 assert len(ids) == len(set(ids)), "duplicate option id"
 assert all(order[i]["group"] != order[i + 1]["group"] for i in range(49)), "same group twice in a row"
 ledger = json.load(open("shown_options.json"))

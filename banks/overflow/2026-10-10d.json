@@ -1,0 +1,1224 @@
+{
+ "deck": "2026-10-10d",
+ "cut_at": "2026-10-13T20:10:23+07:00",
+ "count": 25,
+ "note": "Pairs cut when the deck went to 25; banks/<category>.json will absorb these.",
+ "pairs": [
+  {
+   "id": "2026-10-10d-05",
+   "category": "SiteAgent Brand Marks",
+   "optionA": {
+    "id": "sa2_bilingual_kanit",
+    "label": "Kanit Bilingual Stack",
+    "desc": "Bold Kanit English over Thai, teal rule.",
+    "tags": [
+     "bilingual",
+     "thai",
+     "modern",
+     "clear"
+    ],
+    "visual": {
+     "type": "logo",
+     "mark": "",
+     "word": "SiteAgent|ไซต์เอเจนต์",
+     "font": "'Kanit', 'Prompt', system-ui, sans-serif",
+     "fg": "#1b1b1b",
+     "bg": "#f6f3ec",
+     "shape": "bilingual",
+     "weight": 700,
+     "spacing": "0.02em",
+     "italic": false,
+     "upper": false,
+     "accent": "#139a8f"
+    }
+   },
+   "optionB": {
+    "id": "sa_hex_bolt",
+    "label": "Hex Bolt Mark",
+    "desc": "Bolt-head hexagon with an S, hi-vis orange on charcoal.",
+    "tags": [
+     "industrial",
+     "bold",
+     "construction",
+     "technical"
+    ],
+    "visual": {
+     "type": "logo",
+     "mark": "S",
+     "word": "SiteAgent",
+     "font": "'Archivo Black', 'Arial Black', Impact, sans-serif",
+     "fg": "#ff6b00",
+     "bg": "#1f1f1f",
+     "shape": "hex",
+     "weight": 800,
+     "spacing": "0.02em",
+     "italic": false,
+     "upper": false,
+     "accent": "#ff6b00"
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-10d-09",
+   "category": "Café & Coffee Shop Design",
+   "optionA": {
+    "id": "cf_street_cart",
+    "label": "Street Coffee Cart",
+    "desc": "Coffee on wheels, cups for 20 baht.",
+    "tags": [
+     "practical",
+     "friendly",
+     "raw",
+     "clear"
+    ],
+    "visual": {
+     "type": "bleed",
+     "key": "cf_kiosk",
+     "caption": "Coffee on wheels",
+     "filter": null
+    }
+   },
+   "optionB": {
+    "id": "cf_craft_roastery",
+    "label": "Working Roastery",
+    "desc": "Aprons, sacks, roasting drum: you watch it happen.",
+    "tags": [
+     "industrial",
+     "craft",
+     "construction",
+     "warm"
+    ],
+    "visual": {
+     "type": "bleed",
+     "key": "cf_roastery",
+     "caption": "Watch it roast",
+     "filter": null
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-10d-11",
+   "category": "Kids' Room & Nursery",
+   "optionA": {
+    "id": "kd_montessori",
+    "label": "Montessori Low Room",
+    "desc": "Floor bed, low shelves, everything reachable.",
+    "tags": [
+     "practical",
+     "natural",
+     "clear",
+     "calm"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#e9e4d8",
+      "#c8a97e",
+      "#9caf88",
+      "#ffffff",
+      "#5c4033"
+     ],
+     "materials": [
+      "floor bed",
+      "low shelves",
+      "open toys"
+     ]
+    }
+   },
+   "optionB": {
+    "id": "kd_thai_textile",
+    "label": "Thai Textile Nursery",
+    "desc": "Handwoven cotton, indigo, little elephant motifs.",
+    "tags": [
+     "thai",
+     "craft",
+     "warm",
+     "bilingual"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#1f3b73",
+      "#d4a017",
+      "#f3efe6",
+      "#c1502e",
+      "#ffffff"
+     ],
+     "materials": [
+      "indigo cotton",
+      "elephant motif",
+      "bilingual books"
+     ]
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-10d-13",
+   "category": "Travel & Hotel Vibes",
+   "optionA": {
+    "id": "tv_timber_lodge",
+    "label": "Big Timber Lodge",
+    "desc": "Massive beams, stone fireplace, communal tables.",
+    "tags": [
+     "rustic",
+     "warm",
+     "craft",
+     "construction"
+    ],
+    "visual": {
+     "type": "bleed",
+     "key": "tr_mountain_lodge",
+     "caption": "Timber + stone",
+     "filter": null
+    }
+   },
+   "optionB": {
+    "id": "tv_beach_barefoot",
+    "label": "Barefoot Beach Bungalow",
+    "desc": "Simple hut, sand floor, hammock, no shoes for a week.",
+    "tags": [
+     "natural",
+     "tropical",
+     "rustic",
+     "light"
+    ],
+    "visual": {
+     "type": "bleed",
+     "key": "tr_beach_bungalow",
+     "caption": "Koh Lanta, no shoes",
+     "filter": null
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-10d-21",
+   "category": "Motion & Animation Styles",
+   "optionA": {
+    "id": "mo_ease_slide",
+    "label": "Smooth Ease Slide",
+    "desc": "Elements glide in and settle, no fuss.",
+    "tags": [
+     "modern",
+     "clear",
+     "calm",
+     "light"
+    ],
+    "visual": {
+     "type": "motion",
+     "kind": "slide",
+     "easing": "cubic-bezier(.22,1,.36,1)",
+     "dur": 1.4,
+     "color": "#139a8f",
+     "bg": "#f4f4f1"
+    }
+   },
+   "optionB": {
+    "id": "mo_mechanical",
+    "label": "Mechanical Steps",
+    "desc": "Stepped motion like a machine or crane.",
+    "tags": [
+     "industrial",
+     "construction",
+     "technical",
+     "bold"
+    ],
+    "visual": {
+     "type": "motion",
+     "kind": "slide",
+     "easing": "steps(5,end)",
+     "dur": 1.5,
+     "color": "#2f3a40",
+     "bg": "#f4f4f1"
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-10d-24",
+   "category": "Uniforms & Workwear",
+   "optionA": {
+    "id": "uw_coverall",
+    "label": "Grey Coveralls",
+    "desc": "One-piece grey coveralls, name tape, orange stitch.",
+    "tags": [
+     "industrial",
+     "practical",
+     "clear",
+     "construction"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#6c757d",
+      "#2b2d31",
+      "#ff6b00",
+      "#e9ecee",
+      "#ffffff"
+     ],
+     "materials": [
+      "coverall",
+      "name tape",
+      "knee pads"
+     ]
+    }
+   },
+   "optionB": {
+    "id": "uw_linen_hospitality",
+    "label": "Linen Hospitality Uniform",
+    "desc": "Sand linen shirts and aprons for guests.",
+    "tags": [
+     "natural",
+     "light",
+     "warm",
+     "friendly"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#e9e2d0",
+      "#c3b091",
+      "#ffffff",
+      "#7d9a6f",
+      "#3b2a1a"
+     ],
+     "materials": [
+      "linen shirt",
+      "waxed apron",
+      "sandals"
+     ]
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-10d-27",
+   "category": "Outdoor Spaces & Gardens",
+   "optionA": {
+    "id": "gd_outdoor_kitchen",
+    "label": "Outdoor Kitchen & BBQ Deck",
+    "desc": "Concrete counter, grill, long table under a pergola.",
+    "tags": [
+     "industrial",
+     "warm",
+     "friendly",
+     "construction"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#bdbcb6",
+      "#8b5a2b",
+      "#2b2b2b",
+      "#f2efe8",
+      "#c1502e"
+     ],
+     "materials": [
+      "concrete counter",
+      "grill",
+      "pergola"
+     ]
+    }
+   },
+   "optionB": {
+    "id": "gd_wild_meadow",
+    "label": "Wildflower Meadow",
+    "desc": "Let it grow: grasses and wildflowers.",
+    "tags": [
+     "natural",
+     "rustic",
+     "light",
+     "calm"
+    ],
+    "visual": {
+     "type": "bleed",
+     "key": "gd_meadow",
+     "caption": "Let it grow",
+     "filter": null
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-10d-28",
+   "category": "Watches & EDC",
+   "optionA": {
+    "id": "ed_minimal_carry",
+    "label": "Minimal Carry",
+    "desc": "Phone, slim wallet, one key. Done.",
+    "tags": [
+     "minimal",
+     "clear",
+     "modern",
+     "light"
+    ],
+    "visual": {
+     "type": "mini",
+     "icon": "🔑",
+     "items": [
+      "slim wallet",
+      "one key",
+      "phone"
+     ],
+     "bg": "#f4f4f1",
+     "fg": "#1b1b1b"
+    }
+   },
+   "optionB": {
+    "id": "ed_leather_notebook",
+    "label": "Leather Notebook & Pen",
+    "desc": "Worn leather notebook, brass pen.",
+    "tags": [
+     "craft",
+     "warm",
+     "rustic",
+     "classic"
+    ],
+    "visual": {
+     "type": "mini",
+     "icon": "📓",
+     "items": [
+      "leather",
+      "brass pen",
+      "sketches"
+     ],
+     "bg": "#efe1c6",
+     "fg": "#1b1b1b"
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-10d-29",
+   "category": "Textures & Materials",
+   "optionA": {
+    "id": "tx_teak_grain",
+    "label": "Oiled Teak Grain",
+    "desc": "Warm golden-brown wood grain.",
+    "tags": [
+     "warm",
+     "natural",
+     "craft",
+     "rustic"
+    ],
+    "visual": {
+     "type": "texture",
+     "css": "repeating-linear-gradient(95deg,#8b5a2b 0 6px,#9c6a37 6px 9px,#7a4d23 9px 16px)",
+     "note": "teak"
+    }
+   },
+   "optionB": {
+    "id": "tx_terrazzo",
+    "label": "Terrazzo Chips",
+    "desc": "Speckled stone chips in cream.",
+    "tags": [
+     "modern",
+     "light",
+     "friendly",
+     "thai"
+    ],
+    "visual": {
+     "type": "texture",
+     "css": "radial-gradient(circle at 20% 30%,#c1502e 3px,transparent 4px),radial-gradient(circle at 70% 60%,#5a7d4f 4px,transparent 5px),radial-gradient(circle at 40% 80%,#8e8e8a 3px,transparent 4px),radial-gradient(circle at 85% 20%,#d4a017 2px,transparent 3px),#efe9de",
+     "note": "terrazzo"
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-10d-30",
+   "category": "Emoji & Sticker Styles",
+   "optionA": {
+    "id": "em_minimal_mono",
+    "label": "Mono Line Icons",
+    "desc": "Single-color line icons instead of emoji.",
+    "tags": [
+     "minimal",
+     "modern",
+     "clear",
+     "light"
+    ],
+    "visual": {
+     "type": "mini",
+     "icon": "◯",
+     "items": [
+      "line only",
+      "one color",
+      "calm"
+     ],
+     "bg": "#f4f4f1",
+     "fg": "#1b1b1b"
+    }
+   },
+   "optionB": {
+    "id": "em_construction_set",
+    "label": "Construction Sticker Set",
+    "desc": "Hard hats, cones, thumbs-up crew.",
+    "tags": [
+     "construction",
+     "friendly",
+     "clear",
+     "industrial"
+    ],
+    "visual": {
+     "type": "mini",
+     "icon": "👷",
+     "items": [
+      "hard hat",
+      "cone",
+      "done ✓"
+     ],
+     "bg": "#fff3d6",
+     "fg": "#1b1b1b"
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-10d-31",
+   "category": "Motion & Animation Styles",
+   "optionA": {
+    "id": "mo_snappy",
+    "label": "Snappy & Quick",
+    "desc": "Fast, crisp, gets out of the way.",
+    "tags": [
+     "clear",
+     "direct",
+     "modern",
+     "practical"
+    ],
+    "visual": {
+     "type": "motion",
+     "kind": "slide",
+     "easing": "cubic-bezier(.4,0,.2,1)",
+     "dur": 0.6,
+     "color": "#ff6b00",
+     "bg": "#f4f4f1"
+    }
+   },
+   "optionB": {
+    "id": "mo_handdrawn",
+    "label": "Hand-Drawn Wiggle",
+    "desc": "Boiling line wiggle, stop-motion feel.",
+    "tags": [
+     "craft",
+     "warm",
+     "friendly",
+     "rustic"
+    ],
+    "visual": {
+     "type": "motion",
+     "kind": "wiggle",
+     "easing": "steps(3,end)",
+     "dur": 0.5,
+     "color": "#8b5a2b",
+     "bg": "#f4f4f1"
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-10d-32",
+   "category": "Lighting Moods",
+   "optionA": {
+    "id": "lt_overcast_skylight",
+    "label": "Overcast Skylight",
+    "desc": "Grey-soft top light, calm and flat.",
+    "tags": [
+     "calm",
+     "light",
+     "natural",
+     "clear"
+    ],
+    "visual": {
+     "type": "light",
+     "css": "linear-gradient(180deg,#e9ecef,#d7dbe0 60%,#c2c8ce)",
+     "kelvin": "6500K overcast"
+    }
+   },
+   "optionB": {
+    "id": "lt_edison_warm",
+    "label": "Edison Bulb Warmth",
+    "desc": "Bare filament bulbs over a workbench.",
+    "tags": [
+     "warm",
+     "industrial",
+     "rustic",
+     "craft"
+    ],
+    "visual": {
+     "type": "light",
+     "css": "radial-gradient(circle at 30% 25%,#ffd27a 0 8%,transparent 30%),radial-gradient(circle at 70% 25%,#ffd27a 0 8%,transparent 30%),linear-gradient(#3b2a1a,#1f1610)",
+     "kelvin": "2200K filament"
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-10d-33",
+   "category": "SiteAgent Product Voice",
+   "optionA": {
+    "id": "sa_v_bilingual",
+    "label": "Bilingual Line-By-Line",
+    "desc": "Every alert in English, then Thai.",
+    "tags": [
+     "bilingual",
+     "thai",
+     "direct",
+     "clear"
+    ],
+    "visual": {
+     "type": "tone",
+     "lines": [
+      "Pour moved to 2pm because of rain.",
+      "เทปูนเลื่อนเป็นบ่ายสองโมงเพราะฝนตก"
+     ],
+     "from": "SiteAgent → Crew"
+    }
+   },
+   "optionB": {
+    "id": "sa2_v_safety_kind",
+    "label": "Kind Safety Reminder",
+    "desc": "Firm on safety, warm in tone.",
+    "tags": [
+     "friendly",
+     "construction",
+     "warm",
+     "clear"
+    ],
+    "visual": {
+     "type": "tone",
+     "lines": [
+      "Quick one: two guys on the scaffold without harnesses.",
+      "Let's get them clipped in before break. Thanks, team."
+     ],
+     "from": "SiteAgent → Foreman"
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-10d-34",
+   "category": "Watches & EDC",
+   "optionA": {
+    "id": "ed_creator_kit",
+    "label": "Creator Pocket Kit",
+    "desc": "Pocket camera, lav mic, power bank.",
+    "tags": [
+     "technical",
+     "friendly",
+     "modern",
+     "youtube"
+    ],
+    "visual": {
+     "type": "mini",
+     "icon": "🎥",
+     "items": [
+      "pocket cam",
+      "lav mic",
+      "power bank"
+     ],
+     "bg": "#e6f3f1",
+     "fg": "#1b1b1b"
+    }
+   },
+   "optionB": {
+    "id": "ed_digital_tough",
+    "label": "Tough Digital",
+    "desc": "Shock-proof digital, does everything.",
+    "tags": [
+     "practical",
+     "industrial",
+     "construction",
+     "clear"
+    ],
+    "visual": {
+     "type": "mini",
+     "icon": "⏱",
+     "items": [
+      "shockproof",
+      "solar",
+      "alarm"
+     ],
+     "bg": "#e9ecee",
+     "fg": "#1b1b1b"
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-10d-35",
+   "category": "Shorts Pacing & Captions",
+   "optionA": {
+    "id": "sp2_timelapse_loop",
+    "label": "Timelapse Loop",
+    "desc": "Build timelapse that loops seamlessly.",
+    "tags": [
+     "construction",
+     "modern",
+     "clear",
+     "industrial"
+    ],
+    "visual": {
+     "type": "pace",
+     "cuts": [
+      3,
+      3,
+      3,
+      3,
+      3
+     ],
+     "colors": [
+      "#2f3a40",
+      "#ffc300"
+     ],
+     "notes": [
+      "timelapse",
+      "seamless loop",
+      "no talking"
+     ]
+    }
+   },
+   "optionB": {
+    "id": "sp2_qa_reply",
+    "label": "Reply-To-Comment",
+    "desc": "Shows a viewer comment, then answers fast.",
+    "tags": [
+     "friendly",
+     "clear",
+     "direct",
+     "personal"
+    ],
+    "visual": {
+     "type": "pace",
+     "cuts": [
+      2,
+      3,
+      3,
+      3
+     ],
+     "colors": [
+      "#06c755",
+      "#ffffff"
+     ],
+     "notes": [
+      "comment sticker",
+      "quick answer",
+      "CTA end"
+     ]
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-10d-37",
+   "category": "Lighting Moods",
+   "optionA": {
+    "id": "lt_daylight_clear",
+    "label": "Bright Clear Daylight",
+    "desc": "Even, cool-white daylight. Everything visible.",
+    "tags": [
+     "light",
+     "clear",
+     "modern",
+     "practical"
+    ],
+    "visual": {
+     "type": "light",
+     "css": "linear-gradient(180deg,#ffffff,#eef3f7 70%,#d9e2ea)",
+     "kelvin": "5000K daylight"
+    }
+   },
+   "optionB": {
+    "id": "lt_candle",
+    "label": "Candlelit Evening",
+    "desc": "Flickering low light, warm pockets.",
+    "tags": [
+     "warm",
+     "calm",
+     "rustic",
+     "soft"
+    ],
+    "visual": {
+     "type": "light",
+     "css": "radial-gradient(circle at 50% 70%,#ffb347 0 6%,#a0522d 25%,#1b1208 70%)",
+     "kelvin": "1800K candle"
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-10d-38",
+   "category": "Book & Magazine Covers",
+   "optionA": {
+    "id": "bk_kraft_field",
+    "label": "Kraft Field Guide",
+    "desc": "Kraft paper, stamped title, small drawing.",
+    "tags": [
+     "rustic",
+     "craft",
+     "natural",
+     "warm"
+    ],
+    "visual": {
+     "type": "cover",
+     "bg": "#c8a97e",
+     "fg": "#1b1b1b",
+     "accent": "#8b3a1a",
+     "font": "'Space Mono', ui-monospace, Menlo, monospace",
+     "layout": "stamp",
+     "title": "Tropical Building",
+     "sub": "Notes from the site",
+     "key": null,
+     "filter": null
+    }
+   },
+   "optionB": {
+    "id": "bk_photo_band",
+    "label": "Photo + Bold Band",
+    "desc": "Full photo, one bold title band.",
+    "tags": [
+     "clear",
+     "modern",
+     "construction",
+     "bold"
+    ],
+    "visual": {
+     "type": "cover",
+     "bg": "#111",
+     "fg": "#ffffff",
+     "accent": "#ff6b00",
+     "font": "'Anton', 'Bebas Neue', Impact, sans-serif",
+     "layout": "band",
+     "title": "BUILT IN THAILAND",
+     "sub": "A field guide",
+     "key": "base_site",
+     "filter": null
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-10d-39",
+   "category": "Outdoor Spaces & Gardens",
+   "optionA": {
+    "id": "gd_cottage_border",
+    "label": "Cottage Flower Border",
+    "desc": "Overflowing flowers by a white house.",
+    "tags": [
+     "natural",
+     "friendly",
+     "warm",
+     "light"
+    ],
+    "visual": {
+     "type": "bleed",
+     "key": "gd_cottage",
+     "caption": "Flowers everywhere",
+     "filter": null
+    }
+   },
+   "optionB": {
+    "id": "gd_rooftop_green",
+    "label": "Rooftop Garden Terrace",
+    "desc": "Planters, shade sails, city around.",
+    "tags": [
+     "modern",
+     "natural",
+     "urban",
+     "friendly"
+    ],
+    "visual": {
+     "type": "bleed",
+     "key": "gd_rooftop",
+     "caption": "Green roof",
+     "filter": null
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-10d-40",
+   "category": "Podcast & Audio Branding",
+   "optionA": {
+    "id": "pd_bilingual_host",
+    "label": "Bilingual Host Hello",
+    "desc": "'Hello / สวัสดีครับ' spoken over a soft pad.",
+    "tags": [
+     "bilingual",
+     "thai",
+     "friendly",
+     "clear"
+    ],
+    "visual": {
+     "type": "sound",
+     "bpm": 80,
+     "color": "#139a8f",
+     "words": [
+      "spoken hello",
+      "EN/TH",
+      "soft pad"
+     ],
+     "bg": "#14161a"
+    }
+   },
+   "optionB": {
+    "id": "pd_site_foley",
+    "label": "Job-Site Sound Logo",
+    "desc": "Hammer-hit + drill whirr as the audio logo.",
+    "tags": [
+     "construction",
+     "industrial",
+     "clear",
+     "rustic"
+    ],
+    "visual": {
+     "type": "sound",
+     "bpm": 120,
+     "color": "#ff6b00",
+     "words": [
+      "hammer hit",
+      "drill whirr",
+      "2 s"
+     ],
+     "bg": "#14161a"
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-10d-41",
+   "category": "Japan Cottage Makeover",
+   "optionA": {
+    "id": "jc2_engawa_cafe",
+    "label": "Engawa Coffee Corner",
+    "desc": "Sunny veranda bench with a little coffee bar.",
+    "tags": [
+     "warm",
+     "friendly",
+     "natural",
+     "light"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#c19a6b",
+      "#f4ecd8",
+      "#6f4e37",
+      "#9caf88",
+      "#ffffff"
+     ],
+     "materials": [
+      "veranda bench",
+      "pour-over",
+      "garden view"
+     ]
+    }
+   },
+   "optionB": {
+    "id": "jc2_solar_practical",
+    "label": "Solar + Rain Tank",
+    "desc": "Solar roof and rainwater tank, off-grid-ish.",
+    "tags": [
+     "practical",
+     "modern",
+     "natural",
+     "construction"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#2f3a40",
+      "#7d9a6f",
+      "#e9ecee",
+      "#c8a97e",
+      "#ffffff"
+     ],
+     "materials": [
+      "solar panels",
+      "rain tank",
+      "LED"
+     ]
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-10d-43",
+   "category": "This Or That: Words",
+   "optionA": {
+    "id": "wd_sabai",
+    "label": "Sabai",
+    "desc": "Thai for easy, comfortable, at ease.",
+    "tags": [
+     "thai",
+     "calm",
+     "bilingual",
+     "warm"
+    ],
+    "visual": {
+     "type": "word",
+     "word": "สบาย",
+     "sub": "sabai · at ease",
+     "bg": "#f4ecd8",
+     "fg": "#6b4226",
+     "font": "'Kanit', 'Prompt', system-ui, sans-serif"
+    }
+   },
+   "optionB": {
+    "id": "wd_build",
+    "label": "Build",
+    "desc": "Making something real.",
+    "tags": [
+     "construction",
+     "clear",
+     "direct",
+     "industrial"
+    ],
+    "visual": {
+     "type": "word",
+     "word": "BUILD",
+     "sub": "make it real",
+     "bg": "#2f3a40",
+     "fg": "#ffffff",
+     "font": "'Anton', 'Bebas Neue', Impact, sans-serif"
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-10d-46",
+   "category": "SMART Visa Pitch Deck",
+   "optionA": {
+    "id": "sv_traction_numbers",
+    "label": "Traction Numbers",
+    "desc": "Pilots, hours saved, sites live.",
+    "tags": [
+     "trust",
+     "clear",
+     "direct",
+     "modern"
+    ],
+    "visual": {
+     "type": "hero",
+     "bg": "#ffffff",
+     "fg": "#0f2340",
+     "accent": "#2bb673",
+     "font": "'Manrope', 'Inter', system-ui, sans-serif",
+     "layout": "trust",
+     "head": "3 Pilots · 14 Sites · 6 h/week Saved",
+     "sub": "Letters of intent attached",
+     "cta": "",
+     "key": null,
+     "filter": null
+    }
+   },
+   "optionB": {
+    "id": "sv_jobs_thai",
+    "label": "Thai Jobs Impact",
+    "desc": "How many Thai jobs and skills it creates.",
+    "tags": [
+     "thai",
+     "warm",
+     "clear",
+     "trust"
+    ],
+    "visual": {
+     "type": "hero",
+     "bg": "#fff8f0",
+     "fg": "#3b2a1a",
+     "accent": "#d9693b",
+     "font": "'Kanit', 'Prompt', system-ui, sans-serif",
+     "layout": "center",
+     "head": "12 Thai Hires In 24 Months",
+     "sub": "Engineering · Support · Field trainers",
+     "cta": "",
+     "key": null,
+     "filter": null
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-10d-47",
+   "category": "Akiya Garden & Exterior",
+   "optionA": {
+    "id": "ak_stone_wall",
+    "label": "Old Stone Wall Restored",
+    "desc": "Repoint the old stone retaining wall, add moss.",
+    "tags": [
+     "rustic",
+     "natural",
+     "craft",
+     "construction"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#8e8e8a",
+      "#6e6658",
+      "#4e7d4a",
+      "#e9e4d8",
+      "#3b2a1a"
+     ],
+     "materials": [
+      "dry stone",
+      "lime mortar",
+      "moss"
+     ]
+    }
+   },
+   "optionB": {
+    "id": "ak_entry_canopy",
+    "label": "Steel & Cedar Entry Canopy",
+    "desc": "New entry canopy in black steel with cedar soffit.",
+    "tags": [
+     "industrial",
+     "modern",
+     "warm",
+     "construction"
+    ],
+    "visual": {
+     "type": "mood",
+     "colors": [
+      "#2b2b2b",
+      "#a0784e",
+      "#e8e4dc",
+      "#7d9a6f",
+      "#ffffff"
+     ],
+     "materials": [
+      "steel canopy",
+      "cedar soffit",
+      "stone step"
+     ]
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-10d-49",
+   "category": "Quick-Fire Picks",
+   "optionA": {
+    "id": "qf_streaming",
+    "label": "Streaming Playlists",
+    "desc": "Infinite music, zero friction.",
+    "tags": [
+     "modern",
+     "clear",
+     "practical",
+     "technical"
+    ],
+    "visual": {
+     "type": "mini",
+     "icon": "🎧",
+     "items": [
+      "playlists",
+      "shuffle",
+      "everywhere"
+     ],
+     "bg": "#eef3f7",
+     "fg": "#1b1b1b"
+    }
+   },
+   "optionB": {
+    "id": "qf_street_food",
+    "label": "Street Food",
+    "desc": "Plastic stool, wok fire.",
+    "tags": [
+     "thai",
+     "raw",
+     "friendly",
+     "warm"
+    ],
+    "visual": {
+     "type": "mini",
+     "icon": "🍜",
+     "items": [
+      "wok hei",
+      "plastic stool",
+      "40 baht"
+     ],
+     "bg": "#fff1e6",
+     "fg": "#1b1b1b"
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  },
+  {
+   "id": "2026-10-10d-50",
+   "category": "Signage & Wayfinding",
+   "optionA": {
+    "id": "sg_painted_wood",
+    "label": "Hand-Painted Wood Board",
+    "desc": "Brush-painted letters on a reclaimed board.",
+    "tags": [
+     "rustic",
+     "craft",
+     "warm",
+     "friendly"
+    ],
+    "visual": {
+     "type": "sign",
+     "bg": "#c8a97e",
+     "fg": "#3b2a1a",
+     "accent": "#c1502e",
+     "font": "'Caveat', 'Comic Sans MS', cursive",
+     "shape": "board",
+     "text": "Fresh Coffee",
+     "sub": "open 7-4"
+    }
+   },
+   "optionB": {
+    "id": "sg_hi_vis",
+    "label": "Hi-Vis Site Board",
+    "desc": "Yellow-black safety board, huge type.",
+    "tags": [
+     "construction",
+     "clear",
+     "direct",
+     "industrial"
+    ],
+    "visual": {
+     "type": "sign",
+     "bg": "#ffd400",
+     "fg": "#111111",
+     "accent": "#111111",
+     "font": "'Archivo Black', 'Arial Black', Impact, sans-serif",
+     "shape": "plate",
+     "text": "HARD HATS",
+     "sub": "beyond this point"
+    }
+   },
+   "repeat": false,
+   "purpose": "refine"
+  }
+ ]
+}

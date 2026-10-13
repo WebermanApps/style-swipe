@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Style Swipe deck upkeep-7 (PUBLISHED): 50 new-ground pairs for the UpKeep agent (Smart UpKeep home maintenance
+"""Build Style Swipe deck upkeep-7 (PUBLISHED): 25 new-ground pairs for the UpKeep agent (Smart UpKeep home maintenance
 membership). upkeep-6 results are not in yet, so this deck avoids upkeep-6's areas and builds on the latest picks in
 /workspace/smartkeep/branding/ (upkeep-5 picks: white base with thin-border cards, colored drawn icons, five-dot progress,
 terracotta polo, lagoon bubbles, license-only trust). Topics from the Oct 13 team-sync recap: V.2 plan card and tech card,

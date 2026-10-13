@@ -43,14 +43,17 @@ def ic(kind, x, y, s=16, c=INK, sw=1.8):
          "home": f'<path d="M3 11 L12 4 L21 11 V20 H3 Z" fill="none" stroke="{c}" stroke-width="{sw}" stroke-linejoin="round"/>',
          "search": f'<circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="{c}" stroke-width="{sw}"/><path d="M15.5 15.5 L21 21" stroke="{c}" stroke-width="{sw}" stroke-linecap="round"/>'}
     return f'<g transform="translate({x},{y}) scale({s/24})">{P[kind]}</g>'
-def finish(did, title, app, pairs, first_fixed, extra_meta, seed=7):
+DECK_SIZE = 25  # pairs per deck (was 50)
+def finish(did, title, app, pairs, first_fixed, extra_meta, seed=7, n=None):
     import random
+    from trim_deck import select, save_overflow
+    n = n or DECK_SIZE; pairs, cut = select(pairs, n); save_overflow(did, cut); first_fixed = min(first_fixed, n)
     random.seed(seed); first = pairs[:first_fixed]; seq = pairs[first_fixed:]; random.shuffle(seq); order = list(first)
     while seq:
         k = next((i for i, p in enumerate(seq) if not order or p["group"] != order[-1]["group"]), 0); order.append(seq.pop(k))
     for i, p in enumerate(order, 1): p.update(id=f"{did}-{i:02d}", repeat=False)
     ids = [p["option" + s]["id"] for p in order for s in "AB"]
-    assert len(order) == 50, len(order); assert len(ids) == len(set(ids)), "duplicate option id"
+    assert len(order) == n, len(order); assert len(ids) == len(set(ids)), "duplicate option id"
     ledger = json.load(open("shown_options.json")); shown = {k for k, v in ledger["options"].items() if v != [did]}
     for fp in glob.glob("decks/*.json"):
         if os.path.basename(fp) == f"{did}.json": continue

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Style Swipe deck upkeep-4: 50 all-new this-or-that pairs, round 4 of the Up Keep / Smart Upkeep home maintenance
+"""Build Style Swipe deck upkeep-4: 25 all-new this-or-that pairs, round 4 of the Up Keep / Smart Upkeep home maintenance
 membership app (https://webermanapps.github.io/smart-upkeep/). Mock screens are drawn as SVG in Up Keep's own style
 (white base, #0A0A0A ink, square black buttons, Khand headings, Hind body, terracotta accent, #E5E0D8 rules) and
 rendered through the 'hm' svg renderer. Run from the style-swipe repo root."""
@@ -522,6 +522,8 @@ add(G9, "Character: Setting", O("ms_room", "Full Line-Drawn Room", "Tech in a si
 random.seed(44); first = pairs[:FIRST]; rest = pairs[FIRST:]; random.shuffle(rest); seq = rest; order = list(first)
 while seq:
     k = next((i for i, p in enumerate(seq) if not order or p["group"] != order[-1]["group"]), 0); order.append(seq.pop(k))
+from trim_deck import DECK_SIZE, select, save_overflow  # decks are 25 pairs; extras go to banks/overflow
+order, _cut = select(order, DECK_SIZE); save_overflow(DID, _cut)
 for i, p in enumerate(order, 1):
     p.update(id=f"{DID}-{i:02d}", repeat=False)
 alloc, feel, groups = {}, {}, {}
@@ -531,7 +533,7 @@ for p in order:
         f = p["option" + s].get("feeling")
         if f: feel[f] = feel.get(f, 0) + 1
 ids = [p["option" + s]["id"] for p in order for s in "AB"]
-assert len(order) == 50, len(order)
+assert len(order) == DECK_SIZE, len(order)
 assert len(ids) == len(set(ids)), "duplicate option id"
 ledger = json.load(open("shown_options.json"))
 shown = {k for k, v in ledger.get("options", {}).items() if v != [DID]}

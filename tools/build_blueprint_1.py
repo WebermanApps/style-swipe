@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Style Swipe deck blueprint-1 (PUBLISHED): 50 this-or-that pairs for Blueprint, Max's architecture and interior
+"""Build Style Swipe deck blueprint-1 (PUBLISHED): 25 this-or-that pairs for Blueprint, Max's architecture and interior
 design agent (Weberman Residence). Pairs come from Blueprint's open decisions: plan.json openItems (front door, bath faucet,
 switches, door hardware, exterior light, bath stone, shower floor, utility yard, dining and courtyard tables), the 3 kitchen
 calls, the wall-texture / accent plaster game, Round 3 (door hardware, dining table, exterior lights), and room layouts from

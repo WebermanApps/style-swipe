@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Style Swipe deck prop-1 (PUBLISHED): 50 pairs for the Prop agent (property management: two rental homes, rent
+"""Build Style Swipe deck prop-1 (PUBLISHED): 25 pairs for the Prop agent (property management: two rental homes, rent
 receipts, tenant and site ops). Based on the Oct 13 team-sync recap, team feed, and Prop's latest files (dashboard carousel,
 receipt routine, call sheet, move-in walkthrough, address-change forms). Example data only: Oak House / Birch House,
 Example Tenant, sample amounts. Pattern: tools/build_dashboard_2.py + draft_svg.py via team_kit.py. Run from repo root."""

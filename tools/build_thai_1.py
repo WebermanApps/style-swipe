@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""DRAFT Style Swipe deck thai-1: 50 this-or-that pairs on the look and format of Max's Thai study partner materials
+"""DRAFT Style Swipe deck thai-1: 25 this-or-that pairs on the look and format of Max's Thai study partner materials
 (lessons, flashcards, tone mark display, quiz styles, review schedule screens, audio buttons). English UI labels only;
 Thai example words come from /workspace/thai-vocab-ongoing.md, which already shows Thai script. Run from the repo root."""
 import sys; sys.path.insert(0, "tools")

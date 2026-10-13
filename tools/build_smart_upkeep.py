@@ -334,6 +334,8 @@ add("Swipe Controls",C("sc_khand","Khand Words, Square","Square Khand-caps butto
 random.seed(7); first=pairs[:2]; rest=pairs[2:]; random.shuffle(rest); seq=first+rest; order=[]
 while seq:
     k=next((i for i,p in enumerate(seq) if not order or p["category"]!=order[-1]["category"]),0); order.append(seq.pop(k))
+from trim_deck import DECK_SIZE, select, save_overflow  # decks are 25 pairs; extras go to banks/overflow
+order, _cut = select(order, DECK_SIZE); save_overflow(DID, _cut)
 for i,p in enumerate(order,1):
     p.update(id=f"{DID}-{i:02d}",retest=False,repeat=False); p["ask"]=p["ask"] or "Which Fits Smart Upkeep?"
 alloc={}; feel={}
