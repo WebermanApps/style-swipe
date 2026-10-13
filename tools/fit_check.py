@@ -39,6 +39,9 @@ JS = """() => {
  document.querySelectorAll('#card .opt .vis').forEach((h, i) => inside(h, 'vis' + i));
  inside(document.querySelector('#card .notebtn'), 'notes');
  inside(document.querySelector('.progress'), 'progress');
+ { const dl = document.querySelector('#decksLink'); inside(dl, 'decks link');
+   if (dl) { const r = dl.getBoundingClientRect(); for (const [sel, n] of [['#backLink','back'],['#btnSubmitTop','submit']]) { const e = document.querySelector(sel); if (!e) continue; const q = e.getBoundingClientRect();
+     if (r.left < q.right + 4 && r.right > q.left - 4 && r.top < q.bottom && r.bottom > q.top) bad.push('decks link crowds ' + n) } } }
  const sb = document.getElementById('btnSubmitTop');   // Oct 13 rule: mid-deck Submit always visible, never over photo/vote buttons
  if (!sb || getComputedStyle(sb).display === 'none' || sb.getBoundingClientRect().width < 1) bad.push('submit hidden'); else { inside(sb, 'submit');
    const s = sb.getBoundingClientRect(), hit = (q) => !(s.right <= q.left || s.left >= q.right || s.bottom <= q.top || s.top >= q.bottom);
