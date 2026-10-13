@@ -299,7 +299,7 @@ details{font-size:11px;color:var(--muted)}
   .stats{grid-template-columns:repeat(2,1fr)}
   .controls button{flex:1;padding:12px 4px;min-width:0;font-size:13px}
 }
-</style>
+.ic{display:inline-block;vertical-align:-.15em;flex:none}</style>
 <!--mw-polish--><style id="mw-polish">
 /* MW polish layer: /workspace/ops/brand/app-polish-spec.md (Oct 10, 2026). Light mode, brand motion, 44px targets. */
 :root{--mw-ease:cubic-bezier(.2,.8,.2,1);--mw-dur:180ms;--mw-ink:#171717;--mw-grey:#737373;--mw-line:#E5E5E5;--mw-jungle:#0B6E4F;--mw-lagoon:#05668D;--mw-terra:#C1502E}
@@ -333,40 +333,41 @@ html{color-scheme:light only}
 <div class="controls v3" id="controls3" style="display:none">
   <button class="no mw-hover" id="bNo" title="Left arrow">Pass</button>
   <button class="maybe mw-hover" id="bMaybe" title="M / Down arrow">Hold</button>
-  <button class="love mw-hover" id="bLove" title="L / Up arrow"><span class="h">❤</span> Love</button>
+  <button class="love mw-hover" id="bLove" title="L / Up arrow"><span class="h"><svg class="ic" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span> Love</button>
   <button class="yes mw-hover" id="bYes" title="Right arrow">Keep</button>
-  <button class="notectl mw-hover" id="bNote3" type="button" title="E: add a note">✎ Add Note</button>
-  <button class="undo mw-hover" id="bU3" title="Backspace / Z">↶</button>
+  <button class="notectl mw-hover" id="bNote3" type="button" title="E: add a note"><svg class="ic" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M14 6l4 4"/></svg> Add Note</button>
+  <button class="undo mw-hover" id="bU3" title="Backspace / Z" aria-label="Undo"><svg class="ic" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 14L4 9l5-5"/><path d="M4 9h10a6 6 0 0 1 0 12h-3"/></svg></button>
 </div>
 <div class="controls v4" id="controls">
   <div class="row1">
-  <button class="this mw-hover" id="bA" title="Left arrow">◀ This</button>
+  <button class="this mw-hover" id="bA" title="Left arrow"><svg class="ic" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg> This</button>
   <button class="both mw-hover" id="bBoth" title="B">Both</button>
-  <button class="love mw-hover" id="bLoveP" title="L, then tap an option"><span class="h">❤</span> Love</button>
-  <button class="that mw-hover" id="bB" title="Right arrow">That ▶</button>
+  <button class="love mw-hover" id="bLoveP" title="L, then tap an option"><span class="h"><svg class="ic" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span> Love</button>
+  <button class="that mw-hover" id="bB" title="Right arrow">That <svg class="ic" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
   </div><div class="row2">
-  <button class="neither mw-hover" id="bN" title="Down arrow / N">✕ Neither</button>
-  <button class="undo mw-hover" id="bU" title="Backspace / Z">↶ Undo</button>
-  <button class="notectl mw-hover" id="bNote" type="button" title="E: add a note">✎ Add Note</button>
-  <button class="skip mw-hover" id="bSkip" title="S: skip without answering">Skip ›</button>
+  <button class="neither mw-hover" id="bN" title="Down arrow / N"><svg class="ic" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg> Neither</button>
+  <button class="undo mw-hover" id="bU" title="Backspace / Z"><svg class="ic" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 14L4 9l5-5"/><path d="M4 9h10a6 6 0 0 1 0 12h-3"/></svg> Undo</button>
+  <button class="notectl mw-hover" id="bNote" type="button" title="E: add a note"><svg class="ic" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M14 6l4 4"/></svg> Add Note</button>
+  <button class="skip mw-hover" id="bSkip" title="S: skip without answering">Skip <svg class="ic" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
   </div>
 </div>
-<div class="notesaved" id="noteSaved" role="status" aria-live="polite">✓ Note saved</div>
+<div class="notesaved" id="noteSaved" role="status" aria-live="polite"><svg class="ic" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Note saved</div>
 <div class="hint" id="hint"></div>
 <div id="noteSheet" role="dialog" aria-modal="true" aria-labelledby="noteTitle"><div class="box"><h3 id="noteTitle">Add Note</h3><div class="sub" id="noteSub"></div>
 <textarea id="noteText" maxlength="1000" placeholder="Optional: what do you like or not like here?"></textarea>
 <div class="sub" style="margin:6px 0 0">Private: saved on this device only, and in your Export / Copy / Share.</div>
 <div class="nrow"><button class="del mw-hover" id="noteDel">Delete</button><button class="mw-hover" id="noteCancel">Cancel</button><button class="save mw-hover" id="noteSave">Save Note</button></div></div></div>
 <footer>
-  <button class="sharebtn mw-hover" id="shareBtn" type="button" aria-label="Share this app and your picks">⇪ Share</button>
+  <button class="sharebtn mw-hover" id="shareBtn" type="button" aria-label="Share this app and your picks"><svg class="ic" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3M7 8l5-5 5 5"/><path d="M5 12v8h14v-8"/></svg> Share</button>
   <label style="cursor:pointer;text-decoration:underline">Load Another Deck (JSON)<input type="file" id="deckFile" accept=".json,application/json" hidden></label>
   · <a href="#" id="creditsLink">Image Credits</a>
   <a class="builtby mw-hover" href="https://maxweberman.com" target="_blank" rel="noopener">Built by Max Weberman</a>
 </footer>
 <div class="toast" id="toast"></div>
-<script src="submit.js"></script>
-<script src="ptr.js" defer></script>
+<script src="submit.js?v=4"></script>
+<script src="ptr.js?v=4" defer></script>
 <script>
+const IC={heart:'<svg class="ic" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>',pen:'<svg class="ic" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M14 6l4 4"/></svg>',undo:'<svg class="ic" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 14L4 9l5-5"/><path d="M4 9h10a6 6 0 0 1 0 12h-3"/></svg>',down:'<svg class="ic" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"/></svg>',share:'<svg class="ic" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3M7 8l5-5 5 5"/><path d="M5 12v8h14v-8"/></svg>',check:'<svg class="ic" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>',x:'<svg class="ic" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>',left:'<svg class="ic" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>',right:'<svg class="ic" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>'};
 /* Pull-to-refresh guard: the summary scrolls inside .end, so do not refresh while an inner scroller is not at its top */
 document.addEventListener('touchstart',e=>{for(let el=e.target;el&&el!==document.body;el=el.parentElement){if(el.scrollTop>0){e.stopPropagation();return}}},{passive:true});
 /* Back link: ?from= only https://webermanapps.github.io/... */
@@ -998,7 +999,7 @@ function rHM(v){const K='font-family:Khand,Hind,sans-serif;',H='font-family:Hind
 const SLABQ=['Carrara Fina quartz','Calacatta Vivo quartz','Mystery White marble','Porcelain slab'];
 const TERRA_='#C1502E',JUNGLE_='#0B6E4F';
 const R={ui:rUI,palette:rPal,type:rType,tone:rTone,image:rImg,mood:rMood,logo:rLogo,thumb:rThumb,hero:rHero,post:rPost,pace:rPace,merch:rMerch,bleed:rBleed,word:rWord,mini:rMini,motion:rMotion,sound:rSound,thaitype:rThaiType,texture:rTexture,light:rLight,cover:rCover,sign:rSign,controls:rControls,polish:rPolish,hm:rHM};
-function optHtml(o,side){const v=o.visual||{};return `<div class="opt mw-hover ${side} fmt-${v.type||'x'}" data-side="${side}"><div class="vis">${(R[v.type]||(()=>''))(v,o)}</div>${side==='S'?'':`<span class="side">${side==='A'?'◀ THIS':'THAT ▶'}</span>`}<h3>${esc(o.label)}</h3><p>${esc(o.desc)}</p>
+function optHtml(o,side){const v=o.visual||{};return `<div class="opt mw-hover ${side} fmt-${v.type||'x'}" data-side="${side}"><div class="vis">${(R[v.type]||(()=>''))(v,o)}</div>${side==='S'?'':`<span class="side">${side==='A'?IC.left+' THIS':'THAT '+IC.right}</span>`}<h3>${esc(o.label)}</h3><p>${esc(o.desc)}</p>
   <div class="tags">${(o.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</div></div>`}
 
 /* ---------- sound cards: real <audio> playback, started inside the tap ---------- */
@@ -1037,7 +1038,7 @@ function setDeck(d){
  }else items=Array.isArray(d.pairs)?d.pairs:[];
  if(s&&Array.isArray(s.picks)&&s.picks.every(p=>p&&typeof p==='object')&&(!single||s.v===3)){picks=s.picks;idx=Math.min(Number.isFinite(s.idx)?s.idx:picks.length,items.length)}
  $('#sub').textContent=`Deck ${d.date} · ${items.length} ${single?'cards':'pairs'}`;
- $('#hint').textContent=single?'Swipe left = Pass, right = Keep. Tap Hold or ❤ Love in the middle. Arrow keys: ← Pass, → Keep.':'Swipe or tap: left = This, right = That. Both = like both. ❤ Love: tap Love, then tap the option.';
+ $('#hint').textContent=single?'Swipe left = Pass, right = Keep. Tap Hold or Love in the middle. Arrow keys: ← Pass, → Keep.':'Swipe or tap: left = This, right = That. Both = like both. Love: tap Love, then tap the option.';
  save();render()}
 function showControls(on){$('#controls3').style.display=on&&single?'':'none';$('#controls').style.display=on&&!single?'':'none';$('#hint').style.display=on?'':'none';if(!on)$('#noteSaved').classList.remove('on')}
 let endView=false;
@@ -1051,11 +1052,11 @@ function render(){endView=false;stopAllAudio();
  if(single){
   stage.innerHTML=`<div class="card mw-card" id="card"><div class="cat"><span class="pill">${esc(p.category)}</span><span style="display:flex;gap:6px;align-items:center">${noteBtn(p.id)}<span class="pill">${idx+1} / ${items.length}</span></span></div>
   <h2>Is This You?</h2><div class="opts single">${optHtml(p.option,'S')}</div>
-  <div class="stamp no">PASS</div><div class="stamp yes">KEEP</div><div class="stamp maybe">HOLD</div><div class="stamp love">LOVE ❤</div></div>`;
+  <div class="stamp no">PASS</div><div class="stamp yes">KEEP</div><div class="stamp maybe">HOLD</div><div class="stamp love">LOVE ${IC.heart}</div></div>`;
  }else{
   stage.innerHTML=`<div class="card mw-card" id="card"><div class="cat"><span style="display:flex;gap:4px;flex-wrap:wrap;min-width:0">${p.app?`<span class="pill app">${esc(p.app)}</span>`:''}<span class="pill">${esc(p.category)}</span>${p.retest?'<span class="pill">Retest</span>':''}</span><span style="display:flex;gap:6px;align-items:center;flex:none">${noteBtn(p.id)}<span class="pill">${idx+1} / ${items.length}</span></span></div>
   <h2>${p.ask?esc(p.ask):p.app?`Which Is Sharper For ${esc(p.app)}?`:'Which Feels More Like You?'}</h2><div class="opts">${optHtml(p.optionA,'A')}${optHtml(p.optionB,'B')}</div>
-  <div class="stamp l">THIS</div><div class="stamp r">THAT</div><div class="stamp both">BOTH</div><div class="stamp neither">NEITHER</div><div class="stamp lovea">LOVE ❤</div><div class="stamp loveb">LOVE ❤</div></div>`;
+  <div class="stamp l">THIS</div><div class="stamp r">THAT</div><div class="stamp both">BOTH</div><div class="stamp neither">NEITHER</div><div class="stamp lovea">LOVE ${IC.heart}</div><div class="stamp loveb">LOVE ${IC.heart}</div></div>`;
  }
  shownAt=performance.now();bindDrag($('#card'));const nb=$('#card .notebtn');if(nb)nb.onclick=e=>{e.stopPropagation();openNote(p.id)};updateNoteUi();
 }
@@ -1182,22 +1183,22 @@ function showEnd(){
  const bar=(x,col)=>`<div class="r"><span>${esc(x.tag)}</span><div class="t"><i style="left:0;width:${100*Math.abs(x.score)/max}%;background:${col}"></i></div><span>${x.score>0?'+':''}${x.score}</span></div>`;
  let stats,cats;
  if(single){const t=r.totals;
-  stats=`<div class="stat"><b style="color:var(--love)">❤ ${t.love}</b><span>Love</span></div><div class="stat"><b style="color:#0B6E4F">${t.yes}</b><span>Keep</span></div><div class="stat"><b style="color:#9A6F00">${t.maybe}</b><span>Hold</span></div><div class="stat"><b style="color:#A4161A">${t.no}</b><span>Pass</span></div>`;
-  cats=`<h3>Your Answers By Category</h3><div class="catlist">${Object.entries(r.answers_by_category).map(([c,a])=>`<div><b>${esc(c)}:</b> ${['love','yes','maybe','no'].flatMap(k=>a[k].map(l=>`<span class="ans ${k}">${k==='love'?'❤':k.toUpperCase()}</span>${esc(l)}`)).join(' · ')}</div>`).join('')}</div>`;
+  stats=`<div class="stat"><b style="color:var(--love)">${IC.heart} ${t.love}</b><span>Love</span></div><div class="stat"><b style="color:#0B6E4F">${t.yes}</b><span>Keep</span></div><div class="stat"><b style="color:#9A6F00">${t.maybe}</b><span>Hold</span></div><div class="stat"><b style="color:#A4161A">${t.no}</b><span>Pass</span></div>`;
+  cats=`<h3>Your Answers By Category</h3><div class="catlist">${Object.entries(r.answers_by_category).map(([c,a])=>`<div><b>${esc(c)}:</b> ${['love','yes','maybe','no'].flatMap(k=>a[k].map(l=>`<span class="ans ${k}">${k==='love'?IC.heart:k.toUpperCase()}</span>${esc(l)}`)).join(' · ')}</div>`).join('')}</div>`;
  }else{
-  const t=r.totals;stats=`<div class="stat"><b>${t.A+t.B}</b><span>This / That</span></div><div class="stat"><b style="color:var(--love)">❤ ${t.loveA+t.loveB}</b><span>Loved</span></div><div class="stat"><b style="color:#0B6E4F">${t.both}</b><span>Both</span></div><div class="stat"><b style="color:#A4161A">${t.neither}</b><span>Neither</span></div>`;
+  const t=r.totals;stats=`<div class="stat"><b>${t.A+t.B}</b><span>This / That</span></div><div class="stat"><b style="color:var(--love)">${IC.heart} ${t.loveA+t.loveB}</b><span>Loved</span></div><div class="stat"><b style="color:#0B6E4F">${t.both}</b><span>Both</span></div><div class="stat"><b style="color:#A4161A">${t.neither}</b><span>Neither</span></div>`;
   cats=`<h3>Your Picks By Category</h3><div class="catlist">${Object.entries(r.chosen_by_category).map(([c,l])=>`<div><b>${esc(c)}:</b> ${l.map(esc).join(' · ')}</div>`).join('')}</div>`;
  }
  $('#main').innerHTML=`<div class="end"><h2>Your Style Summary</h2>
  <div class="stats">${stats}</div>
- ${r.loved&&r.loved.length?`<h3>❤ Loved</h3><div class="catlist">${r.loved.map(esc).join(' · ')}</div>`:''}
+ ${r.loved&&r.loved.length?`<h3>${IC.heart} Loved</h3><div class="catlist">${r.loved.map(esc).join(' · ')}</div>`:''}
  <h3>Tags You Lean Toward</h3><div class="bars">${r.top_tags.map(x=>bar(x,'var(--ok)')).join('')||'<span class="hint">None yet</span>'}</div>
  <h3>Tags You Avoid</h3><div class="bars">${r.avoided_tags.map(x=>bar(x,'var(--no)')).join('')||'<span class="hint">None yet</span>'}</div>
  ${cats}
  ${notesSection(r)}
  <h3>Submit To Branding Agent</h3><div id="submitBox"></div>
  <h3>Or Send Results Back By Hand</h3><div class="hint" style="text-align:left;padding:0">If Submit does not go through: download the JSON file, or copy the text below and paste it into a chat with your agent.</div>
- <div class="btnrow"><button class="primary mw-hover" id="eDl">⬇ Export JSON</button><button class="mw-hover" id="eCp">Copy JSON</button><button class="sharebtn mw-hover" id="eSh">⇪ Share</button><button class="mw-hover" id="eBack">↶ Back To Last Card</button><button class="mw-hover" id="eReset">Start Over</button></div>
+ <div class="btnrow"><button class="primary mw-hover" id="eDl">${IC.down} Export JSON</button><button class="mw-hover" id="eCp">Copy JSON</button><button class="sharebtn mw-hover" id="eSh">${IC.share} Share</button><button class="mw-hover" id="eBack">${IC.undo} Back To Last Card</button><button class="mw-hover" id="eReset">Start Over</button></div>
  <textarea id="resText" readonly>${esc(JSON.stringify(r,null,1))}</textarea></div>`;
  mountSubmit();wireNotesSection();$('#eDl').onclick=download;$('#eCp').onclick=copy;$('#eSh').onclick=share;$('#eBack').onclick=undo;
  $('#eReset').onclick=()=>{if(confirm('Clear all answers for this deck?')){picks=[];idx=0;save();render()}};
@@ -1217,11 +1218,11 @@ function readNotes(){try{const n=JSON.parse(localStorage.getItem(notesKey())||'{
 function writeNotes(n){try{localStorage.setItem(notesKey(),JSON.stringify(n))}catch(_){}}
 function noteOf(id){const n=readNotes()[id];return n&&n.note?n.note:''}
 function itemLabel(it){return single?it.option.label:`${it.optionA.label} vs ${it.optionB.label}`}
-function noteBtn(id){const has=!!noteOf(id);return `<button type="button" class="notebtn mw-hover${has?' has':''}" aria-label="${has?'Edit note':'Add note'}" title="E: note"><span class="ni">${has?'📝':'✎'}</span>${has?'Note':'Add Note'}</button>`}
+function noteBtn(id){const has=!!noteOf(id);return `<button type="button" class="notebtn mw-hover${has?' has':''}" aria-label="${has?'Edit note':'Add note'}" title="E: note"><span class="ni">${IC.pen}</span>${has?'Note':'Add Note'}</button>`}
 let noteFor=null,noteAfter=null;
 function updateNoteUi(flash){const el=$('#noteSaved');if(!el)return;const it=deck&&idx<items.length?items[idx]:null,has=!!(it&&noteOf(it.id));
  el.classList.toggle('on',has);if(has&&flash){el.classList.remove('flash');void el.offsetWidth;el.classList.add('flash')}
- ['#bNote','#bNote3'].forEach(q=>{const b=$(q);if(b){b.classList.toggle('has',has);b.textContent=has?'📝 Edit Note':'✎ Add Note'}})}
+ ['#bNote','#bNote3'].forEach(q=>{const b=$(q);if(b){b.classList.toggle('has',has);b.innerHTML=IC.pen+(has?' Edit Note':' Add Note')}})}
 function noteCtl(){if(deck&&idx<items.length)openNote(items[idx].id)}
 function openNote(id,after){const it=items.find(x=>x.id===id);if(!it)return;noteFor=id;noteAfter=after||null;
  $('#noteTitle').textContent=noteOf(id)?'Edit Note':'Add Note';$('#noteSub').textContent=`${it.category} · ${itemLabel(it)}`;
@@ -1236,8 +1237,8 @@ function withNotes(r){const n=readNotes();
  return r}
 function notesSection(r){const ns=r.notes||[];
  const opts=items.filter(it=>!noteOf(it.id)).map(it=>`<option value="${esc(it.id)}">${esc(itemLabel(it)).slice(0,70)}</option>`).join('');
- return `<h3>Your Notes</h3><div class="notes-list">${ns.map(n=>{const id=n.pair_id||n.card_id;return `<div><span class="nt"><b>${esc(n.label)}</b>${n.answer?` · ${esc(n.answer)}`:''}<i>${esc(n.note)}</i></span><button class="notebtn has mw-hover" data-note="${esc(id)}"><span class="ni">📝</span>Edit</button></div>`}).join('')||'<div class="hint" style="padding:0;text-align:left">No notes yet. Notes are optional.</div>'}</div>
- ${opts?`<div class="notes-add"><select id="noteAddSel" aria-label="Pick a pair to add a note to">${opts}</select><button class="notebtn mw-hover" id="noteAddBtn"><span class="ni">✎</span>Add Note</button></div>`:''}`}
+ return `<h3>Your Notes</h3><div class="notes-list">${ns.map(n=>{const id=n.pair_id||n.card_id;return `<div><span class="nt"><b>${esc(n.label)}</b>${n.answer?` · ${esc(n.answer)}`:''}<i>${esc(n.note)}</i></span><button class="notebtn has mw-hover" data-note="${esc(id)}"><span class="ni">${IC.pen}</span>Edit</button></div>`}).join('')||'<div class="hint" style="padding:0;text-align:left">No notes yet. Notes are optional.</div>'}</div>
+ ${opts?`<div class="notes-add"><select id="noteAddSel" aria-label="Pick a pair to add a note to">${opts}</select><button class="notebtn mw-hover" id="noteAddBtn"><span class="ni">${IC.pen}</span>Add Note</button></div>`:''}`}
 function wireNotesSection(){document.querySelectorAll('.notes-list [data-note]').forEach(b=>b.onclick=()=>openNote(b.dataset.note,showEnd));
  const ab=$('#noteAddBtn');if(ab)ab.onclick=()=>openNote($('#noteAddSel').value,showEnd)}
 $('#noteSave').onclick=()=>{if(noteFor){setNote(noteFor,$('#noteText').value);toast('Note saved')}closeNote()};
