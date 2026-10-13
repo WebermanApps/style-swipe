@@ -315,6 +315,54 @@ html{color-scheme:light only}
 
 /* Style Swipe: already on brand; common layer only */
 
+/* One-screen card fit (iPhone 15 Safari ~393x660, Oct 13 2026): the whole card, votes, Notes and progress fit with no page scroll.
+   Layout is a flex column sized to 100dvh (100vh fallback) with safe-area insets; the picture area is flex:1/min-height:0 and shrinks first. */
+html:has(body.carding),body.carding{height:100vh;overflow:hidden}
+@supports (height:100dvh){html:has(body.carding),body.carding{height:100dvh}}
+body.carding{min-height:0;display:flex;flex-direction:column;padding:env(safe-area-inset-top) env(safe-area-inset-right) 0 env(safe-area-inset-left)}
+body.carding header{flex:none;padding:6px 10px 4px;gap:4px 8px;flex-wrap:wrap}
+body.carding header h1{font-size:16px;white-space:nowrap}
+body.carding header .sub{flex:1 1 0;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:11px}
+body.carding header>span[style]{display:none}
+body.carding .mw-back{min-height:40px;padding:0 10px;font-size:14px}
+body.carding #btnSubmitTop,body.carding #btnExportTop,body.carding footer,body.carding #hint,body.carding .mw-share-float{display:none!important}
+body.carding .progress{height:5px}
+body.carding main{flex:1 1 auto;min-height:0;padding:2px 8px 4px}
+body.carding .stage{max-height:none!important;flex:1 1 auto;min-height:0}
+body.carding .card{padding:8px;gap:5px;border-radius:14px}
+body.carding .card .cat{flex:none;min-width:0}
+body.carding .card .cat .pill{font-size:10px;padding:2px 7px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+body.carding .card .cat>span:first-child{flex-wrap:nowrap!important;overflow:hidden}
+body.carding .card .notebtn{min-height:36px;min-width:36px;padding:0 9px;font-size:11px}
+body.carding .card h2{flex:none;font-size:15px;line-height:1.15;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+body.carding .opts{flex:1 1 auto;min-height:0;display:grid;grid-template-rows:minmax(0,1fr);gap:6px;overflow:hidden!important}
+body.carding .opt{min-height:0!important;height:100%;overflow:hidden!important;padding:5px!important;gap:3px;display:flex;flex-direction:column}
+body.carding .opt .vis{flex:1 1 auto!important;min-height:0!important;height:auto!important;display:flex;flex-direction:column;align-items:stretch;justify-content:center;overflow:hidden}
+body.carding .opt .vis>*{flex:1 1 auto;min-height:0!important;max-height:100%;height:auto!important;aspect-ratio:auto!important;width:100%}
+body.carding .opt .vis img{width:100%!important;height:100%!important;max-height:100%;object-fit:contain!important;position:static!important;display:block}
+body.carding .opt .vis svg{max-height:100%!important}
+body.carding .opt .vis .v-svg{display:flex;align-items:center;justify-content:center}
+body.carding .opt .vis .v-svg>div{height:100%!important;width:100%;display:flex;align-items:center;justify-content:center}
+body.carding .opt .vis .v-svg svg{width:100%!important;height:100%!important;max-height:100%!important}
+body.carding .v-bleed{position:static}
+body.carding .v-bleed .cap{position:static;background:#1F1F1F;padding:3px 6px;flex:none}
+body.carding .v-bleed{display:flex;flex-direction:column}
+body.carding .v-bleed img{flex:1 1 auto;min-height:0}
+body.carding .v-cover-wrap{display:flex;align-items:center;justify-content:center}
+body.carding .v-cover{height:100%;width:auto;max-width:100%}
+body.carding .opt .side{flex:none;font-size:9px;line-height:1.1}
+body.carding .opt h3{flex:none;font-size:12px!important;line-height:1.2;margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;overflow-wrap:anywhere}
+body.carding .opt p{flex:none;font-size:11px!important;line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+body.carding .opt .tags{display:none}
+body.carding .opts.single .opt{max-width:520px;margin:0 auto}
+body.carding .opts.single .opt h3{font-size:15px!important}
+@media (max-height:760px){body.carding .opts:not(.single) .opt p{display:none}}
+body.carding .controls{flex:none;padding:6px 8px calc(6px + env(safe-area-inset-bottom));gap:5px}
+body.carding .controls.v4 .row1 button{min-height:46px;padding:6px 2px}
+body.carding .controls.v4 .row2 button{min-height:44px}
+body.carding .controls.v3 button{min-height:48px;padding:8px 2px}
+body.carding .notesaved{position:fixed;left:0;right:0;bottom:calc(120px + env(safe-area-inset-bottom));z-index:60;pointer-events:none}
+body.mix footer,body.mix .builtby{display:none!important}
 </style><!--/mw-polish-->
 </head>
 <body>
@@ -1023,7 +1071,7 @@ const storeKey = () => single?`styleSwipe:v3:${deck.date}`:`styleSwipe:${deck.da
 function save(){try{localStorage.setItem(storeKey(),JSON.stringify({v:single?3:2,picks,idx,order:single?items.map(c=>c.id):undefined,updated:new Date().toISOString()}))}catch(_){}}
 function readStore(k){try{const s=JSON.parse(localStorage.getItem(k)||'null');return s&&typeof s==='object'?s:null}catch(_){return null}}
 function setDeck(d){
- deck=d;single=Array.isArray(d.cards);document.body.classList.toggle('single',single);document.body.classList.toggle('pairs',!single);setLove(false);picks=[];idx=0;
+ deck=d;document.body.classList.toggle('mix',!!d.mix);document.title=d.mix?d.name+' · Style Swipe':document.title;single=Array.isArray(d.cards);document.body.classList.toggle('single',single);document.body.classList.toggle('pairs',!single);setLove(false);picks=[];idx=0;
  const s=readStore(storeKey());
  if(single){
   let order=s&&Array.isArray(s.order)?s.order:null;
@@ -1033,14 +1081,14 @@ function setDeck(d){
    let list=d.cards;
    if(d.source_deck){const old=readStore(`styleSwipe:${d.source_deck}`);const done=new Set(((old&&Array.isArray(old.picks))?old.picks:[]).map(p=>p&&p.pair_id).filter(Boolean));
     list=list.filter(c=>!done.has(c.source_pair));}
-   items=list.slice(0,d.deck_size||50);
+   items=list.slice(0,d.deck_size||25);
   }
  }else items=Array.isArray(d.pairs)?d.pairs:[];
  if(s&&Array.isArray(s.picks)&&s.picks.every(p=>p&&typeof p==='object')&&(!single||s.v===3)){picks=s.picks;idx=Math.min(Number.isFinite(s.idx)?s.idx:picks.length,items.length)}
- $('#sub').textContent=`Deck ${d.date} · ${items.length} ${single?'cards':'pairs'}`;
+ $('#sub').textContent=d.mix?`${d.name} · ${items.length} pairs`:`Deck ${d.date} · ${items.length} ${single?'cards':'pairs'}`;
  $('#hint').textContent=single?'Swipe left = Pass, right = Keep. Tap Hold or Love in the middle. Arrow keys: ← Pass, → Keep.':'Swipe or tap: left = This, right = That. Both = like both. Love: tap Love, then tap the option.';
  save();render()}
-function showControls(on){$('#controls3').style.display=on&&single?'':'none';$('#controls').style.display=on&&!single?'':'none';$('#hint').style.display=on?'':'none';if(!on)$('#noteSaved').classList.remove('on')}
+function showControls(on){document.body.classList.toggle('carding',!!on);$('#controls3').style.display=on&&single?'':'none';$('#controls').style.display=on&&!single?'':'none';$('#hint').style.display=on?'':'none';if(!on)$('#noteSaved').classList.remove('on')}
 let endView=false;
 function render(){endView=false;stopAllAudio();
  $('#prog').style.width=(100*idx/Math.max(1,items.length))+'%';
@@ -1148,7 +1196,7 @@ function resultsJson(){return JSON.stringify(buildResults(),null,1)}
 function download(){const blob=new Blob([resultsJson()],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`style-swipe-results-${deck.date}.json`;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},500);toast('Downloaded')}
 async function copy(){const txt=resultsJson();try{await navigator.clipboard.writeText(txt);toast('Copied JSON')}catch(e){const ta=$('#resText');if(ta){ta.select();document.execCommand('copy');toast('Copied JSON')}else toast('Copy failed: use the text box')}}
 /* ---------- Share (brand standard): share sheet -> sms: -> copy link. No phone number in code. ---------- */
-function appLink(){return location.origin+location.pathname+(deck?`?date=${encodeURIComponent(deck.date)}`:'')}
+function appLink(){return location.origin+location.pathname+(deck?(deck.mix?`?mix=${encodeURIComponent(deck.mix_slugs.join(','))}&n=${items.length}`:`?date=${encodeURIComponent(deck.date)}`):'')}
 function shareSummary(){
  if(!deck||!picks.length)return 'Try my Style Swipe: pick This or That.';
  const r=buildResults(),t=r.totals||{},top=(r.top_tags||[]).slice(0,5).map(x=>x.tag).join(', '),loved=(r.loved||[]).slice(0,5).join(', ');
@@ -1206,8 +1254,8 @@ function showEnd(){
 
 /* ---------- Submit (shared MWSubmit pipeline, Oct 13 rule; no token in client) ---------- */
 function mountSubmit(){const box=$('#submitBox');if(!box||!window.MWSubmit)return;
- MWSubmit.button(box,{agent:'branding',app:'style-swipe',deck:deck.date,
-  getResults:()=>{const r=JSON.parse(shareJson());if(deck.test)r.test=true;r.to='Branding Agent 3fac5054-3a3d-49b1-af61-59883f7fdc78';
+ MWSubmit.button(box,{agent:'branding',app:'style-swipe',deck:deck.mix?'mix':deck.date,
+  getResults:()=>{const r=JSON.parse(shareJson());if(deck.test)r.test=true;if(deck.mix){r.deck='mix';r.mix={id:deck.date,name:deck.name,banks:deck.mix_slugs,pair_ids:items.map(p=>p.id),pairs:items.map(p=>({id:p.id,bank:p.bank}))}}r.to='Branding Agent 3fac5054-3a3d-49b1-af61-59883f7fdc78';
    try{localStorage.setItem('style-swipe-submit-backup-'+deck.date,JSON.stringify({saved:new Date().toISOString(),results:r}))}catch(_){}return r},
   getNotes:()=>(buildResults().notes||[]).map(n=>typeof n==='string'?n:JSON.stringify(n)).join('\n')})}
 $('#btnSubmitTop').onclick=()=>{if(deck)showEnd();setTimeout(()=>{const b=$('#submitBox');if(b)b.scrollIntoView({behavior:'smooth',block:'center'})},50)};
@@ -1258,9 +1306,38 @@ document.addEventListener('keydown',e=>{if($('#noteSheet').classList.contains('o
  if(k==='ArrowLeft')choose('A');else if(k==='ArrowRight')choose('B');else if(k==='ArrowDown'||k==='n')choose('neither');else if(k==='b'||k==='ArrowUp')choose('both');else if(k==='s')choose('skip');else if(k==='l')setLove(!loveArmed);else if(k==='Escape')setLove(false)});
 $('#deckFile').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{const d=JSON.parse(await f.text());if(!d.pairs&&!d.cards)throw 0;setDeck(d);toast(`Loaded deck ${d.date}`)}catch(_){toast('Not a valid deck file')}};
 $('#creditsLink').onclick=e=>{e.preventDefault();const c=(deck&&deck.image_credits)||{};$('#main').innerHTML=`<div class="end"><h2>Image Credits</h2><div class="catlist">${Object.values(c).map(x=>`<div><a style="color:#05668D" href="${esc(x.source)}" target="_blank" rel="noopener">${esc(x.title)}</a> · ${esc(x.artist||'Unknown')} · ${esc(x.license)}</div>`).join('')||'None'}</div><div class="btnrow"><button class="mw-hover" id="cBack">Back</button></div></div>`;showControls(false);$('#cBack').onclick=()=>render()};
+
+/* ---------- Mix mode: ?mix=slug1,slug2&n=25 interleaves pairs from banks/<slug>.json ---------- */
+function shuf(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+async function loadBankIndex(){try{const r=await fetch('banks/index.json',{cache:'no-cache'});if(r.ok)return await r.json()}catch(_){}return {}}
+async function buildMix(slugs,n){
+ const idx=await loadBankIndex();const banks=[];
+ for(const s of slugs){try{const r=await fetch(`banks/${encodeURIComponent(s)}.json`,{cache:'no-cache'});if(r.ok){const b=await r.json();if(Array.isArray(b.pairs)&&b.pairs.length)banks.push({slug:s,name:b.name||(idx[s]&&idx[s].name)||s,q:shuf(b.pairs)})}}catch(_){}}
+ if(!banks.length)return null;
+ const today=new Date().toISOString().slice(0,10),id=`mix-${banks.map(b=>b.slug).join('-')}-${today}`;
+ const key='styleSwipe:'+id;let saved=null;try{saved=JSON.parse(localStorage.getItem(key+':mixorder')||'null')}catch(_){}
+ const byId={};banks.forEach(b=>b.q.forEach(p=>{byId[p.id]=Object.assign({},p,{bank:b.slug})}));
+ let pairs;
+ if(Array.isArray(saved)&&saved.length&&saved.every(i=>byId[i]))pairs=saved.map(i=>byId[i]);
+ else{pairs=[];const seen=new Set();
+  while(pairs.length<n&&banks.some(b=>b.q.length)){for(const b of shuf(banks)){if(pairs.length>=n)break;let p;while(b.q.length&&(p=b.q.shift())&&seen.has(p.id))p=null;if(p){seen.add(p.id);pairs.push(byId[p.id])}}}
+  try{localStorage.setItem(key+':mixorder',JSON.stringify(pairs.map(p=>p.id)))}catch(_){}}
+ return {date:id,name:'Mixed Deck: '+banks.map(b=>b.name).join(' + '),mix:true,mix_slugs:banks.map(b=>b.slug),version:4,owner:'Max Weberman',pairs,deck_size:pairs.length,image_credits:{}};
+}
+async function offerBank(want){
+ const idx=await loadBankIndex();const slugs=Object.keys(idx);if(!slugs.length)return false;
+ const guess=slugs.find(s=>want.startsWith(s))||slugs.find(s=>want.includes(s.split('-')[0]));
+ showControls(false);$('#sub').textContent=`Deck ${want} not found`;
+ $('#main').innerHTML=`<div class="end"><h2>Deck Not Found</h2><p class="hint" style="text-align:left;padding:0">There is no deck called ${esc(want)}. Play 25 fresh pairs from a question bank instead.</p>
+ ${guess?`<div class="btnrow"><a class="mw-hover" style="display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:12px;background:linear-gradient(90deg,var(--terracotta),var(--lagoon));color:#fff;font-weight:700;text-decoration:none" href="?mix=${encodeURIComponent(guess)}&n=25">Play From Bank: ${esc(idx[guess].name)}</a></div>`:''}
+ <h3>Play From Bank</h3><div class="btnrow">${slugs.map(s=>`<a class="mw-hover" style="display:inline-flex;align-items:center;min-height:44px;padding:0 14px;border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--text);font-weight:700;text-decoration:none" href="?mix=${encodeURIComponent(s)}&n=25">${esc(idx[s].name||s)}</a>`).join('')}</div></div>`;
+ return true}
 (async()=>{
- const want=new URLSearchParams(location.search).get('date');
- if(want&&(!EMBEDDED_DECK||EMBEDDED_DECK.date!==want)){try{const r=await fetch(`decks/${want}.json`,{cache:'no-cache'});if(r.ok)return setDeck(await r.json())}catch(_){}toast(`Deck ${want} not found; showing embedded deck`)}
+ const qs=new URLSearchParams(location.search),want=qs.get('date'),mix=qs.get('mix');
+ if(mix){const slugs=mix.split(',').map(s=>s.trim()).filter(Boolean);const n=Math.max(1,Math.min(200,parseInt(qs.get('n'),10)||25));
+  const d=await buildMix(slugs,n);if(d)return setDeck(d);toast(`Could not load bank(s) ${mix}`)}
+ if(want&&(!EMBEDDED_DECK||EMBEDDED_DECK.date!==want)){try{const r=await fetch(`decks/${want}.json`,{cache:'no-cache'});if(r.ok)return setDeck(await r.json())}catch(_){}
+  if(await offerBank(want))return;toast(`Deck ${want} not found; showing embedded deck`)}
  if(EMBEDDED_DECK)return setDeck(EMBEDDED_DECK);
  try{const r=await fetch(`decks/${new Date().toISOString().slice(0,10)}.json`);if(r.ok)return setDeck(await r.json())}catch(_){}
  $('#sub').textContent='No deck found. Use "Load Another Deck" below.';

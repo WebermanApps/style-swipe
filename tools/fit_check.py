@@ -59,12 +59,19 @@ with sync_playwright() as p:
             bad = pg.evaluate(JS)
             tag = d + ("" if i is None else f"-longest{i+1}")
             res.append((W, H, tag, bad))
-            if d in SAMPLES or bad or i is not None: pg.screenshot(path=os.path.join(OUT, f"fit-{W}x{H}-{tag}.png"))
+            if H == 660 or d in SAMPLES or bad or i is not None: pg.screenshot(path=os.path.join(OUT, f"fit-{W}x{H}-{tag}.png"))
             pg.close()
         ctx.close()
     br.close()
 ok = [r for r in res if not r[3]]
 lines = [f"Style Swipe fit check · base {BASE}", f"{len(ok)}/{len(res)} passed ({len(decks)} decks x {len(SIZES)} sizes + longest-label pairs {[(d,i+1) for _,d,i in longest]})", ""]
 lines += [f"{'PASS' if not b else 'FAIL'} {w}x{h} {t}" + ("" if not b else "  " + "; ".join(b)) for w, h, t, b in res]
+try:
+    from PIL import Image
+    fs = sorted(glob.glob(os.path.join(OUT, "fit-393x660-*.png"))); cols = 8; tw, th = 196, 330
+    sheet = Image.new("RGB", (cols * tw, ((len(fs) + cols - 1) // cols) * th), "white")
+    for k, f in enumerate(fs): sheet.paste(Image.open(f).resize((tw, th)), ((k % cols) * tw, (k // cols) * th))
+    sheet.save(os.path.join(OUT, "contact-393x660.png"))
+except Exception as e: print("contact sheet skipped:", e)
 open(os.path.join(OUT, "summary.txt"), "w").write("\n".join(lines) + "\n")
 print("\n".join(l for l in lines if not l.startswith("PASS")))
