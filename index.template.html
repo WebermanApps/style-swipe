@@ -1259,18 +1259,18 @@ function showEnd(){
 
 /* ---------- Submit (shared MWSubmit pipeline, Oct 13 rule; no token in client) ---------- */
 function mountSubmit(){const box=$('#submitBox');if(!box||!window.MWSubmit)return;
- MWSubmit.button(box,{agent:'branding',app:'style-swipe',deck:deck.mix?'mix':deck.date,
+ MWSubmit.button(box,{agent:(deck.submit_agent||'branding'),app:'style-swipe',deck:deck.mix?'mix':deck.date,
   getResults:submitResults,getNotes:submitNotes})}
 function unansweredIds(){const done=new Set(picks.map(p=>single?p.card_id:p.pair_id));return items.map(p=>p.id).filter(id=>!done.has(id))}
 function submitResults(){const r=JSON.parse(shareJson());if(deck.test)r.test=true;const un=unansweredIds();r.total=items.length;r.unanswered=un;r.partial=un.length>0;
  if(deck.mix){r.deck='mix';r.mix={id:deck.date,name:deck.name,banks:deck.mix_slugs,pair_ids:items.map(p=>p.id),pairs:items.map(p=>({id:p.id,bank:p.bank}))};r.unanswered_banks=items.filter(p=>un.includes(p.id)).map(p=>({id:p.id,bank:p.bank}))}
- r.to='Branding Agent 3fac5054-3a3d-49b1-af61-59883f7fdc78';try{localStorage.setItem('style-swipe-submit-backup-'+deck.date,JSON.stringify({saved:new Date().toISOString(),results:r}))}catch(_){}return r}
+ r.to=deck.submit_to||'Branding Agent 3fac5054-3a3d-49b1-af61-59883f7fdc78';if(deck.submit_agent)r.agent=deck.submit_agent;try{localStorage.setItem('style-swipe-submit-backup-'+deck.date,JSON.stringify({saved:new Date().toISOString(),results:r}))}catch(_){}return r}
 function submitNotes(){return (buildResults().notes||[]).map(n=>typeof n==='string'?n:JSON.stringify(n)).join('\n')}
 function sentFloat(m){const d=document.createElement('div');d.className='mw-sent';d.setAttribute('role','status');d.innerHTML='<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span></span>';d.lastChild.textContent=m;document.body.appendChild(d);setTimeout(()=>d.remove(),1900)}
 /* Oct 13 2026 rule: Submit any time (partial). Sends now, then returns to the summary. */
 $('#btnSubmitTop').onclick=()=>{if(!deck)return;if(idx>=items.length&&$('#submitBox')){$('#submitBox').scrollIntoView({behavior:'smooth',block:'center'});return}
  const b=$('#btnSubmitTop');if(b.disabled)return;b.disabled=true;const r=submitResults();
- MWSubmit.send({agent:'branding',app:'style-swipe',deck:deck.mix?'mix':deck.date,results:r,notes:submitNotes(),partial:r.partial,answered:picks.length,total:items.length,unanswered:r.unanswered,test:!!deck.test})
+ MWSubmit.send({agent:(deck.submit_agent||'branding'),app:'style-swipe',deck:deck.mix?'mix':deck.date,results:r,notes:submitNotes(),partial:r.partial,answered:picks.length,total:items.length,unanswered:r.unanswered,test:!!deck.test})
   .then(ok=>{b.disabled=false;window.__lastPartial=r;sentFloat(ok?`Sent ${picks.length}/${items.length}`:'Saved, will send');idx=items.length;save();render()})};
 
 /* ---------- Notes on Votes: private, localStorage only (never in the deck, page or repo) ---------- */
@@ -1346,7 +1346,7 @@ async function offerBank(want){
  <h3>Play From Bank</h3><div class="btnrow">${slugs.map(s=>`<a class="mw-hover" style="display:inline-flex;align-items:center;min-height:44px;padding:0 14px;border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--text);font-weight:700;text-decoration:none" href="?mix=${encodeURIComponent(s)}&n=25">${esc(idx[s].name||s)}</a>`).join('')}</div></div>`;
  return true}
 (async()=>{
- const qs=new URLSearchParams(location.search),want=qs.get('date'),mix=qs.get('mix');
+ const qs=new URLSearchParams(location.search),want=qs.get('date')||window.DEFAULT_DECK,mix=qs.get('mix');
  if(mix){const slugs=mix.split(',').map(s=>s.trim()).filter(Boolean);const n=Math.max(1,Math.min(200,parseInt(qs.get('n'),10)||25));
   const d=await buildMix(slugs,n);if(d)return setDeck(d);toast(`Could not load bank(s) ${mix}`)}
  if(want&&(!EMBEDDED_DECK||EMBEDDED_DECK.date!==want)){try{const r=await fetch(`decks/${want}.json`,{cache:'no-cache'});if(r.ok)return setDeck(await r.json())}catch(_){}
