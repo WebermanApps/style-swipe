@@ -149,6 +149,8 @@ body.single .controls{max-width:540px}
 #btnExportTop{min-height:44px;min-width:64px}
 footer label,footer a{display:inline-flex;align-items:center;min-height:44px;padding:0 6px}
 .end .btnrow button{min-height:44px}
+/* capsule pill controls (Max pick, daily 2026-10-13) */
+.controls.v3 button,.controls.v4 button{border-radius:999px}
 /* v4 pair controls */
 .controls.v4{flex-direction:column;gap:6px;max-width:560px}
 .controls.v4 .row1,.controls.v4 .row2{display:flex;gap:6px;justify-content:center}
@@ -329,10 +331,10 @@ html{color-scheme:light only}
   <div class="stage" id="stage"></div>
 </main>
 <div class="controls v3" id="controls3" style="display:none">
-  <button class="no mw-hover" id="bNo" title="Left arrow">✕ No</button>
-  <button class="maybe mw-hover" id="bMaybe" title="M / Down arrow">Maybe</button>
+  <button class="no mw-hover" id="bNo" title="Left arrow">Pass</button>
+  <button class="maybe mw-hover" id="bMaybe" title="M / Down arrow">Hold</button>
   <button class="love mw-hover" id="bLove" title="L / Up arrow"><span class="h">❤</span> Love</button>
-  <button class="yes mw-hover" id="bYes" title="Right arrow">Yes ✓</button>
+  <button class="yes mw-hover" id="bYes" title="Right arrow">Keep</button>
   <button class="notectl mw-hover" id="bNote3" type="button" title="E: add a note">✎ Add Note</button>
   <button class="undo mw-hover" id="bU3" title="Backspace / Z">↶</button>
 </div>
@@ -1035,7 +1037,7 @@ function setDeck(d){
  }else items=Array.isArray(d.pairs)?d.pairs:[];
  if(s&&Array.isArray(s.picks)&&s.picks.every(p=>p&&typeof p==='object')&&(!single||s.v===3)){picks=s.picks;idx=Math.min(Number.isFinite(s.idx)?s.idx:picks.length,items.length)}
  $('#sub').textContent=`Deck ${d.date} · ${items.length} ${single?'cards':'pairs'}`;
- $('#hint').textContent=single?'Swipe left = No, right = Yes. Tap Maybe or ❤ Love in the middle. Arrow keys: ← No, → Yes.':'Swipe or tap: left = This, right = That. Both = like both. ❤ Love: tap Love, then tap the option.';
+ $('#hint').textContent=single?'Swipe left = Pass, right = Keep. Tap Hold or ❤ Love in the middle. Arrow keys: ← Pass, → Keep.':'Swipe or tap: left = This, right = That. Both = like both. ❤ Love: tap Love, then tap the option.';
  save();render()}
 function showControls(on){$('#controls3').style.display=on&&single?'':'none';$('#controls').style.display=on&&!single?'':'none';$('#hint').style.display=on?'':'none';if(!on)$('#noteSaved').classList.remove('on')}
 let endView=false;
@@ -1049,7 +1051,7 @@ function render(){endView=false;stopAllAudio();
  if(single){
   stage.innerHTML=`<div class="card mw-card" id="card"><div class="cat"><span class="pill">${esc(p.category)}</span><span style="display:flex;gap:6px;align-items:center">${noteBtn(p.id)}<span class="pill">${idx+1} / ${items.length}</span></span></div>
   <h2>Is This You?</h2><div class="opts single">${optHtml(p.option,'S')}</div>
-  <div class="stamp no">NO</div><div class="stamp yes">YES</div><div class="stamp maybe">MAYBE</div><div class="stamp love">LOVE ❤</div></div>`;
+  <div class="stamp no">PASS</div><div class="stamp yes">KEEP</div><div class="stamp maybe">HOLD</div><div class="stamp love">LOVE ❤</div></div>`;
  }else{
   stage.innerHTML=`<div class="card mw-card" id="card"><div class="cat"><span style="display:flex;gap:4px;flex-wrap:wrap;min-width:0">${p.app?`<span class="pill app">${esc(p.app)}</span>`:''}<span class="pill">${esc(p.category)}</span>${p.retest?'<span class="pill">Retest</span>':''}</span><span style="display:flex;gap:6px;align-items:center;flex:none">${noteBtn(p.id)}<span class="pill">${idx+1} / ${items.length}</span></span></div>
   <h2>${p.ask?esc(p.ask):p.app?`Which Is Sharper For ${esc(p.app)}?`:'Which Feels More Like You?'}</h2><div class="opts">${optHtml(p.optionA,'A')}${optHtml(p.optionB,'B')}</div>
@@ -1149,7 +1151,7 @@ function appLink(){return location.origin+location.pathname+(deck?`?date=${encod
 function shareSummary(){
  if(!deck||!picks.length)return 'Try my Style Swipe: pick This or That.';
  const r=buildResults(),t=r.totals||{},top=(r.top_tags||[]).slice(0,5).map(x=>x.tag).join(', '),loved=(r.loved||[]).slice(0,5).join(', ');
- const counts=single?`${t.yes||0} Yes, ${t.love||0} Love, ${t.maybe||0} Maybe, ${t.no||0} No`
+ const counts=single?`${t.yes||0} Keep, ${t.love||0} Love, ${t.maybe||0} Hold, ${t.no||0} Pass`
   :`${t.A||0} This, ${t.B||0} That, ${t.both||0} Both, ${(t.loveA||0)+(t.loveB||0)} Love, ${t.neither||0} Neither`;
  return `My Style Swipe picks (deck ${deck.date}, ${r.answered}/${items.length}): ${counts}${(r.skipped||[]).length?`, ${r.skipped.length} skipped`:''}.`+(top?` Top tags: ${top}.`:'')+(loved?` Loved: ${loved}.`:'')+((r.notes||[]).length?` Notes: ${r.notes.map(n=>`[${n.label}] ${n.note}`).join(' | ').slice(0,600)}`:'')}
 function openSms(u){location.href=u}
@@ -1180,7 +1182,7 @@ function showEnd(){
  const bar=(x,col)=>`<div class="r"><span>${esc(x.tag)}</span><div class="t"><i style="left:0;width:${100*Math.abs(x.score)/max}%;background:${col}"></i></div><span>${x.score>0?'+':''}${x.score}</span></div>`;
  let stats,cats;
  if(single){const t=r.totals;
-  stats=`<div class="stat"><b style="color:var(--love)">❤ ${t.love}</b><span>Love</span></div><div class="stat"><b style="color:#0B6E4F">${t.yes}</b><span>Yes</span></div><div class="stat"><b style="color:#9A6F00">${t.maybe}</b><span>Maybe</span></div><div class="stat"><b style="color:#A4161A">${t.no}</b><span>No</span></div>`;
+  stats=`<div class="stat"><b style="color:var(--love)">❤ ${t.love}</b><span>Love</span></div><div class="stat"><b style="color:#0B6E4F">${t.yes}</b><span>Keep</span></div><div class="stat"><b style="color:#9A6F00">${t.maybe}</b><span>Hold</span></div><div class="stat"><b style="color:#A4161A">${t.no}</b><span>Pass</span></div>`;
   cats=`<h3>Your Answers By Category</h3><div class="catlist">${Object.entries(r.answers_by_category).map(([c,a])=>`<div><b>${esc(c)}:</b> ${['love','yes','maybe','no'].flatMap(k=>a[k].map(l=>`<span class="ans ${k}">${k==='love'?'❤':k.toUpperCase()}</span>${esc(l)}`)).join(' · ')}</div>`).join('')}</div>`;
  }else{
   const t=r.totals;stats=`<div class="stat"><b>${t.A+t.B}</b><span>This / That</span></div><div class="stat"><b style="color:var(--love)">❤ ${t.loveA+t.loveB}</b><span>Loved</span></div><div class="stat"><b style="color:#0B6E4F">${t.both}</b><span>Both</span></div><div class="stat"><b style="color:#A4161A">${t.neither}</b><span>Neither</span></div>`;
