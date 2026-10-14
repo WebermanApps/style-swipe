@@ -38,7 +38,7 @@ def card(B, x, y, w, h, style=None, c=None):
 
 # ---------- sections: f(B, y, o) -> (svg, h); drawn at x 14..226 ----------
 def s_hdr(B, y, o):
-    st = o.get("hdr", "plain")
+    st = o.get("hdr", "plain"); t = o.get("title", B["name"]); sub = o.get("sub", "")
     if st == "eyebig":
         ec = o.get("ec", B["acc"][0])
         return T(B, 14, y + 14, o.get("sub", "Good Morning, Max").upper(), 6.5, ec, w=600, ex='letter-spacing="1.2"') + T(B, 14, y + 40, o.get("title", B["name"]), 24, None, True) + R(14, y + 46, 26, 2.5, o.get("rule", B["acc"][0])), 56
@@ -46,7 +46,7 @@ def s_hdr(B, y, o):
         s = T(B, 14, y + 18, o.get("title", B["name"]), 13, None, True) + L(0, y + 28, W, y + 28, B["line"])
         if st == "barshare": s += f'<g transform="translate(206,{y+6}) scale(.55)"><path d="M12 3 V15 M7 8 L12 3 L17 8" fill="none" stroke="{B["ink"]}" stroke-width="2.2" stroke-linecap="round"/><path d="M5 12 V20 H19 V12" fill="none" stroke="{B["ink"]}" stroke-width="2.2"/></g>'
         else: s += R(166, y + 8, 60, 13, B["acc"][2] + "1F", r=6.5) + T(B, 196, y + 17, "Updated 12m", 6, B["acc"][2], w=600, a="middle")
-        return s, 34; t = o.get("title", B["name"]); sub = o.get("sub", "")
+        return s, 34
     lg = B.get("logo")
     if st == "band":
         c = o.get("hc", B["acc"][0]); return R(0, y, W, 50, c) + T(B, 14, y + 28, t, 16, "#FFFFFF", True) + (T(B, 14, y + 40, sub, 6.5, "#FFFFFFCC") if sub else ""), 58
