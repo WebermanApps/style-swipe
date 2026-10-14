@@ -1,20 +1,28 @@
 {
  "mix": {
-  "from_deck": "mix-dashboards-2026-10-13",
+  "from_deck": "mix-upkeep-portfolio-wellnest-variety-prop-construction-scout-blueprint-thai-blog-japan-cottage-miles-jokes-jane-amex-2026-10-14",
   "unanswered": [
-   "dashboards-bank-026",
-   "dashboards-bank-092",
-   "dashboards-bank-059",
-   "dashboards-bank-024",
-   "dashboards-bank-042",
-   "dashboards-bank-045"
+   "variety-bank-076",
+   "upkeep-bank-075"
   ],
-  "answered": 19,
-  "total": 25,
+  "answered": 8,
+  "total": 10,
   "banks": [
-   "dashboards"
+   {
+    "id": "variety-bank-076",
+    "bank": "variety"
+   },
+   {
+    "id": "upkeep-bank-075",
+    "bank": "upkeep"
+   }
   ],
-  "saved": "2026-10-13T23:10:02"
+  "saved": "2026-10-14T17:26:30",
+  "note": "Skips (R64). Reword or drop each before next mix: variety-bank-076 Icon Style (Bottom Tabs vs Top Pill Tabs); upkeep-bank-075 Form Warnings (Tinted Title Box vs Big Headline).",
+  "titles": {
+   "variety-bank-076": "Icon Style: Bottom Tabs Or Top Pill Tabs?",
+   "upkeep-bank-075": "Form Warnings: Tinted Title Box Or Big Headline?"
+  }
  },
  "rulebook-clash": {
   "from_deck": "rulebook-clash",
@@ -34,5 +42,29 @@
   "banks": [],
   "saved": "2026-10-14T14:05:07",
   "note": "Skip (not unanswered in payload). Max note: home age not needed (address before purchase). R64: reword or drop before next deck."
+ },
+ "agent-dashboards": {
+  "from_deck": "agent-dashboards",
+  "unanswered": [
+   "agent-dashboards-20"
+  ],
+  "answered": 19,
+  "total": 20,
+  "banks": [],
+  "saved": "2026-10-14T14:16:16",
+  "note": "Skip (R64). Reworded for next dashboards deck, ask FIRST: 'Apps Home: how should the agent list be ordered? A: Sorted by topic (home, money, learning, work, each agent stays in the same spot) | B: Agents that need you first (the one with the most items waiting for your reply goes to the top, order changes daily)'. Option ids ad_ah_area / ad_ah_wait unchanged.",
+  "reworded": {
+   "id": "agent-dashboards-20",
+   "agent": "Grok Bot (Apps Home)",
+   "q": "Apps Home: How Should The Agent List Be Ordered?",
+   "a": {
+    "id": "ad_ah_area",
+    "label": "Sorted By Topic (Fixed Spots)"
+   },
+   "b": {
+    "id": "ad_ah_wait",
+    "label": "Agents That Need You First (Changes Daily)"
+   }
+  }
  }
 }
