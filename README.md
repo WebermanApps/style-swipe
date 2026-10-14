@@ -29,3 +29,10 @@ Build a deck onto a shelf: `python3 tools/ready_shelf.py build <bank-topic> --sh
 Refill after a submission is handled (Style Swipe Submissions routine, after saving results and `carry_over.py record`):
 `python3 tools/ready_shelf.py refill <deck_id> --shelf /workspace/branding-dashboard/shelf.json --agent branding`
 then commit + push style-swipe and the dashboard repo. Skips come first, reworded when the carry note has a rewording; a pair skipped twice is dropped (R64).
+
+## Shared ledgers (many agents commit here)
+`banks/used.json`, `banks/index.json`, `decks/pages.json`, `decks/sizes.json` and `shown_options.json` are shared by every agent.
+1. `git pull --rebase --autostash` BEFORE building a deck (so the ledgers you write on top of are current).
+2. Build/publish, then `git pull --rebase --autostash` again and commit the ledgers TOGETHER WITH your own deck files in one commit (`git add` named paths only, never `git add -A`).
+3. On a ledger conflict, merge both sides (they are JSON maps/lists: keep every entry), then `python3 tools/write_sizes.py` to regenerate sizes.json. Never `reset --hard`, never drop another agent's entries, never commit another agent's untracked deck files.
+4. Deck pages: header Deck Building and Back to Deck Building follow `submit_agent` via `kit/agent-dashboards.json`; after adding pages run `python3 tools/agent_links.py`.
