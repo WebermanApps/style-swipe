@@ -6,18 +6,20 @@
  "english_only": true,
  "light_only": true,
  "title": "Voice: Taglines & Tone",
- "generated_at": "2026-10-14T12:45:46+07:00",
+ "generated_at": "2026-10-14T13:33:31+07:00",
  "status": "published",
  "feeling_counts": {
   "visual": 8,
   "focused": 8,
-  "calm": 8,
-  "quick": 8,
-  "action": 8
+  "quick": 7,
+  "calm": 12,
+  "action": 5
  },
  "groups": {
-  "Taglines": 13,
-  "Tone": 7
+  "Taglines": 7,
+  "Round Two Retest: New Taglines": 6,
+  "Tone": 6,
+  "Round Two Retest: Voice And Taglines": 1
  },
  "apps": {
   "WellNest": 20
@@ -35,8 +37,10 @@
  "submit_agent": "wellnest",
  "submit_to": "WellNest Agent",
  "section_counts": {
-  "Taglines": 13,
-  "Tone": 7
+  "Taglines": 7,
+  "Tone": 6,
+  "Round Two Retest: New Taglines": 6,
+  "Round Two Retest: Voice And Taglines": 1
  },
  "deck_size": 20,
  "series": {
@@ -96,14 +100,14 @@
    "repeat": false
   },
   {
-   "group": "Tone",
-   "category": "Tone",
+   "group": "Round Two Retest: New Taglines",
+   "category": "Round Two Retest",
    "app": "WellNest",
-   "ask": "Wellness Words: Rest, Warm, Slow Or Wellness Words: Reset, Recharge?",
+   "ask": "Come Rest Your Wings Or Every Nest Needs Tea?",
    "optionA": {
-    "id": "voicestory_wellness_words_rest_warm_27",
-    "label": "Wellness Words: Rest, Warm, Slow",
-    "desc": "Soft.",
+    "id": "rt_wn2_tg2_wings",
+    "label": "Come Rest Your Wings",
+    "desc": "Nest image, poetic.",
     "tags": [
      "visual"
     ],
@@ -113,29 +117,29 @@
     "visual": {
      "type": "hm",
      "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"36\" y=\"70\" font-size=\"60\" fill=\"#ECC978\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >“</text><text x=\"120\" y=\"110\" font-size=\"19\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Wellness Words:</text><text x=\"120\" y=\"133\" font-size=\"19\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Rest, Warm, Slow</text><line x1=\"100\" y1=\"158\" x2=\"140\" y2=\"158\" stroke=\"#DABC76\" stroke-width=\"1.5\"/><text x=\"120\" y=\"178\" font-size=\"9\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >Soft.</text><image href=\"img/wellnest-logo-circle.png\" x=\"103.0\" y=\"247.49333333333334\" width=\"34\" height=\"29.013333333333332\" preserveAspectRatio=\"xMidYMid meet\" /></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FBF8F1\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FBF8F1\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"70.0\" y=\"31.333333333333336\" width=\"100\" height=\"85.33333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"120\" y=\"168\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Come Rest</text><text x=\"120\" y=\"196\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Your Wings</text><line x1=\"96\" y1=\"214\" x2=\"144\" y2=\"214\" stroke=\"#ECC978\" stroke-width=\"2\"/><text x=\"120\" y=\"240\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" letter-spacing=\"2\">THE WELLNEST</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
      "bg": "#FFFFFF"
     }
    },
    "optionB": {
-    "id": "voicestory_wellness_words_reset_rec_28",
-    "label": "Wellness Words: Reset, Recharge",
-    "desc": "Active.",
+    "id": "rt_wn2_tg2_tea_nest",
+    "label": "Every Nest Needs Tea",
+    "desc": "Light humour.",
     "tags": [
-     "focused"
+     "quick"
     ],
-    "feeling": "focused",
+    "feeling": "quick",
     "notes": true,
     "share": true,
     "visual": {
      "type": "hm",
      "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"36\" y=\"70\" font-size=\"60\" fill=\"#5FB050\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >“</text><text x=\"120\" y=\"110\" font-size=\"19\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Wellness Words:</text><text x=\"120\" y=\"133\" font-size=\"19\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Reset, Recharge</text><line x1=\"100\" y1=\"158\" x2=\"140\" y2=\"158\" stroke=\"#DABC76\" stroke-width=\"1.5\"/><text x=\"120\" y=\"178\" font-size=\"9\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >Active.</text><image href=\"img/wellnest-logo-circle.png\" x=\"103.0\" y=\"247.49333333333334\" width=\"34\" height=\"29.013333333333332\" preserveAspectRatio=\"xMidYMid meet\" /></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FBF8F1\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FBF8F1\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"70.0\" y=\"31.333333333333336\" width=\"100\" height=\"85.33333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"120\" y=\"168\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Every Nest</text><text x=\"120\" y=\"196\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Needs Tea</text><line x1=\"96\" y1=\"214\" x2=\"144\" y2=\"214\" stroke=\"#D7A363\" stroke-width=\"2\"/><text x=\"120\" y=\"240\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" letter-spacing=\"2\">THE WELLNEST</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
      "bg": "#FFFFFF"
     }
    },
-   "purpose": "new",
-   "retest": false,
+   "purpose": "retest",
+   "retest": true,
    "notes": true,
    "share": true,
    "id": "wellnest-voice-story-1-02",
@@ -280,14 +284,31 @@
    "repeat": false
   },
   {
-   "group": "Tone",
-   "category": "Tone",
+   "group": "Round Two Retest: New Taglines",
+   "category": "Round Two Retest",
    "app": "WellNest",
-   "ask": "Speak As The WellNest Or Sign Posts With A Name?",
+   "ask": "A Farm To Exhale In Or Rooted In Chiang Mai?",
    "optionA": {
-    "id": "voicestory_speak_as_the_wellnest_23",
-    "label": "Speak As The WellNest",
-    "desc": "Brand voice.",
+    "id": "rt_wn2_tg2_exhale",
+    "label": "A Farm To Exhale In",
+    "desc": "Wellness-first.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FBF8F1\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FBF8F1\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"70.0\" y=\"31.333333333333336\" width=\"100\" height=\"85.33333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"120\" y=\"168\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >A Farm To</text><text x=\"120\" y=\"196\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Exhale In</text><line x1=\"96\" y1=\"214\" x2=\"144\" y2=\"214\" stroke=\"#ECC978\" stroke-width=\"2\"/><text x=\"120\" y=\"240\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" letter-spacing=\"2\">THE WELLNEST</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "rt_wn2_tg2_rooted",
+    "label": "Rooted In Chiang Mai",
+    "desc": "Place-first.",
     "tags": [
      "focused"
     ],
@@ -297,124 +318,15 @@
     "visual": {
      "type": "hm",
      "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"36\" y=\"70\" font-size=\"60\" fill=\"#ECC978\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >“</text><text x=\"120\" y=\"110\" font-size=\"19\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Speak As The</text><text x=\"120\" y=\"133\" font-size=\"19\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >WellNest</text><line x1=\"100\" y1=\"158\" x2=\"140\" y2=\"158\" stroke=\"#DABC76\" stroke-width=\"1.5\"/><text x=\"120\" y=\"178\" font-size=\"9\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >Brand voice.</text><image href=\"img/wellnest-logo-circle.png\" x=\"103.0\" y=\"247.49333333333334\" width=\"34\" height=\"29.013333333333332\" preserveAspectRatio=\"xMidYMid meet\" /></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FBF8F1\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FBF8F1\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"70.0\" y=\"31.333333333333336\" width=\"100\" height=\"85.33333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"120\" y=\"168\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Rooted In</text><text x=\"120\" y=\"196\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Chiang Mai</text><line x1=\"96\" y1=\"214\" x2=\"144\" y2=\"214\" stroke=\"#D7A363\" stroke-width=\"2\"/><text x=\"120\" y=\"240\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" letter-spacing=\"2\">THE WELLNEST</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
      "bg": "#FFFFFF"
     }
    },
-   "optionB": {
-    "id": "voicestory_sign_posts_with_a_name_24",
-    "label": "Sign Posts With A Name",
-    "desc": "Mae Noy, Max.",
-    "tags": [
-     "quick"
-    ],
-    "feeling": "quick",
-    "notes": true,
-    "share": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"36\" y=\"70\" font-size=\"60\" fill=\"#D7A363\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >“</text><text x=\"120\" y=\"110\" font-size=\"19\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Sign Posts With A</text><text x=\"120\" y=\"133\" font-size=\"19\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Name</text><line x1=\"100\" y1=\"158\" x2=\"140\" y2=\"158\" stroke=\"#DABC76\" stroke-width=\"1.5\"/><text x=\"120\" y=\"178\" font-size=\"9\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >Mae Noy, Max.</text><image href=\"img/wellnest-logo-circle.png\" x=\"103.0\" y=\"247.49333333333334\" width=\"34\" height=\"29.013333333333332\" preserveAspectRatio=\"xMidYMid meet\" /></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
-     "bg": "#FFFFFF"
-    }
-   },
-   "purpose": "new",
-   "retest": false,
+   "purpose": "retest",
+   "retest": true,
    "notes": true,
    "share": true,
    "id": "wellnest-voice-story-1-06",
-   "repeat": false
-  },
-  {
-   "group": "Taglines",
-   "category": "Taglines",
-   "app": "WellNest",
-   "ask": "Rest Is A Farm Skill, Learn It Or Sun-Dried, Hand-Picked, Home?",
-   "optionA": {
-    "id": "voicestory_rest_is_a_farm_skill_lea_37",
-    "label": "Rest Is A Farm Skill, Learn It",
-    "desc": "Extends a kept line.",
-    "tags": [
-     "visual"
-    ],
-    "feeling": "visual",
-    "notes": true,
-    "share": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"75.0\" y=\"31.6\" width=\"90\" height=\"76.8\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"120\" y=\"160\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Rest Is A Farm</text><text x=\"120\" y=\"186\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Skill, Learn It</text><line x1=\"96\" y1=\"212\" x2=\"144\" y2=\"212\" stroke=\"#ECC978\" stroke-width=\"2\"/><text x=\"120\" y=\"232\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Extends a kept line.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
-     "bg": "#FFFFFF"
-    }
-   },
-   "optionB": {
-    "id": "voicestory_sun_dried_hand_picked_ho_38",
-    "label": "Sun-Dried, Hand-Picked, Home",
-    "desc": "Extends a kept line.",
-    "tags": [
-     "focused"
-    ],
-    "feeling": "focused",
-    "notes": true,
-    "share": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"75.0\" y=\"31.6\" width=\"90\" height=\"76.8\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"120\" y=\"160\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Sun-Dried,</text><text x=\"120\" y=\"186\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Hand-Picked, Home</text><line x1=\"96\" y1=\"212\" x2=\"144\" y2=\"212\" stroke=\"#D7A363\" stroke-width=\"2\"/><text x=\"120\" y=\"232\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Extends a kept line.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
-     "bg": "#FFFFFF"
-    }
-   },
-   "purpose": "new",
-   "retest": false,
-   "notes": true,
-   "share": true,
-   "id": "wellnest-voice-story-1-07",
-   "repeat": false
-  },
-  {
-   "group": "Tone",
-   "category": "Tone",
-   "app": "WellNest",
-   "ask": "Short Sentences Or Flowing Sentences?",
-   "optionA": {
-    "id": "voicestory_short_sentences_19",
-    "label": "Short Sentences",
-    "desc": "Five to eight words.",
-    "tags": [
-     "quick"
-    ],
-    "feeling": "quick",
-    "notes": true,
-    "share": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"36\" y=\"70\" font-size=\"60\" fill=\"#ECC978\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >“</text><text x=\"120\" y=\"110\" font-size=\"19\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Short Sentences</text><line x1=\"100\" y1=\"135\" x2=\"140\" y2=\"135\" stroke=\"#DABC76\" stroke-width=\"1.5\"/><text x=\"120\" y=\"155\" font-size=\"9\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >Five to eight words.</text><image href=\"img/wellnest-logo-circle.png\" x=\"103.0\" y=\"247.49333333333334\" width=\"34\" height=\"29.013333333333332\" preserveAspectRatio=\"xMidYMid meet\" /></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
-     "bg": "#FFFFFF"
-    }
-   },
-   "optionB": {
-    "id": "voicestory_flowing_sentences_20",
-    "label": "Flowing Sentences",
-    "desc": "Longer, lyrical.",
-    "tags": [
-     "action"
-    ],
-    "feeling": "action",
-    "notes": true,
-    "share": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"36\" y=\"70\" font-size=\"60\" fill=\"#DABC76\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >“</text><text x=\"120\" y=\"110\" font-size=\"19\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Flowing Sentences</text><line x1=\"100\" y1=\"135\" x2=\"140\" y2=\"135\" stroke=\"#DABC76\" stroke-width=\"1.5\"/><text x=\"120\" y=\"155\" font-size=\"9\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >Longer, lyrical.</text><image href=\"img/wellnest-logo-circle.png\" x=\"103.0\" y=\"247.49333333333334\" width=\"34\" height=\"29.013333333333332\" preserveAspectRatio=\"xMidYMid meet\" /></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
-     "bg": "#FFFFFF"
-    }
-   },
-   "purpose": "new",
-   "retest": false,
-   "notes": true,
-   "share": true,
-   "id": "wellnest-voice-story-1-08",
    "repeat": false
   },
   {
@@ -460,64 +372,18 @@
    "retest": false,
    "notes": true,
    "share": true,
-   "id": "wellnest-voice-story-1-09",
+   "id": "wellnest-voice-story-1-07",
    "repeat": false
   },
   {
-   "group": "Tone",
-   "category": "Tone",
+   "group": "Round Two Retest: New Taglines",
+   "category": "Round Two Retest",
    "app": "WellNest",
-   "ask": "Farm Words Kept Simple Or Name The Plants?",
+   "ask": "Good Soil, Good Rest Or Farm Air Is Free?",
    "optionA": {
-    "id": "voicestory_farm_words_kept_simple_25",
-    "label": "Farm Words Kept Simple",
-    "desc": "No jargon.",
-    "tags": [
-     "action"
-    ],
-    "feeling": "action",
-    "notes": true,
-    "share": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"36\" y=\"70\" font-size=\"60\" fill=\"#267D58\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >“</text><text x=\"120\" y=\"110\" font-size=\"19\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Farm Words Kept</text><text x=\"120\" y=\"133\" font-size=\"19\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Simple</text><line x1=\"100\" y1=\"158\" x2=\"140\" y2=\"158\" stroke=\"#DABC76\" stroke-width=\"1.5\"/><text x=\"120\" y=\"178\" font-size=\"9\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >No jargon.</text><image href=\"img/wellnest-logo-circle.png\" x=\"103.0\" y=\"247.49333333333334\" width=\"34\" height=\"29.013333333333332\" preserveAspectRatio=\"xMidYMid meet\" /></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
-     "bg": "#FFFFFF"
-    }
-   },
-   "optionB": {
-    "id": "voicestory_name_the_plants_26",
-    "label": "Name The Plants",
-    "desc": "Krajiab, lemongrass.",
-    "tags": [
-     "calm"
-    ],
-    "feeling": "calm",
-    "notes": true,
-    "share": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"36\" y=\"70\" font-size=\"60\" fill=\"#A8243F\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >“</text><text x=\"120\" y=\"110\" font-size=\"19\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Name The Plants</text><line x1=\"100\" y1=\"135\" x2=\"140\" y2=\"135\" stroke=\"#DABC76\" stroke-width=\"1.5\"/><text x=\"120\" y=\"155\" font-size=\"9\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >Krajiab, lemongrass.</text><image href=\"img/wellnest-logo-circle.png\" x=\"103.0\" y=\"247.49333333333334\" width=\"34\" height=\"29.013333333333332\" preserveAspectRatio=\"xMidYMid meet\" /></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
-     "bg": "#FFFFFF"
-    }
-   },
-   "purpose": "new",
-   "retest": false,
-   "notes": true,
-   "share": true,
-   "id": "wellnest-voice-story-1-10",
-   "repeat": false
-  },
-  {
-   "group": "Taglines",
-   "category": "Taglines",
-   "app": "WellNest",
-   "ask": "Homegrown Calm Or Warmth, Grown Daily?",
-   "optionA": {
-    "id": "voicestory_homegrown_calm_33",
-    "label": "Homegrown Calm",
-    "desc": "Two words.",
+    "id": "rt_wn2_tg2_soil",
+    "label": "Good Soil, Good Rest",
+    "desc": "Organic and rest.",
     "tags": [
      "focused"
     ],
@@ -527,14 +393,14 @@
     "visual": {
      "type": "hm",
      "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"75.0\" y=\"31.6\" width=\"90\" height=\"76.8\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"120\" y=\"160\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Homegrown Calm</text><line x1=\"96\" y1=\"186\" x2=\"144\" y2=\"186\" stroke=\"#ECC978\" stroke-width=\"2\"/><text x=\"120\" y=\"206\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Two words.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FBF8F1\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FBF8F1\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"70.0\" y=\"31.333333333333336\" width=\"100\" height=\"85.33333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"120\" y=\"168\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Good Soil,</text><text x=\"120\" y=\"196\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Good Rest</text><line x1=\"96\" y1=\"214\" x2=\"144\" y2=\"214\" stroke=\"#ECC978\" stroke-width=\"2\"/><text x=\"120\" y=\"240\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" letter-spacing=\"2\">THE WELLNEST</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
      "bg": "#FFFFFF"
     }
    },
    "optionB": {
-    "id": "voicestory_warmth_grown_daily_34",
-    "label": "Warmth, Grown Daily",
-    "desc": "Daily.",
+    "id": "rt_wn2_tg2_air",
+    "label": "Farm Air Is Free",
+    "desc": "Light humour.",
     "tags": [
      "quick"
     ],
@@ -544,43 +410,26 @@
     "visual": {
      "type": "hm",
      "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"75.0\" y=\"31.6\" width=\"90\" height=\"76.8\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"120\" y=\"160\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Warmth, Grown</text><text x=\"120\" y=\"186\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Daily</text><line x1=\"96\" y1=\"212\" x2=\"144\" y2=\"212\" stroke=\"#D7A363\" stroke-width=\"2\"/><text x=\"120\" y=\"232\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Daily.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FBF8F1\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FBF8F1\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"70.0\" y=\"31.333333333333336\" width=\"100\" height=\"85.33333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"120\" y=\"168\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Farm Air</text><text x=\"120\" y=\"196\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Is Free</text><line x1=\"96\" y1=\"214\" x2=\"144\" y2=\"214\" stroke=\"#D7A363\" stroke-width=\"2\"/><text x=\"120\" y=\"240\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" letter-spacing=\"2\">THE WELLNEST</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
      "bg": "#FFFFFF"
     }
    },
-   "purpose": "new",
-   "retest": false,
+   "purpose": "retest",
+   "retest": true,
    "notes": true,
    "share": true,
-   "id": "wellnest-voice-story-1-11",
+   "id": "wellnest-voice-story-1-08",
    "repeat": false
   },
   {
    "group": "Tone",
    "category": "Tone",
    "app": "WellNest",
-   "ask": "Light Humour Often Or Humour Now And Then?",
+   "ask": "Speak As The WellNest Or Sign Posts With A Name?",
    "optionA": {
-    "id": "voicestory_light_humour_often_17",
-    "label": "Light Humour Often",
-    "desc": "A smile per post.",
-    "tags": [
-     "visual"
-    ],
-    "feeling": "visual",
-    "notes": true,
-    "share": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"36\" y=\"70\" font-size=\"60\" fill=\"#D7A363\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >“</text><text x=\"120\" y=\"110\" font-size=\"19\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Light Humour Often</text><line x1=\"100\" y1=\"135\" x2=\"140\" y2=\"135\" stroke=\"#DABC76\" stroke-width=\"1.5\"/><text x=\"120\" y=\"155\" font-size=\"9\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >A smile per post.</text><image href=\"img/wellnest-logo-circle.png\" x=\"103.0\" y=\"247.49333333333334\" width=\"34\" height=\"29.013333333333332\" preserveAspectRatio=\"xMidYMid meet\" /></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
-     "bg": "#FFFFFF"
-    }
-   },
-   "optionB": {
-    "id": "voicestory_humour_now_and_then_18",
-    "label": "Humour Now And Then",
-    "desc": "Mostly calm.",
+    "id": "voicestory_speak_as_the_wellnest_23",
+    "label": "Speak As The WellNest",
+    "desc": "Brand voice.",
     "tags": [
      "focused"
     ],
@@ -590,7 +439,24 @@
     "visual": {
      "type": "hm",
      "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"36\" y=\"70\" font-size=\"60\" fill=\"#DABC76\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >“</text><text x=\"120\" y=\"110\" font-size=\"19\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Humour Now And Then</text><line x1=\"100\" y1=\"135\" x2=\"140\" y2=\"135\" stroke=\"#DABC76\" stroke-width=\"1.5\"/><text x=\"120\" y=\"155\" font-size=\"9\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >Mostly calm.</text><image href=\"img/wellnest-logo-circle.png\" x=\"103.0\" y=\"247.49333333333334\" width=\"34\" height=\"29.013333333333332\" preserveAspectRatio=\"xMidYMid meet\" /></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"36\" y=\"70\" font-size=\"60\" fill=\"#ECC978\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >“</text><text x=\"120\" y=\"110\" font-size=\"19\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Speak As The</text><text x=\"120\" y=\"133\" font-size=\"19\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >WellNest</text><line x1=\"100\" y1=\"158\" x2=\"140\" y2=\"158\" stroke=\"#DABC76\" stroke-width=\"1.5\"/><text x=\"120\" y=\"178\" font-size=\"9\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >Brand voice.</text><image href=\"img/wellnest-logo-circle.png\" x=\"103.0\" y=\"247.49333333333334\" width=\"34\" height=\"29.013333333333332\" preserveAspectRatio=\"xMidYMid meet\" /></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "voicestory_sign_posts_with_a_name_24",
+    "label": "Sign Posts With A Name",
+    "desc": "Mae Noy, Max.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"36\" y=\"70\" font-size=\"60\" fill=\"#D7A363\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >“</text><text x=\"120\" y=\"110\" font-size=\"19\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Sign Posts With A</text><text x=\"120\" y=\"133\" font-size=\"19\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Name</text><line x1=\"100\" y1=\"158\" x2=\"140\" y2=\"158\" stroke=\"#DABC76\" stroke-width=\"1.5\"/><text x=\"120\" y=\"178\" font-size=\"9\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >Mae Noy, Max.</text><image href=\"img/wellnest-logo-circle.png\" x=\"103.0\" y=\"247.49333333333334\" width=\"34\" height=\"29.013333333333332\" preserveAspectRatio=\"xMidYMid meet\" /></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
      "bg": "#FFFFFF"
     }
    },
@@ -598,35 +464,18 @@
    "retest": false,
    "notes": true,
    "share": true,
-   "id": "wellnest-voice-story-1-12",
+   "id": "wellnest-voice-story-1-09",
    "repeat": false
   },
   {
-   "group": "Taglines",
-   "category": "Taglines",
+   "group": "Round Two Retest: New Taglines",
+   "category": "Round Two Retest",
    "app": "WellNest",
-   "ask": "The Farm Is The Spa Or Farm, Steam, Rest?",
+   "ask": "Picked At Dawn, Sipped At Dusk Or Where The Day Grows Softer?",
    "optionA": {
-    "id": "voicestory_the_farm_is_the_spa_31",
-    "label": "The Farm Is The Spa",
-    "desc": "Bold.",
-    "tags": [
-     "calm"
-    ],
-    "feeling": "calm",
-    "notes": true,
-    "share": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"75.0\" y=\"31.6\" width=\"90\" height=\"76.8\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"120\" y=\"160\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >The Farm Is The</text><text x=\"120\" y=\"186\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Spa</text><line x1=\"96\" y1=\"212\" x2=\"144\" y2=\"212\" stroke=\"#ECC978\" stroke-width=\"2\"/><text x=\"120\" y=\"232\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Bold.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
-     "bg": "#FFFFFF"
-    }
-   },
-   "optionB": {
-    "id": "voicestory_farm_steam_rest_32",
-    "label": "Farm, Steam, Rest",
-    "desc": "List.",
+    "id": "rt_wn2_tg2_dawn",
+    "label": "Picked At Dawn, Sipped At Dusk",
+    "desc": "A whole farm day.",
     "tags": [
      "visual"
     ],
@@ -636,43 +485,14 @@
     "visual": {
      "type": "hm",
      "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"75.0\" y=\"31.6\" width=\"90\" height=\"76.8\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"120\" y=\"160\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Farm, Steam, Rest</text><line x1=\"96\" y1=\"186\" x2=\"144\" y2=\"186\" stroke=\"#D7A363\" stroke-width=\"2\"/><text x=\"120\" y=\"206\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >List.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
-     "bg": "#FFFFFF"
-    }
-   },
-   "purpose": "new",
-   "retest": false,
-   "notes": true,
-   "share": true,
-   "id": "wellnest-voice-story-1-13",
-   "repeat": false
-  },
-  {
-   "group": "Tone",
-   "category": "Tone",
-   "app": "WellNest",
-   "ask": "Gentle And Poetic Or Plain And Warm?",
-   "optionA": {
-    "id": "voicestory_gentle_and_poetic_15",
-    "label": "Gentle And Poetic",
-    "desc": "Soft imagery.",
-    "tags": [
-     "action"
-    ],
-    "feeling": "action",
-    "notes": true,
-    "share": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"36\" y=\"70\" font-size=\"60\" fill=\"#ECC978\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >“</text><text x=\"120\" y=\"110\" font-size=\"19\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Gentle And Poetic</text><line x1=\"100\" y1=\"135\" x2=\"140\" y2=\"135\" stroke=\"#DABC76\" stroke-width=\"1.5\"/><text x=\"120\" y=\"155\" font-size=\"9\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >Soft imagery.</text><image href=\"img/wellnest-logo-circle.png\" x=\"103.0\" y=\"247.49333333333334\" width=\"34\" height=\"29.013333333333332\" preserveAspectRatio=\"xMidYMid meet\" /></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FBF8F1\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FBF8F1\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"70.0\" y=\"31.333333333333336\" width=\"100\" height=\"85.33333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"120\" y=\"168\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Picked At Dawn,</text><text x=\"120\" y=\"196\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Sipped At Dusk</text><line x1=\"96\" y1=\"214\" x2=\"144\" y2=\"214\" stroke=\"#ECC978\" stroke-width=\"2\"/><text x=\"120\" y=\"240\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" letter-spacing=\"2\">THE WELLNEST</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
      "bg": "#FFFFFF"
     }
    },
    "optionB": {
-    "id": "voicestory_plain_and_warm_16",
-    "label": "Plain And Warm",
-    "desc": "Simple words.",
+    "id": "rt_wn2_tg2_softer",
+    "label": "Where The Day Grows Softer",
+    "desc": "Mood-first.",
     "tags": [
      "calm"
     ],
@@ -682,7 +502,53 @@
     "visual": {
      "type": "hm",
      "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"36\" y=\"70\" font-size=\"60\" fill=\"#D7A363\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >“</text><text x=\"120\" y=\"110\" font-size=\"19\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Plain And Warm</text><line x1=\"100\" y1=\"135\" x2=\"140\" y2=\"135\" stroke=\"#DABC76\" stroke-width=\"1.5\"/><text x=\"120\" y=\"155\" font-size=\"9\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >Simple words.</text><image href=\"img/wellnest-logo-circle.png\" x=\"103.0\" y=\"247.49333333333334\" width=\"34\" height=\"29.013333333333332\" preserveAspectRatio=\"xMidYMid meet\" /></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FBF8F1\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FBF8F1\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"70.0\" y=\"31.333333333333336\" width=\"100\" height=\"85.33333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"120\" y=\"168\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Where The Day</text><text x=\"120\" y=\"196\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Grows Softer</text><line x1=\"96\" y1=\"214\" x2=\"144\" y2=\"214\" stroke=\"#D7A363\" stroke-width=\"2\"/><text x=\"120\" y=\"240\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" letter-spacing=\"2\">THE WELLNEST</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "retest",
+   "retest": true,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-voice-story-1-10",
+   "repeat": false
+  },
+  {
+   "group": "Tone",
+   "category": "Tone",
+   "app": "WellNest",
+   "ask": "Short Sentences Or Flowing Sentences?",
+   "optionA": {
+    "id": "voicestory_short_sentences_19",
+    "label": "Short Sentences",
+    "desc": "Five to eight words.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"36\" y=\"70\" font-size=\"60\" fill=\"#ECC978\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >“</text><text x=\"120\" y=\"110\" font-size=\"19\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Short Sentences</text><line x1=\"100\" y1=\"135\" x2=\"140\" y2=\"135\" stroke=\"#DABC76\" stroke-width=\"1.5\"/><text x=\"120\" y=\"155\" font-size=\"9\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >Five to eight words.</text><image href=\"img/wellnest-logo-circle.png\" x=\"103.0\" y=\"247.49333333333334\" width=\"34\" height=\"29.013333333333332\" preserveAspectRatio=\"xMidYMid meet\" /></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "voicestory_flowing_sentences_20",
+    "label": "Flowing Sentences",
+    "desc": "Longer, lyrical.",
+    "tags": [
+     "action"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"36\" y=\"70\" font-size=\"60\" fill=\"#DABC76\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >“</text><text x=\"120\" y=\"110\" font-size=\"19\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Flowing Sentences</text><line x1=\"100\" y1=\"135\" x2=\"140\" y2=\"135\" stroke=\"#DABC76\" stroke-width=\"1.5\"/><text x=\"120\" y=\"155\" font-size=\"9\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >Longer, lyrical.</text><image href=\"img/wellnest-logo-circle.png\" x=\"103.0\" y=\"247.49333333333334\" width=\"34\" height=\"29.013333333333332\" preserveAspectRatio=\"xMidYMid meet\" /></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
      "bg": "#FFFFFF"
     }
    },
@@ -690,7 +556,7 @@
    "retest": false,
    "notes": true,
    "share": true,
-   "id": "wellnest-voice-story-1-14",
+   "id": "wellnest-voice-story-1-11",
    "repeat": false
   },
   {
@@ -736,35 +602,18 @@
    "retest": false,
    "notes": true,
    "share": true,
-   "id": "wellnest-voice-story-1-15",
+   "id": "wellnest-voice-story-1-12",
    "repeat": false
   },
   {
-   "group": "Taglines",
-   "category": "Taglines",
+   "group": "Tone",
+   "category": "Tone",
    "app": "WellNest",
-   "ask": "Rest Grows Wild Here Or Sip Slowly?",
+   "ask": "Farm Words Kept Simple Or Name The Plants?",
    "optionA": {
-    "id": "voicestory_rest_grows_wild_here_29",
-    "label": "Rest Grows Wild Here",
-    "desc": "Nature.",
-    "tags": [
-     "quick"
-    ],
-    "feeling": "quick",
-    "notes": true,
-    "share": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"75.0\" y=\"31.6\" width=\"90\" height=\"76.8\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"120\" y=\"160\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Rest Grows Wild</text><text x=\"120\" y=\"186\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Here</text><line x1=\"96\" y1=\"212\" x2=\"144\" y2=\"212\" stroke=\"#ECC978\" stroke-width=\"2\"/><text x=\"120\" y=\"232\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Nature.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
-     "bg": "#FFFFFF"
-    }
-   },
-   "optionB": {
-    "id": "voicestory_sip_slowly_30",
-    "label": "Sip Slowly",
-    "desc": "Two words.",
+    "id": "voicestory_farm_words_kept_simple_25",
+    "label": "Farm Words Kept Simple",
+    "desc": "No jargon.",
     "tags": [
      "action"
     ],
@@ -774,43 +623,14 @@
     "visual": {
      "type": "hm",
      "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"75.0\" y=\"31.6\" width=\"90\" height=\"76.8\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"120\" y=\"160\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Sip Slowly</text><line x1=\"96\" y1=\"186\" x2=\"144\" y2=\"186\" stroke=\"#D7A363\" stroke-width=\"2\"/><text x=\"120\" y=\"206\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Two words.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
-     "bg": "#FFFFFF"
-    }
-   },
-   "purpose": "new",
-   "retest": false,
-   "notes": true,
-   "share": true,
-   "id": "wellnest-voice-story-1-16",
-   "repeat": false
-  },
-  {
-   "group": "Taglines",
-   "category": "Taglines",
-   "app": "WellNest",
-   "ask": "Find Your Nest In San Sai Or Find Your Nest, Pour Your Tea?",
-   "optionA": {
-    "id": "voicestory_find_your_nest_in_san_sa_35",
-    "label": "Find Your Nest In San Sai",
-    "desc": "Extends a kept line.",
-    "tags": [
-     "action"
-    ],
-    "feeling": "action",
-    "notes": true,
-    "share": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"75.0\" y=\"31.6\" width=\"90\" height=\"76.8\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"120\" y=\"160\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Find Your Nest In</text><text x=\"120\" y=\"186\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >San Sai</text><line x1=\"96\" y1=\"212\" x2=\"144\" y2=\"212\" stroke=\"#ECC978\" stroke-width=\"2\"/><text x=\"120\" y=\"232\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Extends a kept line.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"36\" y=\"70\" font-size=\"60\" fill=\"#267D58\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >“</text><text x=\"120\" y=\"110\" font-size=\"19\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Farm Words Kept</text><text x=\"120\" y=\"133\" font-size=\"19\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Simple</text><line x1=\"100\" y1=\"158\" x2=\"140\" y2=\"158\" stroke=\"#DABC76\" stroke-width=\"1.5\"/><text x=\"120\" y=\"178\" font-size=\"9\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >No jargon.</text><image href=\"img/wellnest-logo-circle.png\" x=\"103.0\" y=\"247.49333333333334\" width=\"34\" height=\"29.013333333333332\" preserveAspectRatio=\"xMidYMid meet\" /></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
      "bg": "#FFFFFF"
     }
    },
    "optionB": {
-    "id": "voicestory_find_your_nest_pour_your_36",
-    "label": "Find Your Nest, Pour Your Tea",
-    "desc": "Tea twist.",
+    "id": "voicestory_name_the_plants_26",
+    "label": "Name The Plants",
+    "desc": "Krajiab, lemongrass.",
     "tags": [
      "calm"
     ],
@@ -820,7 +640,7 @@
     "visual": {
      "type": "hm",
      "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"75.0\" y=\"31.6\" width=\"90\" height=\"76.8\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"120\" y=\"160\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Find Your Nest,</text><text x=\"120\" y=\"186\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Pour Your Tea</text><line x1=\"96\" y1=\"212\" x2=\"144\" y2=\"212\" stroke=\"#D7A363\" stroke-width=\"2\"/><text x=\"120\" y=\"232\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Tea twist.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"36\" y=\"70\" font-size=\"60\" fill=\"#A8243F\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >“</text><text x=\"120\" y=\"110\" font-size=\"19\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Name The Plants</text><line x1=\"100\" y1=\"135\" x2=\"140\" y2=\"135\" stroke=\"#DABC76\" stroke-width=\"1.5\"/><text x=\"120\" y=\"155\" font-size=\"9\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >Krajiab, lemongrass.</text><image href=\"img/wellnest-logo-circle.png\" x=\"103.0\" y=\"247.49333333333334\" width=\"34\" height=\"29.013333333333332\" preserveAspectRatio=\"xMidYMid meet\" /></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
      "bg": "#FFFFFF"
     }
    },
@@ -828,7 +648,145 @@
    "retest": false,
    "notes": true,
    "share": true,
-   "id": "wellnest-voice-story-1-17",
+   "id": "wellnest-voice-story-1-13",
+   "repeat": false
+  },
+  {
+   "group": "Round Two Retest: New Taglines",
+   "category": "Round Two Retest",
+   "app": "WellNest",
+   "ask": "Grown Slowly, Poured Warmly Or Steeped In San Sai?",
+   "optionA": {
+    "id": "rt_wn2_tg2_poured",
+    "label": "Grown Slowly, Poured Warmly",
+    "desc": "Tea-first.",
+    "tags": [
+     "visual"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FBF8F1\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FBF8F1\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"70.0\" y=\"31.333333333333336\" width=\"100\" height=\"85.33333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"120\" y=\"168\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Grown Slowly,</text><text x=\"120\" y=\"196\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Poured Warmly</text><line x1=\"96\" y1=\"214\" x2=\"144\" y2=\"214\" stroke=\"#ECC978\" stroke-width=\"2\"/><text x=\"120\" y=\"240\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" letter-spacing=\"2\">THE WELLNEST</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "rt_wn2_tg2_steeped",
+    "label": "Steeped In San Sai",
+    "desc": "Place-first.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FBF8F1\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FBF8F1\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"70.0\" y=\"31.333333333333336\" width=\"100\" height=\"85.33333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"120\" y=\"168\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Steeped In</text><text x=\"120\" y=\"196\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >San Sai</text><line x1=\"96\" y1=\"214\" x2=\"144\" y2=\"214\" stroke=\"#D7A363\" stroke-width=\"2\"/><text x=\"120\" y=\"240\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" letter-spacing=\"2\">THE WELLNEST</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "retest",
+   "retest": true,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-voice-story-1-14",
+   "repeat": false
+  },
+  {
+   "group": "Tone",
+   "category": "Tone",
+   "app": "WellNest",
+   "ask": "Light Humour Often Or Humour Now And Then?",
+   "optionA": {
+    "id": "voicestory_light_humour_often_17",
+    "label": "Light Humour Often",
+    "desc": "A smile per post.",
+    "tags": [
+     "visual"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"36\" y=\"70\" font-size=\"60\" fill=\"#D7A363\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >“</text><text x=\"120\" y=\"110\" font-size=\"19\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Light Humour Often</text><line x1=\"100\" y1=\"135\" x2=\"140\" y2=\"135\" stroke=\"#DABC76\" stroke-width=\"1.5\"/><text x=\"120\" y=\"155\" font-size=\"9\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >A smile per post.</text><image href=\"img/wellnest-logo-circle.png\" x=\"103.0\" y=\"247.49333333333334\" width=\"34\" height=\"29.013333333333332\" preserveAspectRatio=\"xMidYMid meet\" /></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "voicestory_humour_now_and_then_18",
+    "label": "Humour Now And Then",
+    "desc": "Mostly calm.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"36\" y=\"70\" font-size=\"60\" fill=\"#DABC76\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >“</text><text x=\"120\" y=\"110\" font-size=\"19\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Humour Now And Then</text><line x1=\"100\" y1=\"135\" x2=\"140\" y2=\"135\" stroke=\"#DABC76\" stroke-width=\"1.5\"/><text x=\"120\" y=\"155\" font-size=\"9\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >Mostly calm.</text><image href=\"img/wellnest-logo-circle.png\" x=\"103.0\" y=\"247.49333333333334\" width=\"34\" height=\"29.013333333333332\" preserveAspectRatio=\"xMidYMid meet\" /></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-voice-story-1-15",
+   "repeat": false
+  },
+  {
+   "group": "Round Two Retest: New Taglines",
+   "category": "Round Two Retest",
+   "app": "WellNest",
+   "ask": "Slow Down, You're Home Or Rest Grows Here?",
+   "optionA": {
+    "id": "rt_wn2_tg2_home",
+    "label": "Slow Down, You're Home",
+    "desc": "Gentle welcome.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FBF8F1\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FBF8F1\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"70.0\" y=\"31.333333333333336\" width=\"100\" height=\"85.33333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"120\" y=\"168\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Slow Down,</text><text x=\"120\" y=\"196\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >You're Home</text><line x1=\"96\" y1=\"214\" x2=\"144\" y2=\"214\" stroke=\"#ECC978\" stroke-width=\"2\"/><text x=\"120\" y=\"240\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" letter-spacing=\"2\">THE WELLNEST</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "rt_wn2_tg2_rest",
+    "label": "Rest Grows Here",
+    "desc": "Rest as a crop.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FBF8F1\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FBF8F1\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"70.0\" y=\"31.333333333333336\" width=\"100\" height=\"85.33333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"120\" y=\"168\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Rest Grows</text><text x=\"120\" y=\"196\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Here</text><line x1=\"96\" y1=\"214\" x2=\"144\" y2=\"214\" stroke=\"#D7A363\" stroke-width=\"2\"/><text x=\"120\" y=\"240\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" letter-spacing=\"2\">THE WELLNEST</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "retest",
+   "retest": true,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-voice-story-1-16",
    "repeat": false
   },
   {
@@ -867,6 +825,52 @@
      "type": "hm",
      "m": "svg",
      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"75.0\" y=\"31.6\" width=\"90\" height=\"76.8\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"120\" y=\"160\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Breathe, Sip, Stay</text><line x1=\"96\" y1=\"186\" x2=\"144\" y2=\"186\" stroke=\"#D7A363\" stroke-width=\"2\"/><text x=\"120\" y=\"206\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Three verbs.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-voice-story-1-17",
+   "repeat": false
+  },
+  {
+   "group": "Tone",
+   "category": "Tone",
+   "app": "WellNest",
+   "ask": "Gentle And Poetic Or Plain And Warm?",
+   "optionA": {
+    "id": "voicestory_gentle_and_poetic_15",
+    "label": "Gentle And Poetic",
+    "desc": "Soft imagery.",
+    "tags": [
+     "action"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"36\" y=\"70\" font-size=\"60\" fill=\"#ECC978\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >“</text><text x=\"120\" y=\"110\" font-size=\"19\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Gentle And Poetic</text><line x1=\"100\" y1=\"135\" x2=\"140\" y2=\"135\" stroke=\"#DABC76\" stroke-width=\"1.5\"/><text x=\"120\" y=\"155\" font-size=\"9\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >Soft imagery.</text><image href=\"img/wellnest-logo-circle.png\" x=\"103.0\" y=\"247.49333333333334\" width=\"34\" height=\"29.013333333333332\" preserveAspectRatio=\"xMidYMid meet\" /></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "voicestory_plain_and_warm_16",
+    "label": "Plain And Warm",
+    "desc": "Simple words.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"36\" y=\"70\" font-size=\"60\" fill=\"#D7A363\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >“</text><text x=\"120\" y=\"110\" font-size=\"19\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Plain And Warm</text><line x1=\"100\" y1=\"135\" x2=\"140\" y2=\"135\" stroke=\"#DABC76\" stroke-width=\"1.5\"/><text x=\"120\" y=\"155\" font-size=\"9\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"400\" >Simple words.</text><image href=\"img/wellnest-logo-circle.png\" x=\"103.0\" y=\"247.49333333333334\" width=\"34\" height=\"29.013333333333332\" preserveAspectRatio=\"xMidYMid meet\" /></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
      "bg": "#FFFFFF"
     }
    },
@@ -924,46 +928,46 @@
    "repeat": false
   },
   {
-   "group": "Taglines",
-   "category": "Taglines",
+   "group": "Round Two Retest: Voice And Taglines",
+   "category": "Round Two Retest",
    "app": "WellNest",
-   "ask": "Come As Guests, Leave Rested Or Come As Guests, Leave As Family?",
+   "ask": "Warm Family Voice Or Calm Wellness Voice?",
    "optionA": {
-    "id": "voicestory_come_as_guests_leave_res_39",
-    "label": "Come As Guests, Leave Rested",
-    "desc": "Twist on kept line.",
+    "id": "rt_wnr_vo_family",
+    "label": "Warm Family Voice",
+    "desc": "Like an aunt's welcome.",
     "tags": [
-     "quick"
+     "calm"
     ],
-    "feeling": "quick",
+    "feeling": "calm",
     "notes": true,
     "share": true,
     "visual": {
      "type": "hm",
      "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"75.0\" y=\"31.6\" width=\"90\" height=\"76.8\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"120\" y=\"160\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Come As Guests,</text><text x=\"120\" y=\"186\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Leave Rested</text><line x1=\"96\" y1=\"212\" x2=\"144\" y2=\"212\" stroke=\"#ECC978\" stroke-width=\"2\"/><text x=\"120\" y=\"232\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Twist on kept line.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><ellipse cx=\"118.9\" cy=\"54.0\" rx=\"22.0\" ry=\"20.46\" fill=\"none\" stroke=\"#267D58\" stroke-width=\"1.5\" transform=\"rotate(0 120 54)\" opacity=\".95\"/><ellipse cx=\"120.0\" cy=\"54.88\" rx=\"20.9\" ry=\"21.340000000000003\" fill=\"none\" stroke=\"#ECC978\" stroke-width=\"1.5\" transform=\"rotate(37 120 54)\" opacity=\".95\"/><ellipse cx=\"121.1\" cy=\"54.0\" rx=\"19.8\" ry=\"20.46\" fill=\"none\" stroke=\"#5FB050\" stroke-width=\"1.5\" transform=\"rotate(74 120 54)\" opacity=\".95\"/><ellipse cx=\"118.9\" cy=\"54.88\" rx=\"22.0\" ry=\"21.340000000000003\" fill=\"none\" stroke=\"#D7A363\" stroke-width=\"1.5\" transform=\"rotate(111 120 54)\" opacity=\".95\"/><ellipse cx=\"120.0\" cy=\"54.0\" rx=\"20.9\" ry=\"20.46\" fill=\"none\" stroke=\"#AECB35\" stroke-width=\"1.5\" transform=\"rotate(148 120 54)\" opacity=\".95\"/><text x=\"120\" y=\"124\" font-size=\"24\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >Come Hungry,</text><text x=\"120\" y=\"152\" font-size=\"24\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >Leave Family</text><text x=\"120\" y=\"186\" font-size=\"9.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Lunch is at noon. Mae Noy is cooking.</text><rect x=\"100\" y=\"262\" width=\"40\" height=\"2\" rx=\"0\" fill=\"#A8243F\" stroke=\"none\" stroke-width=\"1\" /></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
      "bg": "#FFFFFF"
     }
    },
    "optionB": {
-    "id": "voicestory_come_as_guests_leave_as__40",
-    "label": "Come As Guests, Leave As Family",
-    "desc": "Kept line, as is.",
+    "id": "rt_wnr_vo_wellness",
+    "label": "Calm Wellness Voice",
+    "desc": "Quiet and restorative.",
     "tags": [
-     "action"
+     "calm"
     ],
-    "feeling": "action",
+    "feeling": "calm",
     "notes": true,
     "share": true,
     "visual": {
      "type": "hm",
      "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"75.0\" y=\"31.6\" width=\"90\" height=\"76.8\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"120\" y=\"160\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Come As Guests,</text><text x=\"120\" y=\"186\" font-size=\"22\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"500\" >Leave As Family</text><line x1=\"96\" y1=\"212\" x2=\"144\" y2=\"212\" stroke=\"#D7A363\" stroke-width=\"2\"/><text x=\"120\" y=\"232\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Kept line, as is.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><ellipse cx=\"118.9\" cy=\"54.0\" rx=\"22.0\" ry=\"20.46\" fill=\"none\" stroke=\"#267D58\" stroke-width=\"1.5\" transform=\"rotate(0 120 54)\" opacity=\".95\"/><ellipse cx=\"120.0\" cy=\"54.88\" rx=\"20.9\" ry=\"21.340000000000003\" fill=\"none\" stroke=\"#ECC978\" stroke-width=\"1.5\" transform=\"rotate(37 120 54)\" opacity=\".95\"/><ellipse cx=\"121.1\" cy=\"54.0\" rx=\"19.8\" ry=\"20.46\" fill=\"none\" stroke=\"#5FB050\" stroke-width=\"1.5\" transform=\"rotate(74 120 54)\" opacity=\".95\"/><ellipse cx=\"118.9\" cy=\"54.88\" rx=\"22.0\" ry=\"21.340000000000003\" fill=\"none\" stroke=\"#D7A363\" stroke-width=\"1.5\" transform=\"rotate(111 120 54)\" opacity=\".95\"/><ellipse cx=\"120.0\" cy=\"54.0\" rx=\"20.9\" ry=\"20.46\" fill=\"none\" stroke=\"#AECB35\" stroke-width=\"1.5\" transform=\"rotate(148 120 54)\" opacity=\".95\"/><text x=\"120\" y=\"124\" font-size=\"24\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >Breathe, Sweat,</text><text x=\"120\" y=\"152\" font-size=\"24\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >Rest</text><text x=\"120\" y=\"186\" font-size=\"9.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Sauna, cold plunge and a cup of</text><text x=\"120\" y=\"199\" font-size=\"9.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >roselle.</text><rect x=\"100\" y=\"262\" width=\"40\" height=\"2\" rx=\"0\" fill=\"#2F4B9A\" stroke=\"none\" stroke-width=\"1\" /></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
      "bg": "#FFFFFF"
     }
    },
-   "purpose": "new",
-   "retest": false,
+   "purpose": "retest",
+   "retest": true,
    "notes": true,
    "share": true,
    "id": "wellnest-voice-story-1-20",

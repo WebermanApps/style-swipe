@@ -65,6 +65,31 @@ for gi, (g, ask, a, b) in enumerate(spec["pairs"]):
         n += 1; oid = re.sub(r"[^a-z0-9]+", "_", o[0].lower())[:24] + f"_{n}"
         opts.append(O(oid, o[0], o[1], FEEL[(gi * 2 + side) % 5], render(o, spec["dk"], side, gi)))
     add(g, g, opts[0], opts[1], ask)
+
+# ---- Round Two fold-in (Oct 14, 13:40): Max dropped the 61-pair Round Two; its key retests move into the 20-card series ----
+R1 = json.load(open(os.path.join(ROOT, "decks/wellnest-brand.json"))); R2 = json.load(open(os.path.join(ROOT, "decks/wellnest-brand-round-two.json")))
+def _r2(prefix): return [p for p in R2["pairs"] if p["optionA"]["id"].startswith(prefix)]
+def _r1(pid): return [p for p in R1["pairs"] if p["id"] == pid]
+FOLD = {
+ "wellnest-voice-story-1": (_r2("wn2_tg2_") + _r1("wellnest-brand-138"),
+   ["Wellness Words: Rest, Warm, Slow Or Wellness Words: Reset, Recharge?", "Rest Grows Wild Here Or Sip Slowly?", "The Farm Is The Spa Or Farm, Steam, Rest?", "Homegrown Calm Or Warmth, Grown Daily?", "Find Your Nest In San Sai Or Find Your Nest, Pour Your Tea?", "Rest Is A Farm Skill, Learn It Or Sun-Dried, Hand-Picked, Home?", "Come As Guests, Leave Rested Or Come As Guests, Leave As Family?"]),
+ "wellnest-voice-story-2": (_r2("wn2_sa2_") + _r1("wellnest-brand-151"),
+   ["Why A Nest: Shelter Or Why A Nest: Gathering?", "Why San Sai: Soil And Water Or Why San Sai: Family Roots?", "Neighbours Who Help Or Guests Who Return?", "Seasons As Chapters Or Plants As Chapters?", "Founders Shown Together Or Family Shown, Founders Quiet?", "Story Video: Two Minutes Or Story Video: Ten Short Reels?", "Story Ends With An Invitation Or Story Ends With A Recipe?"]),
+ "wellnest-voice-story-3": ([p for p in R2["pairs"] if p["optionA"]["id"] in ("wn2_tn_logo_small", "wn2_tn_cap_en")] + _r1("wellnest-brand-114") + _r1("wellnest-brand-118"),
+   ["Polls In Stories Or Farm Diary Stories?", "Hashtags: Three Local Or No Hashtags?", "Caption Line Breaks Or Single Paragraph?", "Weather Notes Or No Weather Notes?"]),
+ "wellnest-brand-look-1": ([p for p in R2["pairs"] if p["optionA"]["id"] == "wn2_tn_gold_lead"], ["Section Tint: Pale Gold Or Pale Peach?"]),
+ "wellnest-brand-look-4": (_r1("wellnest-brand-41") + _r1("wellnest-brand-124") + _r1("wellnest-brand-136") + _r1("wellnest-brand-187"),
+   ["Animals: Chickens And Ducks Or Plants Only?", "Shadows: Soft Or Strong?", "Rainy Season: Show Rain Or Avoid?", "Text On Photos: Never Or Short Title?"]),
+}
+if did in FOLD:
+    src, drop = FOLD[did]; before = len(pairs)
+    keep = [p for p in pairs if p["ask"] not in drop]; assert before - len(keep) == len(drop), (did, before - len(keep), len(drop))
+    pairs[:] = keep
+    for p in src:
+        a, b = json.loads(json.dumps(p["optionA"])), json.loads(json.dumps(p["optionB"]))
+        for o in (a, b): o["id"] = "rt_" + o["id"]; o["notes"] = True; o["share"] = True
+        add("Round Two Retest: " + p["group"].replace("Retest: ", ""), "Round Two Retest", a, b, p["ask"], "retest"); pairs[-1]["retest"] = True
+    assert len(pairs) <= 20, (did, len(pairs)); print("folded", did, "+", len(src), "-", len(drop), "=", len(pairs))
 cnt = {}
 for p in pairs: cnt[p["group"]] = cnt.get(p["group"], 0) + 1
 publish(did, spec["name"], "WellNest", pairs,
