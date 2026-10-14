@@ -1,0 +1,1018 @@
+{
+ "date": "security-ready-1",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Password Reset Deck",
+ "generated_at": "2026-10-14T19:36:43+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "focused": 20,
+  "calm": 20
+ },
+ "groups": {
+  "Password Reset": 20
+ },
+ "apps": {
+  "Security": 20
+ },
+ "freshness": {
+  "option_slots": 40,
+  "never_shown_before": 40,
+  "share": 1.0
+ },
+ "warnings": [],
+ "submit_agent": "security",
+ "deck_size": 20,
+ "carried": 0,
+ "topic": "security",
+ "shelf": true,
+ "bank_pairs": [
+  "security-bank-001",
+  "security-bank-002",
+  "security-bank-003",
+  "security-bank-004",
+  "security-bank-005",
+  "security-bank-006",
+  "security-bank-007",
+  "security-bank-008",
+  "security-bank-009",
+  "security-bank-010",
+  "security-bank-011",
+  "security-bank-012",
+  "security-bank-013",
+  "security-bank-014",
+  "security-bank-015",
+  "security-bank-016",
+  "security-bank-017",
+  "security-bank-018",
+  "security-bank-019",
+  "security-bank-020"
+ ],
+ "pairs": [
+  {
+   "group": "Password Reset",
+   "category": "Password Reset",
+   "app": "Security",
+   "ask": "Carrier PIN Against SIM Swaps: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-1-01",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "sim-pin",
+   "optionA": {
+    "id": "bksec_sim-pin_yes",
+    "label": "Do It",
+    "desc": "Add a port-out PIN with your carrier and switch banks from text codes to app or passkey sign-in. Who does it: Max, With A Guide From Security.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Add a port-out PIN with your carrier</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">and switch banks from text codes to</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">app or passkey sign-in. Who does it:</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Max, With A Guide From Security.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bksec_sim-pin_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: If someone moves your phone number to their SIM, they get your bank text codes.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: If</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">someone moves your phone number to</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">their SIM, they get your bank text</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">codes.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Password Reset",
+   "category": "Password Reset",
+   "app": "Security",
+   "ask": "Lock Down Your Phone And Mac: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-1-02",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "device-security",
+   "optionA": {
+    "id": "bksec_device-security_yes",
+    "label": "Do It",
+    "desc": "Turn on FileVault, auto-lock within 5 minutes, Find My, and automatic updates on both. Who does it: Max, With A Checklist From Security.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Turn on FileVault, auto-lock within 5</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">minutes, Find My, and automatic</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">updates on both. Who does it: Max,</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">With A Checklist From Security.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bksec_device-security_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: Your phone and Mac hold every login. A lost device without encryption exposes everything.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: Your</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">phone and Mac hold every login. A lost</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">device without encryption exposes</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">everything.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Password Reset",
+   "category": "Password Reset",
+   "app": "Security",
+   "ask": "Make The Shared Page Password Differ From The Gate: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-1-03",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "split-shared-from-gate",
+   "optionA": {
+    "id": "bksec_split-shared-from-gate_yes",
+    "label": "Do It",
+    "desc": "Grok Bot changes the shared locked-pages password after the gate codes change, so the two always differ. Who does it: Grok Bot.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Grok Bot changes the shared</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">locked-pages password after the gate</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">codes change, so the two always</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">differ. Who does it: Grok Bot.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bksec_split-shared-from-gate_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: The shared locked-pages password is the same as one smartupkeep.ai gate code, so one leak opens both.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: The</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">shared locked-pages password is the</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">same as one smartupkeep.ai gate code,</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">so one leak opens both.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Password Reset",
+   "category": "Password Reset",
+   "app": "Security",
+   "ask": "Check The Spending Page Against The Gate Codes: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-1-04",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "test-spending-page",
+   "optionA": {
+    "id": "bksec_test-spending-page_yes",
+    "label": "Do It",
+    "desc": "Security runs the same hash-only check on the Spending page, without printing any values. Who does it: Security.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Security runs the same hash-only check</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">on the Spending page, without printing</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">any values. Who does it: Security.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bksec_test-spending-page_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: The gate codes were checked against the portfolio page and none of them unlock it. The Spending page was not tested.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: The</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">gate codes were checked against the</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">portfolio page and none of them unlock</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">it. The Spending page was not tested.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Password Reset",
+   "category": "Password Reset",
+   "app": "Security",
+   "ask": "Retire All Gate Codes When The Real Login Goes Live: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-1-05",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "retire-u-codes",
+   "optionA": {
+    "id": "bksec_retire-u-codes_yes",
+    "label": "Do It",
+    "desc": "When Cloudflare Access is confirmed working, UpKeep removes the gate and all nine codes. Removing a person then just means removing their email. Who does it: UpKeep, With Your OK.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">When Cloudflare Access is confirmed</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">working, UpKeep removes the gate and</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">all nine codes. Removing a person then</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">just means removing their email. Who</text><text x=\"18\" y=\"168\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">does it: UpKeep, With Your OK.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bksec_retire-u-codes_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: Treat all nine gate codes (u1 to u9) as compromised: they are short and their hashes sit in a public file.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters:</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Treat all nine gate codes (u1 to u9)</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">as compromised: they are short and</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">their hashes sit in a public file.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Password Reset",
+   "category": "Password Reset",
+   "app": "Security",
+   "ask": "Change The smartupkeep.ai Gate Passwords: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-1-06",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "rotate-upkeep-gate",
+   "optionA": {
+    "id": "bksec_rotate-upkeep-gate_yes",
+    "label": "Do It",
+    "desc": "UpKeep sets new ones (or moves to the real login you already approved) and shares them privately. Who does it: UpKeep, With Your OK.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">UpKeep sets new ones (or moves to the</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">real login you already approved) and</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">shares them privately. Who does it:</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">UpKeep, With Your OK.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bksec_rotate-upkeep-gate_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: All nine smartupkeep.ai gate passwords sat in plain text in the password index. Scrubbed now, still exposed.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: All</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">nine smartupkeep.ai gate passwords sat</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">in plain text in the password index.</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Scrubbed now, still exposed.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Password Reset",
+   "category": "Password Reset",
+   "app": "Security",
+   "ask": "Spot Fake Invoices And Phishing: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-1-07",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "phishing",
+   "optionA": {
+    "id": "bksec_phishing_yes",
+    "label": "Do It",
+    "desc": "A one-page guide: call back on a known number before paying any new bank details, and never log in from an email link. Who does it: Security.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">A one-page guide: call back on a known</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">number before paying any new bank</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">details, and never log in from an</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">email link. Who does it: Security.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bksec_phishing_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: Contractors, tenants and banks email you about money. A fake invoice or login page is the most common way small businesses lose money.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters:</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Contractors, tenants and banks email</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">you about money. A fake invoice or</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">login page is the most common way</text><text x=\"18\" y=\"168\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">small businesses lose money.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Password Reset",
+   "category": "Password Reset",
+   "app": "Security",
+   "ask": "Set Up 1Password: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-1-08",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "set-up-1password",
+   "optionA": {
+    "id": "bksec_set-up-1password_yes",
+    "label": "Do It",
+    "desc": "Set up 1Password, then agents get vault access instead of raw passwords and new passwords go straight into it. Who does it: You.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Set up 1Password, then agents get</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">vault access instead of raw passwords</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">and new passwords go straight into it.</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Who does it: You.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bksec_set-up-1password_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: Agents still get raw passwords because there is no shared vault yet. It is on the tracker as waiting on you.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters:</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Agents still get raw passwords because</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">there is no shared vault yet. It is on</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">the tracker as waiting on you.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Password Reset",
+   "category": "Password Reset",
+   "app": "Security",
+   "ask": "Keep The Password Manager Emergency Kit Offline: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-1-09",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "emergency-kit-offline",
+   "optionA": {
+    "id": "bksec_emergency-kit-offline_yes",
+    "label": "Do It",
+    "desc": "Export the password manager emergency kit and keep it offline with your recovery codes. Who does it: You.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Export the password manager emergency</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">kit and keep it offline with your</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">recovery codes. Who does it: You.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bksec_emergency-kit-offline_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: If the password manager login is lost, every stored password is lost with it.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: If</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">the password manager login is lost,</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">every stored password is lost with it.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Password Reset",
+   "category": "Password Reset",
+   "app": "Security",
+   "ask": "Change The Shared Page And Portfolio Passwords: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-1-10",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "rotate-shared-pages",
+   "optionA": {
+    "id": "bksec_rotate-shared-pages_yes",
+    "label": "Do It",
+    "desc": "Grok Bot and Portfolio set two new, different passwords, kept only in environment variables. Who does it: Grok Bot and Portfolio.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Grok Bot and Portfolio set two new,</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">different passwords, kept only in</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">environment variables. Who does it:</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Grok Bot and Portfolio.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bksec_rotate-shared-pages_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: The shared locked-pages password and the Portfolio password were exposed, and the Portfolio one is reused on the smartupkeep.ai gate.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: The</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">shared locked-pages password and the</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Portfolio password were exposed, and</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">the Portfolio one is reused on the</text><text x=\"18\" y=\"168\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">smartupkeep.ai gate.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Password Reset",
+   "category": "Password Reset",
+   "app": "Security",
+   "ask": "Encrypted Vault For Tenant And Contract Files: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-1-11",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "encrypted-vault",
+   "optionA": {
+    "id": "bksec_encrypted-vault_yes",
+    "label": "Do It",
+    "desc": "Move them into an encrypted vault (1Password documents or an encrypted Dropbox folder) that agents open only when needed. Who does it: Security, With Your OK.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Move them into an encrypted vault</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">(1Password documents or an encrypted</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Dropbox folder) that agents open only</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">when needed. Who does it: Security,</text><text x=\"18\" y=\"168\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">With Your OK.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bksec_encrypted-vault_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: Tenant details and Niko contracts sit unencrypted on the shared computer. Access is now limited, but any agent can still read them.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters:</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Tenant details and Niko contracts sit</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">unencrypted on the shared computer.</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Access is now limited, but any agent</text><text x=\"18\" y=\"168\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">can still read them.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Password Reset",
+   "category": "Password Reset",
+   "app": "Security",
+   "ask": "Monthly Secret Leak Check On GitHub: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-1-12",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "secret-alerts-review",
+   "optionA": {
+    "id": "bksec_secret-alerts-review_yes",
+    "label": "Do It",
+    "desc": "Security checks alerts every month and fixes any leak the same day. Who does it: Security.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Security checks alerts every month and</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">fixes any leak the same day. Who does</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">it: Security.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bksec_secret-alerts-review_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: GitHub secret scanning and push protection are on for all 50 public repos, with 0 alerts today. Nobody reviews new alerts yet.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters:</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">GitHub secret scanning and push</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">protection are on for all 50 public</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">repos, with 0 alerts today. Nobody</text><text x=\"18\" y=\"168\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">reviews new alerts yet.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Password Reset",
+   "category": "Password Reset",
+   "app": "Security",
+   "ask": "Rules For Any New Interim Gate Codes: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-1-13",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "interim-code-rules",
+   "optionA": {
+    "id": "bksec_interim-code-rules_yes",
+    "label": "Do It",
+    "desc": "Every interim code is unique, never reused from another locked page, at least four random words long, and stored only in an environment variable or the password manager. Who does it: UpKeep.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Every interim code is unique, never</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">reused from another locked page, at</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">least four random words long, and</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">stored only in an environment variable</text><text x=\"18\" y=\"168\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">or the password manager. Who does it:</text><text x=\"18\" y=\"183\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">UpKeep.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bksec_interim-code-rules_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: If new gate codes are made before the real login, short or reused words would be exposed again.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: If</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">new gate codes are made before the</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">real login, short or reused words</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">would be exposed again.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Password Reset",
+   "category": "Password Reset",
+   "app": "Security",
+   "ask": "Lock Down Dropbox: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-1-14",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "dropbox-lockdown",
+   "optionA": {
+    "id": "bksec_dropbox-lockdown_yes",
+    "label": "Do It",
+    "desc": "Remove the public edit link, close the upload request, and move the tax and financial files to a private folder once your upload is done. Who does it: Security, With Your OK.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Remove the public edit link, close the</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">upload request, and move the tax and</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">financial files to a private folder</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">once your upload is done. Who does it:</text><text x=\"18\" y=\"168\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Security, With Your OK.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bksec_dropbox-lockdown_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: Carried over: you said Maybe while an upload was finishing. A public edit link and an open upload request still exist, and tax and financial files sit in a shared folder.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters:</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Carried over: you said Maybe while an</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">upload was finishing. A public edit</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">link and an open upload request still</text><text x=\"18\" y=\"168\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">exist, and tax and financial files sit</text><text x=\"18\" y=\"183\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">in a shared folder.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Password Reset",
+   "category": "Password Reset",
+   "app": "Security",
+   "ask": "Lock The smartupkeep.ai Domain: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-1-15",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "registrar-lock",
+   "optionA": {
+    "id": "bksec_registrar-lock_yes",
+    "label": "Do It",
+    "desc": "Turn on registrar lock and 2FA at the registrar, and set auto-renew. Who does it: Max, With UpKeep.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Turn on registrar lock and 2FA at the</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">registrar, and set auto-renew. Who</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">does it: Max, With UpKeep.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bksec_registrar-lock_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: If someone takes over the domain, they control the site and its email.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: If</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">someone takes over the domain, they</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">control the site and its email.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Password Reset",
+   "category": "Password Reset",
+   "app": "Security",
+   "ask": "Check Recovery Emails And Phones: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-1-16",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "recovery-audit",
+   "optionA": {
+    "id": "bksec_recovery-audit_yes",
+    "label": "Do It",
+    "desc": "Security sends a list; you confirm or update the recovery email and phone on each. Who does it: Max, With A Checklist From Security.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Security sends a list; you confirm or</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">update the recovery email and phone on</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">each. Who does it: Max, With A</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Checklist From Security.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bksec_recovery-audit_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: Old recovery emails or numbers on Google, Apple, GitHub and banks are a back door into your accounts.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: Old</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">recovery emails or numbers on Google,</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Apple, GitHub and banks are a back</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">door into your accounts.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Password Reset",
+   "category": "Password Reset",
+   "app": "Security",
+   "ask": "Change Niko's Home Guide Password: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-1-17",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "rotate-home-guide",
+   "optionA": {
+    "id": "bksec_rotate-home-guide_yes",
+    "label": "Do It",
+    "desc": "Construction changes it and tells Niko the new one. This touches a live client app, so it happens only with your OK. Who does it: Construction, With Your OK.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Construction changes it and tells Niko</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">the new one. This touches a live</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">client app, so it happens only with</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">your OK. Who does it: Construction,</text><text x=\"18\" y=\"168\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">With Your OK.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bksec_rotate-home-guide_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: The Home Guide password sat in plain text in test scripts on the shared computer. It is scrubbed now, but treat it as exposed.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: The</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Home Guide password sat in plain text</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">in test scripts on the shared</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">computer. It is scrubbed now, but</text><text x=\"18\" y=\"168\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">treat it as exposed.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Password Reset",
+   "category": "Password Reset",
+   "app": "Security",
+   "ask": "Change The Mellow Wood Lockbox Code: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-1-18",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "lockbox-code",
+   "optionA": {
+    "id": "bksec_lockbox-code_yes",
+    "label": "Do It",
+    "desc": "Change the code at the next visit and keep it only in your password manager. Who does it: Max, With Prop.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Change the code at the next visit and</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">keep it only in your password manager.</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Who does it: Max, With Prop.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bksec_lockbox-code_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: The rental lockbox code sat in plain text in an agent's memory file. Scrubbed now.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: The</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">rental lockbox code sat in plain text</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">in an agent&#x27;s memory file. Scrubbed</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">now.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Password Reset",
+   "category": "Password Reset",
+   "app": "Security",
+   "ask": "Safe Wi-Fi While Traveling In Thailand: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-1-19",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "travel-wifi",
+   "optionA": {
+    "id": "bksec_travel-wifi_yes",
+    "label": "Do It",
+    "desc": "Use your phone hotspot or a trusted VPN for banking, and turn off auto-join for open networks. Who does it: Max, With A Guide From Security.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Use your phone hotspot or a trusted</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">VPN for banking, and turn off</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">auto-join for open networks. Who does</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">it: Max, With A Guide From Security.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bksec_travel-wifi_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: Hotel and cafe Wi-Fi can be watched or faked, and you log into banks while traveling.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters:</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Hotel and cafe Wi-Fi can be watched or</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">faked, and you log into banks while</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">traveling.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Password Reset",
+   "category": "Password Reset",
+   "app": "Security",
+   "ask": "Monthly Scan For Plain-Text Passwords: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-1-20",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "monthly-plaintext-scan",
+   "optionA": {
+    "id": "bksec_monthly-plaintext-scan_yes",
+    "label": "Do It",
+    "desc": "Each month Security searches the shared computer for plain-text passwords and tokens and replaces them with a pointer to the vault. Who does it: Security.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Each month Security searches the</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">shared computer for plain-text</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">passwords and tokens and replaces them</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">with a pointer to the vault. Who does</text><text x=\"18\" y=\"168\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">it: Security.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bksec_monthly-plaintext-scan_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: Passwords were found in plain text in shared files and scrubbed. New ones can creep back in.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters:</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Passwords were found in plain text in</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">shared files and scrubbed. New ones</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">can creep back in.</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  }
+ ],
+ "share": true,
+ "notes": true
+}
