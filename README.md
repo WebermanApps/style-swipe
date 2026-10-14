@@ -40,3 +40,9 @@ then commit + push style-swipe and the dashboard repo. Skips come first, reworde
 ## Deck cap (Max, Oct 14 2026 19:43 ICT)
 No agent dashboard shows more than 5 decks, ready-shelf AND pinned unfinished together. Only exception: the Deck Building page (branding /decks/).
 `kit/deck-shelf.js` enforces it: pinned unfinished decks (`shelf.json` `pinned`/`unfinished`, or `DeckShelf.render(el, json, {pinned:[...]})`) go first, then ready decks, cut at 5; the rest are queued (`DeckShelf.queued(el)`) and show only when a slot opens. Do not render a separate pinned/unfinished strip next to the shelf; pass it in so the cap counts it. Deck Building page only: `data-shelf-nocap`.
+
+## Custom shelves: deck-queue.json optional fields (Oct 14 2026 20:04 ICT)
+Agents with their own carousel (e.g. WellNest `deck-queue.json`) may add per deck:
+- `answered` (int): cards answered so far; > 0 shows Continue and moves the deck first.
+- `added` (ISO time the deck was built): orders the rest newest first.
+Same meaning as `answered` / `added` in kit `shelf.json`. Fill from ops/submit/inbox/<agent> submissions and queue/carry_over.json.
