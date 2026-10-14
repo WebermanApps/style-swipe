@@ -1125,7 +1125,7 @@ function setDeck(d){
    let list=d.cards;
    if(d.source_deck){const old=readStore(`styleSwipe:${d.source_deck}`);const done=new Set(((old&&Array.isArray(old.picks))?old.picks:[]).map(p=>p&&p.pair_id).filter(Boolean));
     list=list.filter(c=>!done.has(c.source_pair));}
-   items=list.slice(0,d.deck_size||25);
+   items=list.slice(0,d.deck_size||20);
   }
  }else items=Array.isArray(d.pairs)?d.pairs:[];
  if(s&&Array.isArray(s.picks)&&s.picks.every(p=>p&&typeof p==='object')&&(!single||s.v===3)){picks=s.picks;idx=Math.min(Number.isFinite(s.idx)?s.idx:picks.length,items.length)}
@@ -1359,7 +1359,7 @@ document.addEventListener('keydown',e=>{if($('#noteSheet').classList.contains('o
 $('#deckFile').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{const d=JSON.parse(await f.text());if(!d.pairs&&!d.cards)throw 0;setDeck(d);toast(`Loaded deck ${d.date}`)}catch(_){toast('Not a valid deck file')}};
 $('#creditsLink').onclick=e=>{e.preventDefault();const c=(deck&&deck.image_credits)||{};$('#main').innerHTML=`<div class="end"><h2>Image Credits</h2><div class="catlist">${Object.values(c).map(x=>`<div><a style="color:#05668D" href="${esc(x.source)}" target="_blank" rel="noopener">${esc(x.title)}</a> · ${esc(x.artist||'Unknown')} · ${esc(x.license)}</div>`).join('')||'None'}</div><div class="btnrow"><button class="mw-hover" id="cBack">Back</button></div></div>`;showControls(false);$('#cBack').onclick=()=>render()};
 
-/* ---------- Mix mode: ?mix=slug1,slug2&n=25 interleaves pairs from banks/<slug>.json ---------- */
+/* ---------- Mix mode: ?mix=slug1,slug2&n=20 (max 20) interleaves pairs from banks/<slug>.json ---------- */
 function shuf(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 async function loadBankIndex(){try{const r=await fetch('banks/index.json',{cache:'no-cache'});if(r.ok)return await r.json()}catch(_){}return {}}
 async function buildMix(slugs,n){
@@ -1386,7 +1386,7 @@ async function offerBank(want){
  return true}
 (async()=>{
  const qs=new URLSearchParams(location.search),want=qs.get('date')||window.DEFAULT_DECK,mix=qs.get('mix');
- if(mix){const slugs=mix.split(',').map(s=>s.trim()).filter(Boolean);const n=Math.max(1,Math.min(200,parseInt(qs.get('n'),10)||25));
+ if(mix){const slugs=mix.split(',').map(s=>s.trim()).filter(Boolean);const n=Math.max(1,Math.min(20,parseInt(qs.get('n'),10)||20));
   const d=await buildMix(slugs,n);if(d)return setDeck(d);toast(`Could not load bank(s) ${mix}`)}
  if(want&&(!EMBEDDED_DECK||EMBEDDED_DECK.date!==want)){try{const r=await fetch(`decks/${want}.json`,{cache:'no-cache'});if(r.ok)return setDeck(await r.json())}catch(_){}
   if(await offerBank(want))return;toast(`Deck ${want} not found; showing embedded deck`)}

@@ -1135,7 +1135,7 @@ function setDeck(d){
    let list=d.cards;
    if(d.source_deck){const old=readStore(`styleSwipe:${d.source_deck}`);const done=new Set(((old&&Array.isArray(old.picks))?old.picks:[]).map(p=>p&&p.pair_id).filter(Boolean));
     list=list.filter(c=>!done.has(c.source_pair));}
-   items=list.slice(0,d.deck_size||25);
+   items=list.slice(0,d.deck_size||20);
   }
  }else items=Array.isArray(d.pairs)?d.pairs:[];
  if(s&&Array.isArray(s.picks)&&s.picks.every(p=>p&&typeof p==='object')&&(!single||s.v===3)){picks=s.picks;idx=Math.min(Number.isFinite(s.idx)?s.idx:picks.length,items.length)}
@@ -1396,7 +1396,7 @@ async function offerBank(want){
  return true}
 (async()=>{
  const qs=new URLSearchParams(location.search),want=qs.get('date')||window.DEFAULT_DECK,mix=qs.get('mix');
- if(mix){const slugs=mix.split(',').map(s=>s.trim()).filter(Boolean);const n=Math.max(1,Math.min(200,parseInt(qs.get('n'),10)||25));
+ if(mix){const slugs=mix.split(',').map(s=>s.trim()).filter(Boolean);const n=Math.max(1,Math.min(20,parseInt(qs.get('n'),10)||20));
   const d=await buildMix(slugs,n);if(d)return setDeck(d);toast(`Could not load bank(s) ${mix}`)}
  if(want&&(!EMBEDDED_DECK||EMBEDDED_DECK.date!==want)){try{const r=await fetch(`decks/${want}.json`,{cache:'no-cache'});if(r.ok)return setDeck(await r.json())}catch(_){}
   if(await offerBank(want))return;toast(`Deck ${want} not found; showing embedded deck`)}

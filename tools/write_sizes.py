@@ -41,6 +41,7 @@ def main():
             banks[slug] = int(n)
     if banks:
         sizes["banks"] = banks
+    sizes["max_pairs"] = 20   # Oct 14 2026 rule: decks never exceed 20 pairs (existing live decks keep their size)
     os.makedirs(DECKS, exist_ok=True)
     json.dump(sizes, open(OUT, "w"), indent=1, ensure_ascii=False)
     print(f"wrote {OUT}: {len(sizes) - (1 if banks else 0)} decks, {len(banks)} banks")

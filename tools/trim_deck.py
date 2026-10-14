@@ -2,10 +2,12 @@
 """Trim unsubmitted Style Swipe pair decks to DECK_SIZE pairs (strongest + most varied); cut pairs go to banks/overflow/<id>.json.
 Keeps every 'check' pair (the rejected-direction rules), retests/re-asks/winners, then fills by category/group/app variety. Pair ids are kept."""
 import json, sys, glob, os, collections, datetime as dt
-DECK_SIZE = 25
+DECK_SIZE = 20   # hard max (Max, Oct 14 2026): decks never exceed 20 pairs; shorter is fine
+MAX_PAIRS = 20
 KEEP_FIRST = {"check": 0, "retest": 1, "reask": 2, "winner": 3, "combo": 4}
 
 def select(pairs, n=DECK_SIZE):
+    if n > MAX_PAIRS: print(f"WARNING: {n} pairs asked; decks never exceed {MAX_PAIRS}. Trimming to {MAX_PAIRS}."); n = MAX_PAIRS
     """Return (keep, cut): the n strongest + most varied pairs in original order, and the rest."""
     if len(pairs) <= n: return list(pairs), []
     idx = list(range(len(pairs))); chosen = []
