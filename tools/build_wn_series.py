@@ -30,7 +30,7 @@ def render(o, dk, side, i):
     raise ValueError(kind)
 def slug_for(did, base):
     if did not in slugs:
-        slugs[did] = "wellnest-" + base + "-" + "".join(random.choice(string.ascii_lowercase + string.digits) for _ in range(6))
+        slugs[did] = "wellnest-" + base + "-" + "".join(__import__("secrets").choice(string.ascii_lowercase + string.digits) for _ in range(6))
         json.dump(slugs, open(SLUGS, "w"), indent=1)
     return slugs[did]
 def page(did, slug):
