@@ -1,0 +1,938 @@
+{
+ "slug": "miles-travel",
+ "name": "Travel Goals",
+ "version": 1,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "status": "bank",
+ "english_only": true,
+ "light_only": true,
+ "example_data_only": true,
+ "count": 22,
+ "pairs": [
+  {
+   "group": "Travel",
+   "category": "Travel Goals",
+   "app": "Miles",
+   "ask": "Main Route: Bangkok To Japan Or Bangkok To US?",
+   "optionA": {
+    "id": "miles-travel-01a",
+    "label": "Bangkok To Japan",
+    "desc": "Short-haul, many trips",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Bangkok To Japan</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Short-haul, many trips</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-travel-01b",
+    "label": "Bangkok To US",
+    "desc": "Long-haul, big award",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Bangkok To US</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Long-haul, big award</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-travel-01",
+   "repeat": false
+  },
+  {
+   "group": "Travel",
+   "category": "Travel Goals",
+   "app": "Miles",
+   "ask": "Long Flights: Business Or Premium Economy?",
+   "optionA": {
+    "id": "miles-travel-02a",
+    "label": "Business",
+    "desc": "Lie-flat seat",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Business</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Lie-flat seat</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-travel-02b",
+    "label": "Premium Economy",
+    "desc": "More room, fewer points",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Premium Economy</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">More room, fewer points</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-travel-02",
+   "repeat": false
+  },
+  {
+   "group": "Travel",
+   "category": "Travel Goals",
+   "app": "Miles",
+   "ask": "Short Flights: Economy Or Business?",
+   "optionA": {
+    "id": "miles-travel-03a",
+    "label": "Economy",
+    "desc": "Save points on short hops",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Economy</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Save points on short hops</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-travel-03b",
+    "label": "Business",
+    "desc": "Comfort even on short trips",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Business</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Comfort even on short trips</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-travel-03",
+   "repeat": false
+  },
+  {
+   "group": "Travel",
+   "category": "Travel Goals",
+   "app": "Miles",
+   "ask": "Next Big Trip: Within 3 Months Or Later?",
+   "optionA": {
+    "id": "miles-travel-04a",
+    "label": "Within 3 Months",
+    "desc": "Book soon",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Within 3 Months</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Book soon</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-travel-04b",
+    "label": "Later",
+    "desc": "6 months or more out",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Later</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">6 months or more out</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-travel-04",
+   "repeat": false
+  },
+  {
+   "group": "Travel",
+   "category": "Travel Goals",
+   "app": "Miles",
+   "ask": "Travel Party: Solo Or With Someone?",
+   "optionA": {
+    "id": "miles-travel-05a",
+    "label": "Solo",
+    "desc": "One seat",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Solo</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">One seat</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-travel-05b",
+    "label": "With Someone",
+    "desc": "Two or more seats",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">With Someone</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Two or more seats</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-travel-05",
+   "repeat": false
+  },
+  {
+   "group": "Travel",
+   "category": "Travel Goals",
+   "app": "Miles",
+   "ask": "Trip Style: City Breaks Or Beach Time?",
+   "optionA": {
+    "id": "miles-travel-06a",
+    "label": "City Breaks",
+    "desc": "Tokyo, Seoul, Singapore",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">City Breaks</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Tokyo, Seoul, Singapore</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-travel-06b",
+    "label": "Beach Time",
+    "desc": "Islands and resorts",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Beach Time</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Islands and resorts</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-travel-06",
+   "repeat": false
+  },
+  {
+   "group": "Travel",
+   "category": "Travel Goals",
+   "app": "Miles",
+   "ask": "Region Next: Asia Or Europe?",
+   "optionA": {
+    "id": "miles-travel-07a",
+    "label": "Asia",
+    "desc": "Close and easy",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Asia</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Close and easy</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-travel-07b",
+    "label": "Europe",
+    "desc": "Bigger trip",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Europe</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Bigger trip</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-travel-07",
+   "repeat": false
+  },
+  {
+   "group": "Travel",
+   "category": "Travel Goals",
+   "app": "Miles",
+   "ask": "Dates: Fixed Or Flexible?",
+   "optionA": {
+    "id": "miles-travel-08a",
+    "label": "Fixed Dates",
+    "desc": "Must travel on set days",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Fixed Dates</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Must travel on set days</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-travel-08b",
+    "label": "Flexible",
+    "desc": "Any week works",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Flexible</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Any week works</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-travel-08",
+   "repeat": false
+  },
+  {
+   "group": "Travel",
+   "category": "Travel Goals",
+   "app": "Miles",
+   "ask": "Departure: Bangkok Only Or Positioning OK?",
+   "optionA": {
+    "id": "miles-travel-09a",
+    "label": "Bangkok Only",
+    "desc": "Start every trip at home",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Bangkok Only</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Start every trip at home</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-travel-09b",
+    "label": "Positioning OK",
+    "desc": "Fly elsewhere to start",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Positioning OK</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Fly elsewhere to start</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-travel-09",
+   "repeat": false
+  },
+  {
+   "group": "Travel",
+   "category": "Travel Goals",
+   "app": "Miles",
+   "ask": "Connections: Nonstop Only Or Stops OK?",
+   "optionA": {
+    "id": "miles-travel-10a",
+    "label": "Nonstop",
+    "desc": "Fewer hours",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Nonstop</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Fewer hours</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-travel-10b",
+    "label": "Stops OK",
+    "desc": "More award options",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Stops OK</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">More award options</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-travel-10",
+   "repeat": false
+  },
+  {
+   "group": "Travel",
+   "category": "Travel Goals",
+   "app": "Miles",
+   "ask": "Airline: ANA Or Thai Airways?",
+   "optionA": {
+    "id": "miles-travel-11a",
+    "label": "ANA",
+    "desc": "Japanese service",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">ANA</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Japanese service</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-travel-11b",
+    "label": "Thai Airways",
+    "desc": "Home carrier",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Thai Airways</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Home carrier</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-travel-11",
+   "repeat": false
+  },
+  {
+   "group": "Travel",
+   "category": "Travel Goals",
+   "app": "Miles",
+   "ask": "Season: Cherry Blossom Or Autumn Leaves?",
+   "optionA": {
+    "id": "miles-travel-12a",
+    "label": "Cherry Blossom",
+    "desc": "Spring in Japan",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Cherry Blossom</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Spring in Japan</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-travel-12b",
+    "label": "Autumn",
+    "desc": "Fall colors, fewer crowds",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Autumn</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Fall colors, fewer crowds</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-travel-12",
+   "repeat": false
+  },
+  {
+   "group": "Travel",
+   "category": "Travel Goals",
+   "app": "Miles",
+   "ask": "Trip Length: Long Weekend Or Two Weeks?",
+   "optionA": {
+    "id": "miles-travel-13a",
+    "label": "Long Weekend",
+    "desc": "3-4 days",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Long Weekend</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">3-4 days</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-travel-13b",
+    "label": "Two Weeks",
+    "desc": "Longer trips",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Two Weeks</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Longer trips</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-travel-13",
+   "repeat": false
+  },
+  {
+   "group": "Travel",
+   "category": "Travel Goals",
+   "app": "Miles",
+   "ask": "Hotels: Luxury Points Stay Or Simple Cash Stay?",
+   "optionA": {
+    "id": "miles-travel-14a",
+    "label": "Luxury On Points",
+    "desc": "Splurge with points",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Luxury On Points</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Splurge with points</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-travel-14b",
+    "label": "Simple Cash",
+    "desc": "Save points for flights",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Simple Cash</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Save points for flights</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-travel-14",
+   "repeat": false
+  },
+  {
+   "group": "Travel",
+   "category": "Travel Goals",
+   "app": "Miles",
+   "ask": "Planning: You Plan Options Or I Pick Destinations?",
+   "optionA": {
+    "id": "miles-travel-15a",
+    "label": "You Plan",
+    "desc": "Suggest trips that fit my points",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">You Plan</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Suggest trips that fit my</text><text x=\"120\" y=\"186\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">points</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-travel-15b",
+    "label": "I Pick",
+    "desc": "I'll tell you where",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">I Pick</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">I&#x27;ll tell you where</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-travel-15",
+   "repeat": false
+  },
+  {
+   "group": "Travel",
+   "category": "Travel Goals",
+   "app": "Miles",
+   "ask": "Holidays: Peak Season OK Or Avoid?",
+   "optionA": {
+    "id": "miles-travel-16a",
+    "label": "Peak OK",
+    "desc": "Travel during holidays",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Peak OK</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Travel during holidays</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-travel-16b",
+    "label": "Avoid Peak",
+    "desc": "Quieter, better award space",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Avoid Peak</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Quieter, better award space</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-travel-16",
+   "repeat": false
+  },
+  {
+   "group": "Travel",
+   "category": "Travel Goals",
+   "app": "Miles",
+   "ask": "Bucket List: First Class Once Or Many Business Trips?",
+   "optionA": {
+    "id": "miles-travel-17a",
+    "label": "First Class Once",
+    "desc": "One special flight",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">First Class Once</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">One special flight</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-travel-17b",
+    "label": "Many Business Trips",
+    "desc": "Spread the value",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Many Business Trips</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Spread the value</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-travel-17",
+   "repeat": false
+  },
+  {
+   "group": "Travel",
+   "category": "Travel Goals",
+   "app": "Miles",
+   "ask": "US Trips: West Coast Or East Coast?",
+   "optionA": {
+    "id": "miles-travel-18a",
+    "label": "West Coast",
+    "desc": "LA, San Francisco",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">West Coast</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">LA, San Francisco</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-travel-18b",
+    "label": "East Coast",
+    "desc": "New York, Boston",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">East Coast</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">New York, Boston</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-travel-18",
+   "repeat": false
+  },
+  {
+   "group": "Travel",
+   "category": "Travel Goals",
+   "app": "Miles",
+   "ask": "Trip Count: One Big Trip A Year Or Many Small Ones?",
+   "optionA": {
+    "id": "miles-travel-19a",
+    "label": "One Big Trip",
+    "desc": "Save for it",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">One Big Trip</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Save for it</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-travel-19b",
+    "label": "Many Small Trips",
+    "desc": "Travel often",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Many Small Trips</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Travel often</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-travel-19",
+   "repeat": false
+  },
+  {
+   "group": "Travel",
+   "category": "Travel Goals",
+   "app": "Miles",
+   "ask": "Lounges On Trips: Plan Around Them Or Not?",
+   "optionA": {
+    "id": "miles-travel-20a",
+    "label": "Plan Around",
+    "desc": "Long layovers in good lounges",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Plan Around</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Long layovers in good lounges</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-travel-20b",
+    "label": "Not Needed",
+    "desc": "Quick connections",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Not Needed</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Quick connections</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-travel-20",
+   "repeat": false
+  },
+  {
+   "group": "Travel",
+   "category": "Travel Goals",
+   "app": "Miles",
+   "ask": "Booking Help: Hold Seats For Me Or Ask First?",
+   "optionA": {
+    "id": "miles-travel-21a",
+    "label": "Ask First",
+    "desc": "Check with me before booking",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Ask First</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Check with me before booking</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-travel-21b",
+    "label": "Hold Seats",
+    "desc": "Hold when free, I'll confirm",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Hold Seats</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Hold when free, I&#x27;ll confirm</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-travel-21",
+   "repeat": false
+  },
+  {
+   "group": "Travel",
+   "category": "Travel Goals",
+   "app": "Miles",
+   "ask": "Mom's Trips: Plan With Her Points Too Or Separate?",
+   "optionA": {
+    "id": "miles-travel-22a",
+    "label": "Plan Together",
+    "desc": "Combine plans",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Plan Together</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Combine plans</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-travel-22b",
+    "label": "Separate",
+    "desc": "Keep her points apart",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Separate</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Keep her points apart</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-travel-22",
+   "repeat": false
+  }
+ ]
+}

@@ -1,0 +1,938 @@
+{
+ "slug": "miles-card",
+ "name": "New Card Priorities",
+ "version": 1,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "status": "bank",
+ "english_only": true,
+ "light_only": true,
+ "example_data_only": true,
+ "count": 22,
+ "pairs": [
+  {
+   "group": "Cards",
+   "category": "New Card Priorities",
+   "app": "Miles",
+   "ask": "Next Card: Travel Perks Or Cash Back?",
+   "optionA": {
+    "id": "miles-card-01a",
+    "label": "Travel Perks",
+    "desc": "Lounges, credits, transferable miles",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Travel Perks</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Lounges, credits, transferable</text><text x=\"120\" y=\"186\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">miles</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-card-01b",
+    "label": "Cash Back",
+    "desc": "Simple cash on every purchase",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Cash Back</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Simple cash on every purchase</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-card-01",
+   "repeat": false
+  },
+  {
+   "group": "Cards",
+   "category": "New Card Priorities",
+   "app": "Miles",
+   "ask": "Next Card: Big Sign-Up Bonus Or Ongoing Earn?",
+   "optionA": {
+    "id": "miles-card-02a",
+    "label": "Big Sign-Up Bonus",
+    "desc": "One large bonus in the first months",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Big Sign-Up Bonus</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">One large bonus in the first</text><text x=\"120\" y=\"186\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">months</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-card-02b",
+    "label": "Ongoing Earn",
+    "desc": "Higher points on everyday spend",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Ongoing Earn</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Higher points on everyday spend</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-card-02",
+   "repeat": false
+  },
+  {
+   "group": "Cards",
+   "category": "New Card Priorities",
+   "app": "Miles",
+   "ask": "Next Card: Annual Fee With Perks Or No Fee?",
+   "optionA": {
+    "id": "miles-card-03a",
+    "label": "Fee With Perks",
+    "desc": "Pay a fee if credits cover it",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Fee With Perks</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Pay a fee if credits cover it</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-card-03b",
+    "label": "No Annual Fee",
+    "desc": "Keep it free forever",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">No Annual Fee</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Keep it free forever</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-card-03",
+   "repeat": false
+  },
+  {
+   "group": "Cards",
+   "category": "New Card Priorities",
+   "app": "Miles",
+   "ask": "Next Card: Personal Or Business?",
+   "optionA": {
+    "id": "miles-card-04a",
+    "label": "Personal",
+    "desc": "Personal card in your name",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Personal</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Personal card in your name</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-card-04b",
+    "label": "Business",
+    "desc": "Business card for work spend",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Business</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Business card for work spend</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-card-04",
+   "repeat": false
+  },
+  {
+   "group": "Cards",
+   "category": "New Card Priorities",
+   "app": "Miles",
+   "ask": "Ecosystem: Stay With Capital One Or Add Amex?",
+   "optionA": {
+    "id": "miles-card-05a",
+    "label": "Stay Capital One",
+    "desc": "Build on Venture X miles",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Stay Capital One</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Build on Venture X miles</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-card-05b",
+    "label": "Add Amex",
+    "desc": "Start earning Membership Rewards",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Add Amex</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Start earning Membership</text><text x=\"120\" y=\"186\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Rewards</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-card-05",
+   "repeat": false
+  },
+  {
+   "group": "Cards",
+   "category": "New Card Priorities",
+   "app": "Miles",
+   "ask": "Ecosystem: Add Chase Or Add Amex?",
+   "optionA": {
+    "id": "miles-card-06a",
+    "label": "Add Chase",
+    "desc": "Ultimate Rewards, Hyatt access",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Add Chase</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Ultimate Rewards, Hyatt access</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-card-06b",
+    "label": "Add Amex",
+    "desc": "Membership Rewards, more airlines",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Add Amex</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Membership Rewards, more</text><text x=\"120\" y=\"186\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">airlines</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-card-06",
+   "repeat": false
+  },
+  {
+   "group": "Cards",
+   "category": "New Card Priorities",
+   "app": "Miles",
+   "ask": "Lounge Access: Must Have Or Nice To Have?",
+   "optionA": {
+    "id": "miles-card-07a",
+    "label": "Must Have",
+    "desc": "Only cards with lounge access",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Must Have</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Only cards with lounge access</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-card-07b",
+    "label": "Nice To Have",
+    "desc": "Fine without it",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Nice To Have</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Fine without it</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-card-07",
+   "repeat": false
+  },
+  {
+   "group": "Cards",
+   "category": "New Card Priorities",
+   "app": "Miles",
+   "ask": "Sign-Up Spend: Easy Or Push Harder?",
+   "optionA": {
+    "id": "miles-card-08a",
+    "label": "Easy Spend",
+    "desc": "Bonus I can hit with normal spending",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Easy Spend</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Bonus I can hit with normal</text><text x=\"120\" y=\"186\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">spending</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-card-08b",
+    "label": "Push Harder",
+    "desc": "Bigger bonus, I can plan spend",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Push Harder</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Bigger bonus, I can plan spend</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-card-08",
+   "repeat": false
+  },
+  {
+   "group": "Cards",
+   "category": "New Card Priorities",
+   "app": "Miles",
+   "ask": "Card Count: One Strong Card Or A Few Specialists?",
+   "optionA": {
+    "id": "miles-card-09a",
+    "label": "One Card",
+    "desc": "Simple, one card for everything",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">One Card</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Simple, one card for everything</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-card-09b",
+    "label": "A Few Cards",
+    "desc": "Best card per category",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">A Few Cards</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Best card per category</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-card-09",
+   "repeat": false
+  },
+  {
+   "group": "Cards",
+   "category": "New Card Priorities",
+   "app": "Miles",
+   "ask": "Earn Focus: Dining And Travel Or Everything Flat?",
+   "optionA": {
+    "id": "miles-card-10a",
+    "label": "Dining And Travel",
+    "desc": "Bonus categories where I spend",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Dining And Travel</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Bonus categories where I spend</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-card-10b",
+    "label": "Flat Rate",
+    "desc": "Same earn everywhere",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Flat Rate</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Same earn everywhere</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-card-10",
+   "repeat": false
+  },
+  {
+   "group": "Cards",
+   "category": "New Card Priorities",
+   "app": "Miles",
+   "ask": "Foreign Spend: Zero FX Fee Required Or Not?",
+   "optionA": {
+    "id": "miles-card-11a",
+    "label": "Zero FX Fee",
+    "desc": "I spend abroad a lot",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Zero FX Fee</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">I spend abroad a lot</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-card-11b",
+    "label": "Not Needed",
+    "desc": "Mostly home spend",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Not Needed</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Mostly home spend</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-card-11",
+   "repeat": false
+  },
+  {
+   "group": "Cards",
+   "category": "New Card Priorities",
+   "app": "Miles",
+   "ask": "Hotel Status Perk Or Airline Perk?",
+   "optionA": {
+    "id": "miles-card-12a",
+    "label": "Hotel Status",
+    "desc": "Elite status at a hotel chain",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Hotel Status</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Elite status at a hotel chain</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-card-12b",
+    "label": "Airline Perk",
+    "desc": "Free bags, priority boarding",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Airline Perk</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Free bags, priority boarding</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-card-12",
+   "repeat": false
+  },
+  {
+   "group": "Cards",
+   "category": "New Card Priorities",
+   "app": "Miles",
+   "ask": "Statement Credits: Use Them Or Ignore Them?",
+   "optionA": {
+    "id": "miles-card-13a",
+    "label": "I Use Credits",
+    "desc": "Travel, dining, streaming credits count",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">I Use Credits</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Travel, dining, streaming</text><text x=\"120\" y=\"186\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">credits count</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-card-13b",
+    "label": "Ignore Credits",
+    "desc": "Value only points and cash",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Ignore Credits</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Value only points and cash</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-card-13",
+   "repeat": false
+  },
+  {
+   "group": "Cards",
+   "category": "New Card Priorities",
+   "app": "Miles",
+   "ask": "Timing: Apply This Month Or Wait For A Better Offer?",
+   "optionA": {
+    "id": "miles-card-14a",
+    "label": "Apply Soon",
+    "desc": "Take a good offer now",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Apply Soon</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Take a good offer now</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-card-14b",
+    "label": "Wait",
+    "desc": "Hold for an elevated bonus",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Wait</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Hold for an elevated bonus</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-card-14",
+   "repeat": false
+  },
+  {
+   "group": "Cards",
+   "category": "New Card Priorities",
+   "app": "Miles",
+   "ask": "Metal Card Look Or Don't Care?",
+   "optionA": {
+    "id": "miles-card-15a",
+    "label": "Premium Look",
+    "desc": "Metal card feels nice",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Premium Look</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Metal card feels nice</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-card-15b",
+    "label": "Don't Care",
+    "desc": "Only value matters",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Don&#x27;t Care</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Only value matters</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-card-15",
+   "repeat": false
+  },
+  {
+   "group": "Cards",
+   "category": "New Card Priorities",
+   "app": "Miles",
+   "ask": "Card Use: Main Daily Card Or Travel-Only Card?",
+   "optionA": {
+    "id": "miles-card-16a",
+    "label": "Main Daily Card",
+    "desc": "Use it for everything",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Main Daily Card</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Use it for everything</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-card-16b",
+    "label": "Travel Only",
+    "desc": "Use it on trips",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Travel Only</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Use it on trips</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-card-16",
+   "repeat": false
+  },
+  {
+   "group": "Cards",
+   "category": "New Card Priorities",
+   "app": "Miles",
+   "ask": "Co-Branded Airline Card Or Flexible Points Card?",
+   "optionA": {
+    "id": "miles-card-17a",
+    "label": "Airline Card",
+    "desc": "Perks with one airline",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Airline Card</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Perks with one airline</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-card-17b",
+    "label": "Flexible Points",
+    "desc": "Transfer to many partners",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Flexible Points</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Transfer to many partners</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-card-17",
+   "repeat": false
+  },
+  {
+   "group": "Cards",
+   "category": "New Card Priorities",
+   "app": "Miles",
+   "ask": "Authorized User: Add Someone Or Solo?",
+   "optionA": {
+    "id": "miles-card-18a",
+    "label": "Add A User",
+    "desc": "Share perks with family",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Add A User</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Share perks with family</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-card-18b",
+    "label": "Solo",
+    "desc": "Just me",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Solo</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Just me</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-card-18",
+   "repeat": false
+  },
+  {
+   "group": "Cards",
+   "category": "New Card Priorities",
+   "app": "Miles",
+   "ask": "Recommendation Style: Top Pick Or Short List?",
+   "optionA": {
+    "id": "miles-card-19a",
+    "label": "One Top Pick",
+    "desc": "Tell me the single best card",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">One Top Pick</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Tell me the single best card</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-card-19b",
+    "label": "Short List",
+    "desc": "Show me 3 to compare",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Short List</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Show me 3 to compare</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-card-19",
+   "repeat": false
+  },
+  {
+   "group": "Cards",
+   "category": "New Card Priorities",
+   "app": "Miles",
+   "ask": "Fee Over Time: Keep Long-Term Or Downgrade After Year 1?",
+   "optionA": {
+    "id": "miles-card-20a",
+    "label": "Keep Long-Term",
+    "desc": "A card I keep for years",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Keep Long-Term</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">A card I keep for years</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-card-20b",
+    "label": "Downgrade Later",
+    "desc": "Take the bonus, then downgrade",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Downgrade Later</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Take the bonus, then downgrade</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-card-20",
+   "repeat": false
+  },
+  {
+   "group": "Cards",
+   "category": "New Card Priorities",
+   "app": "Miles",
+   "ask": "Protections: Travel Insurance Matters Or Not?",
+   "optionA": {
+    "id": "miles-card-21a",
+    "label": "Matters",
+    "desc": "Trip delay, rental cover",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Matters</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Trip delay, rental cover</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-card-21b",
+    "label": "Not Important",
+    "desc": "I don't rely on it",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Not Important</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">I don&#x27;t rely on it</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-card-21",
+   "repeat": false
+  },
+  {
+   "group": "Cards",
+   "category": "New Card Priorities",
+   "app": "Miles",
+   "ask": "Mobile Wallet: Must Work With Apple Pay?",
+   "optionA": {
+    "id": "miles-card-22a",
+    "label": "Must Work",
+    "desc": "Tap to pay is essential",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Must Work</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Tap to pay is essential</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "miles-card-22b",
+    "label": "Not Important",
+    "desc": "Plastic is fine",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Not Important</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Plastic is fine</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-card-22",
+   "repeat": false
+  }
+ ]
+}
