@@ -48,6 +48,13 @@ def tbl(y, heads, xs, data, h=22):
         for j, (x, v) in enumerate(zip(xs, r)): s += v if v.startswith("<") else tx(x, yy + 14.5, v, 8.5 if j == 0 else 8, INK if j == 0 else MUTE, w=600 if j == 0 else None)
     return s
 
+# ===================== Carried first (R64 reword of agent-dashboards-20, queue/carry_over.json) =====================
+P("Grok Bot (Apps Home)", "Apps Home: How Should The Agent List Be Ordered?",
+  ("ah_area", "Sorted By Topic (Fixed Spots)", "Home, money, learning, work groups; each agent stays in the same spot.", "calm",
+   frame("Apps Home", "".join(tx(14, 52 + g * 58, n, 8, ACC[g], w=600) + "".join(R(14 + i * 54, 58 + g * 58, 50, 44, ACC[g] + "1F", r=6) + D(39 + i * 54, 72 + g * 58, 6, ACC[g]) + tx(39 + i * 54, 94 + g * 58, "Agent", 8, INK, w=600, a="middle") for i in range(4)) for g, n in enumerate(["HOME", "MONEY", "LEARNING", "WORK"])), LAGOON)),
+  ("ah_wait", "Agents That Need You First (Changes Daily)", "The agent with the most items waiting for your reply goes to the top.", "focused",
+   frame("Apps Home", "".join(card(14, 44 + i * 30, 212, 26, ACC[i % 4]) + tx(24, 61 + i * 30, f"Example Agent {i+1}", 8.5, INK, w=600) + R(186, 50 + i * 30, 22, 14, TERRA, r=7) + tx(197, 60 + i * 30, str(5 - i), 8, WH, w=600, a="middle") for i in range(5)) + tx(14, 210, "NOTHING WAITING", 8, MUTE, w=600) + "".join(R(14 + i * 54, 216, 50, 30, LN + "88", r=6) for i in range(4)), LAGOON)))
+pairs[0]["carried_ids"] = ["ad_ah_area", "ad_ah_wait"]; pairs[0]["carried_from"] = "agent-dashboards-20"; pairs[0]["purpose"] = "retest"
 # ===================== UpKeep (internal board only) =====================
 P("UpKeep", "UpKeep Board Deadlines: Next Three With Days Left Or A Month Strip?",
   ("uk_next", "Next Three, Days Left", "Three closest deadlines as rows, days left on the right.", "focused",
@@ -98,11 +105,6 @@ P("Blog", "Blog Posts: Separate Sections Or One Stage Strip (Draft, Rewrite, Rea
    frame("Blog", sec(54, "Ready To Publish") + rows(62, ["Example post title", "Example post title"]) + sec(126, "New Drafts") + rows(134, ["Example post title", "Example post title", "Example post title"]), SAFFRON)),
   ("bl_strip", "One Stage Strip", "Tabs with counts: Draft, Rewrite, Ready; one list below.", "focused",
    frame("Blog", "".join(R(14 + i * 72, 46, 68, 30, (SAFFRON + "26" if i == 2 else WH), (SAFFRON if i == 2 else LN), 6) + tx(48 + i * 72, 59, n, 8.5, INK, w=600, a="middle") + tx(48 + i * 72, 71, c, 8, MUTE, a="middle") for i, (n, c) in enumerate([("Draft", "10"), ("Rewrite", "3"), ("Ready", "1")])) + rows(88, ["Example post title", "Example post title", "Example post title"]), SAFFRON)))
-P("Blog", "Blog Drafts: Title Rows Or Cards With The First Line?",
-  ("bl_title", "Title Rows", "Title only, status on the right, tap to read.", "focused",
-   frame("Blog", sec(54, "New Drafts") + rows(62, ["Example post title one", "Example post title two", "Example post title three", "Example post title four", "Example post title five"], ["Draft"], edge=False), SAFFRON)),
-  ("bl_first", "Cards With First Line", "Title plus the opening line of the post.", "warm",
-   frame("Blog", sec(54, "New Drafts") + "".join(card(14, 62 + i * 52, 212, 46) + tx(24, 78 + i * 52, f"Example Post Title {i+1}", 9.5, INK, True) + tx(24, 92 + i * 52, "Example: the first line of the post,", 8, MUTE) + tx(24, 102 + i * 52, "cut off after two lines...", 8, MUTE) for i in range(3)), SAFFRON)))
 # ===================== Dump =====================
 P("Dump", "Dump Open Items: Priority Tabs Or One List With P Tags?",
   ("dp_tabs", "Priority Tabs", "P0 / P1 / P2 tabs with counts; one list at a time.", "focused",
@@ -174,6 +176,6 @@ publish(DID, "Agent Dashboards Deck Two", "Agent Dashboards Deck Two", pairs,
                     "Cream #FDFBF6 page, white cards, Khand/Hind, terracotta/lagoon/jungle/saffron accents; skips everything settled in the Dashboard Rulebook (R1-R65) and earlier board decks; text at least 8 units, vector mockups"],
          "submit_agent": "branding", "submit_to": "Branding Agent", "section_counts": cnt, "deck_size": N, "one_card_per_screen": True,
          "routing": "/workspace/ops/brand/agent-dashboards-more-routing.md"},
-        seed=1416, n=N)
+        seed=1416, n=N, first=1)
 d = json.load(open(f"decks/{DID}.json"))
 json.dump([{"n": i + 1, "ask": p["ask"], "group": p.get("group"), "a": [p["optionA"]["id"], p["optionA"]["label"]], "b": [p["optionB"]["id"], p["optionB"]["label"]]} for i, p in enumerate(d["pairs"])], open("/tmp/am_route.json", "w"))
