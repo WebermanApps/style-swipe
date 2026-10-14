@@ -35,9 +35,9 @@ def base_(bg, nm):
     s += R(14, 52, 212, 150, bg, B["line"], 10) + card(B, 28, 66, 184, 54) + T(B, 38, 84, "White Card", 10, None, True) + bars(2, 38, 94, 150, B["mute"] + "88", 8) + card(B, 28, 130, 184, 54) + bars(3, 38, 146, 150, B["mute"] + "88", 8)
     return s
 G = "C7 Page Base"
-P(G, "Page Base: Pure White Or Light Cream?",
-  ("c7_white", "Pure White #FFFFFF", "UpKeep board pick.", "focused", plain(base_("#FFFFFF", "#FFFFFF"), "Pure white page, white cards with thin lines.", "UPKEEP BOARD")),
-  ("c7_cream", "Light Cream #FDFBF6", "Beat rice-white last deck.", "calm", plain(base_("#FDFBF6", "#FDFBF6"), "Very light cream page with white cards.", "DECKS, R58", "#FDFBF6")))
+P(G, "Behind The Cards: Plain White Or A Hint Of Cream?",
+  ("c7_white", "Plain White Page", "Page and cards both white; thin grey lines separate them.", "focused", plain(base_("#FFFFFF", "#FFFFFF"), "Same colour behind the cards as the cards: plain white.", "UPKEEP BOARD")),
+  ("c7_cream", "Hint Of Cream Page", "Page is a very light cream so the white cards stand out.", "calm", plain(base_("#FDFBF6", "#FDFBF6"), "Barely-there cream behind white cards (what decks use now).", "DECKS, R58", "#FDFBF6")))
 # 2. C9 accents re-ask
 G = "C9 Accent Palette"
 P(G, "Accents: Small Pops On Every Dashboard Or Only Where A Board Picked Them?",
@@ -157,22 +157,11 @@ def feed(kind):
 P(G, "Feed Detail: Log Lines Or Headline Plus Note?",
   ("c8_log", "Log Lines", "Many items, one line each.", "quick", plain(feed("log"), "One plain log line per item.", "DASHBOARD-2, SKIPPED")),
   ("c8_head", "Headline Plus Note", "Fewer items, easier to read.", "visual", plain(feed("head"), "Short headline with a one-line note under it.", "DASHBOARD-2, SKIPPED")))
-# 13. C10 skips after Submit (R61)
-def skipmock(back):
-    s = title("After Submit", "Coach deck, 3 sent")
-    rows = [("Answered", "Gone", JUNGLE), ("Noted", "Gone", JUNGLE), ("Skipped", "Comes Back" if back else "Gone", TERRA if back else JUNGLE)]
-    for j, (a, b, c) in enumerate(rows):
-        y = 56 + j * 40; s += card(B, 14, y, 212, 32) + T(B, 24, y + 20, a, 9, None, True) + T(B, 216, y + 20, b, 8, c, w=600, a="end")
-    return s
-G = "C10 Skips After Submit"
-P(G, "Skipped Questions: Come Back Next Time Or Count As Answered?",
-  ("c10_back", "Skips Come Back", "A skip is unanswered and returns next deck.", "focused", plain(skipmock(True), "Skipped cards return like unanswered ones.", "CURRENT PRACTICE")),
-  ("c10_gone", "Skips Count As Answered", "A skip disappears after Submit.", "quick", plain(skipmock(False), "Skipped cards disappear with the answered ones.", "R61 READ LITERALLY")))
-N = len(pairs); assert N == 13, N
+N = len(pairs); assert N == 12, N
 cnt = {}
 for p in pairs: cnt[p["group"]] = cnt.get(p["group"], 0) + 1
 publish(DID, "Rulebook Tiebreak Deck", "Branding", pairs,
-        {"brands": ["Rulebook Tiebreak: follow-up to Rulebook Clash (skipped white vs cream first, accents re-asked, scope of settled Share / caps / tab-bar picks, open dashboard tiebreaks, skips after Submit)", "Max brand on the light cream deck page with white cards"],
+        {"brands": ["Rulebook Tiebreak: follow-up to Rulebook Clash (skipped white vs cream first, accents re-asked, scope of settled Share / caps / tab-bar picks, open dashboard tiebreaks)", "Max brand on the light cream deck page with white cards"],
          "submit_agent": "branding", "submit_to": "Branding Agent 3fac5054-3a3d-49b1-af61-59883f7fdc78", "section_counts": cnt, "deck_size": N,
          "trim_override": f"{N} pairs: short follow-up deck", "sources": {"rulebook": "/workspace/ops/brand/dashboard-rulebook.md", "results": "results/rulebook-clash.txt"}},
         seed=1032, n=N, first=1)
