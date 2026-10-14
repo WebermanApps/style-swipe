@@ -246,7 +246,7 @@ class Bank(Deck):
         s.slug = slug; super().__init__(slug, prefix, app, sub, pk, c)
     def draw(s, body, a, items, fin):
         svg = super().draw(body, a, items, fin)
-        if s.slug == "upkeep": svg = re.sub(r"<text[^>]*>MAX WEBERMAN</text>", "", svg.replace(foot(), ""))   # no byline on Up Keep
+        if s.slug == "upkeep": svg = re.sub(r"(?i)<text[^>]*>[^<]*(?:max weberman|built by)[^<]*</text>", "", svg.replace(foot(), ""))   # no byline on Up Keep
         return svg
 
 def feed_decision(slug, name):
@@ -260,6 +260,8 @@ def feed_decision(slug, name):
             body = re.sub(r"https?://\S+|commit \w+|\d{1,2}:\d\d|ICT|·", " ", ln_)
             chunks = [re.sub(r"[^A-Za-z ]", "", c).strip() for c in re.split(r"[,;()]", body)]
             chunks = [" ".join(w.capitalize() for w in c.split()) for c in chunks if 2 <= len(c.split()) <= 4 and len(c) <= 24]
+            if slug == "upkeep":  # Up Keep rules: drop feed chunks with banned words (byline, AI, tech wording...)
+                chunks = [c for c in chunks if not any(re.search(b, c.lower()) for b in UK_BANNED) and not re.search(r"\btechs?\b", c.lower())]
             chunks = list(dict.fromkeys(chunks))[:5]
             if len(chunks) == 5:
                 return ("feed", "From The Feed", "Latest Open Items", [(c, "From today's team feed", "Open") for c in chunks])
