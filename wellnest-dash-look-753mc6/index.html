@@ -4,7 +4,7 @@
 <base href="../">
 <meta name="robots" content="noindex">
 <script>window.DEFAULT_DECK="wellnest-dashboard-online-1"</script>
-<style>:root{--bg:#FFFFFF}html,body{background:#FFFFFF!important}</style>
+<style>:root{--bg:#FDFBF6}html,body{background:#FDFBF6!important}</style>
 <script>(function(){var ID="wellnest-dashboard-online-1",DONE="https://webermanapps.github.io/wellnest-dashboard/?done="+ID;
 function mark(){try{var a=JSON.parse(localStorage.getItem("wn-deck-done")||"[]");if(!Array.isArray(a))a=[];if(a.indexOf(ID)<0)a.push(ID);localStorage.setItem("wn-deck-done",JSON.stringify(a))}catch(e){}}
 var f=window.fetch;window.fetch=function(u,o){var p=f.apply(this,arguments);try{if(o&&o.method==="POST"&&o.body){var b=JSON.parse(o.body);if(b&&b.deck===ID&&b.agent==="wellnest"&&!b.test&&!b.partial)p.then(function(){mark()},function(){})}}catch(e){}return p};
