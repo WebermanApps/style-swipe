@@ -32,7 +32,8 @@ header .sub{color:var(--muted);font-size:12px}
 .progress>div{height:100%;width:0;background:linear-gradient(90deg,var(--terracotta),var(--lagoon));transition:width .3s}
 main{flex:1;display:flex;flex-direction:column;align-items:center;padding:6px 10px 10px;overflow:hidden}
 .stage{position:relative;width:100%;max-width:760px;flex:1;display:flex;min-height:0}
-.card{position:absolute;inset:0;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:12px;display:flex;flex-direction:column;gap:8px;touch-action:pan-y;user-select:none;transition:transform .25s ease, opacity .25s;will-change:transform;overflow:hidden}
+.card{position:absolute;inset:0;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:12px;display:flex;flex-direction:column;gap:8px;touch-action:pan-y;user-select:none;transition:transform .25s ease, opacity .25s;overflow:hidden}
+.card.dragging{will-change:transform}
 .card.dragging{transition:none}
 .card .cat{display:flex;justify-content:space-between;align-items:center;gap:8px}
 .pill{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:3px 9px}
@@ -406,6 +407,30 @@ header h1,.card h2,h1,h2,h3{font-family:Khand,Hind,sans-serif;color:#0A0A0A}
 footer,.builtby{background:#FDFBF6;color:#525252;border-top:1px solid #E5E0D8}
 footer a,.builtby a{color:#0A0A0A}
 .v-svg{background:#FDFBF6!important}
+
+/* crisp pass (Oct 14): no idle compositing layer on cards (Chrome rasterised the layer and scaled it -> blurry SVG text); vector text rendering; bigger cards + readable Khand/Hind on desktop */
+.v-svg svg,.v-svg svg text{text-rendering:geometricPrecision;shape-rendering:geometricPrecision}
+@media (min-width:900px) and (min-height:700px){
+ body.carding .stage{max-width:min(1080px,92vw)}
+ body.carding .controls{max-width:760px}
+ body.carding header h1{font-size:20px}
+ body.carding header .sub{font-size:14px}
+ body.carding .card .cat .pill{font-size:12px}
+ body.carding .card .notebtn{font-size:13px}
+ body.carding .card h2{font-size:20px}
+ body.carding .opt .side{font-size:12px}
+ body.carding .opt h3{font-size:16px!important}
+ body.carding .opt p{font-size:14px!important}
+ body.carding .opt .vis img{max-width:960px;margin:0 auto}
+}
+@media (min-width:1800px) and (min-height:1100px){
+ body.carding .stage{max-width:1400px}
+ body.carding .controls{max-width:860px}
+ body.carding header h1{font-size:22px}
+ body.carding .card h2{font-size:24px}
+ body.carding .opt h3{font-size:18px!important}
+ body.carding .opt p{font-size:15px!important}
+}
 </style><!--/mw-family-->
 </head>
 <body>

@@ -19,8 +19,27 @@ def btn(y, s, style="fill", col=INK, x=14, w=212, h=26, size=9):
 def tag(x, y, s, col, solid=False, size=5.8):
     w = len(s) * size * .76 + 10
     return rect(x, y, w, size * 1.9, col if solid else col + "1F", "none", size) + t(x + w / 2, y + size * 1.38, s.upper(), size, "#FFFFFF" if solid else col, "hind", 600, "middle", 'letter-spacing=".6"')
+MIN_TEXT = 7.5  # crisp pass (Oct 14): smallest mockup label, in viewBox units, for text drawn at full scale
+import re as _re
+def crisp(svg, floor=MIN_TEXT):
+    """Raise font-size of full-scale <text> to >= floor (text inside scaled-down groups, i.e. drawn miniatures, keeps its size)."""
+    out, scales, i = [], [], 0
+    for m in _re.finditer(r'<g\b[^>]*?(/?)>|</g>|<text\b[^>]*>', svg):
+        out.append(svg[i:m.start()]); tok = m.group(0); i = m.end()
+        if tok.startswith('<g'):
+            if not m.group(1):
+                sc = _re.search(r'scale\(([\d.]+)', tok); scales.append(float(sc.group(1)) if sc else 1.0)
+        elif tok == '</g>':
+            if scales: scales.pop()
+        else:
+            k = 1.0
+            for v in scales: k *= v
+            if k >= .999:
+                tok = _re.sub(r'font-size="([\d.]+)"', lambda f: f'font-size="{max(float(f.group(1)), floor):g}"', tok)
+        out.append(tok)
+    out.append(svg[i:]); return "".join(out)
 def screen(body, bg="#FFFFFF"):
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" style="max-height:100%;max-width:100%">'
+    return crisp(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" style="max-height:100%;max-width:100%">'
             f'<clipPath id="c"><rect width="{W}" height="{H}" rx="14"/></clipPath><g clip-path="url(#c)"><rect width="{W}" height="{H}" fill="{bg}"/>' + body + f'</g><rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="#D6D0C6"/></svg>')
 # small drawn icons (24-unit grid)
 def ic(kind, x, y, s=16, c=INK, sw=1.8):
