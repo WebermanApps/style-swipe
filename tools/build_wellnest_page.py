@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Standalone pages for WellNest decks (usage: build_wellnest_page.py [deck_id]): <slug>/index.html (same app via <base href="../">)."""
 import os, sys
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); PAGES = {"wellnest-brand": "wellnest-brand-jxhiif", "wellnest-brand-round-two": "wellnest-brand-r2-qlpkxs3t"}
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); PAGES = {"wellnest-brand": "wellnest-brand-jxhiif", "wellnest-brand-round-two": "wellnest-brand-r2-qlpkxs3t", "folio-dashboard": "folio-dashboard-kuijvp"}
 DID = sys.argv[1] if len(sys.argv) > 1 else "wellnest-brand"; SLUG = PAGES[DID]
 HEAD = r'''<base href="../">
 <meta name="robots" content="noindex">
