@@ -219,8 +219,8 @@ def deck(prefix, app):
     def add(group, cat, a, b, ask, purpose="new"):
         pairs.append({"group": group, "category": cat, "app": app, "ask": ask, "optionA": a, "optionB": b, "purpose": purpose, "retest": False, "notes": True, "share": True})
     return pairs, O, add
-def publish(did, title, app, pairs, meta, seed, n=None):
-    _finish(did, title, app, pairs, 0, meta, seed=seed, n=n)  # n overrides the 25-pair trim (only when Max asks for a bigger deck)
+def publish(did, title, app, pairs, meta, seed, n=None, first=0):
+    _finish(did, title, app, pairs, first, meta, seed=seed, n=n)  # first = carried pairs kept at the front  # n overrides the 25-pair trim (only when Max asks for a bigger deck)
     d = json.load(open(f"decks/{did}.json")); d.pop("draft", None); d["status"] = "published"; d["share"] = True; d["notes"] = True
     for pp in d["pairs"]: pp["notes"] = True; pp["share"] = True
     txt = json.dumps(d, ensure_ascii=False)

@@ -38,7 +38,15 @@ def card(B, x, y, w, h, style=None, c=None):
 
 # ---------- sections: f(B, y, o) -> (svg, h); drawn at x 14..226 ----------
 def s_hdr(B, y, o):
-    st = o.get("hdr", "plain"); t = o.get("title", B["name"]); sub = o.get("sub", "")
+    st = o.get("hdr", "plain")
+    if st == "eyebig":
+        ec = o.get("ec", B["acc"][0])
+        return T(B, 14, y + 14, o.get("sub", "Good Morning, Max").upper(), 6.5, ec, w=600, ex='letter-spacing="1.2"') + T(B, 14, y + 40, o.get("title", B["name"]), 24, None, True) + R(14, y + 46, 26, 2.5, o.get("rule", B["acc"][0])), 56
+    if st == "bar" or st == "barshare":
+        s = T(B, 14, y + 18, o.get("title", B["name"]), 13, None, True) + L(0, y + 28, W, y + 28, B["line"])
+        if st == "barshare": s += f'<g transform="translate(206,{y+6}) scale(.55)"><path d="M12 3 V15 M7 8 L12 3 L17 8" fill="none" stroke="{B["ink"]}" stroke-width="2.2" stroke-linecap="round"/><path d="M5 12 V20 H19 V12" fill="none" stroke="{B["ink"]}" stroke-width="2.2"/></g>'
+        else: s += R(166, y + 8, 60, 13, B["acc"][2] + "1F", r=6.5) + T(B, 196, y + 17, "Updated 12m", 6, B["acc"][2], w=600, a="middle")
+        return s, 34; t = o.get("title", B["name"]); sub = o.get("sub", "")
     lg = B.get("logo")
     if st == "band":
         c = o.get("hc", B["acc"][0]); return R(0, y, W, 50, c) + T(B, 14, y + 28, t, 16, "#FFFFFF", True) + (T(B, 14, y + 40, sub, 6.5, "#FFFFFFCC") if sub else ""), 58
@@ -62,6 +70,13 @@ def s_report(B, y, o):
     if st == "collapsed": return card(B, 14, y, 212, 26) + D(26, y + 13, 3.5, c) + T(B, 36, y + 16.5, nm, 9, None, True) + T(B, 196, y + 16, "Read", 7, B["mute"], a="end") + chev(212, y + 13, B["mute"]), 32
     if st == "big":
         return card(B, 14, y, 212, 92, "tint", c) + T(B, 24, y + 20, nm, 15, None, True) + T(B, 24, y + 31, "Example summary, written for today", 6.5, B["mute"]) + bars(5, 24, y + 44, 186, B["ink"] + "55", 8), 98
+    if st == "more":
+        n = o.get("rn", 3); mk = o.get("more", "link"); h = 30 + n * 12 + 16
+        s = card(B, 14, y, 212, h, o.get("rcard")) + T(B, 24, y + 16, nm, 10, None, True) + T(B, 216, y + 16, "Today", 6.5, B["mute"], a="end")
+        for i in range(n): s += D(27, y + 29 + i * 12, 2, c) + R(33, y + 27.5 + i * 12, 150 - 25 * (i % 2), 3, B["ink"] + "55", r=1.5)
+        if mk == "link": s += T(B, 24, y + h - 7, "Show More", 7, c, w=600, ex='text-decoration="underline"')
+        else: s += L(24, y + h - 16, 216, y + h - 16, B["line"]) + T(B, 24, y + h - 5, "More Detail", 7, B["mute"], w=600) + chev(210, y + h - 8, B["mute"])
+        return s, h + 6
     return card(B, 14, y, 212, 60) + T(B, 24, y + 16, nm, 10, None, True) + T(B, 216, y + 16, "Today", 6.5, B["mute"], a="end") + bars(4, 24, y + 26, 180, B["mute"] + "88", 7), 66
 TILE_IC = ["M4 18 L9 12 L13 15 L20 7", "M5 5 H19 V19 H5 Z M5 10 H19", "M12 4 A8 8 0 1 0 20 12 H12 Z", "M4 20 V10 M10 20 V5 M16 20 V13", "M6 4 H18 V20 H6 Z M9 9 H15 M9 13 H15", "M4 12 L12 4 L20 12 V20 H4 Z"]
 def tile_icon(x, y, k, c, s=14): return f'<g transform="translate({x},{y}) scale({s/24})"><path d="{TILE_IC[k%6]}" fill="none" stroke="{c}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/></g>'
@@ -74,6 +89,8 @@ def s_tiles(B, y, o):
         if st == "solid": s += R(x, yy, w, th, c, r=B["r"]) + tile_icon(x + 7, yy + 7, i, "#FFFFFF", 12) + T(B, x + 7, yy + th - 8, names[i % len(names)], 8.5 if cols < 3 else 7, "#FFFFFF", True)
         elif st == "tint": s += R(x, yy, w, th, c + "16", r=B["r"]) + tile_icon(x + 7, yy + 7, i, c, 12) + T(B, x + 7, yy + th - 8, names[i % len(names)], 8.5 if cols < 3 else 7, None, True)
         elif st == "row": s += card(B, 14, y + i * 26, 212, 22) + tile_icon(20, y + i * 26 + 4, i, c, 13) + T(B, 40, y + i * 26 + 14.5, names[i % len(names)], 8.5, None, True) + chev(214, y + i * 26 + 11, B["mute"]) .replace("M210", "M210")
+        elif st == "lineplain": s += R(x, yy, w, th, "#FFFFFF", B["line"], B["r"]) + tile_icon(x + 9, yy + 8, i, c, 14) + T(B, x + 7, yy + th - 8, names[i % len(names)], 8.5 if cols < 3 else 7, None, True)
+        elif st == "linecenter": s += R(x, yy, w, th, "#FFFFFF", B["line"], B["r"]) + R(x + w / 2 - 9, yy + 6, 18, 18, c + "1F", r=5) + tile_icon(x + w / 2 - 7, yy + 8, i, c, 14) + T(B, x + w / 2, yy + th - 7, names[i % len(names)], 7, None, True, a="middle")
         else: s += R(x, yy, w, th, "#FFFFFF", B["line"], B["r"]) + R(x + 7, yy + 6, 18, 18, c + "1F", r=5) + tile_icon(x + 9, yy + 8, i, c, 14) + T(B, x + 7, yy + th - 8, names[i % len(names)], 8.5 if cols < 3 else 7, None, True)
         if lk and st != "row": s += (lock(x + w - 10, yy + 10, "#FFFFFF" if st == "solid" else B["mute"], .8) if lk == "icon" else R(x, yy, w, th, "#FFFFFF99", r=B["r"]) + lock(x + w / 2, yy + th / 2 - 2, B["mute"], 1))
         if lk and st == "row": s += lock(200, y + i * 26 + 10, B["mute"], .8)
@@ -83,6 +100,8 @@ def s_urgent(B, y, o):
     st = o.get("urgent", "collapsed"); c = o.get("uc", B["acc"][0]); n = o.get("un", 3)
     items = o.get("uitems", ["Upload an example file", "Check a due date", "Confirm a category"])
     if st == "collapsed": return card(B, 14, y, 212, 28, "left", c) + T(B, 24, y + 17.5, f"Urgent", 9.5, None, True) + R(184, y + 8, 14, 12, c, r=6) + T(B, 191, y + 17, str(n), 7, "#FFFFFF", a="middle", w=600) + chev(212, y + 14, B["mute"]), 34
+    if st == "pillsolid": return R(14, y, 118, 22, c, r=11) + T(B, 26, y + 14.5, f"{n} Urgent Items", 7.5, "#FFFFFF", w=600) + chev(122, y + 11, "#FFFFFF"), 28
+    if st == "pillcount": return R(14, y, 118, 22, "#FFFFFF", B["line"], 11) + R(18, y + 4, 14, 14, c, r=7) + T(B, 25, y + 14, str(n), 7, "#FFFFFF", w=600, a="middle") + T(B, 37, y + 14.5, "Urgent Items", 7.5, B["ink"], w=600) + chev(122, y + 11, B["mute"]), 28
     if st == "pill": return R(14, y, 118, 22, c + "18", r=11) + D(26, y + 11, 3.5, c) + T(B, 34, y + 14.5, f"{n} Urgent Items", 7.5, c, w=600) + chev(122, y + 11, c), 28
     if st == "open":
         s = card(B, 14, y, 212, 22 + n * 18, "left", c) + T(B, 24, y + 15, "Urgent", 9.5, None, True) + chev(212, y + 11, B["mute"], True)
@@ -99,7 +118,7 @@ def s_chart(B, y, o):
     elif st == "candle":
         for i, (a, b) in enumerate(pts[::2]): s += R(a - 2, b - 4, 4, 8, (B["acc"][2] if i % 3 else B["acc"][0]), r=1) + L(a, b - 7, a, b + 7, B["mute"], .6)
     elif st == "step": s += poly([q for i in range(len(pts) - 1) for q in (pts[i], (pts[i + 1][0], pts[i][1]))], c, 1.6)
-    else: s += poly(pts, c, 1.8)
+    else: s += poly(pts, c, o.get("lw", 1.8))
     if sma != "none":
         ex1, ex2 = ('stroke-dasharray="4 2"', 'stroke-dasharray="1.5 2"') if sma == "dashed" else ("", "")
         w1, w2 = (1.2, 1.2) if sma != "thick" else (2, 2)
@@ -117,7 +136,7 @@ def s_spend(B, y, o):
         for i, v in enumerate([.34, .24, .18, .14, .1]):
             a1 = a0 + v * 360; la = 1 if v > .5 else 0
             x0, y0 = cx + r * math.cos(math.radians(a0)), cy + r * math.sin(math.radians(a0)); x1, y1 = cx + r * math.cos(math.radians(a1)), cy + r * math.sin(math.radians(a1))
-            s += f'<path d="M{x0:.1f} {y0:.1f} A{r} {r} 0 {la} 1 {x1:.1f} {y1:.1f}" fill="none" stroke="{B["acc"][i%len(B["acc"])]}" stroke-width="9"/>'; a0 = a1
+            s += f'<path d="M{x0:.1f} {y0:.1f} A{r} {r} 0 {la} 1 {x1:.1f} {y1:.1f}" fill="none" stroke="{B["acc"][i%len(B["acc"])]}" stroke-width="{o.get('dw', 9)}"/>'; a0 = a1
         s += "".join(D(110, y + 30 + i * 10, 2.5, B["acc"][i % len(B["acc"])]) + T(B, 116, y + 32.5 + i * 10, cats[i], 6.5, B["mute"]) for i in range(5))
     elif st == "hbars": s += "".join(T(B, 24, y + 31 + i * 11, cats[i], 6.5, B["mute"]) + R(62, y + 26 + i * 11, 140 * vals[i], 6, B["acc"][i % len(B["acc"])], r=3) for i in range(5))
     elif st == "stack":
@@ -130,12 +149,20 @@ def s_spend(B, y, o):
             v = .3 + .5 * abs(math.sin(i * 1.3)); s += R(24 + i * bw + 3, y + h - 10 - (h - 34) * v, bw - 6, (h - 34) * v, B["acc"][1] if i == 7 else B["acc"][1] + "55", r=2)
     return s, h + 6
 def s_feed(B, y, o):
+    if o.get("feed") == "icons":
+        n = o.get("fn", 3); s = T(B, 14, y + 10, o.get("fname", "Recent Work").upper(), 6.5, B["mute"], w=600, ex='letter-spacing="1.2"')
+        for i in range(n):
+            yy = y + 16 + i * 30; c = B["acc"][i % len(B["acc"])]
+            s += card(B, 14, yy, 212, 26) + R(20, yy + 4, 18, 18, c + "1F", r=5) + tile_icon(22, yy + 6, i, c, 14) + R(44, yy + 8, 110 + 30 * (i % 2), 3, B["ink"] + "55", r=1.5) + R(44, yy + 15, 60, 2.5, B["mute"] + "55", r=1)
+        return s, 20 + n * 30
     n = o.get("fn", 3); s = T(B, 14, y + 10, o.get("fname", "Recent Work").upper(), 6.5, B["mute"], w=600, ex='letter-spacing="1.2"')
     for i in range(n): s += D(20, y + 22 + i * 18, 3, B["acc"][i % len(B["acc"])]) + R(30, y + 19 + i * 18, 120 + 40 * (i % 2), 3, B["ink"] + "44", r=1.5) + R(30, y + 25 + i * 18, 70, 2.5, B["mute"] + "55", r=1)
     return s, 20 + n * 18
 def s_video(B, y, o):
     st = o.get("video", "card"); c = B["acc"][1]
     if st == "thumb": return R(14, y, 212, 100, c + "22", r=B["r"]) + D(120, y + 50, 14, "#FFFFFFEE") + f'<path d="M116 {y+43} L127 {y+50} L116 {y+57} Z" fill="{c}"/>' + T(B, 22, y + 92, o.get("vt", "Video Of The Week"), 9, None, True), 106
+    if st == "rowr": return card(B, 14, y, 212, 40) + R(174, y + 6, 46, 28, c + "22", r=4) + f'<path d="M193 {y+14} L202 {y+20} L193 {y+26} Z" fill="{c}"/>' + T(B, 24, y + 18, o.get("vt", "Video Of The Week"), 9, None, True) + T(B, 24, y + 29, "Example clip", 6.5, B["mute"]), 46
+    if st == "rowdur": return card(B, 14, y, 212, 40) + R(20, y + 6, 46, 28, c + "22", r=4) + f'<path d="M39 {y+14} L48 {y+20} L39 {y+26} Z" fill="{c}"/>' + R(48, y + 26, 16, 7, B["ink"] + "CC", r=2) + T(B, 56, y + 31.5, "0:45", 4.5, "#FFFFFF", a="middle") + T(B, 74, y + 18, o.get("vt", "Video Of The Week"), 9, None, True) + T(B, 74, y + 29, "Example clip", 6.5, B["mute"]), 46
     return card(B, 14, y, 212, 40) + R(20, y + 6, 46, 28, c + "22", r=4) + f'<path d="M39 {y+14} L48 {y+20} L39 {y+26} Z" fill="{c}"/>' + T(B, 74, y + 18, o.get("vt", "Video Of The Week"), 9, None, True) + T(B, 74, y + 29, "Example clip", 6.5, B["mute"]), 46
 def s_gap(B, y, o): return "", o.get("gap", 8)
 def s_unlock(B, y, o):
