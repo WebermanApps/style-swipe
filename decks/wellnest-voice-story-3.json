@@ -1,0 +1,973 @@
+{
+ "date": "wellnest-voice-story-3",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Voice: Captions & Social Lines",
+ "generated_at": "2026-10-14T12:47:43+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "visual": 8,
+  "focused": 8,
+  "calm": 8,
+  "quick": 8,
+  "action": 8
+ },
+ "groups": {
+  "Captions": 20
+ },
+ "apps": {
+  "WellNest": 20
+ },
+ "freshness": {
+  "option_slots": 40,
+  "never_shown_before": 40,
+  "share": 1.0
+ },
+ "warnings": [],
+ "brands": [
+  "Caption length, openers, sign-offs, calls to action",
+  "Locked WellNest brand: original nest logo, Cormorant + DM Sans, gold leads, peach accent, sand lines; white deck background; drawn SVGs, sample content only"
+ ],
+ "submit_agent": "wellnest",
+ "submit_to": "WellNest Agent",
+ "section_counts": {
+  "Captions": 20
+ },
+ "deck_size": 20,
+ "series": {
+  "category": "Voice & Story",
+  "order": 3
+ },
+ "sources": {
+  "rules": "/workspace/wellnest/brand-rules.md",
+  "results": "/workspace/wellnest/deck-results/",
+  "queue": "/workspace/wellnest/deck-queue.json"
+ },
+ "pairs": [
+  {
+   "group": "Captions",
+   "category": "Captions",
+   "app": "WellNest",
+   "ask": "Ask A Question Or No Question?",
+   "optionA": {
+    "id": "voicestory_ask_a_question_7",
+    "label": "Ask A Question",
+    "desc": "Hot or iced?",
+    "tags": [
+     "visual"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#ECC9782A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M4 9 H16 V15 A5 5 0 0 1 11 20 H9 A5 5 0 0 1 4 15 Z M16 11 H18 A2 2 0 0 1 18 15 H16 M8 3 Q10 5 8 7 M12 3 Q14 5 12 7\" fill=\"none\" stroke=\"#ECC978\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Ask A Question</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Hot or iced?</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "voicestory_no_question_8",
+    "label": "No Question",
+    "desc": "Statement only.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#D7A3632A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M4 9 H16 V15 A5 5 0 0 1 11 20 H9 A5 5 0 0 1 4 15 Z M16 11 H18 A2 2 0 0 1 18 15 H16 M8 3 Q10 5 8 7 M12 3 Q14 5 12 7\" fill=\"none\" stroke=\"#D7A363\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >No Question</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Statement only.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-voice-story-3-01",
+   "repeat": false
+  },
+  {
+   "group": "Captions",
+   "category": "Captions",
+   "app": "WellNest",
+   "ask": "Thank-You Posts For Guests Or Guest Reposts Only?",
+   "optionA": {
+    "id": "voicestory_thank_you_posts_for_gues_27",
+    "label": "Thank-You Posts For Guests",
+    "desc": "Warm.",
+    "tags": [
+     "visual"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#ECC9782A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M5 11 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M13 11 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M2 21 Q8 13 14 21 M10 21 Q16 13 22 21\" fill=\"none\" stroke=\"#ECC978\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Thank-You Posts For Guests</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Warm.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "voicestory_guest_reposts_only_28",
+    "label": "Guest Reposts Only",
+    "desc": "Their words.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#D7A3632A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M5 11 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M13 11 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M2 21 Q8 13 14 21 M10 21 Q16 13 22 21\" fill=\"none\" stroke=\"#D7A363\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Guest Reposts Only</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Their words.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-voice-story-3-02",
+   "repeat": false
+  },
+  {
+   "group": "Captions",
+   "category": "Captions",
+   "app": "WellNest",
+   "ask": "Recipe In Caption Or Recipe In Carousel?",
+   "optionA": {
+    "id": "voicestory_recipe_in_caption_11",
+    "label": "Recipe In Caption",
+    "desc": "Full steps.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#ECC9782A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M3 12 H21 A9 7 0 0 1 3 12 Z M8 8 Q8 5 10 4 M13 8 Q13 5 15 4\" fill=\"none\" stroke=\"#ECC978\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Recipe In Caption</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Full steps.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "voicestory_recipe_in_carousel_12",
+    "label": "Recipe In Carousel",
+    "desc": "Caption short.",
+    "tags": [
+     "visual"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#D7A3632A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M3 12 H21 A9 7 0 0 1 3 12 Z M8 8 Q8 5 10 4 M13 8 Q13 5 15 4\" fill=\"none\" stroke=\"#D7A363\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Recipe In Carousel</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Caption short.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-voice-story-3-03",
+   "repeat": false
+  },
+  {
+   "group": "Captions",
+   "category": "Captions",
+   "app": "WellNest",
+   "ask": "Link In Bio Mention Or DM To Book?",
+   "optionA": {
+    "id": "voicestory_link_in_bio_mention_9",
+    "label": "Link In Bio Mention",
+    "desc": "Clear path.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#ECC9782A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M3 6 H21 V18 H3 Z M3 10 H21\" fill=\"none\" stroke=\"#ECC978\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Link In Bio Mention</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Clear path.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "voicestory_dm_to_book_10",
+    "label": "DM To Book",
+    "desc": "Personal.",
+    "tags": [
+     "action"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#D7A3632A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M5 11 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M13 11 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M2 21 Q8 13 14 21 M10 21 Q16 13 22 21\" fill=\"none\" stroke=\"#D7A363\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >DM To Book</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Personal.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-voice-story-3-04",
+   "repeat": false
+  },
+  {
+   "group": "Captions",
+   "category": "Captions",
+   "app": "WellNest",
+   "ask": "Hashtags: Three Local Or No Hashtags?",
+   "optionA": {
+    "id": "voicestory_hashtags_three_local_21",
+    "label": "Hashtags: Three Local",
+    "desc": "Chiang Mai, San Sai.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#ECC9782A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M5 19 Q4 6 19 5 Q19 18 5 19 Z M5 19 L13 11\" fill=\"none\" stroke=\"#ECC978\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Hashtags: Three Local</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Chiang Mai, San Sai.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "voicestory_no_hashtags_22",
+    "label": "No Hashtags",
+    "desc": "Clean.",
+    "tags": [
+     "visual"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#D7A3632A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M5 19 Q4 6 19 5 Q19 18 5 19 Z M5 19 L13 11\" fill=\"none\" stroke=\"#D7A363\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >No Hashtags</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Clean.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-voice-story-3-05",
+   "repeat": false
+  },
+  {
+   "group": "Captions",
+   "category": "Captions",
+   "app": "WellNest",
+   "ask": "Reply To Comments Warmly Or Reply With A Heart?",
+   "optionA": {
+    "id": "voicestory_reply_to_comments_warmly_37",
+    "label": "Reply To Comments Warmly",
+    "desc": "Every one.",
+    "tags": [
+     "visual"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#ECC9782A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M5 11 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M13 11 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M2 21 Q8 13 14 21 M10 21 Q16 13 22 21\" fill=\"none\" stroke=\"#ECC978\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Reply To Comments Warmly</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Every one.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "voicestory_reply_with_a_heart_38",
+    "label": "Reply With A Heart",
+    "desc": "Light touch.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#D7A3632A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M5 11 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M13 11 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M2 21 Q8 13 14 21 M10 21 Q16 13 22 21\" fill=\"none\" stroke=\"#D7A363\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Reply With A Heart</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Light touch.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-voice-story-3-06",
+   "repeat": false
+  },
+  {
+   "group": "Captions",
+   "category": "Captions",
+   "app": "WellNest",
+   "ask": "Sign Off With Find Your Nest Or No Sign-Off?",
+   "optionA": {
+    "id": "voicestory_sign_off_with_find_your__5",
+    "label": "Sign Off With Find Your Nest",
+    "desc": "Tagline.",
+    "tags": [
+     "action"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#ECC9782A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M8 12 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M12 2 V4 M12 20 V22 M2 12 H4 M20 12 H22 M5 5 L6.5 6.5 M17.5 17.5 L19 19 M5 19 L6.5 17.5 M17.5 6.5 L19 5\" fill=\"none\" stroke=\"#ECC978\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Sign Off With Find Your Nest</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Tagline.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "voicestory_no_sign_off_6",
+    "label": "No Sign-Off",
+    "desc": "Just stop.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#D7A3632A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M8 12 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M12 2 V4 M12 20 V22 M2 12 H4 M20 12 H22 M5 5 L6.5 6.5 M17.5 17.5 L19 19 M5 19 L6.5 17.5 M17.5 6.5 L19 5\" fill=\"none\" stroke=\"#D7A363\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >No Sign-Off</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Just stop.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-voice-story-3-07",
+   "repeat": false
+  },
+  {
+   "group": "Captions",
+   "category": "Captions",
+   "app": "WellNest",
+   "ask": "Weather Notes Or No Weather Notes?",
+   "optionA": {
+    "id": "voicestory_weather_notes_33",
+    "label": "Weather Notes",
+    "desc": "Rain today, tea tomorrow.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#ECC9782A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M12 4 Q17 11 17 14 A5 5 0 0 1 7 14 Q7 11 12 4 Z\" fill=\"none\" stroke=\"#ECC978\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Weather Notes</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Rain today, tea tomorrow.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "voicestory_no_weather_notes_34",
+    "label": "No Weather Notes",
+    "desc": "Timeless.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#D7A3632A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M8 12 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M12 2 V4 M12 20 V22 M2 12 H4 M20 12 H22 M5 5 L6.5 6.5 M17.5 17.5 L19 19 M5 19 L6.5 17.5 M17.5 6.5 L19 5\" fill=\"none\" stroke=\"#D7A363\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >No Weather Notes</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Timeless.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-voice-story-3-08",
+   "repeat": false
+  },
+  {
+   "group": "Captions",
+   "category": "Captions",
+   "app": "WellNest",
+   "ask": "Name Who Picked It Or No Names?",
+   "optionA": {
+    "id": "voicestory_name_who_picked_it_31",
+    "label": "Name Who Picked It",
+    "desc": "Picked by Mae Noy.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#ECC9782A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M3 10 H21 L19 20 H5 Z M7 10 Q12 2 17 10 M8 13 V17 M12 13 V17 M16 13 V17\" fill=\"none\" stroke=\"#ECC978\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Name Who Picked It</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Picked by Mae Noy.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "voicestory_no_names_32",
+    "label": "No Names",
+    "desc": "Farm voice only.",
+    "tags": [
+     "visual"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#D7A3632A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M3 10 H21 L19 20 H5 Z M7 10 Q12 2 17 10 M8 13 V17 M12 13 V17 M16 13 V17\" fill=\"none\" stroke=\"#D7A363\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >No Names</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Farm voice only.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-voice-story-3-09",
+   "repeat": false
+  },
+  {
+   "group": "Captions",
+   "category": "Captions",
+   "app": "WellNest",
+   "ask": "Story Text: Short Labels Or Story Text: Sentences?",
+   "optionA": {
+    "id": "voicestory_story_text_short_labels_23",
+    "label": "Story Text: Short Labels",
+    "desc": "One word.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#ECC9782A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M3 8 H7 L9 5 H15 L17 8 H21 V19 H3 Z M8.5 13.5 a3.5 3.5 0 1 0 7 0 a3.5 3.5 0 1 0 -7 0\" fill=\"none\" stroke=\"#ECC978\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Story Text: Short Labels</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >One word.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "voicestory_story_text_sentences_24",
+    "label": "Story Text: Sentences",
+    "desc": "Explain.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#D7A3632A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M3 8 H7 L9 5 H15 L17 8 H21 V19 H3 Z M8.5 13.5 a3.5 3.5 0 1 0 7 0 a3.5 3.5 0 1 0 -7 0\" fill=\"none\" stroke=\"#D7A363\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Story Text: Sentences</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Explain.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-voice-story-3-10",
+   "repeat": false
+  },
+  {
+   "group": "Captions",
+   "category": "Captions",
+   "app": "WellNest",
+   "ask": "Product Caption: What It Tastes Like Or Product Caption: Where It Grew?",
+   "optionA": {
+    "id": "voicestory_product_caption_what_it__19",
+    "label": "Product Caption: What It Tastes Like",
+    "desc": "Tart, bright.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#ECC9782A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M4 9 H16 V15 A5 5 0 0 1 11 20 H9 A5 5 0 0 1 4 15 Z M16 11 H18 A2 2 0 0 1 18 15 H16 M8 3 Q10 5 8 7 M12 3 Q14 5 12 7\" fill=\"none\" stroke=\"#ECC978\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Product Caption: What It Tastes Like</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Tart, bright.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "voicestory_product_caption_where_it_20",
+    "label": "Product Caption: Where It Grew",
+    "desc": "Row three.",
+    "tags": [
+     "action"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#D7A3632A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M5 19 Q4 6 19 5 Q19 18 5 19 Z M5 19 L13 11\" fill=\"none\" stroke=\"#D7A363\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Product Caption: Where It Grew</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Row three.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-voice-story-3-11",
+   "repeat": false
+  },
+  {
+   "group": "Captions",
+   "category": "Captions",
+   "app": "WellNest",
+   "ask": "Polls In Stories Or Farm Diary Stories?",
+   "optionA": {
+    "id": "voicestory_polls_in_stories_25",
+    "label": "Polls In Stories",
+    "desc": "Which tea next?",
+    "tags": [
+     "action"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#ECC9782A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M4 9 H16 V15 A5 5 0 0 1 11 20 H9 A5 5 0 0 1 4 15 Z M16 11 H18 A2 2 0 0 1 18 15 H16 M8 3 Q10 5 8 7 M12 3 Q14 5 12 7\" fill=\"none\" stroke=\"#ECC978\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Polls In Stories</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Which tea next?</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "voicestory_farm_diary_stories_26",
+    "label": "Farm Diary Stories",
+    "desc": "Daily notes.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#D7A3632A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M3 6 Q8 4 12 7 Q16 4 21 6 V19 Q16 17 12 20 Q8 17 3 19 Z M12 7 V20\" fill=\"none\" stroke=\"#D7A363\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Farm Diary Stories</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Daily notes.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-voice-story-3-12",
+   "repeat": false
+  },
+  {
+   "group": "Captions",
+   "category": "Captions",
+   "app": "WellNest",
+   "ask": "Roselle drying in the sun. Or Roselle drying in the sun. Three days, then tea.?",
+   "optionA": {
+    "id": "voicestory_roselle_drying_in_the_su_1",
+    "label": "Roselle drying in the sun.",
+    "desc": "One line.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#ECC9782A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M5 19 Q4 6 19 5 Q19 18 5 19 Z M5 19 L13 11\" fill=\"none\" stroke=\"#ECC978\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Roselle drying in the sun.</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >One line.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "voicestory_roselle_drying_in_the_su_2",
+    "label": "Roselle drying in the sun. Three days, then tea.",
+    "desc": "Two lines.",
+    "tags": [
+     "visual"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#D7A3632A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M5 19 Q4 6 19 5 Q19 18 5 19 Z M5 19 L13 11\" fill=\"none\" stroke=\"#D7A363\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Roselle drying in the sun. Three days, then tea.</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Two lines.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-voice-story-3-13",
+   "repeat": false
+  },
+  {
+   "group": "Captions",
+   "category": "Captions",
+   "app": "WellNest",
+   "ask": "Caption Line Breaks Or Single Paragraph?",
+   "optionA": {
+    "id": "voicestory_caption_line_breaks_29",
+    "label": "Caption Line Breaks",
+    "desc": "Airy.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#ECC9782A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M5 19 Q4 6 19 5 Q19 18 5 19 Z M5 19 L13 11\" fill=\"none\" stroke=\"#ECC978\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Caption Line Breaks</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Airy.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "voicestory_single_paragraph_30",
+    "label": "Single Paragraph",
+    "desc": "Compact.",
+    "tags": [
+     "action"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#D7A3632A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M5 19 Q4 6 19 5 Q19 18 5 19 Z M5 19 L13 11\" fill=\"none\" stroke=\"#D7A363\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Single Paragraph</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Compact.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-voice-story-3-14",
+   "repeat": false
+  },
+  {
+   "group": "Captions",
+   "category": "Captions",
+   "app": "WellNest",
+   "ask": "Reel Hook: A Question Or Reel Hook: A Sound?",
+   "optionA": {
+    "id": "voicestory_reel_hook_a_question_35",
+    "label": "Reel Hook: A Question",
+    "desc": "Ever tried roselle?",
+    "tags": [
+     "action"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#ECC9782A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M3 8 H7 L9 5 H15 L17 8 H21 V19 H3 Z M8.5 13.5 a3.5 3.5 0 1 0 7 0 a3.5 3.5 0 1 0 -7 0\" fill=\"none\" stroke=\"#ECC978\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Reel Hook: A Question</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Ever tried roselle?</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "voicestory_reel_hook_a_sound_36",
+    "label": "Reel Hook: A Sound",
+    "desc": "Pouring water.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#D7A3632A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M12 4 Q17 11 17 14 A5 5 0 0 1 7 14 Q7 11 12 4 Z\" fill=\"none\" stroke=\"#D7A363\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Reel Hook: A Sound</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Pouring water.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-voice-story-3-15",
+   "repeat": false
+  },
+  {
+   "group": "Captions",
+   "category": "Captions",
+   "app": "WellNest",
+   "ask": "Sauna Caption: Heat, Then Cool Or Sauna Caption: The Hot House Is Warm?",
+   "optionA": {
+    "id": "voicestory_sauna_caption_heat_then__17",
+    "label": "Sauna Caption: Heat, Then Cool",
+    "desc": "Plain.",
+    "tags": [
+     "visual"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#ECC9782A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M5 20 H19 M7 16 Q9 13 7 10 Q5 7 7 4 M12 16 Q14 13 12 10 Q10 7 12 4 M17 16 Q19 13 17 10 Q15 7 17 4\" fill=\"none\" stroke=\"#ECC978\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Sauna Caption: Heat, Then Cool</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Plain.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "voicestory_sauna_caption_the_hot_ho_18",
+    "label": "Sauna Caption: The Hot House Is Warm",
+    "desc": "Named.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#D7A3632A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M5 20 H19 M7 16 Q9 13 7 10 Q5 7 7 4 M12 16 Q14 13 12 10 Q10 7 12 4 M17 16 Q19 13 17 10 Q15 7 17 4\" fill=\"none\" stroke=\"#D7A363\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Sauna Caption: The Hot House Is Warm</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Named.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-voice-story-3-16",
+   "repeat": false
+  },
+  {
+   "group": "Captions",
+   "category": "Captions",
+   "app": "WellNest",
+   "ask": "Weekday Labels: Farm Monday Or No Series Labels?",
+   "optionA": {
+    "id": "voicestory_weekday_labels_farm_mond_13",
+    "label": "Weekday Labels: Farm Monday",
+    "desc": "Series.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#ECC9782A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M12 21 V11 M12 11 Q6 11 5 5 Q11 5 12 11 M12 14 Q18 14 19 8 Q13 8 12 14\" fill=\"none\" stroke=\"#ECC978\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Weekday Labels: Farm Monday</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Series.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "voicestory_no_series_labels_14",
+    "label": "No Series Labels",
+    "desc": "Free.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#D7A3632A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M12 21 V11 M12 11 Q6 11 5 5 Q11 5 12 11 M12 14 Q18 14 19 8 Q13 8 12 14\" fill=\"none\" stroke=\"#D7A363\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >No Series Labels</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Free.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-voice-story-3-17",
+   "repeat": false
+  },
+  {
+   "group": "Captions",
+   "category": "Captions",
+   "app": "WellNest",
+   "ask": "Open With The Plant Or Open With A Feeling?",
+   "optionA": {
+    "id": "voicestory_open_with_the_plant_3",
+    "label": "Open With The Plant",
+    "desc": "Krajiab, picked at six.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#ECC9782A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M9 12 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M12 9 Q12 3 15 4 Q16 8 12 9 M15 12 Q21 12 20 15 Q16 16 15 12 M12 15 Q12 21 9 20 Q8 16 12 15 M9 12 Q3 12 4 9 Q8 8 9 12\" fill=\"none\" stroke=\"#ECC978\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Open With The Plant</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Krajiab, picked at six.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "voicestory_open_with_a_feeling_4",
+    "label": "Open With A Feeling",
+    "desc": "Slow morning.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#D7A3632A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M8 12 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M12 2 V4 M12 20 V22 M2 12 H4 M20 12 H22 M5 5 L6.5 6.5 M17.5 17.5 L19 19 M5 19 L6.5 17.5 M17.5 6.5 L19 5\" fill=\"none\" stroke=\"#D7A363\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Open With A Feeling</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Slow morning.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-voice-story-3-18",
+   "repeat": false
+  },
+  {
+   "group": "Captions",
+   "category": "Captions",
+   "app": "WellNest",
+   "ask": "Event Posts: Date First Or Event Posts: Feeling First?",
+   "optionA": {
+    "id": "voicestory_event_posts_date_first_15",
+    "label": "Event Posts: Date First",
+    "desc": "Sat 19 Oct.",
+    "tags": [
+     "action"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#ECC9782A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M3 6 H21 V18 H3 Z M3 10 H21\" fill=\"none\" stroke=\"#ECC978\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Event Posts: Date First</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Sat 19 Oct.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "voicestory_event_posts_feeling_firs_16",
+    "label": "Event Posts: Feeling First",
+    "desc": "Slow Sunday at the farm.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#D7A3632A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M8 12 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M12 2 V4 M12 20 V22 M2 12 H4 M20 12 H22 M5 5 L6.5 6.5 M17.5 17.5 L19 19 M5 19 L6.5 17.5 M17.5 6.5 L19 5\" fill=\"none\" stroke=\"#D7A363\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Event Posts: Feeling First</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Slow Sunday at the farm.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-voice-story-3-19",
+   "repeat": false
+  },
+  {
+   "group": "Captions",
+   "category": "Captions",
+   "app": "WellNest",
+   "ask": "Seasonal Posts Each Month Or Weekly Rhythm Posts?",
+   "optionA": {
+    "id": "voicestory_seasonal_posts_each_mont_39",
+    "label": "Seasonal Posts Each Month",
+    "desc": "This month on the farm.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#ECC9782A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M8 12 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M12 2 V4 M12 20 V22 M2 12 H4 M20 12 H22 M5 5 L6.5 6.5 M17.5 17.5 L19 19 M5 19 L6.5 17.5 M17.5 6.5 L19 5\" fill=\"none\" stroke=\"#ECC978\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Seasonal Posts Each Month</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >This month on the farm.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "voicestory_weekly_rhythm_posts_40",
+    "label": "Weekly Rhythm Posts",
+    "desc": "Same days.",
+    "tags": [
+     "action"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"15.0\" y=\"10.613333333333333\" width=\"22\" height=\"18.773333333333333\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"24\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >thewellnest</text><rect x=\"0\" y=\"36\" width=\"240\" height=\"170\" rx=\"0\" fill=\"#D7A3632A\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(90,90) scale(2.5)\"><path d=\"M3 6 Q8 4 12 7 Q16 4 21 6 V19 Q16 17 12 20 Q8 17 3 19 Z M12 7 V20\" fill=\"none\" stroke=\"#D7A363\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"12\" y=\"224\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Weekly Rhythm Posts</text><text x=\"12\" y=\"240\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Same days.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-voice-story-3-20",
+   "repeat": false
+  }
+ ],
+ "share": true,
+ "notes": true
+}
