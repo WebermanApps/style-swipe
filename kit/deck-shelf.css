@@ -1,7 +1,10 @@
 /* Ready To Swipe shelf (R66 look, Max Oct 14 2026 19:49 ICT): slim carousel strip, white cards, thin category stripe, Khand/Hind, no icons, no emoji.
    Phone: 2.5 cards visible. Wide screens: the 5 cards fit one row (big-screen layout still open, re-asked). Crisp at 393 / 1470 / 2560. */
 .ds-sec{margin:10px 0 12px;font-family:Hind,system-ui,sans-serif;color:#0A0A0A;box-sizing:border-box;max-width:100%;min-width:0}
-.ds-head{display:flex;align-items:baseline;gap:10px;margin:0 0 6px}
+.ds-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;margin:0 0 6px}
+.ds-stats{margin-left:auto;display:flex;gap:12px;align-items:baseline}.ds-stats[hidden]{display:none}
+.ds-stat{display:inline-flex;align-items:baseline;gap:4px;font-size:13px;color:#525252}.ds-stat b{font-family:Khand,sans-serif;font-weight:600;font-size:20px;color:#0B6E4F;line-height:1}
+@media(min-width:2000px){.ds-stat b{font-size:24px}}
 .ds-sec h2{font-family:Khand,sans-serif;font-weight:600;font-size:19px;line-height:1.1;margin:0}
 .ds-done{color:#737373;font-size:13px}
 .ds-empty{margin:0;padding:10px 12px;background:#fff;border:1px solid #E5E0D8;border-radius:10px;color:#525252;font-size:14px}
