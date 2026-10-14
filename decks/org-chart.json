@@ -1,0 +1,975 @@
+{
+ "date": "org-chart",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Org Chart Deck",
+ "generated_at": "2026-10-14T14:49:31+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "calm": 20,
+  "focused": 18,
+  "visual": 2
+ },
+ "groups": {
+  "Paused Agents": 2,
+  "Who Reports To Whom": 4,
+  "Display Style": 4,
+  "Merge Or Add": 3,
+  "Grouping": 3,
+  "Where It Lives": 2,
+  "Naming": 2
+ },
+ "apps": {
+  "Org Chart Deck": 20
+ },
+ "freshness": {
+  "option_slots": 40,
+  "never_shown_before": 40,
+  "share": 1.0
+ },
+ "warnings": [],
+ "brands": [
+  "Org Chart Deck: how the agent organization should look and be shown (groups Work/Personal/AIR, reporting to Grok Bot, display style, place on Apps Home, naming, merges and additions, paused agents)",
+  "Cream #FDFBF6 page, white cards, Khand/Hind; based on the current Apps Home org chart; text at least 8 units, vector mockups"
+ ],
+ "submit_agent": "grok-bot",
+ "submit_to": "Grok Bot",
+ "section_counts": {
+  "Grouping": 3,
+  "Who Reports To Whom": 4,
+  "Display Style": 4,
+  "Where It Lives": 2,
+  "Naming": 2,
+  "Merge Or Add": 3,
+  "Paused Agents": 2
+ },
+ "deck_size": 20,
+ "one_card_per_screen": true,
+ "pairs": [
+  {
+   "group": "Paused Agents",
+   "category": "Paused Agents",
+   "app": "Org Chart Deck",
+   "ask": "Paused Scout And Japan Cottage: Greyed In Place Or Moved To A Paused Group?",
+   "optionA": {
+    "id": "oc_pz_grey",
+    "label": "Greyed In Place",
+    "desc": "Stay in their group, grey with a Paused tag.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"14\" y=\"44\" width=\"212\" height=\"20\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"44\" width=\"3\" height=\"20\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120.0\" y=\"57.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >UpKeep</text><rect x=\"14\" y=\"68\" width=\"212\" height=\"20\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"68\" width=\"3\" height=\"20\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120.0\" y=\"81.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WellNest</text><rect x=\"14\" y=\"92\" width=\"212\" height=\"20\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"92\" width=\"3\" height=\"20\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120.0\" y=\"105.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Prop</text><rect x=\"14\" y=\"116\" width=\"212\" height=\"20\" rx=\"4\" fill=\"#F3F1EC\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"116\" width=\"3\" height=\"20\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120.0\" y=\"129.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Scout</text><rect x=\"14\" y=\"140\" width=\"212\" height=\"20\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"140\" width=\"3\" height=\"20\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120.0\" y=\"153.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Construction</text><rect x=\"180.2\" y=\"113\" width=\"37.8\" height=\"12\" rx=\"6\" fill=\"#5252521F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"199.1\" y=\"122\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Paused</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "oc_pz_group",
+    "label": "Paused Group",
+    "desc": "A grey Paused group at the bottom.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"14\" y=\"44\" width=\"212\" height=\"50\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"44\" width=\"3\" height=\"50\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"56\" font-size=\"8\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WORK</text><text x=\"24\" y=\"71\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >UpKeep</text><text x=\"124\" y=\"71\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WellNest</text><text x=\"24\" y=\"87\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Prop</text><text x=\"124\" y=\"87\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Construction</text><rect x=\"14\" y=\"108\" width=\"212\" height=\"34\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"108\" width=\"3\" height=\"34\" rx=\"1.5\" fill=\"#525252\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"120\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >PAUSED</text><text x=\"24\" y=\"135\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Scout</text><text x=\"124\" y=\"135\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Japan Cottage</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "org-chart-01",
+   "repeat": false
+  },
+  {
+   "group": "Who Reports To Whom",
+   "category": "Who Reports To Whom",
+   "app": "Org Chart Deck",
+   "ask": "Legal: Shared Helper In AIR Or Placed With The Work Agents?",
+   "optionA": {
+    "id": "oc_legal_air",
+    "label": "Shared Helper In AIR",
+    "desc": "Legal serves every group from AIR.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"14\" y=\"44\" width=\"212\" height=\"50\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"44\" width=\"3\" height=\"50\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"56\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >AIR</text><text x=\"24\" y=\"71\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Legal</text><text x=\"124\" y=\"71\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Security</text><text x=\"24\" y=\"87\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Research</text><text x=\"124\" y=\"87\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Branding</text><text x=\"14\" y=\"140\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Serves: Work, Personal</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "oc_legal_work",
+    "label": "With The Work Agents",
+    "desc": "Legal sits in Work next to Prop, Construction and UpKeep.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"14\" y=\"44\" width=\"212\" height=\"66\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"44\" width=\"3\" height=\"66\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"56\" font-size=\"8\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WORK</text><text x=\"24\" y=\"71\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >UpKeep</text><text x=\"124\" y=\"71\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WellNest</text><text x=\"24\" y=\"87\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Prop</text><text x=\"124\" y=\"87\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Scout</text><text x=\"24\" y=\"103\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Construction</text><text x=\"124\" y=\"103\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Legal</text><rect x=\"14\" y=\"140\" width=\"212\" height=\"50\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"140\" width=\"3\" height=\"50\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"152\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >AIR</text><text x=\"24\" y=\"167\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Branding</text><text x=\"124\" y=\"167\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Research</text><text x=\"24\" y=\"183\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Coach</text><text x=\"124\" y=\"183\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Security</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "org-chart-02",
+   "repeat": false
+  },
+  {
+   "group": "Display Style",
+   "category": "Display Style",
+   "app": "Org Chart Deck",
+   "ask": "Org Chart On Phone: All Groups Open Or Folded With A Count?",
+   "optionA": {
+    "id": "oc_ph_open",
+    "label": "All Groups Open",
+    "desc": "Every agent visible; longer page.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"14\" y=\"44\" width=\"212\" height=\"66\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"44\" width=\"3\" height=\"66\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"56\" font-size=\"8\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WORK</text><text x=\"24\" y=\"71\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >UpKeep</text><text x=\"124\" y=\"71\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WellNest</text><text x=\"24\" y=\"87\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Prop</text><text x=\"124\" y=\"87\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Scout</text><text x=\"24\" y=\"103\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Construction</text><rect x=\"14\" y=\"116\" width=\"212\" height=\"82\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"116\" width=\"3\" height=\"82\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"128\" font-size=\"8\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >PERSONAL</text><text x=\"24\" y=\"143\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Portfolio</text><text x=\"124\" y=\"143\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Blueprint</text><text x=\"24\" y=\"159\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Thai</text><text x=\"124\" y=\"159\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Blog</text><text x=\"24\" y=\"175\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Japan Cottage</text><text x=\"124\" y=\"175\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Miles</text><text x=\"24\" y=\"191\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Jokes</text><rect x=\"14\" y=\"204\" width=\"212\" height=\"82\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"204\" width=\"3\" height=\"82\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"216\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >AIR</text><text x=\"24\" y=\"231\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Branding</text><text x=\"124\" y=\"231\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Research</text><text x=\"24\" y=\"247\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Coach</text><text x=\"124\" y=\"247\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Video &amp; Photo</text><text x=\"24\" y=\"263\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Dump</text><text x=\"124\" y=\"263\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Legal</text><text x=\"24\" y=\"279\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Security</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "oc_ph_fold",
+    "label": "Folded With A Count",
+    "desc": "Tap a group to open it; counts shown.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"80\" y=\"44\" width=\"80\" height=\"20\" rx=\"4\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1\" /><text x=\"120.0\" y=\"57.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Grok Bot</text><rect x=\"14\" y=\"76\" width=\"212\" height=\"24\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"76\" width=\"3\" height=\"24\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"92\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Work</text><text x=\"196\" y=\"92\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >5</text><path d=\"M206 87 L210 91 L214 87\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><rect x=\"14\" y=\"106\" width=\"212\" height=\"24\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"106\" width=\"3\" height=\"24\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"122\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Personal</text><text x=\"196\" y=\"122\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >7</text><path d=\"M206 117 L210 121 L214 117\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><rect x=\"14\" y=\"136\" width=\"212\" height=\"24\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"136\" width=\"3\" height=\"24\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"152\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >AIR</text><text x=\"196\" y=\"152\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >7</text><path d=\"M206 147 L210 151 L214 147\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "org-chart-03",
+   "repeat": false
+  },
+  {
+   "group": "Who Reports To Whom",
+   "category": "Who Reports To Whom",
+   "app": "Org Chart Deck",
+   "ask": "Security: Stay Under AIR Or Report Straight To Grok Bot?",
+   "optionA": {
+    "id": "oc_sec_air",
+    "label": "Under AIR",
+    "desc": "Security sits in AIR with Legal and Research.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"80\" y=\"44\" width=\"80\" height=\"20\" rx=\"4\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1\" /><text x=\"120.0\" y=\"57.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Grok Bot</text><line x1=\"120\" y1=\"64\" x2=\"120\" y2=\"88\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><line x1=\"40\" y1=\"88\" x2=\"200\" y2=\"88\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><line x1=\"40\" y1=\"88\" x2=\"40\" y2=\"96\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"4\" y=\"96\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1\" /><text x=\"40.0\" y=\"108.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Work</text><line x1=\"120\" y1=\"88\" x2=\"120\" y2=\"96\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"84\" y=\"96\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1\" /><text x=\"120.0\" y=\"108.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Personal</text><line x1=\"200\" y1=\"88\" x2=\"200\" y2=\"96\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"96\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#0B6E4F\" stroke=\"#0B6E4F\" stroke-width=\"1\" /><text x=\"200.0\" y=\"108.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >AIR</text><line x1=\"200\" y1=\"114\" x2=\"200\" y2=\"120\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"120\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"120\" width=\"3\" height=\"18\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"200.0\" y=\"132.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Security</text><line x1=\"200\" y1=\"114\" x2=\"200\" y2=\"142\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"142\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"142\" width=\"3\" height=\"18\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"200.0\" y=\"154.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Legal</text><line x1=\"200\" y1=\"114\" x2=\"200\" y2=\"164\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"164\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"164\" width=\"3\" height=\"18\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"200.0\" y=\"176.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Research</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "oc_sec_hub",
+    "label": "Straight To Grok Bot",
+    "desc": "Security reports to Grok Bot directly and watches every group.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"80\" y=\"44\" width=\"80\" height=\"20\" rx=\"4\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1\" /><text x=\"120.0\" y=\"57.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Grok Bot</text><line x1=\"80\" y1=\"54\" x2=\"64\" y2=\"54\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"45\" width=\"50\" height=\"18\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"45\" width=\"3\" height=\"18\" rx=\"1.5\" fill=\"#0A0A0A\" stroke=\"none\" stroke-width=\"1\" /><text x=\"39.0\" y=\"57.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Security</text><line x1=\"120\" y1=\"64\" x2=\"120\" y2=\"88\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><line x1=\"40\" y1=\"88\" x2=\"200\" y2=\"88\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><line x1=\"40\" y1=\"88\" x2=\"40\" y2=\"96\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"4\" y=\"96\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1\" /><text x=\"40.0\" y=\"108.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Work</text><line x1=\"120\" y1=\"88\" x2=\"120\" y2=\"96\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"84\" y=\"96\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1\" /><text x=\"120.0\" y=\"108.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Personal</text><line x1=\"200\" y1=\"88\" x2=\"200\" y2=\"96\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"96\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#0B6E4F\" stroke=\"#0B6E4F\" stroke-width=\"1\" /><text x=\"200.0\" y=\"108.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >AIR</text><line x1=\"200\" y1=\"114\" x2=\"200\" y2=\"120\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"120\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"120\" width=\"3\" height=\"18\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"200.0\" y=\"132.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Legal</text><line x1=\"200\" y1=\"114\" x2=\"200\" y2=\"142\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"142\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"142\" width=\"3\" height=\"18\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"200.0\" y=\"154.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Research</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "org-chart-04",
+   "repeat": false
+  },
+  {
+   "group": "Merge Or Add",
+   "category": "Merge Or Add",
+   "app": "Org Chart Deck",
+   "ask": "UpKeep Content: Its Own Agent Box Or Folded Into UpKeep?",
+   "optionA": {
+    "id": "oc_uc_own",
+    "label": "Own Box In Work",
+    "desc": "UpKeep Content added to Work beside UpKeep.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"14\" y=\"44\" width=\"212\" height=\"66\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"44\" width=\"3\" height=\"66\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"56\" font-size=\"8\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WORK</text><text x=\"24\" y=\"71\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >UpKeep</text><text x=\"124\" y=\"71\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WellNest</text><text x=\"24\" y=\"87\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Prop</text><text x=\"124\" y=\"87\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Scout</text><text x=\"24\" y=\"103\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Construction</text><text x=\"124\" y=\"103\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >UpKeep Content</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "oc_uc_sub",
+    "label": "Under UpKeep",
+    "desc": "Shown as a small sub-box under UpKeep.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"60\" y=\"44\" width=\"120\" height=\"20\" rx=\"4\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1\" /><text x=\"120.0\" y=\"57.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >UpKeep</text><line x1=\"120\" y1=\"64\" x2=\"120\" y2=\"80\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"70\" y=\"80\" width=\"100\" height=\"18\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"70\" y=\"80\" width=\"3\" height=\"18\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120.0\" y=\"92.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >UpKeep Content</text><rect x=\"14\" y=\"116\" width=\"212\" height=\"50\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"116\" width=\"3\" height=\"50\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"128\" font-size=\"8\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WORK</text><text x=\"24\" y=\"143\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WellNest</text><text x=\"124\" y=\"143\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Prop</text><text x=\"24\" y=\"159\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Scout</text><text x=\"124\" y=\"159\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Construction</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "org-chart-05",
+   "repeat": false
+  },
+  {
+   "group": "Grouping",
+   "category": "Grouping",
+   "app": "Org Chart Deck",
+   "ask": "Where Does Dump Belong: In AIR Or Straight Under Grok Bot?",
+   "optionA": {
+    "id": "oc_dump_air",
+    "label": "Dump In AIR",
+    "desc": "Dump stays with the other shared helpers in AIR.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"80\" y=\"44\" width=\"80\" height=\"20\" rx=\"4\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1\" /><text x=\"120.0\" y=\"57.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Grok Bot</text><line x1=\"120\" y1=\"64\" x2=\"120\" y2=\"88\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><line x1=\"40\" y1=\"88\" x2=\"200\" y2=\"88\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><line x1=\"40\" y1=\"88\" x2=\"40\" y2=\"96\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"4\" y=\"96\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1\" /><text x=\"40.0\" y=\"108.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Work</text><line x1=\"120\" y1=\"88\" x2=\"120\" y2=\"96\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"84\" y=\"96\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1\" /><text x=\"120.0\" y=\"108.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Personal</text><line x1=\"200\" y1=\"88\" x2=\"200\" y2=\"96\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"96\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#0B6E4F\" stroke=\"#0B6E4F\" stroke-width=\"1\" /><text x=\"200.0\" y=\"108.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >AIR</text><line x1=\"200\" y1=\"114\" x2=\"200\" y2=\"120\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"120\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"120\" width=\"3\" height=\"18\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"200.0\" y=\"132.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Dump</text><line x1=\"200\" y1=\"114\" x2=\"200\" y2=\"142\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"142\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"142\" width=\"3\" height=\"18\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"200.0\" y=\"154.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Research</text><line x1=\"200\" y1=\"114\" x2=\"200\" y2=\"164\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"164\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"164\" width=\"3\" height=\"18\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"200.0\" y=\"176.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Coach</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "oc_dump_hub",
+    "label": "Dump Under Grok Bot",
+    "desc": "Dump sits beside Grok Bot as its inbox, outside the groups.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"80\" y=\"44\" width=\"80\" height=\"20\" rx=\"4\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1\" /><text x=\"120.0\" y=\"57.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Grok Bot</text><line x1=\"160\" y1=\"54\" x2=\"176\" y2=\"54\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"176\" y=\"45\" width=\"50\" height=\"18\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"176\" y=\"45\" width=\"3\" height=\"18\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"201.0\" y=\"57.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Dump</text><line x1=\"120\" y1=\"64\" x2=\"120\" y2=\"88\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><line x1=\"40\" y1=\"88\" x2=\"200\" y2=\"88\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><line x1=\"40\" y1=\"88\" x2=\"40\" y2=\"96\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"4\" y=\"96\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1\" /><text x=\"40.0\" y=\"108.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Work</text><line x1=\"120\" y1=\"88\" x2=\"120\" y2=\"96\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"84\" y=\"96\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1\" /><text x=\"120.0\" y=\"108.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Personal</text><line x1=\"200\" y1=\"88\" x2=\"200\" y2=\"96\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"96\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#0B6E4F\" stroke=\"#0B6E4F\" stroke-width=\"1\" /><text x=\"200.0\" y=\"108.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >AIR</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "org-chart-06",
+   "repeat": false
+  },
+  {
+   "group": "Where It Lives",
+   "category": "Where It Lives",
+   "app": "Org Chart Deck",
+   "ask": "Apps Home Link: A Small Org Chart Link Or Grok Bot Card Opens The Chart?",
+   "optionA": {
+    "id": "oc_ah_link",
+    "label": "Small Link At The Bottom",
+    "desc": "One line, View Org Chart, near the footer.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Apps Home</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"14.0\" y=\"44\" width=\"66.66666666666667\" height=\"18\" rx=\"9\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"47.333333333333336\" y=\"56\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Work</text><rect x=\"84.66666666666667\" y=\"44\" width=\"66.66666666666667\" height=\"18\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"118.0\" y=\"56\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Personal</text><rect x=\"155.33333333333334\" y=\"44\" width=\"66.66666666666667\" height=\"18\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"188.66666666666669\" y=\"56\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >AIR</text><rect x=\"14\" y=\"70\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"70\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"84.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >UpKeep</text><rect x=\"14\" y=\"96\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"96\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"110.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WellNest</text><rect x=\"14\" y=\"122\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"122\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"136.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Prop</text><rect x=\"14\" y=\"148\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"148\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"162.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Scout</text><rect x=\"14\" y=\"174\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"174\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"188.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Construction</text><text x=\"14\" y=\"220\" font-size=\"8.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >View Org Chart</text><path d=\"M80 215 L84 219 L88 215\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "oc_ah_card",
+    "label": "Grok Bot Card Opens It",
+    "desc": "Tap the Grok Bot card at the top to see the chart.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Apps Home</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"14\" y=\"44\" width=\"212\" height=\"40\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"44\" width=\"3\" height=\"40\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"62\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Grok Bot</text><text x=\"24\" y=\"76\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Team Org Chart</text><path d=\"M208 62 L212 66 L216 62\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><rect x=\"14.0\" y=\"94\" width=\"66.66666666666667\" height=\"18\" rx=\"9\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"47.333333333333336\" y=\"106\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Work</text><rect x=\"84.66666666666667\" y=\"94\" width=\"66.66666666666667\" height=\"18\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"118.0\" y=\"106\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Personal</text><rect x=\"155.33333333333334\" y=\"94\" width=\"66.66666666666667\" height=\"18\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"188.66666666666669\" y=\"106\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >AIR</text><rect x=\"14\" y=\"120\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"120\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"134.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >UpKeep</text><rect x=\"14\" y=\"146\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"146\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"160.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WellNest</text><rect x=\"14\" y=\"172\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"172\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"186.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Prop</text><rect x=\"14\" y=\"198\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"198\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"212.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Scout</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "org-chart-07",
+   "repeat": false
+  },
+  {
+   "group": "Naming",
+   "category": "Naming",
+   "app": "Org Chart Deck",
+   "ask": "Third Group Name: AIR Or AI Resources?",
+   "optionA": {
+    "id": "oc_nm_air",
+    "label": "AIR",
+    "desc": "Short tab name; fits the phone tab bar.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"14.0\" y=\"44\" width=\"66.66666666666667\" height=\"18\" rx=\"9\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"47.333333333333336\" y=\"56\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Work</text><rect x=\"84.66666666666667\" y=\"44\" width=\"66.66666666666667\" height=\"18\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"118.0\" y=\"56\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Personal</text><rect x=\"155.33333333333334\" y=\"44\" width=\"66.66666666666667\" height=\"18\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"188.66666666666669\" y=\"56\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >AIR</text><rect x=\"14\" y=\"70\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"70\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"84.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Branding</text><rect x=\"14\" y=\"96\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"96\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"110.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Research</text><rect x=\"14\" y=\"122\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"122\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"136.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Coach</text><rect x=\"14\" y=\"148\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"148\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"162.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Video &amp; Photo</text><rect x=\"14\" y=\"174\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"174\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"188.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Dump</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "oc_nm_air_long",
+    "label": "AI Resources",
+    "desc": "Spelled out, like the Dropbox folder 03 AI Resources.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"14.0\" y=\"44\" width=\"66.66666666666667\" height=\"18\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"47.333333333333336\" y=\"56\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Work</text><rect x=\"84.66666666666667\" y=\"44\" width=\"66.66666666666667\" height=\"18\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"118.0\" y=\"56\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Personal</text><rect x=\"155.33333333333334\" y=\"44\" width=\"66.66666666666667\" height=\"18\" rx=\"9\" fill=\"#0A0A0A\" stroke=\"none\" stroke-width=\"1\" /><text x=\"188.66666666666669\" y=\"56\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >AI Resources</text><rect x=\"14\" y=\"70\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"70\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"84.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Branding</text><rect x=\"14\" y=\"96\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"96\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"110.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Research</text><rect x=\"14\" y=\"122\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"122\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"136.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Coach</text><rect x=\"14\" y=\"148\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"148\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"162.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Video &amp; Photo</text><rect x=\"14\" y=\"174\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"174\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"188.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Dump</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "org-chart-08",
+   "repeat": false
+  },
+  {
+   "group": "Display Style",
+   "category": "Display Style",
+   "app": "Org Chart Deck",
+   "ask": "Each Agent Box Shows: Name Only Or Name With A Status Dot And Last Activity?",
+   "optionA": {
+    "id": "oc_box_name",
+    "label": "Name Only",
+    "desc": "Just the agent name; quiet and simple.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"14\" y=\"44\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"44\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"58.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >UpKeep</text><rect x=\"14\" y=\"70\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"70\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"84.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WellNest</text><rect x=\"14\" y=\"96\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"96\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"110.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Prop</text><rect x=\"14\" y=\"122\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"122\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"136.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Construction</text><rect x=\"14\" y=\"148\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"148\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"162.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Scout</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "oc_box_status",
+    "label": "Name, Dot, Last Activity",
+    "desc": "Green or grey dot and when it last shipped.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"14\" y=\"44\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"55\" r=\"3\" fill=\"#0B6E4F\"/><text x=\"36\" y=\"58\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >UpKeep</text><text x=\"218\" y=\"58\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >14:35</text><rect x=\"14\" y=\"70\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"81\" r=\"3\" fill=\"#0B6E4F\"/><text x=\"36\" y=\"84\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WellNest</text><text x=\"218\" y=\"84\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >13:10</text><rect x=\"14\" y=\"96\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"107\" r=\"3\" fill=\"#0B6E4F\"/><text x=\"36\" y=\"110\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Prop</text><text x=\"218\" y=\"110\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Yesterday</text><rect x=\"14\" y=\"122\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"133\" r=\"3\" fill=\"#0B6E4F\"/><text x=\"36\" y=\"136\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Construction</text><text x=\"218\" y=\"136\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Oct 12</text><rect x=\"14\" y=\"148\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"159\" r=\"3\" fill=\"#BDB6AA\"/><text x=\"36\" y=\"162\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Scout</text><text x=\"218\" y=\"162\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Paused</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "org-chart-09",
+   "repeat": false
+  },
+  {
+   "group": "Merge Or Add",
+   "category": "Merge Or Add",
+   "app": "Org Chart Deck",
+   "ask": "Video & Photo And Branding: Keep Two Agents Or Merge Into One Creative Agent?",
+   "optionA": {
+    "id": "oc_vp_two",
+    "label": "Keep Two",
+    "desc": "Branding for look and words; Video & Photo for media.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"14\" y=\"44\" width=\"212\" height=\"82\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"44\" width=\"3\" height=\"82\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"56\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >AIR</text><text x=\"24\" y=\"71\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Branding</text><text x=\"124\" y=\"71\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Research</text><text x=\"24\" y=\"87\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Coach</text><text x=\"124\" y=\"87\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Video &amp; Photo</text><text x=\"24\" y=\"103\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Dump</text><text x=\"124\" y=\"103\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Legal</text><text x=\"24\" y=\"119\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Security</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "oc_vp_one",
+    "label": "Merge Into Creative",
+    "desc": "One Creative agent covers brand, video and photo.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"14\" y=\"44\" width=\"212\" height=\"66\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"44\" width=\"3\" height=\"66\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"56\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >AIR</text><text x=\"24\" y=\"71\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Creative</text><text x=\"124\" y=\"71\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Research</text><text x=\"24\" y=\"87\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Coach</text><text x=\"124\" y=\"87\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Dump</text><text x=\"24\" y=\"103\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Legal</text><text x=\"124\" y=\"103\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Security</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "org-chart-10",
+   "repeat": false
+  },
+  {
+   "group": "Display Style",
+   "category": "Display Style",
+   "app": "Org Chart Deck",
+   "ask": "Agents Shown As Group Cards Or As Coloured Tiles?",
+   "optionA": {
+    "id": "oc_disp_cards2",
+    "label": "Group Cards",
+    "desc": "Names listed inside a white card per group.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"14\" y=\"44\" width=\"212\" height=\"66\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"44\" width=\"3\" height=\"66\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"56\" font-size=\"8\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WORK</text><text x=\"24\" y=\"71\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >UpKeep</text><text x=\"124\" y=\"71\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WellNest</text><text x=\"24\" y=\"87\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Prop</text><text x=\"124\" y=\"87\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Scout</text><text x=\"24\" y=\"103\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Construction</text><rect x=\"14\" y=\"116\" width=\"212\" height=\"82\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"116\" width=\"3\" height=\"82\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"128\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >AIR</text><text x=\"24\" y=\"143\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Branding</text><text x=\"124\" y=\"143\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Research</text><text x=\"24\" y=\"159\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Coach</text><text x=\"124\" y=\"159\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Video &amp; Photo</text><text x=\"24\" y=\"175\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Dump</text><text x=\"124\" y=\"175\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Legal</text><text x=\"24\" y=\"191\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Security</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "oc_disp_tiles",
+    "label": "Coloured Tiles",
+    "desc": "Each agent its own tile, coloured by group.",
+    "tags": [
+     "visual"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"14.0\" y=\"44\" width=\"66.66666666666667\" height=\"34\" rx=\"6\" fill=\"#C1502E1F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"25.0\" cy=\"55\" r=\"4\" fill=\"#C1502E\"/><text x=\"22.0\" y=\"70\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >UpKeep</text><rect x=\"86.66666666666667\" y=\"44\" width=\"66.66666666666667\" height=\"34\" rx=\"6\" fill=\"#C1502E1F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"97.66666666666667\" cy=\"55\" r=\"4\" fill=\"#C1502E\"/><text x=\"94.66666666666667\" y=\"70\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WellNest</text><rect x=\"159.33333333333334\" y=\"44\" width=\"66.66666666666667\" height=\"34\" rx=\"6\" fill=\"#C1502E1F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"170.33333333333334\" cy=\"55\" r=\"4\" fill=\"#C1502E\"/><text x=\"167.33333333333334\" y=\"70\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Prop</text><rect x=\"14.0\" y=\"84\" width=\"66.66666666666667\" height=\"34\" rx=\"6\" fill=\"#C1502E1F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"25.0\" cy=\"95\" r=\"4\" fill=\"#C1502E\"/><text x=\"22.0\" y=\"110\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Scout</text><rect x=\"86.66666666666667\" y=\"84\" width=\"66.66666666666667\" height=\"34\" rx=\"6\" fill=\"#C1502E1F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"97.66666666666667\" cy=\"95\" r=\"4\" fill=\"#C1502E\"/><text x=\"94.66666666666667\" y=\"110\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Construction</text><rect x=\"159.33333333333334\" y=\"84\" width=\"66.66666666666667\" height=\"34\" rx=\"6\" fill=\"#0B6E4F1F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"170.33333333333334\" cy=\"95\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"167.33333333333334\" y=\"110\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Branding</text><rect x=\"14.0\" y=\"124\" width=\"66.66666666666667\" height=\"34\" rx=\"6\" fill=\"#0B6E4F1F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"25.0\" cy=\"135\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"22.0\" y=\"150\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Research</text><rect x=\"86.66666666666667\" y=\"124\" width=\"66.66666666666667\" height=\"34\" rx=\"6\" fill=\"#0B6E4F1F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"97.66666666666667\" cy=\"135\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"94.66666666666667\" y=\"150\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Coach</text><rect x=\"159.33333333333334\" y=\"124\" width=\"66.66666666666667\" height=\"34\" rx=\"6\" fill=\"#0B6E4F1F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"170.33333333333334\" cy=\"135\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"167.33333333333334\" y=\"150\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Video &amp; Photo</text><rect x=\"14.0\" y=\"164\" width=\"66.66666666666667\" height=\"34\" rx=\"6\" fill=\"#0B6E4F1F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"25.0\" cy=\"175\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"22.0\" y=\"190\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Dump</text><rect x=\"86.66666666666667\" y=\"164\" width=\"66.66666666666667\" height=\"34\" rx=\"6\" fill=\"#0B6E4F1F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"97.66666666666667\" cy=\"175\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"94.66666666666667\" y=\"190\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Legal</text><rect x=\"159.33333333333334\" y=\"164\" width=\"66.66666666666667\" height=\"34\" rx=\"6\" fill=\"#0B6E4F1F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"170.33333333333334\" cy=\"175\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"167.33333333333334\" y=\"190\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Security</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "org-chart-11",
+   "repeat": false
+  },
+  {
+   "group": "Grouping",
+   "category": "Grouping",
+   "app": "Org Chart Deck",
+   "ask": "Org Chart Groups: Keep Three Tabs (Work, Personal, AIR) Or One Page With Three Sections?",
+   "optionA": {
+    "id": "oc_tabs3",
+    "label": "Three Tabs",
+    "desc": "Work, Personal, AIR as tabs; one group shown at a time.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"14.0\" y=\"44\" width=\"66.66666666666667\" height=\"18\" rx=\"9\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"47.333333333333336\" y=\"56\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Work</text><rect x=\"84.66666666666667\" y=\"44\" width=\"66.66666666666667\" height=\"18\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"118.0\" y=\"56\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Personal</text><rect x=\"155.33333333333334\" y=\"44\" width=\"66.66666666666667\" height=\"18\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"188.66666666666669\" y=\"56\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >AIR</text><rect x=\"14\" y=\"70\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"70\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"84.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >UpKeep</text><rect x=\"14\" y=\"96\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"96\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"110.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WellNest</text><rect x=\"14\" y=\"122\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"122\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"136.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Prop</text><rect x=\"14\" y=\"148\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"148\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"162.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Scout</text><rect x=\"14\" y=\"174\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"174\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"188.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Construction</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "oc_onepage",
+    "label": "One Page, Three Sections",
+    "desc": "All three groups on one scrolling page, a heading each.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"14\" y=\"44\" width=\"212\" height=\"66\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"44\" width=\"3\" height=\"66\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"56\" font-size=\"8\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WORK</text><text x=\"24\" y=\"71\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >UpKeep</text><text x=\"124\" y=\"71\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WellNest</text><text x=\"24\" y=\"87\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Prop</text><text x=\"124\" y=\"87\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Scout</text><text x=\"24\" y=\"103\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Construction</text><rect x=\"14\" y=\"116\" width=\"212\" height=\"82\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"116\" width=\"3\" height=\"82\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"128\" font-size=\"8\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >PERSONAL</text><text x=\"24\" y=\"143\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Portfolio</text><text x=\"124\" y=\"143\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Blueprint</text><text x=\"24\" y=\"159\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Thai</text><text x=\"124\" y=\"159\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Blog</text><text x=\"24\" y=\"175\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Japan Cottage</text><text x=\"124\" y=\"175\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Miles</text><text x=\"24\" y=\"191\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Jokes</text><rect x=\"14\" y=\"204\" width=\"212\" height=\"82\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"204\" width=\"3\" height=\"82\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"216\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >AIR</text><text x=\"24\" y=\"231\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Branding</text><text x=\"124\" y=\"231\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Research</text><text x=\"24\" y=\"247\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Coach</text><text x=\"124\" y=\"247\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Video &amp; Photo</text><text x=\"24\" y=\"263\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Dump</text><text x=\"124\" y=\"263\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Legal</text><text x=\"24\" y=\"279\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Security</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "org-chart-12",
+   "repeat": false
+  },
+  {
+   "group": "Who Reports To Whom",
+   "category": "Who Reports To Whom",
+   "app": "Org Chart Deck",
+   "ask": "Grok Bot As Hub: Every Agent Wired To Grok Bot Or Grok Bot Over Three Group Leads?",
+   "optionA": {
+    "id": "oc_hub_all",
+    "label": "Every Agent To Grok Bot",
+    "desc": "One hub; each agent has a direct line to Grok Bot.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"80\" y=\"130\" width=\"80\" height=\"20\" rx=\"4\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1\" /><text x=\"120.0\" y=\"143.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Grok Bot</text><line x1=\"120\" y1=\"140\" x2=\"212.0\" y2=\"140.0\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><line x1=\"120\" y1=\"140\" x2=\"202.88110881835178\" y2=\"179.9339680102107\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><line x1=\"120\" y1=\"140\" x2=\"177.33213475998846\" y2=\"211.95155539571414\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><line x1=\"120\" y1=\"140\" x2=\"140.41782378667023\" y2=\"229.7056992159165\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><line x1=\"120\" y1=\"140\" x2=\"99.45594948124952\" y2=\"229.67687543777953\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><line x1=\"120\" y1=\"140\" x2=\"62.56666128693248\" y2=\"211.870797993831\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><line x1=\"120\" y1=\"140\" x2=\"37.062772351815596\" y2=\"179.81728607066577\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><line x1=\"120\" y1=\"140\" x2=\"28.000091108685197\" y2=\"139.87052417300146\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><line x1=\"120\" y1=\"140\" x2=\"37.17517416776026\" y2=\"99.94942914440354\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><line x1=\"120\" y1=\"140\" x2=\"62.76918274646926\" y2=\"67.96782971135073\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><line x1=\"120\" y1=\"140\" x2=\"99.7084433854335\" y2=\"50.26565467917068\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><line x1=\"120\" y1=\"140\" x2=\"140.6702365607996\" y2=\"50.352125956492515\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><line x1=\"120\" y1=\"140\" x2=\"177.53442891232098\" y2=\"68.21010175705021\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><line x1=\"120\" y1=\"140\" x2=\"202.99318221058735\" y2=\"100.29947473193525\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"186.0\" y=\"132.0\" width=\"52\" height=\"16\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"186.0\" y=\"132.0\" width=\"3\" height=\"16\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"212.0\" y=\"143.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >UpKeep</text><rect x=\"176.88110881835178\" y=\"171.9339680102107\" width=\"52\" height=\"16\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"176.88110881835178\" y=\"171.9339680102107\" width=\"3\" height=\"16\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"202.88110881835178\" y=\"182.9339680102107\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WellNest</text><rect x=\"151.33213475998846\" y=\"203.95155539571414\" width=\"52\" height=\"16\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"151.33213475998846\" y=\"203.95155539571414\" width=\"3\" height=\"16\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"177.33213475998846\" y=\"214.95155539571414\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Prop</text><rect x=\"114.41782378667023\" y=\"221.7056992159165\" width=\"52\" height=\"16\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"114.41782378667023\" y=\"221.7056992159165\" width=\"3\" height=\"16\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"140.41782378667023\" y=\"232.7056992159165\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Scout</text><rect x=\"73.45594948124952\" y=\"221.67687543777953\" width=\"52\" height=\"16\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"73.45594948124952\" y=\"221.67687543777953\" width=\"3\" height=\"16\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"99.45594948124952\" y=\"232.67687543777953\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Construction</text><rect x=\"36.56666128693248\" y=\"203.870797993831\" width=\"52\" height=\"16\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"36.56666128693248\" y=\"203.870797993831\" width=\"3\" height=\"16\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"62.56666128693248\" y=\"214.870797993831\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Portfolio</text><rect x=\"11.062772351815596\" y=\"171.81728607066577\" width=\"52\" height=\"16\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"11.062772351815596\" y=\"171.81728607066577\" width=\"3\" height=\"16\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"37.062772351815596\" y=\"182.81728607066577\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Blueprint</text><rect x=\"2.000091108685197\" y=\"131.87052417300146\" width=\"52\" height=\"16\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"2.000091108685197\" y=\"131.87052417300146\" width=\"3\" height=\"16\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"28.000091108685197\" y=\"142.87052417300146\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Thai</text><rect x=\"11.175174167760261\" y=\"91.94942914440354\" width=\"52\" height=\"16\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"11.175174167760261\" y=\"91.94942914440354\" width=\"3\" height=\"16\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"37.17517416776026\" y=\"102.94942914440354\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Blog</text><rect x=\"36.76918274646926\" y=\"59.96782971135073\" width=\"52\" height=\"16\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"36.76918274646926\" y=\"59.96782971135073\" width=\"3\" height=\"16\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"62.76918274646926\" y=\"70.96782971135073\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Branding</text><rect x=\"73.7084433854335\" y=\"42.26565467917068\" width=\"52\" height=\"16\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"73.7084433854335\" y=\"42.26565467917068\" width=\"3\" height=\"16\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"99.7084433854335\" y=\"53.26565467917068\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Research</text><rect x=\"114.6702365607996\" y=\"42.352125956492515\" width=\"52\" height=\"16\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"114.6702365607996\" y=\"42.352125956492515\" width=\"3\" height=\"16\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"140.6702365607996\" y=\"53.352125956492515\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Coach</text><rect x=\"151.53442891232098\" y=\"60.21010175705021\" width=\"52\" height=\"16\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"151.53442891232098\" y=\"60.21010175705021\" width=\"3\" height=\"16\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"177.53442891232098\" y=\"71.21010175705021\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Video &amp; Photo</text><rect x=\"176.99318221058735\" y=\"92.29947473193525\" width=\"52\" height=\"16\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"176.99318221058735\" y=\"92.29947473193525\" width=\"3\" height=\"16\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"202.99318221058735\" y=\"103.29947473193525\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Dump</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "oc_hub_leads",
+    "label": "Grok Bot Over Group Leads",
+    "desc": "Grok Bot over Work, Personal, AIR; agents under each.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"80\" y=\"44\" width=\"80\" height=\"20\" rx=\"4\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1\" /><text x=\"120.0\" y=\"57.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Grok Bot</text><line x1=\"120\" y1=\"64\" x2=\"120\" y2=\"88\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><line x1=\"40\" y1=\"88\" x2=\"200\" y2=\"88\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><line x1=\"40\" y1=\"88\" x2=\"40\" y2=\"96\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"4\" y=\"96\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1\" /><text x=\"40.0\" y=\"108.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Work</text><line x1=\"40\" y1=\"114\" x2=\"40\" y2=\"120\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"4\" y=\"120\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"4\" y=\"120\" width=\"3\" height=\"18\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"40.0\" y=\"132.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >UpKeep</text><line x1=\"40\" y1=\"114\" x2=\"40\" y2=\"142\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"4\" y=\"142\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"4\" y=\"142\" width=\"3\" height=\"18\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"40.0\" y=\"154.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WellNest</text><line x1=\"40\" y1=\"114\" x2=\"40\" y2=\"164\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"4\" y=\"164\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"4\" y=\"164\" width=\"3\" height=\"18\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"40.0\" y=\"176.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Prop</text><line x1=\"120\" y1=\"88\" x2=\"120\" y2=\"96\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"84\" y=\"96\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1\" /><text x=\"120.0\" y=\"108.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Personal</text><line x1=\"120\" y1=\"114\" x2=\"120\" y2=\"120\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"84\" y=\"120\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"84\" y=\"120\" width=\"3\" height=\"18\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120.0\" y=\"132.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Portfolio</text><line x1=\"120\" y1=\"114\" x2=\"120\" y2=\"142\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"84\" y=\"142\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"84\" y=\"142\" width=\"3\" height=\"18\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120.0\" y=\"154.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Thai</text><line x1=\"120\" y1=\"114\" x2=\"120\" y2=\"164\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"84\" y=\"164\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"84\" y=\"164\" width=\"3\" height=\"18\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120.0\" y=\"176.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Blog</text><line x1=\"200\" y1=\"88\" x2=\"200\" y2=\"96\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"96\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#0B6E4F\" stroke=\"#0B6E4F\" stroke-width=\"1\" /><text x=\"200.0\" y=\"108.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >AIR</text><line x1=\"200\" y1=\"114\" x2=\"200\" y2=\"120\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"120\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"120\" width=\"3\" height=\"18\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"200.0\" y=\"132.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Branding</text><line x1=\"200\" y1=\"114\" x2=\"200\" y2=\"142\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"142\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"142\" width=\"3\" height=\"18\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"200.0\" y=\"154.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Research</text><line x1=\"200\" y1=\"114\" x2=\"200\" y2=\"164\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"164\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"164\" width=\"3\" height=\"18\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"200.0\" y=\"176.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Security</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "org-chart-13",
+   "repeat": false
+  },
+  {
+   "group": "Display Style",
+   "category": "Display Style",
+   "app": "Org Chart Deck",
+   "ask": "Org Chart Look: A Tree With Lines Or Group Cards?",
+   "optionA": {
+    "id": "oc_disp_tree",
+    "label": "Tree With Lines",
+    "desc": "Boxes joined by lines, Grok Bot at the top.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"80\" y=\"44\" width=\"80\" height=\"20\" rx=\"4\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1\" /><text x=\"120.0\" y=\"57.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Grok Bot</text><line x1=\"120\" y1=\"64\" x2=\"120\" y2=\"88\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><line x1=\"40\" y1=\"88\" x2=\"200\" y2=\"88\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><line x1=\"40\" y1=\"88\" x2=\"40\" y2=\"96\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"4\" y=\"96\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1\" /><text x=\"40.0\" y=\"108.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Work</text><line x1=\"40\" y1=\"114\" x2=\"40\" y2=\"120\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"4\" y=\"120\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"4\" y=\"120\" width=\"3\" height=\"18\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"40.0\" y=\"132.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >UpKeep</text><line x1=\"40\" y1=\"114\" x2=\"40\" y2=\"142\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"4\" y=\"142\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"4\" y=\"142\" width=\"3\" height=\"18\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"40.0\" y=\"154.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Prop</text><line x1=\"120\" y1=\"88\" x2=\"120\" y2=\"96\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"84\" y=\"96\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1\" /><text x=\"120.0\" y=\"108.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Personal</text><line x1=\"120\" y1=\"114\" x2=\"120\" y2=\"120\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"84\" y=\"120\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"84\" y=\"120\" width=\"3\" height=\"18\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120.0\" y=\"132.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Thai</text><line x1=\"120\" y1=\"114\" x2=\"120\" y2=\"142\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"84\" y=\"142\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"84\" y=\"142\" width=\"3\" height=\"18\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120.0\" y=\"154.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Blog</text><line x1=\"200\" y1=\"88\" x2=\"200\" y2=\"96\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"96\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#0B6E4F\" stroke=\"#0B6E4F\" stroke-width=\"1\" /><text x=\"200.0\" y=\"108.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >AIR</text><line x1=\"200\" y1=\"114\" x2=\"200\" y2=\"120\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"120\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"120\" width=\"3\" height=\"18\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"200.0\" y=\"132.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Legal</text><line x1=\"200\" y1=\"114\" x2=\"200\" y2=\"142\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"142\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"142\" width=\"3\" height=\"18\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"200.0\" y=\"154.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Coach</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "oc_disp_cards",
+    "label": "Group Cards",
+    "desc": "One white card per group listing its agents.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"14\" y=\"44\" width=\"212\" height=\"66\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"44\" width=\"3\" height=\"66\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"56\" font-size=\"8\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WORK</text><text x=\"24\" y=\"71\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >UpKeep</text><text x=\"124\" y=\"71\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WellNest</text><text x=\"24\" y=\"87\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Prop</text><text x=\"124\" y=\"87\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Scout</text><text x=\"24\" y=\"103\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Construction</text><rect x=\"14\" y=\"116\" width=\"212\" height=\"82\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"116\" width=\"3\" height=\"82\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"128\" font-size=\"8\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >PERSONAL</text><text x=\"24\" y=\"143\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Portfolio</text><text x=\"124\" y=\"143\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Blueprint</text><text x=\"24\" y=\"159\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Thai</text><text x=\"124\" y=\"159\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Blog</text><text x=\"24\" y=\"175\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Japan Cottage</text><text x=\"124\" y=\"175\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Miles</text><text x=\"24\" y=\"191\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Jokes</text><rect x=\"14\" y=\"204\" width=\"212\" height=\"82\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"204\" width=\"3\" height=\"82\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"216\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >AIR</text><text x=\"24\" y=\"231\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Branding</text><text x=\"124\" y=\"231\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Research</text><text x=\"24\" y=\"247\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Coach</text><text x=\"124\" y=\"247\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Video &amp; Photo</text><text x=\"24\" y=\"263\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Dump</text><text x=\"124\" y=\"263\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Legal</text><text x=\"24\" y=\"279\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Security</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "org-chart-14",
+   "repeat": false
+  },
+  {
+   "group": "Who Reports To Whom",
+   "category": "Who Reports To Whom",
+   "app": "Org Chart Deck",
+   "ask": "Show Hand-Offs Between Agents (For Example Branding To WellNest) Or Only Reporting Lines?",
+   "optionA": {
+    "id": "oc_lines_only",
+    "label": "Only Reporting Lines",
+    "desc": "Clean tree: who reports to whom, nothing else.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"80\" y=\"44\" width=\"80\" height=\"20\" rx=\"4\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1\" /><text x=\"120.0\" y=\"57.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Grok Bot</text><line x1=\"120\" y1=\"64\" x2=\"120\" y2=\"88\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><line x1=\"40\" y1=\"88\" x2=\"200\" y2=\"88\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><line x1=\"40\" y1=\"88\" x2=\"40\" y2=\"96\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"4\" y=\"96\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1\" /><text x=\"40.0\" y=\"108.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Work</text><line x1=\"40\" y1=\"114\" x2=\"40\" y2=\"120\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"4\" y=\"120\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"4\" y=\"120\" width=\"3\" height=\"18\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"40.0\" y=\"132.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WellNest</text><line x1=\"120\" y1=\"88\" x2=\"120\" y2=\"96\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"84\" y=\"96\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1\" /><text x=\"120.0\" y=\"108.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Personal</text><line x1=\"200\" y1=\"88\" x2=\"200\" y2=\"96\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"96\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#0B6E4F\" stroke=\"#0B6E4F\" stroke-width=\"1\" /><text x=\"200.0\" y=\"108.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >AIR</text><line x1=\"200\" y1=\"114\" x2=\"200\" y2=\"120\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"120\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"120\" width=\"3\" height=\"18\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"200.0\" y=\"132.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Branding</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "oc_handoffs",
+    "label": "Show Hand-Offs Too",
+    "desc": "Dashed lines for regular hand-offs between agents.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"80\" y=\"44\" width=\"80\" height=\"20\" rx=\"4\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1\" /><text x=\"120.0\" y=\"57.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Grok Bot</text><line x1=\"120\" y1=\"64\" x2=\"120\" y2=\"88\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><line x1=\"40\" y1=\"88\" x2=\"200\" y2=\"88\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><line x1=\"40\" y1=\"88\" x2=\"40\" y2=\"96\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"4\" y=\"96\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1\" /><text x=\"40.0\" y=\"108.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Work</text><line x1=\"40\" y1=\"114\" x2=\"40\" y2=\"120\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"4\" y=\"120\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"4\" y=\"120\" width=\"3\" height=\"18\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"40.0\" y=\"132.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WellNest</text><line x1=\"120\" y1=\"88\" x2=\"120\" y2=\"96\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"84\" y=\"96\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1\" /><text x=\"120.0\" y=\"108.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Personal</text><line x1=\"200\" y1=\"88\" x2=\"200\" y2=\"96\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"96\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#0B6E4F\" stroke=\"#0B6E4F\" stroke-width=\"1\" /><text x=\"200.0\" y=\"108.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >AIR</text><line x1=\"200\" y1=\"114\" x2=\"200\" y2=\"120\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"120\" width=\"72\" height=\"18\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"164\" y=\"120\" width=\"3\" height=\"18\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"200.0\" y=\"132.0\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Branding</text><path d=\"M164 129 Q120 150 76 129\" fill=\"none\" stroke=\"#D4A017\" stroke-width=\"1.4\" stroke-dasharray=\"3 2\"/><text x=\"120\" y=\"160\" font-size=\"8\" fill=\"#D4A017\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Hand-off</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "org-chart-15",
+   "repeat": false
+  },
+  {
+   "group": "Where It Lives",
+   "category": "Where It Lives",
+   "app": "Org Chart Deck",
+   "ask": "On Apps Home: Org Chart At The Top Or As Its Own Team Tab?",
+   "optionA": {
+    "id": "oc_ah_top",
+    "label": "At The Top",
+    "desc": "A small chart above the Work, Personal, AIR tabs.",
+    "tags": [
+     "visual"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Apps Home</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"14\" y=\"44\" width=\"212\" height=\"70\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"80\" y=\"52\" width=\"80\" height=\"20\" rx=\"4\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1\" /><text x=\"120.0\" y=\"65.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Grok Bot</text><rect x=\"24\" y=\"86\" width=\"60\" height=\"16\" rx=\"4\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1\" /><text x=\"54.0\" y=\"97.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Work</text><rect x=\"90\" y=\"86\" width=\"60\" height=\"16\" rx=\"4\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1\" /><text x=\"120.0\" y=\"97.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Personal</text><rect x=\"156\" y=\"86\" width=\"60\" height=\"16\" rx=\"4\" fill=\"#0B6E4F\" stroke=\"#0B6E4F\" stroke-width=\"1\" /><text x=\"186.0\" y=\"97.0\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >AIR</text><rect x=\"14.0\" y=\"124\" width=\"66.66666666666667\" height=\"18\" rx=\"9\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"47.333333333333336\" y=\"136\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Work</text><rect x=\"84.66666666666667\" y=\"124\" width=\"66.66666666666667\" height=\"18\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"118.0\" y=\"136\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Personal</text><rect x=\"155.33333333333334\" y=\"124\" width=\"66.66666666666667\" height=\"18\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"188.66666666666669\" y=\"136\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >AIR</text><rect x=\"14\" y=\"150\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"150\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"164.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >UpKeep</text><rect x=\"14\" y=\"176\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"176\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"190.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WellNest</text><rect x=\"14\" y=\"202\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"202\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"216.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Prop</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "oc_ah_tab",
+    "label": "Own Team Tab",
+    "desc": "A fourth tab, Team, holds the org chart.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Apps Home</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"14.0\" y=\"44\" width=\"49.0\" height=\"18\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"38.5\" y=\"56\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Work</text><rect x=\"67.0\" y=\"44\" width=\"49.0\" height=\"18\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"91.5\" y=\"56\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Personal</text><rect x=\"120.0\" y=\"44\" width=\"49.0\" height=\"18\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"144.5\" y=\"56\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >AIR</text><rect x=\"173.0\" y=\"44\" width=\"49.0\" height=\"18\" rx=\"9\" fill=\"#0A0A0A\" stroke=\"none\" stroke-width=\"1\" /><text x=\"197.5\" y=\"56\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Team</text><rect x=\"14\" y=\"70\" width=\"212\" height=\"66\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"70\" width=\"3\" height=\"66\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"82\" font-size=\"8\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WORK</text><text x=\"24\" y=\"97\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >UpKeep</text><text x=\"124\" y=\"97\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WellNest</text><text x=\"24\" y=\"113\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Prop</text><text x=\"124\" y=\"113\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Scout</text><text x=\"24\" y=\"129\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Construction</text><rect x=\"14\" y=\"142\" width=\"212\" height=\"82\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"142\" width=\"3\" height=\"82\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"154\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >AIR</text><text x=\"24\" y=\"169\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Branding</text><text x=\"124\" y=\"169\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Research</text><text x=\"24\" y=\"185\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Coach</text><text x=\"124\" y=\"185\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Video &amp; Photo</text><text x=\"24\" y=\"201\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Dump</text><text x=\"124\" y=\"201\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Legal</text><text x=\"24\" y=\"217\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Security</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "org-chart-16",
+   "repeat": false
+  },
+  {
+   "group": "Merge Or Add",
+   "category": "Merge Or Add",
+   "app": "Org Chart Deck",
+   "ask": "Blog And Jokes: Keep Separate Or Merge Into One Writing Agent?",
+   "optionA": {
+    "id": "oc_bj_two",
+    "label": "Keep Separate",
+    "desc": "Blog and Jokes stay two Personal agents.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"14\" y=\"44\" width=\"212\" height=\"82\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"44\" width=\"3\" height=\"82\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"56\" font-size=\"8\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >PERSONAL</text><text x=\"24\" y=\"71\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Portfolio</text><text x=\"124\" y=\"71\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Blueprint</text><text x=\"24\" y=\"87\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Thai</text><text x=\"124\" y=\"87\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Blog</text><text x=\"24\" y=\"103\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Japan Cottage</text><text x=\"124\" y=\"103\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Miles</text><text x=\"24\" y=\"119\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Jokes</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "oc_bj_one",
+    "label": "One Writing Agent",
+    "desc": "A Writing agent with Blog and Jokes as sections.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"14\" y=\"44\" width=\"212\" height=\"66\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"44\" width=\"3\" height=\"66\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"56\" font-size=\"8\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >PERSONAL</text><text x=\"24\" y=\"71\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Portfolio</text><text x=\"124\" y=\"71\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Blueprint</text><text x=\"24\" y=\"87\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Thai</text><text x=\"124\" y=\"87\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Writing</text><text x=\"24\" y=\"103\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Japan Cottage</text><text x=\"124\" y=\"103\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Miles</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "org-chart-17",
+   "repeat": false
+  },
+  {
+   "group": "Paused Agents",
+   "category": "Paused Agents",
+   "app": "Org Chart Deck",
+   "ask": "Paused Agents On Apps Home: Hidden Or Shown With A Resume Note?",
+   "optionA": {
+    "id": "oc_pz_hide",
+    "label": "Hidden",
+    "desc": "Paused agents leave Apps Home until resumed.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Apps Home</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"14.0\" y=\"44\" width=\"66.66666666666667\" height=\"18\" rx=\"9\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"47.333333333333336\" y=\"56\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Work</text><rect x=\"84.66666666666667\" y=\"44\" width=\"66.66666666666667\" height=\"18\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"118.0\" y=\"56\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Personal</text><rect x=\"155.33333333333334\" y=\"44\" width=\"66.66666666666667\" height=\"18\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"188.66666666666669\" y=\"56\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >AIR</text><rect x=\"14\" y=\"70\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"70\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"84.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >UpKeep</text><rect x=\"14\" y=\"96\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"96\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"110.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WellNest</text><rect x=\"14\" y=\"122\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"122\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"136.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Prop</text><rect x=\"14\" y=\"148\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"148\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"162.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Construction</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "oc_pz_note",
+    "label": "Shown With A Resume Note",
+    "desc": "Kept at the end, grey, with what restarts them.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Apps Home</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"14.0\" y=\"44\" width=\"66.66666666666667\" height=\"18\" rx=\"9\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"47.333333333333336\" y=\"56\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Work</text><rect x=\"84.66666666666667\" y=\"44\" width=\"66.66666666666667\" height=\"18\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"118.0\" y=\"56\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Personal</text><rect x=\"155.33333333333334\" y=\"44\" width=\"66.66666666666667\" height=\"18\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"188.66666666666669\" y=\"56\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >AIR</text><rect x=\"14\" y=\"70\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"70\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"84.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >UpKeep</text><rect x=\"14\" y=\"96\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"96\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"110.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WellNest</text><rect x=\"14\" y=\"122\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"122\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"136.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Prop</text><rect x=\"14\" y=\"148\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"148\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"162.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Construction</text><rect x=\"14\" y=\"174\" width=\"212\" height=\"30\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"187\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Scout</text><text x=\"24\" y=\"199\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Paused. Resumes when Max asks.</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "org-chart-18",
+   "repeat": false
+  },
+  {
+   "group": "Naming",
+   "category": "Naming",
+   "app": "Org Chart Deck",
+   "ask": "Agent Names: Short (Branding, Miles) Or With Agent (Branding Agent, Miles Agent)?",
+   "optionA": {
+    "id": "oc_nm_short",
+    "label": "Short Names",
+    "desc": "Branding, Miles, Research: no Agent word.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"14\" y=\"44\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"44\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"58.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Branding</text><rect x=\"14\" y=\"70\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"70\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"84.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Miles</text><rect x=\"14\" y=\"96\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"96\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"110.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Research</text><rect x=\"14\" y=\"122\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"122\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"136.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Coach</text><rect x=\"14\" y=\"148\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"148\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"162.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Legal</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "oc_nm_agent",
+    "label": "With Agent",
+    "desc": "Branding Agent, Miles Agent, Research Agent.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"14\" y=\"44\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"44\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"58.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Branding Agent</text><rect x=\"14\" y=\"70\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"70\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"84.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Miles Agent</text><rect x=\"14\" y=\"96\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"96\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"110.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Research Agent</text><rect x=\"14\" y=\"122\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"122\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"136.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Coach Agent</text><rect x=\"14\" y=\"148\" width=\"212\" height=\"22\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"148\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"162.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Legal Agent</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "org-chart-19",
+   "repeat": false
+  },
+  {
+   "group": "Grouping",
+   "category": "Grouping",
+   "app": "Org Chart Deck",
+   "ask": "Prop And Construction: Stay In Work Or Get Their Own Property Group?",
+   "optionA": {
+    "id": "oc_prop_work",
+    "label": "Stay In Work",
+    "desc": "Prop and Construction stay in Work with UpKeep and WellNest.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"14\" y=\"44\" width=\"212\" height=\"66\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"44\" width=\"3\" height=\"66\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"56\" font-size=\"8\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WORK</text><text x=\"24\" y=\"71\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >UpKeep</text><text x=\"124\" y=\"71\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WellNest</text><text x=\"24\" y=\"87\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Prop</text><text x=\"124\" y=\"87\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Scout</text><text x=\"24\" y=\"103\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Construction</text><rect x=\"14\" y=\"140\" width=\"212\" height=\"82\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"140\" width=\"3\" height=\"82\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"152\" font-size=\"8\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >PERSONAL</text><text x=\"24\" y=\"167\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Portfolio</text><text x=\"124\" y=\"167\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Blueprint</text><text x=\"24\" y=\"183\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Thai</text><text x=\"124\" y=\"183\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Blog</text><text x=\"24\" y=\"199\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Japan Cottage</text><text x=\"124\" y=\"199\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Miles</text><text x=\"24\" y=\"215\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Jokes</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "oc_prop_own",
+    "label": "Own Property Group",
+    "desc": "A fourth group: Prop, Construction, Japan Cottage, Blueprint.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FDFBF6\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"32\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"32\" x2=\"240\" y2=\"32\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M8 14 L12 18 L16 14\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18\" y=\"19\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Apps Home</text><text x=\"120\" y=\"21\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, sans-serif\" font-weight=\"600\" >Org Chart</text><g transform=\"translate(212,9) scale(.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\"/></g><circle cx=\"170\" cy=\"16\" r=\"2.5\" fill=\"#C1502E\"/><rect x=\"14\" y=\"44\" width=\"212\" height=\"50\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"44\" width=\"3\" height=\"50\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"56\" font-size=\"8\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WORK</text><text x=\"24\" y=\"71\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >UpKeep</text><text x=\"124\" y=\"71\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >WellNest</text><text x=\"24\" y=\"87\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Scout</text><rect x=\"14\" y=\"100\" width=\"212\" height=\"50\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"100\" width=\"3\" height=\"50\" rx=\"1.5\" fill=\"#525252\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"112\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >PROPERTY</text><text x=\"24\" y=\"127\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Prop</text><text x=\"124\" y=\"127\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Construction</text><text x=\"24\" y=\"143\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Japan Cottage</text><text x=\"124\" y=\"143\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Blueprint</text><rect x=\"14\" y=\"156\" width=\"212\" height=\"66\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"156\" width=\"3\" height=\"66\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"168\" font-size=\"8\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >PERSONAL</text><text x=\"24\" y=\"183\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Portfolio</text><text x=\"124\" y=\"183\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Thai</text><text x=\"24\" y=\"199\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Blog</text><text x=\"124\" y=\"199\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Miles</text><text x=\"24\" y=\"215\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Jokes</text><text x=\"120\" y=\"293\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "org-chart-20",
+   "repeat": false
+  }
+ ],
+ "share": true,
+ "notes": true
+}
