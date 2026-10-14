@@ -1,0 +1,999 @@
+{
+ "date": "rule-cleanup-rule-cleanup-deck",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Rule Cleanup Deck",
+ "generated_at": "2026-10-14T19:58:46+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "focused": 20,
+  "calm": 20
+ },
+ "groups": {
+  "Rule Cleanup": 20
+ },
+ "apps": {
+  "Coach": 20
+ },
+ "freshness": {
+  "option_slots": 40,
+  "never_shown_before": 40,
+  "share": 1.0
+ },
+ "warnings": [],
+ "submit_agent": "coach",
+ "deck_size": 20,
+ "carried": 0,
+ "topic": "rule-cleanup",
+ "shelf": true,
+ "bank_pairs": [
+  "coach-rule-cleanup-001",
+  "coach-rule-cleanup-002",
+  "coach-rule-cleanup-003",
+  "coach-rule-cleanup-004",
+  "coach-rule-cleanup-005",
+  "coach-rule-cleanup-006",
+  "coach-rule-cleanup-007",
+  "coach-rule-cleanup-008",
+  "coach-rule-cleanup-009",
+  "coach-rule-cleanup-010",
+  "coach-rule-cleanup-011",
+  "coach-rule-cleanup-012",
+  "coach-rule-cleanup-013",
+  "coach-rule-cleanup-014",
+  "coach-rule-cleanup-015",
+  "coach-rule-cleanup-016",
+  "coach-rule-cleanup-017",
+  "coach-rule-cleanup-018",
+  "coach-rule-cleanup-019",
+  "coach-rule-cleanup-020"
+ ],
+ "source": "banks/rule-cleanup.json",
+ "pairs": [
+  {
+   "group": "Rule Cleanup",
+   "category": "Love Button",
+   "app": "Coach",
+   "ask": "Love Button: Swipe Decks Only Or Dropped Everywhere?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "rule-cleanup-rule-cleanup-deck-01",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_rc004_a",
+    "label": "Swipe Decks Only",
+    "desc": "Keep No, Maybe, Love, Yes on swipe decks. Questionnaires keep Yes, Maybe, No.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#C1502E\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">LOVE BUTTON</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Swipe Decks Only</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Keep No, Maybe, Love, Yes on swipe</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">decks. Questionnaires keep Yes, Maybe,</text><text x=\"18\" y=\"124\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">No.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_rc004_b",
+    "label": "Drop Everywhere",
+    "desc": "Remove Love from every deck and questionnaire to match Coach's Oct 14 change.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">LOVE BUTTON</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Drop Everywhere</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Remove Love from every deck and</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">questionnaire to match Coach&#x27;s Oct 14</text><text x=\"18\" y=\"124\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">change.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Rule Cleanup",
+   "category": "Questionnaire Size",
+   "app": "Coach",
+   "ask": "Coach Suggestions (5 Cards): A Deck That Must Be 20 Or A Short Questionnaire?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "rule-cleanup-rule-cleanup-deck-02",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_rc003_a",
+    "label": "Short Questionnaire",
+    "desc": "The 3 to 5 daily suggestions stay a short questionnaire, outside the 20-card rule.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#C1502E\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">QUESTIONNAIRE SIZE</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Short Questionnaire</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">The 3 to 5 daily suggestions stay a</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">short questionnaire, outside the</text><text x=\"18\" y=\"124\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">20-card rule.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_rc003_b",
+    "label": "Must Be 20",
+    "desc": "It counts as a deck, so it is padded or merged to exactly 20 cards.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">QUESTIONNAIRE SIZE</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Must Be 20</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">It counts as a deck, so it is padded</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">or merged to exactly 20 cards.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Rule Cleanup",
+   "category": "Old Decks Size",
+   "app": "Coach",
+   "ask": "Older Live Decks Over 20 Cards: Keep Their Size Or Trim To 20?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "rule-cleanup-rule-cleanup-deck-03",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_rc015_a",
+    "label": "Keep Their Size",
+    "desc": "Older live decks like Layout Quick Picks (25) stay as they are.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#C1502E\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">OLD DECKS SIZE</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Keep Their Size</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Older live decks like Layout Quick</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Picks (25) stay as they are.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_rc015_b",
+    "label": "Trim To 20",
+    "desc": "Trim every live deck to exactly 20 cards to match R62.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">OLD DECKS SIZE</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Trim To 20</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Trim every live deck to exactly 20</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">cards to match R62.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Rule Cleanup",
+   "category": "Sticky Header",
+   "app": "Coach",
+   "ask": "Sticky Mini Header: Always On Or Optional Per Board?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "rule-cleanup-rule-cleanup-deck-04",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_rc014_a",
+    "label": "Always On",
+    "desc": "Every board keeps a slim name and Apps Home bar at the top while scrolling.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#C1502E\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">STICKY HEADER</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Always On</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Every board keeps a slim name and Apps</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Home bar at the top while scrolling.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_rc014_b",
+    "label": "Optional",
+    "desc": "Each board may use it or not, as R26 now says.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">STICKY HEADER</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Optional</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Each board may use it or not, as R26</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">now says.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Rule Cleanup",
+   "category": "New Rule Timing",
+   "app": "Coach",
+   "ask": "A New Rule That Clashes With An Old One: Pause Until You Choose Or Newest Wins?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "rule-cleanup-rule-cleanup-deck-05",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_rc017_a",
+    "label": "Pause Until You Choose",
+    "desc": "Agents keep the old rule until you pick which one wins.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#C1502E\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">NEW RULE TIMING</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Pause Until You Choose</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Agents keep the old rule until you</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">pick which one wins.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_rc017_b",
+    "label": "Newest Wins",
+    "desc": "The newest rule applies at once and the old one is retired.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">NEW RULE TIMING</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Newest Wins</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">The newest rule applies at once and</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">the old one is retired.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Rule Cleanup",
+   "category": "Lists Or Carousels",
+   "app": "Coach",
+   "ask": "A Set Of Ideas: Carousel Or Five Rows Then See All?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "rule-cleanup-rule-cleanup-deck-06",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_rc013_a",
+    "label": "Carousel",
+    "desc": "Use a swipe carousel, as R8 prefers for sets of ideas.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#C1502E\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">LISTS OR CAROUSELS</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Carousel</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Use a swipe carousel, as R8 prefers</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">for sets of ideas.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_rc013_b",
+    "label": "Five Then See All",
+    "desc": "Use five compact rows and a See All button, as R31 says.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">LISTS OR CAROUSELS</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Five Then See All</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Use five compact rows and a See All</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">button, as R31 says.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Rule Cleanup",
+   "category": "Max OK Feed Line",
+   "app": "Coach",
+   "ask": "Feed Line For Each smartupkeep.ai Publish: Still Log Max OK Time Or Just Log It?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "rule-cleanup-rule-cleanup-deck-07",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_rc002_a",
+    "label": "Log Max OK Time",
+    "desc": "Every customer publish line ends with Max OK hh:mm, even before launch.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#C1502E\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">MAX OK FEED LINE</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Log Max OK Time</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Every customer publish line ends with</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Max OK hh:mm, even before launch.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_rc002_b",
+    "label": "Just Log The Publish",
+    "desc": "Before launch, the line just says what shipped and when.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">MAX OK FEED LINE</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Just Log The Publish</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Before launch, the line just says what</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">shipped and when.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Rule Cleanup",
+   "category": "Shelf Placement Exceptions",
+   "app": "Coach",
+   "ask": "Shelf Below Needs Attention (UpKeep): Allow Per Board Or Always At The Top?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "rule-cleanup-rule-cleanup-deck-08",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_rc016_a",
+    "label": "Allow Per Board",
+    "desc": "A board may place its shelf lower when you chose that.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#C1502E\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">SHELF PLACEMENT EXCEPTIONS</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Allow Per Board</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">A board may place its shelf lower when</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">you chose that.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_rc016_b",
+    "label": "Always At The Top",
+    "desc": "Every board puts the shelf at the very top, no exceptions.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">SHELF PLACEMENT EXCEPTIONS</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Always At The Top</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Every board puts the shelf at the very</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">top, no exceptions.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Rule Cleanup",
+   "category": "smartupkeep.ai Publishing",
+   "app": "Coach",
+   "ask": "smartupkeep.ai Before Launch: Publish Freely Or Wait For Your OK?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "rule-cleanup-rule-cleanup-deck-09",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_rc001_a",
+    "label": "Publish Freely",
+    "desc": "Your 13:24 rule: smartupkeep.ai publishes without your OK until launch.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#C1502E\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">SMARTUPKEEP.AI PUBLISHING</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Publish Freely</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Your 13:24 rule: smartupkeep.ai</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">publishes without your OK until</text><text x=\"18\" y=\"124\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">launch.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_rc001_b",
+    "label": "Wait For Your OK",
+    "desc": "Rulebook R14: customer-facing pages need your OK before publishing.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">SMARTUPKEEP.AI PUBLISHING</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Wait For Your OK</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Rulebook R14: customer-facing pages</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">need your OK before publishing.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Rule Cleanup",
+   "category": "Which File Wins",
+   "app": "Coach",
+   "ask": "Rulebook And Brand Guide Disagree: Rulebook Wins For Dashboards Or Brand Guide Wins?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "rule-cleanup-rule-cleanup-deck-10",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_rc007_a",
+    "label": "Rulebook Wins",
+    "desc": "For dashboards the numbered rulebook decides; the brand guide covers everything else.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#C1502E\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">WHICH FILE WINS</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Rulebook Wins</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">For dashboards the numbered rulebook</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">decides; the brand guide covers</text><text x=\"18\" y=\"124\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">everything else.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_rc007_b",
+    "label": "Brand Guide Wins",
+    "desc": "The brand guide stays the top source and the rulebook follows it.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">WHICH FILE WINS</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Brand Guide Wins</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">The brand guide stays the top source</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">and the rulebook follows it.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Rule Cleanup",
+   "category": "Numbered Ids",
+   "app": "Coach",
+   "ask": "Deck Ids Like thai-ready-1: Numbers Fine Behind The Scenes Or Descriptive Everywhere?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "rule-cleanup-rule-cleanup-deck-11",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_rc010_a",
+    "label": "Fine Behind The Scenes",
+    "desc": "Names you see are descriptive; hidden ids may carry numbers.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#C1502E\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">NUMBERED IDS</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Fine Behind The Scenes</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Names you see are descriptive; hidden</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">ids may carry numbers.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_rc010_b",
+    "label": "Descriptive Everywhere",
+    "desc": "Ids and page links use names too, like coach-rule-cleanup.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">NUMBERED IDS</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Descriptive Everywhere</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Ids and page links use names too, like</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">coach-rule-cleanup.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Rule Cleanup",
+   "category": "Spec Copies",
+   "app": "Coach",
+   "ask": "Dashboard Spec Still Says One-Line Report: Point It At The Rulebook Or Edit The Text?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "rule-cleanup-rule-cleanup-deck-12",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_rc005_a",
+    "label": "Point To Rulebook",
+    "desc": "Replace the old Layout Standards list in the spec with a link to the rulebook.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#C1502E\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">SPEC COPIES</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Point To Rulebook</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Replace the old Layout Standards list</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">in the spec with a link to the</text><text x=\"18\" y=\"124\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">rulebook.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_rc005_b",
+    "label": "Edit The Text",
+    "desc": "Keep the list in the spec and update each line to match the rulebook.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">SPEC COPIES</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Edit The Text</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Keep the list in the spec and update</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">each line to match the rulebook.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Rule Cleanup",
+   "category": "Footer Exceptions",
+   "app": "Coach",
+   "ask": "Built By Max Weberman Footer: Every Internal App Or Skip On Business Brands?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "rule-cleanup-rule-cleanup-deck-13",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_rc019_a",
+    "label": "Every Internal App",
+    "desc": "Every app you build carries the footer, except Smart UpKeep pages.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#C1502E\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">FOOTER EXCEPTIONS</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Every Internal App</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Every app you build carries the</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">footer, except Smart UpKeep pages.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_rc019_b",
+    "label": "Skip On Business Brands",
+    "desc": "Skip it on WellNest and other business-branded pages too.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">FOOTER EXCEPTIONS</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Skip On Business Brands</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Skip it on WellNest and other</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">business-branded pages too.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Rule Cleanup",
+   "category": "Old Agent Names",
+   "app": "Coach",
+   "ask": "Old Names In Rule Files (Folio, Vision): Rename Now Or Leave As History?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "rule-cleanup-rule-cleanup-deck-14",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_rc011_a",
+    "label": "Rename Now",
+    "desc": "Update every rule file to Portfolio, Research and the other new names.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#C1502E\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">OLD AGENT NAMES</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Rename Now</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Update every rule file to Portfolio,</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Research and the other new names.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_rc011_b",
+    "label": "Leave As History",
+    "desc": "Keep old names in dated history; new lines use new names.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">OLD AGENT NAMES</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Leave As History</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Keep old names in dated history; new</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">lines use new names.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Rule Cleanup",
+   "category": "Spec Share Section",
+   "app": "Coach",
+   "ask": "Spec Share Section Says Above The Footer: Update To Header Icon Or Remove It?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "rule-cleanup-rule-cleanup-deck-15",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_rc006_a",
+    "label": "Update To Header Icon",
+    "desc": "Rewrite it to match R53: small Share icon in the header corner.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#C1502E\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">SPEC SHARE SECTION</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Update To Header Icon</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Rewrite it to match R53: small Share</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">icon in the header corner.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_rc006_b",
+    "label": "Remove It",
+    "desc": "Delete the section and let the rulebook cover Share.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">SPEC SHARE SECTION</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Remove It</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Delete the section and let the</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">rulebook cover Share.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Rule Cleanup",
+   "category": "Extra Test Sizes",
+   "app": "Coach",
+   "ask": "MacBook 1280x800 And TV Sizes: Keep As Extra Checks Or Drop?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "rule-cleanup-rule-cleanup-deck-16",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_rc012_a",
+    "label": "Keep Extra Checks",
+    "desc": "Keep 1280x800 and TV sizes for Apps Home as the spec says.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#C1502E\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">EXTRA TEST SIZES</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Keep Extra Checks</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Keep 1280x800 and TV sizes for Apps</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Home as the spec says.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_rc012_b",
+    "label": "Drop Them",
+    "desc": "Test only 393, 1470 and 2560, as R11 says.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">EXTRA TEST SIZES</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Drop Them</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Test only 393, 1470 and 2560, as R11</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">says.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Rule Cleanup",
+   "category": "Rule Change Notes",
+   "app": "Coach",
+   "ask": "When A Rule Changes: Quote The Old Version Or Just The New?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "rule-cleanup-rule-cleanup-deck-17",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_rc018_a",
+    "label": "Quote The Old",
+    "desc": "The rulebook keeps the old wording quoted under the new rule.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#C1502E\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">RULE CHANGE NOTES</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Quote The Old</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">The rulebook keeps the old wording</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">quoted under the new rule.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_rc018_b",
+    "label": "Just The New",
+    "desc": "Only the current rule stays; history lives in git.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">RULE CHANGE NOTES</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Just The New</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Only the current rule stays; history</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">lives in git.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Rule Cleanup",
+   "category": "Memory Duplicates",
+   "app": "Coach",
+   "ask": "Rules Saved Twice In Memory: Coach Merges Them Or Leave Them?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "rule-cleanup-rule-cleanup-deck-18",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_rc008_a",
+    "label": "Coach Merges",
+    "desc": "Coach merges repeats like the two no-dark-mode notes into one line each.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#C1502E\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">MEMORY DUPLICATES</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Coach Merges</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Coach merges repeats like the two</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">no-dark-mode notes into one line each.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_rc008_b",
+    "label": "Leave Them",
+    "desc": "Leave memory as is; repeats do no harm.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">MEMORY DUPLICATES</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Leave Them</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave memory as is; repeats do no</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">harm.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Rule Cleanup",
+   "category": "Morning Brief",
+   "app": "Coach",
+   "ask": "Grok Bot 7:18 Chat Brief: Keep It Next To 5:00 Reports Or Fold It In?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "rule-cleanup-rule-cleanup-deck-19",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_rc009_a",
+    "label": "Keep The 7:18 Brief",
+    "desc": "Keep the chat brief at 7:18 as well as the 5:00 Morning Reports.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#C1502E\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">MORNING BRIEF</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Keep The 7:18 Brief</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Keep the chat brief at 7:18 as well as</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">the 5:00 Morning Reports.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_rc009_b",
+    "label": "Fold It In",
+    "desc": "Drop the separate brief and put its lines in Grok Bot's Morning Report.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">MORNING BRIEF</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Fold It In</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Drop the separate brief and put its</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">lines in Grok Bot&#x27;s Morning Report.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Rule Cleanup",
+   "category": "Settled Rule Retests",
+   "app": "Coach",
+   "ask": "A Settled Rule Comes Back In A Deck: Allow Retests Or Never Re-Ask?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "rule-cleanup-rule-cleanup-deck-20",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_rc020_a",
+    "label": "Never Re-Ask",
+    "desc": "Once you settle a rule, decks do not ask it again.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#C1502E\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">SETTLED RULE RETESTS</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Never Re-Ask</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Once you settle a rule, decks do not</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">ask it again.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_rc020_b",
+    "label": "Allow Retests",
+    "desc": "A settled rule may come back once if a board looks wrong with it.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">SETTLED RULE RETESTS</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Allow Retests</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">A settled rule may come back once if a</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">board looks wrong with it.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  }
+ ],
+ "share": true,
+ "notes": true
+}
