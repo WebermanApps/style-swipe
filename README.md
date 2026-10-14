@@ -36,3 +36,7 @@ then commit + push style-swipe and the dashboard repo. Skips come first, reworde
 2. Build/publish, then `git pull --rebase --autostash` again and commit the ledgers TOGETHER WITH your own deck files in one commit (`git add` named paths only, never `git add -A`).
 3. On a ledger conflict, merge both sides (they are JSON maps/lists: keep every entry), then `python3 tools/write_sizes.py` to regenerate sizes.json. Never `reset --hard`, never drop another agent's entries, never commit another agent's untracked deck files.
 4. Deck pages: header Deck Building and Back to Deck Building follow `submit_agent` via `kit/agent-dashboards.json`; after adding pages run `python3 tools/agent_links.py`.
+
+## Deck cap (Max, Oct 14 2026 19:43 ICT)
+No agent dashboard shows more than 5 decks, ready-shelf AND pinned unfinished together. Only exception: the Deck Building page (branding /decks/).
+`kit/deck-shelf.js` enforces it: pinned unfinished decks (`shelf.json` `pinned`/`unfinished`, or `DeckShelf.render(el, json, {pinned:[...]})`) go first, then ready decks, cut at 5; the rest are queued (`DeckShelf.queued(el)`) and show only when a slot opens. Do not render a separate pinned/unfinished strip next to the shelf; pass it in so the cap counts it. Deck Building page only: `data-shelf-nocap`.
