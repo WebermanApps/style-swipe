@@ -157,11 +157,22 @@ def feed(kind):
 P(G, "Feed Detail: Log Lines Or Headline Plus Note?",
   ("c8_log", "Log Lines", "Many items, one line each.", "quick", plain(feed("log"), "One plain log line per item.", "DASHBOARD-2, SKIPPED")),
   ("c8_head", "Headline Plus Note", "Fewer items, easier to read.", "visual", plain(feed("head"), "Short headline with a one-line note under it.", "DASHBOARD-2, SKIPPED")))
-N = len(pairs); assert N == 12, N
+# 13. C10 skips after Submit (R61)
+def skipmock(back):
+    s = title("After Submit", "Coach deck, 3 sent")
+    rows = [("Answered", "Gone", JUNGLE), ("Noted", "Gone", JUNGLE), ("Skipped", "Comes Back" if back else "Gone", TERRA if back else JUNGLE)]
+    for j, (a, b, c) in enumerate(rows):
+        y = 56 + j * 40; s += card(B, 14, y, 212, 32) + T(B, 24, y + 20, a, 9, None, True) + T(B, 216, y + 20, b, 8, c, w=600, a="end")
+    return s
+G = "C10 Skips After Submit"
+P(G, "Skipped Questions: Come Back Next Time Or Count As Answered?",
+  ("c10_back", "Skips Come Back", "A skip is unanswered and returns next deck.", "focused", plain(skipmock(True), "Skipped cards return like unanswered ones.", "CURRENT PRACTICE")),
+  ("c10_gone", "Skips Count As Answered", "A skip disappears after Submit.", "quick", plain(skipmock(False), "Skipped cards disappear with the answered ones.", "R61 READ LITERALLY")))
+N = len(pairs); assert N == 13, N
 cnt = {}
 for p in pairs: cnt[p["group"]] = cnt.get(p["group"], 0) + 1
 publish(DID, "Rulebook Tiebreak Deck", "Branding", pairs,
-        {"brands": ["Rulebook Tiebreak: follow-up to Rulebook Clash (skipped white vs cream first, accents re-asked, scope of settled Share / caps / tab-bar picks, open dashboard tiebreaks)", "Max brand on the light cream deck page with white cards"],
+        {"brands": ["Rulebook Tiebreak: follow-up to Rulebook Clash (skipped white vs cream first, accents re-asked, scope of settled Share / caps / tab-bar picks, open dashboard tiebreaks, skips after Submit)", "Max brand on the light cream deck page with white cards"],
          "submit_agent": "branding", "submit_to": "Branding Agent 3fac5054-3a3d-49b1-af61-59883f7fdc78", "section_counts": cnt, "deck_size": N,
          "trim_override": f"{N} pairs: short follow-up deck", "sources": {"rulebook": "/workspace/ops/brand/dashboard-rulebook.md", "results": "results/rulebook-clash.txt"}},
         seed=1032, n=N, first=1)
