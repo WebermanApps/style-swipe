@@ -1,0 +1,973 @@
+{
+ "date": "wellnest-dashboard-online-2",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Dashboard: Layout Details",
+ "generated_at": "2026-10-14T12:46:57+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "visual": 8,
+  "focused": 8,
+  "calm": 8,
+  "quick": 8,
+  "action": 8
+ },
+ "groups": {
+  "Dashboard": 20
+ },
+ "apps": {
+  "WellNest": 20
+ },
+ "freshness": {
+  "option_slots": 40,
+  "never_shown_before": 40,
+  "share": 1.0
+ },
+ "warnings": [],
+ "brands": [
+  "Deeper WellNest dashboard details after the first dashboard deck",
+  "Locked WellNest brand: original nest logo, Cormorant + DM Sans, gold leads, peach accent, sand lines; white deck background; drawn SVGs, sample content only"
+ ],
+ "submit_agent": "wellnest",
+ "submit_to": "WellNest Agent",
+ "section_counts": {
+  "Dashboard": 20
+ },
+ "deck_size": 20,
+ "series": {
+  "category": "Dashboard & Online",
+  "order": 2
+ },
+ "sources": {
+  "rules": "/workspace/wellnest/brand-rules.md",
+  "results": "/workspace/wellnest/deck-results/",
+  "queue": "/workspace/wellnest/deck-queue.json"
+ },
+ "pairs": [
+  {
+   "group": "Dashboard",
+   "category": "Dashboard",
+   "app": "WellNest",
+   "ask": "Roomy Spacing Or Dense Spacing?",
+   "optionA": {
+    "id": "dashboardo_roomy_spacing_7",
+    "label": "Roomy Spacing",
+    "desc": "Few per screen.",
+    "tags": [
+     "visual"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Brand Decisions</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Decks To Do</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Latest Report</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"184\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"184\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"205.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Apps And Links</text><text x=\"216\" y=\"205.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Roomy Spacing</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Few per screen.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "dashboardo_dense_spacing_8",
+    "label": "Dense Spacing",
+    "desc": "More per screen.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"26\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"26\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"68.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Brand Decisions</text><text x=\"216\" y=\"68.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"83\" width=\"216\" height=\"26\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"83\" width=\"4\" height=\"26\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"99.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Decks To Do</text><text x=\"216\" y=\"99.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"114\" width=\"216\" height=\"26\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"114\" width=\"4\" height=\"26\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"130.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Latest Report</text><text x=\"216\" y=\"130.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"145\" width=\"216\" height=\"26\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"145\" width=\"4\" height=\"26\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Apps And Links</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"176\" width=\"216\" height=\"26\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"176\" width=\"4\" height=\"26\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"192.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Calendar</text><text x=\"216\" y=\"192.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"207\" width=\"216\" height=\"26\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"207\" width=\"4\" height=\"26\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"223.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Notes</text><text x=\"216\" y=\"223.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Dense Spacing</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >More per screen.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-dashboard-online-2-01",
+   "repeat": false
+  },
+  {
+   "group": "Dashboard",
+   "category": "Dashboard",
+   "app": "WellNest",
+   "ask": "Deck Card Shows Pair Count Or Deck Card Shows Minutes?",
+   "optionA": {
+    "id": "dashboardo_deck_card_shows_pair_cou_27",
+    "label": "Deck Card Shows Pair Count",
+    "desc": "20 pairs.",
+    "tags": [
+     "visual"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Logo &amp; Colour  20</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Taglines  20</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Deck Card Shows Pair Count</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >20 pairs.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "dashboardo_deck_card_shows_minutes_28",
+    "label": "Deck Card Shows Minutes",
+    "desc": "5 min.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Logo &amp; Colour  5 min</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Taglines  5 min</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Deck Card Shows Minutes</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >5 min.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-dashboard-online-2-02",
+   "repeat": false
+  },
+  {
+   "group": "Dashboard",
+   "category": "Dashboard",
+   "app": "WellNest",
+   "ask": "Done Decks Collapse Or Done Decks Stay Listed?",
+   "optionA": {
+    "id": "dashboardo_done_decks_collapse_11",
+    "label": "Done Decks Collapse",
+    "desc": "Hide done.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Decks To Do (3)</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Done (2) - tap to show</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Done Decks Collapse</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Hide done.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "dashboardo_done_decks_stay_listed_12",
+    "label": "Done Decks Stay Listed",
+    "desc": "Full list.",
+    "tags": [
+     "visual"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Brand Look: Logo</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Voice: Taglines</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Done: Brand Deck</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"184\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"184\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"205.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Done: Round Two</text><text x=\"216\" y=\"205.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Done Decks Stay Listed</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Full list.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-dashboard-online-2-03",
+   "repeat": false
+  },
+  {
+   "group": "Dashboard",
+   "category": "Dashboard",
+   "app": "WellNest",
+   "ask": "Tinted Flat Cards Or White Cards?",
+   "optionA": {
+    "id": "dashboardo_tinted_flat_cards_9",
+    "label": "Tinted Flat Cards",
+    "desc": "Pale gold fill.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#ECC97822\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Brand Decisions</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#ECC97822\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Decks To Do</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#ECC97822\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Latest Report</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"184\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#ECC97822\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"12\" y=\"184\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"205.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Apps And Links</text><text x=\"216\" y=\"205.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Tinted Flat Cards</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Pale gold fill.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "dashboardo_white_cards_10",
+    "label": "White Cards",
+    "desc": "Clean.",
+    "tags": [
+     "action"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Brand Decisions</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Decks To Do</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Latest Report</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"184\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"184\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"205.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Apps And Links</text><text x=\"216\" y=\"205.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >White Cards</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Clean.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-dashboard-online-2-04",
+   "repeat": false
+  },
+  {
+   "group": "Dashboard",
+   "category": "Dashboard",
+   "app": "WellNest",
+   "ask": "Header: Logo And Name Or Header: Name Only?",
+   "optionA": {
+    "id": "dashboardo_header_logo_and_name_21",
+    "label": "Header: Logo And Name",
+    "desc": "Brand.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Brand Decisions</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Decks To Do</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Latest Report</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"184\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"184\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"205.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Apps And Links</text><text x=\"216\" y=\"205.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Header: Logo And Name</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Brand.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "dashboardo_header_name_only_22",
+    "label": "Header: Name Only",
+    "desc": "Quiet.",
+    "tags": [
+     "visual"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#DABC76\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Brand Decisions</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#DABC76\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Decks To Do</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#DABC76\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Latest Report</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"184\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"184\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#DABC76\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"205.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Apps And Links</text><text x=\"216\" y=\"205.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Header: Name Only</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Quiet.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-dashboard-online-2-05",
+   "repeat": false
+  },
+  {
+   "group": "Dashboard",
+   "category": "Dashboard",
+   "app": "WellNest",
+   "ask": "Sticky Small Header Or Header Scrolls Away?",
+   "optionA": {
+    "id": "dashboardo_sticky_small_header_37",
+    "label": "Sticky Small Header",
+    "desc": "Always there.",
+    "tags": [
+     "visual"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Brand Decisions</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Decks To Do</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Latest Report</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"184\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"184\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"205.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Apps And Links</text><text x=\"216\" y=\"205.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Sticky Small Header</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Always there.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "dashboardo_header_scrolls_away_38",
+    "label": "Header Scrolls Away",
+    "desc": "More room.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Decks To Do</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Latest Report</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Apps And Links</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Header Scrolls Away</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >More room.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-dashboard-online-2-06",
+   "repeat": false
+  },
+  {
+   "group": "Dashboard",
+   "category": "Dashboard",
+   "app": "WellNest",
+   "ask": "Gold Edge Marks Or Peach Edge Marks?",
+   "optionA": {
+    "id": "dashboardo_gold_edge_marks_5",
+    "label": "Gold Edge Marks",
+    "desc": "Gold left edge.",
+    "tags": [
+     "action"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Brand Decisions</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Decks To Do</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Latest Report</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"184\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"184\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"205.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Apps And Links</text><text x=\"216\" y=\"205.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Gold Edge Marks</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Gold left edge.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "dashboardo_peach_edge_marks_6",
+    "label": "Peach Edge Marks",
+    "desc": "Peach left edge.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#D7A363\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Brand Decisions</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#D7A363\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Decks To Do</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#D7A363\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Latest Report</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"184\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"184\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#D7A363\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"205.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Apps And Links</text><text x=\"216\" y=\"205.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Peach Edge Marks</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Peach left edge.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-dashboard-online-2-07",
+   "repeat": false
+  },
+  {
+   "group": "Dashboard",
+   "category": "Dashboard",
+   "app": "WellNest",
+   "ask": "Sub-Brand Tiles Or No Sub-Brand Tiles?",
+   "optionA": {
+    "id": "dashboardo_sub_brand_tiles_33",
+    "label": "Sub-Brand Tiles",
+    "desc": "Icons row.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Nest Club | Barn Desk</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >The Nests | Hot House</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Sub-Brand Tiles</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Icons row.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "dashboardo_no_sub_brand_tiles_34",
+    "label": "No Sub-Brand Tiles",
+    "desc": "Lean.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Brand Decisions</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Decks To Do</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Latest Report</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"184\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"184\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"205.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Apps And Links</text><text x=\"216\" y=\"205.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >No Sub-Brand Tiles</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Lean.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-dashboard-online-2-08",
+   "repeat": false
+  },
+  {
+   "group": "Dashboard",
+   "category": "Dashboard",
+   "app": "WellNest",
+   "ask": "Updated Time In Header Or Updated Time In Footer?",
+   "optionA": {
+    "id": "dashboardo_updated_time_in_header_31",
+    "label": "Updated Time In Header",
+    "desc": "Fresh.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Updated 12:40</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Decks To Do</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Report</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Updated Time In Header</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Fresh.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "dashboardo_updated_time_in_footer_32",
+    "label": "Updated Time In Footer",
+    "desc": "Quiet.",
+    "tags": [
+     "visual"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Brand Decisions</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Decks To Do</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Latest Report</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"184\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"184\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"205.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Apps And Links</text><text x=\"216\" y=\"205.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Updated Time In Footer</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Quiet.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-dashboard-online-2-09",
+   "repeat": false
+  },
+  {
+   "group": "Dashboard",
+   "category": "Dashboard",
+   "app": "WellNest",
+   "ask": "Next Deck Banner On Top Or No Banner?",
+   "optionA": {
+    "id": "dashboardo_next_deck_banner_on_top_23",
+    "label": "Next Deck Banner On Top",
+    "desc": "Nudge.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Next: Brand Look - Logo</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Brand Decisions</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Latest Report</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Next Deck Banner On Top</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Nudge.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "dashboardo_no_banner_24",
+    "label": "No Banner",
+    "desc": "Calm.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Brand Decisions</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Decks To Do</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Latest Report</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"184\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"184\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"205.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Apps And Links</text><text x=\"216\" y=\"205.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >No Banner</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Calm.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-dashboard-online-2-10",
+   "repeat": false
+  },
+  {
+   "group": "Dashboard",
+   "category": "Dashboard",
+   "app": "WellNest",
+   "ask": "Locked Decisions As Chips Or Locked Decisions As Lines?",
+   "optionA": {
+    "id": "dashboardo_locked_decisions_as_chip_19",
+    "label": "Locked Decisions As Chips",
+    "desc": "Compact.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"26\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"26\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"68.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Logo: original</text><text x=\"216\" y=\"68.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"83\" width=\"216\" height=\"26\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"83\" width=\"4\" height=\"26\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"99.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Gold leads</text><text x=\"216\" y=\"99.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"114\" width=\"216\" height=\"26\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"114\" width=\"4\" height=\"26\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"130.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Cormorant</text><text x=\"216\" y=\"130.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Locked Decisions As Chips</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Compact.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "dashboardo_locked_decisions_as_line_20",
+    "label": "Locked Decisions As Lines",
+    "desc": "Readable.",
+    "tags": [
+     "action"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Logo: keep the original nest</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Colour: gold leads, peach accent</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Locked Decisions As Lines</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Readable.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-dashboard-online-2-11",
+   "repeat": false
+  },
+  {
+   "group": "Dashboard",
+   "category": "Dashboard",
+   "app": "WellNest",
+   "ask": "Big Screen: Two Columns Or Big Screen: Centred Column?",
+   "optionA": {
+    "id": "dashboardo_big_screen_two_columns_25",
+    "label": "Big Screen: Two Columns",
+    "desc": "Wide.",
+    "tags": [
+     "action"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Decks | Report</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Decisions | Apps</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Big Screen: Two Columns</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Wide.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "dashboardo_big_screen_centred_colum_26",
+    "label": "Big Screen: Centred Column",
+    "desc": "Like phone.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Brand Decisions</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Decks To Do</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Latest Report</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"184\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"184\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"205.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Apps And Links</text><text x=\"216\" y=\"205.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Big Screen: Centred Column</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Like phone.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-dashboard-online-2-12",
+   "repeat": false
+  },
+  {
+   "group": "Dashboard",
+   "category": "Dashboard",
+   "app": "WellNest",
+   "ask": "Decks To Do First Or Brand Decisions First?",
+   "optionA": {
+    "id": "dashboardo_decks_to_do_first_1",
+    "label": "Decks To Do First",
+    "desc": "Action first.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Decks To Do</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Brand Decisions</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Latest Report</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Decks To Do First</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Action first.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "dashboardo_brand_decisions_first_2",
+    "label": "Brand Decisions First",
+    "desc": "Summary first.",
+    "tags": [
+     "visual"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Brand Decisions</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Decks To Do</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Latest Report</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Brand Decisions First</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Summary first.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-dashboard-online-2-13",
+   "repeat": false
+  },
+  {
+   "group": "Dashboard",
+   "category": "Dashboard",
+   "app": "WellNest",
+   "ask": "Deck Card With Category Colour Or All Deck Cards Gold?",
+   "optionA": {
+    "id": "dashboardo_deck_card_with_category__29",
+    "label": "Deck Card With Category Colour",
+    "desc": "Coded.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#267D58\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Brand Decisions</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#267D58\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Decks To Do</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#267D58\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Latest Report</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"184\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"184\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#267D58\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"205.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Apps And Links</text><text x=\"216\" y=\"205.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Deck Card With Category Colour</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Coded.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "dashboardo_all_deck_cards_gold_30",
+    "label": "All Deck Cards Gold",
+    "desc": "One colour.",
+    "tags": [
+     "action"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Brand Decisions</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Decks To Do</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Latest Report</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"184\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"184\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"205.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Apps And Links</text><text x=\"216\" y=\"205.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >All Deck Cards Gold</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >One colour.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-dashboard-online-2-14",
+   "repeat": false
+  },
+  {
+   "group": "Dashboard",
+   "category": "Dashboard",
+   "app": "WellNest",
+   "ask": "Arrow On Every Card Or Whole Card Tappable, No Arrow?",
+   "optionA": {
+    "id": "dashboardo_arrow_on_every_card_35",
+    "label": "Arrow On Every Card",
+    "desc": "Tappable.",
+    "tags": [
+     "action"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Brand Decisions</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Decks To Do</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Latest Report</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"184\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"184\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"205.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Apps And Links</text><text x=\"216\" y=\"205.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Arrow On Every Card</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Tappable.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "dashboardo_whole_card_tappable_no_a_36",
+    "label": "Whole Card Tappable, No Arrow",
+    "desc": "Clean.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#DABC76\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Brand Decisions</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#DABC76\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Decks To Do</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#DABC76\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Latest Report</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"184\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"184\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#DABC76\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"205.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Apps And Links</text><text x=\"216\" y=\"205.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Whole Card Tappable, No Arrow</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Clean.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-dashboard-online-2-15",
+   "repeat": false
+  },
+  {
+   "group": "Dashboard",
+   "category": "Dashboard",
+   "app": "WellNest",
+   "ask": "Report Dropdown Open Or Report Dropdown Closed?",
+   "optionA": {
+    "id": "dashboardo_report_dropdown_open_17",
+    "label": "Report Dropdown Open",
+    "desc": "Read now.",
+    "tags": [
+     "visual"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Latest Report (open)</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Signals</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Next steps</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Report Dropdown Open</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Read now.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "dashboardo_report_dropdown_closed_18",
+    "label": "Report Dropdown Closed",
+    "desc": "Tap to read.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Latest Report</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Brand Decisions</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Decks To Do</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Report Dropdown Closed</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Tap to read.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-dashboard-online-2-16",
+   "repeat": false
+  },
+  {
+   "group": "Dashboard",
+   "category": "Dashboard",
+   "app": "WellNest",
+   "ask": "Category Headers Or One Mixed List?",
+   "optionA": {
+    "id": "dashboardo_category_headers_13",
+    "label": "Category Headers",
+    "desc": "Grouped.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >BRAND LOOK</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Logo &amp; Colour</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >VOICE</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"184\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"184\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"205.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Taglines</text><text x=\"216\" y=\"205.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Category Headers</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Grouped.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "dashboardo_one_mixed_list_14",
+    "label": "One Mixed List",
+    "desc": "Flat.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Logo &amp; Colour</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Taglines</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Farm Tours</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"184\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"184\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"205.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Tea Line</text><text x=\"216\" y=\"205.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >One Mixed List</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Flat.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-dashboard-online-2-17",
+   "repeat": false
+  },
+  {
+   "group": "Dashboard",
+   "category": "Dashboard",
+   "app": "WellNest",
+   "ask": "Line Cards Or Soft Shadow Cards?",
+   "optionA": {
+    "id": "dashboardo_line_cards_3",
+    "label": "Line Cards",
+    "desc": "Sand outline.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Brand Decisions</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Decks To Do</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Latest Report</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"184\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"184\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"205.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Apps And Links</text><text x=\"216\" y=\"205.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Line Cards</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Sand outline.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "dashboardo_soft_shadow_cards_4",
+    "label": "Soft Shadow Cards",
+    "desc": "Lifted.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"14\" y=\"54\" width=\"212\" height=\"36\" rx=\"8\" fill=\"#00000010\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Brand Decisions</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"14\" y=\"98\" width=\"212\" height=\"36\" rx=\"8\" fill=\"#00000010\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Decks To Do</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"14\" y=\"142\" width=\"212\" height=\"36\" rx=\"8\" fill=\"#00000010\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Latest Report</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"14\" y=\"186\" width=\"212\" height=\"36\" rx=\"8\" fill=\"#00000010\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"12\" y=\"184\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"12\" y=\"184\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"205.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Apps And Links</text><text x=\"216\" y=\"205.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Soft Shadow Cards</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Lifted.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-dashboard-online-2-18",
+   "repeat": false
+  },
+  {
+   "group": "Dashboard",
+   "category": "Dashboard",
+   "app": "WellNest",
+   "ask": "Progress Ring Per Category Or Simple Count Text?",
+   "optionA": {
+    "id": "dashboardo_progress_ring_per_catego_15",
+    "label": "Progress Ring Per Category",
+    "desc": "Visual.",
+    "tags": [
+     "action"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Brand Look 2/5</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Voice 1/5</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Experiences 0/5</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Progress Ring Per Category</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Visual.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "dashboardo_simple_count_text_16",
+    "label": "Simple Count Text",
+    "desc": "Plain.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >3 of 25 decks done</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Next: Logo &amp; Colour</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Simple Count Text</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Plain.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-dashboard-online-2-19",
+   "repeat": false
+  },
+  {
+   "group": "Dashboard",
+   "category": "Dashboard",
+   "app": "WellNest",
+   "ask": "Brand Decisions Dropdown Grouped Or Brand Decisions As One List?",
+   "optionA": {
+    "id": "dashboardo_brand_decisions_dropdown_39",
+    "label": "Brand Decisions Dropdown Grouped",
+    "desc": "By topic.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Logo</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Colour</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Type</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"184\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"184\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"205.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Sub-brands</text><text x=\"216\" y=\"205.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Brand Decisions Dropdown Grouped</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >By topic.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "dashboardo_brand_decisions_as_one_l_40",
+    "label": "Brand Decisions As One List",
+    "desc": "Flat.",
+    "tags": [
+     "action"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><image href=\"img/wellnest-logo-circle.png\" x=\"12.0\" y=\"11.76\" width=\"24\" height=\"20.48\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"42\" y=\"27\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'Cormorant Garamond', Georgia, serif\" font-weight=\"600\" >The WellNest</text><line x1=\"12\" y1=\"42\" x2=\"228\" y2=\"42\" stroke=\"#DABC76\"/><rect x=\"12\" y=\"52\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"52\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"73.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Keep nest logo</text><text x=\"216\" y=\"73.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"96\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"96\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"117.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Gold leads</text><text x=\"216\" y=\"117.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"140\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"140\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"161.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Cormorant + DM Sans</text><text x=\"216\" y=\"161.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><rect x=\"12\" y=\"184\" width=\"216\" height=\"36\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#DABC76\" stroke-width=\"1\" /><rect x=\"12\" y=\"184\" width=\"4\" height=\"36\" rx=\"2\" fill=\"#ECC978\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"205.0\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"500\" >Five sub-brands</text><text x=\"216\" y=\"205.0\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >&gt;</text><text x=\"120\" y=\"266\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"600\" >Brand Decisions As One List</text><text x=\"120\" y=\"282\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"'DM Sans', Hind, sans-serif\" font-weight=\"400\" >Flat.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-dashboard-online-2-20",
+   "repeat": false
+  }
+ ],
+ "share": true,
+ "notes": true
+}
