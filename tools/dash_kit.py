@@ -82,8 +82,8 @@ def s_tiles(B, y, o):
 def s_urgent(B, y, o):
     st = o.get("urgent", "collapsed"); c = o.get("uc", B["acc"][0]); n = o.get("un", 3)
     items = o.get("uitems", ["Upload an example file", "Check a due date", "Confirm a category"])
-    if st == "collapsed": return card(B, 14, y, 212, 28, "left", c) + T(B, 24, y + 17.5, f"Urgent", 9.5, None, True) + R(62, y + 8, 14, 12, c, r=6) + T(B, 69, y + 17, str(n), 7, "#FFFFFF", a="middle", w=600) + chev(212, y + 14, B["mute"]), 34
-    if st == "pill": return R(14, y, 92, 22, c + "18", r=11) + D(26, y + 11, 3.5, c) + T(B, 34, y + 14.5, f"{n} Urgent Items", 7.5, c, w=600) + chev(98, y + 11, c), 28
+    if st == "collapsed": return card(B, 14, y, 212, 28, "left", c) + T(B, 24, y + 17.5, f"Urgent", 9.5, None, True) + R(184, y + 8, 14, 12, c, r=6) + T(B, 191, y + 17, str(n), 7, "#FFFFFF", a="middle", w=600) + chev(212, y + 14, B["mute"]), 34
+    if st == "pill": return R(14, y, 118, 22, c + "18", r=11) + D(26, y + 11, 3.5, c) + T(B, 34, y + 14.5, f"{n} Urgent Items", 7.5, c, w=600) + chev(122, y + 11, c), 28
     if st == "open":
         s = card(B, 14, y, 212, 22 + n * 18, "left", c) + T(B, 24, y + 15, "Urgent", 9.5, None, True) + chev(212, y + 11, B["mute"], True)
         for i in range(n): s += D(28, y + 30 + i * 18, 2.5, c) + T(B, 36, y + 33 + i * 18, items[i % len(items)], 7.5, B["ink"])
@@ -161,11 +161,11 @@ def desk(B, colsets, label="Big Monitor", ratio=(224, 140), frame="monitor", **o
     s = T(B, 120, 20, label, 9, B["mute"], True, a="middle") + R(fx, fy, fw, fh, B["bg"], "#BDB6AA", 6, 1.2)
     if frame == "monitor": s += R(110, fy + fh, 20, 14, "#D6D0C6") + R(90, fy + fh + 14, 60, 4, "#BDB6AA", r=2)
     elif frame == "laptop": s += R(fx - 12, fy + fh, fw + 24, 6, "#D6D0C6", r=3)
-    n = len(colsets); cw = (fw - 8 - (n - 1) * 4) / n; sc = cw / 212
+    n = len(colsets); cw = (fw - 8 - (n - 1) * 4) / n if n > 1 else fw * .42; sc = cw / 212; ox = 0 if n > 1 else (fw - 8 - cw) / 2
     inner = ""
     for i, cs in enumerate(colsets):
         g, hh = stack(B, cs, o, 6)
-        inner += f'<g transform="translate({fx + 4 + i * (cw + 4) - 14 * sc:.1f},{fy + 2}) scale({sc:.3f})">{g}</g>'
+        inner += f'<g transform="translate({fx + 4 + ox + i * (cw + 4) - 14 * sc:.1f},{fy + 2}) scale({sc:.3f})">{g}</g>'
     s += f'<clipPath id="dk"><rect x="{fx}" y="{fy}" width="{fw}" height="{fh}" rx="6"/></clipPath><g clip-path="url(#dk)">{inner}</g>'
     if o.get("note"): s += T(B, 120, 250, o["note"], 7.5, B["mute"], a="middle")
     return phone(B, s)
@@ -175,3 +175,33 @@ def phoneframe(B, order, label="Phone", **o):
     s += f'<clipPath id="pf"><rect x="84" y="30" width="72" height="150" rx="10"/></clipPath><g clip-path="url(#pf)"><g transform="translate({84+4-14*sc*0.6:.1f},34) scale({sc*0.6:.3f})">{g}</g></g>'
     if o.get("note"): s += T(B, 120, 200, o["note"], 7.5, B["mute"], a="middle")
     return phone(B, s)
+def s_decks(B, y, o):
+    st = o.get("decks", "list"); names = o.get("dnames", ["Brand Deck Round Two", "Brand Deck", "Product Deck"]); prog = o.get("prog", "bar")
+    stat = o.get("dstat", [(0, 61), (192, 200), (25, 25)]); s = ""; c0 = o.get("dc", B["acc"][0])
+    def pr(x, yy, w, a, n, c):
+        if prog == "bar": return R(x, yy, w, 3, B["line"], r=1.5) + R(x, yy, w * a / n, 3, c, r=1.5)
+        if prog == "ring":
+            r = 7; fr = a / n; ang = fr * 2 * math.pi - math.pi / 2; la = 1 if fr > .5 else 0
+            arc = "" if fr == 0 else (f'<circle cx="{x}" cy="{yy}" r="{r}" fill="none" stroke="{c}" stroke-width="2.5"/>' if fr >= 1 else f'<path d="M{x} {yy-r} A{r} {r} 0 {la} 1 {x + r*math.cos(ang):.1f} {yy + r*math.sin(ang):.1f}" fill="none" stroke="{c}" stroke-width="2.5"/>')
+            return f'<circle cx="{x}" cy="{yy}" r="{r}" fill="none" stroke="{B["line"]}" stroke-width="2.5"/>' + arc
+        return T(B, x, yy, f"{a} of {n}" if a else "New", 6.5, c, w=600)
+    if st == "feature":
+        s += R(14, y, 212, 70, "#FFFFFF", c0, B["r"], 2) + T(B, 24, y + 14, "FEATURED", 6, c0, w=600, ex='letter-spacing="1.2"') + T(B, 24, y + 31, names[0], 13, None, True) + bars(2, 24, y + 40, 170, B["mute"] + "88", 6)
+        s += (pr(24, y + 58, 120, *stat[0], c0) if prog != "ring" else pr(30, y + 58, 0, *stat[0], c0)); y2 = y + 76
+        for i, nm in enumerate(names[1:]):
+            yy = y2 + i * 30; s += card(B, 14, yy, 212, 26) + T(B, 24, yy + 16, nm, 8.5, None, True) + (pr(150, yy + 12, 60, *stat[i + 1], B["acc"][(i + 1) % len(B["acc"])]) if prog == "bar" else pr(206 if prog == "ring" else 170, yy + 13 + (0 if prog == "ring" else 3), 0, *stat[i + 1], B["acc"][(i + 1) % len(B["acc"])]))
+        return s, 76 + len(names[1:]) * 30
+    if st == "grid":
+        w = 103
+        for i, nm in enumerate(names[:4]):
+            x, yy = 14 + (i % 2) * (w + 6), y + (i // 2) * 62; a, n = stat[i % len(stat)]; c = B["acc"][i % len(B["acc"])]
+            s += card(B, x, yy, w, 56) + R(x, yy, w, 4, c, r=2) + T(B, x + 8, yy + 20, nm[:16], 8.5, None, True) + T(B, x + 8, yy + 30, f"{n} pairs", 6, B["mute"]) + (pr(x + 8, yy + 44, w - 16, a, n, c) if prog == "bar" else pr(x + w - 14 if prog == "ring" else x + 8, yy + 46, 0, a, n, c))
+        return s, ((min(4, len(names)) + 1) // 2) * 62
+    for i, nm in enumerate(names):
+        yy = y + i * 34; a, n = stat[i % len(stat)]; c = B["acc"][i % len(B["acc"])]
+        s += card(B, 14, yy, 212, 30) + D(24, yy + 15, 3, c) + T(B, 32, yy + 13, nm, 8.5, None, True) + T(B, 32, yy + 23, f"{n} pairs", 6, B["mute"])
+        s += pr(150, yy + 14, 64, a, n, c) if prog == "bar" else pr(206 if prog == "ring" else 176, yy + 15 + (0 if prog == "ring" else 2), 0, a, n, c)
+    return s, len(names) * 34
+SEC["decks"] = s_decks
+def s_text(B, y, o):  # section title
+    return T(B, 14, y + 12, o.get("_t", "Section"), 10, None, True), 16
