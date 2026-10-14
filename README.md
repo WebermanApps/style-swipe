@@ -46,3 +46,6 @@ Agents with their own carousel (e.g. WellNest `deck-queue.json`) may add per dec
 - `answered` (int): cards answered so far; > 0 shows Continue and moves the deck first.
 - `added` (ISO time the deck was built): orders the rest newest first.
 Same meaning as `answered` / `added` in kit `shelf.json`. Fill from ops/submit/inbox/<agent> submissions and queue/carry_over.json.
+
+## Routines section placement (Max, Oct 14 2026 20:00 ICT)
+`kit/routines-section.js` goes at the very BOTTOM of every agent dashboard (last section before the footer). Grouped, schedule in ICT, On/Paused, last run (R65). Only one daily report: the Morning Report by 5:00 AM ICT (Evening Report retired 20:05).

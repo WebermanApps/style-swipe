@@ -1,4 +1,4 @@
-/* Routines Section (R65). Custom group names allowed: shown after the standard groups, before Paused. Usage: <div data-routines="routines.json"></div> + this script. */
+/* Routines Section (R65). Place it at the very BOTTOM of the dashboard (Max, Oct 14 2026 20:00 ICT), after every other section. Reports group: Morning Report only (Evening Report retired 20:05). Custom group names allowed: shown after the standard groups, before Paused. Usage: <div data-routines="routines.json"></div> + this script. */
 (()=>{const G=[['Reports','#ECC978'],['Daily','#0B6E4F'],['Weekly','#2E6FA8'],['Monthly','#8A5BB5'],['Event/Listener','#D7A363'],['Paused','#A3A3A3']];
 const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
 function render(box,J){const R=Array.isArray(J)?J:(J.routines||[]);box.textContent='';box.classList.add('rt-sec');box.id=box.id||'routines';
