@@ -25,7 +25,9 @@ function order(all){const st=all.filter(started),rest=all.filter(d=>!started(d))
  for(let i=0;i<out.length;i++)if(!out[i])out[i]=free.shift();return st.concat(out)}
 function doneToday(J){const d=today();let n=(J.done||[]).filter(x=>String(x.at||'').slice(0,10)===d).length;
  if(typeof J.done_today==='number')n=Math.max(n,J.done_today);return n}
-/* Swipe stats (Max 19:51 ICT): header shows swipes done for this agent's decks, today AND all-time.
+/* Deck metric (Max 20:12 ICT): all counts are in DECKS, 20 swipes = 1 deck (decks = swipes/20); one decimal only if not whole (e.g. 3.6 decks).
+   Uses deck fields from swipe-stats.json when present (decks_total / decks_today / deck_days{date:n}), else computes swipes/20.
+   Swipe stats (Max 19:51 ICT): header shows swipes done for this agent's decks, today AND all-time.
    Source: kit/swipe-stats.json in style-swipe (synced from /workspace/ops/submit/swipe-stats.json by tools/sync_swipe_stats.py).
    Shape: {updated, agents:{<agent>:{total:N, days:{"YYYY-MM-DD":N}}}} (also accepts {<agent>:{"YYYY-MM-DD":N}}). Missing/unknown -> hidden. */
 const STATS='https://webermanapps.github.io/style-swipe/kit/swipe-stats.json';
@@ -33,11 +35,14 @@ function statsFor(S,agent){if(!S||!agent)return null;const a=(S.agents||S)[agent
  const days=a.days||a.daily||Object.fromEntries(Object.entries(a).filter(([k,v])=>/^\d{4}-\d{2}-\d{2}$/.test(k)&&typeof v==='number'));
  const tz=S.tz||'Asia/Bangkok';let d;try{d=new Date().toLocaleDateString('en-CA',{timeZone:tz})}catch(_){d=today()}
  const total=typeof a.total==='number'?a.total:typeof a.all_time==='number'?a.all_time:Object.values(days).reduce((x,y)=>x+(+y||0),0);
- return {today:+(days[d]||0),total}}
+ const dd=a.deck_days||a.decks_days, dt=typeof a.decks_today==='number'?a.decks_today:dd&&typeof dd[d]==='number'?dd[d]:null;
+ const dT=typeof a.decks_total==='number'?a.decks_total:typeof a.decks_all_time==='number'?a.decks_all_time:null;
+ return {today:dt!=null?dt:+(days[d]||0)/20,total:dT!=null?dT:total/20}}
+const fmtDecks=n=>{const r=Math.round(n*10)/10;return Number.isInteger(r)?String(r):r.toFixed(1)};
 function paintStats(box,J){const st=box.querySelector('.ds-stats');if(!st)return;
  fetch((box.dataset.stats||J.stats_url||STATS)+'?'+Date.now()).then(r=>r.ok?r.json():null).then(S=>{const v=statsFor(S,J.agent);if(!v)return;
-  st.textContent='';const f=(n,l)=>{const s=el('span','ds-stat');s.append(el('b','',n.toLocaleString('en-US')),el('span','',l));return s};
-  st.append(f(v.today,'swipes today'),f(v.total,'all-time'));st.hidden=false}).catch(()=>{})}
+  st.textContent='';const f=(n,l)=>{const s=el('span','ds-stat');s.append(el('b','',fmtDecks(n)),el('span','',l));return s};
+  st.append(f(v.today,(fmtDecks(v.today)==='1'?'deck':'decks')+' today'),f(v.total,(fmtDecks(v.total)==='1'?'deck':'decks')+' all-time'));st.hidden=false}).catch(()=>{})}
 function render(box,J,o){o=o||{};J=J||{};const all=order(norm(J,o)),cap=(o.nocap||box.hasAttribute('data-shelf-nocap'))?all.length:CAP,decks=all.slice(0,cap);
  box._dsQueued=all.slice(cap);box.textContent='';box.classList.add('ds-sec');box.id=box.id||'ready-to-swipe';
  const h=el('div','ds-head');h.append(el('h2','','Ready To Swipe'));const n=doneToday(J);if(n)h.append(el('span','ds-done',n+' done today'));const st=el('div','ds-stats');st.hidden=true;h.append(st);box.append(h);paintStats(box,J);
