@@ -1,0 +1,16 @@
+/* Ready Deck Shelf (R66) - cream page, white cards, Khand/Hind, lagoon primary, no emoji. Crisp at 393 / 1470 / 2560. */
+.ds-sec{margin:12px 0;font-family:Hind,system-ui,sans-serif;color:#0A0A0A;box-sizing:border-box;max-width:100%}
+.ds-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;margin:0 0 8px}
+.ds-sec h2{font-family:Khand,sans-serif;font-weight:600;font-size:20px;margin:0}
+.ds-meta{color:#737373;font-size:12.5px}
+.ds-grid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:600px){.ds-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1000px){.ds-grid{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}}
+@media(min-width:2000px){.ds-sec{font-size:17px}.ds-sec h2{font-size:24px}}
+.ds-card{background:#fff;border:1px solid #E5E0D8;border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:4px;min-height:44px;color:#0A0A0A;text-decoration:none;box-sizing:border-box}
+.ds-card:hover,.ds-card:focus-visible{border-color:#0B6E4F;box-shadow:inset 0 0 0 1px #0B6E4F;outline:0}
+.ds-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.ds-pill{font-size:12px;font-weight:600;padding:1px 8px;border-radius:999px;background:#E3F1EA;color:#0B6E4F}
+.ds-name{font-family:Khand,sans-serif;font-weight:600;font-size:17px;line-height:1.2}
+.ds-blurb{font-size:13px;color:#525252}
+.ds-go{margin-top:auto;align-self:flex-start;font-family:Khand,sans-serif;font-weight:600;font-size:15px;letter-spacing:.06em;background:#0B6E4F;color:#fff;border-radius:8px;min-height:36px;padding:0 16px;display:inline-flex;align-items:center}

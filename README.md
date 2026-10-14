@@ -22,3 +22,10 @@ Freshness:
 Focus and deck ids:
 - `--focus "Cat A,Cat B"` boosts those categories x3 so most pairs match what Max is working on now; `--focus-note` saves why. Add each day's work-specific options as a new `POOL_<date>` block in `generate_deck.py`.
 - Without `--date`, the deck id is today's date, or the next free suffix (`2026-10-10b`, `c`, ...) if today's id is taken.
+
+## Ready Deck Shelf (R66, Oct 14 2026)
+Every agent dashboard shows 3-5 already-built 20-card decks at the top (`kit/deck-shelf.js` + `.css`, data in the agent's `shelf.json`, schema `kit/shelf.schema.json`). No request launcher (`kit/deck-launcher.js` is retired and now just loads the shelf for old pages).
+Build a deck onto a shelf: `python3 tools/ready_shelf.py build <bank-topic> --shelf /path/to/shelf.json --agent <agent>`
+Refill after a submission is handled (Style Swipe Submissions routine, after saving results and `carry_over.py record`):
+`python3 tools/ready_shelf.py refill <deck_id> --shelf /workspace/branding-dashboard/shelf.json --agent branding`
+then commit + push style-swipe and the dashboard repo. Skips come first, reworded when the carry note has a rewording; a pair skipped twice is dropped (R64).

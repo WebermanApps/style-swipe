@@ -1,0 +1,4 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"shelf.json (R66 Ready Deck Shelf, Oct 14 2026 19:30 ICT)","type":"object","required":["agent","decks"],
+"properties":{"agent":{"type":"string"},"updated":{"type":"string"},
+"decks":{"type":"array","minItems":3,"maxItems":5,"items":{"type":"object","required":["id","name","url","total","topic"],
+"properties":{"id":{"type":"string"},"name":{"type":"string"},"url":{"type":"string"},"total":{"const":20},"topic":{"type":"string","description":"Refill topic: a fresh deck on this topic replaces this one after submit"},"blurb":{"type":"string"},"answered":{"type":"integer"}}}}}}
