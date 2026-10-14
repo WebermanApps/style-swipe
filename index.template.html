@@ -1420,5 +1420,24 @@ async function offerBank(want){
  $('#sub').textContent='No deck found. Use "Load Another Deck" below.';
 })();
 </script>
+<!--mw-agentlinks-->
+<style>.mw-aftersub{margin:0 0 14px;padding:12px;border:1px solid #E5E0D8;border-radius:12px;background:#E3F1EA;text-align:center}.mw-aftersub p{margin:0 0 8px;font:600 15px/1.3 Hind,sans-serif;color:#0B6E4F}.mw-aftersub .mw-backdecks{margin:0;min-height:60px;font-size:22px}</style>
+<script>(()=>{const MAP={"blog": "https://webermanapps.github.io/blog-dashboard/", "blueprint": "https://webermanapps.github.io/blueprint-dashboard/", "coach": "https://webermanapps.github.io/coach-dashboard/", "construction": "https://webermanapps.github.io/cd-4thwrkpz54/", "dump": "https://webermanapps.github.io/dump-dashboard/", "grok-bot": "https://webermanapps.github.io/grokbot-cc-7b9szx1e/", "japan-cottage": "https://webermanapps.github.io/jc-cc-e034959dac7d/", "jokes": "https://webermanapps.github.io/jokes-cc-5a640f18188c/", "legal": "https://webermanapps.github.io/legal-0a84f667080d/", "portfolio": "https://webermanapps.github.io/portfolio-dashboard/", "prop": "https://webermanapps.github.io/prop-dashboard/", "research": "https://webermanapps.github.io/rd-3k3k8jcaqb/", "scout": "https://webermanapps.github.io/scout-dashboard/", "security": "https://webermanapps.github.io/security-07940c684c/", "thai": "https://webermanapps.github.io/thai-vocab-quiz/dashboard/", "upkeep": "https://webermanapps.github.io/upkeep-cc-d36d3521/", "video-photo": "https://webermanapps.github.io/video-photo-dashboard-70m4sfrw/", "wellnest": "https://webermanapps.github.io/wellnest-dashboard/", "branding": "https://webermanapps.github.io/branding-djqmb410/decks/", "miles": "https://webermanapps.github.io/miles-dashboard/"},NAMES={"blog": "Blog Agent", "blueprint": "Blueprint Agent", "coach": "Coach Agent", "construction": "Construction Agent", "dump": "Dump Agent", "grok-bot": "Grok Bot", "japan-cottage": "Japan Cottage Agent", "jokes": "Jokes Agent", "legal": "Legal Agent", "portfolio": "Portfolio Agent", "prop": "Prop Agent", "research": "Research Agent", "scout": "Scout Agent", "security": "Security Agent", "thai": "Thai Agent", "upkeep": "UpKeep Agent", "video-photo": "Video & Photo Agent", "wellnest": "WellNest Agent", "branding": "Branding Agent", "miles": "Miles Agent"},FB='branding';
+const ag=()=>{try{return (typeof deck!=='undefined'&&deck&&deck.submit_agent)||FB}catch(_){return FB}};
+const url=()=>MAP[ag()]||MAP[FB],nm=()=>NAMES[ag()]||NAMES[FB];
+const key=()=>{try{return 'styleSwipe:submitted:'+(deck&&deck.date)}catch(_){return ''}};
+const mark=()=>{try{localStorage.setItem(key(),Date.now())}catch(_){}};
+const sent=()=>{try{return !!localStorage.getItem(key())}catch(_){return false}};
+function apply(){const u=url();['decksLink','backToDecks'].forEach(i=>{const e=document.getElementById(i);if(e&&e.href!==u)e.href=u});
+ const sb=document.getElementById('submitBox');if(!sb)return;const h=sb.previousElementSibling;
+ if(h&&h.tagName==='H3'&&/^Submit To /.test(h.textContent)&&h.textContent!=='Submit To '+nm())h.textContent='Submit To '+nm();
+ if(sb.querySelector('.mws-btn.sent'))mark();
+ const host=sb.parentElement;if(sent()&&host&&!host.querySelector('.mw-aftersub')){const d=document.createElement('div');d.className='mw-aftersub';
+  d.innerHTML='<p>Sent. Your answers went to '+nm()+'.</p><a class="mw-backdecks mw-hover" href="'+u+'"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span>Back to Deck Building</span></a>';
+  host.insertBefore(d,host.firstChild);d.scrollIntoView({block:'start'})}}
+const hook=()=>{const S=window.MWSubmit;if(!S||S.__mwal)return;S.__mwal=1;const o=S.send;S.send=function(){return o.apply(this,arguments).then(ok=>{if(ok)mark();return ok})}};
+let t=0;new MutationObserver(()=>{if(t)return;t=setTimeout(()=>{t=0;hook();apply()},50)}).observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:['class']});
+addEventListener('load',()=>{hook();apply()});hook();})();</script>
+<!--/mw-agentlinks-->
 </body>
 </html>
