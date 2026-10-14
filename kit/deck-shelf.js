@@ -25,7 +25,7 @@ function order(all){const st=all.filter(started),rest=all.filter(d=>!started(d))
  for(let i=0;i<out.length;i++)if(!out[i])out[i]=free.shift();return st.concat(out)}
 function doneToday(J){const d=today();let n=(J.done||[]).filter(x=>String(x.at||'').slice(0,10)===d).length;
  if(typeof J.done_today==='number')n=Math.max(n,J.done_today);return n}
-/* Deck metric (Max 20:12 ICT): all counts are in DECKS, 20 swipes = 1 deck (decks = swipes/20); one decimal only if not whole (e.g. 3.6 decks).
+/* Deck metric (Max 20:13 ICT, final): counters/graphs/charts show ONLY decks, never swipes. 1 deck = 20 swipes; a swipe = an answered/picked card OR a skip WITH a note (skip without note does not count). One decimal only if not whole (e.g. 3.6 decks).
    Uses deck fields from swipe-stats.json when present (decks_total / decks_today / deck_days{date:n}), else computes swipes/20.
    Swipe stats (Max 19:51 ICT): header shows swipes done for this agent's decks, today AND all-time.
    Source: kit/swipe-stats.json in style-swipe (synced from /workspace/ops/submit/swipe-stats.json by tools/sync_swipe_stats.py).
