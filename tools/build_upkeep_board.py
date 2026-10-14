@@ -8,7 +8,7 @@ from team_kit import deck, publish
 from draft_svg import TERRA, LAGOON, JUNGLE, SAFFRON
 from dash_kit import *
 DID = "upkeep-board"; PRICE = "Membership Starting at $99/Month"
-CREAM = "#FBF6EC"
+CREAM = "#FFFFFF"   # Max, Oct 14: plain white backgrounds
 B = dict(name="UpKeep Command Center", bg=CREAM, ink="#0A0A0A", mute="#525252", line="#E5DCCB", soft="#F3ECDD", acc=[TERRA, LAGOON, JUNGLE, SAFFRON],
          head="Khand, sans-serif", body="Hind, sans-serif", r=8, hw=600)
 pairs, O, add = deck("ub_", "UpKeep")

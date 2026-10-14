@@ -376,6 +376,41 @@ body.carding #btnSubmitTop{min-height:36px;font-size:13px;padding:0 9px;flex:non
 .mw-sent{position:fixed;left:50%;top:18%;transform:translate(-50%,0);background:#fff;color:#0B6E4F;border:2px solid #0B6E4F;font-family:Khand,Hind,system-ui,sans-serif;font-weight:700;font-size:20px;letter-spacing:.08em;text-transform:uppercase;padding:10px 20px;border-radius:12px;box-shadow:0 8px 24px rgba(10,10,10,.15);display:flex;align-items:center;gap:8px;z-index:200;pointer-events:none;animation:mwsent 1.8s ease-out forwards}
 @keyframes mwsent{0%{opacity:0;transform:translate(-50%,8px)}12%,75%{opacity:1;transform:translate(-50%,0)}100%{opacity:0}}
 </style><!--/mw-polish-->
+<!--mw-family--><style id="mw-family">
+/* MW app family (Oct 14 2026): match Max's dashboards (/workspace/ops/brand/dashboard-style.md, maxweberman-brand.md).
+   White base, Khand headings, Hind body, ink #0A0A0A, muted #525252, lines #E5E0D8, small terracotta/lagoon/jungle accents.
+   Colours, borders, radii and shadows only: no size or spacing changes, so the one-screen fit is unchanged. */
+:root{--bg:#FFFFFF;--panel:#FFFFFF;--line:#E5E0D8;--text:#0A0A0A;--muted:#525252}
+html,body{background:#FFFFFF;color:#0A0A0A}
+header{background:#FFFFFF;border-bottom:1px solid #E5E0D8}
+header h1,.card h2,h1,h2,h3{font-family:Khand,Hind,sans-serif;color:#0A0A0A}
+.mw-back{border-color:#0A0A0A;color:#0A0A0A;border-radius:8px}
+.mw-deckslink{color:#05668D}
+.progress{background:#F0EDE8}
+.progress>div{background:#0B6E4F}
+.card{background:#FFFFFF;border-color:#E5E0D8;box-shadow:0 1px 2px rgba(10,10,10,.04),0 4px 14px rgba(10,10,10,.05)}
+.pill{color:#525252;border-color:#E5E0D8;background:#FFFFFF}
+.pill.app{background:#FFFFFF;color:#0A0A0A;border-color:#0A0A0A}
+.opt{border-color:#E5E0D8;background:#FFFFFF}
+.opt:hover{border-color:#BDB6AA}
+.vis{background:#FFFFFF}
+.tag{background:#F5F3EF;color:#525252}
+.notebtn{border-color:#E5E0D8;color:#0A0A0A}
+.controls.v3 button,.controls.v4 button{border-radius:10px}
+#noteSheet .box{background:#FFFFFF;border-color:#E5E0D8}
+#noteSheet h3{color:#0A0A0A}#noteSheet .sub{color:#525252}
+#noteSheet textarea{border-color:#E5E0D8;color:#0A0A0A}
+#noteSheet textarea:focus{outline:2px solid #05668D;outline-offset:1px}
+#noteSheet .nrow button{border-color:#E5E0D8;color:#0A0A0A}
+#noteSheet .nrow button.save{background:#0B6E4F;border-color:#0B6E4F;color:#FFFFFF}
+.stat{background:#FFFFFF;border-color:#E5E0D8}
+.sharebtn{background:#FFFFFF;border-color:#0A0A0A;color:#0A0A0A}
+.sharebtn:hover{background:#0A0A0A;color:#FFFFFF}
+.mw-share{border-radius:8px}
+footer,.builtby{background:#FFFFFF;color:#525252;border-top:1px solid #E5E0D8}
+footer a,.builtby a{color:#0A0A0A}
+.v-svg{background:#FFFFFF!important}
+</style><!--/mw-family-->
 </head>
 <body>
 <header>
