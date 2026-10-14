@@ -1,0 +1,20 @@
+/* Deck Launcher (R66) - cream page, white card, Khand/Hind, compact, lagoon primary. */
+.dl-sec{background:#fff;border:1px solid #E5E0D8;border-radius:12px;padding:12px 14px;margin:12px 0;font-family:Hind,system-ui,sans-serif;color:#0A0A0A;display:grid;gap:12px;grid-template-columns:1fr;box-sizing:border-box;max-width:100%}
+@media(min-width:900px){.dl-sec{grid-template-columns:minmax(0,2fr) minmax(0,1fr)}.dl-sec.solo{grid-template-columns:1fr}}
+.dl-sec h2{font-family:Khand,sans-serif;font-weight:600;font-size:20px;margin:0 0 6px}
+.dl-sec h3{font-family:Khand,sans-serif;font-weight:600;font-size:15px;margin:0 0 4px;color:#525252}
+.dl-cats{display:grid;gap:6px;grid-template-columns:1fr;margin-bottom:6px}
+@media(min-width:600px){.dl-cats{grid-template-columns:repeat(auto-fill,minmax(180px,1fr))}}
+.dl-cat{font:inherit;text-align:left;background:#FDFBF6;border:1px solid #E5E0D8;border-radius:8px;padding:6px 10px;min-height:44px;cursor:pointer;display:flex;flex-direction:column;color:#0A0A0A}
+.dl-cat b{font-family:Khand,sans-serif;font-weight:600;font-size:15px}.dl-cat span{font-size:12.5px;color:#737373}
+.dl-cat[aria-pressed=true]{border-color:#0B6E4F;background:#E3F1EA;box-shadow:inset 0 0 0 1px #0B6E4F}
+.dl-btn{font-family:Khand,sans-serif;font-weight:600;font-size:16px;letter-spacing:.06em;background:#0B6E4F;color:#fff;border:0;border-radius:8px;min-height:44px;padding:0 20px;cursor:pointer;display:inline-flex;align-items:center;text-decoration:none}
+.dl-btn[disabled]{opacity:.45;cursor:default}
+.dl-meta{color:#737373;font-size:12.5px;margin:2px 0 8px}
+.dl-state{display:none;margin:0 0 8px;padding:6px 10px;border-radius:8px;background:#E3F1EA;color:#0B6E4F;font-weight:600;font-size:14px}.dl-state.on{display:block}
+.dl-ready{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}.dl-ready .dl-meta{margin:0;flex:1 1 160px}
+.dl-pill{font-size:12px;font-weight:600;padding:1px 8px;border-radius:999px;background:#E3F1EA;color:#0B6E4F}
+.dl-rname{font-weight:600;font-size:14px}
+.dl-unf{border:1px solid #EFEAE1;border-radius:8px;padding:8px 10px;background:#FDFBF6}
+.dl-urow{display:flex;justify-content:space-between;align-items:center;gap:8px;min-height:44px;border-top:1px solid #EFEAE1;color:#0A0A0A;text-decoration:none}
+.dl-urow:first-of-type{border-top:0}.dl-urow .dl-meta{margin:0}

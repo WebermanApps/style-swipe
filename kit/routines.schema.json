@@ -1,5 +1,5 @@
 {"$schema":"https://json-schema.org/draft/2020-12/schema","title":"routines.json (R65)","type":"object","required":["routines"],
 "properties":{"updated":{"type":"string"},"routines":{"type":"array","items":{"type":"object","required":["name","group","schedule_plain","status","last_run"],
-"properties":{"name":{"type":"string"},"group":{"enum":["Reports","Daily","Weekly","Monthly","Event/Listener","Paused"]},
+"properties":{"name":{"type":"string"},"group":{"type":"string","description":"Standard: Reports, Daily, Weekly, Monthly, Event/Listener, Paused. Any other name is a custom group, shown after the standard ones."},
 "schedule_plain":{"type":"string","description":"Plain words, ICT, e.g. 'Daily At 4:47 AM ICT'"},"status":{"enum":["on","paused"]},
 "last_run":{"type":"string","description":"Plain ICT, e.g. 'Today 4:51 AM' or 'Oct 13, 6:07 PM'"}}}}}}
