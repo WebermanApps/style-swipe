@@ -92,7 +92,7 @@
    "optionB": {
     "id": "bksec_apple-security-keys_later",
     "label": "Not Now",
-    "desc": "Leave it for now. Why it matters: Apple ID also covers Apple Card, and its 2FA status is unknown.",
+    "desc": "Leave it for now. Why it matters: Apple ID also covers Apple Card.",
     "tags": [
      "calm"
     ],
@@ -102,7 +102,7 @@
     "visual": {
      "type": "hm",
      "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters:</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Apple ID also covers Apple Card, and</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">its 2FA status is unknown.</text></svg>",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters:</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Apple ID also covers Apple Card.</text></svg>",
      "bg": "#FFFFFF"
     }
    }
@@ -159,7 +159,7 @@
    "group": "Data And Accounts",
    "category": "Data And Accounts",
    "app": "Security",
-   "ask": "Authenticator Or Hardware Key On Schwab: Do It Or Not Now?",
+   "ask": "Authenticator Or Hardware Key On A Brokerage: Do It Or Not Now?",
    "purpose": "new",
    "retest": false,
    "notes": true,
@@ -167,11 +167,11 @@
    "repeat": false,
    "share": true,
    "generated": "2026-10-14",
-   "source_card": "schwab-vip",
+   "source_card": "brokerage-2fa",
    "optionA": {
-    "id": "bksec_schwab-vip_yes",
+    "id": "bksec_brokerage-2fa_yes",
     "label": "Do It",
-    "desc": "Turn on the Symantec VIP authenticator or a hardware key, then save recovery codes offline. Who does it: You.",
+    "desc": "Turn on an authenticator app or a hardware key, then save recovery codes offline. Who does it: You.",
     "tags": [
      "focused"
     ],
@@ -181,14 +181,14 @@
     "visual": {
      "type": "hm",
      "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Turn on the Symantec VIP authenticator</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">or a hardware key, then save recovery</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">codes offline. Who does it: You.</text></svg>",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Turn on an authenticator app or a</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">hardware key, then save recovery codes</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">offline. Who does it: You.</text></svg>",
      "bg": "#FFFFFF"
     }
    },
    "optionB": {
-    "id": "bksec_schwab-vip_later",
+    "id": "bksec_brokerage-2fa_later",
     "label": "Not Now",
-    "desc": "Leave it for now. Why it matters: Schwab 2FA status is unknown.",
+    "desc": "Leave it for now. Why it matters: a brokerage account holds real money and is a common takeover target.",
     "tags": [
      "calm"
     ],
@@ -198,7 +198,7 @@
     "visual": {
      "type": "hm",
      "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters:</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Schwab 2FA status is unknown.</text></svg>",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: a</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">brokerage account holds real money and</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">is a common takeover target.</text></svg>",
      "bg": "#FFFFFF"
     }
    }
@@ -236,7 +236,7 @@
    "optionB": {
     "id": "bksec_banks-app-approval_later",
     "label": "Not Now",
-    "desc": "Leave it for now. Why it matters: SMS codes can be stolen with a SIM swap. PNC and SNB 2FA status is unknown.",
+    "desc": "Leave it for now. Why it matters: SMS codes can be stolen with a SIM swap.",
     "tags": [
      "calm"
     ],
@@ -246,7 +246,7 @@
     "visual": {
      "type": "hm",
      "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: SMS</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">codes can be stolen with a SIM swap.</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">PNC and SNB 2FA status is unknown.</text></svg>",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: SMS</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">codes can be stolen with a SIM swap.</text></svg>",
      "bg": "#FFFFFF"
     }
    }
@@ -332,7 +332,7 @@
    "optionB": {
     "id": "bksec_instagram-authenticator_later",
     "label": "Not Now",
-    "desc": "Leave it for now. Why it matters: Instagram 2FA status is unknown.",
+    "desc": "Leave it for now. Why it matters: a taken-over Instagram can be used to scam your followers.",
     "tags": [
      "calm"
     ],
@@ -342,7 +342,7 @@
     "visual": {
      "type": "hm",
      "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters:</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Instagram 2FA status is unknown.</text></svg>",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: a</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">taken-over Instagram can be used to</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">scam your followers.</text></svg>",
      "bg": "#FFFFFF"
     }
    }
@@ -495,7 +495,7 @@
    "group": "Data And Accounts",
    "category": "Data And Accounts",
    "app": "Security",
-   "ask": "Kraken Master Key And Settings Lock: Do It Or Not Now?",
+   "ask": "Crypto Exchange Master Key And Settings Lock: Do It Or Not Now?",
    "purpose": "new",
    "retest": false,
    "notes": true,
@@ -503,9 +503,9 @@
    "repeat": false,
    "share": true,
    "generated": "2026-10-14",
-   "source_card": "kraken-lock",
+   "source_card": "crypto-exchange-lock",
    "optionA": {
-    "id": "bksec_kraken-lock_yes",
+    "id": "bksec_crypto-exchange-lock_yes",
     "label": "Do It",
     "desc": "Use a hardware key or authenticator app, then add the Master Key and Global Settings Lock. Who does it: You.",
     "tags": [
@@ -522,9 +522,9 @@
     }
    },
    "optionB": {
-    "id": "bksec_kraken-lock_later",
+    "id": "bksec_crypto-exchange-lock_later",
     "label": "Not Now",
-    "desc": "Leave it for now. Why it matters: Kraken 2FA status is unknown, and a crypto account is a top target for takeover.",
+    "desc": "Leave it for now. Why it matters: a crypto account is a top target for takeover.",
     "tags": [
      "calm"
     ],
@@ -534,7 +534,7 @@
     "visual": {
      "type": "hm",
      "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters:</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Kraken 2FA status is unknown, and a</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">crypto account is a top target for</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">takeover.</text></svg>",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: a</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">crypto account is a top target for</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">takeover.</text></svg>",
      "bg": "#FFFFFF"
     }
    }

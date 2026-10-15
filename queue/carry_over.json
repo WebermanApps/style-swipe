@@ -208,5 +208,87 @@
     "label": "Move Into Work"
    }
   }
+ },
+ "household-maple": {
+  "from_deck": "household-maple-deck",
+  "unanswered": [
+   "household-maple-deck-10",
+   "household-maple-deck-15"
+  ],
+  "answered": 18,
+  "total": 20,
+  "banks": [],
+  "saved": "2026-10-16T03:29:32+07:00",
+  "note": "Skips (R64). Reword or drop each before next deck on this topic. ",
+  "titles": {
+   "household-maple-deck-10": "Learning Outing: Science Museum Or Arts And Culture Centre?",
+   "household-maple-deck-15": "Shapes: Building Blocks Or Shape Hunt Walk?"
+  }
+ },
+ "security-duties": {
+  "from_deck": "security-duties-deck",
+  "unanswered": [
+   "security-duties-deck-11",
+   "security-duties-deck-18"
+  ],
+  "answered": 18,
+  "total": 20,
+  "banks": [],
+  "saved": "2026-10-16T03:29:32+07:00",
+  "note": "Skips (R64). Reword or drop each before next deck on this topic. security-duties-deck-11: not sure i understand; security-duties-deck-18: which is better? | Reworded by Security 2026-10-16 (card 11 in plain words; card 18 matches the Back Up Everything project: Dropbox or a dedicated backup service, with Security's suggestion).",
+  "titles": {
+   "security-duties-deck-11": "Secrets And API Keys: Audit Across All Apps Or New Code Only?",
+   "security-duties-deck-18": "Cloud Backups: Dropbox Or A Dedicated Backup Service?"
+  },
+  "reworded": [
+   {
+    "id": "security-duties-deck-11",
+    "why": "Max: not sure i understand",
+    "q": "Passwords Hidden In App Code: Check All Apps Now Or Only New Changes?",
+    "a": {
+     "label": "Check All Apps Now",
+     "desc": "Security looks through every app's code for passwords or keys saved by mistake (anyone who finds one can use that account) and removes them.",
+     "new_id": "sdd11rw_all_apps"
+    },
+    "b": {
+     "label": "Only New Changes",
+     "desc": "Security checks each new change before it goes live. Older code is left as it is.",
+     "new_id": "sdd11rw_new_only"
+    }
+   },
+   {
+    "id": "security-duties-deck-18",
+    "why": "Max: which is better?",
+    "q": "Back Up Everything: Dropbox Or A Dedicated Backup Service? (Security Suggests A Backup Service)",
+    "a": {
+     "label": "Dropbox",
+     "desc": "You already have it. It syncs chosen folders and keeps recently deleted files, but it is not a full backup of the computer.",
+     "new_id": "sdd18rw_dropbox"
+    },
+    "b": {
+     "label": "Dedicated Backup Service",
+     "desc": "Security's pick: backs up the whole computer automatically, encrypted, and keeps older versions longer. Small monthly fee.",
+     "new_id": "sdd18rw_service"
+    }
+   }
+  ]
+ },
+ "upkeep-forecasting-and-projections": {
+  "from_deck": "upkeep-forecasting-and-projections-deck",
+  "unanswered": [
+   "upkeep-forecasting-and-projections-deck-05",
+   "upkeep-forecasting-and-projections-deck-14",
+   "upkeep-forecasting-and-projections-deck-20"
+  ],
+  "answered": 17,
+  "total": 20,
+  "banks": [],
+  "saved": "2026-10-16T03:29:32+07:00",
+  "note": "Skips (R64). Reword or drop each before next deck on this topic. upkeep-forecasting-and-projections-deck-05: Whatever you think is best",
+  "titles": {
+   "upkeep-forecasting-and-projections-deck-05": "Seasons: Show Seasonality In Visits And Signups Or Spread Evenly?",
+   "upkeep-forecasting-and-projections-deck-14": "Uncertainty: Ranges And Bands Or Point Estimates?",
+   "upkeep-forecasting-and-projections-deck-20": "Routes: Include Travel And Route Density Or Skip It?"
+  }
  }
 }

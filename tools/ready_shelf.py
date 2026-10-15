@@ -68,6 +68,7 @@ def topic_pairs(topic, source=None):
             p["ask"] = rw.get("q", p["ask"])
             for s, k in (("A", "a"), ("B", "b")):
                 if rw.get(k, {}).get("label"): p["option" + s]["label"] = rw[k]["label"]
+                if rw.get(k, {}).get("desc"): p["option" + s]["desc"] = rw[k]["desc"]
                 if rw.get(k, {}).get("new_id"): p["option" + s]["id"] = rw[k]["new_id"]  # fresh option id so the re-ask passes the no-repeat check
         p["carried_from"] = p.get("id"); p["purpose"] = "retest"; carried.append(p)
     used = J("banks/used.json", {"pairs": [], "options": []}); up, uo = set(used.get("pairs", [])), set(used.get("options", []))
