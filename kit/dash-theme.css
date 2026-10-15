@@ -30,3 +30,16 @@ html,body{background:var(--dash-bg)!important;color:var(--dash-text)}
 .mw-body h3{margin:0 0 4px;font:600 18px/1.25 var(--mw-font-heading,'Khand',sans-serif);color:#0a0a0a}
 .mw-body p{margin:0;font-size:15px;line-height:1.5;color:#404040}
 @media(max-width:480px){.mw-item{padding:14px;gap:12px}.mw-body h3{font-size:17px}}
+@media(max-width:600px){.mw-item{flex-direction:column;gap:8px;width:100%;box-sizing:border-box}.mw-body{width:100%}}
+
+/* Command Center header (.mw-cc-header) - Max rule Oct 15 2026 13:15 ICT. One per agent dashboard, replaces the old top title.
+   Markup: <header class="mw-cc-header"><div class="mw-cc-logo">(svg/img)</div><div class="mw-cc-text"><h1 class="mw-cc-title">Legal Command Center</h1><p class="mw-cc-desc">One-line description</p></div></header>
+   Or: <header class="mw-cc-header" data-cc-name="Legal" data-cc-desc="..." data-cc-logo="logo.svg"></header> + kit/cc-header.js.
+   WellNest/UpKeep: same structure, override --cc-font-head/--cc-font-body/--cc-text/--cc-muted/--cc-border with brand values. */
+.mw-cc-header{display:flex;align-items:center;gap:14px;padding:16px 0 14px;margin:0 0 20px;border-bottom:1px solid var(--cc-border,#e3ddd2);border-radius:0;background:transparent;max-width:100%;box-sizing:border-box;min-width:0}
+.mw-cc-logo{flex:none;width:48px;height:48px;display:flex;align-items:center;justify-content:center;border-radius:0;overflow:hidden}
+.mw-cc-logo svg,.mw-cc-logo img{width:48px;height:48px;display:block;border-radius:0}
+.mw-cc-text{flex:1;min-width:0}
+.mw-cc-title{margin:0;font:600 30px/1.1 var(--cc-font-head,'Khand',sans-serif);letter-spacing:.01em;color:var(--cc-text,#0a0a0a);overflow-wrap:anywhere}
+.mw-cc-desc{margin:4px 0 0;font:400 15px/1.4 var(--cc-font-body,'Hind',sans-serif);color:var(--cc-muted,#737373);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media(max-width:600px){.mw-cc-header{gap:12px;padding:12px 0 10px}.mw-cc-title{font-size:24px}.mw-cc-desc{font-size:14px;white-space:normal}}
