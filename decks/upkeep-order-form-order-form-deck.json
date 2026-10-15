@@ -1,0 +1,966 @@
+{
+ "date": "upkeep-order-form-order-form-deck",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Order Form Deck",
+ "generated_at": "2026-10-15T19:20:08+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "focused": 14,
+  "calm": 20,
+  "quick": 6
+ },
+ "groups": {
+  "Errors And Help": 2,
+  "Home Details": 2,
+  "Field Order": 4,
+  "Signatures": 2,
+  "Confirm Button": 2,
+  "Plan Summary": 3,
+  "Trust": 3,
+  "Layout": 2
+ },
+ "apps": {
+  "UpKeep": 20
+ },
+ "freshness": {
+  "option_slots": 40,
+  "never_shown_before": 40,
+  "share": 1.0
+ },
+ "warnings": [],
+ "submit_agent": "upkeep",
+ "deck_size": 20,
+ "carried": 0,
+ "topic": "upkeep-order-form",
+ "shelf": true,
+ "bank_pairs": [],
+ "source": "/tmp/ss/banks/src-upkeep-order-form.json",
+ "pairs": [
+  {
+   "group": "Errors And Help",
+   "category": "Errors And Help",
+   "app": "UpKeep",
+   "ask": "Help On The Form: Call Or Text Line Or No Help Line?",
+   "optionA": {
+    "id": "of1_hp_line",
+    "label": "Call Or Text Line",
+    "desc": "\"Questions? Call or text\" at the bottom.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"66.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">COMPLETE SIGN UP</text><text x=\"120\" y=\"96\" font-size=\"8\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\" text-decoration=\"underline\">QUESTIONS? CALL OR TEXT US</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "of1_hp_none",
+    "label": "No Help Line",
+    "desc": "FAQ stays on the home page, as live.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"66.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">COMPLETE SIGN UP</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-order-form-order-form-deck-01",
+   "repeat": false
+  },
+  {
+   "group": "Home Details",
+   "category": "Home Details",
+   "app": "UpKeep",
+   "ask": "Edit Home Details: Link Back To The Questions Or No Edit Link?",
+   "optionA": {
+    "id": "of1_ed_link",
+    "label": "Edit Link",
+    "desc": "\"Change Home Details\" goes back.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"20\" y=\"62\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Home</text><text x=\"220\" y=\"62\" font-size=\"7.8\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Under 2,000 sq ft</text><line x1=\"14\" y1=\"68\" x2=\"226\" y2=\"68\" stroke=\"#E5E0D8\"/><text x=\"120\" y=\"88\" font-size=\"8\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\" text-decoration=\"underline\">CHANGE HOME DETAILS</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "of1_ed_none",
+    "label": "No Edit Link",
+    "desc": "Back button at the top only, as live.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"120\" y=\"62\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\" text-decoration=\"underline\">‹ BACK</text><text x=\"120\" y=\"90\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Sign Up for Plus</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-order-form-order-form-deck-02",
+   "repeat": false
+  },
+  {
+   "group": "Field Order",
+   "category": "Field Order",
+   "app": "UpKeep",
+   "ask": "First Field: Service Address Or Full Name?",
+   "optionA": {
+    "id": "of1_fo_addr",
+    "label": "Service Address First",
+    "desc": "As live; filled in from your ZIP.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,56) scale(0.6666666666666666)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"44\" y=\"68\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Service Address</text><rect x=\"14\" y=\"86\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,92) scale(0.6666666666666666)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"44\" y=\"104\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Full Name</text><rect x=\"14\" y=\"122\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,128) scale(0.6666666666666666)\"><rect x=\"6\" y=\"2\" width=\"12\" height=\"20\" rx=\"2\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\"/><circle cx=\"12\" cy=\"18\" r=\"1\" fill=\"#0A0A0A\"/></g><text x=\"44\" y=\"140\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Phone</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "of1_fo_name",
+    "label": "Full Name First",
+    "desc": "Name, then contact, then address.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,56) scale(0.6666666666666666)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"44\" y=\"68\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Full Name</text><rect x=\"14\" y=\"86\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,92) scale(0.6666666666666666)\"><rect x=\"6\" y=\"2\" width=\"12\" height=\"20\" rx=\"2\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\"/><circle cx=\"12\" cy=\"18\" r=\"1\" fill=\"#0A0A0A\"/></g><text x=\"44\" y=\"104\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Phone</text><rect x=\"14\" y=\"122\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,128) scale(0.6666666666666666)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"44\" y=\"140\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Service Address</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-order-form-order-form-deck-03",
+   "repeat": false
+  },
+  {
+   "group": "Signatures",
+   "category": "Signatures",
+   "app": "UpKeep",
+   "ask": "Agreement Text: Fold-Out \"Read Agreement\" Or Scroll Box Shown Open?",
+   "optionA": {
+    "id": "of1_ag_fold",
+    "label": "Fold-Out",
+    "desc": "Tap Read Agreement, as live.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"26\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"63.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"66.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Read Agreement</text><text x=\"218\" y=\"66.0\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >▾</text><text x=\"14\" y=\"97\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >I agree</text><rect x=\"196\" y=\"87\" width=\"28\" height=\"15\" rx=\"7.5\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"204\" cy=\"94.5\" r=\"5.5\" fill=\"#FFFFFF\"/><line x1=\"14\" y1=\"106\" x2=\"226\" y2=\"106\" stroke=\"#E5E0D8\"/></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "of1_ag_box",
+    "label": "Open Scroll Box",
+    "desc": "Short scrolling box of terms.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"52\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"61.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Membership and term</text><line x1=\"34\" y1=\"69\" x2=\"226\" y2=\"69\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"74\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"83.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Pricing and payment</text><line x1=\"34\" y1=\"91\" x2=\"226\" y2=\"91\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"96\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"105.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Cancel anytime, no fee</text><line x1=\"34\" y1=\"113\" x2=\"226\" y2=\"113\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"137\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >I agree</text><rect x=\"196\" y=\"127\" width=\"28\" height=\"15\" rx=\"7.5\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"204\" cy=\"134.5\" r=\"5.5\" fill=\"#FFFFFF\"/><line x1=\"14\" y1=\"146\" x2=\"226\" y2=\"146\" stroke=\"#E5E0D8\"/></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-order-form-order-form-deck-04",
+   "repeat": false
+  },
+  {
+   "group": "Confirm Button",
+   "category": "Confirm Button",
+   "app": "UpKeep",
+   "ask": "Confirm Button: Show The Amount On It Or Words Only?",
+   "optionA": {
+    "id": "of1_cm_amt",
+    "label": "Show The Amount",
+    "desc": "\"Complete Sign Up · $1,970\"",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"66.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">COMPLETE SIGN UP · $1,970</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "of1_cm_words",
+    "label": "Words Only",
+    "desc": "Amount stays in the summary.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"20\" y=\"62\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Due at Sign Up</text><text x=\"220\" y=\"62\" font-size=\"7.8\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >$1,970</text><line x1=\"14\" y1=\"68\" x2=\"226\" y2=\"68\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"76\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"92.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">COMPLETE SIGN UP</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-order-form-order-form-deck-05",
+   "repeat": false
+  },
+  {
+   "group": "Signatures",
+   "category": "Signatures",
+   "app": "UpKeep",
+   "ask": "Agreement And Waiver: Two Signatures Or Sign Once For Both?",
+   "optionA": {
+    "id": "of1_sg_two",
+    "label": "Two Signatures",
+    "desc": "One for the Agreement, one for the Waiver, as live.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,56) scale(0.6666666666666666)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\"/><path d=\"M7 12.5 l3.5 3.5 6.5 -7\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"44\" y=\"68\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign: Membership Agreement</text><rect x=\"14\" y=\"86\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,92) scale(0.6666666666666666)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\"/><path d=\"M7 12.5 l3.5 3.5 6.5 -7\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"44\" y=\"104\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign: Liability Waiver</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "of1_sg_one",
+    "label": "Sign Once",
+    "desc": "One signature covers both boxes.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"65\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >I agree to the Agreement</text><rect x=\"196\" y=\"55\" width=\"28\" height=\"15\" rx=\"7.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"216\" cy=\"62.5\" r=\"5.5\" fill=\"#FFFFFF\"/><line x1=\"14\" y1=\"74\" x2=\"226\" y2=\"74\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"91\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >I accept the Waiver</text><rect x=\"196\" y=\"81\" width=\"28\" height=\"15\" rx=\"7.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"216\" cy=\"88.5\" r=\"5.5\" fill=\"#FFFFFF\"/><line x1=\"14\" y1=\"100\" x2=\"226\" y2=\"100\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"106\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,112) scale(0.6666666666666666)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\"/><path d=\"M7 12.5 l3.5 3.5 6.5 -7\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"44\" y=\"124\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Once</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-order-form-order-form-deck-06",
+   "repeat": false
+  },
+  {
+   "group": "Errors And Help",
+   "category": "Errors And Help",
+   "app": "UpKeep",
+   "ask": "Missing Field Errors: One Message Above The Button Or Under Each Field?",
+   "optionA": {
+    "id": "of1_er_one",
+    "label": "One Message",
+    "desc": "\"Enter your service address.\" above the button, as live.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,56) scale(0.6666666666666666)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"44\" y=\"68\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Service Address</text><rect x=\"14\" y=\"86\" width=\"212\" height=\"26\" rx=\"6\" fill=\"#C1502E1A\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"86\" width=\"3\" height=\"26\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(22,92) scale(0.5833333333333334)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"2\"/><path d=\"M8 8 L16 16 M16 8 L8 16\" stroke=\"#C1502E\" stroke-width=\"2\" stroke-linecap=\"round\"/></g><text x=\"42\" y=\"102.5\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Enter your service address.</text><rect x=\"14\" y=\"118\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"134.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">COMPLETE SIGN UP</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "of1_er_field",
+    "label": "Under Each Field",
+    "desc": "Red line right under what's missing.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,56) scale(0.6666666666666666)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"44\" y=\"68\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Service Address</text><text x=\"14\" y=\"95\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Enter your service address.</text><rect x=\"14\" y=\"100\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,106) scale(0.6666666666666666)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"44\" y=\"118\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Full Name</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-order-form-order-form-deck-07",
+   "repeat": false
+  },
+  {
+   "group": "Plan Summary",
+   "category": "Plan Summary",
+   "app": "UpKeep",
+   "ask": "Plan Summary: At The Top Or Just Above Payment?",
+   "optionA": {
+    "id": "of1_ps_top",
+    "label": "At The Top",
+    "desc": "Plan and total first, then fill in.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"20\" y=\"62\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Plan</text><text x=\"220\" y=\"62\" font-size=\"7.8\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Plus (4 visits a year)</text><line x1=\"14\" y1=\"68\" x2=\"226\" y2=\"68\" stroke=\"#E5E0D8\"/><text x=\"20\" y=\"80\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Due at Sign Up</text><text x=\"220\" y=\"80\" font-size=\"7.8\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >$1,970</text><line x1=\"14\" y1=\"86\" x2=\"226\" y2=\"86\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"94\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,100) scale(0.6666666666666666)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"44\" y=\"112\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Service Address</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "of1_ps_pay",
+    "label": "Above Payment",
+    "desc": "Under the signatures, as live.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"24\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"62.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"61.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Liability Waiver</text><text x=\"36\" y=\"71.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Signed</text><text x=\"20\" y=\"92\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Plan</text><text x=\"220\" y=\"92\" font-size=\"7.8\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Plus (4 visits a year)</text><line x1=\"14\" y1=\"98\" x2=\"226\" y2=\"98\" stroke=\"#E5E0D8\"/><text x=\"20\" y=\"110\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Due at Sign Up</text><text x=\"220\" y=\"110\" font-size=\"7.8\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >$1,970</text><line x1=\"14\" y1=\"116\" x2=\"226\" y2=\"116\" stroke=\"#E5E0D8\"/></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-order-form-order-form-deck-08",
+   "repeat": false
+  },
+  {
+   "group": "Trust",
+   "category": "Trust",
+   "app": "UpKeep",
+   "ask": "Cancel Anytime Line: Next To The Button Or In The Cancel Policy Card Only?",
+   "optionA": {
+    "id": "of1_ca_btn",
+    "label": "Next To The Button",
+    "desc": "\"Cancel anytime, no fee\" under Complete Sign Up.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"66.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">COMPLETE SIGN UP</text><text x=\"14\" y=\"93\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Cancel anytime, no fee.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "of1_ca_card",
+    "label": "Cancel Policy Card Only",
+    "desc": "As live.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"30\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"65.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"64.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Cancel Policy</text><text x=\"36\" y=\"74.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Refund = prepaid minus work done</text><rect x=\"14\" y=\"86\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"102.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">COMPLETE SIGN UP</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-order-form-order-form-deck-09",
+   "repeat": false
+  },
+  {
+   "group": "Layout",
+   "category": "Layout",
+   "app": "UpKeep",
+   "ask": "Order Form: One Long Page Or Short Steps With Next?",
+   "optionA": {
+    "id": "of1_lay_one",
+    "label": "One Long Page",
+    "desc": "Everything on one scroll, as live.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"120\" y=\"70\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Sign Up for Plus</text><rect x=\"14\" y=\"80\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,86) scale(0.6666666666666666)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"44\" y=\"98\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Service Address</text><rect x=\"14\" y=\"116\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,122) scale(0.6666666666666666)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"44\" y=\"134\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Full Name</text><rect x=\"14\" y=\"152\" width=\"212\" height=\"24\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"164.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"167.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Membership Agreement</text><rect x=\"14\" y=\"182\" width=\"212\" height=\"24\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"194.0\" r=\"3.5\" fill=\"#05668D\"/><text x=\"36\" y=\"197.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Payment Plan</text><rect x=\"14\" y=\"212\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"228.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">COMPLETE SIGN UP</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "of1_lay_steps",
+    "label": "Short Steps",
+    "desc": "Details, Sign, Pay: one card each.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><line x1=\"49.333333333333336\" y1=\"60\" x2=\"190.66666666666666\" y2=\"60\" stroke=\"#D6D0C6\"/><circle cx=\"49.333333333333336\" cy=\"60\" r=\"7\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.4\"/><text x=\"49.333333333333336\" y=\"63\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"700\" >1</text><text x=\"49.333333333333336\" y=\"78\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Details</text><circle cx=\"120.0\" cy=\"60\" r=\"7\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.4\"/><text x=\"120.0\" y=\"63\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"700\" >2</text><text x=\"120.0\" y=\"78\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Sign</text><circle cx=\"190.66666666666669\" cy=\"60\" r=\"7\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.4\"/><text x=\"190.66666666666669\" y=\"63\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"700\" >3</text><text x=\"190.66666666666669\" y=\"78\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Pay</text><rect x=\"14\" y=\"86\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,92) scale(0.6666666666666666)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"44\" y=\"104\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Service Address</text><rect x=\"14\" y=\"122\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,128) scale(0.6666666666666666)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"44\" y=\"140\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Full Name</text><rect x=\"14\" y=\"158\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"174.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">NEXT</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-order-form-order-form-deck-10",
+   "repeat": false
+  },
+  {
+   "group": "Field Order",
+   "category": "Field Order",
+   "app": "UpKeep",
+   "ask": "Referral Code Box: Always Open Or Behind \"Have A Code?\"",
+   "optionA": {
+    "id": "of1_rc_open",
+    "label": "Always Open",
+    "desc": "Optional field shown, as live.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,56) scale(0.6666666666666666)\"><path d=\"M3 12 V4 H11 L21 14 L13 22 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"7.5\" cy=\"8.5\" r=\"1.6\" fill=\"#0A0A0A\"/></g><text x=\"44\" y=\"68\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Email</text><rect x=\"14\" y=\"86\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,92) scale(0.6666666666666666)\"><path d=\"M3 12 V4 H11 L21 14 L13 22 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"7.5\" cy=\"8.5\" r=\"1.6\" fill=\"#0A0A0A\"/></g><text x=\"44\" y=\"104\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Referral Code (Optional)</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "of1_rc_link",
+    "label": "Have A Code? Link",
+    "desc": "Tap to open the box.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,56) scale(0.6666666666666666)\"><path d=\"M3 12 V4 H11 L21 14 L13 22 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"7.5\" cy=\"8.5\" r=\"1.6\" fill=\"#0A0A0A\"/></g><text x=\"44\" y=\"68\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Email</text><text x=\"120\" y=\"98\" font-size=\"8\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\" text-decoration=\"underline\">HAVE A REFERRAL CODE?</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-order-form-order-form-deck-11",
+   "repeat": false
+  },
+  {
+   "group": "Trust",
+   "category": "Trust",
+   "app": "UpKeep",
+   "ask": "Trust Row On The Form: Show Badges Or Keep The Form Plain?",
+   "optionA": {
+    "id": "of1_tb_show",
+    "label": "Show Badges",
+    "desc": "Certified Techs, Honest Refund, Report Every Visit.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"76.12\" height=\"11.02\" rx=\"5.8\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"52.06\" y=\"58.004\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">CERTIFIED TECHS</text><rect x=\"96.12\" y=\"50\" width=\"67.304\" height=\"11.02\" rx=\"5.8\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"129.772\" y=\"58.004\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">HONEST REFUND</text><rect x=\"14\" y=\"66\" width=\"89.344\" height=\"11.02\" rx=\"5.8\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"58.672\" y=\"74.004\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">REPORT EVERY VISIT</text><rect x=\"14\" y=\"86\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,92) scale(0.6666666666666666)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"44\" y=\"104\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Service Address</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "of1_tb_plain",
+    "label": "Plain Form",
+    "desc": "Badges stay on the home page, as live.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"120\" y=\"70\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Sign Up for Plus</text><rect x=\"14\" y=\"80\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,86) scale(0.6666666666666666)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"44\" y=\"98\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Service Address</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-order-form-order-form-deck-12",
+   "repeat": false
+  },
+  {
+   "group": "Plan Summary",
+   "category": "Plan Summary",
+   "app": "UpKeep",
+   "ask": "Selected Extras In The Summary: Each On Its Own Line Or One Extras Total?",
+   "optionA": {
+    "id": "of1_ex_each",
+    "label": "Each On Its Own Line",
+    "desc": "Add-on: Chimney Sweep $255/yr, as live.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"20\" y=\"62\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Add-on: Chimney Sweep</text><text x=\"220\" y=\"62\" font-size=\"7.8\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >$255/yr</text><line x1=\"14\" y1=\"68\" x2=\"226\" y2=\"68\" stroke=\"#E5E0D8\"/><text x=\"20\" y=\"80\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Add-on: Radon Test</text><text x=\"220\" y=\"80\" font-size=\"7.8\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >$100/yr</text><line x1=\"14\" y1=\"86\" x2=\"226\" y2=\"86\" stroke=\"#E5E0D8\"/></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "of1_ex_one",
+    "label": "One Extras Total",
+    "desc": "Tap to see the list.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"20\" y=\"62\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Extras (2)</text><text x=\"220\" y=\"62\" font-size=\"7.8\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >$355/yr</text><line x1=\"14\" y1=\"68\" x2=\"226\" y2=\"68\" stroke=\"#E5E0D8\"/><text x=\"120\" y=\"88\" font-size=\"8\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\" text-decoration=\"underline\">SEE EXTRAS</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-order-form-order-form-deck-13",
+   "repeat": false
+  },
+  {
+   "group": "Field Order",
+   "category": "Field Order",
+   "app": "UpKeep",
+   "ask": "Yard Sign Box: Under Your Details Or Near The Total?",
+   "optionA": {
+    "id": "of1_ys_det",
+    "label": "Under Your Details",
+    "desc": "Checkbox at the end of the details card, as live.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,56) scale(0.6666666666666666)\"><path d=\"M3 12 V4 H11 L21 14 L13 22 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"7.5\" cy=\"8.5\" r=\"1.6\" fill=\"#0A0A0A\"/></g><text x=\"44\" y=\"68\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Email</text><text x=\"14\" y=\"101\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Yard Sign OK? Free Battery Swap</text><rect x=\"196\" y=\"91\" width=\"28\" height=\"15\" rx=\"7.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"216\" cy=\"98.5\" r=\"5.5\" fill=\"#FFFFFF\"/><line x1=\"14\" y1=\"110\" x2=\"226\" y2=\"110\" stroke=\"#E5E0D8\"/></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "of1_ys_tot",
+    "label": "Near The Total",
+    "desc": "Next to Due at Sign Up as a little extra.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"20\" y=\"62\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Due at Sign Up</text><text x=\"220\" y=\"62\" font-size=\"7.8\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >$1,970</text><line x1=\"14\" y1=\"68\" x2=\"226\" y2=\"68\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"91\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Yard Sign OK? Free Battery Swap</text><rect x=\"196\" y=\"81\" width=\"28\" height=\"15\" rx=\"7.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"216\" cy=\"88.5\" r=\"5.5\" fill=\"#FFFFFF\"/><line x1=\"14\" y1=\"100\" x2=\"226\" y2=\"100\" stroke=\"#E5E0D8\"/></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-order-form-order-form-deck-14",
+   "repeat": false
+  },
+  {
+   "group": "Plan Summary",
+   "category": "Plan Summary",
+   "app": "UpKeep",
+   "ask": "Running Total: Stays Pinned At The Bottom Or Only In The Summary?",
+   "optionA": {
+    "id": "of1_rt_pin",
+    "label": "Pinned Bar",
+    "desc": "Total and Complete button always in view.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,56) scale(0.6666666666666666)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"44\" y=\"68\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Full Name</text><rect x=\"14\" y=\"116\" width=\"212\" height=\"18\" rx=\"0\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"128\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Due at Sign Up</text><text x=\"220\" y=\"128\" font-size=\"7.8\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >$1,970</text><rect x=\"14\" y=\"142\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"158.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">COMPLETE SIGN UP</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "of1_rt_sum",
+    "label": "Only In The Summary",
+    "desc": "One place, as live.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"20\" y=\"62\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Plan</text><text x=\"220\" y=\"62\" font-size=\"7.8\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Plus</text><line x1=\"14\" y1=\"68\" x2=\"226\" y2=\"68\" stroke=\"#E5E0D8\"/><text x=\"20\" y=\"80\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Add-ons</text><text x=\"220\" y=\"80\" font-size=\"7.8\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >None selected</text><line x1=\"14\" y1=\"86\" x2=\"226\" y2=\"86\" stroke=\"#E5E0D8\"/><text x=\"20\" y=\"98\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Due at Sign Up</text><text x=\"220\" y=\"98\" font-size=\"7.8\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >$1,970</text><line x1=\"14\" y1=\"104\" x2=\"226\" y2=\"104\" stroke=\"#E5E0D8\"/></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-order-form-order-form-deck-15",
+   "repeat": false
+  },
+  {
+   "group": "Field Order",
+   "category": "Field Order",
+   "app": "UpKeep",
+   "ask": "Phone And Name: Side By Side Or Stacked?",
+   "optionA": {
+    "id": "of1_pn_side",
+    "label": "Side By Side",
+    "desc": "Two half-width fields, as live.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14.0\" y=\"50\" width=\"102.0\" height=\"40\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24.0\" y=\"60\" width=\"24\" height=\"24\" rx=\"6\" fill=\"#C1502E1F\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(28.0,64) scale(0.6666666666666666)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/></g><text x=\"24.0\" y=\"80\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Full Name</text><rect x=\"124.0\" y=\"50\" width=\"102.0\" height=\"40\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"134.0\" y=\"60\" width=\"24\" height=\"24\" rx=\"6\" fill=\"#05668D1F\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(138.0,64) scale(0.6666666666666666)\"><rect x=\"6\" y=\"2\" width=\"12\" height=\"20\" rx=\"2\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2.2\"/><circle cx=\"12\" cy=\"18\" r=\"1\" fill=\"#05668D\"/></g><text x=\"134.0\" y=\"80\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Phone</text><rect x=\"14\" y=\"98\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,104) scale(0.6666666666666666)\"><path d=\"M3 12 V4 H11 L21 14 L13 22 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"7.5\" cy=\"8.5\" r=\"1.6\" fill=\"#0A0A0A\"/></g><text x=\"44\" y=\"116\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Email</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "of1_pn_stack",
+    "label": "Stacked",
+    "desc": "One field per line, bigger on phones.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,56) scale(0.6666666666666666)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"44\" y=\"68\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Full Name</text><rect x=\"14\" y=\"86\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,92) scale(0.6666666666666666)\"><rect x=\"6\" y=\"2\" width=\"12\" height=\"20\" rx=\"2\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\"/><circle cx=\"12\" cy=\"18\" r=\"1\" fill=\"#0A0A0A\"/></g><text x=\"44\" y=\"104\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Phone</text><rect x=\"14\" y=\"122\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,128) scale(0.6666666666666666)\"><path d=\"M3 12 V4 H11 L21 14 L13 22 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"7.5\" cy=\"8.5\" r=\"1.6\" fill=\"#0A0A0A\"/></g><text x=\"44\" y=\"140\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Email</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-order-form-order-form-deck-16",
+   "repeat": false
+  },
+  {
+   "group": "Home Details",
+   "category": "Home Details",
+   "app": "UpKeep",
+   "ask": "Home Details You Gave Earlier: Show A Short Recap Or Leave Off?",
+   "optionA": {
+    "id": "of1_hd_show",
+    "label": "Short Recap",
+    "desc": "Sq ft, furnaces, AC, water heater on the form.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"20\" y=\"62\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Home</text><text x=\"220\" y=\"62\" font-size=\"7.8\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Under 2,000 sq ft</text><line x1=\"14\" y1=\"68\" x2=\"226\" y2=\"68\" stroke=\"#E5E0D8\"/><text x=\"20\" y=\"80\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Furnaces</text><text x=\"220\" y=\"80\" font-size=\"7.8\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >1</text><line x1=\"14\" y1=\"86\" x2=\"226\" y2=\"86\" stroke=\"#E5E0D8\"/><text x=\"20\" y=\"98\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Water Heater</text><text x=\"220\" y=\"98\" font-size=\"7.8\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Tank</text><line x1=\"14\" y1=\"104\" x2=\"226\" y2=\"104\" stroke=\"#E5E0D8\"/></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "of1_hd_hide",
+    "label": "Leave It Off",
+    "desc": "Form only asks what's new.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,56) scale(0.6666666666666666)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"44\" y=\"68\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Service Address</text><rect x=\"14\" y=\"86\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,92) scale(0.6666666666666666)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"44\" y=\"104\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Full Name</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-order-form-order-form-deck-17",
+   "repeat": false
+  },
+  {
+   "group": "Layout",
+   "category": "Layout",
+   "app": "UpKeep",
+   "ask": "Progress At The Top: Keep The 4-Step Rail Or A Simple Bar?",
+   "optionA": {
+    "id": "of1_pr_rail",
+    "label": "4-Step Rail",
+    "desc": "Icons with Sign Up as the last step, as live.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><line x1=\"40.5\" y1=\"60\" x2=\"199.5\" y2=\"60\" stroke=\"#D6D0C6\"/><circle cx=\"40.5\" cy=\"60\" r=\"7\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.4\"/><text x=\"40.5\" y=\"63\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"700\" >1</text><text x=\"40.5\" y=\"78\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Home</text><circle cx=\"93.5\" cy=\"60\" r=\"7\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.4\"/><text x=\"93.5\" y=\"63\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"700\" >2</text><text x=\"93.5\" y=\"78\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Price</text><circle cx=\"146.5\" cy=\"60\" r=\"7\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.4\"/><text x=\"146.5\" y=\"63\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"700\" >3</text><text x=\"146.5\" y=\"78\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Extras</text><circle cx=\"199.5\" cy=\"60\" r=\"7\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.4\"/><text x=\"199.5\" y=\"63\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"700\" >4</text><text x=\"199.5\" y=\"78\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Sign Up</text><text x=\"120\" y=\"106\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Sign Up for Plus</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "of1_pr_bar",
+    "label": "Simple Bar",
+    "desc": "\"Almost Done\" bar near full.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"58\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Almost Done</text><text x=\"226\" y=\"58\" font-size=\"7.5\" fill=\"#D4A017\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Last Step</text><rect x=\"14\" y=\"63\" width=\"212\" height=\"6\" rx=\"3\" fill=\"#EEEAE4\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"63\" width=\"190.8\" height=\"6\" rx=\"3\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"97\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Sign Up for Plus</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-order-form-order-form-deck-18",
+   "repeat": false
+  },
+  {
+   "group": "Confirm Button",
+   "category": "Confirm Button",
+   "app": "UpKeep",
+   "ask": "Confirm Button Words: \"Complete Sign Up\" Or \"Join Plus\"?",
+   "optionA": {
+    "id": "of1_cb_comp",
+    "label": "Complete Sign Up",
+    "desc": "As live.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"20\" y=\"62\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Due at Sign Up</text><text x=\"220\" y=\"62\" font-size=\"7.8\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >$1,970</text><line x1=\"14\" y1=\"68\" x2=\"226\" y2=\"68\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"76\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"92.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">COMPLETE SIGN UP</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "of1_cb_join",
+    "label": "Join Plus",
+    "desc": "Names the plan you picked.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"20\" y=\"62\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Due at Sign Up</text><text x=\"220\" y=\"62\" font-size=\"7.8\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >$1,970</text><line x1=\"14\" y1=\"68\" x2=\"226\" y2=\"68\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"76\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"92.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">JOIN PLUS</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-order-form-order-form-deck-19",
+   "repeat": false
+  },
+  {
+   "group": "Trust",
+   "category": "Trust",
+   "app": "UpKeep",
+   "ask": "Michigan 3-Day Cancel Notice: Beside The Agreement Signature Or At The Bottom?",
+   "optionA": {
+    "id": "of1_mi_sig",
+    "label": "Beside The Signature",
+    "desc": "As live, next to where you sign.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"26\" rx=\"6\" fill=\"#D4A0171A\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"50\" width=\"3\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(22,56) scale(0.5833333333333334)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#D4A017\" stroke-width=\"2\"/><path d=\"M7 12.5 l3.5 3.5 6.5 -7\" fill=\"none\" stroke=\"#D4A017\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"42\" y=\"66.5\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >3-Day Cancel Right</text><rect x=\"14\" y=\"82\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,88) scale(0.6666666666666666)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\"/><path d=\"M7 12.5 l3.5 3.5 6.5 -7\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"44\" y=\"100\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Signature</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "of1_mi_bot",
+    "label": "At The Bottom",
+    "desc": "Above Complete Sign Up.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,56) scale(0.6666666666666666)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\"/><path d=\"M7 12.5 l3.5 3.5 6.5 -7\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"44\" y=\"68\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Signature</text><rect x=\"14\" y=\"86\" width=\"212\" height=\"26\" rx=\"6\" fill=\"#D4A0171A\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"86\" width=\"3\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(22,92) scale(0.5833333333333334)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#D4A017\" stroke-width=\"2\"/><path d=\"M7 12.5 l3.5 3.5 6.5 -7\" fill=\"none\" stroke=\"#D4A017\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"42\" y=\"102.5\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >3-Day Cancel Right</text><rect x=\"14\" y=\"118\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"134.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">COMPLETE SIGN UP</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-order-form-order-form-deck-20",
+   "repeat": false
+  }
+ ],
+ "share": true,
+ "notes": true
+}
