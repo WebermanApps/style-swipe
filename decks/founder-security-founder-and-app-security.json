@@ -26,45 +26,23 @@
  "warnings": [],
  "submit_agent": "research",
  "deck_size": 20,
- "carried": 0,
  "topic": "founder-security",
  "shelf": true,
- "bank_pairs": [
-  "rse-01",
-  "rse-02",
-  "rse-03",
-  "rse-04",
-  "rse-05",
-  "rse-06",
-  "rse-07",
-  "rse-08",
-  "rse-09",
-  "rse-10",
-  "rse-11",
-  "rse-12",
-  "rse-13",
-  "rse-14",
-  "rse-15",
-  "rse-16",
-  "rse-17",
-  "rse-18",
-  "rse-19",
-  "rse-20"
- ],
+ "bank_pairs": [],
  "source": "/workspace/research-dashboard/tools/research-founder-security.json",
  "pairs": [
   {
    "id": "founder-security-founder-and-app-security-01",
    "group": "Security",
-   "category": "Live Apps",
+   "category": "Identity",
    "app": "Research",
-   "ask": "Walk-Through App Privacy: Approve Construction Fix (Remove Public Address And Entry Notes), Or Hold?",
+   "ask": "SIM-Swap Protection: Turn On Your Carrier's Number Lock And Port-Out PIN This Week, Or Later? (fcc.gov SIM swap rules 2023)",
    "notes": true,
    "share": true,
    "optionA": {
-    "id": "rse13a",
-    "label": "Approve The Fix",
-    "desc": "Founder brief flagged public address, name and entry instructions in walk-app.",
+    "id": "rfs201a",
+    "label": "Turn On This Week",
+    "desc": "Stops someone moving your number to their SIM to grab codes.",
     "notes": true,
     "feeling": "focused",
     "tags": [
@@ -72,9 +50,9 @@
     ]
    },
    "optionB": {
-    "id": "rse13b",
-    "label": "Hold For Now",
-    "desc": "Needs Max OK; do not touch the live app until approved.",
+    "id": "rfs201b",
+    "label": "Later",
+    "desc": "Leaves the phone number open to port-out fraud.",
     "notes": true,
     "feeling": "plain",
     "tags": [
@@ -86,15 +64,15 @@
   {
    "id": "founder-security-founder-and-app-security-02",
    "group": "Security",
-   "category": "Payments",
+   "category": "Identity",
    "app": "Research",
-   "ask": "Payments: Stripe Hosted Checkout Or Elements Only, Or Custom Card Forms? (docs.stripe.com/security)",
+   "ask": "Phone Number As Account Recovery: Remove It From Google, GitHub And Stripe Recovery, Or Keep It As A Backup?",
    "notes": true,
    "share": true,
    "optionA": {
-    "id": "rse08a",
-    "label": "Hosted Checkout Or Elements",
-    "desc": "Keeps cards off your systems; SAQ A scope.",
+    "id": "rfs202a",
+    "label": "Remove The Phone Number",
+    "desc": "A swapped SIM can no longer reset your accounts.",
     "notes": true,
     "feeling": "focused",
     "tags": [
@@ -102,9 +80,9 @@
     ]
    },
    "optionB": {
-    "id": "rse08b",
-    "label": "Custom Card Forms",
-    "desc": "Never preferred; expands PCI scope.",
+    "id": "rfs202b",
+    "label": "Keep As Backup",
+    "desc": "Easier recovery, but the number becomes a weak spot.",
     "notes": true,
     "feeling": "plain",
     "tags": [
@@ -116,15 +94,15 @@
   {
    "id": "founder-security-founder-and-app-security-03",
    "group": "Security",
-   "category": "Repos",
+   "category": "Identity",
    "app": "Research",
-   "ask": "Branch Protection On Main For Customer Apps: Require Reviews, Or Allow Agent Direct Push?",
+   "ask": "Google Advanced Protection Program For Your Main Email: Enroll, Or Standard Security? (landing.google.com/advancedprotection)",
    "notes": true,
    "share": true,
    "optionA": {
-    "id": "rse07a",
-    "label": "Protect Main",
-    "desc": "Limits damage from a compromised collaborator or agent.",
+    "id": "rfs203a",
+    "label": "Enroll",
+    "desc": "Strongest Google account protection; needs passkeys or keys.",
     "notes": true,
     "feeling": "focused",
     "tags": [
@@ -132,9 +110,9 @@
     ]
    },
    "optionB": {
-    "id": "rse07b",
-    "label": "Allow Direct Push",
-    "desc": "Faster ship; weaker control on smart-upkeep.",
+    "id": "rfs203b",
+    "label": "Standard Security",
+    "desc": "Fewer limits on apps and recovery.",
     "notes": true,
     "feeling": "plain",
     "tags": [
@@ -146,15 +124,15 @@
   {
    "id": "founder-security-founder-and-app-security-04",
    "group": "Security",
-   "category": "Ops",
+   "category": "Identity",
    "app": "Research",
-   "ask": "Repo Backups: Weekly Mirror To Offline Or Dropbox, Or Rely On GitHub Alone? (CISA Cyber Essentials)",
+   "ask": "Admin Email For Registrar, Stripe And GitHub: A Separate Unpublished Address, Or Your Public Email?",
    "notes": true,
    "share": true,
    "optionA": {
-    "id": "rse12a",
-    "label": "Weekly Mirror",
-    "desc": "Recovery from deletion or ransomware.",
+    "id": "rfs204a",
+    "label": "Separate Unpublished Address",
+    "desc": "Attackers cannot target an address they never see.",
     "notes": true,
     "feeling": "focused",
     "tags": [
@@ -162,9 +140,9 @@
     ]
    },
    "optionB": {
-    "id": "rse12b",
-    "label": "GitHub Alone",
-    "desc": "Simpler; single provider risk.",
+    "id": "rfs204b",
+    "label": "Public Email",
+    "desc": "One inbox; also the one phishers know.",
     "notes": true,
     "feeling": "plain",
     "tags": [
@@ -176,15 +154,15 @@
   {
    "id": "founder-security-founder-and-app-security-05",
    "group": "Security",
-   "category": "Privacy",
+   "category": "Domains",
    "app": "Research",
-   "ask": "Customer Data Minimization: List Every Field And Delete Unneeded Before Launch, Or Collect Now And Prune Later? (FTC PPI guide)",
+   "ask": "Domain Registrar Lock (Transfer Lock) On maxweberman.com And smartupkeep.ai: Confirm It Is On, Or Leave Default? (icann.org transfer lock)",
    "notes": true,
    "share": true,
    "optionA": {
-    "id": "rse09a",
-    "label": "Minimize Before Launch",
-    "desc": "Data you do not hold cannot be breached.",
+    "id": "rfs205a",
+    "label": "Confirm Lock Is On",
+    "desc": "Blocks unauthorized transfers away from your registrar.",
     "notes": true,
     "feeling": "focused",
     "tags": [
@@ -192,9 +170,9 @@
     ]
    },
    "optionB": {
-    "id": "rse09b",
-    "label": "Collect Now, Prune Later",
-    "desc": "Faster experiments; larger breach surface.",
+    "id": "rfs205b",
+    "label": "Leave Default",
+    "desc": "Some registrars leave it off.",
     "notes": true,
     "feeling": "plain",
     "tags": [
@@ -206,15 +184,15 @@
   {
    "id": "founder-security-founder-and-app-security-06",
    "group": "Security",
-   "category": "Live Apps",
+   "category": "Domains",
    "app": "Research",
-   "ask": "smartupkeep.ai During Security Work: UpKeep-Only Edits Continue, Or Freeze Publishes Until Passkeys Done?",
+   "ask": "Domain Auto-Renew Plus A Backup Card And Expiry Alerts: Set Up, Or Renew Manually?",
    "notes": true,
    "share": true,
    "optionA": {
-    "id": "rse15a",
-    "label": "UpKeep Edits Continue",
-    "desc": "Pre-launch free publish rule still on until launch.",
+    "id": "rfs206a",
+    "label": "Auto-Renew With Backup Card",
+    "desc": "Lapsed domains get grabbed and used for phishing.",
     "notes": true,
     "feeling": "focused",
     "tags": [
@@ -222,9 +200,9 @@
     ]
    },
    "optionB": {
-    "id": "rse15b",
-    "label": "Freeze Non-Essential Publishes",
-    "desc": "Shrink change window while founder MFA lands.",
+    "id": "rfs206b",
+    "label": "Renew Manually",
+    "desc": "Relies on remembering every date.",
     "notes": true,
     "feeling": "plain",
     "tags": [
@@ -236,15 +214,15 @@
   {
    "id": "founder-security-founder-and-app-security-07",
    "group": "Security",
-   "category": "IP",
+   "category": "Domains",
    "app": "Research",
-   "ask": "Trademark: Start USPTO Search For Smart Upkeep Now, Or After Name Is Final? (uspto.gov trademarks)",
+   "ask": "CAA DNS Records: Limit Which Companies Can Issue Certificates For Your Domains, Or Allow Any? (RFC 8659)",
    "notes": true,
    "share": true,
    "optionA": {
-    "id": "rse17a",
-    "label": "Start Search Now",
-    "desc": "Legal already tracks paid search questions.",
+    "id": "rfs207a",
+    "label": "Add CAA Records",
+    "desc": "Only your chosen certificate issuers can make certs for your sites.",
     "notes": true,
     "feeling": "focused",
     "tags": [
@@ -252,9 +230,9 @@
     ]
    },
    "optionB": {
-    "id": "rse17b",
-    "label": "After Name Final",
-    "desc": "Avoid spend if the name changes.",
+    "id": "rfs207b",
+    "label": "Allow Any",
+    "desc": "Default; any certificate authority can issue.",
     "notes": true,
     "feeling": "plain",
     "tags": [
@@ -266,15 +244,15 @@
   {
    "id": "founder-security-founder-and-app-security-08",
    "group": "Security",
-   "category": "Repos",
+   "category": "Email",
    "app": "Research",
-   "ask": "Secret Scanning + Push Protection On All Repos: Turn On Now, Or Audit First? (GitHub secret scanning)",
+   "ask": "Email Spoofing: Publish SPF, DKIM And DMARC (p=reject) For Your Domains, Or Leave It? (Google sender guidelines)",
    "notes": true,
    "share": true,
    "optionA": {
-    "id": "rse06a",
-    "label": "Turn On Now",
-    "desc": "Pages repos are public; committed secrets are forever.",
+    "id": "rfs208a",
+    "label": "Set Up DMARC Reject",
+    "desc": "Stops others sending email that looks like it is from you.",
     "notes": true,
     "feeling": "focused",
     "tags": [
@@ -282,9 +260,9 @@
     ]
    },
    "optionB": {
-    "id": "rse06b",
-    "label": "Audit First",
-    "desc": "Scan, clean, then enable; short delay.",
+    "id": "rfs208b",
+    "label": "Leave It",
+    "desc": "Your domain can be spoofed to customers.",
     "notes": true,
     "feeling": "plain",
     "tags": [
@@ -296,15 +274,15 @@
   {
    "id": "founder-security-founder-and-app-security-09",
    "group": "Security",
-   "category": "Ops",
+   "category": "People",
    "app": "Research",
-   "ask": "GitHub Security Log Review: Monthly Habit, Or Only After An Incident?",
+   "ask": "Contractor Offboarding: Same-Day Checklist To Remove GitHub, Drive, Dropbox And Tool Access, Or Ad Hoc?",
    "notes": true,
    "share": true,
    "optionA": {
-    "id": "rse18a",
-    "label": "Monthly Habit",
-    "desc": "Visibility into what agents and collaborators did.",
+    "id": "rfs209a",
+    "label": "Same-Day Checklist",
+    "desc": "Ex-helpers lose access the day work ends.",
     "notes": true,
     "feeling": "focused",
     "tags": [
@@ -312,9 +290,9 @@
     ]
    },
    "optionB": {
-    "id": "rse18b",
-    "label": "After An Incident",
-    "desc": "Less overhead; slower detection.",
+    "id": "rfs209b",
+    "label": "Ad Hoc",
+    "desc": "Old access tends to linger for months.",
     "notes": true,
     "feeling": "plain",
     "tags": [
@@ -326,15 +304,15 @@
   {
    "id": "founder-security-founder-and-app-security-10",
    "group": "Security",
-   "category": "Org",
+   "category": "People",
    "app": "Research",
-   "ask": "Security Agent Reporting: Keep Direct To Grok Bot (Not Inside AIR), Or Fold Into AIR Later?",
+   "ask": "Shared Logins: One Seat Per Person (Or Shared Vault Items), Or Share Passwords In Chat?",
    "notes": true,
    "share": true,
    "optionA": {
-    "id": "rse20a",
-    "label": "Keep Direct To Grok Bot",
-    "desc": "Max rule Oct 14; Security is not in AIR.",
+    "id": "rfs210a",
+    "label": "One Seat Or Vault Sharing",
+    "desc": "You can remove one person without changing everyone's password.",
     "notes": true,
     "feeling": "focused",
     "tags": [
@@ -342,9 +320,9 @@
     ]
    },
    "optionB": {
-    "id": "rse20b",
-    "label": "Revisit After MFA Hardening",
-    "desc": "Only if Max changes the org chart.",
+    "id": "rfs210b",
+    "label": "Share In Chat",
+    "desc": "Passwords live forever in chat history.",
     "notes": true,
     "feeling": "plain",
     "tags": [
@@ -356,15 +334,15 @@
   {
    "id": "founder-security-founder-and-app-security-11",
    "group": "Security",
-   "category": "Live Apps",
+   "category": "Vendors",
    "app": "Research",
-   "ask": "Niko Home Guide During Security Passes: Never Move Relock Or Change, Or Rotate Password With Max OK?",
+   "ask": "Tool Inventory: One List Of Every Service, Its Owner And Its Login Method, Or Keep It In Your Head? (CISA Cyber Essentials)",
    "notes": true,
    "share": true,
    "optionA": {
-    "id": "rse14a",
-    "label": "Never Change Without Explicit OK",
-    "desc": "Standing Max rule: live customer apps stay put during URL or password work.",
+    "id": "rfs211a",
+    "label": "Keep One List",
+    "desc": "Makes offboarding, billing and incidents much faster.",
     "notes": true,
     "feeling": "focused",
     "tags": [
@@ -372,9 +350,9 @@
     ]
    },
    "optionB": {
-    "id": "rse14b",
-    "label": "Rotate With Max OK Only",
-    "desc": "Still requires Max OK; Construction owns the change.",
+    "id": "rfs211b",
+    "label": "In Your Head",
+    "desc": "Easy now, hard in an emergency.",
     "notes": true,
     "feeling": "plain",
     "tags": [
@@ -386,15 +364,15 @@
   {
    "id": "founder-security-founder-and-app-security-12",
    "group": "Security",
-   "category": "Founder",
+   "category": "Vendors",
    "app": "Research",
-   "ask": "Password Manager + Passkeys On Email, GitHub, Stripe, Registrar: Do This Week, Or Schedule Later? (cisa.gov/MFA)",
+   "ask": "Connected Apps Review: Remove Unused Apps With Access To Google And GitHub Every Quarter, Or Never?",
    "notes": true,
    "share": true,
    "optionA": {
-    "id": "rse01a",
-    "label": "This Week",
-    "desc": "Account takeover is the top path to losing the company.",
+    "id": "rfs212a",
+    "label": "Quarterly Review",
+    "desc": "Old connected apps are a quiet way in.",
     "notes": true,
     "feeling": "focused",
     "tags": [
@@ -402,9 +380,9 @@
     ]
    },
    "optionB": {
-    "id": "rse01b",
-    "label": "Schedule Later",
-    "desc": "Higher risk window while public apps stay live.",
+    "id": "rfs212b",
+    "label": "Never",
+    "desc": "Access keeps piling up.",
     "notes": true,
     "feeling": "plain",
     "tags": [
@@ -416,15 +394,15 @@
   {
    "id": "founder-security-founder-and-app-security-13",
    "group": "Security",
-   "category": "IP",
+   "category": "Recovery",
    "app": "Research",
-   "ask": "Contractor IP: NDA Plus Written Assignment Before More Helpers, Or Informal For Now? (copyright.gov circ 30)",
+   "ask": "Restore Drill: Actually Restore One Repo And One Dropbox Folder Each Quarter, Or Trust The Backups?",
    "notes": true,
    "share": true,
    "optionA": {
-    "id": "rse16a",
-    "label": "NDA Plus Assignment",
-    "desc": "Without assignment, contractors may own code they wrote.",
+    "id": "rfs213a",
+    "label": "Quarterly Restore Drill",
+    "desc": "Proves backups work before you need them.",
     "notes": true,
     "feeling": "focused",
     "tags": [
@@ -432,9 +410,9 @@
     ]
    },
    "optionB": {
-    "id": "rse16b",
-    "label": "Informal For Now",
-    "desc": "Faster short tasks; IP risk grows.",
+    "id": "rfs213b",
+    "label": "Trust The Backups",
+    "desc": "Many backups fail only at restore time.",
     "notes": true,
     "feeling": "plain",
     "tags": [
@@ -446,15 +424,15 @@
   {
    "id": "founder-security-founder-and-app-security-14",
    "group": "Security",
-   "category": "Founder",
+   "category": "Recovery",
    "app": "Research",
-   "ask": "Recovery Codes: Print And Store Offline This Week, Or Digital Vault Only? (GitHub 2FA recovery docs)",
+   "ask": "Break-Glass Account: One Emergency Admin Login Stored Offline, Or None?",
    "notes": true,
    "share": true,
    "optionA": {
-    "id": "rse03a",
-    "label": "Print Offline",
-    "desc": "Lost key without codes locks you out of the company.",
+    "id": "rfs214a",
+    "label": "Keep A Break-Glass Login",
+    "desc": "A way back in if your main account is locked or taken.",
     "notes": true,
     "feeling": "focused",
     "tags": [
@@ -462,9 +440,9 @@
     ]
    },
    "optionB": {
-    "id": "rse03b",
-    "label": "Digital Vault Only",
-    "desc": "Convenient; single point of failure if the vault is lost.",
+    "id": "rfs214b",
+    "label": "None",
+    "desc": "One locked account can stop everything.",
     "notes": true,
     "feeling": "plain",
     "tags": [
@@ -476,15 +454,15 @@
   {
    "id": "founder-security-founder-and-app-security-15",
    "group": "Security",
-   "category": "Agents",
+   "category": "Recovery",
    "app": "Research",
-   "ask": "Human Approval Before Public Publish, Email Or Payment: Keep Strict, Or Trust Agent Drafts To Ship? (OWASP LLM Top 10)",
+   "ask": "Business Continuity: Set Google Inactive Account Manager And Name A Trusted Contact, Or Skip?",
    "notes": true,
    "share": true,
    "optionA": {
-    "id": "rse05a",
-    "label": "Keep Strict Approval",
-    "desc": "Prompt injection and excessive agency are real (LLM01, LLM06).",
+    "id": "rfs215a",
+    "label": "Set It Up",
+    "desc": "Someone you trust can reach key accounts if you cannot.",
     "notes": true,
     "feeling": "focused",
     "tags": [
@@ -492,9 +470,9 @@
     ]
    },
    "optionB": {
-    "id": "rse05b",
-    "label": "Trust More Autopilot",
-    "desc": "Faster; higher hijack risk on web/email reads.",
+    "id": "rfs215b",
+    "label": "Skip",
+    "desc": "Accounts could be stranded.",
     "notes": true,
     "feeling": "plain",
     "tags": [
@@ -506,15 +484,15 @@
   {
    "id": "founder-security-founder-and-app-security-16",
    "group": "Security",
-   "category": "Repos",
+   "category": "AI Agents",
    "app": "Research",
-   "ask": "Collaborator Audit: Quarterly Access Review, Or Continuous As Agents Join?",
+   "ask": "Agent Identity: Give Agents Their Own Bot GitHub Account Or GitHub App, Or Let Them Use Your Account?",
    "notes": true,
    "share": true,
    "optionA": {
-    "id": "rse19a",
-    "label": "Quarterly Review",
-    "desc": "Matches founder brief item 6.",
+    "id": "rfs216a",
+    "label": "Separate Bot Identity",
+    "desc": "Agent actions are clearly separate and easy to revoke.",
     "notes": true,
     "feeling": "focused",
     "tags": [
@@ -522,9 +500,9 @@
     ]
    },
    "optionB": {
-    "id": "rse19b",
-    "label": "Continuous As Agents Join",
-    "desc": "Tighter; more process noise.",
+    "id": "rfs216b",
+    "label": "Your Account",
+    "desc": "Agents can do anything you can.",
     "notes": true,
     "feeling": "plain",
     "tags": [
@@ -536,15 +514,15 @@
   {
    "id": "founder-security-founder-and-app-security-17",
    "group": "Security",
-   "category": "Privacy",
+   "category": "AI Agents",
    "app": "Research",
-   "ask": "Privacy Policy On smartupkeep.ai: Publish Matching Real Collection Before Launch Ads, Or After First Paid Member? (FTC privacy)",
+   "ask": "Agent Sandbox: Agents Only Work On The Shared Box, Never In Your Personal Browser Sessions, Or Allow Both?",
    "notes": true,
    "share": true,
    "optionA": {
-    "id": "rse10a",
-    "label": "Before Launch Ads",
-    "desc": "FTC treats privacy promises as deceptive-practice risk.",
+    "id": "rfs217a",
+    "label": "Box Only",
+    "desc": "Your personal logins stay out of agent reach.",
     "notes": true,
     "feeling": "focused",
     "tags": [
@@ -552,9 +530,9 @@
     ]
    },
    "optionB": {
-    "id": "rse10b",
-    "label": "After First Paid Member",
-    "desc": "Risky if ads already describe data use.",
+    "id": "rfs217b",
+    "label": "Allow Both",
+    "desc": "More convenient, much more exposure.",
     "notes": true,
     "feeling": "plain",
     "tags": [
@@ -566,15 +544,15 @@
   {
    "id": "founder-security-founder-and-app-security-18",
    "group": "Security",
-   "category": "Compliance",
+   "category": "AI Agents",
    "app": "Research",
-   "ask": "Michigan Breach Notice (MCL 445.72): Write A One-Page Incident Plan Now, Or When Legal Finishes Drafts?",
+   "ask": "Agent Secrets: Keep Keys In A Secrets Manager Or Env Store, Or In Files Inside Repos?",
    "notes": true,
    "share": true,
    "optionA": {
-    "id": "rse11a",
-    "label": "Write The One-Pager Now",
-    "desc": "Who to call and a notice template; Legal can refine.",
+    "id": "rfs218a",
+    "label": "Secrets Manager",
+    "desc": "Keys never land in a repo by accident.",
     "notes": true,
     "feeling": "focused",
     "tags": [
@@ -582,9 +560,9 @@
     ]
    },
    "optionB": {
-    "id": "rse11b",
-    "label": "Wait For Legal Drafts",
-    "desc": "More complete; gap until then.",
+    "id": "rfs218b",
+    "label": "Files In Repos",
+    "desc": "Easy to leak in a commit.",
     "notes": true,
     "feeling": "plain",
     "tags": [
@@ -596,15 +574,15 @@
   {
    "id": "founder-security-founder-and-app-security-19",
    "group": "Security",
-   "category": "Agents",
+   "category": "AI Agents",
    "app": "Research",
-   "ask": "Agent Tokens: Fine-Grained PATs Per Repo With 30-90 Day Expiry, Or Keep Broader Tokens? (GitHub PAT docs)",
+   "ask": "Agent Action Log: Keep A 90-Day Log Of What Agents Ran And Changed, Or No Log?",
    "notes": true,
    "share": true,
    "optionA": {
-    "id": "rse04a",
-    "label": "Fine-Grained, Expiring",
-    "desc": "An agent token with publish rights is a skeleton key.",
+    "id": "rfs219a",
+    "label": "Keep A 90-Day Log",
+    "desc": "You can see what happened after a bad change.",
     "notes": true,
     "feeling": "focused",
     "tags": [
@@ -612,9 +590,9 @@
     ]
    },
    "optionB": {
-    "id": "rse04b",
-    "label": "Broader For Now",
-    "desc": "Less friction for agents; higher blast radius.",
+    "id": "rfs219b",
+    "label": "No Log",
+    "desc": "Hard to trace mistakes.",
     "notes": true,
     "feeling": "plain",
     "tags": [
@@ -626,15 +604,15 @@
   {
    "id": "founder-security-founder-and-app-security-20",
    "group": "Security",
-   "category": "Founder",
+   "category": "Fraud",
    "app": "Research",
-   "ask": "Hardware Keys Or Passkeys: Add Two Keys And Turn Off SMS Fallback, Or Passkeys Only For Now? (NIST SP 800-63B)",
+   "ask": "Payment Change Requests: Always Confirm By A Known Phone Number Before Changing Where Money Goes, Or Trust Email? (FBI IC3 business email compromise)",
    "notes": true,
    "share": true,
    "optionA": {
-    "id": "rse02a",
-    "label": "Two Hardware Keys + No SMS",
-    "desc": "Phishing-resistant; SMS fallback is weaker.",
+    "id": "rfs220a",
+    "label": "Call To Confirm",
+    "desc": "Stops the most common business email fraud.",
     "notes": true,
     "feeling": "focused",
     "tags": [
@@ -642,9 +620,9 @@
     ]
    },
    "optionB": {
-    "id": "rse02b",
-    "label": "Passkeys Only First",
-    "desc": "Faster; add hardware keys on the next trip.",
+    "id": "rfs220b",
+    "label": "Trust Email",
+    "desc": "Fake invoices and bank changes get through.",
     "notes": true,
     "feeling": "plain",
     "tags": [
@@ -655,5 +633,6 @@
   }
  ],
  "share": true,
- "notes": true
+ "notes": true,
+ "carried": 0
 }
