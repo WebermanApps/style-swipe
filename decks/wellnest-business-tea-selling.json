@@ -1,0 +1,980 @@
+{
+ "date": "wellnest-business-tea-selling",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Selling The Tea Line",
+ "generated_at": "2026-10-15T12:47:55+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "playful": 8,
+  "premium": 8,
+  "calm": 8,
+  "bold": 8,
+  "practical": 8
+ },
+ "groups": {
+  "Shipping": 1,
+  "Goal": 1,
+  "Channel": 3,
+  "Wholesale": 1,
+  "Promo": 2,
+  "Story": 1,
+  "Retail": 1,
+  "Loyalty": 1,
+  "Range": 2,
+  "Export": 1,
+  "Price": 1,
+  "Corporate": 1,
+  "Format": 2,
+  "Gifts": 1,
+  "Fulfilment": 1
+ },
+ "apps": {
+  "WellNest": 20
+ },
+ "freshness": {
+  "option_slots": 40,
+  "never_shown_before": 40,
+  "share": 1.0
+ },
+ "warnings": [],
+ "brands": [
+  "Where and how WellNest Tea should be sold",
+  "Business strategy deck for P'Thom and Max (row two). No branding, visual style or dashboard topics."
+ ],
+ "submit_agent": "wellnest",
+ "submit_to": "WellNest Agent",
+ "deck_size": 20,
+ "row": "business",
+ "audience": "P'Thom and Max",
+ "sources": {
+  "queue": "/workspace/wellnest/deck-queue.json"
+ },
+ "pairs": [
+  {
+   "group": "Shipping",
+   "category": "Shipping",
+   "app": "WellNest",
+   "ask": "Shipping: Free Over A Minimum Or Always Charged?",
+   "optionA": {
+    "id": "wbteaselli_free_over_minimum_140",
+    "label": "Free Over Minimum",
+    "desc": "Free over 500 THB.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">SHIPPING</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Free Over</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Minimum</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Free over 500 THB.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Bigger baskets</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Cost</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "wbteaselli_always_charged_141",
+    "label": "Always Charged",
+    "desc": "Pay what it costs.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">SHIPPING</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Always Charged</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Pay what it costs.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Margin</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Drop-off</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-business-tea-selling-01",
+   "repeat": false
+  },
+  {
+   "group": "Goal",
+   "category": "Goal",
+   "app": "WellNest",
+   "ask": "First Year Goal: Many Small Buyers Or Few Big Accounts?",
+   "optionA": {
+    "id": "wbteaselli_many_small_buyers_190",
+    "label": "Many Small Buyers",
+    "desc": "Online and farm.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">GOAL</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Many Small</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Buyers</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Online and farm.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Spread risk</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Effort</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "wbteaselli_few_big_accounts_191",
+    "label": "Few Big Accounts",
+    "desc": "Hotels and cafes.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">GOAL</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Few Big</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Accounts</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Hotels and cafes.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Volume</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Dependent</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-business-tea-selling-02",
+   "repeat": false
+  },
+  {
+   "group": "Channel",
+   "category": "Channel",
+   "app": "WellNest",
+   "ask": "Marketplace: Shopee And Lazada Or Own Site Only?",
+   "optionA": {
+    "id": "wbteaselli_shopee_and_lazada_10",
+    "label": "Shopee And Lazada",
+    "desc": "Where Thai buyers shop.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">CHANNEL</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Shopee And</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Lazada</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Where Thai buyers shop.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Volume</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Price wars</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "wbteaselli_own_site_only_11",
+    "label": "Own Site Only",
+    "desc": "Premium control.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">CHANNEL</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Own Site Only</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Premium control.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Margin</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Less traffic</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-business-tea-selling-03",
+   "repeat": false
+  },
+  {
+   "group": "Wholesale",
+   "category": "Wholesale",
+   "app": "WellNest",
+   "ask": "Wholesale First Target: Cafes Or Hotels?",
+   "optionA": {
+    "id": "wbteaselli_cafes_80",
+    "label": "Cafes",
+    "desc": "Iced drinks.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">WHOLESALE</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Cafes</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Iced drinks.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Volume</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Many accounts</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "wbteaselli_hotels_81",
+    "label": "Hotels",
+    "desc": "Room trays and restaurants.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">WHOLESALE</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Hotels</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Room trays and restaurants.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Big orders</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Slow deals</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-business-tea-selling-04",
+   "repeat": false
+  },
+  {
+   "group": "Promo",
+   "category": "Promo",
+   "app": "WellNest",
+   "ask": "Launch A New Blend: Limited Drop Or Permanent Add?",
+   "optionA": {
+    "id": "wbteaselli_limited_drop_110",
+    "label": "Limited Drop",
+    "desc": "Only two hundred pouches.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">PROMO</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Limited Drop</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Only two hundred pouches.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Urgency</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Stops</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "wbteaselli_permanent_111",
+    "label": "Permanent",
+    "desc": "Stays in the range.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">PROMO</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Permanent</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Stays in the range.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Steady</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Less buzz</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-business-tea-selling-05",
+   "repeat": false
+  },
+  {
+   "group": "Story",
+   "category": "Story",
+   "app": "WellNest",
+   "ask": "Selling Point: Organic Farm Or Wellness Benefits?",
+   "optionA": {
+    "id": "wbteaselli_organic_farm_120",
+    "label": "Organic Farm",
+    "desc": "Grown here, picked by hand.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">STORY</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Organic Farm</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Grown here, picked by hand.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Trust</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Clear</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "wbteaselli_wellness_benefits_121",
+    "label": "Wellness Benefits",
+    "desc": "Sleep, calm, energy.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">STORY</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Wellness</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Benefits</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sleep, calm, energy.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Desire</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Claims care</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-business-tea-selling-06",
+   "repeat": false
+  },
+  {
+   "group": "Retail",
+   "category": "Retail",
+   "app": "WellNest",
+   "ask": "Shelf Partners: Health Stores Or Gift Shops?",
+   "optionA": {
+    "id": "wbteaselli_health_stores_160",
+    "label": "Health Stores",
+    "desc": "Wellness buyers.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">RETAIL</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Health Stores</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Wellness buyers.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fit</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Few</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "wbteaselli_gift_shops_161",
+    "label": "Gift Shops",
+    "desc": "Tourist buyers.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">RETAIL</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Gift Shops</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Tourist buyers.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Volume</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Seasonal</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-business-tea-selling-07",
+   "repeat": false
+  },
+  {
+   "group": "Loyalty",
+   "category": "Loyalty",
+   "app": "WellNest",
+   "ask": "Repeat Buyers: Refill Pouches Or Loyalty Points?",
+   "optionA": {
+    "id": "wbteaselli_refill_pouches_150",
+    "label": "Refill Pouches",
+    "desc": "Cheaper refills for tins.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">LOYALTY</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Refill Pouches</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Cheaper refills for tins.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Eco</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Repeat</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "wbteaselli_loyalty_points_151",
+    "label": "Loyalty Points",
+    "desc": "Points to spend.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">LOYALTY</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Loyalty Points</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Points to spend.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Simple</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Common</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-business-tea-selling-08",
+   "repeat": false
+  },
+  {
+   "group": "Range",
+   "category": "Range",
+   "app": "WellNest",
+   "ask": "Hero Product: Roselle Or Chawb Mahk House Blend?",
+   "optionA": {
+    "id": "wbteaselli_roselle_40",
+    "label": "Roselle",
+    "desc": "The farm crop.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">RANGE</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Roselle</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >The farm crop.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Story</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Known</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "wbteaselli_chawb_mahk_41",
+    "label": "Chawb Mahk",
+    "desc": "House blend.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">RANGE</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Chawb Mahk</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >House blend.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Unique</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Explain</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-business-tea-selling-09",
+   "repeat": false
+  },
+  {
+   "group": "Channel",
+   "category": "Channel",
+   "app": "WellNest",
+   "ask": "Social Selling: Instagram Shop Or LINE Shop?",
+   "optionA": {
+    "id": "wbteaselli_instagram_shop_20",
+    "label": "Instagram Shop",
+    "desc": "Visitors and nomads.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">CHANNEL</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Instagram Shop</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Visitors and nomads.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Visual</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Foreign</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "wbteaselli_line_shop_21",
+    "label": "LINE Shop",
+    "desc": "Thai customers.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">CHANNEL</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >LINE Shop</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Thai customers.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Local</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Chat</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-business-tea-selling-10",
+   "repeat": false
+  },
+  {
+   "group": "Export",
+   "category": "Export",
+   "app": "WellNest",
+   "ask": "Export: Start Now Or Thailand First?",
+   "optionA": {
+    "id": "wbteaselli_start_now_90",
+    "label": "Start Now",
+    "desc": "Sell to past guests abroad.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">EXPORT</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Start Now</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sell to past guests abroad.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Bigger</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Paperwork</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "wbteaselli_thailand_first_91",
+    "label": "Thailand First",
+    "desc": "Prove demand at home.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">EXPORT</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Thailand First</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Prove demand at home.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Focused</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Smaller</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-business-tea-selling-11",
+   "repeat": false
+  },
+  {
+   "group": "Price",
+   "category": "Price",
+   "app": "WellNest",
+   "ask": "Discounting: Never Discount Or Big Sales Twice A Year?",
+   "optionA": {
+    "id": "wbteaselli_never_discount_170",
+    "label": "Never Discount",
+    "desc": "Protect value.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">PRICE</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Never Discount</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Protect value.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Premium</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Slower</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "wbteaselli_twice_a_year_171",
+    "label": "Twice A Year",
+    "desc": "11.11 and 12.12 sales.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">PRICE</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Twice A Year</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >11.11 and 12.12 sales.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Spikes</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Trains buyers</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-business-tea-selling-12",
+   "repeat": false
+  },
+  {
+   "group": "Corporate",
+   "category": "Corporate",
+   "app": "WellNest",
+   "ask": "Corporate Orders: Logo Packs For Companies Or Standard Packs Only?",
+   "optionA": {
+    "id": "wbteaselli_logo_packs_180",
+    "label": "Logo Packs",
+    "desc": "Custom sleeve.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">CORPORATE</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Logo Packs</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Custom sleeve.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Big orders</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Work</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "wbteaselli_standard_only_181",
+    "label": "Standard Only",
+    "desc": "Simple.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">CORPORATE</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Standard Only</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Simple.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Easy</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Missed deals</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-business-tea-selling-13",
+   "repeat": false
+  },
+  {
+   "group": "Format",
+   "category": "Format",
+   "app": "WellNest",
+   "ask": "Ready To Drink: Bottled Iced Roselle Or Stay Dry Only?",
+   "optionA": {
+    "id": "wbteaselli_bottled_iced_roselle_60",
+    "label": "Bottled Iced Roselle",
+    "desc": "Cold in shop fridges.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">FORMAT</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Bottled Iced</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Roselle</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Cold in shop fridges.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Volume</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Licences</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "wbteaselli_dry_only_61",
+    "label": "Dry Only",
+    "desc": "Long shelf life.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">FORMAT</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Dry Only</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Long shelf life.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Simple</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Smaller</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-business-tea-selling-14",
+   "repeat": false
+  },
+  {
+   "group": "Range",
+   "category": "Range",
+   "app": "WellNest",
+   "ask": "Launch Range: Three Teas Or Six Teas?",
+   "optionA": {
+    "id": "wbteaselli_three_teas_30",
+    "label": "Three Teas",
+    "desc": "Roselle, pea flower, Chawb Mahk.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">RANGE</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Three Teas</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Roselle, pea flower, Chawb</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Mahk.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Focus</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Small</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "wbteaselli_six_teas_31",
+    "label": "Six Teas",
+    "desc": "Wider choice.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">RANGE</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Six Teas</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Wider choice.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Variety</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Stock</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-business-tea-selling-15",
+   "repeat": false
+  },
+  {
+   "group": "Format",
+   "category": "Format",
+   "app": "WellNest",
+   "ask": "Format: Loose Leaf Or Tea Bags?",
+   "optionA": {
+    "id": "wbteaselli_loose_leaf_50",
+    "label": "Loose Leaf",
+    "desc": "Craft feel.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">FORMAT</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Loose Leaf</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Craft feel.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Premium</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fussy</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "wbteaselli_tea_bags_51",
+    "label": "Tea Bags",
+    "desc": "Easy for offices.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">FORMAT</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Tea Bags</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Easy for offices.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Convenient</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Mass</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-business-tea-selling-16",
+   "repeat": false
+  },
+  {
+   "group": "Gifts",
+   "category": "Gifts",
+   "app": "WellNest",
+   "ask": "Gift Set: Three Tin Box Or Tea And Cup Set?",
+   "optionA": {
+    "id": "wbteaselli_three_tin_box_70",
+    "label": "Three Tin Box",
+    "desc": "Sampler.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">GIFTS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Three Tin Box</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sampler.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Easy</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Popular</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "wbteaselli_tea_and_cup_71",
+    "label": "Tea And Cup",
+    "desc": "With a local cup.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">GIFTS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Tea And Cup</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >With a local cup.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Premium</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fragile</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-business-tea-selling-17",
+   "repeat": false
+  },
+  {
+   "group": "Promo",
+   "category": "Promo",
+   "app": "WellNest",
+   "ask": "Promotion: Free Samples Or Tasting Events?",
+   "optionA": {
+    "id": "wbteaselli_free_samples_100",
+    "label": "Free Samples",
+    "desc": "In every order.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">PROMO</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Free Samples</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >In every order.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Trial</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Cost</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "wbteaselli_tasting_events_101",
+    "label": "Tasting Events",
+    "desc": "Pop-ups in town.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">PROMO</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Tasting Events</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Pop-ups in town.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Personal</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Time</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-business-tea-selling-18",
+   "repeat": false
+  },
+  {
+   "group": "Channel",
+   "category": "Channel",
+   "app": "WellNest",
+   "ask": "Main Channel: Farm Shop Or Online Shop?",
+   "optionA": {
+    "id": "wbteaselli_farm_shop_00",
+    "label": "Farm Shop",
+    "desc": "Sell to visitors.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">CHANNEL</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Farm Shop</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sell to visitors.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Margin</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Limited</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "wbteaselli_online_shop_01",
+    "label": "Online Shop",
+    "desc": "Sell anywhere in Thailand.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">CHANNEL</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Online Shop</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sell anywhere in Thailand.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Scale</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Shipping</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-business-tea-selling-19",
+   "repeat": false
+  },
+  {
+   "group": "Fulfilment",
+   "category": "Fulfilment",
+   "app": "WellNest",
+   "ask": "Packing: Pack At The Farm Or Use A Fulfilment Partner?",
+   "optionA": {
+    "id": "wbteaselli_pack_at_farm_130",
+    "label": "Pack At Farm",
+    "desc": "Family packs orders.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">FULFILMENT</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Pack At Farm</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Family packs orders.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Control</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Time</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "wbteaselli_fulfilment_partner_131",
+    "label": "Fulfilment Partner",
+    "desc": "Warehouse in Chiang Mai.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FDFBF6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">FULFILMENT</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Fulfilment</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Partner</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Warehouse in Chiang Mai.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Scales</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fees</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-business-tea-selling-20",
+   "repeat": false
+  }
+ ],
+ "share": true,
+ "notes": true
+}
