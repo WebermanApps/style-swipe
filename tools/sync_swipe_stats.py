@@ -15,3 +15,5 @@ for ag, v in A.items():
     out[ag] = {"total": int(v.get("all_time", v.get("total", sum(days.values())))), "days": days, **{k: v[k] for k in ("decks_today","decks_total","deck_days") if k in v}}
 json.dump({"updated": j.get("updated"), "tz": "Asia/Bangkok", "agents": out}, open(DST, "w"), indent=1)
 print("wrote", DST, len(out), "agents")
+# Apps Home deck counter (Oct 15 2026): rebuild kit/deck-counts.json (whole decks per agent per ICT day) on every sync.
+import subprocess; subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "deck_counts.py")], check=False)
