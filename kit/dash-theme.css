@@ -1,3 +1,4 @@
+/* dash-theme version cc4 (Oct 15 2026: Advisor Boards Deck kit classes). Link as kit/dash-theme.css?v=cc4 */
 /* Apps Home color scheme for agent dashboards (Max rule, Oct 15 2026 12:28 ICT).
    Source: ops/apps-home/gen.py + ops/brand/brand-tokens.css. Colors only, light only.
    Exempt: WellNest, UpKeep. Not for deck pages. */
@@ -62,3 +63,69 @@ html,body{background:var(--dash-bg)!important;color:var(--dash-text)}
 .mw-car-nav{display:flex;justify-content:flex-end;gap:8px;margin-top:8px}
 .mw-car-nav button{min-width:44px;min-height:44px;border:2px solid #171717;background:#fff;color:#171717;font-size:18px;border-radius:0;cursor:pointer}
 @media(min-width:700px){.mw-track{grid-auto-columns:calc((100% - 24px)/3)}}
+
+/* ===== Advisor Boards Deck kit (Max picks Oct 15 2026 13:52 ICT, v cc4). White + beige, square corners, Khand/Hind, light only. ===== */
+/* Thumbnail card (.mw-thumb-card) - shared by Research, Coach, Legal, Security. Wide 16:9 thumbnail, caption UNDER on white
+   (never a dark strip over the picture), tap expands details IN PLACE (tap again to close; no separate page).
+   <article class="mw-thumb-card" tabindex="0" aria-expanded="false"><div class="mw-thumb"><img alt=""></div>
+     <div class="mw-thumb-cap"><h3>Title</h3><p class="mw-thumb-sub">One line</p></div><div class="mw-thumb-more">Details...</div></article>
+   JS: card.onclick=()=>card.setAttribute('aria-expanded',card.getAttribute('aria-expanded')!=='true'). */
+.mw-thumb-card{display:flex;flex-direction:column;background:#fff;border:1px solid #e3ddd2;border-radius:0;overflow:hidden;cursor:pointer;min-width:0}
+.mw-thumb-card:focus-visible{outline:2px solid #171717;outline-offset:2px}
+.mw-thumb{position:relative;aspect-ratio:16/9;background:#FAF6EE;border-bottom:1px solid #e3ddd2;overflow:hidden}
+.mw-thumb img,.mw-thumb svg{width:100%;height:100%;object-fit:cover;display:block}
+.mw-thumb--icon{display:flex;align-items:center;justify-content:center}
+.mw-thumb--icon svg{width:44%;height:auto}
+.mw-thumb-cap{padding:10px 12px 12px}
+.mw-thumb-cap h3{margin:0;font:600 17px/1.2 var(--mw-font-heading,'Khand',sans-serif);color:#0a0a0a}
+.mw-thumb-sub{margin:2px 0 0;font:400 14px/1.4 var(--mw-font-body,'Hind',sans-serif);color:#737373}
+.mw-thumb-more{display:none;padding:0 12px 12px;font:400 15px/1.5 var(--mw-font-body,'Hind',sans-serif);color:#404040;border-top:1px solid #e3ddd2;padding-top:10px}
+.mw-thumb-card[aria-expanded="true"] .mw-thumb-more{display:block}
+.mw-thumb-card[aria-expanded="true"]{background:#FAF6EE}
+/* Light translucent caption strip - ONLY if a caption must sit on a picture (never dark). */
+.mw-thumb-strip{position:absolute;left:0;right:0;bottom:0;padding:6px 10px;background:rgba(255,255,255,.82);color:#0a0a0a;font:600 15px/1.2 var(--mw-font-heading,'Khand',sans-serif)}
+
+/* Small thumbnail rows (.mw-thumb-rows) - compact list, 16:9 thumb left, title beside. */
+.mw-thumb-rows{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.mw-thumb-row{display:flex;gap:12px;align-items:center;padding:8px;background:#fff;border:1px solid #e3ddd2;border-radius:0}
+.mw-thumb-row .mw-thumb{flex:0 0 96px;border:0}
+.mw-thumb-row h3{margin:0;font:600 16px/1.2 var(--mw-font-heading,'Khand',sans-serif)}
+
+/* Carousel variants (add to .mw-carousel). Numbers (.mw-num / .mw-num-big) ONLY on research topic cards.
+   --three : three cards across, swipe for more.  --peek : one big card, next peeks in.  --swipe : swipe only, hides arrows.
+   Dots: <div class="mw-dots"><span class="mw-dot" aria-current="true"></span>...</div> (update aria-current on scroll). */
+.mw-carousel--three .mw-track{grid-auto-columns:calc((100% - 24px)/3)}
+.mw-carousel--peek .mw-track{grid-auto-columns:82%}
+.mw-carousel--swipe .mw-car-nav{display:none}
+.mw-carousel .mw-thumb-card{scroll-snap-align:start}
+.mw-dots{display:flex;justify-content:center;gap:8px;margin-top:10px}
+.mw-dot{width:7px;height:7px;background:#e3ddd2;border-radius:0}
+.mw-dot[aria-current="true"]{background:#171717}
+.mw-num-big{display:block;margin:0 0 2px;font:700 30px/1 var(--mw-font-heading,'Khand',sans-serif);color:#171717;letter-spacing:.02em}
+@media(max-width:480px){.mw-carousel--three .mw-track{grid-auto-columns:calc((100% - 16px)/2.3)}.mw-thumb-cap h3{font-size:16px}}
+
+/* Swipe cards (.mw-swipe) - one item per card with actions: Legal questions (Yes / Ask More), Security checks (Done),
+   Coach notes and suggestions (Approve). Uses the .mw-track scroll-snap; one card at a time, next peeks in.
+   <div class="mw-swipe"><div class="mw-track"><article class="mw-swipe-card mw-swipe-card--red"><p class="mw-swipe-meta">Urgent</p>
+     <h3>Question</h3><div class="mw-swipe-actions"><button class="mw-btn mw-btn--primary">Yes</button><button class="mw-btn">Ask More</button></div></article></div></div> */
+.mw-swipe .mw-track{grid-auto-columns:88%}
+.mw-swipe-card{scroll-snap-align:start;display:flex;flex-direction:column;gap:8px;min-height:180px;padding:18px;background:#fff;border:1px solid #e3ddd2;border-top:3px solid var(--mw-status,#171717);border-radius:0}
+.mw-swipe-card--red{--mw-status:#B42318}.mw-swipe-card--amber{--mw-status:#B54708}.mw-swipe-card--green{--mw-status:#2D6A4F}
+.mw-swipe-meta{margin:0;font:600 13px/1.2 var(--mw-font-body,'Hind',sans-serif);letter-spacing:.06em;text-transform:uppercase;color:var(--mw-status,#737373)}
+.mw-swipe-card h3{margin:0;font:600 20px/1.25 var(--mw-font-heading,'Khand',sans-serif);color:#0a0a0a}
+.mw-swipe-actions{margin-top:auto;display:flex;gap:8px;flex-wrap:wrap}
+.mw-btn{min-height:44px;padding:0 18px;border:1px solid #171717;background:#fff;color:#171717;font:600 15px/1 var(--mw-font-body,'Hind',sans-serif);border-radius:0;cursor:pointer}
+.mw-btn--primary{background:#171717;color:#fafafa}
+
+/* Status card (.mw-status-card) - Security exposure areas: white card, drawn shield icon in the status colour (no solid tiles). */
+.mw-status-card{display:flex;gap:10px;align-items:center;padding:12px;background:#fff;border:1px solid #e3ddd2;border-radius:0;--mw-status:#2D6A4F}
+.mw-status-card--red{--mw-status:#B42318}.mw-status-card--amber{--mw-status:#B54708}
+.mw-status-card svg{flex:none;width:28px;height:32px;fill:none;stroke:var(--mw-status);stroke-width:2.2}
+.mw-status-card h3{margin:0;font:600 16px/1.2 var(--mw-font-heading,'Khand',sans-serif)}
+.mw-status-card p{margin:0;font:600 13px/1.2 var(--mw-font-body,'Hind',sans-serif);color:var(--mw-status)}
+
+/* Alert banner (.mw-alert) - Security alerts carousel at the top: light red fill, red outline, one alert per card. */
+.mw-alert{scroll-snap-align:start;padding:14px 16px;background:#FEF3F2;border:1px solid #B42318;border-radius:0}
+.mw-alert .mw-swipe-meta{color:#B42318}
+.mw-alert h3{margin:2px 0;font:600 18px/1.25 var(--mw-font-heading,'Khand',sans-serif);color:#0a0a0a}
+.mw-alert p{margin:0;font-size:14px;color:#404040}
