@@ -8,11 +8,11 @@
  "english_only": true,
  "light_only": true,
  "example_data_only": false,
- "count": 21,
+ "count": 28,
  "max_age_days": 14,
- "generated_at": "2026-10-14T19:58:38+07:00",
+ "generated_at": "2026-10-15T23:51:49+07:00",
  "groups": {
-  "Rule Cleanup": 21
+  "Rule Cleanup": 28
  },
  "sources": {
   "feed": "/workspace/ops/team-feed.md",
@@ -1006,6 +1006,335 @@
      "type": "hm",
      "m": "svg",
      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">RULE COUNT</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">One Line Each</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Keep every rule on its own numbered</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">line.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Rule Cleanup",
+   "category": "Customer-Facing",
+   "app": "Coach",
+   "ask": "Customer-Facing Means Niko's Apps Only: Add To The Rulebook Now Or After Launch?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "coach-rule-cleanup-022",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_rc022_a",
+    "label": "Add It Now",
+    "desc": "Add Max 22:07 to the rulebook today: only Niko's apps are customer-facing.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#C1502E\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">CUSTOMER-FACING</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Add It Now</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Add Max 22:07 to the rulebook today:</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">only Niko&#x27;s apps are customer-facing.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_rc022_b",
+    "label": "After Launch",
+    "desc": "Keep it in the feed until smartupkeep.ai launches, then write the rule.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">CUSTOMER-FACING</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">After Launch</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Keep it in the feed until</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">smartupkeep.ai launches, then write</text><text x=\"18\" y=\"124\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">the rule.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Rule Cleanup",
+   "category": "Locked Pages Rule",
+   "app": "Coach",
+   "ask": "Password-Locked Pages: Rulebook Line Or Security Doc Only?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "coach-rule-cleanup-023",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_rc023_a",
+    "label": "Rulebook Line",
+    "desc": "One line in the rulebook: every page except Niko's apps is password-locked.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#C1502E\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">LOCKED PAGES RULE</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Rulebook Line</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">One line in the rulebook: every page</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">except Niko&#x27;s apps is password-locked.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_rc023_b",
+    "label": "Security Doc Only",
+    "desc": "Keep the rule in the page-lock handoff file only.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">LOCKED PAGES RULE</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Security Doc Only</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Keep the rule in the page-lock handoff</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">file only.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Rule Cleanup",
+   "category": "Pull Before Build",
+   "app": "Coach",
+   "ask": "Pull Before Building: Rulebook Rule Or Handoff Note Only?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "coach-rule-cleanup-024",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_rc024_a",
+    "label": "Rulebook Rule",
+    "desc": "Add git pull before building and relock after building to the rulebook.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#C1502E\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">PULL BEFORE BUILD</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Rulebook Rule</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Add git pull before building and</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">relock after building to the rulebook.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_rc024_b",
+    "label": "Handoff Note Only",
+    "desc": "Leave it in the page-lock handoff note and the push guard.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">PULL BEFORE BUILD</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Handoff Note Only</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it in the page-lock handoff note</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">and the push guard.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Rule Cleanup",
+   "category": "Build Templates",
+   "app": "Coach",
+   "ask": "Build Templates Never Locked: Write It As A Rule Or Leave It To The Tools?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "coach-rule-cleanup-025",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_rc025_a",
+    "label": "Write It Down",
+    "desc": "A rulebook line: template files stay plain because tools read them.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#C1502E\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">BUILD TEMPLATES</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Write It Down</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">A rulebook line: template files stay</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">plain because tools read them.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_rc025_b",
+    "label": "Leave It To Tools",
+    "desc": "The lock tool already skips templates, so no written rule.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">BUILD TEMPLATES</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Leave It To Tools</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">The lock tool already skips templates,</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">so no written rule.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Rule Cleanup",
+   "category": "Superseded Rules",
+   "app": "Coach",
+   "ask": "Rules Superseded By Max 22:07: Strike Through Or Delete From Rule Files?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "coach-rule-cleanup-026",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_rc026_a",
+    "label": "Strike Through",
+    "desc": "Keep the old line struck through with the date it changed.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#C1502E\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">SUPERSEDED RULES</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Strike Through</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Keep the old line struck through with</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">the date it changed.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_rc026_b",
+    "label": "Delete",
+    "desc": "Remove the old lines so only current rules remain.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">SUPERSEDED RULES</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Delete</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Remove the old lines so only current</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">rules remain.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Rule Cleanup",
+   "category": "Shelf Cap",
+   "app": "Coach",
+   "ask": "Shelf Of Five Decks: Hard Cap Or Allow A Sixth For Urgent Decks?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "coach-rule-cleanup-027",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_rc027_a",
+    "label": "Hard Cap",
+    "desc": "Never more than five decks; an urgent deck replaces the oldest.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#C1502E\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">SHELF CAP</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Hard Cap</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Never more than five decks; an urgent</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">deck replaces the oldest.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_rc027_b",
+    "label": "Allow A Sixth",
+    "desc": "An urgent deck may sit as a sixth until it is answered.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">SHELF CAP</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Allow A Sixth</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">An urgent deck may sit as a sixth</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">until it is answered.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Rule Cleanup",
+   "category": "Retired Cards",
+   "app": "Coach",
+   "ask": "A Card Settled By A Later Answer: Remove Same Day Or At The Next Refill?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "coach-rule-cleanup-028",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_rc028_a",
+    "label": "Same Day",
+    "desc": "The owner retires the card and refills the deck the same day.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#C1502E\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">RETIRED CARDS</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Same Day</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">The owner retires the card and refills</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">the deck the same day.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_rc028_b",
+    "label": "Next Refill",
+    "desc": "Leave it until the deck is next refilled.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">RETIRED CARDS</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Next Refill</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it until the deck is next</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">refilled.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
      "bg": "#FDFBF6"
     }
    }

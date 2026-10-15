@@ -8,11 +8,11 @@
  "english_only": true,
  "light_only": true,
  "example_data_only": false,
- "count": 21,
+ "count": 27,
  "max_age_days": 14,
- "generated_at": "2026-10-14T19:58:38+07:00",
+ "generated_at": "2026-10-15T23:51:49+07:00",
  "groups": {
-  "Agent Overlap And Handoffs": 21
+  "Agent Overlap And Handoffs": 27
  },
  "sources": {
   "feed": "/workspace/ops/team-feed.md",
@@ -1006,6 +1006,288 @@
      "type": "hm",
      "m": "svg",
      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">LAYOUT PICKS</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Post As Coach Rules</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Coach posts its own layout list for</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">every agent to follow.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Agent Overlap And Handoffs",
+   "category": "Unlock To Edit",
+   "app": "Coach",
+   "ask": "Editing A Locked Page: Each Agent Unlocks Its Own Or Security Does It?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "coach-overlap-handoffs-022",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_oh022_a",
+    "label": "Each Agent",
+    "desc": "Agents run unlock, edit, relock and push themselves, following the page-lock rule.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#0B6E4F\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">UNLOCK TO EDIT</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Each Agent</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Agents run unlock, edit, relock and</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">push themselves, following the</text><text x=\"18\" y=\"124\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">page-lock rule.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_oh022_b",
+    "label": "Security Does It",
+    "desc": "Agents send Security a handoff and Security unlocks and relocks for them.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">UNLOCK TO EDIT</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Security Does It</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Agents send Security a handoff and</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Security unlocks and relocks for them.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Agent Overlap And Handoffs",
+   "category": "Blocked Push",
+   "app": "Coach",
+   "ask": "Push Blocked By The Page Lock: Agent Re-Locks And Retries Or Pings Security?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "coach-overlap-handoffs-023",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_oh023_a",
+    "label": "Agent Retries",
+    "desc": "The hook already re-locked the page; the agent commits and pushes again.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#0B6E4F\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">BLOCKED PUSH</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Agent Retries</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">The hook already re-locked the page;</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">the agent commits and pushes again.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_oh023_b",
+    "label": "Ping Security",
+    "desc": "The agent stops and posts a handoff so Security checks what was unlocked.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">BLOCKED PUSH</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Ping Security</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">The agent stops and posts a handoff so</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Security checks what was unlocked.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Agent Overlap And Handoffs",
+   "category": "Niko Apps Changes",
+   "app": "Coach",
+   "ask": "Changes To Niko's Apps: Construction Only Or Any Agent With Your OK?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "coach-overlap-handoffs-024",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_oh024_a",
+    "label": "Construction Only",
+    "desc": "Only Construction touches Niko's guide and question apps, always with your OK.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#0B6E4F\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">NIKO APPS CHANGES</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Construction Only</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Only Construction touches Niko&#x27;s guide</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">and question apps, always with your</text><text x=\"18\" y=\"124\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">OK.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_oh024_b",
+    "label": "Any Agent With OK",
+    "desc": "Any agent can change them, as long as you approved that exact edit.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">NIKO APPS CHANGES</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Any Agent With OK</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Any agent can change them, as long as</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">you approved that exact edit.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Agent Overlap And Handoffs",
+   "category": "Deck Data Privacy",
+   "app": "Coach",
+   "ask": "Private Notes Found In Deck Data: Owning Agent Cleans Them Or Security?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "coach-overlap-handoffs-025",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_oh025_a",
+    "label": "Owning Agent",
+    "desc": "The agent that wrote the deck removes names, addresses and money figures.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#0B6E4F\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">DECK DATA PRIVACY</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Owning Agent</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">The agent that wrote the deck removes</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">names, addresses and money figures.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_oh025_b",
+    "label": "Security",
+    "desc": "Security sweeps all deck data files and cleans them in one pass.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">DECK DATA PRIVACY</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Security</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Security sweeps all deck data files</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">and cleans them in one pass.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Agent Overlap And Handoffs",
+   "category": "Morning Window",
+   "app": "Coach",
+   "ask": "Agent Morning Runs 4:30-4:50: Stagger Them Or Keep One Window?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "coach-overlap-handoffs-026",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_oh026_a",
+    "label": "Stagger Them",
+    "desc": "Each agent gets its own 5-minute slot so pushes do not collide.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#0B6E4F\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">MORNING WINDOW</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Stagger Them</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Each agent gets its own 5-minute slot</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">so pushes do not collide.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_oh026_b",
+    "label": "One Window",
+    "desc": "Keep one shared window; pushes retry on their own.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">MORNING WINDOW</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">One Window</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Keep one shared window; pushes retry</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">on their own.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Agent Overlap And Handoffs",
+   "category": "AIR Retire Lists",
+   "app": "Coach",
+   "ask": "AIR Review Retire Lists: Each Agent Applies Its Own Or Grok Bot Applies All?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "coach-overlap-handoffs-027",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_oh027_a",
+    "label": "Each Agent",
+    "desc": "Each agent retires and refills its own decks from the review list.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#0B6E4F\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">AIR RETIRE LISTS</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Each Agent</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Each agent retires and refills its own</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">decks from the review list.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_oh027_b",
+    "label": "Grok Bot Applies All",
+    "desc": "Grok Bot works through the whole list for every agent in one run.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">AIR RETIRE LISTS</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Grok Bot Applies All</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Grok Bot works through the whole list</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">for every agent in one run.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
      "bg": "#FDFBF6"
     }
    }

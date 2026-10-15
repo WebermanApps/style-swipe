@@ -6,7 +6,7 @@
  "english_only": true,
  "light_only": true,
  "title": "Dashboard Layout Deck",
- "generated_at": "2026-10-14T19:58:45+07:00",
+ "generated_at": "2026-10-16T00:20:00+07:00",
  "status": "published",
  "feeling_counts": {
   "focused": 20,
@@ -49,7 +49,10 @@
   "coach-dashboard-layout-017",
   "coach-dashboard-layout-018",
   "coach-dashboard-layout-019",
-  "coach-dashboard-layout-020"
+  "coach-dashboard-layout-020",
+  "coach-dashboard-layout-022",
+  "coach-dashboard-layout-023",
+  "coach-dashboard-layout-024"
  ],
  "source": "banks/dashboard-layout.json",
  "pairs": [
@@ -190,53 +193,6 @@
      "type": "hm",
      "m": "svg",
      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">STATUS AREA</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Short List With Plus</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">A short feature list with a plus</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">button to add more.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
-     "bg": "#FFFFFF"
-    }
-   }
-  },
-  {
-   "group": "Dashboard Layout",
-   "category": "Evening Report Rows",
-   "app": "Coach",
-   "ask": "Evening Report Rows: Small Colored Dots Or A Left Color Stripe?",
-   "purpose": "new",
-   "retest": false,
-   "notes": true,
-   "id": "dashboard-layout-dashboard-layout-deck-04",
-   "repeat": false,
-   "share": true,
-   "generated": "2026-10-14",
-   "optionA": {
-    "id": "bkco_dl005_a",
-    "label": "Small Colored Dots",
-    "desc": "A small colored dot sits beside each line of the Evening Report.",
-    "tags": [
-     "focused"
-    ],
-    "feeling": "focused",
-    "notes": true,
-    "share": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#05668D\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">EVENING REPORT ROWS</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Small Colored Dots</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">A small colored dot sits beside each</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">line of the Evening Report.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
-     "bg": "#FFFFFF"
-    }
-   },
-   "optionB": {
-    "id": "bkco_dl005_b",
-    "label": "Left Color Stripe",
-    "desc": "Each Evening Report row gets a thin color stripe down its left edge.",
-    "tags": [
-     "calm"
-    ],
-    "feeling": "calm",
-    "notes": true,
-    "share": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">EVENING REPORT ROWS</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Left Color Stripe</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Each Evening Report row gets a thin</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">color stripe down its left edge.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
      "bg": "#FFFFFF"
     }
    }
@@ -572,56 +528,9 @@
   },
   {
    "group": "Dashboard Layout",
-   "category": "Swipe Counts",
-   "app": "Coach",
-   "ask": "Swipe Counts At The Top: Numbers Only Or Add Small Seven-Day Bars?",
-   "purpose": "new",
-   "retest": false,
-   "notes": true,
-   "id": "dashboard-layout-dashboard-layout-deck-12",
-   "repeat": false,
-   "share": true,
-   "generated": "2026-10-14",
-   "optionA": {
-    "id": "bkco_dl020_a",
-    "label": "Numbers Only",
-    "desc": "Swipes today and all-time beside Ready To Swipe, nothing more.",
-    "tags": [
-     "focused"
-    ],
-    "feeling": "focused",
-    "notes": true,
-    "share": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#05668D\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">SWIPE COUNTS</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Numbers Only</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Swipes today and all-time beside Ready</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">To Swipe, nothing more.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
-     "bg": "#FFFFFF"
-    }
-   },
-   "optionB": {
-    "id": "bkco_dl020_b",
-    "label": "Add Seven-Day Bars",
-    "desc": "Add tiny bars for the last seven days under the counts.",
-    "tags": [
-     "calm"
-    ],
-    "feeling": "calm",
-    "notes": true,
-    "share": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">SWIPE COUNTS</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Add Seven-Day Bars</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Add tiny bars for the last seven days</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">under the counts.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
-     "bg": "#FFFFFF"
-    }
-   }
-  },
-  {
-   "group": "Dashboard Layout",
    "category": "Updated Time",
    "app": "Coach",
-   "ask": "Updated Time: Top Bar Only Or Also Under The Title?",
+   "ask": "Updated Time: Only In The Command Center Header Or Also In The Morning Report?",
    "purpose": "new",
    "retest": false,
    "notes": true,
@@ -631,8 +540,8 @@
    "generated": "2026-10-14",
    "optionA": {
     "id": "bkco_dl001_a",
-    "label": "Top Bar Only",
-    "desc": "The shared top bar already says Updated 6:00 PM ICT. Drop the second copy under the title so it shows once.",
+    "label": "Header Only",
+    "desc": "Keep the time once, in the one Command Center header every board shares (Max 13:15-13:24).",
     "tags": [
      "focused"
     ],
@@ -642,14 +551,14 @@
     "visual": {
      "type": "hm",
      "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#05668D\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">UPDATED TIME</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Top Bar Only</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">The shared top bar already says</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Updated 6:00 PM ICT. Drop the second</text><text x=\"18\" y=\"124\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">copy under the title so it shows once.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#05668D\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">UPDATED TIME</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Header Only</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Keep the time once, in the one Command</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Center header every board shares (Max</text><text x=\"18\" y=\"124\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">13:15-13:24).</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
      "bg": "#FFFFFF"
     }
    },
    "optionB": {
     "id": "bkco_dl001_b",
-    "label": "Keep Both",
-    "desc": "Keep the time in the top bar and repeat it under the title next to the Active dot.",
+    "label": "Also In The Report",
+    "desc": "Keep it in the header and repeat it at the top of the Morning Report.",
     "tags": [
      "calm"
     ],
@@ -659,7 +568,7 @@
     "visual": {
      "type": "hm",
      "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">UPDATED TIME</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Keep Both</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Keep the time in the top bar and</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">repeat it under the title next to the</text><text x=\"18\" y=\"124\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Active dot.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">UPDATED TIME</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Also In The Report</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Keep it in the header and repeat it at</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">the top of the Morning Report.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
      "bg": "#FFFFFF"
     }
    }
@@ -854,53 +763,6 @@
   },
   {
    "group": "Dashboard Layout",
-   "category": "Evening Report Stats",
-   "app": "Coach",
-   "ask": "Evening Report Stats: One Big Number Or A Progress Bar?",
-   "purpose": "new",
-   "retest": false,
-   "notes": true,
-   "id": "dashboard-layout-dashboard-layout-deck-18",
-   "repeat": false,
-   "share": true,
-   "generated": "2026-10-14",
-   "optionA": {
-    "id": "bkco_dl006_a",
-    "label": "One Big Number",
-    "desc": "Each metric shows as one large number, like 5 Shipped.",
-    "tags": [
-     "focused"
-    ],
-    "feeling": "focused",
-    "notes": true,
-    "share": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#05668D\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">EVENING REPORT STATS</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">One Big Number</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Each metric shows as one large number,</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">like 5 Shipped.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
-     "bg": "#FFFFFF"
-    }
-   },
-   "optionB": {
-    "id": "bkco_dl006_b",
-    "label": "Progress Bar",
-    "desc": "Each metric shows as a bar that fills to show how far along it is.",
-    "tags": [
-     "calm"
-    ],
-    "feeling": "calm",
-    "notes": true,
-    "share": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">EVENING REPORT STATS</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Progress Bar</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Each metric shows as a bar that fills</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">to show how far along it is.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
-     "bg": "#FFFFFF"
-    }
-   }
-  },
-  {
-   "group": "Dashboard Layout",
    "category": "Desktop Columns",
    "app": "Coach",
    "ask": "Desktop: In Progress And Decisions Side By Side Or Stacked?",
@@ -990,6 +852,147 @@
      "m": "svg",
      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">FIT PROOF</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Pass Or Fail Only</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Each board shows a simple pass or fail</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">line, shots kept on file.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
      "bg": "#FFFFFF"
+    }
+   }
+  },
+  {
+   "group": "Dashboard Layout",
+   "category": "Morning Report",
+   "app": "Coach",
+   "ask": "Morning Report On The Coach Board: Top Three Items Or Full List?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "coach-dashboard-layout-022",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_dl022_a",
+    "label": "Top Three",
+    "desc": "Show the three most important lines from the Morning Report, with See All for the rest.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#05668D\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">MORNING REPORT</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Top Three</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Show the three most important lines</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">from the Morning Report, with See All</text><text x=\"18\" y=\"124\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">for the rest.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_dl022_b",
+    "label": "Full List",
+    "desc": "Show every Morning Report line on the board.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">MORNING REPORT</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Full List</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Show every Morning Report line on the</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">board.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Dashboard Layout",
+   "category": "Locked Pages Note",
+   "app": "Coach",
+   "ask": "Coach Board: Show Which Coach Pages Are Password-Locked Or Not?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "coach-dashboard-layout-023",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_dl023_a",
+    "label": "Show It",
+    "desc": "A small line under the header: Coach board and decks locked since Oct 15, Niko apps open.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#05668D\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">LOCKED PAGES NOTE</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Show It</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">A small line under the header: Coach</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">board and decks locked since Oct 15,</text><text x=\"18\" y=\"124\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Niko apps open.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_dl023_b",
+    "label": "Leave It Out",
+    "desc": "No note. The password form already shows it.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">LOCKED PAGES NOTE</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Leave It Out</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">No note. The password form already</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">shows it.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   }
+  },
+  {
+   "group": "Dashboard Layout",
+   "category": "Router Status",
+   "app": "Coach",
+   "ask": "Deck Results Router On The Coach Board: Show Last Run Time Or Hide It?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "coach-dashboard-layout-024",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "optionA": {
+    "id": "bkco_dl024_a",
+    "label": "Show Last Run",
+    "desc": "One small line: Router last ran 4:30 AM ICT, next in 30 minutes.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#05668D\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">ROUTER STATUS</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Show Last Run</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">One small line: Router last ran 4:30</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">AM ICT, next in 30 minutes.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
+    }
+   },
+   "optionB": {
+    "id": "bkco_dl024_b",
+    "label": "Hide It",
+    "desc": "Keep router status off the board; Coach only mentions it when it fails.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#737373\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".8\">ROUTER STATUS</text><text x=\"18\" y=\"60\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Hide It</text><text x=\"18\" y=\"94\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Keep router status off the board;</text><text x=\"18\" y=\"109\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Coach only mentions it when it fails.</text><text x=\"120\" y=\"288\" font-size=\"7\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Built By Max Weberman</text></svg>",
+     "bg": "#FDFBF6"
     }
    }
   }
