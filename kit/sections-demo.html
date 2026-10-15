@@ -1,0 +1,16 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Section separation demo (cc6)</title><link rel="stylesheet" href="dash-theme.css?v=cc6">
+<style>body{margin:0;font-family:Hind,sans-serif;background:#fff;color:#0a0a0a;overflow-x:hidden}.wrap{max-width:1100px;margin:0 auto;padding:0 20px 40px}h2{font:600 24px Khand,sans-serif;margin:0 0 8px}p{margin:0;color:#555}</style></head>
+<body><div class="wrap">
+<header class="mw-cc-header"><div class="mw-cc-text"><h1 class="mw-cc-title">Sections Demo</h1><p class="mw-cc-desc">dash-theme cc6: .mw-section / .mw-sections</p></div></header>
+<section class="mw-section"><h2>Decks</h2><p>First section after the header: no hairline (header has its own bar).</p></section>
+<section class="mw-section"><h2>App</h2><p>Default: 56px spacing with a 1px hairline (var --mw-divider).</p></section>
+<section class="mw-section mw-section--band"><h2>Video (band)</h2><p>.mw-section--band: soft full-width band (var --mw-band).</p></section>
+<section class="mw-section mw-section--plain"><h2>Plain</h2><p>.mw-section--plain: spacing only, no line.</p></section>
+<div class="mw-sections" style="margin-top:56px;--mw-divider:#b9d4cf;--mw-band:#eef6f4">
+<section><h2>.mw-sections wrapper (brand override)</h2><p>Direct children get spacing and hairlines; variables overridden here.</p></section>
+<section><h2>Child two</h2><p>Hairline in override colour.</p></section>
+<section class="mw-section--band"><h2>Child band</h2><p>Band in override colour.</p></section>
+</div>
+<footer class="mw-footer"><p>Built by Max Weberman</p></footer>
+</div></body></html>

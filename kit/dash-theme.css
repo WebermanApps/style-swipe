@@ -1,4 +1,4 @@
-/* dash-theme version cc4 (Oct 15 2026: Advisor Boards Deck kit classes). Link as kit/dash-theme.css?v=cc4 */
+/* dash-theme version cc6 (Oct 15 2026: section separation .mw-section/.mw-sections; cc4 Advisor Boards kit, footer). Link as kit/dash-theme.css?v=cc6 */
 /* Apps Home color scheme for agent dashboards (Max rule, Oct 15 2026 12:28 ICT).
    Source: ops/apps-home/gen.py + ops/brand/brand-tokens.css. Colors only, light only.
    Exempt: WellNest, UpKeep. Not for deck pages. */
@@ -137,3 +137,22 @@ html,body{background:var(--dash-bg)!important;color:var(--dash-text)}
 .mw-footer-bar a{color:#737373}
 /* Phones: three-across carousels show ~1.15 cards so expanded cards stay readable */
 @media(max-width:600px){.mw-carousel--three .mw-track,.mw-carousel--three{grid-auto-columns:87%}}
+
+/* ===== Section separation (Max, Oct 15 2026 14:43 ICT, v cc6, rulebook R71). Light only, square corners. =====
+   Usage: <section class="mw-section">...</section>  or  <main class="mw-sections"><section>...</section>...</main>
+   Modifiers: .mw-section--plain (spacing only, no hairline), .mw-section--band (soft full-width band).
+   Brand overrides (WellNest, UpKeep) - set on :root or the board wrapper:
+     --mw-divider     hairline colour      (default #e3ddd2)
+     --mw-band        band background      (default #FAF6EE)
+     --mw-section-gap vertical spacing     (default 56px; 40px under 600px)
+   No hairline directly after .mw-cc-header (it has its own bottom bar); .mw-footer keeps its own spacing. */
+:root{--mw-divider:#e3ddd2;--mw-band:#FAF6EE;--mw-section-gap:56px}
+@media(max-width:600px){:root{--mw-section-gap:40px}}
+.mw-section,.mw-sections>*{display:block;box-sizing:border-box;margin:0;padding:var(--mw-section-gap) 0 0;border:0;border-radius:0}
+.mw-section+.mw-section,.mw-sections>*+*{border-top:1px solid var(--mw-divider,#e3ddd2);margin-top:var(--mw-section-gap)}
+.mw-section:first-child,.mw-sections>:first-child,.mw-cc-header+.mw-section,.mw-sections>.mw-cc-header+*{border-top:0;margin-top:0;padding-top:0}
+.mw-sections>.mw-cc-header{padding:16px 0 18px;margin:0 0 24px}
+.mw-section--plain,.mw-sections>.mw-section--plain{border-top:0!important}
+.mw-section--band,.mw-sections>.mw-section--band{background:var(--mw-band,#FAF6EE);border-top:0!important;border-radius:0;padding:var(--mw-section-gap) 24px;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);padding-left:max(24px,calc(50vw - 50%));padding-right:max(24px,calc(50vw - 50%))}
+.mw-section--band+.mw-section,.mw-sections>.mw-section--band+*{border-top:0;margin-top:0}
+.mw-sections>.mw-footer,.mw-section+.mw-footer{border-top:2px solid #171717;margin-top:32px;padding-top:20px}
