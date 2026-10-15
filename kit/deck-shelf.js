@@ -35,7 +35,7 @@ function doneToday(J){const d=today();let n=(J.done||[]).filter(x=>String(x.at||
    Source: kit/swipe-stats.json in style-swipe (synced from /workspace/ops/submit/swipe-stats.json by tools/sync_swipe_stats.py).
    Shape: {updated, agents:{<agent>:{total:N, days:{"YYYY-MM-DD":N}}}} (also accepts {<agent>:{"YYYY-MM-DD":N}}). Missing/unknown -> hidden. */
 const STATS='https://webermanapps.github.io/style-swipe/kit/swipe-stats.json';
-function statsFor(S,agent){if(!S||!agent)return null;const a=(S.agents||S)[agent];if(!a||typeof a!=='object')return null;
+function statsFor(S,agent){if(!S||!agent)return null;const a=(S.agents||S)[agent]||{};if(typeof a!=='object')return null;
  const days=a.days||a.daily||Object.fromEntries(Object.entries(a).filter(([k,v])=>/^\d{4}-\d{2}-\d{2}$/.test(k)&&typeof v==='number'));
  const tz=S.tz||'Asia/Bangkok';let d;try{d=new Date().toLocaleDateString('en-CA',{timeZone:tz})}catch(_){d=today()}
  const total=typeof a.total==='number'?a.total:typeof a.all_time==='number'?a.all_time:Object.values(days).reduce((x,y)=>x+(+y||0),0);
