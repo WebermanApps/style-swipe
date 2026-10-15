@@ -129,3 +129,11 @@ html,body{background:var(--dash-bg)!important;color:var(--dash-text)}
 .mw-alert .mw-swipe-meta{color:#B42318}
 .mw-alert h3{margin:2px 0;font:600 18px/1.25 var(--mw-font-heading,'Khand',sans-serif);color:#0a0a0a}
 .mw-alert p{margin:0;font-size:14px;color:#404040}
+
+/* Standard dashboard footer (Max 14:34): the footer = Routines section (always the last section) + Share button + "Built by Max Weberman" link.
+   <footer class="mw-footer"><section class="mw-routines">...routines...</section><div class="mw-footer-bar"><button class="mw-btn">Share</button><a href="https://maxweberman.com">Built by Max Weberman</a></div></footer> */
+.mw-footer{margin-top:32px;border-top:2px solid #171717;padding-top:20px}
+.mw-footer-bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;margin-top:20px;font-size:13px;color:#737373}
+.mw-footer-bar a{color:#737373}
+/* Phones: three-across carousels show ~1.15 cards so expanded cards stay readable */
+@media(max-width:600px){.mw-carousel--three .mw-track,.mw-carousel--three{grid-auto-columns:87%}}
