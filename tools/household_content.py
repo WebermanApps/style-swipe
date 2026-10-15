@@ -160,3 +160,8 @@ P("Routine", "Goal: Follow School Topics Or Follow Maple's Interests?", "School 
 P("Progress", "Track Progress: Simple Sticker Chart Or No Tracking?", "Sticker Chart", "A sticker for each game.", "Rewarding", "Visible", "No Tracking", "Just play.", "Relaxed", "No pressure"),
 P("Progress", "New Ideas: New Game Each Week Or A Monthly Plan?", "New Game Each Week", "One fresh idea weekly.", "Fresh", "Light", "Monthly Plan", "Four weeks planned ahead.", "Organized", "More reading"),
 ])
+
+# Maple Deck (Max, Oct 15 2026 14:48 ICT): merges the Maple outings and learning sets, 10 Chiang Mai activities + 10 learning games.
+_mo, _ml = DECKS["maple-outings"][2], DECKS["maple-learning"][2]
+_d("maple", "Maple Deck", "Things for Maple to do in Chiang Mai (10) and learning games for Maple (10)",
+   [_mo[i] for i in (0, 1, 2, 3, 4, 5, 6, 7, 11, 17)] + [_ml[i] for i in (0, 2, 3, 4, 6, 8, 10, 11, 12, 15)])
