@@ -53,7 +53,12 @@
   "dashboards-bank-022",
   "dashboards-bank-023",
   "dashboards-bank-025",
-  "dashboards-bank-027"
+  "dashboards-bank-027",
+  "dashboards-bank-156",
+  "dashboards-bank-157",
+  "dashboards-bank-158",
+  "dashboards-bank-159",
+  "dashboards-bank-160"
  ],
  "pairs": [
   {
@@ -199,55 +204,6 @@
    "retest": false,
    "notes": true,
    "id": "dashboards-ready-1-03",
-   "repeat": false,
-   "share": true,
-   "generated": "2026-10-13"
-  },
-  {
-   "group": "Report Bars",
-   "category": "Evening Report",
-   "app": "Agent Dashboard",
-   "ask": "Evening Report: Color Edge Cards Or Plain Lines?",
-   "optionA": {
-    "id": "bkdb_eveb0_cec1_jungle",
-    "label": "Color Edge Cards, Jungle Accent",
-    "desc": "Evening Report: color edge cards with jungle accent.",
-    "tags": [
-     "focused",
-     "quick"
-    ],
-    "feeling": "focused",
-    "notes": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Agent Dashboard</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Team · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"34\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"56\" width=\"4\" height=\"34\" rx=\"2\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"26\" y=\"70\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Evening Report</text><text x=\"26\" y=\"81\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Today and tomorrow</text><rect x=\"194.8\" y=\"65\" width=\"23.223999999999997\" height=\"11.02\" rx=\"5.8\" fill=\"#0B6E4F1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"206.412\" y=\"73.004\" font-size=\"5.8\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">BAR</text><rect x=\"14\" y=\"94\" width=\"212\" height=\"34\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"94\" width=\"4\" height=\"34\" rx=\"2\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"26\" y=\"108\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Today</text><text x=\"26\" y=\"119\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example 5 items</text><rect x=\"190.4\" y=\"103\" width=\"27.631999999999998\" height=\"11.02\" rx=\"5.8\" fill=\"#0B6E4F1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"204.216\" y=\"111.004\" font-size=\"5.8\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">LIST</text><rect x=\"14\" y=\"132\" width=\"212\" height=\"34\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"132\" width=\"4\" height=\"34\" rx=\"2\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"26\" y=\"146\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Tomorrow</text><text x=\"26\" y=\"157\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example 3 items</text><rect x=\"190.4\" y=\"141\" width=\"27.631999999999998\" height=\"11.02\" rx=\"5.8\" fill=\"#0B6E4F1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"204.216\" y=\"149.004\" font-size=\"5.8\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">LIST</text><rect x=\"14\" y=\"170\" width=\"212\" height=\"34\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"170\" width=\"4\" height=\"34\" rx=\"2\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"26\" y=\"184\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Waiting</text><text x=\"26\" y=\"195\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example 2</text><rect x=\"186.0\" y=\"179\" width=\"32.04\" height=\"11.02\" rx=\"5.8\" fill=\"#0B6E4F1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"202.02\" y=\"187.004\" font-size=\"5.8\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">COUNT</text><rect x=\"14\" y=\"208\" width=\"212\" height=\"34\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"208\" width=\"4\" height=\"34\" rx=\"2\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"26\" y=\"222\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Shipped</text><text x=\"26\" y=\"233\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example 4</text><rect x=\"186.0\" y=\"217\" width=\"32.04\" height=\"11.02\" rx=\"5.8\" fill=\"#0B6E4F1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"202.02\" y=\"225.004\" font-size=\"5.8\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">COUNT</text><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
-     "bg": "#F7F4EF"
-    },
-    "share": true
-   },
-   "optionB": {
-    "id": "bkdb_eveb0_pl2_saffron",
-    "label": "Plain Lines, Saffron Accent",
-    "desc": "Evening Report: plain lines with saffron accent.",
-    "tags": [
-     "quick",
-     "action"
-    ],
-    "feeling": "quick",
-    "notes": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Agent Dashboard</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Team · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"70\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Evening Report</text><text x=\"14\" y=\"81\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Today and tomorrow</text><text x=\"226\" y=\"74\" font-size=\"9\" fill=\"#D4A017\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Bar</text><line x1=\"14\" y1=\"90\" x2=\"226\" y2=\"90\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"108\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Today</text><text x=\"14\" y=\"119\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example 5 items</text><text x=\"226\" y=\"112\" font-size=\"9\" fill=\"#D4A017\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >List</text><line x1=\"14\" y1=\"128\" x2=\"226\" y2=\"128\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"146\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Tomorrow</text><text x=\"14\" y=\"157\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example 3 items</text><text x=\"226\" y=\"150\" font-size=\"9\" fill=\"#D4A017\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >List</text><line x1=\"14\" y1=\"166\" x2=\"226\" y2=\"166\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"184\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Waiting</text><text x=\"14\" y=\"195\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example 2</text><text x=\"226\" y=\"188\" font-size=\"9\" fill=\"#D4A017\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Count</text><line x1=\"14\" y1=\"204\" x2=\"226\" y2=\"204\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"222\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Shipped</text><text x=\"14\" y=\"233\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example 4</text><text x=\"226\" y=\"226\" font-size=\"9\" fill=\"#D4A017\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Count</text><line x1=\"14\" y1=\"242\" x2=\"226\" y2=\"242\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
-     "bg": "#F7F4EF"
-    },
-    "share": true
-   },
-   "purpose": "new",
-   "retest": false,
-   "notes": true,
-   "id": "dashboards-ready-1-04",
    "repeat": false,
    "share": true,
    "generated": "2026-10-13"
@@ -452,7 +408,7 @@
    "group": "From The Feed",
    "category": "Latest Open Items",
    "app": "Agent Dashboard",
-   "ask": "Latest Open Items: Plain Lines Or Numbered Rows?",
+   "ask": "Latest Open Items: Plain Lines Or Dot Rows?",
    "optionA": {
     "id": "bkdb_feeda0f20261013_pl2_rounded",
     "label": "Plain Lines, Rounded Corners",
@@ -472,19 +428,19 @@
     "share": true
    },
    "optionB": {
-    "id": "bkdb_feeda0f20261013_nr3_square",
-    "label": "Numbered Rows, Square Corners",
-    "desc": "Latest Open Items: numbered rows with square corners.",
+    "id": "bkdb_feeda0f20261014_dr0_square_r09",
+    "label": "Dot Rows, Square Corners",
+    "desc": "Latest Open Items: dot rows with square corners.",
     "tags": [
-     "calm",
-     "visual"
+     "visual",
+     "quick"
     ],
-    "feeling": "calm",
+    "feeling": "visual",
     "notes": true,
     "visual": {
      "type": "hm",
      "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Agent Dashboard</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Team · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"22\" y=\"76\" font-size=\"16\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >1</text><text x=\"38\" y=\"70\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Product Plan Loved</text><text x=\"38\" y=\"81\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >From today's team feed</text><g transform=\"translate(210,64) scale(0.5)\"><path d=\"M9 5 L16 12 L9 19\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><line x1=\"38\" y1=\"90\" x2=\"226\" y2=\"90\" stroke=\"#E5E0D8\"/><text x=\"22\" y=\"114\" font-size=\"16\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >2</text><text x=\"38\" y=\"108\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >In Collapsed Dropdown</text><text x=\"38\" y=\"119\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >From today's team feed</text><g transform=\"translate(210,102) scale(0.5)\"><path d=\"M9 5 L16 12 L9 19\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><line x1=\"38\" y1=\"128\" x2=\"226\" y2=\"128\" stroke=\"#E5E0D8\"/><text x=\"22\" y=\"152\" font-size=\"16\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >3</text><text x=\"38\" y=\"146\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Ptrjs Latest Recopied</text><text x=\"38\" y=\"157\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >From today's team feed</text><g transform=\"translate(210,140) scale(0.5)\"><path d=\"M9 5 L16 12 L9 19\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><line x1=\"38\" y1=\"166\" x2=\"226\" y2=\"166\" stroke=\"#E5E0D8\"/><text x=\"22\" y=\"190\" font-size=\"16\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >4</text><text x=\"38\" y=\"184\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Submitjs Unchanged</text><text x=\"38\" y=\"195\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >From today's team feed</text><g transform=\"translate(210,178) scale(0.5)\"><path d=\"M9 5 L16 12 L9 19\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><line x1=\"38\" y1=\"204\" x2=\"226\" y2=\"204\" stroke=\"#E5E0D8\"/><text x=\"22\" y=\"228\" font-size=\"16\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >5</text><text x=\"38\" y=\"222\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Inline Favicon</text><text x=\"38\" y=\"233\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >From today's team feed</text><g transform=\"translate(210,216) scale(0.5)\"><path d=\"M9 5 L16 12 L9 19\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><line x1=\"38\" y1=\"242\" x2=\"226\" y2=\"242\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Agent Dashboard</text><text x=\"14\" y=\"34\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Team · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"34\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"73.0\" r=\"3.5\" fill=\"#05668D\"/><text x=\"36\" y=\"70\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Posted Pm</text><text x=\"36\" y=\"81\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >From today's team feed</text><text x=\"218\" y=\"74\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Open</text><rect x=\"14\" y=\"94\" width=\"212\" height=\"34\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"111.0\" r=\"3.5\" fill=\"#05668D\"/><text x=\"36\" y=\"108\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Min After</text><text x=\"36\" y=\"119\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >From today's team feed</text><text x=\"218\" y=\"112\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Open</text><rect x=\"14\" y=\"132\" width=\"212\" height=\"34\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"149.0\" r=\"3.5\" fill=\"#05668D\"/><text x=\"36\" y=\"146\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smartupkeepai Home V</text><text x=\"36\" y=\"157\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >From today's team feed</text><text x=\"218\" y=\"150\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Open</text><rect x=\"14\" y=\"170\" width=\"212\" height=\"34\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"187.0\" r=\"3.5\" fill=\"#05668D\"/><text x=\"36\" y=\"184\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Gate Labels Updated</text><text x=\"36\" y=\"195\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >From today's team feed</text><text x=\"218\" y=\"188\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Open</text><rect x=\"14\" y=\"208\" width=\"212\" height=\"34\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"225.0\" r=\"3.5\" fill=\"#05668D\"/><text x=\"36\" y=\"222\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Funnel Deck Ready Cards</text><text x=\"36\" y=\"233\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >From today's team feed</text><text x=\"218\" y=\"226\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Open</text><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"7.5\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
      "bg": "#F7F4EF"
     },
     "share": true
@@ -495,56 +451,8 @@
    "id": "dashboards-ready-1-09",
    "repeat": false,
    "share": true,
-   "generated": "2026-10-13"
-  },
-  {
-   "group": "Report Bars",
-   "category": "Evening Report",
-   "app": "Agent Dashboard",
-   "ask": "Evening Report: Progress Ring Or Big Number?",
-   "optionA": {
-    "id": "bkdb_evea0_pr2_terracotta",
-    "label": "Progress Ring, Terracotta Accent",
-    "desc": "Evening Report: progress ring with terracotta accent.",
-    "tags": [
-     "quick",
-     "calm"
-    ],
-    "feeling": "quick",
-    "notes": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Agent Dashboard</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Team · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"72\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Evening Report</text><circle cx=\"120\" cy=\"122\" r=\"36\" fill=\"none\" stroke=\"#EEEAE4\" stroke-width=\"10\"/><circle cx=\"120\" cy=\"122\" r=\"36\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"10\" stroke-dasharray=\"153.68 300\" transform=\"rotate(-90 120 122)\"/><text x=\"120\" y=\"127\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >68%</text><text x=\"14\" y=\"196.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Today</text><text x=\"226\" y=\"196.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >List</text><line x1=\"14\" y1=\"204.0\" x2=\"226\" y2=\"204.0\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"228.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Tomorrow</text><text x=\"226\" y=\"228.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >List</text><line x1=\"14\" y1=\"236.0\" x2=\"226\" y2=\"236.0\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
-     "bg": "#F7F4EF"
-    },
-    "share": true
-   },
-   "optionB": {
-    "id": "bkdb_evea0_bn3_lagoon",
-    "label": "Big Number, Lagoon Accent",
-    "desc": "Evening Report: big number with lagoon accent.",
-    "tags": [
-     "calm",
-     "visual"
-    ],
-    "feeling": "calm",
-    "notes": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Agent Dashboard</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Team · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"72\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Evening Report</text><text x=\"24\" y=\"130\" font-size=\"38\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Bar</text><text x=\"24\" y=\"150\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Today and tomorrow</text><rect x=\"150\" y=\"110\" width=\"40.856\" height=\"11.02\" rx=\"5.8\" fill=\"#05668D1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"170.428\" y=\"118.004\" font-size=\"5.8\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">EXAMPLE</text><text x=\"14\" y=\"196.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Today</text><text x=\"226\" y=\"196.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >List</text><line x1=\"14\" y1=\"204.0\" x2=\"226\" y2=\"204.0\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"228.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Tomorrow</text><text x=\"226\" y=\"228.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >List</text><line x1=\"14\" y1=\"236.0\" x2=\"226\" y2=\"236.0\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
-     "bg": "#F7F4EF"
-    },
-    "share": true
-   },
-   "purpose": "new",
-   "retest": false,
-   "notes": true,
-   "id": "dashboards-ready-1-10",
-   "repeat": false,
-   "share": true,
-   "generated": "2026-10-13"
+   "generated": "2026-10-13",
+   "reworded": "2026-10-15: no numbered rows/steps (numbers only on research topics)"
   },
   {
    "group": "From The Feed",
@@ -596,14 +504,14 @@
    "generated": "2026-10-13"
   },
   {
-   "group": "Report Bars",
-   "category": "Evening Report",
+   "group": "From The Feed",
+   "category": "Latest Open Items",
    "app": "Agent Dashboard",
-   "ask": "Evening Report: Line Chart Or Progress Ring?",
+   "ask": "Latest Open Items: Color Edge Cards Or Picture Rows?",
    "optionA": {
-    "id": "bkdb_evea0_lc1_terracotta",
-    "label": "Line Chart, Terracotta Accent",
-    "desc": "Evening Report: line chart with terracotta accent.",
+    "id": "bkdb_feeda0f20261014_cec1_rounded_r13",
+    "label": "Color Edge Cards, Rounded Corners",
+    "desc": "Latest Open Items: color edge cards with rounded corners.",
     "tags": [
      "focused",
      "quick"
@@ -613,56 +521,7 @@
     "visual": {
      "type": "hm",
      "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Agent Dashboard</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Team · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"72\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Evening Report</text><polyline points=\"28,138.0 64,126.0 100,132.4 136,116.4 172,122.0 208,102.0\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><circle cx=\"208\" cy=\"102\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"14\" y=\"196.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Today</text><text x=\"226\" y=\"196.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >List</text><line x1=\"14\" y1=\"204.0\" x2=\"226\" y2=\"204.0\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"228.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Tomorrow</text><text x=\"226\" y=\"228.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >List</text><line x1=\"14\" y1=\"236.0\" x2=\"226\" y2=\"236.0\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
-     "bg": "#F7F4EF"
-    },
-    "share": true
-   },
-   "optionB": {
-    "id": "bkdb_evea0_pr2_lagoon",
-    "label": "Progress Ring, Lagoon Accent",
-    "desc": "Evening Report: progress ring with lagoon accent.",
-    "tags": [
-     "quick",
-     "action"
-    ],
-    "feeling": "quick",
-    "notes": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Agent Dashboard</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Team · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"72\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Evening Report</text><circle cx=\"120\" cy=\"122\" r=\"36\" fill=\"none\" stroke=\"#EEEAE4\" stroke-width=\"10\"/><circle cx=\"120\" cy=\"122\" r=\"36\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"10\" stroke-dasharray=\"153.68 300\" transform=\"rotate(-90 120 122)\"/><text x=\"120\" y=\"127\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >68%</text><text x=\"14\" y=\"196.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Today</text><text x=\"226\" y=\"196.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >List</text><line x1=\"14\" y1=\"204.0\" x2=\"226\" y2=\"204.0\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"228.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Tomorrow</text><text x=\"226\" y=\"228.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >List</text><line x1=\"14\" y1=\"236.0\" x2=\"226\" y2=\"236.0\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
-     "bg": "#F7F4EF"
-    },
-    "share": true
-   },
-   "purpose": "new",
-   "retest": false,
-   "notes": true,
-   "id": "dashboards-ready-1-12",
-   "repeat": false,
-   "share": true,
-   "generated": "2026-10-13"
-  },
-  {
-   "group": "From The Feed",
-   "category": "Latest Open Items",
-   "app": "Agent Dashboard",
-   "ask": "Latest Open Items: Numbered Rows Or Picture Rows?",
-   "optionA": {
-    "id": "bkdb_feeda0f20261013_nr3_rounded",
-    "label": "Numbered Rows, Rounded Corners",
-    "desc": "Latest Open Items: numbered rows with rounded corners.",
-    "tags": [
-     "calm",
-     "action"
-    ],
-    "feeling": "calm",
-    "notes": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Agent Dashboard</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Team · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"22\" y=\"76\" font-size=\"16\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >1</text><text x=\"38\" y=\"70\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Product Plan Loved</text><text x=\"38\" y=\"81\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >From today's team feed</text><g transform=\"translate(210,64) scale(0.5)\"><path d=\"M9 5 L16 12 L9 19\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><line x1=\"38\" y1=\"90\" x2=\"226\" y2=\"90\" stroke=\"#E5E0D8\"/><text x=\"22\" y=\"114\" font-size=\"16\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >2</text><text x=\"38\" y=\"108\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >In Collapsed Dropdown</text><text x=\"38\" y=\"119\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >From today's team feed</text><g transform=\"translate(210,102) scale(0.5)\"><path d=\"M9 5 L16 12 L9 19\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><line x1=\"38\" y1=\"128\" x2=\"226\" y2=\"128\" stroke=\"#E5E0D8\"/><text x=\"22\" y=\"152\" font-size=\"16\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >3</text><text x=\"38\" y=\"146\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Ptrjs Latest Recopied</text><text x=\"38\" y=\"157\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >From today's team feed</text><g transform=\"translate(210,140) scale(0.5)\"><path d=\"M9 5 L16 12 L9 19\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><line x1=\"38\" y1=\"166\" x2=\"226\" y2=\"166\" stroke=\"#E5E0D8\"/><text x=\"22\" y=\"190\" font-size=\"16\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >4</text><text x=\"38\" y=\"184\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Submitjs Unchanged</text><text x=\"38\" y=\"195\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >From today's team feed</text><g transform=\"translate(210,178) scale(0.5)\"><path d=\"M9 5 L16 12 L9 19\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><line x1=\"38\" y1=\"204\" x2=\"226\" y2=\"204\" stroke=\"#E5E0D8\"/><text x=\"22\" y=\"228\" font-size=\"16\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >5</text><text x=\"38\" y=\"222\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Inline Favicon</text><text x=\"38\" y=\"233\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >From today's team feed</text><g transform=\"translate(210,216) scale(0.5)\"><path d=\"M9 5 L16 12 L9 19\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><line x1=\"38\" y1=\"242\" x2=\"226\" y2=\"242\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Agent Dashboard</text><text x=\"14\" y=\"34\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Team · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"34\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"56\" width=\"4\" height=\"34\" rx=\"2\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"26\" y=\"70\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Posted Pm</text><text x=\"26\" y=\"81\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >From today's team feed</text><rect x=\"190.4\" y=\"65\" width=\"27.631999999999998\" height=\"11.02\" rx=\"5.8\" fill=\"#05668D1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"204.216\" y=\"73.004\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">OPEN</text><rect x=\"14\" y=\"94\" width=\"212\" height=\"34\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"94\" width=\"4\" height=\"34\" rx=\"2\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"26\" y=\"108\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Min After</text><text x=\"26\" y=\"119\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >From today's team feed</text><rect x=\"190.4\" y=\"103\" width=\"27.631999999999998\" height=\"11.02\" rx=\"5.8\" fill=\"#05668D1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"204.216\" y=\"111.004\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">OPEN</text><rect x=\"14\" y=\"132\" width=\"212\" height=\"34\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"132\" width=\"4\" height=\"34\" rx=\"2\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"26\" y=\"146\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smartupkeepai Home V</text><text x=\"26\" y=\"157\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >From today's team feed</text><rect x=\"190.4\" y=\"141\" width=\"27.631999999999998\" height=\"11.02\" rx=\"5.8\" fill=\"#05668D1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"204.216\" y=\"149.004\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">OPEN</text><rect x=\"14\" y=\"170\" width=\"212\" height=\"34\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"170\" width=\"4\" height=\"34\" rx=\"2\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"26\" y=\"184\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Gate Labels Updated</text><text x=\"26\" y=\"195\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >From today's team feed</text><rect x=\"190.4\" y=\"179\" width=\"27.631999999999998\" height=\"11.02\" rx=\"5.8\" fill=\"#05668D1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"204.216\" y=\"187.004\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">OPEN</text><rect x=\"14\" y=\"208\" width=\"212\" height=\"34\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"208\" width=\"4\" height=\"34\" rx=\"2\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"26\" y=\"222\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Funnel Deck Ready Cards</text><text x=\"26\" y=\"233\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >From today's team feed</text><rect x=\"190.4\" y=\"217\" width=\"27.631999999999998\" height=\"11.02\" rx=\"5.8\" fill=\"#05668D1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"204.216\" y=\"225.004\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">OPEN</text><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"7.5\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
      "bg": "#F7F4EF"
     },
     "share": true
@@ -691,27 +550,28 @@
    "id": "dashboards-ready-1-13",
    "repeat": false,
    "share": true,
-   "generated": "2026-10-13"
+   "generated": "2026-10-13",
+   "reworded": "2026-10-15: no numbered rows/steps (numbers only on research topics)"
   },
   {
    "group": "Report Bars",
    "category": "Fresh Start Bar",
    "app": "Agent Dashboard",
-   "ask": "Fresh Start Bar: Numbered Steps Or Fold-Out Sections?",
+   "ask": "Fresh Start Bar: Picture On Top Or Fold-Out Sections?",
    "optionA": {
-    "id": "bkdb_fresha0_ns3_roomy",
-    "label": "Numbered Steps, Roomy",
-    "desc": "Fresh Start Bar: numbered steps with roomy.",
+    "id": "bkdb_fresha0_pot0_roomy_r14",
+    "label": "Picture On Top, Roomy",
+    "desc": "Fresh Start Bar: picture on top with roomy.",
     "tags": [
-     "calm",
-     "action"
+     "visual",
+     "focused"
     ],
-    "feeling": "calm",
+    "feeling": "visual",
     "notes": true,
     "visual": {
      "type": "hm",
      "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Agent Dashboard</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Team · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"74\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Fresh Start</text><circle cx=\"24\" cy=\"96.0\" r=\"9\" fill=\"#05668D\"/><text x=\"24\" y=\"100.0\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >1</text><text x=\"42\" y=\"100.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Top Three</text><circle cx=\"24\" cy=\"131.0\" r=\"9\" fill=\"#05668D\"/><text x=\"24\" y=\"135.0\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >2</text><text x=\"42\" y=\"135.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Needs From Max</text><circle cx=\"24\" cy=\"166.0\" r=\"9\" fill=\"#05668D\"/><text x=\"24\" y=\"170.0\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >3</text><text x=\"42\" y=\"170.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Updated</text><rect x=\"14\" y=\"222\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#0A0A0A\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"238.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">OPEN</text><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Agent Dashboard</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Team · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"90\" rx=\"6\" fill=\"#05668D14\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"56.400000000000006\" y=\"101.0\" width=\"16.96\" height=\"22.5\" rx=\"1\" fill=\"#05668D66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"83.96000000000001\" y=\"87.5\" width=\"16.96\" height=\"36.0\" rx=\"1\" fill=\"#05668D66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"111.52000000000001\" y=\"96.5\" width=\"16.96\" height=\"27.0\" rx=\"1\" fill=\"#05668D66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"139.08\" y=\"78.5\" width=\"16.96\" height=\"45.0\" rx=\"1\" fill=\"#05668D66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"166.64\" y=\"69.5\" width=\"16.96\" height=\"54.0\" rx=\"1\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"166\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Fresh Start</text><text x=\"14\" y=\"180\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Ready for Max now</text><rect x=\"14\" y=\"188\" width=\"23.223999999999997\" height=\"11.02\" rx=\"5.8\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"25.612\" y=\"196.004\" font-size=\"5.8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">BAR</text><rect x=\"14\" y=\"222\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#0A0A0A\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"238.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">OPEN</text><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
      "bg": "#F7F4EF"
     },
     "share": true
@@ -740,7 +600,8 @@
    "id": "dashboards-ready-1-14",
    "repeat": false,
    "share": true,
-   "generated": "2026-10-13"
+   "generated": "2026-10-13",
+   "reworded": "2026-10-15: no numbered rows/steps (numbers only on research topics)"
   },
   {
    "group": "From The Feed",
@@ -844,7 +705,7 @@
    "group": "Report Bars",
    "category": "Fresh Start Bar",
    "app": "Agent Dashboard",
-   "ask": "Fresh Start Bar: Big Title No Picture Or Numbered Steps?",
+   "ask": "Fresh Start Bar: Big Title No Picture Or Picture Beside?",
    "optionA": {
     "id": "bkdb_fresha0_btnp2_roomy",
     "label": "Big Title No Picture, Roomy",
@@ -864,19 +725,19 @@
     "share": true
    },
    "optionB": {
-    "id": "bkdb_fresha0_ns3_compact",
-    "label": "Numbered Steps, Compact",
-    "desc": "Fresh Start Bar: numbered steps with compact.",
+    "id": "bkdb_fresha0_pb1_compact_r17",
+    "label": "Picture Beside, Compact",
+    "desc": "Fresh Start Bar: picture beside with compact.",
     "tags": [
-     "calm",
-     "visual"
+     "focused",
+     "calm"
     ],
-    "feeling": "calm",
+    "feeling": "focused",
     "notes": true,
     "visual": {
      "type": "hm",
      "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Agent Dashboard</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Team · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"74\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Fresh Start</text><circle cx=\"24\" cy=\"96.0\" r=\"9\" fill=\"#05668D\"/><text x=\"24\" y=\"100.0\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >1</text><text x=\"42\" y=\"100.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Top Three</text><circle cx=\"24\" cy=\"126.0\" r=\"9\" fill=\"#05668D\"/><text x=\"24\" y=\"130.0\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >2</text><text x=\"42\" y=\"130.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Needs From Max</text><circle cx=\"24\" cy=\"156.0\" r=\"9\" fill=\"#05668D\"/><text x=\"24\" y=\"160.0\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >3</text><text x=\"42\" y=\"160.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Updated</text><rect x=\"14\" y=\"222\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#0A0A0A\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"238.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">OPEN</text><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Agent Dashboard</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Team · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"90\" height=\"90\" rx=\"6\" fill=\"#05668D14\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"32.0\" y=\"101.0\" width=\"7.2\" height=\"22.5\" rx=\"1\" fill=\"#05668D66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"43.7\" y=\"87.5\" width=\"7.2\" height=\"36.0\" rx=\"1\" fill=\"#05668D66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"55.4\" y=\"96.5\" width=\"7.2\" height=\"27.0\" rx=\"1\" fill=\"#05668D66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"67.10000000000001\" y=\"78.5\" width=\"7.2\" height=\"45.0\" rx=\"1\" fill=\"#05668D66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"78.8\" y=\"69.5\" width=\"7.2\" height=\"54.0\" rx=\"1\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"112\" y=\"74\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Fresh Start</text><text x=\"112\" y=\"88\" font-size=\"6.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Ready for Max now</text><rect x=\"112\" y=\"98\" width=\"23.223999999999997\" height=\"11.02\" rx=\"5.8\" fill=\"#05668D1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"123.612\" y=\"106.004\" font-size=\"5.8\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">BAR</text><rect x=\"14\" y=\"222\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#0A0A0A\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"238.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">OPEN</text><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
      "bg": "#F7F4EF"
     },
     "share": true
@@ -887,56 +748,8 @@
    "id": "dashboards-ready-1-17",
    "repeat": false,
    "share": true,
-   "generated": "2026-10-13"
-  },
-  {
-   "group": "Report Bars",
-   "category": "Evening Report",
-   "app": "Agent Dashboard",
-   "ask": "Evening Report: Bar Chart Or Line Chart?",
-   "optionA": {
-    "id": "bkdb_evea0_bc0_terracotta",
-    "label": "Bar Chart, Terracotta Accent",
-    "desc": "Evening Report: bar chart with terracotta accent.",
-    "tags": [
-     "visual",
-     "focused"
-    ],
-    "feeling": "visual",
-    "notes": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Agent Dashboard</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Team · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"72\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Evening Report</text><rect x=\"28\" y=\"138.0\" width=\"20\" height=\"28.0\" rx=\"3\" fill=\"#C1502E55\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"60\" y=\"126.0\" width=\"20\" height=\"40.0\" rx=\"3\" fill=\"#C1502E55\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"92\" y=\"132.4\" width=\"20\" height=\"33.6\" rx=\"3\" fill=\"#C1502E55\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"124\" y=\"116.4\" width=\"20\" height=\"49.6\" rx=\"3\" fill=\"#C1502E55\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"156\" y=\"122.0\" width=\"20\" height=\"44.0\" rx=\"3\" fill=\"#C1502E55\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"188\" y=\"102.0\" width=\"20\" height=\"64.0\" rx=\"3\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"196.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Today</text><text x=\"226\" y=\"196.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >List</text><line x1=\"14\" y1=\"204.0\" x2=\"226\" y2=\"204.0\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"228.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Tomorrow</text><text x=\"226\" y=\"228.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >List</text><line x1=\"14\" y1=\"236.0\" x2=\"226\" y2=\"236.0\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
-     "bg": "#F7F4EF"
-    },
-    "share": true
-   },
-   "optionB": {
-    "id": "bkdb_evea0_lc1_lagoon",
-    "label": "Line Chart, Lagoon Accent",
-    "desc": "Evening Report: line chart with lagoon accent.",
-    "tags": [
-     "focused",
-     "calm"
-    ],
-    "feeling": "focused",
-    "notes": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Agent Dashboard</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Team · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"72\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Evening Report</text><polyline points=\"28,138.0 64,126.0 100,132.4 136,116.4 172,122.0 208,102.0\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><circle cx=\"208\" cy=\"102\" r=\"3.5\" fill=\"#05668D\"/><text x=\"14\" y=\"196.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Today</text><text x=\"226\" y=\"196.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >List</text><line x1=\"14\" y1=\"204.0\" x2=\"226\" y2=\"204.0\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"228.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Tomorrow</text><text x=\"226\" y=\"228.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >List</text><line x1=\"14\" y1=\"236.0\" x2=\"226\" y2=\"236.0\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
-     "bg": "#F7F4EF"
-    },
-    "share": true
-   },
-   "purpose": "new",
-   "retest": false,
-   "notes": true,
-   "id": "dashboards-ready-1-18",
-   "repeat": false,
-   "share": true,
-   "generated": "2026-10-13"
+   "generated": "2026-10-13",
+   "reworded": "2026-10-15: no numbered rows/steps (numbers only on research topics)"
   },
   {
    "group": "Report Bars",
@@ -989,13 +802,217 @@
   },
   {
    "group": "Report Bars",
-   "category": "Evening Report",
+   "category": "Fresh Start Bar",
    "app": "Agent Dashboard",
-   "ask": "Evening Report: Progress Bars Or Bar Chart?",
+   "ask": "Fresh Start Bar: Bar Chart Or Line Chart?",
    "optionA": {
-    "id": "bkdb_evea0_pb4_terracotta",
-    "label": "Progress Bars, Terracotta Accent",
-    "desc": "Evening Report: progress bars with terracotta accent.",
+    "id": "bkdb_fresha1_bc0_jungle",
+    "label": "Bar Chart, Jungle Accent",
+    "desc": "Fresh Start Bar: bar chart with jungle accent.",
+    "tags": [
+     "visual",
+     "focused"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Agent Dashboard</text><text x=\"14\" y=\"34\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Team · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"72\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Fresh Start</text><rect x=\"28\" y=\"138.0\" width=\"20\" height=\"28.0\" rx=\"3\" fill=\"#0B6E4F55\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"60\" y=\"126.0\" width=\"20\" height=\"40.0\" rx=\"3\" fill=\"#0B6E4F55\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"92\" y=\"132.4\" width=\"20\" height=\"33.6\" rx=\"3\" fill=\"#0B6E4F55\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"124\" y=\"116.4\" width=\"20\" height=\"49.6\" rx=\"3\" fill=\"#0B6E4F55\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"156\" y=\"122.0\" width=\"20\" height=\"44.0\" rx=\"3\" fill=\"#0B6E4F55\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"188\" y=\"102.0\" width=\"20\" height=\"64.0\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"196.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Top Three</text><text x=\"226\" y=\"196.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >List</text><line x1=\"14\" y1=\"204.0\" x2=\"226\" y2=\"204.0\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"228.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Needs From Max</text><text x=\"226\" y=\"228.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Fold</text><line x1=\"14\" y1=\"236.0\" x2=\"226\" y2=\"236.0\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"7.5\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "optionB": {
+    "id": "bkdb_fresha1_lc1_saffron",
+    "label": "Line Chart, Saffron Accent",
+    "desc": "Fresh Start Bar: line chart with saffron accent.",
+    "tags": [
+     "focused",
+     "calm"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Agent Dashboard</text><text x=\"14\" y=\"34\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Team · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"72\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Fresh Start</text><polyline points=\"28,138.0 64,126.0 100,132.4 136,116.4 172,122.0 208,102.0\" fill=\"none\" stroke=\"#D4A017\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><circle cx=\"208\" cy=\"102\" r=\"3.5\" fill=\"#D4A017\"/><text x=\"14\" y=\"196.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Top Three</text><text x=\"226\" y=\"196.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >List</text><line x1=\"14\" y1=\"204.0\" x2=\"226\" y2=\"204.0\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"228.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Needs From Max</text><text x=\"226\" y=\"228.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Fold</text><line x1=\"14\" y1=\"236.0\" x2=\"226\" y2=\"236.0\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"7.5\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "dashboards-ready-1-21",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-15",
+   "bank_id": "dashboards-bank-156",
+   "added": "2026-10-15 refill"
+  },
+  {
+   "group": "Report Bars",
+   "category": "Fresh Start Bar",
+   "app": "Agent Dashboard",
+   "ask": "Fresh Start Bar: Line Chart Or Progress Ring?",
+   "optionA": {
+    "id": "bkdb_fresha1_lc1_jungle",
+    "label": "Line Chart, Jungle Accent",
+    "desc": "Fresh Start Bar: line chart with jungle accent.",
+    "tags": [
+     "focused",
+     "quick"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Agent Dashboard</text><text x=\"14\" y=\"34\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Team · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"72\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Fresh Start</text><polyline points=\"28,138.0 64,126.0 100,132.4 136,116.4 172,122.0 208,102.0\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><circle cx=\"208\" cy=\"102\" r=\"3.5\" fill=\"#0B6E4F\"/><text x=\"14\" y=\"196.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Top Three</text><text x=\"226\" y=\"196.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >List</text><line x1=\"14\" y1=\"204.0\" x2=\"226\" y2=\"204.0\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"228.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Needs From Max</text><text x=\"226\" y=\"228.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Fold</text><line x1=\"14\" y1=\"236.0\" x2=\"226\" y2=\"236.0\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"7.5\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "optionB": {
+    "id": "bkdb_fresha1_pr2_saffron",
+    "label": "Progress Ring, Saffron Accent",
+    "desc": "Fresh Start Bar: progress ring with saffron accent.",
+    "tags": [
+     "quick",
+     "action"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Agent Dashboard</text><text x=\"14\" y=\"34\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Team · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"72\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Fresh Start</text><circle cx=\"120\" cy=\"122\" r=\"36\" fill=\"none\" stroke=\"#EEEAE4\" stroke-width=\"10\"/><circle cx=\"120\" cy=\"122\" r=\"36\" fill=\"none\" stroke=\"#D4A017\" stroke-width=\"10\" stroke-dasharray=\"153.68 300\" transform=\"rotate(-90 120 122)\"/><text x=\"120\" y=\"127\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >68%</text><text x=\"14\" y=\"196.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Top Three</text><text x=\"226\" y=\"196.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >List</text><line x1=\"14\" y1=\"204.0\" x2=\"226\" y2=\"204.0\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"228.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Needs From Max</text><text x=\"226\" y=\"228.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Fold</text><line x1=\"14\" y1=\"236.0\" x2=\"226\" y2=\"236.0\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"7.5\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "dashboards-ready-1-22",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-15",
+   "bank_id": "dashboards-bank-157",
+   "added": "2026-10-15 refill"
+  },
+  {
+   "group": "Report Bars",
+   "category": "Fresh Start Bar",
+   "app": "Agent Dashboard",
+   "ask": "Fresh Start Bar: Progress Ring Or Big Number?",
+   "optionA": {
+    "id": "bkdb_fresha1_pr2_jungle",
+    "label": "Progress Ring, Jungle Accent",
+    "desc": "Fresh Start Bar: progress ring with jungle accent.",
+    "tags": [
+     "quick",
+     "calm"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Agent Dashboard</text><text x=\"14\" y=\"34\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Team · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"72\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Fresh Start</text><circle cx=\"120\" cy=\"122\" r=\"36\" fill=\"none\" stroke=\"#EEEAE4\" stroke-width=\"10\"/><circle cx=\"120\" cy=\"122\" r=\"36\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"10\" stroke-dasharray=\"153.68 300\" transform=\"rotate(-90 120 122)\"/><text x=\"120\" y=\"127\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >68%</text><text x=\"14\" y=\"196.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Top Three</text><text x=\"226\" y=\"196.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >List</text><line x1=\"14\" y1=\"204.0\" x2=\"226\" y2=\"204.0\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"228.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Needs From Max</text><text x=\"226\" y=\"228.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Fold</text><line x1=\"14\" y1=\"236.0\" x2=\"226\" y2=\"236.0\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"7.5\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "optionB": {
+    "id": "bkdb_fresha1_bn3_saffron",
+    "label": "Big Number, Saffron Accent",
+    "desc": "Fresh Start Bar: big number with saffron accent.",
+    "tags": [
+     "calm",
+     "visual"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Agent Dashboard</text><text x=\"14\" y=\"34\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Team · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"72\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Fresh Start</text><text x=\"24\" y=\"130\" font-size=\"38\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Bar</text><text x=\"24\" y=\"150\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Ready for Max now</text><rect x=\"150\" y=\"110\" width=\"40.856\" height=\"11.02\" rx=\"5.8\" fill=\"#D4A0171F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"170.428\" y=\"118.004\" font-size=\"7.5\" fill=\"#D4A017\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">EXAMPLE</text><text x=\"14\" y=\"196.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Top Three</text><text x=\"226\" y=\"196.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >List</text><line x1=\"14\" y1=\"204.0\" x2=\"226\" y2=\"204.0\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"228.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Needs From Max</text><text x=\"226\" y=\"228.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Fold</text><line x1=\"14\" y1=\"236.0\" x2=\"226\" y2=\"236.0\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"7.5\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "dashboards-ready-1-23",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-15",
+   "bank_id": "dashboards-bank-158",
+   "added": "2026-10-15 refill"
+  },
+  {
+   "group": "Report Bars",
+   "category": "Fresh Start Bar",
+   "app": "Agent Dashboard",
+   "ask": "Fresh Start Bar: Big Number Or Progress Bars?",
+   "optionA": {
+    "id": "bkdb_fresha1_bn3_jungle",
+    "label": "Big Number, Jungle Accent",
+    "desc": "Fresh Start Bar: big number with jungle accent.",
+    "tags": [
+     "calm",
+     "action"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Agent Dashboard</text><text x=\"14\" y=\"34\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Team · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"72\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Fresh Start</text><text x=\"24\" y=\"130\" font-size=\"38\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Bar</text><text x=\"24\" y=\"150\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Ready for Max now</text><rect x=\"150\" y=\"110\" width=\"40.856\" height=\"11.02\" rx=\"5.8\" fill=\"#0B6E4F1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"170.428\" y=\"118.004\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">EXAMPLE</text><text x=\"14\" y=\"196.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Top Three</text><text x=\"226\" y=\"196.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >List</text><line x1=\"14\" y1=\"204.0\" x2=\"226\" y2=\"204.0\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"228.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Needs From Max</text><text x=\"226\" y=\"228.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Fold</text><line x1=\"14\" y1=\"236.0\" x2=\"226\" y2=\"236.0\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"7.5\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "optionB": {
+    "id": "bkdb_fresha1_pb4_saffron",
+    "label": "Progress Bars, Saffron Accent",
+    "desc": "Fresh Start Bar: progress bars with saffron accent.",
+    "tags": [
+     "action",
+     "focused"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Agent Dashboard</text><text x=\"14\" y=\"34\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Team · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"72\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Fresh Start</text><text x=\"24\" y=\"92\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fresh Start</text><rect x=\"100\" y=\"86\" width=\"116\" height=\"6\" rx=\"3\" fill=\"#EEEAE4\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"100\" y=\"86\" width=\"58.0\" height=\"6\" rx=\"3\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"112\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Top Three</text><rect x=\"100\" y=\"106\" width=\"116\" height=\"6\" rx=\"3\" fill=\"#EEEAE4\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"100\" y=\"106\" width=\"48.72\" height=\"6\" rx=\"3\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"132\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Needs From Max</text><rect x=\"100\" y=\"126\" width=\"116\" height=\"6\" rx=\"3\" fill=\"#EEEAE4\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"100\" y=\"126\" width=\"71.92\" height=\"6\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"152\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Updated</text><rect x=\"100\" y=\"146\" width=\"116\" height=\"6\" rx=\"3\" fill=\"#EEEAE4\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"100\" y=\"146\" width=\"63.800000000000004\" height=\"6\" rx=\"3\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"196.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Top Three</text><text x=\"226\" y=\"196.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >List</text><line x1=\"14\" y1=\"204.0\" x2=\"226\" y2=\"204.0\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"228.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Needs From Max</text><text x=\"226\" y=\"228.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Fold</text><line x1=\"14\" y1=\"236.0\" x2=\"226\" y2=\"236.0\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"7.5\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "dashboards-ready-1-24",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-15",
+   "bank_id": "dashboards-bank-159",
+   "added": "2026-10-15 refill"
+  },
+  {
+   "group": "Report Bars",
+   "category": "Fresh Start Bar",
+   "app": "Agent Dashboard",
+   "ask": "Fresh Start Bar: Progress Bars Or Bar Chart?",
+   "optionA": {
+    "id": "bkdb_fresha1_pb4_jungle",
+    "label": "Progress Bars, Jungle Accent",
+    "desc": "Fresh Start Bar: progress bars with jungle accent.",
     "tags": [
      "action",
      "visual"
@@ -1005,15 +1022,15 @@
     "visual": {
      "type": "hm",
      "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Agent Dashboard</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Team · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"72\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Evening Report</text><text x=\"24\" y=\"92\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Evening Report</text><rect x=\"100\" y=\"86\" width=\"116\" height=\"6\" rx=\"3\" fill=\"#EEEAE4\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"100\" y=\"86\" width=\"58.0\" height=\"6\" rx=\"3\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"112\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Today</text><rect x=\"100\" y=\"106\" width=\"116\" height=\"6\" rx=\"3\" fill=\"#EEEAE4\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"100\" y=\"106\" width=\"48.72\" height=\"6\" rx=\"3\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"132\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Tomorrow</text><rect x=\"100\" y=\"126\" width=\"116\" height=\"6\" rx=\"3\" fill=\"#EEEAE4\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"100\" y=\"126\" width=\"71.92\" height=\"6\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"152\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Waiting</text><rect x=\"100\" y=\"146\" width=\"116\" height=\"6\" rx=\"3\" fill=\"#EEEAE4\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"100\" y=\"146\" width=\"63.800000000000004\" height=\"6\" rx=\"3\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"196.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Today</text><text x=\"226\" y=\"196.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >List</text><line x1=\"14\" y1=\"204.0\" x2=\"226\" y2=\"204.0\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"228.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Tomorrow</text><text x=\"226\" y=\"228.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >List</text><line x1=\"14\" y1=\"236.0\" x2=\"226\" y2=\"236.0\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Agent Dashboard</text><text x=\"14\" y=\"34\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Team · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"72\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Fresh Start</text><text x=\"24\" y=\"92\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fresh Start</text><rect x=\"100\" y=\"86\" width=\"116\" height=\"6\" rx=\"3\" fill=\"#EEEAE4\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"100\" y=\"86\" width=\"58.0\" height=\"6\" rx=\"3\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"112\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Top Three</text><rect x=\"100\" y=\"106\" width=\"116\" height=\"6\" rx=\"3\" fill=\"#EEEAE4\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"100\" y=\"106\" width=\"48.72\" height=\"6\" rx=\"3\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"132\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Needs From Max</text><rect x=\"100\" y=\"126\" width=\"116\" height=\"6\" rx=\"3\" fill=\"#EEEAE4\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"100\" y=\"126\" width=\"71.92\" height=\"6\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"152\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Updated</text><rect x=\"100\" y=\"146\" width=\"116\" height=\"6\" rx=\"3\" fill=\"#EEEAE4\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"100\" y=\"146\" width=\"63.800000000000004\" height=\"6\" rx=\"3\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"196.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Top Three</text><text x=\"226\" y=\"196.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >List</text><line x1=\"14\" y1=\"204.0\" x2=\"226\" y2=\"204.0\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"228.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Needs From Max</text><text x=\"226\" y=\"228.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Fold</text><line x1=\"14\" y1=\"236.0\" x2=\"226\" y2=\"236.0\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"7.5\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
      "bg": "#F7F4EF"
     },
     "share": true
    },
    "optionB": {
-    "id": "bkdb_evea0_bc0_lagoon",
-    "label": "Bar Chart, Lagoon Accent",
-    "desc": "Evening Report: bar chart with lagoon accent.",
+    "id": "bkdb_fresha1_bc0_saffron",
+    "label": "Bar Chart, Saffron Accent",
+    "desc": "Fresh Start Bar: bar chart with saffron accent.",
     "tags": [
      "visual",
      "quick"
@@ -1023,7 +1040,7 @@
     "visual": {
      "type": "hm",
      "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Agent Dashboard</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Team · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"72\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Evening Report</text><rect x=\"28\" y=\"138.0\" width=\"20\" height=\"28.0\" rx=\"3\" fill=\"#05668D55\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"60\" y=\"126.0\" width=\"20\" height=\"40.0\" rx=\"3\" fill=\"#05668D55\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"92\" y=\"132.4\" width=\"20\" height=\"33.6\" rx=\"3\" fill=\"#05668D55\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"124\" y=\"116.4\" width=\"20\" height=\"49.6\" rx=\"3\" fill=\"#05668D55\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"156\" y=\"122.0\" width=\"20\" height=\"44.0\" rx=\"3\" fill=\"#05668D55\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"188\" y=\"102.0\" width=\"20\" height=\"64.0\" rx=\"3\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"196.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Today</text><text x=\"226\" y=\"196.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >List</text><line x1=\"14\" y1=\"204.0\" x2=\"226\" y2=\"204.0\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"228.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Tomorrow</text><text x=\"226\" y=\"228.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >List</text><line x1=\"14\" y1=\"236.0\" x2=\"226\" y2=\"236.0\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Agent Dashboard</text><text x=\"14\" y=\"34\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Team · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"72\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Fresh Start</text><rect x=\"28\" y=\"138.0\" width=\"20\" height=\"28.0\" rx=\"3\" fill=\"#D4A01755\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"60\" y=\"126.0\" width=\"20\" height=\"40.0\" rx=\"3\" fill=\"#D4A01755\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"92\" y=\"132.4\" width=\"20\" height=\"33.6\" rx=\"3\" fill=\"#D4A01755\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"124\" y=\"116.4\" width=\"20\" height=\"49.6\" rx=\"3\" fill=\"#D4A01755\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"156\" y=\"122.0\" width=\"20\" height=\"44.0\" rx=\"3\" fill=\"#D4A01755\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"188\" y=\"102.0\" width=\"20\" height=\"64.0\" rx=\"3\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"196.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Top Three</text><text x=\"226\" y=\"196.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >List</text><line x1=\"14\" y1=\"204.0\" x2=\"226\" y2=\"204.0\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"228.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Needs From Max</text><text x=\"226\" y=\"228.0\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Fold</text><line x1=\"14\" y1=\"236.0\" x2=\"226\" y2=\"236.0\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"7.5\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
      "bg": "#F7F4EF"
     },
     "share": true
@@ -1031,12 +1048,41 @@
    "purpose": "new",
    "retest": false,
    "notes": true,
-   "id": "dashboards-ready-1-20",
+   "id": "dashboards-ready-1-25",
    "repeat": false,
    "share": true,
-   "generated": "2026-10-13"
+   "generated": "2026-10-15",
+   "bank_id": "dashboards-bank-160",
+   "added": "2026-10-15 refill"
   }
  ],
  "share": true,
- "notes": true
+ "notes": true,
+ "retired": [
+  {
+   "id": "dashboards-ready-1-04",
+   "why": "Evening Report retired (R22/R47)",
+   "at": "2026-10-15T23:55+07:00"
+  },
+  {
+   "id": "dashboards-ready-1-10",
+   "why": "Evening Report retired (R22/R47)",
+   "at": "2026-10-15T23:55+07:00"
+  },
+  {
+   "id": "dashboards-ready-1-12",
+   "why": "Evening Report retired (R22/R47)",
+   "at": "2026-10-15T23:55+07:00"
+  },
+  {
+   "id": "dashboards-ready-1-18",
+   "why": "Evening Report retired (R22/R47)",
+   "at": "2026-10-15T23:55+07:00"
+  },
+  {
+   "id": "dashboards-ready-1-20",
+   "why": "Evening Report retired (R22/R47)",
+   "at": "2026-10-15T23:55+07:00"
+  }
+ ]
 }
