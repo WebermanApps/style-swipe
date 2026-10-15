@@ -1,0 +1,966 @@
+{
+ "date": "household-home-setup-deck",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Home Setup Deck",
+ "generated_at": "2026-10-15T14:36:32+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "premium": 8,
+  "practical": 8,
+  "playful": 8,
+  "bold": 8,
+  "calm": 8
+ },
+ "groups": {
+  "Reminders": 7,
+  "Who Owns What": 6,
+  "Help Areas": 7
+ },
+ "apps": {
+  "Household": 20
+ },
+ "freshness": {
+  "option_slots": 40,
+  "never_shown_before": 40,
+  "share": 1.0
+ },
+ "warnings": [],
+ "brands": [
+  "Which home areas Max and Nozomi want help with, how reminders should arrive, and who owns what",
+  "Household help for Max, Nozomi and Maple. No dashboard layout topics."
+ ],
+ "submit_agent": "household",
+ "submit_to": "Household Agent",
+ "agent_id": "c59ffdde-28bf-4ad7-8dd8-22f5e941647d",
+ "deck_size": 20,
+ "board": "household",
+ "audience": "Max and Nozomi",
+ "pairs": [
+  {
+   "group": "Reminders",
+   "category": "Reminders",
+   "app": "Household",
+   "ask": "Who Gets Reminders: Both Of Us Or Only The Owner?",
+   "optionA": {
+    "id": "hh_both_of_us_120",
+    "label": "Both Of Us",
+    "desc": "Max and Nozomi see every reminder.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">REMINDERS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Both Of Us</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Max and Nozomi see every</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >reminder.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Shared view</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >More noise</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hh_only_the_owner_121",
+    "label": "Only The Owner",
+    "desc": "Just the person who owns that task.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">REMINDERS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Only The Owner</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Just the person who owns</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >that task.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Less noise</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Clear owner</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-setup-deck-01",
+   "repeat": false
+  },
+  {
+   "group": "Who Owns What",
+   "category": "Who Owns What",
+   "app": "Household",
+   "ask": "Bills And Utilities: Max Owns Or Nozomi Owns?",
+   "optionA": {
+    "id": "hh_max_owns_140",
+    "label": "Max Owns",
+    "desc": "Max pays and tracks the bills.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">WHO OWNS WHAT</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Max Owns</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Max pays and tracks the</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >bills.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Owner: Max</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Nozomi informed</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hh_nozomi_owns_141",
+    "label": "Nozomi Owns",
+    "desc": "Nozomi pays and tracks the bills.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">WHO OWNS WHAT</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Nozomi Owns</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Nozomi pays and tracks the</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >bills.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Owner: Nozomi</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Max informed</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-setup-deck-02",
+   "repeat": false
+  },
+  {
+   "group": "Help Areas",
+   "category": "Help Areas",
+   "app": "Household",
+   "ask": "Groceries: Keep A Shared List Or Suggest A Weekly Order?",
+   "optionA": {
+    "id": "hh_shared_list_50",
+    "label": "Shared List",
+    "desc": "Anyone adds items; the list is ready to shop.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HELP AREAS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Shared List</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Anyone adds items; the list</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >is ready to shop.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Flexible</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >We decide</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hh_suggested_weekly_order_51",
+    "label": "Suggested Weekly Order",
+    "desc": "A weekly order based on what we usually buy.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HELP AREAS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Suggested</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Weekly Order</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >A weekly order based on what</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >we usually buy.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Less thinking</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >We approve</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-setup-deck-03",
+   "repeat": false
+  },
+  {
+   "group": "Reminders",
+   "category": "Reminders",
+   "app": "Household",
+   "ask": "Reminder Detail: One Short Line Or Full Details?",
+   "optionA": {
+    "id": "hh_one_short_line_100",
+    "label": "One Short Line",
+    "desc": "What and when, nothing more.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">REMINDERS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >One Short Line</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >What and when, nothing more.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fast to read</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Ask for more</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hh_full_details_101",
+    "label": "Full Details",
+    "desc": "Amount, place, links and what to bring.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">REMINDERS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Full Details</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Amount, place, links and</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >what to bring.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >All in one</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Longer read</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-setup-deck-04",
+   "repeat": false
+  },
+  {
+   "group": "Help Areas",
+   "category": "Help Areas",
+   "app": "Household",
+   "ask": "Help First With: Repairs And Maintenance Or Cleaning Routines?",
+   "optionA": {
+    "id": "hh_repairs_and_maintenance_10",
+    "label": "Repairs And Maintenance",
+    "desc": "Aircon service, leaks, fixes and who to call.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HELP AREAS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Repairs And</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Maintenance</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Aircon service, leaks, fixes</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >and who to call.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fewer surprises</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Book the pros</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hh_cleaning_routines_11",
+    "label": "Cleaning Routines",
+    "desc": "Who cleans what and when, week by week.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HELP AREAS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Cleaning</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Routines</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Who cleans what and when,</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >week by week.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Calmer home</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Shared plan</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-setup-deck-05",
+   "repeat": false
+  },
+  {
+   "group": "Reminders",
+   "category": "Reminders",
+   "app": "Household",
+   "ask": "How Far Ahead For Maple's School Items: Night Before Or Weekend Before?",
+   "optionA": {
+    "id": "hh_night_before_90",
+    "label": "Night Before",
+    "desc": "What Maple needs tomorrow, each evening.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">REMINDERS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Night Before</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >What Maple needs tomorrow,</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >each evening.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fresh in mind</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Last minute</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hh_weekend_before_91",
+    "label": "Weekend Before",
+    "desc": "The whole week ahead, every Sunday.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">REMINDERS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Weekend Before</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >The whole week ahead, every</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sunday.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Time to prepare</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Easy to forget</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-setup-deck-06",
+   "repeat": false
+  },
+  {
+   "group": "Help Areas",
+   "category": "Help Areas",
+   "app": "Household",
+   "ask": "Help First With: Maple's School Or Maple's Activities?",
+   "optionA": {
+    "id": "hh_maple_s_school_20",
+    "label": "Maple's School",
+    "desc": "Forms, fees, events, uniforms and term dates.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HELP AREAS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Maple's School</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Forms, fees, events,</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >uniforms and term dates.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Nothing missed</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >School calendar</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hh_maple_s_activities_21",
+    "label": "Maple's Activities",
+    "desc": "Classes, playdates, sign-ups and kit.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HELP AREAS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Maple's</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Activities</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Classes, playdates, sign-ups</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >and kit.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fun planned</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Weekly schedule</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-setup-deck-07",
+   "repeat": false
+  },
+  {
+   "group": "Reminders",
+   "category": "Reminders",
+   "app": "Household",
+   "ask": "Urgent Things: Ping Right Away Or Wait For The Morning Report?",
+   "optionA": {
+    "id": "hh_ping_right_away_110",
+    "label": "Ping Right Away",
+    "desc": "Leaks, overdue bills, sick days.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">REMINDERS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Ping Right Away</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Leaks, overdue bills, sick</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >days.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fast action</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Can interrupt</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hh_wait_for_morning_111",
+    "label": "Wait For Morning",
+    "desc": "Everything in tomorrow's report.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">REMINDERS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Wait For</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Morning</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Everything in tomorrow's</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >report.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >No interruptions</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Slower response</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-setup-deck-08",
+   "repeat": false
+  },
+  {
+   "group": "Help Areas",
+   "category": "Help Areas",
+   "app": "Household",
+   "ask": "Bills: Just Remind Us Or Also Flag Unusual Amounts?",
+   "optionA": {
+    "id": "hh_just_remind_us_40",
+    "label": "Just Remind Us",
+    "desc": "A heads-up before each bill is due.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HELP AREAS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Just Remind Us</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >A heads-up before each bill</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >is due.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Simple</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Low effort</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hh_flag_unusual_amounts_41",
+    "label": "Flag Unusual Amounts",
+    "desc": "Also point out a bill that jumped.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HELP AREAS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Flag Unusual</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Amounts</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Also point out a bill that</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >jumped.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Catch problems</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Needs past bills</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-setup-deck-09",
+   "repeat": false
+  },
+  {
+   "group": "Who Owns What",
+   "category": "Who Owns What",
+   "app": "Household",
+   "ask": "Repairs And Maintenance: Max Owns Or Nozomi Owns?",
+   "optionA": {
+    "id": "hh_max_owns_160",
+    "label": "Max Owns",
+    "desc": "Max books fixes and services.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">WHO OWNS WHAT</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Max Owns</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Max books fixes and</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >services.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Owner: Max</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Nozomi informed</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hh_nozomi_owns_161",
+    "label": "Nozomi Owns",
+    "desc": "Nozomi books fixes and services.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">WHO OWNS WHAT</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Nozomi Owns</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Nozomi books fixes and</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >services.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Owner: Nozomi</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Max informed</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-setup-deck-10",
+   "repeat": false
+  },
+  {
+   "group": "Help Areas",
+   "category": "Help Areas",
+   "app": "Household",
+   "ask": "Repairs: Remind Us To Book Or Also Find Who To Call?",
+   "optionA": {
+    "id": "hh_remind_us_to_book_60",
+    "label": "Remind Us To Book",
+    "desc": "Nudge when a service or fix is due.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HELP AREAS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Remind Us To</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Book</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Nudge when a service or fix</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >is due.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >We pick the pro</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Short notes</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hh_find_who_to_call_61",
+    "label": "Find Who To Call",
+    "desc": "Suggest a repair person with contact details.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HELP AREAS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Find Who To</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Call</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Suggest a repair person with</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >contact details.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Less searching</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >More detail</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-setup-deck-11",
+   "repeat": false
+  },
+  {
+   "group": "Reminders",
+   "category": "Reminders",
+   "app": "Household",
+   "ask": "How Far Ahead For Bills: Three Days Or One Week?",
+   "optionA": {
+    "id": "hh_three_days_ahead_80",
+    "label": "Three Days Ahead",
+    "desc": "Close to the due date, hard to forget.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">REMINDERS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Three Days</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Ahead</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Close to the due date, hard</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >to forget.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Short notice</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fewer early nags</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hh_one_week_ahead_81",
+    "label": "One Week Ahead",
+    "desc": "Time to check the amount and plan.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">REMINDERS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >One Week Ahead</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Time to check the amount and</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >plan.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Room to plan</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Earlier heads-up</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-setup-deck-12",
+   "repeat": false
+  },
+  {
+   "group": "Help Areas",
+   "category": "Help Areas",
+   "app": "Household",
+   "ask": "Health Appointments And Gear: Track Everything Or Only Big Visits?",
+   "optionA": {
+    "id": "hh_track_everything_30",
+    "label": "Track Everything",
+    "desc": "Checkups, vaccines, dentist, glasses and meds.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HELP AREAS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Track</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Everything</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Checkups, vaccines, dentist,</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >glasses and meds.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Full picture</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >More reminders</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hh_only_big_visits_31",
+    "label": "Only Big Visits",
+    "desc": "Doctor and dentist visits, nothing small.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HELP AREAS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Only Big Visits</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Doctor and dentist visits,</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >nothing small.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Light touch</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fewer pings</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-setup-deck-13",
+   "repeat": false
+  },
+  {
+   "group": "Who Owns What",
+   "category": "Who Owns What",
+   "app": "Household",
+   "ask": "Maple's Health Appointments: One Parent Owns Or Whoever Is Free?",
+   "optionA": {
+    "id": "hh_one_parent_owns_180",
+    "label": "One Parent Owns",
+    "desc": "Same parent books and attends every visit.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">WHO OWNS WHAT</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >One Parent Owns</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Same parent books and</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >attends every visit.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Consistent</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >One person load</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hh_whoever_is_free_181",
+    "label": "Whoever Is Free",
+    "desc": "Book it, then the free parent goes.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">WHO OWNS WHAT</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Whoever Is Free</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Book it, then the free</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >parent goes.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Flexible</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Needs a handoff</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-setup-deck-14",
+   "repeat": false
+  },
+  {
+   "group": "Reminders",
+   "category": "Reminders",
+   "app": "Household",
+   "ask": "Weekend Reminders: Keep Them Coming Or Hold Until Monday?",
+   "optionA": {
+    "id": "hh_keep_them_coming_130",
+    "label": "Keep Them Coming",
+    "desc": "Weekends work like any other day.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">REMINDERS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Keep Them</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Coming</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Weekends work like any other</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >day.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Nothing waits</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Busier weekend</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hh_hold_until_monday_131",
+    "label": "Hold Until Monday",
+    "desc": "Only urgent things on weekends.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">REMINDERS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Hold Until</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Monday</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Only urgent things on</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >weekends.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Quiet weekends</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Monday pile-up</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-setup-deck-15",
+   "repeat": false
+  },
+  {
+   "group": "Who Owns What",
+   "category": "Who Owns What",
+   "app": "Household",
+   "ask": "Maple's School: Max Owns Or Nozomi Owns?",
+   "optionA": {
+    "id": "hh_max_owns_170",
+    "label": "Max Owns",
+    "desc": "Max handles forms, fees and school messages.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">WHO OWNS WHAT</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Max Owns</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Max handles forms, fees and</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >school messages.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Owner: Max</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Nozomi informed</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hh_nozomi_owns_171",
+    "label": "Nozomi Owns",
+    "desc": "Nozomi handles forms, fees and school messages.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">WHO OWNS WHAT</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Nozomi Owns</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Nozomi handles forms, fees</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >and school messages.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Owner: Nozomi</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Max informed</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-setup-deck-16",
+   "repeat": false
+  },
+  {
+   "group": "Reminders",
+   "category": "Reminders",
+   "app": "Household",
+   "ask": "Reminders: In The Morning Report Or As-Needed Pings?",
+   "optionA": {
+    "id": "hh_in_the_morning_report_70",
+    "label": "In The Morning Report",
+    "desc": "One daily list by 5:00 AM.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">REMINDERS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >In The Morning</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Report</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >One daily list by 5:00 AM.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >One place</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Quiet day</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hh_as_needed_pings_71",
+    "label": "As-Needed Pings",
+    "desc": "A message right when something is due.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">REMINDERS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >As-Needed Pings</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >A message right when</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >something is due.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Right on time</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >More messages</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-setup-deck-17",
+   "repeat": false
+  },
+  {
+   "group": "Help Areas",
+   "category": "Help Areas",
+   "app": "Household",
+   "ask": "Help First With: Bills And Utilities Or Groceries And Supplies?",
+   "optionA": {
+    "id": "hh_bills_and_utilities_00",
+    "label": "Bills And Utilities",
+    "desc": "Due dates, meter bills, internet and phone.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HELP AREAS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Bills And</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Utilities</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Due dates, meter bills,</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >internet and phone.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >No late fees</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Monthly rhythm</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hh_groceries_and_supplies_01",
+    "label": "Groceries And Supplies",
+    "desc": "Shopping lists and running-low items.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HELP AREAS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Groceries And</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Supplies</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Shopping lists and</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >running-low items.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Never run out</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Weekly rhythm</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-setup-deck-18",
+   "repeat": false
+  },
+  {
+   "group": "Who Owns What",
+   "category": "Who Owns What",
+   "app": "Household",
+   "ask": "Groceries And Supplies: One Owner Or Shared Turns?",
+   "optionA": {
+    "id": "hh_one_owner_150",
+    "label": "One Owner",
+    "desc": "One person always does the shop.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">WHO OWNS WHAT</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >One Owner</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >One person always does the</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >shop.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Clear job</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >One person busy</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hh_shared_turns_151",
+    "label": "Shared Turns",
+    "desc": "Max and Nozomi take turns each week.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">WHO OWNS WHAT</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Shared Turns</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Max and Nozomi take turns</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >each week.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fair split</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Needs a rota</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-setup-deck-19",
+   "repeat": false
+  },
+  {
+   "group": "Who Owns What",
+   "category": "Who Owns What",
+   "app": "Household",
+   "ask": "When Ownership Is Unclear: Ask Both Of Us Or Default To Max?",
+   "optionA": {
+    "id": "hh_ask_both_of_us_190",
+    "label": "Ask Both Of Us",
+    "desc": "Send it to both and let us decide.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">WHO OWNS WHAT</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Ask Both Of Us</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Send it to both and let us</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >decide.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fair</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Slower</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hh_default_to_max_191",
+    "label": "Default To Max",
+    "desc": "Max takes it unless he hands it off.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">WHO OWNS WHAT</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Default To Max</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Max takes it unless he hands</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >it off.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fast</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Max carries more</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-setup-deck-20",
+   "repeat": false
+  }
+ ],
+ "share": true,
+ "notes": true
+}
