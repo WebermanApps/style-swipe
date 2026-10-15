@@ -1,0 +1,21 @@
+/* Apps Home color scheme for agent dashboards (Max rule, Oct 15 2026 12:28 ICT).
+   Source: ops/apps-home/gen.py + ops/brand/brand-tokens.css. Colors only, light only.
+   Exempt: WellNest, UpKeep. Not for deck pages. */
+:root{
+  color-scheme: light only;
+  --dash-bg:#ffffff;          /* page background (Apps Home html/body) */
+  --dash-card:#ffffff;        /* cards / panels */
+  --dash-beige:#FAF6EE;       /* light beige accent (Apps Home Grok Bot card, theme-color) */
+  --dash-beige-border:#e3ddd2;/* beige border (Apps Home Deck Building link) */
+  --dash-border:#e5e5e5;      /* hairlines / card borders (--mw-border) */
+  --dash-text:#0a0a0a;        /* body text (--mw-foreground) */
+  --dash-muted:#737373;       /* secondary text (--mw-muted-text) */
+  --dash-primary:#171717;     /* buttons, strong borders (--mw-primary) */
+  --dash-primary-fg:#fafafa;  /* text on primary */
+  --dash-secondary:#f5f5f5;   /* hover / muted surface */
+}
+html,body{background:var(--dash-bg)!important;color:var(--dash-text)}
+.card{background-color:var(--dash-card);border-color:var(--dash-border)}
+.section-accent{background-color:var(--dash-beige);border-color:var(--dash-beige-border)}
+/* sections: transparent on white page; opt-in beige band via .section-accent */
+section{border-color:var(--dash-border)}
