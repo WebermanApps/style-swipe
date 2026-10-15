@@ -1,0 +1,584 @@
+{
+ "pairs": [
+  {
+   "id": "rco-01",
+   "group": "Checkout",
+   "category": "Sell Platform",
+   "app": "Research",
+   "ask": "Where To Sell The Setup First: Lemon Squeezy Or Gumroad? (gumroad.com/pricing; lemonsqueezy.com/pricing)",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rco01a",
+    "label": "Lemon Squeezy",
+    "desc": "5% + $0.50 per sale, subscriptions and license keys included, merchant of record, no monthly fee.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rco01b",
+    "label": "Gumroad",
+    "desc": "10% + $0.50 direct, 30% via Discover marketplace, merchant of record, no monthly fee.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rco-02",
+   "group": "Checkout",
+   "category": "Sell Platform",
+   "app": "Research",
+   "ask": "Fee Tradeoff: Lower Cut With Lemon Squeezy, Or Gumroad Discover Reach?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rco02a",
+    "label": "Take The Lower Cut",
+    "desc": "Lemon Squeezy at 5% + $0.50 keeps more of each sale for the first paid test.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rco02b",
+    "label": "Pay For Discover Reach",
+    "desc": "Gumroad Discover at 30% may bring buyers you would not find alone.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rco-03",
+   "group": "Checkout",
+   "category": "Billing",
+   "app": "Research",
+   "ask": "Subscriptions For The Monthly Pilot Fee: Built-In On Lemon Squeezy, Or Stripe Later?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rco03a",
+    "label": "Use Lemon Squeezy Subs",
+    "desc": "Subscriptions are included on Lemon Squeezy pricing page; fits $250/mo pilot fee.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rco03b",
+    "label": "Add Stripe Later",
+    "desc": "Stripe US cards are 2.9% + 30c (stripe.com/pricing); more control, more setup.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rco-04",
+   "group": "Checkout",
+   "category": "Delivery",
+   "app": "Research",
+   "ask": "License Keys For A Template Kit: Lemon Squeezy License Keys, Or Manual Delivery?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rco04a",
+    "label": "License Keys Built In",
+    "desc": "Lemon Squeezy lists license keys on pricing; good if a Self-Serve tier ships later.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rco04b",
+    "label": "Manual Delivery First",
+    "desc": "Email a zip after payment until volume needs keys.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rco-05",
+   "group": "Checkout",
+   "category": "Tax",
+   "app": "Research",
+   "ask": "Sales Tax Handling: Rely On Merchant Of Record, Or Self-Collect With Stripe Tax?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rco05a",
+    "label": "Merchant Of Record",
+    "desc": "Both Gumroad and Lemon Squeezy handle sales tax as MoR (their pricing pages).",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rco05b",
+    "label": "Self With Stripe Tax",
+    "desc": "More control, more compliance work before the first paid pilot.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rco-06",
+   "group": "Checkout",
+   "category": "Go To Market",
+   "app": "Research",
+   "ask": "First Paid Test Channel: Direct Link Only, Or Also List On Gumroad Discover?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rco06a",
+    "label": "Direct Link Only",
+    "desc": "Warm intros from the construction network; no Discover fee.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rco06b",
+    "label": "Also List On Discover",
+    "desc": "Pay up to 30% for marketplace exposure (gumroad.com/pricing).",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rco-07",
+   "group": "Checkout",
+   "category": "Landing",
+   "app": "Research",
+   "ask": "Landing Page For The Waitlist: Carrd Pro Standard ($19/yr) Or GitHub Pages Free? (carrd.co/pro)",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rco07a",
+    "label": "Carrd Pro Standard",
+    "desc": "$19/yr with custom domain and forms; cheapest polished waitlist.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rco07b",
+    "label": "GitHub Pages Free",
+    "desc": "Static page is fine for a waitlist with no payments (Pages limits apply).",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rco-08",
+   "group": "Checkout",
+   "category": "Landing",
+   "app": "Research",
+   "ask": "Waitlist Form: Free Tally Or Tally Pro (EUR 20/mo)? (tally.so/pricing)",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rco08a",
+    "label": "Free Tally",
+    "desc": "Unlimited submissions on free; enough for 10 warm conversations.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rco08b",
+    "label": "Tally Pro",
+    "desc": "EUR 20/mo if you need paid features before the pilot fills.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rco-09",
+   "group": "Checkout",
+   "category": "Offer",
+   "app": "Research",
+   "ask": "Show The Founding Price On The Landing Page Up Front, Or Hide Until A Call?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rco09a",
+    "label": "Show Price Up Front",
+    "desc": "Plan recommends price on the waitlist page so tire-kickers self-select.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rco09b",
+    "label": "Hide Until A Call",
+    "desc": "Talk first; price after the demo on your phone.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rco-10",
+   "group": "Checkout",
+   "category": "Offer",
+   "app": "Research",
+   "ask": "Refund And Cancel Terms: One-Tap Cancel Like Competitors Complain About Missing, Or Manual Email Only?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rco10a",
+    "label": "One-Tap Cancel",
+    "desc": "Sintra and Lindy complaints cite refund fights; clear cancel is a selling point.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rco10b",
+    "label": "Email Cancel Only",
+    "desc": "Simpler to start; write the policy before taking money.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rco-11",
+   "group": "Checkout",
+   "category": "Risk",
+   "app": "Research",
+   "ask": "Before Taking Money: Private Login Ready, Or Take Deposits On Public Pages?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rco11a",
+    "label": "Private Login First",
+    "desc": "GitHub Pages terms bar running a commercial SaaS; plan says build auth before money.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rco11b",
+    "label": "Deposit On Public Page",
+    "desc": "Faster test; higher risk of public data and Pages terms issues.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rco-12",
+   "group": "Checkout",
+   "category": "Risk",
+   "app": "Research",
+   "ask": "Platform Resale Check: Written Answer From The Provider Before Any Paid Pilot, Or Proceed On Public Terms Alone?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rco12a",
+    "label": "Get It In Writing",
+    "desc": "Enterprise terms bar selling or time-sharing; ask which model is allowed first.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rco12b",
+    "label": "Proceed On Public Terms",
+    "desc": "Client-owns-the-account path may fit permitted-user language; still a judgment call.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rco-13",
+   "group": "Checkout",
+   "category": "Risk",
+   "app": "Research",
+   "ask": "Sell Path If Platform Blocks Resale: Client Owns The Account, Or Build A Bundled API App?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rco13a",
+    "label": "Client Owns The Account",
+    "desc": "Client buys the plan; Max sets up as outside consultant (permitted user language).",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rco13b",
+    "label": "Build On The API",
+    "desc": "Bundled Service path; bigger build before the first sale.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rco-14",
+   "group": "Checkout",
+   "category": "Brand",
+   "app": "Research",
+   "ask": "Checkout Branding: Keep Checkout On Lemon Squeezy Or Gumroad Hosted Page, Or Custom Domain Checkout?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rco14a",
+    "label": "Hosted Checkout Page",
+    "desc": "Ship faster; MoR page is fine for 3 founding pilots.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rco14b",
+    "label": "Custom Domain Checkout",
+    "desc": "Looks more premium; more setup before the first test.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rco-15",
+   "group": "Checkout",
+   "category": "Offer",
+   "app": "Research",
+   "ask": "First Money Product: Done-For-You Setup Fee Plus Monthly, Or Template Kit One-Time?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rco15a",
+    "label": "Setup Plus Monthly",
+    "desc": "Plan: $750 setup + $250/mo Estimate for 3 lanes, 60 days.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rco15b",
+    "label": "Template Kit One-Time",
+    "desc": "Sell files only after pilots prove the offer; lower support load.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rco-16",
+   "group": "Checkout",
+   "category": "Billing",
+   "app": "Research",
+   "ask": "Payment For Setup Fee: Full Up Front, Or Split Setup Across Two Months?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rco16a",
+    "label": "Full Up Front",
+    "desc": "Clearest cash for the 60-day pilot; matches ATI Lab-style setup fees.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rco16b",
+    "label": "Split Across Two Months",
+    "desc": "Easier yes for small crews; more dunning work.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rco-17",
+   "group": "Checkout",
+   "category": "Billing",
+   "app": "Research",
+   "ask": "Payout Currency And Bank: US Stripe Or MoR Payouts Only For Now?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rco17a",
+    "label": "MoR Payouts Only",
+    "desc": "Lemon Squeezy or Gumroad pay you; no Stripe account yet.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rco17b",
+    "label": "Add Stripe In Parallel",
+    "desc": "Needed if you leave MoR later; 2.9% + 30c US cards.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rco-18",
+   "group": "Checkout",
+   "category": "Go To Market",
+   "app": "Research",
+   "ask": "Pilot Cap: Hard Cap At 3 Founding Spots, Or Soft Waitlist With No Cap?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rco18a",
+    "label": "Hard Cap Of Three",
+    "desc": "Plan: Max's time does not scale; productize after 3.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rco18b",
+    "label": "Soft Waitlist",
+    "desc": "Collect interest now; decide cap after 10 conversations.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rco-19",
+   "group": "Checkout",
+   "category": "Go To Market",
+   "app": "Research",
+   "ask": "Demo Asset Before Checkout: iPhone Screen Recording, Or Live Screenshare Only? (support.apple.com screen record)",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rco19a",
+    "label": "Phone Screen Recording",
+    "desc": "One clip: Morning Report, one swipe, one vote; easy to text.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rco19b",
+    "label": "Live Screenshare Only",
+    "desc": "More personal; harder to scale across 10 warm intros.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rco-20",
+   "group": "Checkout",
+   "category": "Ops",
+   "app": "Research",
+   "ask": "After First Sale Ops: Monitor Missed Morning Reports Per Client, Or Manual Check-Ins Only?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rco20a",
+    "label": "Automated Missed-Report Watch",
+    "desc": "Plan sec. 7: monitoring protects the daily-rhythm promise.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rco20b",
+    "label": "Weekly Manual Check-Ins",
+    "desc": "Enough for 3 pilots; automate after productize.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  }
+ ]
+}

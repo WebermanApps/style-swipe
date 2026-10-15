@@ -1,0 +1,584 @@
+{
+ "pairs": [
+  {
+   "id": "rse-01",
+   "group": "Security",
+   "category": "Founder",
+   "app": "Research",
+   "ask": "Password Manager + Passkeys On Email, GitHub, Stripe, Registrar: Do This Week, Or Schedule Later? (cisa.gov/MFA)",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rse01a",
+    "label": "This Week",
+    "desc": "Account takeover is the top path to losing the company.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rse01b",
+    "label": "Schedule Later",
+    "desc": "Higher risk window while public apps stay live.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rse-02",
+   "group": "Security",
+   "category": "Founder",
+   "app": "Research",
+   "ask": "Hardware Keys Or Passkeys: Add Two Keys And Turn Off SMS Fallback, Or Passkeys Only For Now? (NIST SP 800-63B)",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rse02a",
+    "label": "Two Hardware Keys + No SMS",
+    "desc": "Phishing-resistant; SMS fallback is weaker.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rse02b",
+    "label": "Passkeys Only First",
+    "desc": "Faster; add hardware keys on the next trip.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rse-03",
+   "group": "Security",
+   "category": "Founder",
+   "app": "Research",
+   "ask": "Recovery Codes: Print And Store Offline This Week, Or Digital Vault Only? (GitHub 2FA recovery docs)",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rse03a",
+    "label": "Print Offline",
+    "desc": "Lost key without codes locks you out of the company.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rse03b",
+    "label": "Digital Vault Only",
+    "desc": "Convenient; single point of failure if the vault is lost.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rse-04",
+   "group": "Security",
+   "category": "Agents",
+   "app": "Research",
+   "ask": "Agent Tokens: Fine-Grained PATs Per Repo With 30-90 Day Expiry, Or Keep Broader Tokens? (GitHub PAT docs)",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rse04a",
+    "label": "Fine-Grained, Expiring",
+    "desc": "An agent token with publish rights is a skeleton key.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rse04b",
+    "label": "Broader For Now",
+    "desc": "Less friction for agents; higher blast radius.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rse-05",
+   "group": "Security",
+   "category": "Agents",
+   "app": "Research",
+   "ask": "Human Approval Before Public Publish, Email Or Payment: Keep Strict, Or Trust Agent Drafts To Ship? (OWASP LLM Top 10)",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rse05a",
+    "label": "Keep Strict Approval",
+    "desc": "Prompt injection and excessive agency are real (LLM01, LLM06).",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rse05b",
+    "label": "Trust More Autopilot",
+    "desc": "Faster; higher hijack risk on web/email reads.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rse-06",
+   "group": "Security",
+   "category": "Repos",
+   "app": "Research",
+   "ask": "Secret Scanning + Push Protection On All Repos: Turn On Now, Or Audit First? (GitHub secret scanning)",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rse06a",
+    "label": "Turn On Now",
+    "desc": "Pages repos are public; committed secrets are forever.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rse06b",
+    "label": "Audit First",
+    "desc": "Scan, clean, then enable; short delay.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rse-07",
+   "group": "Security",
+   "category": "Repos",
+   "app": "Research",
+   "ask": "Branch Protection On Main For Customer Apps: Require Reviews, Or Allow Agent Direct Push?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rse07a",
+    "label": "Protect Main",
+    "desc": "Limits damage from a compromised collaborator or agent.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rse07b",
+    "label": "Allow Direct Push",
+    "desc": "Faster ship; weaker control on smart-upkeep.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rse-08",
+   "group": "Security",
+   "category": "Payments",
+   "app": "Research",
+   "ask": "Payments: Stripe Hosted Checkout Or Elements Only, Or Custom Card Forms? (docs.stripe.com/security)",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rse08a",
+    "label": "Hosted Checkout Or Elements",
+    "desc": "Keeps cards off your systems; SAQ A scope.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rse08b",
+    "label": "Custom Card Forms",
+    "desc": "Never preferred; expands PCI scope.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rse-09",
+   "group": "Security",
+   "category": "Privacy",
+   "app": "Research",
+   "ask": "Customer Data Minimization: List Every Field And Delete Unneeded Before Launch, Or Collect Now And Prune Later? (FTC PPI guide)",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rse09a",
+    "label": "Minimize Before Launch",
+    "desc": "Data you do not hold cannot be breached.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rse09b",
+    "label": "Collect Now, Prune Later",
+    "desc": "Faster experiments; larger breach surface.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rse-10",
+   "group": "Security",
+   "category": "Privacy",
+   "app": "Research",
+   "ask": "Privacy Policy On smartupkeep.ai: Publish Matching Real Collection Before Launch Ads, Or After First Paid Member? (FTC privacy)",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rse10a",
+    "label": "Before Launch Ads",
+    "desc": "FTC treats privacy promises as deceptive-practice risk.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rse10b",
+    "label": "After First Paid Member",
+    "desc": "Risky if ads already describe data use.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rse-11",
+   "group": "Security",
+   "category": "Compliance",
+   "app": "Research",
+   "ask": "Michigan Breach Notice (MCL 445.72): Write A One-Page Incident Plan Now, Or When Legal Finishes Drafts?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rse11a",
+    "label": "Write The One-Pager Now",
+    "desc": "Who to call and a notice template; Legal can refine.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rse11b",
+    "label": "Wait For Legal Drafts",
+    "desc": "More complete; gap until then.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rse-12",
+   "group": "Security",
+   "category": "Ops",
+   "app": "Research",
+   "ask": "Repo Backups: Weekly Mirror To Offline Or Dropbox, Or Rely On GitHub Alone? (CISA Cyber Essentials)",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rse12a",
+    "label": "Weekly Mirror",
+    "desc": "Recovery from deletion or ransomware.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rse12b",
+    "label": "GitHub Alone",
+    "desc": "Simpler; single provider risk.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rse-13",
+   "group": "Security",
+   "category": "Live Apps",
+   "app": "Research",
+   "ask": "Walk-Through App Privacy: Approve Construction Fix (Remove Public Address And Entry Notes), Or Hold?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rse13a",
+    "label": "Approve The Fix",
+    "desc": "Founder brief flagged public address, name and entry instructions in walk-app.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rse13b",
+    "label": "Hold For Now",
+    "desc": "Needs Max OK; do not touch the live app until approved.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rse-14",
+   "group": "Security",
+   "category": "Live Apps",
+   "app": "Research",
+   "ask": "Niko Home Guide During Security Passes: Never Move Relock Or Change, Or Rotate Password With Max OK?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rse14a",
+    "label": "Never Change Without Explicit OK",
+    "desc": "Standing Max rule: live customer apps stay put during URL or password work.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rse14b",
+    "label": "Rotate With Max OK Only",
+    "desc": "Still requires Max OK; Construction owns the change.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rse-15",
+   "group": "Security",
+   "category": "Live Apps",
+   "app": "Research",
+   "ask": "smartupkeep.ai During Security Work: UpKeep-Only Edits Continue, Or Freeze Publishes Until Passkeys Done?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rse15a",
+    "label": "UpKeep Edits Continue",
+    "desc": "Pre-launch free publish rule still on until launch.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rse15b",
+    "label": "Freeze Non-Essential Publishes",
+    "desc": "Shrink change window while founder MFA lands.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rse-16",
+   "group": "Security",
+   "category": "IP",
+   "app": "Research",
+   "ask": "Contractor IP: NDA Plus Written Assignment Before More Helpers, Or Informal For Now? (copyright.gov circ 30)",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rse16a",
+    "label": "NDA Plus Assignment",
+    "desc": "Without assignment, contractors may own code they wrote.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rse16b",
+    "label": "Informal For Now",
+    "desc": "Faster short tasks; IP risk grows.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rse-17",
+   "group": "Security",
+   "category": "IP",
+   "app": "Research",
+   "ask": "Trademark: Start USPTO Search For Smart Upkeep Now, Or After Name Is Final? (uspto.gov trademarks)",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rse17a",
+    "label": "Start Search Now",
+    "desc": "Legal already tracks paid search questions.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rse17b",
+    "label": "After Name Final",
+    "desc": "Avoid spend if the name changes.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rse-18",
+   "group": "Security",
+   "category": "Ops",
+   "app": "Research",
+   "ask": "GitHub Security Log Review: Monthly Habit, Or Only After An Incident?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rse18a",
+    "label": "Monthly Habit",
+    "desc": "Visibility into what agents and collaborators did.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rse18b",
+    "label": "After An Incident",
+    "desc": "Less overhead; slower detection.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rse-19",
+   "group": "Security",
+   "category": "Repos",
+   "app": "Research",
+   "ask": "Collaborator Audit: Quarterly Access Review, Or Continuous As Agents Join?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rse19a",
+    "label": "Quarterly Review",
+    "desc": "Matches founder brief item 6.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rse19b",
+    "label": "Continuous As Agents Join",
+    "desc": "Tighter; more process noise.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  },
+  {
+   "id": "rse-20",
+   "group": "Security",
+   "category": "Org",
+   "app": "Research",
+   "ask": "Security Agent Reporting: Keep Direct To Grok Bot (Not Inside AIR), Or Fold Into AIR Later?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rse20a",
+    "label": "Keep Direct To Grok Bot",
+    "desc": "Max rule Oct 14; Security is not in AIR.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rse20b",
+    "label": "Revisit After MFA Hardening",
+    "desc": "Only if Max changes the org chart.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   }
+  }
+ ]
+}
