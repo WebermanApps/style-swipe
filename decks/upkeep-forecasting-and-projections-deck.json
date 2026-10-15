@@ -1,0 +1,974 @@
+{
+ "date": "upkeep-forecasting-and-projections-deck",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Forecasting And Projections Deck",
+ "generated_at": "2026-10-16T00:00:51+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "calm": 8,
+  "playful": 8,
+  "practical": 8,
+  "bold": 8,
+  "premium": 8
+ },
+ "groups": {
+  "View": 4,
+  "Members": 2,
+  "Horizon": 3,
+  "Scenarios": 2,
+  "Timing": 1,
+  "Cash": 2,
+  "Growth Cost": 1,
+  "Costs": 2,
+  "Plan Mix": 1,
+  "Add-Ons": 1,
+  "Referrals": 1
+ },
+ "apps": {
+  "UpKeep": 20
+ },
+ "freshness": {
+  "option_slots": 40,
+  "never_shown_before": 40,
+  "share": 1.0
+ },
+ "warnings": [],
+ "brands": [
+  "What Max wants included in Smart Upkeep forecasts and how he likes to see projections",
+  "Smart Upkeep forecasting and projection modeling."
+ ],
+ "submit_agent": "upkeep",
+ "submit_to": "UpKeep Agent",
+ "topic": "upkeep-forecasting",
+ "deck_size": 20,
+ "board": "upkeep",
+ "audience": "Max",
+ "pairs": [
+  {
+   "group": "View",
+   "category": "View",
+   "app": "UpKeep",
+   "ask": "Display: Charts Or Tables?",
+   "optionA": {
+    "id": "upfc_charts_160",
+    "label": "Charts",
+    "desc": "Lines and bars first.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">VIEW</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Charts</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Lines and bars first.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >See trends fast</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Less exact</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "upfc_tables_161",
+    "label": "Tables",
+    "desc": "Rows of numbers first.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">VIEW</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Tables</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Rows of numbers first.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Exact</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Slower to scan</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-forecasting-and-projections-deck-01",
+   "repeat": false
+  },
+  {
+   "group": "Members",
+   "category": "Members",
+   "app": "UpKeep",
+   "ask": "Signups: Do You Want Member Signup Growth Included In Forecasting?",
+   "optionA": {
+    "id": "upfc_include_it_00",
+    "label": "Include It",
+    "desc": "Project new members month by month.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">MEMBERS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Include It</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Project new members month by</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >month.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Growth line</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Drives the rest</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "upfc_leave_it_out_01",
+    "label": "Leave It Out",
+    "desc": "Model only current members for now.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">MEMBERS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Leave It Out</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Model only current members</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >for now.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Simpler</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >No guessing</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-forecasting-and-projections-deck-02",
+   "repeat": false
+  },
+  {
+   "group": "Horizon",
+   "category": "Horizon",
+   "app": "UpKeep",
+   "ask": "Span: 12 Months Or 36 Months?",
+   "optionA": {
+    "id": "upfc_12_months_150",
+    "label": "12 Months",
+    "desc": "Forecast the next year.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HORIZON</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >12 Months</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Forecast the next year.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Close and firm</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Short view</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "upfc_36_months_151",
+    "label": "36 Months",
+    "desc": "Forecast three years out.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HORIZON</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >36 Months</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Forecast three years out.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Covers 2-year renewals</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Less certain</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-forecasting-and-projections-deck-03",
+   "repeat": false
+  },
+  {
+   "group": "Scenarios",
+   "category": "Scenarios",
+   "app": "UpKeep",
+   "ask": "What-Ifs: Sensitivity Sliders Or Fixed Scenarios?",
+   "optionA": {
+    "id": "upfc_sliders_120",
+    "label": "Sliders",
+    "desc": "Drag inputs and watch the forecast move.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">SCENARIOS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Sliders</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Drag inputs and watch the</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >forecast move.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Hands-on</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Can wander</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "upfc_fixed_scenarios_121",
+    "label": "Fixed Scenarios",
+    "desc": "A few set cases to compare.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">SCENARIOS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Fixed Scenarios</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >A few set cases to compare.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Stable</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Less flexible</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-forecasting-and-projections-deck-04",
+   "repeat": false
+  },
+  {
+   "group": "Timing",
+   "category": "Timing",
+   "app": "UpKeep",
+   "ask": "Seasons: Show Seasonality In Visits And Signups Or Spread Evenly?",
+   "optionA": {
+    "id": "upfc_show_seasons_70",
+    "label": "Show Seasons",
+    "desc": "Busy and quiet months follow the seasonal visits.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">TIMING</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Show Seasons</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Busy and quiet months follow</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >the seasonal visits.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Matches real work</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Bumpy chart</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "upfc_spread_evenly_71",
+    "label": "Spread Evenly",
+    "desc": "Same amount every month.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">TIMING</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Spread Evenly</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Same amount every month.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Smooth</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Less real</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-forecasting-and-projections-deck-05",
+   "repeat": false
+  },
+  {
+   "group": "Cash",
+   "category": "Cash",
+   "app": "UpKeep",
+   "ask": "Break-Even: Show A Break-Even Point Or Leave It Out?",
+   "optionA": {
+    "id": "upfc_show_break_even_100",
+    "label": "Show Break-Even",
+    "desc": "Mark when members cover the costs.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">CASH</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Show Break-Even</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Mark when members cover the</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >costs.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Clear target</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Needs costs</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "upfc_leave_it_out_101",
+    "label": "Leave It Out",
+    "desc": "Focus on growth lines only.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">CASH</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Leave It Out</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Focus on growth lines only.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Lighter</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >No target</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-forecasting-and-projections-deck-06",
+   "repeat": false
+  },
+  {
+   "group": "Members",
+   "category": "Members",
+   "app": "UpKeep",
+   "ask": "Renewals: Forecast Churn And Renewal Rate Or Assume Everyone Renews?",
+   "optionA": {
+    "id": "upfc_forecast_renewals_10",
+    "label": "Forecast Renewals",
+    "desc": "Model who renews at the end of their term.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">MEMBERS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Forecast</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Renewals</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Model who renews at the end</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >of their term.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Realistic</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Needs a guess</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "upfc_assume_renewals_11",
+    "label": "Assume Renewals",
+    "desc": "Treat every member as renewing.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">MEMBERS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Assume Renewals</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Treat every member as</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >renewing.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Simple</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Upside only</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-forecasting-and-projections-deck-07",
+   "repeat": false
+  },
+  {
+   "group": "Horizon",
+   "category": "Horizon",
+   "app": "UpKeep",
+   "ask": "Time Steps: Monthly Or Quarterly?",
+   "optionA": {
+    "id": "upfc_monthly_130",
+    "label": "Monthly",
+    "desc": "One column per month.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HORIZON</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Monthly</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >One column per month.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fine detail</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Busy</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "upfc_quarterly_131",
+    "label": "Quarterly",
+    "desc": "One column per quarter.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HORIZON</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Quarterly</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >One column per quarter.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Calmer</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Less detail</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-forecasting-and-projections-deck-08",
+   "repeat": false
+  },
+  {
+   "group": "Growth Cost",
+   "category": "Growth Cost",
+   "app": "UpKeep",
+   "ask": "Marketing: Include Marketing Spend And Cost Per New Member?",
+   "optionA": {
+    "id": "upfc_include_it_80",
+    "label": "Include It",
+    "desc": "Track spend and what each new member costs to win.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">GROWTH COST</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Include It</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Track spend and what each</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >new member costs to win.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Know payback</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Needs spend data</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "upfc_leave_it_out_81",
+    "label": "Leave It Out",
+    "desc": "Forecast members without marketing cost.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">GROWTH COST</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Leave It Out</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Forecast members without</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >marketing cost.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Simpler</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >No payback view</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-forecasting-and-projections-deck-09",
+   "repeat": false
+  },
+  {
+   "group": "Horizon",
+   "category": "Horizon",
+   "app": "UpKeep",
+   "ask": "Time Steps: Quarterly Or Yearly?",
+   "optionA": {
+    "id": "upfc_quarterly_140",
+    "label": "Quarterly",
+    "desc": "Four steps per year.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HORIZON</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Quarterly</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Four steps per year.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Shows seasons</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >More columns</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "upfc_yearly_141",
+    "label": "Yearly",
+    "desc": "One step per year.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HORIZON</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Yearly</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >One step per year.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Big picture</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Hides seasons</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-forecasting-and-projections-deck-10",
+   "repeat": false
+  },
+  {
+   "group": "Scenarios",
+   "category": "Scenarios",
+   "app": "UpKeep",
+   "ask": "Scenarios: Conservative, Base And Optimistic Or One Single Number?",
+   "optionA": {
+    "id": "upfc_three_scenarios_110",
+    "label": "Three Scenarios",
+    "desc": "Conservative, base and optimistic side by side.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">SCENARIOS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Three Scenarios</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Conservative, base and</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >optimistic side by side.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Shows the range</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >More to read</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "upfc_single_number_111",
+    "label": "Single Number",
+    "desc": "One best-guess forecast.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">SCENARIOS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Single Number</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >One best-guess forecast.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Simple</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >False precision</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-forecasting-and-projections-deck-11",
+   "repeat": false
+  },
+  {
+   "group": "Costs",
+   "category": "Costs",
+   "app": "UpKeep",
+   "ask": "Visit Labor: Include Labor Cost Per Home In Forecasting?",
+   "optionA": {
+    "id": "upfc_include_labor_50",
+    "label": "Include Labor",
+    "desc": "Cost each of the 4 seasonal Plus visits per home.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">COSTS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Include Labor</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Cost each of the 4 seasonal</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Plus visits per home.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >True margin</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Needs inputs</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "upfc_revenue_only_51",
+    "label": "Revenue Only",
+    "desc": "Leave visit costs out for now.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">COSTS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Revenue Only</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Leave visit costs out for</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >now.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Quick start</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >No margin view</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-forecasting-and-projections-deck-12",
+   "repeat": false
+  },
+  {
+   "group": "Plan Mix",
+   "category": "Plan Mix",
+   "app": "UpKeep",
+   "ask": "Plan Length: Model The Yearly Versus 2-Year Mix Or One Blended Plan?",
+   "optionA": {
+    "id": "upfc_model_the_mix_40",
+    "label": "Model The Mix",
+    "desc": "Separate yearly and 2-year prepay members.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">PLAN MIX</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Model The Mix</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Separate yearly and 2-year</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >prepay members.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Shows cash timing</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Two inputs</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "upfc_one_blended_plan_41",
+    "label": "One Blended Plan",
+    "desc": "Treat all members as one plan type.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">PLAN MIX</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >One Blended</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Plan</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Treat all members as one</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >plan type.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Simpler</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Hides timing</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-forecasting-and-projections-deck-13",
+   "repeat": false
+  },
+  {
+   "group": "View",
+   "category": "View",
+   "app": "UpKeep",
+   "ask": "Uncertainty: Ranges And Bands Or Point Estimates?",
+   "optionA": {
+    "id": "upfc_ranges_and_bands_170",
+    "label": "Ranges And Bands",
+    "desc": "A shaded band around each line.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">VIEW</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Ranges And</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Bands</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >A shaded band around each</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >line.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Honest spread</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Busier</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "upfc_point_estimates_171",
+    "label": "Point Estimates",
+    "desc": "One number per period.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">VIEW</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Point Estimates</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >One number per period.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Clean</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Looks certain</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-forecasting-and-projections-deck-14",
+   "repeat": false
+  },
+  {
+   "group": "Cash",
+   "category": "Cash",
+   "app": "UpKeep",
+   "ask": "Prepay Cash: Show Cash Flow From Prepay As Deferred Revenue?",
+   "optionA": {
+    "id": "upfc_show_deferred_90",
+    "label": "Show Deferred",
+    "desc": "Cash in up front, earned over the plan term.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">CASH</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Show Deferred</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Cash in up front, earned</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >over the plan term.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Accurate books</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Two lines</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "upfc_cash_only_91",
+    "label": "Cash Only",
+    "desc": "Show money when it comes in.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">CASH</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Cash Only</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Show money when it comes in.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Easy to read</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Looks lumpy</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-forecasting-and-projections-deck-15",
+   "repeat": false
+  },
+  {
+   "group": "View",
+   "category": "View",
+   "app": "UpKeep",
+   "ask": "Lead With: Members First Or Dollars First?",
+   "optionA": {
+    "id": "upfc_members_first_190",
+    "label": "Members First",
+    "desc": "Member counts lead, dollars follow.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">VIEW</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Members First</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member counts lead, dollars</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >follow.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Growth focus</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Money second</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "upfc_dollars_first_191",
+    "label": "Dollars First",
+    "desc": "Revenue and cash lead, members follow.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">VIEW</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Dollars First</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Revenue and cash lead,</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >members follow.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Money focus</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Members second</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-forecasting-and-projections-deck-16",
+   "repeat": false
+  },
+  {
+   "group": "Add-Ons",
+   "category": "Add-Ons",
+   "app": "UpKeep",
+   "ask": "Add-Ons: Forecast Add-On Attach Rate Or Plans Only?",
+   "optionA": {
+    "id": "upfc_include_add_ons_30",
+    "label": "Include Add-Ons",
+    "desc": "Lawn add-on, pause plan and warranty as their own lines.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">ADD-ONS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Include Add-Ons</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Lawn add-on, pause plan and</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >warranty as their own lines.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >More revenue lines</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >More guesses</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "upfc_plans_only_31",
+    "label": "Plans Only",
+    "desc": "Forecast the core plans alone.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">ADD-ONS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Plans Only</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Forecast the core plans</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >alone.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Focused</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fewer inputs</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-forecasting-and-projections-deck-17",
+   "repeat": false
+  },
+  {
+   "group": "View",
+   "category": "View",
+   "app": "UpKeep",
+   "ask": "Per Member: Show A Per-Member Unit Economics View?",
+   "optionA": {
+    "id": "upfc_per_member_view_180",
+    "label": "Per-Member View",
+    "desc": "Revenue, visit cost and margin for one member.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">VIEW</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Per-Member View</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Revenue, visit cost and</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >margin for one member.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Unit clarity</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Extra page</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "upfc_totals_only_181",
+    "label": "Totals Only",
+    "desc": "Business-wide totals only.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">VIEW</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Totals Only</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Business-wide totals only.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Simpler</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Less insight</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-forecasting-and-projections-deck-18",
+   "repeat": false
+  },
+  {
+   "group": "Referrals",
+   "category": "Referrals",
+   "app": "UpKeep",
+   "ask": "Referrals: Include Referral Uptake And The Free Month In Forecasting?",
+   "optionA": {
+    "id": "upfc_include_referrals_20",
+    "label": "Include Referrals",
+    "desc": "Count referred neighbors and the free month earned after their first payment clears.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">REFERRALS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Include</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Referrals</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Count referred neighbors and</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >the free month earned after</text><text x=\"16\" y=\"192\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >their first payment clears.</text><rect x=\"16\" y=\"216\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"232\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"237\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Full picture</text><rect x=\"16\" y=\"252\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"268\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"273\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Cost shown</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "upfc_leave_it_out_21",
+    "label": "Leave It Out",
+    "desc": "Treat referrals as a bonus, not in the model.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">REFERRALS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Leave It Out</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Treat referrals as a bonus,</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >not in the model.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Cleaner</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Less detail</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-forecasting-and-projections-deck-19",
+   "repeat": false
+  },
+  {
+   "group": "Costs",
+   "category": "Costs",
+   "app": "UpKeep",
+   "ask": "Routes: Include Travel And Route Density Or Skip It?",
+   "optionA": {
+    "id": "upfc_include_routes_60",
+    "label": "Include Routes",
+    "desc": "Model drive time by how close member homes are.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">COSTS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Include Routes</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Model drive time by how</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >close member homes are.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Shows clustering</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >More detail</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "upfc_skip_it_61",
+    "label": "Skip It",
+    "desc": "Use one flat cost per visit.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">COSTS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Skip It</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Use one flat cost per visit.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Simple</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Misses travel</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-forecasting-and-projections-deck-20",
+   "repeat": false
+  }
+ ],
+ "share": true,
+ "notes": true
+}
