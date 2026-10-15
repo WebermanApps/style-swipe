@@ -1,0 +1,968 @@
+{
+ "date": "household-travel-deck",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Travel Deck",
+ "generated_at": "2026-10-15T14:47:44+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "playful": 8,
+  "premium": 8,
+  "practical": 8,
+  "bold": 8,
+  "calm": 8
+ },
+ "groups": {
+  "Trip Style": 5,
+  "Planning": 3,
+  "Far Away": 4,
+  "Nearby Countries": 4,
+  "Close By": 4
+ },
+ "apps": {
+  "Household": 20
+ },
+ "freshness": {
+  "option_slots": 40,
+  "never_shown_before": 40,
+  "share": 1.0
+ },
+ "warnings": [],
+ "brands": [
+  "Trips close by in Thailand and nearby countries, and far away",
+  "Household help for Max, Nozomi and Maple. No dashboard layout topics."
+ ],
+ "submit_agent": "household",
+ "submit_to": "Household Agent",
+ "agent_id": "c59ffdde-28bf-4ad7-8dd8-22f5e941647d",
+ "deck_size": 20,
+ "board": "household",
+ "audience": "Max and Nozomi",
+ "pairs": [
+  {
+   "group": "Trip Style",
+   "category": "Trip Style",
+   "app": "Household",
+   "ask": "Trip Length: Long Weekend Or Two Weeks?",
+   "optionA": {
+    "id": "hhtravel_long_weekend_140",
+    "label": "Long Weekend",
+    "desc": "Three or four days, close by.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">TRIP STYLE</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Long Weekend</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Three or four days, close</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >by.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Easy to fit</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Short</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhtravel_two_weeks_141",
+    "label": "Two Weeks",
+    "desc": "A proper long trip.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">TRIP STYLE</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Two Weeks</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >A proper long trip.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Deep rest</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >More planning</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-travel-deck-01",
+   "repeat": false
+  },
+  {
+   "group": "Planning",
+   "category": "Planning",
+   "app": "Household",
+   "ask": "When To Travel: School Holidays Or Off Season?",
+   "optionA": {
+    "id": "hhtravel_school_holidays_170",
+    "label": "School Holidays",
+    "desc": "Fits Maple's school calendar.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">PLANNING</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >School Holidays</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Fits Maple's school</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >calendar.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >No missed school</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Busier, pricier</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhtravel_off_season_171",
+    "label": "Off Season",
+    "desc": "Quieter and cheaper.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">PLANNING</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Off Season</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Quieter and cheaper.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Better value</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Check school</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-travel-deck-02",
+   "repeat": false
+  },
+  {
+   "group": "Far Away",
+   "category": "Far Away",
+   "app": "Household",
+   "ask": "Far Trip: Japan Or Korea?",
+   "optionA": {
+    "id": "hhtravel_japan_80",
+    "label": "Japan",
+    "desc": "Tokyo, Kyoto and countryside.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">FAR AWAY</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Japan</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Tokyo, Kyoto and</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >countryside.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Familiar</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Great trains</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhtravel_korea_81",
+    "label": "Korea",
+    "desc": "Seoul, food and palaces.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">FAR AWAY</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Korea</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Seoul, food and palaces.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >New</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Short flights within</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-travel-deck-03",
+   "repeat": false
+  },
+  {
+   "group": "Trip Style",
+   "category": "Trip Style",
+   "app": "Household",
+   "ask": "Pace: One Base Or Move Around?",
+   "optionA": {
+    "id": "hhtravel_one_base_120",
+    "label": "One Base",
+    "desc": "Stay in one place and do day trips.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">TRIP STYLE</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >One Base</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Stay in one place and do day</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >trips.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Less packing</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Easier for Maple</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhtravel_move_around_121",
+    "label": "Move Around",
+    "desc": "Two or three stops.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">TRIP STYLE</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Move Around</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Two or three stops.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >See more</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >More travel days</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-travel-deck-04",
+   "repeat": false
+  },
+  {
+   "group": "Nearby Countries",
+   "category": "Nearby Countries",
+   "app": "Household",
+   "ask": "Nearby Trip: Siem Reap Or Penang?",
+   "optionA": {
+    "id": "hhtravel_siem_reap_50",
+    "label": "Siem Reap",
+    "desc": "Angkor Wat temples in Cambodia.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">NEARBY COUNTRIES</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Siem Reap</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Angkor Wat temples in</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Cambodia.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >History</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Early starts</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhtravel_penang_51",
+    "label": "Penang",
+    "desc": "Malaysia, street art and hawker food.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">NEARBY COUNTRIES</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Penang</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Malaysia, street art and</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >hawker food.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Food</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Easy walks</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-travel-deck-05",
+   "repeat": false
+  },
+  {
+   "group": "Far Away",
+   "category": "Far Away",
+   "app": "Household",
+   "ask": "Far Trip: United States Or New Zealand?",
+   "optionA": {
+    "id": "hhtravel_united_states_100",
+    "label": "United States",
+    "desc": "Visit family, parks and cities.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">FAR AWAY</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >United States</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Visit family, parks and</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >cities.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Big variety</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Very long flight</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhtravel_new_zealand_101",
+    "label": "New Zealand",
+    "desc": "Mountains, lakes and road trips.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">FAR AWAY</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >New Zealand</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Mountains, lakes and road</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >trips.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Nature</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Campervan option</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-travel-deck-06",
+   "repeat": false
+  },
+  {
+   "group": "Nearby Countries",
+   "category": "Nearby Countries",
+   "app": "Household",
+   "ask": "City Break: Singapore Or Kuala Lumpur?",
+   "optionA": {
+    "id": "hhtravel_singapore_60",
+    "label": "Singapore",
+    "desc": "Gardens, zoo and very easy travel with kids.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">NEARBY COUNTRIES</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Singapore</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Gardens, zoo and very easy</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >travel with kids.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Clean</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Pricier</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhtravel_kuala_lumpur_61",
+    "label": "Kuala Lumpur",
+    "desc": "Towers, malls and aquarium.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">NEARBY COUNTRIES</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Kuala Lumpur</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Towers, malls and aquarium.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Good value</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Big city</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-travel-deck-07",
+   "repeat": false
+  },
+  {
+   "group": "Trip Style",
+   "category": "Trip Style",
+   "app": "Household",
+   "ask": "Days: Packed Plan Or Lots Of Free Time?",
+   "optionA": {
+    "id": "hhtravel_packed_plan_150",
+    "label": "Packed Plan",
+    "desc": "A plan for each day.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">TRIP STYLE</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Packed Plan</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >A plan for each day.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >See more</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Tiring</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhtravel_free_time_151",
+    "label": "Free Time",
+    "desc": "One plan a day, rest after.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">TRIP STYLE</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Free Time</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >One plan a day, rest after.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Relaxed</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Less covered</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-travel-deck-08",
+   "repeat": false
+  },
+  {
+   "group": "Close By",
+   "category": "Close By",
+   "app": "Household",
+   "ask": "City Weekend: Bangkok Or Hua Hin?",
+   "optionA": {
+    "id": "hhtravel_bangkok_20",
+    "label": "Bangkok",
+    "desc": "Big city, museums, malls and food.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">CLOSE BY</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Bangkok</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Big city, museums, malls and</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >food.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Lots to do</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Busy</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhtravel_hua_hin_21",
+    "label": "Hua Hin",
+    "desc": "Seaside town with night markets.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">CLOSE BY</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Hua Hin</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Seaside town with night</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >markets.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Calmer</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Beach</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-travel-deck-09",
+   "repeat": false
+  },
+  {
+   "group": "Nearby Countries",
+   "category": "Nearby Countries",
+   "app": "Household",
+   "ask": "Vietnam: Da Nang And Hoi An Or Ho Chi Minh City?",
+   "optionA": {
+    "id": "hhtravel_da_nang_and_hoi_an_70",
+    "label": "Da Nang And Hoi An",
+    "desc": "Beach plus lantern old town.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">NEARBY COUNTRIES</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Da Nang And Hoi</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >An</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Beach plus lantern old town.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Mix of both</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Family friendly</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhtravel_ho_chi_minh_city_71",
+    "label": "Ho Chi Minh City",
+    "desc": "Busy city, markets and food.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">NEARBY COUNTRIES</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Ho Chi Minh</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >City</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Busy city, markets and food.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Energy</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >City only</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-travel-deck-10",
+   "repeat": false
+  },
+  {
+   "group": "Close By",
+   "category": "Close By",
+   "app": "Household",
+   "ask": "North Thailand Road Trip: Pai Or Chiang Rai?",
+   "optionA": {
+    "id": "hhtravel_pai_10",
+    "label": "Pai",
+    "desc": "Mountain town, canyons and hot springs.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">CLOSE BY</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Pai</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Mountain town, canyons and</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >hot springs.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Winding road</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Laid back</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhtravel_chiang_rai_11",
+    "label": "Chiang Rai",
+    "desc": "White Temple, Blue Temple and tea hills.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">CLOSE BY</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Chiang Rai</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >White Temple, Blue Temple</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >and tea hills.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Easy drive</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Temples</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-travel-deck-11",
+   "repeat": false
+  },
+  {
+   "group": "Far Away",
+   "category": "Far Away",
+   "app": "Household",
+   "ask": "Far Trip: Europe Or Australia?",
+   "optionA": {
+    "id": "hhtravel_europe_90",
+    "label": "Europe",
+    "desc": "Cities, castles and trains.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">FAR AWAY</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Europe</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Cities, castles and trains.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Long flight</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Lots of history</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhtravel_australia_91",
+    "label": "Australia",
+    "desc": "Beaches, wildlife and space.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">FAR AWAY</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Australia</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Beaches, wildlife and space.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Outdoorsy</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Long flight</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-travel-deck-12",
+   "repeat": false
+  },
+  {
+   "group": "Close By",
+   "category": "Close By",
+   "app": "Household",
+   "ask": "Islands: Phuket Or Koh Lanta?",
+   "optionA": {
+    "id": "hhtravel_phuket_30",
+    "label": "Phuket",
+    "desc": "Many beaches, lots of family resorts.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">CLOSE BY</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Phuket</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Many beaches, lots of family</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >resorts.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Easy access</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Busy</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhtravel_koh_lanta_31",
+    "label": "Koh Lanta",
+    "desc": "Quiet long beaches.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">CLOSE BY</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Koh Lanta</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Quiet long beaches.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Peaceful</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Ferry needed</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-travel-deck-13",
+   "repeat": false
+  },
+  {
+   "group": "Planning",
+   "category": "Planning",
+   "app": "Household",
+   "ask": "Help Planning: Full Itinerary Or Shortlist Of Options?",
+   "optionA": {
+    "id": "hhtravel_full_itinerary_180",
+    "label": "Full Itinerary",
+    "desc": "Flights, stays and day plans.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">PLANNING</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Full Itinerary</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Flights, stays and day</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >plans.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Done for you</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Less choice</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhtravel_shortlist_of_options_181",
+    "label": "Shortlist Of Options",
+    "desc": "Three choices to pick from.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">PLANNING</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Shortlist Of</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Options</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Three choices to pick from.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >You decide</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >More steps</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-travel-deck-14",
+   "repeat": false
+  },
+  {
+   "group": "Close By",
+   "category": "Close By",
+   "app": "Household",
+   "ask": "Beach Break: Krabi Or Koh Samui?",
+   "optionA": {
+    "id": "hhtravel_krabi_00",
+    "label": "Krabi",
+    "desc": "Limestone cliffs, island hops and calm bays.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">CLOSE BY</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Krabi</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Limestone cliffs, island</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >hops and calm bays.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Short flight</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Family beaches</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhtravel_koh_samui_01",
+    "label": "Koh Samui",
+    "desc": "Resorts, soft sand and easy days.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">CLOSE BY</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Koh Samui</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Resorts, soft sand and easy</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >days.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Short flight</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Resort feel</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-travel-deck-15",
+   "repeat": false
+  },
+  {
+   "group": "Nearby Countries",
+   "category": "Nearby Countries",
+   "app": "Household",
+   "ask": "Nearby Trip: Luang Prabang Or Hanoi?",
+   "optionA": {
+    "id": "hhtravel_luang_prabang_40",
+    "label": "Luang Prabang",
+    "desc": "Laos river town, temples and waterfalls.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">NEARBY COUNTRIES</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Luang Prabang</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Laos river town, temples and</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >waterfalls.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Slow pace</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Short flight</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhtravel_hanoi_41",
+    "label": "Hanoi",
+    "desc": "Vietnam old quarter and food.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">NEARBY COUNTRIES</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Hanoi</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Vietnam old quarter and</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >food.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Busy streets</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Ha Long Bay trip</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-travel-deck-16",
+   "repeat": false
+  },
+  {
+   "group": "Far Away",
+   "category": "Far Away",
+   "app": "Household",
+   "ask": "In Japan: Big Cities Or Countryside And Hot Springs?",
+   "optionA": {
+    "id": "hhtravel_big_cities_110",
+    "label": "Big Cities",
+    "desc": "Tokyo and Osaka sights.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">FAR AWAY</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Big Cities</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Tokyo and Osaka sights.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Lots to see</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Busy</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhtravel_countryside_and_hot_spri_111",
+    "label": "Countryside And Hot Springs",
+    "desc": "Ryokan stays and slow days.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">FAR AWAY</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Countryside And</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Hot Springs</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Ryokan stays and slow days.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Restful</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fewer sights</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-travel-deck-17",
+   "repeat": false
+  },
+  {
+   "group": "Trip Style",
+   "category": "Trip Style",
+   "app": "Household",
+   "ask": "Stay: Hotel Or Apartment Rental?",
+   "optionA": {
+    "id": "hhtravel_hotel_130",
+    "label": "Hotel",
+    "desc": "Breakfast, pool and cleaning.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">TRIP STYLE</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Hotel</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Breakfast, pool and</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >cleaning.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Easy</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Less space</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhtravel_apartment_rental_131",
+    "label": "Apartment Rental",
+    "desc": "Kitchen and more room.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">TRIP STYLE</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Apartment</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Rental</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Kitchen and more room.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Space</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Self catering</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-travel-deck-18",
+   "repeat": false
+  },
+  {
+   "group": "Planning",
+   "category": "Planning",
+   "app": "Household",
+   "ask": "Who Comes: Just The Three Of Us Or With Family Or Friends?",
+   "optionA": {
+    "id": "hhtravel_just_the_three_of_us_190",
+    "label": "Just The Three Of Us",
+    "desc": "Max, Nozomi and Maple.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">PLANNING</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Just The Three</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Of Us</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Max, Nozomi and Maple.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Simple</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Flexible</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhtravel_with_family_or_friends_191",
+    "label": "With Family Or Friends",
+    "desc": "Bigger group trip.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">PLANNING</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >With Family Or</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Friends</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Bigger group trip.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Social</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >More to arrange</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-travel-deck-19",
+   "repeat": false
+  },
+  {
+   "group": "Trip Style",
+   "category": "Trip Style",
+   "app": "Household",
+   "ask": "Getting There: Fly Or Drive And Train?",
+   "optionA": {
+    "id": "hhtravel_fly_160",
+    "label": "Fly",
+    "desc": "Quickest way there.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">TRIP STYLE</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Fly</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Quickest way there.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fast</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Airport time</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhtravel_drive_and_train_161",
+    "label": "Drive And Train",
+    "desc": "Slower, see the way.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">TRIP STYLE</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Drive And Train</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Slower, see the way.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Scenic</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Longer</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-travel-deck-20",
+   "repeat": false
+  }
+ ],
+ "share": true,
+ "notes": true
+}
