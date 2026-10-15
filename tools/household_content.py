@@ -167,3 +167,7 @@ P("Music", "Dance Time: Bounce To Music On A Lap Or Sway In The Carrier?", "Lap 
 _mo, _ml = DECKS["maple-outings"][2], DECKS["maple-learning"][2]
 _d("maple", "Maple Deck", "Baby-friendly outings for Maple in Chiang Mai (10) and sensory, early-development play (10); Maple is 8 months",
    [_mo[i] for i in (0, 1, 2, 3, 4, 5, 6, 7, 11, 17)] + [_ml[i] for i in (0, 2, 3, 4, 6, 8, 10, 11, 12, 15)])
+
+# Maple Baby Days Deck (Branding for Household, Oct 16 2026 ICT): refill after Maple Deck results (18/20). Fresh 20: the 10 baby outings + 10 sensory-play pairs not used in Maple Deck; Maple is 8 months.
+_d("maple-baby-days", "Maple Baby Days Deck", "Fresh baby-friendly outings (10) and sensory, early-development play (10) for Maple (8 months); none repeat the Maple Deck",
+   [_mo[i] for i in (8, 9, 10, 12, 13, 14, 15, 16, 18, 19)] + [_ml[i] for i in (1, 5, 7, 9, 13, 14, 16, 17, 18, 19)])
