@@ -91,6 +91,9 @@ if did in FOLD:
         for o in (a, b): o["id"] = "rt_" + o["id"]; o["notes"] = True; o["share"] = True
         add("Round Two Retest: " + p["group"].replace("Retest: ", ""), "Round Two Retest", a, b, p["ask"], "retest"); pairs[-1]["retest"] = True
     assert len(pairs) <= 20, (did, len(pairs)); print("folded", did, "+", len(src), "-", len(drop), "=", len(pairs))
+from wn_guard import blocked as _wnb, RULE as _WNR
+_bad = [p["ask"] for p in pairs if _wnb(p, False)]
+if _bad: sys.exit("WellNest guard (" + _WNR + ") blocks: " + "; ".join(_bad))
 cnt = {}
 for p in pairs: cnt[p["group"]] = cnt.get(p["group"], 0) + 1
 publish(did, spec["name"], "WellNest", pairs,

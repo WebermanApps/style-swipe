@@ -41,6 +41,9 @@ for n, D in enumerate(DECKS):
             oid = re.sub(r"[^a-z0-9]+", "_", o[0].lower())[:24] + f"_{gi}{side}"
             opts.append(O(oid, o[0], o[1], FEEL[(gi * 2 + side) % 5], svg(g, o[0], o[1], o[2:], acc[(gi + side * 2) % 4])))
         add(g, g, opts[0], opts[1], ask)
+    from wn_guard import blocked as _wnb, RULE as _WNR  # no dashboard layout / deck-building pairs
+    _bad = [p["ask"] for p in pairs if _wnb(p, False)]
+    if _bad: sys.exit("WellNest guard (" + _WNR + ") blocks: " + "; ".join(_bad))
     publish(did, D["name"], "WellNest", pairs, {"brands": [D["about"], "Business strategy deck for P'Thom and Max (row two). No branding, visual style or dashboard topics."],
             "submit_agent": "wellnest", "submit_to": "WellNest Agent", "deck_size": 20, "row": "business", "audience": "P'Thom and Max",
             "sources": {"queue": "/workspace/wellnest/deck-queue.json"}}, seed=4100 + n, n=20)

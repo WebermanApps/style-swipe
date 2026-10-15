@@ -5,7 +5,7 @@ charts/progress widgets, upload/chat/projects/deck-card blocks...). Dashboard CO
 All non-dashboard WellNest topics (brand, farm, tea, wellness, rentals, classes, voice, products, online) stay.
 Used by tools/ready_shelf.py (refills/builds) and tools/build_banks.py (wellnest bank generation)."""
 import re
-RULE = "Max Oct 15 2026 12:45 ICT: WellNest decks carry no dashboard layout/structure questions; dashboard colour and font only."
+RULE = "Max Oct 15 2026 12:45/13:04 ICT: WellNest decks carry no dashboard layout/structure questions and no deck-building questions (deck design, controls, swipe buttons, shelf, launcher, deck tags); dashboard colour and font only."
 # dashboard-only surfaces: always blocked in a WellNest pair's group/category/ask
 DASH = re.compile(r"\b(from the feed|latest open items|open items|deck cards?|deck progress|swipe decks|a started deck|apps and links|"
                   r"brand decisions|report dropdown|weekly report|open projects|each project|team chat|message box|unread messages|"
@@ -19,6 +19,10 @@ GEN = re.compile(r"\b(sections?|section order|first section|header|banner|logo p
                  r"columns?|carousel|density|big screen|laptop|on phone|phone crop|thumbnails?|render|frame|tap the banner|"
                  r"collapsed|dropdown|on top|top:|tiles?|stacked|side by side|list)\b", re.I)
 ALLOW = re.compile(r"\b(colou?rs?|fonts?|typefaces?|serif|cormorant|dm sans|typography|text size|italic|tags? colou?r|headings?:)\b", re.I)
+# deck-building surfaces (Max rule Oct 15 2026 13:04 ICT): never in a WellNest deck, colour or font included
+DECKB = re.compile(r"\b(swipe decks?|style swipe|deck[- ](tags?|design|cards?|controls?|buttons?|colou?rs?|shelf|launcher|building|builder|look|page|progress|header|footer|results?)|"
+                   r"swipe (buttons?|controls?|cards?)|this/that|love button|skip button|neither button|both button|notes? button|share button|submit button|"
+                   r"ready shelf|deck shelf|shelf decks?|launcher|deck queue)\b", re.I)
 def is_wellnest(p, topic=""):
     return "wellnest" in (topic or "").lower() or str(p.get("app", "")).lower() == "wellnest" or str(p.get("id", "")).lower().startswith(("wellnest", "bkwn"))
 def head(p): return " ".join(str(p.get(k, "")) for k in ("group", "category", "ask"))
@@ -29,6 +33,7 @@ def _colour_font_only(ask):
 def blocked(p, ctx_dash=False):
     """True when a WellNest pair is about dashboard layout or structure. Pure colour/font asks are allowed."""
     h, ask = head(p), str(p.get("ask", ""))
+    if DECKB.search(h): return True
     if DASH.search(h) or STRUCT.search(h): return not _colour_font_only(ask)
     if ctx_dash and GEN.search(h):
         return not (ALLOW.search(h) and not GEN.search(re.sub(r"(?i)section titles?", "titles", ask)))
