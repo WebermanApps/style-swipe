@@ -101,7 +101,8 @@ WELL = [
  ("Brand", "Guest Keepsake: Pressed Roselle Bookmark Or Seed Packet?", ("Pressed Roselle Bookmark", "A flower to keep", off("Pressed Roselle Bookmark", "A flower to keep", "flower", btn="Shop")), ("Seed Packet", "Grow your own at home", off("Seed Packet", "Grow your own at home", "leaf", btn="Shop"))),
 ]
 PLAN = {
- "wellnest-dashboard-online-1": dict(name="Dashboard Colours, Rentals And Classes", pool=CF[:9] + RENT, about="Dashboard colour and font only (no layout), plus rentals, classes and wellness"),
+ # wellnest-dashboard-online-1 was submitted (done 2026-10-15 12:45:15 ICT) before this fix, so it is left as completed.
+ # "wellnest-dashboard-online-1": dict(name="Dashboard Colours, Rentals And Classes", pool=CF[:9] + RENT, about="Dashboard colour and font only (no layout), plus rentals, classes and wellness"),
  "wellnest-dashboard-online-2": dict(name="Dashboard Fonts, Farm And Tea", pool=CF[9:] + FARM, about="Dashboard colour and font only (no layout), plus farm, tea, brand and wellness"),
  "wellnest-dashboard": dict(name="WellNest Colour, Font And Wellness Deck", pool=CF[1:2] + CF[13:16] + WELL, about="Dashboard colour, font and avatar only (no layout), plus wellness, rentals, classes, farm and tea", ctx=True),
 }
