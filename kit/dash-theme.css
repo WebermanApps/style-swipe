@@ -18,3 +18,15 @@ html,body{background:var(--dash-bg)!important;color:var(--dash-text)}
 .card{background-color:var(--dash-card);border-color:var(--dash-border)}
 .section-accent{background-color:var(--dash-beige);border-color:var(--dash-beige-border)}
 /* sections stay transparent on the white page; opt-in beige band via .section-accent */
+
+/* Numbered item block (.mw-item) - shared by Coach, Research and others.
+   Markup: <ol class="mw-items"><li class="mw-item"><span class="mw-num">01</span><div class="mw-body"><h3>Title</h3><p>Text</p></div></li></ol>
+   White fill, 1px beige outline, square corners, 2-digit uppercase badge. Add .mw-item--accent for a beige fill. */
+.mw-items{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.mw-item{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;background:#fff;border:1px solid #e3ddd2;border-radius:0}
+.mw-item--accent{background:#FAF6EE}
+.mw-num{flex:none;min-width:36px;height:28px;display:inline-flex;align-items:center;justify-content:center;padding:0 6px;border:1px solid #171717;font:600 12px/1 var(--mw-font-body,'Hind',sans-serif);letter-spacing:.1em;text-transform:uppercase;color:#171717;background:#fff}
+.mw-body{flex:1;min-width:0}
+.mw-body h3{margin:0 0 4px;font:600 18px/1.25 var(--mw-font-heading,'Khand',sans-serif);color:#0a0a0a}
+.mw-body p{margin:0;font-size:15px;line-height:1.5;color:#404040}
+@media(max-width:480px){.mw-item{padding:14px;gap:12px}.mw-body h3{font-size:17px}}
