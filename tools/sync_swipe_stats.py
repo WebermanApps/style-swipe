@@ -12,6 +12,6 @@ for ag, v in A.items():
     if not isinstance(v, dict): continue
     days = v.get("daily") or v.get("days") or {k: n for k, n in v.items() if re.match(r"^\d{4}-\d{2}-\d{2}$", k)}
     days = {k: int(n.get("swipes", n.get("count", 0)) if isinstance(n, dict) else n) for k, n in days.items()}
-    out[ag] = {"total": int(v.get("all_time", v.get("total", sum(days.values())))), "days": days}
+    out[ag] = {"total": int(v.get("all_time", v.get("total", sum(days.values())))), "days": days, **{k: v[k] for k in ("decks_today","decks_total","deck_days") if k in v}}
 json.dump({"updated": j.get("updated"), "tz": "Asia/Bangkok", "agents": out}, open(DST, "w"), indent=1)
 print("wrote", DST, len(out), "agents")
