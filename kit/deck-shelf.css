@@ -27,3 +27,6 @@
 .ds-dots{display:flex;justify-content:center;gap:6px;margin-top:4px}.ds-dots i{width:6px;height:6px;border-radius:50%;background:#D6D0C6}.ds-dots i.on{background:#0B6E4F}
 .ds-empty a{color:#0B6E4F;font-weight:600}
 @media(min-width:2000px){.ds-all{font-size:15px}}
+
+/* Tap target: All Decks link keeps its small look but is a 44px tap area (Oct 15 2026) */
+.ds-all{display:inline-flex;align-items:center;min-height:44px;min-width:44px;padding:0 8px;box-sizing:border-box}
