@@ -50,9 +50,6 @@ P("Payment And Billing", "Payment Term Line: \"Paid Yearly\" Or \"2-Year Prepay\
 P("Payment And Billing", "Billing History: List Of Payments Or Receipts To Download?",
   ("bh_list", "List Of Payments", "Date and amount per row.", "calm", [C([("Apr 2026", "Plus · yearly", "Paid"), ("Apr 2027", "Renewal", "Due")])]),
   ("bh_rcpt", "Download Receipts", "One button per receipt.", "focused", [C([("Apr 2026 receipt", "", "")], None, 30), BO("Download Receipt")]))
-P("Payment And Billing", "Card On File: Last Four Digits Or Card Brand Picture Too?",
-  ("cf_four", "Last Four Only", "\"Card ending 0000\".", "calm", [C([("Card ending 0000", "", "Edit")])]),
-  ("cf_brand", "Brand Picture Too", "Small card logo beside it.", "visual", [("tiles", [("Card ending 0000", "tag")], 1, 44)]))
 P("Payment And Billing", "Add-On Prices On The Plan Screen: List With +$/Month Or Show Two And \"See All\"?",
   ("ap_list", "Full List", "Every add-on with its price.", "calm", [C([("Exterior Window Washing", "", "+$19/mo"), ("Chimney Sweep", "", "+$21/mo"), ("Radon Test", "", "+$8/mo"), ("Air Duct Cleaning", "", "+$33/mo")], None, 26)]),
   ("ap_two", "Two Plus See All", "Shorter screen.", "quick", [C([("Exterior Window Washing", "", "+$19/mo"), ("Chimney Sweep", "", "+$21/mo")], None, 26), ("btn", "See All Add-Ons", "link", LAGOON)]))
@@ -74,12 +71,18 @@ P("Home Record Access", "Recall Monitoring Note In Profile: Show The Full Senten
 P("Notifications", "Notification Settings: Toggles In Profile Or Its Own Screen?",
   ("ns_prof", "In Profile", "Three toggles under Contact.", "calm", [("toggles", [("Visit reminders", True), ("Visit reports ready", True), ("Tips and Did You Know", False)])]),
   ("ns_own", "Own Screen", "\"Notifications ›\" opens a page.", "quick", [C([("Notifications", "3 settings", "›")])]))
-P("Notifications", "Notify By: Choose Per Type (Push, Email, Text) Or One Channel For All?",
-  ("nb_each", "Per Type", "Pick push, email or text per notice.", "focused", [("table", [("Reminders", "Push + Email"), ("Reports", "Push"), ("Tips", "Email")])]),
-  ("nb_one", "One Channel", "One choice for everything.", "quick", [("tabs", ["Push", "Email", "Text"], "pill")]))
 P("Notifications", "Scan Results Notice: \"Whole-Home Mold And Moisture Scan Results Ready\" Or Part Of The Visit Report Notice?",
   ("sr_own", "Own Notice", "Separate alert for scan results.", "focused", [("banner", "Whole-Home Mold and Moisture Scan results ready", LAGOON, "check")]),
   ("sr_part", "Part Of Visit Report", "One alert per visit.", "calm", [("banner", "Your Fall Visit report is ready", LAGOON, "check")]))
+# Member Tools skips 05 + 09 (Max 19:53) re-asked as cards 2 and 3
+mt = json.load(open("decks/upkeep-member-tools-member-tools-deck.json"))["pairs"]
+ra = []
+for n in ("05", "09"):
+    q = json.loads(json.dumps(next(x for x in mt if x["id"].endswith("-" + n))))
+    q["ask"] = "Re-Ask, " + q["ask"]; q["carried_from"] = q["id"]; q["purpose"] = "retest"
+    for k in "AB": q["option" + k]["id"] += "_ra"
+    ra.append(q)
+pairs[1:1] = ra
 assert len(pairs) == 20, len(pairs)
 pairs[0]["carried_from"] = "upkeep-member-home-member-home-deck-10"; pairs[0]["purpose"] = "retest"
 json.dump({"pairs": pairs}, open("banks/src-upkeep-member-profile.json", "w"), indent=1, ensure_ascii=False); print(len(pairs))
