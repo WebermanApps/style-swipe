@@ -1,7 +1,8 @@
 /* Ready To Swipe shelf (R66; look spec Max Oct 14 2026 19:49 ICT from the Up Next Deck; cap 19:43 ICT).
    Top of every agent dashboard: slim swipe carousel of at most 5 ALREADY-BUILT 20-card decks (ready + pinned unfinished together).
    Label 'Ready To Swipe' + small grey 'N done today'. Card = title + category tag, thin coloured top stripe, whole card tappable,
-   small 'Start' (or 'Continue' when started). Order: started first, then newest first; a refill keeps the slot it replaced and shows
+   small 'Start' (or 'Continue, N left' when started, thin green outline). Deck Two picks (21:35 ICT): one row on wide screens, card-edge stack,
+   'All Decks' link, grey pill tag, greyed 'Done' after submit, opens in a new tab, dots under the phone strip, empty state links to Deck Building. Order: started first, then newest first; a refill keeps the slot it replaced and shows
    a green 'New' badge until opened. No icons, no time estimate. Calm empty state. Extras are queued (DeckShelf.queued(el)).
    Usage: <section data-shelf="shelf.json"></section> + this script (+ deck-shelf.css). Schema: kit/shelf.schema.json.
    Deck Building page only: data-shelf-nocap. Back-compat: launcher.json ({ready, unfinished}) also renders. */
@@ -9,6 +10,9 @@
 const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
 const LS=k=>{try{return localStorage.getItem(k)}catch(_){return null}};
 const today=()=>new Date().toLocaleDateString('en-CA');
+const sub=d=>!!(d.id&&LS('styleSwipe:submitted:'+d.id));
+const left=d=>{const t=d.total||20;let a=d.answered||0;try{const s=JSON.parse(LS('styleSwipe:'+d.id)||LS('styleSwipe:v3:'+d.id)||'null');if(s&&s.picks)a=Math.max(a,s.picks.length)}catch(_){}return Math.max(0,t-a)};
+const ALL='https://webermanapps.github.io/branding-djqmb410/decks/';
 const started=d=>{if((d.answered||0)>0)return true;if(!d.id||LS('styleSwipe:submitted:'+d.id))return false;
  try{const s=JSON.parse(LS('styleSwipe:'+d.id)||LS('styleSwipe:v3:'+d.id)||'null');return !!(s&&s.picks&&s.picks.length)}catch(_){return false}};
 const tagOf=d=>d.tag||d.category||(d.topic?String(d.topic).replace(/[-_]+/g,' ').replace(/\b\w/g,c=>c.toUpperCase()):'Deck');
@@ -45,14 +49,16 @@ function paintStats(box,J){const st=box.querySelector('.ds-stats');if(!st)return
   st.append(f(v.today,(fmtDecks(v.today)==='1'?'deck':'decks')+' today'),f(v.total,(fmtDecks(v.total)==='1'?'deck':'decks')+' all-time'));st.hidden=false}).catch(()=>{})}
 function render(box,J,o){o=o||{};J=J||{};const all=order(norm(J,o)),cap=(o.nocap||box.hasAttribute('data-shelf-nocap'))?all.length:CAP,decks=all.slice(0,cap);
  box._dsQueued=all.slice(cap);box.textContent='';box.classList.add('ds-sec');box.id=box.id||'ready-to-swipe';
- const h=el('div','ds-head');h.append(el('h2','','Ready To Swipe'));const n=doneToday(J);if(n)h.append(el('span','ds-done',n+' done today'));const st=el('div','ds-stats');st.hidden=true;h.append(st);box.append(h);paintStats(box,J);
- if(!decks.length){box.append(el('p','ds-empty','All caught up. New decks are on the way.'));return}
+ const h=el('div','ds-head');h.append(el('h2','','Ready To Swipe'));const n=doneToday(J);if(n)h.append(el('span','ds-done',n+' done today'));const st=el('div','ds-stats');st.hidden=true;h.append(st);const allU=box.dataset.all||J.all_url||ALL;if(!box.hasAttribute('data-shelf-nocap')){const al=el('a','ds-all','All Decks');al.href=allU;h.insertBefore(al,st)}box.append(h);paintStats(box,J);
+ if(!decks.length){const p=el('p','ds-empty','All caught up. New decks are on the way. ');const l=el('a','','Deck Building');l.href=allU;p.append(l);box.append(p);return}
  const g=el('div','ds-strip');g.setAttribute('role','list');
  decks.forEach(d=>{const a=el('a','ds-card');a.href=d.url;a.setAttribute('role','listitem');const tag=tagOf(d),s=started(d);a.style.setProperty('--ds-c',d.color||col(tag));
-  const fresh=d.refill&&!s&&!LS('ds-opened:'+(d.id||d.url));if(fresh)a.append(el('span','ds-new','New'));
-  a.append(el('b','ds-name',d.name||'Deck'),el('span','ds-tag',tag),el('span','ds-go',s?'Continue':'Start'));
+  const dn=sub(d);if(dn){a.classList.add('ds-donecard');a.setAttribute('aria-disabled','true')}else if(s)a.classList.add('ds-started');a.target='_blank';a.rel='noopener';
+  const fresh=!dn&&d.refill&&!s&&!LS('ds-opened:'+(d.id||d.url));if(fresh)a.append(el('span','ds-new','New'));
+  a.append(el('b','ds-name',d.name||'Deck'),el('span','ds-tag',tag),el('span','ds-go',dn?'Done':s?'Continue, '+left(d)+' left':'Start'));
   a.addEventListener('click',()=>{try{localStorage.setItem('ds-opened:'+(d.id||d.url),'1')}catch(_){}});g.append(a)});
- box.append(g)}
+ box.append(g);if(decks.length>2){const dt=el('div','ds-dots');dt.setAttribute('aria-hidden','true');decks.forEach((_,i)=>dt.append(el('i',i?'':'on')));box.append(dt);
+  g.addEventListener('scroll',()=>{const w=g.scrollWidth-g.clientWidth,k=w>0?Math.round(g.scrollLeft/w*(decks.length-1)):0;[...dt.children].forEach((x,i)=>x.className=i===k?'on':'')},{passive:true})}}
 function init(){document.querySelectorAll('[data-shelf],[data-launcher]').forEach(b=>{if(b.dataset.dsDone)return;b.dataset.dsDone=1;
  fetch((b.dataset.shelf||b.dataset.launcher)+'?'+Date.now()).then(r=>r.json()).then(J=>render(b,J)).catch(()=>render(b,{decks:[]}))})}
 window.DeckShelf={render,CAP,queued:b=>b._dsQueued||[]};window.DeckLauncher=window.DeckLauncher||{render};

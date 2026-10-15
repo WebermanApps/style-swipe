@@ -1,5 +1,7 @@
 /* Ready To Swipe shelf (R66 look, Max Oct 14 2026 19:49 ICT): slim carousel strip, white cards, thin category stripe, Khand/Hind, no icons, no emoji.
-   Phone: 2.5 cards visible. Wide screens: the 5 cards fit one row (big-screen layout still open, re-asked). Crisp at 393 / 1470 / 2560. */
+   Phone: 2.5 cards visible, strip runs to the screen edge, dots underneath. Wide screens (>=900px): all decks side by side in one row, no carousel.
+   Ready To Swipe Deck Two picks (Max Oct 14 2026 21:35 ICT): card-edge stack (no '20 cards' words), small 'All Decks' link, grey pill tag,
+   thin green outline on a started deck, 'Continue, N left', greyed 'Done' after submit, roomier cards, opens in a new tab. Crisp at 393 / 1470 / 2560. */
 .ds-sec{margin:10px 0 12px;font-family:Hind,system-ui,sans-serif;color:#0A0A0A;box-sizing:border-box;max-width:100%;min-width:0}
 .ds-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;margin:0 0 6px}
 .ds-stats{margin-left:auto;display:flex;gap:12px;align-items:baseline}.ds-stats[hidden]{display:none}
@@ -10,11 +12,18 @@
 .ds-empty{margin:0;padding:10px 12px;background:#fff;border:1px solid #E5E0D8;border-radius:10px;color:#525252;font-size:14px}
 .ds-strip{--g:8px;display:flex;gap:var(--g);overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:1px 1px 4px;margin:0 -1px}
 .ds-strip::-webkit-scrollbar{display:none}
-.ds-card{position:relative;flex:0 0 calc((100% - 2 * var(--g)) / 2.5);min-width:0;scroll-snap-align:start;box-sizing:border-box;background:#fff;border:1px solid #E5E0D8;border-top:3px solid var(--ds-c,#05668D);border-radius:10px;padding:8px 10px 8px;min-height:86px;display:flex;flex-direction:column;gap:4px;color:#0A0A0A;text-decoration:none}
-@media(min-width:900px){.ds-card{flex-basis:calc((100% - 4 * var(--g)) / 5)}.ds-strip{--g:10px}}
-@media(min-width:2000px){.ds-sec h2{font-size:23px}.ds-card{min-height:104px;padding:12px 14px}.ds-name{font-size:19px!important}.ds-tag,.ds-go,.ds-done{font-size:15px!important}}
+.ds-card{position:relative;flex:0 0 calc((100% - 2 * var(--g)) / 2.5);min-width:0;scroll-snap-align:start;box-sizing:border-box;background:#fff;border:1px solid #E5E0D8;border-top:3px solid var(--ds-c,#05668D);border-radius:10px;padding:10px 12px 10px;min-height:100px;margin-bottom:4px;box-shadow:0 2px 0 -1px #fff,0 2px 0 0 #E5E0D8,0 4px 0 -1px #fff,0 4px 0 0 #E5E0D8;display:flex;flex-direction:column;gap:4px;color:#0A0A0A;text-decoration:none}
+@media(min-width:900px){.ds-strip{--g:10px;overflow:visible;scroll-snap-type:none}.ds-card{flex:1 1 0}.ds-dots{display:none!important}}
+@media(max-width:899px){.ds-strip{margin:0 calc(-1 * var(--ds-bleed,12px));padding:1px var(--ds-bleed,12px) 6px;scroll-padding:0 var(--ds-bleed,12px)}}
+@media(min-width:2000px){.ds-sec h2{font-size:23px}.ds-card{min-height:120px;padding:14px 16px}.ds-name{font-size:19px!important}.ds-tag,.ds-go,.ds-done{font-size:15px!important}}
 .ds-card:hover,.ds-card:focus-visible{border-color:#0B6E4F;border-top-color:var(--ds-c,#05668D);box-shadow:0 0 0 1px #0B6E4F;outline:0}
 .ds-name{font-family:Khand,sans-serif;font-weight:600;font-size:16px;line-height:1.15;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;padding-right:26px}
-.ds-tag{align-self:flex-start;font-size:12px;font-weight:600;color:var(--ds-c,#05668D);background:#FDFBF6;border:1px solid #EFEAE1;border-radius:999px;padding:0 8px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ds-tag{align-self:flex-start;font-size:12px;font-weight:600;color:#525252;background:#F5F3EF;border:1px solid #E5E0D8;border-radius:999px;padding:0 8px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .ds-go{margin-top:auto;font-size:13px;font-weight:600;color:#0B6E4F}
 .ds-new{position:absolute;top:6px;right:6px;font-size:11px;font-weight:700;letter-spacing:.04em;color:#fff;background:#0B6E4F;border-radius:999px;padding:1px 7px}
+.ds-all{font-size:13px;color:#0B6E4F;text-decoration:none;font-weight:600}.ds-all:hover{text-decoration:underline}
+.ds-card.ds-started{border-color:#0B6E4F;border-top-color:var(--ds-c,#05668D);box-shadow:0 0 0 1px #0B6E4F,0 2px 0 -1px #fff,0 2px 0 0 #E5E0D8,0 4px 0 -1px #fff,0 4px 0 0 #E5E0D8}
+.ds-card.ds-donecard{opacity:.5;filter:grayscale(1);pointer-events:none}.ds-card.ds-donecard .ds-go{color:#737373}
+.ds-dots{display:flex;justify-content:center;gap:6px;margin-top:4px}.ds-dots i{width:6px;height:6px;border-radius:50%;background:#D6D0C6}.ds-dots i.on{background:#0B6E4F}
+.ds-empty a{color:#0B6E4F;font-weight:600}
+@media(min-width:2000px){.ds-all{font-size:15px}}
