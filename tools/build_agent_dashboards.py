@@ -10,7 +10,7 @@ from team_kit import deck, publish
 from draft_svg import TERRA, LAGOON, JUNGLE, SAFFRON, W
 from dash_kit import R, T, L, D, chev, phone, poly, wave, bars
 DID = "agent-dashboards"
-B = dict(name="Agent", bg="#FDFBF6", ink="#0A0A0A", mute="#525252", line="#E5E0D8", soft="#F3ECDD", acc=[TERRA, LAGOON, JUNGLE, SAFFRON],
+B = dict(name="Agent", bg="#FFFFFF", ink="#0A0A0A", mute="#525252", line="#E5E0D8", soft="#F3ECDD", acc=[TERRA, LAGOON, JUNGLE, SAFFRON],
          head="Khand, sans-serif", body="Hind, sans-serif", r=6, hw=600)
 INK, MUTE, LN = B["ink"], B["mute"], B["line"]; ACC = B["acc"]
 pairs, O, add = deck("ad_", "Agent Dashboards")
@@ -161,7 +161,7 @@ cnt = {}
 for p in pairs: cnt[p["group"]] = cnt.get(p["group"], 0) + 1
 publish(DID, "Agent Dashboards Deck", "Agent Dashboards", pairs,
         {"brands": ["Agent Dashboards: board-specific open layout and content choices across Scout, Blueprint, Construction, Prop, Security, Research, Coach, Miles, Thai, Apps Home, Portfolio and WellNest",
-                    "Cream #FDFBF6 page, white cards, Khand/Hind, terracotta/lagoon/jungle/saffron accents; skips everything settled in the Dashboard Rulebook (R1-R64) and earlier board decks"],
+                    "White page (beige #FAF6EE accents), white cards, Khand/Hind, terracotta/lagoon/jungle/saffron accents; skips everything settled in the Dashboard Rulebook (R1-R64) and earlier board decks"],
          "submit_agent": "branding", "submit_to": "Branding Agent", "section_counts": cnt, "deck_size": N, "one_card_per_screen": True,
          "routing": "/workspace/ops/brand/agent-dashboards-routing.md"},
         seed=1415, n=N)

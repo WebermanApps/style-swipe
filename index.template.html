@@ -375,7 +375,7 @@ body.carding #btnSubmitTop{min-height:36px;font-size:13px;padding:0 9px;flex:non
 </style><!--/mw-polish-->
 <!--mw-family--><style id="mw-family">
 /* MW app family (Oct 14 2026): match Max's dashboards (/workspace/ops/brand/dashboard-style.md, maxweberman-brand.md).
-   Very light cream base #FDFBF6 (Max, Oct 14: white too bright, old cream too heavy), white cards, Khand headings, Hind body, ink #0A0A0A, muted #525252, lines #E5E0D8, small terracotta/lagoon/jungle accents.
+   Superseded Oct 15 13:03 ICT by mw-white block below (white page, beige accents), white cards, Khand headings, Hind body, ink #0A0A0A, muted #525252, lines #E5E0D8, small terracotta/lagoon/jungle accents.
    Colours, borders, radii and shadows only: no size or spacing changes, so the one-screen fit is unchanged. */
 :root{--bg:#FDFBF6;--panel:#FFFFFF;--line:#E5E0D8;--text:#0A0A0A;--muted:#525252}
 html,body{background:#FDFBF6;color:#0A0A0A}
@@ -432,6 +432,22 @@ footer a,.builtby a{color:#0A0A0A}
  body.carding .opt p{font-size:15px!important}
 }
 </style><!--/mw-family-->
+<!--mw-white--><style id="mw-white">
+/* Deck look = dashboards (Max, Oct 15 2026 13:03 ICT): white page, light beige accents. Tokens: kit/dash-theme.css. Colours only. */
+:root{color-scheme:light only;--bg:#ffffff!important;--panel:#ffffff;--line:#e5e5e5;--text:#0a0a0a;--muted:#737373;--dash-beige:#FAF6EE;--dash-beige-border:#e3ddd2;--dash-primary:#171717}
+html,body{background:#ffffff!important;color:#0a0a0a}
+header{background:#FAF6EE!important;border-bottom:1px solid #e3ddd2!important}
+.card,.stat,.opt,.pill,#noteSheet .box{background-color:#ffffff;border-color:#e5e5e5}
+.vis,.v-svg{background:#ffffff!important}
+.progress{background:#FAF6EE!important;border:1px solid #e3ddd2}
+.progress>div{background:#171717!important}
+.notebtn,#noteSheet textarea{background:#FAF6EE;border-color:#e3ddd2!important}
+#noteSheet .nrow button.save{background:#171717;border-color:#171717;color:#fafafa}
+.opt.sel,.opt.selected,.opt.on,.opt[aria-pressed=true],.card.sel,.card.selected,.card.chosen,.pill.on,.pill.sel{background:#FAF6EE!important;border-color:#e3ddd2!important}
+.tag{background:#FAF6EE;color:#737373}
+.sharebtn{background:#ffffff;border-color:#171717;color:#171717}.sharebtn:hover{background:#171717;color:#fafafa}
+footer,.builtby{background:#ffffff!important;color:#737373;border-top:1px solid #e5e5e5}
+</style><!--/mw-white-->
 </head>
 <body>
 <header>

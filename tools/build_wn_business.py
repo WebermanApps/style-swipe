@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """WellNest row two 'For P'Thom And Max' (Max, Oct 15 2026 12:43 ICT): 10 ready 20-pair business strategy decks
 (5 shelf + 5 refill pool). Content: tools/wn_business_content.py. Same page pattern as build_wn_series.py
-(cream #FDFBF6, wn-deck-done on real submit, Back -> wellnest-dashboard/?done=<deckId>), team_kit.publish (Notes + Share on),
+(white page + beige accents, wn-deck-done on real submit, Back -> wellnest-dashboard/?done=<deckId>), team_kit.publish (Notes + Share on),
 Khand/Hind, submit_agent wellnest. usage: build_wn_business.py [key ...]  -> prints JSON lines {deckId,name,url}"""
 import sys, os, json, re, string, secrets
 sys.path.insert(0, os.path.dirname(__file__))
@@ -10,7 +10,7 @@ from draft_svg import t, rect, TERRA, LAGOON, JUNGLE, SAFFRON
 from team_kit import shareic, wrap
 from wn_business_content import DECKS
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); os.chdir(ROOT)
-BG, INK, MUTE, LINE = "#FDFBF6", "#0A0A0A", "#525252", "#E5E0D8"
+BG, INK, MUTE, LINE = "#FFFFFF", "#0A0A0A", "#525252", "#E5E0D8"
 SL = "queue/wn-business-slugs.json"; slugs = json.load(open(SL)) if os.path.exists(SL) else {}
 FEEL = ["practical", "bold", "calm", "playful", "premium"]
 def svg(group, label, desc, facts, acc):

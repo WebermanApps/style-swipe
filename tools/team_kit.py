@@ -215,7 +215,7 @@ def deck(prefix, app):
     def O(i, label, desc, feel, blocks, tags=()):
         svg = blocks if isinstance(blocks, str) else render(blocks)
         return {"id": prefix + i, "label": label, "desc": desc, "tags": list(dict.fromkeys(list(tags) + [feel])), "feeling": feel, "notes": True, "share": True,
-                "visual": {"type": "hm", "m": "svg", "svg": svg, "bg": "#FDFBF6"}}
+                "visual": {"type": "hm", "m": "svg", "svg": svg, "bg": "#FFFFFF"}}
     def add(group, cat, a, b, ask, purpose="new"):
         pairs.append({"group": group, "category": cat, "app": app, "ask": ask, "optionA": a, "optionB": b, "purpose": purpose, "retest": False, "notes": True, "share": True})
     return pairs, O, add

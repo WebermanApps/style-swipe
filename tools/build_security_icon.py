@@ -18,12 +18,12 @@ IC = {"o0": ("ninja0-original", "Original Ninja", "Navy hood, red headband, crea
       "n5": ("ninja5", "Wave Ring", "Ninja inside a Japanese wave ring.")}
 def card(k, label):
     f = IC[k][0]
-    s = rect(0, 0, W, H, "#FDFBF6") + rect(20, 30, W - 40, W - 40, "#FFFFFF", "#E5DCCB", 14)
+    s = rect(0, 0, W, H, "#FFFFFF") + rect(20, 30, W - 40, W - 40, "#FFFFFF", "#E5DCCB", 14)
     s += f'<image href="img/security/{f}.png" x="34" y="44" width="{W-68}" height="{W-68}" preserveAspectRatio="xMidYMid meet"/>'
     s += t(W / 2, W + 14, label, 15, INK, "khand", 600, "middle")
     s += rect(W / 2 - 22, W + 30, 44, 44, "#FFFFFF", "#E5DCCB", 8) + f'<image href="img/security/{f}.png" x="{W/2-18}" y="{W+34}" width="36" height="36"/>'
     s += t(W / 2, H - 8, "App-icon size", 7, "#525252", "hind", 400, "middle")
-    return screen(s, "#FDFBF6")
+    return screen(s, "#FFFFFF")
 def opt(k, n, feel): return O(f"{k}_{n}", IC[k][1], IC[k][2], feel, card(k, IC[k][1]))
 PL = [("Original Vs Gold Shield Band", "o0", "n1"), ("Original Vs Keyhole Knot", "o0", "n2"), ("Refined Original Vs Katana With Red Sun", "r1", "n3"),
       ("Shield Outline Vs Shield-Shaped Ninja", "r2", "n4"), ("Original Vs Wave Ring", "o0", "n5"), ("Original Vs Refined Original", "o0", "r1"),

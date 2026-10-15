@@ -9,7 +9,7 @@ from team_kit import deck, publish
 from draft_svg import TERRA, LAGOON, JUNGLE, SAFFRON, W
 from dash_kit import R, T, L, D, chev, phone
 DID = "ready-to-swipe-deck-two"; NAME = "Ready To Swipe Deck Two"; MIN = 8
-B = dict(name="Agent", bg="#FDFBF6", ink="#0A0A0A", mute="#525252", line="#E5E0D8", soft="#F3ECDD", acc=[TERRA, LAGOON, JUNGLE, SAFFRON],
+B = dict(name="Agent", bg="#FFFFFF", ink="#0A0A0A", mute="#525252", line="#E5E0D8", soft="#F3ECDD", acc=[TERRA, LAGOON, JUNGLE, SAFFRON],
          head="Khand, sans-serif", body="Hind, sans-serif", r=6, hw=600)
 INK, MUTE, LN = B["ink"], B["mute"], B["line"]; ACC = B["acc"]; WH = "#FFFFFF"
 pairs, O, add = deck("un_", NAME)
@@ -80,7 +80,7 @@ def head(y=52, done="2 done today", extra=""):
     return sec(y, "Ready To Swipe") + (tx(112, y, done, 8.5, MUTE) if done else "") + extra
 def F(body): return frame(head() + body + rest(186))
 def wide(body):  # big screen frame
-    s = R(0, 0, W, 300, "#FDFBF6") + R(8, 40, 224, 150, "#1A1A1A", r=6) + R(12, 44, 216, 138, "#FDFBF6", r=3) + R(100, 190, 40, 14, "#1A1A1A") + R(80, 204, 80, 4, "#1A1A1A", r=2)
+    s = R(0, 0, W, 300, "#FFFFFF") + R(8, 40, 224, 150, "#1A1A1A", r=6) + R(12, 44, 216, 138, "#FFFFFF", r=3) + R(100, 190, 40, 14, "#1A1A1A") + R(80, 204, 80, 4, "#1A1A1A", r=2)
     s += tx(18, 58, "Ready To Swipe", 10, INK, True) + body + tx(120, 293, "Built by Max Weberman", 8, "#8A8580", a="middle") + tx(120, 24, "On A Laptop Or Big Monitor", 11, INK, True, a="middle")
     return phone(B, s)
 # 1 (skip #11 reworded)
@@ -135,7 +135,7 @@ P("New Badge", "Green 'New' Badge: In The Card Corner Or Before The Title?",
 P("Scroll Cue", "More Decks Off To The Side: Dots Under The Strip Or A Soft Fade At The Edge?",
   ("sc_dots", "Dots Underneath", "Small dots show how many there are.", "clear", F(strip(60) + "".join(D(104 + j * 8, 150, 2.5, INK if j == 0 else LN) for j in range(4)))),
   ("sc_fade", "Fade At The Edge", "The third card fades out to hint at more.", "minimal",
-   F(strip(60) + '<defs><linearGradient id="fd"><stop offset="0" stop-color="#FDFBF6" stop-opacity="0"/><stop offset="1" stop-color="#FDFBF6"/></linearGradient></defs>' + R(196, 58, 44, 84, "url(#fd)"))))
+   F(strip(60) + '<defs><linearGradient id="fd"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient></defs>' + R(196, 58, 44, 84, "url(#fd)"))))
 P("Strip Edge", "On Phone: Strip Runs To The Screen Edge Or Stays Inside The Page Margins?",
   ("se_bleed", "Runs To The Edge", "Cards slide right off the screen edge.", "flowing", F(strip(60, x0=14, n=3, w=88))),
   ("se_in", "Inside The Margins", "Strip lines up with everything below it.", "orderly", F(strip(60, x0=14, n=3, w=66) )))

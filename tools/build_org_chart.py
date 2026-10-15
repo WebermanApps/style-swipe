@@ -10,7 +10,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); from team_kit im
 from draft_svg import TERRA, LAGOON, JUNGLE, SAFFRON, W
 from dash_kit import R, T, L, D, chev, phone
 DID = "org-chart"; MIN = 8
-B = dict(name="Agent", bg="#FDFBF6", ink="#0A0A0A", mute="#525252", line="#E5E0D8", soft="#F3ECDD", acc=[TERRA, LAGOON, JUNGLE, SAFFRON],
+B = dict(name="Agent", bg="#FFFFFF", ink="#0A0A0A", mute="#525252", line="#E5E0D8", soft="#F3ECDD", acc=[TERRA, LAGOON, JUNGLE, SAFFRON],
          head="Khand, sans-serif", body="Hind, sans-serif", r=6, hw=600)
 INK, MUTE, LN = B["ink"], B["mute"], B["line"]; ACC = B["acc"]; WH = "#FFFFFF"
 pairs, O, add = deck("oc_", "Org Chart Deck")
@@ -199,7 +199,7 @@ cnt = {}
 for p in pairs: cnt[p["group"]] = cnt.get(p["group"], 0) + 1
 publish(DID, "Org Chart Deck", "Org Chart Deck", pairs,
         {"brands": ["Org Chart Deck: how the agent organization should look and be shown (groups Work/Personal/AIR, reporting to Grok Bot, display style, place on Apps Home, naming, merges and additions, paused agents)",
-                    "Cream #FDFBF6 page, white cards, Khand/Hind; based on the current Apps Home org chart; text at least 8 units, vector mockups"],
+                    "White page (beige #FAF6EE accents), white cards, Khand/Hind; based on the current Apps Home org chart; text at least 8 units, vector mockups"],
          "submit_agent": "grok-bot", "submit_to": "Grok Bot", "section_counts": cnt, "deck_size": N, "one_card_per_screen": True},
         seed=1447, n=N, first=0)
 d = json.load(open(f"decks/{DID}.json")); print(len(d["pairs"]))
