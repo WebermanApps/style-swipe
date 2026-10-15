@@ -42,7 +42,7 @@ function statsFor(S,agent){if(!S||!agent)return null;const a=(S.agents||S)[agent
  const dd=a.deck_days||a.decks_days, dt=typeof a.decks_today==='number'?a.decks_today:dd&&typeof dd[d]==='number'?dd[d]:null;
  const dT=typeof a.decks_total==='number'?a.decks_total:typeof a.decks_all_time==='number'?a.decks_all_time:null;
  return {today:dt!=null?dt:+(days[d]||0)/20,total:dT!=null?dT:total/20}}
-const fmtDecks=n=>{const r=Math.round(n*10)/10;return Number.isInteger(r)?String(r):r.toFixed(1)};
+const fmtDecks=n=>String(Math.floor(n+1e-9));
 function paintStats(box,J){const st=box.querySelector('.ds-stats');if(!st)return;
  fetch((box.dataset.stats||J.stats_url||STATS)+'?'+Date.now()).then(r=>r.ok?r.json():null).then(S=>{const v=statsFor(S,J.agent);if(!v)return;
   st.textContent='';const f=(n,l)=>{const s=el('span','ds-stat');s.append(el('b','',fmtDecks(n)),el('span','',l));return s};
