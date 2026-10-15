@@ -4,6 +4,7 @@
 Open Projects, Team Chat. 20 pairs each. Locked WellNest brand in the mockups (nest logo, Cormorant + DM Sans, gold, peach, sand).
 usage: build_wn_dash_order.py   (builds both). Submit -> agent 'wellnest'."""
 import sys, os, json; sys.path.insert(0, os.path.dirname(__file__))
+sys.exit("Retired Oct 15 2026 (Max 12:45 ICT): WellNest decks carry no dashboard layout/structure questions. These decks are now built by tools/wn_fix_no_layout.py; see tools/wn_guard.py.")
 from wn_series_kit import *
 _ws = open(os.path.join(os.path.dirname(__file__), "build_wn_series.py")).read()
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); os.chdir(ROOT)

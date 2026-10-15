@@ -47,6 +47,7 @@ new MutationObserver(fix).observe(document.documentElement,{{childList:true,subt
     s = open(os.path.join(ROOT, "index.template.html")).read().replace("<head>", "<head>\n" + HEAD, 1)
     os.makedirs(os.path.join(ROOT, slug), exist_ok=True); open(os.path.join(ROOT, slug, "index.html"), "w").write(s)
 did = sys.argv[1]; CUR = did
+if did in ("wellnest-dashboard-online-1", "wellnest-dashboard-online-2"): sys.exit("Oct 15 2026 rule: no dashboard layout decks; these are maintained by tools/wn_fix_no_layout.py")
 os.chdir(ROOT)
 if did == "wellnest-dashboard-online-1":
     d = json.load(open("decks/wellnest-dashboard.json")); d["date"] = did; d["title"] = "Dashboard: WellNest Dashboard Look"

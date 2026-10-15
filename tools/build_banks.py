@@ -291,6 +291,7 @@ def shown_ids():
             for k in "AB": ids.add((pp.get("option" + k) or {}).get("id"))
     return ids
 
+from wn_guard import blocked as wn_blocked  # WellNest guard (tools/wn_guard.py)
 def main(refill):
     os.makedirs("banks", exist_ok=True)
     used = load("banks/used.json", {"pairs": [], "options": []})
@@ -304,6 +305,7 @@ def main(refill):
         kept, dropped, retired = [], 0, 0
         for p in bank["pairs"]:
             oids = {p["optionA"]["id"], p["optionB"]["id"]}
+            if slug == "wellnest" and wn_blocked(p): dropped += 1; continue
             if p["id"] in used_pairs or oids & used_opts or oids & shown: dropped += 1
             elif p.get("generated", TODAY) < cutoff: retired += 1
             else: kept.append(p)
@@ -315,6 +317,7 @@ def main(refill):
                 if len(kept) >= TARGET: break
                 ids = [p["optionA"]["id"], p["optionB"]["id"]]
                 if any(i in shown or i in res or i in have for i in ids): continue  # never reuse a reserved/retired id
+                if slug == "wellnest" and wn_blocked(p): continue  # Max Oct 15 2026: no dashboard layout/structure pairs in WellNest refills
                 if slug == "upkeep":
                     for k in "AB":
                         bad = upkeep_bad(p["option" + k]); assert not bad, (p["option" + k]["id"], bad)
@@ -335,7 +338,7 @@ def main(refill):
         out = {"slug": slug, "name": spec[0], "version": 4, "owner": "Max Weberman", "format": "pairs", "status": "bank",
                "english_only": True, "light_only": True, "example_data_only": True, "count": len(kept), "max_age_days": MAX_AGE,
                "generated_at": dt.datetime.now().astimezone().isoformat(timespec="seconds") if changed or "generated_at" not in bank else bank["generated_at"],
-               "groups": groups, "sources": {"team_feed": FEED, "builder": "tools/build_banks.py"}, "pairs": kept}
+               "groups": groups, "sources": {"team_feed": FEED, "builder": "tools/build_banks.py"}, **({"guard": bank["guard"]} if bank.get("guard") else {}), "pairs": kept}
         json.dump(out, open(path, "w"), indent=1, ensure_ascii=False)
         index[slug] = {"name": spec[0], "count": len(kept)}; report[slug] = (len(kept), added, dropped, retired)
     reserved["note"] = "Option ids reserved by banks/. Not counted as shown; never reused. Move to shown_options.json only when served."

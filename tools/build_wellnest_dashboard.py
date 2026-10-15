@@ -4,6 +4,7 @@
 Locked WellNest brand (/workspace/wellnest/brand-rules.md): original nest logo, Cormorant + DM Sans, rice-white base, gold leads, peach accent, sand lines.
 Drawn SVG mockups via dash_kit, sample content only. Submit -> agent 'wellnest'."""
 import sys, os; sys.path.insert(0, os.path.dirname(__file__))
+sys.exit("Retired Oct 15 2026 (Max 12:45 ICT): WellNest decks carry no dashboard layout/structure questions. These decks are now built by tools/wn_fix_no_layout.py; see tools/wn_guard.py.")
 from team_kit import deck, publish
 from dash_kit import *
 DID = "wellnest-dashboard"

@@ -71,6 +71,8 @@ def topic_pairs(topic, source=None):
     used = J("banks/used.json", {"pairs": [], "options": []}); up, uo = set(used.get("pairs", [])), set(used.get("options", []))
     shown = set(J("shown_options.json", {"options": {}})["options"])
     bank = src_pairs(source, topic)
+    from wn_guard import filter_pairs  # Max Oct 15 2026: WellNest builds/refills never carry dashboard layout/structure pairs
+    carried, bank = filter_pairs(carried, topic), filter_pairs(bank, topic)
     fresh = [p for p in bank if p.get("optionA") and p.get("optionB") and p.get("id", "") not in up and not ({p["optionA"]["id"], p["optionB"]["id"]} & (uo | shown))]
     return carried, fresh, e
 
