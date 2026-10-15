@@ -62,11 +62,13 @@ def topic_pairs(topic, source=None):
     for p in _pair_defs(e.get("from_deck"), e.get("unanswered") or []):
         p = json.loads(json.dumps(p))
         if p.get("carried_from"): continue  # second skip: drop
-        rw = e.get("reworded") or {}
-        if rw.get("id") == p.get("id"):
+        rws = e.get("reworded") or {}; rws = rws if isinstance(rws, list) else [rws]  # one rewording or a list of them
+        rw = next((r for r in rws if r.get("id") == p.get("id")), {})
+        if rw:
             p["ask"] = rw.get("q", p["ask"])
             for s, k in (("A", "a"), ("B", "b")):
                 if rw.get(k, {}).get("label"): p["option" + s]["label"] = rw[k]["label"]
+                if rw.get(k, {}).get("new_id"): p["option" + s]["id"] = rw[k]["new_id"]  # fresh option id so the re-ask passes the no-repeat check
         p["carried_from"] = p.get("id"); p["purpose"] = "retest"; carried.append(p)
     used = J("banks/used.json", {"pairs": [], "options": []}); up, uo = set(used.get("pairs", [])), set(used.get("options", []))
     shown = set(J("shown_options.json", {"options": {}})["options"])
