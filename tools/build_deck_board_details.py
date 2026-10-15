@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Build Style Swipe deck deck-board-2: Deck Board Details (Oct 14 2026), 20 pairs. Follows deck-board (submission 77ca9a56, 19/20).
-Carried first: deck-board-18 (Progress: Bar Or Written Count?). Builds on the picks now live on the Deck Building page: featured gold card first,
+Carried first: deck-board-18 reworded (Deck Progress: A Thin Filling Bar Or Words Like "7 Of 20"?). Builds on the picks now live on the Deck Building page: featured gold card first,
 Mixed Deck toggle chips at top, coloured category chips all open by newest activity, white-outline rows with title/topic/agent label,
 category-colour small ring, partial line + Resume, icon app row, compact, spaced-caps headings, one wide grid on big monitors; plus the new
 Decks Finished Today tracker. Max brand. Submit -> agent 'branding'."""

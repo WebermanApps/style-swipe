@@ -138,7 +138,7 @@
   "total": 20,
   "banks": [],
   "saved": "2026-10-15T13:06:19",
-  "note": "20/20 no skips. Avatar: Max note on #13 'Use own logo' + several neither on avatar variants \u2014 keep original nest avatar; do not keep asking rejected avatar variants. Peach (#15 B) vs gold (#19 B) button split: direct retest inserted as card 1 of wellnest-brand-look-2 (peach+white vs gold+black). Open clash (do not invent winner): #18 gold+peach only pops vs earlier four-logo-colour sub-brand chips. Handled retest; avatar note for look-2.",
+  "note": "20/20 no skips. Avatar: Max note on #13 'Use own logo' + several neither on avatar variants — keep original nest avatar; do not keep asking rejected avatar variants. Peach (#15 B) vs gold (#19 B) button split: direct retest inserted as card 1 of wellnest-brand-look-2 (peach+white vs gold+black). Open clash (do not invent winner): #18 gold+peach only pops vs earlier four-logo-colour sub-brand chips. Handled retest; avatar note for look-2.",
   "avatar_keep": "original nest logo",
   "retest_queued": {
    "into": "wellnest-brand-look-2-co01",
@@ -149,5 +149,64 @@
    ]
   },
   "open_clash": "pop colours gold+peach only (#18) vs four logo colours (sub-brand chips earlier)"
+ },
+ "deck-board": {
+  "from_deck": "deck-board",
+  "unanswered": [
+   "deck-board-18"
+  ],
+  "answered": 19,
+  "total": 20,
+  "banks": [],
+  "saved": "2026-10-15T13:48:47+07:00",
+  "note": "Skip (R64). Originally carried unreworded into deck-board-2-01. Reworded in place as card 1 of Deck Board Details (deck-board-2): clearer ask + A/B art labels.",
+  "titles": {
+   "deck-board-18": "Progress: Bar Or Written Count?"
+  },
+  "reworded": {
+   "from": "deck-board-18",
+   "into": "deck-board-2-01",
+   "ask": "Deck Progress: A Thin Filling Bar Or Words Like \"7 Of 20\"?",
+   "a": {
+    "id": "db2_rt_pg_bar2",
+    "label": "Thin Filling Bar"
+   },
+   "b": {
+    "id": "db2_rt_pg_text",
+    "label": "Words Like \"7 Of 20\""
+   }
+  }
+ },
+ "org-chart": {
+  "from_deck": "org-chart",
+  "unanswered": [
+   "org-chart-02"
+  ],
+  "answered": 14,
+  "total": 20,
+  "banks": [
+   {
+    "id": "org-chart-bank-01",
+    "bank": "org-chart"
+   }
+  ],
+  "saved": "2026-10-15T13:48:47+07:00",
+  "note": "Skip (R64/C10): Legal placement. Legal is in the AIR group. Reworded for next Org Chart deck as early card (banks/org-chart.json org-chart-bank-01). Other skips (UpKeep Content, Dump, Apps Home link, hand-offs, Team tab) still open for separate rewords.",
+  "titles": {
+   "org-chart-02": "Legal: Shared Helper In AIR Or Placed With The Work Agents?"
+  },
+  "reworded": {
+   "from": "org-chart-02",
+   "into": "org-chart-bank-01",
+   "ask": "Legal Sits In The AIR Group Today: Keep It There As A Shared Helper For Every Group, Or Move It Into Work Next To Prop And UpKeep?",
+   "a": {
+    "id": "oc_legal_air",
+    "label": "Keep In AIR"
+   },
+   "b": {
+    "id": "oc_legal_work",
+    "label": "Move Into Work"
+   }
+  }
  }
 }
