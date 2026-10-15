@@ -58,6 +58,16 @@ T = {
 ("Time Of Day?","Morning","Fresh start.","Evening","Wind-down calm."),
 ("Water Feature?","Include Water","Calm ripples.","No Water","Plain setting."),
 ("Composition?","Centred Subject","Balanced and calm.","Rule Of Thirds","Off-centre and lively."),
+("Rain Shots?","Rainy Day Mood","Drops on leaves.","Dry Days Only","Bright and clear."),
+("Motion In Stills?","Pouring Action","Caught mid-pour.","Still Moment","Everything at rest."),
+("Farm Animals?","Include Animals","Chickens and dogs.","No Animals","Plants and people."),
+("Signage In Shot?","Show Farm Signs","Hand-painted names.","No Signs","Pure scenery."),
+("Seasonal Shots?","Harvest Season","Picking and drying.","Every Month","Year-round mix."),
+("Drying Racks?","Show Drying Racks","How the tea is made.","Finished Tea Only","Ready to drink."),
+("Photo Captions?","Plant Names","Tell what it is.","Mood Words","Feeling first."),
+("Night Photos?","Lantern Evenings","Warm night glow.","Daytime Only","Keep it bright."),
+("Reflections?","Shiny Surfaces","Mirror-like tea tops.","Matte Surfaces","No glare."),
+("Edit Look Across Team?","One Shared Preset","Same look from anyone.","Edit Each Photo","Tuned shot by shot."),
 ]),
 "video-style": ("Video Style", "vst_", [
 ("Heading Size?","Large Khand","Bold and loud.","Medium Khand","Balanced."),
@@ -112,6 +122,8 @@ T = {
 ("Language?","English","Main audience.","Thai And English","Both audiences."),
 ("Voice?","Max Speaks","Founder voice.","Narrator","Neutral voice."),
 ("Closing Frame?","Logo","Brand sign-off.","Website","Where to go."),
+("Comment Replies?","Video Replies","Answer with a clip.","Text Replies","Quick written answers."),
+("Collabs?","Partner With Local Pros","Shared clips.","Solo Account","Our own voice only."),
 ]),
 }
 idx = json.load(open("banks/index.json"))
