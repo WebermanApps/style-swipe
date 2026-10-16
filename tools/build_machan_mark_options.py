@@ -97,6 +97,6 @@ FIX = ".v-svg svg,.opt .vis svg{width:100%!important;height:auto!important;max-h
 HEAD = f'<base href="../">\n<meta name="robots" content="noindex">\n<script>window.DEFAULT_DECK="{did}"</script>\n<style>:root{{--bg:#FFFFFF}}html,body{{background:#FFFFFF!important}}{FIX}</style>\n'
 s = open("index.template.html").read().replace("<head>", "<head>\n" + HEAD, 1)
 os.makedirs(slug, exist_ok=True); p = os.path.join(slug, "index.html"); open(p, "w").write(s); link_patch(p); chat_patch(p)
-open(p, "w").write(open(p).read().replace("mw-chat.js?v=cc9", "mw-chat.js?v=cc11"))
+h = open(p).read().replace("mw-chat.js?v=cc9", "mw-chat.js?v=cc11"); open(p, "w").write(h)
 pages = json.load(open("decks/pages.json")); pages[did] = slug; json.dump(pages, open("decks/pages.json", "w"), indent=1, ensure_ascii=False)
 print(json.dumps({"slug": slug, "url": f"https://webermanapps.github.io/style-swipe/{slug}/"}))
