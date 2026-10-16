@@ -9,7 +9,7 @@ Include from any board: `https://webermanapps.github.io/style-swipe/kit/<file>?v
 | dash-theme.css | Board theme (light only, square corners) incl. section separation (cc6/cc7) |
 | cc-header.js | Command Center header |
 | deck-shelf.js/.css | Ready Deck Shelf (R66), data from the board's shelf.json (shelf.schema.json) |
-| routines-section.js/.css | Routines section, last on the page (routines.schema.json) |
+| routines-section.js/.css | Routines section v4 (R78): compact tap-to-expand list, one row per routine (short name, short time, Active/Paused), last on the page (routines.schema.json; optional short, short_time, note) |
 | mw-chat.js/.css | Pop-up chat button (R74, cc8-cc11) |
 | agent-dashboards.json | submit_agent -> board URL/name for deck page links |
 | deck-counts.json, swipe-stats.json | Deck counter data (R72: show 0 when no stats) |
