@@ -1,0 +1,969 @@
+{
+ "date": "household-home-routines-deck",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Home Routines And Owners Deck",
+ "generated_at": "2026-10-16T11:55:07+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "bold": 8,
+  "calm": 8,
+  "playful": 8,
+  "practical": 8,
+  "premium": 8
+ },
+ "groups": {
+  "Who Owns What": 5,
+  "Reminders": 5,
+  "Help Areas": 5,
+  "Home Systems": 3,
+  "Household Help": 2
+ },
+ "apps": {
+  "Household": 20
+ },
+ "freshness": {
+  "option_slots": 40,
+  "never_shown_before": 40,
+  "share": 1.0
+ },
+ "warnings": [],
+ "brands": [
+  "More household areas, reminder styles and who owns what between Max and Nozomi",
+  "Household help for Max, Nozomi and Maple. No dashboard layout topics."
+ ],
+ "submit_agent": "household",
+ "submit_to": "Household Agent",
+ "agent_id": "c59ffdde-28bf-4ad7-8dd8-22f5e941647d",
+ "deck_size": 20,
+ "board": "household",
+ "audience": "Max and Nozomi",
+ "replaces": "household-home-setup-deck",
+ "pairs": [
+  {
+   "group": "Who Owns What",
+   "category": "Who Owns What",
+   "app": "Household",
+   "ask": "Money Admin: One Person Pays Everything Or Split By Bill Type?",
+   "optionA": {
+    "id": "hhhomerout_one_person_pays_130",
+    "label": "One Person Pays",
+    "desc": "All bills go through one person.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">WHO OWNS WHAT</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >One Person Pays</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >All bills go through one</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >person.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Simple view</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >One load</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhhomerout_split_by_bill_type_131",
+    "label": "Split By Bill Type",
+    "desc": "Home bills to one, Maple and travel to the other.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">WHO OWNS WHAT</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Split By Bill</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Type</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Home bills to one, Maple and</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >travel to the other.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Shared</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Two views</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-routines-deck-01",
+   "repeat": false
+  },
+  {
+   "group": "Reminders",
+   "category": "Reminders",
+   "app": "Household",
+   "ask": "Weekly Overview: Sunday Evening Or Monday Morning?",
+   "optionA": {
+    "id": "hhhomerout_sunday_evening_overview_60",
+    "label": "Sunday Evening Overview",
+    "desc": "The week ahead before it starts.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">REMINDERS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Sunday Evening</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Overview</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >The week ahead before it</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >starts.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Plan early</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Calm start</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhhomerout_monday_morning_overview_61",
+    "label": "Monday Morning Overview",
+    "desc": "Fresh list with the first coffee.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">REMINDERS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Monday Morning</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Overview</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Fresh list with the first</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >coffee.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Up to date</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Same day</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-routines-deck-02",
+   "repeat": false
+  },
+  {
+   "group": "Who Owns What",
+   "category": "Who Owns What",
+   "app": "Household",
+   "ask": "Home Repairs Calls: Max Owns Or Nozomi Owns?",
+   "optionA": {
+    "id": "hhhomerout_max_calls_repairs_100",
+    "label": "Max Calls Repairs",
+    "desc": "Max books and meets the repair people.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">WHO OWNS WHAT</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Max Calls</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Repairs</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Max books and meets the</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >repair people.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >One contact</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Max time</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhhomerout_nozomi_calls_repairs_101",
+    "label": "Nozomi Calls Repairs",
+    "desc": "Nozomi books and meets the repair people.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">WHO OWNS WHAT</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Nozomi Calls</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Repairs</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Nozomi books and meets the</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >repair people.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >One contact</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Nozomi time</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-routines-deck-03",
+   "repeat": false
+  },
+  {
+   "group": "Reminders",
+   "category": "Reminders",
+   "app": "Household",
+   "ask": "Birthdays And Gifts: Reminder Only Or Gift Ideas Too?",
+   "optionA": {
+    "id": "hhhomerout_birthday_reminder_only_90",
+    "label": "Birthday Reminder Only",
+    "desc": "Date and name, a week ahead.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">REMINDERS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Birthday</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Reminder Only</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Date and name, a week ahead.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Simple</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >You choose</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhhomerout_gift_ideas_too_91",
+    "label": "Gift Ideas Too",
+    "desc": "Three gift ideas with the reminder.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">REMINDERS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Gift Ideas Too</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Three gift ideas with the</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >reminder.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Less thinking</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Ready to order</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-routines-deck-04",
+   "repeat": false
+  },
+  {
+   "group": "Help Areas",
+   "category": "Help Areas",
+   "app": "Household",
+   "ask": "Help Next With: Home Paperwork Or Household Budget?",
+   "optionA": {
+    "id": "hhhomerout_home_paperwork_10",
+    "label": "Home Paperwork",
+    "desc": "Leases, warranties, visas and insurance in one place.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HELP AREAS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Home Paperwork</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Leases, warranties, visas</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >and insurance in one place.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Easy to find</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Renewal dates</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhhomerout_household_budget_11",
+    "label": "Household Budget",
+    "desc": "Monthly spend by area, simple totals.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HELP AREAS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Household</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Budget</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Monthly spend by area,</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >simple totals.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Clear numbers</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Monthly check</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-routines-deck-05",
+   "repeat": false
+  },
+  {
+   "group": "Home Systems",
+   "category": "Home Systems",
+   "app": "Household",
+   "ask": "Home Info: Printed House Binder Or Shared Digital Folder?",
+   "optionA": {
+    "id": "hhhomerout_printed_house_binder_190",
+    "label": "Printed House Binder",
+    "desc": "Wifi, contacts and how-tos on the shelf.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HOME SYSTEMS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Printed House</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Binder</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Wifi, contacts and how-tos</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >on the shelf.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Sitter friendly</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >No phone needed</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhhomerout_shared_digital_folder_191",
+    "label": "Shared Digital Folder",
+    "desc": "Same info on both phones.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HOME SYSTEMS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Shared Digital</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Folder</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Same info on both phones.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Always with you</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Easy to update</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-routines-deck-06",
+   "repeat": false
+  },
+  {
+   "group": "Who Owns What",
+   "category": "Who Owns What",
+   "app": "Household",
+   "ask": "Visitors And House Guests: Host Who Invited Or Shared Hosting Plan?",
+   "optionA": {
+    "id": "hhhomerout_host_who_invited_140",
+    "label": "Host Who Invited",
+    "desc": "Whoever invites takes care of the plan.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">WHO OWNS WHAT</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Host Who</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Invited</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Whoever invites takes care</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >of the plan.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Clear</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fair to both</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhhomerout_shared_hosting_plan_141",
+    "label": "Shared Hosting Plan",
+    "desc": "A short checklist split between us.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">WHO OWNS WHAT</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Shared Hosting</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Plan</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >A short checklist split</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >between us.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Teamwork</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >More planning</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-routines-deck-07",
+   "repeat": false
+  },
+  {
+   "group": "Household Help",
+   "category": "Household Help",
+   "app": "Household",
+   "ask": "Cleaner: Weekly Visit Or Twice A Month?",
+   "optionA": {
+    "id": "hhhomerout_weekly_cleaner_150",
+    "label": "Weekly Cleaner",
+    "desc": "A cleaner every week.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HOUSEHOLD HELP</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Weekly Cleaner</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >A cleaner every week.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Always tidy</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Higher cost</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhhomerout_twice_a_month_cleaner_151",
+    "label": "Twice A Month Cleaner",
+    "desc": "A deep clean every other week.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HOUSEHOLD HELP</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Twice A Month</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Cleaner</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >A deep clean every other</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >week.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Lower cost</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Tidy between</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-routines-deck-08",
+   "repeat": false
+  },
+  {
+   "group": "Home Systems",
+   "category": "Home Systems",
+   "app": "Household",
+   "ask": "Spare Supplies: Keep A Backup Of Everything Or Buy As Needed?",
+   "optionA": {
+    "id": "hhhomerout_backup_of_everything_180",
+    "label": "Backup Of Everything",
+    "desc": "Spare diapers, filters, bulbs and wipes.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HOME SYSTEMS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Backup Of</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Everything</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Spare diapers, filters,</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >bulbs and wipes.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Never caught out</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Needs space</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhhomerout_buy_as_needed_181",
+    "label": "Buy As Needed",
+    "desc": "Order when something runs low.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HOME SYSTEMS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Buy As Needed</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Order when something runs</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >low.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Less clutter</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Small risk</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-routines-deck-09",
+   "repeat": false
+  },
+  {
+   "group": "Help Areas",
+   "category": "Help Areas",
+   "app": "Household",
+   "ask": "Pest Control: Booked Quarterly Service Or Only When Needed?",
+   "optionA": {
+    "id": "hhhomerout_quarterly_pest_service_30",
+    "label": "Quarterly Pest Service",
+    "desc": "Ants, mosquitoes and termites checked on a schedule.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HELP AREAS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Quarterly Pest</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Service</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Ants, mosquitoes and</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >termites checked on a</text><text x=\"16\" y=\"192\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >schedule.</text><rect x=\"16\" y=\"216\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"232\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"237\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Prevent first</text><rect x=\"16\" y=\"252\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"268\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"273\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fixed cost</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhhomerout_only_when_needed_31",
+    "label": "Only When Needed",
+    "desc": "Call someone when we spot a problem.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HELP AREAS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Only When</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Needed</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Call someone when we spot a</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >problem.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Pay less</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >React later</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-routines-deck-10",
+   "repeat": false
+  },
+  {
+   "group": "Household Help",
+   "category": "Household Help",
+   "app": "Household",
+   "ask": "Help With Maple: Part-Time Nanny Or Occasional Babysitter?",
+   "optionA": {
+    "id": "hhhomerout_part_time_nanny_160",
+    "label": "Part-Time Nanny",
+    "desc": "A few set mornings each week.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HOUSEHOLD HELP</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Part-Time Nanny</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >A few set mornings each</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >week.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Routine</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Steady help</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhhomerout_occasional_babysitter_161",
+    "label": "Occasional Babysitter",
+    "desc": "Book when we need it.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HOUSEHOLD HELP</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Occasional</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Babysitter</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Book when we need it.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Flexible</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Less steady</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-routines-deck-11",
+   "repeat": false
+  },
+  {
+   "group": "Help Areas",
+   "category": "Help Areas",
+   "app": "Household",
+   "ask": "Air And Water: Filter Change Schedule Or Smoke Season Prep Only?",
+   "optionA": {
+    "id": "hhhomerout_filter_change_schedule_40",
+    "label": "Filter Change Schedule",
+    "desc": "Purifier, aircon and water filters on a calendar.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HELP AREAS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Filter Change</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Schedule</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Purifier, aircon and water</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >filters on a calendar.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Always fresh</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Year round</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhhomerout_smoke_season_prep_41",
+    "label": "Smoke Season Prep",
+    "desc": "Stock filters and masks before burning season.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HELP AREAS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smoke Season</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Prep</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Stock filters and masks</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >before burning season.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Focused</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Once a year</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-routines-deck-12",
+   "repeat": false
+  },
+  {
+   "group": "Home Systems",
+   "category": "Home Systems",
+   "app": "Household",
+   "ask": "Shared Lists: One Big Home List Or A List Per Area?",
+   "optionA": {
+    "id": "hhhomerout_one_big_home_list_170",
+    "label": "One Big Home List",
+    "desc": "Everything in one place.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HOME SYSTEMS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >One Big Home</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >List</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Everything in one place.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >One view</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Long list</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhhomerout_a_list_per_area_171",
+    "label": "A List Per Area",
+    "desc": "Kitchen, Maple, repairs, admin.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HOME SYSTEMS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >A List Per Area</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Kitchen, Maple, repairs,</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >admin.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Tidy</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >More lists</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-routines-deck-13",
+   "repeat": false
+  },
+  {
+   "group": "Reminders",
+   "category": "Reminders",
+   "app": "Household",
+   "ask": "Reminder Channel: Chat Message Or Shared Calendar Event?",
+   "optionA": {
+    "id": "hhhomerout_chat_message_50",
+    "label": "Chat Message",
+    "desc": "A short note in our chat.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">REMINDERS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Chat Message</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >A short note in our chat.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Quick to read</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Easy reply</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhhomerout_shared_calendar_event_51",
+    "label": "Shared Calendar Event",
+    "desc": "An event on both calendars.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">REMINDERS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Shared Calendar</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Event</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >An event on both calendars.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Time blocked</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Visible ahead</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-routines-deck-14",
+   "repeat": false
+  },
+  {
+   "group": "Who Owns What",
+   "category": "Who Owns What",
+   "app": "Household",
+   "ask": "Maple's Doctor Visits: Same Parent Every Time Or Both Go Together?",
+   "optionA": {
+    "id": "hhhomerout_same_parent_every_time_120",
+    "label": "Same Parent Every Time",
+    "desc": "One parent knows the full history.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">WHO OWNS WHAT</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Same Parent</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Every Time</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >One parent knows the full</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >history.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Consistent</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >One load</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhhomerout_both_go_together_121",
+    "label": "Both Go Together",
+    "desc": "Both parents attend each visit.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">WHO OWNS WHAT</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Both Go</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Together</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Both parents attend each</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >visit.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Shared info</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Two schedules</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-routines-deck-15",
+   "repeat": false
+  },
+  {
+   "group": "Reminders",
+   "category": "Reminders",
+   "app": "Household",
+   "ask": "Renewals Like Visa And Insurance: One Month Ahead Or Two Months Ahead?",
+   "optionA": {
+    "id": "hhhomerout_one_month_ahead_80",
+    "label": "One Month Ahead",
+    "desc": "A reminder four weeks before.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">REMINDERS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >One Month Ahead</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >A reminder four weeks</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >before.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Timely</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Less noise</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhhomerout_two_months_ahead_81",
+    "label": "Two Months Ahead",
+    "desc": "Early warning with a checklist.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">REMINDERS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Two Months</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Ahead</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Early warning with a</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >checklist.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Lots of buffer</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Earlier prep</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-routines-deck-16",
+   "repeat": false
+  },
+  {
+   "group": "Help Areas",
+   "category": "Help Areas",
+   "app": "Household",
+   "ask": "Help Next With: Laundry Rhythm Or Meal Planning?",
+   "optionA": {
+    "id": "hhhomerout_laundry_rhythm_00",
+    "label": "Laundry Rhythm",
+    "desc": "Wash days, ironing and baby clothes sorted.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HELP AREAS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Laundry Rhythm</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Wash days, ironing and baby</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >clothes sorted.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Clean clothes</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Set days</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhhomerout_meal_planning_01",
+    "label": "Meal Planning",
+    "desc": "A week of dinners and the list to match.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HELP AREAS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Meal Planning</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >A week of dinners and the</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >list to match.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Less deciding</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fewer shops</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-routines-deck-17",
+   "repeat": false
+  },
+  {
+   "group": "Who Owns What",
+   "category": "Who Owns What",
+   "app": "Household",
+   "ask": "Grocery Orders: One Of Us Each Week Or Split By Shop?",
+   "optionA": {
+    "id": "hhhomerout_one_of_us_each_week_110",
+    "label": "One Of Us Each Week",
+    "desc": "Alternate who orders groceries.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">WHO OWNS WHAT</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >One Of Us Each</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Week</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Alternate who orders</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >groceries.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fair</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Full list</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhhomerout_split_by_shop_111",
+    "label": "Split By Shop",
+    "desc": "One does the market, one does online.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">WHO OWNS WHAT</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Split By Shop</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >One does the market, one</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >does online.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fits habits</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Two lists</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-routines-deck-18",
+   "repeat": false
+  },
+  {
+   "group": "Reminders",
+   "category": "Reminders",
+   "app": "Household",
+   "ask": "Missed Task: Gentle Second Nudge Or Move It To Next Week?",
+   "optionA": {
+    "id": "hhhomerout_gentle_second_nudge_70",
+    "label": "Gentle Second Nudge",
+    "desc": "One more reminder the next day.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">REMINDERS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Gentle Second</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Nudge</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >One more reminder the next</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >day.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Gets done</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#D4A017\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >One extra ping</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhhomerout_move_to_next_week_71",
+    "label": "Move To Next Week",
+    "desc": "Quietly roll it to the next list.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">REMINDERS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Move To Next</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Week</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Quietly roll it to the next</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >list.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >No nagging</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#05668D\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Can slip</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-routines-deck-19",
+   "repeat": false
+  },
+  {
+   "group": "Help Areas",
+   "category": "Help Areas",
+   "app": "Household",
+   "ask": "Garden And Plants: Weekly Watering Plan Or Call A Gardener?",
+   "optionA": {
+    "id": "hhhomerout_weekly_watering_plan_20",
+    "label": "Weekly Watering Plan",
+    "desc": "Which plants, which day, rainy season tweaks.",
+    "tags": [
+     "premium"
+    ],
+    "feeling": "premium",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HELP AREAS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Weekly Watering</text><text x=\"16\" y=\"100\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Plan</text><rect x=\"16\" y=\"134\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"156\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Which plants, which day,</text><text x=\"16\" y=\"174\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >rainy season tweaks.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Hands-on</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Free</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "hhhomerout_call_a_gardener_21",
+    "label": "Call A Gardener",
+    "desc": "Monthly visit for trimming and lawn.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-height:100%;max-width:100%\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HELP AREAS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"16\" y=\"70\" font-size=\"28\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Call A Gardener</text><rect x=\"16\" y=\"104\" width=\"36\" height=\"3\" rx=\"1.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"126\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Monthly visit for trimming</text><text x=\"16\" y=\"144\" font-size=\"14\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >and lawn.</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"216\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"221\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Hands-off</text><rect x=\"16\" y=\"236\" width=\"208\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"30\" cy=\"252\" r=\"4\" fill=\"#C1502E\"/><text x=\"42\" y=\"257\" font-size=\"13.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Small cost</text><text x=\"120\" y=\"290\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "household-home-routines-deck-20",
+   "repeat": false
+  }
+ ],
+ "share": true,
+ "notes": true
+}

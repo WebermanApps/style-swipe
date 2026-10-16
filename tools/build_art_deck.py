@@ -32,21 +32,22 @@ def svg(c, label):
             + t(120, 252, label[:34], 15, "#0A0A0A", "Khand") + t(120, 268, by[:46], 9.5, "#525252", "Hind", 500)
             + t(120, 286, "Art Institute of Chicago, CC0  ·  Built by Max Weberman", 7.5, "#8A8580", "Hind", 400)
             + f'</g><rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="#D6D0C6"/></svg>')
-did = "household-art-deck"; SL = "queue/household-slugs.json"; slugs = json.load(open(SL))
-pairs, O, add = kdeck("hhart_", "Household"); FEEL = ["classic", "bold", "calm", "playful", "premium"]
-for gi, (g, ask, ia, la, ib, lb) in enumerate(PAIRS):
-    opts = []
-    for side, (aid, lab) in enumerate(((ia, la), (ib, lb))):
-        c = fetch(aid); desc = f'{c["artist"] or "Unknown"}, {c["date"]}. {c["medium"] or ""}'.strip()
-        o = O(f"aic{aid}", lab, desc[:120], FEEL[(gi + side) % 5], svg(c, lab), tags=["art", g.lower()])
-        o["credit"] = {k: c[k] for k in ("title", "artist", "date", "license", "source")}; opts.append(o)
-    add(g, g, opts[0], opts[1], ask)
-publish(did, NAME, "Household", pairs, {"brands": ["Permanent deck of real public-domain artworks across painting, photography, sculpture, illustration, prints, styles and eras", "Images: Art Institute of Chicago Open Access (CC0); credits in img/art/credits.json"],
-        "submit_agent": "household", "submit_to": "Household Agent", "agent_id": "c59ffdde-28bf-4ad7-8dd8-22f5e941647d",
-        "deck_size": 20, "board": "household", "permanent": True, "audience": "Max and Nozomi"}, seed=5300, n=20)
-assert len(json.load(open(f"decks/{did}.json"))["pairs"]) == 20
-if did not in slugs: slugs[did] = "household-art-" + "".join(secrets.choice(string.ascii_lowercase + string.digits) for _ in range(6)); json.dump(slugs, open(SL, "w"), indent=1)
-slug = slugs[did]; HEAD = f'<base href="../">\n<meta name="robots" content="noindex">\n<script>window.DEFAULT_DECK="{did}"</script>\n<style>:root{{--bg:#FFFFFF}}html,body{{background:#FFFFFF!important}}</style>\n'
-os.makedirs(slug, exist_ok=True); p = os.path.join(slug, "index.html"); open(p, "w").write(open("index.template.html").read().replace("<head>", "<head>\n" + HEAD, 1)); link_patch(p)
-pages = json.load(open("decks/pages.json")); pages[did] = slug; json.dump(pages, open("decks/pages.json", "w"), indent=1, ensure_ascii=False)
-print(json.dumps({"deckId": did, "name": NAME, "url": f"https://webermanapps.github.io/style-swipe/{slug}/"}))
+if __name__ == "__main__":
+    did = "household-art-deck"; SL = "queue/household-slugs.json"; slugs = json.load(open(SL))
+    pairs, O, add = kdeck("hhart_", "Household"); FEEL = ["classic", "bold", "calm", "playful", "premium"]
+    for gi, (g, ask, ia, la, ib, lb) in enumerate(PAIRS):
+        opts = []
+        for side, (aid, lab) in enumerate(((ia, la), (ib, lb))):
+            c = fetch(aid); desc = f'{c["artist"] or "Unknown"}, {c["date"]}. {c["medium"] or ""}'.strip()
+            o = O(f"aic{aid}", lab, desc[:120], FEEL[(gi + side) % 5], svg(c, lab), tags=["art", g.lower()])
+            o["credit"] = {k: c[k] for k in ("title", "artist", "date", "license", "source")}; opts.append(o)
+        add(g, g, opts[0], opts[1], ask)
+    publish(did, NAME, "Household", pairs, {"brands": ["Permanent deck of real public-domain artworks across painting, photography, sculpture, illustration, prints, styles and eras", "Images: Art Institute of Chicago Open Access (CC0); credits in img/art/credits.json"],
+            "submit_agent": "household", "submit_to": "Household Agent", "agent_id": "c59ffdde-28bf-4ad7-8dd8-22f5e941647d",
+            "deck_size": 20, "board": "household", "permanent": True, "audience": "Max and Nozomi"}, seed=5300, n=20)
+    assert len(json.load(open(f"decks/{did}.json"))["pairs"]) == 20
+    if did not in slugs: slugs[did] = "household-art-" + "".join(secrets.choice(string.ascii_lowercase + string.digits) for _ in range(6)); json.dump(slugs, open(SL, "w"), indent=1)
+    slug = slugs[did]; HEAD = f'<base href="../">\n<meta name="robots" content="noindex">\n<script>window.DEFAULT_DECK="{did}"</script>\n<style>:root{{--bg:#FFFFFF}}html,body{{background:#FFFFFF!important}}</style>\n'
+    os.makedirs(slug, exist_ok=True); p = os.path.join(slug, "index.html"); open(p, "w").write(open("index.template.html").read().replace("<head>", "<head>\n" + HEAD, 1)); link_patch(p)
+    pages = json.load(open("decks/pages.json")); pages[did] = slug; json.dump(pages, open("decks/pages.json", "w"), indent=1, ensure_ascii=False)
+    print(json.dumps({"deckId": did, "name": NAME, "url": f"https://webermanapps.github.io/style-swipe/{slug}/"}))

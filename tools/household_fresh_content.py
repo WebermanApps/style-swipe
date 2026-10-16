@@ -1,0 +1,123 @@
+"""Household fresh round (Max, Oct 16 2026 11:36 ICT): same 5 topics, 20 new pairs each, no repeats of any earlier household pair.
+Text decks: key -> (name, about, pairs), pair = (group, ask, A, B), option = (label, desc, fact1, fact2). Art: (group, ask, aic_id_A, label_A, aic_id_B, label_B)."""
+from household_content import P
+FRESH = {}
+def _d(key, name, about, pairs): assert len(pairs) == 20, (key, len(pairs)); FRESH[key] = (name, about, pairs)
+
+_d("home-routines", "Home Routines And Owners Deck", "More household areas, reminder styles and who owns what between Max and Nozomi", [
+P("Help Areas", "Help Next With: Laundry Rhythm Or Meal Planning?", "Laundry Rhythm", "Wash days, ironing and baby clothes sorted.", "Clean clothes", "Set days", "Meal Planning", "A week of dinners and the list to match.", "Less deciding", "Fewer shops"),
+P("Help Areas", "Help Next With: Home Paperwork Or Household Budget?", "Home Paperwork", "Leases, warranties, visas and insurance in one place.", "Easy to find", "Renewal dates", "Household Budget", "Monthly spend by area, simple totals.", "Clear numbers", "Monthly check"),
+P("Help Areas", "Garden And Plants: Weekly Watering Plan Or Call A Gardener?", "Weekly Watering Plan", "Which plants, which day, rainy season tweaks.", "Hands-on", "Free", "Call A Gardener", "Monthly visit for trimming and lawn.", "Hands-off", "Small cost"),
+P("Help Areas", "Pest Control: Booked Quarterly Service Or Only When Needed?", "Quarterly Pest Service", "Ants, mosquitoes and termites checked on a schedule.", "Prevent first", "Fixed cost", "Only When Needed", "Call someone when we spot a problem.", "Pay less", "React later"),
+P("Help Areas", "Air And Water: Filter Change Schedule Or Smoke Season Prep Only?", "Filter Change Schedule", "Purifier, aircon and water filters on a calendar.", "Always fresh", "Year round", "Smoke Season Prep", "Stock filters and masks before burning season.", "Focused", "Once a year"),
+P("Reminders", "Reminder Channel: Chat Message Or Shared Calendar Event?", "Chat Message", "A short note in our chat.", "Quick to read", "Easy reply", "Shared Calendar Event", "An event on both calendars.", "Time blocked", "Visible ahead"),
+P("Reminders", "Weekly Overview: Sunday Evening Or Monday Morning?", "Sunday Evening Overview", "The week ahead before it starts.", "Plan early", "Calm start", "Monday Morning Overview", "Fresh list with the first coffee.", "Up to date", "Same day"),
+P("Reminders", "Missed Task: Gentle Second Nudge Or Move It To Next Week?", "Gentle Second Nudge", "One more reminder the next day.", "Gets done", "One extra ping", "Move To Next Week", "Quietly roll it to the next list.", "No nagging", "Can slip"),
+P("Reminders", "Renewals Like Visa And Insurance: One Month Ahead Or Two Months Ahead?", "One Month Ahead", "A reminder four weeks before.", "Timely", "Less noise", "Two Months Ahead", "Early warning with a checklist.", "Lots of buffer", "Earlier prep"),
+P("Reminders", "Birthdays And Gifts: Reminder Only Or Gift Ideas Too?", "Birthday Reminder Only", "Date and name, a week ahead.", "Simple", "You choose", "Gift Ideas Too", "Three gift ideas with the reminder.", "Less thinking", "Ready to order"),
+P("Who Owns What", "Home Repairs Calls: Max Owns Or Nozomi Owns?", "Max Calls Repairs", "Max books and meets the repair people.", "One contact", "Max time", "Nozomi Calls Repairs", "Nozomi books and meets the repair people.", "One contact", "Nozomi time"),
+P("Who Owns What", "Grocery Orders: One Of Us Each Week Or Split By Shop?", "One Of Us Each Week", "Alternate who orders groceries.", "Fair", "Full list", "Split By Shop", "One does the market, one does online.", "Fits habits", "Two lists"),
+P("Who Owns What", "Maple's Doctor Visits: Same Parent Every Time Or Both Go Together?", "Same Parent Every Time", "One parent knows the full history.", "Consistent", "One load", "Both Go Together", "Both parents attend each visit.", "Shared info", "Two schedules"),
+P("Who Owns What", "Money Admin: One Person Pays Everything Or Split By Bill Type?", "One Person Pays", "All bills go through one person.", "Simple view", "One load", "Split By Bill Type", "Home bills to one, Maple and travel to the other.", "Shared", "Two views"),
+P("Who Owns What", "Visitors And House Guests: Host Who Invited Or Shared Hosting Plan?", "Host Who Invited", "Whoever invites takes care of the plan.", "Clear", "Fair to both", "Shared Hosting Plan", "A short checklist split between us.", "Teamwork", "More planning"),
+P("Household Help", "Cleaner: Weekly Visit Or Twice A Month?", "Weekly Cleaner", "A cleaner every week.", "Always tidy", "Higher cost", "Twice A Month Cleaner", "A deep clean every other week.", "Lower cost", "Tidy between"),
+P("Household Help", "Help With Maple: Part-Time Nanny Or Occasional Babysitter?", "Part-Time Nanny", "A few set mornings each week.", "Routine", "Steady help", "Occasional Babysitter", "Book when we need it.", "Flexible", "Less steady"),
+P("Home Systems", "Shared Lists: One Big Home List Or A List Per Area?", "One Big Home List", "Everything in one place.", "One view", "Long list", "A List Per Area", "Kitchen, Maple, repairs, admin.", "Tidy", "More lists"),
+P("Home Systems", "Spare Supplies: Keep A Backup Of Everything Or Buy As Needed?", "Backup Of Everything", "Spare diapers, filters, bulbs and wipes.", "Never caught out", "Needs space", "Buy As Needed", "Order when something runs low.", "Less clutter", "Small risk"),
+P("Home Systems", "Home Info: Printed House Binder Or Shared Digital Folder?", "Printed House Binder", "Wifi, contacts and how-tos on the shelf.", "Sitter friendly", "No phone needed", "Shared Digital Folder", "Same info on both phones.", "Always with you", "Easy to update"),
+])
+
+_d("chiang-mai-dates", "Chiang Mai Dates Deck", "New date night ideas around Chiang Mai for Max and Nozomi", [
+P("Dinner", "Dinner Date: Fine Dining Tasting Menu Or Japanese Omakase?", "Fine Dining Tasting Menu", "Modern Northern Thai courses with a view of the kitchen.", "Special", "Book ahead", "Japanese Omakase", "Counter seats, chef serves piece by piece.", "Intimate", "Small room"),
+P("Dinner", "Casual Dinner: Thai Barbecue Moo Kata Or Riverside Pizza And Wine?", "Moo Kata Barbecue", "Grill and hotpot at the table, cook together.", "Fun", "Cheap", "Riverside Pizza And Wine", "Wood-fired pizza by the water.", "Easy", "Relaxed"),
+P("Dinner", "Long Lunch Date: Vegetarian Garden Restaurant Or Old Teak House Restaurant?", "Vegetarian Garden Lunch", "Fresh plates in a leafy garden.", "Light", "Healthy", "Old Teak House Lunch", "Classic Lanna dishes in a wooden house.", "Charming", "Local"),
+P("Drinks", "Drinks: Craft Beer Taproom Or Cocktail Speakeasy?", "Craft Beer Taproom", "Thai craft beers on tap, laid-back crowd.", "Casual", "Tasting flights", "Cocktail Speakeasy", "Hidden door, Thai herbs in the cocktails.", "Dressy", "Quiet corners"),
+P("Drinks", "Sunset Drinks: Hilltop Bar Or Rice Field Cafe Bar?", "Hilltop Bar", "Drinks above the city as lights come on.", "Big view", "Short drive", "Rice Field Bar", "Low tables beside green paddies.", "Peaceful", "Golden light"),
+P("Activities", "Make Something: Silver Jewelry Workshop Or Batik Painting Class?", "Silver Jewelry Workshop", "Make matching rings on Wualai Road.", "Keepsake", "Two hours", "Batik Painting Class", "Paint a wax and dye cloth together.", "Colourful", "Messy fun"),
+P("Activities", "Try Something: Rock Climbing Session Or Archery Range?", "Rock Climbing Session", "Indoor wall or easy crag with a guide.", "Active", "Teamwork", "Archery Range", "Lessons and target practice.", "Calm focus", "Friendly contest"),
+P("Activities", "Games Night Out: Board Game Cafe Or Bowling And Arcade?", "Board Game Cafe", "Shelves of games, snacks and drinks.", "Chatty", "Low key", "Bowling And Arcade", "A few frames and some arcade rounds.", "Playful", "Loud"),
+P("Activities", "Learn Together: Thai Dance Lesson Or Wine Tasting Class?", "Thai Dance Lesson", "A private Lanna dance lesson.", "Cultural", "Giggles", "Wine Tasting Class", "Guided tasting of four wines.", "Grown up", "Sit down"),
+P("Outdoors", "Nature Date: Bua Tong Sticky Waterfall Or Grand Canyon Swim Park?", "Bua Tong Sticky Waterfall", "Climb up the grippy limestone falls.", "Unique", "Hour drive", "Grand Canyon Swim Park", "Quarry lake with swim decks.", "Splashy", "Close by"),
+P("Outdoors", "Morning Date: Hot Air Balloon Flight Or Zipline Through The Forest?", "Hot Air Balloon Flight", "Sunrise float over the valley.", "Bucket list", "Very early", "Forest Zipline", "Lines and platforms in the treetops.", "Thrilling", "Half day"),
+P("Outdoors", "Easy Walk: Huay Kaew Waterfall Trail Or Ang Kaew Reservoir Loop?", "Huay Kaew Waterfall Trail", "Short shady trail at the foot of the mountain.", "Cool", "Free", "Ang Kaew Reservoir Loop", "Lakeside walk on the university campus.", "Flat", "Sunset view"),
+P("Overnight", "Night Away: Mountain Glamping Or Boutique Hotel In The Old City?", "Mountain Glamping", "Tent with a real bed, cool air and stars.", "Adventure", "Fire pit", "Old City Boutique Hotel", "Small stylish hotel, walk to dinner.", "Comfy", "Easy"),
+P("Overnight", "Weekend Away: Chiang Dao Cave Village Or Lampang Day And Night?", "Chiang Dao Weekend", "Limestone mountain, caves and quiet lodges.", "Nature", "Ninety minutes", "Lampang Weekend", "Horse carts, old temples and riverside dinner.", "Old town", "Ninety minutes"),
+P("Culture", "Evening Show: Contemporary Dance Or Jazz Night?", "Contemporary Dance Show", "A local dance company performance.", "Artsy", "Booked seats", "Jazz Night", "Live jazz band in a small bar.", "Mellow", "Walk in"),
+P("Culture", "Art Date: Baan Kang Wat Artist Village Or MAIIAM Contemporary Art Museum?", "Baan Kang Wat", "Studios, shops and cafes in a creative village.", "Browse", "Shady", "MAIIAM Art Museum", "Big modern art museum with a mirror facade.", "Inspiring", "Air-conditioned"),
+P("Culture", "Festival Date: Yi Peng Lanterns Or Flower Festival Parade?", "Yi Peng Lanterns", "Lantern festival nights in November.", "Magical", "Crowded", "Flower Festival Parade", "Flower floats in early February.", "Colourful", "Daytime"),
+P("At Home", "Night In: Cook Together At Home Or Order In From A Favourite?", "Cook Together At Home", "Pick a recipe and cook after Maple sleeps.", "Fun", "Teamwork", "Order In A Favourite", "Favourite meal delivered, table set nicely.", "Easy", "No dishes"),
+P("At Home", "Night In: Movie Marathon Or Balcony Dinner With Candles?", "Movie Marathon", "Two films, snacks and blankets.", "Cosy", "Late", "Balcony Candle Dinner", "Candles, music and dessert outside.", "Romantic", "Talk time"),
+P("Plan", "Date Budget: Keep It Simple Or Splurge Once A Month?", "Keep It Simple", "Low-cost dates most of the time.", "Easy on wallet", "More often", "Splurge Once A Month", "One special night each month.", "Memorable", "Saved up"),
+])
+
+_d("trips-near-far", "Trips Near And Far Deck", "New trip ideas close to Chiang Mai, nearby countries and far away", [
+P("Close By", "Thai Islands: Koh Chang Or Koh Tao?", "Koh Chang", "Big green island near Cambodia, calm beaches.", "Jungle", "Drive and ferry", "Koh Tao", "Small island known for snorkelling.", "Clear water", "Longer trip"),
+P("Close By", "North Thailand: Nan Or Mae Hong Son?", "Nan", "Quiet old town, murals and rice terraces.", "Slow", "Scenic drive", "Mae Hong Son", "Misty valley town by a lake.", "Remote", "Short flight"),
+P("Close By", "History Trip: Sukhothai Or Ayutthaya?", "Sukhothai", "Old capital ruins by bike.", "Peaceful", "Half day drive", "Ayutthaya", "River capital temples near Bangkok.", "Big ruins", "Day from Bangkok"),
+P("Close By", "Cool Air: Khao Yai Or Doi Ang Khang?", "Khao Yai", "National park, vineyards and wildlife.", "Family friendly", "Fly then drive", "Doi Ang Khang", "Highland farm, strawberries and cool nights.", "Close", "Mountain roads"),
+P("Close By", "Gulf Coast: Pattaya Family Resort Or Koh Kood?", "Pattaya Family Resort", "Big resort with kids pools and easy access.", "Convenient", "Busy town", "Koh Kood", "Quiet island with clear rivers and beaches.", "Unspoilt", "Long transfer"),
+P("Nearby Countries", "Southeast Asia: Bali Or Langkawi?", "Bali", "Rice terraces, villas and beaches.", "Lots to do", "Direct flights", "Langkawi", "Malaysian island with a cable car.", "Calm", "Duty free"),
+P("Nearby Countries", "Islands Abroad: Phu Quoc Or Palawan?", "Phu Quoc", "Vietnam island, long sunset beaches.", "Easy", "Good value", "Palawan", "Philippines lagoons and limestone islands.", "Stunning", "Harder to reach"),
+P("Nearby Countries", "Culture Trip: Yangon And Bagan Or Kathmandu?", "Yangon And Bagan", "Golden pagodas and temple plains.", "History", "Check travel advice", "Kathmandu", "Temples, valleys and Himalaya views.", "Mountains", "Altitude"),
+P("Nearby Countries", "City Mix: Taipei Or Hong Kong?", "Taipei", "Night markets, hot springs and easy metro.", "Kid friendly", "Great food", "Hong Kong", "Harbour, islands and dim sum.", "Energy", "Compact"),
+P("Far Away", "Japan Region: Hokkaido Or Okinawa?", "Hokkaido", "Snow, farms and seafood in the north.", "Cool", "Seasonal", "Okinawa", "Subtropical beaches and aquarium.", "Warm", "Relaxed"),
+P("Far Away", "Long Haul: Canada Or Scandinavia?", "Canada", "Lakes, mountains and big parks.", "Outdoors", "Road trips", "Scandinavia", "Fjords, design cities and long summer days.", "Scenic", "Pricier"),
+P("Far Away", "Europe Pick: Italy Or Switzerland?", "Italy", "Food, old towns and sea.", "Delicious", "Busy summer", "Switzerland", "Lakes, trains and mountains.", "Clean", "Expensive"),
+P("Far Away", "Far Trip: Sri Lanka Or The Maldives?", "Sri Lanka", "Tea hills, elephants and beaches.", "Variety", "Road trips", "The Maldives", "Overwater villas and reef.", "Pure rest", "Pricey"),
+P("Far Away", "Wildlife Trip: South Africa Safari Or Galapagos?", "South Africa Safari", "Game drives and the Cape coast.", "Big animals", "Long flight", "Galapagos", "Island wildlife and boats.", "Unique", "Very long flight"),
+P("Trip Style", "Travel With Maple: Fly At Nap Time Or Fly At Night?", "Fly At Nap Time", "Midday flight while she naps.", "Calm baby", "Day arrival", "Fly At Night", "Overnight flight for long trips.", "Sleeps through", "Tired parents"),
+P("Trip Style", "Room Setup: Family Suite Or Connecting Rooms?", "Family Suite", "One suite with a crib corner.", "Together", "Cosy", "Connecting Rooms", "Two rooms with a door between.", "Better sleep", "More cost"),
+P("Trip Style", "Holiday Food: Hotel Breakfast And Local Dinners Or All Inclusive?", "Breakfast And Local Dinners", "Explore restaurants each night.", "Food adventure", "More choices", "All Inclusive", "Every meal handled at the resort.", "No planning", "Less local"),
+P("Trip Style", "Theme: Beach And Pool Or Nature And Hikes?", "Beach And Pool", "Sand, shade and swim time.", "Easy days", "Baby friendly", "Nature And Hikes", "Trails with the baby carrier.", "Active", "Fresh air"),
+P("Planning", "Bookings: Book Early For Best Price Or Keep It Flexible?", "Book Early", "Lock in flights and rooms months ahead.", "Best price", "Less flexible", "Keep It Flexible", "Refundable rates, book closer to date.", "Free to change", "Costs more"),
+P("Planning", "Packing: Shared Packing Checklist Or Each Packs Their Own?", "Shared Packing Checklist", "One list for all three of us.", "Nothing forgotten", "Shared", "Each Packs Their Own", "Max and Nozomi pack, one does Maple.", "Quick", "Own way"),
+])
+
+_d("maple-play-days", "Maple Play Days Deck", "Fresh baby-safe play and outings for Maple (8 months): sitting, crawling, grasping, sounds and short trips", [
+P("Hands", "Grab And Hold: Soft Rattle Rings Or Teething Toys?", "Soft Rattle Rings", "Light rings that jingle when shaken.", "Grasping", "Sound", "Teething Toys", "Cool, chewable shapes for sore gums.", "Soothing", "Safe to mouth"),
+P("Hands", "Pull And Find: Scarf Pull Box Or Lift-The-Flap Board Book?", "Scarf Pull Box", "Soft scarves pulled one by one from a box.", "Surprise", "Fine motor", "Lift-The-Flap Book", "Thick flaps to lift with help.", "Peekaboo", "Lap time"),
+P("Hands", "Two Hands: Clap Together Games Or Pass A Toy Hand To Hand?", "Clap Together Games", "Pat-a-cake and clapping songs.", "Giggles", "No toys", "Pass Hand To Hand", "Offer a toy to one hand, then the other.", "Coordination", "Quick"),
+P("Movement", "Sitting Play: Toys In A Ring Around Her Or Ball Rolling Back And Forth?", "Toys In A Ring", "Toys placed around her while she sits.", "Balance", "Reaching", "Ball Back And Forth", "Roll a big soft ball to each other.", "Turn taking", "Social"),
+P("Movement", "Crawling: Tunnel Of Cushions Or Crawl To A Parent?", "Cushion Tunnel", "Soft tunnel made from sofa cushions.", "Adventure", "Indoor", "Crawl To A Parent", "A parent calls her from across the mat.", "Motivating", "Simple"),
+P("Movement", "Standing Practice: Hold Hands To Stand Or Sturdy Push Box?", "Hold Hands To Stand", "Gentle standing on a parent's lap or the floor.", "Legs strong", "Close", "Sturdy Push Box", "A weighted box she can lean and push.", "Independent", "Always watched"),
+P("Sounds", "Sound Play: Pots And Wooden Spoons Or Xylophone?", "Pots And Wooden Spoons", "Kitchen drums on the floor.", "Free", "Loud", "Baby Xylophone", "Colourful keys and a chunky mallet.", "Musical", "Bright"),
+P("Sounds", "Talking Back: Copy Her Babbles Or Animal Sounds Game?", "Copy Her Babbles", "Repeat her sounds back to her.", "Conversation", "Bonding", "Animal Sounds Game", "Moo, baa, quack with pictures.", "Fun", "First words"),
+P("Seeing", "Watching: Bubbles Floating Or Scarf Dance?", "Bubbles Floating", "Slow bubbles for her to watch and reach.", "Delight", "Outdoor or in", "Scarf Dance", "Bright scarves waved and floated down.", "Gentle", "Colourful"),
+P("Seeing", "Light Play: Window Light And Shadows Or Soft Light-Up Toy?", "Window Shadows", "Hands making shadows on a sunny wall.", "Free", "Calm", "Soft Light-Up Toy", "Gentle glow toy for evening play.", "Soothing", "Bedtime"),
+P("Food Play", "First Finger Foods: Soft Steamed Veggie Sticks Or Ripe Fruit Strips?", "Steamed Veggie Sticks", "Soft carrot and pumpkin to grip.", "Self feeding", "Savoury", "Ripe Fruit Strips", "Banana, avocado and mango strips.", "Sweet", "Soft"),
+P("Food Play", "Mealtime Fun: Baby-Led Bites Or Spoon Practice?", "Baby-Led Bites", "She picks up soft food herself.", "Independent", "Messy", "Spoon Practice", "A short spoon for her to try.", "Skill", "Some help"),
+P("Water", "Bath Play: Floating Ducks And Boats Or Bath Foam Shapes?", "Ducks And Boats", "Floating toys to push and catch.", "Splashy", "Classic", "Bath Foam Shapes", "Foam letters and animals that stick on tiles.", "Colourful", "Wall play"),
+P("Outings", "Morning Outing: One Nimman Bookshop Baby Corner Or Weekend Farmers Market?", "Bookshop Baby Corner", "Cool corner with board books to look at.", "Quiet", "Air-conditioned", "Farmers Market Stroll", "Colours, voices and smells from the carrier.", "Lively", "Early is cooler"),
+P("Outings", "Green Outing: Royal Park Rajapruek Gardens Or Chiang Mai University Lake?", "Rajapruek Gardens", "Big flower gardens with stroller paths.", "Colourful", "Short drive", "University Lake Walk", "Shady lakeside path and ducks.", "Close", "Free"),
+P("Outings", "Animal Outing: Goat Farm Visit Or Butterfly Garden?", "Goat Farm Visit", "Gentle animals to watch from the carrier.", "Animals", "Outdoors", "Butterfly Garden", "Flutters and flowers under a net dome.", "Calm", "Shade"),
+P("Social", "Baby Friends: Baby Massage Class Or Parent And Baby Yoga?", "Baby Massage Class", "Learn gentle massage with other parents.", "Bonding", "Calm", "Parent And Baby Yoga", "Stretch with Maple on the mat.", "Active", "Social"),
+P("Social", "Family Time: Video Song With Grandparents Or Photo Book Of Family Faces?", "Grandparent Song Call", "A short song call with grandparents.", "Family", "Voices", "Family Faces Photo Book", "Soft book with photos of family.", "Recognise faces", "Any time"),
+P("Rest", "Wind Down: Warm Bath Then Massage Or Quiet Story In Dim Light?", "Bath Then Massage", "Warm bath and lotion rub before bed.", "Relaxing", "Routine", "Story In Dim Light", "One soft book in a dim room.", "Calm", "Short"),
+P("Rest", "Nap Helpers: White Noise Or Soft Lullaby Playlist?", "White Noise", "Steady fan or shush sound.", "Blocks noise", "Simple", "Lullaby Playlist", "Soft songs on low.", "Gentle", "Familiar"),
+])
+assert set(FRESH) == {"home-routines", "chiang-mai-dates", "trips-near-far", "maple-play-days"}
+
+ART_KEY, ART_NAME = "art-gallery", "Art Deck"
+ART_PAIRS = [
+("Impressionism", "Which Monet Do You Like More: Stacks Of Wheat Or The Beach At Sainte-Adresse?", 64818, "Stacks Of Wheat", 14598, "The Beach At Sainte-Adresse"),
+("Post-Impressionism", "Which Do You Like More: Van Gogh's Self-Portrait Or Cezanne's Basket Of Apples?", 80607, "Van Gogh Self-Portrait", 111436, "The Basket Of Apples"),
+("Women Artists", "Which Do You Like More: Morisot's Woman At Her Toilette Or Carriera's Pastel Lady With A Parrot?", 11723, "Woman At Her Toilette", 103887, "Young Lady With A Parrot"),
+("American Landscape", "Which Landscape Do You Like More: Cole's Niagara Falls Or Bierstadt's Mountain Brook?", 90048, "Distant View Of Niagara Falls", 146701, "Mountain Brook"),
+("Grand Views", "Which Grand View Do You Like More: Church's Volcano Or Claude's Delphi?", 76571, "View Of Cotopaxi", 43145, "View Of Delphi"),
+("Abstract", "Which Modern Painting Do You Like More: Mondrian's Lozenge Or Hartley's Movement?", 109819, "Lozenge Composition", 65916, "Movement"),
+("Modern Portraits", "Which Do You Like More: Matisse's Woman Before An Aquarium Or Modigliani's Couple Portrait?", 27984, "Woman Before An Aquarium", 27987, "Jacques And Berthe Lipchitz"),
+("Circus", "Which Circus Painting Do You Like More: Renoir's Acrobats Or Toulouse-Lautrec's Equestrienne?", 81558, "Acrobats At The Cirque Fernando", 16146, "Equestrienne"),
+("Still Life", "Which Still Life Do You Like More: Sanchez Cotan's Game Fowl Or Peale's Strawberries?", 84709, "Still Life With Game Fowl", 120154, "Strawberries And Nuts"),
+("Flowers", "Which Flower Picture Do You Like More: Heade's Magnolias Or Redon's Flower Clouds?", 100829, "Magnolias On Blue Velvet", 76395, "Flower Clouds"),
+("Watercolor", "Which Watercolor Do You Like More: Homer's Bahamas Or Whistler's Dancer?", 16776, "After The Hurricane, Bahamas", 111164, "Green And Blue: The Dancer"),
+("Japanese Prints", "Which Japanese Print Do You Like More: Harunobu's Evening Snow Or Sharaku's Actor Portrait?", 88977, "Evening Snow", 89856, "Actor Bando Mitsugoro"),
+("Asian Painting", "Which Japanese Painting Do You Like More: Autumn Maples With Poems Or Ike Taiga's Pilgrimage?", 127644, "Autumn Maples With Poem Slips", 185222, "Pilgrimage To The Jizo Nun"),
+("Photography", "Which Photograph Do You Like More: Stieglitz's Hands And Thimble Or Talbot's Early Plant Print?", 66434, "Hands And Thimble", 38930, "Two Plant Specimens"),
+("Sculpture", "Which Sculpture Do You Like More: Shiva As Lord Of The Dance Or Olowe's Carved Veranda Post?", 24548, "Shiva Nataraja", 102611, "Veranda Post"),
+("Animal Sculpture", "Which Animal Sculpture Do You Like More: Remington's Bronco Buster Or A Stone Cow And Calf?", 97916, "The Bronco Buster", 153244, "Cow Suckling A Calf"),
+("Ceramics", "Which Vessel Do You Like More: A Korean Celadon Plum Vase Or An Ottoman Tulip Tankard?", 73216, "Goryeo Plum Vase", 69109, "Ottoman Tulip Tankard"),
+("Design", "Which Design Piece Do You Like More: A Tiffany Dragonfly Lamp Or An Arts And Crafts Piano?", 185905, "Dragonfly Lamp", 103943, "Manxman Piano"),
+("Textiles", "Which Textile Do You Like More: A Japanese Furisode Robe Or Moser's Poppy Fabric?", 150739, "Furisode Robe", 64884, "Poppyheads Fabric"),
+("American Life", "Which Everyday Scene Do You Like More: Homer's Croquet Game Or Chase's City Park?", 44018, "Croquet Scene", 28849, "A City Park"),
+]
+assert len(ART_PAIRS) == 20
