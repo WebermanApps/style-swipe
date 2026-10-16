@@ -37,7 +37,7 @@ function column(){var mid=document.getElementById('mw-mid');if(!mid)return;var W
   var vw=document.documentElement.clientWidth,r2=c.getBoundingClientRect();if(r2.width<vw-2&&(parseFloat(cs.marginLeft)<0||parseFloat(cs.marginRight)<0)&&!/(auto|scroll)/.test(getComputedStyle(c.parentElement).overflowX)){c.style.setProperty('margin-left','0','important');c.style.setProperty('margin-right','0','important')}
   if(/^(DIV|MAIN|SECTION|ARTICLE|HEADER|NAV)$/.test(c.tagName)&&d<3)walk(c,d+1)})})(mid,0)}
 function place(){['mw-bh','mw-mid','mw-bf'].forEach(function(id){var b=document.getElementById(id);if(!b)return;b.style.transform='none';var W=Math.min(1100,document.documentElement.clientWidth-32),
- want=Math.max(16,(document.documentElement.clientWidth-W)/2);b.style.setProperty('width',W+'px','important');var r=b.getBoundingClientRect(),d=Math.round(want-r.left),fy=Math.round(r.top)-r.top;b.style.transform=(d||fy)?'translate('+d+'px,'+fy.toFixed(3)+'px)':'none'})}
+ want=Math.max(16,(document.documentElement.clientWidth-W)/2);b.style.setProperty('width',W+'px','important');var r=b.getBoundingClientRect(),d=Math.round(want-r.left),ay=r.top+(window.scrollY||0),fy=Math.round(ay)-ay;b.style.transform=(d||fy)?'translate('+d+'px,'+fy.toFixed(3)+'px)':'none'})}
 function run(){if(document.body.dataset.mwLayout===V)return;var cc=q('.mw-cc-header');if(!cc)return;document.body.dataset.mwLayout=V;fonts();
  need('mw-layout.css',true);need('deck-shelf.css',true);need('routines-section.css',true);
  var heroes=qa('[data-mw-slot="hero"]');
@@ -89,7 +89,7 @@ function run(){if(document.body.dataset.mwLayout===V)return;var cc=q('.mw-cc-hea
  column();setTimeout(column,1500);setTimeout(column,4000);
  var tries=0,iv=setInterval(function(){stdShelfHead(decks);tries++;if((q('.ds-head',decks)&&tries>6)||tries>30){zeroCounter(decks);clearInterval(iv)}},500);
  var sh2=0,ivh=setInterval(function(){stdShelfHead(decks);if(++sh2>20)clearInterval(ivh)},1000);
- place();addEventListener('resize',function(){place();column()});addEventListener('load',place);setTimeout(place,1500);setTimeout(place,4000);
+ place();addEventListener('resize',function(){place();column()});var pn=0,pv=setInterval(function(){place();if(++pn>30)clearInterval(pv)},500);try{new ResizeObserver(function(){place()}).observe(document.getElementById('mw-mid')||document.body)}catch(_){}addEventListener('load',place);setTimeout(place,1500);setTimeout(place,4000);
  document.dispatchEvent(new CustomEvent('mw-layout'))}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',run);else run();
 window.MWLayout={run:run,version:V};})();
