@@ -52,7 +52,14 @@ function doneToday(J){const d=today();let n=(J.done||[]).filter(x=>String(x.at||
    Swipe stats (Max 19:51 ICT): header shows swipes done for this agent's decks, today AND all-time.
    Source: kit/swipe-stats.json in style-swipe (synced from /workspace/ops/submit/swipe-stats.json by tools/sync_swipe_stats.py).
    Shape: {updated, agents:{<agent>:{total:N, days:{"YYYY-MM-DD":N}}}} (also accepts {<agent>:{"YYYY-MM-DD":N}}). Missing/unknown -> hidden. */
-const STATS='https://webermanapps.github.io/style-swipe/kit/swipe-stats.json';
+/* Oct 16 2026: ALL deck counters read ONE shared file, kit/deck-counts.json (rebuilt by ops/agent-activity/publish_deck_counts.py
+   from every board's shelf done[] + submissions, deduped per deck+ICT day). Header "N done today", "decks today/all-time"
+   and Grok Bot's Deck Report line all refresh from it on page load. */
+const STATS='https://webermanapps.github.io/style-swipe/kit/deck-counts.json';
+function paintReport(S){const d=new Date().toLocaleDateString('en-CA',{timeZone:'Asia/Bangkok'});
+ document.querySelectorAll('summary').forEach(sm=>{const l=sm.querySelector('.lab'),o=sm.querySelector('.one');
+  if(l&&o&&/^\s*Deck Report\s*$/.test(l.textContent)){const t=(S.days||{})[d]||0,a=typeof S.total==='number'?S.total:(S.decks||[]).length;
+   o.textContent=t+(t===1?' deck':' decks')+' today \u00b7 '+a+' all-time'}})}
 function statsFor(S,agent){if(!S||!agent)return null;const a=(S.agents||S)[agent]||{};if(typeof a!=='object')return null;
  const days=a.days||a.daily||Object.fromEntries(Object.entries(a).filter(([k,v])=>/^\d{4}-\d{2}-\d{2}$/.test(k)&&typeof v==='number'));
  const tz=S.tz||'Asia/Bangkok';let d;try{d=new Date().toLocaleDateString('en-CA',{timeZone:tz})}catch(_){d=today()}
@@ -62,7 +69,7 @@ function statsFor(S,agent){if(!S||!agent)return null;const a=(S.agents||S)[agent
  return {today:dt!=null?dt:+(days[d]||0)/20,total:dT!=null?dT:total/20}}
 const fmtDecks=n=>String(Math.floor(n+1e-9));
 function paintStats(box,J){const st=box.querySelector('.ds-stats');if(!st)return;
- fetch((box.dataset.stats||J.stats_url||STATS)+'?'+Date.now()).then(r=>r.ok?r.json():null).then(S=>{const v=statsFor(S,J.agent);if(!v)return;
+ fetch((box.dataset.stats||J.stats_url||STATS)+'?'+Date.now()).then(r=>r.ok?r.json():null).then(S=>{if(S&&S.days)paintReport(S);const v=statsFor(S,J.agent);if(!v)return;const hd=box.querySelector('.ds-head');if(hd){let dn=hd.querySelector('.ds-done');const n=Math.floor(v.today+1e-9);if(n){if(!dn){dn=el('span','ds-done');hd.querySelector('h2').after(dn)}dn.textContent=n+' done today'}else if(dn)dn.remove()}
   st.textContent='';const f=(n,l)=>{const s=el('span','ds-stat');s.append(el('b','',fmtDecks(n)),el('span','',l));return s};
   st.append(f(v.today,(fmtDecks(v.today)==='1'?'deck':'decks')+' today'),f(v.total,(fmtDecks(v.total)==='1'?'deck':'decks')+' all-time'));st.hidden=false}).catch(()=>{})}
 function render(box,J,o){o=o||{};J=J||{};const all=order(norm(J,o)),cap=(o.nocap||box.hasAttribute('data-shelf-nocap'))?all.length:(+o.cap||+box.dataset.shelfCap||+J.cap||CAP),decks=all.slice(0,cap);
