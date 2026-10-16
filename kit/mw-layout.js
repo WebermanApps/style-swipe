@@ -2,16 +2,16 @@
    BRANDED HEADER and BRANDED FOOTER are built here as body-level blocks, pixel-identical on every agent board, colors included
    (Max's white + light beige). Board CSS cannot restyle them: scoped ids #mw-bh / #mw-bf + !important locks in mw-layout.css.
    BRANDED HEADER (#mw-bh.mw-branded-header): Apps Home button (.mw-bh-home) > Command Center header (.mw-bh-cc: logo, '<Name> Command Center', description)
-     > decks shelf + deck counter (.mw-bh-decks; counter shows 0 when no stats) > Morning Report dropdown (.mw-bh-morning, closed by default)
+     > decks shelf + deck counter (.mw-bh-decks; counter shows 0 when no stats) > Working On dropdown (.mw-bh-working, R85: only while the board's agent is working, closed by default, data kit/agent-status.json) > Morning Report dropdown (.mw-bh-morning, closed by default)
      > divider (.mw-bh-divider: 1px #e3ddd2, full content width, equal spacing).
    MIDDLE: everything else, incl. ALL agent-specific branding (brand colors, special sections, photos, video). [data-mw-slot="hero"] items go first.
    BRANDED FOOTER (#mw-bf.mw-branded-footer): divider (.mw-bf-divider, same as header's) > Routines (.mw-bf-routines) > standard footer (.mw-bf-standard: Share + mark + 'Built by Machan' -> maxweberman.com; ly5 Oct 16 2026, Branding Agent).
    Per-board differences allowed in the header: logo, name, description (plus deck / report / routine content).
    Markers (optional): data-mw-slot="shelf|morning|hero|routines". Old footers are folded into the middle; old Apps Home links removed.
    Agent boards only (Apps Home, deck pages and the share page never load this file).
-   Usage: <link rel="stylesheet" href=".../kit/mw-layout.css?v=ly7"><script src=".../kit/mw-layout.js?v=ly7" defer></script> */
+   Usage: <link rel="stylesheet" href=".../kit/mw-layout.css?v=ly8"><script src=".../kit/mw-layout.js?v=ly8" defer></script> */
 (function(){
-var V='ly7',MACHAN="<span class=\"mw-machan\" style=\"display:inline-flex;align-items:center;gap:6px;vertical-align:middle;white-space:nowrap\"><svg class=\"mw-machan-mark\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" aria-hidden=\"true\" focusable=\"false\" style=\"display:block;flex:none;width:22px;height:22px\"><path d=\"M12 5.2C11.2 3 9.4 2 7.6 2.3c.3 1.9 1.9 3.2 4.4 2.9z\" fill=\"#3F7D58\"/><path d=\"M12 5.2c.8-2.2 2.6-3.2 4.4-2.9-.3 1.9-1.9 3.2-4.4 2.9z\" fill=\"#5E9A6E\"/><rect x=\"3.5\" y=\"5.5\" width=\"17\" height=\"16\" rx=\"7\" fill=\"#C8643F\"/><rect x=\"5.5\" y=\"9\" width=\"13\" height=\"10\" rx=\"5\" fill=\"#FAF6EE\"/><circle cx=\"9.6\" cy=\"13.3\" r=\"1.35\" fill=\"#2E6F86\"/><circle cx=\"14.4\" cy=\"13.3\" r=\"1.35\" fill=\"#2E6F86\"/><path d=\"M10.6 16.1q1.4 1.1 2.8 0\" fill=\"none\" stroke=\"#C8643F\" stroke-width=\"1.1\" stroke-linecap=\"round\"/><circle cx=\"7.6\" cy=\"15.6\" r=\".9\" fill=\"#E9B9A3\"/><circle cx=\"16.4\" cy=\"15.6\" r=\".9\" fill=\"#E9B9A3\"/></svg>Built by Machan</span>",K='https://webermanapps.github.io/style-swipe/kit/',HOME='https://webermanapps.github.io/a-o956qercs5ubd57y/';
+var V='ly8',MACHAN="<span class=\"mw-machan\" style=\"display:inline-flex;align-items:center;gap:6px;vertical-align:middle;white-space:nowrap\"><svg class=\"mw-machan-mark\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" aria-hidden=\"true\" focusable=\"false\" style=\"display:block;flex:none;width:22px;height:22px\"><path d=\"M12 5.2C11.2 3 9.4 2 7.6 2.3c.3 1.9 1.9 3.2 4.4 2.9z\" fill=\"#3F7D58\"/><path d=\"M12 5.2c.8-2.2 2.6-3.2 4.4-2.9-.3 1.9-1.9 3.2-4.4 2.9z\" fill=\"#5E9A6E\"/><rect x=\"3.5\" y=\"5.5\" width=\"17\" height=\"16\" rx=\"7\" fill=\"#C8643F\"/><rect x=\"5.5\" y=\"9\" width=\"13\" height=\"10\" rx=\"5\" fill=\"#FAF6EE\"/><circle cx=\"9.6\" cy=\"13.3\" r=\"1.35\" fill=\"#2E6F86\"/><circle cx=\"14.4\" cy=\"13.3\" r=\"1.35\" fill=\"#2E6F86\"/><path d=\"M10.6 16.1q1.4 1.1 2.8 0\" fill=\"none\" stroke=\"#C8643F\" stroke-width=\"1.1\" stroke-linecap=\"round\"/><circle cx=\"7.6\" cy=\"15.6\" r=\".9\" fill=\"#E9B9A3\"/><circle cx=\"16.4\" cy=\"15.6\" r=\".9\" fill=\"#E9B9A3\"/></svg>Built by Machan</span>",K='https://webermanapps.github.io/style-swipe/kit/',HOME='https://webermanapps.github.io/a-o956qercs5ubd57y/';
 var q=function(s,r){return (r||document).querySelector(s)},qa=function(s,r){return [].slice.call((r||document).querySelectorAll(s))};
 var slot=function(n){return q('[data-mw-slot="'+n+'"]')};var MR=/^\s*morning report/i;
 function mk(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
@@ -38,6 +38,15 @@ function column(){var mid=document.getElementById('mw-mid');if(!mid)return;var W
   if(/^(DIV|MAIN|SECTION|ARTICLE|HEADER|NAV)$/.test(c.tagName)&&d<3)walk(c,d+1)})})(mid,0)}
 function place(){['mw-bh','mw-mid','mw-bf'].forEach(function(id){var b=document.getElementById(id);if(!b)return;b.style.transform='none';var W=Math.min(1100,document.documentElement.clientWidth-32),
  want=Math.max(16,(document.documentElement.clientWidth-W)/2);b.style.setProperty('width',W+'px','important');var r=b.getBoundingClientRect(),d=Math.round(want-r.left),ay=r.top+(window.scrollY||0),fy=Math.round(ay)-ay;b.style.transform=(d||fy)?'translate('+d+'px,'+fy.toFixed(3)+'px)':'none'})}
+/* ly8 R85 (Max Oct 16 2026 23:39 ICT): "Working on" dropdown above Morning Report, only while this board's agent is working. Data: ONE shared file kit/agent-status.json (no-store + cache-bust). */
+var ST=K+'agent-status.json';function norm(n){return String(n||'').toLowerCase().replace(/&/g,'and').replace(/\bagent\b/g,'').replace(/[^a-z0-9]+/g,' ').trim()}
+function boardAgent(){var e=q('script[data-mw-agent]')||q('[data-mw-agent]');if(e)return e.getAttribute('data-mw-agent');var m=q('meta[name="mw-agent-name"]');if(m)return m.content;
+ var c=q('script[src*="mw-chat.js"][data-agent-name]');if(c)return c.getAttribute('data-agent-name');var cc=q('.mw-cc-header[data-cc-name]');if(cc)return cc.dataset.ccName;
+ var t=document.title.match(/^\s*(.+?)\s+(Agent\s+)?(Command Center|Board|Dashboard)\b/i);return t?t[1]:''}
+function working(wd){var me=norm(boardAgent());if(!me){wd.hidden=true;return}
+ function upd(){fetch(ST+'?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).then(function(j){var a=null;((j&&j.agents)||[]).forEach(function(x){if(norm(x.agent)===me)a=x});
+  if(a&&a.working){q('.mw-wo-doing',wd).textContent=a.doing||'Working';wd.hidden=false}else{wd.hidden=true;wd.open=false}}).catch(function(){})}
+ upd();setInterval(upd,60000);document.addEventListener('visibilitychange',function(){if(!document.hidden)upd()})}
 function run(){if(document.body.dataset.mwLayout===V)return;var cc=q('.mw-cc-header');if(!cc)return;document.body.dataset.mwLayout=V;fonts();
  need('mw-layout.css',true);need('deck-shelf.css',true);need('routines-section.css',true);
  var heroes=qa('[data-mw-slot="hero"]');
@@ -55,7 +64,8 @@ function run(){if(document.body.dataset.mwLayout===V)return;var cc=q('.mw-cc-hea
  if(mor){if(mor.tagName==='DETAILS'){var os=q(':scope>summary',mor);if(os){var st=os.textContent.replace(/\s+/g,' ').replace(MR,'').replace(/^[\s·\-:]+/,'').trim();if(st)body.appendChild(mk('p','mw-mr-sub',st))}
    mor.classList.add('mw-mr-src');[].slice.call(mor.childNodes).forEach(function(n){if(n!==os)body.appendChild(n)});body.appendChild(mor);mor.style.setProperty('display','none','important')}
   else{body.appendChild(mor);mor.hidden=false}}else body.appendChild(mk('p','mw-mr-sub','No Morning Report yet.'));
- bh.append(home,ncc,decks,md,mk('hr','mw-bh-divider'));
+ var wd=mk('details','mw-bh-working');wd.id='mw-working';wd.hidden=true;var ws=mk('summary');ws.append(mk('span','mw-mr-t','Working On'),mk('span','mw-chev'));wd.appendChild(ws);var wb=mk('div','mw-mr-body');wb.appendChild(mk('p','mw-mr-sub mw-wo-doing',''));wd.appendChild(wb);working(wd);
+ bh.append(home,ncc,decks,wd,md,mk('hr','mw-bh-divider'));
  cc.style.setProperty('display','none','important');cc.setAttribute('aria-hidden','true');
  document.body.insertBefore(bh,document.body.firstChild);
  var after=bh;heroes.forEach(function(h){after.after(h);after=h});

@@ -49,3 +49,8 @@ Or `<meta name="mw-agent-id">` (+ `mw-agent-name`), `data-agent="<slug>"` (regis
 - ly3: removes older duplicate "Apps Home" links so only the standard button remains (opt out per link: `data-mw-keep-home`).
 - ly4 (R79 STRICT, Max 13:21-13:23): branded header (#mw-bh) and branded footer (#mw-bf) are built as body-level blocks, pixel-identical on all boards (white + light beige, Khand/Hind), locked with scoped tokens, :where() resets and !important. 1px beige dividers under the header and above the footer. Routines (routines-section v5) is a dropdown, closed by default ("Routines (N)"). Agent branding lives only in the middle.
 - ly4 update (Max 14:19): the middle content moves into #mw-mid, the same 1100px centered column as the branded header/footer (inner wrappers lose their narrower max-width / side padding / negative margins; full-bleed bands stay full width).
+
+## ly8: Working On dropdown (R85, Max Oct 16 2026 23:39 ICT)
+- Branded header: "Working On" dropdown directly above Morning Report, same style, closed by default, only while the board's agent is working; body is one short line (`doing`).
+- Data: ONE shared file `kit/agent-status.json` (`{"as_of","agents":[{"agent","working","doing"}]}`), fetched with `cache:'no-store'` + `?t=` cache-bust, refreshed every 60s and on tab focus. Published by `/workspace/ops/agent-activity/publish_kit_status.py` (sanitized copy of agent_status.json).
+- Board agent: `data-mw-agent` on any element, else `<meta name="mw-agent-name">`, else mw-chat `data-agent-name`, else `.mw-cc-header[data-cc-name]`, else the page title ("X Command Center"). Names match ignoring "Agent", case and "&".

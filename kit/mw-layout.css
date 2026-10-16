@@ -41,11 +41,16 @@
 @media(max-width:899px){#mw-bh .ds-strip{gap:8px!important;margin:0 -16px!important;padding:1px 16px 6px!important}}
 /* Morning Report dropdown, closed by default */
 #mw-bh details.mw-bh-morning{display:block!important;margin:var(--bh-gap) 0 0!important;padding:0!important;background:var(--bh-bg)!important;border:1px solid var(--bh-line)!important;border-radius:0!important;box-shadow:none!important}
+#mw-bh details.mw-bh-working{display:block!important;margin:var(--bh-gap) 0 0!important;padding:0!important;background:var(--bh-bg)!important;border:1px solid var(--bh-line)!important;border-radius:0!important;box-shadow:none!important}
 #mw-bh details.mw-bh-morning>summary{list-style:none!important;cursor:pointer!important;display:flex!important;align-items:center!important;gap:10px!important;min-height:48px!important;height:48px!important;margin:0!important;padding:0 16px!important;background:var(--bh-beige)!important;color:var(--bh-ink)!important;font:600 19px/20px var(--bh-head)!important;border:0!important;border-radius:0!important}
+#mw-bh details.mw-bh-working>summary{list-style:none!important;cursor:pointer!important;display:flex!important;align-items:center!important;gap:10px!important;min-height:48px!important;height:48px!important;margin:0!important;padding:0 16px!important;background:var(--bh-beige)!important;color:var(--bh-ink)!important;font:600 19px/20px var(--bh-head)!important;border:0!important;border-radius:0!important}
 #mw-bh details.mw-bh-morning>summary::-webkit-details-marker{display:none!important}#mw-bh details.mw-bh-morning>summary::marker{content:""!important}
+#mw-bh details.mw-bh-working>summary::-webkit-details-marker{display:none!important}#mw-bh details.mw-bh-working>summary::marker{content:""!important}
 #mw-bh .mw-chev{margin-left:auto!important;flex:none!important;width:9px!important;height:9px!important;border-right:2px solid var(--bh-ink)!important;border-bottom:2px solid var(--bh-ink)!important;transform:rotate(45deg) translateY(-3px)!important}
 #mw-bh details.mw-bh-morning[open]>summary{border-bottom:1px solid var(--bh-line)!important}
+#mw-bh details.mw-bh-working[open]>summary{border-bottom:1px solid var(--bh-line)!important}
 #mw-bh details.mw-bh-morning[open] .mw-chev{transform:rotate(-135deg) translateY(-2px)!important}
+#mw-bh details.mw-bh-working[open] .mw-chev{transform:rotate(-135deg) translateY(-2px)!important}
 #mw-bh .mw-mr-body{padding:12px 16px!important;margin:0!important}
 #mw-bh .mw-mr-sub{margin:0 0 8px!important;font:400 14px/20px var(--bh-body)!important;color:var(--bh-muted)!important}
 #mw-bh .mw-mr-src>summary{display:none!important}
@@ -94,3 +99,8 @@ body.mw-hero-behind-header #mw-bh.mw-branded-header{background:transparent!impor
 #mw-bf .mw-bf-extras{display:flex!important;flex-wrap:wrap!important;align-items:center!important;gap:12px!important;margin:0!important;padding:0!important;font:400 13px/18px var(--bh-body)!important;color:var(--bh-muted)!important}
 #mw-bf .mw-bf-extras button,#mw-bf .mw-bf-extras a{display:inline-flex!important;align-items:center!important;gap:6px!important;min-height:44px!important;height:44px!important;padding:0 18px!important;margin:0!important;background:var(--bh-bg)!important;color:var(--bh-ink)!important;border:1.5px solid var(--bh-ink)!important;border-radius:0!important;font:600 15px/16px var(--bh-body)!important;text-transform:none!important;letter-spacing:0!important;width:auto!important;box-shadow:none!important;cursor:pointer!important}
 #mw-bf .mw-bf-extras svg{width:16px!important;height:16px!important;fill:none!important;stroke:currentColor!important;stroke-width:2!important}
+
+/* ly8 R85: Working On dropdown = Morning Report style; hidden when idle; Morning Report sits right under it */
+#mw-bh details.mw-bh-working[hidden]{display:none!important}
+#mw-bh details.mw-bh-working:not([hidden])+details.mw-bh-morning{margin-top:12px!important}
+#mw-bh .mw-wo-doing{margin:0!important;color:var(--bh-ink)!important;font:500 16px/22px var(--bh-body)!important}
