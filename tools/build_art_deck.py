@@ -31,7 +31,7 @@ def svg(c, label):
             f'<rect width="{W}" height="{H}" fill="#FFFFFF"/><rect x="8" y="8" width="{bw}" height="{bh}" rx="8" fill="#FAF6EE" stroke="#E3DDD2"/>'
             f'<image href="{c["file"]}" xlink:href="{c["file"]}" x="{x:.1f}" y="{y:.1f}" width="{iw:.1f}" height="{ih:.1f}" preserveAspectRatio="xMidYMid meet"/>'
             + t(120, 252, label[:34], 15, "#0A0A0A", "Khand") + t(120, 268, by[:46], 9.5, "#525252", "Hind", 500)
-            + t(120, 286, "Art Institute of Chicago, CC0  ·  Built by Max Weberman", 7.5, "#8A8580", "Hind", 400)
+            + t(120, 286, "Art Institute of Chicago, CC0  ·  Built by Machan", 7.5, "#8A8580", "Hind", 400)
             + f'</g><rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="#D6D0C6"/></svg>')
 if __name__ == "__main__":
     did = "household-art-deck"; SL = "queue/household-slugs.json"; slugs = json.load(open(SL))

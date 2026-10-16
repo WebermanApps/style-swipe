@@ -28,7 +28,7 @@ def share(x, y): return f'<g transform="translate({x},{y}) scale(.5)"><path d="M
 def frame(board, body, decks=True):
     s = R(0, 0, W, 32, BG) + L(0, 32, W, 32, BB) + tx(12, 19, "Apps Home", 8, MUTE, w=600) + tx(120, 21, board + " Command Center", 11, INK, True, a="middle") + share(212, 9)
     if decks: s += tx(14, 46, "Ready To Swipe", 9, INK, True) + "".join(box(14 + i * 72, 51, 66, 16) + R(14 + i * 72, 51, 66, 2, ACC[i]) + tx(20 + i * 72, 62, ["Layout", "Colour", "Words"][i], 8, INK, w=600) for i in range(3))
-    return phone(B, s + body + tx(120, 293, "Built by Max Weberman", 8, "#8A8580", a="middle"))
+    return phone(B, s + body + tx(120, 293, "Built by Machan", 8, "#8A8580", a="middle"))
 def sec(y, s, extra=""): return tx(14, y, s, 11, INK, True) + extra
 def arrows(y, x1=14, x2=226): return "".join(box(x - 7, y - 7, 14, 14) + tx(x, y + 3, t, 9, INK, w=600, a="middle") for x, t in ((x1 + 7, "<"), (x2 - 7, ">")))
 def dots(y, n=5, k=0): return "".join(D(120 - (n - 1) * 4 + j * 8, y, 2.5, INK if j == k else BB) for j in range(n))

@@ -26,7 +26,7 @@ def scr(order, q, src, extra="", bg="#FFFFFF", **k):
     g, _ = stack({**B, "bg": bg}, order, {**base, **k}, 10)
     return screen(g + extra + quote(q, src), bg)
 def plain(body, q, src, bg="#FFFFFF"): return screen(body + quote(q, src), bg)
-FOOT = lambda y: L(14, y, 226, y, B["line"]) + T(B, 120, y + 12, "Built by Max Weberman", 6.5, B["mute"], a="middle")
+FOOT = lambda y: L(14, y, 226, y, B["line"]) + T(B, 120, y + 12, "Built by Machan", 6.5, B["mute"], a="middle")
 SHARE = lambda x=206, y=16: f'<g transform="translate({x},{y}) scale(.6)"><path d="M12 3 V15 M7 8 L12 3 L17 8" fill="none" stroke="{B["ink"]}" stroke-width="2.2" stroke-linecap="round"/><path d="M5 12 V20 H19 V12" fill="none" stroke="{B["ink"]}" stroke-width="2.2"/></g>'
 def title(s, sub=""): return T(B, 14, 30, s, 18, None, True) + (T(B, 14, 42, sub, 7, B["mute"]) if sub else "")
 # 1. C7 carried skip: pure white vs light cream

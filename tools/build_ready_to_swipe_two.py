@@ -30,7 +30,7 @@ CATS = ["Layout", "Colour", "Wording", "Photos", "Pricing"]
 def frame(body, title="Example Agent", c=TERRA):
     s = R(0, 0, W, 32, WH) + L(0, 32, W, 32, LN) + chev(12, 16, MUTE) + tx(18, 19, "Apps Home", 8, MUTE, w=600)
     s += tx(120, 21, title, 12, INK, True, a="middle") + share(212, 9) + D(170, 16, 2.5, c)
-    s += body + tx(120, 293, "Built by Max Weberman", 8, "#8A8580", a="middle")
+    s += body + tx(120, 293, "Built by Machan", 8, "#8A8580", a="middle")
     return phone(B, s)
 def rest(y, n=3):  # the rest of the dashboard, greyed
     s = sec(y, "Open Items")
@@ -81,7 +81,7 @@ def head(y=52, done="2 done today", extra=""):
 def F(body): return frame(head() + body + rest(186))
 def wide(body):  # big screen frame
     s = R(0, 0, W, 300, "#FFFFFF") + R(8, 40, 224, 150, "#1A1A1A", r=6) + R(12, 44, 216, 138, "#FFFFFF", r=3) + R(100, 190, 40, 14, "#1A1A1A") + R(80, 204, 80, 4, "#1A1A1A", r=2)
-    s += tx(18, 58, "Ready To Swipe", 10, INK, True) + body + tx(120, 293, "Built by Max Weberman", 8, "#8A8580", a="middle") + tx(120, 24, "On A Laptop Or Big Monitor", 11, INK, True, a="middle")
+    s += tx(18, 58, "Ready To Swipe", 10, INK, True) + body + tx(120, 293, "Built by Machan", 8, "#8A8580", a="middle") + tx(120, 24, "On A Laptop Or Big Monitor", 11, INK, True, a="middle")
     return phone(B, s)
 # 1 (skip #11 reworded)
 P("Big Screen", "On A Laptop Or Big Monitor: Show All 5 Decks Side By Side, Or Keep The Same Swipe Strip As The Phone?",

@@ -20,7 +20,7 @@ QS = [("Miles", "Undo the password gate on Mom's Amex apps?", "Urgent", "Today",
 def fit(s, n):
     return s if len(s) <= n else s[:n - 1].rstrip() + "..."
 SHARE = lambda x=210, y=12: f'<g transform="translate({x},{y}) scale(.6)"><path d="M12 3 V15 M7 8 L12 3 L17 8" fill="none" stroke="{INK}" stroke-width="2.2" stroke-linecap="round"/><path d="M5 12 V20 H19 V12" fill="none" stroke="{INK}" stroke-width="2.2"/></g>'
-FOOT = L(14, 284, 226, 284, B["line"]) + T(B, 120, 295, "Built by Max Weberman", 7.5, M, a="middle")
+FOOT = L(14, 284, 226, 284, B["line"]) + T(B, 120, 295, "Built by Machan", 7.5, M, a="middle")
 def head(sub="Command Center"):
     s = T(B, 14, 26, "Questions For Max", 16, None, True) + T(B, 14, 38, sub, 7.5, M) + SHARE()
     s += R(14, 44, 212, 16, "#FFFFFF", B["line"], 6) + T(B, 22, 55, "Evening Report", 7.5, INK, w=600) + chev(216, 52, M)

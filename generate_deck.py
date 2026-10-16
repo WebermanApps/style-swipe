@@ -1627,7 +1627,7 @@ nvadd("From Max Sign-Off", "hg",
  nv("signoff", "hg", 1, "Note From Max At The Top", "A short plain note above the sections, signed – Max.", ["personal", "warm", "friendly", "direct"],
     mode="top", copy="Niko and Vivian, everything about your house is in here. Call me anytime."),
  nv("signoff", "hg", 2, "Name And Call Max In The Footer", "No note on top. The footer says who built it, with a Call Max button.", ["clear", "direct", "practical", "personal"],
-    mode="footer", copy="Built by Max Weberman"))
+    mode="footer", copy="Built by Machan"))
 nvadd("Header & Navigation", "hg",
  nv("hdr", "hg", 1, "Wordmark Left, Share Right, Thin Rule", "The spec header: MAX WEBERMAN, square SHARE, 1px grey rule.", ["light", "clear", "minimal", "modern"],
     mode="rule"),
@@ -1928,7 +1928,7 @@ nv2add("Onboarding First Screen", "hg",
  scr("hg", "install_card", "Keep This Guide On Your Phone Card", "Right after sign-in, a small card offers Add to Home Screen once.", ["practical", "friendly", "clear", "personal"],
      [["install", "Keep this guide on your phone", "One tap from your home screen, like an app."], ["row", "Emergencies"], ["row", "Who to Call"], ["row", "Maintenance Schedule"]]),
  scr("hg", "install_footer", "Small Add To Home Screen Tip In The Footer", "No popup. A one-line tip sits in the footer, always there.", ["minimal", "calm", "clear", "light"],
-     [["row", "Emergencies"], ["row", "Who to Call"], ["row", "Maintenance Schedule"], ["row", "Warranties"], ["spacer"], ["small", "Tip: add this guide to your home screen."], ["small", "Built by Max Weberman"]]))
+     [["row", "Emergencies"], ["row", "Who to Call"], ["row", "Maintenance Schedule"], ["row", "Warranties"], ["spacer"], ["small", "Tip: add this guide to your home screen."], ["small", "Built by Machan"]]))
 nv2add("Feature Options", "hg",
  scr("hg", "pw_remember", "Password Once, Remember This Phone", "They type the password once. A box keeps the phone signed in.", ["practical", "friendly", "calm", "clear"],
      [["q", "Welcome back.", 16], ["input", "••••", 16], ["row", "Remember this phone", "boxon", "b"], ["btn", "Open the Guide", "full", "solid"]], sub=""),
@@ -2065,7 +2065,7 @@ nv2add("App Icon & Favicon", "rp",
      shape="square", bg="#fff", fg="#171717", mark="RP", border=True, grid=True), True)
 nv2add("From Max Sign-Off", "rp",
  scr("rp", "so_footer", "Footer: Built By Max Weberman, Call Max", "The standard footer line with a small Call Max button.", ["clear", "direct", "personal", "practical"],
-     [["row", "Kitchen 006", "badge:8"], ["row", "Living Area 004", "badge:4"], ["row", "Family Suite 002", "badge:6"], ["spacer"], ["small", "Built by Max Weberman"], ["btn", "📞 Call Max"]], sub=""),
+     [["row", "Kitchen 006", "badge:8"], ["row", "Living Area 004", "badge:4"], ["row", "Family Suite 002", "badge:6"], ["spacer"], ["small", "Built by Machan"], ["btn", "📞 Call Max"]], sub=""),
  scr("rp", "so_title", "Line Under The Title: Photos From Max", "Under the title: 'Photos from Max, October 2026.' Nothing in the footer.", ["personal", "friendly", "calm", "light"],
      [["row", "Kitchen 006", "badge:8"], ["row", "Living Area 004", "badge:4"], ["row", "Family Suite 002", "badge:6"], ["row", "Bathroom 005", "badge:3"]], sub="Photos from Max, October 2026"), True)
 nv2add("Feature Options", "rp",

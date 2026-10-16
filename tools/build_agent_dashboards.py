@@ -25,7 +25,7 @@ def frame(name, body, c=TERRA):
     """Top bar (Apps Home, name, Updated, Share icon), body drawn from y=40, footer."""
     s = R(0, 0, W, 30, "#FFFFFF") + L(0, 30, W, 30, LN) + chev(14, 15, MUTE).replace(f'M10 13', 'M10 13') + tx(20, 18, "Apps Home", 5.5, MUTE, w=600)
     s += tx(120, 19, name, 11, INK, True, a="middle") + share(208, 9) + D(64, 15, 2.5, c)
-    s += body + tx(120, 293, "Built by Max Weberman", 5, "#8A8580", a="middle")
+    s += body + tx(120, 293, "Built by Machan", 5, "#8A8580", a="middle")
     return phone(B, s)
 def rows(y, items, edge=None, h=22, right=None):
     s = ""

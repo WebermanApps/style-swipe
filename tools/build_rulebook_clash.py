@@ -26,7 +26,7 @@ def scr(order, q, src, extra="", bg="#FFFFFF", **k):
     g, _ = stack({**B, "bg": bg}, order, {**base, **k}, 10)
     return screen(g + extra + quote(q, src), bg)
 def sharebtn(y, label=True): return R(64, y, 112, 24, "#FFFFFF", B["ink"], 0, 1.6) + T(B, 120, y + 15.5, "SHARE", 8, B["ink"], w=600, a="middle", ex='letter-spacing="1.2"')
-FOOT = lambda y: L(14, y, 226, y, B["line"]) + T(B, 120, y + 12, "Built by Max Weberman", 6.5, B["mute"], a="middle")
+FOOT = lambda y: L(14, y, 226, y, B["line"]) + T(B, 120, y + 12, "Built by Machan", 6.5, B["mute"], a="middle")
 # C1 Share placement
 fixedbar = R(0, 196, W, 26, "#FFFFFF", B["line"]) + R(84, 200, 72, 18, "#FFFFFF", B["ink"], 0, 1.4) + T(B, 120, 212, "SHARE", 7, B["ink"], w=600, a="middle", ex='letter-spacing="1.2"') + T(B, 226, 192, "fixed", 5.5, TERRA, w=600, a="end")
 inflow = sharebtn(174) + FOOT(204)

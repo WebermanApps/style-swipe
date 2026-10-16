@@ -29,7 +29,7 @@ CATS = ["Layout", "Colour", "Wording", "Photos", "Pricing"]
 def frame(body, title="Example Agent", c=TERRA):
     s = R(0, 0, W, 32, WH) + L(0, 32, W, 32, LN) + chev(12, 16, MUTE) + tx(18, 19, "Apps Home", 8, MUTE, w=600)
     s += tx(120, 21, title, 12, INK, True, a="middle") + share(212, 9) + D(170, 16, 2.5, c)
-    s += body + tx(120, 293, "Built by Max Weberman", 8, "#8A8580", a="middle")
+    s += body + tx(120, 293, "Built by Machan", 8, "#8A8580", a="middle")
     return phone(B, s)
 def rest(y, n=3):  # the rest of the dashboard, greyed
     s = sec(y, "Open Items")

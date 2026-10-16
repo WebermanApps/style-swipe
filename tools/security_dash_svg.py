@@ -71,5 +71,5 @@ def svg(group, label, desc, kinds, acc):
     yy = y + 24
     for k in kinds:
         b, yy = body(k, 22, yy, 196, 0); s += b; yy += 4
-    s += t(120, 292, "Built by Max Weberman", 8, "#8A8580", "hind", 400, "middle")
+    s += t(120, 292, "Built by Machan", 8, "#8A8580", "hind", 400, "middle")
     return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" width="240" height="300" style="max-width:100%;height:auto"><clipPath id="c"><rect width="240" height="300"/></clipPath><g clip-path="url(#c)">{s}</g><rect x=".5" y=".5" width="239" height="299" fill="none" stroke="{LINE}"/></svg>'

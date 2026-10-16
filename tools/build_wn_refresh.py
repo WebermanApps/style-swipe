@@ -32,7 +32,7 @@ def svg(group, label, desc, facts, kind, acc):
     y = max(y + 2, 250); x = 16
     for f in facts[:2]:
         w = min(104, 18 + len(f) * 6.2); s += rect(x, y, w, 22, BEI, LINE) + t(x + 8, y + 15, f, 11, INK, "hind", 600); x += w + 6
-    s += t(120, 292, "Built by Max Weberman", 8, "#8A8580", "hind", 400, "middle")
+    s += t(120, 292, "Built by Machan", 8, "#8A8580", "hind", 400, "middle")
     return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" width="240" height="300" style="max-width:100%;height:auto">{s}<rect x=".5" y=".5" width="239" height="299" fill="none" stroke="#e3ddd2"/></svg>'
 def head(did):
     return f'''<base href="../">
