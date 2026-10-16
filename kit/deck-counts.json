@@ -1,7 +1,65 @@
 {
- "updated": "2026-10-16T03:43:44+07:00",
+ "updated": "2026-10-16T23:54:01+07:00",
  "tz": "Asia/Bangkok",
- "rule": "1 deck = 1 real Style Swipe submission, deduped per agent+deck+day",
+ "rule": "1 deck = 1 completed deck on any board's shelf (done[]) or recorded submission, deduped per deck+ICT day; all agents",
+ "days": {
+  "2026-10-13": 2,
+  "2026-10-14": 15,
+  "2026-10-15": 14,
+  "2026-10-16": 3
+ },
+ "total": 34,
+ "agents": {
+  "branding": {
+   "decks_total": 10,
+   "deck_days": {
+    "2026-10-13": 2,
+    "2026-10-14": 6,
+    "2026-10-15": 2
+   }
+  },
+  "wellnest": {
+   "decks_total": 3,
+   "deck_days": {
+    "2026-10-14": 1,
+    "2026-10-15": 2
+   }
+  },
+  "upkeep": {
+   "decks_total": 14,
+   "deck_days": {
+    "2026-10-14": 5,
+    "2026-10-15": 8,
+    "2026-10-16": 1
+   }
+  },
+  "portfolio": {
+   "decks_total": 1,
+   "deck_days": {
+    "2026-10-14": 1
+   }
+  },
+  "grok-bot": {
+   "decks_total": 2,
+   "deck_days": {
+    "2026-10-14": 2
+   }
+  },
+  "household": {
+   "decks_total": 2,
+   "deck_days": {
+    "2026-10-15": 1,
+    "2026-10-16": 1
+   }
+  },
+  "security": {
+   "decks_total": 2,
+   "deck_days": {
+    "2026-10-15": 1,
+    "2026-10-16": 1
+   }
+  }
+ },
  "decks": [
   {
    "agent": "branding",
@@ -73,7 +131,7 @@
    "agent": "branding",
    "deck": "up-next-deck",
    "day": "2026-10-14",
-   "ts": 1791981885000
+   "ts": 1791981840000
   },
   {
    "agent": "grok-bot",
@@ -104,6 +162,12 @@
    "deck": "ready-to-swipe-deck-two",
    "day": "2026-10-14",
    "ts": 1791988540000
+  },
+  {
+   "agent": "branding",
+   "deck": "ready-to-swipe-deck-two",
+   "day": "2026-10-15",
+   "ts": 1792024802000
   },
   {
    "agent": "wellnest",
@@ -188,6 +252,18 @@
    "deck": "upkeep-forecasting-and-projections-deck",
    "day": "2026-10-16",
    "ts": 1792084140000
+  },
+  {
+   "agent": "household",
+   "deck": "household-maple-deck",
+   "day": "2026-10-16",
+   "ts": 1792096560000
+  },
+  {
+   "agent": "security",
+   "deck": "security-duties-deck",
+   "day": "2026-10-16",
+   "ts": 1792096800000
   }
  ]
 }
