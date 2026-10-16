@@ -49,3 +49,5 @@ Same meaning as `answered` / `added` in kit `shelf.json`. Fill from ops/submit/i
 
 ## Routines section placement (Max, Oct 14 2026 20:00 ICT)
 `kit/routines-section.js` goes at the very BOTTOM of every agent dashboard (last section before the footer). Grouped, schedule in ICT, On/Paused, last run (R65). Only one daily report: the Morning Report by 5:00 AM ICT (Evening Report retired 20:05).
+
+Kit docs (cc6-cc11 classes, mw-chat): see `kit/README.md`.
