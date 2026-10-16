@@ -11,3 +11,7 @@ details.mw-morning:not(.mw-morning-own)>:not(summary){margin:0;padding:12px 16px
 .mw-footer .mw-footer-bar a{color:#737373}
 .mw-std-share{min-height:44px;padding:0 18px;border:1px solid #171717;background:#fff;color:#171717;font:600 15px/1 'Hind',sans-serif;border-radius:0;cursor:pointer}
 .mw-section:empty:not([data-routines]):not([data-shelf]):not([data-launcher]){display:none}
+/* ly2 (R77): Apps Home button, first item of the branded header. Light, square, Khand. */
+a.mw-apps-home{display:inline-flex;align-items:center;gap:8px;min-height:44px;margin:8px 0 4px;padding:0 16px;background:#fff;border:1.5px solid #171717;border-radius:0;color:#171717;font:600 17px/1 'Khand',sans-serif;letter-spacing:.02em;text-decoration:none}
+a.mw-apps-home:hover{background:#FAF6EE}
+a.mw-apps-home:focus-visible{outline:2px solid #171717;outline-offset:2px}
