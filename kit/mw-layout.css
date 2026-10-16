@@ -1,4 +1,4 @@
-/* Board layout kit ly6 (R81 hero-behind-header opt-in; ly5 Machan footer mark; was ly4) (STRICT R79, Max Oct 16 2026 13:21-13:23 ICT). Branded header (#mw-bh) and branded footer (#mw-bf) are LOCKED:
+/* Board layout kit ly7 (footer extras: Updated + Add To Home Screen; ly6 R81 hero-behind-header opt-in; ly5 Machan footer mark; was ly4) (STRICT R79, Max Oct 16 2026 13:21-13:23 ICT). Branded header (#mw-bh) and branded footer (#mw-bf) are LOCKED:
    pixel-identical on every agent board, Max's white + light beige, Khand/Hind, square corners. Scoped tokens + :where() resets + !important.
    Board CSS must not target #mw-bh / #mw-bf. Agent branding lives only in the middle section. */
 #mw-bh,#mw-bf{--bh-bg:#fff;--bh-beige:#FAF6EE;--bh-line:#e3ddd2;--bh-ink:#171717;--bh-text:#0A0A0A;--bh-muted:#737373;--bh-green:#0B6E4F;
@@ -90,3 +90,7 @@
 /* ly6 (R81, Max Oct 16 2026 21:33 ICT, Branding Agent): opt-in hero behind the branded header. Only pages whose body has .mw-hero-behind-header
    (WellNest adds it itself) get a transparent header background and no box-shadow; header content, links and chat button unchanged; no effect elsewhere. */
 body.mw-hero-behind-header #mw-bh.mw-branded-header{background:transparent!important;box-shadow:none!important}
+/* ly7 (Oct 16 2026 21:36 ICT): Updated time + Add To Home Screen sit in the standard footer next to Share (moved by mw-layout.js from stray rows under the header). */
+#mw-bf .mw-bf-extras{display:flex!important;flex-wrap:wrap!important;align-items:center!important;gap:12px!important;margin:0!important;padding:0!important;font:400 13px/18px var(--bh-body)!important;color:var(--bh-muted)!important}
+#mw-bf .mw-bf-extras button,#mw-bf .mw-bf-extras a{display:inline-flex!important;align-items:center!important;gap:6px!important;min-height:44px!important;height:44px!important;padding:0 18px!important;margin:0!important;background:var(--bh-bg)!important;color:var(--bh-ink)!important;border:1.5px solid var(--bh-ink)!important;border-radius:0!important;font:600 15px/16px var(--bh-body)!important;text-transform:none!important;letter-spacing:0!important;width:auto!important;box-shadow:none!important;cursor:pointer!important}
+#mw-bf .mw-bf-extras svg{width:16px!important;height:16px!important;fill:none!important;stroke:currentColor!important;stroke-width:2!important}
