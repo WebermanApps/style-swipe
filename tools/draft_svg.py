@@ -39,7 +39,7 @@ def crisp(svg, floor=MIN_TEXT):
         out.append(tok)
     out.append(svg[i:]); return "".join(out)
 def screen(body, bg="#FFFFFF"):
-    return crisp(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" style="max-height:100%;max-width:100%">'
+    return crisp(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" style="max-width:100%;height:auto">'
             f'<clipPath id="c"><rect width="{W}" height="{H}" rx="14"/></clipPath><g clip-path="url(#c)"><rect width="{W}" height="{H}" fill="{bg}"/>' + body + f'</g><rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="#D6D0C6"/></svg>')
 # small drawn icons (24-unit grid)
 def ic(kind, x, y, s=16, c=INK, sw=1.8):

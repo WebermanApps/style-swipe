@@ -2,6 +2,7 @@
 """Build one deck of the WellNest 25-deck series. usage: build_wn_series.py <deckId>   (e.g. wellnest-brand-look-1)
 Deck id == Submit deck value == deck-queue.json deckId. Standalone page <slug>/index.html with white background,
 wn-deck-done localStorage on real submit, Back link -> wellnest-dashboard/?done=<deckId>. Submit -> agent 'wellnest'."""
+import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()  # fail build if card-media max-height:100% returns
 import sys, os, json, random, string, re
 sys.path.insert(0, os.path.dirname(__file__))
 from wn_series_content import *

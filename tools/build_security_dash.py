@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Security Dashboard Setup Deck (Max asked, Oct 15 2026): same as build_security_duties.py, card art from security_dash_svg (kit mockups)."""
+import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()  # fail build if card-media max-height:100% returns
 import sys, os, json, re, string, secrets
 sys.path.insert(0, os.path.dirname(__file__))
 from team_kit import deck as kdeck, publish

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Art Deck (Household board): downloads real CC0 artworks from the Art Institute of Chicago API into img/art/ (credits in img/art/credits.json),
 then publishes a 20-pair image deck with the same page pattern as build_household.py (white, beige accents, Khand/Hind, Notes + Share)."""
+import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()  # fail build if card-media max-height:100% returns
 import sys, os, json, re, string, secrets, urllib.request, html
 sys.path.insert(0, os.path.dirname(__file__))
 from team_kit import deck as kdeck, publish
@@ -26,7 +27,7 @@ def svg(c, label):
     iw, ih = (bw, bw / s) if s > bw / bh else (bh * s, bh); x, y = 8 + (bw - iw) / 2, 8 + (bh - ih) / 2
     t = lambda x, y, txt, sz, col, fam, wt=600: f'<text x="{x}" y="{y}" font-size="{sz}" fill="{col}" text-anchor="middle" font-family="{fam}, sans-serif" font-weight="{wt}">{E2(txt)}</text>'
     by = (c["artist"] or "Unknown") + (", " + c["date"] if c["date"] else "")
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 {W} {H}" width="{W}" height="{H}" style="max-height:100%;max-width:100%"><clipPath id="c"><rect width="{W}" height="{H}" rx="14"/></clipPath><g clip-path="url(#c)">'
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 {W} {H}" width="{W}" height="{H}" style="max-width:100%;height:auto"><clipPath id="c"><rect width="{W}" height="{H}" rx="14"/></clipPath><g clip-path="url(#c)">'
             f'<rect width="{W}" height="{H}" fill="#FFFFFF"/><rect x="8" y="8" width="{bw}" height="{bh}" rx="8" fill="#FAF6EE" stroke="#E3DDD2"/>'
             f'<image href="{c["file"]}" xlink:href="{c["file"]}" x="{x:.1f}" y="{y:.1f}" width="{iw:.1f}" height="{ih:.1f}" preserveAspectRatio="xMidYMid meet"/>'
             + t(120, 252, label[:34], 15, "#0A0A0A", "Khand") + t(120, 268, by[:46], 9.5, "#525252", "Hind", 500)

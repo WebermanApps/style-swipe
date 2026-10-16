@@ -6,6 +6,7 @@ Max standard look: white + #FAF6EE/#e3ddd2, Khand/Hind, square corners, no emoji
 Site plan cards use crops of Render 2 / Render 3 (Dropbox /The WellNest/Photos for Presentation) in img/wn-site/.
 Submit -> wellnest; wn-deck-done on real submit; Back -> wellnest-dashboard/?done=<deckId>; mw-chat cc11 to WellNest Agent.
 usage: build_wn_refresh.py [key ...]"""
+import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()  # fail build if card-media max-height:100% returns
 import sys, os, json, re, string, secrets, base64
 sys.path.insert(0, os.path.dirname(__file__))
 from team_kit import deck as kdeck, publish, wrap, shareic
@@ -32,7 +33,7 @@ def svg(group, label, desc, facts, kind, acc):
     for f in facts[:2]:
         w = min(104, 18 + len(f) * 6.2); s += rect(x, y, w, 22, BEI, LINE) + t(x + 8, y + 15, f, 11, INK, "hind", 600); x += w + 6
     s += t(120, 292, "Built by Max Weberman", 8, "#8A8580", "hind", 400, "middle")
-    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" width="240" height="300" style="max-height:100%;max-width:100%">{s}<rect x=".5" y=".5" width="239" height="299" fill="none" stroke="#e3ddd2"/></svg>'
+    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" width="240" height="300" style="max-width:100%;height:auto">{s}<rect x=".5" y=".5" width="239" height="299" fill="none" stroke="#e3ddd2"/></svg>'
 def head(did):
     return f'''<base href="../">
 <meta name="robots" content="noindex">

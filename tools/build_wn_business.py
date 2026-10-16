@@ -3,6 +3,7 @@
 (5 shelf + 5 refill pool). Content: tools/wn_business_content.py. Same page pattern as build_wn_series.py
 (white page + beige accents, wn-deck-done on real submit, Back -> wellnest-dashboard/?done=<deckId>), team_kit.publish (Notes + Share on),
 Khand/Hind, submit_agent wellnest. usage: build_wn_business.py [key ...]  -> prints JSON lines {deckId,name,url}"""
+import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()  # fail build if card-media max-height:100% returns
 import sys, os, json, re, string, secrets
 sys.path.insert(0, os.path.dirname(__file__))
 from team_kit import deck as kdeck, publish
@@ -24,7 +25,7 @@ def svg(group, label, desc, facts, acc):
     for f in facts[:2]:
         s += rect(16, y, 208, 32, "#FFFFFF", LINE, 8) + f'<circle cx="30" cy="{y+16}" r="4" fill="{acc}"/>' + t(42, y + 21, f, 13.5, INK, "hind", 600); y += 36
     s += t(120, 290, "Built by Max Weberman", 8, "#8A8580", "hind", 400, "middle")
-    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" width="240" height="300" style="max-height:100%;max-width:100%"><clipPath id="c"><rect width="240" height="300" rx="14"/></clipPath><g clip-path="url(#c)">{s}</g><rect x=".5" y=".5" width="239" height="299" rx="14" fill="none" stroke="#D6D0C6"/></svg>'
+    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" width="240" height="300" style="max-width:100%;height:auto"><clipPath id="c"><rect width="240" height="300" rx="14"/></clipPath><g clip-path="url(#c)">{s}</g><rect x=".5" y=".5" width="239" height="299" rx="14" fill="none" stroke="#D6D0C6"/></svg>'
 def page(did, slug):
     src = open("tools/build_wn_series.py").read(); i = src.index("HEAD = f'''"); j = src.index("'''", i + 12)
     HEAD = eval("f'''" + src[i + 11:j] + "'''", {"did": did})

@@ -2,6 +2,7 @@
 """Branding: permanent Team Improvement Deck (R75, Oct 16 2026). 20 this-or-that pairs, drawn SVG pictures.
 SVGs use viewBox + width:100%;height:auto (no max-height:100% collapse); page CSS overrides the template's max-height rule so pictures show on desktop and phone.
 Square corners; mw-chat cc11 to Branding Agent; submit_agent branding. Content: tools/team_improvement_deck_content.py."""
+import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()  # fail build if card-media max-height:100% returns
 import sys, os, json, re, string, secrets
 sys.path.insert(0, os.path.dirname(__file__))
 from team_kit import deck as kdeck, publish, shareic, wrap

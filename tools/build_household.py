@@ -2,6 +2,7 @@
 """Household agent (c59ffdde-28bf-4ad7-8dd8-22f5e941647d) first deck 'Home Setup Deck' (Oct 15 2026): 20 pairs for Max, Nozomi and Maple.
 Same card + page pattern as build_wn_business.py (white, beige accents, Khand/Hind, Notes + Share via team_kit.publish), submit_agent household.
 Content: tools/household_content.py. Slug kept in queue/household-slugs.json."""
+import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()  # fail build if card-media max-height:100% returns
 import sys, os, json, re, string, secrets
 sys.path.insert(0, os.path.dirname(__file__))
 from team_kit import deck as kdeck, publish

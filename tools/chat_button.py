@@ -5,6 +5,7 @@ The button opens Max's chat with the agent the deck's results route to: uuid in 
 by deck.submit_agent, else Branding when the deck names no agent; unknown agents get no button.
 NEVER touches share-x3l9xcxc1eut/ (unlinked share page). Pages are locked: unlock the files first, run this, then relock.
 Usage: python3 tools/chat_button.py [files...]   (default: template + all deck pages)"""
+import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()  # fail build if card-media max-height:100% returns
 import os, re, glob, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); os.chdir(ROOT)
 START, END = "<!--mw-chat-->", "<!--/mw-chat-->"

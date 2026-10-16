@@ -3,6 +3,7 @@
 White page, light beige (#FAF6EE / #e3ddd2) accents on header band, Notes, progress and selected states. All decks, WellNest included.
 Tokens from kit/dash-theme.css. Colours only. Injects/replaces the <!--mw-white--> block before </head> in the template and every deck page.
   python3 tools/deck_white.py            # template + all <slug>/index.html"""
+import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()  # fail build if card-media max-height:100% returns
 import os, re, glob, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); os.chdir(ROOT)
 CSS = """<!--mw-white--><style id="mw-white">

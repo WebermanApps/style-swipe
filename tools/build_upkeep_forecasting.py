@@ -2,6 +2,7 @@
 """UpKeep (Smart Upkeep) Forecasting And Projections Deck (Oct 16 2026): 20 text this-or-that pairs on what to include in forecasts and how to view projections.
 Same pattern as build_security_duties.py (white, beige accents, Khand/Hind, Notes + Share via team_kit.publish), submit_agent upkeep.
 Content: tools/upkeep_forecasting_content.py. Slug kept in queue/upkeep-forecasting-slugs.json."""
+import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()  # fail build if card-media max-height:100% returns
 import sys, os, json, re, string, secrets
 sys.path.insert(0, os.path.dirname(__file__))
 from team_kit import deck as kdeck, publish

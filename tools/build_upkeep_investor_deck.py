@@ -2,6 +2,7 @@
 """UpKeep (Smart Upkeep) Investor Pitch Deck (Oct 16 2026): 20 text this-or-that pairs with drawn SVG slide thumbnails (no images).
 Same pattern as build_upkeep_forecasting.py; square corners; mw-chat cc11 to UpKeep; submit_agent upkeep.
 Content: tools/upkeep_investor_deck_content.py. Slug kept in queue/upkeep-investor-slugs.json."""
+import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()  # fail build if card-media max-height:100% returns
 import sys, os, json, re, string, secrets
 sys.path.insert(0, os.path.dirname(__file__))
 from team_kit import deck as kdeck, publish, shareic, wrap
@@ -72,7 +73,7 @@ def svg(group, label, desc, facts, kind, acc):
     for f in facts[:2]:
         w = min(104, 18 + len(f) * 6.2); s += rect(x, y, w, 22, BEI, LINE) + t(x + 8, y + 15, f, 11, INK, "hind", 600); x += w + 6
     s += t(120, 292, "Built by Max Weberman", 8, "#8A8580", "hind", 400, "middle")
-    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" width="240" height="300" style="max-height:100%;max-width:100%">{s}<rect x=".5" y=".5" width="239" height="299" fill="none" stroke="#e3ddd2"/></svg>'
+    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" width="240" height="300" style="max-width:100%;height:auto">{s}<rect x=".5" y=".5" width="239" height="299" fill="none" stroke="#e3ddd2"/></svg>'
 SL = "queue/upkeep-investor-slugs.json"; slugs = json.load(open(SL)) if os.path.exists(SL) else {}
 FEEL = ["practical", "bold", "calm", "playful", "premium"]
 for n, key in enumerate(DECKS):

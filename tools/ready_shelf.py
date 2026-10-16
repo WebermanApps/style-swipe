@@ -16,6 +16,7 @@ Shelf file (per agent, schema kit/shelf.schema.json): {"agent":..,"updated":..,"
       a pair skipped twice is dropped.
   python3 tools/ready_shelf.py list --shelf <shelf.json>
 Then commit + push style-swipe (new deck + page) and the dashboard repo (shelf.json)."""
+import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()  # fail build if card-media max-height:100% returns
 import json, os, re, sys, random, string, datetime as dt
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); os.chdir(ROOT); sys.path.insert(0, os.path.join(ROOT, "tools"))
 BASE = "https://webermanapps.github.io/style-swipe/"; N = 20

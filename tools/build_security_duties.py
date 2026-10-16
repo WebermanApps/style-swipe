@@ -2,6 +2,7 @@
 """Security agent (d47b42b5-3764-4c66-9360-3d4c931d0483) Security Duties Deck (Oct 15 2026): 20 pairs on what Security could do for Max and show on its dashboard.
 Same card + page pattern as build_household.py (white, beige accents, Khand/Hind, Notes + Share via team_kit.publish), submit_agent security.
 Content: tools/security_duties_content.py. Slug kept in queue/security-slugs.json."""
+import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()  # fail build if card-media max-height:100% returns
 import sys, os, json, re, string, secrets
 sys.path.insert(0, os.path.dirname(__file__))
 from team_kit import deck as kdeck, publish

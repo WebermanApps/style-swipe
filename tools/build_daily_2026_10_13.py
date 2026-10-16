@@ -44,7 +44,7 @@ def hdr(right="", c=INK, up=MUTE):
     r = right or (rect(150, 9, 78, 13, "#F5F5F5", LINE, 6.5) + t(189, 18, "PROTOTYPE", 5.5, MUTE, "hind", 600, "middle", 'letter-spacing=".6"'))
     return roof_logo(14, 21, 1, c, up) + r + f'<line x1="0" y1="31" x2="{W}" y2="31" stroke="{LINE}"/>'
 def screen(body, bg="#FFFFFF", head=True, right="", hc=INK, up=MUTE):
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" style="max-height:100%;max-width:100%">'
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" style="max-width:100%;height:auto">'
             f'<clipPath id="c"><rect width="{W}" height="{H}" rx="14"/></clipPath><g clip-path="url(#c)"><rect width="{W}" height="{H}" fill="{bg}"/>'
             + (hdr(right, hc, up) if head else "") + body
             + f'</g><rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="#D6D0C6"/></svg>')
@@ -580,7 +580,7 @@ def cafe_card(name, notes_line, accent):
     body += rect(20, 30, 80, 60, "#F7F4EE") + rect(110, 40, 100, 40, accent + "33")
     body += h1(14, 140, name, 16) + para(14, 160, [notes_line, "Natural light, quiet seats."], 9, MUTE)
     body += tag(14, 210, "Cafe", accent) + tag(70, 210, "Warm", TERRA)
-    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" style="max-height:100%;max-width:100%"><clipPath id="c"><rect width="{W}" height="{H}" rx="14"/></clipPath><g clip-path="url(#c)">{body}</g><rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="#D6D0C6"/></svg>'
+    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" style="max-width:100%;height:auto"><clipPath id="c"><rect width="{W}" height="{H}" rx="14"/></clipPath><g clip-path="url(#c)">{body}</g><rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="#D6D0C6"/></svg>'
 
 def texture_card(label, fill, pattern="lines"):
     body = rect(0, 0, W, H, fill)
@@ -591,14 +591,14 @@ def texture_card(label, fill, pattern="lines"):
     elif pattern == "weave":
         body += "".join(f'<line x1="{x}" y1="0" x2="{x}" y2="{H}" stroke="#00000014" stroke-width="3"/>' for x in range(8, W, 10))
     body += rect(0, 220, W, 80, "#FFFFFFCC") + h1(14, 250, label, 16) + t(14, 272, "Material sample", 9, MUTE)
-    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" style="max-height:100%;max-width:100%"><clipPath id="c"><rect width="{W}" height="{H}" rx="14"/></clipPath><g clip-path="url(#c)">{body}</g><rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="#D6D0C6"/></svg>'
+    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" style="max-width:100%;height:auto"><clipPath id="c"><rect width="{W}" height="{H}" rx="14"/></clipPath><g clip-path="url(#c)">{body}</g><rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="#D6D0C6"/></svg>'
 
 def travel_card(place, sky, tip):
     body = rect(0, 0, W, 160, sky) + rect(0, 140, W, 160, "#F7F4EE")
     body += rect(40, 80, 160, 70, "#FFFFFF") + rect(100, 100, 20, 50, "#6B4B3A")  # simple building
     body += h1(14, 190, place, 16) + para(14, 210, [tip], 9, MUTE)
     body += tag(14, 250, "Travel", LAGOON)
-    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" style="max-height:100%;max-width:100%"><clipPath id="c"><rect width="{W}" height="{H}" rx="14"/></clipPath><g clip-path="url(#c)">{body}</g><rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="#D6D0C6"/></svg>'
+    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" style="max-width:100%;height:auto"><clipPath id="c"><rect width="{W}" height="{H}" rx="14"/></clipPath><g clip-path="url(#c)">{body}</g><rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="#D6D0C6"/></svg>'
 
 def nursery_card(style):
     body = rect(0, 0, W, H, "#FAF6EE")
@@ -608,7 +608,7 @@ def nursery_card(style):
     else:
         body += rect(20, 40, 200, 120, "#F3ECE1") + rect(40, 70, 160, 20, "#FFFFFF") + rect(40, 100, 100, 40, "#E8DFD4")
         body += h1(14, 200, "Warm Cream Nursery", 16) + para(14, 220, ["Cream walls, oak, quiet textiles."], 9, MUTE)
-    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" style="max-height:100%;max-width:100%"><clipPath id="c"><rect width="{W}" height="{H}" rx="14"/></clipPath><g clip-path="url(#c)">{body}</g><rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="#D6D0C6"/></svg>'
+    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" style="max-width:100%;height:auto"><clipPath id="c"><rect width="{W}" height="{H}" rx="14"/></clipPath><g clip-path="url(#c)">{body}</g><rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="#D6D0C6"/></svg>'
 
 def watch_card(style):
     body = rect(0, 0, W, H, "#FFFFFF")
@@ -621,7 +621,7 @@ def watch_card(style):
         body += f'<circle cx="120" cy="120" r="58" fill="#FFFFFF"/><rect x="118" y="70" width="4" height="30" fill="{TERRA}"/>'
         body += t(120, 210, "Dress Watch", 14, INK, "khand", anchor="middle")
         body += t(120, 230, "White dial, terracotta second", 9, MUTE, anchor="middle")
-    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" style="max-height:100%;max-width:100%"><clipPath id="c"><rect width="{W}" height="{H}" rx="14"/></clipPath><g clip-path="url(#c)">{body}</g><rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="#D6D0C6"/></svg>'
+    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" style="max-width:100%;height:auto"><clipPath id="c"><rect width="{W}" height="{H}" rx="14"/></clipPath><g clip-path="url(#c)">{body}</g><rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="#D6D0C6"/></svg>'
 
 add("Variety", "Cafés", "Style Profile", "Which Cafe Mood Fits?",
     O("var_cafe_light", "Bright Corner Cafe", "White walls, wood, lagoon cup accent.",
@@ -663,7 +663,7 @@ def light_card(style):
         body = rect(0, 0, W, H, "#F3ECE1") + f'<ellipse cx="120" cy="90" rx="55" ry="24" fill="{SAFFRON}33"/>'
         body += f'<circle cx="120" cy="110" r="18" fill="{SAFFRON}"/>' + rect(114, 128, 12, 40, "#6B4B3A")
         body += h1(14, 220, "Warm Lamp Glow", 16, INK) + para(14, 242, ["Evening pool of warm light."], 9, MUTE)
-    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" style="max-height:100%;max-width:100%"><clipPath id="c"><rect width="{W}" height="{H}" rx="14"/></clipPath><g clip-path="url(#c)">{body}</g><rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="#D6D0C6"/></svg>'
+    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" style="max-width:100%;height:auto"><clipPath id="c"><rect width="{W}" height="{H}" rx="14"/></clipPath><g clip-path="url(#c)">{body}</g><rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="#D6D0C6"/></svg>'
 
 def food_card(style):
     body = rect(0, 0, W, H, "#FFFFFF")
@@ -675,7 +675,7 @@ def food_card(style):
         body += rect(40, 50, 160, 120, "#EDE6DC") + rect(60, 70, 120, 80, "#F7F4EE")
         body += tag(70, 100, "Shared", TERRA, True)
         body += h1(14, 210, "Shared Table", 16) + para(14, 232, ["Family-style bowls, warm wood."], 9, MUTE)
-    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" style="max-height:100%;max-width:100%"><clipPath id="c"><rect width="{W}" height="{H}" rx="14"/></clipPath><g clip-path="url(#c)">{body}</g><rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="#D6D0C6"/></svg>'
+    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" style="max-width:100%;height:auto"><clipPath id="c"><rect width="{W}" height="{H}" rx="14"/></clipPath><g clip-path="url(#c)">{body}</g><rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="#D6D0C6"/></svg>'
 
 def plant_card(style):
     body = rect(0, 0, W, H, "#FAF6EE")
@@ -688,7 +688,7 @@ def plant_card(style):
             body += f'<rect x="{x}" y="150" width="28" height="22" fill="#D4C4B0"/>'
             body += f'<ellipse cx="{x+14}" cy="120" rx="22" ry="28" fill="{JUNGLE if i!=1 else LAG2}"/>'
         body += h1(14, 220, "Small Plant Cluster", 16) + para(14, 242, ["Three pots, mixed greens."], 9, MUTE)
-    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" style="max-height:100%;max-width:100%"><clipPath id="c"><rect width="{W}" height="{H}" rx="14"/></clipPath><g clip-path="url(#c)">{body}</g><rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="#D6D0C6"/></svg>'
+    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" style="max-width:100%;height:auto"><clipPath id="c"><rect width="{W}" height="{H}" rx="14"/></clipPath><g clip-path="url(#c)">{body}</g><rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="#D6D0C6"/></svg>'
 
 def book_card(style):
     body = rect(0, 0, W, H, "#FFFFFF")
@@ -700,7 +700,7 @@ def book_card(style):
         body += rect(50, 30, 140, 180, INK) + t(120, 110, "FLAT", 18, "#FFFFFF", "khand", anchor="middle")
         body += t(120, 135, "FEE", 18, "#FFFFFF", "khand", anchor="middle")
         body += t(14, 240, "Type Cover", 14, INK, "khand") + t(14, 260, "Bold words, no photo", 9, MUTE)
-    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" style="max-height:100%;max-width:100%"><clipPath id="c"><rect width="{W}" height="{H}" rx="14"/></clipPath><g clip-path="url(#c)">{body}</g><rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="#D6D0C6"/></svg>'
+    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" style="max-width:100%;height:auto"><clipPath id="c"><rect width="{W}" height="{H}" rx="14"/></clipPath><g clip-path="url(#c)">{body}</g><rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="#D6D0C6"/></svg>'
 
 add("Variety", "Lighting Moods", "Style Profile", "Which Lighting Mood?",
     O("var_lt_day", "Daylight Room", "Soft sky light and pale walls.",
@@ -730,7 +730,7 @@ add("Variety", "Book & Magazine Covers", "Style Profile", "Which Cover Direction
 # ========== F2. Niko & Vivian function (3) ==========
 def nv_screen(app_name, title, body_svg):
     head = rect(0, 0, W, 36, "#FFFFFF") + t(14, 24, app_name.upper(), 10, INK, "khand") + ln(36, 0, W)
-    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" style="max-height:100%;max-width:100%"><clipPath id="c"><rect width="{W}" height="{H}" rx="14"/></clipPath><g clip-path="url(#c)"><rect width="{W}" height="{H}" fill="#FFFFFF"/>{head}{body_svg}</g><rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="#D6D0C6"/></svg>'
+    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" style="max-width:100%;height:auto"><clipPath id="c"><rect width="{W}" height="{H}" rx="14"/></clipPath><g clip-path="url(#c)"><rect width="{W}" height="{H}" fill="#FFFFFF"/>{head}{body_svg}</g><rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="#D6D0C6"/></svg>'
 
 # Warranty list layout — Home Guide
 add("Niko Vivian", "Warranty List", "Home Guide", "How Should Warranties List On Home Guide?",

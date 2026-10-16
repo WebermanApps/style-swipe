@@ -5,6 +5,7 @@ Injects one idempotent block into index.template.html and every deck page (<slug
    (map in kit/agent-dashboards.json, from ops/apps-home/agents.d; unknown -> Branding);
  - after a Submit is sent: a big 'Back to Deck Building' button at the top of the summary.
 Deck content is not touched. Usage: python3 tools/agent_links.py   (re-run after changing kit/agent-dashboards.json)"""
+import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()  # fail build if card-media max-height:100% returns
 import json, os, re, glob
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); os.chdir(ROOT)
 M = json.load(open("kit/agent-dashboards.json"))

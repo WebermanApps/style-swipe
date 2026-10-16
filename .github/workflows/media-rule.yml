@@ -1,0 +1,8 @@
+name: media-rule
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sh tools/build_check.sh

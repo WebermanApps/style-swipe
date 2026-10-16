@@ -2,6 +2,7 @@
 """Household: refill Maple Deck after Max's Oct 15 submission (6aa9b781). Maple is 8 months (Max note on card 01).
 20 pairs: skipped cards 10 and 15 reworded for a baby and asked first (R64), then 18 from Branding's baby bank
 (household_content.py maple-outings / maple-learning, style-swipe 6575172). Same card + page pattern as build_household.py."""
+import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()  # fail build if card-media max-height:100% returns
 import sys, os, json, re, string, secrets
 sys.path.insert(0, os.path.dirname(__file__))
 from team_kit import deck as kdeck, publish

@@ -200,7 +200,7 @@ button.skip:hover{border-color:var(--line)}
 .v-hm{position:relative;height:210px;overflow:hidden;font-family:Hind,system-ui,sans-serif;text-align:left}
 .v-hm>div{height:100%}
 .v-hm *{min-width:0;overflow-wrap:anywhere}
-.v-svg svg{max-width:100%;max-height:100%;width:auto;height:auto;display:block}
+.v-svg svg{max-width:100%;max-height:none;width:100%;height:auto;display:block}
 /* larger SVG mock screens (scoped to .v-svg so other visual types are unchanged): the screen fills the card width, capped by viewport height */
 .v-hm.v-svg{height:auto;min-height:210px}
 .v-hm.v-svg>div{padding:2px!important;height:auto!important}
@@ -339,12 +339,12 @@ body.carding .card h2{flex:none;font-size:15px;line-height:1.15;display:-webkit-
 body.carding .opts{flex:1 1 auto;min-height:0;display:grid;grid-template-rows:minmax(0,1fr);gap:6px;overflow:hidden!important}
 body.carding .opt{min-height:0!important;height:100%;overflow:hidden!important;padding:5px!important;gap:3px;display:flex;flex-direction:column}
 body.carding .opt .vis{flex:1 1 auto!important;min-height:0!important;height:auto!important;display:flex;flex-direction:column;align-items:stretch;justify-content:center;overflow:hidden}
-body.carding .opt .vis>*{flex:1 1 auto;min-height:0!important;max-height:100%;height:auto!important;aspect-ratio:auto!important;width:100%}
-body.carding .opt .vis img{width:100%!important;height:100%!important;max-height:100%;object-fit:contain!important;position:static!important;display:block}
-body.carding .opt .vis svg{max-height:100%!important}
+body.carding .opt .vis>*{flex:1 1 auto;min-height:0!important;max-height:none;height:auto!important;aspect-ratio:auto!important;width:100%}
+body.carding .opt .vis img{width:100%!important;height:100%!important;max-height:none!important;min-height:min(160px,28vh);object-fit:contain!important;position:static!important;display:block}
+body.carding .opt .vis svg{max-height:none!important;min-height:min(160px,28vh)}
 body.carding .opt .vis .v-svg{display:flex;align-items:center;justify-content:center}
 body.carding .opt .vis .v-svg>div{height:100%!important;width:100%;display:flex;align-items:center;justify-content:center}
-body.carding .opt .vis .v-svg svg{width:100%!important;height:100%!important;max-height:100%!important}
+body.carding .opt .vis .v-svg svg{width:100%!important;height:100%!important;max-height:none!important;min-height:min(160px,28vh)}
 body.carding .v-bleed{position:static}
 body.carding .v-bleed .cap{position:static;background:#1F1F1F;padding:3px 6px;flex:none}
 body.carding .v-bleed{display:flex;flex-direction:column}

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Crisp pass (Oct 14 2026): sync the crisp CSS from index.template.html into built pages (index.html + */index.html) without re-rendering them.
 Drops the idle will-change on .card and inserts the '/* crisp pass' style block before the last </style> in <head>. Idempotent."""
+import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()  # fail build if card-media max-height:100% returns
 import glob, os, re
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 T = open(os.path.join(ROOT, "index.template.html")).read()
