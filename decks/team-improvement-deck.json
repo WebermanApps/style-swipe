@@ -9,20 +9,19 @@
  "generated_at": "2026-10-16T11:56:44+07:00",
  "status": "published",
  "feeling_counts": {
+  "practical": 9,
   "bold": 8,
-  "calm": 8,
-  "playful": 8,
-  "premium": 8,
-  "practical": 8
+  "calm": 9,
+  "playful": 7,
+  "premium": 7
  },
  "groups": {
-  "Boards": 6,
   "Reports": 3,
-  "Icons": 2,
-  "Decks": 3,
-  "How Agents Talk": 3,
+  "How Agents Talk": 2,
   "Notifications": 2,
-  "Habits": 1
+  "Decks": 3,
+  "Icons": 2,
+  "Boards": 8
  },
  "apps": {
   "Grok Bot Team": 20
@@ -828,77 +827,15 @@
    "repeat": false
   },
   {
-   "group": "How Agents Talk",
-   "category": "How Agents Talk",
+   "id": "team-improvement-deck-21",
+   "group": "Boards",
+   "category": "Boards",
    "app": "Grok Bot Team",
-   "ask": "Handoffs Between Agents: Silent Or One Line In The Team Feed?",
+   "ask": "Routines Rows: Name And Time Only Or Add A Status Pill?",
    "optionA": {
-    "id": "teamimp_silent_handoff_170",
-    "label": "Silent Handoff",
-    "desc": "Agents pass work without telling Max.",
-    "tags": [
-     "premium"
-    ],
-    "feeling": "premium",
-    "notes": true,
-    "share": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" preserveAspectRatio=\"xMidYMid meet\" style=\"width:100%;height:auto;display:block\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HOW AGENTS TALK</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><rect x=\"16\" y=\"40\" width=\"208\" height=\"104\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"#e3ddd2\" stroke-width=\"1\" /><circle cx=\"66\" cy=\"92.0\" r=\"16\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\"/><circle cx=\"174\" cy=\"92.0\" r=\"16\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\"/><line x1=\"86\" y1=\"92.0\" x2=\"154\" y2=\"92.0\" stroke=\"#05668D\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"154,86.0 164,92.0 154,98.0\" fill=\"#05668D\"/><text x=\"16\" y=\"174\" font-size=\"24\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Silent Handoff</text><text x=\"16\" y=\"199\" font-size=\"12.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Agents pass work without telling</text><text x=\"16\" y=\"215\" font-size=\"12.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Max.</text><rect x=\"16\" y=\"250\" width=\"67.6\" height=\"22\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"#e3ddd2\" stroke-width=\"1\" /><text x=\"24\" y=\"265\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >No noise</text><rect x=\"89.6\" y=\"250\" width=\"49.0\" height=\"22\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"#e3ddd2\" stroke-width=\"1\" /><text x=\"97.6\" y=\"265\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Trust</text><text x=\"120\" y=\"292\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
-     "bg": "#FFFFFF"
-    }
-   },
-   "optionB": {
-    "id": "teamimp_one_feed_line_171",
-    "label": "One Feed Line",
-    "desc": "One line in the team feed per handoff.",
-    "tags": [
-     "practical"
-    ],
-    "feeling": "practical",
-    "notes": true,
-    "share": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" preserveAspectRatio=\"xMidYMid meet\" style=\"width:100%;height:auto;display:block\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HOW AGENTS TALK</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><rect x=\"16\" y=\"40\" width=\"208\" height=\"104\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"#e3ddd2\" stroke-width=\"1\" /><circle cx=\"56\" cy=\"70\" r=\"12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\"/><circle cx=\"184\" cy=\"70\" r=\"12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\"/><line x1=\"72\" y1=\"70\" x2=\"166\" y2=\"70\" stroke=\"#D4A017\" stroke-width=\"3\" stroke-linecap=\"round\"/><rect x=\"36\" y=\"96\" width=\"168\" height=\"30\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\" stroke-width=\"1\" /><rect x=\"44\" y=\"104\" width=\"8\" height=\"14\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"60\" y=\"108\" width=\"120\" height=\"5\" rx=\"0\" fill=\"#525252\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"174\" font-size=\"24\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >One Feed Line</text><text x=\"16\" y=\"199\" font-size=\"12.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >One line in the team feed per</text><text x=\"16\" y=\"215\" font-size=\"12.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >handoff.</text><rect x=\"16\" y=\"250\" width=\"73.80000000000001\" height=\"22\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"#e3ddd2\" stroke-width=\"1\" /><text x=\"24\" y=\"265\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Traceable</text><rect x=\"95.80000000000001\" y=\"250\" width=\"86.2\" height=\"22\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"#e3ddd2\" stroke-width=\"1\" /><text x=\"103.80000000000001\" y=\"265\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Transparent</text><text x=\"120\" y=\"292\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
-     "bg": "#FFFFFF"
-    }
-   },
-   "purpose": "new",
-   "retest": false,
-   "notes": true,
-   "share": true,
-   "id": "team-improvement-deck-14",
-   "repeat": false
-  },
-  {
-   "group": "Habits",
-   "category": "Habits",
-   "app": "Grok Bot Team",
-   "ask": "Saving Work: Push Results Every Day Or Keep A Backup In Dropbox?",
-   "optionA": {
-    "id": "teamimp_push_daily_180",
-    "label": "Push Daily",
-    "desc": "Every result file goes to GitHub the same day.",
-    "tags": [
-     "bold"
-    ],
-    "feeling": "bold",
-    "notes": true,
-    "share": true,
-    "visual": {
-     "type": "hm",
-     "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" preserveAspectRatio=\"xMidYMid meet\" style=\"width:100%;height:auto;display:block\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HABITS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><rect x=\"16\" y=\"40\" width=\"208\" height=\"104\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"#e3ddd2\" stroke-width=\"1\" /><rect x=\"70.0\" y=\"80\" width=\"100\" height=\"50\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"2\" /><rect x=\"80.0\" y=\"92\" width=\"60.0\" height=\"4\" rx=\"0\" fill=\"#e3ddd2\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"80.0\" y=\"102\" width=\"42.0\" height=\"4\" rx=\"0\" fill=\"#e3ddd2\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"80.0\" y=\"112\" width=\"60.0\" height=\"4\" rx=\"0\" fill=\"#e3ddd2\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"120.0\" y1=\"76\" x2=\"120.0\" y2=\"50\" stroke=\"#0B6E4F\" stroke-width=\"4\" stroke-linecap=\"round\"/><polygon points=\"110.0,58 120.0,46 130.0,58\" fill=\"#0B6E4F\"/><text x=\"16\" y=\"174\" font-size=\"24\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Push Daily</text><text x=\"16\" y=\"199\" font-size=\"12.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Every result file goes to GitHub</text><text x=\"16\" y=\"215\" font-size=\"12.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >the same day.</text><rect x=\"16\" y=\"250\" width=\"92.4\" height=\"22\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"#e3ddd2\" stroke-width=\"1\" /><text x=\"24\" y=\"265\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Nothing lost</text><rect x=\"114.4\" y=\"250\" width=\"73.80000000000001\" height=\"22\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"#e3ddd2\" stroke-width=\"1\" /><text x=\"122.4\" y=\"265\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Versioned</text><text x=\"120\" y=\"292\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
-     "bg": "#FFFFFF"
-    }
-   },
-   "optionB": {
-    "id": "teamimp_dropbox_backup_181",
-    "label": "Dropbox Backup",
-    "desc": "A nightly copy of results to a Dropbox folder.",
+    "id": "teamimp_rt_name_time_210",
+    "label": "Name And Time",
+    "desc": "Each routine is one line: short name and when it runs.",
     "tags": [
      "calm"
     ],
@@ -908,43 +845,57 @@
     "visual": {
      "type": "hm",
      "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" preserveAspectRatio=\"xMidYMid meet\" style=\"width:100%;height:auto;display:block\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">HABITS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><rect x=\"16\" y=\"40\" width=\"208\" height=\"104\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"#e3ddd2\" stroke-width=\"1\" /><path d=\"M70.0,80 H110.0 L120.0,90 H170.0 V132 H70.0 Z\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"2\"/><rect x=\"86.0\" y=\"56\" width=\"50\" height=\"34\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#C1502E\" stroke-width=\"2\" /><rect x=\"100.0\" y=\"64\" width=\"50\" height=\"34\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"174\" font-size=\"24\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Dropbox Backup</text><text x=\"16\" y=\"199\" font-size=\"12.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >A nightly copy of results to a</text><text x=\"16\" y=\"215\" font-size=\"12.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Dropbox folder.</text><rect x=\"16\" y=\"250\" width=\"92.4\" height=\"22\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"#e3ddd2\" stroke-width=\"1\" /><text x=\"24\" y=\"265\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Easy to open</text><rect x=\"114.4\" y=\"250\" width=\"86.2\" height=\"22\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"#e3ddd2\" stroke-width=\"1\" /><text x=\"122.4\" y=\"265\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Second copy</text><text x=\"120\" y=\"292\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
-     "bg": "#FFFFFF"
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" preserveAspectRatio=\"xMidYMid meet\" style=\"width:100%;height:auto;display:block\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\"/><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">ROUTINES</text><rect x=\"16\" y=\"40\" width=\"208\" height=\"244\" fill=\"#FDFBF6\" stroke=\"#E5E0D8\" stroke-width=\"1\"/><text x=\"28\" y=\"60\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"600\">Routines</text><line x1=\"28\" y1=\"74\" x2=\"212\" y2=\"74\" stroke=\"#E5E0D8\"/><text x=\"28\" y=\"91\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">Morning Report</text><text x=\"212\" y=\"91\" font-size=\"9.5\" fill=\"#737373\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\">4:40 AM daily</text><line x1=\"28\" y1=\"100\" x2=\"212\" y2=\"100\" stroke=\"#E5E0D8\"/><text x=\"28\" y=\"117\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">Deck Refill</text><text x=\"212\" y=\"117\" font-size=\"9.5\" fill=\"#737373\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\">6:10 AM Mon</text><line x1=\"28\" y1=\"126\" x2=\"212\" y2=\"126\" stroke=\"#E5E0D8\"/><text x=\"28\" y=\"143\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">Inbox Check</text><text x=\"212\" y=\"143\" font-size=\"9.5\" fill=\"#737373\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\">Every 30 min</text><line x1=\"28\" y1=\"152\" x2=\"212\" y2=\"152\" stroke=\"#E5E0D8\"/><text x=\"28\" y=\"169\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">Shelf Sweep</text><text x=\"212\" y=\"169\" font-size=\"9.5\" fill=\"#737373\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\">9:17 AM Thu</text><line x1=\"28\" y1=\"178\" x2=\"212\" y2=\"178\" stroke=\"#E5E0D8\"/><text x=\"28\" y=\"195\" font-size=\"10.5\" fill=\"#737373\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">Evening Report</text><text x=\"212\" y=\"195\" font-size=\"9.5\" fill=\"#737373\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\">Retired</text></svg>"
+    }
+   },
+   "optionB": {
+    "id": "teamimp_rt_status_pill_211",
+    "label": "Status Pill",
+    "desc": "Same line plus a small Active or Paused tag.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" preserveAspectRatio=\"xMidYMid meet\" style=\"width:100%;height:auto;display:block\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\"/><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">ROUTINES</text><rect x=\"16\" y=\"40\" width=\"208\" height=\"244\" fill=\"#FDFBF6\" stroke=\"#E5E0D8\" stroke-width=\"1\"/><text x=\"28\" y=\"60\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"600\">Routines</text><line x1=\"28\" y1=\"74\" x2=\"212\" y2=\"74\" stroke=\"#E5E0D8\"/><text x=\"28\" y=\"91\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">Morning Report</text><text x=\"166\" y=\"91\" font-size=\"9.5\" fill=\"#737373\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\">4:40 AM daily</text><rect x=\"170\" y=\"81\" width=\"42\" height=\"14\" fill=\"#E8F2EC\" stroke=\"none\" stroke-width=\"1\"/><text x=\"191\" y=\"91\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Active</text><line x1=\"28\" y1=\"100\" x2=\"212\" y2=\"100\" stroke=\"#E5E0D8\"/><text x=\"28\" y=\"117\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">Deck Refill</text><text x=\"166\" y=\"117\" font-size=\"9.5\" fill=\"#737373\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\">6:10 AM Mon</text><rect x=\"170\" y=\"107\" width=\"42\" height=\"14\" fill=\"#E8F2EC\" stroke=\"none\" stroke-width=\"1\"/><text x=\"191\" y=\"117\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Active</text><line x1=\"28\" y1=\"126\" x2=\"212\" y2=\"126\" stroke=\"#E5E0D8\"/><text x=\"28\" y=\"143\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">Inbox Check</text><text x=\"166\" y=\"143\" font-size=\"9.5\" fill=\"#737373\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\">Every 30 min</text><rect x=\"170\" y=\"133\" width=\"42\" height=\"14\" fill=\"#E8F2EC\" stroke=\"none\" stroke-width=\"1\"/><text x=\"191\" y=\"143\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Active</text><line x1=\"28\" y1=\"152\" x2=\"212\" y2=\"152\" stroke=\"#E5E0D8\"/><text x=\"28\" y=\"169\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">Shelf Sweep</text><text x=\"166\" y=\"169\" font-size=\"9.5\" fill=\"#737373\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\">9:17 AM Thu</text><rect x=\"170\" y=\"159\" width=\"42\" height=\"14\" fill=\"#E8F2EC\" stroke=\"none\" stroke-width=\"1\"/><text x=\"191\" y=\"169\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Active</text><line x1=\"28\" y1=\"178\" x2=\"212\" y2=\"178\" stroke=\"#E5E0D8\"/><text x=\"28\" y=\"195\" font-size=\"10.5\" fill=\"#737373\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">Evening Report</text><text x=\"166\" y=\"195\" font-size=\"9.5\" fill=\"#737373\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\">Retired</text><rect x=\"170\" y=\"185\" width=\"42\" height=\"14\" fill=\"#F1EEE8\" stroke=\"none\" stroke-width=\"1\"/><text x=\"191\" y=\"195\" font-size=\"8\" fill=\"#737373\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Paused</text></svg>"
     }
    },
    "purpose": "new",
    "retest": false,
    "notes": true,
    "share": true,
-   "id": "team-improvement-deck-19",
    "repeat": false
   },
   {
+   "id": "team-improvement-deck-22",
    "group": "Boards",
    "category": "Boards",
    "app": "Grok Bot Team",
-   "ask": "Team View: One Team Overview Page Or Each Agent's Board Only?",
+   "ask": "Routine Details: Expand The Row On Tap Or A See All Drawer?",
    "optionA": {
-    "id": "teamimp_team_overview_190",
-    "label": "Team Overview",
-    "desc": "One page with every agent's status and needs.",
+    "id": "teamimp_rt_expand_tap_220",
+    "label": "Expand On Tap",
+    "desc": "Tap a row and its details open right under it.",
     "tags": [
-     "playful"
+     "practical"
     ],
-    "feeling": "playful",
+    "feeling": "practical",
     "notes": true,
     "share": true,
     "visual": {
      "type": "hm",
      "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" preserveAspectRatio=\"xMidYMid meet\" style=\"width:100%;height:auto;display:block\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">BOARDS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><rect x=\"16\" y=\"40\" width=\"208\" height=\"104\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"#e3ddd2\" stroke-width=\"1\" /><rect x=\"30\" y=\"50\" width=\"56\" height=\"40\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\" stroke-width=\"1\" /><circle cx=\"42\" cy=\"62\" r=\"6\" fill=\"#D4A017\"/><rect x=\"36\" y=\"76\" width=\"40\" height=\"4\" rx=\"0\" fill=\"#525252\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"92\" y=\"50\" width=\"56\" height=\"40\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\" stroke-width=\"1\" /><circle cx=\"104\" cy=\"62\" r=\"6\" fill=\"#525252\"/><rect x=\"98\" y=\"76\" width=\"40\" height=\"4\" rx=\"0\" fill=\"#525252\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"154\" y=\"50\" width=\"56\" height=\"40\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\" stroke-width=\"1\" /><circle cx=\"166\" cy=\"62\" r=\"6\" fill=\"#D4A017\"/><rect x=\"160\" y=\"76\" width=\"40\" height=\"4\" rx=\"0\" fill=\"#525252\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"30\" y=\"94\" width=\"56\" height=\"40\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\" stroke-width=\"1\" /><circle cx=\"42\" cy=\"106\" r=\"6\" fill=\"#525252\"/><rect x=\"36\" y=\"120\" width=\"40\" height=\"4\" rx=\"0\" fill=\"#525252\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"92\" y=\"94\" width=\"56\" height=\"40\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\" stroke-width=\"1\" /><circle cx=\"104\" cy=\"106\" r=\"6\" fill=\"#D4A017\"/><rect x=\"98\" y=\"120\" width=\"40\" height=\"4\" rx=\"0\" fill=\"#525252\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"154\" y=\"94\" width=\"56\" height=\"40\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\" stroke-width=\"1\" /><circle cx=\"166\" cy=\"106\" r=\"6\" fill=\"#525252\"/><rect x=\"160\" y=\"120\" width=\"40\" height=\"4\" rx=\"0\" fill=\"#525252\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"174\" font-size=\"24\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Team Overview</text><text x=\"16\" y=\"199\" font-size=\"12.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >One page with every agent's status</text><text x=\"16\" y=\"215\" font-size=\"12.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >and needs.</text><rect x=\"16\" y=\"250\" width=\"86.2\" height=\"22\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"#e3ddd2\" stroke-width=\"1\" /><text x=\"24\" y=\"265\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Big picture</text><rect x=\"108.2\" y=\"250\" width=\"67.6\" height=\"22\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"#e3ddd2\" stroke-width=\"1\" /><text x=\"116.2\" y=\"265\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >One stop</text><text x=\"120\" y=\"292\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
-     "bg": "#FFFFFF"
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" preserveAspectRatio=\"xMidYMid meet\" style=\"width:100%;height:auto;display:block\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\"/><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">ROUTINES</text><rect x=\"16\" y=\"40\" width=\"208\" height=\"244\" fill=\"#FDFBF6\" stroke=\"#E5E0D8\" stroke-width=\"1\"/><text x=\"28\" y=\"60\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"600\">Routines</text><line x1=\"28\" y1=\"74\" x2=\"212\" y2=\"74\" stroke=\"#E5E0D8\"/><text x=\"28\" y=\"91\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">Morning Report</text><text x=\"166\" y=\"91\" font-size=\"9.5\" fill=\"#737373\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\">4:40 AM daily</text><rect x=\"170\" y=\"81\" width=\"42\" height=\"14\" fill=\"#E8F2EC\" stroke=\"none\" stroke-width=\"1\"/><text x=\"191\" y=\"91\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Active</text><rect x=\"28\" y=\"100\" width=\"184\" height=\"58\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\"/><text x=\"36\" y=\"115\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\">Posts the morning summary to the board.</text><text x=\"36\" y=\"130\" font-size=\"8.5\" fill=\"#737373\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\">Schedule: Daily at 4:40 AM ICT</text><text x=\"36\" y=\"145\" font-size=\"8.5\" fill=\"#737373\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\">Last run: Today 4:47 AM</text><line x1=\"28\" y1=\"164\" x2=\"212\" y2=\"164\" stroke=\"#E5E0D8\"/><text x=\"28\" y=\"181\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">Deck Refill</text><text x=\"166\" y=\"181\" font-size=\"9.5\" fill=\"#737373\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\">6:10 AM Mon</text><rect x=\"170\" y=\"171\" width=\"42\" height=\"14\" fill=\"#E8F2EC\" stroke=\"none\" stroke-width=\"1\"/><text x=\"191\" y=\"181\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Active</text><line x1=\"28\" y1=\"190\" x2=\"212\" y2=\"190\" stroke=\"#E5E0D8\"/><text x=\"28\" y=\"207\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">Inbox Check</text><text x=\"166\" y=\"207\" font-size=\"9.5\" fill=\"#737373\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\">Every 30 min</text><rect x=\"170\" y=\"197\" width=\"42\" height=\"14\" fill=\"#E8F2EC\" stroke=\"none\" stroke-width=\"1\"/><text x=\"191\" y=\"207\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Active</text><line x1=\"28\" y1=\"216\" x2=\"212\" y2=\"216\" stroke=\"#E5E0D8\"/><text x=\"28\" y=\"233\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">Shelf Sweep</text><text x=\"166\" y=\"233\" font-size=\"9.5\" fill=\"#737373\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\">9:17 AM Thu</text><rect x=\"170\" y=\"223\" width=\"42\" height=\"14\" fill=\"#E8F2EC\" stroke=\"none\" stroke-width=\"1\"/><text x=\"191\" y=\"233\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Active</text></svg>"
     }
    },
    "optionB": {
-    "id": "teamimp_agent_boards_only_191",
-    "label": "Agent Boards Only",
-    "desc": "Keep each board separate, as now.",
+    "id": "teamimp_rt_see_all_221",
+    "label": "See All Drawer",
+    "desc": "Show a few rows, then a drawer with every detail.",
     "tags": [
      "premium"
     ],
@@ -954,15 +905,57 @@
     "visual": {
      "type": "hm",
      "m": "svg",
-     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" preserveAspectRatio=\"xMidYMid meet\" style=\"width:100%;height:auto;display:block\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">BOARDS</text><g transform=\"translate(206,15) scale(0.625)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><rect x=\"16\" y=\"40\" width=\"208\" height=\"104\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"#e3ddd2\" stroke-width=\"1\" /><rect x=\"46\" y=\"54\" width=\"110\" height=\"66\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\" stroke-width=\"1\" /><rect x=\"60\" y=\"64\" width=\"110\" height=\"66\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\" stroke-width=\"1\" /><rect x=\"74\" y=\"74\" width=\"110\" height=\"66\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"2\" /><rect x=\"82\" y=\"84\" width=\"60\" height=\"8\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"82\" y=\"100\" width=\"80.0\" height=\"4\" rx=\"0\" fill=\"#e3ddd2\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"82\" y=\"110\" width=\"56.0\" height=\"4\" rx=\"0\" fill=\"#e3ddd2\" stroke=\"none\" stroke-width=\"1\" /><text x=\"16\" y=\"174\" font-size=\"24\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Agent Boards Only</text><text x=\"16\" y=\"199\" font-size=\"12.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Keep each board separate, as now.</text><rect x=\"16\" y=\"250\" width=\"61.4\" height=\"22\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"#e3ddd2\" stroke-width=\"1\" /><text x=\"24\" y=\"265\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Focused</text><rect x=\"83.4\" y=\"250\" width=\"55.2\" height=\"22\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"#e3ddd2\" stroke-width=\"1\" /><text x=\"91.4\" y=\"265\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Simple</text><text x=\"120\" y=\"292\" font-size=\"8\" fill=\"#8A8580\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Max Weberman</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
-     "bg": "#FFFFFF"
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" preserveAspectRatio=\"xMidYMid meet\" style=\"width:100%;height:auto;display:block\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\"/><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">ROUTINES</text><rect x=\"16\" y=\"40\" width=\"208\" height=\"244\" fill=\"#FDFBF6\" stroke=\"#E5E0D8\" stroke-width=\"1\"/><text x=\"28\" y=\"60\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"600\">Routines</text><line x1=\"28\" y1=\"74\" x2=\"212\" y2=\"74\" stroke=\"#E5E0D8\"/><text x=\"28\" y=\"91\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">Morning Report</text><text x=\"166\" y=\"91\" font-size=\"9.5\" fill=\"#737373\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\">4:40 AM daily</text><rect x=\"170\" y=\"81\" width=\"42\" height=\"14\" fill=\"#E8F2EC\" stroke=\"none\" stroke-width=\"1\"/><text x=\"191\" y=\"91\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Active</text><line x1=\"28\" y1=\"100\" x2=\"212\" y2=\"100\" stroke=\"#E5E0D8\"/><text x=\"28\" y=\"117\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">Deck Refill</text><text x=\"166\" y=\"117\" font-size=\"9.5\" fill=\"#737373\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\">6:10 AM Mon</text><rect x=\"170\" y=\"107\" width=\"42\" height=\"14\" fill=\"#E8F2EC\" stroke=\"none\" stroke-width=\"1\"/><text x=\"191\" y=\"117\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Active</text><line x1=\"28\" y1=\"126\" x2=\"212\" y2=\"126\" stroke=\"#E5E0D8\"/><text x=\"28\" y=\"143\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">Inbox Check</text><text x=\"166\" y=\"143\" font-size=\"9.5\" fill=\"#737373\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\">Every 30 min</text><rect x=\"170\" y=\"133\" width=\"42\" height=\"14\" fill=\"#E8F2EC\" stroke=\"none\" stroke-width=\"1\"/><text x=\"191\" y=\"143\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Active</text><line x1=\"28\" y1=\"152\" x2=\"212\" y2=\"152\" stroke=\"#E5E0D8\"/><text x=\"120\" y=\"170\" font-size=\"10\" fill=\"#D4A017\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">See all 5 routines</text><rect x=\"16\" y=\"200\" width=\"208\" height=\"84\" fill=\"#FFFFFF\" stroke=\"#D4A017\" stroke-width=\"1\"/><text x=\"28\" y=\"218\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"600\">All Routines</text><text x=\"28\" y=\"236\" font-size=\"8.5\" fill=\"#737373\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\">Drawer slides up with full details</text><text x=\"28\" y=\"252\" font-size=\"8.5\" fill=\"#737373\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\">for every routine at once.</text></svg>"
     }
    },
    "purpose": "new",
    "retest": false,
    "notes": true,
    "share": true,
-   "id": "team-improvement-deck-03",
+   "repeat": false
+  },
+  {
+   "id": "team-improvement-deck-23",
+   "group": "Boards",
+   "category": "Boards",
+   "app": "Grok Bot Team",
+   "ask": "Routine Times: 4:40 AM Daily Or Daily · 04:40?",
+   "optionA": {
+    "id": "teamimp_rt_time_words_230",
+    "label": "4:40 AM Daily",
+    "desc": "Time first, plain words, 12-hour clock.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" preserveAspectRatio=\"xMidYMid meet\" style=\"width:100%;height:auto;display:block\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\"/><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">ROUTINES</text><rect x=\"16\" y=\"40\" width=\"208\" height=\"244\" fill=\"#FDFBF6\" stroke=\"#E5E0D8\" stroke-width=\"1\"/><text x=\"28\" y=\"60\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"600\">Routines</text><line x1=\"28\" y1=\"74\" x2=\"212\" y2=\"74\" stroke=\"#E5E0D8\"/><text x=\"28\" y=\"91\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">Morning Report</text><text x=\"166\" y=\"91\" font-size=\"9.5\" fill=\"#737373\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\">4:40 AM daily</text><rect x=\"170\" y=\"81\" width=\"42\" height=\"14\" fill=\"#E8F2EC\" stroke=\"none\" stroke-width=\"1\"/><text x=\"191\" y=\"91\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Active</text><line x1=\"28\" y1=\"100\" x2=\"212\" y2=\"100\" stroke=\"#E5E0D8\"/><text x=\"28\" y=\"117\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">Deck Refill</text><text x=\"166\" y=\"117\" font-size=\"9.5\" fill=\"#737373\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\">6:10 AM Mon</text><rect x=\"170\" y=\"107\" width=\"42\" height=\"14\" fill=\"#E8F2EC\" stroke=\"none\" stroke-width=\"1\"/><text x=\"191\" y=\"117\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Active</text><line x1=\"28\" y1=\"126\" x2=\"212\" y2=\"126\" stroke=\"#E5E0D8\"/><text x=\"28\" y=\"143\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">Inbox Check</text><text x=\"166\" y=\"143\" font-size=\"9.5\" fill=\"#737373\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\">Every 30 min</text><rect x=\"170\" y=\"133\" width=\"42\" height=\"14\" fill=\"#E8F2EC\" stroke=\"none\" stroke-width=\"1\"/><text x=\"191\" y=\"143\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Active</text><line x1=\"28\" y1=\"152\" x2=\"212\" y2=\"152\" stroke=\"#E5E0D8\"/><text x=\"28\" y=\"169\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">Shelf Sweep</text><text x=\"166\" y=\"169\" font-size=\"9.5\" fill=\"#737373\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\">9:17 AM Thu</text><rect x=\"170\" y=\"159\" width=\"42\" height=\"14\" fill=\"#E8F2EC\" stroke=\"none\" stroke-width=\"1\"/><text x=\"191\" y=\"169\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Active</text><line x1=\"28\" y1=\"178\" x2=\"212\" y2=\"178\" stroke=\"#E5E0D8\"/><text x=\"28\" y=\"195\" font-size=\"10.5\" fill=\"#737373\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">Evening Report</text><text x=\"166\" y=\"195\" font-size=\"9.5\" fill=\"#737373\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\">Retired</text><rect x=\"170\" y=\"185\" width=\"42\" height=\"14\" fill=\"#F1EEE8\" stroke=\"none\" stroke-width=\"1\"/><text x=\"191\" y=\"195\" font-size=\"8\" fill=\"#737373\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Paused</text></svg>"
+    }
+   },
+   "optionB": {
+    "id": "teamimp_rt_time_compact_231",
+    "label": "Daily · 04:40",
+    "desc": "Day first, compact 24-hour clock.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" preserveAspectRatio=\"xMidYMid meet\" style=\"width:100%;height:auto;display:block\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\"/><text x=\"16\" y=\"28\" font-size=\"10.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">ROUTINES</text><rect x=\"16\" y=\"40\" width=\"208\" height=\"244\" fill=\"#FDFBF6\" stroke=\"#E5E0D8\" stroke-width=\"1\"/><text x=\"28\" y=\"60\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"600\">Routines</text><line x1=\"28\" y1=\"74\" x2=\"212\" y2=\"74\" stroke=\"#E5E0D8\"/><text x=\"28\" y=\"91\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">Morning Report</text><text x=\"166\" y=\"91\" font-size=\"9.5\" fill=\"#737373\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\">Daily · 04:40</text><rect x=\"170\" y=\"81\" width=\"42\" height=\"14\" fill=\"#E8F2EC\" stroke=\"none\" stroke-width=\"1\"/><text x=\"191\" y=\"91\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Active</text><line x1=\"28\" y1=\"100\" x2=\"212\" y2=\"100\" stroke=\"#E5E0D8\"/><text x=\"28\" y=\"117\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">Deck Refill</text><text x=\"166\" y=\"117\" font-size=\"9.5\" fill=\"#737373\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\">Mon · 06:10</text><rect x=\"170\" y=\"107\" width=\"42\" height=\"14\" fill=\"#E8F2EC\" stroke=\"none\" stroke-width=\"1\"/><text x=\"191\" y=\"117\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Active</text><line x1=\"28\" y1=\"126\" x2=\"212\" y2=\"126\" stroke=\"#E5E0D8\"/><text x=\"28\" y=\"143\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">Inbox Check</text><text x=\"166\" y=\"143\" font-size=\"9.5\" fill=\"#737373\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\">Every 30m</text><rect x=\"170\" y=\"133\" width=\"42\" height=\"14\" fill=\"#E8F2EC\" stroke=\"none\" stroke-width=\"1\"/><text x=\"191\" y=\"143\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Active</text><line x1=\"28\" y1=\"152\" x2=\"212\" y2=\"152\" stroke=\"#E5E0D8\"/><text x=\"28\" y=\"169\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">Shelf Sweep</text><text x=\"166\" y=\"169\" font-size=\"9.5\" fill=\"#737373\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\">Thu · 09:17</text><rect x=\"170\" y=\"159\" width=\"42\" height=\"14\" fill=\"#E8F2EC\" stroke=\"none\" stroke-width=\"1\"/><text x=\"191\" y=\"169\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Active</text><line x1=\"28\" y1=\"178\" x2=\"212\" y2=\"178\" stroke=\"#E5E0D8\"/><text x=\"28\" y=\"195\" font-size=\"10.5\" fill=\"#737373\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\">Evening Report</text><text x=\"166\" y=\"195\" font-size=\"9.5\" fill=\"#737373\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\">Retired</text><rect x=\"170\" y=\"185\" width=\"42\" height=\"14\" fill=\"#F1EEE8\" stroke=\"none\" stroke-width=\"1\"/><text x=\"191\" y=\"195\" font-size=\"8\" fill=\"#737373\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\">Paused</text></svg>"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
    "repeat": false
   }
  ],
