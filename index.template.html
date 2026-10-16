@@ -1455,5 +1455,15 @@ const hook=()=>{const S=window.MWSubmit;if(!S||S.__mwal)return;S.__mwal=1;const 
 let t=0;new MutationObserver(()=>{if(t)return;t=setTimeout(()=>{t=0;hook();apply()},50)}).observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:['class']});
 addEventListener('load',()=>{hook();apply()});hook();})();</script>
 <!--/mw-agentlinks-->
+<!--mw-chat-->
+<script src="https://webermanapps.github.io/style-swipe/kit/mw-chat.js?v=cc8" defer></script>
+<script>(()=>{let last='';function pick(){let d=null;try{d=(typeof deck!=='undefined')?deck:null}catch(_){}if(!d)return null;
+ const m=String(d.submit_to||'').match(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/i);
+ if(m)return {id:m[0],name:String(d.submit_to).replace(m[0],'').trim()||undefined,agent:d.submit_agent};
+ return {agent:d.submit_agent||'branding'}}
+function go(){if(!window.MWChat)return;const o=pick();if(!o)return;if(o.id&&!o.name&&o.agent&&MWChat.registry[o.agent])o.name=MWChat.registry[o.agent][1];
+ const k=JSON.stringify(o);if(k===last)return;last=k;MWChat.mount(o)}
+let n=0;const iv=setInterval(()=>{go();if(++n>40)clearInterval(iv)},500);addEventListener('load',go);})();</script>
+<!--/mw-chat-->
 </body>
 </html>
