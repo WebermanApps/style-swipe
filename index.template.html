@@ -448,7 +448,7 @@ header{background:#FAF6EE!important;border-bottom:1px solid #e3ddd2!important}
 .sharebtn{background:#ffffff;border-color:#171717;color:#171717}.sharebtn:hover{background:#171717;color:#fafafa}
 footer,.builtby{background:#ffffff!important;color:#737373;border-top:1px solid #e5e5e5}
 </style><!--/mw-white-->
-</head>
+<style id="mw-text-cards">body.carding .opt.novis{background:#FAF3EB!important;justify-content:center!important;align-items:center;text-align:center;gap:10px!important;padding:18px 14px!important}body.carding .opt.novis .side{align-self:center}body.carding .opt.novis h3{font-family:Khand,system-ui,sans-serif;font-size:clamp(20px,2.4vw,34px)!important;line-height:1.1!important;-webkit-line-clamp:4!important;max-width:28ch}body.carding .opt.novis p{font-family:Hind,system-ui,sans-serif;font-size:clamp(14px,1.3vw,19px)!important;line-height:1.35!important;-webkit-line-clamp:6!important;display:-webkit-box!important;max-width:36ch;color:#4a4540}@media (max-width:500px){body.carding .opt.novis{padding:12px 8px!important}body.carding .opt.novis h3{font-size:18px!important}body.carding .opt.novis p{font-size:13px!important}}</style></head>
 <body>
 <header>
   <a class="mw-back mw-hover" id="backLink" href="https://webermanapps.github.io/branding-djqmb410/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span>Back</span></a>
@@ -1132,7 +1132,7 @@ function rHM(v){const K='font-family:Khand,Hind,sans-serif;',H='font-family:Hind
 const SLABQ=['Carrara Fina quartz','Calacatta Vivo quartz','Mystery White marble','Porcelain slab'];
 const TERRA_='#C1502E',JUNGLE_='#0B6E4F';
 const R={ui:rUI,palette:rPal,type:rType,tone:rTone,image:rImg,mood:rMood,logo:rLogo,thumb:rThumb,hero:rHero,post:rPost,pace:rPace,merch:rMerch,bleed:rBleed,word:rWord,mini:rMini,motion:rMotion,sound:rSound,thaitype:rThaiType,texture:rTexture,light:rLight,cover:rCover,sign:rSign,controls:rControls,polish:rPolish,hm:rHM};
-function optHtml(o,side){const v=o.visual||{};return `<div class="opt mw-hover ${side} fmt-${v.type||'x'}" data-side="${side}"><div class="vis">${(R[v.type]||(()=>''))(v,o)}</div>${side==='S'?'':`<span class="side">${side==='A'?IC.left+' THIS':'THAT '+IC.right}</span>`}<h3>${esc(o.label)}</h3><p>${esc(o.desc)}</p>
+function optHtml(o,side){const v=o.visual||{};const vh=String((R[v.type]||(()=>''))(v,o)||'').trim();return `<div class="opt mw-hover ${side} fmt-${v.type||'x'}${vh?'':' novis'}" data-side="${side}">${vh?`<div class="vis">${vh}</div>`:''}${side==='S'?'':`<span class="side">${side==='A'?IC.left+' THIS':'THAT '+IC.right}</span>`}<h3>${esc(o.label)}</h3><p>${esc(o.desc)}</p>
   <div class="tags">${(o.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</div></div>`}
 
 /* ---------- sound cards: real <audio> playback, started inside the tap ---------- */
