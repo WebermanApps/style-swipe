@@ -5,13 +5,13 @@
      > decks shelf + deck counter (.mw-bh-decks; counter shows 0 when no stats) > Morning Report dropdown (.mw-bh-morning, closed by default)
      > divider (.mw-bh-divider: 1px #e3ddd2, full content width, equal spacing).
    MIDDLE: everything else, incl. ALL agent-specific branding (brand colors, special sections, photos, video). [data-mw-slot="hero"] items go first.
-   BRANDED FOOTER (#mw-bf.mw-branded-footer): divider (.mw-bf-divider, same as header's) > Routines (.mw-bf-routines) > standard footer (.mw-bf-standard: Share + 'Built by Max Weberman').
+   BRANDED FOOTER (#mw-bf.mw-branded-footer): divider (.mw-bf-divider, same as header's) > Routines (.mw-bf-routines) > standard footer (.mw-bf-standard: Share + mark + 'Built by Machan' -> maxweberman.com; ly5 Oct 16 2026, Branding Agent).
    Per-board differences allowed in the header: logo, name, description (plus deck / report / routine content).
    Markers (optional): data-mw-slot="shelf|morning|hero|routines". Old footers are folded into the middle; old Apps Home links removed.
    Agent boards only (Apps Home, deck pages and the share page never load this file).
-   Usage: <link rel="stylesheet" href=".../kit/mw-layout.css?v=ly4"><script src=".../kit/mw-layout.js?v=ly4" defer></script> */
+   Usage: <link rel="stylesheet" href=".../kit/mw-layout.css?v=ly5"><script src=".../kit/mw-layout.js?v=ly5" defer></script> */
 (function(){
-var V='ly4',K='https://webermanapps.github.io/style-swipe/kit/',HOME='https://webermanapps.github.io/a-o956qercs5ubd57y/';
+var V='ly5',MACHAN="<span class=\"mw-machan\" style=\"display:inline-flex;align-items:center;gap:6px;vertical-align:middle;white-space:nowrap\"><svg class=\"mw-machan-mark\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" aria-hidden=\"true\" focusable=\"false\" style=\"display:block;flex:none;width:22px;height:22px\"><path d=\"M12 5.2C11.2 3 9.4 2 7.6 2.3c.3 1.9 1.9 3.2 4.4 2.9z\" fill=\"#3F7D58\"/><path d=\"M12 5.2c.8-2.2 2.6-3.2 4.4-2.9-.3 1.9-1.9 3.2-4.4 2.9z\" fill=\"#5E9A6E\"/><rect x=\"3.5\" y=\"5.5\" width=\"17\" height=\"16\" rx=\"7\" fill=\"#C8643F\"/><rect x=\"5.5\" y=\"9\" width=\"13\" height=\"10\" rx=\"5\" fill=\"#FAF6EE\"/><circle cx=\"9.6\" cy=\"13.3\" r=\"1.35\" fill=\"#2E6F86\"/><circle cx=\"14.4\" cy=\"13.3\" r=\"1.35\" fill=\"#2E6F86\"/><path d=\"M10.6 16.1q1.4 1.1 2.8 0\" fill=\"none\" stroke=\"#C8643F\" stroke-width=\"1.1\" stroke-linecap=\"round\"/><circle cx=\"7.6\" cy=\"15.6\" r=\".9\" fill=\"#E9B9A3\"/><circle cx=\"16.4\" cy=\"15.6\" r=\".9\" fill=\"#E9B9A3\"/></svg>Built by Machan</span>",K='https://webermanapps.github.io/style-swipe/kit/',HOME='https://webermanapps.github.io/a-o956qercs5ubd57y/';
 var q=function(s,r){return (r||document).querySelector(s)},qa=function(s,r){return [].slice.call((r||document).querySelectorAll(s))};
 var slot=function(n){return q('[data-mw-slot="'+n+'"]')};var MR=/^\s*morning report/i;
 function mk(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
@@ -65,13 +65,13 @@ function run(){if(document.body.dataset.mwLayout===V)return;var cc=q('.mw-cc-hea
  if(ex.children.length){after.after(ex);after=ex}
  var bf=mk('div','mw-branded-footer');bf.id='mw-bf';var rw=mk('div','mw-bf-routines');
  if(!rout){rout=mk('section');rout.setAttribute('data-routines','routines.json');need('routines-section.js',false)}rw.appendChild(rout);
- var sf=mk('div','mw-bf-standard'),sb=mk('button','mw-std-share','Share');sb.type='button';sb.addEventListener('click',share);var ba=mk('a','mw-built','Built by Max Weberman');ba.href='https://maxweberman.com';sf.append(sb,ba);
+ var sf=mk('div','mw-bf-standard'),sb=mk('button','mw-std-share','Share');sb.type='button';sb.addEventListener('click',share);var ba=mk('a','mw-built');ba.innerHTML=MACHAN;ba.href='https://maxweberman.com';sf.append(sb,ba);
  bf.append(mk('hr','mw-bf-divider'),rw,sf);
  var tail=qa('body>script,body>style,body>template');document.body.appendChild(bf);tail.forEach(function(s){document.body.appendChild(s)});
  qa('footer,.mw-footer,[data-mw-slot="footer"],[data-mw-slot="footer-pre"]').forEach(function(f){if(f.closest('#mw-bh,#mw-bf'))return;
-  qa('a[href*="maxweberman.com"]',f).forEach(function(a){a.remove()});
-  qa('*',f).forEach(function(x){if(!x.children.length&&/^\s*Built by Max Weberman\s*$/.test(x.textContent))x.remove()});
-  [].slice.call(f.childNodes).forEach(function(n){if(n.nodeType===3)n.textContent=n.textContent.replace('Built by Max Weberman','')});
+  qa('a[href*="maxweberman.com"],.mw-machan',f).forEach(function(a){a.remove()});
+  qa('*',f).forEach(function(x){if(!x.children.length&&/^\s*Built by (Max Weberman|Machan)\s*$/.test(x.textContent))x.remove()});
+  [].slice.call(f.childNodes).forEach(function(n){if(n.nodeType===3)n.textContent=n.textContent.replace(/Built by (Max Weberman|Machan)/,'')});
   qa('button,a',f).forEach(function(b){if(/share/i.test(b.textContent+' '+(b.getAttribute('aria-label')||'')+' '+b.id+' '+b.className))b.remove()});
   f.classList.remove('mw-footer','mw-branded-footer','mw-bf-standard');f.classList.add('mw-old-footer');
   if(!f.textContent.trim()&&!q('img,svg,video,canvas,input',f)&&!q('#toast,.toast',f))f.style.setProperty('display','none','important')});
@@ -92,4 +92,4 @@ function run(){if(document.body.dataset.mwLayout===V)return;var cc=q('.mw-cc-hea
  place();addEventListener('resize',function(){place();column()});var pn=0,pv=setInterval(function(){place();if(++pn>30)clearInterval(pv)},500);try{new ResizeObserver(function(){place()}).observe(document.getElementById('mw-mid')||document.body)}catch(_){}addEventListener('load',place);setTimeout(place,1500);setTimeout(place,4000);
  document.dispatchEvent(new CustomEvent('mw-layout'))}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',run);else run();
-window.MWLayout={run:run,version:V};})();
+window.MWLayout={run:run,version:V,machan:MACHAN};})();

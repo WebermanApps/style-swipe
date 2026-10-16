@@ -40,7 +40,7 @@ Or `<meta name="mw-agent-id">` (+ `mw-agent-name`), `data-agent="<slug>"` (regis
 ```
 - **Branded header** (`.mw-branded-header`): `.mw-bh-cc` Command Center header, `.mw-bh-decks` deck shelf + counter, `.mw-bh-morning` Morning Report dropdown (closed by default).
 - Middle content: everything else; `data-mw-slot="hero"` items go first (WellNest hero, Grok Bot Top Priorities).
-- **Branded footer** (`.mw-branded-footer`): `.mw-bf-routines` Routines, then `.mw-bf-standard` standard footer (Share + "Built by Max Weberman" -> maxweberman.com; added if missing).
+- **Branded footer** (`.mw-branded-footer`): `.mw-bf-routines` Routines, then `.mw-bf-standard` standard footer (Share + Machan mark + "Built by Machan" -> maxweberman.com; kit ly5; added if missing).
 - Markers override detection: `data-mw-slot="header|shelf|counter|morning|hero|routines|footer-pre|footer"`; `data-mw-keep` skips the Morning Report wrap.
 - Every agent board, no exceptions (UpKeep, WellNest included). Apps Home is excluded (Max 12:11).
 - ly2 (R77, Max 12:39): visible "Apps Home" button (`a.mw-apps-home`, `.mw-bh-home`) opens the branded header and links to https://webermanapps.github.io/a-o956qercs5ubd57y/. Agent boards only; never deck pages or the share page.
