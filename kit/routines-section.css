@@ -22,3 +22,11 @@
 .rt4-detail dl{display:grid;grid-template-columns:auto 1fr;gap:2px 12px;margin:0}
 .rt4-detail dt{color:#737373;font-size:12.5px}.rt4-detail dd{margin:0}
 @media(max-width:480px){.rt4-row>summary{gap:8px;font-size:13.5px}.rt4-time{font-size:12.5px}.rt4-st{font-size:10px;padding:1px 4px}}
+/* v5 (R79): whole section is a dropdown, closed by default. */
+.rt4-fold{margin:0;padding:0;border:0;background:none}
+.rt4-fold>summary.rt4-head{list-style:none;cursor:pointer;min-height:44px;align-items:center;padding-bottom:0;border-bottom:0}
+.rt4-fold>summary::-webkit-details-marker{display:none}.rt4-fold>summary::marker{content:""}
+.rt4-fold[open]>summary.rt4-head{border-bottom:2px solid #D4A017;padding-bottom:6px;margin-bottom:2px}
+.rt4-chev{flex:none;width:9px;height:9px;margin-left:8px;border-right:2px solid #171717;border-bottom:2px solid #171717;transform:rotate(45deg) translateY(-3px)}
+.rt4-fold[open] .rt4-chev{transform:rotate(-135deg) translateY(-2px)}
+.rt4-head .rt4-count{margin-left:auto}

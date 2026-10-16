@@ -1,4 +1,5 @@
-/* Routines Section v4 (R78, Max Oct 16 2026): compact list in the branded footer. One row per routine: short name + short time + Active/Paused; tap a row to expand details (description, full schedule, group, last run). Collapsed by default.
+/* Routines Section v5 (R79, Max Oct 16 2026 13:23 ICT): the whole section is a dropdown, CLOSED by default; header row 'Routines (N)' opens the compact list; rows still expand on tap.
+   v4 (R78, Max Oct 16 2026): compact list in the branded footer. One row per routine: short name + short time + Active/Paused; tap a row to expand details (description, full schedule, group, last run). Collapsed by default.
    Usage: <div data-routines="routines.json"></div> + this script. Optional per-routine fields: short (row name), short_time (row time, e.g. '4:40 AM daily'), note (details text). */
 (()=>{const ORD=['Reports','Daily','Weekly','Monthly','Event/Listener'];
 const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
@@ -24,8 +25,9 @@ function shortTime(s){s=String(s||'').trim();if(!s)return '';
 function shortName(r){return r.short||String(r.name||'').replace(/\s*\([^)]*\)/g,'').replace(/^(?:[A-Z][a-z]+ )?Dashboard /,'').trim()}
 function render(box,J){const R=(Array.isArray(J)?J:(J.routines||[])).slice();box.textContent='';box.classList.add('rt4');box.id=box.id||'routines';
  const rank=r=>r.status==='paused'?99:(ORD.indexOf(r.group)<0?50:ORD.indexOf(r.group));R.sort((a,b)=>rank(a)-rank(b));
- const on=R.filter(r=>r.status!=='paused').length,h=el('div','rt4-head');h.append(el('h2','','Routines'),el('span','rt4-count',on+' active'+(R.length-on?' · '+(R.length-on)+' paused':'')));box.append(h);
- const list=el('div','rt4-list');box.append(list);
+ const on=R.filter(r=>r.status!=='paused').length,fold=el('details','rt4-fold'),h=el('summary','rt4-head');
+ h.append(el('h2','','Routines ('+R.length+')'),el('span','rt4-count',on+' active'+(R.length-on?' · '+(R.length-on)+' paused':'')),el('span','rt4-chev'));fold.append(h);box.append(fold);
+ const list=el('div','rt4-list');fold.append(list);
  R.forEach(r=>{const p=r.status==='paused',d=el('details','rt4-row'+(p?' is-paused':'')),s=el('summary');
   s.append(el('span','rt4-name',shortName(r)),el('span','rt4-time',r.short_time||shortTime(r.schedule_plain)),el('span','rt4-st',p?'Paused':'Active'));d.append(s);
   const b=el('div','rt4-detail');if(shortName(r)!==r.name)b.append(el('p','rt4-full',r.name));if(r.note)b.append(el('p','',r.note));

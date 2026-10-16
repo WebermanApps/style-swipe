@@ -1,63 +1,84 @@
-/* Uniform board layout (Max, Oct 16 2026 12:09 ICT, rulebook R76; kit ly1; ly2 adds the Apps Home button, Max 12:39, R77). Applies to EVERY agent board + Apps Home, no exceptions.
-   BRANDED HEADER (.mw-branded-header parts): 1) Command Center header (.mw-cc-header)  2) deck shelf + deck counter ([data-shelf] / .ds-sec)  3) Morning Report, collapsible, CLOSED by default.
-   ly2: a visible 'Apps Home' button (.mw-apps-home -> Apps Home) opens the branded header, above the Command Center header. Agent boards only (deck pages never load this file). Opt out: data-mw-no-home on <body>. ly3: older duplicate 'Apps Home' links (top bars, nav) are removed so only the standard button remains (keep one with data-mw-keep-home).
-   MIDDLE: everything else (optional [data-mw-slot="hero"] goes first, e.g. WellNest hero video).
-   BRANDED FOOTER (.mw-branded-footer parts): 1) Routines ([data-routines] / #routines)  2) standard footer: Share + "Built by Max Weberman" -> https://maxweberman.com.
-   Explicit markers win over detection: data-mw-slot="header|shelf|counter|morning|hero|routines|footer-pre|footer". Opt out of the Morning Report wrap: data-mw-keep. Several hero slots keep DOM order. footer-pre = extra standard-footer parts (e.g. a share bar) placed after Routines, before the footer.
-   Usage: <link rel="stylesheet" href=".../kit/mw-layout.css?v=ly1"><script src=".../kit/mw-layout.js?v=ly1" defer></script> */
+/* Board layout kit ly4 (STRICT, Max Oct 16 2026 13:21 + 13:22 ICT, rulebook R79; earlier R76 12:09, Apps Home button R77 12:39).
+   BRANDED HEADER and BRANDED FOOTER are built here as body-level blocks, pixel-identical on every agent board, colors included
+   (Max's white + light beige). Board CSS cannot restyle them: scoped ids #mw-bh / #mw-bf + !important locks in mw-layout.css.
+   BRANDED HEADER (#mw-bh.mw-branded-header): Apps Home button (.mw-bh-home) > Command Center header (.mw-bh-cc: logo, '<Name> Command Center', description)
+     > decks shelf + deck counter (.mw-bh-decks; counter shows 0 when no stats) > Morning Report dropdown (.mw-bh-morning, closed by default)
+     > divider (.mw-bh-divider: 1px #e3ddd2, full content width, equal spacing).
+   MIDDLE: everything else, incl. ALL agent-specific branding (brand colors, special sections, photos, video). [data-mw-slot="hero"] items go first.
+   BRANDED FOOTER (#mw-bf.mw-branded-footer): divider (.mw-bf-divider, same as header's) > Routines (.mw-bf-routines) > standard footer (.mw-bf-standard: Share + 'Built by Max Weberman').
+   Per-board differences allowed in the header: logo, name, description (plus deck / report / routine content).
+   Markers (optional): data-mw-slot="shelf|morning|hero|routines". Old footers are folded into the middle; old Apps Home links removed.
+   Agent boards only (Apps Home, deck pages and the share page never load this file).
+   Usage: <link rel="stylesheet" href=".../kit/mw-layout.css?v=ly4"><script src=".../kit/mw-layout.js?v=ly4" defer></script> */
 (function(){
-var q=function(s,r){return (r||document).querySelector(s)};
-var slot=function(n){return q('[data-mw-slot="'+n+'"]')};
-var MR=/^\s*morning report/i;
-function findMorning(){var e=slot('morning')||q('details.mw-morning')||q('#morning')||q('[aria-label="Morning Report"]');if(e)return e;
- var ds=document.querySelectorAll('details');for(var i=0;i<ds.length;i++){var s=ds[i].querySelector(':scope>summary');if(s&&MR.test(s.textContent)&&!ds[i].closest('details details, .mw-cc-header, nav'))return ds[i];}
- var hs=document.querySelectorAll('h1,h2,h3,.rk,.rhd,.rh,.eyebrow,.mrt,b,span');
- for(var j=0;j<hs.length;j++){var h=hs[j];if(!MR.test(h.textContent)||h.closest('a,nav,.mw-cc-header,[data-routines],#routines,footer,.ds-sec,script'))continue;
-  var c=h.closest('section,article,details,.card,.report');if(c&&c!==document.body&&c.tagName!=='MAIN')return c;}
- return null}
-function lca(a,b){if(!a)return b&&b.parentElement;if(!b)return a.parentElement;var p=a.parentElement;while(p&&!p.contains(b))p=p.parentElement;return p||document.body}
-function lastEl(p){var c=p.lastElementChild;while(c&&/^(SCRIPT|STYLE|TEMPLATE)$/.test(c.tagName))c=c.previousElementSibling;return c}
-function firstEl(p){var c=p.firstElementChild;while(c&&/^(SCRIPT|STYLE|TEMPLATE)$/.test(c.tagName))c=c.nextElementSibling;return c}
-function climbAfter(e,col){while(e.parentElement&&e.parentElement!==col&&e.parentElement!==document.body&&(lastEl(e.parentElement)===e||e.parentElement.tagName==='HEADER'))e=e.parentElement;return e}
-function climbBefore(e,col){while(e.parentElement&&e.parentElement!==col&&firstEl(e.parentElement)===e&&e.parentElement!==document.body)e=e.parentElement;return e}
-function wrapMorning(m){if(m.hasAttribute('data-mw-keep'))return m;
- if(m.tagName==='DETAILS'){m.classList.add('mw-morning-own');m.open=false;m.removeAttribute('open');m.classList.add('mw-morning');return m}
- var d=document.createElement('details');d.className='mw-morning';var s=document.createElement('summary');s.textContent='Morning Report';d.appendChild(s);
- m.parentNode.insertBefore(d,m);d.appendChild(m);return d}
+var V='ly4',K='https://webermanapps.github.io/style-swipe/kit/',HOME='https://webermanapps.github.io/a-o956qercs5ubd57y/';
+var q=function(s,r){return (r||document).querySelector(s)},qa=function(s,r){return [].slice.call((r||document).querySelectorAll(s))};
+var slot=function(n){return q('[data-mw-slot="'+n+'"]')};var MR=/^\s*morning report/i;
+function mk(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+function need(f,css){var sel=css?'link[rel=stylesheet]':'script[src]';if(qa(sel).some(function(e){return (e.href||e.src||'').indexOf('/kit/'+f)>=0}))return;
+ var e;if(css){e=mk('link');e.rel='stylesheet';e.href=K+f+'?v='+V}else{e=mk('script');e.src=K+f+'?v='+V}document.head.appendChild(e)}
+function fonts(){if(q('link[data-mw-fonts]'))return;var l=mk('link');l.rel='stylesheet';l.setAttribute('data-mw-fonts','');
+ l.href='https://fonts.googleapis.com/css2?family=Khand:wght@500;600;700&family=Hind:wght@400;500;600&display=swap';document.head.appendChild(l)}
+function findMorning(){var e=slot('morning')||q('#morning-report')||q('#morning')||q('[aria-label="Morning Report"]');if(e)return e;
+ var ds=qa('details');for(var i=0;i<ds.length;i++){var s=ds[i].querySelector(':scope>summary');if(s&&MR.test(s.textContent)&&!ds[i].parentElement.closest('details'))return ds[i]}
+ var hs=qa('h1,h2,h3,.rk,.rhd,.rh,.eyebrow,.mrt,b,span');
+ for(var j=0;j<hs.length;j++){var h=hs[j];if(!MR.test(h.textContent)||h.closest('a,nav,.mw-cc-header,[data-routines],#routines,footer,.ds-sec,script,#mw-bh,#mw-bf'))continue;
+  var c=h.closest('section,article,details,.card,.report');if(c&&c!==document.body&&c.tagName!=='MAIN')return c}return null}
 function share(){var u=location.href.split('#')[0],t=document.title;if(navigator.share){navigator.share({title:t,url:u}).catch(function(){});return}
- try{navigator.clipboard.writeText(u)}catch(_){}var b=q('.mw-std-share');if(b){b.textContent='Link copied';setTimeout(function(){b.textContent='Share'},1600)}}
-function stdFooter(f,col){var made=false;if(!f){f=document.createElement('footer');f.className='mw-footer';(col||document.body).appendChild(f);made=true}
- f.classList.add('mw-footer');f.setAttribute('data-mw-slot','footer');
- var bar=q('.mw-footer-bar',f);if(!bar){bar=document.createElement('div');bar.className='mw-footer-bar';var fw=f.querySelector(':scope>.wrap');(fw||f).appendChild(bar)}
- if(!q('a[href*="maxweberman.com"]',f)){var lf=[].slice.call(f.querySelectorAll('*')).filter(function(x){return !x.children.length&&x.textContent.trim()==='Built by Max Weberman'})[0];
-  if(lf){var la=document.createElement('a');la.href='https://maxweberman.com';la.textContent='Built by Max Weberman';la.style.color='inherit';lf.textContent='';lf.appendChild(la)}}
- if(!q('a[href*="maxweberman.com"]',f)){var a=document.createElement('a');a.href='https://maxweberman.com';a.textContent='Built by Max Weberman';
-  var old=[].slice.call(f.childNodes).filter(function(n){return n.nodeType===3&&/Built by Max Weberman/.test(n.textContent)});old.forEach(function(n){n.textContent=n.textContent.replace('Built by Max Weberman','')});bar.appendChild(a)}
- var hasShare=[].slice.call(f.querySelectorAll('button,a')).concat([].slice.call(document.querySelectorAll('[data-mw-slot="footer-pre"] button'))).some(function(x){return /share/i.test(x.textContent+' '+(x.getAttribute('aria-label')||'')+' '+x.className)});
- if(!hasShare){var b=document.createElement('button');b.type='button';b.className='mw-btn mw-std-share';b.textContent='Share';b.addEventListener('click',share);bar.insertBefore(b,bar.firstChild)}
- return f}
-function homeBtn(cc){if(document.body.hasAttribute('data-mw-no-home')||q('a.mw-apps-home'))return;
- var a=document.createElement('a');a.className='mw-apps-home mw-branded-header mw-bh-home';a.href='https://webermanapps.github.io/a-o956qercs5ubd57y/';
- a.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg><span>Apps Home</span>';
- cc.parentNode.insertBefore(a,cc)}
-function dedupeHome(){var std=q('a.mw-apps-home'),cc=q('.mw-bh-cc');if(!std)return;
- [].slice.call(document.querySelectorAll('a[href*="a-o956qercs5ubd57y"]')).forEach(function(a){if(a===std||a.closest('[data-mw-keep-home]'))return;
-  var t=a.textContent.replace(/[\u2190<\s]+/g,' ').trim();var top=cc&&(a.compareDocumentPosition(cc)&4);
-  if(/^apps home$/i.test(t)||(!t&&top))a.remove()})}
-function run(){if(document.body.dataset.mwLayout)return;var hdr=slot('header')||q('.mw-cc-header');if(!hdr)return;document.body.dataset.mwLayout='ly3';
- var shelf=slot('shelf')||q('[data-shelf]')||q('[data-launcher]')||q('.ds-sec'),rout=slot('routines')||q('[data-routines]')||q('#routines'),
-  foot=slot('footer')||q('.mw-footer')||(function(){var fs=document.querySelectorAll('footer');return fs.length?fs[fs.length-1]:null})(),
-  mor=findMorning(),heroes=[].slice.call(document.querySelectorAll('[data-mw-slot="hero"]'));
- if(foot&&foot.contains(hdr))foot=null;
- var col=lca(hdr,foot||rout);if(col&&col.contains&&!col.contains(hdr))col=hdr.parentElement;
- var at=climbAfter(hdr,col);
- hdr.classList.add('mw-branded-header','mw-bh-cc');homeBtn(q('.mw-cc-header')||hdr);var mw=mor&&wrapMorning(mor);if(shelf)shelf.classList.add('mw-branded-header','mw-bh-decks');if(mw)mw.classList.add('mw-branded-header','mw-bh-morning');
- [shelf,slot('counter'),mw].concat(heroes).forEach(function(e){if(!e||e.contains(hdr))return;at.after(e);at=e});
- foot=stdFooter(foot,col);
- var b=climbBefore(foot,col);if(rout&&!foot.contains(rout)){var blk=rout;while(blk.parentElement&&blk.parentElement!==col&&blk.parentElement!==document.body)blk=blk.parentElement;
-  if(blk!==rout&&(blk.compareDocumentPosition(b)&4)){rout.parentElement.appendChild(rout);}else b.before(rout)}else if(rout&&foot.contains(rout)&&rout.parentElement===foot)foot.insertBefore(rout,foot.firstChild);
- document.querySelectorAll('[data-mw-slot="footer-pre"]').forEach(function(e){b.before(e)});
- if(rout)rout.classList.add('mw-routines-slot','mw-branded-footer','mw-bf-routines');foot.classList.add('mw-branded-footer','mw-bf-standard');
- dedupeHome();setTimeout(dedupeHome,1500);setTimeout(dedupeHome,4000);document.dispatchEvent(new CustomEvent('mw-layout'))}
+ try{navigator.clipboard.writeText(u)}catch(_){}var b=q('#mw-bf .mw-std-share');if(b){b.textContent='Link copied';setTimeout(function(){b.textContent='Share'},1600)}}
+function zeroCounter(sh){var head=q('.ds-head',sh);if(!head)return;var st=q('.ds-stats',head);if(!st){st=mk('div','ds-stats');head.appendChild(st)}
+ if(st.hidden||!st.children.length){st.textContent='';[['0','decks today'],['0','decks all-time']].forEach(function(p){var s=mk('span','ds-stat');s.append(mk('b','',p[0]),mk('span','',p[1]));st.appendChild(s)});st.hidden=false}}
+function stdShelfHead(sh){var h=q('.ds-head h2',sh);if(h&&h.textContent!=='Ready To Swipe')h.textContent='Ready To Swipe'}
+function place(){['mw-bh','mw-bf'].forEach(function(id){var b=document.getElementById(id);if(!b)return;b.style.transform='none';var W=Math.min(1100,document.documentElement.clientWidth-32),
+ want=Math.max(16,(document.documentElement.clientWidth-W)/2);b.style.setProperty('width',W+'px','important');var r=b.getBoundingClientRect(),d=Math.round(want-r.left),fy=Math.round(r.top)-r.top;b.style.transform=(d||fy)?'translate('+d+'px,'+fy.toFixed(3)+'px)':'none'})}
+function run(){if(document.body.dataset.mwLayout===V)return;var cc=q('.mw-cc-header');if(!cc)return;document.body.dataset.mwLayout=V;fonts();
+ need('mw-layout.css',true);need('deck-shelf.css',true);need('routines-section.css',true);
+ var heroes=qa('[data-mw-slot="hero"]');
+ var shelf=q('[data-shelf]')||q('[data-launcher]')||slot('shelf');
+ var mor=findMorning(),rout=q('[data-routines]')||q('#routines');
+ var bh=mk('div','mw-branded-header');bh.id='mw-bh';
+ var home=mk('a','mw-apps-home mw-bh-home');home.href=HOME;home.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg><span>Apps Home</span>';
+ var ncc=mk('div','mw-bh-cc'),lg=mk('div','mw-bh-logo'),src=q('.mw-cc-logo',cc);
+ if(src){var pic=q('img',src);if(pic){var im=mk('img');im.src=pic.currentSrc||pic.src;im.alt=pic.alt||'';lg.appendChild(im)}else{var sv=q('svg',src);if(sv)lg.appendChild(sv.cloneNode(true))}}
+ else if(cc.dataset.ccLogo){var im2=mk('img');im2.src=cc.dataset.ccLogo;im2.alt='';lg.appendChild(im2)}
+ var tx=mk('div','mw-bh-text'),t0=q('.mw-cc-title',cc)||q('h1',cc),d0=q('.mw-cc-desc',cc)||q('p',cc);
+ tx.append(mk('h1','mw-bh-title',t0?t0.textContent.trim():(cc.dataset.ccName||'')+' Command Center'),mk('p','mw-bh-desc',d0?d0.textContent.trim():(cc.dataset.ccDesc||'')));ncc.append(lg,tx);
+ var decks=mk('div','mw-bh-decks');if(!shelf){shelf=mk('section');shelf.setAttribute('data-shelf','shelf.json');need('deck-shelf.js',false)}decks.appendChild(shelf);
+ var md=mk('details','mw-bh-morning');md.id='mw-morning';var sm=mk('summary');sm.append(mk('span','mw-mr-t','Morning Report'),mk('span','mw-chev'));md.appendChild(sm);var body=mk('div','mw-mr-body');md.appendChild(body);
+ if(mor){if(mor.tagName==='DETAILS'){var os=q(':scope>summary',mor);if(os){var st=os.textContent.replace(/\s+/g,' ').replace(MR,'').replace(/^[\s·\-:]+/,'').trim();if(st)body.appendChild(mk('p','mw-mr-sub',st))}
+   mor.open=true;mor.classList.add('mw-mr-src');new MutationObserver(function(){if(!mor.open)mor.open=true}).observe(mor,{attributes:true,attributeFilter:['open']})}
+  body.appendChild(mor);mor.hidden=false}else body.appendChild(mk('p','mw-mr-sub','No Morning Report yet.'));
+ bh.append(home,ncc,decks,md,mk('hr','mw-bh-divider'));
+ cc.style.setProperty('display','none','important');cc.setAttribute('aria-hidden','true');
+ document.body.insertBefore(bh,document.body.firstChild);
+ var after=bh;heroes.forEach(function(h){after.after(h);after=h});
+ /* anything else the old header carried (greeting, updated time, buttons) moves to the middle */
+ var ex=mk('div','mw-cc-extras');[].slice.call(cc.children).forEach(function(c){if(!c.matches('.mw-cc-logo,.mw-cc-text'))ex.appendChild(c)});
+ var otx=q('.mw-cc-text',cc);if(otx)[].slice.call(otx.children).forEach(function(c){if(c!==t0&&c!==d0)ex.appendChild(c)});
+ if(ex.children.length){after.after(ex);after=ex}
+ var bf=mk('div','mw-branded-footer');bf.id='mw-bf';var rw=mk('div','mw-bf-routines');
+ if(!rout){rout=mk('section');rout.setAttribute('data-routines','routines.json');need('routines-section.js',false)}rw.appendChild(rout);
+ var sf=mk('div','mw-bf-standard'),sb=mk('button','mw-std-share','Share');sb.type='button';sb.addEventListener('click',share);var ba=mk('a','mw-built','Built by Max Weberman');ba.href='https://maxweberman.com';sf.append(sb,ba);
+ bf.append(mk('hr','mw-bf-divider'),rw,sf);
+ var tail=qa('body>script,body>style,body>template');document.body.appendChild(bf);tail.forEach(function(s){document.body.appendChild(s)});
+ qa('footer,.mw-footer,[data-mw-slot="footer"],[data-mw-slot="footer-pre"]').forEach(function(f){if(f.closest('#mw-bh,#mw-bf'))return;
+  qa('a[href*="maxweberman.com"]',f).forEach(function(a){a.remove()});
+  qa('*',f).forEach(function(x){if(!x.children.length&&/^\s*Built by Max Weberman\s*$/.test(x.textContent))x.remove()});
+  [].slice.call(f.childNodes).forEach(function(n){if(n.nodeType===3)n.textContent=n.textContent.replace('Built by Max Weberman','')});
+  qa('button,a',f).forEach(function(b){if(/share/i.test(b.textContent+' '+(b.getAttribute('aria-label')||'')+' '+b.id+' '+b.className))b.remove()});
+  f.classList.remove('mw-footer','mw-branded-footer','mw-bf-standard');f.classList.add('mw-old-footer');
+  if(!f.textContent.trim()&&!q('img,svg,video,canvas,input',f)&&!q('#toast,.toast',f))f.style.setProperty('display','none','important')});
+ qa('a[href*="a-o956qercs5ubd57y"]').forEach(function(a){if(a===home||a.closest('[data-mw-keep-home]'))return;var t=a.textContent.replace(/[\u2190<\s]+/g,' ').trim();if(/^apps home$/i.test(t)||!t)a.remove()});
+ qa('.mw-section,.mw-sections>section,.mw-sections>div,.rt-wrap,.routbot,.rt-bottom,header').forEach(function(s){if(s.closest('#mw-bh,#mw-bf'))return;if(!s.textContent.trim()&&!q('img,svg,video,iframe,canvas,button,input',s))s.style.setProperty('display','none','important')});
+ /* no doubled dividers: the middle's first/last blocks lose their own top/bottom rules */
+ function edge(start,dir){var e=start,n=0;while(e&&n<4){var nx=dir>0?e.nextElementSibling:e.previousElementSibling;while(nx&&(/^(SCRIPT|STYLE|TEMPLATE|LINK)$/.test(nx.tagName)||getComputedStyle(nx).display==='none'||getComputedStyle(nx).position==='fixed'))nx=dir>0?nx.nextElementSibling:nx.previousElementSibling;
+  if(!nx)return;var x=nx;for(var d=0;d<4&&x;d++){if(x.tagName==='HR'){x.style.setProperty('display','none','important');break}var cs=getComputedStyle(x);
+   if(dir>0&&parseFloat(cs.borderTopWidth)>0)x.style.setProperty('border-top','0','important');if(dir<0&&parseFloat(cs.borderBottomWidth)>0)x.style.setProperty('border-bottom','0','important');
+   var ch=[].slice.call(x.children).filter(function(c){var k=getComputedStyle(c);return k.display!=='none'&&k.position!=='fixed'&&!/^(SCRIPT|STYLE)$/.test(c.tagName)});x=dir>0?ch[0]:ch[ch.length-1]}return}}
+ edge(after,1);edge(bf,-1);setTimeout(function(){edge(after,1);edge(bf,-1)},2000);
+ var tries=0,iv=setInterval(function(){stdShelfHead(decks);tries++;if((q('.ds-head',decks)&&tries>6)||tries>30){zeroCounter(decks);clearInterval(iv)}},500);
+ new MutationObserver(function(){stdShelfHead(decks)}).observe(decks,{childList:true,subtree:true});
+ place();addEventListener('resize',place);addEventListener('load',place);setTimeout(place,1500);setTimeout(place,4000);
+ document.dispatchEvent(new CustomEvent('mw-layout'))}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',run);else run();
-window.MWLayout={run:run};})();
+window.MWLayout={run:run,version:V};})();
