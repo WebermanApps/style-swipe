@@ -1,6 +1,6 @@
 /* Uniform board layout (Max, Oct 16 2026 12:09 ICT, rulebook R76; kit ly1; ly2 adds the Apps Home button, Max 12:39, R77). Applies to EVERY agent board + Apps Home, no exceptions.
    BRANDED HEADER (.mw-branded-header parts): 1) Command Center header (.mw-cc-header)  2) deck shelf + deck counter ([data-shelf] / .ds-sec)  3) Morning Report, collapsible, CLOSED by default.
-   ly2: a visible 'Apps Home' button (.mw-apps-home -> Apps Home) opens the branded header, above the Command Center header. Agent boards only (deck pages never load this file). Opt out: data-mw-no-home on <body>.
+   ly2: a visible 'Apps Home' button (.mw-apps-home -> Apps Home) opens the branded header, above the Command Center header. Agent boards only (deck pages never load this file). Opt out: data-mw-no-home on <body>. ly3: older duplicate 'Apps Home' links (top bars, nav) are removed so only the standard button remains (keep one with data-mw-keep-home).
    MIDDLE: everything else (optional [data-mw-slot="hero"] goes first, e.g. WellNest hero video).
    BRANDED FOOTER (.mw-branded-footer parts): 1) Routines ([data-routines] / #routines)  2) standard footer: Share + "Built by Max Weberman" -> https://maxweberman.com.
    Explicit markers win over detection: data-mw-slot="header|shelf|counter|morning|hero|routines|footer-pre|footer". Opt out of the Morning Report wrap: data-mw-keep. Several hero slots keep DOM order. footer-pre = extra standard-footer parts (e.g. a share bar) placed after Routines, before the footer.
@@ -40,7 +40,11 @@ function homeBtn(cc){if(document.body.hasAttribute('data-mw-no-home')||q('a.mw-a
  var a=document.createElement('a');a.className='mw-apps-home mw-branded-header mw-bh-home';a.href='https://webermanapps.github.io/a-o956qercs5ubd57y/';
  a.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg><span>Apps Home</span>';
  cc.parentNode.insertBefore(a,cc)}
-function run(){if(document.body.dataset.mwLayout)return;var hdr=slot('header')||q('.mw-cc-header');if(!hdr)return;document.body.dataset.mwLayout='ly2';
+function dedupeHome(){var std=q('a.mw-apps-home'),cc=q('.mw-bh-cc');if(!std)return;
+ [].slice.call(document.querySelectorAll('a[href*="a-o956qercs5ubd57y"]')).forEach(function(a){if(a===std||a.closest('[data-mw-keep-home]'))return;
+  var t=a.textContent.replace(/[\u2190<\s]+/g,' ').trim();var top=cc&&(a.compareDocumentPosition(cc)&4);
+  if(/^apps home$/i.test(t)||(!t&&top))a.remove()})}
+function run(){if(document.body.dataset.mwLayout)return;var hdr=slot('header')||q('.mw-cc-header');if(!hdr)return;document.body.dataset.mwLayout='ly3';
  var shelf=slot('shelf')||q('[data-shelf]')||q('[data-launcher]')||q('.ds-sec'),rout=slot('routines')||q('[data-routines]')||q('#routines'),
   foot=slot('footer')||q('.mw-footer')||(function(){var fs=document.querySelectorAll('footer');return fs.length?fs[fs.length-1]:null})(),
   mor=findMorning(),heroes=[].slice.call(document.querySelectorAll('[data-mw-slot="hero"]'));
@@ -54,6 +58,6 @@ function run(){if(document.body.dataset.mwLayout)return;var hdr=slot('header')||
   if(blk!==rout&&(blk.compareDocumentPosition(b)&4)){rout.parentElement.appendChild(rout);}else b.before(rout)}else if(rout&&foot.contains(rout)&&rout.parentElement===foot)foot.insertBefore(rout,foot.firstChild);
  document.querySelectorAll('[data-mw-slot="footer-pre"]').forEach(function(e){b.before(e)});
  if(rout)rout.classList.add('mw-routines-slot','mw-branded-footer','mw-bf-routines');foot.classList.add('mw-branded-footer','mw-bf-standard');
- document.dispatchEvent(new CustomEvent('mw-layout'))}
+ dedupeHome();setTimeout(dedupeHome,1500);setTimeout(dedupeHome,4000);document.dispatchEvent(new CustomEvent('mw-layout'))}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',run);else run();
 window.MWLayout={run:run};})();

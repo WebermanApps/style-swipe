@@ -35,8 +35,8 @@ Or `<meta name="mw-agent-id">` (+ `mw-agent-name`), `data-agent="<slug>"` (regis
 
 ## ly1: uniform board layout (R76, Max Oct 16 2026 12:09 ICT)
 ```html
-<link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/mw-layout.css?v=ly2">
-<script src="https://webermanapps.github.io/style-swipe/kit/mw-layout.js?v=ly2" defer></script>
+<link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/mw-layout.css?v=ly3">
+<script src="https://webermanapps.github.io/style-swipe/kit/mw-layout.js?v=ly3" defer></script>
 ```
 - **Branded header** (`.mw-branded-header`): `.mw-bh-cc` Command Center header, `.mw-bh-decks` deck shelf + counter, `.mw-bh-morning` Morning Report dropdown (closed by default).
 - Middle content: everything else; `data-mw-slot="hero"` items go first (WellNest hero, Grok Bot Top Priorities).
@@ -44,3 +44,4 @@ Or `<meta name="mw-agent-id">` (+ `mw-agent-name`), `data-agent="<slug>"` (regis
 - Markers override detection: `data-mw-slot="header|shelf|counter|morning|hero|routines|footer-pre|footer"`; `data-mw-keep` skips the Morning Report wrap.
 - Every agent board, no exceptions (UpKeep, WellNest included). Apps Home is excluded (Max 12:11).
 - ly2 (R77, Max 12:39): visible "Apps Home" button (`a.mw-apps-home`, `.mw-bh-home`) opens the branded header and links to https://webermanapps.github.io/a-o956qercs5ubd57y/. Agent boards only; never deck pages or the share page.
+- ly3: removes older duplicate "Apps Home" links so only the standard button remains (opt out per link: `data-mw-keep-home`).
