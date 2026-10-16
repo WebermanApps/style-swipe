@@ -3,4 +3,4 @@
    which shows the launcher.json ready deck + unfinished decks as shelf cards. New pages: use deck-shelf.js/.css + shelf.json. */
 (()=>{const base='https://webermanapps.github.io/style-swipe/kit/';
 if(!document.querySelector('link[href*="deck-shelf.css"]')){const l=document.createElement('link');l.rel='stylesheet';l.href=base+'deck-shelf.css?v=1';document.head.append(l)}
-if(!window.DeckShelf){const s=document.createElement('script');s.src=base+'deck-shelf.js?v=1';document.head.append(s)}})();
+if(!window.DeckShelf){const s=document.createElement('script');s.src=base+'deck-shelf.js?v=5';document.head.append(s)}})();
