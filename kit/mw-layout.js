@@ -53,8 +53,8 @@ function run(){if(document.body.dataset.mwLayout===V)return;var cc=q('.mw-cc-hea
  var decks=mk('div','mw-bh-decks');if(!shelf){shelf=mk('section');shelf.setAttribute('data-shelf','shelf.json');need('deck-shelf.js',false)}decks.appendChild(shelf);
  var md=mk('details','mw-bh-morning');md.id='mw-morning';var sm=mk('summary');sm.append(mk('span','mw-mr-t','Morning Report'),mk('span','mw-chev'));md.appendChild(sm);var body=mk('div','mw-mr-body');md.appendChild(body);
  if(mor){if(mor.tagName==='DETAILS'){var os=q(':scope>summary',mor);if(os){var st=os.textContent.replace(/\s+/g,' ').replace(MR,'').replace(/^[\s·\-:]+/,'').trim();if(st)body.appendChild(mk('p','mw-mr-sub',st))}
-   mor.open=true;mor.classList.add('mw-mr-src');new MutationObserver(function(){if(!mor.open)mor.open=true}).observe(mor,{attributes:true,attributeFilter:['open']})}
-  body.appendChild(mor);mor.hidden=false}else body.appendChild(mk('p','mw-mr-sub','No Morning Report yet.'));
+   mor.classList.add('mw-mr-src');[].slice.call(mor.childNodes).forEach(function(n){if(n!==os)body.appendChild(n)});body.appendChild(mor);mor.style.setProperty('display','none','important')}
+  else{body.appendChild(mor);mor.hidden=false}}else body.appendChild(mk('p','mw-mr-sub','No Morning Report yet.'));
  bh.append(home,ncc,decks,md,mk('hr','mw-bh-divider'));
  cc.style.setProperty('display','none','important');cc.setAttribute('aria-hidden','true');
  document.body.insertBefore(bh,document.body.firstChild);
@@ -88,7 +88,7 @@ function run(){if(document.body.dataset.mwLayout===V)return;var cc=q('.mw-cc-hea
  while(nx&&nx!==bf){var n2=nx.nextSibling;if(nx.nodeType===1){var k=getComputedStyle(nx);if(!/^(SCRIPT|STYLE|LINK|TEMPLATE|NOSCRIPT)$/.test(nx.tagName)&&k.position!=='fixed'&&!nx.matches('.mw-chat-btn,#toast,.toast,[role=dialog]'))mid.appendChild(nx)}else if(nx.nodeType===3&&nx.textContent.trim())mid.appendChild(nx);nx=n2}
  column();setTimeout(column,1500);setTimeout(column,4000);
  var tries=0,iv=setInterval(function(){stdShelfHead(decks);tries++;if((q('.ds-head',decks)&&tries>6)||tries>30){zeroCounter(decks);clearInterval(iv)}},500);
- new MutationObserver(function(){stdShelfHead(decks)}).observe(decks,{childList:true,subtree:true});
+ var sh2=0,ivh=setInterval(function(){stdShelfHead(decks);if(++sh2>20)clearInterval(ivh)},1000);
  place();addEventListener('resize',function(){place();column()});addEventListener('load',place);setTimeout(place,1500);setTimeout(place,4000);
  document.dispatchEvent(new CustomEvent('mw-layout'))}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',run);else run();
