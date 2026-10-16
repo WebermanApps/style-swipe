@@ -10,7 +10,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); os.chdir(ROO
 START, END = "<!--mw-chat-->", "<!--/mw-chat-->"
 EXCLUDE = ("share-x3l9xcxc1eut/",)
 BLOCK = START + r"""
-<script src="https://webermanapps.github.io/style-swipe/kit/mw-chat.js?v=cc8" defer></script>
+<script src="https://webermanapps.github.io/style-swipe/kit/mw-chat.js?v=cc9" defer></script>
 <script>(()=>{let last='';function pick(){let d=null;try{d=(typeof deck!=='undefined')?deck:null}catch(_){}if(!d)return null;
  const m=String(d.submit_to||'').match(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/i);
  if(m)return {id:m[0],name:String(d.submit_to).replace(m[0],'').trim()||undefined,agent:d.submit_agent};
