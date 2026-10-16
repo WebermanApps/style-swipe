@@ -1,0 +1,13 @@
+/* Uniform board layout (R76, kit ly1): branded header (.mw-branded-header: .mw-bh-cc, .mw-bh-decks, .mw-bh-morning) and branded footer (.mw-branded-footer: .mw-bf-routines, .mw-bf-standard). Light only, square corners, Khand/Hind. */
+details.mw-morning{display:block;margin:20px 0 8px;background:#fff;border:1px solid #e3ddd2;border-radius:0}
+details.mw-morning:not(.mw-morning-own)>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;min-height:48px;padding:10px 16px;background:#FAF6EE;font:600 18px/1.2 'Khand',sans-serif;color:#171717;border-radius:0}
+details.mw-morning>summary::-webkit-details-marker{display:none}
+details.mw-morning:not(.mw-morning-own)>summary::after{content:"";margin-left:auto;flex:none;width:9px;height:9px;border-right:2px solid #171717;border-bottom:2px solid #171717;transform:rotate(45deg) translateY(-3px);transition:transform .15s}
+details.mw-morning:not(.mw-morning-own)[open]>summary::after{transform:rotate(-135deg) translateY(-2px)}
+details.mw-morning[open]>summary{border-bottom:1px solid #e3ddd2}
+details.mw-morning:not(.mw-morning-own)>:not(summary){margin:0;padding:12px 16px;border:0;box-shadow:none}
+.mw-routines-slot{margin-top:40px}
+.mw-footer .mw-footer-bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;margin-top:16px;font:400 13px 'Hind',sans-serif;color:#737373}
+.mw-footer .mw-footer-bar a{color:#737373}
+.mw-std-share{min-height:44px;padding:0 18px;border:1px solid #171717;background:#fff;color:#171717;font:600 15px/1 'Hind',sans-serif;border-radius:0;cursor:pointer}
+.mw-section:empty:not([data-routines]):not([data-shelf]):not([data-launcher]){display:none}
