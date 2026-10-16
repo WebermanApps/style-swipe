@@ -65,7 +65,7 @@ function paintStats(box,J){const st=box.querySelector('.ds-stats');if(!st)return
  fetch((box.dataset.stats||J.stats_url||STATS)+'?'+Date.now()).then(r=>r.ok?r.json():null).then(S=>{const v=statsFor(S,J.agent);if(!v)return;
   st.textContent='';const f=(n,l)=>{const s=el('span','ds-stat');s.append(el('b','',fmtDecks(n)),el('span','',l));return s};
   st.append(f(v.today,(fmtDecks(v.today)==='1'?'deck':'decks')+' today'),f(v.total,(fmtDecks(v.total)==='1'?'deck':'decks')+' all-time'));st.hidden=false}).catch(()=>{})}
-function render(box,J,o){o=o||{};J=J||{};const all=order(norm(J,o)),cap=(o.nocap||box.hasAttribute('data-shelf-nocap'))?all.length:CAP,decks=all.slice(0,cap);
+function render(box,J,o){o=o||{};J=J||{};const all=order(norm(J,o)),cap=(o.nocap||box.hasAttribute('data-shelf-nocap'))?all.length:(+o.cap||+box.dataset.shelfCap||+J.cap||CAP),decks=all.slice(0,cap);
  box._dsQueued=all.slice(cap);box.textContent='';box.classList.add('ds-sec');box.id=box.id||'ready-to-swipe';
  const h=el('div','ds-head');h.append(el('h2','','Ready To Swipe'));const n=doneToday(J);if(n)h.append(el('span','ds-done',n+' done today'));const st=el('div','ds-stats');st.hidden=true;h.append(st);const allU=box.dataset.all||J.all_url||ALL;if(!box.hasAttribute('data-shelf-nocap')){const al=el('a','ds-all','All Decks');al.href=allU;h.insertBefore(al,st)}box.append(h);paintStats(box,J);
  if(!decks.length){const p=el('p','ds-empty','All caught up. New decks are on the way. ');const l=el('a','','Deck Building');l.href=allU;p.append(l);box.append(p);return}
@@ -79,5 +79,5 @@ function render(box,J,o){o=o||{};J=J||{};const all=order(norm(J,o)),cap=(o.nocap
   g.addEventListener('scroll',()=>{const w=g.scrollWidth-g.clientWidth,k=w>0?Math.round(g.scrollLeft/w*(decks.length-1)):0;[...dt.children].forEach((x,i)=>x.className=i===k?'on':'')},{passive:true})}}
 function init(){document.querySelectorAll('[data-shelf],[data-launcher]').forEach(b=>{if(b.dataset.dsDone)return;b.dataset.dsDone=1;
  fetch((b.dataset.shelf||b.dataset.launcher)+'?'+Date.now()).then(r=>r.json()).then(J=>render(b,J)).catch(()=>render(b,{decks:[]}))})}
-window.DeckShelf={render,CAP,sortDecks,answered,touched,VERSION:6,queued:b=>b._dsQueued||[]};window.DeckLauncher=window.DeckLauncher||{render};
+window.DeckShelf={render,CAP,sortDecks,answered,touched,VERSION:7,queued:b=>b._dsQueued||[]};window.DeckLauncher=window.DeckLauncher||{render};
 document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init()})();

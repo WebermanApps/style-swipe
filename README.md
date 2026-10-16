@@ -38,7 +38,7 @@ then commit + push style-swipe and the dashboard repo. Skips come first, reworde
 4. Deck pages: header Deck Building and Back to Deck Building follow `submit_agent` via `kit/agent-dashboards.json`; after adding pages run `python3 tools/agent_links.py`.
 
 ## Deck cap (Max, Oct 14 2026 19:43 ICT)
-No agent dashboard shows more than 5 decks, ready-shelf AND pinned unfinished together. Only exception: the Deck Building page (branding /decks/).
+No agent dashboard shows more than 5 decks, ready-shelf AND pinned unfinished together. Only exception: the Deck Building page (branding /decks/). UpKeep exception (Max Oct 16 23:20 ICT): its board passes `data-shelf-cap="10"` (shelf.json "cap") and shows up to 10. Max Oct 16 23:19 ICT: no dashboard decks unless Max asks.
 `kit/deck-shelf.js` enforces it: pinned unfinished decks (`shelf.json` `pinned`/`unfinished`, or `DeckShelf.render(el, json, {pinned:[...]})`) go first, then ready decks, cut at 5; the rest are queued (`DeckShelf.queued(el)`) and show only when a slot opens. Do not render a separate pinned/unfinished strip next to the shelf; pass it in so the cap counts it. Deck Building page only: `data-shelf-nocap`.
 
 ## Custom shelves: deck-queue.json optional fields (Oct 14 2026 20:04 ICT)
