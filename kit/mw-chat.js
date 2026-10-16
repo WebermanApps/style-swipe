@@ -1,10 +1,10 @@
-/* mw-chat cc10 (R74; cc10: lifts above fixed footers/bars in app layouts; cc9: cc9: hides while a row arrow (.arr / [data-mw-chat-hide]) is under it; more agents in registry). Usage:
-   <script src="https://webermanapps.github.io/style-swipe/kit/mw-chat.js?v=cc10" data-agent-id="<uuid>" data-agent-name="Coach Agent" defer></script>
+/* mw-chat cc11 (R74; cc11: also lifts above fixed tab bars/tap targets; cc10: lifts above fixed footers/bars in app layouts; cc9: cc9: hides while a row arrow (.arr / [data-mw-chat-hide]) is under it; more agents in registry). Usage:
+   <script src="https://webermanapps.github.io/style-swipe/kit/mw-chat.js?v=cc11" data-agent-id="<uuid>" data-agent-name="Coach Agent" defer></script>
    or <meta name="mw-agent-id" content="<uuid>"> (+ optional <meta name="mw-agent-name">), or data-agent="<slug>" from the registry below,
    or call MWChat.mount({agent:'<slug>'}) / MWChat.mount({id,name}) later (deck pages). Opens grokbot://app/v1/agent?id=<id>. */
 (function(){
 var REG={'grok-bot':['24ff6404-25b2-46a1-8487-b99d3c7c7b06','Grok Bot'],'household':['c59ffdde-28bf-4ad7-8dd8-22f5e941647d','Household'],'email-sorting':['d31d8de8-a97a-4bc3-823f-e4946a383e87','Email Sorting'],'branding':['3fac5054-3a3d-49b1-af61-59883f7fdc78','Branding Agent'],'blueprint':['5b23bb2f-ffc9-4b61-b04c-43a3943eac12','Blueprint Agent'],'construction':['f159ad69-43eb-47d6-87f5-2b637892edd2','Construction Agent'],'miles':['c4b349b2-05c3-4b7a-8dce-effcd2fbf58a','Miles Agent'],'thai':['7b552e05-d400-4d4b-897d-1b30381b6dda','Thai Agent'],'wellnest':['e2806a26-3867-4986-a7ef-46c03abc7f35','WellNest Agent'],'scout':['b0693910-5aaa-446b-b2ed-62026a073082','Scout Agent'],'japan-cottage':['a9f4c34c-b9eb-4c38-8554-3e1091ceb7b5','Japan Cottage Agent'],'upkeep':['f0d420ad-d37e-44d3-be6f-053da2b6e24d','UpKeep Agent'],'blog':['57b6fc9e-e2fc-45ba-b28e-73f066c4b0fa','Blog Agent'],'coach':['758a3343-fff3-4093-9169-81f79ffdc3ef','Coach Agent'],'jokes':['0f68b81e-50fc-455c-b558-a13f7cd796aa','Jokes Agent'],'legal':['55ae1827-d0b6-4a4a-98f1-551dc6f0ef3a','Legal Agent'],'portfolio':['cbf1a856-abbb-410a-99a0-cb65d213fc21','Portfolio Agent'],'prop':['f466837e-6ecd-4c83-9ac9-5f031aa92add','Prop Agent'],'research':['6efe5de2-9a20-43d9-a1eb-068e645ed407','Research Agent'],'security':['d47b42b5-3764-4c66-9360-3d4c931d0483','Security Agent'],'video-photo':['eca52f98-7367-4a43-9b92-47366636826e','Video & Photo Agent']};
-var me=document.currentScript,base=(me&&me.src||'').replace(/mw-chat\.js(\?.*)?$/,''),ver=((me&&me.src||'').match(/\?v=([^&]+)/)||[])[1]||'cc10';
+var me=document.currentScript,base=(me&&me.src||'').replace(/mw-chat\.js(\?.*)?$/,''),ver=((me&&me.src||'').match(/\?v=([^&]+)/)||[])[1]||'cc11';
 var AVOID='#share,.shic,.mw-share,footer,.mw-footer,#routines,.mw-sec-routines,[data-routines],[data-mw-chat-avoid]';
 var HIDE='.arr,[data-mw-chat-hide]';
 var btn,note,cfg;
@@ -23,7 +23,7 @@ var TAP='a,button,input,select,textarea,[role=button],.arr';
 function hits(sel,big){var r=btn.getBoundingClientRect(),pad={left:r.left-6,right:r.right+6,top:r.top-6,bottom:r.bottom+6},out=[];
  document.querySelectorAll(sel).forEach(function(el){if(el===btn||btn.contains(el))return;var q=el.getBoundingClientRect();if(!q.width||!q.height)return;if(big&&(q.height>innerHeight*.6))return;if(hit(pad,q))out.push(el)});return out}
 function place(){if(!btn)return;btn.classList.remove('mw-chat-dock','mw-chat-hidden');btn.style.top='';btn.style.bottom='';
- var bad=hits(AVOID);if(!bad.length){if(hits(HIDE).length)btn.classList.add('mw-chat-hidden');return}
+ var bad=hits(AVOID).concat(hits(TAP,true).filter(fixedish));if(!bad.length){if(hits(HIDE).length)btn.classList.add('mw-chat-hidden');return}
  var noScroll=document.scrollingElement.scrollHeight<=innerHeight+4;
  if(noScroll||bad.some(fixedish)){ /* fixed bars (app layouts): lift the button above them and any tap targets */
   for(var i=0;i<10;i++){var h=hits(AVOID).concat(hits(TAP,true));if(!h.length)return;var top=Math.min.apply(null,h.map(function(e){return e.getBoundingClientRect().top}));
