@@ -1,0 +1,514 @@
+{
+ "date": "upkeep-tech-app-check-in-and-before-photos-deck",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Tech App Check-In: Arrival And Before Photos",
+ "generated_at": "2026-10-18T03:36:10+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "practical": 9,
+  "calm": 9,
+  "focused": 1,
+  "playful": 1
+ },
+ "groups": {
+  "Check-In": 4,
+  "Photos": 4,
+  "Check-Out": 2
+ },
+ "apps": {
+  "UpKeep": 10
+ },
+ "freshness": {
+  "option_slots": 20,
+  "never_shown_before": 20,
+  "share": 1.0
+ },
+ "warnings": [],
+ "submit_agent": "upkeep",
+ "submit_to": "UpKeep Agent f0d420ad-d37e-44d3-be6f-053da2b6e24d",
+ "board": "upkeep",
+ "topic": "morning-1018-tech",
+ "shelf": true,
+ "audience": "Max",
+ "requested": true,
+ "request": "Max via Branding morning run Oct 18 2026: fresh this-or-that decks from the Oct 17 daily work report; 10 picks, Notes, light mode, R105 captions, theme names",
+ "report_section": "1a",
+ "example_data": "All numbers, names and addresses on cards are labelled samples or placeholders; no real customer details.",
+ "deck_size": 10,
+ "caption_rule": "R105",
+ "notes": true,
+ "built_by": "Branding",
+ "built_at_note": "Morning decks Oct 18 2026 (daily work report 2026-10-17, rules 3 and 5)",
+ "sources": {
+  "report": "/workspace/ops/brand/daily-work-report/2026-10-17.md",
+  "rulebook": "/workspace/ops/brand/dashboard-rulebook.md",
+  "builder": "tools/build_morning_decks_1018.py"
+ },
+ "pairs": [
+  {
+   "group": "Check-In",
+   "category": "Arrival prompt",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Check-In: Arrival prompt, when the phone sees the tech has arrived should the check-in slider pop up by itself or wait until the tech opens the job?",
+   "optionA": {
+    "id": "md18tc_01pop",
+    "label": "Pops Up On Arrival",
+    "desc": "A sheet slides up: You're here, slide to check in.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · CHECK-IN</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"34\" width=\"212\" height=\"80\" rx=\"6\" fill=\"#F5F3EF1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M89.6 99.6 V72.24 L120.0 50.959999999999994 L150.4 72.24 V99.6 Z\" fill=\"#FFFFFF\" stroke=\"#F5F3EF\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><rect x=\"113.92\" y=\"81.36\" width=\"12.16\" height=\"18.24\" rx=\"0\" fill=\"#F5F3EF55\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(0,122)\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"120\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"14\" y=\"28\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >You're at 12 Birch Lane</text><text x=\"14\" y=\"42\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Arrived 10:27 AM</text></g><g transform=\"translate(0,172)\"><rect x=\"14\" y=\"0\" width=\"212\" height=\"30\" rx=\"15\" fill=\"#0B6E4F1A\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"16\" y=\"2\" width=\"26\" height=\"26\" rx=\"13\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(21,7) scale(0.6666666666666666)\"><path d=\"M9 5 L16 12 L9 19\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"130\" y=\"19\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Slide to check in</text></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Slider shows up by itself</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Location used only on visit days</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18tc_01wait",
+    "label": "Waits For The Tech",
+    "desc": "Nothing pops up; check in from the job card.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · CHECK-IN</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"49\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >12 Birch Lane</text><text x=\"14\" y=\"66\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Essentials plan · 10:30 AM visit</text><rect x=\"14\" y=\"71\" width=\"212\" height=\"34\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"22\" y=\"78.0\" width=\"20\" height=\"20\" rx=\"5\" fill=\"#05668D1F\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(25,81.0) scale(0.5833333333333334)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"50\" y=\"87.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Job card</text><text x=\"50\" y=\"97.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Open to check in</text><g transform=\"translate(0,111)\"><rect x=\"14\" y=\"0\" width=\"212\" height=\"30\" rx=\"15\" fill=\"#0B6E4F1A\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"16\" y=\"2\" width=\"26\" height=\"26\" rx=\"13\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(21,7) scale(0.6666666666666666)\"><path d=\"M9 5 L16 12 L9 19\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"130\" y=\"19\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Slide to check in</text></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Tech opens the job first</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >No pop-ups while driving</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-tech-app-check-in-and-before-photos-deck-01",
+   "repeat": false
+  },
+  {
+   "group": "Check-In",
+   "category": "Right home check",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Check-In: Right home check, should the check-in screen show the home's front photo above the address or the address alone?",
+   "optionA": {
+    "id": "md18tc_02photo",
+    "label": "Front Photo And Address",
+    "desc": "The first-visit photo of the house over the address.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · CHECK-IN</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"34\" width=\"212\" height=\"70\" rx=\"6\" fill=\"#05668D1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M93.4 91.4 V67.46000000000001 L120.0 48.84 L146.6 67.46000000000001 V91.4 Z\" fill=\"#FFFFFF\" stroke=\"#05668D\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><rect x=\"114.68\" y=\"75.44\" width=\"10.64\" height=\"15.96\" rx=\"0\" fill=\"#05668D55\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"127\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >12 Birch Lane</text><text x=\"14\" y=\"144\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Essentials plan · 10:30 AM visit</text><g transform=\"translate(0,149)\"><rect x=\"14\" y=\"0\" width=\"212\" height=\"30\" rx=\"15\" fill=\"#0B6E4F1A\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"16\" y=\"2\" width=\"26\" height=\"26\" rx=\"13\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(21,7) scale(0.6666666666666666)\"><path d=\"M9 5 L16 12 L9 19\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"130\" y=\"19\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Slide to check in</text></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >See it is the right house</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Photo from the first visit</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18tc_02addr",
+    "label": "Address Alone",
+    "desc": "Big street address and visit time.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · CHECK-IN</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"49\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >12 Birch Lane</text><text x=\"14\" y=\"66\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Essentials plan · 10:30 AM visit</text><g transform=\"translate(0,101)\"><rect x=\"14\" y=\"0\" width=\"212\" height=\"30\" rx=\"15\" fill=\"#0B6E4F1A\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"16\" y=\"2\" width=\"26\" height=\"26\" rx=\"13\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(21,7) scale(0.6666666666666666)\"><path d=\"M9 5 L16 12 L9 19\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"130\" y=\"19\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Slide to check in</text></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Short and plain</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Address in big type</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-tech-app-check-in-and-before-photos-deck-02",
+   "repeat": false
+  },
+  {
+   "group": "Photos",
+   "category": "Before photo guide",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Camera: Before photo guide, should the camera show a faint outline of what to frame for each step or open as a plain camera?",
+   "optionA": {
+    "id": "md18tc_03guide",
+    "label": "Faint Framing Outline",
+    "desc": "A dashed box shows what the photo must hold.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · CAMERA</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><g transform=\"translate(0,34)\"><rect x=\"14\" y=\"0\" width=\"212\" height=\"170\" rx=\"10\" fill=\"#2a2622\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"24\" y=\"10\" width=\"192\" height=\"150\" rx=\"6\" fill=\"#05668D1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M24 115.0 H216 M81.6 10 V115.0\" stroke=\"#05668D66\" stroke-width=\"1.2\"/><rect x=\"110.4\" y=\"77.5\" width=\"67.19999999999999\" height=\"37.5\" rx=\"3\" fill=\"#05668D44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"39.36\" y=\"40.0\" width=\"28.799999999999997\" height=\"45.0\" rx=\"2\" fill=\"#FFFFFF\" stroke=\"#05668D88\" stroke-width=\"1\" /><rect x=\"70\" y=\"40\" width=\"100\" height=\"90\" rx=\"8\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><text x=\"120\" y=\"148\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Fit the furnace inside the box</text></g><rect x=\"14\" y=\"212\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"228.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">TAKE BEFORE PHOTO</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Same framing every visit</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Easy to compare later</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18tc_03plain",
+    "label": "Plain Camera",
+    "desc": "The camera opens with nothing drawn on it.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · CAMERA</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><g transform=\"translate(0,34)\"><rect x=\"14\" y=\"0\" width=\"212\" height=\"170\" rx=\"10\" fill=\"#2a2622\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"24\" y=\"10\" width=\"192\" height=\"150\" rx=\"6\" fill=\"#05668D1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M24 115.0 H216 M81.6 10 V115.0\" stroke=\"#05668D66\" stroke-width=\"1.2\"/><rect x=\"110.4\" y=\"77.5\" width=\"67.19999999999999\" height=\"37.5\" rx=\"3\" fill=\"#05668D44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"39.36\" y=\"40.0\" width=\"28.799999999999997\" height=\"45.0\" rx=\"2\" fill=\"#FFFFFF\" stroke=\"#05668D88\" stroke-width=\"1\" /></g><rect x=\"14\" y=\"212\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"228.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">TAKE BEFORE PHOTO</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Nothing in the way</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Tech frames it by eye</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-tech-app-check-in-and-before-photos-deck-03",
+   "repeat": false
+  },
+  {
+   "group": "Photos",
+   "category": "Before photos per step",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Camera: Before photos per step, should each step take one wide before photo or up to three close-ups?",
+   "optionA": {
+    "id": "md18tc_04one",
+    "label": "One Wide Photo",
+    "desc": "One photo of the whole area before touching.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · CAMERA</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"34\" width=\"212\" height=\"110\" rx=\"6\" fill=\"#05668D1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M14 111.0 H226 M77.6 34 V111.0\" stroke=\"#05668D66\" stroke-width=\"1.2\"/><rect x=\"109.4\" y=\"83.5\" width=\"74.19999999999999\" height=\"27.5\" rx=\"3\" fill=\"#05668D44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"30.96\" y=\"56.0\" width=\"31.799999999999997\" height=\"33.0\" rx=\"2\" fill=\"#FFFFFF\" stroke=\"#05668D88\" stroke-width=\"1\" /><rect x=\"14\" y=\"126\" width=\"212\" height=\"18\" rx=\"0\" fill=\"#FFFFFFDD\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"138\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Before  ·  1 photo</text><rect x=\"14\" y=\"152\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"168.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">START STEP</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >One photo, every step</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Quick and consistent</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18tc_04three",
+    "label": "Up To Three Close-Ups",
+    "desc": "Wide shot plus up to two close-ups.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · CAMERA</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"34\" width=\"212\" height=\"80\" rx=\"6\" fill=\"#05668D1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M14 90.0 H226 M77.6 34 V90.0\" stroke=\"#05668D66\" stroke-width=\"1.2\"/><rect x=\"109.4\" y=\"70.0\" width=\"74.19999999999999\" height=\"20.0\" rx=\"3\" fill=\"#05668D44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"30.96\" y=\"50.0\" width=\"31.799999999999997\" height=\"24.0\" rx=\"2\" fill=\"#FFFFFF\" stroke=\"#05668D88\" stroke-width=\"1\" /><rect x=\"14\" y=\"96\" width=\"212\" height=\"18\" rx=\"0\" fill=\"#FFFFFFDD\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"108\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Before  ·  wide</text><rect x=\"14.0\" y=\"122\" width=\"103.0\" height=\"56\" rx=\"6\" fill=\"#C1502E1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M44.9 166.8 Q34.6 136.0 91.25 133.2 Q96.4 164.0 44.9 166.8 Z M44.9 166.8 L77.86 142.16\" fill=\"#C1502E44\" stroke=\"#C1502E\" stroke-width=\"1.2\"/><rect x=\"123.0\" y=\"122\" width=\"103.0\" height=\"56\" rx=\"6\" fill=\"#05668D1A\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"197.16\" cy=\"138.8\" r=\"6.72\" fill=\"#D4A01788\"/><path d=\"M123.0 169.6 Q153.9 150.0 179.65 161.2 T226.0 155.6 V178 H123.0 Z\" fill=\"#05668D55\"/><rect x=\"14\" y=\"186\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"202.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">START STEP</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Wide plus close-ups</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Better proof for problems</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-tech-app-check-in-and-before-photos-deck-04",
+   "repeat": false
+  },
+  {
+   "group": "Photos",
+   "category": "Before photo strip",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Walkthrough: Before photo strip, should the visit's before photos show as a swipe carousel at the top of each step or as a small grid in a Photos tab?",
+   "optionA": {
+    "id": "md18tc_05carousel",
+    "label": "Swipe Carousel On Top",
+    "desc": "Before photos swipe along the top of the step.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · CHECK-IN</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"34\" width=\"100\" height=\"74\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"34\" width=\"100\" height=\"4\" rx=\"2\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"22\" y=\"44\" width=\"84\" height=\"40\" rx=\"6\" fill=\"#C1502E1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M48.8 76.8 V63.12 L64.0 52.48 L79.2 63.12 V76.8 Z\" fill=\"#FFFFFF\" stroke=\"#C1502E\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><rect x=\"60.96\" y=\"67.67999999999999\" width=\"6.08\" height=\"9.12\" rx=\"0\" fill=\"#C1502E55\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"90\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Furnace</text><text x=\"24\" y=\"101\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Before</text><rect x=\"122\" y=\"34\" width=\"100\" height=\"74\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"122\" y=\"34\" width=\"100\" height=\"4\" rx=\"2\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"130\" y=\"44\" width=\"84\" height=\"40\" rx=\"6\" fill=\"#05668D1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M130 72.0 H214 M155.2 44 V72.0\" stroke=\"#05668D66\" stroke-width=\"1.2\"/><rect x=\"167.8\" y=\"62.0\" width=\"29.4\" height=\"10.0\" rx=\"3\" fill=\"#05668D44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"136.72\" y=\"52.0\" width=\"12.6\" height=\"12.0\" rx=\"2\" fill=\"#FFFFFF\" stroke=\"#05668D88\" stroke-width=\"1\" /><text x=\"132\" y=\"90\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Water heater</text><text x=\"132\" y=\"101\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Before</text><rect x=\"230\" y=\"34\" width=\"100\" height=\"74\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"230\" y=\"34\" width=\"100\" height=\"4\" rx=\"2\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"238\" y=\"44\" width=\"84\" height=\"40\" rx=\"6\" fill=\"#0B6E4F1A\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"298.48\" cy=\"56.0\" r=\"4.8\" fill=\"#D4A01788\"/><path d=\"M238 78.0 Q263.2 64.0 284.2 72.0 T322 68.0 V84 H238 Z\" fill=\"#0B6E4F55\"/><text x=\"240\" y=\"90\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Sump pit</text><text x=\"240\" y=\"101\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Before</text><rect x=\"103\" y=\"116\" width=\"10\" height=\"5\" rx=\"2.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"117.5\" y=\"116\" width=\"5\" height=\"5\" rx=\"2.5\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"129.5\" y=\"116\" width=\"5\" height=\"5\" rx=\"2.5\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"145\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Moisture Scan, Basement</text><text x=\"14\" y=\"162\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Hold the meter flat on the wall, three spots.</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Photos ride along each step</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Swipe to compare</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18tc_05grid",
+    "label": "Grid In A Photos Tab",
+    "desc": "All before photos in one tab of their own.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · CHECK-IN</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><line x1=\"14\" y1=\"56\" x2=\"226\" y2=\"56\" stroke=\"#E5E0D8\"/><rect x=\"22\" y=\"54\" width=\"54.66666666666667\" height=\"2.5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"49.333333333333336\" y=\"48.5\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Steps</text><text x=\"120.0\" y=\"48.5\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Photos</text><text x=\"190.66666666666669\" y=\"48.5\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Notes</text><rect x=\"14.0\" y=\"64\" width=\"66.66666666666667\" height=\"56\" rx=\"6\" fill=\"#C1502E1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M26.053333333333335 109.91999999999999 V90.76799999999999 L47.333333333333336 75.87199999999999 L68.61333333333334 90.76799999999999 V109.91999999999999 Z\" fill=\"#FFFFFF\" stroke=\"#C1502E\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><rect x=\"43.077333333333335\" y=\"97.15199999999999\" width=\"8.512\" height=\"12.768\" rx=\"0\" fill=\"#C1502E55\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"86.66666666666667\" y=\"64\" width=\"66.66666666666667\" height=\"56\" rx=\"6\" fill=\"#05668D1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M86.66666666666667 103.19999999999999 H153.33333333333334 M106.66666666666667 64 V103.19999999999999\" stroke=\"#05668D66\" stroke-width=\"1.2\"/><rect x=\"116.66666666666667\" y=\"89.2\" width=\"23.333333333333332\" height=\"14.0\" rx=\"3\" fill=\"#05668D44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"92.0\" y=\"75.2\" width=\"10.0\" height=\"16.8\" rx=\"2\" fill=\"#FFFFFF\" stroke=\"#05668D88\" stroke-width=\"1\" /><rect x=\"159.33333333333334\" y=\"64\" width=\"66.66666666666667\" height=\"56\" rx=\"6\" fill=\"#0B6E4F1A\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"207.33333333333334\" cy=\"80.8\" r=\"6.72\" fill=\"#D4A01788\"/><path d=\"M159.33333333333334 111.6 Q179.33333333333334 92.0 196.0 103.19999999999999 T226.0 97.6 V120 H159.33333333333334 Z\" fill=\"#0B6E4F55\"/><rect x=\"14.0\" y=\"128\" width=\"66.66666666666667\" height=\"56\" rx=\"6\" fill=\"#C1502E1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M34.0 172.8 Q27.333333333333336 142.0 64.0 139.2 Q67.33333333333334 170.0 34.0 172.8 Z M34.0 172.8 L55.333333333333336 148.16\" fill=\"#C1502E44\" stroke=\"#C1502E\" stroke-width=\"1.2\"/><rect x=\"86.66666666666667\" y=\"128\" width=\"66.66666666666667\" height=\"56\" rx=\"6\" fill=\"#05668D1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M86.66666666666667 167.2 H153.33333333333334 M106.66666666666667 128 V167.2\" stroke=\"#05668D66\" stroke-width=\"1.2\"/><rect x=\"116.66666666666667\" y=\"153.2\" width=\"23.333333333333332\" height=\"14.0\" rx=\"3\" fill=\"#05668D44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"92.0\" y=\"139.2\" width=\"10.0\" height=\"16.8\" rx=\"2\" fill=\"#FFFFFF\" stroke=\"#05668D88\" stroke-width=\"1\" /><rect x=\"159.33333333333334\" y=\"128\" width=\"66.66666666666667\" height=\"56\" rx=\"6\" fill=\"#0B6E4F1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M171.38666666666668 173.92 V154.76799999999997 L192.66666666666669 139.87199999999999 L213.9466666666667 154.76799999999997 V173.92 Z\" fill=\"#FFFFFF\" stroke=\"#0B6E4F\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><rect x=\"188.41066666666669\" y=\"161.152\" width=\"8.512\" height=\"12.768\" rx=\"0\" fill=\"#0B6E4F55\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"201\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >6 before photos this visit</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >All photos in one place</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Step screen stays clean</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-tech-app-check-in-and-before-photos-deck-05",
+   "repeat": false
+  },
+  {
+   "group": "Photos",
+   "category": "Photo stamp",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Camera: Photo stamp, should every photo carry a small time stamp in the corner or stay clean with the time kept only in the report?",
+   "optionA": {
+    "id": "md18tc_06stamp",
+    "label": "Small Time Stamp",
+    "desc": "10:41 AM  ·  Oct 18 printed in a corner.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · CAMERA</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><g transform=\"translate(0,34)\"><rect x=\"14\" y=\"0\" width=\"212\" height=\"150\" rx=\"8\" fill=\"#05668D1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M14 105.0 H226 M77.6 0 V105.0\" stroke=\"#05668D66\" stroke-width=\"1.2\"/><rect x=\"109.4\" y=\"67.5\" width=\"74.19999999999999\" height=\"37.5\" rx=\"3\" fill=\"#05668D44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"30.96\" y=\"30.0\" width=\"31.799999999999997\" height=\"45.0\" rx=\"2\" fill=\"#FFFFFF\" stroke=\"#05668D88\" stroke-width=\"1\" /><rect x=\"150\" y=\"128\" width=\"70\" height=\"16\" rx=\"3\" fill=\"#FFFFFFDD\" stroke=\"none\" stroke-width=\"1\" /><text x=\"185\" y=\"139\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >10:41 AM · Oct 18</text></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Time on the photo itself</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Proof travels with the picture</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18tc_06clean",
+    "label": "Clean Photo",
+    "desc": "No marks; the time lives in the report.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · CAMERA</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"34\" width=\"212\" height=\"150\" rx=\"6\" fill=\"#05668D1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M14 139.0 H226 M77.6 34 V139.0\" stroke=\"#05668D66\" stroke-width=\"1.2\"/><rect x=\"109.4\" y=\"101.5\" width=\"74.19999999999999\" height=\"37.5\" rx=\"3\" fill=\"#05668D44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"30.96\" y=\"64.0\" width=\"31.799999999999997\" height=\"45.0\" rx=\"2\" fill=\"#FFFFFF\" stroke=\"#05668D88\" stroke-width=\"1\" /><text x=\"14\" y=\"201\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Taken 10:41 AM (saved with the report)</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Clean photo for the member</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Time kept in the data</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-tech-app-check-in-and-before-photos-deck-06",
+   "repeat": false
+  },
+  {
+   "group": "Check-In",
+   "category": "Nobody home",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Check-In: Nobody home, when no one answers at a visit should the walk carry on with the outside steps only or end with a reschedule?",
+   "optionA": {
+    "id": "md18tc_07outside",
+    "label": "Carry On Outside",
+    "desc": "Inside steps move to next visit; outside goes ahead.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · CHECK-IN</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"49\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Nobody Home</text><rect x=\"14\" y=\"59\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"68.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Gutters and downspouts</text><line x1=\"34\" y1=\"76\" x2=\"226\" y2=\"76\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"81\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"90.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Dryer vent outside</text><line x1=\"34\" y1=\"98\" x2=\"226\" y2=\"98\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"103\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"112.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Roof from the ground</text><line x1=\"34\" y1=\"120\" x2=\"226\" y2=\"120\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"129\" width=\"212\" height=\"34\" rx=\"6\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"129\" width=\"3\" height=\"34\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"143\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Inside steps saved for next visit</text><text x=\"22\" y=\"155\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member gets a note</text><rect x=\"14\" y=\"169\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"185.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">START OUTSIDE STEPS</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Visit still counts</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Outside steps only</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18tc_07resched",
+    "label": "End And Reschedule",
+    "desc": "The visit closes and three new times are offered.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · CHECK-IN</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"49\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Nobody Home</text><text x=\"14\" y=\"66\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >We'll offer the member three new times.</text><rect x=\"14\" y=\"71\" width=\"212\" height=\"34\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"88.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"91.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Tue 9:00 AM</text><rect x=\"14\" y=\"111\" width=\"212\" height=\"34\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"128.0\" r=\"3.5\" fill=\"#05668D\"/><text x=\"36\" y=\"131.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Wed 1:30 PM</text><rect x=\"14\" y=\"151\" width=\"212\" height=\"34\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"168.0\" r=\"3.5\" fill=\"#0B6E4F\"/><text x=\"36\" y=\"171.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Thu 10:00 AM</text><rect x=\"14\" y=\"191\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"207.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">SEND TIMES AND CHECK OUT</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Whole walk next time</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >No half visits</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-tech-app-check-in-and-before-photos-deck-07",
+   "repeat": false
+  },
+  {
+   "group": "Check-In",
+   "category": "Running late",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Job Card: Running late, should the job card carry a one-tap Running Late note to the member or leave timing messages to the office?",
+   "optionA": {
+    "id": "md18tc_08tap",
+    "label": "One-Tap Running Late",
+    "desc": "Pick 10, 20 or 30 minutes and it sends.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · JOB CARD</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"49\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >12 Birch Lane</text><text x=\"14\" y=\"66\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Essentials plan · 10:30 AM visit</text><text x=\"14\" y=\"81\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">RUNNING LATE?</text><rect x=\"14\" y=\"87\" width=\"36.44799999999999\" height=\"11.02\" rx=\"5.8\" fill=\"#C1502E1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"32.224\" y=\"95.004\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">10 MIN</text><rect x=\"56.44799999999999\" y=\"87\" width=\"36.44799999999999\" height=\"11.02\" rx=\"5.8\" fill=\"#05668D1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"74.672\" y=\"95.004\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">20 MIN</text><rect x=\"98.89599999999999\" y=\"87\" width=\"36.44799999999999\" height=\"11.02\" rx=\"5.8\" fill=\"#0B6E4F1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"117.11999999999998\" y=\"95.004\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">30 MIN</text><rect x=\"14\" y=\"107\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#0A0A0A\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"123.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">START ROUTE</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Member told in one tap</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Tech never types while driving</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18tc_08office",
+    "label": "Office Handles It",
+    "desc": "No late button; the office sees the delay and calls.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · JOB CARD</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"49\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >12 Birch Lane</text><text x=\"14\" y=\"66\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Essentials plan · 10:30 AM visit</text><rect x=\"14\" y=\"71\" width=\"212\" height=\"34\" rx=\"6\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"71\" width=\"3\" height=\"34\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"85\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Office can see you are late</text><text x=\"22\" y=\"97\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >They update the member</text><rect x=\"14\" y=\"111\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#0A0A0A\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"127.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">START ROUTE</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Tech just drives</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >One voice to the member</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-tech-app-check-in-and-before-photos-deck-08",
+   "repeat": false
+  },
+  {
+   "group": "Check-Out",
+   "category": "Check-out guard",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Check-Out: Check-out guard, should check out stay locked until every step is done or skipped with a reason or be allowed any time with open steps flagged?",
+   "optionA": {
+    "id": "md18tc_09lock",
+    "label": "Locked Until Every Step Is Closed",
+    "desc": "Done or skipped with a reason, then send.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · CHECK-OUT</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"47\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Send Report And Check Out</text><rect x=\"14\" y=\"57\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M17 63 l2.5 2.5 4.5 -5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"1.8\"/><text x=\"34\" y=\"66.5\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Furnace filter</text><line x1=\"34\" y1=\"74\" x2=\"226\" y2=\"74\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"79\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M17 85 l2.5 2.5 4.5 -5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"1.8\"/><text x=\"34\" y=\"88.5\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Water heater</text><line x1=\"34\" y1=\"96\" x2=\"226\" y2=\"96\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"101\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M17 107 l2.5 2.5 4.5 -5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"1.8\"/><text x=\"34\" y=\"110.5\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Sump pit  ·  skipped: no access</text><line x1=\"34\" y1=\"118\" x2=\"226\" y2=\"118\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"127\" width=\"212\" height=\"26\" rx=\"6\" fill=\"#C1502E1A\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"127\" width=\"3\" height=\"26\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(22,133) scale(0.5833333333333334)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"2\"/><path d=\"M8 8 L16 16 M16 8 L8 16\" stroke=\"#C1502E\" stroke-width=\"2\" stroke-linecap=\"round\"/></g><text x=\"42\" y=\"143.5\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >1 step still open</text><rect x=\"14\" y=\"159\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"175.24\" font-size=\"9\" fill=\"#BDB6AA\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">SEND REPORT AND CHECK OUT</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Nothing missed</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Button wakes when all are closed</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18tc_09flag",
+    "label": "Any Time, Open Steps Flagged",
+    "desc": "Check out works; open steps go to the office.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · CHECK-OUT</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"47\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Send Report And Check Out</text><rect x=\"14\" y=\"57\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M17 63 l2.5 2.5 4.5 -5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"1.8\"/><text x=\"34\" y=\"66.5\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Furnace filter</text><line x1=\"34\" y1=\"74\" x2=\"226\" y2=\"74\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"79\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M17 85 l2.5 2.5 4.5 -5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"1.8\"/><text x=\"34\" y=\"88.5\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Water heater</text><line x1=\"34\" y1=\"96\" x2=\"226\" y2=\"96\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"101\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"110.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Dryer vent</text><line x1=\"34\" y1=\"118\" x2=\"226\" y2=\"118\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"127\" width=\"212\" height=\"26\" rx=\"6\" fill=\"#D4A0171A\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"127\" width=\"3\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(22,133) scale(0.5833333333333334)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#D4A017\" stroke-width=\"2\"/><path d=\"M12 6 V12 L16 14\" fill=\"none\" stroke=\"#D4A017\" stroke-width=\"2\" stroke-linecap=\"round\"/></g><text x=\"42\" y=\"143.5\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >1 open step sent to the office</text><rect x=\"14\" y=\"159\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"175.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">SEND REPORT AND CHECK OUT</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Never stuck at a home</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Office follows up</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-tech-app-check-in-and-before-photos-deck-09",
+   "repeat": false
+  },
+  {
+   "group": "Check-Out",
+   "category": "After check out",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Check-Out: After check out, should the next stop's card slide in right away or should the app go back to the Today map?",
+   "optionA": {
+    "id": "md18tc_10next",
+    "label": "Next Stop Slides In",
+    "desc": "The next job card with Start Route comes up.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · CHECK-OUT</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"34\" width=\"212\" height=\"26\" rx=\"6\" fill=\"#0B6E4F1A\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"34\" width=\"3\" height=\"26\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(22,40) scale(0.5833333333333334)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"2\"/><path d=\"M7 12.5 l3.5 3.5 6.5 -7\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"42\" y=\"50.5\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Checked out of 12 Birch Lane</text><text x=\"14\" y=\"76\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">NEXT STOP</text><rect x=\"14\" y=\"82\" width=\"212\" height=\"44\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"22\" y=\"94.0\" width=\"20\" height=\"20\" rx=\"5\" fill=\"#05668D1F\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(25,97.0) scale(0.5833333333333334)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"50\" y=\"103.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >48 Cedar Court</text><text x=\"50\" y=\"113.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >11:45 AM  ·  14 min away</text><rect x=\"14\" y=\"132\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#0A0A0A\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"148.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">START ROUTE</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Straight on to the next job</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >One tap to drive</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18tc_10map",
+    "label": "Back To The Today Map",
+    "desc": "The day's map with this stop ticked.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · CHECK-OUT</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"34\" width=\"212\" height=\"26\" rx=\"6\" fill=\"#0B6E4F1A\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"34\" width=\"3\" height=\"26\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(22,40) scale(0.5833333333333334)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"2\"/><path d=\"M7 12.5 l3.5 3.5 6.5 -7\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"42\" y=\"50.5\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Checked out of 12 Birch Lane</text><rect x=\"14\" y=\"66\" width=\"212\" height=\"110\" rx=\"8\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"56\" y1=\"66\" x2=\"76\" y2=\"176\" stroke=\"#E5E0D8\" stroke-width=\"5\"/><line x1=\"98\" y1=\"66\" x2=\"118\" y2=\"176\" stroke=\"#E5E0D8\" stroke-width=\"5\"/><line x1=\"140\" y1=\"66\" x2=\"160\" y2=\"176\" stroke=\"#E5E0D8\" stroke-width=\"5\"/><line x1=\"182\" y1=\"66\" x2=\"202\" y2=\"176\" stroke=\"#E5E0D8\" stroke-width=\"5\"/><path d=\"M30 160 Q90 86 150 126.5 T210 84\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2.5\" stroke-dasharray=\"5 3\"/><circle cx=\"30\" cy=\"160\" r=\"5\" fill=\"#C1502E\"/><circle cx=\"210\" cy=\"84\" r=\"5\" fill=\"#0B6E4F\"/><rect x=\"14\" y=\"184\" width=\"212\" height=\"34\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"201.0\" r=\"3.5\" fill=\"#0B6E4F\"/><text x=\"36\" y=\"204.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >3 of 5 stops done</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >See the whole day again</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Pick the next stop yourself</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-tech-app-check-in-and-before-photos-deck-10",
+   "repeat": false
+  }
+ ],
+ "share": true
+}

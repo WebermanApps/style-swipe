@@ -1,0 +1,512 @@
+{
+ "date": "upkeep-tech-app-walkthrough-full-list-and-step-screens-deck",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Tech App Walkthrough: Full List And Step Screens",
+ "generated_at": "2026-10-18T03:36:09+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "calm": 9,
+  "practical": 7,
+  "playful": 4
+ },
+ "groups": {
+  "Walkthrough": 6,
+  "Full List": 4
+ },
+ "apps": {
+  "UpKeep": 10
+ },
+ "freshness": {
+  "option_slots": 20,
+  "never_shown_before": 20,
+  "share": 1.0
+ },
+ "warnings": [],
+ "submit_agent": "upkeep",
+ "submit_to": "UpKeep Agent f0d420ad-d37e-44d3-be6f-053da2b6e24d",
+ "board": "upkeep",
+ "topic": "morning-1018-tech",
+ "shelf": true,
+ "audience": "Max",
+ "requested": true,
+ "request": "Max via Branding morning run Oct 18 2026: fresh this-or-that decks from the Oct 17 daily work report; 10 picks, Notes, light mode, R105 captions, theme names",
+ "report_section": "1a",
+ "example_data": "All numbers, names and addresses on cards are labelled samples or placeholders; no real customer details.",
+ "deck_size": 10,
+ "caption_rule": "R105",
+ "notes": true,
+ "built_by": "Branding",
+ "built_at_note": "Morning decks Oct 18 2026 (daily work report 2026-10-17, rules 3 and 5)",
+ "sources": {
+  "report": "/workspace/ops/brand/daily-work-report/2026-10-17.md",
+  "rulebook": "/workspace/ops/brand/dashboard-rulebook.md",
+  "builder": "tools/build_morning_decks_1018.py"
+ },
+ "pairs": [
+  {
+   "group": "Walkthrough",
+   "category": "Step progress",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Walkthrough: Step progress, on each step screen should progress show as a thin bar with Step 4 of 12 or as a swipe strip of small step cards?",
+   "optionA": {
+    "id": "md18tw_01bar",
+    "label": "Thin Bar, Step 4 Of 12",
+    "desc": "One slim bar and a count over the step.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · WALK</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"42\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Step 4 of 12</text><text x=\"226\" y=\"42\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Basement</text><rect x=\"14\" y=\"47\" width=\"212\" height=\"6\" rx=\"3\" fill=\"#EEEAE4\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"47\" width=\"69.96000000000001\" height=\"6\" rx=\"3\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"74\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Moisture Scan, Basement</text><text x=\"14\" y=\"91\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Hold the meter flat on the wall 30 cm above</text><text x=\"14\" y=\"101\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >the floor, three spots.</text><rect x=\"14\" y=\"106\" width=\"212\" height=\"70\" rx=\"6\" fill=\"#05668D1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M14 155.0 H226 M77.6 106 V155.0\" stroke=\"#05668D66\" stroke-width=\"1.2\"/><rect x=\"109.4\" y=\"137.5\" width=\"74.19999999999999\" height=\"17.5\" rx=\"3\" fill=\"#05668D44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"30.96\" y=\"120.0\" width=\"31.799999999999997\" height=\"21.0\" rx=\"2\" fill=\"#FFFFFF\" stroke=\"#05668D88\" stroke-width=\"1\" /><rect x=\"14\" y=\"158\" width=\"212\" height=\"18\" rx=\"0\" fill=\"#FFFFFFDD\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"170\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Before photo</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Thin bar with a count</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Basement area named on the right</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18tw_01strip",
+    "label": "Swipe Strip Of Step Cards",
+    "desc": "A small carousel of step cards, this one lit.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · WALK</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"34\" width=\"96\" height=\"40\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"34\" width=\"96\" height=\"4\" rx=\"2\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"58\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >3  Water heater</text><text x=\"24\" y=\"71\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Done</text><rect x=\"118\" y=\"34\" width=\"96\" height=\"40\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"118\" y=\"34\" width=\"96\" height=\"4\" rx=\"2\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"128\" y=\"58\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >4  Moisture scan</text><text x=\"128\" y=\"71\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Now</text><rect x=\"222\" y=\"34\" width=\"96\" height=\"40\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"222\" y=\"34\" width=\"96\" height=\"4\" rx=\"2\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"232\" y=\"58\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >5  Sump pit</text><text x=\"232\" y=\"71\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Next</text><text x=\"14\" y=\"97\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Moisture Scan, Basement</text><text x=\"14\" y=\"114\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Hold the meter flat on the wall 30 cm above</text><text x=\"14\" y=\"124\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >the floor, three spots.</text><rect x=\"14\" y=\"129\" width=\"212\" height=\"70\" rx=\"6\" fill=\"#05668D1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M14 178.0 H226 M77.6 129 V178.0\" stroke=\"#05668D66\" stroke-width=\"1.2\"/><rect x=\"109.4\" y=\"160.5\" width=\"74.19999999999999\" height=\"17.5\" rx=\"3\" fill=\"#05668D44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"30.96\" y=\"143.0\" width=\"31.799999999999997\" height=\"21.0\" rx=\"2\" fill=\"#FFFFFF\" stroke=\"#05668D88\" stroke-width=\"1\" /><rect x=\"14\" y=\"181\" width=\"212\" height=\"18\" rx=\"0\" fill=\"#FFFFFFDD\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"193\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Before photo</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Step cards in a swipe strip</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Done, now and next at a glance</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-tech-app-walkthrough-full-list-and-step-screens-deck-01",
+   "repeat": false
+  },
+  {
+   "group": "Walkthrough",
+   "category": "Next step",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Walkthrough: Next step, should the tech move on with a big Next Step button or by swiping the step card sideways like a carousel?",
+   "optionA": {
+    "id": "md18tw_02btn",
+    "label": "Big Next Step Button",
+    "desc": "A full-width button under the step.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · WALK</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"42\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Step 4 of 12</text><text x=\"226\" y=\"42\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Basement</text><rect x=\"14\" y=\"47\" width=\"212\" height=\"6\" rx=\"3\" fill=\"#EEEAE4\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"47\" width=\"69.96000000000001\" height=\"6\" rx=\"3\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"74\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Moisture Scan, Basement</text><text x=\"14\" y=\"91\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Hold the meter flat on the wall 30 cm above</text><text x=\"14\" y=\"101\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >the floor, three spots.</text><rect x=\"14\" y=\"106\" width=\"212\" height=\"70\" rx=\"6\" fill=\"#05668D1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M14 155.0 H226 M77.6 106 V155.0\" stroke=\"#05668D66\" stroke-width=\"1.2\"/><rect x=\"109.4\" y=\"137.5\" width=\"74.19999999999999\" height=\"17.5\" rx=\"3\" fill=\"#05668D44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"30.96\" y=\"120.0\" width=\"31.799999999999997\" height=\"21.0\" rx=\"2\" fill=\"#FFFFFF\" stroke=\"#05668D88\" stroke-width=\"1\" /><rect x=\"14\" y=\"158\" width=\"212\" height=\"18\" rx=\"0\" fill=\"#FFFFFFDD\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"170\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Before photo</text><rect x=\"14\" y=\"184\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#0A0A0A\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"200.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">NEXT STEP</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >One clear button</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >No accidental swipes</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18tw_02swipe",
+    "label": "Swipe The Step Card",
+    "desc": "Swipe left for the next step, right to go back.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · WALK</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"34\" width=\"170\" height=\"150\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"34\" width=\"170\" height=\"4\" rx=\"2\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"58\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Step 4</text><text x=\"24\" y=\"71\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Moisture scan, basement</text><rect x=\"192\" y=\"34\" width=\"170\" height=\"150\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"192\" y=\"34\" width=\"170\" height=\"4\" rx=\"2\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"202\" y=\"58\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Step 5</text><text x=\"202\" y=\"71\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sump pit</text><rect x=\"109\" y=\"192\" width=\"10\" height=\"5\" rx=\"2.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"123.5\" y=\"192\" width=\"5\" height=\"5\" rx=\"2.5\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Steps sit in a carousel</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Swipe left for the next one</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-tech-app-walkthrough-full-list-and-step-screens-deck-02",
+   "repeat": false
+  },
+  {
+   "group": "Walkthrough",
+   "category": "Step how-to",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Walkthrough: Step how-to, should each step show a short line with a small drawn diagram or a short looping clip of a tech doing it?",
+   "optionA": {
+    "id": "md18tw_03diagram",
+    "label": "Line Plus Drawn Diagram",
+    "desc": "One sentence and a simple drawing.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · WALK</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"47\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Furnace Filter</text><text x=\"14\" y=\"64\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Slide the old filter out, arrow on the new one</text><text x=\"14\" y=\"74\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >points to the blower.</text><rect x=\"14\" y=\"79\" width=\"212\" height=\"80\" rx=\"6\" fill=\"#0B6E4F1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M14 135.0 H226 M77.6 79 V135.0\" stroke=\"#0B6E4F66\" stroke-width=\"1.2\"/><rect x=\"109.4\" y=\"115.0\" width=\"74.19999999999999\" height=\"20.0\" rx=\"3\" fill=\"#0B6E4F44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"30.96\" y=\"95.0\" width=\"31.799999999999997\" height=\"24.0\" rx=\"2\" fill=\"#FFFFFF\" stroke=\"#0B6E4F88\" stroke-width=\"1\" /><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Drawn diagram</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Loads fast, no sound</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18tw_03clip",
+    "label": "Short Looping Clip",
+    "desc": "A five-second silent clip shows the move.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · WALK</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"47\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Furnace Filter</text><text x=\"14\" y=\"64\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Slide the old filter out, arrow on the new one</text><text x=\"14\" y=\"74\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >points to the blower.</text><rect x=\"14\" y=\"79\" width=\"212\" height=\"80\" rx=\"6\" fill=\"#05668D1A\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"120.0\" cy=\"111.0\" r=\"13.600000000000001\" fill=\"#05668D66\"/><path d=\"M60.64 159 Q120.0 119.0 179.36 159 Z\" fill=\"#05668D66\"/><rect x=\"14\" y=\"141\" width=\"212\" height=\"18\" rx=\"0\" fill=\"#FFFFFFDD\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"153\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Clip loops, muted</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Short silent clip</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Shows the real move</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-tech-app-walkthrough-full-list-and-step-screens-deck-03",
+   "repeat": false
+  },
+  {
+   "group": "Full List",
+   "category": "Step times",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Full List: Step times, should each row in the full list show its expected minutes or only the step name?",
+   "optionA": {
+    "id": "md18tw_04times",
+    "label": "Show Minutes Per Step",
+    "desc": "Each row ends with about how long it takes.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · WALK</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"49\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Full List</text><rect x=\"14\" y=\"59\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M17 65 l2.5 2.5 4.5 -5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"1.8\"/><text x=\"34\" y=\"68.5\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Before photo, furnace room  ·  2 min</text><line x1=\"34\" y1=\"76\" x2=\"226\" y2=\"76\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"81\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M17 87 l2.5 2.5 4.5 -5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"1.8\"/><text x=\"34\" y=\"90.5\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Furnace filter  ·  5 min</text><line x1=\"34\" y1=\"98\" x2=\"226\" y2=\"98\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"103\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"112.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Water heater  ·  6 min</text><line x1=\"34\" y1=\"120\" x2=\"226\" y2=\"120\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"125\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"134.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Moisture scan, basement  ·  8 min</text><line x1=\"34\" y1=\"142\" x2=\"226\" y2=\"142\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"147\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"156.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Sump pit  ·  4 min</text><line x1=\"34\" y1=\"164\" x2=\"226\" y2=\"164\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"173\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"189.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">START WALK</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Minutes on every row</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >About 30 minutes in total</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18tw_04names",
+    "label": "Step Names Only",
+    "desc": "A clean list of steps, no times.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · WALK</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"49\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Full List</text><rect x=\"14\" y=\"59\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M17 65 l2.5 2.5 4.5 -5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"1.8\"/><text x=\"34\" y=\"68.5\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Before photo, furnace room</text><line x1=\"34\" y1=\"76\" x2=\"226\" y2=\"76\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"81\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M17 87 l2.5 2.5 4.5 -5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"1.8\"/><text x=\"34\" y=\"90.5\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Furnace filter</text><line x1=\"34\" y1=\"98\" x2=\"226\" y2=\"98\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"103\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"112.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Water heater</text><line x1=\"34\" y1=\"120\" x2=\"226\" y2=\"120\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"125\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"134.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Moisture scan, basement</text><line x1=\"34\" y1=\"142\" x2=\"226\" y2=\"142\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"147\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"156.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Sump pit</text><line x1=\"34\" y1=\"164\" x2=\"226\" y2=\"164\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"173\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"189.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">START WALK</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Names only</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Timer in the header keeps time</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-tech-app-walkthrough-full-list-and-step-screens-deck-04",
+   "repeat": false
+  },
+  {
+   "group": "Full List",
+   "category": "Tools for the walk",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Full List: Tools for the walk, should the full list open with a short row of tools and parts to grab first or go straight to the steps?",
+   "optionA": {
+    "id": "md18tw_05tools",
+    "label": "Tools Row First",
+    "desc": "Meter, filter and ladder chips above the steps.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · WALK</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"49\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Full List</text><text x=\"14\" y=\"67\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">GRAB BEFORE YOU START</text><rect x=\"14\" y=\"73\" width=\"71.712\" height=\"11.02\" rx=\"5.8\" fill=\"#C1502E1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"49.856\" y=\"81.004\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">MOISTURE METER</text><rect x=\"91.712\" y=\"73\" width=\"62.895999999999994\" height=\"11.02\" rx=\"5.8\" fill=\"#05668D1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"123.16\" y=\"81.004\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">FILTER 16X25</text><rect x=\"160.608\" y=\"73\" width=\"36.44799999999999\" height=\"11.02\" rx=\"5.8\" fill=\"#0B6E4F1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"178.832\" y=\"81.004\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">LADDER</text><rect x=\"14\" y=\"89\" width=\"58.488\" height=\"11.02\" rx=\"5.8\" fill=\"#D4A0171F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"43.244\" y=\"97.004\" font-size=\"7.5\" fill=\"#D4A017\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">SHOE COVERS</text><rect x=\"14\" y=\"111\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"120.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Before photo, furnace room</text><line x1=\"34\" y1=\"128\" x2=\"226\" y2=\"128\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"133\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"142.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Furnace filter</text><line x1=\"34\" y1=\"150\" x2=\"226\" y2=\"150\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"155\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"164.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Water heater</text><line x1=\"34\" y1=\"172\" x2=\"226\" y2=\"172\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"181\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"197.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">START WALK</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Tools and parts first</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >From the job's bring list</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18tw_05steps",
+    "label": "Straight To The Steps",
+    "desc": "The list starts with step one.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · WALK</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"49\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Full List</text><rect x=\"14\" y=\"59\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"68.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Before photo, furnace room</text><line x1=\"34\" y1=\"76\" x2=\"226\" y2=\"76\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"81\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"90.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Furnace filter</text><line x1=\"34\" y1=\"98\" x2=\"226\" y2=\"98\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"103\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"112.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Water heater</text><line x1=\"34\" y1=\"120\" x2=\"226\" y2=\"120\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"125\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"134.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Moisture scan, basement</text><line x1=\"34\" y1=\"142\" x2=\"226\" y2=\"142\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"147\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"156.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Sump pit</text><line x1=\"34\" y1=\"164\" x2=\"226\" y2=\"164\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"173\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"189.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">START WALK</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Steps only</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Bring list stays on the job card</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-tech-app-walkthrough-full-list-and-step-screens-deck-05",
+   "repeat": false
+  },
+  {
+   "group": "Full List",
+   "category": "Finished steps",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Full List: Finished steps, in the full list should done steps stay in place with a green tick or drop into a Done group at the bottom?",
+   "optionA": {
+    "id": "md18tw_06place",
+    "label": "Stay In Place, Ticked",
+    "desc": "The order never changes; done rows go grey.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · WALK</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"49\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Full List</text><rect x=\"14\" y=\"59\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M17 65 l2.5 2.5 4.5 -5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"1.8\"/><text x=\"34\" y=\"68.5\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Before photo, furnace room</text><line x1=\"34\" y1=\"76\" x2=\"226\" y2=\"76\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"81\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M17 87 l2.5 2.5 4.5 -5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"1.8\"/><text x=\"34\" y=\"90.5\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Furnace filter</text><line x1=\"34\" y1=\"98\" x2=\"226\" y2=\"98\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"103\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"112.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Water heater</text><line x1=\"34\" y1=\"120\" x2=\"226\" y2=\"120\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"125\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"134.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Moisture scan, basement</text><line x1=\"34\" y1=\"142\" x2=\"226\" y2=\"142\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"147\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"156.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Sump pit</text><line x1=\"34\" y1=\"164\" x2=\"226\" y2=\"164\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"173\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"189.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">START WALK</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Same order all visit</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Done rows greyed with a tick</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18tw_06group",
+    "label": "Done Group At The Bottom",
+    "desc": "What's left sits on top; done rows fold below.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · WALK</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"49\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Full List</text><rect x=\"14\" y=\"59\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"68.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Water heater</text><line x1=\"34\" y1=\"76\" x2=\"226\" y2=\"76\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"81\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"90.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Moisture scan, basement</text><line x1=\"34\" y1=\"98\" x2=\"226\" y2=\"98\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"103\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"112.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Sump pit</text><line x1=\"34\" y1=\"120\" x2=\"226\" y2=\"120\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"139\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">DONE (2)</text><rect x=\"14\" y=\"147\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M17 153 l2.5 2.5 4.5 -5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"1.8\"/><text x=\"34\" y=\"156.5\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Before photo, furnace room</text><line x1=\"34\" y1=\"164\" x2=\"226\" y2=\"164\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"169\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M17 175 l2.5 2.5 4.5 -5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"1.8\"/><text x=\"34\" y=\"178.5\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Furnace filter</text><line x1=\"34\" y1=\"186\" x2=\"226\" y2=\"186\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"195\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"211.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">START WALK</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Open steps on top</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Done group underneath</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-tech-app-walkthrough-full-list-and-step-screens-deck-06",
+   "repeat": false
+  },
+  {
+   "group": "Full List",
+   "category": "Start Walk button",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Full List: Start Walk button, should the Start Walk button stay pinned at the bottom of the screen or sit at the top above the first step?",
+   "optionA": {
+    "id": "md18tw_07bottom",
+    "label": "Pinned At The Bottom",
+    "desc": "Always under the thumb while the list scrolls.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · WALK</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"49\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Full List</text><rect x=\"14\" y=\"59\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"68.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Before photo, furnace room</text><line x1=\"34\" y1=\"76\" x2=\"226\" y2=\"76\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"81\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"90.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Furnace filter</text><line x1=\"34\" y1=\"98\" x2=\"226\" y2=\"98\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"103\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"112.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Water heater</text><line x1=\"34\" y1=\"120\" x2=\"226\" y2=\"120\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"125\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"134.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Moisture scan, basement</text><line x1=\"34\" y1=\"142\" x2=\"226\" y2=\"142\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"147\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"156.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Sump pit</text><line x1=\"34\" y1=\"164\" x2=\"226\" y2=\"164\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"173\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"189.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">START WALK</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Pinned under the thumb</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >List scrolls above it</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18tw_07top",
+    "label": "At The Top",
+    "desc": "Read the button first, then the list under it.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · WALK</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"49\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Full List</text><rect x=\"14\" y=\"57\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"73.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">START WALK</text><rect x=\"14\" y=\"93\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"102.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Before photo, furnace room</text><line x1=\"34\" y1=\"110\" x2=\"226\" y2=\"110\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"115\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"124.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Furnace filter</text><line x1=\"34\" y1=\"132\" x2=\"226\" y2=\"132\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"137\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"146.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Water heater</text><line x1=\"34\" y1=\"154\" x2=\"226\" y2=\"154\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"159\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"168.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Moisture scan, basement</text><line x1=\"34\" y1=\"176\" x2=\"226\" y2=\"176\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"181\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"190.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Sump pit</text><line x1=\"34\" y1=\"198\" x2=\"226\" y2=\"198\" stroke=\"#E5E0D8\"/><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Button above the list</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Scrolls away with the page</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-tech-app-walkthrough-full-list-and-step-screens-deck-07",
+   "repeat": false
+  },
+  {
+   "group": "Walkthrough",
+   "category": "Problem found",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Walkthrough: Problem found, should each step screen carry its own Flag A Problem button or should problems be logged on one screen at the end of the walk?",
+   "optionA": {
+    "id": "md18tw_08step",
+    "label": "Flag On Every Step",
+    "desc": "A small terracotta Flag A Problem under each step.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · WALK</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"42\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Step 4 of 12</text><text x=\"226\" y=\"42\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Basement</text><rect x=\"14\" y=\"47\" width=\"212\" height=\"6\" rx=\"3\" fill=\"#EEEAE4\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"47\" width=\"69.96000000000001\" height=\"6\" rx=\"3\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"74\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Moisture Scan, Basement</text><text x=\"14\" y=\"91\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Hold the meter flat on the wall 30 cm above</text><text x=\"14\" y=\"101\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >the floor, three spots.</text><rect x=\"14\" y=\"106\" width=\"212\" height=\"70\" rx=\"6\" fill=\"#05668D1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M14 155.0 H226 M77.6 106 V155.0\" stroke=\"#05668D66\" stroke-width=\"1.2\"/><rect x=\"109.4\" y=\"137.5\" width=\"74.19999999999999\" height=\"17.5\" rx=\"3\" fill=\"#05668D44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"30.96\" y=\"120.0\" width=\"31.799999999999997\" height=\"21.0\" rx=\"2\" fill=\"#FFFFFF\" stroke=\"#05668D88\" stroke-width=\"1\" /><rect x=\"14\" y=\"158\" width=\"212\" height=\"18\" rx=\"0\" fill=\"#FFFFFFDD\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"170\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Before photo</text><rect x=\"14\" y=\"184\" width=\"103\" height=\"24\" rx=\"0\" fill=\"#0A0A0A\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"65.5\" y=\"198.7\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">NEXT STEP</text><rect x=\"123\" y=\"184\" width=\"103\" height=\"24\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"174.5\" y=\"198.7\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">FLAG A PROBLEM</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Flag it where you see it</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Photo and note stay with the step</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18tw_08end",
+    "label": "One Problems Screen At The End",
+    "desc": "All problems written up after the last step.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · WALK</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Problems Found</text><rect x=\"14\" y=\"56\" width=\"212\" height=\"34\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"73.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"72.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Damp patch, basement wall</text><text x=\"36\" y=\"82.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Step 4</text><rect x=\"194.776\" y=\"67.5\" width=\"23.223999999999997\" height=\"11.02\" rx=\"5.8\" fill=\"#C1502E1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"206.388\" y=\"75.504\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">WET</text><rect x=\"14\" y=\"96\" width=\"212\" height=\"34\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"113.0\" r=\"3.5\" fill=\"#05668D\"/><text x=\"36\" y=\"112.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Loose dryer vent clamp</text><text x=\"36\" y=\"122.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Step 6</text><rect x=\"185.96\" y=\"107.5\" width=\"32.04\" height=\"11.02\" rx=\"5.8\" fill=\"#05668D1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"201.98000000000002\" y=\"115.504\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">WATCH</text><rect x=\"14\" y=\"136\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"152.24\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">ADD A PROBLEM</text><rect x=\"14\" y=\"170\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"186.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">NEXT: PREVIEW REPORT</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >One screen after the walk</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Steps stay simple</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-tech-app-walkthrough-full-list-and-step-screens-deck-08",
+   "repeat": false
+  },
+  {
+   "group": "Walkthrough",
+   "category": "Step screen order",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Walkthrough: Step screen order, should the instructions sit on top with the photo box below or the big photo box first with the instructions under it?",
+   "optionA": {
+    "id": "md18tw_09text",
+    "label": "Instructions On Top",
+    "desc": "Read what to do, then take the photo.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · WALK</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"42\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Step 4 of 12</text><text x=\"226\" y=\"42\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Basement</text><rect x=\"14\" y=\"47\" width=\"212\" height=\"6\" rx=\"3\" fill=\"#EEEAE4\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"47\" width=\"69.96000000000001\" height=\"6\" rx=\"3\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"74\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Moisture Scan, Basement</text><text x=\"14\" y=\"91\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Hold the meter flat on the wall 30 cm above</text><text x=\"14\" y=\"101\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >the floor, three spots.</text><rect x=\"14\" y=\"106\" width=\"212\" height=\"70\" rx=\"6\" fill=\"#05668D1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M14 155.0 H226 M77.6 106 V155.0\" stroke=\"#05668D66\" stroke-width=\"1.2\"/><rect x=\"109.4\" y=\"137.5\" width=\"74.19999999999999\" height=\"17.5\" rx=\"3\" fill=\"#05668D44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"30.96\" y=\"120.0\" width=\"31.799999999999997\" height=\"21.0\" rx=\"2\" fill=\"#FFFFFF\" stroke=\"#05668D88\" stroke-width=\"1\" /><rect x=\"14\" y=\"158\" width=\"212\" height=\"18\" rx=\"0\" fill=\"#FFFFFFDD\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"170\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Before photo</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Words first</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Photo box under them</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18tw_09photo",
+    "label": "Photo Box First",
+    "desc": "The big photo box leads; words sit under it.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · WALK</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"42\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Step 4 of 12</text><text x=\"226\" y=\"42\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Basement</text><rect x=\"14\" y=\"47\" width=\"212\" height=\"6\" rx=\"3\" fill=\"#EEEAE4\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"47\" width=\"69.96000000000001\" height=\"6\" rx=\"3\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"61\" width=\"212\" height=\"70\" rx=\"6\" fill=\"#05668D1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M14 110.0 H226 M77.6 61 V110.0\" stroke=\"#05668D66\" stroke-width=\"1.2\"/><rect x=\"109.4\" y=\"92.5\" width=\"74.19999999999999\" height=\"17.5\" rx=\"3\" fill=\"#05668D44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"30.96\" y=\"75.0\" width=\"31.799999999999997\" height=\"21.0\" rx=\"2\" fill=\"#FFFFFF\" stroke=\"#05668D88\" stroke-width=\"1\" /><rect x=\"14\" y=\"113\" width=\"212\" height=\"18\" rx=\"0\" fill=\"#FFFFFFDD\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"125\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Before photo</text><text x=\"14\" y=\"152\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Moisture Scan, Basement</text><text x=\"14\" y=\"169\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Hold the meter flat on the wall 30 cm above</text><text x=\"14\" y=\"179\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >the floor, three spots.</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Photo first</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Matches the before photo rule</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-tech-app-walkthrough-full-list-and-step-screens-deck-09",
+   "repeat": false
+  },
+  {
+   "group": "Walkthrough",
+   "category": "Area change",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Walkthrough: Area change, when the walk moves into a new area should a short area card show first or should the next step simply appear?",
+   "optionA": {
+    "id": "md18tw_10card",
+    "label": "Short Area Card First",
+    "desc": "A one-second card: Now In The Basement, 3 steps.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · WALK</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><g transform=\"translate(0,34)\"><rect x=\"14\" y=\"0\" width=\"212\" height=\"150\" rx=\"10\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"60\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">NOW IN THE</text><text x=\"120\" y=\"92\" font-size=\"26\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Basement</text><text x=\"120\" y=\"112\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >3 steps  ·  about 15 min</text></g><rect x=\"14\" y=\"192\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"208.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">START AREA</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Area card between areas</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Shows steps and time left there</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18tw_10next",
+    "label": "Next Step Appears",
+    "desc": "The area name just changes in the step header.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · WALK</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"42\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Step 4 of 12</text><text x=\"226\" y=\"42\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Basement</text><rect x=\"14\" y=\"47\" width=\"212\" height=\"6\" rx=\"3\" fill=\"#EEEAE4\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"47\" width=\"69.96000000000001\" height=\"6\" rx=\"3\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"74\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Moisture Scan, Basement</text><text x=\"14\" y=\"91\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Hold the meter flat on the wall 30 cm above</text><text x=\"14\" y=\"101\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >the floor, three spots.</text><rect x=\"14\" y=\"106\" width=\"212\" height=\"70\" rx=\"6\" fill=\"#05668D1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M14 155.0 H226 M77.6 106 V155.0\" stroke=\"#05668D66\" stroke-width=\"1.2\"/><rect x=\"109.4\" y=\"137.5\" width=\"74.19999999999999\" height=\"17.5\" rx=\"3\" fill=\"#05668D44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"30.96\" y=\"120.0\" width=\"31.799999999999997\" height=\"21.0\" rx=\"2\" fill=\"#FFFFFF\" stroke=\"#05668D88\" stroke-width=\"1\" /><rect x=\"14\" y=\"158\" width=\"212\" height=\"18\" rx=\"0\" fill=\"#FFFFFFDD\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"170\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Before photo</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >No extra screen</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Area name in the progress row</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-tech-app-walkthrough-full-list-and-step-screens-deck-10",
+   "repeat": false
+  }
+ ],
+ "share": true
+}

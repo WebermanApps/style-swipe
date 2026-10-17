@@ -1,0 +1,513 @@
+{
+ "date": "upkeep-tech-app-moisture-readings-and-walk-recap-deck",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Tech App Readings: Moisture Scale And Walk Recap",
+ "generated_at": "2026-10-18T03:36:11+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "focused": 4,
+  "practical": 5,
+  "playful": 2,
+  "calm": 9
+ },
+ "groups": {
+  "Readings": 8,
+  "Visit Report": 2
+ },
+ "apps": {
+  "UpKeep": 10
+ },
+ "freshness": {
+  "option_slots": 20,
+  "never_shown_before": 20,
+  "share": 1.0
+ },
+ "warnings": [],
+ "submit_agent": "upkeep",
+ "submit_to": "UpKeep Agent f0d420ad-d37e-44d3-be6f-053da2b6e24d",
+ "board": "upkeep",
+ "topic": "morning-1018-tech",
+ "shelf": true,
+ "audience": "Max",
+ "requested": true,
+ "request": "Max via Branding morning run Oct 18 2026: fresh this-or-that decks from the Oct 17 daily work report; 10 picks, Notes, light mode, R105 captions, theme names",
+ "report_section": "1a",
+ "example_data": "All numbers, names and addresses on cards are labelled samples or placeholders; no real customer details.",
+ "deck_size": 10,
+ "caption_rule": "R105",
+ "notes": true,
+ "built_by": "Branding",
+ "built_at_note": "Morning decks Oct 18 2026 (daily work report 2026-10-17, rules 3 and 5)",
+ "sources": {
+  "report": "/workspace/ops/brand/daily-work-report/2026-10-17.md",
+  "rulebook": "/workspace/ops/brand/dashboard-rulebook.md",
+  "builder": "tools/build_morning_decks_1018.py"
+ },
+ "pairs": [
+  {
+   "group": "Readings",
+   "category": "Dry, watch and wet scale",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Readings: Dry, watch and wet scale, should a small three-part scale under the number show where the reading falls or should only the label show?",
+   "optionA": {
+    "id": "md18tm_01scale",
+    "label": "Small Three-Part Scale",
+    "desc": "Dry, Watch, Wet bar with a marker.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · READINGS</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Moisture Reading</text><rect x=\"14\" y=\"56\" width=\"120\" height=\"34\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#D4A017\" stroke-width=\"1.4\" /><text x=\"24\" y=\"79\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >17</text><text x=\"124\" y=\"78\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >%</text><rect x=\"142\" y=\"65\" width=\"34.0\" height=\"16\" rx=\"6\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"159.0\" y=\"76.2\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Watch</text><text x=\"14\" y=\"102\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Spot: basement, north wall</text><rect x=\"14.0\" y=\"108\" width=\"68.66666666666667\" height=\"8\" rx=\"2\" fill=\"#0B6E4F55\" stroke=\"none\" stroke-width=\"1\" /><text x=\"49.333333333333336\" y=\"128\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Dry</text><rect x=\"84.66666666666667\" y=\"108\" width=\"68.66666666666667\" height=\"8\" rx=\"2\" fill=\"#D4A01755\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120.0\" y=\"128\" font-size=\"7.5\" fill=\"#D4A017\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Watch</text><rect x=\"155.33333333333334\" y=\"108\" width=\"68.66666666666667\" height=\"8\" rx=\"2\" fill=\"#C1502E55\" stroke=\"none\" stroke-width=\"1\" /><text x=\"190.66666666666669\" y=\"128\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Wet</text><path d=\"M119.24000000000001 102 h10 l-5 6 z\" fill=\"#0A0A0A\"/><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >See how close to wet</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Marker moves as you type</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18tm_01label",
+    "label": "Label Only",
+    "desc": "Just the number and its label.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · READINGS</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Moisture Reading</text><rect x=\"14\" y=\"56\" width=\"120\" height=\"34\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#D4A017\" stroke-width=\"1.4\" /><text x=\"24\" y=\"79\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >17</text><text x=\"124\" y=\"78\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >%</text><rect x=\"142\" y=\"65\" width=\"34.0\" height=\"16\" rx=\"6\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"159.0\" y=\"76.2\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Watch</text><text x=\"14\" y=\"102\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Spot: basement, north wall</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Short and clean</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >One word says it</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-tech-app-moisture-readings-and-walk-recap-deck-01",
+   "repeat": false
+  },
+  {
+   "group": "Readings",
+   "category": "Wet reading photo",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Readings: Wet reading photo, when a reading comes out wet should a photo of that spot be required or stay optional?",
+   "optionA": {
+    "id": "md18tm_02req",
+    "label": "Photo Required When Wet",
+    "desc": "The step won't close until the spot is shot.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · READINGS</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Moisture Reading</text><rect x=\"14\" y=\"56\" width=\"120\" height=\"34\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#C1502E\" stroke-width=\"1.4\" /><text x=\"24\" y=\"79\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >22</text><text x=\"124\" y=\"78\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >%</text><rect x=\"142\" y=\"65\" width=\"25.200000000000003\" height=\"16\" rx=\"6\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"154.6\" y=\"76.2\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Wet</text><text x=\"14\" y=\"102\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Spot: basement, north wall</text><rect x=\"14\" y=\"108\" width=\"212\" height=\"70\" rx=\"6\" fill=\"#C1502E1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M14 157.0 H226 M77.6 108 V157.0\" stroke=\"#C1502E66\" stroke-width=\"1.2\"/><rect x=\"109.4\" y=\"139.5\" width=\"74.19999999999999\" height=\"17.5\" rx=\"3\" fill=\"#C1502E44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"30.96\" y=\"122.0\" width=\"31.799999999999997\" height=\"21.0\" rx=\"2\" fill=\"#FFFFFF\" stroke=\"#C1502E88\" stroke-width=\"1\" /><rect x=\"14\" y=\"160\" width=\"212\" height=\"18\" rx=\"0\" fill=\"#FFFFFFDD\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"172\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Photo of the wet spot  ·  required</text><rect x=\"14\" y=\"186\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"202.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">TAKE PHOTO</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Every wet reading has proof</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member sees where it is</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18tm_02opt",
+    "label": "Photo Optional",
+    "desc": "An Add Photo link, never required.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · READINGS</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Moisture Reading</text><rect x=\"14\" y=\"56\" width=\"120\" height=\"34\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#C1502E\" stroke-width=\"1.4\" /><text x=\"24\" y=\"79\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >22</text><text x=\"124\" y=\"78\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >%</text><rect x=\"142\" y=\"65\" width=\"25.200000000000003\" height=\"16\" rx=\"6\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"154.6\" y=\"76.2\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Wet</text><text x=\"14\" y=\"102\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Spot: basement, north wall</text><text x=\"120\" y=\"120\" font-size=\"8\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\" text-decoration=\"underline\">ADD PHOTO (OPTIONAL)</text><rect x=\"14\" y=\"128\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#0A0A0A\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"144.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">SAVE READING</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Faster at busy homes</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Tech decides</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-tech-app-moisture-readings-and-walk-recap-deck-02",
+   "repeat": false
+  },
+  {
+   "group": "Readings",
+   "category": "Wet follow-up",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Readings: Wet follow-up, should a wet reading add a recheck to the next visit by itself or let the tech choose?",
+   "optionA": {
+    "id": "md18tm_03auto",
+    "label": "Recheck Added By Itself",
+    "desc": "Wet means it comes back next visit, always.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · READINGS</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Moisture Reading</text><rect x=\"14\" y=\"56\" width=\"120\" height=\"34\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#C1502E\" stroke-width=\"1.4\" /><text x=\"24\" y=\"79\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >22</text><text x=\"124\" y=\"78\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >%</text><rect x=\"142\" y=\"65\" width=\"25.200000000000003\" height=\"16\" rx=\"6\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"154.6\" y=\"76.2\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Wet</text><text x=\"14\" y=\"102\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Spot: basement, north wall</text><rect x=\"14\" y=\"108\" width=\"212\" height=\"26\" rx=\"6\" fill=\"#05668D1A\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"108\" width=\"3\" height=\"26\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(22,114) scale(0.5833333333333334)\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"16\" rx=\"2\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2\"/><path d=\"M3 10 H21 M8 3 V7 M16 3 V7\" stroke=\"#05668D\" stroke-width=\"2\"/></g><text x=\"42\" y=\"124.5\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Recheck added to next visit</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Never forgotten</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Shows on the next walk</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18tm_03choose",
+    "label": "Tech Chooses",
+    "desc": "A toggle: Recheck next visit, on or off.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · READINGS</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Moisture Reading</text><rect x=\"14\" y=\"56\" width=\"120\" height=\"34\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#C1502E\" stroke-width=\"1.4\" /><text x=\"24\" y=\"79\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >22</text><text x=\"124\" y=\"78\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >%</text><rect x=\"142\" y=\"65\" width=\"25.200000000000003\" height=\"16\" rx=\"6\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"154.6\" y=\"76.2\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Wet</text><text x=\"14\" y=\"102\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Spot: basement, north wall</text><text x=\"14\" y=\"123\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Recheck next visit</text><rect x=\"196\" y=\"113\" width=\"28\" height=\"15\" rx=\"7.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"216\" cy=\"120.5\" r=\"5.5\" fill=\"#FFFFFF\"/><line x1=\"14\" y1=\"132\" x2=\"226\" y2=\"132\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"149\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Tell the member now</text><rect x=\"196\" y=\"139\" width=\"28\" height=\"15\" rx=\"7.5\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"204\" cy=\"146.5\" r=\"5.5\" fill=\"#FFFFFF\"/><line x1=\"14\" y1=\"158\" x2=\"226\" y2=\"158\" stroke=\"#E5E0D8\"/><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Tech's call on site</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Some wet spots are known</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-tech-app-moisture-readings-and-walk-recap-deck-03",
+   "repeat": false
+  },
+  {
+   "group": "Readings",
+   "category": "Reading trend",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Readings: Reading trend, should each spot show a small trend line of past visits or a simple up or down arrow from last time?",
+   "optionA": {
+    "id": "md18tm_04line",
+    "label": "Small Trend Line",
+    "desc": "Last five visits drawn as a tiny line.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · READINGS</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Moisture Reading</text><rect x=\"14\" y=\"56\" width=\"120\" height=\"34\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#D4A017\" stroke-width=\"1.4\" /><text x=\"24\" y=\"79\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >17</text><text x=\"124\" y=\"78\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >%</text><rect x=\"142\" y=\"65\" width=\"34.0\" height=\"16\" rx=\"6\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"159.0\" y=\"76.2\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Watch</text><text x=\"14\" y=\"102\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Spot: basement, north wall</text><text x=\"14\" y=\"118\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">LAST FIVE VISITS</text><rect x=\"14\" y=\"124\" width=\"212\" height=\"50\" rx=\"6\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><polyline points=\"14.0,164.0 67.0,161.5 120.0,159.0 173.0,154.0 226.0,146.5\" fill=\"none\" stroke=\"#D4A017\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"226\" cy=\"146.5\" r=\"3\" fill=\"#D4A017\"/><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Whole history at a glance</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Rising readings stand out</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18tm_04arrow",
+    "label": "Up Or Down Arrow",
+    "desc": "Up 3 since last visit, nothing more.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · READINGS</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Moisture Reading</text><rect x=\"14\" y=\"56\" width=\"120\" height=\"34\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#D4A017\" stroke-width=\"1.4\" /><text x=\"24\" y=\"79\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >17</text><text x=\"124\" y=\"78\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >%</text><rect x=\"142\" y=\"65\" width=\"34.0\" height=\"16\" rx=\"6\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"159.0\" y=\"76.2\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Watch</text><text x=\"14\" y=\"102\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Spot: basement, north wall</text><g transform=\"translate(0,108)\"><g transform=\"translate(14,0) scale(0.75) rotate(-90 12 12)\"><path d=\"M9 5 L16 12 L9 19\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"38\" y=\"13\" font-size=\"9\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Up 3 since last visit</text></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >One plain line</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Easy to read in a dark basement</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-tech-app-moisture-readings-and-walk-recap-deck-04",
+   "repeat": false
+  },
+  {
+   "group": "Readings",
+   "category": "Reading spots",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Readings: Reading spots, should the tech take readings at the spots saved on the first-visit map or add spots freely each visit?",
+   "optionA": {
+    "id": "md18tm_05saved",
+    "label": "Saved Spots From The Map",
+    "desc": "The same five spots every visit, in order.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · READINGS</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Reading Spots</text><rect x=\"14\" y=\"56\" width=\"212\" height=\"34\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"31.0\" cy=\"73.0\" r=\"9.0\" fill=\"#0B6E4F\" stroke=\"#0B6E4F\" stroke-width=\"1.6\"/><text x=\"31.0\" y=\"76.6\" font-size=\"9.9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >1</text><text x=\"46\" y=\"72.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Basement, north wall</text><text x=\"46\" y=\"82.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Last: 14  Dry</text><rect x=\"14\" y=\"96\" width=\"212\" height=\"34\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"31.0\" cy=\"113.0\" r=\"9.0\" fill=\"#0B6E4F\" stroke=\"#0B6E4F\" stroke-width=\"1.6\"/><text x=\"31.0\" y=\"116.6\" font-size=\"9.9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >2</text><text x=\"46\" y=\"112.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Under kitchen sink</text><text x=\"46\" y=\"122.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Last: 12  Dry</text><rect x=\"14\" y=\"136\" width=\"212\" height=\"34\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"31.0\" cy=\"153.0\" r=\"9.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"31.0\" y=\"156.6\" font-size=\"9.9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >3</text><text x=\"46\" y=\"152.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Bath floor by tub</text><text x=\"46\" y=\"162.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Last: 17  Watch</text><text x=\"120\" y=\"188\" font-size=\"8\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\" text-decoration=\"underline\">ADD A NEW SPOT</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Same spots, every visit</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Readings compare fairly</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18tm_05free",
+    "label": "Add Spots Freely",
+    "desc": "Name a spot and type the reading each time.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · READINGS</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Reading Spots</text><rect x=\"14\" y=\"56\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,62) scale(0.6666666666666666)\"><circle cx=\"10.5\" cy=\"10.5\" r=\"6.5\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2\"/><path d=\"M15.5 15.5 L21 21\" stroke=\"#05668D\" stroke-width=\"2\" stroke-linecap=\"round\"/></g><text x=\"44\" y=\"74\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Name this spot</text><rect x=\"14\" y=\"92\" width=\"120\" height=\"34\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0B6E4F\" stroke-width=\"1.4\" /><text x=\"24\" y=\"115\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >14</text><text x=\"124\" y=\"114\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >%</text><rect x=\"142\" y=\"101\" width=\"25.200000000000003\" height=\"16\" rx=\"6\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"154.6\" y=\"112.2\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Dry</text><rect x=\"14\" y=\"134\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#0A0A0A\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"150.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">SAVE AND ADD ANOTHER</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Tech picks the spots</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Nothing to set up first</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-tech-app-moisture-readings-and-walk-recap-deck-05",
+   "repeat": false
+  },
+  {
+   "group": "Visit Report",
+   "category": "Readings summary",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Visit Report: Readings summary, should the report show the readings as a swipe carousel of spot cards or as one table?",
+   "optionA": {
+    "id": "md18tm_06carousel",
+    "label": "Carousel Of Spot Cards",
+    "desc": "One card per spot with its label.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · VISIT REPORT</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Moisture Readings</text><rect x=\"14\" y=\"56\" width=\"120\" height=\"70\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"56\" width=\"120\" height=\"4\" rx=\"2\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"80\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Basement wall</text><text x=\"24\" y=\"93\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >14  Dry</text><rect x=\"142\" y=\"56\" width=\"120\" height=\"70\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"142\" y=\"56\" width=\"120\" height=\"4\" rx=\"2\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"152\" y=\"80\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Kitchen sink</text><text x=\"152\" y=\"93\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >12  Dry</text><rect x=\"103\" y=\"134\" width=\"10\" height=\"5\" rx=\"2.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"117.5\" y=\"134\" width=\"5\" height=\"5\" rx=\"2.5\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"129.5\" y=\"134\" width=\"5\" height=\"5\" rx=\"2.5\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Swipe spot by spot</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Colour shows the label</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18tm_06table",
+    "label": "One Table",
+    "desc": "Spot, number and label in rows.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · VISIT REPORT</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Moisture Readings</text><text x=\"14\" y=\"69\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Basement wall</text><text x=\"226\" y=\"69\" font-size=\"8.5\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"700\" >14  Dry</text><line x1=\"14\" y1=\"75\" x2=\"226\" y2=\"75\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"89\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Kitchen sink</text><text x=\"226\" y=\"89\" font-size=\"8.5\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"700\" >12  Dry</text><line x1=\"14\" y1=\"95\" x2=\"226\" y2=\"95\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"109\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Bath floor</text><text x=\"226\" y=\"109\" font-size=\"8.5\" fill=\"#D4A017\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"700\" >17  Watch</text><line x1=\"14\" y1=\"115\" x2=\"226\" y2=\"115\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"129\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Laundry floor</text><text x=\"226\" y=\"129\" font-size=\"8.5\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"700\" >11  Dry</text><line x1=\"14\" y1=\"135\" x2=\"226\" y2=\"135\" stroke=\"#E5E0D8\"/><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >All spots at once</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Short to scan</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-tech-app-moisture-readings-and-walk-recap-deck-06",
+   "repeat": false
+  },
+  {
+   "group": "Readings",
+   "category": "Meter type",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Readings: Meter type, should each reading note which meter was used or show the number and label alone?",
+   "optionA": {
+    "id": "md18tm_07meter",
+    "label": "Note The Meter",
+    "desc": "Pin meter or pinless, saved with the number.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · READINGS</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Moisture Reading</text><rect x=\"14\" y=\"56\" width=\"120\" height=\"34\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#D4A017\" stroke-width=\"1.4\" /><text x=\"24\" y=\"79\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >17</text><text x=\"124\" y=\"78\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >%</text><rect x=\"142\" y=\"65\" width=\"34.0\" height=\"16\" rx=\"6\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"159.0\" y=\"76.2\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Watch</text><text x=\"14\" y=\"102\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Spot: basement, north wall</text><rect x=\"14\" y=\"108\" width=\"212\" height=\"22\" rx=\"11\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"16\" y=\"110\" width=\"102.0\" height=\"18\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"67.0\" y=\"122.5\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Pinless meter</text><text x=\"173.0\" y=\"122.5\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Pin meter</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Readings stay comparable</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Pinless set as the default</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18tm_07alone",
+    "label": "Number And Label Alone",
+    "desc": "One meter for the whole team; nothing to pick.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · READINGS</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Moisture Reading</text><rect x=\"14\" y=\"56\" width=\"120\" height=\"34\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#D4A017\" stroke-width=\"1.4\" /><text x=\"24\" y=\"79\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >17</text><text x=\"124\" y=\"78\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >%</text><rect x=\"142\" y=\"65\" width=\"34.0\" height=\"16\" rx=\"6\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"159.0\" y=\"76.2\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Watch</text><text x=\"14\" y=\"102\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Spot: basement, north wall</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fewer taps</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Team uses one meter</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-tech-app-moisture-readings-and-walk-recap-deck-07",
+   "repeat": false
+  },
+  {
+   "group": "Readings",
+   "category": "Watch label help",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Readings: Watch label help, should the Watch label carry a short line saying what it means or stay one word?",
+   "optionA": {
+    "id": "md18tm_08line",
+    "label": "Short What-It-Means Line",
+    "desc": "Watch: a little high, we check it next visit.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · READINGS</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Moisture Reading</text><rect x=\"14\" y=\"56\" width=\"120\" height=\"34\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#D4A017\" stroke-width=\"1.4\" /><text x=\"24\" y=\"79\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >17</text><text x=\"124\" y=\"78\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >%</text><rect x=\"142\" y=\"65\" width=\"34.0\" height=\"16\" rx=\"6\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"159.0\" y=\"76.2\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Watch</text><text x=\"14\" y=\"102\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Spot: basement, north wall</text><rect x=\"14\" y=\"108\" width=\"212\" height=\"34\" rx=\"6\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"108\" width=\"3\" height=\"34\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"122\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Watch: a little high</text><text x=\"22\" y=\"134\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >We check this spot again next visit</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Clear for new techs</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Same line the member sees</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18tm_08word",
+    "label": "One Word",
+    "desc": "Dry, Watch or Wet and nothing else.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · READINGS</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Moisture Reading</text><rect x=\"14\" y=\"56\" width=\"120\" height=\"34\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#D4A017\" stroke-width=\"1.4\" /><text x=\"24\" y=\"79\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >17</text><text x=\"124\" y=\"78\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >%</text><rect x=\"142\" y=\"65\" width=\"34.0\" height=\"16\" rx=\"6\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"159.0\" y=\"76.2\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Watch</text><text x=\"14\" y=\"102\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Spot: basement, north wall</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Quick and calm</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Training covers the meaning</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-tech-app-moisture-readings-and-walk-recap-deck-08",
+   "repeat": false
+  },
+  {
+   "group": "Visit Report",
+   "category": "Walk recap",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Visit Report: Walk recap, before sending should the tech see a carousel recap of every step's after photo or a checklist recap with ticks?",
+   "optionA": {
+    "id": "md18tm_09carousel",
+    "label": "After Photo Carousel",
+    "desc": "Swipe through every step's after photo.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · VISIT REPORT</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Walk Recap</text><rect x=\"14\" y=\"56\" width=\"130\" height=\"100\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"56\" width=\"130\" height=\"4\" rx=\"2\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"22\" y=\"66\" width=\"114\" height=\"66\" rx=\"6\" fill=\"#0B6E4F1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M53.92 120.12 V97.548 L79.0 79.99199999999999 L104.08 97.548 V120.12 Z\" fill=\"#FFFFFF\" stroke=\"#0B6E4F\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><rect x=\"73.984\" y=\"105.072\" width=\"10.032000000000002\" height=\"15.048\" rx=\"0\" fill=\"#0B6E4F55\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"138\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Furnace filter</text><text x=\"24\" y=\"149\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >After</text><rect x=\"152\" y=\"56\" width=\"130\" height=\"100\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"152\" y=\"56\" width=\"130\" height=\"4\" rx=\"2\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"160\" y=\"66\" width=\"114\" height=\"66\" rx=\"6\" fill=\"#05668D1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M160 112.19999999999999 H274 M194.2 66 V112.19999999999999\" stroke=\"#05668D66\" stroke-width=\"1.2\"/><rect x=\"211.3\" y=\"95.7\" width=\"39.9\" height=\"16.5\" rx=\"3\" fill=\"#05668D44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"169.12\" y=\"79.2\" width=\"17.099999999999998\" height=\"19.8\" rx=\"2\" fill=\"#FFFFFF\" stroke=\"#05668D88\" stroke-width=\"1\" /><text x=\"162\" y=\"138\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Water heater</text><text x=\"162\" y=\"149\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >After</text><rect x=\"103\" y=\"164\" width=\"10\" height=\"5\" rx=\"2.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"117.5\" y=\"164\" width=\"5\" height=\"5\" rx=\"2.5\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"129.5\" y=\"164\" width=\"5\" height=\"5\" rx=\"2.5\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"180\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"196.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">PREVIEW REPORT</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >See the work, step by step</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Spot a missing photo fast</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18tm_09checks",
+    "label": "Checklist With Ticks",
+    "desc": "Every step ticked, skipped steps marked.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · VISIT REPORT</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Walk Recap</text><rect x=\"14\" y=\"58\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M17 64 l2.5 2.5 4.5 -5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"1.8\"/><text x=\"34\" y=\"67.5\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Before photo</text><line x1=\"34\" y1=\"75\" x2=\"226\" y2=\"75\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"80\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M17 86 l2.5 2.5 4.5 -5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"1.8\"/><text x=\"34\" y=\"89.5\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Furnace filter</text><line x1=\"34\" y1=\"97\" x2=\"226\" y2=\"97\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"102\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M17 108 l2.5 2.5 4.5 -5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"1.8\"/><text x=\"34\" y=\"111.5\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Water heater</text><line x1=\"34\" y1=\"119\" x2=\"226\" y2=\"119\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"124\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M17 130 l2.5 2.5 4.5 -5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"1.8\"/><text x=\"34\" y=\"133.5\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Moisture scan</text><line x1=\"34\" y1=\"141\" x2=\"226\" y2=\"141\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"146\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M17 152 l2.5 2.5 4.5 -5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"1.8\"/><text x=\"34\" y=\"155.5\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Sump pit</text><line x1=\"34\" y1=\"163\" x2=\"226\" y2=\"163\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"172\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"188.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">PREVIEW REPORT</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >One short list</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Quick last look</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-tech-app-moisture-readings-and-walk-recap-deck-09",
+   "repeat": false
+  },
+  {
+   "group": "Readings",
+   "category": "Second reading",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Readings: Second reading, when a reading is wet should the app ask for a second reading a short way off or accept the first number?",
+   "optionA": {
+    "id": "md18tm_10second",
+    "label": "Ask For A Second Reading",
+    "desc": "Wet? Take one more a hand's width away.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · READINGS</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Moisture Reading</text><rect x=\"14\" y=\"56\" width=\"120\" height=\"34\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#C1502E\" stroke-width=\"1.4\" /><text x=\"24\" y=\"79\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >22</text><text x=\"124\" y=\"78\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >%</text><rect x=\"142\" y=\"65\" width=\"25.200000000000003\" height=\"16\" rx=\"6\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"154.6\" y=\"76.2\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Wet</text><text x=\"14\" y=\"102\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Spot: basement, north wall</text><rect x=\"14\" y=\"108\" width=\"212\" height=\"34\" rx=\"6\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"108\" width=\"3\" height=\"34\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"122\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Take one more reading</text><text x=\"22\" y=\"134\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >A hand's width from the first spot</text><rect x=\"14\" y=\"148\" width=\"120\" height=\"34\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#C1502E\" stroke-width=\"1.4\" /><text x=\"24\" y=\"171\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >21</text><text x=\"124\" y=\"170\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >%</text><rect x=\"142\" y=\"157\" width=\"25.200000000000003\" height=\"16\" rx=\"6\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"154.6\" y=\"168.2\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Wet</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Confirms it is really wet</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Fewer false alarms</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18tm_10first",
+    "label": "Accept The First Number",
+    "desc": "One reading per spot, always.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · READINGS</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Moisture Reading</text><rect x=\"14\" y=\"56\" width=\"120\" height=\"34\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#C1502E\" stroke-width=\"1.4\" /><text x=\"24\" y=\"79\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >22</text><text x=\"124\" y=\"78\" font-size=\"9\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >%</text><rect x=\"142\" y=\"65\" width=\"25.200000000000003\" height=\"16\" rx=\"6\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"154.6\" y=\"76.2\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Wet</text><text x=\"14\" y=\"102\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Spot: basement, north wall</text><rect x=\"14\" y=\"108\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#0A0A0A\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"124.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">SAVE READING</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Quick walk</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >One number per spot</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-tech-app-moisture-readings-and-walk-recap-deck-10",
+   "repeat": false
+  }
+ ],
+ "share": true
+}
