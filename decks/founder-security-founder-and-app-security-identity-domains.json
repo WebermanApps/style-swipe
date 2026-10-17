@@ -1,0 +1,364 @@
+{
+ "date": "founder-security-founder-and-app-security-identity-domains",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Founder Security: Identity & Domains",
+ "generated_at": "2026-10-17T08:02:22+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "focused": 10,
+  "plain": 10
+ },
+ "groups": {
+  "Security": 10
+ },
+ "apps": {
+  "Research": 10
+ },
+ "freshness": {
+  "option_slots": 20,
+  "never_shown_before": 0,
+  "share": 0.0,
+  "note": "options reused from founder-security-founder-and-app-security (split, not new)"
+ },
+ "warnings": [],
+ "submit_agent": "research",
+ "deck_size": 10,
+ "topic": "founder-security",
+ "shelf": true,
+ "bank_pairs": [
+  "founder-security-founder-and-app-security-01",
+  "founder-security-founder-and-app-security-02",
+  "founder-security-founder-and-app-security-03",
+  "founder-security-founder-and-app-security-04",
+  "founder-security-founder-and-app-security-05",
+  "founder-security-founder-and-app-security-06",
+  "founder-security-founder-and-app-security-07",
+  "founder-security-founder-and-app-security-08",
+  "founder-security-founder-and-app-security-09",
+  "founder-security-founder-and-app-security-10"
+ ],
+ "source": "/workspace/research-dashboard/tools/research-founder-security.json",
+ "pairs": [
+  {
+   "id": "founder-security-founder-and-app-security-identity-domains-01",
+   "group": "Security",
+   "category": "Identity",
+   "app": "Research",
+   "ask": "SIM-Swap Protection: Turn On Your Carrier's Number Lock And Port-Out PIN This Week, Or Later? (fcc.gov SIM swap rules 2023)",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rfs201a",
+    "label": "Turn On This Week",
+    "desc": "Stops someone moving your number to their SIM to grab codes.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rfs201b",
+    "label": "Later",
+    "desc": "Leaves the phone number open to port-out fraud.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "founder-security-founder-and-app-security-01"
+  },
+  {
+   "id": "founder-security-founder-and-app-security-identity-domains-02",
+   "group": "Security",
+   "category": "Identity",
+   "app": "Research",
+   "ask": "Phone Number As Account Recovery: Remove It From Google, GitHub And Stripe Recovery, Or Keep It As A Backup?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rfs202a",
+    "label": "Remove The Phone Number",
+    "desc": "A swapped SIM can no longer reset your accounts.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rfs202b",
+    "label": "Keep As Backup",
+    "desc": "Easier recovery, but the number becomes a weak spot.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "founder-security-founder-and-app-security-02"
+  },
+  {
+   "id": "founder-security-founder-and-app-security-identity-domains-03",
+   "group": "Security",
+   "category": "Identity",
+   "app": "Research",
+   "ask": "Google Advanced Protection Program For Your Main Email: Enroll, Or Standard Security? (landing.google.com/advancedprotection)",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rfs203a",
+    "label": "Enroll",
+    "desc": "Strongest Google account protection; needs passkeys or keys.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rfs203b",
+    "label": "Standard Security",
+    "desc": "Fewer limits on apps and recovery.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "founder-security-founder-and-app-security-03"
+  },
+  {
+   "id": "founder-security-founder-and-app-security-identity-domains-04",
+   "group": "Security",
+   "category": "Identity",
+   "app": "Research",
+   "ask": "Admin Email For Registrar, Stripe And GitHub: A Separate Unpublished Address, Or Your Public Email?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rfs204a",
+    "label": "Separate Unpublished Address",
+    "desc": "Attackers cannot target an address they never see.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rfs204b",
+    "label": "Public Email",
+    "desc": "One inbox; also the one phishers know.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "founder-security-founder-and-app-security-04"
+  },
+  {
+   "id": "founder-security-founder-and-app-security-identity-domains-05",
+   "group": "Security",
+   "category": "Domains",
+   "app": "Research",
+   "ask": "Domain Registrar Lock (Transfer Lock) On maxweberman.com And smartupkeep.ai: Confirm It Is On, Or Leave Default? (icann.org transfer lock)",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rfs205a",
+    "label": "Confirm Lock Is On",
+    "desc": "Blocks unauthorized transfers away from your registrar.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rfs205b",
+    "label": "Leave Default",
+    "desc": "Some registrars leave it off.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "founder-security-founder-and-app-security-05"
+  },
+  {
+   "id": "founder-security-founder-and-app-security-identity-domains-06",
+   "group": "Security",
+   "category": "Domains",
+   "app": "Research",
+   "ask": "Domain Auto-Renew Plus A Backup Card And Expiry Alerts: Set Up, Or Renew Manually?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rfs206a",
+    "label": "Auto-Renew With Backup Card",
+    "desc": "Lapsed domains get grabbed and used for phishing.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rfs206b",
+    "label": "Renew Manually",
+    "desc": "Relies on remembering every date.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "founder-security-founder-and-app-security-06"
+  },
+  {
+   "id": "founder-security-founder-and-app-security-identity-domains-07",
+   "group": "Security",
+   "category": "Domains",
+   "app": "Research",
+   "ask": "CAA DNS Records: Limit Which Companies Can Issue Certificates For Your Domains, Or Allow Any? (RFC 8659)",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rfs207a",
+    "label": "Add CAA Records",
+    "desc": "Only your chosen certificate issuers can make certs for your sites.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rfs207b",
+    "label": "Allow Any",
+    "desc": "Default; any certificate authority can issue.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "founder-security-founder-and-app-security-07"
+  },
+  {
+   "id": "founder-security-founder-and-app-security-identity-domains-08",
+   "group": "Security",
+   "category": "Email",
+   "app": "Research",
+   "ask": "Email Spoofing: Publish SPF, DKIM And DMARC (p=reject) For Your Domains, Or Leave It? (Google sender guidelines)",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rfs208a",
+    "label": "Set Up DMARC Reject",
+    "desc": "Stops others sending email that looks like it is from you.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rfs208b",
+    "label": "Leave It",
+    "desc": "Your domain can be spoofed to customers.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "founder-security-founder-and-app-security-08"
+  },
+  {
+   "id": "founder-security-founder-and-app-security-identity-domains-09",
+   "group": "Security",
+   "category": "People",
+   "app": "Research",
+   "ask": "Contractor Offboarding: Same-Day Checklist To Remove GitHub, Drive, Dropbox And Tool Access, Or Ad Hoc?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rfs209a",
+    "label": "Same-Day Checklist",
+    "desc": "Ex-helpers lose access the day work ends.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rfs209b",
+    "label": "Ad Hoc",
+    "desc": "Old access tends to linger for months.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "founder-security-founder-and-app-security-09"
+  },
+  {
+   "id": "founder-security-founder-and-app-security-identity-domains-10",
+   "group": "Security",
+   "category": "People",
+   "app": "Research",
+   "ask": "Shared Logins: One Seat Per Person (Or Shared Vault Items), Or Share Passwords In Chat?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rfs210a",
+    "label": "One Seat Or Vault Sharing",
+    "desc": "You can remove one person without changing everyone's password.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rfs210b",
+    "label": "Share In Chat",
+    "desc": "Passwords live forever in chat history.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "founder-security-founder-and-app-security-10"
+  }
+ ],
+ "share": true,
+ "notes": true,
+ "carried": 0,
+ "split_from": "founder-security-founder-and-app-security",
+ "split_part": "a",
+ "split_sibling": "founder-security-founder-and-app-security-ai-agents-recovery",
+ "split_note": "R86 (Max Oct 17 2026 07:50 ICT): 10 picks per deck; split from the unanswered 20-pick deck founder-security-founder-and-app-security"
+}

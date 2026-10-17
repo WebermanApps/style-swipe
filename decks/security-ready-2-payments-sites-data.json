@@ -1,0 +1,543 @@
+{
+ "date": "security-ready-2-payments-sites-data",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Protection: Payments, Sites & Data",
+ "generated_at": "2026-10-17T08:02:22+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "focused": 10,
+  "calm": 10
+ },
+ "groups": {
+  "Protection": 10
+ },
+ "apps": {
+  "Security": 10
+ },
+ "freshness": {
+  "option_slots": 20,
+  "never_shown_before": 0,
+  "share": 0.0,
+  "note": "options reused from security-ready-2 (split, not new)"
+ },
+ "warnings": [],
+ "submit_agent": "security",
+ "deck_size": 10,
+ "carried": 0,
+ "topic": "security",
+ "shelf": true,
+ "bank_pairs": [
+  "security-ready-2-06",
+  "security-ready-2-12",
+  "security-ready-2-15",
+  "security-ready-2-17",
+  "security-ready-2-23",
+  "security-ready-2-24",
+  "security-ready-2-25",
+  "security-ready-2-26",
+  "security-ready-2-27",
+  "security-ready-2-28"
+ ],
+ "pairs": [
+  {
+   "group": "Protection",
+   "category": "Protection",
+   "app": "Security",
+   "ask": "Card Payments Only Through Stripe Checkout: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-2-payments-sites-data-01",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "stripe-hosted-checkout",
+   "optionA": {
+    "id": "bksec_stripe-hosted-checkout_yes",
+    "label": "Do It",
+    "desc": "Use only Stripe hosted Checkout or Payment Links, with the Stripe portal for billing changes. Card data never touches our pages. Who does it: UpKeep.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Use only Stripe hosted Checkout or</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Payment Links, with the Stripe portal</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">for billing changes. Card data never</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">touches our pages. Who does it:</text><text x=\"18\" y=\"168\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">UpKeep.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bksec_stripe-hosted-checkout_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: Collecting card numbers in our own forms would make us responsible for card security rules (PCI).",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters:</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Collecting card numbers in our own</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">forms would make us responsible for</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">card security rules (PCI).</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "split_from_pair": "security-ready-2-06"
+  },
+  {
+   "group": "Protection",
+   "category": "Protection",
+   "app": "Security",
+   "ask": "One-Page Breach Plan For Michigan: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-2-payments-sites-data-02",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "breach-plan",
+   "optionA": {
+    "id": "bksec_breach-plan_yes",
+    "label": "Do It",
+    "desc": "Legal writes who to call and a notice template. Security writes the steps to revoke keys and lock accounts. Who does it: Legal And Security.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Legal writes who to call and a notice</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">template. Security writes the steps to</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">revoke keys and lock accounts. Who</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">does it: Legal And Security.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bksec_breach-plan_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: Michigan law (MCL 445.72) requires notifying affected residents after certain breaches, and there is no plan yet.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters:</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Michigan law (MCL 445.72) requires</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">notifying affected residents after</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">certain breaches, and there is no plan</text><text x=\"18\" y=\"168\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">yet.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "split_from_pair": "security-ready-2-12"
+  },
+  {
+   "group": "Protection",
+   "category": "Protection",
+   "app": "Security",
+   "ask": "Collect Only Name, Email, Address And Phone From Members: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-2-payments-sites-data-03",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "collect-less",
+   "optionA": {
+    "id": "bksec_collect-less_yes",
+    "label": "Do It",
+    "desc": "Limit the member form to those four fields, keep photos in private storage, and delete member data when they cancel. Who does it: UpKeep And Legal.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Limit the member form to those four</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">fields, keep photos in private</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">storage, and delete member data when</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">they cancel. Who does it: UpKeep And</text><text x=\"18\" y=\"168\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Legal.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bksec_collect-less_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: Data you don't hold can't be breached. Door codes, ID copies or SSNs in the app would turn a small leak into a serious one.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: Data</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">you don&#x27;t hold can&#x27;t be breached. Door</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">codes, ID copies or SSNs in the app</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">would turn a small leak into a serious</text><text x=\"18\" y=\"168\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">one.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "split_from_pair": "security-ready-2-15"
+  },
+  {
+   "group": "Protection",
+   "category": "Protection",
+   "app": "Security",
+   "ask": "Move The Plain-Text Gate Words Out Of The Password Index: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-2-payments-sites-data-04",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "password-index-key",
+   "optionA": {
+    "id": "bksec_password-index-key_yes",
+    "label": "Do It",
+    "desc": "Move the key into your vault or an environment variable and delete the stale row. Who does it: Grok Bot.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Move the key into your vault or an</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">environment variable and delete the</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">stale row. Who does it: Grok Bot.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bksec_password-index-key_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: The u-code key in the password index still holds the gate words in plain text, which breaks its own names-only rule. One row about the portfolio password is also out of date.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: The</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">u-code key in the password index still</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">holds the gate words in plain text,</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">which breaks its own names-only rule.</text><text x=\"18\" y=\"168\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">One row about the portfolio password</text><text x=\"18\" y=\"183\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">is also out of date.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "split_from_pair": "security-ready-2-17"
+  },
+  {
+   "group": "Protection",
+   "category": "Protection",
+   "app": "Security",
+   "ask": "One Test Submit From Niko's Finish Questions: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-15",
+   "source_card": "niko-test-submit",
+   "optionA": {
+    "id": "bksec_niko-test-submit_yes",
+    "label": "Do It",
+    "desc": "You (or whoever has the submit password) send one answer marked TEST from Finish Questions, and Security confirms it arrives. Who does it: You, Then Security.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">You (or whoever has the submit</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">password) send one answer marked TEST</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">from Finish Questions, and Security</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">confirms it arrives. Who does it: You,</text><text x=\"18\" y=\"168\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Then Security.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bksec_niko-test-submit_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: The back-links were removed from Niko's apps tonight. A test proves his answers still reach you.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: The</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">back-links were removed from Niko's</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">apps tonight. A test proves his</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">answers still reach you.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "id": "security-ready-2-payments-sites-data-05",
+   "split_from_pair": "security-ready-2-23"
+  },
+  {
+   "group": "Protection",
+   "category": "Protection",
+   "app": "Security",
+   "ask": "Weekly Check That All 45 Sites Ask For The Password: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-15",
+   "source_card": "weekly-lock-check",
+   "optionA": {
+    "id": "bksec_weekly-lock-check_yes",
+    "label": "Do It",
+    "desc": "Every Monday Security loads all 45 sites and reports any page that opens without the password form. Who does it: Security.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Every Monday Security loads all 45</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">sites and reports any page that opens</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">without the password form. Who does</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">it: Security.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bksec_weekly-lock-check_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: Rebuilds can republish a page unlocked. A weekly check catches anything the push guard misses.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters:</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Rebuilds can republish a page</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">unlocked. A weekly check catches</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">anything the push guard misses.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "id": "security-ready-2-payments-sites-data-06",
+   "split_from_pair": "security-ready-2-24"
+  },
+  {
+   "group": "Protection",
+   "category": "Protection",
+   "app": "Security",
+   "ask": "Hide The Build Templates From The Public Site: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-15",
+   "source_card": "hide-templates",
+   "optionA": {
+    "id": "bksec_hide-templates_yes",
+    "label": "Do It",
+    "desc": "Move the plain build templates (Style Swipe and Portfolio) out of the published folders, so only the locked pages are online. Who does it: Security.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Move the plain build templates (Style</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Swipe and Portfolio) out of the</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">published folders, so only the locked</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">pages are online. Who does it:</text><text x=\"18\" y=\"168\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Security.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bksec_hide-templates_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: The templates are not locked because tools read them. Today anyone with the link can read them.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: The</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">templates are not locked because tools</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">read them. Today anyone with the link</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">can read them.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "id": "security-ready-2-payments-sites-data-07",
+   "split_from_pair": "security-ready-2-25"
+  },
+  {
+   "group": "Protection",
+   "category": "Protection",
+   "app": "Security",
+   "ask": "Remove The Public Pre-Lock Backup Tags: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-15",
+   "source_card": "prelock-tags",
+   "optionA": {
+    "id": "bksec_prelock-tags_yes",
+    "label": "Do It",
+    "desc": "Delete the pre-lock-2026-10-15 tags from the public repos once a private backup exists. Who does it: Security, With Your OK.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Delete the pre-lock-2026-10-15 tags</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">from the public repos once a private</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">backup exists. Who does it: Security,</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">With Your OK.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bksec_prelock-tags_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: Those tags point to the unlocked versions, so anyone can still open the old pages on GitHub.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters:</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Those tags point to the unlocked</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">versions, so anyone can still open the</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">old pages on GitHub.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "id": "security-ready-2-payments-sites-data-08",
+   "split_from_pair": "security-ready-2-26"
+  },
+  {
+   "group": "Protection",
+   "category": "Protection",
+   "app": "Security",
+   "ask": "Strip The Customer Address From The Walk App History: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-15",
+   "source_card": "walk-history",
+   "optionA": {
+    "id": "bksec_walk-history_yes",
+    "label": "Do It",
+    "desc": "Rewrite the walk-app repo history to drop the customer's address and photos. This needs a force-push, so only with your OK. Who does it: Security, With Your OK.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Rewrite the walk-app repo history to</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">drop the customer's address and</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">photos. This needs a force-push, so</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">only with your OK. Who does it:</text><text x=\"18\" y=\"168\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Security, With Your OK.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bksec_walk-history_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: The live page is locked, but the address is still readable in the public repo history.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: The</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">live page is locked, but the address</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">is still readable in the public repo</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">history.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "id": "security-ready-2-payments-sites-data-09",
+   "split_from_pair": "security-ready-2-27"
+  },
+  {
+   "group": "Protection",
+   "category": "Protection",
+   "app": "Security",
+   "ask": "Keep Private Notes Out Of Public Deck Files: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-15",
+   "source_card": "deck-data-public",
+   "optionA": {
+    "id": "bksec_deck-data-public_yes",
+    "label": "Do It",
+    "desc": "Security checks the deck data files, which stay public, and moves any private names, addresses or money figures out of them. Who does it: Security.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Security checks the deck data files,</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">which stay public, and moves any</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">private names, addresses or money</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">figures out of them. Who does it:</text><text x=\"18\" y=\"168\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Security.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bksec_deck-data-public_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: The deck pages are locked, but the card text loads from public data files anyone can open.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: The</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">deck pages are locked, but the card</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">text loads from public data files</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">anyone can open.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "id": "security-ready-2-payments-sites-data-10",
+   "split_from_pair": "security-ready-2-28"
+  }
+ ],
+ "share": true,
+ "notes": true,
+ "split_from": "security-ready-2",
+ "split_part": "b",
+ "split_sibling": "security-ready-2-backups-accounts",
+ "split_note": "R86 (Max Oct 17 2026 07:50 ICT): 10 picks per deck; split from the unanswered 20-pick deck security-ready-2"
+}

@@ -62,8 +62,8 @@ def ic(kind, x, y, s=16, c=INK, sw=1.8):
          "home": f'<path d="M3 11 L12 4 L21 11 V20 H3 Z" fill="none" stroke="{c}" stroke-width="{sw}" stroke-linejoin="round"/>',
          "search": f'<circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="{c}" stroke-width="{sw}"/><path d="M15.5 15.5 L21 21" stroke="{c}" stroke-width="{sw}" stroke-linecap="round"/>'}
     return f'<g transform="translate({x},{y}) scale({s/24})">{P[kind]}</g>'
-DECK_SIZE = 20  # hard max pairs per deck (Max, Oct 14 2026; was 25). Shorter is fine.
-MAX_PAIRS = 20
+DECK_SIZE = 10  # R86 (Max Oct 17 2026 07:50 ICT): 10 picks per deck, 10 decks per shelf; was 20 (Oct 14), 25 before. Shorter is fine.
+MAX_PAIRS = 10
 def finish(did, title, app, pairs, first_fixed, extra_meta, seed=7, n=None):
     import random
     from trim_deck import select, save_overflow

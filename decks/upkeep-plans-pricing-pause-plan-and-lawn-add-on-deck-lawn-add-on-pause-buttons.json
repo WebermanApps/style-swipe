@@ -1,0 +1,557 @@
+{
+ "date": "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-lawn-add-on-pause-buttons",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Pause Plan Screens",
+ "generated_at": "2026-10-17T08:02:22+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "visual": 4,
+  "focused": 4,
+  "quick": 4,
+  "calm": 4,
+  "action": 4
+ },
+ "groups": {
+  "Plans": 10
+ },
+ "apps": {
+  "UpKeep": 10
+ },
+ "freshness": {
+  "option_slots": 20,
+  "never_shown_before": 0,
+  "share": 0.0,
+  "note": "options reused from upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck (split, not new)"
+ },
+ "warnings": [],
+ "submit_agent": "upkeep",
+ "deck_size": 10,
+ "carried": 0,
+ "topic": "upkeep-plans-pricing",
+ "shelf": true,
+ "bank_pairs": [
+  "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-05",
+  "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-07",
+  "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-09",
+  "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-11",
+  "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-13",
+  "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-15",
+  "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-17",
+  "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-18",
+  "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-19",
+  "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-20"
+ ],
+ "source": "/workspace/style-swipe/banks/upkeep-plans-pricing.json",
+ "pairs": [
+  {
+   "group": "Plans",
+   "category": "Pause Plan",
+   "app": "Smart Upkeep",
+   "ask": "Pause Plan: Square Buttons Or Pill Buttons?",
+   "optionA": {
+    "id": "bkuk_pausea0_sb0_rounded",
+    "label": "Square Buttons, Rounded Corners",
+    "desc": "Pause Plan: square buttons with rounded corners.",
+    "tags": [
+     "visual",
+     "focused"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member App</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24\" y=\"66\" width=\"60\" height=\"60\" rx=\"6\" fill=\"#0B6E4F14\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M36.0 99.0 L54.0 79.2 L72.0 99.0 V117.0 H36.0 Z\" fill=\"#FFFFFF\" stroke=\"#0B6E4F\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><rect x=\"51.0\" y=\"103.8\" width=\"6.0\" height=\"13.2\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"94\" y=\"82\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Pause Membership</text><text x=\"94\" y=\"96\" font-size=\"6.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Up to two months</text><rect x=\"24\" y=\"140\" width=\"92\" height=\"24\" rx=\"0\" fill=\"#0A0A0A\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"70.0\" y=\"154.7\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">PICK A MONTH</text><rect x=\"124\" y=\"140\" width=\"92\" height=\"24\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"170.0\" y=\"154.7\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">KEEP RECORDS</text><text x=\"14\" y=\"198\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Resume Date</text><text x=\"226\" y=\"198\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Date</text><line x1=\"14\" y1=\"206\" x2=\"226\" y2=\"206\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "optionB": {
+    "id": "bkuk_pausea0_pb1_square",
+    "label": "Pill Buttons, Square Corners",
+    "desc": "Pause Plan: pill buttons with square corners.",
+    "tags": [
+     "focused",
+     "calm"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member App</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24\" y=\"66\" width=\"60\" height=\"60\" rx=\"6\" fill=\"#0B6E4F14\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M36.0 99.0 L54.0 79.2 L72.0 99.0 V117.0 H36.0 Z\" fill=\"#FFFFFF\" stroke=\"#0B6E4F\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><rect x=\"51.0\" y=\"103.8\" width=\"6.0\" height=\"13.2\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"94\" y=\"82\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Pause Membership</text><text x=\"94\" y=\"96\" font-size=\"6.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Up to two months</text><rect x=\"24\" y=\"140\" width=\"92\" height=\"24\" rx=\"12\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"70\" y=\"155\" font-size=\"7\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >PICK A MONTH</text><rect x=\"124\" y=\"140\" width=\"92\" height=\"24\" rx=\"12\" fill=\"#FFFFFF\" stroke=\"#0B6E4F\" stroke-width=\"1\" /><text x=\"170\" y=\"155\" font-size=\"7\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >KEEP RECORDS</text><text x=\"14\" y=\"198\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Resume Date</text><text x=\"226\" y=\"198\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Date</text><line x1=\"14\" y1=\"206\" x2=\"226\" y2=\"206\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-lawn-add-on-pause-buttons-01",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-13",
+   "split_from_pair": "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-05"
+  },
+  {
+   "group": "Plans",
+   "category": "Pause Plan",
+   "app": "Smart Upkeep",
+   "ask": "Pause Plan: Center Pop-Up Or Bottom Sheet?",
+   "optionA": {
+    "id": "bkuk_pauseb0_cpu2_roomy",
+    "label": "Center Pop-Up, Roomy",
+    "desc": "Pause Plan: center pop-up with roomy.",
+    "tags": [
+     "quick",
+     "calm"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member App</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"70\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Pick A Month</text><text x=\"14\" y=\"81\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example December</text><text x=\"226\" y=\"74\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Month</text><line x1=\"14\" y1=\"96\" x2=\"226\" y2=\"96\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"114\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Keep Records</text><text x=\"14\" y=\"125\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Your home record stays</text><text x=\"226\" y=\"118\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Kept</text><line x1=\"14\" y1=\"140\" x2=\"226\" y2=\"140\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"158\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Resume Date</text><text x=\"14\" y=\"169\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example Feb 1</text><text x=\"226\" y=\"162\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Date</text><line x1=\"14\" y1=\"184\" x2=\"226\" y2=\"184\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#0A0A0A44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"30\" y=\"90\" width=\"180\" height=\"110\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"120\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Pause Membership</text><text x=\"120\" y=\"136\" font-size=\"7\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Up to two months</text><rect x=\"50\" y=\"160\" width=\"140\" height=\"24\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"#0B6E4F\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"174.7\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">GOT IT</text><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "optionB": {
+    "id": "bkuk_pauseb0_bs3_compact",
+    "label": "Bottom Sheet, Compact",
+    "desc": "Pause Plan: bottom sheet with compact.",
+    "tags": [
+     "calm",
+     "visual"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member App</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"70\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Pick A Month</text><text x=\"14\" y=\"81\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example December</text><text x=\"226\" y=\"74\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Month</text><line x1=\"14\" y1=\"86\" x2=\"226\" y2=\"86\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"104\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Keep Records</text><text x=\"14\" y=\"115\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Your home record stays</text><text x=\"226\" y=\"108\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Kept</text><line x1=\"14\" y1=\"120\" x2=\"226\" y2=\"120\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"138\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Resume Date</text><text x=\"14\" y=\"149\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example Feb 1</text><text x=\"226\" y=\"142\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Date</text><line x1=\"14\" y1=\"154\" x2=\"226\" y2=\"154\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#0A0A0A44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"170\" width=\"240\" height=\"130\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"104\" y=\"178\" width=\"32\" height=\"4\" rx=\"2\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"202\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Pause Membership</text><text x=\"14\" y=\"216\" font-size=\"7\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Up to two months</text><rect x=\"14\" y=\"228\" width=\"212\" height=\"24\" rx=\"0\" fill=\"#0A0A0A\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"242.7\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">GOT IT</text><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-lawn-add-on-pause-buttons-02",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-13",
+   "split_from_pair": "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-07"
+  },
+  {
+   "group": "Plans",
+   "category": "Pause Plan",
+   "app": "Smart Upkeep",
+   "ask": "Pause Plan: Icon Action Tiles Or Square Buttons?",
+   "optionA": {
+    "id": "bkuk_pausea0_iat4_rounded",
+    "label": "Icon Action Tiles, Rounded Corners",
+    "desc": "Pause Plan: icon action tiles with rounded corners.",
+    "tags": [
+     "action",
+     "visual"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member App</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24\" y=\"66\" width=\"60\" height=\"60\" rx=\"6\" fill=\"#0B6E4F14\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M36.0 99.0 L54.0 79.2 L72.0 99.0 V117.0 H36.0 Z\" fill=\"#FFFFFF\" stroke=\"#0B6E4F\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><rect x=\"51.0\" y=\"103.8\" width=\"6.0\" height=\"13.2\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"94\" y=\"82\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Pause Membership</text><text x=\"94\" y=\"96\" font-size=\"6.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Up to two months</text><rect x=\"24\" y=\"136\" width=\"56\" height=\"32\" rx=\"10\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(44,140) scale(0.5833333333333334)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"2\"/><path d=\"M7 12.5 l3.5 3.5 6.5 -7\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"52\" y=\"164\" font-size=\"6\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Pick A M</text><rect x=\"88\" y=\"136\" width=\"56\" height=\"32\" rx=\"10\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(108,140) scale(0.5833333333333334)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2\"/><path d=\"M12 6 V12 L16 14\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2\" stroke-linecap=\"round\"/></g><text x=\"116\" y=\"164\" font-size=\"6\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Later</text><rect x=\"152\" y=\"136\" width=\"56\" height=\"32\" rx=\"10\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(172,140) scale(0.5833333333333334)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"180\" y=\"164\" font-size=\"6\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Note</text><text x=\"14\" y=\"198\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Resume Date</text><text x=\"226\" y=\"198\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Date</text><line x1=\"14\" y1=\"206\" x2=\"226\" y2=\"206\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "optionB": {
+    "id": "bkuk_pausea0_sb0_square",
+    "label": "Square Buttons, Square Corners",
+    "desc": "Pause Plan: square buttons with square corners.",
+    "tags": [
+     "visual",
+     "quick"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member App</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24\" y=\"66\" width=\"60\" height=\"60\" rx=\"6\" fill=\"#0B6E4F14\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M36.0 99.0 L54.0 79.2 L72.0 99.0 V117.0 H36.0 Z\" fill=\"#FFFFFF\" stroke=\"#0B6E4F\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><rect x=\"51.0\" y=\"103.8\" width=\"6.0\" height=\"13.2\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"94\" y=\"82\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Pause Membership</text><text x=\"94\" y=\"96\" font-size=\"6.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Up to two months</text><rect x=\"24\" y=\"140\" width=\"92\" height=\"24\" rx=\"0\" fill=\"#0A0A0A\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"70.0\" y=\"154.7\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">PICK A MONTH</text><rect x=\"124\" y=\"140\" width=\"92\" height=\"24\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"170.0\" y=\"154.7\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">KEEP RECORDS</text><text x=\"14\" y=\"198\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Resume Date</text><text x=\"226\" y=\"198\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Date</text><line x1=\"14\" y1=\"206\" x2=\"226\" y2=\"206\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-lawn-add-on-pause-buttons-03",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-13",
+   "split_from_pair": "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-09"
+  },
+  {
+   "group": "Plans",
+   "category": "Pause Plan",
+   "app": "Smart Upkeep",
+   "ask": "Pause Plan: Pill Buttons Or Text Links?",
+   "optionA": {
+    "id": "bkuk_pausea0_pb1_rounded",
+    "label": "Pill Buttons, Rounded Corners",
+    "desc": "Pause Plan: pill buttons with rounded corners.",
+    "tags": [
+     "focused",
+     "quick"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member App</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24\" y=\"66\" width=\"60\" height=\"60\" rx=\"6\" fill=\"#0B6E4F14\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M36.0 99.0 L54.0 79.2 L72.0 99.0 V117.0 H36.0 Z\" fill=\"#FFFFFF\" stroke=\"#0B6E4F\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><rect x=\"51.0\" y=\"103.8\" width=\"6.0\" height=\"13.2\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"94\" y=\"82\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Pause Membership</text><text x=\"94\" y=\"96\" font-size=\"6.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Up to two months</text><rect x=\"24\" y=\"140\" width=\"92\" height=\"24\" rx=\"12\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"70\" y=\"155\" font-size=\"7\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >PICK A MONTH</text><rect x=\"124\" y=\"140\" width=\"92\" height=\"24\" rx=\"12\" fill=\"#FFFFFF\" stroke=\"#0B6E4F\" stroke-width=\"1\" /><text x=\"170\" y=\"155\" font-size=\"7\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >KEEP RECORDS</text><text x=\"14\" y=\"198\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Resume Date</text><text x=\"226\" y=\"198\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Date</text><line x1=\"14\" y1=\"206\" x2=\"226\" y2=\"206\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "optionB": {
+    "id": "bkuk_pausea0_tl2_square",
+    "label": "Text Links, Square Corners",
+    "desc": "Pause Plan: text links with square corners.",
+    "tags": [
+     "quick",
+     "action"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member App</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24\" y=\"66\" width=\"60\" height=\"60\" rx=\"6\" fill=\"#0B6E4F14\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M36.0 99.0 L54.0 79.2 L72.0 99.0 V117.0 H36.0 Z\" fill=\"#FFFFFF\" stroke=\"#0B6E4F\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><rect x=\"51.0\" y=\"103.8\" width=\"6.0\" height=\"13.2\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"94\" y=\"82\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Pause Membership</text><text x=\"94\" y=\"96\" font-size=\"6.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Up to two months</text><text x=\"24\" y=\"156\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\" text-decoration=\"underline\">PICK A MONTH</text><text x=\"130\" y=\"156\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\" text-decoration=\"underline\">KEEP RECORDS</text><text x=\"14\" y=\"198\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Resume Date</text><text x=\"226\" y=\"198\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Date</text><line x1=\"14\" y1=\"206\" x2=\"226\" y2=\"206\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-lawn-add-on-pause-buttons-04",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-13",
+   "split_from_pair": "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-11"
+  },
+  {
+   "group": "Plans",
+   "category": "Pause Plan",
+   "app": "Smart Upkeep",
+   "ask": "Pause Plan: Bottom Sheet Or Inline Outline Card?",
+   "optionA": {
+    "id": "bkuk_pauseb0_bs3_roomy",
+    "label": "Bottom Sheet, Roomy",
+    "desc": "Pause Plan: bottom sheet with roomy.",
+    "tags": [
+     "calm",
+     "action"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member App</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"70\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Pick A Month</text><text x=\"14\" y=\"81\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example December</text><text x=\"226\" y=\"74\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Month</text><line x1=\"14\" y1=\"96\" x2=\"226\" y2=\"96\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"114\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Keep Records</text><text x=\"14\" y=\"125\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Your home record stays</text><text x=\"226\" y=\"118\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Kept</text><line x1=\"14\" y1=\"140\" x2=\"226\" y2=\"140\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"158\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Resume Date</text><text x=\"14\" y=\"169\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example Feb 1</text><text x=\"226\" y=\"162\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Date</text><line x1=\"14\" y1=\"184\" x2=\"226\" y2=\"184\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#0A0A0A44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"170\" width=\"240\" height=\"130\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"104\" y=\"178\" width=\"32\" height=\"4\" rx=\"2\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"202\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Pause Membership</text><text x=\"14\" y=\"216\" font-size=\"7\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Up to two months</text><rect x=\"14\" y=\"228\" width=\"212\" height=\"24\" rx=\"0\" fill=\"#0A0A0A\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"242.7\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">GOT IT</text><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "optionB": {
+    "id": "bkuk_pauseb0_ioc4_compact",
+    "label": "Inline Outline Card, Compact",
+    "desc": "Pause Plan: inline outline card with compact.",
+    "tags": [
+     "action",
+     "focused"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member App</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"70\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Pick A Month</text><text x=\"14\" y=\"81\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example December</text><text x=\"226\" y=\"74\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Month</text><line x1=\"14\" y1=\"86\" x2=\"226\" y2=\"86\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"104\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Keep Records</text><text x=\"14\" y=\"115\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Your home record stays</text><text x=\"226\" y=\"108\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Kept</text><line x1=\"14\" y1=\"120\" x2=\"226\" y2=\"120\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"138\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Resume Date</text><text x=\"14\" y=\"149\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example Feb 1</text><text x=\"226\" y=\"142\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Date</text><line x1=\"14\" y1=\"154\" x2=\"226\" y2=\"154\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"210\" width=\"212\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#0B6E4F\" stroke-width=\"1.4\" /><circle cx=\"26\" cy=\"226\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"36\" y=\"223\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Pause Membership</text><text x=\"36\" y=\"234\" font-size=\"6.3\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Up to two months</text><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-lawn-add-on-pause-buttons-05",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-13",
+   "split_from_pair": "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-13"
+  },
+  {
+   "group": "Plans",
+   "category": "Pause Plan",
+   "app": "Smart Upkeep",
+   "ask": "Pause Plan: Top Banner Or Bottom Toast?",
+   "optionA": {
+    "id": "bkuk_pauseb0_tb0_roomy",
+    "label": "Top Banner, Roomy",
+    "desc": "Pause Plan: top banner with roomy.",
+    "tags": [
+     "visual",
+     "focused"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member App</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"30\" rx=\"8\" fill=\"#0B6E4F18\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(22,57) scale(0.6666666666666666)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"1.8\"/><path d=\"M12 6 V12 L16 14\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"1.8\" stroke-linecap=\"round\"/></g><text x=\"44\" y=\"64\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Pause Membership</text><text x=\"44\" y=\"74\" font-size=\"6.3\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Up to two months</text><text x=\"14\" y=\"70\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Pick A Month</text><text x=\"14\" y=\"81\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example December</text><text x=\"226\" y=\"74\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Month</text><line x1=\"14\" y1=\"96\" x2=\"226\" y2=\"96\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"114\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Keep Records</text><text x=\"14\" y=\"125\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Your home record stays</text><text x=\"226\" y=\"118\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Kept</text><line x1=\"14\" y1=\"140\" x2=\"226\" y2=\"140\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"158\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Resume Date</text><text x=\"14\" y=\"169\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example Feb 1</text><text x=\"226\" y=\"162\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Date</text><line x1=\"14\" y1=\"184\" x2=\"226\" y2=\"184\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "optionB": {
+    "id": "bkuk_pauseb0_bt1_compact",
+    "label": "Bottom Toast, Compact",
+    "desc": "Pause Plan: bottom toast with compact.",
+    "tags": [
+     "focused",
+     "calm"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member App</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"70\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Pick A Month</text><text x=\"14\" y=\"81\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example December</text><text x=\"226\" y=\"74\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Month</text><line x1=\"14\" y1=\"86\" x2=\"226\" y2=\"86\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"104\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Keep Records</text><text x=\"14\" y=\"115\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Your home record stays</text><text x=\"226\" y=\"108\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Kept</text><line x1=\"14\" y1=\"120\" x2=\"226\" y2=\"120\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"138\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Resume Date</text><text x=\"14\" y=\"149\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example Feb 1</text><text x=\"226\" y=\"142\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Date</text><line x1=\"14\" y1=\"154\" x2=\"226\" y2=\"154\" stroke=\"#E5E0D8\"/><rect x=\"30\" y=\"208\" width=\"180\" height=\"30\" rx=\"8\" fill=\"#0A0A0A\" stroke=\"none\" stroke-width=\"1\" /><text x=\"42\" y=\"227\" font-size=\"8.5\" fill=\"#FFFFFF\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Pause Membership</text><text x=\"198\" y=\"227\" font-size=\"7\" fill=\"#D4A017\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"700\" >UNDO</text><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-lawn-add-on-pause-buttons-06",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-13",
+   "split_from_pair": "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-15"
+  },
+  {
+   "group": "Plans",
+   "category": "Pause Plan",
+   "app": "Smart Upkeep",
+   "ask": "Pause Plan: Inline Outline Card Or Top Banner?",
+   "optionA": {
+    "id": "bkuk_pauseb0_ioc4_roomy",
+    "label": "Inline Outline Card, Roomy",
+    "desc": "Pause Plan: inline outline card with roomy.",
+    "tags": [
+     "action",
+     "visual"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member App</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"70\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Pick A Month</text><text x=\"14\" y=\"81\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example December</text><text x=\"226\" y=\"74\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Month</text><line x1=\"14\" y1=\"96\" x2=\"226\" y2=\"96\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"114\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Keep Records</text><text x=\"14\" y=\"125\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Your home record stays</text><text x=\"226\" y=\"118\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Kept</text><line x1=\"14\" y1=\"140\" x2=\"226\" y2=\"140\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"158\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Resume Date</text><text x=\"14\" y=\"169\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example Feb 1</text><text x=\"226\" y=\"162\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Date</text><line x1=\"14\" y1=\"184\" x2=\"226\" y2=\"184\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"210\" width=\"212\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#0B6E4F\" stroke-width=\"1.4\" /><circle cx=\"26\" cy=\"226\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"36\" y=\"223\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Pause Membership</text><text x=\"36\" y=\"234\" font-size=\"6.3\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Up to two months</text><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "optionB": {
+    "id": "bkuk_pauseb0_tb0_compact",
+    "label": "Top Banner, Compact",
+    "desc": "Pause Plan: top banner with compact.",
+    "tags": [
+     "visual",
+     "quick"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member App</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"30\" rx=\"8\" fill=\"#0B6E4F18\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(22,57) scale(0.6666666666666666)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"1.8\"/><path d=\"M12 6 V12 L16 14\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"1.8\" stroke-linecap=\"round\"/></g><text x=\"44\" y=\"64\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Pause Membership</text><text x=\"44\" y=\"74\" font-size=\"6.3\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Up to two months</text><text x=\"14\" y=\"70\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Pick A Month</text><text x=\"14\" y=\"81\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example December</text><text x=\"226\" y=\"74\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Month</text><line x1=\"14\" y1=\"86\" x2=\"226\" y2=\"86\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"104\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Keep Records</text><text x=\"14\" y=\"115\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Your home record stays</text><text x=\"226\" y=\"108\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Kept</text><line x1=\"14\" y1=\"120\" x2=\"226\" y2=\"120\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"138\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Resume Date</text><text x=\"14\" y=\"149\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example Feb 1</text><text x=\"226\" y=\"142\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Date</text><line x1=\"14\" y1=\"154\" x2=\"226\" y2=\"154\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-lawn-add-on-pause-buttons-07",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-13",
+   "split_from_pair": "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-17"
+  },
+  {
+   "group": "Plans",
+   "category": "Pause Plan",
+   "app": "Smart Upkeep",
+   "ask": "Pause Plan: Bottom Toast Or Center Pop-Up?",
+   "optionA": {
+    "id": "bkuk_pauseb0_bt1_roomy",
+    "label": "Bottom Toast, Roomy",
+    "desc": "Pause Plan: bottom toast with roomy.",
+    "tags": [
+     "focused",
+     "quick"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member App</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"70\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Pick A Month</text><text x=\"14\" y=\"81\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example December</text><text x=\"226\" y=\"74\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Month</text><line x1=\"14\" y1=\"96\" x2=\"226\" y2=\"96\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"114\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Keep Records</text><text x=\"14\" y=\"125\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Your home record stays</text><text x=\"226\" y=\"118\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Kept</text><line x1=\"14\" y1=\"140\" x2=\"226\" y2=\"140\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"158\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Resume Date</text><text x=\"14\" y=\"169\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example Feb 1</text><text x=\"226\" y=\"162\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Date</text><line x1=\"14\" y1=\"184\" x2=\"226\" y2=\"184\" stroke=\"#E5E0D8\"/><rect x=\"30\" y=\"208\" width=\"180\" height=\"30\" rx=\"8\" fill=\"#0A0A0A\" stroke=\"none\" stroke-width=\"1\" /><text x=\"42\" y=\"227\" font-size=\"8.5\" fill=\"#FFFFFF\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Pause Membership</text><text x=\"198\" y=\"227\" font-size=\"7\" fill=\"#D4A017\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"700\" >UNDO</text><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "optionB": {
+    "id": "bkuk_pauseb0_cpu2_compact",
+    "label": "Center Pop-Up, Compact",
+    "desc": "Pause Plan: center pop-up with compact.",
+    "tags": [
+     "quick",
+     "action"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member App</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"70\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Pick A Month</text><text x=\"14\" y=\"81\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example December</text><text x=\"226\" y=\"74\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Month</text><line x1=\"14\" y1=\"86\" x2=\"226\" y2=\"86\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"104\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Keep Records</text><text x=\"14\" y=\"115\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Your home record stays</text><text x=\"226\" y=\"108\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Kept</text><line x1=\"14\" y1=\"120\" x2=\"226\" y2=\"120\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"138\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Resume Date</text><text x=\"14\" y=\"149\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example Feb 1</text><text x=\"226\" y=\"142\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Date</text><line x1=\"14\" y1=\"154\" x2=\"226\" y2=\"154\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#0A0A0A44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"30\" y=\"90\" width=\"180\" height=\"110\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"120\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Pause Membership</text><text x=\"120\" y=\"136\" font-size=\"7\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Up to two months</text><rect x=\"50\" y=\"160\" width=\"140\" height=\"24\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"#0B6E4F\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"174.7\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">GOT IT</text><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-lawn-add-on-pause-buttons-08",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-13",
+   "split_from_pair": "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-18"
+  },
+  {
+   "group": "Plans",
+   "category": "Pause Plan",
+   "app": "Smart Upkeep",
+   "ask": "Pause Plan: Sticky Bottom Bar Or Icon Action Tiles?",
+   "optionA": {
+    "id": "bkuk_pausea0_sbb3_rounded",
+    "label": "Sticky Bottom Bar, Rounded Corners",
+    "desc": "Pause Plan: sticky bottom bar with rounded corners.",
+    "tags": [
+     "calm",
+     "action"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member App</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24\" y=\"66\" width=\"60\" height=\"60\" rx=\"6\" fill=\"#0B6E4F14\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M36.0 99.0 L54.0 79.2 L72.0 99.0 V117.0 H36.0 Z\" fill=\"#FFFFFF\" stroke=\"#0B6E4F\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><rect x=\"51.0\" y=\"103.8\" width=\"6.0\" height=\"13.2\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"94\" y=\"82\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Pause Membership</text><text x=\"94\" y=\"96\" font-size=\"6.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Up to two months</text><rect x=\"0\" y=\"228\" width=\"240\" height=\"34\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"228\" x2=\"240\" y2=\"228\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"232\" width=\"140\" height=\"26\" rx=\"0\" fill=\"#0A0A0A\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"84.0\" y=\"247.7\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">PICK A MONTH</text><rect x=\"160\" y=\"232\" width=\"66\" height=\"26\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"193.0\" y=\"247.7\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">MORE</text><text x=\"14\" y=\"198\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Resume Date</text><text x=\"226\" y=\"198\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Date</text><line x1=\"14\" y1=\"206\" x2=\"226\" y2=\"206\" stroke=\"#E5E0D8\"/></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "optionB": {
+    "id": "bkuk_pausea0_iat4_square",
+    "label": "Icon Action Tiles, Square Corners",
+    "desc": "Pause Plan: icon action tiles with square corners.",
+    "tags": [
+     "action",
+     "focused"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member App</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24\" y=\"66\" width=\"60\" height=\"60\" rx=\"6\" fill=\"#0B6E4F14\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M36.0 99.0 L54.0 79.2 L72.0 99.0 V117.0 H36.0 Z\" fill=\"#FFFFFF\" stroke=\"#0B6E4F\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><rect x=\"51.0\" y=\"103.8\" width=\"6.0\" height=\"13.2\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"94\" y=\"82\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Pause Membership</text><text x=\"94\" y=\"96\" font-size=\"6.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Up to two months</text><rect x=\"24\" y=\"136\" width=\"56\" height=\"32\" rx=\"0\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(44,140) scale(0.5833333333333334)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"2\"/><path d=\"M7 12.5 l3.5 3.5 6.5 -7\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"52\" y=\"164\" font-size=\"6\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Pick A M</text><rect x=\"88\" y=\"136\" width=\"56\" height=\"32\" rx=\"0\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(108,140) scale(0.5833333333333334)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2\"/><path d=\"M12 6 V12 L16 14\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2\" stroke-linecap=\"round\"/></g><text x=\"116\" y=\"164\" font-size=\"6\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Later</text><rect x=\"152\" y=\"136\" width=\"56\" height=\"32\" rx=\"0\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(172,140) scale(0.5833333333333334)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"180\" y=\"164\" font-size=\"6\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Note</text><text x=\"14\" y=\"198\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Resume Date</text><text x=\"226\" y=\"198\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Date</text><line x1=\"14\" y1=\"206\" x2=\"226\" y2=\"206\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-lawn-add-on-pause-buttons-09",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-13",
+   "split_from_pair": "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-19"
+  },
+  {
+   "group": "Plans",
+   "category": "Pause Plan",
+   "app": "Smart Upkeep",
+   "ask": "Pause Plan: Text Links Or Sticky Bottom Bar?",
+   "optionA": {
+    "id": "bkuk_pausea0_tl2_rounded",
+    "label": "Text Links, Rounded Corners",
+    "desc": "Pause Plan: text links with rounded corners.",
+    "tags": [
+     "quick",
+     "calm"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member App</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24\" y=\"66\" width=\"60\" height=\"60\" rx=\"6\" fill=\"#0B6E4F14\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M36.0 99.0 L54.0 79.2 L72.0 99.0 V117.0 H36.0 Z\" fill=\"#FFFFFF\" stroke=\"#0B6E4F\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><rect x=\"51.0\" y=\"103.8\" width=\"6.0\" height=\"13.2\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"94\" y=\"82\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Pause Membership</text><text x=\"94\" y=\"96\" font-size=\"6.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Up to two months</text><text x=\"24\" y=\"156\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\" text-decoration=\"underline\">PICK A MONTH</text><text x=\"130\" y=\"156\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\" text-decoration=\"underline\">KEEP RECORDS</text><text x=\"14\" y=\"198\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Resume Date</text><text x=\"226\" y=\"198\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Date</text><line x1=\"14\" y1=\"206\" x2=\"226\" y2=\"206\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "optionB": {
+    "id": "bkuk_pausea0_sbb3_square",
+    "label": "Sticky Bottom Bar, Square Corners",
+    "desc": "Pause Plan: sticky bottom bar with square corners.",
+    "tags": [
+     "calm",
+     "visual"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member App</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24\" y=\"66\" width=\"60\" height=\"60\" rx=\"6\" fill=\"#0B6E4F14\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M36.0 99.0 L54.0 79.2 L72.0 99.0 V117.0 H36.0 Z\" fill=\"#FFFFFF\" stroke=\"#0B6E4F\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><rect x=\"51.0\" y=\"103.8\" width=\"6.0\" height=\"13.2\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"94\" y=\"82\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Pause Membership</text><text x=\"94\" y=\"96\" font-size=\"6.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Up to two months</text><rect x=\"0\" y=\"228\" width=\"240\" height=\"34\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"228\" x2=\"240\" y2=\"228\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"232\" width=\"140\" height=\"26\" rx=\"0\" fill=\"#0A0A0A\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"84.0\" y=\"247.7\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">PICK A MONTH</text><rect x=\"160\" y=\"232\" width=\"66\" height=\"26\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"193.0\" y=\"247.7\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">MORE</text><text x=\"14\" y=\"198\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Resume Date</text><text x=\"226\" y=\"198\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Date</text><line x1=\"14\" y1=\"206\" x2=\"226\" y2=\"206\" stroke=\"#E5E0D8\"/></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-lawn-add-on-pause-buttons-10",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-13",
+   "split_from_pair": "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-20"
+  }
+ ],
+ "share": true,
+ "notes": true,
+ "split_from": "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck",
+ "split_part": "b",
+ "split_sibling": "upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck-re-asks-pause-screens",
+ "split_note": "R86 (Max Oct 17 2026 07:50 ICT): 10 picks per deck; split from the unanswered 20-pick deck upkeep-plans-pricing-pause-plan-and-lawn-add-on-deck"
+}

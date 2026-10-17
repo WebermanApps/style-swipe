@@ -2,8 +2,8 @@
 """Trim unsubmitted Style Swipe pair decks to DECK_SIZE pairs (strongest + most varied); cut pairs go to banks/overflow/<id>.json.
 Keeps every 'check' pair (the rejected-direction rules), retests/re-asks/winners, then fills by category/group/app variety. Pair ids are kept."""
 import json, sys, glob, os, collections, datetime as dt
-DECK_SIZE = 20   # hard max (Max, Oct 14 2026): decks never exceed 20 pairs; shorter is fine
-MAX_PAIRS = 20
+DECK_SIZE = 10   # R86 (Max Oct 17 2026 07:50 ICT): 10 picks per deck, 10 decks per shelf (was 20). For an UNANSWERED 20-pick deck prefer splitting it into two 10-pick decks over trimming (no picks lost)
+MAX_PAIRS = 10
 KEEP_FIRST = {"check": 0, "retest": 1, "reask": 2, "winner": 3, "combo": 4}
 
 def select(pairs, n=DECK_SIZE):

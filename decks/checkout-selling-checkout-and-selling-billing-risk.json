@@ -1,0 +1,364 @@
+{
+ "date": "checkout-selling-checkout-and-selling-billing-risk",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Checkout: Billing & Risk",
+ "generated_at": "2026-10-17T08:02:22+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "focused": 10,
+  "plain": 10
+ },
+ "groups": {
+  "Checkout": 10
+ },
+ "apps": {
+  "Research": 10
+ },
+ "freshness": {
+  "option_slots": 20,
+  "never_shown_before": 0,
+  "share": 0.0,
+  "note": "options reused from checkout-selling-checkout-and-selling (split, not new)"
+ },
+ "warnings": [],
+ "submit_agent": "research",
+ "deck_size": 10,
+ "carried": 0,
+ "topic": "checkout-selling",
+ "shelf": true,
+ "bank_pairs": [
+  "checkout-selling-checkout-and-selling-03",
+  "checkout-selling-checkout-and-selling-06",
+  "checkout-selling-checkout-and-selling-09",
+  "checkout-selling-checkout-and-selling-10",
+  "checkout-selling-checkout-and-selling-11",
+  "checkout-selling-checkout-and-selling-13",
+  "checkout-selling-checkout-and-selling-16",
+  "checkout-selling-checkout-and-selling-17",
+  "checkout-selling-checkout-and-selling-18",
+  "checkout-selling-checkout-and-selling-20"
+ ],
+ "source": "/workspace/research-dashboard/tools/research-checkout.json",
+ "pairs": [
+  {
+   "id": "checkout-selling-checkout-and-selling-billing-risk-01",
+   "group": "Checkout",
+   "category": "Billing",
+   "app": "Research",
+   "ask": "Payout Currency And Bank: US Stripe Or MoR Payouts Only For Now?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rco17a",
+    "label": "MoR Payouts Only",
+    "desc": "Lemon Squeezy or Gumroad pay you; no Stripe account yet.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rco17b",
+    "label": "Add Stripe In Parallel",
+    "desc": "Needed if you leave MoR later; 2.9% + 30c US cards.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "checkout-selling-checkout-and-selling-03"
+  },
+  {
+   "id": "checkout-selling-checkout-and-selling-billing-risk-02",
+   "group": "Checkout",
+   "category": "Billing",
+   "app": "Research",
+   "ask": "Payment For Setup Fee: Full Up Front, Or Split Setup Across Two Months?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rco16a",
+    "label": "Full Up Front",
+    "desc": "Clearest cash for the 60-day pilot; matches ATI Lab-style setup fees.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rco16b",
+    "label": "Split Across Two Months",
+    "desc": "Easier yes for small crews; more dunning work.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "checkout-selling-checkout-and-selling-06"
+  },
+  {
+   "id": "checkout-selling-checkout-and-selling-billing-risk-03",
+   "group": "Checkout",
+   "category": "Risk",
+   "app": "Research",
+   "ask": "Platform Resale Check: Written Answer From The Provider Before Any Paid Pilot, Or Proceed On Public Terms Alone?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rco12a",
+    "label": "Get It In Writing",
+    "desc": "Enterprise terms bar selling or time-sharing; ask which model is allowed first.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rco12b",
+    "label": "Proceed On Public Terms",
+    "desc": "Client-owns-the-account path may fit permitted-user language; still a judgment call.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "checkout-selling-checkout-and-selling-09"
+  },
+  {
+   "id": "checkout-selling-checkout-and-selling-billing-risk-04",
+   "group": "Checkout",
+   "category": "Risk",
+   "app": "Research",
+   "ask": "Confirm your Oct 13 Love pick: Client Owns The Account",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rco10c1a",
+    "label": "Confirm: Client Owns The Account",
+    "desc": "Each client signs up for the agent platform themselves; you set it up and run it for them.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rco10c1b",
+    "label": "Change To A Bundled App",
+    "desc": "You own the accounts and resell a bundled API app instead.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "checkout-selling-checkout-and-selling-10"
+  },
+  {
+   "id": "checkout-selling-checkout-and-selling-billing-risk-05",
+   "group": "Checkout",
+   "category": "Ops",
+   "app": "Research",
+   "ask": "After First Sale Ops: Monitor Missed Morning Reports Per Client, Or Manual Check-Ins Only?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rco20a",
+    "label": "Automated Missed-Report Watch",
+    "desc": "Plan sec. 7: monitoring protects the daily-rhythm promise.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rco20b",
+    "label": "Weekly Manual Check-Ins",
+    "desc": "Enough for 3 pilots; automate after productize.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "checkout-selling-checkout-and-selling-11"
+  },
+  {
+   "id": "checkout-selling-checkout-and-selling-billing-risk-06",
+   "group": "Checkout",
+   "category": "Sell Platform",
+   "app": "Research",
+   "ask": "Where To Sell The Setup First: Lemon Squeezy Or Gumroad? (gumroad.com/pricing; lemonsqueezy.com/pricing)",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rco01a",
+    "label": "Lemon Squeezy",
+    "desc": "5% + $0.50 per sale, subscriptions and license keys included, merchant of record, no monthly fee.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rco01b",
+    "label": "Gumroad",
+    "desc": "10% + $0.50 direct, 30% via Discover marketplace, merchant of record, no monthly fee.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "checkout-selling-checkout-and-selling-13"
+  },
+  {
+   "id": "checkout-selling-checkout-and-selling-billing-risk-07",
+   "group": "Checkout",
+   "category": "Sell Platform",
+   "app": "Research",
+   "ask": "Fee Tradeoff: Lower Cut With Lemon Squeezy, Or Gumroad Discover Reach?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rco02a",
+    "label": "Take The Lower Cut",
+    "desc": "Lemon Squeezy at 5% + $0.50 keeps more of each sale for the first paid test.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rco02b",
+    "label": "Pay For Discover Reach",
+    "desc": "Gumroad Discover at 30% may bring buyers you would not find alone.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "checkout-selling-checkout-and-selling-16"
+  },
+  {
+   "id": "checkout-selling-checkout-and-selling-billing-risk-08",
+   "group": "Checkout",
+   "category": "Risk",
+   "app": "Research",
+   "ask": "Before Taking Money: Private Login Ready, Or Take Deposits On Public Pages?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rco11a",
+    "label": "Private Login First",
+    "desc": "GitHub Pages terms bar running a commercial SaaS; plan says build auth before money.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rco11b",
+    "label": "Deposit On Public Page",
+    "desc": "Faster test; higher risk of public data and Pages terms issues.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "checkout-selling-checkout-and-selling-17"
+  },
+  {
+   "id": "checkout-selling-checkout-and-selling-billing-risk-09",
+   "group": "Checkout",
+   "category": "Billing",
+   "app": "Research",
+   "ask": "Subscriptions For The Monthly Pilot Fee: Built-In On Lemon Squeezy, Or Stripe Later?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rco03a",
+    "label": "Use Lemon Squeezy Subs",
+    "desc": "Subscriptions are included on Lemon Squeezy pricing page; fits $250/mo pilot fee.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rco03b",
+    "label": "Add Stripe Later",
+    "desc": "Stripe US cards are 2.9% + 30c (stripe.com/pricing); more control, more setup.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "checkout-selling-checkout-and-selling-18"
+  },
+  {
+   "id": "checkout-selling-checkout-and-selling-billing-risk-10",
+   "group": "Checkout",
+   "category": "Brand",
+   "app": "Research",
+   "ask": "Checkout Branding: Keep Checkout On Lemon Squeezy Or Gumroad Hosted Page, Or Custom Domain Checkout?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rco14a",
+    "label": "Hosted Checkout Page",
+    "desc": "Ship faster; MoR page is fine for 3 founding pilots.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rco14b",
+    "label": "Custom Domain Checkout",
+    "desc": "Looks more premium; more setup before the first test.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "checkout-selling-checkout-and-selling-20"
+  }
+ ],
+ "share": true,
+ "notes": true,
+ "split_from": "checkout-selling-checkout-and-selling",
+ "split_part": "b",
+ "split_sibling": "checkout-selling-checkout-and-selling-offer-go-to-market",
+ "split_note": "R86 (Max Oct 17 2026 07:50 ICT): 10 picks per deck; split from the unanswered 20-pick deck checkout-selling-checkout-and-selling"
+}

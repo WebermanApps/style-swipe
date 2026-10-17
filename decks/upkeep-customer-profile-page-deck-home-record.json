@@ -1,0 +1,528 @@
+{
+ "date": "upkeep-customer-profile-page-deck-home-record",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Customer Profile: Home Record & Booking",
+ "generated_at": "2026-10-17T08:02:22+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "warm": 1,
+  "focused": 2,
+  "visual": 3,
+  "calm": 7,
+  "quick": 4,
+  "practical": 1,
+  "simple": 1,
+  "precise": 1
+ },
+ "groups": {
+  "Layout": 1,
+  "Home Record": 2,
+  "Service Schedule": 2,
+  "Booking": 1,
+  "Tech Notes": 1,
+  "Proof Pack": 1,
+  "Navigation": 1,
+  "Adding Appliances": 1
+ },
+ "apps": {
+  "UpKeep": 10
+ },
+ "freshness": {
+  "option_slots": 20,
+  "never_shown_before": 0,
+  "share": 0.0,
+  "note": "options reused from upkeep-customer-profile-page-deck (split, not new)"
+ },
+ "warnings": [],
+ "brands": [
+  "Smart Upkeep member profile page: layout, first info, Home Record, history, schedule, photos, booking, messaging"
+ ],
+ "submit_agent": "upkeep",
+ "topic": "upkeep-customer-profile-page-deck",
+ "deck_size": 10,
+ "board": "upkeep",
+ "audience": "Max",
+ "requested": true,
+ "pairs": [
+  {
+   "group": "Layout",
+   "category": "Layout",
+   "app": "UpKeep",
+   "ask": "Top Of The Page: Big House Photo Or Greeting With Next Visit Card?",
+   "optionA": {
+    "id": "cpp_hero_photo",
+    "label": "Big House Photo",
+    "desc": "Your house fills the top, address under it.",
+    "tags": [
+     "warm"
+    ],
+    "feeling": "warm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"84\" rx=\"6\" fill=\"#05668D1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M88.08 118.88 V90.15199999999999 L120.0 67.80799999999999 L151.92000000000002 90.15199999999999 V118.88 Z\" fill=\"#FFFFFF\" stroke=\"#05668D\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><rect x=\"113.616\" y=\"99.728\" width=\"12.768\" height=\"19.152\" rx=\"0\" fill=\"#05668D55\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"151\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >1234 Sample Lane, Royal Oak</text><rect x=\"14\" y=\"156\" width=\"212\" height=\"30\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"171.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"170.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Next Visit</text><text x=\"36\" y=\"180.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Fall Visit · Sep 18</text><text x=\"218\" y=\"174.0\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >›</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "cpp_greet_card",
+    "label": "Greeting And Next Visit",
+    "desc": "Good Morning, then the next visit card first.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"68\" font-size=\"18\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Good Morning</text><rect x=\"14\" y=\"76\" width=\"212\" height=\"44\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"98.0\" r=\"3.5\" fill=\"#D4A017\"/><text x=\"36\" y=\"97.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Next Visit</text><text x=\"36\" y=\"107.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Fall Visit · Sep 18</text><text x=\"218\" y=\"101.0\" font-size=\"7.5\" fill=\"#D4A017\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >›</text><rect x=\"14\" y=\"126\" width=\"212\" height=\"30\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"141.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"140.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Last Service</text><text x=\"36\" y=\"150.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Summer Visit · Jun 20</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-customer-profile-page-deck-home-record-01",
+   "repeat": false,
+   "split_from_pair": "upkeep-customer-profile-page-deck-11"
+  },
+  {
+   "group": "Home Record",
+   "category": "Home Record",
+   "app": "UpKeep",
+   "ask": "Your Appliances: Picture Tiles Or A List With Last Service?",
+   "optionA": {
+    "id": "cpp_app_tiles",
+    "label": "Picture Tiles",
+    "desc": "One tile per appliance.",
+    "tags": [
+     "visual"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14.0\" y=\"50\" width=\"102.0\" height=\"54\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24.0\" y=\"60\" width=\"24\" height=\"24\" rx=\"6\" fill=\"#C1502E1F\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(28.0,64) scale(0.6666666666666666)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/></g><text x=\"24.0\" y=\"94\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Gas Furnace</text><rect x=\"124.0\" y=\"50\" width=\"102.0\" height=\"54\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"134.0\" y=\"60\" width=\"24\" height=\"24\" rx=\"6\" fill=\"#05668D1F\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(138.0,64) scale(0.6666666666666666)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2.2\"/><path d=\"M12 6 V12 L16 14\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2.2\" stroke-linecap=\"round\"/></g><text x=\"134.0\" y=\"94\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Central AC</text><rect x=\"14.0\" y=\"112\" width=\"102.0\" height=\"54\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24.0\" y=\"122\" width=\"24\" height=\"24\" rx=\"6\" fill=\"#0B6E4F1F\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(28.0,126) scale(0.6666666666666666)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/></g><text x=\"24.0\" y=\"156\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Water Heater</text><rect x=\"124.0\" y=\"112\" width=\"102.0\" height=\"54\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"134.0\" y=\"122\" width=\"24\" height=\"24\" rx=\"6\" fill=\"#D4A0171F\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(138.0,126) scale(0.6666666666666666)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#D4A017\" stroke-width=\"2.2\"/><path d=\"M7 12.5 l3.5 3.5 6.5 -7\" fill=\"none\" stroke=\"#D4A017\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"134.0\" y=\"156\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Softener</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "cpp_app_list",
+    "label": "List With Last Service",
+    "desc": "Name left, last service right.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"26\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"63.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"66.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Gas Furnace</text><text x=\"218\" y=\"66.0\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Sep 2026</text><rect x=\"14\" y=\"82\" width=\"212\" height=\"26\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"95.0\" r=\"3.5\" fill=\"#05668D\"/><text x=\"36\" y=\"98.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Central AC</text><text x=\"218\" y=\"98.0\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Apr 2026</text><rect x=\"14\" y=\"114\" width=\"212\" height=\"26\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"127.0\" r=\"3.5\" fill=\"#0B6E4F\"/><text x=\"36\" y=\"130.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Tank Water Heater, 50 gal</text><text x=\"218\" y=\"130.0\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Apr 2026</text><rect x=\"14\" y=\"146\" width=\"212\" height=\"26\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"159.0\" r=\"3.5\" fill=\"#D4A017\"/><text x=\"36\" y=\"162.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Water Softener</text><text x=\"218\" y=\"162.0\" font-size=\"7.5\" fill=\"#D4A017\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Sep 2026</text><rect x=\"14\" y=\"178\" width=\"212\" height=\"26\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"191.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"194.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Dryer Vent</text><text x=\"218\" y=\"194.0\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Jun 2026</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-customer-profile-page-deck-home-record-02",
+   "repeat": false,
+   "split_from_pair": "upkeep-customer-profile-page-deck-16"
+  },
+  {
+   "group": "Home Record",
+   "category": "Home Record",
+   "app": "UpKeep",
+   "ask": "Appliance Age: Year Installed Or A Life-Left Bar?",
+   "optionA": {
+    "id": "cpp_age_year",
+    "label": "Year Installed",
+    "desc": "\"Installed 2014\" as plain text.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"40\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"70.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"69.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Tank Water Heater, 50 gal</text><text x=\"36\" y=\"79.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Installed 2014</text><rect x=\"14\" y=\"96\" width=\"212\" height=\"40\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"116.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"115.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Gas Furnace</text><text x=\"36\" y=\"125.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Installed 2017</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "cpp_age_bar",
+    "label": "Life-Left Bar",
+    "desc": "A bar shows typical life used.",
+    "tags": [
+     "visual"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"58\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Water heater</text><text x=\"226\" y=\"58\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >about 80% of typical life</text><rect x=\"14\" y=\"63\" width=\"212\" height=\"6\" rx=\"3\" fill=\"#EEEAE4\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"63\" width=\"169.60000000000002\" height=\"6\" rx=\"3\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"85\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Gas furnace</text><text x=\"226\" y=\"85\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >about half</text><rect x=\"14\" y=\"90\" width=\"212\" height=\"6\" rx=\"3\" fill=\"#EEEAE4\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"90\" width=\"106.0\" height=\"6\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-customer-profile-page-deck-home-record-03",
+   "repeat": false,
+   "split_from_pair": "upkeep-customer-profile-page-deck-06"
+  },
+  {
+   "group": "Service Schedule",
+   "category": "Service Schedule",
+   "app": "UpKeep",
+   "ask": "Upcoming Visits: Calendar Or Season List?",
+   "optionA": {
+    "id": "cpp_sch_cal",
+    "label": "Calendar",
+    "desc": "Visit days marked on a month view.",
+    "tags": [
+     "visual"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">SEPTEMBER 2026</text><text x=\"29.0\" y=\"74\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >M</text><text x=\"59.3\" y=\"74\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >T</text><text x=\"89.6\" y=\"74\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >W</text><text x=\"119.9\" y=\"74\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >T</text><text x=\"150.2\" y=\"74\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >F</text><text x=\"180.5\" y=\"74\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >S</text><text x=\"210.8\" y=\"74\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >S</text><text x=\"29.0\" y=\"91\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >1</text><text x=\"59.3\" y=\"91\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >2</text><text x=\"89.6\" y=\"91\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >3</text><text x=\"119.9\" y=\"91\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >4</text><text x=\"150.2\" y=\"91\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >5</text><text x=\"180.5\" y=\"91\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >6</text><text x=\"210.8\" y=\"91\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >7</text><text x=\"29.0\" y=\"111\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >8</text><text x=\"59.3\" y=\"111\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >9</text><text x=\"89.6\" y=\"111\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >10</text><text x=\"119.9\" y=\"111\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >11</text><text x=\"150.2\" y=\"111\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >12</text><text x=\"180.5\" y=\"111\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >13</text><text x=\"210.8\" y=\"111\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >14</text><text x=\"29.0\" y=\"131\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >15</text><text x=\"59.3\" y=\"131\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >16</text><text x=\"89.6\" y=\"131\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >17</text><rect x=\"109.9\" y=\"120\" width=\"20\" height=\"16\" rx=\"4\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"119.9\" y=\"131\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >18</text><text x=\"150.2\" y=\"131\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >19</text><text x=\"180.5\" y=\"131\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >20</text><text x=\"210.8\" y=\"131\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >21</text><text x=\"29.0\" y=\"151\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >22</text><text x=\"59.3\" y=\"151\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >23</text><text x=\"89.6\" y=\"151\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >24</text><text x=\"119.9\" y=\"151\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >25</text><text x=\"150.2\" y=\"151\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >26</text><text x=\"180.5\" y=\"151\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >27</text><text x=\"210.8\" y=\"151\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >28</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "cpp_sch_list",
+    "label": "Season List",
+    "desc": "Fall, Winter, Spring, Summer with dates.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"32\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"66.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"65.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Fall Visit</text><text x=\"36\" y=\"75.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sep 18, 2026</text><text x=\"218\" y=\"69.0\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Scheduled</text><rect x=\"14\" y=\"88\" width=\"212\" height=\"32\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"104.0\" r=\"3.5\" fill=\"#05668D\"/><text x=\"36\" y=\"103.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Winter Visit</text><text x=\"36\" y=\"113.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Dec 8 to Dec 12</text><text x=\"218\" y=\"107.0\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Planned</text><rect x=\"14\" y=\"126\" width=\"212\" height=\"32\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"142.0\" r=\"3.5\" fill=\"#0B6E4F\"/><text x=\"36\" y=\"141.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Spring Visit</text><text x=\"36\" y=\"151.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >April 2027</text><text x=\"218\" y=\"145.0\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Planned</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-customer-profile-page-deck-home-record-04",
+   "repeat": false,
+   "split_from_pair": "upkeep-customer-profile-page-deck-04"
+  },
+  {
+   "group": "Service Schedule",
+   "category": "Service Schedule",
+   "app": "UpKeep",
+   "ask": "Changing A Visit Day: Reschedule Button Or Message Us?",
+   "optionA": {
+    "id": "cpp_rs_btn",
+    "label": "Reschedule Button",
+    "desc": "Pick a new day yourself.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"40\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"70.0\" r=\"3.5\" fill=\"#D4A017\"/><text x=\"36\" y=\"69.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Fall Visit</text><text x=\"36\" y=\"79.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sep 18, 2026</text><rect x=\"14\" y=\"96\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"112.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">RESCHEDULE</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "cpp_rs_msg",
+    "label": "Message Us",
+    "desc": "The team confirms a new day.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"40\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"70.0\" r=\"3.5\" fill=\"#D4A017\"/><text x=\"36\" y=\"69.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Fall Visit</text><text x=\"36\" y=\"79.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sep 18, 2026</text><rect x=\"14\" y=\"96\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#05668D\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"112.24\" font-size=\"9\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">MESSAGE US TO CHANGE</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-customer-profile-page-deck-home-record-05",
+   "repeat": false,
+   "split_from_pair": "upkeep-customer-profile-page-deck-14"
+  },
+  {
+   "group": "Booking",
+   "category": "Booking",
+   "app": "UpKeep",
+   "ask": "Request A Visit: Big Button On Home Or In The Visits Tab?",
+   "optionA": {
+    "id": "cpp_bk_home",
+    "label": "Big Button On Home",
+    "desc": "Always on the home screen.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"66\" font-size=\"16\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Good Afternoon</text><rect x=\"14\" y=\"74\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"90.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">REQUEST A VISIT</text><rect x=\"14\" y=\"108\" width=\"212\" height=\"30\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"123.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"122.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Next Visit</text><text x=\"36\" y=\"132.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sep 18</text><line x1=\"14\" y1=\"260\" x2=\"226\" y2=\"260\" stroke=\"#E5E0D8\"/><g transform=\"translate(32,266) scale(0.625)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"291\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Home</text><g transform=\"translate(85,266) scale(0.625)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"93\" y=\"291\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Record</text><g transform=\"translate(138,266) scale(0.625)\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"16\" rx=\"2\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.8\"/><path d=\"M3 10 H21 M8 3 V7 M16 3 V7\" stroke=\"#525252\" stroke-width=\"1.8\"/></g><text x=\"146\" y=\"291\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Visits</text><g transform=\"translate(191,266) scale(0.625)\"><path d=\"M3 12 V4 H11 L21 14 L13 22 Z\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><circle cx=\"7.5\" cy=\"8.5\" r=\"1.6\" fill=\"#525252\"/></g><text x=\"199\" y=\"291\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Profile</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "cpp_bk_tab",
+    "label": "In The Visits Tab",
+    "desc": "Home stays calm; booking lives with visits.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"22\" rx=\"11\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"16\" y=\"52\" width=\"102.0\" height=\"18\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"67.0\" y=\"64.5\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Upcoming</text><text x=\"173.0\" y=\"64.5\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Past</text><rect x=\"14\" y=\"80\" width=\"212\" height=\"30\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"95.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"94.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Fall Visit</text><text x=\"36\" y=\"104.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sep 18</text><rect x=\"14\" y=\"116\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#05668D\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"132.24\" font-size=\"9\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">REQUEST A VISIT</text><line x1=\"14\" y1=\"260\" x2=\"226\" y2=\"260\" stroke=\"#E5E0D8\"/><g transform=\"translate(32,266) scale(0.625)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"291\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Home</text><g transform=\"translate(85,266) scale(0.625)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"93\" y=\"291\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Record</text><g transform=\"translate(138,266) scale(0.625)\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"16\" rx=\"2\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.8\"/><path d=\"M3 10 H21 M8 3 V7 M16 3 V7\" stroke=\"#525252\" stroke-width=\"1.8\"/></g><text x=\"146\" y=\"291\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Visits</text><g transform=\"translate(191,266) scale(0.625)\"><path d=\"M3 12 V4 H11 L21 14 L13 22 Z\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><circle cx=\"7.5\" cy=\"8.5\" r=\"1.6\" fill=\"#525252\"/></g><text x=\"199\" y=\"291\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Profile</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-customer-profile-page-deck-home-record-06",
+   "repeat": false,
+   "split_from_pair": "upkeep-customer-profile-page-deck-18"
+  },
+  {
+   "group": "Tech Notes",
+   "category": "Tech Notes",
+   "app": "UpKeep",
+   "ask": "Tech Notes: Under Each Appliance Or One Notes Block Per Visit?",
+   "optionA": {
+    "id": "cpp_tn_item",
+    "label": "Under Each Appliance",
+    "desc": "The note sits with the thing it is about.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"40\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"70.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"69.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Water Softener</text><text x=\"36\" y=\"79.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Salt topped off. Next top-off in winter.</text><rect x=\"14\" y=\"96\" width=\"212\" height=\"40\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"116.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"115.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Dryer Vent</text><text x=\"36\" y=\"125.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Airflow improved after cleaning.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "cpp_tn_block",
+    "label": "One Notes Block",
+    "desc": "All notes for the visit in one place.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">TECH NOTES · SUMMER VISIT</text><text x=\"14\" y=\"75\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Salt topped off. Dryer vent airflow improved.</text><text x=\"14\" y=\"85\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Hall bath sink slightly damp, recheck next</text><text x=\"14\" y=\"95\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >visit.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-customer-profile-page-deck-home-record-07",
+   "repeat": false,
+   "split_from_pair": "upkeep-customer-profile-page-deck-05"
+  },
+  {
+   "group": "Proof Pack",
+   "category": "Proof Pack",
+   "app": "UpKeep",
+   "ask": "Maintenance Proof Pack: Button On Home Or In The Home Record?",
+   "optionA": {
+    "id": "cpp_pp_home",
+    "label": "Button On Home",
+    "desc": "One tap from the first screen.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"30\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"65.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"64.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Next Visit</text><text x=\"36\" y=\"74.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sep 18</text><rect x=\"14\" y=\"86\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#05668D\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"102.24\" font-size=\"9\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">DOWNLOAD PROOF PACK</text><line x1=\"14\" y1=\"260\" x2=\"226\" y2=\"260\" stroke=\"#E5E0D8\"/><g transform=\"translate(32,266) scale(0.625)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"291\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Home</text><g transform=\"translate(85,266) scale(0.625)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"93\" y=\"291\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Record</text><g transform=\"translate(138,266) scale(0.625)\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"16\" rx=\"2\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.8\"/><path d=\"M3 10 H21 M8 3 V7 M16 3 V7\" stroke=\"#525252\" stroke-width=\"1.8\"/></g><text x=\"146\" y=\"291\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Visits</text><g transform=\"translate(191,266) scale(0.625)\"><path d=\"M3 12 V4 H11 L21 14 L13 22 Z\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><circle cx=\"7.5\" cy=\"8.5\" r=\"1.6\" fill=\"#525252\"/></g><text x=\"199\" y=\"291\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Profile</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "cpp_pp_record",
+    "label": "In The Home Record",
+    "desc": "With warranty claims and appliances.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><line x1=\"14\" y1=\"72\" x2=\"226\" y2=\"72\" stroke=\"#E5E0D8\"/><rect x=\"22\" y=\"70\" width=\"90.0\" height=\"2.5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"67.0\" y=\"64.5\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Appliances</text><text x=\"173.0\" y=\"64.5\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Proof Pack</text><rect x=\"14\" y=\"80\" width=\"212\" height=\"44\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"102.0\" r=\"3.5\" fill=\"#05668D\"/><text x=\"36\" y=\"101.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Maintenance Proof Pack</text><text x=\"36\" y=\"111.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Visit record for warranty claims</text><text x=\"218\" y=\"105.0\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >›</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-customer-profile-page-deck-home-record-08",
+   "repeat": false,
+   "split_from_pair": "upkeep-customer-profile-page-deck-20"
+  },
+  {
+   "group": "Navigation",
+   "category": "Navigation",
+   "app": "UpKeep",
+   "ask": "Page Structure: Bottom Tabs Or One Long Scrolling Page?",
+   "optionA": {
+    "id": "cpp_nav_tabs",
+    "label": "Bottom Tabs",
+    "desc": "Home, Record, Visits, Profile.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"30\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"65.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"64.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Next Visit</text><text x=\"36\" y=\"74.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sep 18</text><rect x=\"14\" y=\"86\" width=\"212\" height=\"30\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"101.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"100.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Last Service</text><text x=\"36\" y=\"110.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Jun 20</text><line x1=\"14\" y1=\"260\" x2=\"226\" y2=\"260\" stroke=\"#E5E0D8\"/><g transform=\"translate(32,266) scale(0.625)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"291\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Home</text><g transform=\"translate(85,266) scale(0.625)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"93\" y=\"291\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Record</text><g transform=\"translate(138,266) scale(0.625)\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"16\" rx=\"2\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.8\"/><path d=\"M3 10 H21 M8 3 V7 M16 3 V7\" stroke=\"#525252\" stroke-width=\"1.8\"/></g><text x=\"146\" y=\"291\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Visits</text><g transform=\"translate(191,266) scale(0.625)\"><path d=\"M3 12 V4 H11 L21 14 L13 22 Z\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><circle cx=\"7.5\" cy=\"8.5\" r=\"1.6\" fill=\"#525252\"/></g><text x=\"199\" y=\"291\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Profile</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "cpp_nav_scroll",
+    "label": "One Long Page",
+    "desc": "Everything stacked, scroll down.",
+    "tags": [
+     "simple"
+    ],
+    "feeling": "simple",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">NEXT VISIT</text><rect x=\"14\" y=\"66\" width=\"212\" height=\"30\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"81.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"80.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Fall Visit</text><text x=\"36\" y=\"90.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sep 18</text><text x=\"14\" y=\"112\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">HOME RECORD</text><rect x=\"14\" y=\"118\" width=\"212\" height=\"30\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"133.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"132.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Appliances</text><text x=\"36\" y=\"142.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >5 logged</text><text x=\"218\" y=\"136.0\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >›</text><text x=\"14\" y=\"164\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">VISITS</text><rect x=\"14\" y=\"170\" width=\"212\" height=\"30\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"185.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"184.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Summer Visit</text><text x=\"36\" y=\"194.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Jun 20</text><text x=\"218\" y=\"188.0\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >›</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-customer-profile-page-deck-home-record-09",
+   "repeat": false,
+   "split_from_pair": "upkeep-customer-profile-page-deck-01"
+  },
+  {
+   "group": "Adding Appliances",
+   "category": "Adding Appliances",
+   "app": "UpKeep",
+   "ask": "Add An Appliance: Photo Of The Label Or Type The Model?",
+   "optionA": {
+    "id": "cpp_aa_photo",
+    "label": "Photo Of The Label",
+    "desc": "Snap the sticker; we fill it in.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"90\" rx=\"6\" fill=\"#05668D1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M14 113.0 H226 M77.6 50 V113.0\" stroke=\"#05668D66\" stroke-width=\"1.2\"/><rect x=\"109.4\" y=\"90.5\" width=\"74.19999999999999\" height=\"22.5\" rx=\"3\" fill=\"#05668D44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"30.96\" y=\"68.0\" width=\"31.799999999999997\" height=\"27.0\" rx=\"2\" fill=\"#FFFFFF\" stroke=\"#05668D88\" stroke-width=\"1\" /><rect x=\"14\" y=\"122\" width=\"212\" height=\"18\" rx=\"0\" fill=\"#FFFFFFDD\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"134\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Point at the model sticker</text><rect x=\"14\" y=\"148\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"164.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">ADD A PHOTO</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "cpp_aa_type",
+    "label": "Type The Model",
+    "desc": "Brand, model, year.",
+    "tags": [
+     "precise"
+    ],
+    "feeling": "precise",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Member</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,56) scale(0.6666666666666666)\"><rect x=\"9\" y=\"3\" width=\"6\" height=\"11\" rx=\"3\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2\"/><path d=\"M5 11 Q5 18 12 18 Q19 18 19 11 M12 18 V21\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2\"/></g><text x=\"44\" y=\"68\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Brand</text><rect x=\"14\" y=\"86\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,92) scale(0.6666666666666666)\"><rect x=\"9\" y=\"3\" width=\"6\" height=\"11\" rx=\"3\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2\"/><path d=\"M5 11 Q5 18 12 18 Q19 18 19 11 M12 18 V21\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2\"/></g><text x=\"44\" y=\"104\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Model number</text><rect x=\"14\" y=\"122\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"138.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">SAVE</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-customer-profile-page-deck-home-record-10",
+   "repeat": false,
+   "split_from_pair": "upkeep-customer-profile-page-deck-17"
+  }
+ ],
+ "share": true,
+ "notes": true,
+ "split_from": "upkeep-customer-profile-page-deck",
+ "split_part": "a",
+ "split_sibling": "upkeep-customer-profile-page-deck-visit-history-photos",
+ "split_note": "R86 (Max Oct 17 2026 07:50 ICT): 10 picks per deck; split from the unanswered 20-pick deck upkeep-customer-profile-page-deck"
+}

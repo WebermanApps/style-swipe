@@ -1,12 +1,12 @@
 /* Ready To Swipe shelf (R66; look spec Max Oct 14 2026 19:49 ICT from the Up Next Deck; cap 19:43 ICT).
-   Top of every agent dashboard: slim swipe carousel of at most 5 ALREADY-BUILT 20-card decks (ready + pinned unfinished together).
+   Top of every agent dashboard: slim swipe carousel of at most 10 ALREADY-BUILT 10-card decks (R86 Oct 17 2026; was 5 x 20) (ready + pinned unfinished together).
    Label 'Ready To Swipe' + small grey 'N done today'. Card = title + category tag, thin coloured top stripe, whole card tappable,
    small 'Start' (or 'Continue, N left' when started, thin green outline). Deck Two picks (21:35 ICT): one row on wide screens, card-edge stack,
    'All Decks' link, grey pill tag, greyed 'Done' after submit, opens in a new tab, dots under the phone strip, empty state links to Deck Building. Order (v5, Oct 16 13:05): permanent, in progress (latest touched first), not started (newest first), done last; a refill keeps the slot it replaced and shows
    a green 'New' badge until opened. No icons, no time estimate. Calm empty state. Extras are queued (DeckShelf.queued(el)).
    Usage: <section data-shelf="shelf.json"></section> + this script (+ deck-shelf.css). Schema: kit/shelf.schema.json.
    Deck Building page only: data-shelf-nocap. Back-compat: launcher.json ({ready, unfinished}) also renders. */
-(()=>{const CAP=5,ACC=['#C1502E','#05668D','#0B6E4F','#D4A017'];
+(()=>{const CAP=10,ACC=['#C1502E','#05668D','#0B6E4F','#D4A017'];
 const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
 const LS=k=>{try{return localStorage.getItem(k)}catch(_){return null}};
 const today=()=>new Date().toLocaleDateString('en-CA');
@@ -19,7 +19,7 @@ const tagOf=d=>d.tag||d.category||(d.topic?String(d.topic).replace(/[-_]+/g,' ')
 const col=s=>{let h=0;for(const c of String(s))h=(h*31+c.charCodeAt(0))>>>0;return ACC[h%ACC.length]};
 function base(J){if(Array.isArray(J.decks))return J.decks;const out=[];
  if(J.ready&&J.ready.url)out.push({name:J.ready.name,url:J.ready.url,total:J.ready.total||20,tag:(J.ready.categories||[])[0]});
- (J.unfinished||[]).forEach(d=>out.push({name:d.name,url:d.url,total:d.total||20,answered:d.answered||0,pinned:true}));return out}
+ (J.unfinished||[]).forEach(d=>out.push({name:d.name,url:d.url,total:d.total||10,answered:d.answered||0,pinned:true}));return out}
 function norm(J,o){o=o||{};const pin=[].concat(J.pinned||[],Array.isArray(J.decks)?(J.unfinished||[]):[],o.pinned||[]).map(d=>Object.assign({},d,{pinned:true}));
  const seen=new Set(),all=[];pin.concat(base(J)).forEach(d=>{if(d&&d.url&&!seen.has(d.url)){seen.add(d.url);all.push(d)}});return all}
 /* Shelf sort (Max Oct 16 13:05, v5): permanent decks first, then IN PROGRESS (some answered, not done; most recently
@@ -32,12 +32,12 @@ const st8=d=>{try{return JSON.parse((d.progress_key&&LS(d.progress_key))||(d.id&
 const cnt=s=>Array.isArray(s.picks)?s.picks.length:s.a&&typeof s.a==='object'?Object.keys(s.a).length:Object.keys(s).filter(k=>!/^(v|idx|order|updated|skip|sent|at)$/.test(k)).length;
 const answered=d=>Math.max(+d.answered||0,cnt(st8(d)));
 const touched=d=>{const s=st8(d);return Math.max(Date.parse(s.updated||'')||0,Date.parse(d.last_answer_at||d.touched||d.updated||'')||0)};
-const left=d=>Math.max(0,(d.total||20)-answered(d));
+const left=d=>Math.max(0,(d.total||10)-answered(d));
 const started=d=>!sub(d)&&answered(d)>0;
 const isPerm=d=>d.permanent===true||d.slot==='permanent';
 function sortDecks(all,o){o=o||{};const done=o.isDone||(d=>d.status==='done'||sub(d)),keep=o.keepOrder||(x=>x);
  const perm=all.filter(isPerm),rest=all.filter(d=>!isPerm(d)),dn=rest.filter(done),live=rest.filter(d=>!done(d));
- const prog=live.filter(d=>answered(d)>0&&answered(d)<(d.total||20)).map((d,i)=>[d,i]).sort((a,b)=>(touched(b[0])-touched(a[0]))||(a[1]-b[1])).map(x=>x[0]);
+ const prog=live.filter(d=>answered(d)>0&&answered(d)<(d.total||10)).map((d,i)=>[d,i]).sort((a,b)=>(touched(b[0])-touched(a[0]))||(a[1]-b[1])).map(x=>x[0]);
  const fresh=live.filter(d=>!prog.includes(d));return perm.concat(prog,keep(fresh),dn)}
 function keepSlots(rest){
  const t=d=>Date.parse(d.added||d.built||'')||0,newest=rest.reduce((m,d)=>t(d)>t(m)?d:m,rest[0]);
@@ -86,5 +86,5 @@ function render(box,J,o){o=o||{};J=J||{};const all=order(norm(J,o)),cap=(o.nocap
   g.addEventListener('scroll',()=>{const w=g.scrollWidth-g.clientWidth,k=w>0?Math.round(g.scrollLeft/w*(decks.length-1)):0;[...dt.children].forEach((x,i)=>x.className=i===k?'on':'')},{passive:true})}}
 function init(){document.querySelectorAll('[data-shelf],[data-launcher]').forEach(b=>{if(b.dataset.dsDone)return;b.dataset.dsDone=1;
  fetch((b.dataset.shelf||b.dataset.launcher)+'?'+Date.now()).then(r=>r.json()).then(J=>render(b,J)).catch(()=>render(b,{decks:[]}))})}
-window.DeckShelf={render,CAP,sortDecks,answered,touched,VERSION:7,queued:b=>b._dsQueued||[]};window.DeckLauncher=window.DeckLauncher||{render};
+window.DeckShelf={render,CAP,sortDecks,answered,touched,VERSION:8,queued:b=>b._dsQueued||[]};window.DeckLauncher=window.DeckLauncher||{render};
 document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init()})();

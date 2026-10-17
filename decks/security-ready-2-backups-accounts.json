@@ -1,0 +1,543 @@
+{
+ "date": "security-ready-2-backups-accounts",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Protection: Backups & Accounts",
+ "generated_at": "2026-10-17T08:02:22+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "focused": 10,
+  "calm": 10
+ },
+ "groups": {
+  "Protection": 10
+ },
+ "apps": {
+  "Security": 10
+ },
+ "freshness": {
+  "option_slots": 20,
+  "never_shown_before": 0,
+  "share": 0.0,
+  "note": "options reused from security-ready-2 (split, not new)"
+ },
+ "warnings": [],
+ "submit_agent": "security",
+ "deck_size": 10,
+ "carried": 0,
+ "topic": "security",
+ "shelf": true,
+ "bank_pairs": [
+  "security-ready-2-01",
+  "security-ready-2-02",
+  "security-ready-2-04",
+  "security-ready-2-05",
+  "security-ready-2-07",
+  "security-ready-2-09",
+  "security-ready-2-10",
+  "security-ready-2-19",
+  "security-ready-2-21",
+  "security-ready-2-22"
+ ],
+ "pairs": [
+  {
+   "group": "Protection",
+   "category": "Protection",
+   "app": "Security",
+   "ask": "Weekly Encrypted Backup Of Every Repo: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-2-backups-accounts-01",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "repo-backups",
+   "optionA": {
+    "id": "bksec_repo-backups_yes",
+    "label": "Do It",
+    "desc": "Mirror every WebermanApps repo weekly to an encrypted backup outside GitHub, such as Dropbox or an offline drive. Who does it: Security.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Mirror every WebermanApps repo weekly</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">to an encrypted backup outside GitHub,</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">such as Dropbox or an offline drive.</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Who does it: Security.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bksec_repo-backups_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: If GitHub deletes a repo or a login is taken over, there is no copy of the code outside GitHub.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: If</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">GitHub deletes a repo or a login is</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">taken over, there is no copy of the</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">code outside GitHub.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "split_from_pair": "security-ready-2-01"
+  },
+  {
+   "group": "Protection",
+   "category": "Protection",
+   "app": "Security",
+   "ask": "Print Recovery Codes And Keep Them In A Safe: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-2-backups-accounts-02",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "recovery-codes-offline",
+   "optionA": {
+    "id": "bksec_recovery-codes-offline_yes",
+    "label": "Do It",
+    "desc": "Print your recovery codes and keep them offline in a safe. Never store them on the shared computer. Who does it: You.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Print your recovery codes and keep</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">them offline in a safe. Never store</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">them on the shared computer. Who does</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">it: You.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bksec_recovery-codes-offline_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: If a key or phone is lost without recovery codes, you can be locked out of your own company.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: If a</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">key or phone is lost without recovery</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">codes, you can be locked out of your</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">own company.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "split_from_pair": "security-ready-2-02"
+  },
+  {
+   "group": "Protection",
+   "category": "Protection",
+   "app": "Security",
+   "ask": "Test-Restore One Repo And One File Each Month: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-2-backups-accounts-03",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "test-restore",
+   "optionA": {
+    "id": "bksec_test-restore_yes",
+    "label": "Do It",
+    "desc": "In the monthly review, restore one repo and one Dropbox file from backup and check they open. Who does it: Security.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">In the monthly review, restore one</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">repo and one Dropbox file from backup</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">and check they open. Who does it:</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Security.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bksec_test-restore_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: A backup nobody has tested may not work when you need it.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: A</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">backup nobody has tested may not work</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">when you need it.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "split_from_pair": "security-ready-2-04"
+  },
+  {
+   "group": "Protection",
+   "category": "Protection",
+   "app": "Security",
+   "ask": "Passkey On The Stripe Account: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-2-backups-accounts-04",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "stripe-2fa",
+   "optionA": {
+    "id": "bksec_stripe-2fa_yes",
+    "label": "Do It",
+    "desc": "Turn on a passkey or hardware key for Stripe before the first real payment, and add Stripe to the 2FA checklist. Who does it: You.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Turn on a passkey or hardware key for</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Stripe before the first real payment,</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">and add Stripe to the 2FA checklist.</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Who does it: You.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bksec_stripe-2fa_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: Stripe is not on the 2FA checklist yet, but it will hold member payments once smartupkeep.ai launches.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters:</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Stripe is not on the 2FA checklist</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">yet, but it will hold member payments</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">once smartupkeep.ai launches.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "split_from_pair": "security-ready-2-05"
+  },
+  {
+   "group": "Protection",
+   "category": "Protection",
+   "app": "Security",
+   "ask": "Two Hardware Keys For Google And GitHub: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-2-backups-accounts-05",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "hardware-keys",
+   "optionA": {
+    "id": "bksec_hardware-keys_yes",
+    "label": "Do It",
+    "desc": "Buy two hardware keys (one main, one spare), add them plus a passkey to Google and both GitHub accounts, then turn off SMS fallback. Who does it: You.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Buy two hardware keys (one main, one</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">spare), add them plus a passkey to</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Google and both GitHub accounts, then</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">turn off SMS fallback. Who does it:</text><text x=\"18\" y=\"168\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">You.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bksec_hardware-keys_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: Account takeover is the top way to lose everything. SMS codes can be stolen with a SIM swap or a fake login page.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters:</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Account takeover is the top way to</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">lose everything. SMS codes can be</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">stolen with a SIM swap or a fake login</text><text x=\"18\" y=\"168\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">page.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "split_from_pair": "security-ready-2-07"
+  },
+  {
+   "group": "Protection",
+   "category": "Protection",
+   "app": "Security",
+   "ask": "Written IP Assignment And NDAs From Helpers: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-2-backups-accounts-06",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "ip-assignment",
+   "optionA": {
+    "id": "bksec_ip-assignment_yes",
+    "label": "Do It",
+    "desc": "Use a contractor agreement with an NDA and IP assignment for US and Thai helpers before any new work. Who does it: Legal.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Use a contractor agreement with an NDA</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">and IP assignment for US and Thai</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">helpers before any new work. Who does</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">it: Legal.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bksec_ip-assignment_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: Without a written assignment, contractors can own the code or work they made for you.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters:</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Without a written assignment,</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">contractors can own the code or work</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">they made for you.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "split_from_pair": "security-ready-2-09"
+  },
+  {
+   "group": "Protection",
+   "category": "Protection",
+   "app": "Security",
+   "ask": "Your OK Before Agents Email, Pay Or Delete: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-2-backups-accounts-07",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "approve-before-send",
+   "optionA": {
+    "id": "bksec_approve-before-send_yes",
+    "label": "Do It",
+    "desc": "Agents draft; you approve emails, payments, deletions and pushes to customer sites. Internal dashboards keep publishing on their own. Who does it: All Agents.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Agents draft; you approve emails,</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">payments, deletions and pushes to</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">customer sites. Internal dashboards</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">keep publishing on their own. Who does</text><text x=\"18\" y=\"168\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">it: All Agents.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bksec_approve-before-send_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: Agents read web pages and email, and hidden instructions in that content can hijack them (prompt injection).",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters:</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Agents read web pages and email, and</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">hidden instructions in that content</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">can hijack them (prompt injection).</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "split_from_pair": "security-ready-2-10"
+  },
+  {
+   "group": "Protection",
+   "category": "Protection",
+   "app": "Security",
+   "ask": "Monthly Check Of The GitHub Security Log: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-2-backups-accounts-08",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "security-log-review",
+   "optionA": {
+    "id": "bksec_security-log-review_yes",
+    "label": "Do It",
+    "desc": "Add a GitHub security log review and a collaborator list check to the monthly review. Who does it: Security.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Add a GitHub security log review and a</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">collaborator list check to the monthly</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">review. Who does it: Security.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bksec_security-log-review_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: Without a look at the log, a strange login or token use by an agent could go unnoticed.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters:</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Without a look at the log, a strange</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">login or token use by an agent could</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">go unnoticed.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "split_from_pair": "security-ready-2-19"
+  },
+  {
+   "group": "Protection",
+   "category": "Protection",
+   "app": "Security",
+   "ask": "Close The Netlify Account After The Takedowns: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-15",
+   "source_card": "netlify-close",
+   "optionA": {
+    "id": "bksec_netlify-close_yes",
+    "label": "Do It",
+    "desc": "Once the three old copies are confirmed down, Security exports any needed files, then you close the Netlify account. Who does it: Security, Then You.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Once the three old copies are</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">confirmed down, Security exports any</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">needed files, then you close the</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Netlify account. Who does it:</text><text x=\"18\" y=\"168\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Security, Then You.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bksec_netlify-close_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: An unused hosting account is one more login that can be taken over and used to publish.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: An</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">unused hosting account is one more</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">login that can be taken over and used</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">to publish.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "id": "security-ready-2-backups-accounts-09",
+   "split_from_pair": "security-ready-2-21"
+  },
+  {
+   "group": "Protection",
+   "category": "Protection",
+   "app": "Security",
+   "ask": "Cloudflare Account With 2FA, Ready For A Later Login: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-15",
+   "source_card": "cloudflare-ready",
+   "optionA": {
+    "id": "bksec_cloudflare-ready_yes",
+    "label": "Do It",
+    "desc": "Set up the Cloudflare account with 2FA now, so a login upgrade for smartupkeep.ai is quick later. Nothing changes on the site. Who does it: UpKeep, With Security.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Set up the Cloudflare account with 2FA</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">now, so a login upgrade for</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">smartupkeep.ai is quick later. Nothing</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">changes on the site. Who does it:</text><text x=\"18\" y=\"168\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">UpKeep, With Security.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bksec_cloudflare-ready_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: If you choose the Cloudflare login later, the account it relies on should already be secure.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: If</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">you choose the Cloudflare login later,</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">the account it relies on should</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">already be secure.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "id": "security-ready-2-backups-accounts-10",
+   "split_from_pair": "security-ready-2-22"
+  }
+ ],
+ "share": true,
+ "notes": true,
+ "split_from": "security-ready-2",
+ "split_part": "a",
+ "split_sibling": "security-ready-2-payments-sites-data",
+ "split_note": "R86 (Max Oct 17 2026 07:50 ICT): 10 picks per deck; split from the unanswered 20-pick deck security-ready-2"
+}

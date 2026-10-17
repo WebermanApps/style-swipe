@@ -1,0 +1,543 @@
+{
+ "date": "security-ready-3-logins-keys",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Data And Accounts: Logins & Keys",
+ "generated_at": "2026-10-17T08:02:22+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "focused": 10,
+  "calm": 10
+ },
+ "groups": {
+  "Data And Accounts": 10
+ },
+ "apps": {
+  "Security": 10
+ },
+ "freshness": {
+  "option_slots": 20,
+  "never_shown_before": 0,
+  "share": 0.0,
+  "note": "options reused from security-ready-3 (split, not new)"
+ },
+ "warnings": [],
+ "submit_agent": "security",
+ "deck_size": 10,
+ "carried": 0,
+ "topic": "security",
+ "shelf": true,
+ "bank_pairs": [
+  "security-ready-3-02",
+  "security-ready-3-03",
+  "security-ready-3-04",
+  "security-ready-3-05",
+  "security-ready-3-10",
+  "security-ready-3-17",
+  "security-ready-3-22",
+  "security-ready-3-23",
+  "security-ready-3-24",
+  "security-ready-3-25"
+ ],
+ "pairs": [
+  {
+   "group": "Data And Accounts",
+   "category": "Data And Accounts",
+   "app": "Security",
+   "ask": "Two Security Keys On Your Apple ID: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-3-logins-keys-01",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "apple-security-keys",
+   "optionA": {
+    "id": "bksec_apple-security-keys_yes",
+    "label": "Do It",
+    "desc": "Add a passkey and two Apple Security Keys, then save the recovery key offline. Who does it: You.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Add a passkey and two Apple Security</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Keys, then save the recovery key</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">offline. Who does it: You.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bksec_apple-security-keys_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: Apple ID also covers Apple Card.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters:</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Apple ID also covers Apple Card.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "split_from_pair": "security-ready-3-02"
+  },
+  {
+   "group": "Data And Accounts",
+   "category": "Data And Accounts",
+   "app": "Security",
+   "ask": "Use Cloudflare Logs For Who Unlocked: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-3-logins-keys-02",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "access-logs-only",
+   "optionA": {
+    "id": "bksec_access-logs-only_yes",
+    "label": "Do It",
+    "desc": "Use Cloudflare Access logs (email, time, country) and drop the in-page unlock log. Who does it: UpKeep.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Use Cloudflare Access logs (email,</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">time, country) and drop the in-page</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">unlock log. Who does it: UpKeep.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bksec_access-logs-only_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: Mapping emails to u-codes for the current unlock log would need a private mapping file.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters:</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Mapping emails to u-codes for the</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">current unlock log would need a</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">private mapping file.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "split_from_pair": "security-ready-3-03"
+  },
+  {
+   "group": "Data And Accounts",
+   "category": "Data And Accounts",
+   "app": "Security",
+   "ask": "Authenticator Or Hardware Key On A Brokerage: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-3-logins-keys-03",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "brokerage-2fa",
+   "optionA": {
+    "id": "bksec_brokerage-2fa_yes",
+    "label": "Do It",
+    "desc": "Turn on an authenticator app or a hardware key, then save recovery codes offline. Who does it: You.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Turn on an authenticator app or a</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">hardware key, then save recovery codes</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">offline. Who does it: You.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bksec_brokerage-2fa_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: a brokerage account holds real money and is a common takeover target.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: a</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">brokerage account holds real money and</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">is a common takeover target.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "split_from_pair": "security-ready-3-04"
+  },
+  {
+   "group": "Data And Accounts",
+   "category": "Data And Accounts",
+   "app": "Security",
+   "ask": "App Approval Instead Of SMS At PNC And SNB: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-3-logins-keys-04",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "banks-app-approval",
+   "optionA": {
+    "id": "bksec_banks-app-approval_yes",
+    "label": "Do It",
+    "desc": "Switch both banks to an authenticator or app approval and avoid SMS. Who does it: You.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Switch both banks to an authenticator</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">or app approval and avoid SMS. Who</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">does it: You.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bksec_banks-app-approval_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: SMS codes can be stolen with a SIM swap.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: SMS</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">codes can be stolen with a SIM swap.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "split_from_pair": "security-ready-3-05"
+  },
+  {
+   "group": "Data And Accounts",
+   "category": "Data And Accounts",
+   "app": "Security",
+   "ask": "Authenticator App On Instagram: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-3-logins-keys-05",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "instagram-authenticator",
+   "optionA": {
+    "id": "bksec_instagram-authenticator_yes",
+    "label": "Do It",
+    "desc": "Turn on an authenticator app and save the recovery codes offline. Who does it: You.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Turn on an authenticator app and save</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">the recovery codes offline. Who does</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">it: You.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bksec_instagram-authenticator_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: a taken-over Instagram can be used to scam your followers.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: a</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">taken-over Instagram can be used to</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">scam your followers.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "split_from_pair": "security-ready-3-10"
+  },
+  {
+   "group": "Data And Accounts",
+   "category": "Data And Accounts",
+   "app": "Security",
+   "ask": "Crypto Exchange Master Key And Settings Lock: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "security-ready-3-logins-keys-06",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-14",
+   "source_card": "crypto-exchange-lock",
+   "optionA": {
+    "id": "bksec_crypto-exchange-lock_yes",
+    "label": "Do It",
+    "desc": "Use a hardware key or authenticator app, then add the Master Key and Global Settings Lock. Who does it: You.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Use a hardware key or authenticator</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">app, then add the Master Key and</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Global Settings Lock. Who does it:</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">You.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bksec_crypto-exchange-lock_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: a crypto account is a top target for takeover.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: a</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">crypto account is a top target for</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">takeover.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "split_from_pair": "security-ready-3-17"
+  },
+  {
+   "group": "Data And Accounts",
+   "category": "Data And Accounts",
+   "app": "Security",
+   "ask": "First Agent Tokens: Security And UpKeep: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-15",
+   "source_card": "tokens-first",
+   "optionA": {
+    "id": "bksec_tokens-first_yes",
+    "label": "Do It",
+    "desc": "Give the first per-agent tokens to Security and UpKeep, since they push most often, then roll out to the rest. Who does it: Security.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Give the first per-agent tokens to</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Security and UpKeep, since they push</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">most often, then roll out to the rest.</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Who does it: Security.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bksec_tokens-first_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: Starting where pushes happen most gives the biggest drop in risk for the least setup.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters:</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Starting where pushes happen most</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">gives the biggest drop in risk for the</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">least setup.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "id": "security-ready-3-logins-keys-07",
+   "split_from_pair": "security-ready-3-22"
+  },
+  {
+   "group": "Data And Accounts",
+   "category": "Data And Accounts",
+   "app": "Security",
+   "ask": "Reminder Two Weeks Before Each Agent Token Expires: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-15",
+   "source_card": "token-expiry",
+   "optionA": {
+    "id": "bksec_token-expiry_yes",
+    "label": "Do It",
+    "desc": "Security adds every agent token's expiry date to the Morning Report and warns two weeks ahead. Who does it: Security.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Security adds every agent token's</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">expiry date to the Morning Report and</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">warns two weeks ahead. Who does it:</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Security.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bksec_token-expiry_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: 90-day tokens expire on their own. Without a reminder, an agent's pushes would suddenly fail.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters:</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">90-day tokens expire on their own.</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Without a reminder, an agent's pushes</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">would suddenly fail.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "id": "security-ready-3-logins-keys-08",
+   "split_from_pair": "security-ready-3-23"
+  },
+  {
+   "group": "Data And Accounts",
+   "category": "Data And Accounts",
+   "app": "Security",
+   "ask": "Offline List Of Key Accounts On Your Phone: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-15",
+   "source_card": "phone-account-list",
+   "optionA": {
+    "id": "bksec_phone-account-list_yes",
+    "label": "Do It",
+    "desc": "Keep a short offline list on your phone of key accounts, their recovery emails and support numbers, with no passwords. Who does it: You, With Security.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Keep a short offline list on your</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">phone of key accounts, their recovery</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">emails and support numbers, with no</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">passwords. Who does it: You, With</text><text x=\"18\" y=\"168\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Security.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bksec_phone-account-list_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: If a phone or account is lost while traveling, you can start recovery without being online.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters: If a</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">phone or account is lost while</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">traveling, you can start recovery</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">without being online.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "id": "security-ready-3-logins-keys-09",
+   "split_from_pair": "security-ready-3-24"
+  },
+  {
+   "group": "Data And Accounts",
+   "category": "Data And Accounts",
+   "app": "Security",
+   "ask": "Move The Box's Saved Page Password Into 1Password Later: Do It Or Not Now?",
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-15",
+   "source_card": "box-pw-file",
+   "optionA": {
+    "id": "bksec_box-pw-file_yes",
+    "label": "Do It",
+    "desc": "Once 1Password works for agents, move the page password from the private file on the shared computer into the Agents vault. Who does it: Security.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#16a34a\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Do It</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Once 1Password works for agents, move</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">the page password from the private</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">file on the shared computer into the</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Agents vault. Who does it: Security.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bksec_box-pw-file_later",
+    "label": "Not Now",
+    "desc": "Leave it for now. Why it matters: Today the lock tools read it from a private file on the shared computer. A vault is easier to rotate.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"8\" rx=\"4\" fill=\"#A3A3A3\"/><text x=\"18\" y=\"30\" font-size=\"9\" fill=\"#525252\" font-family=\"Hind\" font-weight=\"600\">SECURITY</text><text x=\"18\" y=\"58\" font-size=\"17\" fill=\"#0A0A0A\" font-family=\"Khand\" font-weight=\"700\">Not Now</text><text x=\"18\" y=\"108\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Leave it for now. Why it matters:</text><text x=\"18\" y=\"123\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">Today the lock tools read it from a</text><text x=\"18\" y=\"138\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">private file on the shared computer. A</text><text x=\"18\" y=\"153\" font-size=\"10.5\" fill=\"#262626\" font-family=\"Hind\" font-weight=\"400\">vault is easier to rotate.</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "id": "security-ready-3-logins-keys-10",
+   "split_from_pair": "security-ready-3-25"
+  }
+ ],
+ "share": true,
+ "notes": true,
+ "split_from": "security-ready-3",
+ "split_part": "a",
+ "split_sibling": "security-ready-3-backups-logs-domains",
+ "split_note": "R86 (Max Oct 17 2026 07:50 ICT): 10 picks per deck; split from the unanswered 20-pick deck security-ready-3"
+}

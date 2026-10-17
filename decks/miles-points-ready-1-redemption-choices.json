@@ -1,0 +1,482 @@
+{
+ "date": "miles-points-ready-1-redemption-choices",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Points: Redemption Choices",
+ "generated_at": "2026-10-17T08:02:22+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "focused": 20
+ },
+ "groups": {
+  "Points": 10
+ },
+ "apps": {
+  "Miles": 10
+ },
+ "freshness": {
+  "option_slots": 20,
+  "never_shown_before": 0,
+  "share": 0.0,
+  "note": "options reused from miles-points-ready-1 (split, not new)"
+ },
+ "warnings": [],
+ "submit_agent": "miles",
+ "deck_size": 10,
+ "carried": 0,
+ "topic": "miles-points",
+ "shelf": true,
+ "bank_pairs": [
+  "miles-points-ready-1-01",
+  "miles-points-ready-1-02",
+  "miles-points-ready-1-04",
+  "miles-points-ready-1-08",
+  "miles-points-ready-1-09",
+  "miles-points-ready-1-10",
+  "miles-points-ready-1-11",
+  "miles-points-ready-1-12",
+  "miles-points-ready-1-14",
+  "miles-points-ready-1-16"
+ ],
+ "pairs": [
+  {
+   "group": "Points",
+   "category": "Points & Redemptions",
+   "app": "Miles",
+   "ask": "Value Target: Hold Out For 2 Cents Or Take Any Fair Deal?",
+   "optionA": {
+    "id": "miles-points-11a",
+    "label": "Hold Out",
+    "desc": "Only high-value redemptions",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Hold Out</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Only high-value redemptions</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "miles-points-11b",
+    "label": "Fair Deal",
+    "desc": "Use points, don't hoard",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Fair Deal</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Use points, don&#x27;t hoard</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-points-ready-1-redemption-choices-01",
+   "repeat": false,
+   "split_from_pair": "miles-points-ready-1-01"
+  },
+  {
+   "group": "Points",
+   "category": "Points & Redemptions",
+   "app": "Miles",
+   "ask": "Redeem For: Premium Cabins Or More Economy Trips?",
+   "optionA": {
+    "id": "miles-points-01a",
+    "label": "Premium Cabins",
+    "desc": "Business or first on long flights",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Premium Cabins</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Business or first on long</text><text x=\"120\" y=\"186\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">flights</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "miles-points-01b",
+    "label": "More Trips",
+    "desc": "Economy, more often",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">More Trips</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Economy, more often</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-points-ready-1-redemption-choices-02",
+   "repeat": false,
+   "split_from_pair": "miles-points-ready-1-02"
+  },
+  {
+   "group": "Points",
+   "category": "Points & Redemptions",
+   "app": "Miles",
+   "ask": "Aeroplan For ANA: Transfer When Seats Show Or Hold Miles?",
+   "optionA": {
+    "id": "miles-points-03a",
+    "label": "Transfer When Seen",
+    "desc": "Move miles as soon as space opens",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Transfer When Seen</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Move miles as soon as space</text><text x=\"120\" y=\"186\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">opens</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "miles-points-03b",
+    "label": "Hold Miles",
+    "desc": "Keep flexible until booking",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Hold Miles</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Keep flexible until booking</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-points-ready-1-redemption-choices-03",
+   "repeat": false,
+   "split_from_pair": "miles-points-ready-1-04"
+  },
+  {
+   "group": "Points",
+   "category": "Points & Redemptions",
+   "app": "Miles",
+   "ask": "Hotel Points: Use Transfers For Hotels Or Never?",
+   "optionA": {
+    "id": "miles-points-17a",
+    "label": "Sometimes",
+    "desc": "When a hotel deal is great",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Sometimes</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">When a hotel deal is great</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "miles-points-17b",
+    "label": "Never",
+    "desc": "Points are for flights",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Never</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Points are for flights</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-points-ready-1-redemption-choices-04",
+   "repeat": false,
+   "split_from_pair": "miles-points-ready-1-08"
+  },
+  {
+   "group": "Points",
+   "category": "Points & Redemptions",
+   "app": "Miles",
+   "ask": "Stopovers: Use Free Stopovers Or Go Direct?",
+   "optionA": {
+    "id": "miles-points-13a",
+    "label": "Use Stopovers",
+    "desc": "Two trips for one award",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Use Stopovers</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Two trips for one award</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "miles-points-13b",
+    "label": "Go Direct",
+    "desc": "Fastest route",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Go Direct</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Fastest route</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-points-ready-1-redemption-choices-05",
+   "repeat": false,
+   "split_from_pair": "miles-points-ready-1-09"
+  },
+  {
+   "group": "Points",
+   "category": "Points & Redemptions",
+   "app": "Miles",
+   "ask": "Cash Or Points: Points Only Or Mix With Cash?",
+   "optionA": {
+    "id": "miles-points-10a",
+    "label": "Points Only",
+    "desc": "Save cash, spend points",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Points Only</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Save cash, spend points</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "miles-points-10b",
+    "label": "Mix",
+    "desc": "Points plus cash when it helps",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Mix</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Points plus cash when it helps</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-points-ready-1-redemption-choices-06",
+   "repeat": false,
+   "split_from_pair": "miles-points-ready-1-10"
+  },
+  {
+   "group": "Points",
+   "category": "Points & Redemptions",
+   "app": "Miles",
+   "ask": "Fuel Surcharges: Avoid Always Or OK If Seats Are Good?",
+   "optionA": {
+    "id": "miles-points-05a",
+    "label": "Avoid Always",
+    "desc": "Never pay big surcharges",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Avoid Always</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Never pay big surcharges</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "miles-points-05b",
+    "label": "OK Sometimes",
+    "desc": "Seats matter more",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">OK Sometimes</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Seats matter more</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-points-ready-1-redemption-choices-07",
+   "repeat": false,
+   "split_from_pair": "miles-points-ready-1-11"
+  },
+  {
+   "group": "Points",
+   "category": "Points & Redemptions",
+   "app": "Miles",
+   "ask": "Upgrades: Use Points To Upgrade Or Book Direct Award?",
+   "optionA": {
+    "id": "miles-points-19a",
+    "label": "Upgrade",
+    "desc": "Buy cash, upgrade with points",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Upgrade</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Buy cash, upgrade with points</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "miles-points-19b",
+    "label": "Direct Award",
+    "desc": "Book the cabin with points",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Direct Award</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Book the cabin with points</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-points-ready-1-redemption-choices-08",
+   "repeat": false,
+   "split_from_pair": "miles-points-ready-1-12"
+  },
+  {
+   "group": "Points",
+   "category": "Points & Redemptions",
+   "app": "Miles",
+   "ask": "ANA Flights: Book With Aeroplan Or ANA Mileage Club?",
+   "optionA": {
+    "id": "miles-points-04a",
+    "label": "Aeroplan",
+    "desc": "No fuel surcharges, easier to transfer",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Aeroplan</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">No fuel surcharges, easier to</text><text x=\"120\" y=\"186\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">transfer</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "miles-points-04b",
+    "label": "ANA Mileage Club",
+    "desc": "Cheaper round trips, harder to get",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">ANA Mileage Club</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Cheaper round trips, harder to</text><text x=\"120\" y=\"186\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">get</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-points-ready-1-redemption-choices-09",
+   "repeat": false,
+   "split_from_pair": "miles-points-ready-1-14"
+  },
+  {
+   "group": "Points",
+   "category": "Points & Redemptions",
+   "app": "Miles",
+   "ask": "Redeem For: Flights Or Hotels?",
+   "optionA": {
+    "id": "miles-points-02a",
+    "label": "Flights",
+    "desc": "Most value on airfare",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Flights</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Most value on airfare</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "miles-points-02b",
+    "label": "Hotels",
+    "desc": "Free nights",
+    "tags": [],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect width=\"240\" height=\"300\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\"/><rect x=\"14\" y=\"14\" width=\"4\" height=\"40\" fill=\"#1F7A7A\"/><text x=\"120\" y=\"130\" font-size=\"20\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\">Hotels</text><text x=\"120\" y=\"170\" font-size=\"11\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\">Free nights</text></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "miles-points-ready-1-redemption-choices-10",
+   "repeat": false,
+   "split_from_pair": "miles-points-ready-1-16"
+  }
+ ],
+ "share": true,
+ "notes": true,
+ "split_from": "miles-points-ready-1",
+ "split_part": "a",
+ "split_sibling": "miles-points-ready-1-alerts-booking-habits",
+ "split_note": "R86 (Max Oct 17 2026 07:50 ICT): 10 picks per deck; split from the unanswered 20-pick deck miles-points-ready-1"
+}

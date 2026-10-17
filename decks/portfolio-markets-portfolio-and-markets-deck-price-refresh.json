@@ -1,0 +1,557 @@
+{
+ "date": "portfolio-markets-portfolio-and-markets-deck-price-refresh",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Markets: Price Refresh",
+ "generated_at": "2026-10-17T08:02:22+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "focused": 4,
+  "quick": 4,
+  "action": 4,
+  "visual": 4,
+  "calm": 4
+ },
+ "groups": {
+  "Allocation": 10
+ },
+ "apps": {
+  "Portfolio": 10
+ },
+ "freshness": {
+  "option_slots": 20,
+  "never_shown_before": 0,
+  "share": 0.0,
+  "note": "options reused from portfolio-markets-portfolio-and-markets-deck (split, not new)"
+ },
+ "warnings": [],
+ "submit_agent": "portfolio",
+ "deck_size": 10,
+ "carried": 0,
+ "topic": "portfolio-markets",
+ "shelf": true,
+ "bank_pairs": [
+  "portfolio-markets-portfolio-and-markets-deck-02",
+  "portfolio-markets-portfolio-and-markets-deck-03",
+  "portfolio-markets-portfolio-and-markets-deck-05",
+  "portfolio-markets-portfolio-and-markets-deck-08",
+  "portfolio-markets-portfolio-and-markets-deck-09",
+  "portfolio-markets-portfolio-and-markets-deck-10",
+  "portfolio-markets-portfolio-and-markets-deck-16",
+  "portfolio-markets-portfolio-and-markets-deck-17",
+  "portfolio-markets-portfolio-and-markets-deck-18",
+  "portfolio-markets-portfolio-and-markets-deck-20"
+ ],
+ "source": "/workspace/ops/folio/dashboard/shelf-sources/portfolio-markets.json",
+ "pairs": [
+  {
+   "group": "Allocation",
+   "category": "Price Refresh",
+   "app": "Portfolio",
+   "ask": "Price Refresh: Pill Buttons Or Text Links?",
+   "optionA": {
+    "id": "bkpf_pricesa0_pb1_rounded",
+    "label": "Pill Buttons, Rounded Corners",
+    "desc": "Price Refresh: pill buttons with rounded corners.",
+    "tags": [
+     "focused",
+     "quick"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Portfolio</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Finance Review · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24\" y=\"66\" width=\"60\" height=\"60\" rx=\"6\" fill=\"#0B6E4F14\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"36.0\" y=\"96.0\" width=\"4.8\" height=\"15.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"43.8\" y=\"87.0\" width=\"4.8\" height=\"24.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"51.6\" y=\"93.0\" width=\"4.8\" height=\"18.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"59.400000000000006\" y=\"81.0\" width=\"4.8\" height=\"30.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"67.19999999999999\" y=\"75.0\" width=\"4.8\" height=\"36.0\" rx=\"1\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"94\" y=\"82\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Stocks</text><text x=\"94\" y=\"96\" font-size=\"6.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Last close, example</text><rect x=\"24\" y=\"140\" width=\"92\" height=\"24\" rx=\"12\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"70\" y=\"155\" font-size=\"7\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >BTC</text><rect x=\"124\" y=\"140\" width=\"92\" height=\"24\" rx=\"12\" fill=\"#FFFFFF\" stroke=\"#0B6E4F\" stroke-width=\"1\" /><text x=\"170\" y=\"155\" font-size=\"7\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >UPDATED</text><text x=\"14\" y=\"198\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Market Opens</text><text x=\"226\" y=\"198\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Time</text><line x1=\"14\" y1=\"206\" x2=\"226\" y2=\"206\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "optionB": {
+    "id": "bkpf_pricesa0_tl2_square",
+    "label": "Text Links, Square Corners",
+    "desc": "Price Refresh: text links with square corners.",
+    "tags": [
+     "quick",
+     "action"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Portfolio</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Finance Review · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24\" y=\"66\" width=\"60\" height=\"60\" rx=\"6\" fill=\"#0B6E4F14\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"36.0\" y=\"96.0\" width=\"4.8\" height=\"15.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"43.8\" y=\"87.0\" width=\"4.8\" height=\"24.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"51.6\" y=\"93.0\" width=\"4.8\" height=\"18.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"59.400000000000006\" y=\"81.0\" width=\"4.8\" height=\"30.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"67.19999999999999\" y=\"75.0\" width=\"4.8\" height=\"36.0\" rx=\"1\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"94\" y=\"82\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Stocks</text><text x=\"94\" y=\"96\" font-size=\"6.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Last close, example</text><text x=\"24\" y=\"156\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\" text-decoration=\"underline\">BTC</text><text x=\"130\" y=\"156\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\" text-decoration=\"underline\">UPDATED</text><text x=\"14\" y=\"198\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Market Opens</text><text x=\"226\" y=\"198\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Time</text><line x1=\"14\" y1=\"206\" x2=\"226\" y2=\"206\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "portfolio-markets-portfolio-and-markets-deck-price-refresh-01",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-13",
+   "split_from_pair": "portfolio-markets-portfolio-and-markets-deck-02"
+  },
+  {
+   "group": "Allocation",
+   "category": "Price Refresh",
+   "app": "Portfolio",
+   "ask": "Price Refresh: Icon Action Tiles Or Square Buttons?",
+   "optionA": {
+    "id": "bkpf_pricesa0_iat4_rounded",
+    "label": "Icon Action Tiles, Rounded Corners",
+    "desc": "Price Refresh: icon action tiles with rounded corners.",
+    "tags": [
+     "action",
+     "visual"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Portfolio</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Finance Review · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24\" y=\"66\" width=\"60\" height=\"60\" rx=\"6\" fill=\"#0B6E4F14\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"36.0\" y=\"96.0\" width=\"4.8\" height=\"15.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"43.8\" y=\"87.0\" width=\"4.8\" height=\"24.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"51.6\" y=\"93.0\" width=\"4.8\" height=\"18.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"59.400000000000006\" y=\"81.0\" width=\"4.8\" height=\"30.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"67.19999999999999\" y=\"75.0\" width=\"4.8\" height=\"36.0\" rx=\"1\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"94\" y=\"82\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Stocks</text><text x=\"94\" y=\"96\" font-size=\"6.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Last close, example</text><rect x=\"24\" y=\"136\" width=\"56\" height=\"32\" rx=\"10\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(44,140) scale(0.5833333333333334)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"2\"/><path d=\"M7 12.5 l3.5 3.5 6.5 -7\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"52\" y=\"164\" font-size=\"6\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >BTC</text><rect x=\"88\" y=\"136\" width=\"56\" height=\"32\" rx=\"10\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(108,140) scale(0.5833333333333334)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2\"/><path d=\"M12 6 V12 L16 14\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2\" stroke-linecap=\"round\"/></g><text x=\"116\" y=\"164\" font-size=\"6\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Later</text><rect x=\"152\" y=\"136\" width=\"56\" height=\"32\" rx=\"10\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(172,140) scale(0.5833333333333334)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"180\" y=\"164\" font-size=\"6\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Note</text><text x=\"14\" y=\"198\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Market Opens</text><text x=\"226\" y=\"198\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Time</text><line x1=\"14\" y1=\"206\" x2=\"226\" y2=\"206\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "optionB": {
+    "id": "bkpf_pricesa0_sb0_square",
+    "label": "Square Buttons, Square Corners",
+    "desc": "Price Refresh: square buttons with square corners.",
+    "tags": [
+     "visual",
+     "quick"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Portfolio</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Finance Review · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24\" y=\"66\" width=\"60\" height=\"60\" rx=\"6\" fill=\"#0B6E4F14\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"36.0\" y=\"96.0\" width=\"4.8\" height=\"15.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"43.8\" y=\"87.0\" width=\"4.8\" height=\"24.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"51.6\" y=\"93.0\" width=\"4.8\" height=\"18.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"59.400000000000006\" y=\"81.0\" width=\"4.8\" height=\"30.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"67.19999999999999\" y=\"75.0\" width=\"4.8\" height=\"36.0\" rx=\"1\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"94\" y=\"82\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Stocks</text><text x=\"94\" y=\"96\" font-size=\"6.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Last close, example</text><rect x=\"24\" y=\"140\" width=\"92\" height=\"24\" rx=\"0\" fill=\"#0A0A0A\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"70.0\" y=\"154.7\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">BTC</text><rect x=\"124\" y=\"140\" width=\"92\" height=\"24\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"170.0\" y=\"154.7\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">UPDATED</text><text x=\"14\" y=\"198\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Market Opens</text><text x=\"226\" y=\"198\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Time</text><line x1=\"14\" y1=\"206\" x2=\"226\" y2=\"206\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "portfolio-markets-portfolio-and-markets-deck-price-refresh-02",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-13",
+   "split_from_pair": "portfolio-markets-portfolio-and-markets-deck-03"
+  },
+  {
+   "group": "Allocation",
+   "category": "Price Refresh",
+   "app": "Portfolio",
+   "ask": "Price Refresh: Square Buttons Or Pill Buttons?",
+   "optionA": {
+    "id": "bkpf_pricesa0_sb0_rounded",
+    "label": "Square Buttons, Rounded Corners",
+    "desc": "Price Refresh: square buttons with rounded corners.",
+    "tags": [
+     "visual",
+     "focused"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Portfolio</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Finance Review · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24\" y=\"66\" width=\"60\" height=\"60\" rx=\"6\" fill=\"#0B6E4F14\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"36.0\" y=\"96.0\" width=\"4.8\" height=\"15.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"43.8\" y=\"87.0\" width=\"4.8\" height=\"24.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"51.6\" y=\"93.0\" width=\"4.8\" height=\"18.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"59.400000000000006\" y=\"81.0\" width=\"4.8\" height=\"30.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"67.19999999999999\" y=\"75.0\" width=\"4.8\" height=\"36.0\" rx=\"1\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"94\" y=\"82\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Stocks</text><text x=\"94\" y=\"96\" font-size=\"6.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Last close, example</text><rect x=\"24\" y=\"140\" width=\"92\" height=\"24\" rx=\"0\" fill=\"#0A0A0A\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"70.0\" y=\"154.7\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">BTC</text><rect x=\"124\" y=\"140\" width=\"92\" height=\"24\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"170.0\" y=\"154.7\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">UPDATED</text><text x=\"14\" y=\"198\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Market Opens</text><text x=\"226\" y=\"198\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Time</text><line x1=\"14\" y1=\"206\" x2=\"226\" y2=\"206\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "optionB": {
+    "id": "bkpf_pricesa0_pb1_square",
+    "label": "Pill Buttons, Square Corners",
+    "desc": "Price Refresh: pill buttons with square corners.",
+    "tags": [
+     "focused",
+     "calm"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Portfolio</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Finance Review · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24\" y=\"66\" width=\"60\" height=\"60\" rx=\"6\" fill=\"#0B6E4F14\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"36.0\" y=\"96.0\" width=\"4.8\" height=\"15.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"43.8\" y=\"87.0\" width=\"4.8\" height=\"24.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"51.6\" y=\"93.0\" width=\"4.8\" height=\"18.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"59.400000000000006\" y=\"81.0\" width=\"4.8\" height=\"30.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"67.19999999999999\" y=\"75.0\" width=\"4.8\" height=\"36.0\" rx=\"1\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"94\" y=\"82\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Stocks</text><text x=\"94\" y=\"96\" font-size=\"6.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Last close, example</text><rect x=\"24\" y=\"140\" width=\"92\" height=\"24\" rx=\"12\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"70\" y=\"155\" font-size=\"7\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >BTC</text><rect x=\"124\" y=\"140\" width=\"92\" height=\"24\" rx=\"12\" fill=\"#FFFFFF\" stroke=\"#0B6E4F\" stroke-width=\"1\" /><text x=\"170\" y=\"155\" font-size=\"7\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >UPDATED</text><text x=\"14\" y=\"198\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Market Opens</text><text x=\"226\" y=\"198\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Time</text><line x1=\"14\" y1=\"206\" x2=\"226\" y2=\"206\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "portfolio-markets-portfolio-and-markets-deck-price-refresh-03",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-13",
+   "split_from_pair": "portfolio-markets-portfolio-and-markets-deck-05"
+  },
+  {
+   "group": "Allocation",
+   "category": "Price Refresh",
+   "app": "Portfolio",
+   "ask": "Price Refresh: Inline Outline Card Or Top Banner?",
+   "optionA": {
+    "id": "bkpf_pricesb0_ioc4_roomy",
+    "label": "Inline Outline Card, Roomy",
+    "desc": "Price Refresh: inline outline card with roomy.",
+    "tags": [
+     "action",
+     "visual"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Portfolio</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Finance Review · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"70\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >BTC</text><text x=\"14\" y=\"81\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Live, example</text><text x=\"226\" y=\"74\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Price</text><line x1=\"14\" y1=\"96\" x2=\"226\" y2=\"96\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"114\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Updated</text><text x=\"14\" y=\"125\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example 7:24 PM</text><text x=\"226\" y=\"118\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Time</text><line x1=\"14\" y1=\"140\" x2=\"226\" y2=\"140\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"158\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Market Opens</text><text x=\"14\" y=\"169\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >8:30 PM ICT</text><text x=\"226\" y=\"162\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Time</text><line x1=\"14\" y1=\"184\" x2=\"226\" y2=\"184\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"210\" width=\"212\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#0B6E4F\" stroke-width=\"1.4\" /><circle cx=\"26\" cy=\"226\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"36\" y=\"223\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Stocks</text><text x=\"36\" y=\"234\" font-size=\"6.3\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Last close, example</text><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "optionB": {
+    "id": "bkpf_pricesb0_tb0_compact",
+    "label": "Top Banner, Compact",
+    "desc": "Price Refresh: top banner with compact.",
+    "tags": [
+     "visual",
+     "quick"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Portfolio</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Finance Review · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"30\" rx=\"8\" fill=\"#0B6E4F18\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(22,57) scale(0.6666666666666666)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"1.8\"/><path d=\"M12 6 V12 L16 14\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"1.8\" stroke-linecap=\"round\"/></g><text x=\"44\" y=\"64\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Stocks</text><text x=\"44\" y=\"74\" font-size=\"6.3\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Last close, example</text><text x=\"14\" y=\"70\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >BTC</text><text x=\"14\" y=\"81\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Live, example</text><text x=\"226\" y=\"74\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Price</text><line x1=\"14\" y1=\"86\" x2=\"226\" y2=\"86\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"104\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Updated</text><text x=\"14\" y=\"115\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example 7:24 PM</text><text x=\"226\" y=\"108\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Time</text><line x1=\"14\" y1=\"120\" x2=\"226\" y2=\"120\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"138\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Market Opens</text><text x=\"14\" y=\"149\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >8:30 PM ICT</text><text x=\"226\" y=\"142\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Time</text><line x1=\"14\" y1=\"154\" x2=\"226\" y2=\"154\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "portfolio-markets-portfolio-and-markets-deck-price-refresh-04",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-13",
+   "split_from_pair": "portfolio-markets-portfolio-and-markets-deck-08"
+  },
+  {
+   "group": "Allocation",
+   "category": "Price Refresh",
+   "app": "Portfolio",
+   "ask": "Price Refresh: Center Pop-Up Or Bottom Sheet?",
+   "optionA": {
+    "id": "bkpf_pricesb0_cpu2_roomy",
+    "label": "Center Pop-Up, Roomy",
+    "desc": "Price Refresh: center pop-up with roomy.",
+    "tags": [
+     "quick",
+     "calm"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Portfolio</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Finance Review · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"70\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >BTC</text><text x=\"14\" y=\"81\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Live, example</text><text x=\"226\" y=\"74\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Price</text><line x1=\"14\" y1=\"96\" x2=\"226\" y2=\"96\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"114\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Updated</text><text x=\"14\" y=\"125\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example 7:24 PM</text><text x=\"226\" y=\"118\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Time</text><line x1=\"14\" y1=\"140\" x2=\"226\" y2=\"140\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"158\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Market Opens</text><text x=\"14\" y=\"169\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >8:30 PM ICT</text><text x=\"226\" y=\"162\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Time</text><line x1=\"14\" y1=\"184\" x2=\"226\" y2=\"184\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#0A0A0A44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"30\" y=\"90\" width=\"180\" height=\"110\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"120\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Stocks</text><text x=\"120\" y=\"136\" font-size=\"7\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Last close, example</text><rect x=\"50\" y=\"160\" width=\"140\" height=\"24\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"#0B6E4F\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"174.7\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">GOT IT</text><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "optionB": {
+    "id": "bkpf_pricesb0_bs3_compact",
+    "label": "Bottom Sheet, Compact",
+    "desc": "Price Refresh: bottom sheet with compact.",
+    "tags": [
+     "calm",
+     "visual"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Portfolio</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Finance Review · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"70\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >BTC</text><text x=\"14\" y=\"81\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Live, example</text><text x=\"226\" y=\"74\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Price</text><line x1=\"14\" y1=\"86\" x2=\"226\" y2=\"86\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"104\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Updated</text><text x=\"14\" y=\"115\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example 7:24 PM</text><text x=\"226\" y=\"108\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Time</text><line x1=\"14\" y1=\"120\" x2=\"226\" y2=\"120\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"138\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Market Opens</text><text x=\"14\" y=\"149\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >8:30 PM ICT</text><text x=\"226\" y=\"142\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Time</text><line x1=\"14\" y1=\"154\" x2=\"226\" y2=\"154\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#0A0A0A44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"170\" width=\"240\" height=\"130\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"104\" y=\"178\" width=\"32\" height=\"4\" rx=\"2\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"202\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Stocks</text><text x=\"14\" y=\"216\" font-size=\"7\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Last close, example</text><rect x=\"14\" y=\"228\" width=\"212\" height=\"24\" rx=\"0\" fill=\"#0A0A0A\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"242.7\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">GOT IT</text><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "portfolio-markets-portfolio-and-markets-deck-price-refresh-05",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-13",
+   "split_from_pair": "portfolio-markets-portfolio-and-markets-deck-09"
+  },
+  {
+   "group": "Allocation",
+   "category": "Price Refresh",
+   "app": "Portfolio",
+   "ask": "Price Refresh: Bottom Toast Or Center Pop-Up?",
+   "optionA": {
+    "id": "bkpf_pricesb0_bt1_roomy",
+    "label": "Bottom Toast, Roomy",
+    "desc": "Price Refresh: bottom toast with roomy.",
+    "tags": [
+     "focused",
+     "quick"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Portfolio</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Finance Review · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"70\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >BTC</text><text x=\"14\" y=\"81\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Live, example</text><text x=\"226\" y=\"74\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Price</text><line x1=\"14\" y1=\"96\" x2=\"226\" y2=\"96\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"114\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Updated</text><text x=\"14\" y=\"125\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example 7:24 PM</text><text x=\"226\" y=\"118\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Time</text><line x1=\"14\" y1=\"140\" x2=\"226\" y2=\"140\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"158\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Market Opens</text><text x=\"14\" y=\"169\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >8:30 PM ICT</text><text x=\"226\" y=\"162\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Time</text><line x1=\"14\" y1=\"184\" x2=\"226\" y2=\"184\" stroke=\"#E5E0D8\"/><rect x=\"30\" y=\"208\" width=\"180\" height=\"30\" rx=\"8\" fill=\"#0A0A0A\" stroke=\"none\" stroke-width=\"1\" /><text x=\"42\" y=\"227\" font-size=\"8.5\" fill=\"#FFFFFF\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Stocks</text><text x=\"198\" y=\"227\" font-size=\"7\" fill=\"#D4A017\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"700\" >UNDO</text><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "optionB": {
+    "id": "bkpf_pricesb0_cpu2_compact",
+    "label": "Center Pop-Up, Compact",
+    "desc": "Price Refresh: center pop-up with compact.",
+    "tags": [
+     "quick",
+     "action"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Portfolio</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Finance Review · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"70\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >BTC</text><text x=\"14\" y=\"81\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Live, example</text><text x=\"226\" y=\"74\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Price</text><line x1=\"14\" y1=\"86\" x2=\"226\" y2=\"86\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"104\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Updated</text><text x=\"14\" y=\"115\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example 7:24 PM</text><text x=\"226\" y=\"108\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Time</text><line x1=\"14\" y1=\"120\" x2=\"226\" y2=\"120\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"138\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Market Opens</text><text x=\"14\" y=\"149\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >8:30 PM ICT</text><text x=\"226\" y=\"142\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Time</text><line x1=\"14\" y1=\"154\" x2=\"226\" y2=\"154\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#0A0A0A44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"30\" y=\"90\" width=\"180\" height=\"110\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"120\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Stocks</text><text x=\"120\" y=\"136\" font-size=\"7\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Last close, example</text><rect x=\"50\" y=\"160\" width=\"140\" height=\"24\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"#0B6E4F\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"174.7\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">GOT IT</text><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "portfolio-markets-portfolio-and-markets-deck-price-refresh-06",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-13",
+   "split_from_pair": "portfolio-markets-portfolio-and-markets-deck-10"
+  },
+  {
+   "group": "Allocation",
+   "category": "Price Refresh",
+   "app": "Portfolio",
+   "ask": "Price Refresh: Top Banner Or Bottom Toast?",
+   "optionA": {
+    "id": "bkpf_pricesb0_tb0_roomy",
+    "label": "Top Banner, Roomy",
+    "desc": "Price Refresh: top banner with roomy.",
+    "tags": [
+     "visual",
+     "focused"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Portfolio</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Finance Review · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"30\" rx=\"8\" fill=\"#0B6E4F18\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(22,57) scale(0.6666666666666666)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"1.8\"/><path d=\"M12 6 V12 L16 14\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"1.8\" stroke-linecap=\"round\"/></g><text x=\"44\" y=\"64\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Stocks</text><text x=\"44\" y=\"74\" font-size=\"6.3\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Last close, example</text><text x=\"14\" y=\"70\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >BTC</text><text x=\"14\" y=\"81\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Live, example</text><text x=\"226\" y=\"74\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Price</text><line x1=\"14\" y1=\"96\" x2=\"226\" y2=\"96\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"114\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Updated</text><text x=\"14\" y=\"125\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example 7:24 PM</text><text x=\"226\" y=\"118\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Time</text><line x1=\"14\" y1=\"140\" x2=\"226\" y2=\"140\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"158\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Market Opens</text><text x=\"14\" y=\"169\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >8:30 PM ICT</text><text x=\"226\" y=\"162\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Time</text><line x1=\"14\" y1=\"184\" x2=\"226\" y2=\"184\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "optionB": {
+    "id": "bkpf_pricesb0_bt1_compact",
+    "label": "Bottom Toast, Compact",
+    "desc": "Price Refresh: bottom toast with compact.",
+    "tags": [
+     "focused",
+     "calm"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Portfolio</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Finance Review · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"70\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >BTC</text><text x=\"14\" y=\"81\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Live, example</text><text x=\"226\" y=\"74\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Price</text><line x1=\"14\" y1=\"86\" x2=\"226\" y2=\"86\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"104\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Updated</text><text x=\"14\" y=\"115\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example 7:24 PM</text><text x=\"226\" y=\"108\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Time</text><line x1=\"14\" y1=\"120\" x2=\"226\" y2=\"120\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"138\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Market Opens</text><text x=\"14\" y=\"149\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >8:30 PM ICT</text><text x=\"226\" y=\"142\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Time</text><line x1=\"14\" y1=\"154\" x2=\"226\" y2=\"154\" stroke=\"#E5E0D8\"/><rect x=\"30\" y=\"208\" width=\"180\" height=\"30\" rx=\"8\" fill=\"#0A0A0A\" stroke=\"none\" stroke-width=\"1\" /><text x=\"42\" y=\"227\" font-size=\"8.5\" fill=\"#FFFFFF\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Stocks</text><text x=\"198\" y=\"227\" font-size=\"7\" fill=\"#D4A017\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"700\" >UNDO</text><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "portfolio-markets-portfolio-and-markets-deck-price-refresh-07",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-13",
+   "split_from_pair": "portfolio-markets-portfolio-and-markets-deck-16"
+  },
+  {
+   "group": "Allocation",
+   "category": "Price Refresh",
+   "app": "Portfolio",
+   "ask": "Price Refresh: Sticky Bottom Bar Or Icon Action Tiles?",
+   "optionA": {
+    "id": "bkpf_pricesa0_sbb3_rounded",
+    "label": "Sticky Bottom Bar, Rounded Corners",
+    "desc": "Price Refresh: sticky bottom bar with rounded corners.",
+    "tags": [
+     "calm",
+     "action"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Portfolio</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Finance Review · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24\" y=\"66\" width=\"60\" height=\"60\" rx=\"6\" fill=\"#0B6E4F14\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"36.0\" y=\"96.0\" width=\"4.8\" height=\"15.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"43.8\" y=\"87.0\" width=\"4.8\" height=\"24.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"51.6\" y=\"93.0\" width=\"4.8\" height=\"18.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"59.400000000000006\" y=\"81.0\" width=\"4.8\" height=\"30.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"67.19999999999999\" y=\"75.0\" width=\"4.8\" height=\"36.0\" rx=\"1\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"94\" y=\"82\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Stocks</text><text x=\"94\" y=\"96\" font-size=\"6.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Last close, example</text><rect x=\"0\" y=\"228\" width=\"240\" height=\"34\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"228\" x2=\"240\" y2=\"228\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"232\" width=\"140\" height=\"26\" rx=\"0\" fill=\"#0A0A0A\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"84.0\" y=\"247.7\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">BTC</text><rect x=\"160\" y=\"232\" width=\"66\" height=\"26\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"193.0\" y=\"247.7\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">MORE</text><text x=\"14\" y=\"198\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Market Opens</text><text x=\"226\" y=\"198\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Time</text><line x1=\"14\" y1=\"206\" x2=\"226\" y2=\"206\" stroke=\"#E5E0D8\"/><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "optionB": {
+    "id": "bkpf_pricesa0_iat4_square",
+    "label": "Icon Action Tiles, Square Corners",
+    "desc": "Price Refresh: icon action tiles with square corners.",
+    "tags": [
+     "action",
+     "focused"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Portfolio</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Finance Review · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24\" y=\"66\" width=\"60\" height=\"60\" rx=\"6\" fill=\"#0B6E4F14\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"36.0\" y=\"96.0\" width=\"4.8\" height=\"15.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"43.8\" y=\"87.0\" width=\"4.8\" height=\"24.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"51.6\" y=\"93.0\" width=\"4.8\" height=\"18.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"59.400000000000006\" y=\"81.0\" width=\"4.8\" height=\"30.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"67.19999999999999\" y=\"75.0\" width=\"4.8\" height=\"36.0\" rx=\"1\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"94\" y=\"82\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Stocks</text><text x=\"94\" y=\"96\" font-size=\"6.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Last close, example</text><rect x=\"24\" y=\"136\" width=\"56\" height=\"32\" rx=\"0\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(44,140) scale(0.5833333333333334)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"2\"/><path d=\"M7 12.5 l3.5 3.5 6.5 -7\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"52\" y=\"164\" font-size=\"6\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >BTC</text><rect x=\"88\" y=\"136\" width=\"56\" height=\"32\" rx=\"0\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(108,140) scale(0.5833333333333334)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2\"/><path d=\"M12 6 V12 L16 14\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2\" stroke-linecap=\"round\"/></g><text x=\"116\" y=\"164\" font-size=\"6\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Later</text><rect x=\"152\" y=\"136\" width=\"56\" height=\"32\" rx=\"0\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(172,140) scale(0.5833333333333334)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"180\" y=\"164\" font-size=\"6\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Note</text><text x=\"14\" y=\"198\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Market Opens</text><text x=\"226\" y=\"198\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Time</text><line x1=\"14\" y1=\"206\" x2=\"226\" y2=\"206\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "portfolio-markets-portfolio-and-markets-deck-price-refresh-08",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-13",
+   "split_from_pair": "portfolio-markets-portfolio-and-markets-deck-17"
+  },
+  {
+   "group": "Allocation",
+   "category": "Price Refresh",
+   "app": "Portfolio",
+   "ask": "Price Refresh: Bottom Sheet Or Inline Outline Card?",
+   "optionA": {
+    "id": "bkpf_pricesb0_bs3_roomy",
+    "label": "Bottom Sheet, Roomy",
+    "desc": "Price Refresh: bottom sheet with roomy.",
+    "tags": [
+     "calm",
+     "action"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Portfolio</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Finance Review · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"70\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >BTC</text><text x=\"14\" y=\"81\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Live, example</text><text x=\"226\" y=\"74\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Price</text><line x1=\"14\" y1=\"96\" x2=\"226\" y2=\"96\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"114\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Updated</text><text x=\"14\" y=\"125\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example 7:24 PM</text><text x=\"226\" y=\"118\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Time</text><line x1=\"14\" y1=\"140\" x2=\"226\" y2=\"140\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"158\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Market Opens</text><text x=\"14\" y=\"169\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >8:30 PM ICT</text><text x=\"226\" y=\"162\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Time</text><line x1=\"14\" y1=\"184\" x2=\"226\" y2=\"184\" stroke=\"#E5E0D8\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#0A0A0A44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"170\" width=\"240\" height=\"130\" rx=\"14\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"104\" y=\"178\" width=\"32\" height=\"4\" rx=\"2\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"202\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Stocks</text><text x=\"14\" y=\"216\" font-size=\"7\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Last close, example</text><rect x=\"14\" y=\"228\" width=\"212\" height=\"24\" rx=\"0\" fill=\"#0A0A0A\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"242.7\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">GOT IT</text><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "optionB": {
+    "id": "bkpf_pricesb0_ioc4_compact",
+    "label": "Inline Outline Card, Compact",
+    "desc": "Price Refresh: inline outline card with compact.",
+    "tags": [
+     "action",
+     "focused"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Portfolio</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Finance Review · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"70\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >BTC</text><text x=\"14\" y=\"81\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Live, example</text><text x=\"226\" y=\"74\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Price</text><line x1=\"14\" y1=\"86\" x2=\"226\" y2=\"86\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"104\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Updated</text><text x=\"14\" y=\"115\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example 7:24 PM</text><text x=\"226\" y=\"108\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Time</text><line x1=\"14\" y1=\"120\" x2=\"226\" y2=\"120\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"138\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Market Opens</text><text x=\"14\" y=\"149\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >8:30 PM ICT</text><text x=\"226\" y=\"142\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >Time</text><line x1=\"14\" y1=\"154\" x2=\"226\" y2=\"154\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"210\" width=\"212\" height=\"32\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#0B6E4F\" stroke-width=\"1.4\" /><circle cx=\"26\" cy=\"226\" r=\"4\" fill=\"#0B6E4F\"/><text x=\"36\" y=\"223\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Stocks</text><text x=\"36\" y=\"234\" font-size=\"6.3\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Last close, example</text><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "portfolio-markets-portfolio-and-markets-deck-price-refresh-09",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-13",
+   "split_from_pair": "portfolio-markets-portfolio-and-markets-deck-18"
+  },
+  {
+   "group": "Allocation",
+   "category": "Price Refresh",
+   "app": "Portfolio",
+   "ask": "Price Refresh: Text Links Or Sticky Bottom Bar?",
+   "optionA": {
+    "id": "bkpf_pricesa0_tl2_rounded",
+    "label": "Text Links, Rounded Corners",
+    "desc": "Price Refresh: text links with rounded corners.",
+    "tags": [
+     "quick",
+     "calm"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Portfolio</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Finance Review · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24\" y=\"66\" width=\"60\" height=\"60\" rx=\"6\" fill=\"#0B6E4F14\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"36.0\" y=\"96.0\" width=\"4.8\" height=\"15.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"43.8\" y=\"87.0\" width=\"4.8\" height=\"24.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"51.6\" y=\"93.0\" width=\"4.8\" height=\"18.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"59.400000000000006\" y=\"81.0\" width=\"4.8\" height=\"30.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"67.19999999999999\" y=\"75.0\" width=\"4.8\" height=\"36.0\" rx=\"1\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"94\" y=\"82\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Stocks</text><text x=\"94\" y=\"96\" font-size=\"6.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Last close, example</text><text x=\"24\" y=\"156\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\" text-decoration=\"underline\">BTC</text><text x=\"130\" y=\"156\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\" text-decoration=\"underline\">UPDATED</text><text x=\"14\" y=\"198\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Market Opens</text><text x=\"226\" y=\"198\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Time</text><line x1=\"14\" y1=\"206\" x2=\"226\" y2=\"206\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(22,266) scale(0.5)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Notes</text><rect x=\"122\" y=\"262\" width=\"104\" height=\"20\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><g transform=\"translate(130,266) scale(0.5)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"148\" y=\"276\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Share</text><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "optionB": {
+    "id": "bkpf_pricesa0_sbb3_square",
+    "label": "Sticky Bottom Bar, Square Corners",
+    "desc": "Price Refresh: sticky bottom bar with square corners.",
+    "tags": [
+     "calm",
+     "visual"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Portfolio</text><text x=\"14\" y=\"34\" font-size=\"6.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Finance Review · Example</text><g transform=\"translate(208,14) scale(0.5833333333333334)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"56\" width=\"212\" height=\"120\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24\" y=\"66\" width=\"60\" height=\"60\" rx=\"6\" fill=\"#0B6E4F14\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"36.0\" y=\"96.0\" width=\"4.8\" height=\"15.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"43.8\" y=\"87.0\" width=\"4.8\" height=\"24.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"51.6\" y=\"93.0\" width=\"4.8\" height=\"18.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"59.400000000000006\" y=\"81.0\" width=\"4.8\" height=\"30.0\" rx=\"1\" fill=\"#0B6E4F66\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"67.19999999999999\" y=\"75.0\" width=\"4.8\" height=\"36.0\" rx=\"1\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"94\" y=\"82\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Stocks</text><text x=\"94\" y=\"96\" font-size=\"6.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Last close, example</text><rect x=\"0\" y=\"228\" width=\"240\" height=\"34\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"0\" y1=\"228\" x2=\"240\" y2=\"228\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"232\" width=\"140\" height=\"26\" rx=\"0\" fill=\"#0A0A0A\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"84.0\" y=\"247.7\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">BTC</text><rect x=\"160\" y=\"232\" width=\"66\" height=\"26\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"193.0\" y=\"247.7\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">MORE</text><text x=\"14\" y=\"198\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Market Opens</text><text x=\"226\" y=\"198\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Time</text><line x1=\"14\" y1=\"206\" x2=\"226\" y2=\"206\" stroke=\"#E5E0D8\"/><text x=\"120\" y=\"292\" font-size=\"6\" fill=\"#9A948A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Built By Max Weberman</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#F7F4EF"
+    },
+    "share": true
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "id": "portfolio-markets-portfolio-and-markets-deck-price-refresh-10",
+   "repeat": false,
+   "share": true,
+   "generated": "2026-10-13",
+   "split_from_pair": "portfolio-markets-portfolio-and-markets-deck-20"
+  }
+ ],
+ "share": true,
+ "notes": true,
+ "split_from": "portfolio-markets-portfolio-and-markets-deck",
+ "split_part": "b",
+ "split_sibling": "portfolio-markets-portfolio-and-markets-deck-target-mix",
+ "split_note": "R86 (Max Oct 17 2026 07:50 ICT): 10 picks per deck; split from the unanswered 20-pick deck portfolio-markets-portfolio-and-markets-deck"
+}

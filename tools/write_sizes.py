@@ -41,7 +41,9 @@ def main():
             banks[slug] = int(n)
     if banks:
         sizes["banks"] = banks
-    sizes["max_pairs"] = 20   # Oct 14 2026 rule: decks never exceed 20 pairs (existing live decks keep their size)
+    sizes["max_pairs"] = 10   # R86 (Max Oct 17 2026 07:50 ICT): 10 picks per deck, 10 decks per shelf (was 20). Existing live decks keep their size
+    sizes["default_pairs"] = 10
+    sizes["shelf_cap"] = 10
     os.makedirs(DECKS, exist_ok=True)
     json.dump(sizes, open(OUT, "w"), indent=1, ensure_ascii=False)
     print(f"wrote {OUT}: {len(sizes) - (1 if banks else 0)} decks, {len(banks)} banks")

@@ -2824,7 +2824,7 @@ def render_index(deck):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--date", help="YYYY-MM-DD (default: today, local time)")
-    ap.add_argument("--pairs", type=int, default=20, help="deck size, max 20 (Oct 14 2026 rule: never more than 20; shorter is fine)")
+    ap.add_argument("--pairs", type=int, default=10, help="deck size, max 10 (R86 (Max Oct 17 2026 07:50 ICT): 10 picks per deck, 10 decks per shelf; was 20)")
     ap.add_argument("--format", choices=["pairs", "single"], default="pairs", help="A-vs-B pairs (default: This / That / Both / Love / Neither) or single-option cards (No/Maybe/Love/Yes)")
     ap.add_argument("--polish", action="store_true", help="build a hand-paired app-polish deck: the newest unseen set (Niko & Vivian apps: 45 + 1 retest + 4 Swipe Controls = 50 pairs; or the 10-10g set: 95 + 5)")
     ap.add_argument("--polish-set", choices=["nv2", "nv", "2026-10-10g"], help="with --polish: which hand-paired set (default: newest set that is still unseen; 'nv' = Niko & Vivian apps, 50 pairs)")
@@ -2840,7 +2840,7 @@ def main():
     ap.add_argument("--check-share", type=float, default=0.12, help="share of pairs that re-test disliked directions (default 0.12)")
     ap.add_argument("--allow-repeats", action="store_true", help="if the fresh pool runs out, top up with previously shown options")
     a = ap.parse_args()
-    if a.pairs > 20: print(f"WARNING: --pairs {a.pairs} > 20; decks never exceed 20 pairs. Using 20."); a.pairs = 20
+    if a.pairs > 10: print(f"WARNING: --pairs {a.pairs} > 10; decks have 10 picks (R86). Using 10."); a.pairs = 10
     os.makedirs(DECKS, exist_ok=True)
     if not os.path.exists(PROFILE):
         with open(PROFILE, "w") as f: json.dump(empty_profile(), f, indent=1)

@@ -1,0 +1,529 @@
+{
+ "date": "upkeep-order-form-sign-up-form-deck-policies-summary",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Sign Up Form: Policies & Summary",
+ "generated_at": "2026-10-17T08:02:22+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "calm": 10,
+  "focused": 9,
+  "quick": 1
+ },
+ "groups": {
+  "Trust": 1,
+  "Add-On Upsell": 1,
+  "Order Form": 8
+ },
+ "apps": {
+  "UpKeep": 10
+ },
+ "freshness": {
+  "option_slots": 20,
+  "never_shown_before": 0,
+  "share": 0.0,
+  "note": "options reused from upkeep-order-form-sign-up-form-deck (split, not new)"
+ },
+ "warnings": [],
+ "submit_agent": "upkeep",
+ "deck_size": 10,
+ "carried": 2,
+ "topic": "upkeep-order-form",
+ "shelf": true,
+ "bank_pairs": [
+  "upkeep-order-form-sign-up-form-deck-01",
+  "upkeep-order-form-sign-up-form-deck-02",
+  "upkeep-order-form-sign-up-form-deck-13",
+  "upkeep-order-form-sign-up-form-deck-14",
+  "upkeep-order-form-sign-up-form-deck-15",
+  "upkeep-order-form-sign-up-form-deck-16",
+  "upkeep-order-form-sign-up-form-deck-17",
+  "upkeep-order-form-sign-up-form-deck-18",
+  "upkeep-order-form-sign-up-form-deck-19",
+  "upkeep-order-form-sign-up-form-deck-20"
+ ],
+ "source": "banks/src-upkeep-order-form-next.json",
+ "pairs": [
+  {
+   "group": "Trust",
+   "category": "Trust",
+   "app": "UpKeep",
+   "ask": "Re-Ask, Michigan 3-Day Cancel Notice: Beside The Agreement Signature Or At The Bottom?",
+   "optionA": {
+    "id": "of1_mi_sig_ra",
+    "label": "Beside The Signature",
+    "desc": "As live, next to where you sign.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"26\" rx=\"6\" fill=\"#D4A0171A\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"50\" width=\"3\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(22,56) scale(0.5833333333333334)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#D4A017\" stroke-width=\"2\"/><path d=\"M7 12.5 l3.5 3.5 6.5 -7\" fill=\"none\" stroke=\"#D4A017\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"42\" y=\"66.5\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >3-Day Cancel Right</text><rect x=\"14\" y=\"82\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,88) scale(0.6666666666666666)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\"/><path d=\"M7 12.5 l3.5 3.5 6.5 -7\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"44\" y=\"100\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Signature</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "of1_mi_bot_ra",
+    "label": "At The Bottom",
+    "desc": "Above Complete Sign Up.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,56) scale(0.6666666666666666)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\"/><path d=\"M7 12.5 l3.5 3.5 6.5 -7\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"44\" y=\"68\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Signature</text><rect x=\"14\" y=\"86\" width=\"212\" height=\"26\" rx=\"6\" fill=\"#D4A0171A\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"86\" width=\"3\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(22,92) scale(0.5833333333333334)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#D4A017\" stroke-width=\"2\"/><path d=\"M7 12.5 l3.5 3.5 6.5 -7\" fill=\"none\" stroke=\"#D4A017\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"42\" y=\"102.5\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >3-Day Cancel Right</text><rect x=\"14\" y=\"118\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"134.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">COMPLETE SIGN UP</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "retest",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-order-form-sign-up-form-deck-policies-summary-01",
+   "repeat": false,
+   "carried_from": "upkeep-order-form-order-form-deck-20",
+   "split_from_pair": "upkeep-order-form-sign-up-form-deck-01"
+  },
+  {
+   "group": "Add-On Upsell",
+   "category": "Add-On Upsell",
+   "app": "UpKeep",
+   "ask": "Re-Ask, Pop-Up Extra Picked: Take Turns Through The List Or Random?",
+   "optionA": {
+    "id": "of2_fr_rr_ra",
+    "label": "Take Turns",
+    "desc": "Windows, Chimney, Radon, Gutters, Pressure, Ducts in order, as live.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"40.856\" height=\"11.02\" rx=\"5.8\" fill=\"#C1502E1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"34.428\" y=\"58.004\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">WINDOWS</text><rect x=\"60.856\" y=\"50\" width=\"40.856\" height=\"11.02\" rx=\"5.8\" fill=\"#05668D1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"81.284\" y=\"58.004\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">CHIMNEY</text><rect x=\"107.712\" y=\"50\" width=\"32.04\" height=\"11.02\" rx=\"5.8\" fill=\"#0B6E4F1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"123.732\" y=\"58.004\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">RADON</text><rect x=\"145.752\" y=\"50\" width=\"40.856\" height=\"11.02\" rx=\"5.8\" fill=\"#D4A0171F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"166.18\" y=\"58.004\" font-size=\"7.5\" fill=\"#D4A017\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">GUTTERS</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "of2_fr_rand_ra",
+    "label": "Random",
+    "desc": "Any one of the six.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sign Up</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"32.04\" height=\"11.02\" rx=\"5.8\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"30.02\" y=\"58.004\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">RADON</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "retest",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-order-form-sign-up-form-deck-policies-summary-02",
+   "repeat": false,
+   "carried_from": "upkeep-order-form-details-order-form-details-deck-11",
+   "split_from_pair": "upkeep-order-form-sign-up-form-deck-02"
+  },
+  {
+   "group": "Order Form",
+   "category": "Order Form",
+   "app": "UpKeep",
+   "ask": "Referral Code Check: Check It Right Away Or After Join?",
+   "optionA": {
+    "id": "ofx_17a_check_it_right",
+    "label": "Check It Right Away",
+    "desc": "Referral Code Check",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Order Form</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">REFERRAL CODE CHECK</text><rect x=\"14\" y=\"66\" width=\"212\" height=\"40\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"86.0\" r=\"3.5\" fill=\"#05668D\"/><text x=\"36\" y=\"89.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Check It Right Away</text><rect x=\"14\" y=\"112\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"128.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">JOIN PLUS</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "ofx_17b_after_join",
+    "label": "After Join",
+    "desc": "Referral Code Check",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Order Form</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">REFERRAL CODE CHECK</text><rect x=\"14\" y=\"66\" width=\"212\" height=\"40\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"86.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"89.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >After Join</text><rect x=\"14\" y=\"112\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"128.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">JOIN PLUS</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-order-form-sign-up-form-deck-policies-summary-03",
+   "repeat": false,
+   "split_from_pair": "upkeep-order-form-sign-up-form-deck-13"
+  },
+  {
+   "group": "Order Form",
+   "category": "Order Form",
+   "app": "UpKeep",
+   "ask": "\"Due At Sign Up\": Show Monthly Equivalent Under It Or Total Only?",
+   "optionA": {
+    "id": "ofx_10a_show_monthly_e",
+    "label": "Show Monthly Equivalent Under It",
+    "desc": "\"Due At Sign Up\"",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Order Form</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">\"DUE AT SIGN UP\"</text><rect x=\"14\" y=\"66\" width=\"212\" height=\"40\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"86.0\" r=\"3.5\" fill=\"#05668D\"/><text x=\"36\" y=\"89.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Show Monthly Equivalent Under </text><rect x=\"14\" y=\"112\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"128.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">JOIN PLUS</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "ofx_10b_total_only",
+    "label": "Total Only",
+    "desc": "\"Due At Sign Up\"",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Order Form</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">\"DUE AT SIGN UP\"</text><rect x=\"14\" y=\"66\" width=\"212\" height=\"40\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"86.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"89.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Total Only</text><rect x=\"14\" y=\"112\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"128.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">JOIN PLUS</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-order-form-sign-up-form-deck-policies-summary-04",
+   "repeat": false,
+   "split_from_pair": "upkeep-order-form-sign-up-form-deck-14"
+  },
+  {
+   "group": "Order Form",
+   "category": "Order Form",
+   "app": "UpKeep",
+   "ask": "Field Errors: Red Text Only Or Red Text Plus Red Box Outline?",
+   "optionA": {
+    "id": "ofx_15a_red_text_only",
+    "label": "Red Text Only",
+    "desc": "Field Errors",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Order Form</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">FIELD ERRORS</text><rect x=\"14\" y=\"66\" width=\"212\" height=\"40\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"86.0\" r=\"3.5\" fill=\"#05668D\"/><text x=\"36\" y=\"89.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Red Text Only</text><rect x=\"14\" y=\"112\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"128.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">JOIN PLUS</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "ofx_15b_red_text_plus_",
+    "label": "Red Text Plus Red Box Outline",
+    "desc": "Field Errors",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Order Form</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">FIELD ERRORS</text><rect x=\"14\" y=\"66\" width=\"212\" height=\"40\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"86.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"89.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Red Text Plus Red Box Outline</text><rect x=\"14\" y=\"112\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"128.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">JOIN PLUS</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-order-form-sign-up-form-deck-policies-summary-05",
+   "repeat": false,
+   "split_from_pair": "upkeep-order-form-sign-up-form-deck-15"
+  },
+  {
+   "group": "Order Form",
+   "category": "Order Form",
+   "app": "UpKeep",
+   "ask": "Agreement Scroll Box: Short (About 5 Lines) Or Tall (About 10 Lines)?",
+   "optionA": {
+    "id": "ofx_08a_short_about_5_",
+    "label": "Short (About 5 Lines)",
+    "desc": "Agreement Scroll Box",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Order Form</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">AGREEMENT SCROLL BOX</text><rect x=\"14\" y=\"66\" width=\"212\" height=\"40\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"86.0\" r=\"3.5\" fill=\"#05668D\"/><text x=\"36\" y=\"89.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Short (About 5 Lines)</text><rect x=\"14\" y=\"112\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"128.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">JOIN PLUS</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "ofx_08b_tall_about_10_",
+    "label": "Tall (About 10 Lines)",
+    "desc": "Agreement Scroll Box",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Order Form</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">AGREEMENT SCROLL BOX</text><rect x=\"14\" y=\"66\" width=\"212\" height=\"40\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"86.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"89.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Tall (About 10 Lines)</text><rect x=\"14\" y=\"112\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"128.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">JOIN PLUS</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-order-form-sign-up-form-deck-policies-summary-06",
+   "repeat": false,
+   "split_from_pair": "upkeep-order-form-sign-up-form-deck-16"
+  },
+  {
+   "group": "Order Form",
+   "category": "Order Form",
+   "app": "UpKeep",
+   "ask": "Cancel Policy Card: Folded Shut Or Shown Open?",
+   "optionA": {
+    "id": "ofx_09a_folded_shut",
+    "label": "Folded Shut",
+    "desc": "Cancel Policy Card",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Order Form</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">CANCEL POLICY CARD</text><rect x=\"14\" y=\"66\" width=\"212\" height=\"40\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"86.0\" r=\"3.5\" fill=\"#05668D\"/><text x=\"36\" y=\"89.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Folded Shut</text><rect x=\"14\" y=\"112\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"128.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">JOIN PLUS</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "ofx_09b_shown_open",
+    "label": "Shown Open",
+    "desc": "Cancel Policy Card",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Order Form</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">CANCEL POLICY CARD</text><rect x=\"14\" y=\"66\" width=\"212\" height=\"40\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"86.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"89.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Shown Open</text><rect x=\"14\" y=\"112\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"128.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">JOIN PLUS</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-order-form-sign-up-form-deck-policies-summary-07",
+   "repeat": false,
+   "split_from_pair": "upkeep-order-form-sign-up-form-deck-17"
+  },
+  {
+   "group": "Order Form",
+   "category": "Order Form",
+   "app": "UpKeep",
+   "ask": "Each Extra In Summary: Name And +$/Month Or Name Only With A Total?",
+   "optionA": {
+    "id": "ofx_11a_name_and_month",
+    "label": "Name And +$/Month",
+    "desc": "Each Extra In Summary",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Order Form</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">EACH EXTRA IN SUMMARY</text><rect x=\"14\" y=\"66\" width=\"212\" height=\"40\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"86.0\" r=\"3.5\" fill=\"#05668D\"/><text x=\"36\" y=\"89.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Name And +$/Month</text><rect x=\"14\" y=\"112\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"128.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">JOIN PLUS</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "ofx_11b_name_only_with",
+    "label": "Name Only With A Total",
+    "desc": "Each Extra In Summary",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Order Form</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">EACH EXTRA IN SUMMARY</text><rect x=\"14\" y=\"66\" width=\"212\" height=\"40\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"86.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"89.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Name Only With A Total</text><rect x=\"14\" y=\"112\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"128.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">JOIN PLUS</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-order-form-sign-up-form-deck-policies-summary-08",
+   "repeat": false,
+   "split_from_pair": "upkeep-order-form-sign-up-form-deck-18"
+  },
+  {
+   "group": "Order Form",
+   "category": "Order Form",
+   "app": "UpKeep",
+   "ask": "Field Labels: Above The Box Or Inside The Box?",
+   "optionA": {
+    "id": "ofx_16a_above_the_box",
+    "label": "Above The Box",
+    "desc": "Field Labels",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Order Form</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">FIELD LABELS</text><rect x=\"14\" y=\"66\" width=\"212\" height=\"40\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"86.0\" r=\"3.5\" fill=\"#05668D\"/><text x=\"36\" y=\"89.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Above The Box</text><rect x=\"14\" y=\"112\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"128.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">JOIN PLUS</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "ofx_16b_inside_the_box",
+    "label": "Inside The Box",
+    "desc": "Field Labels",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Order Form</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">FIELD LABELS</text><rect x=\"14\" y=\"66\" width=\"212\" height=\"40\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"86.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"89.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Inside The Box</text><rect x=\"14\" y=\"112\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"128.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">JOIN PLUS</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-order-form-sign-up-form-deck-policies-summary-09",
+   "repeat": false,
+   "split_from_pair": "upkeep-order-form-sign-up-form-deck-19"
+  },
+  {
+   "group": "Order Form",
+   "category": "Order Form",
+   "app": "UpKeep",
+   "ask": "Last-Minute Jobs In Summary: Own Section Or Mixed With Extras?",
+   "optionA": {
+    "id": "ofx_12a_own_section",
+    "label": "Own Section",
+    "desc": "Last-Minute Jobs In Summary",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Order Form</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">LAST-MINUTE JOBS IN SUMMARY</text><rect x=\"14\" y=\"66\" width=\"212\" height=\"40\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"86.0\" r=\"3.5\" fill=\"#05668D\"/><text x=\"36\" y=\"89.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Own Section</text><rect x=\"14\" y=\"112\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"128.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">JOIN PLUS</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "ofx_12b_mixed_with_ext",
+    "label": "Mixed With Extras",
+    "desc": "Last-Minute Jobs In Summary",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Order Form</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">LAST-MINUTE JOBS IN SUMMARY</text><rect x=\"14\" y=\"66\" width=\"212\" height=\"40\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"86.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"89.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Mixed With Extras</text><rect x=\"14\" y=\"112\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"#D4A017\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"128.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">JOIN PLUS</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-order-form-sign-up-form-deck-policies-summary-10",
+   "repeat": false,
+   "split_from_pair": "upkeep-order-form-sign-up-form-deck-20"
+  }
+ ],
+ "share": true,
+ "notes": true,
+ "split_from": "upkeep-order-form-sign-up-form-deck",
+ "split_part": "a",
+ "split_sibling": "upkeep-order-form-sign-up-form-deck-fields-payment",
+ "split_note": "R86 (Max Oct 17 2026 07:50 ICT): 10 picks per deck; split from the unanswered 20-pick deck upkeep-order-form-sign-up-form-deck"
+}

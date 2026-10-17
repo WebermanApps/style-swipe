@@ -1,0 +1,532 @@
+{
+ "date": "upkeep-technician-page-deck-checklist-today",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Technician Page: Checklist & Today",
+ "generated_at": "2026-10-17T08:02:22+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "practical": 3,
+  "visual": 2,
+  "simple": 2,
+  "quick": 4,
+  "focused": 3,
+  "thorough": 1,
+  "precise": 1,
+  "personal": 1,
+  "tidy": 1,
+  "direct": 1,
+  "complete": 1
+ },
+ "groups": {
+  "Today": 1,
+  "Navigation": 1,
+  "Checklist": 2,
+  "Readings": 1,
+  "Notes For The Member": 1,
+  "Past Reports": 1,
+  "Certifications": 1,
+  "Member Contact": 1,
+  "Home Record": 1
+ },
+ "apps": {
+  "UpKeep": 10
+ },
+ "freshness": {
+  "option_slots": 20,
+  "never_shown_before": 0,
+  "share": 0.0,
+  "note": "options reused from upkeep-technician-page-deck (split, not new)"
+ },
+ "warnings": [],
+ "brands": [
+  "Smart Upkeep technician page: today's visits, job view, checklists, photos, readings, reports, van inventory"
+ ],
+ "submit_agent": "upkeep",
+ "topic": "upkeep-technician-page-deck",
+ "deck_size": 10,
+ "board": "upkeep",
+ "audience": "Max",
+ "requested": true,
+ "pairs": [
+  {
+   "group": "Today",
+   "category": "Today",
+   "app": "UpKeep",
+   "ask": "Today's Visits: Route List Or Map First?",
+   "optionA": {
+    "id": "tpp_td_list",
+    "label": "Route List",
+    "desc": "Visits in order with times.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Technician</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"66\" font-size=\"16\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Good Morning</text><rect x=\"14\" y=\"74\" width=\"212\" height=\"32\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"90.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"89.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Sample block A</text><text x=\"36\" y=\"99.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >8:00 · Fall Visit</text><text x=\"218\" y=\"93.0\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >1</text><rect x=\"14\" y=\"112\" width=\"212\" height=\"32\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"128.0\" r=\"3.5\" fill=\"#05668D\"/><text x=\"36\" y=\"127.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Sample block B</text><text x=\"36\" y=\"137.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >11:00 · Fall Visit</text><text x=\"218\" y=\"131.0\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >2</text><rect x=\"14\" y=\"150\" width=\"212\" height=\"32\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"166.0\" r=\"3.5\" fill=\"#0B6E4F\"/><text x=\"36\" y=\"165.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Sample block C</text><text x=\"36\" y=\"175.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >2:00 · Scan</text><text x=\"218\" y=\"169.0\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >3</text><line x1=\"14\" y1=\"260\" x2=\"226\" y2=\"260\" stroke=\"#E5E0D8\"/><g transform=\"translate(32,266) scale(0.625)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"291\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Today</text><g transform=\"translate(85,266) scale(0.625)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"93\" y=\"291\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Reports</text><g transform=\"translate(138,266) scale(0.625)\"><path d=\"M3 12 V4 H11 L21 14 L13 22 Z\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><circle cx=\"7.5\" cy=\"8.5\" r=\"1.6\" fill=\"#525252\"/></g><text x=\"146\" y=\"291\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Van</text><g transform=\"translate(191,266) scale(0.625)\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"16\" rx=\"2\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.8\"/><path d=\"M3 10 H21 M8 3 V7 M16 3 V7\" stroke=\"#525252\" stroke-width=\"1.8\"/></g><text x=\"199\" y=\"291\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Profile</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "tpp_td_map",
+    "label": "Map First",
+    "desc": "Map with numbered stops, list below.",
+    "tags": [
+     "visual"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Technician</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"110\" rx=\"8\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"56\" y1=\"50\" x2=\"76\" y2=\"160\" stroke=\"#E5E0D8\" stroke-width=\"5\"/><line x1=\"98\" y1=\"50\" x2=\"118\" y2=\"160\" stroke=\"#E5E0D8\" stroke-width=\"5\"/><line x1=\"140\" y1=\"50\" x2=\"160\" y2=\"160\" stroke=\"#E5E0D8\" stroke-width=\"5\"/><line x1=\"182\" y1=\"50\" x2=\"202\" y2=\"160\" stroke=\"#E5E0D8\" stroke-width=\"5\"/><path d=\"M30 144 Q90 70 150 110.5 T210 68\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2.5\" stroke-dasharray=\"5 3\"/><circle cx=\"30\" cy=\"144\" r=\"5\" fill=\"#C1502E\"/><circle cx=\"210\" cy=\"68\" r=\"5\" fill=\"#0B6E4F\"/><rect x=\"14\" y=\"168\" width=\"212\" height=\"30\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"183.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"182.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Next: Sample block A</text><text x=\"36\" y=\"192.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >8:00</text><text x=\"218\" y=\"186.0\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >›</text><line x1=\"14\" y1=\"260\" x2=\"226\" y2=\"260\" stroke=\"#E5E0D8\"/><g transform=\"translate(32,266) scale(0.625)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"40\" y=\"291\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Today</text><g transform=\"translate(85,266) scale(0.625)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><text x=\"93\" y=\"291\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Reports</text><g transform=\"translate(138,266) scale(0.625)\"><path d=\"M3 12 V4 H11 L21 14 L13 22 Z\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><circle cx=\"7.5\" cy=\"8.5\" r=\"1.6\" fill=\"#525252\"/></g><text x=\"146\" y=\"291\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Van</text><g transform=\"translate(191,266) scale(0.625)\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"16\" rx=\"2\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.8\"/><path d=\"M3 10 H21 M8 3 V7 M16 3 V7\" stroke=\"#525252\" stroke-width=\"1.8\"/></g><text x=\"199\" y=\"291\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Profile</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-technician-page-deck-checklist-today-01",
+   "repeat": false,
+   "split_from_pair": "upkeep-technician-page-deck-15"
+  },
+  {
+   "group": "Navigation",
+   "category": "Navigation",
+   "app": "UpKeep",
+   "ask": "Directions: Navigate Button On Each Job Or One Start Route Button?",
+   "optionA": {
+    "id": "tpp_nv_each",
+    "label": "Button On Each Job",
+    "desc": "Open maps one stop at a time.",
+    "tags": [
+     "simple"
+    ],
+    "feeling": "simple",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Technician</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"30\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"65.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"64.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Sample block A</text><text x=\"36\" y=\"74.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >8:00</text><rect x=\"14\" y=\"86\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#05668D\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"102.24\" font-size=\"9\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">NAVIGATE</text><rect x=\"14\" y=\"120\" width=\"212\" height=\"30\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"135.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"134.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Sample block B</text><text x=\"36\" y=\"144.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >11:00</text><rect x=\"14\" y=\"156\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#05668D\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"172.24\" font-size=\"9\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">NAVIGATE</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "tpp_nv_route",
+    "label": "Start Route",
+    "desc": "One tap loads all stops in order.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Technician</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"40\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"70.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"69.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >3 visits today</text><text x=\"36\" y=\"79.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >About 4 hours on site</text><rect x=\"14\" y=\"96\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"112.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">START ROUTE</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-technician-page-deck-checklist-today-02",
+   "repeat": false,
+   "split_from_pair": "upkeep-technician-page-deck-13"
+  },
+  {
+   "group": "Checklist",
+   "category": "Checklist",
+   "app": "UpKeep",
+   "ask": "Visit Checklist: One Long List Or Grouped By Area?",
+   "optionA": {
+    "id": "tpp_ck_long",
+    "label": "One Long List",
+    "desc": "Every task top to bottom.",
+    "tags": [
+     "simple"
+    ],
+    "feeling": "simple",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Technician</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"52\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M17 58 l2.5 2.5 4.5 -5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"1.8\"/><text x=\"34\" y=\"61.5\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Furnace filter changed</text><line x1=\"34\" y1=\"69\" x2=\"226\" y2=\"69\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"74\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M17 80 l2.5 2.5 4.5 -5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"1.8\"/><text x=\"34\" y=\"83.5\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Fall furnace tune-up</text><line x1=\"34\" y1=\"91\" x2=\"226\" y2=\"91\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"96\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"105.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Gutter cleaning</text><line x1=\"34\" y1=\"113\" x2=\"226\" y2=\"113\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"118\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"127.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Smoke and CO checks</text><line x1=\"34\" y1=\"135\" x2=\"226\" y2=\"135\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"140\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"149.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Dryer vent cleaning</text><line x1=\"34\" y1=\"157\" x2=\"226\" y2=\"157\" stroke=\"#E5E0D8\"/></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "tpp_ck_group",
+    "label": "Grouped By Area",
+    "desc": "HVAC, Plumbing, Exterior, Safety.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Technician</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"30\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"65.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"64.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >HVAC Checks</text><text x=\"36\" y=\"74.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >2 of 3 done</text><text x=\"218\" y=\"68.0\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >›</text><rect x=\"14\" y=\"86\" width=\"212\" height=\"30\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"101.0\" r=\"3.5\" fill=\"#05668D\"/><text x=\"36\" y=\"100.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Plumbing</text><text x=\"36\" y=\"110.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >0 of 2</text><text x=\"218\" y=\"104.0\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >›</text><rect x=\"14\" y=\"122\" width=\"212\" height=\"30\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"137.0\" r=\"3.5\" fill=\"#0B6E4F\"/><text x=\"36\" y=\"136.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Gutters</text><text x=\"36\" y=\"146.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >0 of 1</text><text x=\"218\" y=\"140.0\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >›</text><rect x=\"14\" y=\"158\" width=\"212\" height=\"30\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"173.0\" r=\"3.5\" fill=\"#D4A017\"/><text x=\"36\" y=\"172.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Safety</text><text x=\"36\" y=\"182.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >1 of 2</text><text x=\"218\" y=\"176.0\" font-size=\"7.5\" fill=\"#D4A017\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >›</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-technician-page-deck-checklist-today-03",
+   "repeat": false,
+   "split_from_pair": "upkeep-technician-page-deck-11"
+  },
+  {
+   "group": "Checklist",
+   "category": "Checklist",
+   "app": "UpKeep",
+   "ask": "Ticking A Task: Checkbox Only Or Checkbox Plus Required Photo?",
+   "optionA": {
+    "id": "tpp_tk_box",
+    "label": "Checkbox Only",
+    "desc": "Fast; photos are optional.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Technician</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"52\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M17 58 l2.5 2.5 4.5 -5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"1.8\"/><text x=\"34\" y=\"61.5\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Water heater flush</text><line x1=\"34\" y1=\"69\" x2=\"226\" y2=\"69\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"74\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"83.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Softener salt top-off</text><line x1=\"34\" y1=\"91\" x2=\"226\" y2=\"91\" stroke=\"#E5E0D8\"/></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "tpp_tk_photo",
+    "label": "Checkbox Plus Photo",
+    "desc": "Task can't close without a photo.",
+    "tags": [
+     "thorough"
+    ],
+    "feeling": "thorough",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Technician</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"52\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"61.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Water heater flush</text><line x1=\"34\" y1=\"69\" x2=\"226\" y2=\"69\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"78\" width=\"212\" height=\"60\" rx=\"6\" fill=\"#0B6E4F1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M14 120.0 H226 M77.6 78 V120.0\" stroke=\"#0B6E4F66\" stroke-width=\"1.2\"/><rect x=\"109.4\" y=\"105.0\" width=\"74.19999999999999\" height=\"15.0\" rx=\"3\" fill=\"#0B6E4F44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"30.96\" y=\"90.0\" width=\"31.799999999999997\" height=\"18.0\" rx=\"2\" fill=\"#FFFFFF\" stroke=\"#0B6E4F88\" stroke-width=\"1\" /><rect x=\"14\" y=\"146\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0B6E4F\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"162.24\" font-size=\"9\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">ADD PHOTO</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-technician-page-deck-checklist-today-04",
+   "repeat": false,
+   "split_from_pair": "upkeep-technician-page-deck-19"
+  },
+  {
+   "group": "Readings",
+   "category": "Readings",
+   "app": "UpKeep",
+   "ask": "Moisture Readings: Type A Number Or Tap Dry, Watch, Wet?",
+   "optionA": {
+    "id": "tpp_rd_num",
+    "label": "Type A Number",
+    "desc": "Meter reading in percent.",
+    "tags": [
+     "precise"
+    ],
+    "feeling": "precise",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Technician</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"30\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"65.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"64.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Under kitchen sink</text><text x=\"36\" y=\"74.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Reading</text><rect x=\"14\" y=\"86\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,92) scale(0.6666666666666666)\"><rect x=\"9\" y=\"3\" width=\"6\" height=\"11\" rx=\"3\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2\"/><path d=\"M5 11 Q5 18 12 18 Q19 18 19 11 M12 18 V21\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2\"/></g><text x=\"44\" y=\"104\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Reading %</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "tpp_rd_tap",
+    "label": "Tap Dry, Watch, Wet",
+    "desc": "Three big buttons.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Technician</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"30\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"65.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"68.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Under kitchen sink</text><rect x=\"14\" y=\"86\" width=\"23.223999999999997\" height=\"11.02\" rx=\"5.8\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"25.612\" y=\"94.004\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">DRY</text><rect x=\"43.224\" y=\"86\" width=\"32.04\" height=\"11.02\" rx=\"5.8\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"59.244\" y=\"94.004\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">WATCH</text><rect x=\"81.264\" y=\"86\" width=\"23.223999999999997\" height=\"11.02\" rx=\"5.8\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"92.87599999999999\" y=\"94.004\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">WET</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-technician-page-deck-checklist-today-05",
+   "repeat": false,
+   "split_from_pair": "upkeep-technician-page-deck-05"
+  },
+  {
+   "group": "Notes For The Member",
+   "category": "Notes For The Member",
+   "app": "UpKeep",
+   "ask": "Notes For The Member: Free Text Or Quick Phrase Chips?",
+   "optionA": {
+    "id": "tpp_nm_text",
+    "label": "Free Text",
+    "desc": "Write what you did and what to watch.",
+    "tags": [
+     "personal"
+    ],
+    "feeling": "personal",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Technician</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">NOTES FOR THE MEMBER</text><rect x=\"14\" y=\"66\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,72) scale(0.6666666666666666)\"><rect x=\"9\" y=\"3\" width=\"6\" height=\"11\" rx=\"3\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2\"/><path d=\"M5 11 Q5 18 12 18 Q19 18 19 11 M12 18 V21\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2\"/></g><text x=\"44\" y=\"84\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >What you did and anything to watch</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "tpp_nm_chips",
+    "label": "Quick Phrases",
+    "desc": "Tap chips, add a line if needed.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Technician</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"76.12\" height=\"11.02\" rx=\"5.8\" fill=\"#C1502E1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"52.06\" y=\"58.004\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">NO ISSUES FOUND</text><rect x=\"96.12\" y=\"50\" width=\"89.344\" height=\"11.02\" rx=\"5.8\" fill=\"#05668D1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"140.792\" y=\"58.004\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">RECHECK NEXT VISIT</text><rect x=\"14\" y=\"66\" width=\"80.52799999999999\" height=\"11.02\" rx=\"5.8\" fill=\"#0B6E4F1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"54.263999999999996\" y=\"74.004\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">AIRFLOW IMPROVED</text><rect x=\"14\" y=\"86\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,92) scale(0.6666666666666666)\"><rect x=\"9\" y=\"3\" width=\"6\" height=\"11\" rx=\"3\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2\"/><path d=\"M5 11 Q5 18 12 18 Q19 18 19 11 M12 18 V21\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2\"/></g><text x=\"44\" y=\"104\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Add a line</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-technician-page-deck-checklist-today-06",
+   "repeat": false,
+   "split_from_pair": "upkeep-technician-page-deck-06"
+  },
+  {
+   "group": "Past Reports",
+   "category": "Past Reports",
+   "app": "UpKeep",
+   "ask": "Past Reports: History For This Home Or All Reports With Search?",
+   "optionA": {
+    "id": "tpp_pr_home",
+    "label": "This Home's History",
+    "desc": "Opens from the job card.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Technician</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><line x1=\"22\" y1=\"56\" x2=\"22\" y2=\"128\" stroke=\"#D6D0C6\" stroke-width=\"1.5\"/><circle cx=\"22\" cy=\"58\" r=\"4.5\" fill=\"#C1502E\"/><text x=\"34\" y=\"61\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Summer Visit</text><text x=\"34\" y=\"71\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Jun 20, 2026</text><circle cx=\"22\" cy=\"88\" r=\"4.5\" fill=\"#05668D\"/><text x=\"34\" y=\"91\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Spring Visit</text><text x=\"34\" y=\"101\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Apr 15, 2026</text><circle cx=\"22\" cy=\"118\" r=\"4.5\" fill=\"#0B6E4F\"/><text x=\"34\" y=\"121\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Winter Visit</text><text x=\"34\" y=\"131\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Dec 2025</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "tpp_pr_all",
+    "label": "All Reports, Search",
+    "desc": "Find any report by address.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Technician</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,56) scale(0.6666666666666666)\"><rect x=\"9\" y=\"3\" width=\"6\" height=\"11\" rx=\"3\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2\"/><path d=\"M5 11 Q5 18 12 18 Q19 18 19 11 M12 18 V21\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2\"/></g><text x=\"44\" y=\"68\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Search address</text><rect x=\"14\" y=\"86\" width=\"212\" height=\"30\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"101.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"100.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Sample block A</text><text x=\"36\" y=\"110.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Jun 20</text><text x=\"218\" y=\"104.0\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Submitted</text><rect x=\"14\" y=\"122\" width=\"212\" height=\"30\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"137.0\" r=\"3.5\" fill=\"#05668D\"/><text x=\"36\" y=\"136.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Sample block B</text><text x=\"36\" y=\"146.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Jun 18</text><text x=\"218\" y=\"140.0\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Submitted</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-technician-page-deck-checklist-today-07",
+   "repeat": false,
+   "split_from_pair": "upkeep-technician-page-deck-20"
+  },
+  {
+   "group": "Certifications",
+   "category": "Certifications",
+   "app": "UpKeep",
+   "ask": "Certifications: Badges Or A List With Expiry Dates?",
+   "optionA": {
+    "id": "tpp_ct_badge",
+    "label": "Badges",
+    "desc": "Small badges on the profile.",
+    "tags": [
+     "visual"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Technician</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"70\" rx=\"6\" fill=\"#05668D1A\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"120.0\" cy=\"78.0\" r=\"11.9\" fill=\"#05668D66\"/><path d=\"M60.64 120 Q120.0 85.0 179.36 120 Z\" fill=\"#05668D66\"/><rect x=\"14\" y=\"102\" width=\"212\" height=\"18\" rx=\"0\" fill=\"#FFFFFFDD\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"114\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Sample technician</text><rect x=\"14\" y=\"128\" width=\"40.856\" height=\"11.02\" rx=\"5.8\" fill=\"#C1502E1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"34.428\" y=\"136.004\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">EPA 608</text><rect x=\"60.856\" y=\"128\" width=\"40.856\" height=\"11.02\" rx=\"5.8\" fill=\"#05668D1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"81.284\" y=\"136.004\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">EPA RRP</text><rect x=\"107.712\" y=\"128\" width=\"40.856\" height=\"11.02\" rx=\"5.8\" fill=\"#0B6E4F1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"128.14000000000001\" y=\"136.004\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">OSHA 10</text><rect x=\"154.568\" y=\"128\" width=\"23.223999999999997\" height=\"11.02\" rx=\"5.8\" fill=\"#D4A0171F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"166.18\" y=\"136.004\" font-size=\"7.5\" fill=\"#D4A017\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">CPR</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "tpp_ct_list",
+    "label": "List With Expiry",
+    "desc": "Each one with its renewal date.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Technician</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"28\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"64.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"67.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >EPA Section 608</text><text x=\"218\" y=\"67.0\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >No expiry</text><rect x=\"14\" y=\"84\" width=\"212\" height=\"28\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"98.0\" r=\"3.5\" fill=\"#05668D\"/><text x=\"36\" y=\"101.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >EPA Lead-Safe RRP</text><text x=\"218\" y=\"101.0\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Renew 2029</text><rect x=\"14\" y=\"118\" width=\"212\" height=\"28\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"132.0\" r=\"3.5\" fill=\"#0B6E4F\"/><text x=\"36\" y=\"135.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >CPR and First Aid</text><text x=\"218\" y=\"135.0\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Renew 2027</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-technician-page-deck-checklist-today-08",
+   "repeat": false,
+   "split_from_pair": "upkeep-technician-page-deck-16"
+  },
+  {
+   "group": "Member Contact",
+   "category": "Member Contact",
+   "app": "UpKeep",
+   "ask": "Reaching The Member: Message In The App Or Call And Text Buttons?",
+   "optionA": {
+    "id": "tpp_mc_app",
+    "label": "Message In The App",
+    "desc": "Thread saved with the visit.",
+    "tags": [
+     "tidy"
+    ],
+    "feeling": "tidy",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Technician</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"90.39999999999998\" y=\"50\" width=\"135.60000000000002\" height=\"20\" rx=\"9\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"99.39999999999998\" y=\"63\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >On my way, about 15 minutes.</text><rect x=\"14\" y=\"76\" width=\"127.2\" height=\"20\" rx=\"9\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"23\" y=\"89\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Thanks, side gate is open.</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "tpp_mc_call",
+    "label": "Call And Text",
+    "desc": "Opens the phone.",
+    "tags": [
+     "direct"
+    ],
+    "feeling": "direct",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Technician</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"50\" width=\"212\" height=\"36\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"68.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"67.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Member</text><text x=\"36\" y=\"77.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sample record</text><rect x=\"14\" y=\"92\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"108.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">CALL</text><rect x=\"14\" y=\"126\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#05668D\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"142.24\" font-size=\"9\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">TEXT</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-technician-page-deck-checklist-today-09",
+   "repeat": false,
+   "split_from_pair": "upkeep-technician-page-deck-10"
+  },
+  {
+   "group": "Home Record",
+   "category": "Home Record",
+   "app": "UpKeep",
+   "ask": "Home Record For The Tech: Appliance Tiles Or The Full Record?",
+   "optionA": {
+    "id": "tpp_hr_tiles",
+    "label": "Appliance Tiles",
+    "desc": "Just what you service.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Technician</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><rect x=\"14.0\" y=\"50\" width=\"102.0\" height=\"54\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24.0\" y=\"60\" width=\"24\" height=\"24\" rx=\"6\" fill=\"#C1502E1F\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(28.0,64) scale(0.6666666666666666)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/></g><text x=\"24.0\" y=\"94\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Gas Furnace</text><rect x=\"124.0\" y=\"50\" width=\"102.0\" height=\"54\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"134.0\" y=\"60\" width=\"24\" height=\"24\" rx=\"6\" fill=\"#05668D1F\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(138.0,64) scale(0.6666666666666666)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2.2\"/><path d=\"M12 6 V12 L16 14\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2.2\" stroke-linecap=\"round\"/></g><text x=\"134.0\" y=\"94\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Water Heater</text><rect x=\"14.0\" y=\"112\" width=\"102.0\" height=\"54\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24.0\" y=\"122\" width=\"24\" height=\"24\" rx=\"6\" fill=\"#0B6E4F1F\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(28.0,126) scale(0.6666666666666666)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/></g><text x=\"24.0\" y=\"156\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Softener</text><rect x=\"124.0\" y=\"112\" width=\"102.0\" height=\"54\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"134.0\" y=\"122\" width=\"24\" height=\"24\" rx=\"6\" fill=\"#D4A0171F\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(138.0,126) scale(0.6666666666666666)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#D4A017\" stroke-width=\"2.2\"/><path d=\"M7 12.5 l3.5 3.5 6.5 -7\" fill=\"none\" stroke=\"#D4A017\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"134.0\" y=\"156\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Dryer Vent</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "tpp_hr_full",
+    "label": "Full Record",
+    "desc": "Everything the member sees.",
+    "tags": [
+     "complete"
+    ],
+    "feeling": "complete",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><circle cx=\"25.0\" cy=\"23.0\" r=\"11.0\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"27.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >S</text><text x=\"42\" y=\"22\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep</text><text x=\"42\" y=\"33\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Technician</text><g transform=\"translate(208,15) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"44\" x2=\"226\" y2=\"44\" stroke=\"#E5E0D8\"/><line x1=\"14\" y1=\"72\" x2=\"226\" y2=\"72\" stroke=\"#E5E0D8\"/><rect x=\"22\" y=\"70\" width=\"54.66666666666667\" height=\"2.5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"49.333333333333336\" y=\"64.5\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Appliances</text><text x=\"120.0\" y=\"64.5\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Visits</text><text x=\"190.66666666666669\" y=\"64.5\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Scans</text><rect x=\"14\" y=\"80\" width=\"212\" height=\"30\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"95.0\" r=\"3.5\" fill=\"#C1502E\"/><text x=\"36\" y=\"94.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Gas Furnace</text><text x=\"36\" y=\"104.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Tuned Sep 2026</text><rect x=\"14\" y=\"116\" width=\"212\" height=\"30\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"26\" cy=\"131.0\" r=\"3.5\" fill=\"#05668D\"/><text x=\"36\" y=\"130.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Hall bath sink</text><text x=\"36\" y=\"140.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Damp, recheck</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-technician-page-deck-checklist-today-10",
+   "repeat": false,
+   "split_from_pair": "upkeep-technician-page-deck-12"
+  }
+ ],
+ "share": true,
+ "notes": true,
+ "split_from": "upkeep-technician-page-deck",
+ "split_part": "a",
+ "split_sibling": "upkeep-technician-page-deck-van-inventory-job-card",
+ "split_note": "R86 (Max Oct 17 2026 07:50 ICT): 10 picks per deck; split from the unanswered 20-pick deck upkeep-technician-page-deck"
+}

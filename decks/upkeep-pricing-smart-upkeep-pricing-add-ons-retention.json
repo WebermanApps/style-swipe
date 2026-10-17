@@ -1,0 +1,364 @@
+{
+ "date": "upkeep-pricing-smart-upkeep-pricing-add-ons-retention",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Pricing: Add-Ons & Retention",
+ "generated_at": "2026-10-17T08:02:22+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "focused": 10,
+  "plain": 10
+ },
+ "groups": {
+  "Pricing": 10
+ },
+ "apps": {
+  "Research": 10
+ },
+ "freshness": {
+  "option_slots": 20,
+  "never_shown_before": 0,
+  "share": 0.0,
+  "note": "options reused from upkeep-pricing-smart-upkeep-pricing (split, not new)"
+ },
+ "warnings": [],
+ "submit_agent": "research",
+ "deck_size": 10,
+ "carried": 0,
+ "topic": "upkeep-pricing",
+ "shelf": true,
+ "bank_pairs": [
+  "upkeep-pricing-smart-upkeep-pricing-01",
+  "upkeep-pricing-smart-upkeep-pricing-02",
+  "upkeep-pricing-smart-upkeep-pricing-04",
+  "upkeep-pricing-smart-upkeep-pricing-09",
+  "upkeep-pricing-smart-upkeep-pricing-10",
+  "upkeep-pricing-smart-upkeep-pricing-11",
+  "upkeep-pricing-smart-upkeep-pricing-13",
+  "upkeep-pricing-smart-upkeep-pricing-14",
+  "upkeep-pricing-smart-upkeep-pricing-16",
+  "upkeep-pricing-smart-upkeep-pricing-17"
+ ],
+ "source": "/workspace/research-dashboard/tools/research-upkeep-pricing.json",
+ "pairs": [
+  {
+   "id": "upkeep-pricing-smart-upkeep-pricing-add-ons-retention-01",
+   "group": "Pricing",
+   "category": "Retention",
+   "app": "Research",
+   "ask": "Renewal Ops: Call Before Renewal (70-85% HVAC band), Or Email Only (40-55%)?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rup12a",
+    "label": "Call Before Renewal",
+    "desc": "Service Roundtable/NCI/ACCA retention band favors calls.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rup12b",
+    "label": "Email Only At First",
+    "desc": "Cheaper; expect lower renewal.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "upkeep-pricing-smart-upkeep-pricing-01"
+  },
+  {
+   "id": "upkeep-pricing-smart-upkeep-pricing-add-ons-retention-02",
+   "group": "Pricing",
+   "category": "Add-Ons",
+   "app": "Research",
+   "ask": "Snow Removal: Offer Seasonal Add-On (~$1,595 Oakland examples), Or Partner-Referral Only?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rup06a",
+    "label": "Seasonal Add-On",
+    "desc": "Covers lawn off-season; largest ticket; lower margin if subcontracted.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rup06b",
+    "label": "Referral Only",
+    "desc": "Less risk; less revenue per member.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "upkeep-pricing-smart-upkeep-pricing-02"
+  },
+  {
+   "id": "upkeep-pricing-smart-upkeep-pricing-add-ons-retention-03",
+   "group": "Pricing",
+   "category": "Retention",
+   "app": "Research",
+   "ask": "Renewal KPI Bar: Track Against ~80% (Frontdoor-style), Or Set A Lower Internal Bar?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rup13a",
+    "label": "Track Against ~80%",
+    "desc": "Gives UpKeep a clear dashboard number.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rup13b",
+    "label": "Start At 60% Internal",
+    "desc": "Closer to industry average 55-65% until process matures.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "upkeep-pricing-smart-upkeep-pricing-04"
+  },
+  {
+   "id": "upkeep-pricing-smart-upkeep-pricing-add-ons-retention-04",
+   "group": "Pricing",
+   "category": "UX",
+   "app": "Research",
+   "ask": "Lawn Season Cash: Show Members A Seasonal Calendar, Or Annualize Only On The Price Page?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rup18a",
+    "label": "Show Seasonal Calendar",
+    "desc": "Apr-Oct lawn ~26 cuts; Nov-Mar snow; cash is lumpy.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rup18b",
+    "label": "Annualize Only",
+    "desc": "Simpler price page; less sticker shock month to month.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "upkeep-pricing-smart-upkeep-pricing-09"
+  },
+  {
+   "id": "upkeep-pricing-smart-upkeep-pricing-add-ons-retention-05",
+   "group": "Pricing",
+   "category": "Add-Ons",
+   "app": "Research",
+   "ask": "Leaf And Fall Cleanup: Add To Menu (Detroit avg ~$259 Angi), Or Skip For Beta?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rup07a",
+    "label": "Add To Menu",
+    "desc": "Natural bundle with mowing; LawnStarter notes leaf attach on Detroit lawns.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rup07b",
+    "label": "Skip For Beta",
+    "desc": "Fewer SKUs while friends-and-family runs.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "upkeep-pricing-smart-upkeep-pricing-10"
+  },
+  {
+   "id": "upkeep-pricing-smart-upkeep-pricing-add-ons-retention-06",
+   "group": "Pricing",
+   "category": "Add-Ons",
+   "app": "Research",
+   "ask": "Window Washing Attach: Push As Easy High-Margin Add-On (avg ~$221 Angi), Or Quiet Upsell?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rup08a",
+    "label": "Feature It On Extras",
+    "desc": "Easy, one or two visits a year.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rup08b",
+    "label": "Quiet Upsell On Visit Day",
+    "desc": "Less page clutter.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "upkeep-pricing-smart-upkeep-pricing-11"
+  },
+  {
+   "id": "upkeep-pricing-smart-upkeep-pricing-add-ons-retention-07",
+   "group": "Pricing",
+   "category": "A La Carte",
+   "app": "Research",
+   "ask": "Gutters And HVAC For Non-Members: Sell A La Carte At Angi/MI Bands, Or Members Only?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rup15a",
+    "label": "A La Carte To Non-Members",
+    "desc": "Gutter clean $180-$360 2-story; furnace tune-up $129-$159 MI examples.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rup15b",
+    "label": "Members Only",
+    "desc": "Protects membership value.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "upkeep-pricing-smart-upkeep-pricing-13"
+  },
+  {
+   "id": "upkeep-pricing-smart-upkeep-pricing-add-ons-retention-08",
+   "group": "Pricing",
+   "category": "UX",
+   "app": "Research",
+   "ask": "Competitor Price Anchors On Page: Monty $19-$150 And Upkeepers From $59, Or No Competitor Prices?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rup19a",
+    "label": "Show Anchors",
+    "desc": "Context for $99/$164/$312 From prices.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rup19b",
+    "label": "No Competitor Prices",
+    "desc": "Avoid training buyers to shop the bottom.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "upkeep-pricing-smart-upkeep-pricing-14"
+  },
+  {
+   "id": "upkeep-pricing-smart-upkeep-pricing-add-ons-retention-09",
+   "group": "Pricing",
+   "category": "Add-Ons",
+   "app": "Research",
+   "ask": "Pest Control Quarterly: Partner Add-On (~$800/yr draft), Or Out Of Scope For Launch?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rup10a",
+    "label": "Partner Add-On",
+    "desc": "Recurring; done by a partner; Angi $100-$300/visit band.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rup10b",
+    "label": "Out Of Scope For Launch",
+    "desc": "Focus HVAC, gutters, irrigation already in tiers.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "upkeep-pricing-smart-upkeep-pricing-16"
+  },
+  {
+   "id": "upkeep-pricing-smart-upkeep-pricing-add-ons-retention-10",
+   "group": "Pricing",
+   "category": "Add-Ons",
+   "app": "Research",
+   "ask": "Pressure Washing: Menu Tile (avg ~$312 Angi), Or On-Request Only?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rup09a",
+    "label": "Menu Tile",
+    "desc": "Can share visit days; forecast modeled 5-15% attach.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rup09b",
+    "label": "On-Request Only",
+    "desc": "Keeps the Extras list shorter.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "upkeep-pricing-smart-upkeep-pricing-17"
+  }
+ ],
+ "share": true,
+ "notes": true,
+ "split_from": "upkeep-pricing-smart-upkeep-pricing",
+ "split_part": "a",
+ "split_sibling": "upkeep-pricing-smart-upkeep-pricing-forecast-billing",
+ "split_note": "R86 (Max Oct 17 2026 07:50 ICT): 10 picks per deck; split from the unanswered 20-pick deck upkeep-pricing-smart-upkeep-pricing"
+}

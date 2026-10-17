@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
-"""Ready Deck Shelf (R66, Max Oct 14 2026 19:30 ICT): 3-5 already-built 20-card decks at the top of each agent dashboard.
-No launcher that builds decks on request. When a shelf deck is submitted, it is replaced by a fresh ready 20-card deck on the same topic.
+"""Ready Deck Shelf (R66, Max Oct 14 2026 19:30 ICT): up to 10 already-built 10-card decks at the top of each agent dashboard (R86 (Max Oct 17 2026 07:50 ICT): 10 picks per deck, 10 decks per shelf).
+No launcher that builds decks on request. When a shelf deck is submitted, it is replaced by a fresh ready 10-card deck on the same topic.
 
-Shelf file (per agent, schema kit/shelf.schema.json): {"agent":..,"updated":..,"decks":[{"id","name","url","total":20,"topic","blurb"}]}
+Shelf file (per agent, schema kit/shelf.schema.json): {"agent":..,"updated":..,"decks":[{"id","name","url","total":10,"topic","blurb"}]}
 
   python3 tools/ready_shelf.py build <topic> --shelf <shelf.json> [--agent branding] [--name "Deck Name"] [--source pairs.json]
-      Build + publish a fresh 20-card deck for <topic> and add it to the shelf. Pairs come from --source if given
+      Build + publish a fresh 10-card deck for <topic> and add it to the shelf. Pairs come from --source if given
       (any JSON with "pairs": a deck file, a bank, or your own list of drafted pairs; a bare list works too),
       else banks/<topic>.json. --source is remembered on the shelf entry so refill draws from it again.
       Names are descriptive (from --name or the top groups in the deck, e.g. "Report Bars And Feed Deck"); never numbered.
   python3 tools/ready_shelf.py refill <deck_id> --shelf <shelf.json> [--agent branding]
       Call AFTER a submission for <deck_id> is handled (results saved, carry_over.py record run).
-      Removes <deck_id> from the shelf and puts a fresh 20-card deck on the same topic in its slot.
+      Removes <deck_id> from the shelf and puts a fresh 10-card deck on the same topic in its slot.
       Skips (R64): carried pairs go first; a reworded version is used when the carry note has one;
       a pair skipped twice is dropped.
   python3 tools/ready_shelf.py list --shelf <shelf.json>
@@ -19,7 +19,7 @@ Then commit + push style-swipe (new deck + page) and the dashboard repo (shelf.j
 import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()  # fail build if card-media max-height:100% returns
 import json, os, re, sys, random, string, datetime as dt
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); os.chdir(ROOT); sys.path.insert(0, os.path.join(ROOT, "tools"))
-BASE = "https://webermanapps.github.io/style-swipe/"; N = 20
+BASE = "https://webermanapps.github.io/style-swipe/"; N = 10  # R86 (Max Oct 17 2026 07:50 ICT): 10 picks per deck, 10 decks per shelf (was 20)
 PAGES = os.path.join(ROOT, "decks", "pages.json")
 def J(p, d):
     try: return json.load(open(p))
@@ -102,7 +102,7 @@ def build(topic, shelf_path, agent, name=None, slot=None, source=None, refill=Fa
         "blurb": f"{N} cards, ready now" + (f", {len(carried)} reworded from last time" if carried else "")}
     if slot is None: sh["decks"].append(ent)
     else: sh["decks"].insert(slot, ent)
-    sh["decks"] = sh["decks"][:5]; sh["updated"] = now(); W(shelf_path, sh)
+    sh["decks"] = sh["decks"][:int(sh.get("cap") or 10)]; sh["cap"] = int(sh.get("cap") or 10)  # R86: shelf cap 10 (was 5); sh["updated"] = now(); W(shelf_path, sh)
     print(f"built {did} ({N} cards) -> {url}"); return ent
 
 NAME = None

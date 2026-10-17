@@ -1,0 +1,364 @@
+{
+ "date": "upkeep-pricing-smart-upkeep-pricing-forecast-billing",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Pricing: Forecast & Billing",
+ "generated_at": "2026-10-17T08:02:22+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "focused": 10,
+  "plain": 10
+ },
+ "groups": {
+  "Pricing": 10
+ },
+ "apps": {
+  "Research": 10
+ },
+ "freshness": {
+  "option_slots": 20,
+  "never_shown_before": 0,
+  "share": 0.0,
+  "note": "options reused from upkeep-pricing-smart-upkeep-pricing (split, not new)"
+ },
+ "warnings": [],
+ "submit_agent": "research",
+ "deck_size": 10,
+ "carried": 0,
+ "topic": "upkeep-pricing",
+ "shelf": true,
+ "bank_pairs": [
+  "upkeep-pricing-smart-upkeep-pricing-03",
+  "upkeep-pricing-smart-upkeep-pricing-05",
+  "upkeep-pricing-smart-upkeep-pricing-06",
+  "upkeep-pricing-smart-upkeep-pricing-07",
+  "upkeep-pricing-smart-upkeep-pricing-08",
+  "upkeep-pricing-smart-upkeep-pricing-12",
+  "upkeep-pricing-smart-upkeep-pricing-15",
+  "upkeep-pricing-smart-upkeep-pricing-18",
+  "upkeep-pricing-smart-upkeep-pricing-19",
+  "upkeep-pricing-smart-upkeep-pricing-20"
+ ],
+ "source": "/workspace/research-dashboard/tools/research-upkeep-pricing.json",
+ "pairs": [
+  {
+   "id": "upkeep-pricing-smart-upkeep-pricing-forecast-billing-01",
+   "group": "Pricing",
+   "category": "Forecast",
+   "app": "Research",
+   "ask": "Tier Mix Planning Assumption: Use Base Mix (30/55/15) Or Conservative (45/45/10)?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rup04a",
+    "label": "Base 30/55/15",
+    "desc": "Blended tier about $167/mo in the Oct 14 forecast.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rup04b",
+    "label": "Conservative 45/45/10",
+    "desc": "Blended about $150/mo; safer cash model.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "upkeep-pricing-smart-upkeep-pricing-03"
+  },
+  {
+   "id": "upkeep-pricing-smart-upkeep-pricing-forecast-billing-02",
+   "group": "Pricing",
+   "category": "Forecast",
+   "app": "Research",
+   "ask": "Attach-Rate Logging: Treat App Add-On Events As Source Of Truth, Or Keep Research Assumptions Until 50 Members?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rup20a",
+    "label": "App Events As Truth",
+    "desc": "Forecast says replace assumptions with beta data.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rup20b",
+    "label": "Assumptions Until 50",
+    "desc": "Too noisy early; revisit at 50 members.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "upkeep-pricing-smart-upkeep-pricing-05"
+  },
+  {
+   "id": "upkeep-pricing-smart-upkeep-pricing-forecast-billing-03",
+   "group": "Pricing",
+   "category": "Billing",
+   "app": "Research",
+   "ask": "Failed Card Recovery: Stripe Smart Retries From Day One (docs cite ~55% recovery), Or Manual Follow-Up?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rup14a",
+    "label": "Smart Retries From Day One",
+    "desc": "Pause scheduling while recovering; do not silent-cancel.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rup14b",
+    "label": "Manual Follow-Up",
+    "desc": "Fine at tiny beta volume.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "upkeep-pricing-smart-upkeep-pricing-06"
+  },
+  {
+   "id": "upkeep-pricing-smart-upkeep-pricing-forecast-billing-04",
+   "group": "Pricing",
+   "category": "Tiers",
+   "app": "Research",
+   "ask": "Complete Vs Plus Gap: Complete Is About 1.9x Plus ($312 vs $164). Narrow The Gap, Or Keep It?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rup02a",
+    "label": "Keep The Gap",
+    "desc": "Complete stays premium for monthly-visit buyers.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rup02b",
+    "label": "Narrow Toward 1.4x",
+    "desc": "May lift Complete share closer to ~21% camera-study top option.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "upkeep-pricing-smart-upkeep-pricing-07"
+  },
+  {
+   "id": "upkeep-pricing-smart-upkeep-pricing-forecast-billing-05",
+   "group": "Pricing",
+   "category": "Handoff",
+   "app": "Research",
+   "ask": "Share This Forecast With UpKeep Now, Or Hold For An Edit Pass First?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rup17a",
+    "label": "Send To UpKeep Now",
+    "desc": "They own pricing on smartupkeep.ai; research is ready.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rup17b",
+    "label": "Hold For Edit",
+    "desc": "Tighten assumptions before it hits their board.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "upkeep-pricing-smart-upkeep-pricing-08"
+  },
+  {
+   "id": "upkeep-pricing-smart-upkeep-pricing-forecast-billing-06",
+   "group": "Pricing",
+   "category": "Forecast",
+   "app": "Research",
+   "ask": "Average Member Spend Model: Plan Cash On Base ~$228/mo, Or Conservative ~$189/mo?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rup16a",
+    "label": "Base ~$228/mo",
+    "desc": "Tier blend + add-on attach from Oct 14 forecast.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rup16b",
+    "label": "Conservative ~$189/mo",
+    "desc": "Safer until beta attach rates replace assumptions.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "upkeep-pricing-smart-upkeep-pricing-12"
+  },
+  {
+   "id": "upkeep-pricing-smart-upkeep-pricing-forecast-billing-07",
+   "group": "Pricing",
+   "category": "Tiers",
+   "app": "Research",
+   "ask": "Essentials Floor: Hold $99/mo From Price, Or Raise For Metro Detroit Cost?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rup03a",
+    "label": "Hold $99 From",
+    "desc": "Conservative; matches draft pricing-config on the box.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rup03b",
+    "label": "Raise The Floor",
+    "desc": "Typical 2-3k sq ft homes quote higher than From.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "upkeep-pricing-smart-upkeep-pricing-15"
+  },
+  {
+   "id": "upkeep-pricing-smart-upkeep-pricing-forecast-billing-08",
+   "group": "Pricing",
+   "category": "Billing",
+   "app": "Research",
+   "ask": "Annual Prepay: Offer Two Months Free For Paying A Year Up Front, Or Monthly Billing Only?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rup21a",
+    "label": "Two Months Free Yearly",
+    "desc": "Pay 10, get 12; cash up front and fewer cancels mid-year.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rup21b",
+    "label": "Monthly Only",
+    "desc": "Simpler; full price every month.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "upkeep-pricing-smart-upkeep-pricing-18"
+  },
+  {
+   "id": "upkeep-pricing-smart-upkeep-pricing-forecast-billing-09",
+   "group": "Pricing",
+   "category": "Billing",
+   "app": "Research",
+   "ask": "Bank Payments: Add ACH Debit (Stripe 0.8%, capped at $5), Or Cards Only? (stripe.com/pricing)",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rup22a",
+    "label": "Add ACH Debit",
+    "desc": "About $1.31 fee on $164 vs about $5 on a card; fewer expired-card failures.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rup22b",
+    "label": "Cards Only",
+    "desc": "One payment method to support; higher fees.",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "upkeep-pricing-smart-upkeep-pricing-19"
+  },
+  {
+   "id": "upkeep-pricing-smart-upkeep-pricing-forecast-billing-10",
+   "group": "Pricing",
+   "category": "Price Changes",
+   "app": "Research",
+   "ask": "Founding Member Price: Lock It For 12 Months, Or Allow A Yearly Increase From Day One?",
+   "notes": true,
+   "share": true,
+   "optionA": {
+    "id": "rup23a",
+    "label": "Lock For 12 Months",
+    "desc": "Easy promise for beta friends and family; revisit at renewal.",
+    "notes": true,
+    "feeling": "focused",
+    "tags": [
+     "focused"
+    ]
+   },
+   "optionB": {
+    "id": "rup23b",
+    "label": "Yearly Increase Allowed",
+    "desc": "Terms let you raise prices each year (for example with costs).",
+    "notes": true,
+    "feeling": "plain",
+    "tags": [
+     "plain"
+    ]
+   },
+   "repeat": false,
+   "split_from_pair": "upkeep-pricing-smart-upkeep-pricing-20"
+  }
+ ],
+ "share": true,
+ "notes": true,
+ "split_from": "upkeep-pricing-smart-upkeep-pricing",
+ "split_part": "b",
+ "split_sibling": "upkeep-pricing-smart-upkeep-pricing-add-ons-retention",
+ "split_note": "R86 (Max Oct 17 2026 07:50 ICT): 10 picks per deck; split from the unanswered 20-pick deck upkeep-pricing-smart-upkeep-pricing"
+}

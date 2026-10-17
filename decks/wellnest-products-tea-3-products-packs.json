@@ -1,0 +1,525 @@
+{
+ "date": "wellnest-products-tea-3-products-packs",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Pricing Feel: Products & Packs",
+ "generated_at": "2026-10-17T08:02:22+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "visual": 2,
+  "focused": 4,
+  "quick": 4,
+  "action": 6,
+  "calm": 4
+ },
+ "groups": {
+  "Formats And Pricing": 10
+ },
+ "apps": {
+  "WellNest": 10
+ },
+ "freshness": {
+  "option_slots": 20,
+  "never_shown_before": 0,
+  "share": 0.0,
+  "note": "options reused from wellnest-products-tea-3 (split, not new)"
+ },
+ "warnings": [],
+ "brands": [
+  "Sizes, bundles and how price should feel (no real prices)",
+  "Locked WellNest brand: original nest logo, Cormorant + DM Sans, gold leads, peach accent, sand lines; white deck background; drawn SVGs, sample content only"
+ ],
+ "submit_agent": "wellnest",
+ "submit_to": "WellNest Agent",
+ "deck_size": 10,
+ "series": {
+  "category": "Products & Tea",
+  "order": 3
+ },
+ "sources": {
+  "rules": "/workspace/wellnest/brand-rules.md",
+  "results": "/workspace/wellnest/deck-results/",
+  "queue": "/workspace/wellnest/deck-queue.json"
+ },
+ "pairs": [
+  {
+   "group": "Formats And Pricing",
+   "category": "Formats And Pricing",
+   "app": "WellNest",
+   "ask": "Bundle: Three Teas Or No Bundles?",
+   "optionA": {
+    "id": "productste_bundle_three_teas_7",
+    "label": "Bundle: Three Teas",
+    "desc": "Discount feel.",
+    "tags": [
+     "visual"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"18\" y=\"20\" width=\"204\" height=\"128\" rx=\"12\" fill=\"#FFFFFF\" stroke=\"#171717\" stroke-width=\"1\" /><circle cx=\"120\" cy=\"84\" r=\"40\" fill=\"none\" stroke=\"#171717\" stroke-width=\"2\"/><g transform=\"translate(96,60) scale(2.0)\"><path d=\"M4 10 H20 V20 H4 Z M3 7 H21 V10 H3 Z M12 7 V20 M12 7 Q8 2 7 5 Q7 7 12 7 Q16 2 17 5 Q17 7 12 7\" fill=\"none\" stroke=\"#171717\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"120\" y=\"178\" font-size=\"18\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, Hind, sans-serif\" font-weight=\"500\" >Bundle: Three Teas</text><text x=\"120\" y=\"206\" font-size=\"8.5\" fill=\"#737373\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Discount feel.</text><rect x=\"80\" y=\"262\" width=\"80\" height=\"22\" rx=\"11\" fill=\"#737373\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"277\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Shop</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "productste_no_bundles_8",
+    "label": "No Bundles",
+    "desc": "Simple.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"18\" y=\"20\" width=\"204\" height=\"128\" rx=\"12\" fill=\"#FFFFFF\" stroke=\"#171717\" stroke-width=\"1\" /><circle cx=\"120\" cy=\"84\" r=\"40\" fill=\"none\" stroke=\"#737373\" stroke-width=\"2\"/><g transform=\"translate(96,60) scale(2.0)\"><path d=\"M5 8 H19 L18 21 H6 Z M9 8 V6 A3 3 0 0 1 15 6 V8\" fill=\"none\" stroke=\"#737373\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"120\" y=\"178\" font-size=\"18\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, Hind, sans-serif\" font-weight=\"500\" >No Bundles</text><text x=\"120\" y=\"206\" font-size=\"8.5\" fill=\"#737373\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Simple.</text><rect x=\"80\" y=\"262\" width=\"80\" height=\"22\" rx=\"11\" fill=\"#171717\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"277\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Shop</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-products-tea-3-products-packs-01",
+   "repeat": false,
+   "split_from_pair": "wellnest-products-tea-3-01"
+  },
+  {
+   "group": "Formats And Pricing",
+   "category": "Formats And Pricing",
+   "app": "WellNest",
+   "ask": "Tea Bag Box Of Ten Or Tea Bag Box Of Twenty?",
+   "optionA": {
+    "id": "productste_tea_bag_box_of_ten_27",
+    "label": "Tea Bag Box Of Ten",
+    "desc": "Try.",
+    "tags": [
+     "visual"
+    ],
+    "feeling": "visual",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"18\" y=\"20\" width=\"204\" height=\"128\" rx=\"12\" fill=\"#FFFFFF\" stroke=\"#171717\" stroke-width=\"1\" /><circle cx=\"120\" cy=\"84\" r=\"40\" fill=\"none\" stroke=\"#171717\" stroke-width=\"2\"/><g transform=\"translate(96,60) scale(2.0)\"><path d=\"M4 9 H16 V15 A5 5 0 0 1 11 20 H9 A5 5 0 0 1 4 15 Z M16 11 H18 A2 2 0 0 1 18 15 H16 M8 3 Q10 5 8 7 M12 3 Q14 5 12 7\" fill=\"none\" stroke=\"#171717\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"120\" y=\"178\" font-size=\"18\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, Hind, sans-serif\" font-weight=\"500\" >Tea Bag Box Of Ten</text><text x=\"120\" y=\"206\" font-size=\"8.5\" fill=\"#737373\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Try.</text><rect x=\"80\" y=\"262\" width=\"80\" height=\"22\" rx=\"11\" fill=\"#737373\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"277\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Shop</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "productste_tea_bag_box_of_twenty_28",
+    "label": "Tea Bag Box Of Twenty",
+    "desc": "Value.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"18\" y=\"20\" width=\"204\" height=\"128\" rx=\"12\" fill=\"#FFFFFF\" stroke=\"#171717\" stroke-width=\"1\" /><circle cx=\"120\" cy=\"84\" r=\"40\" fill=\"none\" stroke=\"#737373\" stroke-width=\"2\"/><g transform=\"translate(96,60) scale(2.0)\"><path d=\"M4 9 H16 V15 A5 5 0 0 1 11 20 H9 A5 5 0 0 1 4 15 Z M16 11 H18 A2 2 0 0 1 18 15 H16 M8 3 Q10 5 8 7 M12 3 Q14 5 12 7\" fill=\"none\" stroke=\"#737373\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"120\" y=\"178\" font-size=\"18\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, Hind, sans-serif\" font-weight=\"500\" >Tea Bag Box Of Twenty</text><text x=\"120\" y=\"206\" font-size=\"8.5\" fill=\"#737373\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Value.</text><rect x=\"80\" y=\"262\" width=\"80\" height=\"22\" rx=\"11\" fill=\"#171717\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"277\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Shop</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-products-tea-3-products-packs-02",
+   "repeat": false,
+   "split_from_pair": "wellnest-products-tea-3-02"
+  },
+  {
+   "group": "Formats And Pricing",
+   "category": "Formats And Pricing",
+   "app": "WellNest",
+   "ask": "Tea Club Monthly Or Seasonal Box Four Times A Year?",
+   "optionA": {
+    "id": "productste_tea_club_monthly_9",
+    "label": "Tea Club Monthly",
+    "desc": "Subscription.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"18\" y=\"20\" width=\"204\" height=\"128\" rx=\"12\" fill=\"#FFFFFF\" stroke=\"#171717\" stroke-width=\"1\" /><circle cx=\"120\" cy=\"84\" r=\"40\" fill=\"none\" stroke=\"#171717\" stroke-width=\"2\"/><g transform=\"translate(96,60) scale(2.0)\"><path d=\"M3 6 H21 V18 H3 Z M3 10 H21\" fill=\"none\" stroke=\"#171717\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"120\" y=\"178\" font-size=\"18\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, Hind, sans-serif\" font-weight=\"500\" >Tea Club Monthly</text><text x=\"120\" y=\"206\" font-size=\"8.5\" fill=\"#737373\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Subscription.</text><rect x=\"80\" y=\"262\" width=\"80\" height=\"22\" rx=\"11\" fill=\"#737373\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"277\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Shop</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "productste_seasonal_box_four_times__10",
+    "label": "Seasonal Box Four Times A Year",
+    "desc": "Quarterly.",
+    "tags": [
+     "action"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"18\" y=\"20\" width=\"204\" height=\"128\" rx=\"12\" fill=\"#FFFFFF\" stroke=\"#171717\" stroke-width=\"1\" /><circle cx=\"120\" cy=\"84\" r=\"40\" fill=\"none\" stroke=\"#737373\" stroke-width=\"2\"/><g transform=\"translate(96,60) scale(2.0)\"><path d=\"M4 10 H20 V20 H4 Z M3 7 H21 V10 H3 Z M12 7 V20 M12 7 Q8 2 7 5 Q7 7 12 7 Q16 2 17 5 Q17 7 12 7\" fill=\"none\" stroke=\"#737373\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"120\" y=\"178\" font-size=\"18\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, Hind, sans-serif\" font-weight=\"500\" >Seasonal Box Four</text><text x=\"120\" y=\"200\" font-size=\"18\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, Hind, sans-serif\" font-weight=\"500\" >Times A Year</text><text x=\"120\" y=\"228\" font-size=\"8.5\" fill=\"#737373\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Quarterly.</text><rect x=\"80\" y=\"262\" width=\"80\" height=\"22\" rx=\"11\" fill=\"#171717\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"277\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Shop</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-products-tea-3-products-packs-03",
+   "repeat": false,
+   "split_from_pair": "wellnest-products-tea-3-04"
+  },
+  {
+   "group": "Formats And Pricing",
+   "category": "Formats And Pricing",
+   "app": "WellNest",
+   "ask": "Refill Pouch Or Tin Every Time?",
+   "optionA": {
+    "id": "productste_refill_pouch_5",
+    "label": "Refill Pouch",
+    "desc": "Less waste.",
+    "tags": [
+     "action"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"18\" y=\"20\" width=\"204\" height=\"128\" rx=\"12\" fill=\"#FFFFFF\" stroke=\"#171717\" stroke-width=\"1\" /><circle cx=\"120\" cy=\"84\" r=\"40\" fill=\"none\" stroke=\"#171717\" stroke-width=\"2\"/><g transform=\"translate(96,60) scale(2.0)\"><path d=\"M5 8 H19 L18 21 H6 Z M9 8 V6 A3 3 0 0 1 15 6 V8\" fill=\"none\" stroke=\"#171717\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"120\" y=\"178\" font-size=\"18\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, Hind, sans-serif\" font-weight=\"500\" >Refill Pouch</text><text x=\"120\" y=\"206\" font-size=\"8.5\" fill=\"#737373\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Less waste.</text><rect x=\"80\" y=\"262\" width=\"80\" height=\"22\" rx=\"11\" fill=\"#737373\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"277\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Shop</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "productste_tin_every_time_6",
+    "label": "Tin Every Time",
+    "desc": "Gift.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"18\" y=\"20\" width=\"204\" height=\"128\" rx=\"12\" fill=\"#FFFFFF\" stroke=\"#171717\" stroke-width=\"1\" /><circle cx=\"120\" cy=\"84\" r=\"40\" fill=\"none\" stroke=\"#737373\" stroke-width=\"2\"/><g transform=\"translate(96,60) scale(2.0)\"><path d=\"M7 6 H17 V8 Q19 9 19 12 V19 A2 2 0 0 1 17 21 H7 A2 2 0 0 1 5 19 V12 Q5 9 7 8 Z M7 3 H17 V6 H7 Z\" fill=\"none\" stroke=\"#737373\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"120\" y=\"178\" font-size=\"18\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, Hind, sans-serif\" font-weight=\"500\" >Tin Every Time</text><text x=\"120\" y=\"206\" font-size=\"8.5\" fill=\"#737373\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Gift.</text><rect x=\"80\" y=\"262\" width=\"80\" height=\"22\" rx=\"11\" fill=\"#171717\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"277\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Shop</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-products-tea-3-products-packs-04",
+   "repeat": false,
+   "split_from_pair": "wellnest-products-tea-3-07"
+  },
+  {
+   "group": "Formats And Pricing",
+   "category": "Formats And Pricing",
+   "app": "WellNest",
+   "ask": "Wedding Favour Mini Pouches Or Wedding Favour Tea Bags?",
+   "optionA": {
+    "id": "productste_wedding_favour_mini_pouc_25",
+    "label": "Wedding Favour Mini Pouches",
+    "desc": "Small.",
+    "tags": [
+     "action"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"18\" y=\"20\" width=\"204\" height=\"128\" rx=\"12\" fill=\"#FFFFFF\" stroke=\"#171717\" stroke-width=\"1\" /><circle cx=\"120\" cy=\"84\" r=\"40\" fill=\"none\" stroke=\"#171717\" stroke-width=\"2\"/><g transform=\"translate(96,60) scale(2.0)\"><path d=\"M9 12 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M12 9 Q12 3 15 4 Q16 8 12 9 M15 12 Q21 12 20 15 Q16 16 15 12 M12 15 Q12 21 9 20 Q8 16 12 15 M9 12 Q3 12 4 9 Q8 8 9 12\" fill=\"none\" stroke=\"#171717\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"120\" y=\"178\" font-size=\"18\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, Hind, sans-serif\" font-weight=\"500\" >Wedding Favour Mini</text><text x=\"120\" y=\"200\" font-size=\"18\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, Hind, sans-serif\" font-weight=\"500\" >Pouches</text><text x=\"120\" y=\"228\" font-size=\"8.5\" fill=\"#737373\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Small.</text><rect x=\"80\" y=\"262\" width=\"80\" height=\"22\" rx=\"11\" fill=\"#737373\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"277\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Shop</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "productste_wedding_favour_tea_bags_26",
+    "label": "Wedding Favour Tea Bags",
+    "desc": "Smaller.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"18\" y=\"20\" width=\"204\" height=\"128\" rx=\"12\" fill=\"#FFFFFF\" stroke=\"#171717\" stroke-width=\"1\" /><circle cx=\"120\" cy=\"84\" r=\"40\" fill=\"none\" stroke=\"#737373\" stroke-width=\"2\"/><g transform=\"translate(96,60) scale(2.0)\"><path d=\"M9 12 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M12 9 Q12 3 15 4 Q16 8 12 9 M15 12 Q21 12 20 15 Q16 16 15 12 M12 15 Q12 21 9 20 Q8 16 12 15 M9 12 Q3 12 4 9 Q8 8 9 12\" fill=\"none\" stroke=\"#737373\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"120\" y=\"178\" font-size=\"18\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, Hind, sans-serif\" font-weight=\"500\" >Wedding Favour Tea</text><text x=\"120\" y=\"200\" font-size=\"18\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, Hind, sans-serif\" font-weight=\"500\" >Bags</text><text x=\"120\" y=\"228\" font-size=\"8.5\" fill=\"#737373\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Smaller.</text><rect x=\"80\" y=\"262\" width=\"80\" height=\"22\" rx=\"11\" fill=\"#171717\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"277\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Shop</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-products-tea-3-products-packs-05",
+   "repeat": false,
+   "split_from_pair": "wellnest-products-tea-3-12"
+  },
+  {
+   "group": "Formats And Pricing",
+   "category": "Formats And Pricing",
+   "app": "WellNest",
+   "ask": "Gift Cards In Fixed Amounts Or Gift Cards For Experiences?",
+   "optionA": {
+    "id": "productste_gift_cards_in_fixed_amou_35",
+    "label": "Gift Cards In Fixed Amounts",
+    "desc": "Easy.",
+    "tags": [
+     "action"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"18\" y=\"20\" width=\"204\" height=\"128\" rx=\"12\" fill=\"#FFFFFF\" stroke=\"#171717\" stroke-width=\"1\" /><circle cx=\"120\" cy=\"84\" r=\"40\" fill=\"none\" stroke=\"#171717\" stroke-width=\"2\"/><g transform=\"translate(96,60) scale(2.0)\"><path d=\"M4 10 H20 V20 H4 Z M3 7 H21 V10 H3 Z M12 7 V20 M12 7 Q8 2 7 5 Q7 7 12 7 Q16 2 17 5 Q17 7 12 7\" fill=\"none\" stroke=\"#171717\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"120\" y=\"178\" font-size=\"18\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, Hind, sans-serif\" font-weight=\"500\" >Gift Cards In Fixed</text><text x=\"120\" y=\"200\" font-size=\"18\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, Hind, sans-serif\" font-weight=\"500\" >Amounts</text><text x=\"120\" y=\"228\" font-size=\"8.5\" fill=\"#737373\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Easy.</text><rect x=\"80\" y=\"262\" width=\"80\" height=\"22\" rx=\"11\" fill=\"#737373\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"277\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Shop</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "productste_gift_cards_for_experienc_36",
+    "label": "Gift Cards For Experiences",
+    "desc": "Named.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"18\" y=\"20\" width=\"204\" height=\"128\" rx=\"12\" fill=\"#FFFFFF\" stroke=\"#171717\" stroke-width=\"1\" /><circle cx=\"120\" cy=\"84\" r=\"40\" fill=\"none\" stroke=\"#737373\" stroke-width=\"2\"/><g transform=\"translate(96,60) scale(2.0)\"><path d=\"M4 10 H20 V20 H4 Z M3 7 H21 V10 H3 Z M12 7 V20 M12 7 Q8 2 7 5 Q7 7 12 7 Q16 2 17 5 Q17 7 12 7\" fill=\"none\" stroke=\"#737373\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"120\" y=\"178\" font-size=\"18\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, Hind, sans-serif\" font-weight=\"500\" >Gift Cards For</text><text x=\"120\" y=\"200\" font-size=\"18\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, Hind, sans-serif\" font-weight=\"500\" >Experiences</text><text x=\"120\" y=\"228\" font-size=\"8.5\" fill=\"#737373\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Named.</text><rect x=\"80\" y=\"262\" width=\"80\" height=\"22\" rx=\"11\" fill=\"#171717\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"277\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Shop</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-products-tea-3-products-packs-06",
+   "repeat": false,
+   "split_from_pair": "wellnest-products-tea-3-15"
+  },
+  {
+   "group": "Formats And Pricing",
+   "category": "Formats And Pricing",
+   "app": "WellNest",
+   "ask": "Price Shown Big Or Price Shown Small?",
+   "optionA": {
+    "id": "productste_price_shown_big_13",
+    "label": "Price Shown Big",
+    "desc": "Open.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"18\" y=\"20\" width=\"204\" height=\"128\" rx=\"12\" fill=\"#FFFFFF\" stroke=\"#171717\" stroke-width=\"1\" /><circle cx=\"120\" cy=\"84\" r=\"40\" fill=\"none\" stroke=\"#171717\" stroke-width=\"2\"/><g transform=\"translate(96,60) scale(2.0)\"><path d=\"M3 6 H21 V18 H3 Z M3 10 H21\" fill=\"none\" stroke=\"#171717\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"120\" y=\"178\" font-size=\"18\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, Hind, sans-serif\" font-weight=\"500\" >Price Shown Big</text><text x=\"120\" y=\"206\" font-size=\"8.5\" fill=\"#737373\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Open.</text><rect x=\"80\" y=\"262\" width=\"80\" height=\"22\" rx=\"11\" fill=\"#737373\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"277\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Shop</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "productste_price_shown_small_14",
+    "label": "Price Shown Small",
+    "desc": "Quiet.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"18\" y=\"20\" width=\"204\" height=\"128\" rx=\"12\" fill=\"#FFFFFF\" stroke=\"#171717\" stroke-width=\"1\" /><circle cx=\"120\" cy=\"84\" r=\"40\" fill=\"none\" stroke=\"#737373\" stroke-width=\"2\"/><g transform=\"translate(96,60) scale(2.0)\"><path d=\"M3 6 H21 V18 H3 Z M3 10 H21\" fill=\"none\" stroke=\"#737373\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"120\" y=\"178\" font-size=\"18\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, Hind, sans-serif\" font-weight=\"500\" >Price Shown Small</text><text x=\"120\" y=\"206\" font-size=\"8.5\" fill=\"#737373\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Quiet.</text><rect x=\"80\" y=\"262\" width=\"80\" height=\"22\" rx=\"11\" fill=\"#171717\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"277\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Shop</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-products-tea-3-products-packs-07",
+   "repeat": false,
+   "split_from_pair": "wellnest-products-tea-3-17"
+  },
+  {
+   "group": "Formats And Pricing",
+   "category": "Formats And Pricing",
+   "app": "WellNest",
+   "ask": "Three Sizes Or One Size?",
+   "optionA": {
+    "id": "productste_three_sizes_3",
+    "label": "Three Sizes",
+    "desc": "Small, standard, big.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"18\" y=\"20\" width=\"204\" height=\"128\" rx=\"12\" fill=\"#FFFFFF\" stroke=\"#171717\" stroke-width=\"1\" /><circle cx=\"120\" cy=\"84\" r=\"40\" fill=\"none\" stroke=\"#171717\" stroke-width=\"2\"/><g transform=\"translate(96,60) scale(2.0)\"><path d=\"M5 8 H19 L18 21 H6 Z M9 8 V6 A3 3 0 0 1 15 6 V8\" fill=\"none\" stroke=\"#171717\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"120\" y=\"178\" font-size=\"18\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, Hind, sans-serif\" font-weight=\"500\" >Three Sizes</text><text x=\"120\" y=\"206\" font-size=\"8.5\" fill=\"#737373\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Small, standard, big.</text><rect x=\"80\" y=\"262\" width=\"80\" height=\"22\" rx=\"11\" fill=\"#737373\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"277\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Shop</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "productste_one_size_4",
+    "label": "One Size",
+    "desc": "Simple.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"18\" y=\"20\" width=\"204\" height=\"128\" rx=\"12\" fill=\"#FFFFFF\" stroke=\"#171717\" stroke-width=\"1\" /><circle cx=\"120\" cy=\"84\" r=\"40\" fill=\"none\" stroke=\"#737373\" stroke-width=\"2\"/><g transform=\"translate(96,60) scale(2.0)\"><path d=\"M5 8 H19 L18 21 H6 Z M9 8 V6 A3 3 0 0 1 15 6 V8\" fill=\"none\" stroke=\"#737373\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"120\" y=\"178\" font-size=\"18\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, Hind, sans-serif\" font-weight=\"500\" >One Size</text><text x=\"120\" y=\"206\" font-size=\"8.5\" fill=\"#737373\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Simple.</text><rect x=\"80\" y=\"262\" width=\"80\" height=\"22\" rx=\"11\" fill=\"#171717\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"277\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Shop</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-products-tea-3-products-packs-08",
+   "repeat": false,
+   "split_from_pair": "wellnest-products-tea-3-18"
+  },
+  {
+   "group": "Formats And Pricing",
+   "category": "Formats And Pricing",
+   "app": "WellNest",
+   "ask": "Round Prices Or Price Ending In 9?",
+   "optionA": {
+    "id": "productste_round_prices_15",
+    "label": "Round Prices",
+    "desc": "Simple.",
+    "tags": [
+     "action"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"18\" y=\"20\" width=\"204\" height=\"128\" rx=\"12\" fill=\"#FFFFFF\" stroke=\"#171717\" stroke-width=\"1\" /><circle cx=\"120\" cy=\"84\" r=\"40\" fill=\"none\" stroke=\"#171717\" stroke-width=\"2\"/><g transform=\"translate(96,60) scale(2.0)\"><path d=\"M3 6 H21 V18 H3 Z M3 10 H21\" fill=\"none\" stroke=\"#171717\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"120\" y=\"178\" font-size=\"18\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, Hind, sans-serif\" font-weight=\"500\" >Round Prices</text><text x=\"120\" y=\"206\" font-size=\"8.5\" fill=\"#737373\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Simple.</text><rect x=\"80\" y=\"262\" width=\"80\" height=\"22\" rx=\"11\" fill=\"#737373\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"277\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Shop</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "productste_price_ending_in_9_16",
+    "label": "Price Ending In 9",
+    "desc": "Retail.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"18\" y=\"20\" width=\"204\" height=\"128\" rx=\"12\" fill=\"#FFFFFF\" stroke=\"#171717\" stroke-width=\"1\" /><circle cx=\"120\" cy=\"84\" r=\"40\" fill=\"none\" stroke=\"#737373\" stroke-width=\"2\"/><g transform=\"translate(96,60) scale(2.0)\"><path d=\"M3 6 H21 V18 H3 Z M3 10 H21\" fill=\"none\" stroke=\"#737373\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"120\" y=\"178\" font-size=\"18\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, Hind, sans-serif\" font-weight=\"500\" >Price Ending In 9</text><text x=\"120\" y=\"206\" font-size=\"8.5\" fill=\"#737373\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Retail.</text><rect x=\"80\" y=\"262\" width=\"80\" height=\"22\" rx=\"11\" fill=\"#171717\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"277\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Shop</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-products-tea-3-products-packs-09",
+   "repeat": false,
+   "split_from_pair": "wellnest-products-tea-3-19"
+  },
+  {
+   "group": "Formats And Pricing",
+   "category": "Formats And Pricing",
+   "app": "WellNest",
+   "ask": "Seasonal Sale Once A Year Or Never On Sale?",
+   "optionA": {
+    "id": "productste_seasonal_sale_once_a_yea_39",
+    "label": "Seasonal Sale Once A Year",
+    "desc": "Event.",
+    "tags": [
+     "quick"
+    ],
+    "feeling": "quick",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"18\" y=\"20\" width=\"204\" height=\"128\" rx=\"12\" fill=\"#FFFFFF\" stroke=\"#171717\" stroke-width=\"1\" /><circle cx=\"120\" cy=\"84\" r=\"40\" fill=\"none\" stroke=\"#171717\" stroke-width=\"2\"/><g transform=\"translate(96,60) scale(2.0)\"><path d=\"M8 12 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M12 2 V4 M12 20 V22 M2 12 H4 M20 12 H22 M5 5 L6.5 6.5 M17.5 17.5 L19 19 M5 19 L6.5 17.5 M17.5 6.5 L19 5\" fill=\"none\" stroke=\"#171717\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"120\" y=\"178\" font-size=\"18\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, Hind, sans-serif\" font-weight=\"500\" >Seasonal Sale Once A</text><text x=\"120\" y=\"200\" font-size=\"18\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, Hind, sans-serif\" font-weight=\"500\" >Year</text><text x=\"120\" y=\"228\" font-size=\"8.5\" fill=\"#737373\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Event.</text><rect x=\"80\" y=\"262\" width=\"80\" height=\"22\" rx=\"11\" fill=\"#737373\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"277\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Shop</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "productste_never_on_sale_40",
+    "label": "Never On Sale",
+    "desc": "Steady.",
+    "tags": [
+     "action"
+    ],
+    "feeling": "action",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"18\" y=\"20\" width=\"204\" height=\"128\" rx=\"12\" fill=\"#FFFFFF\" stroke=\"#171717\" stroke-width=\"1\" /><circle cx=\"120\" cy=\"84\" r=\"40\" fill=\"none\" stroke=\"#737373\" stroke-width=\"2\"/><g transform=\"translate(96,60) scale(2.0)\"><path d=\"M3 6 H21 V18 H3 Z M3 10 H21\" fill=\"none\" stroke=\"#737373\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"120\" y=\"178\" font-size=\"18\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand, Hind, sans-serif\" font-weight=\"500\" >Never On Sale</text><text x=\"120\" y=\"206\" font-size=\"8.5\" fill=\"#737373\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"400\" >Steady.</text><rect x=\"80\" y=\"262\" width=\"80\" height=\"22\" rx=\"11\" fill=\"#171717\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"277\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind, sans-serif\" font-weight=\"600\" >Shop</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "wellnest-products-tea-3-products-packs-10",
+   "repeat": false,
+   "split_from_pair": "wellnest-products-tea-3-20"
+  }
+ ],
+ "share": true,
+ "notes": true,
+ "split_from": "wellnest-products-tea-3",
+ "split_part": "a",
+ "split_sibling": "wellnest-products-tea-3-visits-members",
+ "split_note": "R86 (Max Oct 17 2026 07:50 ICT): 10 picks per deck; split from the unanswered 20-pick deck wellnest-products-tea-3"
+}
