@@ -3,6 +3,8 @@
 Max submitted Fresh Look And More Info at 21:58 ICT (01 skipped with note 'can they all be different color', 02-05 B, 06 both, 07 B, 08 B).
 His 22:09 ICT correction overrides 02-05: NO tap-for-more-info anywhere (no flip, expand, sheet or i tip), rows stay a plain list,
 spacing TIGHTER, See All under the cards. Never ask about spacing, tapping or more-info again.
+Top-up (Branding, Oct 17 2026 ~23:50 ICT, AIR chase + R86): 2 more look-only picks (09 section background white vs warm cream band,
+10 slide dots terracotta vs each card's own colour) so the deck has 10. Same id, same order for 01-08; nothing answered yet.
 Option A in every pick = the section with every settled decision applied: tight rows (23.5px), plain non-tappable rows, See All under
 the cards, plan chips on every row (07B), fade-up + arrow nudge (08B), two icons, 52px box, Water first, 'Moisture Scan', 14.5px regular
 names, flat white face (UpKeep may add the line icon / hover lift; either is fine in A). B = one look change.
@@ -41,7 +43,7 @@ PLAN_OF = {"Furnace": "Essentials", "AC": "Essentials", "Furnace Filters": "Esse
 PLAN_COL = {"Essentials": ("#0B6E4F", "#EAF3EE"), "Plus": ("#05668D", "#EDF4F7"), "Complete": ("#A8431F", "#FAF3EB")}
 # Settled (Compact Polish 21:32 + Fresh Look 21:58 07B/08B + Max 22:09 correction): tight rows, plain rows, chips, motion, flat white.
 D = dict(rowh=23.5, fs=14.5, fw=400, art=52, order=(1, 0, 2, 3), colors="mixed", face="flat", band=False, iconline=False,
-         shadow="soft", seebtn="link", headbig=False, chip="soft", chips=True, motion=True, scroll=0)
+         shadow="soft", seebtn="link", headbig=False, chip="soft", chips=True, motion=True, scroll=0, bg="white", dots="terra")
 OWN = {"Heating & Cooling": "t", "Water": "l", "Air & Safety": "s", "Outside": "j"}   # every card its own palette colour
 CW, GAP = 282, 9.6
 def cats(o):
@@ -99,12 +101,15 @@ def section(o, y0=0):
         s += f'<path d="M352 {cy} h-10 M352 {cy - 5} h-6 M352 {cy + 5} h-6" stroke="{TERRA}" stroke-width="1.2" stroke-linecap="round" opacity=".6"/>'
     y += card_h(o) + 12
     xs = 196.5 - (14 + 3 * 5 + 3 * 4) / 2
+    dotc = TINT[cs[o["scroll"]][3]][0] if o["dots"] == "card" else TERRA
     for i in range(4):
         on = i == o["scroll"]; w = 14 if on else 5
-        s += rect(xs, y, w, 5, TERRA if on else "#dddddd", "none", 2.5); xs += w + 4
+        s += rect(xs, y, w, 5, dotc if on else "#dddddd", "none", 2.5); xs += w + 4
     y += 15
     if o["seebtn"] == "link": s += T(196.5, y + 12, "See All", 13, LAGOON, "Hind", 600, "middle", 'text-decoration="underline"'); y += 16
     else: s += rect(196.5 - 52, y - 2, 104, 26, "#FFFFFF", LAGOON, 13, 1.4) + T(196.5, y + 15, "See All \u203a", 13, LAGOON, "Hind", 600, "middle"); y += 26
+    if o["bg"] == "cream":   # full-width warm cream band behind the whole section (white page above and below)
+        s = rect(0, y0 - 8, 393, y - y0 + 18, CREAM) + ln(y0 - 8, 0, 393, "#EFE8DC") + ln(y + 10, 0, 393, "#EFE8DC") + s
     return s, y - y0
 def mock(over=None, note="", close="card"):
     o = dict(D, **(over or {})); K = 240 / 393
@@ -117,6 +122,7 @@ def mock(over=None, note="", close="card"):
         Z = .8; g = card(0, 0, cats(o)[o["scroll"]], o); s += f'<g transform="translate({120 - CW * Z / 2:.2f},{yc:.2f}) scale({Z})">{g}</g>'; yc += (card_h(o) + 8) * Z
     elif close == "grid":   # all four cards, 2 x 2, so the colours can be compared
         cs = cats(o); Z = 226 / (2 * CW + GAP); g = ""
+        if o["bg"] == "cream": s += rect(0, yc - 2, 240, (2 * card_h(o) + GAP) * Z + 8, CREAM)
         for i, c in enumerate(cs): g += card((i % 2) * (CW + GAP), (i // 2) * (card_h(o) + GAP), c, o)
         s += f'<g transform="translate({120 - (2 * CW + GAP) * Z / 2:.2f},{yc:.2f}) scale({Z:.4f})">{g}</g>'; yc += (2 * card_h(o) + GAP + 8) * Z
     elif close == "foot":
@@ -162,18 +168,24 @@ P2("Section Header", "section header", "should the heading stay the bold Khand t
 P2("Plan Chip Style", "plan chip style", "should the Essentials, Plus and Complete chips stay soft filled pills, or become outlined chips on white?",
   ("soft", "Soft Filled Chips (As Picked)", "Light green, blue and terracotta pills.", "calm", mock(OWNC, note=("Soft filled plan chips", "Plans as on the site's What's Included list"))),
   ("outline", "Outlined Chips", "White chips with a thin plan-colour outline.", "practical", mock(dict(OWNC, chip="outline"), note=("Outlined plan chips", "Same plans, lighter look"))))
-assert len(pairs) == 8, len(pairs)
+P2("Section Background", "section background", "should the section sit on the plain white page, or on a warm cream band that runs the full width behind the cards?",
+  ("white", "Plain White Page (As Now)", "White cards on the white page.", "calm", mock(OWNC, close="grid", note=("White page behind the cards", "Cards marked by their thin outline"))),
+  ("cream", "Warm Cream Band", "A full-width warm cream band behind the cards.", "practical", mock(dict(OWNC, bg="cream"), close="grid", note=("Warm cream band behind the section", "White cards stand out on the cream"))))
+P2("Slide Dots", "slide dots", "should the active dot under the cards stay terracotta, or take the colour of the card you are on?",
+  ("terra", "Terracotta Dot (As Now)", "The active dot is always terracotta.", "calm", mock(OWNC, close="foot", note=("Terracotta active dot", "Same on every card"))),
+  ("card", "Dot In The Card's Colour", "The active dot matches the card in view.", "playful", mock(dict(OWNC, dots="card"), close="foot", note=("Active dot in the card's own colour", "Lagoon here, on the Water card"))))
+assert len(pairs) == 10, len(pairs)
 txt = json.dumps(pairs).lower(); assert "thai" not in txt and "thailand" not in txt, "R110"
 assert not re.search(r"[\U0001F300-\U0001FAFF\u2600-\u27BF]", json.dumps(pairs, ensure_ascii=False)), "emoji"
 publish(DID, NAME, "UpKeep", pairs, {"brands": [
         "Card colours and finish for the compact What We Take Care Of section. Option A is always the section with every settled pick applied (tight rows, plain non-tappable rows, plan chips, fade-up and arrow nudge, See All under the cards, flat white face); Option B one look change at the same size.",
         "Smart Upkeep brand: white and warm cream, terracotta, lagoon, jungle and mustard accents, Khand and Hind, light mode only."],
         "submit_agent": "upkeep", "submit_to": "UpKeep Agent f0d420ad-d37e-44d3-be6f-053da2b6e24d", "topic": "what-we-take-care-of-card-colors-and-finish",
-        "deck_size": 8, "board": "upkeep", "audience": "Max", "requested": True, "caption_rule": "R105",
+        "deck_size": 10, "topped_up": "2026-10-17: 8 -> 10 picks (R86; AIR chase), picks 09-10 added, 01-08 unchanged", "board": "upkeep", "audience": "Max", "requested": True, "caption_rule": "R105",
         "request": "Max Oct 17 2026 21:58 ICT note on Fresh Look 01: 'can they all be different color'; 06 both (flat white and soft tint). 22:09 ICT correction: no tap-for-more-info, plain rows, tighter spacing, See All under the cards.",
         "replaces": "upkeep-what-we-take-care-of-fresh-look-and-more-info-deck", "follow_on_of": "upkeep-what-we-take-care-of-fresh-look-and-more-info-deck",
         "applied_picks": "Compact Polish 21:32 (2B 14.5px, 3B regular, 4A two icons, 5B 52px, 6B Water first, 7B plain rows, 9B Moisture Scan, 10B See All under) + Fresh Look 21:58 (07B plan chips, 08B fade-up and arrow nudge) + Max 22:09 correction (tight rows, no tap-for-more-info anywhere); face flat white for now",
-        "sources": {"content": "tools/build_upkeep_wwtco_colors.py", "site": "WebermanApps/smart-upkeep d49e1d8 app.js (WW_CATS, WW_WI plans), styles.css .ca-* tints"}}, seed=10175, n=8, first=0)
+        "sources": {"content": "tools/build_upkeep_wwtco_colors.py", "site": "WebermanApps/smart-upkeep d49e1d8 app.js (WW_CATS, WW_WI plans), styles.css .ca-* tints"}}, seed=10175, n=10, first=0)
 order = [p["ask"] for p in pairs]; dj = json.load(open(f"decks/{DID}.json")); dj["pairs"].sort(key=lambda p: order.index(p["ask"]))
 for i, p in enumerate(dj["pairs"], 1): p["id"] = f"{DID}-{i:02d}"
 dj["pairs"][0]["carried_from"] = "upkeep-what-we-take-care-of-fresh-look-and-more-info-deck-01"
