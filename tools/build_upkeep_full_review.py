@@ -870,12 +870,13 @@ XP = [
                 ("cfan", "Ceiling Fan Clean And Balance", "Clean blades, tighten mounts and stop the wobble on ceiling fans.", "80", "ac")),
 ]
 EXTRAS_REMOVED = ("pool", "snow", "handyman", "pest", "backflow")
+XSHORT = {'Water Leak Sensor Setup': 'Phone alerts for leaks at sinks, heater', 'Sump Pump Battery Backup': 'Keeps the sump pumping in an outage', 'Gutter Guard Install': 'Mesh guards keep leaves out of gutters', 'Downspout Extensions': 'Carries roof water away from the house', 'Driveway Sealcoating': 'Seals asphalt before winter salt', 'Concrete Crack Filling': 'Fills cracks in walks, steps, garage', 'Tile And Grout Cleaning': 'Deep clean and reseal tile grout', 'Upholstery Cleaning': 'Steam clean sofas and chairs', 'Garbage Disposal Clean': 'Clean, deodorize, check for leaks', 'Range Hood Filter Degrease': 'Degrease or swap range hood filters', 'Faucet And Toilet Tune-Up': 'Fix drips and running toilets', 'Bath Fan Clean And Check': 'Clean fans, check they vent outside', 'Smart Thermostat Install': 'Install and set up a smart thermostat', 'Video Doorbell Install': 'Mount and connect a video doorbell', 'Grab Bar Install': 'Two grab bars anchored in studs', 'Fire Extinguisher Service': 'Check, tag and place extinguishers', 'Window Well Covers': 'Clear covers keep wells dry and clean', 'Basement Dehumidifier Setup': 'Dehumidifier with a drain line', 'Washer Hose Upgrade': 'Braided steel hoses that resist bursts', 'Ceiling Fan Clean And Balance': 'Clean blades, tighten, stop the wobble'}
 def extras_picks():
     out = []
     for grp, a, b in XP:
         ask = f"Website: Extras, which new {grp.lower()} add-on should join the Extras list, {a[1]} or {b[1]}?"
-        oa = (a[0], a[1], a[2][:40].rsplit(" ", 1)[0] if len(a[2]) > 40 else a[2], "practical", X_card(a[4], a[1], a[2], a[3]))
-        ob = (b[0], b[1], b[2][:40].rsplit(" ", 1)[0] if len(b[2]) > 40 else b[2], "practical", X_card(b[4], b[1], b[2], b[3]))
+        oa = (a[0], a[1], XSHORT[a[1]], "practical", X_card(a[4], a[1], a[2], a[3]))
+        ob = (b[0], b[1], XSHORT[b[1]], "practical", X_card(b[4], b[1], b[2], b[3]))
         out.append((grp, ask, oa, ob))
     return out
 D("extras", "upkeep-extras-ideas-deck", "Extras Ideas Deck", "Extras", "10 cards: new add-on ideas for the Extras list",
