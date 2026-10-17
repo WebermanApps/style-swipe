@@ -2,7 +2,7 @@
 """Branding: next round of the permanent Team Improvement Deck (R75, R88: 10 picks per round; Oct 17 2026).
 Reuses the round-one drawing kit from build_team_improvement_deck.py (svg/thumb), adds deck-look drawings.
 New deck id per round so answers never mix; same name; submit_agent branding; chat to Branding; Machan footer from the template.
-usage: build_team_improvement_round.py <deck_id> [content_module]   (round three: team_improvement_round3_content; prints slug + url; page written UNLOCKED, lock before commit)"""
+usage: build_team_improvement_round.py <deck_id> [content_module]   (round three: team_improvement_round3_content; round four: team_improvement_round4_content; prints slug + url; page written UNLOCKED, lock before commit)"""
 import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()
 import sys, os, json, re, string, secrets
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); os.chdir(ROOT)
@@ -80,6 +80,7 @@ publish(did, NAME, "Grok Bot Team", pairs, {"brands": [ABOUT, "Permanent Brandin
         "sources": SOURCES}, seed=7600, n=10)
 order = [p[1] for p in PAIRS]; dj = json.load(open(f"decks/{did}.json")); dj["pairs"].sort(key=lambda p: order.index(p["ask"]))
 for i, p in enumerate(dj["pairs"], 1): p["id"] = f"{did}-{i:02d}"
+import caption_rule; caption_rule.guard(dj["pairs"], did)  # R105
 json.dump(dj, open(f"decks/{did}.json", "w"), indent=1, ensure_ascii=False); assert len(dj["pairs"]) == 10, len(dj["pairs"])
 SL = "queue/team-improvement-slugs.json"; slugs = json.load(open(SL)) if os.path.exists(SL) else {}
 if did not in slugs: slugs[did] = "team-improvement-" + "".join(secrets.choice(string.ascii_lowercase + string.digits) for _ in range(6)); json.dump(slugs, open(SL, "w"), indent=1)
