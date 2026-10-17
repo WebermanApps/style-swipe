@@ -133,6 +133,8 @@ body.mw-hero-behind-header #mw-bh.mw-branded-header{background:transparent!impor
    Deck shelves become grids: 3 columns on tablet, 5 on desktop (10 decks = 2 rows), so names are no longer squeezed into one long row. */
 @media(min-width:768px){
  html:root{--mw-section-gap:18px}
+ /* boards that set their own desktop gap on .mw-sections (Grok Bot: 28px at 900px+) get the same compact 18px through the kit */
+ #mw-mid .mw-sections,#mw-mid.mw-middle,body>.mw-sections{--mw-section-gap:18px}
  #mw-bh,#mw-bf{--bh-gap:20px}
  #mw-mid.mw-middle{width:min(1100px,calc(100% - 48px))!important}
  .mw-stick{padding:0 max(24px,calc((100vw - var(--mw-colw,1100px))/2))}
