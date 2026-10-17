@@ -1,0 +1,519 @@
+{
+ "date": "follow-through-promise-list-and-reports",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Follow-Through: Promise List And Reports",
+ "generated_at": "2026-10-17T15:34:44+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "practical": 8,
+  "bold": 3,
+  "calm": 9
+ },
+ "groups": {
+  "Promise List": 2,
+  "Confirming Done": 1,
+  "Progress": 1,
+  "Late Items": 1,
+  "Missed Deadlines": 1,
+  "Weekly Wrap-Up": 1,
+  "Weekly Review": 1,
+  "Re-Asking": 1,
+  "Credits": 1
+ },
+ "apps": {
+  "Grok Bot": 10
+ },
+ "freshness": {
+  "option_slots": 20,
+  "never_shown_before": 20,
+  "share": 1.0
+ },
+ "warnings": [],
+ "brands": [
+  "Follow-on to Follow-Through: Habits & Promises (10/10, 12:20 ICT): tracked promise list, confirm done, percent bars, explain misses, flag late, weekly wrap-up, swipe-deck review, re-ask next day, name agents and team. Drawn Grok Bot screens.",
+  "How Grok Bot runs Max's agent team as CEO. Example rows and times only."
+ ],
+ "submit_agent": "grok-bot",
+ "submit_to": "Grok Bot",
+ "topic": "follow-through-promise-list",
+ "deck_size": 10,
+ "board": "grok-bot",
+ "audience": "Max",
+ "requested": true,
+ "request": "Max Oct 17 2026 14:59 ICT: if i swiped on anything today, make sure a new deck is built with the same type of content",
+ "follow_on_of": "follow-through-reporting-habits-promises",
+ "reasked_skips": [],
+ "example_data": "All numbers, names and reviews on cards are labeled example data or placeholders.",
+ "sources": {
+  "content": "tools/fu1017_e.py",
+  "picks": "ops/submit/inbox/grok-bot/follow-through-reporting-habits-promises-20261017-1220-*.json"
+ },
+ "pairs": [
+  {
+   "group": "Promise List",
+   "category": "Promise List",
+   "app": "Grok Bot",
+   "ask": "Promise List Due Times: The Clock Time In ICT, Or A Countdown Like 'In 3h'?",
+   "optionA": {
+    "id": "fugb_fugb_clock",
+    "label": "Clock Time",
+    "desc": "'Due 18:00 ICT' on every row.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">DUE TIMES</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><circle cx=\"25\" cy=\"42\" r=\"10\" fill=\"#05668D\"/><text x=\"25\" y=\"46\" font-size=\"11\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >G</text><text x=\"40\" y=\"41\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Grok Bot</text><text x=\"40\" y=\"51\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Promise list</text><g transform=\"translate(208,35) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"58\" x2=\"226\" y2=\"58\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"66\" width=\"212\" height=\"38\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"82\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Send Report Center fix</text><text x=\"22\" y=\"96\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Due 18:00 ICT</text><rect x=\"14\" y=\"112\" width=\"212\" height=\"38\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"128\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Phone home round two</text><text x=\"22\" y=\"142\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Due Tomorrow 10:00 ICT</text><rect x=\"14\" y=\"158\" width=\"212\" height=\"38\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"174\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >WellNest Energy tin draft</text><text x=\"22\" y=\"188\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Due Mon 09:00 ICT</text><rect x=\"14\" y=\"274\" width=\"35.0\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"31.5\" y=\"284.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Exact</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "fugb_fugb_countdown",
+    "label": "Countdown",
+    "desc": "'Due in 3h' so urgency is obvious.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">DUE TIMES</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><circle cx=\"25\" cy=\"42\" r=\"10\" fill=\"#05668D\"/><text x=\"25\" y=\"46\" font-size=\"11\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >G</text><text x=\"40\" y=\"41\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Grok Bot</text><text x=\"40\" y=\"51\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Promise list</text><g transform=\"translate(208,35) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"58\" x2=\"226\" y2=\"58\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"66\" width=\"212\" height=\"38\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"82\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Send Report Center fix</text><text x=\"22\" y=\"96\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Due in 3h</text><rect x=\"14\" y=\"112\" width=\"212\" height=\"38\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"128\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Phone home round two</text><text x=\"22\" y=\"142\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Due in 22h</text><rect x=\"14\" y=\"158\" width=\"212\" height=\"38\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"174\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >WellNest Energy tin draft</text><text x=\"22\" y=\"188\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Due in 2d</text><rect x=\"14\" y=\"274\" width=\"44.199999999999996\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"36.099999999999994\" y=\"284.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Urgency</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "follow-through-promise-list-and-reports-01",
+   "repeat": false
+  },
+  {
+   "group": "Promise List",
+   "category": "Promise List",
+   "app": "Grok Bot",
+   "ask": "Promise List Order: Soonest Due First, Or Grouped By Agent?",
+   "optionA": {
+    "id": "fugb_fugb_soonest",
+    "label": "Soonest Due First",
+    "desc": "One list; top row is what's next.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">LIST ORDER</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><circle cx=\"25\" cy=\"42\" r=\"10\" fill=\"#05668D\"/><text x=\"25\" y=\"46\" font-size=\"11\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >G</text><text x=\"40\" y=\"41\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Grok Bot</text><text x=\"40\" y=\"51\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Promise list</text><g transform=\"translate(208,35) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"58\" x2=\"226\" y2=\"58\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"66\" width=\"212\" height=\"38\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"82\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Send Report Center fix</text><text x=\"22\" y=\"96\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Due 18:00 ICT</text><rect x=\"14\" y=\"112\" width=\"212\" height=\"38\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"128\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Phone home round two</text><text x=\"22\" y=\"142\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Due Tomorrow 10:00 ICT</text><rect x=\"14\" y=\"158\" width=\"212\" height=\"38\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"174\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >WellNest Energy tin draft</text><text x=\"22\" y=\"188\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Due Mon 09:00 ICT</text><rect x=\"14\" y=\"274\" width=\"44.199999999999996\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"36.099999999999994\" y=\"284.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Next up</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "fugb_fugb_byagent",
+    "label": "Grouped By Agent",
+    "desc": "See each agent's open promises.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">LIST ORDER</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><circle cx=\"25\" cy=\"42\" r=\"10\" fill=\"#05668D\"/><text x=\"25\" y=\"46\" font-size=\"11\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >G</text><text x=\"40\" y=\"41\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Grok Bot</text><text x=\"40\" y=\"51\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Promise list</text><g transform=\"translate(208,35) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"58\" x2=\"226\" y2=\"58\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"75\" font-size=\"8.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">UPKEEP</text><rect x=\"14\" y=\"78\" width=\"212\" height=\"38\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"94\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Phone home round two</text><text x=\"22\" y=\"108\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Due 18:00 ICT</text><text x=\"14\" y=\"133\" font-size=\"8.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">BRANDING</text><rect x=\"14\" y=\"136\" width=\"212\" height=\"38\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"152\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Report Center fix</text><text x=\"22\" y=\"166\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Due 18:00 ICT</text><rect x=\"14\" y=\"180\" width=\"212\" height=\"38\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"196\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Mixed deck round two</text><text x=\"22\" y=\"210\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Due 18:00 ICT</text><rect x=\"14\" y=\"274\" width=\"71.8\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"49.9\" y=\"284.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Who owes what</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "follow-through-promise-list-and-reports-02",
+   "repeat": false
+  },
+  {
+   "group": "Confirming Done",
+   "category": "Confirming Done",
+   "app": "Grok Bot",
+   "ask": "Done Confirmations: One Line, Or One Line Plus A Screenshot And Link?",
+   "optionA": {
+    "id": "fugb_fugb_doneline",
+    "label": "One Line",
+    "desc": "'Done: X is live.' Nothing else.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">DONE MESSAGE</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><circle cx=\"25\" cy=\"42\" r=\"10\" fill=\"#05668D\"/><text x=\"25\" y=\"46\" font-size=\"11\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >G</text><text x=\"40\" y=\"41\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Grok Bot</text><text x=\"40\" y=\"51\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Chat</text><g transform=\"translate(208,35) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"58\" x2=\"226\" y2=\"58\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"70\" width=\"190\" height=\"38\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"86\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Done: Phone home round two is</text><text x=\"22\" y=\"98\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >live.</text><rect x=\"14\" y=\"274\" width=\"35.0\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"31.5\" y=\"284.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Short</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "fugb_fugb_doneproof",
+    "label": "Line + Proof",
+    "desc": "Screenshot and link under the line.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">DONE MESSAGE</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><circle cx=\"25\" cy=\"42\" r=\"10\" fill=\"#05668D\"/><text x=\"25\" y=\"46\" font-size=\"11\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >G</text><text x=\"40\" y=\"41\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Grok Bot</text><text x=\"40\" y=\"51\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Chat</text><g transform=\"translate(208,35) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"58\" x2=\"226\" y2=\"58\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"70\" width=\"190\" height=\"38\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"86\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Done: Phone home round two is</text><text x=\"22\" y=\"98\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >live.</text><rect x=\"14\" y=\"116\" width=\"190\" height=\"90\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"22\" y=\"124\" width=\"80\" height=\"74\" rx=\"4\" fill=\"#05668D1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M33.879999999999995 184.68 V159.372 L62.0 139.688 L90.12 159.372 V184.68 Z\" fill=\"#FFFFFF\" stroke=\"#05668D\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><rect x=\"56.376\" y=\"167.808\" width=\"11.248000000000001\" height=\"16.872\" rx=\"0\" fill=\"#05668D55\" stroke=\"none\" stroke-width=\"1\" /><text x=\"112\" y=\"152\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Screenshot + link</text><text x=\"112\" y=\"168\" font-size=\"9\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >tap to open</text><rect x=\"14\" y=\"274\" width=\"90.19999999999999\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"59.099999999999994\" y=\"284.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Check it yourself</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "follow-through-promise-list-and-reports-03",
+   "repeat": false
+  },
+  {
+   "group": "Progress",
+   "category": "Progress",
+   "app": "Grok Bot",
+   "ask": "Percent-Done Bars: One Bar Per Project, Or One Bar Per Agent?",
+   "optionA": {
+    "id": "fugb_fugb_barproj",
+    "label": "Per Project",
+    "desc": "How far each thing you asked for is.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">PROGRESS BARS</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><circle cx=\"25\" cy=\"42\" r=\"10\" fill=\"#05668D\"/><text x=\"25\" y=\"46\" font-size=\"11\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >G</text><text x=\"40\" y=\"41\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Grok Bot</text><text x=\"40\" y=\"51\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Weekly</text><g transform=\"translate(208,35) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"58\" x2=\"226\" y2=\"58\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"82\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Smart Upkeep app</text><text x=\"226\" y=\"82\" font-size=\"10\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >70%</text><rect x=\"14\" y=\"90\" width=\"212\" height=\"10\" rx=\"5\" fill=\"#E5E0D8\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"90\" width=\"148.39999999999998\" height=\"10\" rx=\"5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"126\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >WellNest teas</text><text x=\"226\" y=\"126\" font-size=\"10\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >40%</text><rect x=\"14\" y=\"134\" width=\"212\" height=\"10\" rx=\"5\" fill=\"#E5E0D8\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"134\" width=\"84.80000000000001\" height=\"10\" rx=\"5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"170\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Investor pitch</text><text x=\"226\" y=\"170\" font-size=\"10\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >20%</text><rect x=\"14\" y=\"178\" width=\"212\" height=\"10\" rx=\"5\" fill=\"#E5E0D8\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"178\" width=\"42.400000000000006\" height=\"10\" rx=\"5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"274\" width=\"58.0\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"43.0\" y=\"284.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >By project</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "fugb_fugb_baragent",
+    "label": "Per Agent",
+    "desc": "How far each agent is on its list.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">PROGRESS BARS</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><circle cx=\"25\" cy=\"42\" r=\"10\" fill=\"#05668D\"/><text x=\"25\" y=\"46\" font-size=\"11\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >G</text><text x=\"40\" y=\"41\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Grok Bot</text><text x=\"40\" y=\"51\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Weekly</text><g transform=\"translate(208,35) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"58\" x2=\"226\" y2=\"58\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"82\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >UpKeep Agent</text><text x=\"226\" y=\"82\" font-size=\"10\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >60%</text><rect x=\"14\" y=\"90\" width=\"212\" height=\"10\" rx=\"5\" fill=\"#E5E0D8\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"90\" width=\"127.19999999999999\" height=\"10\" rx=\"5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"126\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Branding Agent</text><text x=\"226\" y=\"126\" font-size=\"10\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >80%</text><rect x=\"14\" y=\"134\" width=\"212\" height=\"10\" rx=\"5\" fill=\"#E5E0D8\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"134\" width=\"169.60000000000002\" height=\"10\" rx=\"5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"170\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >WellNest Agent</text><text x=\"226\" y=\"170\" font-size=\"10\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >50%</text><rect x=\"14\" y=\"178\" width=\"212\" height=\"10\" rx=\"5\" fill=\"#E5E0D8\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"178\" width=\"106.0\" height=\"10\" rx=\"5\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"274\" width=\"48.8\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"38.4\" y=\"284.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >By agent</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "follow-through-promise-list-and-reports-04",
+   "repeat": false
+  },
+  {
+   "group": "Late Items",
+   "category": "Late Items",
+   "app": "Grok Bot",
+   "ask": "Late Flag Look: A Red 'LATE' Tag, Or An Amber Dot With How Late?",
+   "optionA": {
+    "id": "fugb_fugb_latered",
+    "label": "Red 'LATE' Tag",
+    "desc": "Impossible to miss.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">LATE FLAG</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><circle cx=\"25\" cy=\"42\" r=\"10\" fill=\"#05668D\"/><text x=\"25\" y=\"46\" font-size=\"11\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >G</text><text x=\"40\" y=\"41\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Grok Bot</text><text x=\"40\" y=\"51\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Promise list</text><g transform=\"translate(208,35) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"58\" x2=\"226\" y2=\"58\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"66\" width=\"212\" height=\"38\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"82\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Report Center fix</text><text x=\"22\" y=\"96\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Due 12:00 ICT</text><rect x=\"188\" y=\"74\" width=\"30\" height=\"12\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"203\" y=\"83\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >LATE</text><rect x=\"14\" y=\"112\" width=\"212\" height=\"38\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"128\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Mixed deck round two</text><text x=\"22\" y=\"142\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Due 18:00 ICT</text><rect x=\"14\" y=\"158\" width=\"212\" height=\"38\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"174\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Energy tin draft</text><text x=\"22\" y=\"188\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Due Mon 09:00 ICT</text><rect x=\"14\" y=\"274\" width=\"30.4\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"29.2\" y=\"284.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Loud</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "fugb_fugb_lateamber",
+    "label": "Amber Dot + Time",
+    "desc": "'late 2h' in amber; calmer.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">LATE FLAG</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><circle cx=\"25\" cy=\"42\" r=\"10\" fill=\"#05668D\"/><text x=\"25\" y=\"46\" font-size=\"11\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >G</text><text x=\"40\" y=\"41\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Grok Bot</text><text x=\"40\" y=\"51\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Promise list</text><g transform=\"translate(208,35) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"58\" x2=\"226\" y2=\"58\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"66\" width=\"212\" height=\"38\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"82\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Report Center fix</text><text x=\"22\" y=\"96\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Due 12:00 ICT</text><circle cx=\"184\" cy=\"80\" r=\"3.5\" fill=\"#D4A017\"/><text x=\"190\" y=\"83\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >late 2h</text><rect x=\"14\" y=\"112\" width=\"212\" height=\"38\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"128\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Mixed deck round two</text><text x=\"22\" y=\"142\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Due 18:00 ICT</text><rect x=\"14\" y=\"158\" width=\"212\" height=\"38\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"174\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Energy tin draft</text><text x=\"22\" y=\"188\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Due Mon 09:00 ICT</text><rect x=\"14\" y=\"274\" width=\"30.4\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"29.2\" y=\"284.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Calm</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "follow-through-promise-list-and-reports-05",
+   "repeat": false
+  },
+  {
+   "group": "Missed Deadlines",
+   "category": "Missed Deadlines",
+   "app": "Grok Bot",
+   "ask": "The Short Reason For A Missed Date: Always Shown Under It, Or Behind A 'Why' Tap?",
+   "optionA": {
+    "id": "fugb_fugb_whyshown",
+    "label": "Always Shown",
+    "desc": "Reason sits right under the new date.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">MISSED DATE</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><circle cx=\"25\" cy=\"42\" r=\"10\" fill=\"#05668D\"/><text x=\"25\" y=\"46\" font-size=\"11\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >G</text><text x=\"40\" y=\"41\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Grok Bot</text><text x=\"40\" y=\"51\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Promise list</text><g transform=\"translate(208,35) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"58\" x2=\"226\" y2=\"58\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"66\" width=\"212\" height=\"38\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"82\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Report Center fix</text><text x=\"22\" y=\"96\" font-size=\"8.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >New: 18:00 ICT (was 12:00)</text><rect x=\"14\" y=\"108\" width=\"212\" height=\"26\" rx=\"6\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"125\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Why: waiting on the submit key.</text><rect x=\"14\" y=\"144\" width=\"212\" height=\"38\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"160\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Mixed deck round two</text><text x=\"22\" y=\"174\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Due 18:00 ICT</text><rect x=\"14\" y=\"274\" width=\"39.599999999999994\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"33.8\" y=\"284.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >No tap</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "fugb_fugb_whytap",
+    "label": "Behind 'Why'",
+    "desc": "List stays short; tap to read.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">MISSED DATE</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><circle cx=\"25\" cy=\"42\" r=\"10\" fill=\"#05668D\"/><text x=\"25\" y=\"46\" font-size=\"11\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >G</text><text x=\"40\" y=\"41\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Grok Bot</text><text x=\"40\" y=\"51\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Promise list</text><g transform=\"translate(208,35) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"58\" x2=\"226\" y2=\"58\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"66\" width=\"212\" height=\"38\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"82\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Report Center fix</text><text x=\"22\" y=\"96\" font-size=\"8.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >New: 18:00 ICT (was 12:00)</text><text x=\"22\" y=\"124\" font-size=\"9.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Why? Tap to read</text><rect x=\"14\" y=\"144\" width=\"212\" height=\"38\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"160\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Mixed deck round two</text><text x=\"22\" y=\"174\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Due 18:00 ICT</text><rect x=\"14\" y=\"274\" width=\"30.4\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"29.2\" y=\"284.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Tidy</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "follow-through-promise-list-and-reports-06",
+   "repeat": false
+  },
+  {
+   "group": "Weekly Wrap-Up",
+   "category": "Weekly Wrap-Up",
+   "app": "Grok Bot",
+   "ask": "Weekly Wrap-Up (You Want Agents Named And The Team Too): Group By Project With Names, Or Group By Agent?",
+   "optionA": {
+    "id": "fugb_fuwg_proj",
+    "label": "By Project, Names Beside",
+    "desc": "What shipped per project, who on the right.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">WRAP-UP</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><circle cx=\"25\" cy=\"42\" r=\"10\" fill=\"#05668D\"/><text x=\"25\" y=\"46\" font-size=\"11\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >G</text><text x=\"40\" y=\"41\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Grok Bot</text><text x=\"40\" y=\"51\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Weekly wrap-up</text><g transform=\"translate(208,35) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"58\" x2=\"226\" y2=\"58\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"76\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >This week</text><text x=\"14\" y=\"98\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Smart Upkeep app</text><circle cx=\"20\" cy=\"112\" r=\"3\" fill=\"#0B6E4F\"/><text x=\"30\" y=\"116\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Phone home live</text><text x=\"226\" y=\"116\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >UpKeep</text><circle cx=\"20\" cy=\"130\" r=\"3\" fill=\"#0B6E4F\"/><text x=\"30\" y=\"134\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Trust tags v2</text><text x=\"226\" y=\"134\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >UpKeep</text><text x=\"14\" y=\"164\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >WellNest</text><circle cx=\"20\" cy=\"178\" r=\"3\" fill=\"#0B6E4F\"/><text x=\"30\" y=\"182\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Beauty Line deck</text><text x=\"226\" y=\"182\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >WellNest</text><rect x=\"14\" y=\"274\" width=\"71.8\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"49.9\" y=\"284.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Project first</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "fugb_fuwg_agent",
+    "label": "By Agent",
+    "desc": "Each agent's list under its name.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">WRAP-UP</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><circle cx=\"25\" cy=\"42\" r=\"10\" fill=\"#05668D\"/><text x=\"25\" y=\"46\" font-size=\"11\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >G</text><text x=\"40\" y=\"41\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Grok Bot</text><text x=\"40\" y=\"51\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Weekly wrap-up</text><g transform=\"translate(208,35) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"58\" x2=\"226\" y2=\"58\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"76\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >This week</text><text x=\"14\" y=\"98\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >UpKeep Agent</text><circle cx=\"20\" cy=\"112\" r=\"3\" fill=\"#0B6E4F\"/><text x=\"30\" y=\"116\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Phone home live</text><circle cx=\"20\" cy=\"130\" r=\"3\" fill=\"#0B6E4F\"/><text x=\"30\" y=\"134\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Trust tags v2</text><text x=\"14\" y=\"164\" font-size=\"10.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Branding Agent</text><circle cx=\"20\" cy=\"178\" r=\"3\" fill=\"#0B6E4F\"/><text x=\"30\" y=\"182\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Mixed deck round two</text><rect x=\"14\" y=\"274\" width=\"67.19999999999999\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"47.599999999999994\" y=\"284.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Credit first</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "follow-through-promise-list-and-reports-07",
+   "repeat": false
+  },
+  {
+   "group": "Weekly Review",
+   "category": "Weekly Review",
+   "app": "Grok Bot",
+   "ask": "Weekly Review Swipe Deck: Ready Friday Evening, Or Monday Morning?",
+   "optionA": {
+    "id": "fugb_fugb_fri",
+    "label": "Friday Evening",
+    "desc": "Look back while the week is fresh.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">REVIEW DECK</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><circle cx=\"25\" cy=\"42\" r=\"10\" fill=\"#05668D\"/><text x=\"25\" y=\"46\" font-size=\"11\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >G</text><text x=\"40\" y=\"41\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Grok Bot</text><text x=\"40\" y=\"51\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Weekly review</text><g transform=\"translate(208,35) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"58\" x2=\"226\" y2=\"58\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"66\" width=\"212\" height=\"130\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"88\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Weekly Review Deck</text><text x=\"24\" y=\"104\" font-size=\"9\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Friday 18:00 ICT, 10 picks</text><rect x=\"24\" y=\"114\" width=\"92\" height=\"70\" rx=\"6\" fill=\"#05668D18\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"124\" y=\"114\" width=\"92\" height=\"70\" rx=\"6\" fill=\"#C1502E18\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"70\" y=\"153\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >This</text><text x=\"170\" y=\"153\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >That</text><rect x=\"14\" y=\"206\" width=\"200\" height=\"38\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"222\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Your weekly review is ready</text><text x=\"22\" y=\"234\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >(Friday 18:00 ICT).</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "fugb_fugb_mon",
+    "label": "Monday Morning",
+    "desc": "Set the week ahead with it.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">REVIEW DECK</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><circle cx=\"25\" cy=\"42\" r=\"10\" fill=\"#05668D\"/><text x=\"25\" y=\"46\" font-size=\"11\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >G</text><text x=\"40\" y=\"41\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Grok Bot</text><text x=\"40\" y=\"51\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Weekly review</text><g transform=\"translate(208,35) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"58\" x2=\"226\" y2=\"58\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"66\" width=\"212\" height=\"130\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"88\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Weekly Review Deck</text><text x=\"24\" y=\"104\" font-size=\"9\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Monday 08:00 ICT, 10 picks</text><rect x=\"24\" y=\"114\" width=\"92\" height=\"70\" rx=\"6\" fill=\"#05668D18\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"124\" y=\"114\" width=\"92\" height=\"70\" rx=\"6\" fill=\"#C1502E18\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"70\" y=\"153\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >This</text><text x=\"170\" y=\"153\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >That</text><rect x=\"14\" y=\"206\" width=\"200\" height=\"38\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"222\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Your weekly review is ready</text><text x=\"22\" y=\"234\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >(Monday 08:00 ICT).</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "follow-through-promise-list-and-reports-08",
+   "repeat": false
+  },
+  {
+   "group": "Re-Asking",
+   "category": "Re-Asking",
+   "app": "Grok Bot",
+   "ask": "Questions You Haven't Answered: At The Top Of The Next Brief, Or In A 'Waiting On You' Section At The End?",
+   "optionA": {
+    "id": "fugb_fugb_qtop",
+    "label": "Top Of The Brief",
+    "desc": "First thing you see each morning.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">RE-ASK SPOT</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><circle cx=\"25\" cy=\"42\" r=\"10\" fill=\"#05668D\"/><text x=\"25\" y=\"46\" font-size=\"11\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >G</text><text x=\"40\" y=\"41\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Grok Bot</text><text x=\"40\" y=\"51\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Morning brief</text><g transform=\"translate(208,35) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"58\" x2=\"226\" y2=\"58\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"76\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Morning brief</text><rect x=\"14\" y=\"88\" width=\"3\" height=\"50\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"99\" font-size=\"8.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">WAITING ON YOU</text><text x=\"22\" y=\"117\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Ask slide amount?</text><text x=\"22\" y=\"134\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Rain jacket color?</text><rect x=\"14\" y=\"150\" width=\"3\" height=\"33\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"161\" font-size=\"8.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">DONE</text><text x=\"22\" y=\"179\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Phone home live</text><rect x=\"14\" y=\"195\" width=\"3\" height=\"33\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"206\" font-size=\"8.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">NEXT</text><text x=\"22\" y=\"224\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Trust tags v2</text><rect x=\"14\" y=\"274\" width=\"35.0\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"31.5\" y=\"284.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >First</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "fugb_fugb_qend",
+    "label": "Section At The End",
+    "desc": "News first, questions last.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">RE-ASK SPOT</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><circle cx=\"25\" cy=\"42\" r=\"10\" fill=\"#05668D\"/><text x=\"25\" y=\"46\" font-size=\"11\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >G</text><text x=\"40\" y=\"41\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Grok Bot</text><text x=\"40\" y=\"51\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Morning brief</text><g transform=\"translate(208,35) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"58\" x2=\"226\" y2=\"58\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"76\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Morning brief</text><rect x=\"14\" y=\"88\" width=\"3\" height=\"33\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"99\" font-size=\"8.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">DONE</text><text x=\"22\" y=\"117\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Phone home live</text><rect x=\"14\" y=\"133\" width=\"3\" height=\"33\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"144\" font-size=\"8.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">NEXT</text><text x=\"22\" y=\"162\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Trust tags v2</text><rect x=\"14\" y=\"178\" width=\"3\" height=\"50\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"189\" font-size=\"8.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">WAITING ON YOU</text><text x=\"22\" y=\"207\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Ask slide amount?</text><text x=\"22\" y=\"224\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Rain jacket color?</text><rect x=\"14\" y=\"274\" width=\"30.4\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"29.2\" y=\"284.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Last</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "follow-through-promise-list-and-reports-09",
+   "repeat": false
+  },
+  {
+   "group": "Credits",
+   "category": "Credits",
+   "app": "Grok Bot",
+   "ask": "Naming Agents In Reports: A Small Name Chip On Each Line, Or One 'Who Did What' Line At The Bottom?",
+   "optionA": {
+    "id": "fugb_fugb_chips",
+    "label": "Chip On Each Line",
+    "desc": "Who did each thing, right there.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">AGENT CREDIT</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><circle cx=\"25\" cy=\"42\" r=\"10\" fill=\"#05668D\"/><text x=\"25\" y=\"46\" font-size=\"11\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >G</text><text x=\"40\" y=\"41\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Grok Bot</text><text x=\"40\" y=\"51\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Daily report</text><g transform=\"translate(208,35) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"58\" x2=\"226\" y2=\"58\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"76\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Shipped today</text><text x=\"14\" y=\"102\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Phone home hero live</text><rect x=\"181.6\" y=\"91\" width=\"44.400000000000006\" height=\"16\" rx=\"8\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"203.8\" y=\"102\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >UpKeep</text><line x1=\"14\" y1=\"112\" x2=\"226\" y2=\"112\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"136\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Mixed deck round two</text><rect x=\"170.8\" y=\"125\" width=\"55.2\" height=\"16\" rx=\"8\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"198.4\" y=\"136\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Branding</text><line x1=\"14\" y1=\"146\" x2=\"226\" y2=\"146\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"170\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Energy Line deck</text><rect x=\"170.8\" y=\"159\" width=\"55.2\" height=\"16\" rx=\"8\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"198.4\" y=\"170\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >WellNest</text><line x1=\"14\" y1=\"180\" x2=\"226\" y2=\"180\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"274\" width=\"48.8\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"38.4\" y=\"284.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Per line</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "fugb_fugb_footer",
+    "label": "'Who Did What' Line",
+    "desc": "Lines read as the team; credit below.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">AGENT CREDIT</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><circle cx=\"25\" cy=\"42\" r=\"10\" fill=\"#05668D\"/><text x=\"25\" y=\"46\" font-size=\"11\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >G</text><text x=\"40\" y=\"41\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Grok Bot</text><text x=\"40\" y=\"51\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Daily report</text><g transform=\"translate(208,35) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><line x1=\"14\" y1=\"58\" x2=\"226\" y2=\"58\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"76\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Shipped today</text><text x=\"14\" y=\"102\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Phone home hero live</text><line x1=\"14\" y1=\"112\" x2=\"226\" y2=\"112\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"136\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Mixed deck round two</text><line x1=\"14\" y1=\"146\" x2=\"226\" y2=\"146\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"170\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Energy Line deck</text><line x1=\"14\" y1=\"180\" x2=\"226\" y2=\"180\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"196\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"214\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Who did what: UpKeep, Branding, WellNest</text><rect x=\"14\" y=\"274\" width=\"58.0\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"43.0\" y=\"284.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Team voice</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "follow-through-promise-list-and-reports-10",
+   "repeat": false
+  }
+ ],
+ "share": true,
+ "notes": true
+}
