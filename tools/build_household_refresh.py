@@ -31,7 +31,7 @@ SL = "queue/household-slugs.json"
 META = {"submit_agent": "household", "submit_to": "Household Agent", "agent_id": "c59ffdde-28bf-4ad7-8dd8-22f5e941647d", "deck_size": 10,
         "board": "household", "audience": "Max and Nozomi", "caption_rule": "R105", "round": "household-refresh-2026-10-17"}
 CSS = (":root{--bg:#FFFFFF;--line:#E3DDD2}html,body{background:#FFFFFF!important}"
-       "html body .card.card,html body .opt.opt,html body .vis.vis,html body .stamp.stamp,html body .carding .card{border-radius:0!important}.vis{background:#FAF6EE!important}"
+       "html body .card.card,html body .opt.opt,html body .vis.vis,html body .stamp.stamp,html body .carding .card{border-radius:10px!important}.vis{background:#FAF6EE!important}"
        "body.carding .opt .vis svg,body.carding .opt .vis .v-svg svg,.v-svg svg,.opt .vis svg{width:100%!important;height:auto!important;max-height:none!important;max-width:100%!important;flex:0 0 auto!important}"
        "body.carding .opt .vis{min-height:0;overflow:visible}")
 def build(D, photos, k):
