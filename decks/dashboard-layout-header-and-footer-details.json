@@ -1,0 +1,509 @@
+{
+ "date": "dashboard-layout-header-and-footer-details",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Header And Footer Details",
+ "generated_at": "2026-10-17T23:43:57+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "calm": 10,
+  "playful": 2,
+  "focused": 8
+ },
+ "groups": {
+  "Header And Footer": 10
+ },
+ "apps": {
+  "Coach": 10
+ },
+ "freshness": {
+  "option_slots": 20,
+  "never_shown_before": 20,
+  "share": 1.0
+ },
+ "warnings": [],
+ "brands": [
+  "Open questions on the branded header (Command Center header, decks and counter, Morning Report fold) and branded footer (Routines, Built by Machan) that no rule settles yet. Share placement is left out (waiting on Max). Nothing from Main Dashboard Rules or All Boards Rules.",
+  "Max's standard look: white and light beige, Khand and Hind, light mode only."
+ ],
+ "submit_agent": "coach",
+ "topic": "dashboard-layout",
+ "shelf": true,
+ "deck_size": 10,
+ "board": "coach",
+ "caption_rule": "R105",
+ "replaces": "dashboard-layout-dashboard-layout-deck",
+ "request": "Coach via Grok Bot, Oct 17 2026: retire or rebuild Dashboard Layout Deck around the current branded header and footer; keep Share placement out.",
+ "sources": {
+  "rulebook": "/workspace/ops/brand/dashboard-rulebook.md (R72, R76, R79, R85, R87, R96, R97, R104, R106)",
+  "review": "/workspace/ops/brand/dashboard-review-2026-10-17.md (S20; S1-S18 left to the open decks)",
+  "builder": "tools/build_coach_shelf_rebuild.py"
+ },
+ "pairs": [
+  {
+   "group": "Header And Footer",
+   "category": "Long Board Names",
+   "app": "Coach",
+   "ask": "Agent Board Header: Long board names, on a phone should a long Command Center name wrap to a second line or shrink to fit on one?",
+   "optionA": {
+    "id": "bkhf_01a",
+    "label": "Wrap To Two Lines",
+    "desc": "The full name wraps at the same size.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"10\" width=\"64\" height=\"18\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1\" /><g transform=\"translate(18,13) scale(0.5)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"33\" y=\"22.5\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >APPS HOME</text><circle cx=\"25.0\" cy=\"49.0\" r=\"11.0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"53.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >C</text><text x=\"42\" y=\"49\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Video And Photo Studio</text><text x=\"42\" y=\"63\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Command Center</text><text x=\"42\" y=\"74\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Coaching and team habits</text><g transform=\"translate(208,40) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><rect x=\"14\" y=\"85\" width=\"212\" height=\"34\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"99\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Same size on every board</text><text x=\"22\" y=\"111\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Two lines at most on a 393 phone</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bkhf_01b",
+    "label": "Shrink To One Line",
+    "desc": "The name gets smaller until it fits one line.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"10\" width=\"64\" height=\"18\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1\" /><g transform=\"translate(18,13) scale(0.5)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"33\" y=\"22.5\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >APPS HOME</text><circle cx=\"25.0\" cy=\"49.0\" r=\"11.0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"53.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >C</text><text x=\"42\" y=\"49.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Video And Photo Studio Command Center</text><text x=\"42\" y=\"60.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Coaching and team habits</text><g transform=\"translate(208,40) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><rect x=\"14\" y=\"71.0\" width=\"212\" height=\"34\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"85.0\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >One line on every board</text><text x=\"22\" y=\"97.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Long names use smaller type</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "dashboard-layout-header-and-footer-details-01",
+   "repeat": false
+  },
+  {
+   "group": "Header And Footer",
+   "category": "Deck Counter Wording",
+   "app": "Coach",
+   "ask": "Agent Board Header: Deck counter, should it read decks done today and all time or one all-time total?",
+   "optionA": {
+    "id": "bkhf_02a",
+    "label": "Today And All Time",
+    "desc": "Two numbers: decks done today and all time.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"10\" width=\"64\" height=\"18\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1\" /><g transform=\"translate(18,13) scale(0.5)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"33\" y=\"22.5\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >APPS HOME</text><circle cx=\"25.0\" cy=\"49.0\" r=\"11.0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"53.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >C</text><text x=\"42\" y=\"49\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Coach Command Center</text><text x=\"42\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Coaching and team habits</text><g transform=\"translate(208,40) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"14\" y=\"78\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">READY TO SWIPE</text><rect x=\"14\" y=\"83\" width=\"64\" height=\"58\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"83\" width=\"64\" height=\"22\" rx=\"10\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"95\" width=\"64\" height=\"10\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"119\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Rule Cleanup</text><text x=\"20\" y=\"130\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >10 picks</text><rect x=\"52\" y=\"129\" width=\"22\" height=\"9\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"63\" y=\"136\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >NEW</text><rect x=\"86\" y=\"83\" width=\"64\" height=\"58\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"86\" y=\"83\" width=\"64\" height=\"22\" rx=\"10\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"86\" y=\"95\" width=\"64\" height=\"10\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"92\" y=\"119\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Team Ideas</text><text x=\"92\" y=\"130\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >10 picks</text><rect x=\"124\" y=\"129\" width=\"22\" height=\"9\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"135\" y=\"136\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >NEW</text><rect x=\"158\" y=\"83\" width=\"64\" height=\"58\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"158\" y=\"83\" width=\"64\" height=\"22\" rx=\"10\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"158\" y=\"95\" width=\"64\" height=\"10\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"164\" y=\"119\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Habits</text><text x=\"164\" y=\"130\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >10 picks</text><rect x=\"196\" y=\"129\" width=\"22\" height=\"9\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"207\" y=\"136\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >NEW</text><text x=\"14\" y=\"160\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >2 decks today  ·  41 all time</text><rect x=\"14\" y=\"169\" width=\"212\" height=\"34\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"183\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Shows today's pace</text><text x=\"22\" y=\"195\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Finished decks keep counting (R96)</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bkhf_02b",
+    "label": "One All-Time Total",
+    "desc": "Just the total number of decks finished.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"10\" width=\"64\" height=\"18\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1\" /><g transform=\"translate(18,13) scale(0.5)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"33\" y=\"22.5\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >APPS HOME</text><circle cx=\"25.0\" cy=\"49.0\" r=\"11.0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"53.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >C</text><text x=\"42\" y=\"49\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Coach Command Center</text><text x=\"42\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Coaching and team habits</text><g transform=\"translate(208,40) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"14\" y=\"78\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">READY TO SWIPE</text><rect x=\"14\" y=\"83\" width=\"64\" height=\"58\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"83\" width=\"64\" height=\"22\" rx=\"10\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"95\" width=\"64\" height=\"10\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"119\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Rule Cleanup</text><text x=\"20\" y=\"130\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >10 picks</text><rect x=\"52\" y=\"129\" width=\"22\" height=\"9\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"63\" y=\"136\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >NEW</text><rect x=\"86\" y=\"83\" width=\"64\" height=\"58\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"86\" y=\"83\" width=\"64\" height=\"22\" rx=\"10\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"86\" y=\"95\" width=\"64\" height=\"10\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"92\" y=\"119\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Team Ideas</text><text x=\"92\" y=\"130\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >10 picks</text><rect x=\"124\" y=\"129\" width=\"22\" height=\"9\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"135\" y=\"136\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >NEW</text><rect x=\"158\" y=\"83\" width=\"64\" height=\"58\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"158\" y=\"83\" width=\"64\" height=\"22\" rx=\"10\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"158\" y=\"95\" width=\"64\" height=\"10\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"164\" y=\"119\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Habits</text><text x=\"164\" y=\"130\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >10 picks</text><rect x=\"196\" y=\"129\" width=\"22\" height=\"9\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"207\" y=\"136\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >NEW</text><text x=\"14\" y=\"160\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >41 decks done</text><rect x=\"14\" y=\"169\" width=\"212\" height=\"34\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"183\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >One plain number</text><text x=\"22\" y=\"195\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Finished decks keep counting (R96)</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "dashboard-layout-header-and-footer-details-02",
+   "repeat": false
+  },
+  {
+   "group": "Header And Footer",
+   "category": "Deck Counter Tap",
+   "app": "Coach",
+   "ask": "Agent Board Header: Deck counter tap, should tapping the counter open the Deck Building page or stay plain text?",
+   "optionA": {
+    "id": "bkhf_03a",
+    "label": "Opens Deck Building",
+    "desc": "Tapping the counter opens the Deck Building page.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"10\" width=\"64\" height=\"18\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1\" /><g transform=\"translate(18,13) scale(0.5)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"33\" y=\"22.5\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >APPS HOME</text><circle cx=\"25.0\" cy=\"49.0\" r=\"11.0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"53.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >C</text><text x=\"42\" y=\"49\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Coach Command Center</text><text x=\"42\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Coaching and team habits</text><g transform=\"translate(208,40) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"14\" y=\"78\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">READY TO SWIPE</text><rect x=\"14\" y=\"83\" width=\"64\" height=\"58\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"83\" width=\"64\" height=\"22\" rx=\"10\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"95\" width=\"64\" height=\"10\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"119\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Rule Cleanup</text><text x=\"20\" y=\"130\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >10 picks</text><rect x=\"52\" y=\"129\" width=\"22\" height=\"9\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"63\" y=\"136\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >NEW</text><rect x=\"86\" y=\"83\" width=\"64\" height=\"58\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"86\" y=\"83\" width=\"64\" height=\"22\" rx=\"10\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"86\" y=\"95\" width=\"64\" height=\"10\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"92\" y=\"119\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Team Ideas</text><text x=\"92\" y=\"130\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >10 picks</text><rect x=\"124\" y=\"129\" width=\"22\" height=\"9\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"135\" y=\"136\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >NEW</text><rect x=\"158\" y=\"83\" width=\"64\" height=\"58\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"158\" y=\"83\" width=\"64\" height=\"22\" rx=\"10\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"158\" y=\"95\" width=\"64\" height=\"10\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"164\" y=\"119\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Habits</text><text x=\"164\" y=\"130\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >10 picks</text><rect x=\"196\" y=\"129\" width=\"22\" height=\"9\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"207\" y=\"136\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >NEW</text><text x=\"14\" y=\"160\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >41 decks done</text><text x=\"226\" y=\"160\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" text-decoration=\"underline\">Deck Building</text><rect x=\"14\" y=\"169\" width=\"212\" height=\"34\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"183\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >A link to every deck and result</text><text x=\"22\" y=\"195\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Same tab, Return brings you back</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bkhf_03b",
+    "label": "Just A Number",
+    "desc": "The counter is plain text and does nothing when tapped.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"10\" width=\"64\" height=\"18\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1\" /><g transform=\"translate(18,13) scale(0.5)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"33\" y=\"22.5\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >APPS HOME</text><circle cx=\"25.0\" cy=\"49.0\" r=\"11.0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"53.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >C</text><text x=\"42\" y=\"49\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Coach Command Center</text><text x=\"42\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Coaching and team habits</text><g transform=\"translate(208,40) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"14\" y=\"78\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">READY TO SWIPE</text><rect x=\"14\" y=\"83\" width=\"64\" height=\"58\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"83\" width=\"64\" height=\"22\" rx=\"10\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"95\" width=\"64\" height=\"10\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"119\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Rule Cleanup</text><text x=\"20\" y=\"130\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >10 picks</text><rect x=\"52\" y=\"129\" width=\"22\" height=\"9\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"63\" y=\"136\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >NEW</text><rect x=\"86\" y=\"83\" width=\"64\" height=\"58\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"86\" y=\"83\" width=\"64\" height=\"22\" rx=\"10\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"86\" y=\"95\" width=\"64\" height=\"10\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"92\" y=\"119\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Team Ideas</text><text x=\"92\" y=\"130\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >10 picks</text><rect x=\"124\" y=\"129\" width=\"22\" height=\"9\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"135\" y=\"136\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >NEW</text><rect x=\"158\" y=\"83\" width=\"64\" height=\"58\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"158\" y=\"83\" width=\"64\" height=\"22\" rx=\"10\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"158\" y=\"95\" width=\"64\" height=\"10\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"164\" y=\"119\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Habits</text><text x=\"164\" y=\"130\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >10 picks</text><rect x=\"196\" y=\"129\" width=\"22\" height=\"9\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"207\" y=\"136\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >NEW</text><text x=\"14\" y=\"160\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >41 decks done</text><rect x=\"14\" y=\"169\" width=\"212\" height=\"34\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"183\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Nothing to tap by mistake</text><text x=\"22\" y=\"195\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Deck Building stays on its own board</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "dashboard-layout-header-and-footer-details-03",
+   "repeat": false
+  },
+  {
+   "group": "Header And Footer",
+   "category": "Open Shelf Slots",
+   "app": "Coach",
+   "ask": "Agent Board Header: Open shelf slots, when the ready queue is empty should the shelf just show fewer decks or end with an Ask For A Deck card?",
+   "optionA": {
+    "id": "bkhf_04a",
+    "label": "Show Fewer Decks",
+    "desc": "The shelf simply ends after the last ready deck.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"10\" width=\"64\" height=\"18\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1\" /><g transform=\"translate(18,13) scale(0.5)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"33\" y=\"22.5\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >APPS HOME</text><circle cx=\"25.0\" cy=\"49.0\" r=\"11.0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"53.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >C</text><text x=\"42\" y=\"49\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Coach Command Center</text><text x=\"42\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Coaching and team habits</text><g transform=\"translate(208,40) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"14\" y=\"78\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">READY TO SWIPE</text><rect x=\"14\" y=\"83\" width=\"64\" height=\"58\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"83\" width=\"64\" height=\"22\" rx=\"10\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"95\" width=\"64\" height=\"10\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"119\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Rule Cleanup</text><text x=\"20\" y=\"130\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >10 picks</text><rect x=\"52\" y=\"129\" width=\"22\" height=\"9\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"63\" y=\"136\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >NEW</text><rect x=\"86\" y=\"83\" width=\"64\" height=\"58\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"86\" y=\"83\" width=\"64\" height=\"22\" rx=\"10\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"86\" y=\"95\" width=\"64\" height=\"10\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"92\" y=\"119\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Team Ideas</text><text x=\"92\" y=\"130\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >10 picks</text><rect x=\"124\" y=\"129\" width=\"22\" height=\"9\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"135\" y=\"136\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >NEW</text><rect x=\"14\" y=\"151\" width=\"212\" height=\"34\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"165\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Two decks, nothing else</text><text x=\"22\" y=\"177\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >The queue is empty</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bkhf_04b",
+    "label": "Ask For A Deck Card",
+    "desc": "A last dashed card lets Max ask for a new deck.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"10\" width=\"64\" height=\"18\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1\" /><g transform=\"translate(18,13) scale(0.5)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"33\" y=\"22.5\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >APPS HOME</text><circle cx=\"25.0\" cy=\"49.0\" r=\"11.0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"53.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >C</text><text x=\"42\" y=\"49\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Coach Command Center</text><text x=\"42\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Coaching and team habits</text><g transform=\"translate(208,40) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"14\" y=\"78\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">READY TO SWIPE</text><rect x=\"14\" y=\"83\" width=\"64\" height=\"58\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"83\" width=\"64\" height=\"22\" rx=\"10\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"95\" width=\"64\" height=\"10\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"119\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Rule Cleanup</text><text x=\"20\" y=\"130\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >10 picks</text><rect x=\"52\" y=\"129\" width=\"22\" height=\"9\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"63\" y=\"136\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >NEW</text><rect x=\"86\" y=\"83\" width=\"64\" height=\"58\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"86\" y=\"83\" width=\"64\" height=\"22\" rx=\"10\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"86\" y=\"95\" width=\"64\" height=\"10\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"92\" y=\"119\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Team Ideas</text><text x=\"92\" y=\"130\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >10 picks</text><rect x=\"124\" y=\"129\" width=\"22\" height=\"9\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"135\" y=\"136\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >NEW</text><rect x=\"158\" y=\"83\" width=\"64\" height=\"58\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><text x=\"190.0\" y=\"109\" font-size=\"14\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >+</text><text x=\"190.0\" y=\"125\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Ask For A Deck</text><rect x=\"14\" y=\"151\" width=\"212\" height=\"34\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"165\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >A dashed card fills the gap</text><text x=\"22\" y=\"177\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Tap it to ask Branding for a deck</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "dashboard-layout-header-and-footer-details-04",
+   "repeat": false
+  },
+  {
+   "group": "Header And Footer",
+   "category": "Late Tag Spot",
+   "app": "Coach",
+   "ask": "Agent Board Header: Late tag, should the Late N min tag show on the closed Morning Report row or only once it is opened?",
+   "optionA": {
+    "id": "bkhf_05a",
+    "label": "On The Closed Row",
+    "desc": "The Late tag shows on the Morning Report row while it is closed.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"10\" width=\"64\" height=\"18\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1\" /><g transform=\"translate(18,13) scale(0.5)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"33\" y=\"22.5\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >APPS HOME</text><circle cx=\"25.0\" cy=\"49.0\" r=\"11.0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"53.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >C</text><text x=\"42\" y=\"49\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Coach Command Center</text><text x=\"42\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Coaching and team habits</text><g transform=\"translate(208,40) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"14\" y=\"80\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >41 decks done</text><rect x=\"14\" y=\"87\" width=\"212\" height=\"30\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"106\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Morning Report (3)</text><rect x=\"133.512\" y=\"97\" width=\"58.488\" height=\"11.02\" rx=\"5.8\" fill=\"#C1502E1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"162.756\" y=\"105.004\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">LATE 12 MIN</text><g transform=\"translate(200,94) scale(0.6666666666666666)\"><path d=\"M5 9 L12 16 L19 9\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><rect x=\"14\" y=\"125\" width=\"212\" height=\"34\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"139\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Seen without opening it</text><text x=\"22\" y=\"151\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Fold stays closed by default</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bkhf_05b",
+    "label": "Inside Only",
+    "desc": "The row stays clean; the tag shows once it is opened.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"10\" width=\"64\" height=\"18\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1\" /><g transform=\"translate(18,13) scale(0.5)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"33\" y=\"22.5\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >APPS HOME</text><circle cx=\"25.0\" cy=\"49.0\" r=\"11.0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"53.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >C</text><text x=\"42\" y=\"49\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Coach Command Center</text><text x=\"42\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Coaching and team habits</text><g transform=\"translate(208,40) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"14\" y=\"80\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >41 decks done</text><rect x=\"14\" y=\"87\" width=\"212\" height=\"30\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"106\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Morning Report (3)</text><g transform=\"translate(200,94) scale(0.6666666666666666)\"><path d=\"M5 9 L12 16 L19 9\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><rect x=\"14\" y=\"125\" width=\"212\" height=\"34\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"139\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Same row on every board</text><text x=\"22\" y=\"151\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Late tag waits inside</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "dashboard-layout-header-and-footer-details-05",
+   "repeat": false
+  },
+  {
+   "group": "Header And Footer",
+   "category": "Before It Posts",
+   "app": "Coach",
+   "ask": "Agent Board Header: Morning Report before it posts, should the fold show yesterday's report with a Yesterday tag or one line saying when today's arrives?",
+   "optionA": {
+    "id": "bkhf_06a",
+    "label": "Yesterday, Tagged",
+    "desc": "Yesterday's report stays, with a small Yesterday tag.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"10\" width=\"64\" height=\"18\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1\" /><g transform=\"translate(18,13) scale(0.5)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"33\" y=\"22.5\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >APPS HOME</text><circle cx=\"25.0\" cy=\"49.0\" r=\"11.0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"53.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >C</text><text x=\"42\" y=\"49\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Coach Command Center</text><text x=\"42\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Coaching and team habits</text><g transform=\"translate(208,40) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><rect x=\"14\" y=\"69\" width=\"212\" height=\"30\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"88\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Morning Report (3)</text><rect x=\"142.328\" y=\"79\" width=\"49.672\" height=\"11.02\" rx=\"5.8\" fill=\"#C1502E1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"167.164\" y=\"87.004\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">YESTERDAY</text><g transform=\"translate(200,76) scale(0.6666666666666666)\"><path d=\"M5 9 L12 16 L19 9\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"24\" y=\"113\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Leads up</text><text x=\"216\" y=\"113\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\" >Fri</text><text x=\"24\" y=\"129\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Blog draft moved</text><text x=\"216\" y=\"129\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\" >Fri</text><text x=\"24\" y=\"145\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Deck counts posted</text><text x=\"216\" y=\"145\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\" >Fri</text><rect x=\"14\" y=\"159\" width=\"212\" height=\"34\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"173\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Something to read at any hour</text><text x=\"22\" y=\"185\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Replaced at 4:47 AM</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bkhf_06b",
+    "label": "Posts At 4:47 AM",
+    "desc": "One short line says when today's report arrives.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"10\" width=\"64\" height=\"18\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1\" /><g transform=\"translate(18,13) scale(0.5)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"33\" y=\"22.5\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >APPS HOME</text><circle cx=\"25.0\" cy=\"49.0\" r=\"11.0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.6\"/><text x=\"25.0\" y=\"53.4\" font-size=\"12.1\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >C</text><text x=\"42\" y=\"49\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Coach Command Center</text><text x=\"42\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Coaching and team habits</text><g transform=\"translate(208,40) scale(0.5416666666666666)\"><path d=\"M12 3 V15 M7 8 L12 3 L17 8\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12 V20 H19 V12\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><rect x=\"14\" y=\"69\" width=\"212\" height=\"30\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"88\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Morning Report (0)</text><g transform=\"translate(200,76) scale(0.6666666666666666)\"><path d=\"M5 9 L12 16 L19 9\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"24\" y=\"113\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Today's report posts at 4:47 AM</text><text x=\"216\" y=\"113\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\" ></text><rect x=\"14\" y=\"127\" width=\"212\" height=\"34\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"141\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Never shows old news</text><text x=\"22\" y=\"153\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >One line until it posts</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "dashboard-layout-header-and-footer-details-06",
+   "repeat": false
+  },
+  {
+   "group": "Header And Footer",
+   "category": "Headlines On A Phone",
+   "app": "Coach",
+   "ask": "Agent Board Header: Morning Report headlines, on a phone should the three headline cards stack or sit in one swipe row?",
+   "optionA": {
+    "id": "bkhf_07a",
+    "label": "Stacked",
+    "desc": "The three headline cards sit one under another.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"10\" width=\"64\" height=\"18\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1\" /><g transform=\"translate(18,13) scale(0.5)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"33\" y=\"22.5\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >APPS HOME</text><rect x=\"14\" y=\"34\" width=\"212\" height=\"30\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"53\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Morning Report (3)</text><g transform=\"translate(200,41) scale(0.6666666666666666)\"><path d=\"M5 9 L12 16 L19 9\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><rect x=\"24\" y=\"70\" width=\"192\" height=\"26\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24\" y=\"70\" width=\"3\" height=\"26\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"32\" y=\"81\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Leads up</text><text x=\"32\" y=\"91\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Three new member calls</text><rect x=\"24\" y=\"100\" width=\"192\" height=\"26\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24\" y=\"100\" width=\"3\" height=\"26\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"32\" y=\"111\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Late</text><text x=\"32\" y=\"121\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Blog draft moved</text><rect x=\"24\" y=\"130\" width=\"192\" height=\"26\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24\" y=\"130\" width=\"3\" height=\"26\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"32\" y=\"141\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Done</text><text x=\"32\" y=\"151\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Deck counts posted</text><rect x=\"14\" y=\"168\" width=\"212\" height=\"34\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"182\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >All three seen at once</text><text x=\"22\" y=\"194\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Taller fold</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bkhf_07b",
+    "label": "One Swipe Row",
+    "desc": "The three cards sit side by side and swipe.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"10\" width=\"64\" height=\"18\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1\" /><g transform=\"translate(18,13) scale(0.5)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"33\" y=\"22.5\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >APPS HOME</text><rect x=\"14\" y=\"34\" width=\"212\" height=\"30\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"53\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Morning Report (3)</text><g transform=\"translate(200,41) scale(0.6666666666666666)\"><path d=\"M5 9 L12 16 L19 9\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><rect x=\"24\" y=\"70\" width=\"88\" height=\"44\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24\" y=\"70\" width=\"88\" height=\"3\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"30\" y=\"88\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Leads up</text><text x=\"30\" y=\"100\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Three new calls</text><rect x=\"120\" y=\"70\" width=\"88\" height=\"44\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"120\" y=\"70\" width=\"88\" height=\"3\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"126\" y=\"88\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Late</text><text x=\"126\" y=\"100\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Blog draft</text><rect x=\"216\" y=\"70\" width=\"88\" height=\"44\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"216\" y=\"70\" width=\"88\" height=\"3\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"222\" y=\"88\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Done</text><text x=\"222\" y=\"100\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Counts posted</text><circle cx=\"106\" cy=\"124\" r=\"3\" fill=\"#0A0A0A\"/><circle cx=\"120\" cy=\"124\" r=\"3\" fill=\"#D6D0C6\"/><circle cx=\"134\" cy=\"124\" r=\"3\" fill=\"#D6D0C6\"/><rect x=\"14\" y=\"146\" width=\"212\" height=\"34\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"160\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Shorter fold</text><text x=\"22\" y=\"172\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Swipe for the next headline</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "dashboard-layout-header-and-footer-details-07",
+   "repeat": false
+  },
+  {
+   "group": "Header And Footer",
+   "category": "No Routines Yet",
+   "app": "Coach",
+   "ask": "Agent Board Footer: Boards with no routines, should the Routines fold be hidden or show Routines (0) with one plain line?",
+   "optionA": {
+    "id": "bkhf_08a",
+    "label": "Hide The Section",
+    "desc": "A board with no routines shows no Routines fold at all.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Coach Command Center  ·  middle sections</text><rect x=\"14\" y=\"30\" width=\"212\" height=\"70\" rx=\"0\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"14\" y1=\"110\" x2=\"226\" y2=\"110\" stroke=\"#d9d1c3\"/><circle cx=\"86.0\" cy=\"126.0\" r=\"6.0\" fill=\"#C1502E\"/><circle cx=\"86.0\" cy=\"126.96\" r=\"3.84\" fill=\"#F6E7D3\"/><circle cx=\"84.8\" cy=\"126.6\" r=\"0.72\" fill=\"#05668D\"/><circle cx=\"87.2\" cy=\"126.6\" r=\"0.72\" fill=\"#05668D\"/><path d=\"M86.0 120 q1.44 -3.5999999999999996 3.5999999999999996 -3.5999999999999996\" stroke=\"#0B6E4F\" stroke-width=\"1.4\" fill=\"none\"/><text x=\"98\" y=\"130\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Built by Machan</text><rect x=\"14\" y=\"144\" width=\"212\" height=\"34\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"158\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Footer is just the credit</text><text x=\"22\" y=\"170\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Routines appear once one exists</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bkhf_08b",
+    "label": "Routines (0) With A Line",
+    "desc": "The closed fold shows a zero and one line inside.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Coach Command Center  ·  middle sections</text><rect x=\"14\" y=\"30\" width=\"212\" height=\"70\" rx=\"0\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"14\" y1=\"110\" x2=\"226\" y2=\"110\" stroke=\"#d9d1c3\"/><rect x=\"14\" y=\"116\" width=\"212\" height=\"30\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"135\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Routines (0)</text><g transform=\"translate(200,123) scale(0.6666666666666666)\"><path d=\"M5 9 L12 16 L19 9\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"24\" y=\"160\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >No routines yet</text><text x=\"216\" y=\"160\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\" ></text><circle cx=\"86.0\" cy=\"182.0\" r=\"6.0\" fill=\"#C1502E\"/><circle cx=\"86.0\" cy=\"182.96\" r=\"3.84\" fill=\"#F6E7D3\"/><circle cx=\"84.8\" cy=\"182.6\" r=\"0.72\" fill=\"#05668D\"/><circle cx=\"87.2\" cy=\"182.6\" r=\"0.72\" fill=\"#05668D\"/><path d=\"M86.0 176 q1.44 -3.5999999999999996 3.5999999999999996 -3.5999999999999996\" stroke=\"#0B6E4F\" stroke-width=\"1.4\" fill=\"none\"/><text x=\"98\" y=\"186\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Built by Machan</text><rect x=\"14\" y=\"200\" width=\"212\" height=\"34\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"214\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Same footer on every board</text><text x=\"22\" y=\"226\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Says plainly there are none</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "dashboard-layout-header-and-footer-details-08",
+   "repeat": false
+  },
+  {
+   "group": "Header And Footer",
+   "category": "Single Group Label",
+   "app": "Coach",
+   "ask": "Agent Board Footer: Routine group label, when a board has only one group should the Daily And Beyond label still show or be hidden?",
+   "optionA": {
+    "id": "bkhf_09a",
+    "label": "Keep The Label",
+    "desc": "Daily And Beyond shows even when it is the only group.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Coach Command Center  ·  middle sections</text><rect x=\"14\" y=\"30\" width=\"212\" height=\"70\" rx=\"0\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"14\" y1=\"110\" x2=\"226\" y2=\"110\" stroke=\"#d9d1c3\"/><rect x=\"14\" y=\"116\" width=\"212\" height=\"30\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"135\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Routines (2)</text><g transform=\"translate(200,123) scale(0.6666666666666666)\"><path d=\"M5 9 L12 16 L19 9\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"24\" y=\"160\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >DAILY AND BEYOND</text><text x=\"216\" y=\"160\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\" ></text><text x=\"24\" y=\"176\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Morning Report</text><text x=\"216\" y=\"176\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\" >4:47 AM Daily</text><text x=\"24\" y=\"192\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Weekly review</text><text x=\"216\" y=\"192\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\" >9:17 AM Thu</text><circle cx=\"86.0\" cy=\"214.0\" r=\"6.0\" fill=\"#C1502E\"/><circle cx=\"86.0\" cy=\"214.96\" r=\"3.84\" fill=\"#F6E7D3\"/><circle cx=\"84.8\" cy=\"214.6\" r=\"0.72\" fill=\"#05668D\"/><circle cx=\"87.2\" cy=\"214.6\" r=\"0.72\" fill=\"#05668D\"/><path d=\"M86.0 208 q1.44 -3.5999999999999996 3.5999999999999996 -3.5999999999999996\" stroke=\"#0B6E4F\" stroke-width=\"1.4\" fill=\"none\"/><text x=\"98\" y=\"218\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Built by Machan</text><rect x=\"14\" y=\"232\" width=\"212\" height=\"34\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"246\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Same look as boards with two groups</text><text x=\"22\" y=\"258\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bkhf_09b",
+    "label": "Hide It",
+    "desc": "With one group the rows start straight away.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Coach Command Center  ·  middle sections</text><rect x=\"14\" y=\"30\" width=\"212\" height=\"70\" rx=\"0\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"14\" y1=\"110\" x2=\"226\" y2=\"110\" stroke=\"#d9d1c3\"/><rect x=\"14\" y=\"116\" width=\"212\" height=\"30\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"135\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Routines (2)</text><g transform=\"translate(200,123) scale(0.6666666666666666)\"><path d=\"M5 9 L12 16 L19 9\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"24\" y=\"160\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Morning Report</text><text x=\"216\" y=\"160\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\" >4:47 AM Daily</text><text x=\"24\" y=\"176\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Weekly review</text><text x=\"216\" y=\"176\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\" >9:17 AM Thu</text><circle cx=\"86.0\" cy=\"198.0\" r=\"6.0\" fill=\"#C1502E\"/><circle cx=\"86.0\" cy=\"198.96\" r=\"3.84\" fill=\"#F6E7D3\"/><circle cx=\"84.8\" cy=\"198.6\" r=\"0.72\" fill=\"#05668D\"/><circle cx=\"87.2\" cy=\"198.6\" r=\"0.72\" fill=\"#05668D\"/><path d=\"M86.0 192 q1.44 -3.5999999999999996 3.5999999999999996 -3.5999999999999996\" stroke=\"#0B6E4F\" stroke-width=\"1.4\" fill=\"none\"/><text x=\"98\" y=\"202\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Built by Machan</text><rect x=\"14\" y=\"216\" width=\"212\" height=\"34\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"230\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >One line shorter</text><text x=\"22\" y=\"242\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Label shows again with two groups</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "dashboard-layout-header-and-footer-details-09",
+   "repeat": false
+  },
+  {
+   "group": "Header And Footer",
+   "category": "Credit Link Tab",
+   "app": "Coach",
+   "ask": "Agent Board Footer: Built by Machan link, should maxweberman.com open in the same tab or in a new tab?",
+   "optionA": {
+    "id": "bkhf_10a",
+    "label": "Same Tab",
+    "desc": "Built by Machan opens maxweberman.com in the same tab.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Coach Command Center  ·  middle sections</text><rect x=\"14\" y=\"30\" width=\"212\" height=\"70\" rx=\"0\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"14\" y1=\"110\" x2=\"226\" y2=\"110\" stroke=\"#d9d1c3\"/><rect x=\"14\" y=\"116\" width=\"212\" height=\"30\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"135\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Routines (4)</text><g transform=\"translate(200,123) scale(0.6666666666666666)\"><path d=\"M5 9 L12 16 L19 9\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><circle cx=\"86.0\" cy=\"162.0\" r=\"6.0\" fill=\"#C1502E\"/><circle cx=\"86.0\" cy=\"162.96\" r=\"3.84\" fill=\"#F6E7D3\"/><circle cx=\"84.8\" cy=\"162.6\" r=\"0.72\" fill=\"#05668D\"/><circle cx=\"87.2\" cy=\"162.6\" r=\"0.72\" fill=\"#05668D\"/><path d=\"M86.0 156 q1.44 -3.5999999999999996 3.5999999999999996 -3.5999999999999996\" stroke=\"#0B6E4F\" stroke-width=\"1.4\" fill=\"none\"/><text x=\"98\" y=\"166\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Built by Machan</text><text x=\"120\" y=\"182\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Opens here; Back returns to the board</text><rect x=\"14\" y=\"196\" width=\"212\" height=\"34\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"210\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Like every other board link</text><text x=\"22\" y=\"222\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >R104 Back brings you home</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "bkhf_10b",
+    "label": "New Tab",
+    "desc": "Built by Machan opens maxweberman.com in a new tab.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Coach Command Center  ·  middle sections</text><rect x=\"14\" y=\"30\" width=\"212\" height=\"70\" rx=\"0\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"14\" y1=\"110\" x2=\"226\" y2=\"110\" stroke=\"#d9d1c3\"/><rect x=\"14\" y=\"116\" width=\"212\" height=\"30\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"135\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Routines (4)</text><g transform=\"translate(200,123) scale(0.6666666666666666)\"><path d=\"M5 9 L12 16 L19 9\" fill=\"none\" stroke=\"#0A0A0A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><circle cx=\"86.0\" cy=\"162.0\" r=\"6.0\" fill=\"#C1502E\"/><circle cx=\"86.0\" cy=\"162.96\" r=\"3.84\" fill=\"#F6E7D3\"/><circle cx=\"84.8\" cy=\"162.6\" r=\"0.72\" fill=\"#05668D\"/><circle cx=\"87.2\" cy=\"162.6\" r=\"0.72\" fill=\"#05668D\"/><path d=\"M86.0 156 q1.44 -3.5999999999999996 3.5999999999999996 -3.5999999999999996\" stroke=\"#0B6E4F\" stroke-width=\"1.4\" fill=\"none\"/><text x=\"98\" y=\"166\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Built by Machan</text><text x=\"120\" y=\"182\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Opens in a new tab; the board stays open</text><rect x=\"14\" y=\"196\" width=\"212\" height=\"34\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"210\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >The board never leaves the screen</text><text x=\"22\" y=\"222\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Close the tab to come back</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "dashboard-layout-header-and-footer-details-10",
+   "repeat": false
+  }
+ ],
+ "share": true,
+ "notes": true
+}
