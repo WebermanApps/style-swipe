@@ -1,0 +1,525 @@
+{
+ "date": "upkeep-operator-dash-section-pages-deck",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Operator Dash: Section Pages And Chief Card",
+ "generated_at": "2026-10-17T22:06:55+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "calm": 10,
+  "practical": 7,
+  "bold": 3
+ },
+ "groups": {
+  "Section Layout": 1,
+  "Section Order": 1,
+  "Assigned Look": 1,
+  "Chief Card Details": 1,
+  "Section Tabs": 1,
+  "Empty State": 1,
+  "Trend Style": 1,
+  "Order Of Operations": 1,
+  "Document Center": 1,
+  "Chief Page": 1
+ },
+ "apps": {
+  "UpKeep": 10
+ },
+ "freshness": {
+  "option_slots": 20,
+  "never_shown_before": 20,
+  "share": 1.0
+ },
+ "warnings": [],
+ "brands": [
+  "Next decisions for the UpKeep Operator Dash (upkeep-owner-xhcdx0) after the Company Dashboard Hub Deck. Option A is always the live hub as it renders now (78d1e3d, Hub picks 01-14 applied); Option B is one change made on that same live page.",
+  "Smart Upkeep brand: white and warm cream, terracotta, lagoon and jungle accents, Khand and Hind, light mode only, no emoji. Every number is TEST, Draft, Planned or Forecast; zero real members."
+ ],
+ "submit_agent": "upkeep",
+ "submit_to": "UpKeep Agent f0d420ad-d37e-44d3-be6f-053da2b6e24d",
+ "topic": "operator-dash-section-pages",
+ "deck_size": 10,
+ "board": "upkeep",
+ "audience": "Max",
+ "requested": true,
+ "caption_rule": "R105",
+ "request": "Replacement for the submitted Company Dashboard Hub Deck (Max, Oct 17 2026 21:49 ICT, 14 of 14): the next Operator Dash decisions the Hub deck did not settle.",
+ "replaces": "upkeep-company-dashboard-deck",
+ "follow_on_of": "upkeep-company-dashboard-deck",
+ "applies_to": [
+  "UpKeep Operator Dash (company hub, section pages, Grok Bot 2 page), https://webermanapps.github.io/upkeep-owner-xhcdx0/"
+ ],
+ "example_data": "Every number is TEST, Draft, Planned or Forecast example data.",
+ "settled_not_reasked": "Hub deck 21:49 ICT: 01A tile grid, 02B 4 lanes, 03A top-down tree, 04A larger chief card, 05B faded card + chip, 06A shared bottom row, 07A number + trend, 08A initial chip + name, 09A company KPI row, 10A branded band, 11 both Return + section tabs, 12A visible empty slot, 13B phone section carousel, 14A phone KPI carousel",
+ "sources": {
+  "content": "tools/build_operator_dash_section_pages.py",
+  "site": "WebermanApps/upkeep-owner-xhcdx0 78d1e3d (index.html, s/index.html, org.js, org.json), screenshots in img/operator-dash-sections"
+ },
+ "pairs": [
+  {
+   "group": "Section Layout",
+   "category": "Section Layout",
+   "app": "UpKeep",
+   "ask": "Operator Dash: Section page layout, should a section page keep its panels in one stacked column as now or put linked tools in a right-hand column beside the plan and info?",
+   "optionA": {
+    "id": "odsp_layout_a",
+    "label": "One Stacked Column (As Now)",
+    "desc": "Numbers, plan, info, then tools, top to bottom.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 900 895\" width=\"900\" height=\"895\"><rect width=\"900\" height=\"895\" fill=\"#FFFFFF\"/><image href=\"img/operator-dash-sections/layout_a.jpg\" xlink:href=\"img/operator-dash-sections/layout_a.jpg\" x=\"0\" y=\"0\" width=\"900\" height=\"895\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "odsp_layout_b",
+    "label": "Tools In A Right Column",
+    "desc": "Plan and info on the left, linked tools on the right.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 900 813\" width=\"900\" height=\"813\"><rect width=\"900\" height=\"813\" fill=\"#FFFFFF\"/><image href=\"img/operator-dash-sections/layout_b.jpg\" xlink:href=\"img/operator-dash-sections/layout_b.jpg\" x=\"0\" y=\"0\" width=\"900\" height=\"813\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-operator-dash-section-pages-deck-01",
+   "repeat": false
+  },
+  {
+   "group": "Section Order",
+   "category": "Section Order",
+   "app": "UpKeep",
+   "ask": "Operator Dash: Section page order, should key numbers come first under the section header as now or should the linked tools lead so the work pages are one tap away?",
+   "optionA": {
+    "id": "odsp_order_a",
+    "label": "Key Numbers First (As Now)",
+    "desc": "Numbers, then plan, info and tools (phone view).",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 600 1069\" width=\"600\" height=\"1069\"><rect width=\"600\" height=\"1069\" fill=\"#FFFFFF\"/><image href=\"img/operator-dash-sections/order_a.jpg\" xlink:href=\"img/operator-dash-sections/order_a.jpg\" x=\"0\" y=\"0\" width=\"600\" height=\"1069\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "odsp_order_b",
+    "label": "Linked Tools First",
+    "desc": "Tools right under the header, numbers below.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 600 1069\" width=\"600\" height=\"1069\"><rect width=\"600\" height=\"1069\" fill=\"#FFFFFF\"/><image href=\"img/operator-dash-sections/order_b.jpg\" xlink:href=\"img/operator-dash-sections/order_b.jpg\" x=\"0\" y=\"0\" width=\"600\" height=\"1069\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-operator-dash-section-pages-deck-02",
+   "repeat": false
+  },
+  {
+   "group": "Assigned Look",
+   "category": "Assigned Look",
+   "app": "UpKeep",
+   "ask": "Operator Dash: Newly assigned section, when a section gets its agent should its card switch straight to Live agent as now or show a Setting up chip until that agent sends its first report?",
+   "optionA": {
+    "id": "odsp_assigned_a",
+    "label": "Straight To Live Agent (As Now)",
+    "desc": "Live agent chip and owner the moment one is set.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 554 1328\" width=\"554\" height=\"1328\"><rect width=\"554\" height=\"1328\" fill=\"#FFFFFF\"/><image href=\"img/operator-dash-sections/assigned_a.jpg\" xlink:href=\"img/operator-dash-sections/assigned_a.jpg\" x=\"0\" y=\"0\" width=\"554\" height=\"1328\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "odsp_assigned_b",
+    "label": "Setting Up Until First Report",
+    "desc": "Amber Setting up chip and a pending note first.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 554 1370\" width=\"554\" height=\"1370\"><rect width=\"554\" height=\"1370\" fill=\"#FFFFFF\"/><image href=\"img/operator-dash-sections/assigned_b.jpg\" xlink:href=\"img/operator-dash-sections/assigned_b.jpg\" x=\"0\" y=\"0\" width=\"554\" height=\"1370\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-operator-dash-section-pages-deck-03",
+   "repeat": false
+  },
+  {
+   "group": "Chief Card Details",
+   "category": "Chief Card Details",
+   "app": "UpKeep",
+   "ask": "Operator Dash: Grok Bot 2 hub card, should the chief card keep only name, role and status as now or add a row of team chips like sections live and open handoffs?",
+   "optionA": {
+    "id": "odsp_chief_a",
+    "label": "Name And Role Only (As Now)",
+    "desc": "Chief card with Coming soon and an arrow.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 900 173\" width=\"900\" height=\"173\"><rect width=\"900\" height=\"173\" fill=\"#FFFFFF\"/><image href=\"img/operator-dash-sections/chief_a.jpg\" xlink:href=\"img/operator-dash-sections/chief_a.jpg\" x=\"0\" y=\"0\" width=\"900\" height=\"173\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "odsp_chief_b",
+    "label": "Plus Team Count Chips",
+    "desc": "Sections live, open handoffs, daily summary (TEST).",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 900 277\" width=\"900\" height=\"277\"><rect width=\"900\" height=\"277\" fill=\"#FFFFFF\"/><image href=\"img/operator-dash-sections/chief_b.jpg\" xlink:href=\"img/operator-dash-sections/chief_b.jpg\" x=\"0\" y=\"0\" width=\"900\" height=\"277\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-operator-dash-section-pages-deck-04",
+   "repeat": false
+  },
+  {
+   "group": "Section Tabs",
+   "category": "Section Tabs",
+   "app": "UpKeep",
+   "ask": "Operator Dash: Section tabs, should the row of section tabs stay boxed buttons with a black active tab as now or become plain text tabs with an underline on the active one?",
+   "optionA": {
+    "id": "odsp_tabs_a",
+    "label": "Boxed Buttons (As Now)",
+    "desc": "Outlined buttons, active tab filled black.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 900 238\" width=\"900\" height=\"238\"><rect width=\"900\" height=\"238\" fill=\"#FFFFFF\"/><image href=\"img/operator-dash-sections/tabs_a.jpg\" xlink:href=\"img/operator-dash-sections/tabs_a.jpg\" x=\"0\" y=\"0\" width=\"900\" height=\"238\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "odsp_tabs_b",
+    "label": "Underline Tabs",
+    "desc": "Plain text tabs, active one underlined.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 900 248\" width=\"900\" height=\"248\"><rect width=\"900\" height=\"248\" fill=\"#FFFFFF\"/><image href=\"img/operator-dash-sections/tabs_b.jpg\" xlink:href=\"img/operator-dash-sections/tabs_b.jpg\" x=\"0\" y=\"0\" width=\"900\" height=\"248\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-operator-dash-section-pages-deck-05",
+   "repeat": false
+  },
+  {
+   "group": "Empty State",
+   "category": "Empty State",
+   "app": "UpKeep",
+   "ask": "Operator Dash: Empty-state copy, should empty panels keep short notes like No data yet as now or say what will fill them and which agent adds it?",
+   "optionA": {
+    "id": "odsp_empty_a",
+    "label": "Short Notes (As Now)",
+    "desc": "No data yet, No linked tools yet (Grok Bot 2 page).",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 600 959\" width=\"600\" height=\"959\"><rect width=\"600\" height=\"959\" fill=\"#FFFFFF\"/><image href=\"img/operator-dash-sections/empty_a.jpg\" xlink:href=\"img/operator-dash-sections/empty_a.jpg\" x=\"0\" y=\"0\" width=\"600\" height=\"959\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "odsp_empty_b",
+    "label": "Say What Comes And Who",
+    "desc": "Each empty panel says what fills it and who adds it.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 600 1122\" width=\"600\" height=\"1122\"><rect width=\"600\" height=\"1122\" fill=\"#FFFFFF\"/><image href=\"img/operator-dash-sections/empty_b.jpg\" xlink:href=\"img/operator-dash-sections/empty_b.jpg\" x=\"0\" y=\"0\" width=\"600\" height=\"1122\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-operator-dash-section-pages-deck-06",
+   "repeat": false
+  },
+  {
+   "group": "Trend Style",
+   "category": "Trend Style",
+   "app": "UpKeep",
+   "ask": "Operator Dash: KPI trend on hub cards, should the weekly trend be the thin line the hub draws now or small weekly bars with a change label?",
+   "optionA": {
+    "id": "odsp_trend_a",
+    "label": "Thin Trend Line (As Now)",
+    "desc": "The hub's own sparkline, fed TEST data.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 554 1336\" width=\"554\" height=\"1336\"><rect width=\"554\" height=\"1336\" fill=\"#FFFFFF\"/><image href=\"img/operator-dash-sections/trend_a.jpg\" xlink:href=\"img/operator-dash-sections/trend_a.jpg\" x=\"0\" y=\"0\" width=\"554\" height=\"1336\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "odsp_trend_b",
+    "label": "Weekly Bars + Change",
+    "desc": "A bar per week, latest dark, change label (TEST).",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 554 1336\" width=\"554\" height=\"1336\"><rect width=\"554\" height=\"1336\" fill=\"#FFFFFF\"/><image href=\"img/operator-dash-sections/trend_b.jpg\" xlink:href=\"img/operator-dash-sections/trend_b.jpg\" x=\"0\" y=\"0\" width=\"554\" height=\"1336\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-operator-dash-section-pages-deck-07",
+   "repeat": false
+  },
+  {
+   "group": "Order Of Operations",
+   "category": "Order Of Operations",
+   "app": "UpKeep",
+   "ask": "Operator Dash: Order of operations, should the hub keep showing lanes only as now or add one strip that walks from sign-up to support with each step opening its section?",
+   "optionA": {
+    "id": "odsp_ops_a",
+    "label": "Lanes Only (As Now)",
+    "desc": "KPIs, Grok Bot 2, then the four lanes.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 900 513\" width=\"900\" height=\"513\"><rect width=\"900\" height=\"513\" fill=\"#FFFFFF\"/><image href=\"img/operator-dash-sections/ops_a.jpg\" xlink:href=\"img/operator-dash-sections/ops_a.jpg\" x=\"0\" y=\"0\" width=\"900\" height=\"513\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "odsp_ops_b",
+    "label": "One-Line Flow Strip",
+    "desc": "Sign-up to Support, each step opens its section.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 900 513\" width=\"900\" height=\"513\"><rect width=\"900\" height=\"513\" fill=\"#FFFFFF\"/><image href=\"img/operator-dash-sections/ops_b.jpg\" xlink:href=\"img/operator-dash-sections/ops_b.jpg\" x=\"0\" y=\"0\" width=\"900\" height=\"513\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-operator-dash-section-pages-deck-08",
+   "repeat": false
+  },
+  {
+   "group": "Document Center",
+   "category": "Document Center",
+   "app": "UpKeep",
+   "ask": "Operator Dash: Document Center contents, should the company Document Center stay empty until agents pin files as now or start with a company shelf of the pitch, forecast, pricing, training and agreement drafts?",
+   "optionA": {
+    "id": "odsp_docs_a",
+    "label": "Empty Until Agents Pin (As Now)",
+    "desc": "Kit empty state; agents add files later.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 900 146\" width=\"900\" height=\"146\"><rect width=\"900\" height=\"146\" fill=\"#FFFFFF\"/><image href=\"img/operator-dash-sections/docs_a.jpg\" xlink:href=\"img/operator-dash-sections/docs_a.jpg\" x=\"0\" y=\"0\" width=\"900\" height=\"146\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "odsp_docs_b",
+    "label": "Starter Company Shelf",
+    "desc": "Five company files tagged Draft, Plan or Forecast.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 900 189\" width=\"900\" height=\"189\"><rect width=\"900\" height=\"189\" fill=\"#FFFFFF\"/><image href=\"img/operator-dash-sections/docs_b.jpg\" xlink:href=\"img/operator-dash-sections/docs_b.jpg\" x=\"0\" y=\"0\" width=\"900\" height=\"189\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-operator-dash-section-pages-deck-09",
+   "repeat": false
+  },
+  {
+   "group": "Chief Page",
+   "category": "Chief Page",
+   "app": "UpKeep",
+   "ask": "Operator Dash: Grok Bot 2 page, should the chief's own page keep the standard section layout as now or open with a team status table of every section with its lane, status and owner?",
+   "optionA": {
+    "id": "odsp_chiefpage_a",
+    "label": "Standard Section Layout (As Now)",
+    "desc": "Numbers, plan, info and tools like any section.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 900 470\" width=\"900\" height=\"470\"><rect width=\"900\" height=\"470\" fill=\"#FFFFFF\"/><image href=\"img/operator-dash-sections/chiefpage_a.jpg\" xlink:href=\"img/operator-dash-sections/chiefpage_a.jpg\" x=\"0\" y=\"0\" width=\"900\" height=\"470\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "odsp_chiefpage_b",
+    "label": "Team Status Table On Top",
+    "desc": "Every section's lane, status and owner first.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 900 871\" width=\"900\" height=\"871\"><rect width=\"900\" height=\"871\" fill=\"#FFFFFF\"/><image href=\"img/operator-dash-sections/chiefpage_b.jpg\" xlink:href=\"img/operator-dash-sections/chiefpage_b.jpg\" x=\"0\" y=\"0\" width=\"900\" height=\"871\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-operator-dash-section-pages-deck-10",
+   "repeat": false
+  }
+ ],
+ "share": true,
+ "notes": true
+}
