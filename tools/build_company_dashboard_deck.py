@@ -129,6 +129,14 @@ SEC6 = [("Members", TERRA, "120", "members", "On track", JUNGLE, "Members Agent"
         ("Growth", LAGOON, "14", "sign-ups this month", "On track", JUNGLE, None), ("Support", JUNGLE, "5", "open messages", "2 waiting", SAFFRON, None)]
 SEC4 = [("Members", TERRA, "120", "members", "On track", JUNGLE, "Members Agent"), ("Field Ops", LAGOON, "46", "visits this week", "1 late", TERRA, "Ops Agent"),
         ("Finance", JUNGLE, "$18.4k", "MRR", "+4.1%", JUNGLE, "Finance Agent"), ("Growth", TERRA, "14", "sign-ups this month", "On track", JUNGLE, None)]
+SEC10 = [("Product", JUNGLE, "4", "apps live", "On track", JUNGLE, "UpKeep"), ("Members", TERRA, "100", "TEST members", "2 renewals", SAFFRON, None),
+         ("Technicians", LAGOON, "3", "TEST techs", "1 late", TERRA, None), ("Materials", LAGOON, "$6.1k", "van kit, draft", "Restock 3", SAFFRON, None),
+         ("Scheduling", LAGOON, "46", "visits / wk", "On track", JUNGLE, None), ("Support", TERRA, "5", "open messages", "2 waiting", SAFFRON, None),
+         ("Marketing", TERRA, "14", "sign-ups / mo", "On track", JUNGLE, None), ("Finance", JUNGLE, "$18.4k", "MRR, TEST", "+4.1%", JUNGLE, None),
+         ("Quality", LAGOON, "98%", "with photos", "On track", JUNGLE, None), ("Legal", JUNGLE, "3", "open questions", "1 open", SAFFRON, None)]
+SX = {sc[0]: sc for sc in SEC10}
+LANES = [("People", ["Members", "Technicians", "Support"]), ("Operations", ["Scheduling", "Materials", "Quality"]),
+         ("Money", ["Finance", "Marketing"]), ("Platform & Legal", ["Product", "Legal"])]
 def owner(x, y, o, style="chip", sc=1):
     if style == "chip":
         if o: return dot(x + 6, y + 6, 6, INK) + t(x + 6, y + 8.6, o[0], 7, "#FFFFFF", "khand", 700, "middle") + t(x + 15, y + 9, o, 7.5, INK, "hind", 600)
@@ -137,19 +145,37 @@ def owner(x, y, o, style="chip", sc=1):
 def hubcard(x, y, w, h, sec, style="tile", prev="kpi", own="chip"):
     nm, c, v, lb, st, sc, o = sec
     s = rect(x, y, w, h, "#FFFFFF", LINE, 6) + rect(x, y, w, 3, c)
-    s += t(x + 8, y + 18, nm, 12, INK, "khand") + t(x + w - 8, y + 18, ">", 11, c, "khand", 700, "end")
+    nw = w < 90
+    s += t(x + 8, y + 18, nm, 10.5 if nw else 12, INK, "khand") + t(x + w - 6, y + 18, ">", 11, c, "khand", 700, "end")
     if prev == "kpi":
-        s += t(x + 8, y + 44, v, 20, c, "khand") + t(x + 8, y + 55, lb, 7.5, MUTE) + spark(x + w * .55, y + 30, w * .36, 16, [3, 4, 4, 5, 6, 6, 7], c)
+        s += t(x + 8, y + 42 if nw else 44, v, 16 if nw else 20, c, "khand") + t(x + 8, y + 53 if nw else 55, lb, 7.5, MUTE) + ("" if nw else spark(x + w * .55, y + 30, w * .36, 16, [3, 4, 4, 5, 6, 6, 7], c))
     else:
         s += dot(x + 12, y + 31, 3.5, sc) + t(x + 20, y + 34, st, 8, INK, "hind", 600) + t(x + 8, y + 50, f"{v} {lb}", 8, MUTE)
     return s + owner(x + 8, y + h - 17, o, own)
-def hubgrid(secs, cols=3, y=34, h=74, **kw):
-    w = (DW - 16 - (cols - 1) * 8) / cols
+def hubgrid(secs, cols=None, y=34, h=74, **kw):
+    cols = cols or (5 if len(secs) > 6 else 3); w = (DW - 16 - (cols - 1) * 8) / cols
     return "".join(hubcard(8 + (i % cols) * (w + 8), y + (i // cols) * (h + 8), w, h, sc, **kw) for i, sc in enumerate(secs))
 def hubrows(secs, y=34):
     s = ""
     for i, (nm, c, v, lb, st, sc, o) in enumerate(secs):
-        yy = y + i * 30; s += rect(8, yy, DW - 16, 26, "#FFFFFF", LINE, 4) + rect(8, yy, 3, 26, c) + t(18, yy + 17, nm, 11, INK, "khand") + t(110, yy + 17, f"{v} {lb}", 8.5, INK, "hind", 600) + dot(214, yy + 13, 3.5, sc) + t(222, yy + 16, st, 8, MUTE) + owner(290, yy + 7, o) + t(DW - 14, yy + 17, ">", 11, c, "khand", 700, "end")
+        yy = y + i * 26; s += rect(8, yy, DW - 16, 23, "#FFFFFF", LINE, 4) + rect(8, yy, 3, 23, c) + t(18, yy + 15.5, nm, 11, INK, "khand") + t(110, yy + 15.5, f"{v} {lb}", 8.5, INK, "hind", 600) + dot(214, yy + 11.5, 3.5, sc) + t(222, yy + 14.5, st, 8, MUTE) + owner(290, yy + 5.5, o) + t(DW - 14, yy + 15.5, ">", 11, c, "khand", 700, "end")
+    return s
+def hublanes(y=34):
+    cw = (DW - 16 - 18) / 4; s = ""
+    for i, (ln_, names) in enumerate(LANES):
+        x = 8 + i * (cw + 6); s += rect(x, y, cw, 20, CREAM, LINE, 4) + t(x + 7, y + 14, ln_, 11, INK, "khand") + t(x + cw - 7, y + 14, str(len(names)), 8.5, LAGOON, "hind", 600, "end")
+        for k, nm in enumerate(names):
+            _, c, v, lb, st, sc, o = SX[nm]; yy = y + 24 + k * 44
+            s += rect(x, yy, cw, 40, "#FFFFFF", LINE, 4) + rect(x, yy, 3, 40, c) + t(x + 9, yy + 14, nm, 10, INK, "khand") + t(x + cw - 6, yy + 14, ">", 10, c, "khand", 700, "end") + t(x + 9, yy + 31, v, 13, c, "khand") + t(x + cw - 6, yy + 31, lb, 7, MUTE, "hind", 400, "end")
+    return s
+def phlanes():
+    s = ""; y = 106
+    for ln_, names in LANES:
+        s += t(38, y + 10, ln_, 11, INK, "khand") + t(202, y + 10, f"{len(names)} sections", 7.5, LAGOON, "hind", 600, "end")
+        for k, nm in enumerate(names):
+            _, c, v, lb, st, sc, o = SX[nm]; x = 38 + k * 56
+            s += rect(x, y + 15, 52, 46, "#FFFFFF", LINE, 5) + rect(x, y + 15, 52, 3, c) + t(x + 5, y + 30, nm, 8.5 if len(nm) < 10 else 7.5, INK, "khand") + t(x + 5, y + 50, v, 13, c, "khand")
+        y += 70
     return s
 def HUB(inner, b=False): return "<!--D-->" + desk(chrome(inner, "Company Hub", "Today"), b)
 def secchrome(inner, name="Finance", c=TERRA, style="band", o="Finance Agent"):
@@ -162,52 +188,180 @@ def secchrome(inner, name="Finance", c=TERRA, style="band", o="Finance Agent"):
     return s + g(0, -4, 1, inner)
 def SEC(inner, **kw): return "<!--D-->" + desk(secchrome(inner, **kw), False)
 FIN = lambda: kpirow(34, "four") + mrrchart(8, 94, 384, 190) + mtable(8, 290, 384, 5, 18)
-def phub(cols=2, secs=SEC6):
+def ptiles(secs, mode="kpi"):
+    s = ""
+    for i, (nm, c, v, lb, st, sc, o) in enumerate(secs):
+        x, y = 38 + (i % 2) * 84, 106 + (i // 2) * 66
+        s += rect(x, y, 80, 62, "#FFFFFF", LINE, 6) + rect(x, y, 80, 3, c) + t(x + 8, y + 16, nm, 10.5, INK, "khand")
+        if mode == "status": s += dot(x + 12, y + 29, 3.5, sc) + t(x + 19, y + 32, st, 8, INK, "hind", 600) + t(x + 8, y + 43, f"{v} {lb}", 7.5, MUTE)
+        else: s += t(x + 8, y + 34, v, 15, c, "khand") + t(x + 8, y + 44, lb, 7.5, MUTE)
+        s += owner(x + 8, y + 47, o, "line" if mode == "line" else "chip")
+    return s
+def phub(cols=2, secs=SEC10):
+    if cols == 2 and len(secs) > 6: return ptiles(secs)
     if cols == 2: return "".join(rect(38 + (i % 2) * 84, 106 + (i // 2) * 84, 80, 78, "#FFFFFF", LINE, 6) + rect(38 + (i % 2) * 84, 106 + (i // 2) * 84, 80, 3, sc[1]) + t(46 + (i % 2) * 84, 124 + (i // 2) * 84, sc[0], 11, INK, "khand") + t(46 + (i % 2) * 84, 148 + (i // 2) * 84, sc[2], 18, sc[1], "khand") + t(46 + (i % 2) * 84, 160 + (i // 2) * 84, sc[3], 7, MUTE) + owner(46 + (i % 2) * 84, 164 + (i // 2) * 84, sc[6]) for i, sc in enumerate(secs))
-    return "".join(rect(38 + i * 150, 106, 144, 150, "#FFFFFF", LINE, 8) + rect(38 + i * 150, 106, 144, 4, sc[1]) + t(48 + i * 150, 130, sc[0], 15, INK, "khand") + t(48 + i * 150, 166, sc[2], 28, sc[1], "khand") + t(48 + i * 150, 180, sc[3], 8.5, MUTE) + owner(48 + i * 150, 230, sc[6]) for i, sc in enumerate(secs[:2])) + dots(120, 268, 6, 0) + plist(284, 6, True)
+    return "".join(rect(38 + i * 150, 106, 144, 150, "#FFFFFF", LINE, 8) + rect(38 + i * 150, 106, 144, 4, sc[1]) + t(48 + i * 150, 130, sc[0], 15, INK, "khand") + t(48 + i * 150, 166, sc[2], 28, sc[1], "khand") + t(48 + i * 150, 180, sc[3], 8.5, MUTE) + owner(48 + i * 150, 230, sc[6]) for i, sc in enumerate(secs[:2])) + dots(120, 268, len(secs), 0) + plist(284, 6, True)
 def psec(style="band", dy=0):
     if style == "band": hd = rect(31, 84, 178, 44, CREAM) + rect(31, 128, 178, 2, TERRA) + rect(38, 96, 46, 18, "#FFFFFF", "#CFC7BA", 4, .8) + t(61, 108.5, "< Return", 8, INK, "hind", 600, "middle") + t(92, 110, "Finance", 15, INK, "khand") + owner(150, 99, "Agent")
     else: hd = rect(31, 84, 178, 44, "#FFFFFF") + t(40, 100, "Company  >", 8.5, LAGOON, "hind", 600) + t(40, 118, "Finance", 15, INK, "khand") + owner(120, 108, "Finance Agent", "line")
     return rect(31, 84, 178, 30, "#FFFFFF") + hd + g(0, dy, 1, "".join(pk(38 + (i % 2) * 84, 138, 80, 54, v, lb, c, d) for i, (v, lb, c, d) in enumerate([KPIS[1], KPIS[2]])) + pchart(200, 120) + plist(330, 4, True))
+# ---------------- Org Chart (Max 21:23-21:24 ICT): UpKeep owner dashboard like Apps Home; final org from UpKeep's org.json ----------------
+# Apps Home org chart style (a-o956qercs5ubd57y, read-only): cream panel #FDFBF6, square white boxes with #E5E0D8 border, top box with a 2px
+# lagoon border, lagoon connector lines at 45%, group header boxes with a count chip, children hung off a left tree line, a labelled
+# 'Reports directly' row at the bottom. Section kind colours: member = terracotta, tech = lagoon, owner = jungle.
+ORGS = {"Product": ("Product", "& Platform", JUNGLE, True), "Members": ("Members", "Sign-ups, renewals", TERRA, False),
+        "Technicians": ("Technicians", "Hiring, certs, training", LAGOON, False), "Materials": ("Materials", "& Inventory", LAGOON, False),
+        "Scheduling": ("Scheduling", "& Dispatch", LAGOON, False), "Support": ("Customer Support", "Incl. Ask Anything", TERRA, False),
+        "Marketing": ("Marketing", "& Growth", TERRA, False), "Finance": ("Finance", "& Billing", JUNGLE, False),
+        "Quality": ("Quality", "& Safety", LAGOON, False), "Legal": ("Legal & Compliance", "Liaison to shared Legal", JUNGLE, False)}
+HELPS = {"Product": ["Security"], "Members": ["Branding"], "Marketing": ["Branding"], "Finance": ["Security"], "Legal": ["Legal"]}
+SHARED = [("Security", "Accounts, app safety"), ("Branding", "Look, decks, picks"), ("Legal", "Contracts, ROSCA")]
+CONN = 'stroke="#05668D" stroke-opacity=".45"'
+def cl(x1, y1, x2, y2, k=1): return f'<line x1="{x1:.1f}" y1="{y1:.1f}" x2="{x2:.1f}" y2="{y2:.1f}" {CONN} stroke-width="{1.2*k:.2f}"/>'
+def chip(x, y, txt, c, k=1, solid=False, anchor="start"):
+    s_ = 5.4 * k; h = 8.6 * k; w = len(txt) * s_ * .56 + 7 * k; x = x - w if anchor == "end" else x
+    return rect(x, y, w, h, c if solid else c + "1F", "none", 0) + t(x + w / 2, y + h * .74, txt, s_, "#FFFFFF" if solid else c, "hind", 600, "middle"), w
+def obox(x, y, w, h, name, sub, c, real, ph="dash", k=1, line3=None, badges=(), top=False, chief=None):
+    fn, fs, fz = (13 if chief == "big" else 9) * k, 6.5 * k, 5.1 * k
+    fade = (not real) and ph == "fade"; dash = (not real) and ph == "dash"
+    sw = (2 if (top or chief) else 1.2 if dash else 1) * k
+    stroke = LAGOON if (top or chief) else (c if dash else ("#CFC7BA" if fade else LINE))
+    o = '<g opacity=".45">' if fade else "<g>"
+    o += rect(x, y, w, h, "#F2EFE9" if fade else "#FFFFFF", stroke, 0, sw, 'stroke-dasharray="%.1f %.1f"' % (3 * k, 2 * k) if dash else "")
+    if not dash and not top and not chief and c: o += rect(x, y, 2.6 * k, h, c)
+    dy = 3 * k + fn * .8
+    o += (dot(x + 7 * k, y + dy - fn * .3, 2.4 * k, JUNGLE) if real else f'<circle cx="{x+7*k:.1f}" cy="{y+dy-fn*.3:.1f}" r="{2.1*k:.2f}" fill="none" stroke="#8A8A8A" stroke-width="{.9*k:.2f}"/>')
+    o += t(x + 12 * k, y + dy, name, fn, INK, "khand") + t(x + 12 * k, y + dy + fs + 2.5 * k, sub, fs, MUTE)
+    l3y = y + dy + fs + fz + 5.5 * k
+    if chief == "big": o += t(x + 12 * k, l3y + 1.5 * k, "Reports to Grok Bot", 6.5 * k, LAGOON, "hind", 600)
+    elif line3 is None and dash: o += t(x + 12 * k, l3y, "Placeholder \u00b7 not created yet", fz, "#6B6B6B")
+    elif line3: o += t(x + 12 * k, l3y, line3, fz, JUNGLE, "hind", 600)
+    o += "</g>"
+    if chief == "big" and dash: o += t(x + w - 6 * k, y + dy, "Placeholder \u00b7 not created yet", fz, "#6B6B6B", "hind", 400, "end")
+    if fade and chief == "big": o += chip(x + w - 5 * k, y + 5 * k, "Coming soon", INK, k, anchor="end")[0]
+    elif fade: o += chip(x + 12 * k, l3y - 6.6 * k, "Coming soon", INK, k)[0]
+    if chief == "badge": o += chip(x + w - 5 * k, y + 4 * k, "CHIEF", LAGOON, k, True, "end")[0]
+    bx = x + w - 5 * k
+    for b in badges: cc, cw_ = chip(bx, y - 4.3 * k, b, INK, k, True, anchor="end"); o += cc; bx -= cw_ + 3 * k
+    return o
+def ochain(cx, y, k, chief, ph):
+    bw, bh = 110 * k, 24 * k; o = obox(cx - bw / 2, y, bw, bh, "Max", "Owner", INK, True, ph, k) + cl(cx, y + bh, cx, y + bh + 8 * k, k)
+    y += bh + 8 * k; o += obox(cx - bw / 2, y, bw, bh, "Grok Bot", "Team lead, live", None, True, ph, k, top=True) + cl(cx, y + bh, cx, y + bh + 8 * k, k)
+    y += bh + 8 * k
+    if chief == "big": w, h = 180 * k, 40 * k
+    else: w, h = bw, 32 * k
+    return o + obox(cx - w / 2, y, w, h, "Grok Bot 2", "UpKeep Chief", LAGOON, False, ph, k, chief=chief), y + h
+def osec(x, y, w, nm, ph, k, shared):
+    name, sub, c, real = ORGS[nm]
+    return obox(x, y, w, 32 * k, name, sub, c, real, ph, k, "Live \u00b7 UpKeep agent" if real else None, HELPS.get(nm, []) if shared == "badges" else ())
+def oshared(x, y, W, k, shared):
+    if shared == "badges":
+        o = t(x, y + 9 * k, "SHARED FROM MAX'S TEAM", 6 * k, MUTE, "hind", 600, 'letter-spacing=".6"') + t(x, y + 19 * k, "Shown as chips on the sections each one helps:", 6.2 * k, MUTE)
+        wide = W > 300; bx = x + (150 * k if wide else 0); cy_ = y + (12.5 if wide else 23) * k
+        for nm, _ in SHARED: cc, cw_ = chip(bx, cy_, nm, INK, k, True); o += cc; bx += cw_ + 4 * k
+        return o, cy_ + 10 * k
+    o = t(x, y + 9 * k, "SHARED FROM MAX'S TEAM", 6 * k, MUTE, "hind", 600, 'letter-spacing=".6"'); bw = (W - 8 * k) / 3
+    for i, (nm, sub) in enumerate(SHARED): o += obox(x + i * (bw + 4 * k), y + 14 * k, bw, 24 * k, nm, sub, INK, True, "dash", k)
+    return o, y + 38 * k
+def otree(W, ncol, k=1, chief="big", ph="dash", shared="row"):
+    cx = W / 2; o, yb = ochain(cx, 0, k, chief, ph); gap = 6 * k; cw = (W - (ncol - 1) * gap) / ncol
+    rows = [LANES[i:i + ncol] for i in range(0, len(LANES), ncol)]; cur = yb; buses = []
+    for row in rows:
+        by = cur + 8 * k; buses.append(by); centers = [i * (cw + gap) + cw / 2 for i in range(len(row))]
+        o += cl(centers[0], by, centers[-1], by, k); hy = by + 6 * k; bottom = hy
+        for i, (ln_, names) in enumerate(row):
+            x = i * (cw + gap); o += cl(centers[i], by, centers[i], hy, k)
+            o += rect(x, hy, cw, 20 * k, "#FFFFFF", LAGOON, 0, 1.2 * k) + t(x + 6 * k, hy + 14 * k, ln_, 9.5 * k, INK, "khand")
+            o += rect(x + cw - 20 * k, hy + 4.5 * k, 15 * k, 11 * k, "#FFFFFF", "#05668D66", 0, .8 * k) + t(x + cw - 12.5 * k, hy + 12.8 * k, str(len(names)), 7 * k, LAGOON, "hind", 600, "middle")
+            ys = [hy + 26 * k + j * 36 * k for j in range(len(names))]
+            o += cl(x + 4 * k, hy + 20 * k, x + 4 * k, ys[-1] + 16 * k, k)
+            for j, nm in enumerate(names): o += cl(x + 4 * k, ys[j] + 16 * k, x + 8 * k, ys[j] + 16 * k, k) + osec(x + 8 * k, ys[j], cw - 8 * k, nm, ph, k, shared)
+            bottom = max(bottom, ys[-1] + 32 * k)
+        cur = bottom
+    o = cl(cx, yb, cx, buses[-1], k) + o
+    sh, end = oshared(0, cur + 10 * k, W, k, shared)
+    return o + sh, end
+TIER_ORDER = ["Product", "Members", "Technicians", "Materials", "Scheduling", "Support", "Marketing", "Finance", "Quality", "Legal"]
+def otiers(W, ncol, k=1, chief="big", ph="dash", shared="row"):
+    lab = lambda y, s_: t(0, y + 8 * k, s_, 6 * k, MUTE, "hind", 600, 'letter-spacing=".6"')
+    o = ""; y = 0; bw, bh = 110 * k, 24 * k
+    for L, nm, sub, top in (("OWNER", "Max", "Owner", False), ("TEAM LEAD", "Grok Bot", "Team lead, live", True)):
+        o += lab(y, L) + obox(0, y + 12 * k, bw, bh, nm, sub, INK if not top else None, True, ph, k, top=top) + hl(0, W, y + 12 * k + bh + 6 * k, "#E5E0D8", .8 * k); y += 12 * k + bh + 12 * k
+    w, h = (180 * k, 40 * k) if chief == "big" else (bw, 32 * k)
+    o += lab(y, "UPKEEP CHIEF") + obox(0, y + 12 * k, w, h, "Grok Bot 2", "UpKeep Chief", LAGOON, False, ph, k, chief=chief) + hl(0, W, y + 12 * k + h + 6 * k, "#E5E0D8", .8 * k); y += 12 * k + h + 12 * k
+    o += lab(y, "SECTIONS (10), UNDER GROK BOT 2"); cw = (W - (ncol - 1) * 5 * k) / ncol; y += 12 * k
+    for i, nm in enumerate(TIER_ORDER): o += osec((i % ncol) * (cw + 5 * k), y + (i // ncol) * 36 * k, cw, nm, ph, k, shared)
+    y += ((len(TIER_ORDER) + ncol - 1) // ncol) * 36 * k + 2 * k; o += hl(0, W, y, "#E5E0D8", .8 * k)
+    sh, end = oshared(0, y + 6 * k, W, k, shared)
+    return o + sh, end
+def ORGD(layout="tree", **kw):
+    body, _ = (otree if layout == "tree" else otiers)(372, 4 if layout == "tree" else 4, 1, **kw)
+    inner = rect(6, 32, 388, 364, "#FDFBF6", "#E5E0D8", 0, 1) + t(14, 51, "Org Chart", 15, INK, "khand") + t(14, 61, "Grok Bot 2 runs UpKeep's 10 sections. Example layout, TEST data.", 7, MUTE)
+    inner += dot(300, 47, 2.6, JUNGLE) + t(306, 49.5, "Live", 7, MUTE) + f'<circle cx="332" cy="47" r="2.3" fill="none" stroke="#8A8A8A" stroke-width=".9"/>' + t(338, 49.5, "Placeholder", 7, MUTE)
+    return "<!--D-->" + desk(chrome(inner + g(14, 68, 1, body), "Owner Dashboard", "Org Chart"), False)
+def ORGP(layout="tree", **kw):
+    PW = 220; body, end = (otree if layout == "tree" else otiers)(PW, 2, 1.05, **kw); sc = min(164 / PW, 370 / end)
+    return t(40, 112, "Grok Bot 2 runs UpKeep. TEST data.", 7.5, MUTE) + g(38 + (164 - PW * sc) / 2, 122, round(sc, 4), body)
 H, S = "Company Hub", "Section Dashboard"
 pick("Hub Cards", H, "Hub card style", "a grid of section tiles like Apps Home, or one row per section in a tight list?",
      ("hub_tiles", "Section Tile Grid", "Tiles like Apps Home, tap to open", "practical",
-      C("Hub Cards", TERRA, HUB(hubgrid(SEC6) + band(204)), ["Same feel as Apps Home: one tile per", "section opens its own dashboard."], phub(), "Company Hub")),
+      C("Hub Cards", TERRA, HUB(hubgrid(SEC10) + band(204)), ["Same feel as Apps Home: one tile per", "section opens its own dashboard."], phub(), "Company Hub")),
      ("hub_rows", "One Row Per Section", "Dense list, number + status + owner", "calm",
-      C("Hub Cards", LAGOON, HUB(hubrows(SEC6) + band(220)), ["Every section in one glance as a", "row; tap the row to open it."], "".join(rect(38, 106 + i * 40, 164, 36, "#FFFFFF", LINE, 5) + rect(38, 106 + i * 40, 3, 36, sc[1]) + t(48, 121 + i * 40, sc[0], 11, INK, "khand") + t(48, 134 + i * 40, f"{sc[2]} {sc[3]}", 7.5, MUTE) + dot(160, 124 + i * 40, 3.5, sc[5]) + t(194, 127 + i * 40, ">", 11, sc[1], "khand", 700, "end") for i, sc in enumerate(SEC6)), "Company Hub")))
-pick("Sections", H, "Which sections", "six sections (Members, Technicians, Scheduling, Finance, Growth, Support), or four bigger ones?",
-     ("sec_six", "Six Sections", "One future agent per section", "practical",
-      C("Sections", JUNGLE, HUB(hubgrid(SEC6) + band(204)), ["Members, Technicians, Scheduling,", "Finance, Growth, Support."], phub(), "Company Hub")),
-     ("sec_four", "Four Bigger Sections", "Members, Field Ops, Finance, Growth", "calm",
-      C("Sections", TERRA, HUB(hubgrid(SEC4, 2, 34, 76) + band(204)), ["Techs + scheduling merge into Field", "Ops; support sits inside Members."], phub(2, SEC4), "Company Hub")))
+      C("Hub Cards", LAGOON, HUB(hubrows(SEC10) + band(300)), ["Every section in one glance as a", "row; tap the row to open it."], "".join(rect(38, 106 + i * 32, 164, 29, "#FFFFFF", LINE, 5) + rect(38, 106 + i * 32, 3, 29, sc[1]) + t(48, 118 + i * 32, sc[0], 10.5, INK, "khand") + t(48, 130 + i * 32, f"{sc[2]} {sc[3]}", 7.5, MUTE) + dot(160, 120 + i * 32, 3.5, sc[5]) + t(194, 123 + i * 32, ">", 11, sc[1], "khand", 700, "end") for i, sc in enumerate(SEC10)), "Company Hub")))
+pick("Sections", H, "Section list", "all 10 sections shown as their own cards, or the 10 grouped into 4 lanes (People: Members, Technicians, Support; Operations: Scheduling, Materials, Quality; Money: Finance, Marketing; Platform & Legal: Product, Legal)?",
+     ("sec_all10", "All 10 Sections", "Every section gets its own card", "practical",
+      C("Section List", JUNGLE, HUB(hubgrid(SEC10) + band(204)), ["All 10 sections side by side; each", "card opens its own dashboard."], phub(), "Company Hub")),
+     ("sec_lanes", "10 Sections In 4 Lanes", "People, Ops, Money, Platform & Legal", "calm",
+      C("Section List", TERRA, HUB(hublanes() + band(204)), ["People, Operations, Money and", "Platform & Legal; same 10 sections."], phlanes(), "Company Hub")))
+OC = "Org Chart"
+pick("Org Layout", OC, "Chart layout", "a top-down tree drawn like the org chart on Max's Apps Home, or stacked tier rows with one row per level?",
+     ("oc_tree", "Top-Down Tree", "Same style as the Apps Home org chart", "practical",
+      C("Org Layout", LAGOON, ORGD("tree"), ["Like Apps Home: boxes joined by lines,", "lanes as columns under Grok Bot 2."], ORGP("tree"), "Org Chart")),
+     ("oc_tiers", "Stacked Tier Rows", "Owner, lead, chief, sections, shared", "calm",
+      C("Org Layout", TERRA, ORGD("tiers"), ["One labelled row per level, read top", "to bottom; no connecting lines."], ORGP("tiers"), "Org Chart")))
+pick("Chief Card", OC, "Grok Bot 2 card", "a larger chief card with a 'Reports to Grok Bot' line, or the same size as the other cards with a Chief badge?",
+     ("oc_chief_big", "Larger Chief Card", "Bigger card, 'Reports to Grok Bot' line", "bold",
+      C("Chief Card", LAGOON, ORGD("tree", chief="big"), ["Grok Bot 2 stands out as UpKeep's", "chief and says who it reports to."], ORGP("tree", chief="big"), "Org Chart")),
+     ("oc_chief_badge", "Same Size + Chief Badge", "Matches the others, Chief badge on top", "calm",
+      C("Chief Card", JUNGLE, ORGD("tree", chief="badge"), ["Every card the same size; a Chief", "badge marks Grok Bot 2."], ORGP("tree", chief="badge"), "Org Chart")))
+pick("Placeholder Look", OC, "Placeholder agent look", "a dashed outline with 'Placeholder · not created yet', or a faded card with a 'Coming soon' chip?",
+     ("oc_ph_dash", "Dashed Outline", "'Placeholder · not created yet' line", "practical",
+      C("Placeholder Look", TERRA, ORGD("tree", ph="dash"), ["Dashed border plus a plain line:", "'Placeholder · not created yet'."], ORGP("tree", ph="dash"), "Org Chart")),
+     ("oc_ph_fade", "Faded Card + Chip", "Greyed card with a 'Coming soon' chip", "calm",
+      C("Placeholder Look", LAGOON, ORGD("tree", ph="fade"), ["Card greyed out with a 'Coming", "soon' chip until the agent exists."], ORGP("tree", ph="fade"), "Org Chart")))
+pick("Shared Team", OC, "Shared team row", "Security, Branding and Legal shown as a separate row at the bottom, or as side badges on the sections they help?",
+     ("oc_sh_row", "Separate Bottom Row", "'Shared from Max's team' row at the end", "practical",
+      C("Shared Team", JUNGLE, ORGD("tree", shared="row"), ["Security, Branding and Legal sit in", "their own row under the sections."], ORGP("tree", shared="row"), "Org Chart")),
+     ("oc_sh_badge", "Side Badges", "Small chips on the sections they help", "bold",
+      C("Shared Team", TERRA, ORGD("tree", shared="badges"), ["No extra row; chips show which", "sections each shared agent helps."], ORGP("tree", shared="badges"), "Org Chart")))
 pick("Card Preview", H, "Card preview", "each card shows its main number with a trend line, or a status light with a short note?",
      ("pv_kpi", "Main Number + Trend", "e.g. MRR $18.4k with 7-week line", "practical",
-      C("Card Preview", TERRA, HUB(hubgrid(SEC6) + band(204)), ["The headline number per section,", "trend line beside it."], phub(), "Company Hub")),
+      C("Card Preview", TERRA, HUB(hubgrid(SEC10) + band(204)), ["The headline number per section,", "trend line beside it."], phub(), "Company Hub")),
      ("pv_status", "Status Light + Note", "Green, amber or red, plus one note", "calm",
-      C("Card Preview", LAGOON, HUB(hubgrid(SEC6, prev="status") + band(204)), ["Tells you where to look first;", "numbers wait inside the section."], "".join(rect(38 + (i % 2) * 84, 106 + (i // 2) * 84, 80, 78, "#FFFFFF", LINE, 6) + rect(38 + (i % 2) * 84, 106 + (i // 2) * 84, 80, 3, sc[1]) + t(46 + (i % 2) * 84, 124 + (i // 2) * 84, sc[0], 11, INK, "khand") + dot(50 + (i % 2) * 84, 141 + (i // 2) * 84, 4, sc[5]) + t(58 + (i % 2) * 84, 144 + (i // 2) * 84, sc[4], 8.5, INK, "hind", 600) + owner(46 + (i % 2) * 84, 162 + (i // 2) * 84, sc[6]) for i, sc in enumerate(SEC6)), "Company Hub")))
+      C("Card Preview", LAGOON, HUB(hubgrid(SEC10, prev="status") + band(204)), ["Tells you where to look first;", "numbers wait inside the section."], ptiles(SEC10, "status"), "Company Hub")))
 pick("Owner Badge", H, "Section owner badge", "a round initial chip with the agent name, or a plain 'Run by' text line?",
      ("ow_chip", "Initial Chip + Name", "Dashed circle when no owner yet", "bold",
-      C("Owner Badge", TERRA, HUB(hubgrid(SEC6, own="chip") + band(204)), ["Owner reads at a glance; empty", "slots show a dashed 'Owner open'."], phub(), "Company Hub")),
+      C("Owner Badge", TERRA, HUB(hubgrid(SEC10, own="chip") + band(204)), ["Owner reads at a glance; empty", "slots show a dashed 'Owner open'."], phub(), "Company Hub")),
      ("ow_line", "'Run By' Text Line", "Quiet text, 'No owner yet' in grey", "calm",
-      C("Owner Badge", LAGOON, HUB(hubgrid(SEC6, own="line") + band(204)), ["Quieter cards; the owner is a", "small line at the bottom."], "".join(rect(38 + (i % 2) * 84, 106 + (i // 2) * 84, 80, 78, "#FFFFFF", LINE, 6) + rect(38 + (i % 2) * 84, 106 + (i // 2) * 84, 80, 3, sc[1]) + t(46 + (i % 2) * 84, 124 + (i // 2) * 84, sc[0], 11, INK, "khand") + t(46 + (i % 2) * 84, 148 + (i // 2) * 84, sc[2], 18, sc[1], "khand") + owner(46 + (i % 2) * 84, 164 + (i // 2) * 84, sc[6], "line") for i, sc in enumerate(SEC6)), "Company Hub")))
+      C("Owner Badge", LAGOON, HUB(hubgrid(SEC10, own="line") + band(204)), ["Quieter cards; the owner is a", "small line at the bottom."], ptiles(SEC10, "line"), "Company Hub")))
 pick("Hub Top", H, "Top of the hub", "a company KPI row above the section cards, or a Needs Attention strip pulled from every section?",
      ("top_kpi", "Company KPI Row", "Members, MRR, churn, visits, jobs", "practical",
-      C("Hub Top", JUNGLE, HUB(kpirow(34, "six") + hubgrid(SEC6, y=88, h=70) + band(248)), ["Whole-company numbers first, then", "the doors into each section."], "".join(pk(38 + i * 84, 106, 80, 54, v, lb, c, d) for i, (v, lb, c, d) in enumerate(KPIS[:2])) + g(0, 60, 1, phub()), "Company Hub")),
+      C("Hub Top", JUNGLE, HUB(kpirow(34, "six") + hubgrid(SEC10, y=88, h=70) + band(248)), ["Whole-company numbers first, then", "the doors into each section."], "".join(pk(38 + i * 84, 106, 80, 54, v, lb, c, d) for i, (v, lb, c, d) in enumerate(KPIS[:2])) + g(0, 60, 1, phub()), "Company Hub")),
      ("top_alert", "Needs Attention Strip", "Problems from all sections on top", "bold",
-      C("Hub Top", TERRA, HUB(strip(8, 34, 384) + hubgrid(SEC6, y=68, h=74) + band(238)), ["Each alert names its section; tap", "to jump straight there."], "".join(rect(38, 106 + i * 30, 164, 26, c + "14", c, 5, .8) + t(46, 123 + i * 30, a, 9.5, INK, "khand") for i, (c, a, b) in enumerate(ALS)) + g(0, 92, 1, phub()), "Company Hub")))
+      C("Hub Top", TERRA, HUB(strip(8, 34, 384) + hubgrid(SEC10, y=68, h=74) + band(238)), ["Each alert names its section; tap", "to jump straight there."], "".join(rect(38, 106 + i * 30, 164, 26, c + "14", c, 5, .8) + t(46, 123 + i * 30, a, 9.5, INK, "khand") for i, (c, a, b) in enumerate(ALS)) + g(0, 92, 1, phub()), "Company Hub")))
 pick("Section Header", S, "Section header", "a cream band with Return, section name and owner, or a slim breadcrumb line like Company > Finance?",
      ("hd_band", "Branded Band", "Return, name, owner chip", "bold",
       C("Section Header", TERRA, SEC(FIN()), ["Same header kit as agent boards,", "owner chip on the right."], psec("band"), "")),
      ("hd_crumb", "Slim Breadcrumb", "Company > Finance, owner as text", "calm",
       C("Section Header", LAGOON, SEC(FIN(), style="crumb"), ["Least height used; tap 'Company'", "to go back to the hub."], psec("crumb"), "")))
-def switcher(): return "".join(P(8 + i * 66, 30, nm, sc[0] if nm == "Finance" else INK, nm == "Finance", 8, 15) for i, (nm, *sc) in enumerate([(x[0], x[1]) for x in SEC6]))
+def switcher(): return "".join(P(8 + i * 64, 30, nm, JUNGLE if nm == "Finance" else INK, nm == "Finance", 8, 15) for i, nm in enumerate(["Finance", "Members", "Technicians", "Scheduling", "Support", "More (5)"]))
 pick("Back To Hub", S, "Getting back to the hub", "one Return button that goes back in browser history, or Return plus tabs to jump between sections?",
      ("bk_return", "Return Button Only", "History-first, like agent boards", "practical",
       C("Back To Hub", JUNGLE, SEC(FIN()), ["Return goes back the way you came", "(browser Back works too)."], psec("band"), "")),
      ("bk_tabs", "Return + Section Tabs", "Hop Finance to Members directly", "bold",
       C("Back To Hub", TERRA, SEC(switcher() + g(0, 22, 1, FIN())), ["Tabs under the header switch", "sections without the hub."], psec("band", 16) + "".join(P(36 + i * 44, 134, nm, TERRA if i == 0 else INK, i == 0, 7, 13) for i, nm in enumerate(["Finance", "Members", "Techs", "More"])), "")))
 def empty_owner(slot=True):
-    if slot: return rect(8, 34, 384, 40, CREAM, "#BDB6AA", 6, .8, 'stroke-dasharray="4 3"') + f'<circle cx="30" cy="54" r="11" fill="none" stroke="#BDB6AA" stroke-dasharray="3 2"/>' + t(48, 51, "No owner yet", 11, INK, "khand") + t(48, 64, "An agent will run Growth. Until then, Max owns it.", 8, MUTE) + rect(DW - 92, 44, 80, 20, "#FFFFFF", INK, 4, .8) + t(DW - 52, 57.5, "Assign owner", 8, INK, "hind", 600, "middle")
+    if slot: return rect(8, 34, 384, 40, CREAM, "#BDB6AA", 6, .8, 'stroke-dasharray="4 3"') + f'<circle cx="30" cy="54" r="11" fill="none" stroke="#BDB6AA" stroke-dasharray="3 2"/>' + t(48, 51, "No owner yet", 11, INK, "khand") + t(48, 64, "A placeholder agent will run Growth. Not created yet.", 8, MUTE) + rect(DW - 92, 44, 80, 20, "#FFFFFF", INK, 4, .8) + t(DW - 52, 57.5, "Assign owner", 8, INK, "hind", 600, "middle")
     return ""
 GROW = lambda y: "".join(kpi(8 + i * 97, y, 91, 50, v, lb, c, None, big=17) for i, (v, lb, c) in enumerate([("14", "Sign-ups / mo", TERRA), ("31%", "Referral share", JUNGLE), ("$42", "Cost per sign-up", LAGOON), ("6", "Waitlist", INK)])) + mrrchart(8, y + 58, 384, 170, legend=True, flags=False)
 pick("Unowned Section", S, "Section with no owner yet", "a dashed 'No owner yet' slot with an Assign button, or no owner shown until one is set?",
@@ -216,10 +370,10 @@ pick("Unowned Section", S, "Section with no owner yet", "a dashed 'No owner yet'
      ("un_hide", "Hidden Until Set", "Clean header, owner appears later", "calm",
       C("Unowned Section", JUNGLE, SEC(GROW(34), name="Growth", c=JUNGLE, o=None, style="crumb").replace("No owner yet", ""), ["Nothing about owners until an agent", "is assigned."], psec("crumb").replace(">Finance<", ">Growth<").replace("Run by Finance Agent", ""), "")))
 pick("Phone Hub", H, "Phone layout of the hub", "section cards in a two-column grid, or a swipe carousel of big section cards?",
-     ("ph_grid", "Two-Column Grid", "All six sections on one screen", "practical",
-      C("Phone Hub", TERRA, HUB(hubgrid(SEC6, cols=2, h=66) + band(256).replace("", "")), ["Desktop shown for context; phone", "drawing (right) is the 2-column grid."], phub(), "Company Hub")),
+     ("ph_grid", "Two-Column Grid", "All 10 sections, two per row", "practical",
+      C("Phone Hub", TERRA, HUB(hubgrid(SEC10) + band(204)), ["Desktop shown for context; phone", "drawing (right) is the 2-column grid."], phub(), "Company Hub")),
      ("ph_car", "Section Carousel", "Swipe big cards, list below", "bold",
-      C("Phone Hub", LAGOON, HUB(hubgrid(SEC6) + band(204)), ["Desktop stays a grid; on the phone", "big cards swipe sideways (dots)."], phub(1), "Company Hub")))
+      C("Phone Hub", LAGOON, HUB(hubgrid(SEC10) + band(204)), ["Desktop stays a grid; on the phone", "big cards swipe sideways (dots)."], phub(1), "Company Hub")))
 def psec_car():
     hd = rect(31, 84, 178, 44, CREAM) + rect(31, 128, 178, 2, TERRA) + rect(38, 96, 46, 18, "#FFFFFF", "#CFC7BA", 4, .8) + t(61, 108.5, "< Return", 8, INK, "hind", 600, "middle") + t(92, 110, "Finance", 15, INK, "khand") + owner(150, 99, "Agent")
     return hd + "".join(pk(38 + i * 92, 138, 86, 62, v, lb, c, d) for i, (v, lb, c, d) in enumerate([KPIS[1], KPIS[2], KPIS[0]])) + dots(120, 210, 5, 0) + pchart(220, 120) + plist(350, 4, True)
@@ -241,7 +395,7 @@ if "--preview" in sys.argv:
     for gg, ask, a, b in PK:
         for o in (a, b): h += f"<div><div style='width:400px;display:inline-block;vertical-align:top'>{o[4].split('</svg>')[0]}</svg></div><div style='width:300px;display:inline-block'>{o[4].split('</svg>')[1]}</svg></div><b>{o[1]}</b></div>"
     open(os.path.join(d, "preview.html"), "w").write(h + "</body></html>"); print("preview", d); sys.exit()
-assert len(PK) == 10
+assert len(PK) == 14, len(PK)
 pairs, O, add = kdeck("uch_", "UpKeep")
 for grp, ask, a, b in PK:
     for o in (a, b): assert len(o[1]) <= 24 and len(o[2]) <= 40 and o[3] in FEEL, o[:3]
@@ -249,15 +403,16 @@ for grp, ask, a, b in PK:
     add(grp, grp, oa, ob, ask)
 cap_guard(pairs)
 REQ = ('Max Oct 17 2026 21:11 ICT: "can you push a deck for the upkeep company dashboard"; 21:17 ICT: "can we set up the company dashboard the same way '
-       '[main dashboard then agent dashboards]. we will eventually have agents that are in charge of each section"')
+       '[main dashboard then agent dashboards]. we will eventually have agents that are in charge of each section"; 21:23-21:24 ICT: UpKeep owner dashboard that looks like Max\'s own dashboard (Apps Home) with an org chart and an order of operations; new agents shown as placeholders; Grok Bot 2 is UpKeep\'s chief, reporting to Grok Bot')
 meta = {"brands": ["Smart Upkeep brand: white and warm cream, terracotta, lagoon and jungle accents, Khand and Hind, light mode only, no emoji."],
-        "submit_agent": "upkeep", "submit_to": UPKEEP, "topic": SLUG_KEY, "deck_size": 10, "board": "upkeep", "audience": "Max", "requested": True,
+        "submit_agent": "upkeep", "submit_to": UPKEEP, "topic": SLUG_KEY, "deck_size": 14, "board": "upkeep", "audience": "Max", "requested": True,
         "request": REQ, "applies_to": ["Smart Upkeep company dashboard (not the member app, tech app or Operator Console)"],
         "example_data": "Every name, number and date is example data.",
-        "source_note": "No built company dashboard found; picks based on UpKeep notes and docs plus Max 21:17 ICT: two-level hub (like Apps Home -> agent boards) with a section dashboard per future agent.",
+        "source_note": "No built company dashboard found; picks based on UpKeep notes and docs plus Max 21:17 ICT: two-level hub (like Apps Home -> agent boards) with a section dashboard per future agent; 21:23-21:24 ICT: final org from UpKeep (Max > Grok Bot > Grok Bot 2, 10 sections, shared Security/Branding/Legal), Org Chart picks drawn in the Apps Home org chart style.",
         "sources": {"content": "tools/build_company_dashboard_deck.py"}}
-publish(DID, NAME, "UpKeep", pairs, meta, seed=1017, n=10, first=10)
-dj = json.load(open(f"decks/{DID}.json")); assert len(dj["pairs"]) == 10
+import draft_svg as _ds, trim_deck as _td; _ds.MAX_PAIRS = _td.MAX_PAIRS = 14  # this deck only: Max asked for ~13-14 picks (21:23-21:24 ICT)
+publish(DID, NAME, "UpKeep", pairs, meta, seed=1017, n=14, first=14)
+dj = json.load(open(f"decks/{DID}.json")); assert len(dj["pairs"]) == 14
 pages = json.load(open("decks/pages.json"))
 slug = pages.get(DID) or "upkeep-company-dashboard-" + "".join(secrets.choice(string.ascii_lowercase + string.digits) for _ in range(6))
 src = open("tools/build_upkeep_five_decks.py").read(); ns = {}; exec(src[src.index("SHARE = ("):src.index("FEEL = {")], ns)
