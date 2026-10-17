@@ -1,0 +1,515 @@
+{
+ "date": "upkeep-financial-forecasting-views-deck",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Financial Forecasting Deck: Charts And Scenarios",
+ "generated_at": "2026-10-17T11:01:08+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "bold": 5,
+  "calm": 6,
+  "practical": 6,
+  "playful": 3
+ },
+ "groups": {
+  "Chart Type": 1,
+  "Per Member": 2,
+  "Churn": 1,
+  "Format": 1,
+  "Scenarios": 2,
+  "Assumptions": 1,
+  "Time Horizon": 1,
+  "Key Moments": 1
+ },
+ "apps": {
+  "UpKeep": 10
+ },
+ "freshness": {
+  "option_slots": 20,
+  "never_shown_before": 20,
+  "share": 1.0
+ },
+ "warnings": [],
+ "brands": [
+  "How projections are shown: chart types, scenarios, horizon, per-member economics, churn, dashboard vs one-pager. Example data.",
+  "Smart Upkeep brand: white and cream, terracotta, lagoon and jungle accents, Khand and Hind, light mode only."
+ ],
+ "submit_agent": "upkeep",
+ "submit_to": "UpKeep Agent f0d420ad-d37e-44d3-be6f-053da2b6e24d",
+ "topic": "upkeep-forecast-views",
+ "deck_size": 10,
+ "board": "upkeep",
+ "audience": "Max",
+ "example_data": "All numbers, names and reviews on cards are labeled example data or placeholders.",
+ "sources": {
+  "content": "tools/uk5_*.py",
+  "site": "drawn mockups"
+ },
+ "pairs": [
+  {
+   "group": "Chart Type",
+   "category": "Chart Type",
+   "app": "UpKeep",
+   "ask": "Revenue Chart: Stacked Area By Plan, Or One Line Per Plan?",
+   "optionA": {
+    "id": "uk5fc_fc_stacked",
+    "label": "Stacked Area By Plan",
+    "desc": "Shows the total and each plan's share at once.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">CHART TYPE</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><rect x=\"14\" y=\"30\" width=\"212\" height=\"150\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"46\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Monthly revenue by plan</text><path d=\"M24 56 V160 H218\" fill=\"none\" stroke=\"#D9D2C6\" stroke-width=\".9\"/><path d=\"M24 82.0 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M24 108.0 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M24 134.0 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><text x=\"24.0\" y=\"169\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q1</text><text x=\"88.66666666666667\" y=\"169\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q3</text><text x=\"153.33333333333334\" y=\"169\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q5</text><text x=\"218.0\" y=\"169\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q8</text><polygon points=\"24.0,152.0 51.7,148.0 79.4,144.0 107.1,140.0 134.9,136.0 162.6,132.0 190.3,128.0 218.0,124.0 218.0,160.0 190.3,160.0 162.6,160.0 134.9,160.0 107.1,160.0 79.4,160.0 51.7,160.0 24.0,160.0\" fill=\"#05668DCC\"/><polygon points=\"24.0,148.0 51.7,140.0 79.4,132.0 107.1,122.0 134.9,112.0 162.6,104.0 190.3,94.0 218.0,84.0 218.0,124.0 190.3,128.0 162.6,132.0 134.9,136.0 107.1,140.0 79.4,144.0 51.7,148.0 24.0,152.0\" fill=\"#D4A017CC\"/><polygon points=\"24.0,146.0 51.7,136.0 79.4,126.0 107.1,114.0 134.9,100.0 162.6,90.0 190.3,76.0 218.0,64.0 218.0,84.0 190.3,94.0 162.6,104.0 134.9,112.0 107.1,122.0 79.4,132.0 51.7,140.0 24.0,148.0\" fill=\"#C1502ECC\"/><rect x=\"14\" y=\"190\" width=\"8\" height=\"8\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"25\" y=\"197\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Essentials</text><rect x=\"83.0\" y=\"190\" width=\"8\" height=\"8\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"94.0\" y=\"197\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Plus</text><rect x=\"123.8\" y=\"190\" width=\"8\" height=\"8\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"134.8\" y=\"197\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Complete</text><text x=\"14\" y=\"214\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Top edge = total revenue.</text><text x=\"14\" y=\"225\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example data, 8 quarters.</text><rect x=\"14\" y=\"272\" width=\"62.599999999999994\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"45.3\" y=\"282.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Total + mix</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "uk5fc_fc_lines",
+    "label": "One Line Per Plan",
+    "desc": "Easier to read each plan's own trend.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">CHART TYPE</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><rect x=\"14\" y=\"30\" width=\"212\" height=\"150\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"46\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Monthly revenue by plan</text><path d=\"M24 56 V160 H218\" fill=\"none\" stroke=\"#D9D2C6\" stroke-width=\".9\"/><path d=\"M24 82.0 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M24 108.0 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M24 134.0 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><text x=\"24.0\" y=\"169\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q1</text><text x=\"88.66666666666667\" y=\"169\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q3</text><text x=\"153.33333333333334\" y=\"169\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q5</text><text x=\"218.0\" y=\"169\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q8</text><polyline points=\"24.0,142.7 51.7,134.0 79.4,125.3 107.1,116.7 134.9,108.0 162.6,99.3 190.3,90.7 218.0,82.0\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"24.0,151.3 51.7,142.7 79.4,134.0 107.1,121.0 134.9,108.0 162.6,99.3 190.3,86.3 218.0,73.3\" fill=\"none\" stroke=\"#D4A017\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"24.0,155.7 51.7,151.3 79.4,147.0 107.1,142.7 134.9,134.0 162.6,129.7 190.3,121.0 218.0,116.7\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><rect x=\"14\" y=\"190\" width=\"8\" height=\"8\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"25\" y=\"197\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Essentials</text><rect x=\"83.0\" y=\"190\" width=\"8\" height=\"8\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"94.0\" y=\"197\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Plus</text><rect x=\"123.8\" y=\"190\" width=\"8\" height=\"8\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"134.8\" y=\"197\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Complete</text><text x=\"14\" y=\"214\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Total shown as a number above.</text><text x=\"14\" y=\"225\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example data, 8 quarters.</text><rect x=\"14\" y=\"272\" width=\"76.39999999999999\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"52.199999999999996\" y=\"282.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Per-plan trend</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-financial-forecasting-views-deck-01",
+   "repeat": false
+  },
+  {
+   "group": "Per Member",
+   "category": "Per Member",
+   "app": "UpKeep",
+   "ask": "Per-Member Unit Economics: A Waterfall From Price To Margin, Or A Simple Card Of Lines?",
+   "optionA": {
+    "id": "uk5fc_ue_waterfall",
+    "label": "Waterfall, Price To Margin",
+    "desc": "Each cost steps down from the monthly price.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">PER MEMBER</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><rect x=\"14\" y=\"30\" width=\"212\" height=\"160\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"46\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >One member, per month (index 100)</text><path d=\"M24 56 V166 H218\" fill=\"none\" stroke=\"#D9D2C6\" stroke-width=\".9\"/><path d=\"M24 83.5 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M24 111.0 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M24 138.5 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><rect x=\"29.0\" y=\"66.0\" width=\"28.799999999999997\" height=\"100.0\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"43.4\" y=\"178\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Price</text><rect x=\"67.8\" y=\"66.0\" width=\"28.799999999999997\" height=\"38.0\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"82.19999999999999\" y=\"178\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Labor</text><rect x=\"106.6\" y=\"104.0\" width=\"28.799999999999997\" height=\"12.0\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"121.0\" y=\"178\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Parts</text><rect x=\"145.39999999999998\" y=\"116.0\" width=\"28.799999999999997\" height=\"8.0\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"159.79999999999998\" y=\"178\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Travel</text><rect x=\"184.2\" y=\"124.0\" width=\"28.799999999999997\" height=\"42.0\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"198.6\" y=\"178\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Margin</text><text x=\"14\" y=\"204\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Bars are example shares of a</text><text x=\"14\" y=\"215\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >100-point price, not real costs.</text><rect x=\"14\" y=\"272\" width=\"39.599999999999994\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"33.8\" y=\"282.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Visual</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "uk5fc_ue_card",
+    "label": "Per-Member Card",
+    "desc": "Price, each cost and margin as lines.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">PER MEMBER</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><rect x=\"14\" y=\"30\" width=\"212\" height=\"160\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"48\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >One member, per month</text><line x1=\"22\" y1=\"58\" x2=\"218\" y2=\"58\" stroke=\"#E5E0D8\"/><text x=\"22\" y=\"74\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Price</text><text x=\"218\" y=\"74\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >$XXX</text><line x1=\"22\" y1=\"80\" x2=\"218\" y2=\"80\" stroke=\"#E5E0D8\"/><text x=\"22\" y=\"96\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Labor</text><text x=\"218\" y=\"96\" font-size=\"8.5\" fill=\"#C1502E\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >-$XX</text><line x1=\"22\" y1=\"102\" x2=\"218\" y2=\"102\" stroke=\"#E5E0D8\"/><text x=\"22\" y=\"118\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Parts</text><text x=\"218\" y=\"118\" font-size=\"8.5\" fill=\"#C1502E\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >-$XX</text><line x1=\"22\" y1=\"124\" x2=\"218\" y2=\"124\" stroke=\"#E5E0D8\"/><text x=\"22\" y=\"140\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Travel</text><text x=\"218\" y=\"140\" font-size=\"8.5\" fill=\"#C1502E\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >-$XX</text><line x1=\"22\" y1=\"146\" x2=\"218\" y2=\"146\" stroke=\"#E5E0D8\"/><text x=\"22\" y=\"162\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Margin</text><text x=\"218\" y=\"162\" font-size=\"8.5\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >$XX</text><text x=\"14\" y=\"204\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Placeholders until the model</text><text x=\"14\" y=\"215\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >fills in real values.</text><rect x=\"14\" y=\"272\" width=\"35.0\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"31.5\" y=\"282.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Exact</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-financial-forecasting-views-deck-02",
+   "repeat": false
+  },
+  {
+   "group": "Churn",
+   "category": "Churn",
+   "app": "UpKeep",
+   "ask": "Churn: A Retention Curve Of Members Still With Us, Or A Monthly Churn Rate Tile?",
+   "optionA": {
+    "id": "uk5fc_ch_curve",
+    "label": "Retention Curve",
+    "desc": "Out of 100 who join, how many are still members each quarter.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">CHURN</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><rect x=\"14\" y=\"30\" width=\"212\" height=\"150\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"46\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Of 100 who join, still members</text><path d=\"M24 56 V160 H218\" fill=\"none\" stroke=\"#D9D2C6\" stroke-width=\".9\"/><path d=\"M24 82.0 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M24 108.0 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M24 134.0 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><text x=\"24.0\" y=\"169\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q1</text><text x=\"88.66666666666667\" y=\"169\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q3</text><text x=\"153.33333333333334\" y=\"169\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q5</text><text x=\"218.0\" y=\"169\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q8</text><polygon points=\"24.0,65.5 51.7,73.0 79.4,78.7 107.1,83.4 134.9,87.2 162.6,90.0 190.3,92.9 218.0,94.8 218.0,160.0 190.3,160.0 162.6,160.0 134.9,160.0 107.1,160.0 79.4,160.0 51.7,160.0 24.0,160.0\" fill=\"#05668D22\"/><polyline points=\"24.0,65.5 51.7,73.0 79.4,78.7 107.1,83.4 134.9,87.2 162.6,90.0 190.3,92.9 218.0,94.8\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"214\" y=\"88.76363636363637\" font-size=\"9\" fill=\"#05668D\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >69</text><text x=\"14\" y=\"196\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Example curve, not a forecast.</text><rect x=\"14\" y=\"272\" width=\"53.4\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"40.7\" y=\"282.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Long view</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "uk5fc_ch_tile",
+    "label": "Monthly Churn Tile",
+    "desc": "One rate with a small slider to test higher or lower churn.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">CHURN</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><rect x=\"14\" y=\"30\" width=\"212\" height=\"150\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"120\" y=\"70\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Monthly churn</text><text x=\"120\" y=\"112\" font-size=\"36\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >X.X%</text><rect x=\"40\" y=\"132\" width=\"160\" height=\"4\" rx=\"0\" fill=\"#EEEAE4\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"40\" y=\"132\" width=\"64\" height=\"4\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"104\" cy=\"134\" r=\"6\" fill=\"#FFFFFF\" stroke=\"#C1502E\" stroke-width=\"2\"/><text x=\"40\" y=\"152\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Lower</text><text x=\"200\" y=\"152\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\" >Higher</text><text x=\"14\" y=\"196\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Placeholder rate; drag to test.</text><rect x=\"14\" y=\"272\" width=\"58.0\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"43.0\" y=\"282.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Adjustable</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-financial-forecasting-views-deck-03",
+   "repeat": false
+  },
+  {
+   "group": "Per Member",
+   "category": "Per Member",
+   "app": "UpKeep",
+   "ask": "Per-Member View: Split By Plan (Essentials, Plus, Complete), Or One Blended Member?",
+   "optionA": {
+    "id": "uk5fc_ue_tiers",
+    "label": "Split By Plan",
+    "desc": "Three columns, so you see which plan earns most.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#D4A017\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">PER MEMBER</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><rect x=\"14\" y=\"32\" width=\"68\" height=\"150\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"32\" width=\"68\" height=\"4\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"48\" y=\"52\" font-size=\"10\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Essentials</text><rect x=\"25.25\" y=\"70.18181818181819\" width=\"19.5\" height=\"81.81818181818181\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"51.25\" y=\"115.18181818181819\" width=\"19.5\" height=\"36.81818181818181\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"34\" y=\"166\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Price</text><text x=\"62\" y=\"166\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Margin</text><rect x=\"86\" y=\"32\" width=\"68\" height=\"150\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"86\" y=\"32\" width=\"68\" height=\"4\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"52\" font-size=\"10\" fill=\"#D4A017\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Plus</text><rect x=\"97.25\" y=\"70.18181818181819\" width=\"19.5\" height=\"81.81818181818181\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"123.25\" y=\"115.18181818181819\" width=\"19.5\" height=\"36.81818181818182\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><text x=\"106\" y=\"166\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Price</text><text x=\"134\" y=\"166\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Margin</text><rect x=\"158\" y=\"32\" width=\"68\" height=\"150\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"158\" y=\"32\" width=\"68\" height=\"4\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"192\" y=\"52\" font-size=\"10\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Complete</text><rect x=\"169.25\" y=\"70.18181818181819\" width=\"19.5\" height=\"81.81818181818181\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"195.25\" y=\"115.18181818181819\" width=\"19.5\" height=\"36.81818181818182\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"178\" y=\"166\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Price</text><text x=\"206\" y=\"166\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Margin</text><text x=\"14\" y=\"198\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Bar heights are example shapes.</text><rect x=\"14\" y=\"272\" width=\"44.199999999999996\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"36.099999999999994\" y=\"282.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >By plan</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "uk5fc_ue_blended",
+    "label": "One Blended Member",
+    "desc": "A single average member across all plans.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0A0A0A\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">PER MEMBER</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><rect x=\"14\" y=\"32\" width=\"212\" height=\"150\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"120\" y=\"70\" font-size=\"11\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Average member</text><text x=\"120\" y=\"110\" font-size=\"34\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >$XX</text><text x=\"120\" y=\"126\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >margin per month</text><rect x=\"40\" y=\"140\" width=\"160\" height=\"8\" rx=\"0\" fill=\"#EEEAE4\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"40\" y=\"140\" width=\"60\" height=\"8\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"100\" y=\"140\" width=\"60\" height=\"8\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"160\" y=\"140\" width=\"40\" height=\"8\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"164\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Plan mix (example)</text><text x=\"14\" y=\"198\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >One number, plan mix shown</text><text x=\"14\" y=\"209\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >as a thin bar.</text><rect x=\"14\" y=\"272\" width=\"39.599999999999994\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"33.8\" y=\"282.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Simple</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-financial-forecasting-views-deck-04",
+   "repeat": false
+  },
+  {
+   "group": "Format",
+   "category": "Format",
+   "app": "UpKeep",
+   "ask": "Forecast Format: A Live Dashboard With Filters, Or A One-Page Summary To Print Or Send?",
+   "optionA": {
+    "id": "uk5fc_fmt_dash",
+    "label": "Live Dashboard",
+    "desc": "Tiles, big chart, filters on the side.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">FORMAT</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><rect x=\"14\" y=\"32\" width=\"212\" height=\"150\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1\" /><rect x=\"14\" y=\"32\" width=\"212\" height=\"9\" rx=\"0\" fill=\"#EFEAE2\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"19\" cy=\"36.5\" r=\"1.6\" fill=\"#C1502E\"/><circle cx=\"24\" cy=\"36.5\" r=\"1.6\" fill=\"#D4A017\"/><circle cx=\"29\" cy=\"36.5\" r=\"1.6\" fill=\"#0B6E4F\"/><rect x=\"36\" y=\"34.5\" width=\"106.0\" height=\"4\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><clipPath id=\"br1432\"><rect x=\"14\" y=\"41\" width=\"212\" height=\"141\"/></clipPath><g clip-path=\"url(#br1432)\"><g transform=\"translate(14,41) scale(0.53)\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"260\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"20\" font-size=\"16\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Forecast</text><rect x=\"12\" y=\"30\" width=\"88\" height=\"44\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"18\" y=\"52\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >XXX</text><text x=\"18\" y=\"66\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Members</text><rect x=\"108\" y=\"30\" width=\"88\" height=\"44\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"114\" y=\"52\" font-size=\"14\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >$XXk</text><text x=\"114\" y=\"66\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >MRR</text><rect x=\"204\" y=\"30\" width=\"88\" height=\"44\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"210\" y=\"52\" font-size=\"14\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >X.X%</text><text x=\"210\" y=\"66\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Churn</text><rect x=\"300\" y=\"30\" width=\"88\" height=\"44\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"306\" y=\"52\" font-size=\"14\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Q6</text><text x=\"306\" y=\"66\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Break-even</text><rect x=\"12\" y=\"84\" width=\"260\" height=\"160\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M22 96 V226 H262\" fill=\"none\" stroke=\"#D9D2C6\" stroke-width=\".9\"/><path d=\"M22 128.5 H262\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M22 161.0 H262\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M22 193.5 H262\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><polygon points=\"22.0,216.0 56.3,211.0 90.6,206.0 124.9,201.0 159.1,196.0 193.4,191.0 227.7,186.0 262.0,181.0 262.0,226.0 227.7,226.0 193.4,226.0 159.1,226.0 124.9,226.0 90.6,226.0 56.3,226.0 22.0,226.0\" fill=\"#05668DCC\"/><polygon points=\"22.0,211.0 56.3,201.0 90.6,191.0 124.9,178.5 159.1,166.0 193.4,156.0 227.7,143.5 262.0,131.0 262.0,181.0 227.7,186.0 193.4,191.0 159.1,196.0 124.9,201.0 90.6,206.0 56.3,211.0 22.0,216.0\" fill=\"#D4A017CC\"/><polygon points=\"22.0,208.5 56.3,196.0 90.6,183.5 124.9,168.5 159.1,151.0 193.4,138.5 227.7,121.0 262.0,106.0 262.0,131.0 227.7,143.5 193.4,156.0 159.1,166.0 124.9,178.5 90.6,191.0 56.3,201.0 22.0,211.0\" fill=\"#C1502ECC\"/><rect x=\"282\" y=\"84\" width=\"106\" height=\"160\" rx=\"0\" fill=\"#FAF3EB\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"290\" y=\"96\" width=\"90\" height=\"18\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"296\" y=\"108\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Scenario: Base</text><rect x=\"290\" y=\"122\" width=\"90\" height=\"18\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"296\" y=\"134\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Horizon: 3 yrs</text><rect x=\"290\" y=\"148\" width=\"90\" height=\"18\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"296\" y=\"160\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >View: Monthly</text><rect x=\"290\" y=\"174\" width=\"90\" height=\"18\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"296\" y=\"186\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Plan: All</text><rect x=\"290\" y=\"200\" width=\"90\" height=\"18\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"296\" y=\"212\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Export PDF</text></g></g><text x=\"14\" y=\"196\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Lives on the UpKeep board;</text><text x=\"14\" y=\"207\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >filters change the view.</text><rect x=\"14\" y=\"272\" width=\"44.199999999999996\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"36.099999999999994\" y=\"282.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Explore</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "uk5fc_fmt_onepager",
+    "label": "One-Page Summary",
+    "desc": "Three numbers, one chart, short notes; prints on one page.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">FORMAT</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><rect x=\"60\" y=\"30\" width=\"120\" height=\"170\" rx=\"0\" fill=\"#F3EFE8\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(64,32) scale(0.55)\"><rect x=\"0\" y=\"0\" width=\"210\" height=\"297\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"26\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Smart Upkeep Forecast</text><text x=\"14\" y=\"38\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >One page, Month XX (example)</text><rect x=\"14\" y=\"46\" width=\"182\" height=\"3\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"70\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >XXX</text><text x=\"14\" y=\"82\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Members</text><text x=\"76\" y=\"70\" font-size=\"15\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >$XXk</text><text x=\"76\" y=\"82\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >MRR</text><text x=\"138\" y=\"70\" font-size=\"15\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Q6</text><text x=\"138\" y=\"82\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Break-even</text><path d=\"M14 96 V176 H196\" fill=\"none\" stroke=\"#D9D2C6\" stroke-width=\".9\"/><path d=\"M14 116.0 H196\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M14 136.0 H196\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M14 156.0 H196\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><polyline points=\"14.0,167.1 40.0,162.7 66.0,157.3 92.0,151.6 118.0,144.9 144.0,137.8 170.0,131.6 196.0,122.7\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><rect x=\"14\" y=\"196\" width=\"182\" height=\"4\" rx=\"0\" fill=\"#E2DCD0\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"210\" width=\"150\" height=\"4\" rx=\"0\" fill=\"#E2DCD0\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"224\" width=\"170\" height=\"4\" rx=\"0\" fill=\"#E2DCD0\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"238\" width=\"120\" height=\"4\" rx=\"0\" fill=\"#E2DCD0\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"252\" width=\"160\" height=\"4\" rx=\"0\" fill=\"#E2DCD0\" stroke=\"none\" stroke-width=\"1\" /></g><rect x=\"64\" y=\"32\" width=\"115.5\" height=\"163\" rx=\"0\" fill=\"none\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"14\" y=\"214\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Same data, frozen for a meeting</text><text x=\"14\" y=\"225\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >or an email.</text><rect x=\"14\" y=\"272\" width=\"58.0\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"43.0\" y=\"282.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Send-ready</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-financial-forecasting-views-deck-05",
+   "repeat": false
+  },
+  {
+   "group": "Scenarios",
+   "category": "Scenarios",
+   "app": "UpKeep",
+   "ask": "Comparing Scenarios: Three Small Charts Side By Side, Or A Table Of Key Results?",
+   "optionA": {
+    "id": "uk5fc_sc_multiples",
+    "label": "Three Small Charts",
+    "desc": "Same scale, side by side, shape first.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">SCENARIO COMPARE</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><rect x=\"14\" y=\"32\" width=\"68\" height=\"110\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"19\" y=\"43\" font-size=\"8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Worst</text><path d=\"M19 48 V134 H77\" fill=\"none\" stroke=\"#D9D2C6\" stroke-width=\".9\"/><path d=\"M19 69.5 H77\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M19 91.0 H77\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M19 112.5 H77\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><polyline points=\"19.0,124.4 27.3,121.6 35.6,118.7 43.9,115.8 52.1,112.5 60.4,109.6 68.7,106.3 77.0,102.9\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><rect x=\"86\" y=\"32\" width=\"68\" height=\"110\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"91\" y=\"43\" font-size=\"8\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Base</text><path d=\"M91 48 V134 H149\" fill=\"none\" stroke=\"#D9D2C6\" stroke-width=\".9\"/><path d=\"M91 69.5 H149\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M91 91.0 H149\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M91 112.5 H149\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><polyline points=\"91.0,124.4 99.3,119.7 107.6,113.9 115.9,107.7 124.1,100.6 132.4,92.9 140.7,86.2 149.0,76.7\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"1.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><rect x=\"158\" y=\"32\" width=\"68\" height=\"110\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"163\" y=\"43\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Best</text><path d=\"M163 48 V134 H221\" fill=\"none\" stroke=\"#D9D2C6\" stroke-width=\".9\"/><path d=\"M163 69.5 H221\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M163 91.0 H221\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M163 112.5 H221\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><polyline points=\"163.0,124.4 171.3,117.8 179.6,110.1 187.9,100.6 196.1,91.0 204.4,79.1 212.7,67.1 221.0,52.8\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"1.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"14\" y=\"160\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Same axis on all three so</text><text x=\"14\" y=\"171\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >the shapes compare fairly.</text><rect x=\"14\" y=\"272\" width=\"39.599999999999994\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"33.8\" y=\"282.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Shapes</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "uk5fc_sc_table",
+    "label": "Key Results Table",
+    "desc": "Members, revenue, break-even and low cash, by scenario.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">SCENARIO COMPARE</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><rect x=\"14\" y=\"32\" width=\"212\" height=\"18\" rx=\"0\" fill=\"#FAF3EB\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"44.5\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Example</text><text x=\"132\" y=\"44.5\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Worst</text><text x=\"178\" y=\"44.5\" font-size=\"8\" fill=\"#C1502E\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Base</text><text x=\"222\" y=\"44.5\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Best</text><line x1=\"14\" y1=\"72\" x2=\"226\" y2=\"72\" stroke=\"#E5E0D8\"/><text x=\"20\" y=\"64\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Members, month 36</text><text x=\"132\" y=\"64\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >XXX</text><text x=\"178\" y=\"64\" font-size=\"8\" fill=\"#C1502E\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >XXX</text><text x=\"222\" y=\"64\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >XXX</text><line x1=\"14\" y1=\"94\" x2=\"226\" y2=\"94\" stroke=\"#E5E0D8\"/><text x=\"20\" y=\"86\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Revenue, year 3</text><text x=\"132\" y=\"86\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >$X.XM</text><text x=\"178\" y=\"86\" font-size=\"8\" fill=\"#C1502E\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >$X.XM</text><text x=\"222\" y=\"86\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >$X.XM</text><line x1=\"14\" y1=\"116\" x2=\"226\" y2=\"116\" stroke=\"#E5E0D8\"/><text x=\"20\" y=\"108\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Break-even</text><text x=\"132\" y=\"108\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Q6</text><text x=\"178\" y=\"108\" font-size=\"8\" fill=\"#C1502E\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Q5</text><text x=\"222\" y=\"108\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >Q9</text><line x1=\"14\" y1=\"138\" x2=\"226\" y2=\"138\" stroke=\"#E5E0D8\"/><text x=\"20\" y=\"130\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Lowest cash</text><text x=\"132\" y=\"130\" font-size=\"8\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >-$XXk</text><text x=\"178\" y=\"130\" font-size=\"8\" fill=\"#C1502E\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >-$XXk</text><text x=\"222\" y=\"130\" font-size=\"8\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >-$XXk</text><text x=\"14\" y=\"160\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Values are placeholders (XXX,</text><text x=\"14\" y=\"171\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >$X.XM) until the model runs.</text><rect x=\"14\" y=\"272\" width=\"71.8\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"49.9\" y=\"282.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Exact numbers</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-financial-forecasting-views-deck-06",
+   "repeat": false
+  },
+  {
+   "group": "Assumptions",
+   "category": "Assumptions",
+   "app": "UpKeep",
+   "ask": "Assumptions: Chips Beside The Chart You Can Tap To Edit, Or A Footnote Drawer Below?",
+   "optionA": {
+    "id": "uk5fc_as_chips",
+    "label": "Editable Chips Beside Chart",
+    "desc": "Churn, price and visits per tech sit next to the chart.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">ASSUMPTIONS</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><rect x=\"14\" y=\"32\" width=\"140\" height=\"130\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M22 44 V144 H146\" fill=\"none\" stroke=\"#D9D2C6\" stroke-width=\".9\"/><path d=\"M22 69.0 H146\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M22 94.0 H146\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M22 119.0 H146\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><polyline points=\"22.0,132.9 39.7,127.3 57.4,120.7 75.1,113.4 92.9,105.1 110.6,96.2 128.3,88.4 146.0,77.3\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><rect x=\"160\" y=\"32\" width=\"66\" height=\"28\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0B6E4F\" stroke-width=\"1\" /><text x=\"165\" y=\"44\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Churn / mo</text><text x=\"165\" y=\"55\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >X.X%</text><rect x=\"160\" y=\"66\" width=\"66\" height=\"28\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0B6E4F\" stroke-width=\"1\" /><text x=\"165\" y=\"78\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Price</text><text x=\"165\" y=\"89\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >$XXX</text><rect x=\"160\" y=\"100\" width=\"66\" height=\"28\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0B6E4F\" stroke-width=\"1\" /><text x=\"165\" y=\"112\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Visits/tech</text><text x=\"165\" y=\"123\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >X/day</text><rect x=\"160\" y=\"134\" width=\"66\" height=\"28\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0B6E4F\" stroke-width=\"1\" /><text x=\"165\" y=\"146\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Referrals</text><text x=\"165\" y=\"157\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >X%</text><text x=\"14\" y=\"178\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Change a chip, the chart redraws.</text><rect x=\"14\" y=\"272\" width=\"48.8\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"38.4\" y=\"282.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Hands-on</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "uk5fc_as_drawer",
+    "label": "Footnote Drawer",
+    "desc": "Chart stays big; assumptions open from a link below.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">ASSUMPTIONS</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><rect x=\"14\" y=\"32\" width=\"212\" height=\"120\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M22 44 V136 H218\" fill=\"none\" stroke=\"#D9D2C6\" stroke-width=\".9\"/><path d=\"M22 67.0 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M22 90.0 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M22 113.0 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><polyline points=\"22.0,125.8 50.0,120.7 78.0,114.5 106.0,107.9 134.0,100.2 162.0,92.0 190.0,84.9 218.0,74.7\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><rect x=\"14\" y=\"158\" width=\"212\" height=\"18\" rx=\"0\" fill=\"#FAF3EB\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"170\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Assumptions (4)</text><text x=\"220\" y=\"170\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >+</text><text x=\"20\" y=\"192\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Churn X.X% a month</text><text x=\"20\" y=\"204\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Price $XXX a month</text><text x=\"20\" y=\"216\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >X visits per tech a day</text><rect x=\"14\" y=\"272\" width=\"62.599999999999994\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"45.3\" y=\"282.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Clean chart</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-financial-forecasting-views-deck-07",
+   "repeat": false
+  },
+  {
+   "group": "Scenarios",
+   "category": "Scenarios",
+   "app": "UpKeep",
+   "ask": "Scenarios: Tabs For Base, Best And Worst, Or All Three On One Chart With A Band?",
+   "optionA": {
+    "id": "uk5fc_sc_tabs",
+    "label": "Tabs: Base, Best, Worst",
+    "desc": "One clean chart; tap a tab to switch.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">SCENARIO VIEW</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><rect x=\"14\" y=\"30\" width=\"70.6\" height=\"18\" rx=\"0\" fill=\"#0A0A0A\" stroke=\"#0A0A0A\" stroke-width=\"1\" /><text x=\"49.3\" y=\"42.5\" font-size=\"8\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Base</text><rect x=\"84.6\" y=\"30\" width=\"70.6\" height=\"18\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1\" /><text x=\"119.89999999999999\" y=\"42.5\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Best</text><rect x=\"155.2\" y=\"30\" width=\"70.6\" height=\"18\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1\" /><text x=\"190.5\" y=\"42.5\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Worst</text><rect x=\"14\" y=\"52\" width=\"212\" height=\"140\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M24 66 V172 H218\" fill=\"none\" stroke=\"#D9D2C6\" stroke-width=\".9\"/><path d=\"M24 92.5 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M24 119.0 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M24 145.5 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><text x=\"24.0\" y=\"181\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q1</text><text x=\"88.66666666666667\" y=\"181\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q3</text><text x=\"153.33333333333334\" y=\"181\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q5</text><text x=\"218.0\" y=\"181\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q8</text><polyline points=\"24.0,160.2 51.7,154.3 79.4,147.3 107.1,139.6 134.9,130.8 162.6,121.4 190.3,113.1 218.0,101.3\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"14\" y=\"206\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Members, base case only.</text><text x=\"14\" y=\"217\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Best and worst one tap away.</text><rect x=\"14\" y=\"272\" width=\"62.599999999999994\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"45.3\" y=\"282.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Uncluttered</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "uk5fc_sc_band",
+    "label": "All Three With A Band",
+    "desc": "Base line, shaded range from worst to best.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">SCENARIO VIEW</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><rect x=\"14\" y=\"30\" width=\"212\" height=\"162\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"46\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Members: worst to best range</text><path d=\"M24 58 V170 H218\" fill=\"none\" stroke=\"#D9D2C6\" stroke-width=\".9\"/><path d=\"M24 86.0 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M24 114.0 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M24 142.0 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><text x=\"24.0\" y=\"179\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q1</text><text x=\"88.66666666666667\" y=\"179\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q3</text><text x=\"153.33333333333334\" y=\"179\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q5</text><text x=\"218.0\" y=\"179\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q8</text><polygon points=\"24.0,157.6 51.7,148.8 79.4,138.9 107.1,126.4 134.9,114.0 162.6,98.4 190.3,82.9 218.0,64.2 218.0,129.6 190.3,133.9 162.6,138.3 134.9,142.0 107.1,146.4 79.4,150.1 51.7,153.8 24.0,157.6\" fill=\"#C1502E26\"/><polyline points=\"24.0,157.6 51.7,148.8 79.4,138.9 107.1,126.4 134.9,114.0 162.6,98.4 190.3,82.9 218.0,64.2\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"1.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-dasharray=\"3 2\"/><polyline points=\"24.0,157.6 51.7,151.3 79.4,143.9 107.1,135.8 134.9,126.4 162.6,116.5 190.3,107.8 218.0,95.3\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"24.0,157.6 51.7,153.8 79.4,150.1 107.1,146.4 134.9,142.0 162.6,138.3 190.3,133.9 218.0,129.6\" fill=\"none\" stroke=\"#525252\" stroke-width=\"1.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-dasharray=\"3 2\"/><rect x=\"14\" y=\"200\" width=\"8\" height=\"8\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"25\" y=\"207\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Base</text><rect x=\"54.8\" y=\"200\" width=\"8\" height=\"8\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"65.8\" y=\"207\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Best</text><rect x=\"95.6\" y=\"200\" width=\"8\" height=\"8\" rx=\"0\" fill=\"#525252\" stroke=\"none\" stroke-width=\"1\" /><text x=\"106.6\" y=\"207\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Worst</text><text x=\"14\" y=\"222\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >See the spread at a glance.</text><rect x=\"14\" y=\"272\" width=\"71.8\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"49.9\" y=\"282.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >See the range</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-financial-forecasting-views-deck-08",
+   "repeat": false
+  },
+  {
+   "group": "Time Horizon",
+   "category": "Time Horizon",
+   "app": "UpKeep",
+   "ask": "Horizon: Stop At 3 Years, Or Run To 5 Years With Years 4 And 5 Shaded As Rough?",
+   "optionA": {
+    "id": "uk5fc_hz_3y",
+    "label": "3 Years, Monthly Detail",
+    "desc": "Only what you can plan for, month by month.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">TIME HORIZON</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><rect x=\"14\" y=\"30\" width=\"212\" height=\"150\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"46\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Members, 36 months</text><path d=\"M24 56 V160 H218\" fill=\"none\" stroke=\"#D9D2C6\" stroke-width=\".9\"/><path d=\"M24 82.0 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M24 108.0 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M24 134.0 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><text x=\"24.0\" y=\"169\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >M1</text><text x=\"88.66666666666667\" y=\"169\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >M12</text><text x=\"153.33333333333334\" y=\"169\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >M24</text><text x=\"218.0\" y=\"169\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >M36</text><rect x=\"26.155555555555555\" y=\"149.6\" width=\"17.244444444444447\" height=\"10.4\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"47.711111111111116\" y=\"144.4\" width=\"17.244444444444447\" height=\"15.6\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"69.26666666666667\" y=\"137.12\" width=\"17.244444444444447\" height=\"22.880000000000003\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"90.82222222222222\" y=\"128.8\" width=\"17.244444444444447\" height=\"31.2\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"112.37777777777778\" y=\"118.4\" width=\"17.244444444444447\" height=\"41.6\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"133.93333333333334\" y=\"105.91999999999999\" width=\"17.244444444444447\" height=\"54.080000000000005\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"155.4888888888889\" y=\"95.52\" width=\"17.244444444444447\" height=\"64.48\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"177.04444444444448\" y=\"85.11999999999999\" width=\"17.244444444444447\" height=\"74.88000000000001\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"198.60000000000002\" y=\"72.64\" width=\"17.244444444444447\" height=\"87.36\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"196\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >36 monthly steps (bars grouped</text><text x=\"14\" y=\"207\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >by quarter here).</text><rect x=\"14\" y=\"272\" width=\"44.199999999999996\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"36.099999999999994\" y=\"282.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Tighter</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "uk5fc_hz_5y",
+    "label": "5 Years, Last 2 Shaded",
+    "desc": "Years 4 and 5 shown faded and labeled rough.",
+    "tags": [
+     "bold"
+    ],
+    "feeling": "bold",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">TIME HORIZON</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><rect x=\"14\" y=\"30\" width=\"212\" height=\"150\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"46\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Members, 5 years</text><rect x=\"140.39999999999998\" y=\"56\" width=\"77.60000000000001\" height=\"104\" rx=\"0\" fill=\"#D4A0171F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"179.20000000000002\" y=\"70\" font-size=\"8\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">ROUGH</text><path d=\"M24 56 V160 H218\" fill=\"none\" stroke=\"#D9D2C6\" stroke-width=\".9\"/><path d=\"M24 82.0 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M24 108.0 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M24 134.0 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><text x=\"24.0\" y=\"169\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Y1</text><text x=\"72.5\" y=\"169\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Y2</text><text x=\"121.0\" y=\"169\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Y3</text><text x=\"169.5\" y=\"169\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Y4</text><text x=\"218.0\" y=\"169\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Y5</text><polyline points=\"24.0,151.3 62.8,134.0 101.6,114.9 140.4,97.6\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"140.4,97.6 179.2,78.5 218.0,62.9\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"14\" y=\"196\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Solid = planned, dashed = rough.</text><text x=\"14\" y=\"207\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Good for an investor ask.</text><rect x=\"14\" y=\"272\" width=\"62.599999999999994\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"45.3\" y=\"282.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Longer view</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-financial-forecasting-views-deck-09",
+   "repeat": false
+  },
+  {
+   "group": "Key Moments",
+   "category": "Key Moments",
+   "app": "UpKeep",
+   "ask": "Key Moments (Break-Even, Lowest Cash): Flags On The Chart, Or Callout Tiles Above It?",
+   "optionA": {
+    "id": "uk5fc_km_flags",
+    "label": "Flags On The Chart",
+    "desc": "Small flags mark break-even and the lowest cash point.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">KEY MOMENTS</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><rect x=\"14\" y=\"30\" width=\"212\" height=\"150\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22\" y=\"46\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Cash balance</text><path d=\"M24 56 V160 H218\" fill=\"none\" stroke=\"#D9D2C6\" stroke-width=\".9\"/><path d=\"M24 82.0 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M24 108.0 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M24 134.0 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><text x=\"24.0\" y=\"169\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q1</text><text x=\"88.66666666666667\" y=\"169\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q3</text><text x=\"153.33333333333334\" y=\"169\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q5</text><text x=\"218.0\" y=\"169\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q8</text><polyline points=\"24.0,108.0 51.7,125.3 79.4,138.3 107.1,142.7 134.9,134.0 162.6,116.7 190.3,90.7 218.0,64.7\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M107.1 142.7 V70\" stroke=\"#C1502E\" stroke-width=\"1\"/><rect x=\"107.14285714285714\" y=\"64\" width=\"46\" height=\"12\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"130.14285714285714\" y=\"73\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Lowest cash</text><path d=\"M162.6 116.7 V88\" stroke=\"#0B6E4F\" stroke-width=\"1\"/><rect x=\"142.57142857142858\" y=\"82\" width=\"44\" height=\"12\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"164.57142857142858\" y=\"91\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Break-even</text><text x=\"14\" y=\"196\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Moments sit right where</text><text x=\"14\" y=\"207\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >they happen.</text><rect x=\"14\" y=\"272\" width=\"58.0\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"43.0\" y=\"282.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >In context</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "uk5fc_km_tiles",
+    "label": "Callout Tiles Above",
+    "desc": "Two tiles name the quarter for each moment.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"0\" y=\"0\" width=\"240\" height=\"5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"22\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">KEY MOMENTS</text><rect x=\"159.6\" y=\"13\" width=\"66.4\" height=\"12\" rx=\"0\" fill=\"#D4A01726\" stroke=\"#D4A017\" stroke-width=\"0.8\" /><text x=\"192.8\" y=\"21.6\" font-size=\"7.5\" fill=\"#7A5A0C\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".5\">EXAMPLE DATA</text><rect x=\"14\" y=\"32\" width=\"103\" height=\"40\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"0.9\" /><text x=\"20\" y=\"54.0\" font-size=\"15\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Q4</text><text x=\"20\" y=\"67\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Lowest cash</text><rect x=\"123\" y=\"32\" width=\"103\" height=\"40\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"0.9\" /><text x=\"129\" y=\"54.0\" font-size=\"15\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Q6</text><text x=\"129\" y=\"67\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Break-even</text><rect x=\"14\" y=\"78\" width=\"212\" height=\"112\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><path d=\"M24 88 V172 H218\" fill=\"none\" stroke=\"#D9D2C6\" stroke-width=\".9\"/><path d=\"M24 109.0 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M24 130.0 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><path d=\"M24 151.0 H218\" stroke=\"#EFEAE2\" stroke-width=\".6\"/><text x=\"24.0\" y=\"181\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q1</text><text x=\"88.66666666666667\" y=\"181\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q3</text><text x=\"153.33333333333334\" y=\"181\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q5</text><text x=\"218.0\" y=\"181\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q8</text><polyline points=\"24.0,130.0 51.7,144.0 79.4,154.5 107.1,158.0 134.9,151.0 162.6,137.0 190.3,116.0 218.0,95.0\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"14\" y=\"214\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Clean chart, the moments</text><text x=\"14\" y=\"225\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >read first.</text><rect x=\"14\" y=\"272\" width=\"58.0\" height=\"15\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"0.9\" /><text x=\"43.0\" y=\"282.4\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Read first</text><text x=\"120\" y=\"297\" font-size=\"7.5\" fill=\"#8A8178\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Built by Machan</text><rect x=\"0.5\" y=\"0.5\" width=\"239\" height=\"299\" rx=\"0\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-financial-forecasting-views-deck-10",
+   "repeat": false
+  }
+ ],
+ "share": true,
+ "notes": true
+}
