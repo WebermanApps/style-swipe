@@ -49,7 +49,7 @@
    "group": "Pricing",
    "category": "Forecast",
    "app": "Research",
-   "ask": "Tier Mix Planning Assumption: Use Base Mix (30/55/15) Or Conservative (45/45/10)?",
+   "ask": "Smart Upkeep Pricing Page: Tier mix planning Assumption, use base mix (30/55/15) or Conservative (45/45/10)?",
    "notes": true,
    "share": true,
    "optionA": {
@@ -73,7 +73,8 @@
     ]
    },
    "repeat": false,
-   "split_from_pair": "upkeep-pricing-smart-upkeep-pricing-03"
+   "split_from_pair": "upkeep-pricing-smart-upkeep-pricing-03",
+   "ask_old": "Tier Mix Planning Assumption: Use Base Mix (30/55/15) Or Conservative (45/45/10)?"
   },
   {
    "id": "upkeep-pricing-smart-upkeep-pricing-forecast-billing-02",
@@ -142,7 +143,7 @@
    "group": "Pricing",
    "category": "Tiers",
    "app": "Research",
-   "ask": "Complete Vs Plus Gap: Complete Is About 1.9x Plus ($312 vs $164). Narrow The Gap, Or Keep It?",
+   "ask": "Smart Upkeep Pricing Page: Complete vs plus Gap, complete is about 1.9x plus ($312 vs $164); narrow the Gap, or keep it?",
    "notes": true,
    "share": true,
    "optionA": {
@@ -166,14 +167,15 @@
     ]
    },
    "repeat": false,
-   "split_from_pair": "upkeep-pricing-smart-upkeep-pricing-07"
+   "split_from_pair": "upkeep-pricing-smart-upkeep-pricing-07",
+   "ask_old": "Complete Vs Plus Gap: Complete Is About 1.9x Plus ($312 vs $164). Narrow The Gap, Or Keep It?"
   },
   {
    "id": "upkeep-pricing-smart-upkeep-pricing-forecast-billing-05",
    "group": "Pricing",
    "category": "Handoff",
    "app": "Research",
-   "ask": "Share This Forecast With UpKeep Now, Or Hold For An Edit Pass First?",
+   "ask": "Smart Upkeep Pricing Page: Handoff, share this forecast with UpKeep now, or hold for an edit pass first?",
    "notes": true,
    "share": true,
    "optionA": {
@@ -197,7 +199,8 @@
     ]
    },
    "repeat": false,
-   "split_from_pair": "upkeep-pricing-smart-upkeep-pricing-08"
+   "split_from_pair": "upkeep-pricing-smart-upkeep-pricing-08",
+   "ask_old": "Share This Forecast With UpKeep Now, Or Hold For An Edit Pass First?"
   },
   {
    "id": "upkeep-pricing-smart-upkeep-pricing-forecast-billing-06",
@@ -297,7 +300,7 @@
    "group": "Pricing",
    "category": "Billing",
    "app": "Research",
-   "ask": "Bank Payments: Add ACH Debit (Stripe 0.8%, capped at $5), Or Cards Only? (stripe.com/pricing)",
+   "ask": "Smart Upkeep Pricing Page: Bank payments, add ACH Debit (Stripe 0.8%, capped at $5), or cards only, (stripe.com/pricing).",
    "notes": true,
    "share": true,
    "optionA": {
@@ -321,7 +324,8 @@
     ]
    },
    "repeat": false,
-   "split_from_pair": "upkeep-pricing-smart-upkeep-pricing-19"
+   "split_from_pair": "upkeep-pricing-smart-upkeep-pricing-19",
+   "ask_old": "Bank Payments: Add ACH Debit (Stripe 0.8%, capped at $5), Or Cards Only? (stripe.com/pricing)"
   },
   {
    "id": "upkeep-pricing-smart-upkeep-pricing-forecast-billing-10",
@@ -360,5 +364,6 @@
  "split_from": "upkeep-pricing-smart-upkeep-pricing",
  "split_part": "b",
  "split_sibling": "upkeep-pricing-smart-upkeep-pricing-add-ons-retention",
- "split_note": "R86 (Max Oct 17 2026 07:50 ICT): 10 picks per deck; split from the unanswered 20-pick deck upkeep-pricing-smart-upkeep-pricing"
+ "split_note": "R86 (Max Oct 17 2026 07:50 ICT): 10 picks per deck; split from the unanswered 20-pick deck upkeep-pricing-smart-upkeep-pricing",
+ "r105": "retrofit Oct 17 2026 (Branding): captions only; ids and pick order unchanged"
 }

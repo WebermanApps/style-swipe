@@ -27,8 +27,11 @@ FIXES = [
 BAD = re.compile(r'(?:(?:\.vis|\.v-svg|\bimg|\bsvg|\bvideo|\bpicture)[^{}<>]{0,80}\{[^{}]*max-height:\s*100%'
                  r'|<svg[^>]*style=\\?"[^"\\]*max-height:\s*100%)')
 SELF = os.path.abspath(__file__)
+NOT_CARD_MEDIA = {"kit/projects.css"}
 def default_files():
     fs = ["index.template.html", "index.html"] + glob.glob("*/index.html") + glob.glob("tools/*.py") + glob.glob("decks/*.json") + glob.glob("banks/*.json") + glob.glob("kit/*.css")
+    # kit/projects.css is the Document Center file viewer (not deck card media; Security-owned): its contained-image rule is fine there.
+    fs = [f for f in fs if f not in NOT_CARD_MEDIA]
     return [os.path.join(ROOT, f) for f in fs if os.path.isfile(os.path.join(ROOT, f)) and os.path.abspath(os.path.join(ROOT, f)) != SELF]
 def locked(s): return "mwPagesKey" in s[:20000] and "AES-GCM" in s[:20000] and "DEFAULT_DECK" not in s
 def main():

@@ -9,6 +9,8 @@ Card text: title <=20 chars, description <=28 chars (one line each on a 393px ph
 Mockups: blocks spread/scaled to fill the 240x300 card; the page pins the picture box to the card's 4:5 shape (no empty band).
 Name 'New Ideas: <theme>' (no numbers), random-suffix slug. Page is written UNLOCKED: lock it (lock_pages.py on a temp copy
 of only the page) before commit.
+R105 (Max Oct 17 2026 19:46 ICT): every pick's ask is 'Research New Ideas Deck: <idea area>, <one plain sentence>' (r105_ask(); caption_rule.guard).
+R110 (Max Oct 17 2026 20:20 ICT): a deck that carries any UpKeep / Smart Upkeep idea never carries a Thai one (is_thai(); asserted).
 usage: new_ideas.py [--dry] | --refill | --rebuild <deck_id>   (rebuild = same slug and ideas, fresh drawings/text)"""
 import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()
 import sys, os, json, string, secrets, datetime, random
@@ -18,6 +20,20 @@ from agent_links import patch as link_patch
 from new_ideas_bank import BANK as BANK1
 import new_ideas_more, new_ideas_gen
 from draft_svg import TERRA, LAGOON, JUNGLE, SAFFRON
+import re as _re, caption_rule
+LOC = "Research New Ideas Deck"
+_TH = _re.compile(r"thai|thailand|bangkok|chiang mai|isan|siam|amomentinthai", _re.I)
+_UK = _re.compile(r"upkeep", _re.I)
+def is_thai(e): return bool(_TH.search(json.dumps(e, ensure_ascii=False, default=str)))
+def is_upkeep(e): return bool(_UK.search(" ".join(map(str, e[:4]))))
+def r105_ask(th, ask):
+    """'<exact screen>: <element>, <one sentence>' -> 'Research New Ideas Deck: <idea area>, which series fits the channel next?'"""
+    el = _re.sub(r"[,:@]", " ", {"@AMomentInThai": "YouTube channel"}.get(th, th)).strip()
+    el = _re.sub(r"\s+", " ", el); s = ask.strip().rstrip(".")
+    s = (s[:1].lower() + s[1:]) if s[:1].isupper() and not s.split(" ")[0] in ("Max", "Mom's", "Upkeep", "WellNest", "Style", "Site", "Japan", "Smart") else s
+    s = _re.sub(r"\?\s*\((idea only)\)$", r" (\1)?", s)
+    out = f"{LOC}: {el}, {s if s.endswith('?') else s + '.'}"
+    bad = caption_rule.check(out); assert not bad, (out, bad); return out
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); os.chdir(ROOT)
 HIST = "queue/new-ideas-history.json"; GEN = "queue/new-ideas-generated.json"; LOW = 20
 hist = json.load(open(HIST)) if os.path.exists(HIST) else {"shown": {}, "decks": []}
@@ -123,6 +139,11 @@ else:
         if e[1] not in seen and len(pick) < 10: pick.append(e); seen.add(e[1])
     for e in fresh:
         if len(pick) < 10 and e not in pick: pick.append(e)
+    if any(is_upkeep(e) for e in pick):  # R110: UpKeep and Thai never in the same deck
+        pick = [e for e in pick if not is_thai(e)]
+        for e in [e for e in fresh if not is_thai(e) and e not in pick]:
+            if len(pick) >= 10: break
+            if e[1] not in {x[1] for x in pick} or len(pick) >= 8: pick.append(e)
     sp = [e[1] for e in pick if e[2] == "spinoff"]; nw = [e[1] for e in pick if e[2] != "spinoff"]
     themes = []
     for th in sp[:2] + nw[:1] + sp[2:] + nw[1:]:
@@ -133,6 +154,7 @@ else:
     tslug = "-".join("".join(c for c in w.lower() if c.isalnum() or c == " ").replace(" ", "-") for w in tw)
     suf = "".join(secrets.choice(string.ascii_lowercase) for _ in range(6))
     did = f"new-ideas-{tslug}-{suf}"; slug = did
+assert not (any(is_upkeep(e) for e in pick) and any(is_thai(e) for e in pick)), "R110: UpKeep and Thai in one deck"
 if dry: print(name, [p[0] for p in pick], len(bank), "pairs in bank"); sys.exit()
 pairs, O, add = kdeck("ni-", "Research")
 for key, th, kind, ask, a, b in pick:
@@ -140,7 +162,9 @@ for key, th, kind, ask, a, b in pick:
     for o in (a, b):
         assert len(o[1]) <= 20 and len(o[2]) <= 28, o[:3]
         opts.append(O(f"{key}-{o[0]}", o[1], o[2], "practical", fill_card(th, o[3], o[4]), tags=[th, kind]))
-    add(th, th, opts[0], opts[1], ask)
+    add(th, th, opts[0], opts[1], r105_ask(th, ask))
+caption_rule.guard(pairs, "new-ideas")
+assert not (any(is_upkeep(e) for e in pick) and any(is_thai(e) for e in pick)), "R110: UpKeep and Thai in one deck"
 meta = {"brands": ["Research"], "submit_agent": "research", "topic": "new-ideas", "deck_size": 10, "board": "research", "audience": "Max",
         "rule": "R101 Daily New Ideas deck", "signoff": {k: v for k, v in new_ideas_more.SIGNOFF.items() if k in [p[0] for p in pick]}, "idea_keys": [p[0] for p in pick], "theme": theme,
         "claims": "Real claims only; no market numbers.", "sources": {"bank": "tools/new_ideas_bank.py", "history": HIST,

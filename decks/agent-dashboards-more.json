@@ -69,7 +69,7 @@
    "group": "Grok Bot (Apps Home)",
    "category": "Grok Bot (Apps Home)",
    "app": "Agent Dashboards Deck Two",
-   "ask": "Apps Home: How Should The Agent List Be Ordered?",
+   "ask": "Apps Home: How should the agent list be ordered, sorted by topic (fixed spots) or agents that need you first (changes daily), which one fits best?",
    "optionA": {
     "id": "am_ah_area",
     "label": "Sorted By Topic (Fixed Spots)",
@@ -114,7 +114,8 @@
    ],
    "carried_from": "agent-dashboards-20",
    "id": "agent-dashboards-more-01",
-   "repeat": false
+   "repeat": false,
+   "ask_old": "Apps Home: How Should The Agent List Be Ordered?"
   },
   {
    "group": "Portfolio",
@@ -166,7 +167,7 @@
    "group": "Deck Building",
    "category": "Deck Building",
    "app": "Agent Dashboards Deck Two",
-   "ask": "Deck Building Requests From Agents: Cards With Build / Not Now Or Plain Rows?",
+   "ask": "Deck Building Page: Deck Building Requests from agents, cards with build / not now or plain rows?",
    "optionA": {
     "id": "am_db_req_btn",
     "label": "Cards With Build / Not Now",
@@ -206,13 +207,14 @@
    "notes": true,
    "share": true,
    "id": "agent-dashboards-more-03",
-   "repeat": false
+   "repeat": false,
+   "ask_old": "Deck Building Requests From Agents: Cards With Build / Not Now Or Plain Rows?"
   },
   {
    "group": "Legal",
    "category": "Legal",
    "app": "Agent Dashboards Deck Two",
-   "ask": "Legal Matter Risk: A Word Tag Or A Three-Step Meter?",
+   "ask": "Legal Board: Legal matter risk, a word tag or a three-step meter?",
    "optionA": {
     "id": "am_lg_word",
     "label": "Word Tag",
@@ -252,13 +254,14 @@
    "notes": true,
    "share": true,
    "id": "agent-dashboards-more-04",
-   "repeat": false
+   "repeat": false,
+   "ask_old": "Legal Matter Risk: A Word Tag Or A Three-Step Meter?"
   },
   {
    "group": "Dump",
    "category": "Dump",
    "app": "Agent Dashboards Deck Two",
-   "ask": "Dump Handed Off: Grouped Under Each Agent Or An Agent Chip On Each Row?",
+   "ask": "Dump Board: Dump Handed off, grouped under each agent or an agent chip on each row for the Dump Handed off?",
    "optionA": {
     "id": "am_dp_grp",
     "label": "Grouped Under Each Agent",
@@ -298,13 +301,14 @@
    "notes": true,
    "share": true,
    "id": "agent-dashboards-more-05",
-   "repeat": false
+   "repeat": false,
+   "ask_old": "Dump Handed Off: Grouped Under Each Agent Or An Agent Chip On Each Row?"
   },
   {
    "group": "Japan Cottage",
    "category": "Japan Cottage",
    "app": "Agent Dashboards Deck Two",
-   "ask": "Japan Cottage Status: Listing Count Tiles Or The Newest Listing Card?",
+   "ask": "Japan Cottage Board: Japan Cottage status, listing count tiles or the newest listing card for the Japan Cottage status?",
    "optionA": {
     "id": "am_jc_count",
     "label": "Listing Count Tiles",
@@ -344,13 +348,14 @@
    "notes": true,
    "share": true,
    "id": "agent-dashboards-more-06",
-   "repeat": false
+   "repeat": false,
+   "ask_old": "Japan Cottage Status: Listing Count Tiles Or The Newest Listing Card?"
   },
   {
    "group": "Branding",
    "category": "Branding",
    "app": "Agent Dashboards Deck Two",
-   "ask": "Branding Brand Files: Picture Grid Or File Rows?",
+   "ask": "Branding Board: Branding brand files, picture grid or file rows for the Branding brand files?",
    "optionA": {
     "id": "am_br_grid",
     "label": "Picture Grid",
@@ -390,13 +395,14 @@
    "notes": true,
    "share": true,
    "id": "agent-dashboards-more-07",
-   "repeat": false
+   "repeat": false,
+   "ask_old": "Branding Brand Files: Picture Grid Or File Rows?"
   },
   {
    "group": "Video & Photo",
    "category": "Video & Photo",
    "app": "Agent Dashboards Deck Two",
-   "ask": "Video & Photo Current Work: Picture Cards Or Rows With A Stage Tag?",
+   "ask": "Video & Photo Board: Video & photo current work, picture cards or rows with a stage tag for the video & photo current work?",
    "optionA": {
     "id": "am_vp_pic",
     "label": "Picture Cards",
@@ -436,13 +442,14 @@
    "notes": true,
    "share": true,
    "id": "agent-dashboards-more-08",
-   "repeat": false
+   "repeat": false,
+   "ask_old": "Video & Photo Current Work: Picture Cards Or Rows With A Stage Tag?"
   },
   {
    "group": "Branding",
    "category": "Branding",
    "app": "Agent Dashboards Deck Two",
-   "ask": "Branding Accent Colors: Big Swatches Or Chips With The Hex Code?",
+   "ask": "Branding Board: Branding accent colors, big Swatches or chips with the hex code for the Branding accent colors?",
    "optionA": {
     "id": "am_br_swatch",
     "label": "Big Swatches",
@@ -482,13 +489,14 @@
    "notes": true,
    "share": true,
    "id": "agent-dashboards-more-09",
-   "repeat": false
+   "repeat": false,
+   "ask_old": "Branding Accent Colors: Big Swatches Or Chips With The Hex Code?"
   },
   {
    "group": "UpKeep",
    "category": "UpKeep",
    "app": "Agent Dashboards Deck Two",
-   "ask": "UpKeep Board Deadlines: Next Three With Days Left Or A Month Strip?",
+   "ask": "UpKeep Board: UpKeep board deadlines, next three with days left or a month strip for the UpKeep board deadlines?",
    "optionA": {
     "id": "am_uk_next",
     "label": "Next Three, Days Left",
@@ -528,13 +536,14 @@
    "notes": true,
    "share": true,
    "id": "agent-dashboards-more-10",
-   "repeat": false
+   "repeat": false,
+   "ask_old": "UpKeep Board Deadlines: Next Three With Days Left Or A Month Strip?"
   },
   {
    "group": "Jokes",
    "category": "Jokes",
    "app": "Agent Dashboards Deck Two",
-   "ask": "Jokes Bits In Progress: Index Cards Or Rows With A Draft Count?",
+   "ask": "Jokes Board: Jokes Bits in progress, index cards or rows with a draft count for the Jokes Bits in progress?",
    "optionA": {
     "id": "am_jk_idx",
     "label": "Index Cards",
@@ -574,13 +583,14 @@
    "notes": true,
    "share": true,
    "id": "agent-dashboards-more-11",
-   "repeat": false
+   "repeat": false,
+   "ask_old": "Jokes Bits In Progress: Index Cards Or Rows With A Draft Count?"
   },
   {
    "group": "UpKeep",
    "category": "UpKeep",
    "app": "Agent Dashboards Deck Two",
-   "ask": "UpKeep Board Current Status: Row Per Area With A Coloured Dot Or One Plain Sentence?",
+   "ask": "UpKeep Board: UpKeep board current status, row per area with a coloured dot or one plain sentence for the UpKeep board current status?",
    "optionA": {
     "id": "am_uk_dots",
     "label": "Row Per Area, Coloured Dot",
@@ -620,7 +630,8 @@
    "notes": true,
    "share": true,
    "id": "agent-dashboards-more-12",
-   "repeat": false
+   "repeat": false,
+   "ask_old": "UpKeep Board Current Status: Row Per Area With A Coloured Dot Or One Plain Sentence?"
   },
   {
    "group": "Blog",
@@ -672,7 +683,7 @@
    "group": "Dump",
    "category": "Dump",
    "app": "Agent Dashboards Deck Two",
-   "ask": "Dump Open Items: Priority Tabs Or One List With P Tags?",
+   "ask": "Dump Board: Dump open items, priority tabs or one list with P tags for the Dump open items?",
    "optionA": {
     "id": "am_dp_tabs",
     "label": "Priority Tabs",
@@ -712,13 +723,14 @@
    "notes": true,
    "share": true,
    "id": "agent-dashboards-more-14",
-   "repeat": false
+   "repeat": false,
+   "ask_old": "Dump Open Items: Priority Tabs Or One List With P Tags?"
   },
   {
    "group": "All Dashboards (Routines, R65)",
    "category": "All Dashboards (Routines, R65)",
    "app": "Agent Dashboards Deck Two",
-   "ask": "Routines Section Look: A Card Per Group Or One Table With Group Lines?",
+   "ask": "All Dashboards Board: Routines section look, a card per group or one table with group lines for the routines section look?",
    "optionA": {
     "id": "am_rt_cards",
     "label": "A Card Per Group",
@@ -758,13 +770,14 @@
    "notes": true,
    "share": true,
    "id": "agent-dashboards-more-15",
-   "repeat": false
+   "repeat": false,
+   "ask_old": "Routines Section Look: A Card Per Group Or One Table With Group Lines?"
   },
   {
    "group": "Legal",
    "category": "Legal",
    "app": "Agent Dashboards Deck Two",
-   "ask": "Legal Open Matters: One List With A Status Tag Or Grouped By Status?",
+   "ask": "Legal Board: Legal open matters, one list with a status tag or grouped by status for the Legal open matters?",
    "optionA": {
     "id": "am_lg_tag",
     "label": "One List, Status Tag",
@@ -804,13 +817,14 @@
    "notes": true,
    "share": true,
    "id": "agent-dashboards-more-16",
-   "repeat": false
+   "repeat": false,
+   "ask_old": "Legal Open Matters: One List With A Status Tag Or Grouped By Status?"
   },
   {
    "group": "WellNest",
    "category": "WellNest",
    "app": "Agent Dashboards Deck Two",
-   "ask": "WellNest Add To Home Screen: Steps Card On The Board Or A Small Help Link?",
+   "ask": "WellNest Board: WellNest add to home screen, steps card on the board or a small help link for the WellNest add to home screen?",
    "optionA": {
     "id": "am_wn_steps",
     "label": "Steps Card On The Board",
@@ -850,7 +864,8 @@
    "notes": true,
    "share": true,
    "id": "agent-dashboards-more-17",
-   "repeat": false
+   "repeat": false,
+   "ask_old": "WellNest Add To Home Screen: Steps Card On The Board Or A Small Help Link?"
   },
   {
    "group": "All Dashboards (Routines, R65)",
@@ -948,7 +963,7 @@
    "group": "Deck Building",
    "category": "Deck Building",
    "app": "Agent Dashboards Deck Two",
-   "ask": "Deck Building Results In: Top Picks As Words Or As Small Pictures?",
+   "ask": "Deck Building Page: Deck Building results in, top picks as words or as small pictures?",
    "optionA": {
     "id": "am_db_res_words",
     "label": "Top Picks As Words",
@@ -988,9 +1003,11 @@
    "notes": true,
    "share": true,
    "id": "agent-dashboards-more-20",
-   "repeat": false
+   "repeat": false,
+   "ask_old": "Deck Building Results In: Top Picks As Words Or As Small Pictures?"
   }
  ],
  "share": true,
- "notes": true
+ "notes": true,
+ "r105": "retrofit Oct 17 2026 (Branding): captions only; ids and pick order unchanged"
 }
