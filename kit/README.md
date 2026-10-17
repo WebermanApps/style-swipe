@@ -71,3 +71,12 @@ Boards load `mw-layout.css/js?v=ly10` and `deck-shelf.css/js?v=ly10` (deck-shelf
 - **R98**: every card shows a light "New" badge (beige base, terracotta Khand caps, square, bottom-right) until Max clicks it once; remembered per deck id in localStorage `ds-opened:<id>` (same key the old refill badge used).
 - Unchanged: permanent/pinned first, then partly finished (latest touched first), then not started.
 - **Desktop/tablet polish** (all inside `min-width:768px` or wider; phone layout identical, pixel-checked at 393): column 1100px with 24px gutters on tablet, 1200px from 1440px, 1280px from 1680px (moderate margins, not airy); section gap 18px (was 56px); header/footer gap 20px (was 28px); deck shelves are grids (3 columns tablet, 5 desktop); hover states on cards and dropdown rows; chat button sits next to the column; `#mw-mid p` max 80ch; opt-in `.mw-cols` grid for board middle sections (2 columns tablet, 3 desktop).
+
+## mw-back.js (R104, Oct 17 2026): history-first Back / Return
+`<script src="https://webermanapps.github.io/style-swipe/kit/mw-back.js?v=mb1"></script>` (boards get it from mw-layout.js ly12).
+`window.mwBack(fallbackUrl)` goes back: history.back() when there is history and the referrer is a trusted board page
+(https://webermanapps.github.io/), else the page's trusted `?from=` (kept in sessionStorage), else a trusted referrer, else fallbackUrl
+(default the Branding board). Markup: `<a href="FALLBACK" data-mw-back>Back</a>`; `data-mw-return` labels it "Return to <board>"
+(inner `.mw-ret-name`). `mwBack.withFrom(url)` adds from= to deck links. Not for the R82 card Back (previous card) or the R77 Apps Home house link.
+Deck pages: tools/deck_return.py; post-submit layout fix: tools/deck_endfix.py. deck-shelf.js v11 (ly12) opens decks in the same tab with from=.
+mw-layout ly12 also carries the R106 header order (Morning Report > To-Do fold-down > Document Center > divider) behind `R106=false` (staged, not live).

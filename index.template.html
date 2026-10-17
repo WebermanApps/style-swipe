@@ -1436,25 +1436,6 @@ async function offerBank(want){
  $('#sub').textContent='No deck found. Use "Load Another Deck" below.';
 })();
 </script>
-<!--mw-agentlinks-->
-<style>.mw-aftersub{margin:0 0 14px;padding:12px;border:1px solid #E5E0D8;border-radius:12px;background:#E3F1EA;text-align:center}.mw-aftersub p{margin:0 0 8px;font:600 15px/1.3 Hind,sans-serif;color:#0B6E4F}.mw-aftersub .mw-backdecks{margin:0;min-height:60px;font-size:22px}</style>
-<script>(()=>{const MAP={"blog": "https://webermanapps.github.io/blog-dashboard/", "blueprint": "https://webermanapps.github.io/blueprint-dashboard/", "coach": "https://webermanapps.github.io/coach-dashboard/", "construction": "https://webermanapps.github.io/cd-4thwrkpz54/", "dump": "https://webermanapps.github.io/dump-dashboard/", "grok-bot": "https://webermanapps.github.io/grokbot-cc-7b9szx1e/", "japan-cottage": "https://webermanapps.github.io/jc-cc-e034959dac7d/", "jokes": "https://webermanapps.github.io/jokes-cc-5a640f18188c/", "legal": "https://webermanapps.github.io/legal-0a84f667080d/", "portfolio": "https://webermanapps.github.io/portfolio-dashboard/", "prop": "https://webermanapps.github.io/prop-dashboard/", "research": "https://webermanapps.github.io/rd-3k3k8jcaqb/", "scout": "https://webermanapps.github.io/scout-dashboard/", "security": "https://webermanapps.github.io/security-07940c684c/", "thai": "https://webermanapps.github.io/thai-vocab-quiz/dashboard/", "upkeep": "https://webermanapps.github.io/upkeep-cc-d36d3521/", "video-photo": "https://webermanapps.github.io/video-photo-dashboard-70m4sfrw/", "wellnest": "https://webermanapps.github.io/wellnest-dashboard/", "branding": "https://webermanapps.github.io/branding-djqmb410/decks/", "miles": "https://webermanapps.github.io/miles-dashboard/"},NAMES={"blog": "Blog Agent", "blueprint": "Blueprint Agent", "coach": "Coach Agent", "construction": "Construction Agent", "dump": "Dump Agent", "grok-bot": "Grok Bot", "japan-cottage": "Japan Cottage Agent", "jokes": "Jokes Agent", "legal": "Legal Agent", "portfolio": "Portfolio Agent", "prop": "Prop Agent", "research": "Research Agent", "scout": "Scout Agent", "security": "Security Agent", "thai": "Thai Agent", "upkeep": "UpKeep Agent", "video-photo": "Video & Photo Agent", "wellnest": "WellNest Agent", "branding": "Branding Agent", "miles": "Miles Agent"},FB='branding';
-const ag=()=>{try{return (typeof deck!=='undefined'&&deck&&deck.submit_agent)||FB}catch(_){return FB}};
-const url=()=>MAP[ag()]||MAP[FB],nm=()=>NAMES[ag()]||NAMES[FB];
-const key=()=>{try{return 'styleSwipe:submitted:'+(deck&&deck.date)}catch(_){return ''}};
-const mark=()=>{try{localStorage.setItem(key(),Date.now())}catch(_){}};
-const sent=()=>{try{return !!localStorage.getItem(key())}catch(_){return false}};
-function apply(){const u=url();['decksLink','backToDecks'].forEach(i=>{const e=document.getElementById(i);if(e&&e.href!==u)e.href=u});
- const sb=document.getElementById('submitBox');if(!sb)return;const h=sb.previousElementSibling;
- if(h&&h.tagName==='H3'&&/^Submit To /.test(h.textContent)&&h.textContent!=='Submit To '+nm())h.textContent='Submit To '+nm();
- if(sb.querySelector('.mws-btn.sent'))mark();
- const host=sb.parentElement;if(sent()&&host&&!host.querySelector('.mw-aftersub')){const d=document.createElement('div');d.className='mw-aftersub';
-  d.innerHTML='<p>Sent. Your answers went to '+nm()+'.</p><a class="mw-backdecks mw-hover" href="'+u+'"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span>Back to Deck Building</span></a>';
-  host.insertBefore(d,host.firstChild);d.scrollIntoView({block:'start'})}}
-const hook=()=>{const S=window.MWSubmit;if(!S||S.__mwal)return;S.__mwal=1;const o=S.send;S.send=function(){return o.apply(this,arguments).then(ok=>{if(ok)mark();return ok})}};
-let t=0;new MutationObserver(()=>{if(t)return;t=setTimeout(()=>{t=0;hook();apply()},50)}).observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:['class']});
-addEventListener('load',()=>{hook();apply()});hook();})();</script>
-<!--/mw-agentlinks-->
 <!--mw-chat-->
 <script src="https://webermanapps.github.io/style-swipe/kit/mw-chat.js?v=cc9" defer></script>
 <script>(()=>{let last='';function pick(){let d=null;try{d=(typeof deck!=='undefined')?deck:null}catch(_){}if(!d)return null;
@@ -1516,5 +1497,67 @@ document.addEventListener('keydown',e=>{const t=e.target;if(!deck||(t&&/^(TEXTAR
 window.MWBack={back,jump,list};if(deck&&document.getElementById('card'))deco();
 })();</script>
 <!--/mw-back-->
+<!--mw-endfix-->
+<style id="mw-endfix-css">
+html:has(body:not(.carding)),body:not(.carding){height:auto!important;min-height:100%;overflow:visible!important}
+body:not(.carding) main{flex:1 0 auto!important;overflow:visible!important;min-height:0;height:auto!important}
+body:not(.carding) main>.mw-backrow{flex:0 0 auto!important;flex-basis:auto!important;width:100%;max-width:760px;height:auto!important}
+body:not(.carding) .end{flex:none!important;overflow:visible!important;height:auto!important;min-height:0!important;max-height:none!important}
+.mw-endpicks{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin:6px 0 18px}
+.mw-endpick{border:1px solid #E5E0D8;border-radius:10px;background:#FFFFFF;overflow:hidden;min-width:0}
+.mw-endpick .v{background:#FAF6EE;display:flex;align-items:center;justify-content:center;max-height:200px;overflow:hidden}
+.mw-endpick .v>*{width:100%}.mw-endpick .v svg,.mw-endpick .v img{width:100%!important;height:auto!important;display:block}
+.mw-endpick b{display:block;font:600 15px/1.2 Khand,system-ui,sans-serif;padding:7px 9px 0;color:#0A0A0A}
+.mw-endpick span{display:block;font:400 12px/1.3 Hind,system-ui,sans-serif;color:#6B6560;padding:2px 9px 9px}
+</style>
+<script>(()=>{
+const tagOf={A:'This',B:'That',loveA:'Love',loveB:'Love',both:'Both',yes:'Keep',love:'Love',maybe:'Hold'};
+function chosen(){const out=[];try{items.forEach(p=>{
+  if(single){const k=picks.find(x=>x.card_id===p.id);if(k&&/^(yes|love|maybe)$/.test(k.answer)&&p.option)out.push([p.option,tagOf[k.answer]||'',p]);return}
+  const k=picks.find(x=>x.pair_id===p.id);if(!k)return;const c=k.choice;
+  if(c==='A'||c==='loveA')out.push([p.optionA,tagOf[c],p]);else if(c==='B'||c==='loveB')out.push([p.optionB,tagOf[c],p]);else if(c==='both'){out.push([p.optionA,'Both',p]);out.push([p.optionB,'Both',p])}})}catch(e){}return out}
+function vis(o){try{const v=o.visual||{};return String((R[v.type]||(()=>''))(v,o)||'')}catch(e){return ''}}
+function add(){const end=document.querySelector('#main .end');if(!end||end.querySelector('.mw-endpicks'))return;const L=chosen();if(!L.length)return;
+ const h=document.createElement('h3');h.textContent='Your Picks ('+L.length+')';const g=document.createElement('div');g.className='mw-endpicks';
+ L.forEach(([o,t])=>{const c=document.createElement('div');c.className='mw-endpick';const v=vis(o);c.innerHTML=(v?'<div class="v">'+v+'</div>':'')+'<b></b><span></span>';
+  c.querySelector('b').textContent=o.label||'';c.querySelector('span').textContent=t;g.appendChild(c)});
+ const first=end.querySelector('h2');(first||end.firstChild).after(h);h.after(g)}
+try{const _se=showEnd;showEnd=function(){const x=_se.apply(this,arguments);try{add()}catch(e){}return x}}catch(e){}
+})();</script>
+<!--/mw-endfix-->
+<!--mw-return-->
+<style id="mw-return-css">#backLink.mw-return{gap:6px;white-space:nowrap;max-width:62vw;overflow:hidden}#backLink.mw-return .l{overflow:hidden;text-overflow:ellipsis}
+@media(max-width:520px){header:has(#backLink.mw-return) h1{display:none}#backLink.mw-return{font-size:14px;padding:0 10px}}</style>
+<script src="https://webermanapps.github.io/style-swipe/kit/mw-back.js?v=mb1"></script>
+<script>(()=>{const FB='https://webermanapps.github.io/branding-djqmb410/';
+const ARW='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>';
+function ret(a,fb){if(!a||a.__mwr)return;a.__mwr=1;a.setAttribute('data-mw-back',fb);a.setAttribute('data-mw-return','');a.classList.add('mw-return');
+ a.removeAttribute('target');a.innerHTML=ARW+'<span class="l">Return to <span class="mw-ret-name">Board</span></span>';if(window.mwBack)mwBack.scan()}
+function run(){ret(document.getElementById('backLink'),FB);
+ ['backToDecks'].forEach(i=>{const e=document.getElementById(i);if(e)ret(e,e.getAttribute('href')||FB)});
+ document.querySelectorAll('.mw-aftersub a.mw-backdecks').forEach(e=>ret(e,e.getAttribute('href')||FB))}
+let t=0;new MutationObserver(()=>{if(t)return;t=setTimeout(()=>{t=0;run()},60)}).observe(document.documentElement,{childList:true,subtree:true});
+run();addEventListener('load',run)})();</script>
+<!--/mw-return-->
+<!--mw-agentlinks-->
+<style>.mw-aftersub{margin:0 0 14px;padding:12px;border:1px solid #E5E0D8;border-radius:12px;background:#E3F1EA;text-align:center}.mw-aftersub p{margin:0 0 8px;font:600 15px/1.3 Hind,sans-serif;color:#0B6E4F}.mw-aftersub .mw-backdecks{margin:0;min-height:60px;font-size:22px}</style>
+<script>(()=>{const MAP={"blog": "https://webermanapps.github.io/blog-dashboard/", "blueprint": "https://webermanapps.github.io/blueprint-dashboard/", "coach": "https://webermanapps.github.io/coach-dashboard/", "construction": "https://webermanapps.github.io/cd-4thwrkpz54/", "dump": "https://webermanapps.github.io/dump-dashboard/", "grok-bot": "https://webermanapps.github.io/grokbot-cc-7b9szx1e/", "japan-cottage": "https://webermanapps.github.io/jc-cc-e034959dac7d/", "jokes": "https://webermanapps.github.io/jokes-cc-5a640f18188c/", "legal": "https://webermanapps.github.io/legal-0a84f667080d/", "portfolio": "https://webermanapps.github.io/portfolio-dashboard/", "prop": "https://webermanapps.github.io/prop-dashboard/", "research": "https://webermanapps.github.io/rd-3k3k8jcaqb/", "scout": "https://webermanapps.github.io/scout-dashboard/", "security": "https://webermanapps.github.io/security-07940c684c/", "thai": "https://webermanapps.github.io/thai-vocab-quiz/dashboard/", "upkeep": "https://webermanapps.github.io/upkeep-cc-d36d3521/", "video-photo": "https://webermanapps.github.io/video-photo-dashboard-70m4sfrw/", "wellnest": "https://webermanapps.github.io/wellnest-dashboard/", "branding": "https://webermanapps.github.io/branding-djqmb410/decks/", "miles": "https://webermanapps.github.io/miles-dashboard/", "household": "https://webermanapps.github.io/household-dashboard/"},NAMES={"blog": "Blog Agent", "blueprint": "Blueprint Agent", "coach": "Coach Agent", "construction": "Construction Agent", "dump": "Dump Agent", "grok-bot": "Grok Bot", "japan-cottage": "Japan Cottage Agent", "jokes": "Jokes Agent", "legal": "Legal Agent", "portfolio": "Portfolio Agent", "prop": "Prop Agent", "research": "Research Agent", "scout": "Scout Agent", "security": "Security Agent", "thai": "Thai Agent", "upkeep": "UpKeep Agent", "video-photo": "Video & Photo Agent", "wellnest": "WellNest Agent", "branding": "Branding Agent", "miles": "Miles Agent", "household": "Household", "email-sorting": "Email Sorting Agent"},FB='branding';
+const ag=()=>{try{return (typeof deck!=='undefined'&&deck&&deck.submit_agent)||FB}catch(_){return FB}};
+const url=()=>MAP[ag()]||MAP[FB],nm=()=>NAMES[ag()]||NAMES[FB];
+const key=()=>{try{return 'styleSwipe:submitted:'+(deck&&deck.date)}catch(_){return ''}};
+const mark=()=>{try{localStorage.setItem(key(),Date.now())}catch(_){}};
+const sent=()=>{try{return !!localStorage.getItem(key())}catch(_){return false}};
+function apply(){const u=url();const dl=document.getElementById('decksLink');if(dl&&dl.href!==u)dl.href=u;
+ const bd=document.getElementById('backToDecks');if(bd){if(bd.getAttribute('data-mw-back')!==u)bd.setAttribute('data-mw-back',u);if(!bd.hasAttribute('data-mw-back')&&bd.href!==u)bd.href=u}
+ const sb=document.getElementById('submitBox');if(!sb)return;const h=sb.previousElementSibling;
+ if(h&&h.tagName==='H3'&&/^Submit To /.test(h.textContent)&&h.textContent!=='Submit To '+nm())h.textContent='Submit To '+nm();
+ if(sb.querySelector('.mws-btn.sent'))mark();
+ const host=sb.parentElement;if(sent()&&host&&!host.querySelector('.mw-aftersub')){const d=document.createElement('div');d.className='mw-aftersub';
+  d.innerHTML='<p>Sent. Your answers went to '+nm()+'.</p><a class="mw-backdecks mw-hover" href="'+u+'" data-mw-back="'+u+'" data-mw-return><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span>Return to <span class="mw-ret-name">'+nm()+'</span></span></a>';
+  host.insertBefore(d,host.firstChild);d.scrollIntoView({block:'start'})}}
+const hook=()=>{const S=window.MWSubmit;if(!S||S.__mwal)return;S.__mwal=1;const o=S.send;S.send=function(){return o.apply(this,arguments).then(ok=>{if(ok)mark();return ok})}};
+let t=0;new MutationObserver(()=>{if(t)return;t=setTimeout(()=>{t=0;hook();apply()},50)}).observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:['class']});
+addEventListener('load',()=>{hook();apply()});hook();})();</script>
+<!--/mw-agentlinks-->
 </body>
 </html>

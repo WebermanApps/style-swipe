@@ -3,7 +3,7 @@
    Board CSS must not target #mw-bh / #mw-bf. Agent branding lives only in the middle section. */
 #mw-bh,#mw-bf{--bh-bg:#fff;--bh-beige:#FAF6EE;--bh-line:#e3ddd2;--bh-ink:#171717;--bh-text:#0A0A0A;--bh-muted:#737373;--bh-green:#0B6E4F;
  --bh-head:'Khand',sans-serif;--bh-body:'Hind',system-ui,sans-serif;--bh-gap:28px}
-#mw-bh :where(*),#mw-bf :where(*){box-sizing:border-box!important;letter-spacing:normal!important;text-transform:none!important;text-shadow:none!important;font-style:normal!important;filter:none;opacity:1}
+#mw-bh :where(*:not(.mw-bh-docs *,.mw-bh-todo .mw-mr-body *)),#mw-bf :where(*){box-sizing:border-box!important;letter-spacing:normal!important;text-transform:none!important;text-shadow:none!important;font-style:normal!important;filter:none;opacity:1}
 #mw-bh.mw-branded-header,#mw-bf.mw-branded-footer{display:block!important;position:relative!important;box-sizing:border-box!important;margin:0!important;padding:0!important;float:none!important;
  background:var(--bh-bg)!important;color:var(--bh-text)!important;font:400 15px/22px var(--bh-body)!important;text-align:left!important;border:0!important;border-radius:0!important;box-shadow:0 0 0 100vmax var(--bh-bg)!important;clip-path:inset(0 -100vmax)!important;z-index:1;max-width:none!important;min-width:0!important}
 #mw-bh.mw-branded-header{padding:16px 0 0!important}
@@ -76,7 +76,7 @@
 #mw-bf .mw-std-share:hover{background:var(--bh-beige)!important}
 #mw-bf a.mw-built{font:400 13px/18px var(--bh-body)!important;color:var(--bh-muted)!important;text-decoration:underline!important;background:none!important;border:0!important;padding:0!important;margin:0!important}
 @media(max-width:600px){#mw-bh,#mw-bf{--bh-gap:24px}#mw-bh .mw-bh-title{font-size:26px!important}#mw-bh .mw-bh-logo,#mw-bh .mw-bh-logo img,#mw-bh .mw-bh-logo svg{width:56px!important;height:56px!important;flex-basis:56px!important}}
-#mw-bh :where(summary,h1,h2,h3,p,a,b,span,button,small,strong,em),#mw-bf :where(summary,h1,h2,h3,p,a,b,span,button,small,strong,em){text-decoration-color:currentColor}
+#mw-bh :where(summary,h1,h2,h3,p,a,b,span,button,small,strong,em):not(.mw-bh-docs *,.mw-bh-todo .mw-mr-body *),#mw-bf :where(summary,h1,h2,h3,p,a,b,span,button,small,strong,em){text-decoration-color:currentColor}
 #mw-bf .rt4-fold>summary.rt4-head::-webkit-details-marker{display:none!important}#mw-bf .rt4-fold>summary.rt4-head::marker{content:""!important}
 #mw-bh .ds-done{display:none!important}
 #mw-bf .rt4-row>summary{color:var(--bh-text)!important;background:none!important}
@@ -160,3 +160,17 @@ body.mw-hero-behind-header #mw-bh.mw-branded-header{background:transparent!impor
 @media(min-width:1440px){#mw-mid.mw-middle{width:min(1200px,calc(100% - 48px))!important}}
 @media(min-width:1680px){#mw-mid.mw-middle{width:min(1280px,calc(100% - 48px))!important}}
 
+
+/* ly12 R106 (Max Oct 17 2026 19:53 ICT): To-Do List fold-down right under Morning Report (same look), Document Center right below, both above the divider */
+#mw-bh details.mw-bh-morning+details.mw-bh-todo{margin-top:12px!important}
+#mw-bh .mw-bh-todo .mw-todo-src>summary,#mw-bh .mw-bh-todo .mw-todo-h{display:none!important}
+#mw-bh .mw-bh-todo .mw-todo-src,#mw-bh .mw-bh-todo .mw-todo{display:block!important;margin:0!important;padding:0!important;border:0!important;box-shadow:none!important;background:none!important;max-width:none!important}
+#mw-bh .mw-bh-docs{display:block!important;margin:var(--bh-gap) 0 0!important;padding:0!important;border:0!important;background:none!important}
+#mw-bh .mw-bh-docs>*{margin:0!important;max-width:none!important}
+#mw-bh details.mw-bh-morning>summary .mw-mr-n{font:500 15px/20px var(--bh-body)!important;color:var(--bh-muted)!important;margin:0 0 0 -4px!important}#mw-bh details.mw-bh-morning>summary .mw-mr-n:empty{display:none!important}
+#mw-bh .mw-bh-actions{display:flex!important;gap:8px!important;margin:0 0 0 auto!important;align-items:center!important;flex:none!important}
+#mw-bh .mw-bh-actions+.mw-bh-share{margin-left:8px!important}
+#mw-bh .mw-bh-action>button,#mw-bh .mw-bh-action>a,#mw-bh button.mw-bh-action,#mw-bh a.mw-bh-action{display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:6px!important;min-width:44px!important;height:44px!important;padding:0 10px!important;background:var(--bh-bg)!important;color:var(--bh-ink)!important;border:1.5px solid var(--bh-ink)!important;border-radius:0!important;font:600 14px/16px var(--bh-head)!important;text-decoration:none!important;cursor:pointer!important;box-shadow:none!important}
+#mw-bh .mw-bh-action svg{width:20px!important;height:20px!important;flex:none!important}
+#mw-bh .mw-bh-action .mw-act-label,#mw-bh .mw-bh-action [data-label]{display:none!important}
+@media(min-width:700px){#mw-bh .mw-bh-action .mw-act-label,#mw-bh .mw-bh-action [data-label]{display:inline!important}}

@@ -27,6 +27,11 @@ const today=()=>new Date().toLocaleDateString('en-CA');
 const sub=d=>!!(d.id&&LS('styleSwipe:submitted:'+d.id));
 
 const ALL='https://webermanapps.github.io/branding-djqmb410/decks/';
+/* v11 / kit ly12 (R104, Max Oct 17 2026 19:39 ICT): deck cards open in the SAME tab with from=<this board> (+ from_name), so the deck page's
+   Return button (kit/mw-back.js) goes back with history.back(), else via from=. Only trusted https://webermanapps.github.io/ links get it. */
+const boardName=()=>{const t=document.querySelector('.mw-bh-title,.mw-cc-title');const x=(t?t.textContent:document.title).replace(/\s+(Agent\s+)?(Command Center|Board|Dashboard)\b.*$/i,'').trim();return x.slice(0,40)};
+function fromUrl(u){try{const x=new URL(u,location.href);if(x.protocol!=='https:'||x.hostname!=='webermanapps.github.io'||location.hostname!=='webermanapps.github.io')return u;
+ x.searchParams.set('from',location.origin+location.pathname);const n=boardName();if(n)x.searchParams.set('from_name',n);return x.href}catch(_){return u}}
 
 
 const tagOf=d=>d.tag||d.category||(d.topic?String(d.topic).replace(/[-_]+/g,' ').replace(/\b\w/g,c=>c.toUpperCase()):'Deck');
@@ -115,8 +120,8 @@ function render(box,J,o){o=o||{};J=J||{};const B=boardOf(box,J),ids=doneIds(J),l
  const h=el('div','ds-head');h.append(el('h2','','Ready To Swipe'));const n=doneToday(J);if(n)h.append(el('span','ds-done',n+' done today'));const st=el('div','ds-stats');st.hidden=true;h.append(st);const allU=box.dataset.all||J.all_url||ALL;if(!box.hasAttribute('data-shelf-nocap')){const al=el('a','ds-all','All Decks');al.href=allU;h.insertBefore(al,st)}box.append(h);paintStats(box,J);
  if(!decks.length){const p=el('p','ds-empty','All caught up. New decks are on the way. ');const l=el('a','','Deck Building');l.href=allU;p.append(l);box.append(p);return}
  const g=el('div','ds-strip');g.setAttribute('role','list');
- decks.forEach(d=>{const a=el('a','ds-card');a.href=d.url;a.setAttribute('role','listitem');const tag=tagOf(d),s=started(d);a.style.setProperty('--ds-c',d.color||col(tag));
-  if(s)a.classList.add('ds-started');a.target='_blank';a.rel='noopener';
+ decks.forEach(d=>{const a=el('a','ds-card');a.href=fromUrl(d.url);a.setAttribute('role','listitem');const tag=tagOf(d),s=started(d);a.style.setProperty('--ds-c',d.color||col(tag));
+  if(s)a.classList.add('ds-started');/* v11 R104: same tab, so Return can use browser history */
   a.append(el('b','ds-name',d.name||'Deck'),el('span','ds-tag',tag),el('span','ds-go',s?'Continue, '+left(d)+' left':'Start'));
   if(isNew(d)){a.classList.add('ds-isnew');a.append(el('span','ds-new','New'))}
   a.addEventListener('click',()=>{try{localStorage.setItem(seenKey(d),'1')}catch(_){}a.classList.remove('ds-isnew');const b=a.querySelector('.ds-new');if(b)b.remove()});
@@ -125,5 +130,5 @@ function render(box,J,o){o=o||{};J=J||{};const B=boardOf(box,J),ids=doneIds(J),l
   g.addEventListener('scroll',()=>{const w=g.scrollWidth-g.clientWidth,k=w>0?Math.round(g.scrollLeft/w*(decks.length-1)):0;[...dt.children].forEach((x,i)=>x.className=i===k?'on':'')},{passive:true})}}
 function init(){document.querySelectorAll('[data-shelf],[data-launcher]').forEach(b=>{if(b.dataset.dsDone)return;b.dataset.dsDone=1;
  fetch((b.dataset.shelf||b.dataset.launcher)+'?'+Date.now()).then(r=>r.json()).then(J=>render(b,J)).catch(()=>render(b,{decks:[]}))})}
-window.DeckShelf={render,CAP,sortDecks,answered,touched,finished,isNew,seenKey,VERSION:10,removable,isRemoved,boardOf,toast,removed:b=>b._dsRemoved||[],queued:b=>b._dsQueued||[],finishedOf:b=>b._dsFinished||[]};window.DeckLauncher=window.DeckLauncher||{render};
+window.DeckShelf={render,CAP,sortDecks,answered,touched,finished,isNew,seenKey,VERSION:11,fromUrl,removable,isRemoved,boardOf,toast,removed:b=>b._dsRemoved||[],queued:b=>b._dsQueued||[],finishedOf:b=>b._dsFinished||[]};window.DeckLauncher=window.DeckLauncher||{render};
 document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init()})();

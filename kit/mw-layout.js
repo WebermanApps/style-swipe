@@ -12,9 +12,10 @@
    Usage: <link rel="stylesheet" href=".../kit/mw-layout.css?v=ly8"><script src=".../kit/mw-layout.js?v=ly8" defer></script> (ly9 ships under the same URLs)
    ly9 (Team Improvement Deck results, Max Oct 16 2026; Branding Oct 17): Share is a small icon in the Command Center header (footer Share button removed);
    a slim header bar stays at the top for about one screen of scrolling, then goes away; Morning Report shows a square Late tag (report.json late/minutes_late)
-   and up to three headline cards (report.json headlines or top3); a board block marked data-mw-slot="todo" becomes the 'To-Do List' section, first in the middle. */
+   and up to three headline cards (report.json headlines or top3); a board block marked data-mw-slot="todo" becomes the 'To-Do List' section, first in the middle.
+   ly12 (Oct 17 2026, Branding): R106 header order (Morning Report > To-Do List fold-down > Document Center > divider) and R104 (loads kit/mw-back.js). */
 (function(){
-var V='ly9',MACHAN="<span class=\"mw-machan\" style=\"display:inline-flex;align-items:center;gap:6px;vertical-align:middle;white-space:nowrap\"><svg class=\"mw-machan-mark\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" aria-hidden=\"true\" focusable=\"false\" style=\"display:block;flex:none;width:22px;height:22px\"><path d=\"M12 5.2C11.2 3 9.4 2 7.6 2.3c.3 1.9 1.9 3.2 4.4 2.9z\" fill=\"#3F7D58\"/><path d=\"M12 5.2c.8-2.2 2.6-3.2 4.4-2.9-.3 1.9-1.9 3.2-4.4 2.9z\" fill=\"#5E9A6E\"/><rect x=\"3.5\" y=\"5.5\" width=\"17\" height=\"16\" rx=\"7\" fill=\"#C8643F\"/><rect x=\"5.5\" y=\"9\" width=\"13\" height=\"10\" rx=\"5\" fill=\"#FAF6EE\"/><circle cx=\"9.6\" cy=\"13.3\" r=\"1.35\" fill=\"#2E6F86\"/><circle cx=\"14.4\" cy=\"13.3\" r=\"1.35\" fill=\"#2E6F86\"/><path d=\"M10.6 16.1q1.4 1.1 2.8 0\" fill=\"none\" stroke=\"#C8643F\" stroke-width=\"1.1\" stroke-linecap=\"round\"/><circle cx=\"7.6\" cy=\"15.6\" r=\".9\" fill=\"#E9B9A3\"/><circle cx=\"16.4\" cy=\"15.6\" r=\".9\" fill=\"#E9B9A3\"/></svg>Built by Machan</span>",K='https://webermanapps.github.io/style-swipe/kit/',HOME='https://webermanapps.github.io/a-o956qercs5ubd57y/';
+var V='ly12',R106=false/* R106 STAGED: held until Security clears the Document Center fold-down (projects.js, R109); flip to true to ship */,MACHAN="<span class=\"mw-machan\" style=\"display:inline-flex;align-items:center;gap:6px;vertical-align:middle;white-space:nowrap\"><svg class=\"mw-machan-mark\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" aria-hidden=\"true\" focusable=\"false\" style=\"display:block;flex:none;width:22px;height:22px\"><path d=\"M12 5.2C11.2 3 9.4 2 7.6 2.3c.3 1.9 1.9 3.2 4.4 2.9z\" fill=\"#3F7D58\"/><path d=\"M12 5.2c.8-2.2 2.6-3.2 4.4-2.9-.3 1.9-1.9 3.2-4.4 2.9z\" fill=\"#5E9A6E\"/><rect x=\"3.5\" y=\"5.5\" width=\"17\" height=\"16\" rx=\"7\" fill=\"#C8643F\"/><rect x=\"5.5\" y=\"9\" width=\"13\" height=\"10\" rx=\"5\" fill=\"#FAF6EE\"/><circle cx=\"9.6\" cy=\"13.3\" r=\"1.35\" fill=\"#2E6F86\"/><circle cx=\"14.4\" cy=\"13.3\" r=\"1.35\" fill=\"#2E6F86\"/><path d=\"M10.6 16.1q1.4 1.1 2.8 0\" fill=\"none\" stroke=\"#C8643F\" stroke-width=\"1.1\" stroke-linecap=\"round\"/><circle cx=\"7.6\" cy=\"15.6\" r=\".9\" fill=\"#E9B9A3\"/><circle cx=\"16.4\" cy=\"15.6\" r=\".9\" fill=\"#E9B9A3\"/></svg>Built by Machan</span>",K='https://webermanapps.github.io/style-swipe/kit/',HOME='https://webermanapps.github.io/a-o956qercs5ubd57y/';
 var q=function(s,r){return (r||document).querySelector(s)},qa=function(s,r){return [].slice.call((r||document).querySelectorAll(s))};
 var slot=function(n){return q('[data-mw-slot="'+n+'"]')};var MR=/^\s*morning report/i;
 function mk(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
@@ -37,7 +38,7 @@ function reportExtras(md,body){fetch('report.json?t='+Date.now(),{cache:'no-stor
   var tg=mk('span','mw-mr-late',m?'Late '+m+' min':'Late');tg.title=j.late_reason||j.late_note||'Posted after its due time';var sm=q('summary',md);if(sm&&!q('.mw-mr-late',sm))sm.insertBefore(tg,q('.mw-chev',sm))}
  var H=(j.headlines||j.top3||[]).slice(0,3);if(H.length&&!q('.mw-mr-cards',body)){var w=mk('div','mw-mr-cards');H.forEach(function(h){var c=mk('div','mw-mr-card');
   if(typeof h==='string'){var cut=h.split(/(?<=[.:;])\s|\s\(/)[0];c.append(mk('b','',cut.length>70?cut.slice(0,68).replace(/\s+\S*$/,'')+'\u2026':cut));if(h.length>cut.length+2)c.append(mk('span','',h))}
-  else{c.append(mk('b','',h.title||h.head||''));if(h.text||h.body)c.append(mk('span','',h.text||h.body))}w.appendChild(c)});body.insertBefore(w,body.firstChild)}}).catch(function(){})}
+  else{c.append(mk('b','',h.title||h.head||''));if(h.text||h.body)c.append(mk('span','',h.text||h.body))}w.appendChild(c)});body.insertBefore(w,body.firstChild)}var mn=q('summary .mw-mr-n',md);if(mn&&H.length&&R106)mn.textContent='('+H.length+')'}).catch(function(){})}
 /* ly9 sticky-for-a-bit (Max note: sticky for a little bit, then goes away): slim bar after the header leaves the screen, for about one screen of scrolling */
 function stickBar(bh,title){var bar=mk('div','mw-stick');bar.setAttribute('aria-hidden','true');var a=mk('a','mw-stick-home');a.href=HOME;a.innerHTML='<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg>';a.tabIndex=-1;
  var t=mk('button','mw-stick-t',title);t.type='button';t.tabIndex=-1;t.addEventListener('click',function(){scrollTo({top:0,behavior:'smooth'})});var sb=shareBtn();sb.tabIndex=-1;bar.append(a,t,sb);document.body.appendChild(bar);
@@ -67,7 +68,7 @@ function working(wd){var me=norm(boardAgent());if(!me){wd.hidden=true;return}
   if(a&&a.working){q('.mw-wo-doing',wd).textContent=a.doing||'Working';wd.hidden=false}else{wd.hidden=true;wd.open=false}}).catch(function(){})}
  upd();setInterval(upd,60000);document.addEventListener('visibilitychange',function(){if(!document.hidden)upd()})}
 function run(){if(document.body.dataset.mwLayout===V)return;var cc=q('.mw-cc-header');if(!cc)return;document.body.dataset.mwLayout=V;fonts();
- need('mw-layout.css',true);need('deck-shelf.css',true);need('routines-section.css',true);
+ need('mw-layout.css',true);need('deck-shelf.css',true);need('routines-section.css',true);need('mw-back.js',false);/* ly12 R104 history-first back helper */
  var heroes=qa('[data-mw-slot="hero"]');
  var shelf=q('[data-shelf]')||q('[data-launcher]')||slot('shelf');
  var mor=findMorning(),rout=q('[data-routines]')||q('#routines');
@@ -78,18 +79,38 @@ function run(){if(document.body.dataset.mwLayout===V)return;var cc=q('.mw-cc-hea
  else if(cc.dataset.ccLogo){var im2=mk('img');im2.src=cc.dataset.ccLogo;im2.alt='';lg.appendChild(im2)}
  var tx=mk('div','mw-bh-text'),t0=q('.mw-cc-title',cc)||q('h1',cc),d0=q('.mw-cc-desc',cc)||q('p',cc);
  tx.append(mk('h1','mw-bh-title',t0?t0.textContent.trim():(cc.dataset.ccName||'')+' Command Center'),mk('p','mw-bh-desc',d0?d0.textContent.trim():(cc.dataset.ccDesc||'')));ncc.append(lg,tx,shareBtn());
+ /* R106 header action slot (staged): <div data-mw-header-action> (e.g. Household's Add To Home Screen) moves to the top right of the
+    Command Center header, next to Share: 44px square light icon button, label only at 700px+. Nothing renders when a board has none. */
+ if(R106){var acts=qa('[data-mw-header-action]').filter(function(a){return !a.closest('#mw-bh,#mw-bf')});if(acts.length){var aw=mk('div','mw-bh-actions');acts.forEach(function(a){a.classList.add('mw-bh-action');aw.appendChild(a)});ncc.insertBefore(aw,ncc.lastChild)}}
  var decks=mk('div','mw-bh-decks');if(!shelf){shelf=mk('section');shelf.setAttribute('data-shelf','shelf.json');need('deck-shelf.js',false)}decks.appendChild(shelf);
- var md=mk('details','mw-bh-morning');md.id='mw-morning';var sm=mk('summary');sm.append(mk('span','mw-mr-t','Morning Report'),mk('span','mw-chev'));md.appendChild(sm);var body=mk('div','mw-mr-body');md.appendChild(body);
+ var md=mk('details','mw-bh-morning');md.id='mw-morning';var sm=mk('summary');sm.append(mk('span','mw-mr-t','Morning Report'),mk('span','mw-mr-n',''),mk('span','mw-chev'));md.appendChild(sm);var body=mk('div','mw-mr-body');md.appendChild(body);
  if(mor){if(mor.tagName==='DETAILS'){var os=q(':scope>summary',mor);if(os){var st=os.textContent.replace(/\s+/g,' ').replace(MR,'').replace(/^[\s·\-:]+/,'').trim();if(st)body.appendChild(mk('p','mw-mr-sub',st))}
    mor.classList.add('mw-mr-src');[].slice.call(mor.childNodes).forEach(function(n){if(n!==os)body.appendChild(n)});body.appendChild(mor);mor.style.setProperty('display','none','important')}
   else{body.appendChild(mor);mor.hidden=false}}else body.appendChild(mk('p','mw-mr-sub','No Morning Report yet.'));
  var wd=mk('details','mw-bh-working');wd.id='mw-working';wd.hidden=true;var ws=mk('summary');ws.append(mk('span','mw-mr-t','Working On'),mk('span','mw-chev'));wd.appendChild(ws);var wb=mk('div','mw-mr-body');wb.appendChild(mk('p','mw-mr-sub mw-wo-doing',''));wd.appendChild(wb);working(wd);
- bh.append(home,ncc,decks,wd,md,mk('hr','mw-bh-divider'));
+ /* ly12 R106 (Max Oct 17 2026 19:53 ICT): header = Command Center > decks + counter > (Working On) > Morning Report > To-Do List fold-down
+    (closed, same look as Morning Report) > Document Center > divider. To-Do source: [data-mw-slot="todo"], else #todos (Grok Bot). */
+ /* R106 is STAGED (held until Security clears the Document Center fold-down in projects.js, R109): flip R106=true to ship. */
+ var tsrc=R106?(slot('todo')||q('details#todos')||q('#todos')):null,td=null;
+ if(tsrc&&!tsrc.closest('#mw-bh,#mw-bf')){td=mk('details','mw-bh-morning mw-bh-todo');td.id='mw-todo';
+  /* Max 20:16 ICT: always-open To-Do blocks (ul, section, div, details) are wrapped into a closed fold-down; header row = title + count like Morning Report.
+     Title: data-mw-todo-title, else Construction's 'Decisions Needed' (#decisions) keeps its own title, else 'To-Do List'. */
+  var tt=tsrc.getAttribute('data-mw-todo-title')||(tsrc.id==='decisions'?'Decisions Needed':'To-Do List');
+  var tsm=mk('summary'),tn=mk('span','mw-mr-n','');tsm.append(mk('span','mw-mr-t',tt),tn,mk('span','mw-chev'));td.appendChild(tsm);var tb=mk('div','mw-mr-body');td.appendChild(tb);
+  if(tsrc.tagName==='DETAILS'){tsrc.open=true;tsrc.classList.add('mw-todo-src')}tsrc.classList.add('mw-todo');tsrc.hidden=false;
+  var th0=q('h2,h3',tsrc);if(th0&&/^\s*(to-?do( list|'?s)?|waiting on max|needs? (you|max)|open items|decisions needed)\s*[\d·\s]*$/i.test(th0.textContent))th0.classList.add('mw-todo-h');tb.appendChild(tsrc);
+  var cnt=function(){var L=qa('li',tsrc).filter(function(li){return !li.parentElement.closest('li')&&getComputedStyle(li).display!=='none'}).length;
+   if(!L){var ml=q('.mlist',tsrc)||(tsrc.classList.contains('mlist')?tsrc:null);if(ml)L=[].slice.call(ml.children).filter(function(c){return c.nodeType===1}).length}
+   if(!L){var sm0=q(':scope>summary',tsrc)||th0;var mm=sm0&&sm0.textContent.match(/\b(\d+)\b/);if(mm)L=+mm[1]}
+   tn.textContent=L?'('+L+')':''};cnt();var tci=0;try{new MutationObserver(function(){clearTimeout(tci);tci=setTimeout(cnt,120)}).observe(tsrc,{childList:true,subtree:true})}catch(_){}}
+ var dsrc=R106?(q('#mw-projects')||q('[data-mw-projects]')):null,dw=null;if(dsrc&&!dsrc.closest('#mw-bf')){dw=mk('div','mw-bh-docs');dw.appendChild(dsrc)}
+ bh.append(home,ncc,decks,wd,md);if(td)bh.append(td);if(dw)bh.append(dw);bh.append(mk('hr','mw-bh-divider'));
  cc.style.setProperty('display','none','important');cc.setAttribute('aria-hidden','true');
  document.body.insertBefore(bh,document.body.firstChild);
  reportExtras(md,body);stickBar(bh,tx.firstChild.textContent);
  var after=bh;heroes.forEach(function(h){after.after(h);after=h});
- var todo=slot('todo');if(todo){todo.classList.add('mw-todo');var th=q('h2,h3',todo);if(th&&/waiting on max|needs? (you|max)|to-?do/i.test(th.textContent))th.textContent='To-Do List';after.after(todo);after=todo}
+ /* ly12: with R106 on, the To-Do List is a header fold-down; until then it stays the first middle section (ly9) */
+ var todo=R106?null:slot('todo');if(todo){todo.classList.add('mw-todo');var th=q('h2,h3',todo);if(th&&/waiting on max|needs? (you|max)|to-?do/i.test(th.textContent))th.textContent='To-Do List';after.after(todo);after=todo}
  /* anything else the old header carried (greeting, updated time, buttons) moves to the middle */
  var ex=mk('div','mw-cc-extras');[].slice.call(cc.children).forEach(function(c){if(!c.matches('.mw-cc-logo,.mw-cc-text'))ex.appendChild(c)});
  var otx=q('.mw-cc-text',cc);if(otx)[].slice.call(otx.children).forEach(function(c){if(c!==t0&&c!==d0)ex.appendChild(c)});
