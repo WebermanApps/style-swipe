@@ -1,7 +1,7 @@
-/* Ongoing Projects (R100; kit op1, Branding Agent, Oct 17 2026). LOCAL BUILD - not published.
+/* Ongoing Projects (R100; kit op2, Branding Agent, Oct 17 2026).
    Usage on a kit board (after mw-layout.js):
-     <link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/projects.css?v=op1">
-     script src=".../style-swipe/kit/projects.js?v=op1" data-projects="projects.json" defer (after mw-layout.js)
+     <link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/projects.css?v=op2">
+     script src=".../style-swipe/kit/projects.js?v=op2" data-projects="projects.json" defer (after mw-layout.js)
    or place <section id="mw-projects" data-mw-projects="projects.json"></section> anywhere; the kit moves it to the top of #mw-mid
    (right under the branded header divider, before the agent's own content).
    Data: board projects.json (schema: ops/brand/projects.schema.json), written only by /workspace/ops/brand/pin_project.py.
@@ -14,7 +14,7 @@
    No crypto lives here: decryption is delegated to Security's viewer through ProjectsSection.storage.encrypted. */
 (function(){
 'use strict';
-var V='op1',MAX=6,EXCLUDE=/a-o956qercs5ubd57y|home-guide|finish-questions|room-photos|room-quiz|homes\.maxweberman\.com|share-x3l9xcxc1eut/;
+var V='op2',MAX=6,EXCLUDE=/a-o956qercs5ubd57y|home-guide|finish-questions|room-photos|room-quiz|homes\.maxweberman\.com|share-x3l9xcxc1eut/;
 var me=document.currentScript;
 function el(t,c,txt){var e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e}
 function svg(d){var s=document.createElementNS('http://www.w3.org/2000/svg','svg');s.setAttribute('viewBox','0 0 24 24');s.setAttribute('aria-hidden','true');s.innerHTML=d;return s}
@@ -68,7 +68,11 @@ function doDownload(p,btn,host){
 
 /* ---- Hand off project (R100 addition, Max Oct 17 2026 15:47 ICT) ----
    Posts via MWSubmit.send (submit.js) to the shared Apps Script receiver: agent=<owner>, app="project-handoff", deck=<project id>,
-   results={project_id,project_title,owner_agent,to_agents,note,files,page_url}. files = projects.json file refs only (paths, names, MIME; never keys). */
+   results={project_id,owner_agent,to_agents,note}. Security condition (5), Oct 17 2026: NO title, filenames, paths or page URL over
+   the wire; Grok Bot resolves those from the private project list on the box (ops/brand/projects-private).
+   Hidden where sending is not trusted yet: HANDOFF_OFF agents (WellNest until its submit.js auth is fixed), a board's
+   section attribute data-mw-handoff="off", or projects.json "handoff": false. Boards cannot switch it back on; only a kit change can. */
+var HANDOFF_OFF={wellnest:'submit.js auth not fixed yet (Security, Oct 17 2026)'};
 var TEAM_FALLBACK={"blog":"Blog Agent","blueprint":"Blueprint Agent","branding":"Branding Agent","coach":"Coach Agent","construction":"Construction Agent","dump":"Dump Agent","email-sorting":"Email Sorting Agent","grok-bot":"Grok Bot","household":"Household","japan-cottage":"Japan Cottage Agent","jokes":"Jokes Agent","legal":"Legal Agent","miles":"Miles Agent","portfolio":"Portfolio Agent","prop":"Prop Agent","research":"Research Agent","scout":"Scout Agent","security":"Security Agent","thai":"Thai Agent","upkeep":"UpKeep Agent","video-photo":"Video & Photo Agent","wellnest":"WellNest Agent"};
 var team=null;
 function kitBase(){var s=me&&me.src;return s?s.replace(/[^\/]*$/,''):'https://webermanapps.github.io/style-swipe/kit/'}
@@ -79,8 +83,9 @@ function loadTeam(){if(team)return Promise.resolve(team);var m={};Object.keys(TE
   fetch(b+'agent-status.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){(j&&j.agents||[]).forEach(function(a){var s=slugify(a.agent);if(s&&!m[s])m[s]=a.agent})}).catch(function(){})])
  .then(function(){team=Object.keys(m).map(function(k){return{slug:k,name:m[k]}}).sort(function(a,b){return a.name.localeCompare(b.name)});return team})}
 function ownerAgent(p){return p.agent||document.body.getAttribute('data-mw-agent')||(document.querySelector('[data-agent-name]')||{getAttribute:function(){return ''}}).getAttribute('data-agent-name')||''}
-function fileRefs(p){var out=[];[['file','file'],['preview','preview'],['thumb','thumbnail']].forEach(function(k){var r=p[k[0]];if(!r||!r.path)return;var f={role:k[1],path:r.path,encrypted:/\.enc$/.test(r.path)};if(r.name)f.name=r.name;if(r.mime)f.mime=r.mime;out.push(f)});return out}
-function handoffPayload(p,to,note){return{project_id:p.id,project_title:p.title,owner_agent:ownerAgent(p),to_agents:to.map(function(t){return t.slug}),note:note||'',files:fileRefs(p),page_url:location.origin+location.pathname}}
+function handoffPayload(p,to,note){return{project_id:p.id,owner_agent:ownerAgent(p),to_agents:to.map(function(t){return t.slug}),note:note||''}}
+var handoffBoardOff=false;
+function handoffAllowed(p){var o=String(ownerAgent(p)||'').toLowerCase();return !handoffBoardOff&&!HANDOFF_OFF[o]&&!/\/wellnest-dashboard\//.test(location.pathname)}
 function listNames(a){a=a.map(function(t){return t.name});return a.length<2?a.join(''):a.slice(0,-1).join(', ')+' and '+a[a.length-1]}
 var hoOpen=null;
 function openHandoff(p,opener){
@@ -132,7 +137,7 @@ function openHandoff(p,opener){
   addTyped();if(!picked.length){setState('fail','Add at least one agent.');inp.focus();return}
   var S=window.MWSubmit;if(!S||typeof S.send!=='function'){setState('fail','Sending is not set up on this page yet. Nothing was sent.');return}
   var body=handoffPayload(p,picked,nt.value.trim()),who=listNames(picked);setState('sending');
-  Promise.resolve().then(function(){return S.send({agent:body.owner_agent||'grok-bot',app:'project-handoff',deck:p.id,results:body,notes:body.note})})
+  Promise.resolve().then(function(){return S.send({agent:body.owner_agent||'grok-bot',app:'project-handoff',deck:p.id,results:body,notes:''})})
   .then(function(ok){if(ok){setState('sent','Sent to '+who+'.')}
    else if(S.blocked){setState('fail','Password needed. Nothing was sent.')}
    else{setState('fail','Not sent yet: no connection. It is saved on this device and retries when you are back online, or tap Try Again.')}})
@@ -167,7 +172,7 @@ function card(p,i){
  var bd=el('div','op-body');bd.appendChild(el('h3','op-t',p.title));
  bd.appendChild(el('p','op-meta',typeOf(p)+' \u00b7 Updated '+fmtDate(p.updated)));
  var bs=el('div','op-btns'),o=act(p,'open',bd),d=act(p,'dl',bd);bs.append(o,d);bd.appendChild(bs);
- var hb=btn('op-btn--ho','ho','Hand off project');hb.onclick=function(){openHandoff(p,hb)};bd.appendChild(hb);
+ if(handoffAllowed(p)){var hb=btn('op-btn--ho','ho','Hand off project');hb.onclick=function(){openHandoff(p,hb)};bd.appendChild(hb)}
  var mb=el('button','op-more-btn');mb.type='button';mb.append(el('span',null,'Tell me more'),svg(I.chev));var id='op-d-'+i;mb.setAttribute('aria-expanded','false');mb.setAttribute('aria-controls',id);
  var dt=el('div','op-details');dt.id=id;dt.hidden=true;
  if(p.desc)dt.appendChild(el('p',null,p.desc));
@@ -201,7 +206,7 @@ function normalize(j){
 
 function load(src){
  return fetch(src+(src.indexOf('?')<0?'?':'&')+'t='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.json()}).then(function(j){
-  mode=storage[j.storage]?j.storage:'none';
+  mode=storage[j.storage]?j.storage:'none';if(j.handoff===false)handoffBoardOff=true;
   if(j.index){ /* encrypted index (planned default): titles, notes, filenames all live inside files/<random12>.enc */
    return getBlob({path:j.index}).then(function(b){return b.text()}).then(function(t){var d=JSON.parse(t);d.storage='encrypted';return d})}
   return j})}
@@ -219,7 +224,7 @@ function mount(){
 
 var started=false;
 function start(){if(started)return;started=true;var sec=mount();if(!sec)return;
- var src=sec.getAttribute('data-mw-projects')||base();
+ var src=sec.getAttribute('data-mw-projects')||base();if(sec.getAttribute('data-mw-handoff')==='off')handoffBoardOff=true;
  var ph=el('p','op-empty','Loading projects');sec.textContent='';sec.appendChild(ph);
  load(src).then(function(j){render(sec,normalize(j))}).catch(function(){render(sec,[])});
  /* mw-layout may rebuild #mw-mid later; keep the section first */
