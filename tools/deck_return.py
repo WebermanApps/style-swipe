@@ -10,7 +10,7 @@ import os, re, glob, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 START, END = "<!--mw-return-->", "<!--/mw-return-->"
 EXCLUDE = ("share-x3l9xcxc1eut/",)
-KIT = "https://webermanapps.github.io/style-swipe/kit/mw-back.js?v=mb1"
+KIT = "https://webermanapps.github.io/style-swipe/kit/mw-back.js?v=mb2"
 BLOCK = START + """
 <style id="mw-return-css">#backLink.mw-return{gap:6px;white-space:nowrap;max-width:62vw;overflow:hidden}#backLink.mw-return .l{overflow:hidden;text-overflow:ellipsis}
 @media(max-width:520px){header:has(#backLink.mw-return) h1{display:none}#backLink.mw-return{font-size:14px;padding:0 10px}}</style>
