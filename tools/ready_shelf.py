@@ -113,7 +113,7 @@ def build(topic, shelf_path, agent, name=None, slot=None, source=None, refill=Fa
     sh["updated"] = now(); W(shelf_path, sh)  # Oct 17: R86 edit had commented this out, so build/refill never saved the shelf
     print(f"built {did} ({N} cards) -> {url}"); fill(shelf_path); return ent  # R97: fill any free slot from the queue right away
 
-GONE = {"done", "hidden", "retired", "replaced", "split", "unlisted"}
+GONE = {"done", "hidden", "retired", "replaced", "split", "unlisted", "removed"}  # R102: "removed" (apply_removals.py) frees the slot but is never added to done[]
 def finished(d, ids): return (str(d.get("status") or "") in GONE) or d.get("hidden") is True or (d.get("id") in ids)
 def fill(shelf_path, dry=False):
     """R96/R97: finished decks leave the open list (kept in done[]/status, still counted); free slots fill from queued[]/queue[]."""
