@@ -59,7 +59,7 @@ function kindOf(p){var t=String(p.type||'').toLowerCase();if(Object.prototype.ha
  if(/\b(xlsx?|ods|csv)\b/.test(s)||/spreadsheet|ms-excel|text\/csv/.test(m))return 'xls';
  if(/\b(png|jpe?g|gif|webp|heic)\b/.test(s)||/^image\//.test(m))return 'img';
  return 'other'}
-function docDate(p){return p.date?fmtDate(p.date):'Updated '+fmtDate(p.updated)}
+function docDate(p){var d=String(p.date||'');return d?fmtDate(/^\d{4}-\d{2}-\d{2}$/.test(d)?d+'T12:00:00':d):'Updated '+fmtDate(p.updated)}
 
 var urls=[];function track(u){urls.push(u);return u}
 addEventListener('pagehide',function(){urls.forEach(function(u){try{URL.revokeObjectURL(u)}catch(_){}})});
