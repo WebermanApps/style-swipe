@@ -48,7 +48,7 @@ def card(x, y, w, h, d, o=None):
     by = y + h - 8; tot = 10; rs = o.get("ring", "thin")
     sm = w < 60
     if rs == "thin": s += ringsvg(x + 8, by, 3.8 if sm else 4.6, n, tot, JUNGLE, 1.6 if sm else 1.8) + t(x + 14, by + 2.3, f"{n}/{tot}", 6.5 if sm else 8.5, JUNGLE, "khand")
-    elif rs == "bold": s += ringsvg(x + 9, by - 1, 5.4, n, tot, c, 3.2) + t(x + 9, by + 1.2, f"{n}", 5.5, c, "khand", anchor="middle") + t(x + 17, by + 2.2, f"of {tot}", 5.5 if sm else 7, MUTE, "hind", 600)
+    elif rs == "bold": s += ringsvg(x + 9, by - 1, 5.4, n, tot, c, 3.2) + t(x + 9, by + 1.2, f"{n}", 5.5, c, "khand", anchor="middle") + ("" if sm and n == 0 else t(x + 17, by + 2.2, f"of {tot}", 5.5 if sm else 7, MUTE, "hind", 600))
     if n == 0 and not o.get("no_new"):
         bg, fg, bd = o.get("newc", (CREAM, TERRA, "#e3ddd2")); nw = 13 if sm else 18
         s += rect(x + w - nw - 2.5, by - 4.5, nw, 8, bg, bd, 0, .7) + t(x + w - 2.5 - nw / 2, by + 1.4, "NEW", 5 if sm else 6, fg, "khand", anchor="middle")
