@@ -79,10 +79,13 @@ addEventListener('pagehide',function(){urls.forEach(function(u){try{URL.revokeOb
 
 function busy(b,on){b.setAttribute('aria-busy',on?'true':'false');b.disabled=!!on}
 function note(card,msg){var m=card.querySelector('.op-msg');if(!m){m=el('p','op-msg');m.setAttribute('role','status');card.appendChild(m)}m.textContent=msg}
+/* op8 fix (Security, Oct 17 2026 20:55 ICT): fallback download for a blob the view cannot show; the URL is revoked a moment later */
+function safeName(p,b){var n=String((b&&b.__name)||(p.file&&p.file.name)||p.title||'document').replace(/[\u0000-\u001f\u007f<>:"\/\\|?*]+/g,'_').replace(/^[.\s]+|[.\s]+$/g,'').slice(0,100);return n||'document'}
+function saveBlob(u,name){var a=el('a');a.href=u;a.download=name;a.rel='noopener';a.hidden=true;document.body.appendChild(a);a.click();a.remove();setTimeout(function(){try{URL.revokeObjectURL(u)}catch(_){}},1500)}
 function doOpen(p,btn,host){
  var ref=p.preview||p.file;if(!ref)return;
  if(viewKind(ref.mime||(p.preview?'application/pdf':''))){busy(btn,true); /* op8: in-page view (no popup needed) */
-  getBlob(ref).then(function(b){var u=track(URL.createObjectURL(b));if(!openView(p,u,b.type||ref.mime,btn))location.assign(u)})
+  getBlob(ref).then(function(b){var u=track(URL.createObjectURL(b));if(!openView(p,u,b.type||ref.mime,btn))saveBlob(u,safeName(p,b))}) /* not viewable after all: download, never navigate to the blob */
   .catch(function(e){note(host,e.message)}).then(function(){busy(btn,false)});return}
  var w=null;try{w=window.open('','_blank')}catch(_){} /* open synchronously so popup blockers allow it */
  busy(btn,true);
