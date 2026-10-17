@@ -49,10 +49,16 @@ def cats(o):
 def card_h(o): return round(9 + 24 + 3 * o["rowh"] + 9, 1)
 def card(x, y, c, o):
     nm, ic, items, tint = c; tc, bg = TINT[tint]; h = card_h(o); a = o["art"]
-    s = rect(x + .5, y + 2.5, CW, h, "#0A0A0A", "none", 14, 1, 'opacity=".05"') + rect(x, y, CW, h, "#FFFFFF", "#e5e0d8", 14, 1)
+    fresh = o.get("face") == "fresh"
+    if fresh:
+        s = rect(x + .5, y + 6, CW, h, "#0A0A0A", "none", 14, 1, 'opacity=".08"') + rect(x, y, CW, h, bg, tc, 14, 1, 'stroke-opacity=".22"')
+    else:
+        s = rect(x + .5, y + 2.5, CW, h, "#0A0A0A", "none", 14, 1, 'opacity=".05"') + rect(x, y, CW, h, "#FFFFFF", "#e5e0d8", 14, 1)
     ax, ay, ah = x + 9.6, y + 8.8, h - 17.6
-    s += rect(ax, ay, a, ah, bg, "none", 10)
-    if o["icons"] == "two":
+    if fresh:
+        s += rect(ax, ay, a, ah, "#FFFFFF", tc, 10, 1, 'stroke-opacity=".25"')
+        sz = a * .62; s += icon(ic[0], ax + (a - sz) / 2, ay + (ah - sz) / 2, sz).replace('stroke-width="2.1"', f'stroke-width="1.2" stroke="{tc}"', 1).replace(f'stroke="{DARK}" ', '', 1)
+    elif o["icons"] == "two":
         k = a / 72; s += icon(ic[0], ax + 6 * k, ay + 8 * k, 42 * k) + icon(ic[1], ax + 30 * k, ay + 38 * k, 36 * k)
     else:
         sz = a * .7; s += icon(ic[0], ax + (a - sz) / 2, ay + (ah - sz) / 2, sz)
@@ -63,7 +69,10 @@ def card(x, y, c, o):
         s += f'<line x1="{bx:.2f}" y1="{ry:.2f}" x2="{bx + bw:.2f}" y2="{ry:.2f}" stroke="#f0ebe3" stroke-width="1"/>'
         by = ry + o["rowh"] / 2 + o["fs"] * .36
         s += T(bx, by, it, o["fs"], INK, "Hind", o["fw"])
-        if o["tap"] == "sheet": s += T(bx + bw, by, "\u203a", 14, "#aaaaaa", "Hind", 400, "end")
+        if o.get("chips"):
+            pl = PLAN_OF.get(it, "Essentials"); cw = 6 + len(pl) * 4.6; pc = PLAN_COL[pl]
+            s += rect(bx + bw - cw, by - 9.5, cw, 12, pc[1], "none", 6) + T(bx + bw - cw / 2, by - 1, pl, 7.6, pc[0], "Hind", 600, "middle")
+        elif o["tap"] == "sheet": s += T(bx + bw, by, "\u203a", 14, "#aaaaaa", "Hind", 400, "end")
         ry += o["rowh"]
     return s
 def head(y, o):
@@ -75,7 +84,15 @@ def section(o, y0=0):
     s = head(y0, o); y = y0 + 32; cs = cats(o)
     for i, c in enumerate(cs):
         x = 16 + (i - o["scroll"]) * (CW + GAP)
-        if -CW < x < 393: s += card(x, y, c, o)
+        if -CW < x < 393:
+            if o.get("motion") and i == 1:
+                s += f'<g opacity=".45" transform="translate(0,14)">{card(x, y, c, o)}</g>'
+                for k in range(3): s += f'<line x1="{x + 30 + k * 40}" y1="{y + card_h(o) + 22}" x2="{x + 30 + k * 40}" y2="{y + card_h(o) + 8}" stroke="{LAGOON}" stroke-width="1.4" stroke-dasharray="2 3"/>'
+            else: s += card(x, y, c, o)
+    if o.get("motion"):
+        cy = y + card_h(o) / 2
+        s += f'<circle cx="372" cy="{cy}" r="13" fill="#FFFFFF" stroke="{TERRA}" stroke-width="1.4"/>' + T(372, cy + 6, "\u203a", 20, TERRA, "Hind", 600, "middle")
+        s += f'<path d="M352 {cy} h-10 M352 {cy - 5} h-6 M352 {cy + 5} h-6" stroke="{TERRA}" stroke-width="1.2" stroke-linecap="round" opacity=".6"/>'
     y += card_h(o) + 12
     xs = 196.5 - (14 + 3 * 5 + 3 * 4) / 2
     for i in range(4):
@@ -105,6 +122,10 @@ def mock(over=None, note="", close="card", sheet_on=False):
         g2 = sheet(0, "Furnace", "Fall Furnace Tune-Up, and filters", "changed during your visits.")
         s += t(120, yc + 8, "Tap Furnace and this sheet slides up:", 8, MUTE, anchor="middle"); yc += 14
         Z3 = .58; s += f'<g transform="translate({120 - 393 * Z3 / 2:.2f},{yc:.2f}) scale({Z3})">{g2}</g>'; yc += 150 * Z3
+    elif callable(close):
+        g, gw, gh, cap = close(o)
+        if cap: s += t(120, yc + 8, cap, 7.6, MUTE, anchor="middle"); yc += 13
+        Z = min(224 / gw, (256 - yc) / gh); s += f'<g transform="translate({120 - gw * Z / 2:.2f},{yc:.2f}) scale({Z:.4f})">{g}</g>'; yc += gh * Z
     elif close == "head":
         # crop of the live section at full close-up size (nested svg viewBox = the part that changes)
         body2, h2 = section(o, 0)
@@ -115,6 +136,73 @@ def mock(over=None, note="", close="card", sheet_on=False):
         yn = max(yc + 18, 262)
         s += rect(12, yn - 10, 3, 24, TERRA) + t(20, yn, note[0], 8.5, INK, "hind", 600) + (t(20, yn + 12, note[1], 7.8, MUTE) if len(note) > 1 else "")
     return screen(s)
+# ---- Oct 17 2026 21:28 ICT add-on (Max: "keep the sizing ... doesn't look fresh ... some clickable feature where i get more info") ----
+# Real data only, from smart-upkeep d49e1d8 app.js: WW_WI (full service lists + plan per service, visits per plan),
+# home() svc list (one-line description + tier) and TIER_NOTE. Anything not in the source is labelled "example".
+WW_WI = {"Heating & Cooling": [("Fall Furnace Tune-Up", "Essentials"), ("Spring AC Tune-Up", "Essentials"), ("Furnace Filters Changed During Visits", "Essentials"), ("Standby Generator Service (If You Have One)", "Complete")],
+         "Water": [("Water Heater Flush or Tankless Descale", "Essentials"), ("Water Softener Salt Top-Off", "Plus"), ("Fridge Water Filter Changes", "Plus")],
+         "Air & Safety": [("Dryer Vent Cleaning", "Essentials"), ("Smoke and CO Detector Checks", "Essentials"), ("GFCI and Shut-Off Valve Checks", "Plus")],
+         "Outside": [("Gutter and Downspout Cleaning", "Plus"), ("Garage Door Lube and Weatherproofing", "Plus"), ("Roof and Flashing Inspection", "Complete"), ("Ice Dam Clearing After Storms", "Complete"), ("Pre and Post Storm Checks", "Complete")]}
+VISITS = "Visits: 2 a year (Essentials), 4 (Plus), 12 (Complete)"
+SVC = {"Furnace": ("Fall tune-up on every furnace, with filter changes during visits.", "Every Plan")}
+PLAN_OF = {"Furnace": "Essentials", "AC": "Essentials", "Furnace Filters": "Essentials", "Water Heater": "Essentials", "Mold and Moisture Scan": "Essentials",
+           "Moisture Readings": "Essentials", "Smoke/CO": "Essentials", "Dryer Vent": "Essentials", "Gutters": "Plus", "Roof": "Complete", "Flashing": "Complete"}
+PLAN_COL = {"Essentials": ("#0B6E4F", "#EAF3EE"), "Plus": ("#05668D", "#EDF4F7"), "Complete": ("#A8431F", "#FAF3EB")}
+def wrap(s, n):
+    out, cur = [], ""
+    for w in s.split():
+        if len(cur) + len(w) + 1 > n and cur: out.append(cur); cur = w
+        else: cur = (cur + " " + w).strip()
+    return out + [cur]
+def c_flip(o):
+    nm = "Heating & Cooling"; tc, bg = TINT["t"]; h = card_h(o)
+    s = rect(.5, 2.5, CW, h, "#0A0A0A", "none", 14, 1, 'opacity=".05"') + rect(0, 0, CW, h, bg, "#e5e0d8", 14, 1)
+    s += T(12, 20, nm, 15, tc, "Khand", 700) + T(CW - 12, 19, "\u21ba Flip back", 9, MUTE, "Hind", 600, "end")
+    y = 34
+    for it, pl in WW_WI[nm]:
+        s += T(12, y, ("Generator Service (If You Have One)" if it.startswith("Standby") else it), 10.4, INK, "Hind", 500) + T(CW - 12, y, pl, 8.6, PLAN_COL[pl][0], "Hind", 600, "end"); y += 15
+    s += f'<line x1="12" y1="{y - 6}" x2="{CW - 12}" y2="{y - 6}" stroke="#e5d8c8"/>' + T(12, y + 7, VISITS, 9.4, MUTE, "Hind", 500)
+    return s, CW, h + 4, "Tap the card: it flips in place, same size"
+def c_acc(o):
+    nm, ic, items, tint = cats(o)[0]; h0 = card_h(o); txt, tag = SVC["Furnace"]; extra = 50; h = h0 + extra
+    s = rect(.5, 2.5, CW, h, "#0A0A0A", "none", 14, 1, 'opacity=".05"') + rect(0, 0, CW, h, "#FFFFFF", "#e5e0d8", 14, 1)
+    g = card(0, 0, (nm, ic, items[:1], tint), dict(o, tap="none")); s += g.split("</text>", 1)[0].split('<rect', 3)[0]
+    s += card(0, 0, (nm, ic, [items[0]], tint), dict(o, tap="none"))[len(rect(.5, 2.5, CW, h0, "#0A0A0A", "none", 14, 1, 'opacity=".05"') + rect(0, 0, CW, h0, "#FFFFFF", "#e5e0d8", 14, 1)):]
+    bx = 9.6 + o["art"] + 9.6; y = 33 + o["rowh"]
+    for i, l in enumerate(wrap(txt, 34)): s += T(bx, y + 12 + i * 12, l, 9.8, "#333333", "Hind", 400)
+    s += rect(bx, y + 34, 58, 13, PLAN_COL["Essentials"][1], "none", 6.5) + T(bx + 29, y + 43.5, tag, 8.6, PLAN_COL["Essentials"][0], "Hind", 600, "middle")
+    y += extra
+    for it in items[1:]:
+        s += f'<line x1="{bx}" y1="{y}" x2="{CW - 9.6}" y2="{y}" stroke="#f0ebe3"/>' + T(bx, y + o["rowh"] / 2 + 4.7, it, 13.1, INK) + T(CW - 9.6, y + o["rowh"] / 2 + 4.7, "+", 13, "#aaaaaa", "Hind", 400, "end"); y += o["rowh"]
+    s = s.replace(T(bx, 33 + o["rowh"] / 2 + 4.7, "Furnace", 13.1, INK), T(bx, 33 + o["rowh"] / 2 + 4.7, "Furnace", 13.1, INK) + T(CW - 9.6, 33 + o["rowh"] / 2 + 4.7, "\u2212", 13, TERRA, "Hind", 600, "end"))
+    return s, CW, h + 4, "Tap Furnace: the row opens inside the card"
+def c_sheet(o):
+    txt, tag = SVC["Furnace"]; H = 222
+    s = rect(0, 0, 393, H, "#FFFFFF", "#e5e0d8", 16) + rect(176, 7, 40, 4, "#D6D0C6", "none", 2) + T(377, 30, "\u00d7", 22, INK, "Hind", 400, "end")
+    s += rect(16, 20, 104, 78, "#F3EFE8", "none", 10) + icon("furnace", 44, 28, 48) + rect(22, 82, 60, 12, "#FFFFFF", "none", 6) + T(52, 91, "Example photo", 8, MUTE, "Hind", 600, "middle")
+    s += T(132, 44, "Furnace", 26, INK, "Khand", 700) + rect(132, 54, 72, 18, PLAN_COL["Essentials"][1], "none", 9) + T(168, 67, tag, 11, PLAN_COL["Essentials"][0], "Hind", 600, "middle")
+    rows = [("Tech checks", txt), ("How often", "Fall Furnace Tune-Up, every fall"), ("Which plan", "Essentials, Plus and Complete")]
+    y = 114
+    for k, v in rows:
+        s += T(16, y, k.upper(), 10.5, MUTE, "Hind", 700, extra='letter-spacing=".8"')
+        for i, l in enumerate(wrap(v, 38)): s += T(118, y + i * 16, l, 13.5, "#333333", "Hind", 400)
+        y += 16 * len(wrap(v, 38)) + 6
+    s += rect(16, H - 42, 361, 32, TERRA, "none", 8) + T(196.5, H - 21, "Free Quote in Minutes", 14, "#FFFFFF", "Hind", 600, "middle")
+    return s, 393, H, "Tap Furnace: a sheet slides up from the bottom"
+def c_pop(o):
+    txt, tag = SVC["Furnace"]; g = card(0, 30, cats(o)[0], o); bx = 9.6 + o["art"] + 9.6
+    s = g + f'<path d="M{bx + 20} {30 + 33 + 6} l6 -8 l6 8 z" fill="{INK}"/>'
+    s = card(0, 62, cats(o)[0], o); py = 62 + 33 + o["rowh"] - 2
+    s += rect(bx - 30, 2, 200, 58, INK, "none", 8) + f'<path d="M{bx + 14} 60 l6 7 l6 -7 z" fill="{INK}"/>'
+    for i, l in enumerate(wrap(txt, 36)): s += T(bx - 22, 18 + i * 13, l, 10, "#FFFFFF", "Hind", 400)
+    s += T(bx - 22, 52, tag, 9, "#F2C14E", "Hind", 600)
+    return s, CW, 62 + card_h(o) + 4, "Tap Furnace: a small tip pops up above it"
+def P2(g, el, sentence, a, b):
+    """Max's own caption form for this round: 'Website: What We Take Care Of, <element>: <sentence>'."""
+    _n[0] += 1; k = f"{_n[0]:02d}_"; ask = f"Website: What We Take Care Of, {el}: {sentence}"
+    bad = [x for x in caption_rule.check(ask) if not x.startswith("vague location")]; assert not bad, (ask, bad)  # 'Website' label is Max's explicit wording (21:28 ICT)
+    for x in (a, b): assert len(x[1]) <= 34 and len(x[2]) <= 62, x[:3]
+    add(g, g, O(k + a[0], a[1], a[2], a[3], a[4]), O(k + b[0], b[1], b[2], b[3], b[4]), ask)
 pairs, O, add = deck("wwcp_", "UpKeep")
 _n = [0]
 def P(g, el, sentence, a, b):
@@ -153,17 +241,34 @@ P("Line Length", "Long service name", "keep 'Mold and Moisture Scan' in full or 
 P("Section Heading", "See All link", "keep See All beside the section heading or move it under the cards?",
   ("right", "See All Beside (As Now)", "As live: small caps at the right.", "calm", mock(close="head", note=("See All beside the heading, as live now", "Heading and link on one line"))),
   ("under", "See All Under The Cards", "Heading alone; See All after the dots.", "practical", mock({"seeall": "under"}, close="head", note=("Heading alone", "See All sits under the dots"))))
-assert len(pairs) == 10, len(pairs)
+P2("Card Tap", "card tap", "should tapping a card flip it to show its full service list and visit frequency, or expand the card in place like an accordion?",
+  ("flip", "Card Flips Over", "Back shows every service, its plan and visits a year.", "playful", mock(close=c_flip, note=("Same card size; tap flips it", "Back lists all four Heating & Cooling services"))),
+  ("accordion", "Card Opens Like An Accordion", "Tap a row; it opens in place with what it covers.", "practical", mock(close=c_acc, note=("Card grows while a row is open", "Text from the site's Furnace description"))))
+P2("More Info", "more-info sheet", "should tapping a service open a bottom sheet with a photo, what the tech checks, how often and which plan includes it, or a small popover tip?",
+  ("sheet", "Bottom Sheet With Details", "Photo (example), checks, how often and plan.", "practical", mock(close=c_sheet, note=("Bottom sheet, full width", "Photo shown is an example placeholder"))),
+  ("tip", "Small Popover Tip", "One line and the plan, right over the row.", "calm", mock(close=c_pop, note=("Small tip above the row", "Closes on the next tap"))))
+P2("Card Face", "fresh card face", "should each card get a soft tinted background, a fine line icon and a subtle hover lift, or stay the current flat white card?",
+  ("flat", "Flat White Card (As Now)", "As live: white card, two filled icons.", "calm", mock(note=("Flat white card, as live now", "Same size: 282px wide on a phone"))),
+  ("fresh", "Soft Tint, Line Icon, Lift", "Tinted card, thin line icon, lifts on hover.", "playful", mock({"face": "fresh"}, note=("Soft tint and fine line icon", "Same size; lifts a little on hover"))))
+P2("Plan Tags", "plan tags", "should each service row carry a small Essentials, Plus or Complete chip, or stay without chips?",
+  ("nochips", "No Chips (As Now)", "As live: names with a small arrow.", "calm", mock({"scroll": 3}, note=("No chips, as live now", "Shown swiped to Outside"))),
+  ("chips", "Essentials / Plus / Complete Chips", "Each row shows the first plan that includes it.", "practical", mock({"scroll": 3, "chips": True}, note=("Plan chip on every row", "Plans as on the site's What's Included list"))))
+P2("Motion", "motion", "should cards fade up gently as they scroll in, with an arrow nudge hint on phone, or stay static?",
+  ("static", "Static (As Now)", "As live: cards sit still; dots show more.", "calm", mock(note=("Static, as live now", "Dots under the cards hint at more"))),
+  ("motion", "Fade-Up And Arrow Nudge", "Cards rise in on scroll; arrow nudges once.", "playful", mock({"motion": True}, note=("Cards fade up as they scroll in", "Arrow nudges once on phone, then stops"))))
+assert len(pairs) == 15, len(pairs)
 txt = json.dumps(pairs).lower(); assert "thai" not in txt and "thailand" not in txt, "R110"
 assert not re.search(r"[\U0001F300-\U0001FAFF\u2600-\u27BF]", json.dumps(pairs, ensure_ascii=False)), "emoji"
+import draft_svg, trim_deck; draft_svg.MAX_PAIRS = trim_deck.MAX_PAIRS = 15  # Max 21:28 ICT explicitly asked for 15 picks on this deck (one-deck override of R86)
 publish(DID, NAME, "UpKeep", pairs, {"brands": [
         "Compact polish of the restored What We Take Care Of section (smart-upkeep d49e1d8, the swipeable category carousel that was live before 8712223). Option A is always the live compact section; Option B is one small change. No new directions (Max via UpKeep, Oct 17 2026 21:09 ICT).",
         "Smart Upkeep brand: white and warm cream, terracotta, lagoon and jungle accents, Khand and Hind, light mode only."],
         "submit_agent": "upkeep", "submit_to": "UpKeep Agent f0d420ad-d37e-44d3-be6f-053da2b6e24d", "topic": "what-we-take-care-of-compact-polish",
-        "deck_size": 10, "board": "upkeep", "audience": "Max", "requested": True, "caption_rule": "R105",
+        "deck_size": 15, "board": "upkeep", "audience": "Max", "requested": True, "caption_rule": "R105",
         "request": "Max via UpKeep, Oct 17 2026 21:09 ICT: no new directions; the condensed What We Take Care Of section from before the last applied round, refined a little.",
+        "update_2026_10_17_2128": "Max 21:28 ICT: keep the section size; make it look fresher and add a clickable more-info feature. Picks 11-15 added (card tap, more-info sheet, fresh card face, plan tags, motion). Content from app.js WW_WI, home() svc and TIER_NOTE; the sheet photo is an example.",
         "follow_on_of": "upkeep-what-we-take-care-of-grid-and-home-map-deck",
-        "sources": {"content": "tools/build_upkeep_wwtco_compact.py", "site": "WebermanApps/smart-upkeep d49e1d8 (app.js WW_CATS + wwCarousel, styles.css .ca-*)"}}, seed=10173, n=10)
+        "sources": {"content": "tools/build_upkeep_wwtco_compact.py", "site": "WebermanApps/smart-upkeep d49e1d8 (app.js WW_CATS + wwCarousel, styles.css .ca-*)"}}, seed=10173, n=15)
 order = [p["ask"] for p in pairs]; dj = json.load(open(f"decks/{DID}.json")); dj["pairs"].sort(key=lambda p: order.index(p["ask"]))
 for i, p in enumerate(dj["pairs"], 1): p["id"] = f"{DID}-{i:02d}"
 json.dump(dj, open(f"decks/{DID}.json", "w"), indent=1, ensure_ascii=False)
