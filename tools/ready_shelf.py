@@ -102,7 +102,8 @@ def build(topic, shelf_path, agent, name=None, slot=None, source=None, refill=Fa
         "blurb": f"{N} cards, ready now" + (f", {len(carried)} reworded from last time" if carried else "")}
     if slot is None: sh["decks"].append(ent)
     else: sh["decks"].insert(slot, ent)
-    sh["decks"] = sh["decks"][:int(sh.get("cap") or 10)]; sh["cap"] = int(sh.get("cap") or 10)  # R86: shelf cap 10 (was 5); sh["updated"] = now(); W(shelf_path, sh)
+    sh["decks"] = sh["decks"][:int(sh.get("cap") or 10)]; sh["cap"] = int(sh.get("cap") or 10)  # R86: shelf cap 10 (was 5)
+    sh["updated"] = now(); W(shelf_path, sh)  # Oct 17: R86 edit had commented this out, so build/refill never saved the shelf
     print(f"built {did} ({N} cards) -> {url}"); return ent
 
 NAME = None
