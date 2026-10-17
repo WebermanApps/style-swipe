@@ -1,0 +1,590 @@
+{
+ "date": "wellnest-teas-calm",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Calm Tea Blend Deck",
+ "generated_at": "2026-10-17T20:31:44+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "confirm": 10,
+  "swap": 10
+ },
+ "groups": {
+  "Name line": 1,
+  "Green leaf": 1,
+  "Cup colour": 1,
+  "Caffeine": 1,
+  "Accent herb": 1,
+  "Base flower": 1,
+  "Flavour direction": 1,
+  "Blend ratio": 1,
+  "Wash colour": 1,
+  "Wash height": 1
+ },
+ "apps": {
+  "WellNest": 10
+ },
+ "freshness": {
+  "option_slots": 20,
+  "never_shown_before": 20,
+  "share": 1.0
+ },
+ "warnings": [],
+ "brands": [
+  "Calm: kraft pouch, cream label, muted lavender wash. Settled from your swipes: Calm Line, a slow evening cup to settle down.",
+  "WellNest Teas: Three Projects, Project 1: Three New Teas; R107 refresh (Max via WellNest, Oct 17 2026 20:04 ICT), built on the mockups (Max 20:09 ICT)."
+ ],
+ "submit_agent": "wellnest",
+ "submit_to": "WellNest Agent e2806a26-3867-4986-a7ef-46c03abc7f35",
+ "deck_size": 10,
+ "row": "nozomi",
+ "audience": "Max",
+ "project": "Project 1: Three New Teas",
+ "tea": "Calm Tea",
+ "caption_rule": "R105",
+ "refresh": "R107",
+ "format_note": "Every pick: A = Our Pick (draft, confirm), B = a sensible swap from the source. From Your Swipes items are settled and not asked.",
+ "flags_unconfirmed": [],
+ "sources": {
+  "content": "tools/wn_teas_content.py",
+  "images": "img/wn-teas-calm/ (A = WellNest mockup, B = edited by tools/wn_teas_img.py; ingredient photos img/wn-tea/credits.json)",
+  "brief": "/workspace/wellnest/teas: WellNest Teas - Three Projects lookbook, Roselle Refresh Project Brief"
+ },
+ "pairs": [
+  {
+   "group": "Base flower",
+   "category": "Calm Tea",
+   "app": "WellNest",
+   "ask": "Calm Tea: Base flower, keep chrysanthemum as the 50% base or swap it for butterfly pea?",
+   "optionA": {
+    "id": "wnt3calm_01a",
+    "label": "Chrysanthemum 50%",
+    "desc": "Soft, floral, honey-like cup.",
+    "tags": [
+     "calm",
+     "base flower",
+     "confirm"
+    ],
+    "feeling": "confirm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">CALM TEA</text><rect x=\"171.2\" y=\"6\" width=\"56.8\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"199.6\" y=\"15.5\" font-size=\"7.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">OUR PICK</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-calm/01-a.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Chrysanthemum 50%</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Soft, floral, honey-like cup.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-calm/01-a.jpg"
+   },
+   "optionB": {
+    "id": "wnt3calm_01b",
+    "label": "Butterfly Pea 50%",
+    "desc": "Earthy and mild, turns the cup blue.",
+    "tags": [
+     "calm",
+     "base flower",
+     "swap"
+    ],
+    "feeling": "swap",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">CALM TEA</text><rect x=\"193.6\" y=\"6\" width=\"34.4\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"210.8\" y=\"15.5\" font-size=\"7.5\" fill=\"#8A5A2B\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">SWAP</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-calm/01-b.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Butterfly Pea 50%</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Earthy and mild, turns the cup blue.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-calm/01-b.jpg"
+   },
+   "purpose": "confirm-or-swap",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "draft_status": "Our Pick, Swipe To Confirm",
+   "id": "wellnest-teas-calm-01",
+   "repeat": false
+  },
+  {
+   "group": "Green leaf",
+   "category": "Calm Tea",
+   "app": "WellNest",
+   "ask": "Calm Tea: Green leaf, keep mulberry leaf as the 35% leaf or swap it for pandan leaf?",
+   "optionA": {
+    "id": "wnt3calm_02a",
+    "label": "Mulberry Leaf 35%",
+    "desc": "Smooth, green, gently grassy.",
+    "tags": [
+     "calm",
+     "green leaf",
+     "confirm"
+    ],
+    "feeling": "confirm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">CALM TEA</text><rect x=\"171.2\" y=\"6\" width=\"56.8\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"199.6\" y=\"15.5\" font-size=\"7.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">OUR PICK</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-calm/02-a.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Mulberry Leaf 35%</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Smooth, green, gently grassy.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-calm/02-a.jpg"
+   },
+   "optionB": {
+    "id": "wnt3calm_02b",
+    "label": "Pandan Leaf 35%",
+    "desc": "Sweet, vanilla-like scent.",
+    "tags": [
+     "calm",
+     "green leaf",
+     "swap"
+    ],
+    "feeling": "swap",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">CALM TEA</text><rect x=\"193.6\" y=\"6\" width=\"34.4\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"210.8\" y=\"15.5\" font-size=\"7.5\" fill=\"#8A5A2B\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">SWAP</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-calm/02-b.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Pandan Leaf 35%</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Sweet, vanilla-like scent.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-calm/02-b.jpg"
+   },
+   "purpose": "confirm-or-swap",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "draft_status": "Our Pick, Swipe To Confirm",
+   "id": "wellnest-teas-calm-02",
+   "repeat": false
+  },
+  {
+   "group": "Accent herb",
+   "category": "Calm Tea",
+   "app": "WellNest",
+   "ask": "Calm Tea: Accent herb, keep Thai basil as the 15% accent or swap it for lemongrass?",
+   "optionA": {
+    "id": "wnt3calm_03a",
+    "label": "Thai Basil 15%",
+    "desc": "Soft anise, herbal warmth.",
+    "tags": [
+     "calm",
+     "accent herb",
+     "confirm"
+    ],
+    "feeling": "confirm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">CALM TEA</text><rect x=\"171.2\" y=\"6\" width=\"56.8\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"199.6\" y=\"15.5\" font-size=\"7.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">OUR PICK</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-calm/03-a.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Thai Basil 15%</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Soft anise, herbal warmth.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-calm/03-a.jpg"
+   },
+   "optionB": {
+    "id": "wnt3calm_03b",
+    "label": "Lemongrass 15%",
+    "desc": "Light citrus lift on top.",
+    "tags": [
+     "calm",
+     "accent herb",
+     "swap"
+    ],
+    "feeling": "swap",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">CALM TEA</text><rect x=\"193.6\" y=\"6\" width=\"34.4\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"210.8\" y=\"15.5\" font-size=\"7.5\" fill=\"#8A5A2B\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">SWAP</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-calm/03-b.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Lemongrass 15%</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Light citrus lift on top.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-calm/03-b.jpg"
+   },
+   "purpose": "confirm-or-swap",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "draft_status": "Our Pick, Swipe To Confirm",
+   "id": "wellnest-teas-calm-03",
+   "repeat": false
+  },
+  {
+   "group": "Blend ratio",
+   "category": "Calm Tea",
+   "app": "WellNest",
+   "ask": "Calm Tea: Blend ratio, keep 50 / 35 / 15 or try an even flower and leaf split of 40 / 40 / 20?",
+   "optionA": {
+    "id": "wnt3calm_04a",
+    "label": "50 / 35 / 15",
+    "desc": "Flower first, as drafted. Rough starting point.",
+    "tags": [
+     "calm",
+     "blend ratio",
+     "confirm"
+    ],
+    "feeling": "confirm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">CALM TEA</text><rect x=\"171.2\" y=\"6\" width=\"56.8\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"199.6\" y=\"15.5\" font-size=\"7.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">OUR PICK</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-calm/04-a.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >50 / 35 / 15</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Flower first, as drafted. Rough starting point.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-calm/04-a.jpg"
+   },
+   "optionB": {
+    "id": "wnt3calm_04b",
+    "label": "40 / 40 / 20",
+    "desc": "Even flower and leaf, a little more basil.",
+    "tags": [
+     "calm",
+     "blend ratio",
+     "swap"
+    ],
+    "feeling": "swap",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">CALM TEA</text><rect x=\"193.6\" y=\"6\" width=\"34.4\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"210.8\" y=\"15.5\" font-size=\"7.5\" fill=\"#8A5A2B\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">SWAP</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-calm/04-b.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >40 / 40 / 20</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Even flower and leaf, a little more basil.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-calm/04-b.jpg"
+   },
+   "purpose": "confirm-or-swap",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "draft_status": "Our Pick, Swipe To Confirm",
+   "id": "wellnest-teas-calm-04",
+   "repeat": false
+  },
+  {
+   "group": "Caffeine",
+   "category": "Calm Tea",
+   "app": "WellNest",
+   "ask": "Calm Tea: Caffeine, keep it fully herbal with no tea leaf or add a little northern Thai oolong?",
+   "optionA": {
+    "id": "wnt3calm_05a",
+    "label": "Fully Herbal",
+    "desc": "No tea leaf, fine late at night.",
+    "tags": [
+     "calm",
+     "caffeine",
+     "confirm"
+    ],
+    "feeling": "confirm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">CALM TEA</text><rect x=\"171.2\" y=\"6\" width=\"56.8\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"199.6\" y=\"15.5\" font-size=\"7.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">OUR PICK</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-calm/05-a.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Fully Herbal</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >No tea leaf, fine late at night.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-calm/05-a.jpg"
+   },
+   "optionB": {
+    "id": "wnt3calm_05b",
+    "label": "A Little Oolong",
+    "desc": "A touch of local oolong for depth, so some caffeine.",
+    "tags": [
+     "calm",
+     "caffeine",
+     "swap"
+    ],
+    "feeling": "swap",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">CALM TEA</text><rect x=\"193.6\" y=\"6\" width=\"34.4\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"210.8\" y=\"15.5\" font-size=\"7.5\" fill=\"#8A5A2B\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">SWAP</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-calm/05-b.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >A Little Oolong</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >A touch of local oolong for depth, so some</text><text x=\"12\" y=\"270\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >caffeine.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-calm/05-b.jpg"
+   },
+   "purpose": "confirm-or-swap",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "draft_status": "Our Pick, Swipe To Confirm",
+   "id": "wellnest-teas-calm-05",
+   "repeat": false
+  },
+  {
+   "group": "Cup colour",
+   "category": "Calm Tea",
+   "app": "WellNest",
+   "ask": "Calm Tea: Cup colour, keep a pale gold cup or go for a blue cup?",
+   "optionA": {
+    "id": "wnt3calm_06a",
+    "label": "Pale Gold Cup",
+    "desc": "Quiet, classic herbal colour.",
+    "tags": [
+     "calm",
+     "cup colour",
+     "confirm"
+    ],
+    "feeling": "confirm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">CALM TEA</text><rect x=\"171.2\" y=\"6\" width=\"56.8\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"199.6\" y=\"15.5\" font-size=\"7.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">OUR PICK</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-calm/06-a.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Pale Gold Cup</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Quiet, classic herbal colour.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-calm/06-a.jpg"
+   },
+   "optionB": {
+    "id": "wnt3calm_06b",
+    "label": "Blue Cup",
+    "desc": "Turns purple with lime; needs butterfly pea in the blend.",
+    "tags": [
+     "calm",
+     "cup colour",
+     "swap"
+    ],
+    "feeling": "swap",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">CALM TEA</text><rect x=\"193.6\" y=\"6\" width=\"34.4\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"210.8\" y=\"15.5\" font-size=\"7.5\" fill=\"#8A5A2B\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">SWAP</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-calm/06-b.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Blue Cup</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Turns purple with lime; needs butterfly pea in the</text><text x=\"12\" y=\"270\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >blend.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-calm/06-b.jpg"
+   },
+   "purpose": "confirm-or-swap",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "draft_status": "Our Pick, Swipe To Confirm",
+   "id": "wellnest-teas-calm-06",
+   "repeat": false
+  },
+  {
+   "group": "Wash colour",
+   "category": "Calm Tea",
+   "app": "WellNest",
+   "ask": "Calm Tea: Wash colour, keep the muted lavender wash or take it a step deeper to violet?",
+   "optionA": {
+    "id": "wnt3calm_07a",
+    "label": "Muted Lavender",
+    "desc": "Soft evening colour, as drafted.",
+    "tags": [
+     "calm",
+     "wash colour",
+     "confirm"
+    ],
+    "feeling": "confirm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">CALM TEA</text><rect x=\"171.2\" y=\"6\" width=\"56.8\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"199.6\" y=\"15.5\" font-size=\"7.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">OUR PICK</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-calm/07-a.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Muted Lavender</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Soft evening colour, as drafted.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-calm/07-a.jpg"
+   },
+   "optionB": {
+    "id": "wnt3calm_07b",
+    "label": "Deeper Violet",
+    "desc": "Same family, a stronger evening colour.",
+    "tags": [
+     "calm",
+     "wash colour",
+     "swap"
+    ],
+    "feeling": "swap",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">CALM TEA</text><rect x=\"193.6\" y=\"6\" width=\"34.4\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"210.8\" y=\"15.5\" font-size=\"7.5\" fill=\"#8A5A2B\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">SWAP</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-calm/07-b.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Deeper Violet</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Same family, a stronger evening colour.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-calm/07-b.jpg"
+   },
+   "purpose": "confirm-or-swap",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "draft_status": "Our Pick, Swipe To Confirm",
+   "id": "wellnest-teas-calm-07",
+   "repeat": false
+  },
+  {
+   "group": "Wash height",
+   "category": "Calm Tea",
+   "app": "WellNest",
+   "ask": "Calm Tea: Wash height, keep the wash at today's height or lower it for more cream on the label?",
+   "optionA": {
+    "id": "wnt3calm_08a",
+    "label": "Drafted Height",
+    "desc": "Wash fills the lower half of the label.",
+    "tags": [
+     "calm",
+     "wash height",
+     "confirm"
+    ],
+    "feeling": "confirm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">CALM TEA</text><rect x=\"171.2\" y=\"6\" width=\"56.8\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"199.6\" y=\"15.5\" font-size=\"7.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">OUR PICK</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-calm/08-a.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Drafted Height</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Wash fills the lower half of the label.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-calm/08-a.jpg"
+   },
+   "optionB": {
+    "id": "wnt3calm_08b",
+    "label": "Lower Wash",
+    "desc": "A shorter wash, more cream, quieter label.",
+    "tags": [
+     "calm",
+     "wash height",
+     "swap"
+    ],
+    "feeling": "swap",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">CALM TEA</text><rect x=\"193.6\" y=\"6\" width=\"34.4\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"210.8\" y=\"15.5\" font-size=\"7.5\" fill=\"#8A5A2B\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">SWAP</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-calm/08-b.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Lower Wash</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >A shorter wash, more cream, quieter label.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-calm/08-b.jpg"
+   },
+   "purpose": "confirm-or-swap",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "draft_status": "Our Pick, Swipe To Confirm",
+   "id": "wellnest-teas-calm-08",
+   "repeat": false
+  },
+  {
+   "group": "Flavour direction",
+   "category": "Calm Tea",
+   "app": "WellNest",
+   "ask": "Calm Tea: Flavour direction, keep a gentle anise finish or lean the finish toward light citrus?",
+   "optionA": {
+    "id": "wnt3calm_09a",
+    "label": "Anise Finish",
+    "desc": "Soft, floral, honey-like, smooth green middle, gentle anise finish.",
+    "tags": [
+     "calm",
+     "flavour direction",
+     "confirm"
+    ],
+    "feeling": "confirm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">CALM TEA</text><rect x=\"171.2\" y=\"6\" width=\"56.8\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"199.6\" y=\"15.5\" font-size=\"7.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">OUR PICK</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-calm/09-a.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Anise Finish</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Soft, floral, honey-like, smooth green middle,</text><text x=\"12\" y=\"270\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >gentle anise finish.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-calm/09-a.jpg"
+   },
+   "optionB": {
+    "id": "wnt3calm_09b",
+    "label": "Citrus Finish",
+    "desc": "Same floral, honey-like cup with a light citrus finish.",
+    "tags": [
+     "calm",
+     "flavour direction",
+     "swap"
+    ],
+    "feeling": "swap",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">CALM TEA</text><rect x=\"193.6\" y=\"6\" width=\"34.4\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"210.8\" y=\"15.5\" font-size=\"7.5\" fill=\"#8A5A2B\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">SWAP</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-calm/09-b.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Citrus Finish</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Same floral, honey-like cup with a light citrus</text><text x=\"12\" y=\"270\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >finish.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-calm/09-b.jpg"
+   },
+   "purpose": "confirm-or-swap",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "draft_status": "Our Pick, Swipe To Confirm",
+   "id": "wellnest-teas-calm-09",
+   "repeat": false
+  },
+  {
+   "group": "Name line",
+   "category": "Calm Tea",
+   "app": "WellNest",
+   "ask": "Calm Tea: Name line, keep 'herbal tea' under CALM or say the moment with 'evening herbal tea'?",
+   "optionA": {
+    "id": "wnt3calm_10a",
+    "label": "CALM, herbal tea",
+    "desc": "Plain line under the name, as drafted.",
+    "tags": [
+     "calm",
+     "name line",
+     "confirm"
+    ],
+    "feeling": "confirm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">CALM TEA</text><rect x=\"171.2\" y=\"6\" width=\"56.8\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"199.6\" y=\"15.5\" font-size=\"7.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">OUR PICK</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-calm/10-a.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >CALM, herbal tea</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Plain line under the name, as drafted.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-calm/10-a.jpg"
+   },
+   "optionB": {
+    "id": "wnt3calm_10b",
+    "label": "CALM, evening herbal tea",
+    "desc": "Says when to drink it, from the Calm Line swipe.",
+    "tags": [
+     "calm",
+     "name line",
+     "swap"
+    ],
+    "feeling": "swap",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">CALM TEA</text><rect x=\"193.6\" y=\"6\" width=\"34.4\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"210.8\" y=\"15.5\" font-size=\"7.5\" fill=\"#8A5A2B\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">SWAP</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-calm/10-b.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >CALM, evening herbal tea</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Says when to drink it, from the Calm Line swipe.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-calm/10-b.jpg"
+   },
+   "purpose": "confirm-or-swap",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "draft_status": "Our Pick, Swipe To Confirm",
+   "id": "wellnest-teas-calm-10",
+   "repeat": false
+  }
+ ],
+ "share": true,
+ "notes": true
+}

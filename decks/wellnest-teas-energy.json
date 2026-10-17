@@ -1,0 +1,595 @@
+{
+ "date": "wellnest-teas-energy",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Energy Tea Blend Deck",
+ "generated_at": "2026-10-17T20:31:46+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "confirm": 10,
+  "swap": 10
+ },
+ "groups": {
+  "Flavour direction": 1,
+  "Moringa form": 1,
+  "Name": 2,
+  "Name line": 1,
+  "Ginger": 1,
+  "Wash shade": 1,
+  "Caffeine line": 1,
+  "When to drink": 1,
+  "Wash colour": 1
+ },
+ "apps": {
+  "WellNest": 10
+ },
+ "freshness": {
+  "option_slots": 20,
+  "never_shown_before": 20,
+  "share": 1.0
+ },
+ "warnings": [],
+ "brands": [
+  "Energy: kraft pouch, cream label, leaf green wash. Settled from your swipes: oolong 30, lemongrass 30, moringa 25, ginger 15; Gentle Lift strength.",
+  "WellNest Teas: Three Projects, Project 1: Three New Teas; R107 refresh (Max via WellNest, Oct 17 2026 20:04 ICT), built on the mockups (Max 20:09 ICT)."
+ ],
+ "submit_agent": "wellnest",
+ "submit_to": "WellNest Agent e2806a26-3867-4986-a7ef-46c03abc7f35",
+ "deck_size": 10,
+ "row": "nozomi",
+ "audience": "Max",
+ "project": "Project 1: Three New Teas",
+ "tea": "Energy Tea",
+ "caption_rule": "R105",
+ "refresh": "R107",
+ "format_note": "Every pick: A = Our Pick (draft, confirm), B = a sensible swap from the source. From Your Swipes items are settled and not asked.",
+ "flags_unconfirmed": [
+  "Name needs a Thai FDA label check before printing."
+ ],
+ "sources": {
+  "content": "tools/wn_teas_content.py",
+  "images": "img/wn-teas-energy/ (A = WellNest mockup, B = edited by tools/wn_teas_img.py; ingredient photos img/wn-tea/credits.json)",
+  "brief": "/workspace/wellnest/teas: WellNest Teas - Three Projects lookbook, Roselle Refresh Project Brief"
+ },
+ "pairs": [
+  {
+   "group": "Name",
+   "category": "Energy Tea",
+   "app": "WellNest",
+   "ask": "Energy Tea: Name, keep ENERGY on the pouch or use LIFT from your Gentle Lift swipe?",
+   "optionA": {
+    "id": "wnt3ener_01a",
+    "label": "ENERGY",
+    "desc": "As drafted.",
+    "tags": [
+     "energy",
+     "name",
+     "confirm"
+    ],
+    "feeling": "confirm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">ENERGY TEA</text><rect x=\"171.2\" y=\"6\" width=\"56.8\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"199.6\" y=\"15.5\" font-size=\"7.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">OUR PICK</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-energy/01-a.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >ENERGY</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >As drafted.</text><text x=\"12\" y=\"271\" font-size=\"8.5\" fill=\"#8A5A2B\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Check: Name needs a Thai FDA label check before</text><text x=\"12\" y=\"281\" font-size=\"8.5\" fill=\"#8A5A2B\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >printing.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-energy/01-a.jpg",
+    "flag": "Name needs a Thai FDA label check before printing."
+   },
+   "optionB": {
+    "id": "wnt3ener_01b",
+    "label": "LIFT",
+    "desc": "From the Gentle Lift strength you swiped.",
+    "tags": [
+     "energy",
+     "name",
+     "swap"
+    ],
+    "feeling": "swap",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">ENERGY TEA</text><rect x=\"193.6\" y=\"6\" width=\"34.4\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"210.8\" y=\"15.5\" font-size=\"7.5\" fill=\"#8A5A2B\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">SWAP</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-energy/01-b.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >LIFT</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >From the Gentle Lift strength you swiped.</text><text x=\"12\" y=\"271\" font-size=\"8.5\" fill=\"#8A5A2B\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Check: Name needs a Thai FDA label check before</text><text x=\"12\" y=\"281\" font-size=\"8.5\" fill=\"#8A5A2B\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >printing.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-energy/01-b.jpg",
+    "flag": "Name needs a Thai FDA label check before printing."
+   },
+   "purpose": "confirm-or-swap",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "draft_status": "Our Pick, Swipe To Confirm",
+   "id": "wellnest-teas-energy-01",
+   "repeat": false
+  },
+  {
+   "group": "Name",
+   "category": "Energy Tea",
+   "app": "WellNest",
+   "ask": "Energy Tea: Name, keep ENERGY on the pouch or name it MORNING for when it is drunk?",
+   "optionA": {
+    "id": "wnt3ener_02a",
+    "label": "ENERGY",
+    "desc": "As drafted.",
+    "tags": [
+     "energy",
+     "name",
+     "confirm"
+    ],
+    "feeling": "confirm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">ENERGY TEA</text><rect x=\"171.2\" y=\"6\" width=\"56.8\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"199.6\" y=\"15.5\" font-size=\"7.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">OUR PICK</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-energy/02-a.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >ENERGY</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >As drafted.</text><text x=\"12\" y=\"271\" font-size=\"8.5\" fill=\"#8A5A2B\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Check: Name needs a Thai FDA label check before</text><text x=\"12\" y=\"281\" font-size=\"8.5\" fill=\"#8A5A2B\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >printing.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-energy/02-a.jpg",
+    "flag": "Name needs a Thai FDA label check before printing."
+   },
+   "optionB": {
+    "id": "wnt3ener_02b",
+    "label": "MORNING",
+    "desc": "Named for the morning cup it is made for.",
+    "tags": [
+     "energy",
+     "name",
+     "swap"
+    ],
+    "feeling": "swap",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">ENERGY TEA</text><rect x=\"193.6\" y=\"6\" width=\"34.4\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"210.8\" y=\"15.5\" font-size=\"7.5\" fill=\"#8A5A2B\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">SWAP</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-energy/02-b.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >MORNING</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Named for the morning cup it is made for.</text><text x=\"12\" y=\"271\" font-size=\"8.5\" fill=\"#8A5A2B\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Check: Name needs a Thai FDA label check before</text><text x=\"12\" y=\"281\" font-size=\"8.5\" fill=\"#8A5A2B\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >printing.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-energy/02-b.jpg",
+    "flag": "Name needs a Thai FDA label check before printing."
+   },
+   "purpose": "confirm-or-swap",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "draft_status": "Our Pick, Swipe To Confirm",
+   "id": "wellnest-teas-energy-02",
+   "repeat": false
+  },
+  {
+   "group": "Name line",
+   "category": "Energy Tea",
+   "app": "WellNest",
+   "ask": "Energy Tea: Name line, keep 'oolong & herbs' under the name or say 'a gentle lift'?",
+   "optionA": {
+    "id": "wnt3ener_03a",
+    "label": "oolong & herbs",
+    "desc": "What is inside, as drafted.",
+    "tags": [
+     "energy",
+     "name line",
+     "confirm"
+    ],
+    "feeling": "confirm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">ENERGY TEA</text><rect x=\"171.2\" y=\"6\" width=\"56.8\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"199.6\" y=\"15.5\" font-size=\"7.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">OUR PICK</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-energy/03-a.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >oolong &amp; herbs</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >What is inside, as drafted.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-energy/03-a.jpg"
+   },
+   "optionB": {
+    "id": "wnt3ener_03b",
+    "label": "a gentle lift",
+    "desc": "Your Gentle Lift swipe, soft wording.",
+    "tags": [
+     "energy",
+     "name line",
+     "swap"
+    ],
+    "feeling": "swap",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">ENERGY TEA</text><rect x=\"193.6\" y=\"6\" width=\"34.4\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"210.8\" y=\"15.5\" font-size=\"7.5\" fill=\"#8A5A2B\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">SWAP</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-energy/03-b.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >a gentle lift</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Your Gentle Lift swipe, soft wording.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-energy/03-b.jpg"
+   },
+   "purpose": "confirm-or-swap",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "draft_status": "Our Pick, Swipe To Confirm",
+   "id": "wellnest-teas-energy-03",
+   "repeat": false
+  },
+  {
+   "group": "Moringa form",
+   "category": "Energy Tea",
+   "app": "WellNest",
+   "ask": "Energy Tea: Moringa form, keep moringa as dried leaf flakes or use small whole dried leaves?",
+   "optionA": {
+    "id": "wnt3ener_04a",
+    "label": "Dried Leaf Flakes",
+    "desc": "Moringa 25% as flakes, as drafted.",
+    "tags": [
+     "energy",
+     "moringa form",
+     "confirm"
+    ],
+    "feeling": "confirm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">ENERGY TEA</text><rect x=\"171.2\" y=\"6\" width=\"56.8\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"199.6\" y=\"15.5\" font-size=\"7.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">OUR PICK</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-energy/04-a.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Dried Leaf Flakes</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Moringa 25% as flakes, as drafted.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-energy/04-a.jpg"
+   },
+   "optionB": {
+    "id": "wnt3ener_04b",
+    "label": "Whole Dried Leaves",
+    "desc": "Same 25% moringa, small whole leaves.",
+    "tags": [
+     "energy",
+     "moringa form",
+     "swap"
+    ],
+    "feeling": "swap",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">ENERGY TEA</text><rect x=\"193.6\" y=\"6\" width=\"34.4\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"210.8\" y=\"15.5\" font-size=\"7.5\" fill=\"#8A5A2B\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">SWAP</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-energy/04-b.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Whole Dried Leaves</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Same 25% moringa, small whole leaves.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-energy/04-b.jpg"
+   },
+   "purpose": "confirm-or-swap",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "draft_status": "Our Pick, Swipe To Confirm",
+   "id": "wellnest-teas-energy-04",
+   "repeat": false
+  },
+  {
+   "group": "Ginger",
+   "category": "Energy Tea",
+   "app": "WellNest",
+   "ask": "Energy Tea: Ginger, keep ginger as a warm hint in the finish or let it lead as a spicy wake-up?",
+   "optionA": {
+    "id": "wnt3ener_05a",
+    "label": "Warm Hint In The Finish",
+    "desc": "Ginger 15% stays in the background.",
+    "tags": [
+     "energy",
+     "ginger",
+     "confirm"
+    ],
+    "feeling": "confirm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">ENERGY TEA</text><rect x=\"171.2\" y=\"6\" width=\"56.8\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"199.6\" y=\"15.5\" font-size=\"7.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">OUR PICK</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-energy/05-a.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Warm Hint In The Finish</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Ginger 15% stays in the background.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-energy/05-a.jpg"
+   },
+   "optionB": {
+    "id": "wnt3ener_05b",
+    "label": "Spicy Wake-Up",
+    "desc": "Ginger noticed up front, still 15% for now.",
+    "tags": [
+     "energy",
+     "ginger",
+     "swap"
+    ],
+    "feeling": "swap",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">ENERGY TEA</text><rect x=\"193.6\" y=\"6\" width=\"34.4\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"210.8\" y=\"15.5\" font-size=\"7.5\" fill=\"#8A5A2B\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">SWAP</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-energy/05-b.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Spicy Wake-Up</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Ginger noticed up front, still 15% for now.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-energy/05-b.jpg"
+   },
+   "purpose": "confirm-or-swap",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "draft_status": "Our Pick, Swipe To Confirm",
+   "id": "wellnest-teas-energy-05",
+   "repeat": false
+  },
+  {
+   "group": "Caffeine line",
+   "category": "Energy Tea",
+   "app": "WellNest",
+   "ask": "Energy Tea: Caffeine line, keep a plain 'Contains tea caffeine' line or name the oolong in it?",
+   "optionA": {
+    "id": "wnt3ener_06a",
+    "label": "Contains Tea Caffeine",
+    "desc": "One plain line on the label, as drafted.",
+    "tags": [
+     "energy",
+     "caffeine line",
+     "confirm"
+    ],
+    "feeling": "confirm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">ENERGY TEA</text><rect x=\"171.2\" y=\"6\" width=\"56.8\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"199.6\" y=\"15.5\" font-size=\"7.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">OUR PICK</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-energy/06-a.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Contains Tea Caffeine</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >One plain line on the label, as drafted.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-energy/06-a.jpg"
+   },
+   "optionB": {
+    "id": "wnt3ener_06b",
+    "label": "Contains Caffeine From Oolong",
+    "desc": "Same line, names where it comes from.",
+    "tags": [
+     "energy",
+     "caffeine line",
+     "swap"
+    ],
+    "feeling": "swap",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">ENERGY TEA</text><rect x=\"193.6\" y=\"6\" width=\"34.4\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"210.8\" y=\"15.5\" font-size=\"7.5\" fill=\"#8A5A2B\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">SWAP</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-energy/06-b.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"13.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Contains Caffeine From Oolong</text><text x=\"12\" y=\"256.5\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Same line, names where it comes from.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-energy/06-b.jpg"
+   },
+   "purpose": "confirm-or-swap",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "draft_status": "Our Pick, Swipe To Confirm",
+   "id": "wellnest-teas-energy-06",
+   "repeat": false
+  },
+  {
+   "group": "Wash colour",
+   "category": "Energy Tea",
+   "app": "WellNest",
+   "ask": "Energy Tea: Wash colour, keep the leaf green wash or shift it toward a brighter lemongrass green?",
+   "optionA": {
+    "id": "wnt3ener_07a",
+    "label": "Leaf Green",
+    "desc": "As drafted.",
+    "tags": [
+     "energy",
+     "wash colour",
+     "confirm"
+    ],
+    "feeling": "confirm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">ENERGY TEA</text><rect x=\"171.2\" y=\"6\" width=\"56.8\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"199.6\" y=\"15.5\" font-size=\"7.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">OUR PICK</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-energy/07-a.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Leaf Green</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >As drafted.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-energy/07-a.jpg"
+   },
+   "optionB": {
+    "id": "wnt3ener_07b",
+    "label": "Lemongrass Green",
+    "desc": "Brighter, more yellow green, a citrus feel.",
+    "tags": [
+     "energy",
+     "wash colour",
+     "swap"
+    ],
+    "feeling": "swap",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">ENERGY TEA</text><rect x=\"193.6\" y=\"6\" width=\"34.4\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"210.8\" y=\"15.5\" font-size=\"7.5\" fill=\"#8A5A2B\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">SWAP</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-energy/07-b.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Lemongrass Green</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Brighter, more yellow green, a citrus feel.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-energy/07-b.jpg"
+   },
+   "purpose": "confirm-or-swap",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "draft_status": "Our Pick, Swipe To Confirm",
+   "id": "wellnest-teas-energy-07",
+   "repeat": false
+  },
+  {
+   "group": "Wash shade",
+   "category": "Energy Tea",
+   "app": "WellNest",
+   "ask": "Energy Tea: Wash shade, keep the leaf green wash or soften it to a pale sage?",
+   "optionA": {
+    "id": "wnt3ener_08a",
+    "label": "Leaf Green",
+    "desc": "As drafted.",
+    "tags": [
+     "energy",
+     "wash shade",
+     "confirm"
+    ],
+    "feeling": "confirm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">ENERGY TEA</text><rect x=\"171.2\" y=\"6\" width=\"56.8\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"199.6\" y=\"15.5\" font-size=\"7.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">OUR PICK</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-energy/08-a.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Leaf Green</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >As drafted.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-energy/08-a.jpg"
+   },
+   "optionB": {
+    "id": "wnt3ener_08b",
+    "label": "Soft Sage",
+    "desc": "Paler and greyer green, quieter on the shelf.",
+    "tags": [
+     "energy",
+     "wash shade",
+     "swap"
+    ],
+    "feeling": "swap",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">ENERGY TEA</text><rect x=\"193.6\" y=\"6\" width=\"34.4\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"210.8\" y=\"15.5\" font-size=\"7.5\" fill=\"#8A5A2B\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">SWAP</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-energy/08-b.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Soft Sage</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Paler and greyer green, quieter on the shelf.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-energy/08-b.jpg"
+   },
+   "purpose": "confirm-or-swap",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "draft_status": "Our Pick, Swipe To Confirm",
+   "id": "wellnest-teas-energy-08",
+   "repeat": false
+  },
+  {
+   "group": "Flavour direction",
+   "category": "Energy Tea",
+   "app": "WellNest",
+   "ask": "Energy Tea: Flavour direction, keep lemongrass citrus up front or let the smooth oolong lead?",
+   "optionA": {
+    "id": "wnt3ener_09a",
+    "label": "Citrus First",
+    "desc": "Bright lemongrass over a smooth, floral oolong, warm ginger finish.",
+    "tags": [
+     "energy",
+     "flavour direction",
+     "confirm"
+    ],
+    "feeling": "confirm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">ENERGY TEA</text><rect x=\"171.2\" y=\"6\" width=\"56.8\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"199.6\" y=\"15.5\" font-size=\"7.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">OUR PICK</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-energy/09-a.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Citrus First</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Bright lemongrass over a smooth, floral oolong,</text><text x=\"12\" y=\"270\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >warm ginger finish.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-energy/09-a.jpg"
+   },
+   "optionB": {
+    "id": "wnt3ener_09b",
+    "label": "Oolong First",
+    "desc": "Smooth, floral oolong leads, citrus and ginger behind.",
+    "tags": [
+     "energy",
+     "flavour direction",
+     "swap"
+    ],
+    "feeling": "swap",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">ENERGY TEA</text><rect x=\"193.6\" y=\"6\" width=\"34.4\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"210.8\" y=\"15.5\" font-size=\"7.5\" fill=\"#8A5A2B\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">SWAP</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-energy/09-b.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Oolong First</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Smooth, floral oolong leads, citrus and ginger</text><text x=\"12\" y=\"270\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >behind.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-energy/09-b.jpg"
+   },
+   "purpose": "confirm-or-swap",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "draft_status": "Our Pick, Swipe To Confirm",
+   "id": "wellnest-teas-energy-09",
+   "repeat": false
+  },
+  {
+   "group": "When to drink",
+   "category": "Energy Tea",
+   "app": "WellNest",
+   "ask": "Energy Tea: When to drink, keep mornings and early afternoons or say mornings only?",
+   "optionA": {
+    "id": "wnt3ener_10a",
+    "label": "Mornings And Early Afternoons",
+    "desc": "As drafted; contains tea caffeine.",
+    "tags": [
+     "energy",
+     "when to drink",
+     "confirm"
+    ],
+    "feeling": "confirm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">ENERGY TEA</text><rect x=\"171.2\" y=\"6\" width=\"56.8\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"199.6\" y=\"15.5\" font-size=\"7.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">OUR PICK</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-energy/10-a.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"13.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Mornings And Early Afternoons</text><text x=\"12\" y=\"256.5\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >As drafted; contains tea caffeine.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-energy/10-a.jpg"
+   },
+   "optionB": {
+    "id": "wnt3ener_10b",
+    "label": "Mornings Only",
+    "desc": "A morning cup, since it has tea caffeine.",
+    "tags": [
+     "energy",
+     "when to drink",
+     "swap"
+    ],
+    "feeling": "swap",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">ENERGY TEA</text><rect x=\"193.6\" y=\"6\" width=\"34.4\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"210.8\" y=\"15.5\" font-size=\"7.5\" fill=\"#8A5A2B\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">SWAP</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-energy/10-b.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Mornings Only</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >A morning cup, since it has tea caffeine.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-energy/10-b.jpg"
+   },
+   "purpose": "confirm-or-swap",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "draft_status": "Our Pick, Swipe To Confirm",
+   "id": "wellnest-teas-energy-10",
+   "repeat": false
+  }
+ ],
+ "share": true,
+ "notes": true
+}

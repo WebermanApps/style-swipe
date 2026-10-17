@@ -1,0 +1,595 @@
+{
+ "date": "wellnest-teas-beauty",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Beauty Tea Blend Deck",
+ "generated_at": "2026-10-17T20:31:47+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "confirm": 10,
+  "swap": 10
+ },
+ "groups": {
+  "Serve": 1,
+  "Name line": 1,
+  "Partner leaf": 1,
+  "Wash height": 1,
+  "Wash colour": 1,
+  "Name": 2,
+  "Flavour direction": 1,
+  "Citrus leaf": 1,
+  "Sweetness": 1
+ },
+ "apps": {
+  "WellNest": 10
+ },
+ "freshness": {
+  "option_slots": 20,
+  "never_shown_before": 20,
+  "share": 1.0
+ },
+ "warnings": [],
+ "brands": [
+  "Beauty: kraft pouch, cream label, deep ruby red wash. Settled from your swipes: roselle calyces 85% from our family organic farm, roselle as the deep red, tart hero and heart of a beauty blend.",
+  "WellNest Teas: Three Projects, Project 1: Three New Teas; R107 refresh (Max via WellNest, Oct 17 2026 20:04 ICT), built on the mockups (Max 20:09 ICT)."
+ ],
+ "submit_agent": "wellnest",
+ "submit_to": "WellNest Agent e2806a26-3867-4986-a7ef-46c03abc7f35",
+ "deck_size": 10,
+ "row": "nozomi",
+ "audience": "Max",
+ "project": "Project 1: Three New Teas",
+ "tea": "Beauty Tea",
+ "caption_rule": "R105",
+ "refresh": "R107",
+ "format_note": "Every pick: A = Our Pick (draft, confirm), B = a sensible swap from the source. From Your Swipes items are settled and not asked.",
+ "flags_unconfirmed": [
+  "Name needs a Thai FDA label check before printing."
+ ],
+ "sources": {
+  "content": "tools/wn_teas_content.py",
+  "images": "img/wn-teas-beauty/ (A = WellNest mockup, B = edited by tools/wn_teas_img.py; ingredient photos img/wn-tea/credits.json)",
+  "brief": "/workspace/wellnest/teas: WellNest Teas - Three Projects lookbook, Roselle Refresh Project Brief"
+ },
+ "pairs": [
+  {
+   "group": "Name",
+   "category": "Beauty Tea",
+   "app": "WellNest",
+   "ask": "Beauty Tea: Name, keep BEAUTY on the pouch or use GLOW from the earlier Beauty Glow pick?",
+   "optionA": {
+    "id": "wnt3beau_01a",
+    "label": "BEAUTY",
+    "desc": "As drafted.",
+    "tags": [
+     "beauty",
+     "name",
+     "confirm"
+    ],
+    "feeling": "confirm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">BEAUTY TEA</text><rect x=\"171.2\" y=\"6\" width=\"56.8\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"199.6\" y=\"15.5\" font-size=\"7.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">OUR PICK</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-beauty/01-a.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >BEAUTY</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >As drafted.</text><text x=\"12\" y=\"271\" font-size=\"8.5\" fill=\"#8A5A2B\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Check: Name needs a Thai FDA label check before</text><text x=\"12\" y=\"281\" font-size=\"8.5\" fill=\"#8A5A2B\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >printing.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-beauty/01-a.jpg",
+    "flag": "Name needs a Thai FDA label check before printing."
+   },
+   "optionB": {
+    "id": "wnt3beau_01b",
+    "label": "GLOW",
+    "desc": "From the earlier Beauty Glow option.",
+    "tags": [
+     "beauty",
+     "name",
+     "swap"
+    ],
+    "feeling": "swap",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">BEAUTY TEA</text><rect x=\"193.6\" y=\"6\" width=\"34.4\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"210.8\" y=\"15.5\" font-size=\"7.5\" fill=\"#8A5A2B\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">SWAP</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-beauty/01-b.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >GLOW</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >From the earlier Beauty Glow option.</text><text x=\"12\" y=\"271\" font-size=\"8.5\" fill=\"#8A5A2B\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Check: Name needs a Thai FDA label check before</text><text x=\"12\" y=\"281\" font-size=\"8.5\" fill=\"#8A5A2B\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >printing.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-beauty/01-b.jpg",
+    "flag": "Name needs a Thai FDA label check before printing."
+   },
+   "purpose": "confirm-or-swap",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "draft_status": "Our Pick, Swipe To Confirm",
+   "id": "wellnest-teas-beauty-01",
+   "repeat": false
+  },
+  {
+   "group": "Name",
+   "category": "Beauty Tea",
+   "app": "WellNest",
+   "ask": "Beauty Tea: Name, keep BEAUTY on the pouch or name it RUBY for the deep ruby cup?",
+   "optionA": {
+    "id": "wnt3beau_02a",
+    "label": "BEAUTY",
+    "desc": "As drafted.",
+    "tags": [
+     "beauty",
+     "name",
+     "confirm"
+    ],
+    "feeling": "confirm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">BEAUTY TEA</text><rect x=\"171.2\" y=\"6\" width=\"56.8\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"199.6\" y=\"15.5\" font-size=\"7.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">OUR PICK</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-beauty/02-a.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >BEAUTY</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >As drafted.</text><text x=\"12\" y=\"271\" font-size=\"8.5\" fill=\"#8A5A2B\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Check: Name needs a Thai FDA label check before</text><text x=\"12\" y=\"281\" font-size=\"8.5\" fill=\"#8A5A2B\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >printing.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-beauty/02-a.jpg",
+    "flag": "Name needs a Thai FDA label check before printing."
+   },
+   "optionB": {
+    "id": "wnt3beau_02b",
+    "label": "RUBY",
+    "desc": "Named for the bright ruby cup.",
+    "tags": [
+     "beauty",
+     "name",
+     "swap"
+    ],
+    "feeling": "swap",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">BEAUTY TEA</text><rect x=\"193.6\" y=\"6\" width=\"34.4\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"210.8\" y=\"15.5\" font-size=\"7.5\" fill=\"#8A5A2B\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">SWAP</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-beauty/02-b.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >RUBY</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Named for the bright ruby cup.</text><text x=\"12\" y=\"271\" font-size=\"8.5\" fill=\"#8A5A2B\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Check: Name needs a Thai FDA label check before</text><text x=\"12\" y=\"281\" font-size=\"8.5\" fill=\"#8A5A2B\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >printing.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-beauty/02-b.jpg",
+    "flag": "Name needs a Thai FDA label check before printing."
+   },
+   "purpose": "confirm-or-swap",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "draft_status": "Our Pick, Swipe To Confirm",
+   "id": "wellnest-teas-beauty-02",
+   "repeat": false
+  },
+  {
+   "group": "Name line",
+   "category": "Beauty Tea",
+   "app": "WellNest",
+   "ask": "Beauty Tea: Name line, keep 'roselle herbal tea' under the name or name both plants?",
+   "optionA": {
+    "id": "wnt3beau_03a",
+    "label": "roselle herbal tea",
+    "desc": "As drafted.",
+    "tags": [
+     "beauty",
+     "name line",
+     "confirm"
+    ],
+    "feeling": "confirm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">BEAUTY TEA</text><rect x=\"171.2\" y=\"6\" width=\"56.8\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"199.6\" y=\"15.5\" font-size=\"7.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">OUR PICK</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-beauty/03-a.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >roselle herbal tea</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >As drafted.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-beauty/03-a.jpg"
+   },
+   "optionB": {
+    "id": "wnt3beau_03b",
+    "label": "roselle & kaffir lime",
+    "desc": "Both plants named on the front.",
+    "tags": [
+     "beauty",
+     "name line",
+     "swap"
+    ],
+    "feeling": "swap",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">BEAUTY TEA</text><rect x=\"193.6\" y=\"6\" width=\"34.4\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"210.8\" y=\"15.5\" font-size=\"7.5\" fill=\"#8A5A2B\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">SWAP</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-beauty/03-b.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >roselle &amp; kaffir lime</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Both plants named on the front.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-beauty/03-b.jpg"
+   },
+   "purpose": "confirm-or-swap",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "draft_status": "Our Pick, Swipe To Confirm",
+   "id": "wellnest-teas-beauty-03",
+   "repeat": false
+  },
+  {
+   "group": "Citrus leaf",
+   "category": "Beauty Tea",
+   "app": "WellNest",
+   "ask": "Beauty Tea: Citrus leaf, keep kaffir lime leaf as the 15% partner or swap it for lemongrass?",
+   "optionA": {
+    "id": "wnt3beau_04a",
+    "label": "Kaffir Lime Leaf 15%",
+    "desc": "Clean, sharp citrus scent on top.",
+    "tags": [
+     "beauty",
+     "citrus leaf",
+     "confirm"
+    ],
+    "feeling": "confirm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">BEAUTY TEA</text><rect x=\"171.2\" y=\"6\" width=\"56.8\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"199.6\" y=\"15.5\" font-size=\"7.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">OUR PICK</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-beauty/04-a.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Kaffir Lime Leaf 15%</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Clean, sharp citrus scent on top.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-beauty/04-a.jpg"
+   },
+   "optionB": {
+    "id": "wnt3beau_04b",
+    "label": "Lemongrass 15%",
+    "desc": "Soft, sunny citrus.",
+    "tags": [
+     "beauty",
+     "citrus leaf",
+     "swap"
+    ],
+    "feeling": "swap",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">BEAUTY TEA</text><rect x=\"193.6\" y=\"6\" width=\"34.4\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"210.8\" y=\"15.5\" font-size=\"7.5\" fill=\"#8A5A2B\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">SWAP</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-beauty/04-b.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Lemongrass 15%</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Soft, sunny citrus.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-beauty/04-b.jpg"
+   },
+   "purpose": "confirm-or-swap",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "draft_status": "Our Pick, Swipe To Confirm",
+   "id": "wellnest-teas-beauty-04",
+   "repeat": false
+  },
+  {
+   "group": "Partner leaf",
+   "category": "Beauty Tea",
+   "app": "WellNest",
+   "ask": "Beauty Tea: Partner leaf, keep kaffir lime leaf as the 15% partner or soften the cup with pandan leaf?",
+   "optionA": {
+    "id": "wnt3beau_05a",
+    "label": "Kaffir Lime Leaf 15%",
+    "desc": "Citrus scent, as drafted.",
+    "tags": [
+     "beauty",
+     "partner leaf",
+     "confirm"
+    ],
+    "feeling": "confirm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">BEAUTY TEA</text><rect x=\"171.2\" y=\"6\" width=\"56.8\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"199.6\" y=\"15.5\" font-size=\"7.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">OUR PICK</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-beauty/05-a.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Kaffir Lime Leaf 15%</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Citrus scent, as drafted.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-beauty/05-a.jpg"
+   },
+   "optionB": {
+    "id": "wnt3beau_05b",
+    "label": "Pandan Leaf 15%",
+    "desc": "Soft and sweet scent, no sugar needed.",
+    "tags": [
+     "beauty",
+     "partner leaf",
+     "swap"
+    ],
+    "feeling": "swap",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">BEAUTY TEA</text><rect x=\"193.6\" y=\"6\" width=\"34.4\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"210.8\" y=\"15.5\" font-size=\"7.5\" fill=\"#8A5A2B\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">SWAP</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-beauty/05-b.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Pandan Leaf 15%</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Soft and sweet scent, no sugar needed.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-beauty/05-b.jpg"
+   },
+   "purpose": "confirm-or-swap",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "draft_status": "Our Pick, Swipe To Confirm",
+   "id": "wellnest-teas-beauty-05",
+   "repeat": false
+  },
+  {
+   "group": "Sweetness",
+   "category": "Beauty Tea",
+   "app": "WellNest",
+   "ask": "Beauty Tea: Sweetness, keep it naturally tart or make it lightly sweetened?",
+   "optionA": {
+    "id": "wnt3beau_06a",
+    "label": "Naturally Tart",
+    "desc": "Roselle's own tart taste, nothing added.",
+    "tags": [
+     "beauty",
+     "sweetness",
+     "confirm"
+    ],
+    "feeling": "confirm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">BEAUTY TEA</text><rect x=\"171.2\" y=\"6\" width=\"56.8\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"199.6\" y=\"15.5\" font-size=\"7.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">OUR PICK</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-beauty/06-a.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Naturally Tart</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Roselle&#x27;s own tart taste, nothing added.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-beauty/06-a.jpg"
+   },
+   "optionB": {
+    "id": "wnt3beau_06b",
+    "label": "Lightly Sweetened",
+    "desc": "A little sweetness to soften the tart edge.",
+    "tags": [
+     "beauty",
+     "sweetness",
+     "swap"
+    ],
+    "feeling": "swap",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">BEAUTY TEA</text><rect x=\"193.6\" y=\"6\" width=\"34.4\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"210.8\" y=\"15.5\" font-size=\"7.5\" fill=\"#8A5A2B\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">SWAP</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-beauty/06-b.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Lightly Sweetened</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >A little sweetness to soften the tart edge.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-beauty/06-b.jpg"
+   },
+   "purpose": "confirm-or-swap",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "draft_status": "Our Pick, Swipe To Confirm",
+   "id": "wellnest-teas-beauty-06",
+   "repeat": false
+  },
+  {
+   "group": "Serve",
+   "category": "Beauty Tea",
+   "app": "WellNest",
+   "ask": "Beauty Tea: Serve, keep 'iced or warm' or lead with iced for hot afternoons?",
+   "optionA": {
+    "id": "wnt3beau_07a",
+    "label": "Iced Or Warm",
+    "desc": "Any time of day, both ways.",
+    "tags": [
+     "beauty",
+     "serve",
+     "confirm"
+    ],
+    "feeling": "confirm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">BEAUTY TEA</text><rect x=\"171.2\" y=\"6\" width=\"56.8\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"199.6\" y=\"15.5\" font-size=\"7.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">OUR PICK</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-beauty/07-a.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Iced Or Warm</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Any time of day, both ways.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-beauty/07-a.jpg"
+   },
+   "optionB": {
+    "id": "wnt3beau_07b",
+    "label": "Iced First",
+    "desc": "Lead with iced, great on hot afternoons.",
+    "tags": [
+     "beauty",
+     "serve",
+     "swap"
+    ],
+    "feeling": "swap",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">BEAUTY TEA</text><rect x=\"193.6\" y=\"6\" width=\"34.4\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"210.8\" y=\"15.5\" font-size=\"7.5\" fill=\"#8A5A2B\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">SWAP</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-beauty/07-b.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Iced First</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Lead with iced, great on hot afternoons.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-beauty/07-b.jpg"
+   },
+   "purpose": "confirm-or-swap",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "draft_status": "Our Pick, Swipe To Confirm",
+   "id": "wellnest-teas-beauty-07",
+   "repeat": false
+  },
+  {
+   "group": "Wash colour",
+   "category": "Beauty Tea",
+   "app": "WellNest",
+   "ask": "Beauty Tea: Wash colour, keep the deep ruby red wash or brighten it toward the brewed roselle red?",
+   "optionA": {
+    "id": "wnt3beau_08a",
+    "label": "Deep Ruby Red",
+    "desc": "As drafted.",
+    "tags": [
+     "beauty",
+     "wash colour",
+     "confirm"
+    ],
+    "feeling": "confirm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">BEAUTY TEA</text><rect x=\"171.2\" y=\"6\" width=\"56.8\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"199.6\" y=\"15.5\" font-size=\"7.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">OUR PICK</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-beauty/08-a.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Deep Ruby Red</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >As drafted.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-beauty/08-a.jpg"
+   },
+   "optionB": {
+    "id": "wnt3beau_08b",
+    "label": "Bright Roselle Red",
+    "desc": "Lighter and brighter, closer to the cup.",
+    "tags": [
+     "beauty",
+     "wash colour",
+     "swap"
+    ],
+    "feeling": "swap",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">BEAUTY TEA</text><rect x=\"193.6\" y=\"6\" width=\"34.4\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"210.8\" y=\"15.5\" font-size=\"7.5\" fill=\"#8A5A2B\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">SWAP</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-beauty/08-b.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Bright Roselle Red</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Lighter and brighter, closer to the cup.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-beauty/08-b.jpg"
+   },
+   "purpose": "confirm-or-swap",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "draft_status": "Our Pick, Swipe To Confirm",
+   "id": "wellnest-teas-beauty-08",
+   "repeat": false
+  },
+  {
+   "group": "Wash height",
+   "category": "Beauty Tea",
+   "app": "WellNest",
+   "ask": "Beauty Tea: Wash height, keep the wash at the drafted height or raise it for more red on the shelf?",
+   "optionA": {
+    "id": "wnt3beau_09a",
+    "label": "Drafted Height",
+    "desc": "As drafted.",
+    "tags": [
+     "beauty",
+     "wash height",
+     "confirm"
+    ],
+    "feeling": "confirm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">BEAUTY TEA</text><rect x=\"171.2\" y=\"6\" width=\"56.8\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"199.6\" y=\"15.5\" font-size=\"7.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">OUR PICK</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-beauty/09-a.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Drafted Height</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >As drafted.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-beauty/09-a.jpg"
+   },
+   "optionB": {
+    "id": "wnt3beau_09b",
+    "label": "Higher Wash",
+    "desc": "More red on the shelf, bolder.",
+    "tags": [
+     "beauty",
+     "wash height",
+     "swap"
+    ],
+    "feeling": "swap",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">BEAUTY TEA</text><rect x=\"193.6\" y=\"6\" width=\"34.4\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"210.8\" y=\"15.5\" font-size=\"7.5\" fill=\"#8A5A2B\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">SWAP</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-beauty/09-b.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Higher Wash</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >More red on the shelf, bolder.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-beauty/09-b.jpg"
+   },
+   "purpose": "confirm-or-swap",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "draft_status": "Our Pick, Swipe To Confirm",
+   "id": "wellnest-teas-beauty-09",
+   "repeat": false
+  },
+  {
+   "group": "Flavour direction",
+   "category": "Beauty Tea",
+   "app": "WellNest",
+   "ask": "Beauty Tea: Flavour direction, keep a citrus scent on top or keep the cup tart roselle with only a soft citrus finish?",
+   "optionA": {
+    "id": "wnt3beau_10a",
+    "label": "Citrus Scent On Top",
+    "desc": "Tart, bright ruby cup, clean citrus scent on top.",
+    "tags": [
+     "beauty",
+     "flavour direction",
+     "confirm"
+    ],
+    "feeling": "confirm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">BEAUTY TEA</text><rect x=\"171.2\" y=\"6\" width=\"56.8\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"199.6\" y=\"15.5\" font-size=\"7.5\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">OUR PICK</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-beauty/10-a.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Citrus Scent On Top</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Tart, bright ruby cup, clean citrus scent on top.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-beauty/10-a.jpg"
+   },
+   "optionB": {
+    "id": "wnt3beau_10b",
+    "label": "Roselle First",
+    "desc": "Tart roselle up front, citrus as a soft finish.",
+    "tags": [
+     "beauty",
+     "flavour direction",
+     "swap"
+    ],
+    "feeling": "swap",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"24\" fill=\"#FAF6EE\"/><text x=\"12\" y=\"16\" font-size=\"8.5\" fill=\"#0A0A0A\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"600\" text-anchor=\"start\" letter-spacing=\"1\">BEAUTY TEA</text><rect x=\"193.6\" y=\"6\" width=\"34.4\" height=\"13\" fill=\"#FFFFFF\" stroke=\"#e3ddd2\"/><text x=\"210.8\" y=\"15.5\" font-size=\"7.5\" fill=\"#8A5A2B\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"middle\" letter-spacing=\".8\">SWAP</text><line x1=\"0\" y1=\"24\" x2=\"240\" y2=\"24\" stroke=\"#e3ddd2\"/><image href=\"img/wn-teas-beauty/10-b.jpg\" x=\"12\" y=\"30\" width=\"216\" height=\"197\" preserveAspectRatio=\"xMidYMid slice\"/><rect x=\"12\" y=\"30\" width=\"216\" height=\"197\" fill=\"none\" stroke=\"#e3ddd2\"/><text x=\"12\" y=\"243\" font-size=\"16\" fill=\"#0A0A0A\" font-family=\"Khand,Hind,sans-serif\" font-weight=\"600\" text-anchor=\"start\" >Roselle First</text><text x=\"12\" y=\"259\" font-size=\"9.5\" fill=\"#6B6560\" font-family=\"Hind,system-ui,sans-serif\" font-weight=\"400\" text-anchor=\"start\" >Tart roselle up front, citrus as a soft finish.</text><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" fill=\"none\" stroke=\"#e3ddd2\"/></svg>",
+     "bg": "#FFFFFF"
+    },
+    "image": "img/wn-teas-beauty/10-b.jpg"
+   },
+   "purpose": "confirm-or-swap",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "draft_status": "Our Pick, Swipe To Confirm",
+   "id": "wellnest-teas-beauty-10",
+   "repeat": false
+  }
+ ],
+ "share": true,
+ "notes": true
+}
