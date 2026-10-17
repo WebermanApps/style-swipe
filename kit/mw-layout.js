@@ -46,14 +46,16 @@ function stickBar(bh,title){var bar=mk('div','mw-stick');bar.setAttribute('aria-
 function zeroCounter(sh){var head=q('.ds-head',sh);if(!head)return;var st=q('.ds-stats',head);if(!st){st=mk('div','ds-stats');head.appendChild(st)}
  if(st.hidden||!st.children.length){st.textContent='';[['0','decks today'],['0','decks all-time']].forEach(function(p){var s=mk('span','ds-stat');s.append(mk('b','',p[0]),mk('span','',p[1]));st.appendChild(s)});st.hidden=false}}
 function stdShelfHead(sh){var h=q('.ds-head h2',sh);if(h&&h.textContent!=='Ready To Swipe')h.textContent='Ready To Swipe'}
-function column(){var mid=document.getElementById('mw-mid');if(!mid)return;var W=Math.min(1100,document.documentElement.clientWidth-32);
+/* ly10 desktop polish: phone (<768px) keeps min(1100, width-32) exactly; tablet+ gets 24px gutters; wide screens a moderately wider column (not airy) */
+function colW(){var cw=document.documentElement.clientWidth;if(cw<768)return Math.min(1100,cw-32);var cap=cw>=1680?1280:cw>=1440?1200:1100;var W=Math.min(cap,cw-48);document.documentElement.style.setProperty('--mw-colw',W+'px');return W}
+function column(){var mid=document.getElementById('mw-mid');if(!mid)return;var W=colW();
  (function walk(el,d){[].slice.call(el.children).forEach(function(c){if(/^(SCRIPT|STYLE|LINK|TEMPLATE)$/.test(c.tagName))return;var cs=getComputedStyle(c);if(cs.position==='fixed'||cs.display==='none')return;
   var mw=parseFloat(cs.maxWidth),w=c.getBoundingClientRect().width,wrap=(c.tagName==='MAIN'||/(^|\s)(wrap|container|page|content|inner|shell|app)(\s|$)/i.test(c.className));
   if((!isNaN(mw)&&mw<W-1&&w<W-1&&(cs.marginLeft===cs.marginRight))||wrap){c.style.setProperty('max-width','none','important');c.style.setProperty('margin-left','0','important');c.style.setProperty('margin-right','0','important');
    if(wrap){c.style.setProperty('padding-left','0','important');c.style.setProperty('padding-right','0','important')}}
   var vw=document.documentElement.clientWidth,r2=c.getBoundingClientRect();if(r2.width<vw-2&&(parseFloat(cs.marginLeft)<0||parseFloat(cs.marginRight)<0)&&!/(auto|scroll)/.test(getComputedStyle(c.parentElement).overflowX)){c.style.setProperty('margin-left','0','important');c.style.setProperty('margin-right','0','important')}
   if(/^(DIV|MAIN|SECTION|ARTICLE|HEADER|NAV)$/.test(c.tagName)&&d<3)walk(c,d+1)})})(mid,0)}
-function place(){['mw-bh','mw-mid','mw-bf'].forEach(function(id){var b=document.getElementById(id);if(!b)return;b.style.transform='none';var W=Math.min(1100,document.documentElement.clientWidth-32),
+function place(){['mw-bh','mw-mid','mw-bf'].forEach(function(id){var b=document.getElementById(id);if(!b)return;b.style.transform='none';var W=colW(),
  want=Math.max(16,(document.documentElement.clientWidth-W)/2);b.style.setProperty('width',W+'px','important');var r=b.getBoundingClientRect(),d=Math.round(want-r.left),ay=r.top+(window.scrollY||0),fy=Math.round(ay)-ay;b.style.transform=(d||fy)?'translate('+d+'px,'+fy.toFixed(3)+'px)':'none'})}
 /* ly8 R85 (Max Oct 16 2026 23:39 ICT): "Working on" dropdown above Morning Report, only while this board's agent is working. Data: ONE shared file kit/agent-status.json (no-store + cache-bust). */
 var ST=K+'agent-status.json';function norm(n){return String(n||'').toLowerCase().replace(/&/g,'and').replace(/\bagent\b/g,'').replace(/[^a-z0-9]+/g,' ').trim()}

@@ -20,7 +20,8 @@
 .ds-name{font-family:Khand,sans-serif;font-weight:600;font-size:16px;line-height:1.15;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;padding-right:26px}
 .ds-tag{align-self:flex-start;font-size:12px;font-weight:600;color:#525252;background:#F5F3EF;border:1px solid #E5E0D8;border-radius:999px;padding:0 8px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .ds-go{margin-top:auto;font-size:13px;font-weight:600;color:#0B6E4F}
-.ds-new{position:absolute;top:6px;right:6px;font-size:11px;font-weight:700;letter-spacing:.04em;color:#fff;background:#0B6E4F;border-radius:999px;padding:1px 7px}
+/* R98 (kit ly10): light on-brand 'New' badge, bottom-right so it never squeezes the deck name; gone after the first click */
+.ds-new{position:absolute;right:8px;bottom:9px;font-family:Khand,sans-serif;font-size:12px;font-weight:600;line-height:1;letter-spacing:.06em;text-transform:uppercase;color:#C1502E;background:#FAF6EE;border:1px solid #e3ddd2;border-radius:0;padding:3px 6px 2px;pointer-events:none}
 .ds-all{font-size:13px;color:#0B6E4F;text-decoration:none;font-weight:600}.ds-all:hover{text-decoration:underline}
 .ds-card.ds-started{border-color:#0B6E4F;border-top-color:var(--ds-c,#05668D);box-shadow:0 0 0 1px #0B6E4F,0 2px 0 -1px #fff,0 2px 0 0 #E5E0D8,0 4px 0 -1px #fff,0 4px 0 0 #E5E0D8}
 .ds-card.ds-donecard{opacity:.5;filter:grayscale(1);pointer-events:none}.ds-card.ds-donecard .ds-go{color:#737373}

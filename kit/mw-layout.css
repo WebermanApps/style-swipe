@@ -35,7 +35,8 @@
 #mw-bh .ds-name{font:600 16px/18px var(--bh-head)!important;color:var(--bh-text)!important}
 #mw-bh .ds-tag{font:600 12px/18px var(--bh-body)!important;color:#525252!important;background:#F5F3EF!important;border:1px solid #E5E0D8!important;border-radius:999px!important;padding:0 8px!important}
 #mw-bh .ds-go{font:600 13px/18px var(--bh-body)!important;color:var(--bh-green)!important;background:none!important;border:0!important;padding:0!important;margin-top:auto!important}
-#mw-bh .ds-new{font:700 11px/16px var(--bh-body)!important;color:#fff!important;background:var(--bh-green)!important;border-radius:999px!important;padding:1px 7px!important}
+/* ly10 R98: light on-brand 'New' badge (beige base, terracotta text, Khand, square), bottom-right, gone after the first click */
+#mw-bh .ds-new{position:absolute!important;right:8px!important;bottom:9px!important;top:auto!important;font:600 12px/12px var(--bh-head)!important;letter-spacing:.06em!important;text-transform:uppercase!important;color:#C1502E!important;background:var(--bh-beige)!important;border:1px solid var(--bh-line)!important;border-radius:0!important;padding:3px 6px 2px!important;pointer-events:none!important}
 #mw-bh .ds-empty{font:400 14px/20px var(--bh-body)!important;color:#525252!important;background:var(--bh-bg)!important;border:1px solid #E5E0D8!important;border-radius:0!important;padding:10px 12px!important;margin:0!important}
 #mw-bh .ds-dots i{background:#D6D0C6!important}#mw-bh .ds-dots i.on{background:var(--bh-green)!important}
 @media(max-width:899px){#mw-bh .ds-strip{gap:8px!important;margin:0 -16px!important;padding:1px 16px 6px!important}}
@@ -125,3 +126,35 @@ body.mw-hero-behind-header #mw-bh.mw-branded-header{background:transparent!impor
 @media(max-width:600px){.mw-mr-cards{grid-template-columns:1fr}}
 .mw-todo h2,.mw-todo h3{font-family:Khand,sans-serif}
 .mw-progress{height:6px;background:#EFEAE1;border-radius:0;overflow:hidden}.mw-progress>i{display:block;height:100%;background:#0B6E4F}
+
+/* ly10 desktop + tablet polish (Max Oct 17 2026 ICT). PHONE UNTOUCHED: every rule below sits inside a min-width:768px (or wider) query.
+   Moderate side margins (not airy): column 1100px up to ~1340px wide, 1200px from 1440px, 1280px from 1680px (mw-layout.js colW), 24px gutters on tablet.
+   Tighter vertical rhythm on desktop: section gap 18px (was 56px, so 37px between sections instead of 113px), header/footer gap 20px (was 28px). Header and footer stay identical on every board.
+   Deck shelves become grids: 3 columns on tablet, 5 on desktop (10 decks = 2 rows), so names are no longer squeezed into one long row. */
+@media(min-width:768px){
+ html:root{--mw-section-gap:18px}
+ #mw-bh,#mw-bf{--bh-gap:20px}
+ #mw-mid.mw-middle{width:min(1100px,calc(100% - 48px))!important}
+ .mw-stick{padding:0 max(24px,calc((100vw - var(--mw-colw,1100px))/2))}
+ #mw-bh .ds-strip,.ds-sec .ds-strip{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:10px!important;overflow:visible!important;scroll-snap-type:none!important;margin:0!important;padding:1px 1px 4px!important}
+ #mw-bh .ds-strip>.ds-card,.ds-sec .ds-strip>.ds-card{flex:none!important;width:auto!important;min-width:0!important;margin:0 0 4px!important}
+ #mw-bh .ds-dots,.ds-sec .ds-dots{display:none!important}
+ .ds-card{transition:border-color .15s ease,box-shadow .15s ease,transform .15s ease}
+ #mw-bh .ds-card:hover,#mw-bh .ds-card:focus-visible,.ds-sec .ds-card:hover,.ds-sec .ds-card:focus-visible{border-color:#0B6E4F!important;transform:translateY(-1px)}
+ #mw-bh details.mw-bh-morning>summary:hover,#mw-bh details.mw-bh-working>summary:hover,#mw-bf .rt4-fold>summary.rt4-head:hover{background:#F5EFE3!important}
+ #mw-bh .mw-bh-desc{max-width:72ch!important}
+ #mw-mid img,#mw-mid svg image{max-width:100%}
+ #mw-mid p{max-width:80ch}
+ #mw-mid .mw-section:first-child,#mw-mid>*:first-child{padding-top:0}
+ .mw-chat-btn{right:max(20px,calc((100vw - var(--mw-colw,1100px))/2 - 64px))}
+ /* opt-in columns for board middle sections: <div class="mw-cols">..</div> (2 on tablet, 3 on desktop) */
+ .mw-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 20px;align-items:start}
+}
+@media(min-width:1100px){
+ #mw-bh .ds-strip,.ds-sec .ds-strip{grid-template-columns:repeat(5,minmax(0,1fr))!important}
+ .mw-cols{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .mw-mr-cards{gap:12px}
+}
+@media(min-width:1440px){#mw-mid.mw-middle{width:min(1200px,calc(100% - 48px))!important}}
+@media(min-width:1680px){#mw-mid.mw-middle{width:min(1280px,calc(100% - 48px))!important}}
+

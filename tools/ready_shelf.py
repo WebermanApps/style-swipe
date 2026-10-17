@@ -15,6 +15,10 @@ Shelf file (per agent, schema kit/shelf.schema.json): {"agent":..,"updated":..,"
       Skips (R64): carried pairs go first; a reworded version is used when the carry note has one;
       a pair skipped twice is dropped.
   python3 tools/ready_shelf.py list --shelf <shelf.json>
+  python3 tools/ready_shelf.py fill --shelf <shelf.json> [--dry-run]
+      R97 (Max Oct 17 2026 15:22 ICT): top the shelf back up to 10 open decks (pinned included) from the board's ready queue
+      (shelf.json queued[] / queue[], in order). build and refill call it after every write. Finished decks (R96) are never
+      shown but never deleted: they stay in done[] / with status done|hidden and keep counting on every deck counter.
 Then commit + push style-swipe (new deck + page) and the dashboard repo (shelf.json)."""
 import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()  # fail build if card-media max-height:100% returns
 import json, os, re, sys, random, string, datetime as dt
@@ -102,9 +106,39 @@ def build(topic, shelf_path, agent, name=None, slot=None, source=None, refill=Fa
         "blurb": f"{N} cards, ready now" + (f", {len(carried)} reworded from last time" if carried else "")}
     if slot is None: sh["decks"].append(ent)
     else: sh["decks"].insert(slot, ent)
-    sh["decks"] = sh["decks"][:int(sh.get("cap") or 10)]; sh["cap"] = int(sh.get("cap") or 10)  # R86: shelf cap 10 (was 5)
+    _pin = len([d for d in sh.get("pinned", []) if not d.get("status")]); _cap = int(sh.get("cap") or 10)
+    if len(sh["decks"]) + _pin > _cap:  # R97: never more than 10 open (pinned included); overflow waits in the ready queue, not dropped
+        over = sh["decks"][max(0, _cap - _pin):]; sh["decks"] = sh["decks"][:max(0, _cap - _pin)]; sh["queued"] = over + sh.get("queued", [])
+    sh["cap"] = _cap  # R86: shelf cap 10 (was 5)
     sh["updated"] = now(); W(shelf_path, sh)  # Oct 17: R86 edit had commented this out, so build/refill never saved the shelf
-    print(f"built {did} ({N} cards) -> {url}"); return ent
+    print(f"built {did} ({N} cards) -> {url}"); fill(shelf_path); return ent  # R97: fill any free slot from the queue right away
+
+GONE = {"done", "hidden", "retired", "replaced", "split", "unlisted"}
+def finished(d, ids): return (str(d.get("status") or "") in GONE) or d.get("hidden") is True or (d.get("id") in ids)
+def fill(shelf_path, dry=False):
+    """R96/R97: finished decks leave the open list (kept in done[]/status, still counted); free slots fill from queued[]/queue[]."""
+    sh = J(shelf_path, None)
+    if not sh: sys.exit(f"no shelf at {shelf_path}")
+    sh.setdefault("done", []); ids = {x.get("id") for x in sh["done"] if isinstance(x, dict)}
+    cap = min(10, int(sh.get("cap") or 10)); sh["cap"] = cap
+    for d in sh.get("decks", []) + sh.get("pinned", []):  # status done but missing from done[]: add it so counters keep it (R96)
+        if d.get("status") == "done" and d.get("id") and d["id"] not in ids:
+            sh["done"].append({"id": d["id"], "at": d.get("done_at") or now(), "name": d.get("name")}); ids.add(d["id"])
+    live = [d for d in sh.get("pinned", []) if not finished(d, ids)] + [d for d in sh.get("decks", []) if not finished(d, ids)]
+    have = {d.get("url") for d in live} | {d.get("id") for d in live}
+    moved = []
+    for key in ("queued", "queue"):
+        keep = []
+        for d in sh.get(key, []):
+            if len(live) < cap and d.get("url") and not finished(d, ids) and d.get("url") not in have and d.get("id") not in have:
+                e = dict(d); e["added"] = e.get("added") or now(); e["filled_from_queue"] = now()
+                sh.setdefault("decks", []).append(e); live.append(e); have |= {e.get("url"), e.get("id")}; moved.append(e.get("id"))
+            else: keep.append(d)
+        if key in sh: sh[key] = keep
+    open_n = len(live)
+    if not dry and moved: sh["updated"] = now(); W(shelf_path, sh)
+    print(f"fill {os.path.basename(os.path.dirname(shelf_path)) or shelf_path}: open {open_n}/{cap}, moved from queue {moved}, queue left {len(sh.get('queued', [])) + len(sh.get('queue', []))}")
+    return moved
 
 NAME = None
 def refill(did, shelf_path, agent):
@@ -112,7 +146,7 @@ def refill(did, shelf_path, agent):
     if not sh: sys.exit(f"no shelf at {shelf_path}")
     i = next((i for i, d in enumerate(sh["decks"]) if d["id"] == did), None)
     if i is None: sys.exit(f"{did} is not on the shelf")
-    old = sh["decks"].pop(i); sh.setdefault("done", []).append({"id": did, "at": now()}); sh["done"] = sh["done"][-30:]; W(shelf_path, sh)
+    old = sh["decks"].pop(i); sh.setdefault("done", []).append({"id": did, "at": now()}); W(shelf_path, sh)  # R96: done[] is never trimmed (it feeds every deck counter)
     topic = old.get("topic") or J(f"decks/{did}.json", {}).get("topic") or re.sub(r"-(ready-)?\d+[a-z]?$", "", did)
     return build(topic, shelf_path, agent, name=NAME, slot=i, source=old.get("source"), refill=True, tag=old.get("tag"))
 
@@ -128,4 +162,5 @@ if __name__ == "__main__":
     if a[0] == "build": build(a[1], shelf, agent, name, source=source)
     elif a[0] == "refill": NAME = name; refill(a[1], shelf, agent)
     elif a[0] == "list": print(json.dumps(J(shelf, {}), indent=1))
+    elif a[0] == "fill": fill(shelf, dry="--dry-run" in a)
     else: sys.exit(__doc__)

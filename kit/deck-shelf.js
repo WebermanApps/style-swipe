@@ -5,7 +5,14 @@
    'All Decks' link, grey pill tag, greyed 'Done' after submit, opens in a new tab, dots under the phone strip, empty state links to Deck Building. Order (v5, Oct 16 13:05): permanent, in progress (latest touched first), not started (newest first), done last; a refill keeps the slot it replaced and shows
    a green 'New' badge until opened. No icons, no time estimate. Calm empty state. Extras are queued (DeckShelf.queued(el)).
    Usage: <section data-shelf="shelf.json"></section> + this script (+ deck-shelf.css). Schema: kit/shelf.schema.json.
-   Deck Building page only: data-shelf-nocap. Back-compat: launcher.json ({ready, unfinished}) also renders. */
+   Deck Building page only: data-shelf-nocap. Back-compat: launcher.json ({ready, unfinished}) also renders.
+   v9 / kit ly10 (Max via Grok Bot, Oct 17 2026 15:22 ICT, rulebook R96-R98):
+   R96 a finished deck leaves the shelf right away (status done|hidden|retired|replaced|split, hidden:true, listed in done[], or submitted
+       in this browser); it stays in shelf.json (done[] / status) and still counts on every deck counter (kit/deck-counts.json reads done[]).
+       Replaces 'done decks show last'.
+   R97 at most 10 decks per board shelf; each freed slot is filled at render time from that board's ready queue (shelf.json queued[] / queue[]),
+       in queue order. Tools fill the same way when they write (style-swipe tools/ready_shelf.py fill).
+   R98 every card shows a light 'New' badge until Max clicks it once (localStorage ds-opened:<deck id>), then it is gone. */
 (()=>{const CAP=10,ACC=['#C1502E','#05668D','#0B6E4F','#D4A017'];
 const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
 const LS=k=>{try{return localStorage.getItem(k)}catch(_){return null}};
@@ -35,6 +42,15 @@ const touched=d=>{const s=st8(d);return Math.max(Date.parse(s.updated||'')||0,Da
 const left=d=>Math.max(0,(d.total||10)-answered(d));
 const started=d=>!sub(d)&&answered(d)>0;
 const isPerm=d=>d.permanent===true||d.slot==='permanent';
+/* R96: finished = done in shelf data or submitted in this browser. Never rendered; never removed from shelf.json. */
+const GONE=/^(done|hidden|retired|replaced|split|unlisted)$/;
+const finished=(d,ids)=>!!d&&(GONE.test(String(d.status||''))||d.hidden===true||sub(d)||(!!ids&&!!d.id&&ids.has(d.id)));
+const doneIds=J=>new Set((J.done||[]).map(x=>x&&(x.id||x.deck)).filter(Boolean));
+/* R97: board ready queue (shelf.json queued[], or queue[]); only unfinished entries with a url, in queue order */
+const queueOf=(J,ids,seen)=>[].concat(J.queued||[],J.queue||[]).filter(d=>d&&d.url&&!finished(d,ids)&&!seen.has(d.url));
+/* R98: New until clicked once on this device (per deck id) */
+const seenKey=d=>'ds-opened:'+(d.id||d.url);
+const isNew=d=>!LS(seenKey(d))&&!(answered(d)>0);
 function sortDecks(all,o){o=o||{};const done=o.isDone||(d=>d.status==='done'||sub(d)),keep=o.keepOrder||(x=>x);
  const perm=all.filter(isPerm),rest=all.filter(d=>!isPerm(d)),dn=rest.filter(done),live=rest.filter(d=>!done(d));
  const prog=live.filter(d=>answered(d)>0&&answered(d)<(d.total||10)).map((d,i)=>[d,i]).sort((a,b)=>(touched(b[0])-touched(a[0]))||(a[1]-b[1])).map(x=>x[0]);
@@ -72,19 +88,21 @@ function paintStats(box,J){const st=box.querySelector('.ds-stats');if(!st)return
  fetch((box.dataset.stats||J.stats_url||STATS)+'?'+Date.now()).then(r=>r.ok?r.json():null).then(S=>{if(S&&S.days)paintReport(S);const v=statsFor(S,J.agent);if(!v)return;const hd=box.querySelector('.ds-head');if(hd){let dn=hd.querySelector('.ds-done');const n=Math.floor(v.today+1e-9);if(n){if(!dn){dn=el('span','ds-done');hd.querySelector('h2').after(dn)}dn.textContent=n+' done today'}else if(dn)dn.remove()}
   st.textContent='';const f=(n,l)=>{const s=el('span','ds-stat');s.append(el('b','',fmtDecks(n)),el('span','',l));return s};
   st.append(f(v.today,(fmtDecks(v.today)==='1'?'deck':'decks')+' today'),f(v.total,(fmtDecks(v.total)==='1'?'deck':'decks')+' all-time'));st.hidden=false}).catch(()=>{})}
-function render(box,J,o){o=o||{};J=J||{};const all=order(norm(J,o)),cap=(o.nocap||box.hasAttribute('data-shelf-nocap'))?all.length:(+o.cap||+box.dataset.shelfCap||+J.cap||CAP),decks=all.slice(0,cap);
- box._dsQueued=all.slice(cap);box.textContent='';box.classList.add('ds-sec');box.id=box.id||'ready-to-swipe';
+function render(box,J,o){o=o||{};J=J||{};const ids=doneIds(J),live=norm(J,o).filter(d=>!finished(d,ids)),cap=(o.nocap||box.hasAttribute('data-shelf-nocap'))?Infinity:Math.min(CAP,+o.cap||+box.dataset.shelfCap||+J.cap||CAP);
+ const ordered=order(live),seen=new Set(ordered.map(d=>d.url)),q=queueOf(J,ids,seen),decks=ordered.slice(0,cap);
+ for(const d of q){if(decks.length>=cap)break;decks.push(Object.assign({},d,{fromQueue:true}));seen.add(d.url)}
+ box._dsQueued=ordered.slice(cap).concat(q.filter(d=>!decks.some(x=>x.url===d.url)));box._dsFinished=norm(J,o).filter(d=>finished(d,ids));box.textContent='';box.classList.add('ds-sec');box.id=box.id||'ready-to-swipe';
  const h=el('div','ds-head');h.append(el('h2','','Ready To Swipe'));const n=doneToday(J);if(n)h.append(el('span','ds-done',n+' done today'));const st=el('div','ds-stats');st.hidden=true;h.append(st);const allU=box.dataset.all||J.all_url||ALL;if(!box.hasAttribute('data-shelf-nocap')){const al=el('a','ds-all','All Decks');al.href=allU;h.insertBefore(al,st)}box.append(h);paintStats(box,J);
  if(!decks.length){const p=el('p','ds-empty','All caught up. New decks are on the way. ');const l=el('a','','Deck Building');l.href=allU;p.append(l);box.append(p);return}
  const g=el('div','ds-strip');g.setAttribute('role','list');
  decks.forEach(d=>{const a=el('a','ds-card');a.href=d.url;a.setAttribute('role','listitem');const tag=tagOf(d),s=started(d);a.style.setProperty('--ds-c',d.color||col(tag));
-  const dn=sub(d);if(dn){a.classList.add('ds-donecard');a.setAttribute('aria-disabled','true')}else if(s)a.classList.add('ds-started');a.target='_blank';a.rel='noopener';
-  const fresh=!dn&&d.refill&&!s&&!LS('ds-opened:'+(d.id||d.url));if(fresh)a.append(el('span','ds-new','New'));
-  a.append(el('b','ds-name',d.name||'Deck'),el('span','ds-tag',tag),el('span','ds-go',dn?'Done':s?'Continue, '+left(d)+' left':'Start'));
-  a.addEventListener('click',()=>{try{localStorage.setItem('ds-opened:'+(d.id||d.url),'1')}catch(_){}});g.append(a)});
+  if(s)a.classList.add('ds-started');a.target='_blank';a.rel='noopener';
+  a.append(el('b','ds-name',d.name||'Deck'),el('span','ds-tag',tag),el('span','ds-go',s?'Continue, '+left(d)+' left':'Start'));
+  if(isNew(d)){a.classList.add('ds-isnew');a.append(el('span','ds-new','New'))}
+  a.addEventListener('click',()=>{try{localStorage.setItem(seenKey(d),'1')}catch(_){}a.classList.remove('ds-isnew');const b=a.querySelector('.ds-new');if(b)b.remove()});g.append(a)});
  box.append(g);if(decks.length>2){const dt=el('div','ds-dots');dt.setAttribute('aria-hidden','true');decks.forEach((_,i)=>dt.append(el('i',i?'':'on')));box.append(dt);
   g.addEventListener('scroll',()=>{const w=g.scrollWidth-g.clientWidth,k=w>0?Math.round(g.scrollLeft/w*(decks.length-1)):0;[...dt.children].forEach((x,i)=>x.className=i===k?'on':'')},{passive:true})}}
 function init(){document.querySelectorAll('[data-shelf],[data-launcher]').forEach(b=>{if(b.dataset.dsDone)return;b.dataset.dsDone=1;
  fetch((b.dataset.shelf||b.dataset.launcher)+'?'+Date.now()).then(r=>r.json()).then(J=>render(b,J)).catch(()=>render(b,{decks:[]}))})}
-window.DeckShelf={render,CAP,sortDecks,answered,touched,VERSION:8,queued:b=>b._dsQueued||[]};window.DeckLauncher=window.DeckLauncher||{render};
+window.DeckShelf={render,CAP,sortDecks,answered,touched,finished,isNew,seenKey,VERSION:9,queued:b=>b._dsQueued||[],finishedOf:b=>b._dsFinished||[]};window.DeckLauncher=window.DeckLauncher||{render};
 document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init()})();
