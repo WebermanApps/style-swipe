@@ -1,0 +1,514 @@
+{
+ "date": "research-tech-certs-training-and-cool-tech-deck",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Tech Certs, Training And Cool Tech",
+ "generated_at": "2026-10-18T03:38:44+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "calm": 9,
+  "practical": 3,
+  "playful": 7,
+  "focused": 1
+ },
+ "groups": {
+  "Training Week": 4,
+  "Tech Certs": 3,
+  "Cool Tech": 3
+ },
+ "apps": {
+  "Research": 10
+ },
+ "freshness": {
+  "option_slots": 20,
+  "never_shown_before": 20,
+  "share": 1.0
+ },
+ "warnings": [],
+ "submit_agent": "research",
+ "submit_to": "Research Agent",
+ "board": "research",
+ "topic": "morning-1018-research",
+ "shelf": true,
+ "audience": "Max",
+ "requested": true,
+ "request": "Max via Branding morning run Oct 18 2026: fresh this-or-that decks from the Oct 17 daily work report; 10 picks, Notes, light mode, R105 captions, theme names",
+ "report_section": "3",
+ "example_data": "All numbers, names and addresses on cards are labelled samples or placeholders; no real customer details.",
+ "deck_size": 10,
+ "caption_rule": "R105",
+ "notes": true,
+ "built_by": "Branding",
+ "built_at_note": "Morning decks Oct 18 2026 (daily work report 2026-10-17, rules 3 and 5)",
+ "sources": {
+  "report": "/workspace/ops/brand/daily-work-report/2026-10-17.md",
+  "rulebook": "/workspace/ops/brand/dashboard-rulebook.md",
+  "builder": "tools/build_morning_decks_1018.py"
+ },
+ "pairs": [
+  {
+   "group": "Tech Certs",
+   "category": "Ranking chart",
+   "app": "Research",
+   "ask": "Tech Certs PDF: Ranking chart, should the certs PDF rank certs on a skill versus customer-love bubble chart or in a ranked table?",
+   "optionA": {
+    "id": "md18rt_01blob",
+    "label": "Skill Vs Customer-Love Chart",
+    "desc": "Bubble size shows cost.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">RESEARCH · TECH GROWTH</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"34\" width=\"212\" height=\"110\" rx=\"6\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><line x1=\"120\" y1=\"40\" x2=\"120\" y2=\"138\" stroke=\"#D6D0C6\"/><line x1=\"20\" y1=\"89.0\" x2=\"220\" y2=\"89.0\" stroke=\"#D6D0C6\"/><text x=\"20\" y=\"86.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Less skill</text><text x=\"220\" y=\"86.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"400\" >More skill</text><text x=\"124\" y=\"136\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Customers shrug</text><text x=\"124\" y=\"47\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Customers love</text><circle cx=\"162.4\" cy=\"61.5\" r=\"12\" fill=\"#C1502E33\" stroke=\"#C1502E\" stroke-width=\"1.2\"/><text x=\"162.39999999999998\" y=\"64.5\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >First aid</text><circle cx=\"94.6\" cy=\"83.5\" r=\"14\" fill=\"#05668D33\" stroke=\"#05668D\" stroke-width=\"1.2\"/><text x=\"94.56\" y=\"86.5\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >HVAC basics</text><circle cx=\"141.2\" cy=\"100.0\" r=\"11\" fill=\"#0B6E4F33\" stroke=\"#0B6E4F\" stroke-width=\"1.2\"/><text x=\"141.2\" y=\"103.0\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Mold check</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >See the sweet spot</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18rt_01table",
+    "label": "Ranked Table",
+    "desc": "Cert, cost, skill, customer love.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">RESEARCH · TECH GROWTH</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"34\" width=\"212\" height=\"18\" rx=\"0\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"46\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >First aid</text><text x=\"220\" y=\"46\" font-size=\"7.8\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >$XX  ·  high love</text><text x=\"20\" y=\"64\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >HVAC basics</text><text x=\"220\" y=\"64\" font-size=\"7.8\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >$XXX  ·  high skill</text><rect x=\"14\" y=\"70\" width=\"212\" height=\"18\" rx=\"0\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"82\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Mold check</text><text x=\"220\" y=\"82\" font-size=\"7.8\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >$XXX</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Easy to read</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "research-tech-certs-training-and-cool-tech-deck-01",
+   "repeat": false
+  },
+  {
+   "group": "Tech Certs",
+   "category": "Costs",
+   "app": "Research",
+   "ask": "Tech Certs PDF: Costs, should cert costs show as exact prices with sources or as $, $$ and $$$ bands?",
+   "optionA": {
+    "id": "md18rt_02exact",
+    "label": "Exact With Sources",
+    "desc": "Price and where it came from.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">RESEARCH · TECH GROWTH</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"47\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >First aid</text><text x=\"226\" y=\"47\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"700\" >$XX  source</text><line x1=\"14\" y1=\"53\" x2=\"226\" y2=\"53\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"67\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >HVAC basics</text><text x=\"226\" y=\"67\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"700\" >$XXX  source</text><line x1=\"14\" y1=\"73\" x2=\"226\" y2=\"73\" stroke=\"#E5E0D8\"/><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Ready to budget</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18rt_02bands",
+    "label": "Price Bands",
+    "desc": "$, $$ or $$$.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">RESEARCH · TECH GROWTH</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"47\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >First aid</text><text x=\"226\" y=\"47\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"700\" >$</text><line x1=\"14\" y1=\"53\" x2=\"226\" y2=\"53\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"67\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >HVAC basics</text><text x=\"226\" y=\"67\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"700\" >$$$</text><line x1=\"14\" y1=\"73\" x2=\"226\" y2=\"73\" stroke=\"#E5E0D8\"/><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Quick feel</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "research-tech-certs-training-and-cool-tech-deck-02",
+   "repeat": false
+  },
+  {
+   "group": "Tech Certs",
+   "category": "Badges for members",
+   "app": "Research",
+   "ask": "Tech Profile Cert Badges: Badges for members, should certs a member would love, like first aid, show as badges on the tech's profile?",
+   "optionA": {
+    "id": "md18rt_03badge",
+    "label": "Badges On The Profile",
+    "desc": "Small lagoon badges under the name.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">RESEARCH · TECH GROWTH</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><rect x=\"66\" y=\"34\" width=\"108\" height=\"150\" rx=\"8\" fill=\"#05668D1A\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"120.0\" cy=\"94.0\" r=\"18.360000000000003\" fill=\"#05668D66\"/><path d=\"M89.76 184 Q120.0 109.0 150.24 184 Z\" fill=\"#05668D66\"/><rect x=\"74\" y=\"124\" width=\"72.8\" height=\"18\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"78\" y=\"138\" font-size=\"13\" fill=\"#FFFFFF\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >YOUR TECH</text><rect x=\"66\" y=\"34\" width=\"108\" height=\"150\" rx=\"8\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /><rect x=\"14\" y=\"192\" width=\"49.672\" height=\"11.02\" rx=\"5.8\" fill=\"#C1502E1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"38.836\" y=\"200.004\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">FIRST AID</text><rect x=\"69.672\" y=\"192\" width=\"54.08\" height=\"11.02\" rx=\"5.8\" fill=\"#05668D1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"96.71199999999999\" y=\"200.004\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">MOLD CHECK</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Builds trust</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18rt_03none",
+    "label": "Keep Certs Inside",
+    "desc": "Certs stay in the team records.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">RESEARCH · TECH GROWTH</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><rect x=\"66\" y=\"34\" width=\"108\" height=\"150\" rx=\"8\" fill=\"#05668D1A\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"120.0\" cy=\"94.0\" r=\"18.360000000000003\" fill=\"#05668D66\"/><path d=\"M89.76 184 Q120.0 109.0 150.24 184 Z\" fill=\"#05668D66\"/><rect x=\"74\" y=\"124\" width=\"72.8\" height=\"18\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"78\" y=\"138\" font-size=\"13\" fill=\"#FFFFFF\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >YOUR TECH</text><rect x=\"66\" y=\"34\" width=\"108\" height=\"150\" rx=\"8\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1\" /><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Clean profile</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "research-tech-certs-training-and-cool-tech-deck-03",
+   "repeat": false
+  },
+  {
+   "group": "Cool Tech",
+   "category": "Wow gauge",
+   "app": "Research",
+   "ask": "Cool Tech List: Wow gauge, should the wow factor show as a half-circle gauge or as one to five stars?",
+   "optionA": {
+    "id": "md18rt_04gauge",
+    "label": "Half-Circle Gauge",
+    "desc": "A needle from meh to wow.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">RESEARCH · TECH GROWTH</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Thermal Camera</text><path d=\"M80 106 A40 40 0 0 1 160 106\" fill=\"none\" stroke=\"#EEEAE4\" stroke-width=\"9\"/><path d=\"M80 106 A40 40 0 0 1 152.4 82.5\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"9\"/><line x1=\"120\" y1=\"106\" x2=\"141.0\" y2=\"90.7\" stroke=\"#0A0A0A\" stroke-width=\"2\"/><circle cx=\"120\" cy=\"106\" r=\"3\" fill=\"#0A0A0A\"/><text x=\"120\" y=\"122\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Wow</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fun to read</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18rt_04stars",
+    "label": "One To Five Stars",
+    "desc": "Stars next to each item.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">RESEARCH · TECH GROWTH</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Thermal Camera</text><g transform=\"translate(0,56)\"><g transform=\"translate(20,0) scale(0.75)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#D4A017\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><g transform=\"translate(42,0) scale(0.75)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#D4A017\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><g transform=\"translate(64,0) scale(0.75)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#D4A017\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><g transform=\"translate(86,0) scale(0.75)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#D4A017\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g><g transform=\"translate(108,0) scale(0.75)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#D6D0C6\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></g></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Familiar</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "research-tech-certs-training-and-cool-tech-deck-04",
+   "repeat": false
+  },
+  {
+   "group": "Cool Tech",
+   "category": "List layout",
+   "app": "Research",
+   "ask": "Cool Tech List: List layout, should the cool tech list be a swipe carousel of item cards or a table with cost, difficulty and wow?",
+   "optionA": {
+    "id": "md18rt_05car",
+    "label": "Item Card Carousel",
+    "desc": "Photo, cost, difficulty, wow per card.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">RESEARCH · TECH GROWTH</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"34\" width=\"150\" height=\"100\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"34\" width=\"150\" height=\"4\" rx=\"2\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"22\" y=\"44\" width=\"134\" height=\"66\" rx=\"6\" fill=\"#C1502E1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M63.92 98.12 V75.548 L89.0 57.992 L114.08 75.548 V98.12 Z\" fill=\"#FFFFFF\" stroke=\"#C1502E\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><rect x=\"83.984\" y=\"83.072\" width=\"10.032000000000002\" height=\"15.048\" rx=\"0\" fill=\"#C1502E55\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"116\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Thermal camera</text><text x=\"24\" y=\"127\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >$XXX  ·  easy</text><rect x=\"172\" y=\"34\" width=\"150\" height=\"100\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"172\" y=\"34\" width=\"150\" height=\"4\" rx=\"2\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"180\" y=\"44\" width=\"134\" height=\"66\" rx=\"6\" fill=\"#05668D1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M180 90.19999999999999 H314 M220.2 44 V90.19999999999999\" stroke=\"#05668D66\" stroke-width=\"1.2\"/><rect x=\"240.3\" y=\"73.7\" width=\"46.9\" height=\"16.5\" rx=\"3\" fill=\"#05668D44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"190.72\" y=\"57.2\" width=\"20.099999999999998\" height=\"19.8\" rx=\"2\" fill=\"#FFFFFF\" stroke=\"#05668D88\" stroke-width=\"1\" /><text x=\"182\" y=\"116\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Leak sensor</text><text x=\"182\" y=\"127\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >$XX  ·  easy</text><rect x=\"103\" y=\"142\" width=\"10\" height=\"5\" rx=\"2.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"117.5\" y=\"142\" width=\"5\" height=\"5\" rx=\"2.5\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"129.5\" y=\"142\" width=\"5\" height=\"5\" rx=\"2.5\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Each item shines</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18rt_05table",
+    "label": "Table",
+    "desc": "Everything in rows.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">RESEARCH · TECH GROWTH</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"34\" width=\"212\" height=\"18\" rx=\"0\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"46\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Thermal camera</text><text x=\"220\" y=\"46\" font-size=\"7.8\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >$XXX easy</text><text x=\"20\" y=\"64\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Leak sensor</text><text x=\"220\" y=\"64\" font-size=\"7.8\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >$XX easy</text><rect x=\"14\" y=\"70\" width=\"212\" height=\"18\" rx=\"0\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"82\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Drone roof</text><text x=\"220\" y=\"82\" font-size=\"7.8\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >$XXX hard</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Compare fast</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "research-tech-certs-training-and-cool-tech-deck-05",
+   "repeat": false
+  },
+  {
+   "group": "Cool Tech",
+   "category": "Sort order",
+   "app": "Research",
+   "ask": "Cool Tech List: Sort order, should the list sort by wow factor or by cost?",
+   "optionA": {
+    "id": "md18rt_06wow",
+    "label": "By Wow",
+    "desc": "Most impressive first.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">RESEARCH · TECH GROWTH</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"34\" width=\"212\" height=\"34\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"31.0\" cy=\"51.0\" r=\"9.0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.6\"/><text x=\"31.0\" y=\"54.6\" font-size=\"9.9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >1</text><text x=\"46\" y=\"50.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Drone roof check</text><text x=\"46\" y=\"60.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >wow 5</text><rect x=\"14\" y=\"74\" width=\"212\" height=\"34\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"31.0\" cy=\"91.0\" r=\"9.0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.6\"/><text x=\"31.0\" y=\"94.6\" font-size=\"9.9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >2</text><text x=\"46\" y=\"90.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Thermal camera</text><text x=\"46\" y=\"100.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >wow 4</text><rect x=\"14\" y=\"114\" width=\"212\" height=\"34\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"31.0\" cy=\"131.0\" r=\"9.0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.6\"/><text x=\"31.0\" y=\"134.6\" font-size=\"9.9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >3</text><text x=\"46\" y=\"130.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Leak sensor</text><text x=\"46\" y=\"140.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >wow 3</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Lead with the exciting</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18rt_06cost",
+    "label": "By Cost",
+    "desc": "Cheapest first.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">RESEARCH · TECH GROWTH</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"34\" width=\"212\" height=\"34\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"31.0\" cy=\"51.0\" r=\"9.0\" fill=\"#0B6E4F\" stroke=\"#0B6E4F\" stroke-width=\"1.6\"/><text x=\"31.0\" y=\"54.6\" font-size=\"9.9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >1</text><text x=\"46\" y=\"50.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Leak sensor</text><text x=\"46\" y=\"60.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >$XX</text><rect x=\"14\" y=\"74\" width=\"212\" height=\"34\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"31.0\" cy=\"91.0\" r=\"9.0\" fill=\"#0B6E4F\" stroke=\"#0B6E4F\" stroke-width=\"1.6\"/><text x=\"31.0\" y=\"94.6\" font-size=\"9.9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >2</text><text x=\"46\" y=\"90.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Thermal camera</text><text x=\"46\" y=\"100.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >$XXX</text><rect x=\"14\" y=\"114\" width=\"212\" height=\"34\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"31.0\" cy=\"131.0\" r=\"9.0\" fill=\"#0B6E4F\" stroke=\"#0B6E4F\" stroke-width=\"1.6\"/><text x=\"31.0\" y=\"134.6\" font-size=\"9.9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >3</text><text x=\"46\" y=\"130.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Drone roof check</text><text x=\"46\" y=\"140.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >$XXX</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Lead with easy wins</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "research-tech-certs-training-and-cool-tech-deck-06",
+   "repeat": false
+  },
+  {
+   "group": "Training Week",
+   "category": "Day order",
+   "app": "Research",
+   "ask": "Tech Training Week: Day order, should Training Week start with the company vision or with the tech the business runs on?",
+   "optionA": {
+    "id": "md18rt_07vision",
+    "label": "Vision First",
+    "desc": "Monday: why Smart Upkeep exists.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">RESEARCH · TECH GROWTH</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><line x1=\"35.2\" y1=\"44\" x2=\"204.8\" y2=\"44\" stroke=\"#D6D0C6\"/><circle cx=\"35.2\" cy=\"44\" r=\"7\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.4\"/><text x=\"35.2\" y=\"47\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"700\" >1</text><text x=\"35.2\" y=\"62\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Vision</text><circle cx=\"77.6\" cy=\"44\" r=\"7\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.4\"/><text x=\"77.6\" y=\"47\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"700\" >2</text><text x=\"77.6\" y=\"62\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Build</text><circle cx=\"120.0\" cy=\"44\" r=\"7\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.4\"/><text x=\"120.0\" y=\"47\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"700\" >3</text><text x=\"120.0\" y=\"62\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Tech</text><circle cx=\"162.39999999999998\" cy=\"44\" r=\"7\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.4\"/><text x=\"162.39999999999998\" y=\"47\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"700\" >4</text><text x=\"162.39999999999998\" y=\"62\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Field</text><circle cx=\"204.79999999999998\" cy=\"44\" r=\"7\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.4\"/><text x=\"204.79999999999998\" y=\"47\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"700\" >5</text><text x=\"204.79999999999998\" y=\"62\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Review</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Purpose before tools</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18rt_07tech",
+    "label": "Tech First",
+    "desc": "Monday: the apps and tools.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">RESEARCH · TECH GROWTH</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><line x1=\"35.2\" y1=\"44\" x2=\"204.8\" y2=\"44\" stroke=\"#D6D0C6\"/><circle cx=\"35.2\" cy=\"44\" r=\"7\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.4\"/><text x=\"35.2\" y=\"47\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"700\" >1</text><text x=\"35.2\" y=\"62\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Tech</text><circle cx=\"77.6\" cy=\"44\" r=\"7\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.4\"/><text x=\"77.6\" y=\"47\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"700\" >2</text><text x=\"77.6\" y=\"62\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Build</text><circle cx=\"120.0\" cy=\"44\" r=\"7\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.4\"/><text x=\"120.0\" y=\"47\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"700\" >3</text><text x=\"120.0\" y=\"62\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Vision</text><circle cx=\"162.39999999999998\" cy=\"44\" r=\"7\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.4\"/><text x=\"162.39999999999998\" y=\"47\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"700\" >4</text><text x=\"162.39999999999998\" y=\"62\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Field</text><circle cx=\"204.79999999999998\" cy=\"44\" r=\"7\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.4\"/><text x=\"204.79999999999998\" y=\"47\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"700\" >5</text><text x=\"204.79999999999998\" y=\"62\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Review</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Useful from day one</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "research-tech-certs-training-and-cool-tech-deck-07",
+   "repeat": false
+  },
+  {
+   "group": "Training Week",
+   "category": "Month of study",
+   "app": "Research",
+   "ask": "Tech Training Week: Month of study, should the month of study topics show as a calendar or a checklist?",
+   "optionA": {
+    "id": "md18rt_08cal",
+    "label": "Calendar",
+    "desc": "A topic on each day.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">RESEARCH · TECH GROWTH</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"29.0\" y=\"42\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >M</text><text x=\"59.3\" y=\"42\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >T</text><text x=\"89.6\" y=\"42\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >W</text><text x=\"119.9\" y=\"42\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >T</text><text x=\"150.2\" y=\"42\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >F</text><text x=\"180.5\" y=\"42\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >S</text><text x=\"210.8\" y=\"42\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >S</text><text x=\"29.0\" y=\"59\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >1</text><rect x=\"49.3\" y=\"48\" width=\"20\" height=\"16\" rx=\"4\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"59.3\" y=\"59\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >2</text><text x=\"89.6\" y=\"59\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >3</text><text x=\"119.9\" y=\"59\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >4</text><rect x=\"140.2\" y=\"48\" width=\"20\" height=\"16\" rx=\"4\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"150.2\" y=\"59\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >5</text><text x=\"180.5\" y=\"59\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >6</text><text x=\"210.8\" y=\"59\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >7</text><text x=\"29.0\" y=\"79\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >8</text><rect x=\"49.3\" y=\"68\" width=\"20\" height=\"16\" rx=\"4\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"59.3\" y=\"79\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >9</text><text x=\"89.6\" y=\"79\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >10</text><text x=\"119.9\" y=\"79\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >11</text><rect x=\"140.2\" y=\"68\" width=\"20\" height=\"16\" rx=\"4\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"150.2\" y=\"79\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >12</text><text x=\"180.5\" y=\"79\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >13</text><text x=\"210.8\" y=\"79\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >14</text><text x=\"29.0\" y=\"99\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >15</text><rect x=\"49.3\" y=\"88\" width=\"20\" height=\"16\" rx=\"4\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"59.3\" y=\"99\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >16</text><text x=\"89.6\" y=\"99\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >17</text><text x=\"119.9\" y=\"99\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >18</text><rect x=\"140.2\" y=\"88\" width=\"20\" height=\"16\" rx=\"4\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"150.2\" y=\"99\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >19</text><text x=\"180.5\" y=\"99\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >20</text><text x=\"210.8\" y=\"99\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >21</text><text x=\"29.0\" y=\"119\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >22</text><rect x=\"49.3\" y=\"108\" width=\"20\" height=\"16\" rx=\"4\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"59.3\" y=\"119\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >23</text><text x=\"89.6\" y=\"119\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >24</text><text x=\"119.9\" y=\"119\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >25</text><text x=\"150.2\" y=\"119\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >26</text><text x=\"180.5\" y=\"119\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >27</text><text x=\"210.8\" y=\"119\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >28</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Paced</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18rt_08check",
+    "label": "Checklist",
+    "desc": "Tick topics in any order.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">RESEARCH · TECH GROWTH</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"36\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M17 42 l2.5 2.5 4.5 -5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"1.8\"/><text x=\"34\" y=\"45.5\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Home systems</text><line x1=\"34\" y1=\"53\" x2=\"226\" y2=\"53\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"58\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"67.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Moisture readings</text><line x1=\"34\" y1=\"75\" x2=\"226\" y2=\"75\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"80\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"89.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Customer care</text><line x1=\"34\" y1=\"97\" x2=\"226\" y2=\"97\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"102\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"111.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >App deep dive</text><line x1=\"34\" y1=\"119\" x2=\"226\" y2=\"119\" stroke=\"#E5E0D8\"/><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Flexible</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "research-tech-certs-training-and-cool-tech-deck-08",
+   "repeat": false
+  },
+  {
+   "group": "Training Week",
+   "category": "End of each day",
+   "app": "Research",
+   "ask": "Tech Training Week: End of each day, should each training day end with a short quiz deck or a talk with Max?",
+   "optionA": {
+    "id": "md18rt_09quiz",
+    "label": "Short Quiz Deck",
+    "desc": "Swipe a few checks.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">RESEARCH · TECH GROWTH</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Day 1 Check</text><rect x=\"14\" y=\"56\" width=\"103\" height=\"24\" rx=\"0\" fill=\"#0A0A0A\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"65.5\" y=\"70.7\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">OPTION A</text><rect x=\"123\" y=\"56\" width=\"103\" height=\"24\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"174.5\" y=\"70.7\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">OPTION B</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Measures learning</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18rt_09talk",
+    "label": "Talk With Max",
+    "desc": "Ten minutes, no quiz.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">RESEARCH · TECH GROWTH</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Day 1 Wrap</text><text x=\"29.0\" y=\"64\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >M</text><text x=\"59.3\" y=\"64\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >T</text><text x=\"89.6\" y=\"64\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >W</text><text x=\"119.9\" y=\"64\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >T</text><text x=\"150.2\" y=\"64\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >F</text><text x=\"180.5\" y=\"64\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >S</text><text x=\"210.8\" y=\"64\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >S</text><rect x=\"19.0\" y=\"70\" width=\"20\" height=\"16\" rx=\"4\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"29.0\" y=\"81\" font-size=\"7.5\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >1</text><text x=\"59.3\" y=\"81\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >2</text><text x=\"89.6\" y=\"81\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >3</text><text x=\"119.9\" y=\"81\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >4</text><text x=\"150.2\" y=\"81\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >5</text><text x=\"180.5\" y=\"81\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >6</text><text x=\"210.8\" y=\"81\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >7</text><text x=\"29.0\" y=\"101\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >8</text><text x=\"59.3\" y=\"101\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >9</text><text x=\"89.6\" y=\"101\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >10</text><text x=\"119.9\" y=\"101\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >11</text><text x=\"150.2\" y=\"101\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >12</text><text x=\"180.5\" y=\"101\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >13</text><text x=\"210.8\" y=\"101\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >14</text><text x=\"29.0\" y=\"121\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >15</text><text x=\"59.3\" y=\"121\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >16</text><text x=\"89.6\" y=\"121\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >17</text><text x=\"119.9\" y=\"121\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >18</text><text x=\"150.2\" y=\"121\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >19</text><text x=\"180.5\" y=\"121\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >20</text><text x=\"210.8\" y=\"121\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >21</text><text x=\"29.0\" y=\"141\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >22</text><text x=\"59.3\" y=\"141\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >23</text><text x=\"89.6\" y=\"141\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >24</text><text x=\"119.9\" y=\"141\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >25</text><text x=\"150.2\" y=\"141\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >26</text><text x=\"180.5\" y=\"141\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >27</text><text x=\"210.8\" y=\"141\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >28</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Personal</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "research-tech-certs-training-and-cool-tech-deck-09",
+   "repeat": false
+  },
+  {
+   "group": "Training Week",
+   "category": "Training format",
+   "app": "Research",
+   "ask": "Tech Training Week: Training format, should each day's deck be read alone on the phone or presented together on a laptop?",
+   "optionA": {
+    "id": "md18rt_10phone",
+    "label": "Read Alone On The Phone",
+    "desc": "Swipe through at their own pace.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">RESEARCH · TECH GROWTH</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"47\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Day 2: How It Was Built</text><rect x=\"75.5\" y=\"57\" width=\"5\" height=\"5\" rx=\"2.5\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"87.5\" y=\"57\" width=\"5\" height=\"5\" rx=\"2.5\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"97\" y=\"57\" width=\"10\" height=\"5\" rx=\"2.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"111.5\" y=\"57\" width=\"5\" height=\"5\" rx=\"2.5\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"123.5\" y=\"57\" width=\"5\" height=\"5\" rx=\"2.5\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"135.5\" y=\"57\" width=\"5\" height=\"5\" rx=\"2.5\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"147.5\" y=\"57\" width=\"5\" height=\"5\" rx=\"2.5\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"159.5\" y=\"57\" width=\"5\" height=\"5\" rx=\"2.5\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Own pace</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18rt_10laptop",
+    "label": "Presented Together",
+    "desc": "Max walks through it on a laptop.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">TECH TRAINING WEEK · 1280</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><rect x=\"10\" y=\"34\" width=\"220\" height=\"90\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\" stroke-width=\"1\" /><rect x=\"10\" y=\"34\" width=\"220\" height=\"12\" rx=\"6\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"18\" cy=\"40\" r=\"2\" fill=\"#C9C2B6\"/><circle cx=\"25\" cy=\"40\" r=\"2\" fill=\"#C9C2B6\"/><circle cx=\"32\" cy=\"40\" r=\"2\" fill=\"#C9C2B6\"/><g transform=\"translate(14,50)\"><text x=\"10\" y=\"40\" font-size=\"12\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Day 2: How It Was Built</text></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Questions answered live</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "research-tech-certs-training-and-cool-tech-deck-10",
+   "repeat": false
+  }
+ ],
+ "share": true
+}

@@ -1,0 +1,511 @@
+{
+ "date": "upkeep-forecast-app-charts-scenarios-and-runway-deck",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Forecast App: Charts, Scenarios And Runway",
+ "generated_at": "2026-10-18T03:37:54+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "playful": 3,
+  "calm": 10,
+  "practical": 7
+ },
+ "groups": {
+  "Forecast App": 10
+ },
+ "apps": {
+  "UpKeep": 10
+ },
+ "freshness": {
+  "option_slots": 20,
+  "never_shown_before": 20,
+  "share": 1.0
+ },
+ "warnings": [],
+ "submit_agent": "upkeep",
+ "submit_to": "UpKeep Agent f0d420ad-d37e-44d3-be6f-053da2b6e24d",
+ "board": "upkeep",
+ "topic": "morning-1018-pitch",
+ "shelf": true,
+ "audience": "Max",
+ "requested": true,
+ "request": "Max via Branding morning run Oct 18 2026: fresh this-or-that decks from the Oct 17 daily work report; 10 picks, Notes, light mode, R105 captions, theme names",
+ "report_section": "1c",
+ "example_data": "All numbers, names and addresses on cards are labelled samples or placeholders; no real customer details.",
+ "deck_size": 10,
+ "caption_rule": "R105",
+ "notes": true,
+ "built_by": "Branding",
+ "built_at_note": "Morning decks Oct 18 2026 (daily work report 2026-10-17, rules 3 and 5)",
+ "sources": {
+  "report": "/workspace/ops/brand/daily-work-report/2026-10-17.md",
+  "rulebook": "/workspace/ops/brand/dashboard-rulebook.md",
+  "builder": "tools/build_morning_decks_1018.py"
+ },
+ "pairs": [
+  {
+   "group": "Forecast App",
+   "category": "Charts on a phone",
+   "app": "UpKeep",
+   "ask": "UpKeep Forecast App: Charts on a phone, should the revenue, members and cash charts sit in a swipe carousel or one chart with tabs?",
+   "optionA": {
+    "id": "md18pf_01carousel",
+    "label": "Chart Carousel",
+    "desc": "Swipe from revenue to members to cash.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP FORECAST APP · PHONE</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Forecast</text><rect x=\"14\" y=\"56\" width=\"150\" height=\"90\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"56\" width=\"150\" height=\"4\" rx=\"2\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"80\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Revenue</text><text x=\"24\" y=\"93\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >sample</text><rect x=\"172\" y=\"56\" width=\"150\" height=\"90\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"172\" y=\"56\" width=\"150\" height=\"4\" rx=\"2\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"182\" y=\"80\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Members</text><text x=\"182\" y=\"93\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >sample</text><rect x=\"103\" y=\"154\" width=\"10\" height=\"5\" rx=\"2.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"117.5\" y=\"154\" width=\"5\" height=\"5\" rx=\"2.5\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"129.5\" y=\"154\" width=\"5\" height=\"5\" rx=\"2.5\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"60.199999999999996\" y=\"170\" width=\"119.60000000000001\" height=\"14\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#D4A017\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><text x=\"120\" y=\"180\" font-size=\"7.5\" fill=\"#8a6510\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\".6\">SAMPLE NUMBERS, NOT REAL</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >One chart per card</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18pf_01tabs",
+    "label": "One Chart With Tabs",
+    "desc": "Revenue, Members, Cash tabs over one chart.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP FORECAST APP · PHONE</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><line x1=\"14\" y1=\"56\" x2=\"226\" y2=\"56\" stroke=\"#E5E0D8\"/><rect x=\"22\" y=\"54\" width=\"54.66666666666667\" height=\"2.5\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"49.333333333333336\" y=\"48.5\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Revenue</text><text x=\"120.0\" y=\"48.5\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Members</text><text x=\"190.66666666666669\" y=\"48.5\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Cash</text><text x=\"14\" y=\"78\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Forecast</text><rect x=\"14\" y=\"86\" width=\"212\" height=\"56\" rx=\"6\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><polyline points=\"14.0,136.4 56.4,131.9 98.8,125.2 141.2,116.8 183.6,107.3 226.0,97.2\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"226\" cy=\"97.19999999999999\" r=\"3\" fill=\"#0B6E4F\"/><rect x=\"60.199999999999996\" y=\"150\" width=\"119.60000000000001\" height=\"14\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#D4A017\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><text x=\"120\" y=\"160\" font-size=\"7.5\" fill=\"#8a6510\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\".6\">SAMPLE NUMBERS, NOT REAL</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Chart stays put</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-forecast-app-charts-scenarios-and-runway-deck-01",
+   "repeat": false
+  },
+  {
+   "group": "Forecast App",
+   "category": "Undo changes",
+   "app": "UpKeep",
+   "ask": "UpKeep Forecast App: Undo changes, after editing assumption chips should there be one Reset To Base button or an undo on each chip?",
+   "optionA": {
+    "id": "md18pf_02reset",
+    "label": "One Reset To Base",
+    "desc": "Puts every chip back at once.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP FORECAST APP · PHONE</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"34\" width=\"49.672\" height=\"11.02\" rx=\"5.8\" fill=\"#C1502E1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"38.836\" y=\"42.004\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">PRICE $XX</text><rect x=\"69.672\" y=\"34\" width=\"45.263999999999996\" height=\"11.02\" rx=\"5.8\" fill=\"#05668D1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"92.304\" y=\"42.004\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">CHURN X%</text><rect x=\"120.93599999999999\" y=\"34\" width=\"45.263999999999996\" height=\"11.02\" rx=\"5.8\" fill=\"#0B6E4F1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"143.56799999999998\" y=\"42.004\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">VISITS X</text><rect x=\"14\" y=\"54\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"70.24\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">RESET TO BASE</text><text x=\"14\" y=\"102\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Forecast</text><rect x=\"14\" y=\"110\" width=\"212\" height=\"56\" rx=\"6\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><polyline points=\"14.0,160.4 56.4,155.9 98.8,149.2 141.2,140.8 183.6,131.3 226.0,121.2\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"226\" cy=\"121.19999999999999\" r=\"3\" fill=\"#0B6E4F\"/><rect x=\"60.199999999999996\" y=\"174\" width=\"119.60000000000001\" height=\"14\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#D4A017\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><text x=\"120\" y=\"184\" font-size=\"7.5\" fill=\"#8a6510\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\".6\">SAMPLE NUMBERS, NOT REAL</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >One clear way back</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18pf_02each",
+    "label": "Undo On Each Chip",
+    "desc": "A small undo mark beside each changed chip.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP FORECAST APP · PHONE</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"34\" width=\"62.895999999999994\" height=\"11.02\" rx=\"5.8\" fill=\"#C1502E1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"45.44799999999999\" y=\"42.004\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">PRICE $XX  ↺</text><rect x=\"82.89599999999999\" y=\"34\" width=\"58.488\" height=\"11.02\" rx=\"5.8\" fill=\"#05668D1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"112.13999999999999\" y=\"42.004\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">CHURN X%  ↺</text><rect x=\"147.384\" y=\"34\" width=\"45.263999999999996\" height=\"11.02\" rx=\"5.8\" fill=\"#0B6E4F1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"170.016\" y=\"42.004\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\".6\">VISITS X</text><text x=\"14\" y=\"68\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Forecast</text><rect x=\"14\" y=\"76\" width=\"212\" height=\"56\" rx=\"6\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><polyline points=\"14.0,126.4 56.4,121.9 98.8,115.2 141.2,106.8 183.6,97.3 226.0,87.2\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"226\" cy=\"87.19999999999999\" r=\"3\" fill=\"#0B6E4F\"/><rect x=\"60.199999999999996\" y=\"140\" width=\"119.60000000000001\" height=\"14\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#D4A017\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><text x=\"120\" y=\"150\" font-size=\"7.5\" fill=\"#8a6510\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\".6\">SAMPLE NUMBERS, NOT REAL</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Undo just one change</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-forecast-app-charts-scenarios-and-runway-deck-02",
+   "repeat": false
+  },
+  {
+   "group": "Forecast App",
+   "category": "Saved scenarios",
+   "app": "UpKeep",
+   "ask": "UpKeep Forecast App: Saved scenarios, should Max be able to save named scenarios in a swipe row or keep only base, best and worst?",
+   "optionA": {
+    "id": "md18pf_03saved",
+    "label": "Saved Scenarios Row",
+    "desc": "Named scenarios as cards you swipe.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP FORECAST APP · PHONE</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"34\" width=\"80\" height=\"34\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"34\" width=\"80\" height=\"4\" rx=\"2\" fill=\"#0A0A0A\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"58\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Base</text><rect x=\"102\" y=\"34\" width=\"80\" height=\"34\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"102\" y=\"34\" width=\"80\" height=\"4\" rx=\"2\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"112\" y=\"58\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Two vans</text><text x=\"112\" y=\"71\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >saved</text><rect x=\"190\" y=\"34\" width=\"80\" height=\"34\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"190\" y=\"34\" width=\"80\" height=\"4\" rx=\"2\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"200\" y=\"58\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Slower start</text><text x=\"200\" y=\"71\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >saved</text><text x=\"14\" y=\"92\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Forecast</text><rect x=\"14\" y=\"100\" width=\"212\" height=\"56\" rx=\"6\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><polyline points=\"14.0,150.4 56.4,145.9 98.8,139.2 141.2,130.8 183.6,121.3 226.0,111.2\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"226\" cy=\"111.19999999999999\" r=\"3\" fill=\"#0B6E4F\"/><rect x=\"60.199999999999996\" y=\"164\" width=\"119.60000000000001\" height=\"14\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#D4A017\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><text x=\"120\" y=\"174\" font-size=\"7.5\" fill=\"#8a6510\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\".6\">SAMPLE NUMBERS, NOT REAL</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Try ideas, keep them</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18pf_03three",
+    "label": "Base, Best And Worst Only",
+    "desc": "Three fixed scenarios.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP FORECAST APP · PHONE</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"34\" width=\"212\" height=\"22\" rx=\"11\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"16\" y=\"36\" width=\"66.66666666666667\" height=\"18\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"49.333333333333336\" y=\"48.5\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Base</text><text x=\"120.0\" y=\"48.5\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Best</text><text x=\"190.66666666666669\" y=\"48.5\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Worst</text><text x=\"14\" y=\"78\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Forecast</text><rect x=\"14\" y=\"86\" width=\"212\" height=\"56\" rx=\"6\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><polyline points=\"14.0,136.4 56.4,131.9 98.8,125.2 141.2,116.8 183.6,107.3 226.0,97.2\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"226\" cy=\"97.19999999999999\" r=\"3\" fill=\"#0B6E4F\"/><rect x=\"60.199999999999996\" y=\"150\" width=\"119.60000000000001\" height=\"14\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#D4A017\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><text x=\"120\" y=\"160\" font-size=\"7.5\" fill=\"#8a6510\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\".6\">SAMPLE NUMBERS, NOT REAL</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Simple and fixed</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-forecast-app-charts-scenarios-and-runway-deck-03",
+   "repeat": false
+  },
+  {
+   "group": "Forecast App",
+   "category": "Money format",
+   "app": "UpKeep",
+   "ask": "UpKeep Forecast App: Money format, should money read rounded like $X.XM or in full like $X,XXX,XXX?",
+   "optionA": {
+    "id": "md18pf_04round",
+    "label": "Rounded, $X.XM",
+    "desc": "Short numbers that read at a glance.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP FORECAST APP · PHONE</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><rect x=\"14.0\" y=\"34\" width=\"66.66666666666667\" height=\"46\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22.0\" y=\"60\" font-size=\"17\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >$X.XM</text><text x=\"22.0\" y=\"72\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >revenue</text><rect x=\"86.66666666666667\" y=\"34\" width=\"66.66666666666667\" height=\"46\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"94.66666666666667\" y=\"60\" font-size=\"17\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >$XXK</text><text x=\"94.66666666666667\" y=\"72\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >cash</text><rect x=\"159.33333333333334\" y=\"34\" width=\"66.66666666666667\" height=\"46\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"167.33333333333334\" y=\"60\" font-size=\"17\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >XXX</text><text x=\"167.33333333333334\" y=\"72\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >members</text><text x=\"14\" y=\"102\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Forecast</text><rect x=\"14\" y=\"110\" width=\"212\" height=\"56\" rx=\"6\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><polyline points=\"14.0,160.4 56.4,155.9 98.8,149.2 141.2,140.8 183.6,131.3 226.0,121.2\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"226\" cy=\"121.19999999999999\" r=\"3\" fill=\"#0B6E4F\"/><rect x=\"60.199999999999996\" y=\"174\" width=\"119.60000000000001\" height=\"14\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#D4A017\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><text x=\"120\" y=\"184\" font-size=\"7.5\" fill=\"#8a6510\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\".6\">SAMPLE NUMBERS, NOT REAL</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Easy to say out loud</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18pf_04full",
+    "label": "In Full",
+    "desc": "Every dollar shown.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP FORECAST APP · PHONE</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><rect x=\"14.0\" y=\"34\" width=\"103.0\" height=\"46\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"22.0\" y=\"60\" font-size=\"17\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >$X,XXX,XXX</text><text x=\"22.0\" y=\"72\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >revenue</text><rect x=\"123.0\" y=\"34\" width=\"103.0\" height=\"46\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"131.0\" y=\"60\" font-size=\"17\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >$XXX,XXX</text><text x=\"131.0\" y=\"72\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >cash</text><text x=\"14\" y=\"102\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Forecast</text><rect x=\"14\" y=\"110\" width=\"212\" height=\"56\" rx=\"6\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><polyline points=\"14.0,160.4 56.4,155.9 98.8,149.2 141.2,140.8 183.6,131.3 226.0,121.2\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"226\" cy=\"121.19999999999999\" r=\"3\" fill=\"#0B6E4F\"/><rect x=\"60.199999999999996\" y=\"174\" width=\"119.60000000000001\" height=\"14\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#D4A017\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><text x=\"120\" y=\"184\" font-size=\"7.5\" fill=\"#8a6510\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\".6\">SAMPLE NUMBERS, NOT REAL</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Exact</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-forecast-app-charts-scenarios-and-runway-deck-04",
+   "repeat": false
+  },
+  {
+   "group": "Forecast App",
+   "category": "Time steps",
+   "app": "UpKeep",
+   "ask": "UpKeep Forecast App: Time steps, should the chart step by quarter or by month?",
+   "optionA": {
+    "id": "md18pf_05q",
+    "label": "By Quarter",
+    "desc": "Twenty points over five years.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP FORECAST APP · PHONE</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><line x1=\"14\" y1=\"94\" x2=\"226\" y2=\"94\" stroke=\"#E5E0D8\"/><rect x=\"17.0\" y=\"88.0\" width=\"24.285714285714285\" height=\"6.0\" rx=\"2\" fill=\"#0B6E4F55\" stroke=\"none\" stroke-width=\"1\" /><text x=\"29.142857142857142\" y=\"103\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q1</text><rect x=\"47.285714285714285\" y=\"82.0\" width=\"24.285714285714285\" height=\"12.0\" rx=\"2\" fill=\"#0B6E4F55\" stroke=\"none\" stroke-width=\"1\" /><text x=\"59.42857142857143\" y=\"103\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q2</text><rect x=\"77.57142857142857\" y=\"76.0\" width=\"24.285714285714285\" height=\"18.0\" rx=\"2\" fill=\"#0B6E4F55\" stroke=\"none\" stroke-width=\"1\" /><text x=\"89.71428571428571\" y=\"103\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q3</text><rect x=\"107.85714285714286\" y=\"70.0\" width=\"24.285714285714285\" height=\"24.0\" rx=\"2\" fill=\"#0B6E4F55\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120.0\" y=\"103\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q4</text><rect x=\"138.14285714285714\" y=\"61.0\" width=\"24.285714285714285\" height=\"33.0\" rx=\"2\" fill=\"#0B6E4F55\" stroke=\"none\" stroke-width=\"1\" /><text x=\"150.28571428571428\" y=\"103\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q1</text><rect x=\"168.42857142857142\" y=\"52.0\" width=\"24.285714285714285\" height=\"42.0\" rx=\"2\" fill=\"#0B6E4F55\" stroke=\"none\" stroke-width=\"1\" /><text x=\"180.57142857142856\" y=\"103\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q2</text><rect x=\"198.71428571428572\" y=\"43.0\" width=\"24.285714285714285\" height=\"51.0\" rx=\"2\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"210.85714285714286\" y=\"103\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Q3</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Smooth and simple</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18pf_05m",
+    "label": "By Month",
+    "desc": "Sixty points over five years.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP FORECAST APP · PHONE</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><line x1=\"14\" y1=\"94\" x2=\"226\" y2=\"94\" stroke=\"#E5E0D8\"/><rect x=\"17.0\" y=\"88.0\" width=\"11.666666666666668\" height=\"6.0\" rx=\"2\" fill=\"#0B6E4F55\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22.833333333333336\" y=\"103\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >J</text><rect x=\"34.66666666666667\" y=\"86.8\" width=\"11.666666666666668\" height=\"7.199999999999999\" rx=\"2\" fill=\"#0B6E4F55\" stroke=\"none\" stroke-width=\"1\" /><text x=\"40.5\" y=\"103\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >F</text><rect x=\"52.333333333333336\" y=\"85.0\" width=\"11.666666666666668\" height=\"9.0\" rx=\"2\" fill=\"#0B6E4F55\" stroke=\"none\" stroke-width=\"1\" /><text x=\"58.16666666666667\" y=\"103\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >M</text><rect x=\"70.0\" y=\"82.0\" width=\"11.666666666666668\" height=\"12.0\" rx=\"2\" fill=\"#0B6E4F55\" stroke=\"none\" stroke-width=\"1\" /><text x=\"75.83333333333333\" y=\"103\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >A</text><rect x=\"87.66666666666667\" y=\"80.8\" width=\"11.666666666666668\" height=\"13.2\" rx=\"2\" fill=\"#0B6E4F55\" stroke=\"none\" stroke-width=\"1\" /><text x=\"93.5\" y=\"103\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >M</text><rect x=\"105.33333333333334\" y=\"77.2\" width=\"11.666666666666668\" height=\"16.8\" rx=\"2\" fill=\"#0B6E4F55\" stroke=\"none\" stroke-width=\"1\" /><text x=\"111.16666666666667\" y=\"103\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >J</text><rect x=\"123.0\" y=\"76.0\" width=\"11.666666666666668\" height=\"18.0\" rx=\"2\" fill=\"#0B6E4F55\" stroke=\"none\" stroke-width=\"1\" /><text x=\"128.83333333333334\" y=\"103\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >J</text><rect x=\"140.66666666666669\" y=\"73.0\" width=\"11.666666666666668\" height=\"21.0\" rx=\"2\" fill=\"#0B6E4F55\" stroke=\"none\" stroke-width=\"1\" /><text x=\"146.50000000000003\" y=\"103\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >A</text><rect x=\"158.33333333333334\" y=\"70.0\" width=\"11.666666666666668\" height=\"24.0\" rx=\"2\" fill=\"#0B6E4F55\" stroke=\"none\" stroke-width=\"1\" /><text x=\"164.16666666666669\" y=\"103\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >S</text><rect x=\"176.0\" y=\"67.6\" width=\"11.666666666666668\" height=\"26.4\" rx=\"2\" fill=\"#0B6E4F55\" stroke=\"none\" stroke-width=\"1\" /><text x=\"181.83333333333334\" y=\"103\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >O</text><rect x=\"193.66666666666669\" y=\"64.0\" width=\"11.666666666666668\" height=\"30.0\" rx=\"2\" fill=\"#0B6E4F55\" stroke=\"none\" stroke-width=\"1\" /><text x=\"199.50000000000003\" y=\"103\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >N</text><rect x=\"211.33333333333334\" y=\"61.0\" width=\"11.666666666666668\" height=\"33.0\" rx=\"2\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"217.16666666666669\" y=\"103\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >D</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >More detail</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-forecast-app-charts-scenarios-and-runway-deck-05",
+   "repeat": false
+  },
+  {
+   "group": "Forecast App",
+   "category": "Members chart",
+   "app": "UpKeep",
+   "ask": "UpKeep Forecast App: Members chart, should the members chart show plans as stacked bars or one line per plan?",
+   "optionA": {
+    "id": "md18pf_06stack",
+    "label": "Stacked Bars By Plan",
+    "desc": "Essentials, Plus and Complete stacked.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP FORECAST APP · PHONE</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Members</text><g transform=\"translate(0,56)\"><rect x=\"24\" y=\"88\" width=\"28\" height=\"8\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"24\" y=\"83.2\" width=\"28\" height=\"4.8\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"24\" y=\"80\" width=\"28\" height=\"3.2\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"64\" y=\"80\" width=\"28\" height=\"16\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"64\" y=\"70.4\" width=\"28\" height=\"9.6\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"64\" y=\"64\" width=\"28\" height=\"6.4\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"104\" y=\"72\" width=\"28\" height=\"24\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"104\" y=\"57.599999999999994\" width=\"28\" height=\"14.399999999999999\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"104\" y=\"48\" width=\"28\" height=\"9.600000000000001\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"144\" y=\"64\" width=\"28\" height=\"32\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"144\" y=\"44.8\" width=\"28\" height=\"19.2\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"144\" y=\"32\" width=\"28\" height=\"12.8\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"184\" y=\"56\" width=\"28\" height=\"40\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"184\" y=\"32.0\" width=\"28\" height=\"24.0\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"184\" y=\"16\" width=\"28\" height=\"16.0\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"108\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Essentials</text><text x=\"80\" y=\"108\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Plus</text><text x=\"120\" y=\"108\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Complete</text></g><rect x=\"60.199999999999996\" y=\"170\" width=\"119.60000000000001\" height=\"14\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#D4A017\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><text x=\"120\" y=\"180\" font-size=\"7.5\" fill=\"#8a6510\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\".6\">SAMPLE NUMBERS, NOT REAL</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Total and mix in one</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18pf_06lines",
+    "label": "One Line Per Plan",
+    "desc": "Matches the revenue chart you picked.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP FORECAST APP · PHONE</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Members</text><rect x=\"14\" y=\"56\" width=\"212\" height=\"50\" rx=\"6\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><polyline points=\"14.0,101.0 67.0,96.0 120.0,88.5 173.0,81.0 226.0,71.0\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"226\" cy=\"71.0\" r=\"3\" fill=\"#0B6E4F\"/><rect x=\"14\" y=\"114\" width=\"212\" height=\"50\" rx=\"6\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><polyline points=\"14.0,161.5 67.0,159.0 120.0,154.0 173.0,149.0 226.0,144.0\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"226\" cy=\"144.0\" r=\"3\" fill=\"#05668D\"/><rect x=\"60.199999999999996\" y=\"172\" width=\"119.60000000000001\" height=\"14\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#D4A017\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><text x=\"120\" y=\"182\" font-size=\"7.5\" fill=\"#8a6510\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\".6\">SAMPLE NUMBERS, NOT REAL</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Same look as revenue</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-forecast-app-charts-scenarios-and-runway-deck-06",
+   "repeat": false
+  },
+  {
+   "group": "Forecast App",
+   "category": "Cash runway",
+   "app": "UpKeep",
+   "ask": "UpKeep Forecast App: Cash runway, should cash runway show as a half-circle gauge or a months-left bar?",
+   "optionA": {
+    "id": "md18pf_07gauge",
+    "label": "Half-Circle Gauge",
+    "desc": "A needle points to months of cash left.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP FORECAST APP · PHONE</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Cash Runway</text><path d=\"M80 106 A40 40 0 0 1 160 106\" fill=\"none\" stroke=\"#EEEAE4\" stroke-width=\"9\"/><path d=\"M80 106 A40 40 0 0 1 132.4 68.0\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"9\"/><line x1=\"120\" y1=\"106\" x2=\"128.0\" y2=\"81.3\" stroke=\"#0A0A0A\" stroke-width=\"2\"/><circle cx=\"120\" cy=\"106\" r=\"3\" fill=\"#0A0A0A\"/><text x=\"120\" y=\"122\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >X months (sample)</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Reads like a fuel gauge</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18pf_07bar",
+    "label": "Months-Left Bar",
+    "desc": "A bar filled to months of cash left.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP FORECAST APP · PHONE</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Cash Runway</text><text x=\"14\" y=\"64\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Months left</text><text x=\"226\" y=\"64\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"600\" >X (sample)</text><rect x=\"14\" y=\"69\" width=\"212\" height=\"6\" rx=\"3\" fill=\"#EEEAE4\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"69\" width=\"127.19999999999999\" height=\"6\" rx=\"3\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Plain and exact</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-forecast-app-charts-scenarios-and-runway-deck-07",
+   "repeat": false
+  },
+  {
+   "group": "Forecast App",
+   "category": "What matters most",
+   "app": "UpKeep",
+   "ask": "UpKeep Forecast App: What matters most, should a chart rank which assumptions move the result most or should a plain ranked list say it?",
+   "optionA": {
+    "id": "md18pf_08tornado",
+    "label": "Ranked Bar Chart",
+    "desc": "Longest bar = the assumption that matters most.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP FORECAST APP · PHONE</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"47\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >What Moves The Result</text><g transform=\"translate(0,55)\"><rect x=\"45.0\" y=\"0\" width=\"150\" height=\"12\" rx=\"2\" fill=\"#C1502EAA\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"9\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Churn</text><rect x=\"65.0\" y=\"18\" width=\"110\" height=\"12\" rx=\"2\" fill=\"#05668DAA\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"27\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Price</text><rect x=\"85.0\" y=\"36\" width=\"70\" height=\"12\" rx=\"2\" fill=\"#0B6E4FAA\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"45\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Visits</text><rect x=\"100.0\" y=\"54\" width=\"40\" height=\"12\" rx=\"2\" fill=\"#D4A017AA\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"63\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Van cost</text></g><rect x=\"60.199999999999996\" y=\"131\" width=\"119.60000000000001\" height=\"14\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#D4A017\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><text x=\"120\" y=\"141\" font-size=\"7.5\" fill=\"#8a6510\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\".6\">SAMPLE NUMBERS, NOT REAL</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >See the big levers</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18pf_08list",
+    "label": "Plain Ranked List",
+    "desc": "1 Churn, 2 Price, 3 Visits per home.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP FORECAST APP · PHONE</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"47\" font-size=\"13\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >What Moves The Result</text><rect x=\"14\" y=\"55\" width=\"212\" height=\"34\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"31.0\" cy=\"72.0\" r=\"9.0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.6\"/><text x=\"31.0\" y=\"75.6\" font-size=\"9.9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >1</text><text x=\"46\" y=\"75.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Churn</text><rect x=\"14\" y=\"95\" width=\"212\" height=\"34\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"31.0\" cy=\"112.0\" r=\"9.0\" fill=\"#05668D\" stroke=\"#05668D\" stroke-width=\"1.6\"/><text x=\"31.0\" y=\"115.6\" font-size=\"9.9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >2</text><text x=\"46\" y=\"115.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Price</text><rect x=\"14\" y=\"135\" width=\"212\" height=\"34\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><circle cx=\"31.0\" cy=\"152.0\" r=\"9.0\" fill=\"#0B6E4F\" stroke=\"#0B6E4F\" stroke-width=\"1.6\"/><text x=\"31.0\" y=\"155.6\" font-size=\"9.9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >3</text><text x=\"46\" y=\"155.0\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Visits per home</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Simple words</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-forecast-app-charts-scenarios-and-runway-deck-08",
+   "repeat": false
+  },
+  {
+   "group": "Forecast App",
+   "category": "Printed page shape",
+   "app": "UpKeep",
+   "ask": "UpKeep Forecast App: Printed page shape, should the one-page summary print in portrait or landscape?",
+   "optionA": {
+    "id": "md18pf_09port",
+    "label": "Portrait",
+    "desc": "Chart on top, numbers under it, tall page.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP FORECAST APP · PHONE</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><g transform=\"translate(0,34)\"><rect x=\"70\" y=\"0\" width=\"100\" height=\"140\" rx=\"2\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\" stroke-width=\"1\" /><polyline points=\"80,50 100,44 120,36 140,26 160,16\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"2\"/><rect x=\"80\" y=\"70\" width=\"80\" height=\"8\" rx=\"0\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"80\" y=\"84\" width=\"80\" height=\"8\" rx=\"0\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"80\" y=\"98\" width=\"80\" height=\"8\" rx=\"0\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"80\" y=\"112\" width=\"80\" height=\"8\" rx=\"0\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fits a folder</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18pf_09land",
+    "label": "Landscape",
+    "desc": "Chart and numbers side by side, wide page.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP FORECAST APP · PHONE</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><g transform=\"translate(0,34)\"><rect x=\"30\" y=\"10\" width=\"180\" height=\"120\" rx=\"2\" fill=\"#FFFFFF\" stroke=\"#D6D0C6\" stroke-width=\"1\" /><polyline points=\"40,100 70,90 100,70 130,50 140,40\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"2\"/><rect x=\"150\" y=\"30\" width=\"50\" height=\"8\" rx=\"0\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"150\" y=\"46\" width=\"50\" height=\"8\" rx=\"0\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"150\" y=\"62\" width=\"50\" height=\"8\" rx=\"0\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"150\" y=\"78\" width=\"50\" height=\"8\" rx=\"0\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Matches the desktop view</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-forecast-app-charts-scenarios-and-runway-deck-09",
+   "repeat": false
+  },
+  {
+   "group": "Forecast App",
+   "category": "Sample data banner",
+   "app": "UpKeep",
+   "ask": "UpKeep Forecast App: Sample data banner, while the numbers are samples should a banner run across the top or a light SAMPLE watermark sit behind the chart?",
+   "optionA": {
+    "id": "md18pf_10banner",
+    "label": "Banner Across The Top",
+    "desc": "Sample data: not real numbers.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP FORECAST APP · PHONE</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"34\" width=\"212\" height=\"26\" rx=\"6\" fill=\"#D4A0171A\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"34\" width=\"3\" height=\"26\" rx=\"0\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(22,40) scale(0.5833333333333334)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#D4A017\" stroke-width=\"2\"/><path d=\"M12 6 V12 L16 14\" fill=\"none\" stroke=\"#D4A017\" stroke-width=\"2\" stroke-linecap=\"round\"/></g><text x=\"42\" y=\"50.5\" font-size=\"8\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Sample data, not real numbers</text><rect x=\"14\" y=\"66\" width=\"212\" height=\"70\" rx=\"6\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><polyline points=\"14.0,129.0 56.4,123.4 98.8,115.0 141.2,104.5 183.6,92.6 226.0,80.0\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"226\" cy=\"80.0\" r=\"3\" fill=\"#0B6E4F\"/><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Impossible to miss</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18pf_10mark",
+    "label": "Light Watermark",
+    "desc": "SAMPLE written faintly behind the chart.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP FORECAST APP · PHONE</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><g transform=\"translate(0,34)\"><rect x=\"14\" y=\"0\" width=\"212\" height=\"80\" rx=\"6\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"54\" font-size=\"34\" fill=\"#E3D6BC\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >SAMPLE</text><polyline points=\"20,70 60,64 100,54 140,40 180,26 220,12\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"2\"/></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Chart stays clear</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-forecast-app-charts-scenarios-and-runway-deck-10",
+   "repeat": false
+  }
+ ],
+ "share": true
+}

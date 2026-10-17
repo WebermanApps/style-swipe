@@ -1,0 +1,512 @@
+{
+ "date": "upkeep-crew-uniform-new-options-deck",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Crew Uniform: New Options",
+ "generated_at": "2026-10-18T03:37:56+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "practical": 4,
+  "calm": 10,
+  "focused": 1,
+  "playful": 5
+ },
+ "groups": {
+  "Crew Uniform": 10
+ },
+ "apps": {
+  "UpKeep": 10
+ },
+ "freshness": {
+  "option_slots": 20,
+  "never_shown_before": 20,
+  "share": 1.0
+ },
+ "warnings": [],
+ "submit_agent": "upkeep",
+ "submit_to": "UpKeep Agent f0d420ad-d37e-44d3-be6f-053da2b6e24d",
+ "board": "upkeep",
+ "topic": "morning-1018-light",
+ "shelf": true,
+ "audience": "Max",
+ "requested": true,
+ "request": "Max via Branding morning run Oct 18 2026: fresh this-or-that decks from the Oct 17 daily work report; 10 picks, Notes, light mode, R105 captions, theme names",
+ "report_section": "1e",
+ "example_data": "All numbers, names and addresses on cards are labelled samples or placeholders; no real customer details.",
+ "deck_size": 10,
+ "caption_rule": "R105",
+ "notes": true,
+ "built_by": "Branding",
+ "built_at_note": "Morning decks Oct 18 2026 (daily work report 2026-10-17, rules 3 and 5)",
+ "sources": {
+  "report": "/workspace/ops/brand/daily-work-report/2026-10-17.md",
+  "rulebook": "/workspace/ops/brand/dashboard-rulebook.md",
+  "builder": "tools/build_morning_decks_1018.py"
+ },
+ "pairs": [
+  {
+   "group": "Crew Uniform",
+   "category": "Hot-day option",
+   "app": "UpKeep",
+   "ask": "UpKeep Crew Uniform: Hot-day option, on hot days should techs be allowed charcoal work shorts or stay in long work pants?",
+   "optionA": {
+    "id": "md18at_01shorts",
+    "label": "Charcoal Work Shorts",
+    "desc": "Knee-length, same charcoal as the pants.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP CREW UNIFORM</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><g transform=\"translate(0,34)\"><circle cx=\"120\" cy=\"14\" r=\"11\" fill=\"#E9D5C3\"/><path d=\"M100 32 q20 -8 40 0 v42 h-40 z\" fill=\"#C1502E\"/><path d=\"M100 32 l-10 26 h8 l6 -14 M140 32 l10 26 h-8 l-6 -14\" fill=\"#C1502E\"/><rect x=\"102\" y=\"74\" width=\"16\" height=\"26\" rx=\"3\" fill=\"#3F3F46\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"122\" y=\"74\" width=\"16\" height=\"26\" rx=\"3\" fill=\"#3F3F46\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"104\" y=\"100\" width=\"12\" height=\"24\" rx=\"3\" fill=\"#E9D5C3\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"124\" y=\"100\" width=\"12\" height=\"24\" rx=\"3\" fill=\"#E9D5C3\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"98\" y=\"124\" width=\"20\" height=\"8\" rx=\"3\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"122\" y=\"124\" width=\"20\" height=\"8\" rx=\"3\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"111\" cy=\"42\" r=\"3\" fill=\"#FFFFFF\" opacity=\".85\"/></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Cooler outdoors</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Long pants for crawl spaces</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18at_01pants",
+    "label": "Long Pants Always",
+    "desc": "Charcoal pants every day.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP CREW UNIFORM</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><g transform=\"translate(0,34)\"><circle cx=\"120\" cy=\"14\" r=\"11\" fill=\"#E9D5C3\"/><path d=\"M100 32 q20 -8 40 0 v42 h-40 z\" fill=\"#C1502E\"/><path d=\"M100 32 l-10 26 h8 l6 -14 M140 32 l10 26 h-8 l-6 -14\" fill=\"#C1502E\"/><rect x=\"102\" y=\"74\" width=\"16\" height=\"50\" rx=\"3\" fill=\"#3F3F46\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"122\" y=\"74\" width=\"16\" height=\"50\" rx=\"3\" fill=\"#3F3F46\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"98\" y=\"124\" width=\"20\" height=\"8\" rx=\"3\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"122\" y=\"124\" width=\"20\" height=\"8\" rx=\"3\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"111\" cy=\"42\" r=\"3\" fill=\"#FFFFFF\" opacity=\".85\"/></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >One look</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Knees covered</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-crew-uniform-new-options-deck-01",
+   "repeat": false
+  },
+  {
+   "group": "Crew Uniform",
+   "category": "Blue for techs",
+   "app": "UpKeep",
+   "ask": "UpKeep Crew Uniform: Blue for techs, since techs are blue in the apps should there be a lagoon blue polo option beside the terracotta one?",
+   "optionA": {
+    "id": "md18at_02blue",
+    "label": "Add A Lagoon Polo",
+    "desc": "Terracotta or lagoon, tech's pick.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP CREW UNIFORM</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><g transform=\"translate(0,34)\"><circle cx=\"80\" cy=\"14\" r=\"11\" fill=\"#E9D5C3\"/><path d=\"M60 32 q20 -8 40 0 v42 h-40 z\" fill=\"#C1502E\"/><path d=\"M60 32 l-10 26 h8 l6 -14 M100 32 l10 26 h-8 l-6 -14\" fill=\"#C1502E\"/><rect x=\"62\" y=\"74\" width=\"16\" height=\"50\" rx=\"3\" fill=\"#3F3F46\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"82\" y=\"74\" width=\"16\" height=\"50\" rx=\"3\" fill=\"#3F3F46\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"58\" y=\"124\" width=\"20\" height=\"8\" rx=\"3\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"82\" y=\"124\" width=\"20\" height=\"8\" rx=\"3\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"71\" cy=\"42\" r=\"3\" fill=\"#FFFFFF\" opacity=\".85\"/><circle cx=\"160\" cy=\"14\" r=\"11\" fill=\"#E9D5C3\"/><path d=\"M140 32 q20 -8 40 0 v42 h-40 z\" fill=\"#05668D\"/><path d=\"M140 32 l-10 26 h8 l6 -14 M180 32 l10 26 h-8 l-6 -14\" fill=\"#05668D\"/><rect x=\"142\" y=\"74\" width=\"16\" height=\"50\" rx=\"3\" fill=\"#3F3F46\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"162\" y=\"74\" width=\"16\" height=\"50\" rx=\"3\" fill=\"#3F3F46\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"138\" y=\"124\" width=\"20\" height=\"8\" rx=\"3\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"162\" y=\"124\" width=\"20\" height=\"8\" rx=\"3\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"151\" cy=\"42\" r=\"3\" fill=\"#FFFFFF\" opacity=\".85\"/></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Matches the tech app</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18at_02terra",
+    "label": "Terracotta Only",
+    "desc": "The brand colour on every tech.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP CREW UNIFORM</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><g transform=\"translate(0,34)\"><circle cx=\"120\" cy=\"14\" r=\"11\" fill=\"#E9D5C3\"/><path d=\"M100 32 q20 -8 40 0 v42 h-40 z\" fill=\"#C1502E\"/><path d=\"M100 32 l-10 26 h8 l6 -14 M140 32 l10 26 h-8 l-6 -14\" fill=\"#C1502E\"/><rect x=\"102\" y=\"74\" width=\"16\" height=\"50\" rx=\"3\" fill=\"#3F3F46\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"122\" y=\"74\" width=\"16\" height=\"50\" rx=\"3\" fill=\"#3F3F46\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"98\" y=\"124\" width=\"20\" height=\"8\" rx=\"3\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"122\" y=\"124\" width=\"20\" height=\"8\" rx=\"3\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"111\" cy=\"42\" r=\"3\" fill=\"#FFFFFF\" opacity=\".85\"/></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Always on brand</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-crew-uniform-new-options-deck-02",
+   "repeat": false
+  },
+  {
+   "group": "Crew Uniform",
+   "category": "Shirt for estimates",
+   "app": "UpKeep",
+   "ask": "UpKeep Crew Uniform: Shirt for estimates, for estimate visits should techs have a button-up work shirt option or wear the polo?",
+   "optionA": {
+    "id": "md18at_03button",
+    "label": "Button-Up Option",
+    "desc": "A charcoal button-up with the small mark.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP CREW UNIFORM</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><g transform=\"translate(0,34)\"><circle cx=\"120\" cy=\"14\" r=\"11\" fill=\"#E9D5C3\"/><path d=\"M100 32 q20 -8 40 0 v42 h-40 z\" fill=\"#3F3F46\"/><path d=\"M100 32 l-10 26 h8 l6 -14 M140 32 l10 26 h-8 l-6 -14\" fill=\"#3F3F46\"/><rect x=\"102\" y=\"74\" width=\"16\" height=\"50\" rx=\"3\" fill=\"#B9A27E\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"122\" y=\"74\" width=\"16\" height=\"50\" rx=\"3\" fill=\"#B9A27E\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"98\" y=\"124\" width=\"20\" height=\"8\" rx=\"3\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"122\" y=\"124\" width=\"20\" height=\"8\" rx=\"3\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"111\" cy=\"42\" r=\"3\" fill=\"#FFFFFF\" opacity=\".85\"/><line x1=\"120\" y1=\"34\" x2=\"120\" y2=\"74\" stroke=\"#FFFFFF\" stroke-width=\"1\"/></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >A bit smarter</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18at_03polo",
+    "label": "Polo For Everything",
+    "desc": "Same polo for every visit.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP CREW UNIFORM</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><g transform=\"translate(0,34)\"><circle cx=\"120\" cy=\"14\" r=\"11\" fill=\"#E9D5C3\"/><path d=\"M100 32 q20 -8 40 0 v42 h-40 z\" fill=\"#C1502E\"/><path d=\"M100 32 l-10 26 h8 l6 -14 M140 32 l10 26 h-8 l-6 -14\" fill=\"#C1502E\"/><rect x=\"102\" y=\"74\" width=\"16\" height=\"50\" rx=\"3\" fill=\"#3F3F46\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"122\" y=\"74\" width=\"16\" height=\"50\" rx=\"3\" fill=\"#3F3F46\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"98\" y=\"124\" width=\"20\" height=\"8\" rx=\"3\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"122\" y=\"124\" width=\"20\" height=\"8\" rx=\"3\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"111\" cy=\"42\" r=\"3\" fill=\"#FFFFFF\" opacity=\".85\"/></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Simple</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-crew-uniform-new-options-deck-03",
+   "repeat": false
+  },
+  {
+   "group": "Crew Uniform",
+   "category": "Wet-weather shoe",
+   "app": "UpKeep",
+   "ask": "UpKeep Crew Uniform: Wet-weather shoe, for rainy days should techs get a waterproof boot option beside the work shoe?",
+   "optionA": {
+    "id": "md18at_04boot",
+    "label": "Add A Waterproof Boot",
+    "desc": "Black boot for wet yards.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP CREW UNIFORM</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><g transform=\"translate(0,34)\"><rect x=\"40\" y=\"30\" width=\"60\" height=\"70\" rx=\"8\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"30\" y=\"90\" width=\"80\" height=\"20\" rx=\"8\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"140\" y=\"70\" width=\"70\" height=\"40\" rx=\"10\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"70\" y=\"128\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Boot</text><text x=\"175\" y=\"128\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Work shoe</text></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Dry feet</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18at_04shoe",
+    "label": "Work Shoe Only",
+    "desc": "One work shoe all year.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP CREW UNIFORM</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><g transform=\"translate(0,34)\"><rect x=\"85\" y=\"70\" width=\"70\" height=\"40\" rx=\"10\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"128\" font-size=\"9\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >Work shoe</text></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fewer things to buy</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-crew-uniform-new-options-deck-04",
+   "repeat": false
+  },
+  {
+   "group": "Crew Uniform",
+   "category": "Work gloves",
+   "app": "UpKeep",
+   "ask": "UpKeep Crew Uniform: Work gloves, should work gloves be charcoal with a small terracotta cuff or plain grey?",
+   "optionA": {
+    "id": "md18at_05cuff",
+    "label": "Charcoal, Terracotta Cuff",
+    "desc": "A small brand touch on the hands.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP CREW UNIFORM</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><g transform=\"translate(0,34)\"><rect x=\"60\" y=\"20\" width=\"50\" height=\"80\" rx=\"14\" fill=\"#3F3F46\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"60\" y=\"90\" width=\"50\" height=\"18\" rx=\"4\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"130\" y=\"20\" width=\"50\" height=\"80\" rx=\"14\" fill=\"#3F3F46\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"130\" y=\"90\" width=\"50\" height=\"18\" rx=\"4\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >On brand</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18at_05grey",
+    "label": "Plain Grey",
+    "desc": "Any grey work glove.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP CREW UNIFORM</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><g transform=\"translate(0,34)\"><rect x=\"60\" y=\"20\" width=\"50\" height=\"88\" rx=\"14\" fill=\"#9CA3AF\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"130\" y=\"20\" width=\"50\" height=\"88\" rx=\"14\" fill=\"#9CA3AF\" stroke=\"none\" stroke-width=\"1\" /></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Easy to replace</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-crew-uniform-new-options-deck-05",
+   "repeat": false
+  },
+  {
+   "group": "Crew Uniform",
+   "category": "Roadside safety",
+   "app": "UpKeep",
+   "ask": "UpKeep Crew Uniform: Roadside safety, for roadside or street work should techs have a light hi-vis vest with the logo or no vest?",
+   "optionA": {
+    "id": "md18at_06vest",
+    "label": "Hi-Vis Vest With Logo",
+    "desc": "Safety yellow with a small white mark.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP CREW UNIFORM</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><g transform=\"translate(0,34)\"><circle cx=\"120\" cy=\"14\" r=\"11\" fill=\"#E9D5C3\"/><path d=\"M100 32 q20 -8 40 0 v42 h-40 z\" fill=\"#E3D24A\"/><path d=\"M100 32 l-10 26 h8 l6 -14 M140 32 l10 26 h-8 l-6 -14\" fill=\"#E3D24A\"/><rect x=\"102\" y=\"74\" width=\"16\" height=\"50\" rx=\"3\" fill=\"#3F3F46\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"122\" y=\"74\" width=\"16\" height=\"50\" rx=\"3\" fill=\"#3F3F46\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"98\" y=\"124\" width=\"20\" height=\"8\" rx=\"3\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"122\" y=\"124\" width=\"20\" height=\"8\" rx=\"3\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"111\" cy=\"42\" r=\"3\" fill=\"#FFFFFF\" opacity=\".85\"/></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Safe near traffic</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18at_06none",
+    "label": "No Vest",
+    "desc": "The polo is enough.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP CREW UNIFORM</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><g transform=\"translate(0,34)\"><circle cx=\"120\" cy=\"14\" r=\"11\" fill=\"#E9D5C3\"/><path d=\"M100 32 q20 -8 40 0 v42 h-40 z\" fill=\"#C1502E\"/><path d=\"M100 32 l-10 26 h8 l6 -14 M140 32 l10 26 h-8 l-6 -14\" fill=\"#C1502E\"/><rect x=\"102\" y=\"74\" width=\"16\" height=\"50\" rx=\"3\" fill=\"#3F3F46\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"122\" y=\"74\" width=\"16\" height=\"50\" rx=\"3\" fill=\"#3F3F46\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"98\" y=\"124\" width=\"20\" height=\"8\" rx=\"3\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"122\" y=\"124\" width=\"20\" height=\"8\" rx=\"3\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"111\" cy=\"42\" r=\"3\" fill=\"#FFFFFF\" opacity=\".85\"/></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Simpler kit</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-crew-uniform-new-options-deck-06",
+   "repeat": false
+  },
+  {
+   "group": "Crew Uniform",
+   "category": "Shirt fit",
+   "app": "UpKeep",
+   "ask": "UpKeep Crew Uniform: Shirt fit, should shirts come in a fitted cut and a relaxed cut, or one relaxed cut for everyone?",
+   "optionA": {
+    "id": "md18at_07two",
+    "label": "Fitted And Relaxed",
+    "desc": "Two cuts, tech's pick.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP CREW UNIFORM</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><g transform=\"translate(0,34)\"><circle cx=\"80\" cy=\"14\" r=\"11\" fill=\"#E9D5C3\"/><path d=\"M60 32 q20 -8 40 0 v42 h-40 z\" fill=\"#C1502E\"/><path d=\"M60 32 l-10 26 h8 l6 -14 M100 32 l10 26 h-8 l-6 -14\" fill=\"#C1502E\"/><rect x=\"62\" y=\"74\" width=\"16\" height=\"50\" rx=\"3\" fill=\"#3F3F46\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"82\" y=\"74\" width=\"16\" height=\"50\" rx=\"3\" fill=\"#3F3F46\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"58\" y=\"124\" width=\"20\" height=\"8\" rx=\"3\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"82\" y=\"124\" width=\"20\" height=\"8\" rx=\"3\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"71\" cy=\"42\" r=\"3\" fill=\"#FFFFFF\" opacity=\".85\"/><circle cx=\"160\" cy=\"14\" r=\"11\" fill=\"#E9D5C3\"/><path d=\"M140 32 q20 -8 40 0 v42 h-40 z\" fill=\"#C1502E\"/><rect x=\"142\" y=\"74\" width=\"16\" height=\"50\" rx=\"3\" fill=\"#3F3F46\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"162\" y=\"74\" width=\"16\" height=\"50\" rx=\"3\" fill=\"#3F3F46\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"138\" y=\"124\" width=\"20\" height=\"8\" rx=\"3\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"162\" y=\"124\" width=\"20\" height=\"8\" rx=\"3\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"151\" cy=\"42\" r=\"3\" fill=\"#FFFFFF\" opacity=\".85\"/></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Looks neat on everyone</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18at_07one",
+    "label": "One Relaxed Cut",
+    "desc": "Same shirt for all.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP CREW UNIFORM</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><g transform=\"translate(0,34)\"><circle cx=\"120\" cy=\"14\" r=\"11\" fill=\"#E9D5C3\"/><path d=\"M100 32 q20 -8 40 0 v42 h-40 z\" fill=\"#C1502E\"/><path d=\"M100 32 l-10 26 h8 l6 -14 M140 32 l10 26 h-8 l-6 -14\" fill=\"#C1502E\"/><rect x=\"102\" y=\"74\" width=\"16\" height=\"50\" rx=\"3\" fill=\"#3F3F46\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"122\" y=\"74\" width=\"16\" height=\"50\" rx=\"3\" fill=\"#3F3F46\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"98\" y=\"124\" width=\"20\" height=\"8\" rx=\"3\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"122\" y=\"124\" width=\"20\" height=\"8\" rx=\"3\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"111\" cy=\"42\" r=\"3\" fill=\"#FFFFFF\" opacity=\".85\"/></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Easy ordering</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-crew-uniform-new-options-deck-07",
+   "repeat": false
+  },
+  {
+   "group": "Crew Uniform",
+   "category": "Cold-day hat",
+   "app": "UpKeep",
+   "ask": "UpKeep Crew Uniform: Cold-day hat, for cold days should techs get a charcoal beanie with a small mark or keep the cap?",
+   "optionA": {
+    "id": "md18at_08beanie",
+    "label": "Charcoal Beanie",
+    "desc": "Small terracotta mark on the fold.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP CREW UNIFORM</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><g transform=\"translate(0,34)\"><path d=\"M70 90 Q70 30 120 30 Q170 30 170 90 Z\" fill=\"#3F3F46\"/><rect x=\"66\" y=\"84\" width=\"108\" height=\"20\" rx=\"4\" fill=\"#3F3F46\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"110\" y=\"88\" width=\"20\" height=\"12\" rx=\"2\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Warm and on brand</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18at_08cap",
+    "label": "Cap All Year",
+    "desc": "The white cap stays.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP CREW UNIFORM</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><g transform=\"translate(0,34)\"><path d=\"M80 80 Q80 40 120 40 Q160 40 160 80 Z\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\"/><rect x=\"140\" y=\"74\" width=\"50\" height=\"8\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1\" /></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >One hat</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-crew-uniform-new-options-deck-08",
+   "repeat": false
+  },
+  {
+   "group": "Crew Uniform",
+   "category": "Belt",
+   "app": "UpKeep",
+   "ask": "UpKeep Crew Uniform: Belt, should the uniform include a plain black belt or leave belts to each tech?",
+   "optionA": {
+    "id": "md18at_09black",
+    "label": "Plain Black Belt",
+    "desc": "Part of the kit.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP CREW UNIFORM</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><g transform=\"translate(0,34)\"><circle cx=\"120\" cy=\"14\" r=\"11\" fill=\"#E9D5C3\"/><path d=\"M100 32 q20 -8 40 0 v42 h-40 z\" fill=\"#C1502E\"/><path d=\"M100 32 l-10 26 h8 l6 -14 M140 32 l10 26 h-8 l-6 -14\" fill=\"#C1502E\"/><rect x=\"102\" y=\"74\" width=\"16\" height=\"50\" rx=\"3\" fill=\"#3F3F46\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"122\" y=\"74\" width=\"16\" height=\"50\" rx=\"3\" fill=\"#3F3F46\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"98\" y=\"124\" width=\"20\" height=\"8\" rx=\"3\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"122\" y=\"124\" width=\"20\" height=\"8\" rx=\"3\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"111\" cy=\"42\" r=\"3\" fill=\"#FFFFFF\" opacity=\".85\"/><rect x=\"100\" y=\"72\" width=\"40\" height=\"5\" rx=\"1\" fill=\"#111111\" stroke=\"none\" stroke-width=\"1\" /></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Same look on every tech</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18at_09own",
+    "label": "Tech's Own Belt",
+    "desc": "Any plain belt.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP CREW UNIFORM</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><g transform=\"translate(0,34)\"><circle cx=\"120\" cy=\"14\" r=\"11\" fill=\"#E9D5C3\"/><path d=\"M100 32 q20 -8 40 0 v42 h-40 z\" fill=\"#C1502E\"/><path d=\"M100 32 l-10 26 h8 l6 -14 M140 32 l10 26 h-8 l-6 -14\" fill=\"#C1502E\"/><rect x=\"102\" y=\"74\" width=\"16\" height=\"50\" rx=\"3\" fill=\"#3F3F46\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"122\" y=\"74\" width=\"16\" height=\"50\" rx=\"3\" fill=\"#3F3F46\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"98\" y=\"124\" width=\"20\" height=\"8\" rx=\"3\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"122\" y=\"124\" width=\"20\" height=\"8\" rx=\"3\" fill=\"#1F1F1F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"111\" cy=\"42\" r=\"3\" fill=\"#FFFFFF\" opacity=\".85\"/></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Less to hand out</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-crew-uniform-new-options-deck-09",
+   "repeat": false
+  },
+  {
+   "group": "Crew Uniform",
+   "category": "Choosing the day's outfit",
+   "app": "UpKeep",
+   "ask": "UpKeep Tech App Uniform: Choosing the day's outfit, in the tech app should the day's outfit be a swipe carousel of the options or a simple checklist?",
+   "optionA": {
+    "id": "md18at_10car",
+    "label": "Outfit Carousel",
+    "desc": "Swipe shirts, pants and shoes.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · UNIFORM</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Today's Kit</text><rect x=\"14\" y=\"56\" width=\"140\" height=\"60\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"14\" y=\"56\" width=\"140\" height=\"4\" rx=\"2\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"24\" y=\"80\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Terracotta polo</text><text x=\"24\" y=\"93\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Shirt</text><rect x=\"162\" y=\"56\" width=\"140\" height=\"60\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"162\" y=\"56\" width=\"140\" height=\"4\" rx=\"2\" fill=\"#3F3F46\" stroke=\"none\" stroke-width=\"1\" /><text x=\"172\" y=\"80\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Charcoal pants</text><text x=\"172\" y=\"93\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Pants</text><rect x=\"103\" y=\"124\" width=\"10\" height=\"5\" rx=\"2.5\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"117.5\" y=\"124\" width=\"5\" height=\"5\" rx=\"2.5\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"129.5\" y=\"124\" width=\"5\" height=\"5\" rx=\"2.5\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Pick in seconds</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "md18at_10check",
+    "label": "Simple Checklist",
+    "desc": "Tick what you are wearing.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">UPKEEP TECH APP · UNIFORM</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Today's Kit</text><rect x=\"14\" y=\"58\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M17 64 l2.5 2.5 4.5 -5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"1.8\"/><text x=\"34\" y=\"67.5\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Polo</text><line x1=\"34\" y1=\"75\" x2=\"226\" y2=\"75\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"80\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M17 86 l2.5 2.5 4.5 -5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"1.8\"/><text x=\"34\" y=\"89.5\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Pants</text><line x1=\"34\" y1=\"97\" x2=\"226\" y2=\"97\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"102\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"111.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Shoes</text><line x1=\"34\" y1=\"119\" x2=\"226\" y2=\"119\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"124\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"133.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Shoe covers</text><line x1=\"34\" y1=\"141\" x2=\"226\" y2=\"141\" stroke=\"#E5E0D8\"/><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Nothing to swipe</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-crew-uniform-new-options-deck-10",
+   "repeat": false
+  }
+ ],
+ "share": true
+}
