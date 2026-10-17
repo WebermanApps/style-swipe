@@ -312,7 +312,7 @@ R = [
  "Quiet Link To Max|Studio, with a small link back|list|Drop:Studio name;About:Link to Max"),
 ("lead-closing","Smart Upkeep","spinoff","How should realtors offer Upkeep?",
  "Closing Gift Plan|Realtors gift a membership|photo|Welcome home gift;house",
- "Warranty Side-By-Side|Offered next to a warranty|list|Home warranty:Repairs;Smart Upkeep:Care"),
+ "Beside A Warranty|Offered next to a warranty|list|Home warranty:Repairs;Smart Upkeep:Care"),
 ("lead-leadsafe","Smart Upkeep","spinoff","Which trust badge for Upkeep? (idea only)",
  "Lead-Safe Badge|Only if techs are certified|checks|Tech certified first;Then show badge;Max signs off",
  "Member Reviews Badge|Real member reviews shown|list|Review:From a member;Review:From a member"),
