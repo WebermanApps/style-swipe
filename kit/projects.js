@@ -14,7 +14,7 @@
    No crypto lives here: decryption is delegated to Security's viewer through ProjectsSection.storage.encrypted. */
 (function(){
 'use strict';
-var V='op2',MAX=6,EXCLUDE=/a-o956qercs5ubd57y|home-guide|finish-questions|room-photos|room-quiz|homes\.maxweberman\.com|share-x3l9xcxc1eut/;
+var V='op3',MAX=6,EXCLUDE=/a-o956qercs5ubd57y|home-guide|finish-questions|room-photos|room-quiz|homes\.maxweberman\.com|share-x3l9xcxc1eut/;
 var me=document.currentScript;
 function el(t,c,txt){var e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e}
 function svg(d){var s=document.createElementNS('http://www.w3.org/2000/svg','svg');s.setAttribute('viewBox','0 0 24 24');s.setAttribute('aria-hidden','true');s.innerHTML=d;return s}
@@ -70,9 +70,9 @@ function doDownload(p,btn,host){
    Posts via MWSubmit.send (submit.js) to the shared Apps Script receiver: agent=<owner>, app="project-handoff", deck=<project id>,
    results={project_id,owner_agent,to_agents,note}. Security condition (5), Oct 17 2026: NO title, filenames, paths or page URL over
    the wire; Grok Bot resolves those from the private project list on the box (ops/brand/projects-private).
-   Hidden where sending is not trusted yet: HANDOFF_OFF agents (WellNest until its submit.js auth is fixed), a board's
+   Hidden where sending is not trusted yet: HANDOFF_OFF agents (none now; WellNest re-enabled op3), a board's
    section attribute data-mw-handoff="off", or projects.json "handoff": false. Boards cannot switch it back on; only a kit change can. */
-var HANDOFF_OFF={wellnest:'submit.js auth not fixed yet (Security, Oct 17 2026)'};
+var HANDOFF_OFF={};
 var TEAM_FALLBACK={"blog":"Blog Agent","blueprint":"Blueprint Agent","branding":"Branding Agent","coach":"Coach Agent","construction":"Construction Agent","dump":"Dump Agent","email-sorting":"Email Sorting Agent","grok-bot":"Grok Bot","household":"Household","japan-cottage":"Japan Cottage Agent","jokes":"Jokes Agent","legal":"Legal Agent","miles":"Miles Agent","portfolio":"Portfolio Agent","prop":"Prop Agent","research":"Research Agent","scout":"Scout Agent","security":"Security Agent","thai":"Thai Agent","upkeep":"UpKeep Agent","video-photo":"Video & Photo Agent","wellnest":"WellNest Agent"};
 var team=null;
 function kitBase(){var s=me&&me.src;return s?s.replace(/[^\/]*$/,''):'https://webermanapps.github.io/style-swipe/kit/'}
@@ -85,7 +85,7 @@ function loadTeam(){if(team)return Promise.resolve(team);var m={};Object.keys(TE
 function ownerAgent(p){return p.agent||document.body.getAttribute('data-mw-agent')||(document.querySelector('[data-agent-name]')||{getAttribute:function(){return ''}}).getAttribute('data-agent-name')||''}
 function handoffPayload(p,to,note){return{project_id:p.id,owner_agent:ownerAgent(p),to_agents:to.map(function(t){return t.slug}),note:note||''}}
 var handoffBoardOff=false;
-function handoffAllowed(p){var o=String(ownerAgent(p)||'').toLowerCase();return !handoffBoardOff&&!HANDOFF_OFF[o]&&!/\/wellnest-dashboard\//.test(location.pathname)}
+function handoffAllowed(p){var o=String(ownerAgent(p)||'').toLowerCase();return !handoffBoardOff&&!HANDOFF_OFF[o]}
 function listNames(a){a=a.map(function(t){return t.name});return a.length<2?a.join(''):a.slice(0,-1).join(', ')+' and '+a[a.length-1]}
 var hoOpen=null;
 function openHandoff(p,opener){
