@@ -1,7 +1,8 @@
-/* Document Center (R100; was Ongoing Projects; kit op4, Branding Agent, Oct 17 2026).
+/* Document Center (R100; was Ongoing Projects; kit op5, Branding Agent, Oct 17 2026).
+   op5 (R109 + R106 fold-down, Oct 17 2026 20:15 ICT): per-card Quick note (app "doc-note") and a closed-by-default fold-down header.
    Usage on a kit board (after mw-layout.js):
-     <link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/projects.css?v=op2">
-     script src=".../style-swipe/kit/projects.js?v=op2" data-projects="projects.json" defer (after mw-layout.js)
+     <link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/projects.css?v=op5">
+     script src=".../style-swipe/kit/projects.js?v=op5" data-projects="projects.json" defer (after mw-layout.js)
    or place <section id="mw-projects" data-mw-projects="projects.json"></section> anywhere; the kit moves it to the top of #mw-mid
    (right under the branded header divider, before the agent's own content).
    Data: board projects.json (schema: ops/brand/projects.schema.json), written only by /workspace/ops/brand/pin_project.py.
@@ -14,12 +15,12 @@
    No crypto lives here: decryption is delegated to Security's viewer through ProjectsSection.storage.encrypted. */
 (function(){
 'use strict';
-var V='op4',MAX=6,EXCLUDE=/a-o956qercs5ubd57y|home-guide|finish-questions|room-photos|room-quiz|homes\.maxweberman\.com|share-x3l9xcxc1eut/;
+var V='op5',MAX=6,EXCLUDE=/a-o956qercs5ubd57y|home-guide|finish-questions|room-photos|room-quiz|homes\.maxweberman\.com|share-x3l9xcxc1eut/;
 var me=document.currentScript;
 function el(t,c,txt){var e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e}
 function svg(d){var s=document.createElementNS('http://www.w3.org/2000/svg','svg');s.setAttribute('viewBox','0 0 24 24');s.setAttribute('aria-hidden','true');s.innerHTML=d;return s}
 var I={folder:'<path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>',open:'<path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 01-1 1H5a1 1 0 01-1-1V7a1 1 0 011-1h5"/>',
- dl:'<path d="M12 4v11M7 10l5 5 5-5M5 20h14"/>',ho:'<path d="M4 12h12M12 6l6 6-6 6"/><path d="M20 5v14"/>',doc:'<path d="M7 3h7l5 5v12a1 1 0 01-1 1H7a1 1 0 01-1-1V4a1 1 0 011-1z"/><path d="M14 3v5h5M9 13h6M9 17h6"/>',chev:'<path d="M6 9l6 6 6-6"/>',prev:'<path d="M15 6l-6 6 6 6"/>',next:'<path d="M9 6l6 6-6 6"/>'};
+ dl:'<path d="M12 4v11M7 10l5 5 5-5M5 20h14"/>',ho:'<path d="M4 12h12M12 6l6 6-6 6"/><path d="M20 5v14"/>',doc:'<path d="M7 3h7l5 5v12a1 1 0 01-1 1H7a1 1 0 01-1-1V4a1 1 0 011-1z"/><path d="M14 3v5h5M9 13h6M9 17h6"/>',chev:'<path d="M6 9l6 6 6-6"/>',note:'<path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13 7l4 4"/>',prev:'<path d="M15 6l-6 6 6 6"/>',next:'<path d="M9 6l6 6-6 6"/>'};
 function isLocal(){return location.protocol==='file:'||/^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname)}
 /* only board-relative paths: no scheme, no leading slash, no .. (a tampered projects.json cannot point elsewhere) */
 function safePath(p){return typeof p==='string'&&p.length<300&&!/^[a-z][a-z0-9+.-]*:|^\/|\\|(^|\/)\.\.(\/|$)/i.test(p)?p:null}
@@ -158,6 +159,53 @@ function openHandoff(p,opener){
  setState('idle');setTimeout(function(){inp.focus()},30);
  hoOpen={close:close};return hoOpen}
 
+/* ---- Quick note (R109, Max Oct 17 2026 20:15 ICT; Security checklist Oct 17 2026) ----
+   Sibling of Hand off: posts via the same MWSubmit.send (submit.js, auth-gated; WellNest doc-note gated, and noQueue so doc-notes are never put in the retry queue, since submit.js b06c43f) to the same
+   receiver: agent=<owner>, app="doc-note", deck=<project id>, results={project_id,owner_agent,note}. Nothing else from the card or page.
+   Note is trimmed and capped at NOTE_MAX. Never written to the page after sending, never kept in localStorage/sessionStorage:
+   no-connection sends are refused up front, every send passes noQueue:true (submit.js b06c43f), and any legacy doc-note queue entry is purged on load.
+   Hidden where sending is not trusted: DOCNOTE_OFF agents, section data-mw-docnote="off", or projects.json "docnote": false.
+   Boards cannot switch it back on; only a kit change can. */
+var DOCNOTE_OFF={}; /* R109: WellNest enabled after Security clearance (submit.js b06c43f auth-gates doc-note for WellNest). Add "slug":1 to hide an agent. */
+var NOTE_MAX=500,QK_SUBMIT='mw-submit-queue',docnoteBoardOff=false;
+function docnotePayload(p,note){return{project_id:p.id,owner_agent:ownerAgent(p),note:String(note||'').trim().slice(0,NOTE_MAX)}}
+function docnoteAllowed(p){var o=String(ownerAgent(p)||'').toLowerCase();return !docnoteBoardOff&&!DOCNOTE_OFF[o]&&!DOCNOTE_OFF[slugify(o)]}
+function purgeNoteQueue(){try{var a=JSON.parse(localStorage.getItem(QK_SUBMIT)||'[]');if(!Array.isArray(a))return;var k=a.filter(function(x){return!(x&&x.app==='doc-note')});
+ if(k.length!==a.length){if(k.length)localStorage.setItem(QK_SUBMIT,JSON.stringify(k));else localStorage.removeItem(QK_SUBMIT)}}catch(_){}}
+var dnSeq=0;
+function docNote(p){
+ var n=++dnSeq,w=el('div','op-dn'),ob=btn('op-dn-btn','note','Note','Quick note');ob.setAttribute('aria-expanded','false');
+ var f=el('form','op-dn-form');f.id='op-dn-f'+n;f.hidden=true;f.noValidate=true;f.autocomplete='off';ob.setAttribute('aria-controls',f.id);
+ var lb=el('label','op-dn-l','Quick note');lb.htmlFor='op-dn-t'+n;
+ var ta=el('textarea','op-dn-ta');ta.id='op-dn-t'+n;ta.rows=3;ta.maxLength=NOTE_MAX;ta.placeholder='Type a short note';ta.setAttribute('autocomplete','off');ta.setAttribute('aria-describedby','op-dn-c'+n);
+ var ct=el('span','op-dn-count');ct.id='op-dn-c'+n;
+ var row=el('div','op-dn-row'),cx=el('button','op-dn-b','Cancel'),sd=el('button','op-dn-b op-dn-send','Send');cx.type='button';sd.type='submit';row.append(cx,sd);
+ var ft=el('div','op-dn-ft');ft.append(ct,row);f.append(lb,ta,ft);
+ var msg=el('p','op-dn-msg');msg.setAttribute('role','status');msg.setAttribute('aria-live','polite');msg.hidden=true;
+ w.append(ob,f,msg);
+ var sending=false,tm=0;
+ function count(){var l=ta.value.length;ct.textContent=l+' / '+NOTE_MAX;ct.classList.toggle('op-dn-near',l>=NOTE_MAX-50);if(!sending)sd.disabled=!ta.value.trim()}
+ function say(t,kind){clearTimeout(tm);msg.className='op-dn-msg'+(kind?' '+kind:'');msg.textContent=t;msg.hidden=!t;if(kind==='ok')tm=setTimeout(function(){msg.hidden=true;msg.textContent=''},4000)}
+ function open(){f.hidden=false;ob.setAttribute('aria-expanded','true');ob.classList.add('on');say('');count();setTimeout(function(){ta.focus()},0)}
+ function shut(clear){if(sending)return;f.hidden=true;ob.setAttribute('aria-expanded','false');ob.classList.remove('on');if(clear)ta.value='';count();ob.focus()}
+ ob.onclick=function(){f.hidden?open():shut(false)};
+ cx.onclick=function(){say('');shut(true)};
+ ta.addEventListener('input',function(){count();if(msg.classList.contains('err'))say('')});
+ ta.addEventListener('keydown',function(e){if(e.key==='Escape'){e.preventDefault();cx.click()}else if(e.key==='Enter'&&(e.metaKey||e.ctrlKey)){e.preventDefault();f.requestSubmit?f.requestSubmit():sd.click()}});
+ function busyN(on){sending=on;sd.setAttribute('aria-busy',on?'true':'false');sd.textContent=on?'Sending':'Send';sd.disabled=on;cx.disabled=on;ta.readOnly=on;if(!on)count()}
+ f.addEventListener('submit',function(e){e.preventDefault();if(sending)return;
+  var body=docnotePayload(p,ta.value);if(!body.note){say('Type a note first.','err');ta.focus();return}
+  var S=window.MWSubmit;if(!S||typeof S.send!=='function'){say('Sending is not set up on this page yet. Nothing was sent.','err');return}
+  if(navigator.onLine===false){say('No connection. Nothing was sent. Try again when you are online.','err');return}
+  busyN(true);say('');
+  Promise.resolve().then(function(){return S.send({agent:body.owner_agent||'grok-bot',app:'doc-note',deck:p.id,results:body,notes:'',noQueue:true})})
+  .then(function(ok){purgeNoteQueue();busyN(false);
+   if(ok){ta.value='';count();f.hidden=true;ob.setAttribute('aria-expanded','false');ob.classList.remove('on');ob.focus();say('Note sent','ok')}
+   else if(S.blocked){say('Password needed. Nothing was sent.','err');ta.focus()}
+   else{say('Not sent: no connection. Your text is still here. Try again.','err');ta.focus()}})
+  .catch(function(){purgeNoteQueue();busyN(false);say('Something went wrong. Nothing was sent. Try again.','err');ta.focus()})});
+ count();return w}
+
 function btn(cls,icon,label,aria){var b=el('button','op-btn '+cls);b.type='button';b.appendChild(svg(I[icon]));b.appendChild(el('span',null,label));if(aria)b.setAttribute('aria-label',aria);return b}
 
 /* encrypted mode uses Security's documented markup exactly: Open = a[data-enc-file], Download = a[data-enc-file][data-enc-download],
@@ -185,6 +233,7 @@ function card(p,i){
  bd.appendChild(el('p','op-meta',docDate(p)));
  var bs=el('div','op-btns'),o=act(p,'open',bd),d=act(p,'dl',bd);bs.append(o,d);bd.appendChild(bs);
  if(handoffAllowed(p)){var hb=btn('op-btn--ho','ho','Hand off project');hb.onclick=function(){openHandoff(p,hb)};bd.appendChild(hb)}
+ if(docnoteAllowed(p))bd.appendChild(docNote(p));
  var mb=el('button','op-more-btn');mb.type='button';mb.append(el('span',null,'Tell me more'),svg(I.chev));var id='op-d-'+i;mb.setAttribute('aria-expanded','false');mb.setAttribute('aria-controls',id);
  var dt=el('div','op-details');dt.id=id;dt.hidden=true;
  if(p.desc)dt.appendChild(el('p',null,p.desc));
@@ -199,19 +248,22 @@ function olderList(rest){
   li.append(t,act(p,'open',t),act(p,'dl',t));ul.appendChild(li)});
  d.appendChild(ul);return d}
 
+/* op5 fold-down (Max Oct 17 2026 20:16 ICT): same look as the Morning Report / To-Do List fold-downs (48px summary row, title + count + chevron),
+   closed by default; cards (with Hand off and Quick note) live inside. */
 function render(sec,list){
- sec.textContent='';sec.style.removeProperty('display');
- var hd=el('div','op-head'),h=el('h2','op-h');h.append(svg(I.doc),document.createTextNode('Document Center'));
- if(list.length)h.appendChild(el('span','op-count','('+list.length+')'));
- var tt=el('div','op-ttl');tt.append(h,el('p','op-sub','Your agent\u2019s working documents'));hd.appendChild(tt);
- var nav=el('div','op-nav'),pv=el('button'),nx=el('button');pv.type=nx.type='button';pv.setAttribute('aria-label','Previous documents');nx.setAttribute('aria-label','Next documents');pv.appendChild(svg(I.prev));nx.appendChild(svg(I.next));nav.append(pv,nx);hd.appendChild(nav);sec.appendChild(hd);
- if(!list.length){var em=el('div','op-empty op-empty--box');em.append(svg(I.doc),el('p',null,'No documents yet. Your agent will pin PDFs, slides and docs here as it makes them.'));sec.appendChild(em);nav.hidden=true;return}
+ sec.textContent='';sec.style.removeProperty('display');sec.classList.add('op-has-fold');
+ var fd=el('details','op-fold'),sm=el('summary','op-fold-sum'),fb=el('div','op-fold-body');fd.id='mw-docs-fold';
+ sm.append(el('span','op-fold-t','Document Center'),el('span','op-fold-n',list.length?'('+list.length+')':''),el('span','op-chev'));fd.append(sm,fb);sec.appendChild(fd);
+ var hd=el('div','op-head');
+ var tt=el('div','op-ttl');tt.appendChild(el('p','op-sub','Your agent\u2019s working documents'));hd.appendChild(tt);
+ var nav=el('div','op-nav'),pv=el('button'),nx=el('button');pv.type=nx.type='button';pv.setAttribute('aria-label','Previous documents');nx.setAttribute('aria-label','Next documents');pv.appendChild(svg(I.prev));nx.appendChild(svg(I.next));nav.append(pv,nx);hd.appendChild(nav);fb.appendChild(hd);
+ if(!list.length){var em=el('div','op-empty op-empty--box');em.append(svg(I.doc),el('p',null,'No documents yet. Your agent will pin PDFs, slides and docs here as it makes them.'));fb.appendChild(em);nav.hidden=true;return}
  var tr=el('div','op-track');tr.setAttribute('role','list');tr.setAttribute('aria-label','Document Center');
- list.slice(0,MAX).forEach(function(p,i){var c=card(p,i);c.setAttribute('role','listitem');tr.appendChild(c)});sec.appendChild(tr);
+ list.slice(0,MAX).forEach(function(p,i){var c=card(p,i);c.setAttribute('role','listitem');tr.appendChild(c)});fb.appendChild(tr);
  function upd(){pv.disabled=tr.scrollLeft<4;nx.disabled=tr.scrollLeft+tr.clientWidth>=tr.scrollWidth-4;nav.style.visibility=tr.scrollWidth>tr.clientWidth+4?'visible':'hidden'}
  function step(dir){var c=tr.querySelector('.op-card');tr.scrollBy({left:dir*(c?c.getBoundingClientRect().width+12:tr.clientWidth),behavior:'smooth'})}
- pv.onclick=function(){step(-1)};nx.onclick=function(){step(1)};tr.addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);setTimeout(upd,50);
- if(list.length>MAX)sec.appendChild(olderList(list.slice(MAX)))}
+ pv.onclick=function(){step(-1)};nx.onclick=function(){step(1)};tr.addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);fd.addEventListener('toggle',function(){if(fd.open)setTimeout(upd,0)});setTimeout(upd,50);
+ if(list.length>MAX)fb.appendChild(olderList(list.slice(MAX)))}
 
 function normalize(j){
  var a=(j&&Array.isArray(j.projects))?j.projects:[];
@@ -219,7 +271,7 @@ function normalize(j){
 
 function load(src){
  return fetch(src+(src.indexOf('?')<0?'?':'&')+'t='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.json()}).then(function(j){
-  mode=storage[j.storage]?j.storage:'none';if(j.handoff===false)handoffBoardOff=true;
+  mode=storage[j.storage]?j.storage:'none';if(j.handoff===false)handoffBoardOff=true;if(j.docnote===false)docnoteBoardOff=true;
   if(j.index){ /* encrypted index (planned default): titles, notes, filenames all live inside files/<random12>.enc */
    return getBlob({path:j.index}).then(function(b){return b.text()}).then(function(t){var d=JSON.parse(t);d.storage='encrypted';return d})}
   return j})}
@@ -237,12 +289,12 @@ function mount(){
 
 var started=false;
 function start(){if(started)return;started=true;var sec=mount();if(!sec)return;
- var src=sec.getAttribute('data-mw-projects')||base();if(sec.getAttribute('data-mw-handoff')==='off')handoffBoardOff=true;
+ var src=sec.getAttribute('data-mw-projects')||base();if(sec.getAttribute('data-mw-handoff')==='off')handoffBoardOff=true;if(sec.getAttribute('data-mw-docnote')==='off')docnoteBoardOff=true;purgeNoteQueue();
  var ph=el('p','op-empty','Loading documents');sec.textContent='';sec.appendChild(ph);
  load(src).then(function(j){render(sec,normalize(j))}).catch(function(){render(sec,[])});
  /* mw-layout may rebuild #mw-mid later; keep the section first */
  document.addEventListener('mw-layout',function(){mount()})}
 document.addEventListener('mw-layout',start);
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',function(){setTimeout(start,document.getElementById('mw-bh')?0:600)});else setTimeout(start,600);
-window.ProjectsSection={v:V,storage:storage,setMode:function(m){if(storage[m])mode=m},render:render,normalize:normalize,safePath:safePath,handoffPayload:handoffPayload,openHandoff:openHandoff};
+window.ProjectsSection={v:V,storage:storage,setMode:function(m){if(storage[m])mode=m},render:render,normalize:normalize,safePath:safePath,handoffPayload:handoffPayload,openHandoff:openHandoff,docnotePayload:docnotePayload,docnoteAllowed:docnoteAllowed};
 })();

@@ -1,4 +1,4 @@
-/* Document Center (R100; was Ongoing Projects; kit op4, Branding Agent, Oct 17 2026).
+/* Document Center (R100; was Ongoing Projects; kit op5, Branding Agent, Oct 17 2026; op5 = R109 Quick note + fold-down).
    One uniform section, first in #mw-mid (right under the branded header divider, before the agent's own content).
    Light only: white cards, #FAF6EE bands, #e3ddd2 borders, Khand headings, Hind body, 10px card corners, subtle accents. */
 #mw-projects{--op-border:#e3ddd2;--op-band:#FAF6EE;--op-ink:#1a1a1a;--op-muted:#5c574f;--op-accent:#0B6E4F;--op-gold:#7A5A12;--op-r:10px;
@@ -121,3 +121,38 @@ html.op-ho-lock{overflow:hidden}
 #mw-projects .op-empty--box svg{flex:none;width:28px;height:28px;fill:none;stroke:var(--op-lagoon);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 #mw-projects .op-empty--box p{margin:0;font-size:15px;line-height:1.4;color:var(--op-muted)}
 @media (min-width:768px){#mw-projects{padding:14px 16px 16px}#mw-projects .op-head{align-items:center}}
+/* ---- op5 fold-down (Max Oct 17 2026 20:16 ICT): matches the Morning Report / To-Do List fold-downs (mw-layout.css details.mw-bh-morning):
+   white panel, 1px #e3ddd2 border, square corners, 48px #FAF6EE summary row in Khand 600 19px, muted Hind count, CSS chevron. Closed by default. */
+#mw-projects.op-has-fold{background:none;border:0;border-radius:0;padding:0}
+#mw-projects .op-fold{display:block;margin:0;padding:0;background:#fff;border:1px solid #e3ddd2;border-radius:0;box-shadow:none}
+#mw-projects .op-fold>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;min-height:48px;height:48px;margin:0;padding:0 16px;background:#FAF6EE;color:#171717;font:600 19px/20px Khand,sans-serif;border:0;border-radius:0}
+#mw-projects .op-fold>summary::-webkit-details-marker{display:none}#mw-projects .op-fold>summary::marker{content:""}
+#mw-projects .op-fold[open]>summary{border-bottom:1px solid #e3ddd2}
+#mw-projects .op-fold-n{font:500 15px/20px Hind,sans-serif;color:#737373;margin:0 0 0 -4px}#mw-projects .op-fold-n:empty{display:none}
+#mw-projects .op-chev{margin-left:auto;flex:none;width:9px;height:9px;border-right:2px solid #171717;border-bottom:2px solid #171717;transform:rotate(45deg) translateY(-3px)}
+#mw-projects .op-fold[open] .op-chev{transform:rotate(-135deg) translateY(-2px)}
+#mw-projects .op-fold>summary:focus-visible{outline:2px solid #0B6E4F;outline-offset:-2px}
+@media (hover:hover){#mw-projects .op-fold>summary:hover{background:#F5EFE3}}
+#mw-projects .op-fold-body{padding:12px 12px 14px}
+#mw-projects.op-has-fold .op-sub{margin:0}
+@media (min-width:768px){#mw-projects .op-fold-body{padding:14px 16px 16px}}
+/* ---- Quick note (R109): light only, square corners, #e3ddd2 borders, #FAF6EE fill, Khand/Hind, 44px targets ---- */
+#mw-projects .op-dn{margin-top:8px}
+#mw-projects .op-btn.op-dn-btn{flex:none;width:100%;min-height:44px;font-size:14px;color:#1a1a1a;background:#FAF6EE;border:1px solid #e3ddd2;border-radius:0}
+#mw-projects .op-btn.op-dn-btn.on{border-bottom-color:#FAF6EE}
+#mw-projects .op-dn-form{padding:10px;background:#FAF6EE;border:1px solid #e3ddd2;border-top:0;border-radius:0}
+#mw-projects .op-dn-l{display:block;margin:0 0 4px;font:600 15px/1.2 Khand,sans-serif;color:#5c574f;letter-spacing:.02em}
+#mw-projects .op-dn-ta{display:block;width:100%;min-height:76px;padding:10px;border:1px solid #e3ddd2;border-radius:0;background:#fff;color:#1a1a1a;font:16px/1.4 Hind,sans-serif;resize:vertical;color-scheme:light only}
+#mw-projects .op-dn-ta:focus{outline:2px solid #0B6E4F;outline-offset:0;border-color:#0B6E4F}
+#mw-projects .op-dn-ft{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:8px;flex-wrap:wrap}
+#mw-projects .op-dn-count{font:500 13px/1 Hind,sans-serif;color:#5c574f;font-variant-numeric:tabular-nums}
+#mw-projects .op-dn-count.op-dn-near{color:#8a3b12}
+#mw-projects .op-dn-row{display:flex;gap:8px;margin-left:auto}
+#mw-projects .op-dn-b{min-width:88px;min-height:44px;padding:0 14px;border:1px solid #e3ddd2;border-radius:0;background:#fff;color:#1a1a1a;font:600 16px/1 Khand,sans-serif;letter-spacing:.03em;cursor:pointer}
+#mw-projects .op-dn-send{background:#0B6E4F;border-color:#0B6E4F;color:#fff}
+#mw-projects .op-dn-b:disabled{opacity:.5;cursor:default}
+#mw-projects .op-dn-b:focus-visible,#mw-projects .op-dn-btn:focus-visible{outline:2px solid #0B6E4F;outline-offset:2px}
+#mw-projects .op-dn-msg{margin:6px 0 0;padding:8px 10px;font:500 14px/1.3 Hind,sans-serif;border:1px solid #e3ddd2;border-radius:0;background:#FAF6EE;color:#5c574f}
+#mw-projects .op-dn-msg.ok{color:#0B6E4F;border-color:#cfe5d8;background:#EEF6F1;font-weight:600}
+#mw-projects .op-dn-msg.err{color:#8a3b12;border-color:#f0d6c8;background:#FDF3EE}
+@media (hover:hover){#mw-projects .op-dn-b:not(:disabled):hover{background:#FAF6EE}#mw-projects .op-dn-send:not(:disabled):hover{background:#095c42}}
