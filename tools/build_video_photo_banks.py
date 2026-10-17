@@ -27,7 +27,7 @@ T = {
 ("Narrator Voice?","Warm Female Voice","Friendly and clear.","Calm Male Voice","Steady and reassuring."),
 ("Trust Beat?","Verified License Number","Show the real number.","Background Check Badge","Show checked and insured."),
 ("Pacing?","Slower Quote Flow","Like V3.","Brisker Pace","More beats in 45 s."),
-("Thai Subtitles?","Add Thai Version","Second cut with subtitles.","English Only","One version."),
+("Captions, burned into the picture or a caption track viewers switch on?","Burned-In Captions","Always on, works muted.","Closed Captions","Viewers switch them on."),
 ("Logo Animation?","Simple Fade","Quiet entrance.","Draw-On Line","Logo sketches itself."),
 ("App Shown?","Phone Screen Demo","Booking in the app.","No App","Keep it about the visit."),
 ("Colour Grade?","Warm And Bright","Sunny homes.","Neutral And True","Real-life colour."),

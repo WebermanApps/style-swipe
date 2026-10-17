@@ -15,9 +15,9 @@ DID = "main-deck-board-layout"; NAME = "Main Deck Board Layout Deck"
 CREAM, BAND, DIV, GREY = "#FAF6EE", "#F1E6D6", "#d9d1c3", "#8A847C"
 ACC = [TERRA, LAGOON, JUNGLE, SAFFRON]
 DECKS = [("UpKeep Visit Photos", "UpKeep", 3), ("Roselle Packaging", "WellNest", 0), ("Tea Blends", "WellNest", 6),
-         ("Investor Pitch", "UpKeep", 0), ("Partner Packs", "Blog", 0), ("Thai Words Round", "Thai", 2),
+         ("Investor Pitch", "UpKeep", 0), ("Partner Packs", "Blog", 0), ("Jokes Set List", "Jokes", 2),
          ("Mixed Deck", "Branding", 0), ("Customer Profile", "UpKeep", 0), ("Calm Line Labels", "WellNest", 0)]
-AGC = {"UpKeep": TERRA, "WellNest": JUNGLE, "Blog": LAGOON, "Thai": SAFFRON, "Branding": LAGOON}
+AGC = {"UpKeep": TERRA, "WellNest": JUNGLE, "Blog": LAGOON, "Jokes": SAFFRON, "Branding": LAGOON}
 
 def where(s, sub=""):  # small location strip at the top of every mockup (R105: say exactly where this is)
     return rect(0, 0, 240, 26, CREAM) + t(12, 17, s.upper(), 8, INK, "hind", 700, extra='letter-spacing="1"') + (t(228, 17, sub, 7.5, MUTE, anchor="end") if sub else "") + ln(26, 0, 240, LINE)
