@@ -1,0 +1,523 @@
+{
+ "date": "all-boards-rules-deck",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "All Boards Rules",
+ "generated_at": "2026-10-17T22:27:12+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "calm": 10,
+  "practical": 10
+ },
+ "groups": {
+  "Fold-Downs": 1,
+  "Corners": 1,
+  "Surfaces": 1,
+  "Type": 1,
+  "Sticky Bar": 1,
+  "Identity": 1,
+  "Empty States": 1,
+  "Duplicates": 1,
+  "Tap Targets": 1,
+  "Spacing": 1
+ },
+ "apps": {
+  "Branding": 10
+ },
+ "freshness": {
+  "option_slots": 20,
+  "never_shown_before": 20,
+  "share": 1.0
+ },
+ "warnings": [],
+ "brands": [
+  "Proposed dashboard standard (Branding, Oct 17 2026). Option A is always the live state found in the review (harness shots at 393 and 1280 of every unlocked board, 22:20 ICT); Option B is the proposed rule.",
+  "Max's standard: white and light beige (#fff, #FAF6EE, #e3ddd2), Khand and Hind, square corners, light mode only, no emoji."
+ ],
+ "submit_agent": "branding",
+ "submit_to": "Branding",
+ "topic": "dashboard-standard-all",
+ "deck_size": 10,
+ "board": "branding",
+ "audience": "Max",
+ "requested": true,
+ "caption_rule": "R105",
+ "review_doc": "/workspace/ops/brand/dashboard-review-2026-10-17.md",
+ "request": "Max, Oct 17 2026 10:15-10:16 PM ICT: review every dashboard, overall rules for all dashboards, especially the main dashboard; propose changes in a deck.",
+ "applies_to": [
+  "Apps Home https://webermanapps.github.io/a-o956qercs5ubd57y/",
+  "all 21 agent boards (kit/agent-dashboards.json)",
+  "UpKeep Operator Dash upkeep-owner-xhcdx0"
+ ],
+ "sources": {
+  "content": "tools/build_dashboard_standard.py",
+  "pictures": "img/dashboard-standard (HTML mocks of live boards, neutral text)"
+ },
+ "pairs": [
+  {
+   "group": "Fold-Downs",
+   "category": "Fold-Downs",
+   "app": "Branding",
+   "ask": "All Dashboards: Fold-down chevron, should boards keep their mix of fold styles or use the kit row and chevron for every fold-down, header and middle alike?",
+   "optionA": {
+    "id": "abr_ab_fold_a",
+    "label": "Five Fold Styles (As Now)",
+    "desc": "Kit box, caps text, triangle, plus sign, Show.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 576\" width=\"786\" height=\"576\"><rect width=\"786\" height=\"576\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ab_fold_a.jpg\" xlink:href=\"img/dashboard-standard/ab_fold_a.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"576\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "abr_ab_fold_b",
+    "label": "Kit Row And Chevron",
+    "desc": "One look; inner folds may drop the band.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 632\" width=\"786\" height=\"632\"><rect width=\"786\" height=\"632\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ab_fold_b.jpg\" xlink:href=\"img/dashboard-standard/ab_fold_b.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"632\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "all-boards-rules-deck-01",
+   "repeat": false
+  },
+  {
+   "group": "Corners",
+   "category": "Corners",
+   "app": "Branding",
+   "ask": "All Dashboards: Card corners, should middle sections keep corners from 8 to 999px or go square with 10px only on deck cards and round only on avatars?",
+   "optionA": {
+    "id": "abr_ab_corner_a",
+    "label": "Mixed Corners (As Now)",
+    "desc": "8, 9.6, 12, 14, 16px and round pills.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 412\" width=\"786\" height=\"412\"><rect width=\"786\" height=\"412\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ab_corner_a.jpg\" xlink:href=\"img/dashboard-standard/ab_corner_a.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"412\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "abr_ab_corner_b",
+    "label": "Square, Deck Cards 10px",
+    "desc": "Square boxes and tags; avatars stay round.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 416\" width=\"786\" height=\"416\"><rect width=\"786\" height=\"416\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ab_corner_b.jpg\" xlink:href=\"img/dashboard-standard/ab_corner_b.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"416\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "all-boards-rules-deck-02",
+   "repeat": false
+  },
+  {
+   "group": "Surfaces",
+   "category": "Surfaces",
+   "app": "Branding",
+   "ask": "All Dashboards: Card shadows and borders, should some middle cards keep drop shadows and grey borders or all go flat with the thin beige kit border?",
+   "optionA": {
+    "id": "abr_ab_shadow_a",
+    "label": "Shadows On Some (As Now)",
+    "desc": "Soft and hard shadows, grey borders.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 352\" width=\"786\" height=\"352\"><rect width=\"786\" height=\"352\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ab_shadow_a.jpg\" xlink:href=\"img/dashboard-standard/ab_shadow_a.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"352\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "abr_ab_shadow_b",
+    "label": "Flat, Beige Border",
+    "desc": "1px #e3ddd2, no shadow, like the header.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 352\" width=\"786\" height=\"352\"><rect width=\"786\" height=\"352\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ab_shadow_b.jpg\" xlink:href=\"img/dashboard-standard/ab_shadow_b.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"352\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "all-boards-rules-deck-03",
+   "repeat": false
+  },
+  {
+   "group": "Type",
+   "category": "Type",
+   "app": "Branding",
+   "ask": "All Dashboards: Type scale, should headings keep running from 19 to 32px with some 12px Hind titles or follow four fixed Khand and Hind steps?",
+   "optionA": {
+    "id": "abr_ab_type_a",
+    "label": "Free Sizes (As Now)",
+    "desc": "19, 22, 24, 25.6, 28, 32px; 12px Hind titles.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 470\" width=\"786\" height=\"470\"><rect width=\"786\" height=\"470\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ab_type_a.jpg\" xlink:href=\"img/dashboard-standard/ab_type_a.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"470\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "abr_ab_type_b",
+    "label": "Four Steps",
+    "desc": "26, 22, 18 Khand; 15 and 13 Hind, 12 floor.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 404\" width=\"786\" height=\"404\"><rect width=\"786\" height=\"404\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ab_type_b.jpg\" xlink:href=\"img/dashboard-standard/ab_type_b.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"404\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "all-boards-rules-deck-04",
+   "repeat": false
+  },
+  {
+   "group": "Sticky Bar",
+   "category": "Sticky Bar",
+   "app": "Branding",
+   "ask": "All Dashboards: Sticky bars, should boards keep their own sticky tab bars under the kit slim bar or allow only one sticky bar per board?",
+   "optionA": {
+    "id": "abr_ab_sticky_a",
+    "label": "Two Bars Stacked (As Now)",
+    "desc": "Board tab bar plus kit slim bar, 96px pinned.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 772\" width=\"786\" height=\"772\"><rect width=\"786\" height=\"772\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ab_sticky_a.jpg\" xlink:href=\"img/dashboard-standard/ab_sticky_a.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"772\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "abr_ab_sticky_b",
+    "label": "One Kit Bar Only",
+    "desc": "Board tabs scroll with the page.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 732\" width=\"786\" height=\"732\"><rect width=\"786\" height=\"732\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ab_sticky_b.jpg\" xlink:href=\"img/dashboard-standard/ab_sticky_b.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"732\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "all-boards-rules-deck-05",
+   "repeat": false
+  },
+  {
+   "group": "Identity",
+   "category": "Identity",
+   "app": "Branding",
+   "ask": "All Dashboards: Second title bar, should a board keep a second title bar with its own Share under the header or start the middle straight with content?",
+   "optionA": {
+    "id": "abr_ab_ident_a",
+    "label": "Second Title Bar (As Now)",
+    "desc": "Name, Updated and Share again mid-page.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 720\" width=\"786\" height=\"720\"><rect width=\"786\" height=\"720\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ab_ident_a.jpg\" xlink:href=\"img/dashboard-standard/ab_ident_a.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"720\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "abr_ab_ident_b",
+    "label": "One Header Only",
+    "desc": "One title and one Share, in the header.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 752\" width=\"786\" height=\"752\"><rect width=\"786\" height=\"752\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ab_ident_b.jpg\" xlink:href=\"img/dashboard-standard/ab_ident_b.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"752\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "all-boards-rules-deck-06",
+   "repeat": false
+  },
+  {
+   "group": "Empty States",
+   "category": "Empty States",
+   "app": "Branding",
+   "ask": "All Dashboards: Empty states, should empty panels keep repeated Coming Soon and no trend yet notes or show one line saying what fills them and who adds it?",
+   "optionA": {
+    "id": "abr_ab_empty_a",
+    "label": "Repeated Placeholders (As Now)",
+    "desc": "Coming Soon and no trend yet on every card.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 696\" width=\"786\" height=\"696\"><rect width=\"786\" height=\"696\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ab_empty_a.jpg\" xlink:href=\"img/dashboard-standard/ab_empty_a.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"696\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "abr_ab_empty_b",
+    "label": "One Helpful Line",
+    "desc": "What fills it and which agent adds it.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 332\" width=\"786\" height=\"332\"><rect width=\"786\" height=\"332\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ab_empty_b.jpg\" xlink:href=\"img/dashboard-standard/ab_empty_b.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"332\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "all-boards-rules-deck-07",
+   "repeat": false
+  },
+  {
+   "group": "Duplicates",
+   "category": "Duplicates",
+   "app": "Branding",
+   "ask": "All Dashboards: Repeated blocks, should a board keep middle blocks that repeat the header counter and links or show every block only once?",
+   "optionA": {
+    "id": "abr_ab_dupe_a",
+    "label": "Repeats Kept (As Now)",
+    "desc": "Deck Building and decks today shown twice.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 638\" width=\"786\" height=\"638\"><rect width=\"786\" height=\"638\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ab_dupe_a.jpg\" xlink:href=\"img/dashboard-standard/ab_dupe_a.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"638\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "abr_ab_dupe_b",
+    "label": "Each Block Once",
+    "desc": "Repeats removed, superseded items archived.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 526\" width=\"786\" height=\"526\"><rect width=\"786\" height=\"526\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ab_dupe_b.jpg\" xlink:href=\"img/dashboard-standard/ab_dupe_b.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"526\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "all-boards-rules-deck-08",
+   "repeat": false
+  },
+  {
+   "group": "Tap Targets",
+   "category": "Tap Targets",
+   "app": "Branding",
+   "ask": "All Dashboards: Tap targets, should small rows and text links from 22 to 36px stay or should every tap target be at least 44px except the 32px remove x?",
+   "optionA": {
+    "id": "abr_ab_tap_a",
+    "label": "Small Rows And Links (As Now)",
+    "desc": "22 to 36px rows, a 23px text link.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 318\" width=\"786\" height=\"318\"><rect width=\"786\" height=\"318\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ab_tap_a.jpg\" xlink:href=\"img/dashboard-standard/ab_tap_a.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"318\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "abr_ab_tap_b",
+    "label": "44px Minimum",
+    "desc": "Full rows and button links; x stays 32px.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 492\" width=\"786\" height=\"492\"><rect width=\"786\" height=\"492\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ab_tap_b.jpg\" xlink:href=\"img/dashboard-standard/ab_tap_b.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"492\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "all-boards-rules-deck-09",
+   "repeat": false
+  },
+  {
+   "group": "Spacing",
+   "category": "Spacing",
+   "app": "Branding",
+   "ask": "All Dashboards: Header fold spacing, should the header fold-downs keep uneven gaps and loose lines under the divider or sit 12px apart with 24px to a clean divider?",
+   "optionA": {
+    "id": "abr_ab_gap_a",
+    "label": "Uneven Gaps (As Now)",
+    "desc": "Wider gap before Document Center, loose stamp.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 530\" width=\"786\" height=\"530\"><rect width=\"786\" height=\"530\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ab_gap_a.jpg\" xlink:href=\"img/dashboard-standard/ab_gap_a.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"530\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "abr_ab_gap_b",
+    "label": "12px Apart, Clean Divider",
+    "desc": "Even stack, 24px to the divider.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 438\" width=\"786\" height=\"438\"><rect width=\"786\" height=\"438\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ab_gap_b.jpg\" xlink:href=\"img/dashboard-standard/ab_gap_b.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"438\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "all-boards-rules-deck-10",
+   "repeat": false
+  }
+ ],
+ "share": true,
+ "notes": true
+}

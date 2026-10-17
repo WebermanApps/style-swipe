@@ -1,0 +1,523 @@
+{
+ "date": "main-dashboard-rules-deck",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Main Dashboard Rules",
+ "generated_at": "2026-10-17T22:27:11+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "calm": 10,
+  "practical": 10
+ },
+ "groups": {
+  "Share": 1,
+  "Freshness": 1,
+  "Order": 1,
+  "Desktop Grid": 1,
+  "Type Floor": 1,
+  "Counters": 1,
+  "Roster": 1,
+  "Status": 1,
+  "Sticky Bar": 1,
+  "Fold-Downs": 1
+ },
+ "apps": {
+  "Branding": 10
+ },
+ "freshness": {
+  "option_slots": 20,
+  "never_shown_before": 20,
+  "share": 1.0
+ },
+ "warnings": [],
+ "brands": [
+  "Proposed dashboard standard (Branding, Oct 17 2026). Option A is always the live state found in the review (harness shots at 393 and 1280 of every unlocked board, 22:20 ICT); Option B is the proposed rule.",
+  "Max's standard: white and light beige (#fff, #FAF6EE, #e3ddd2), Khand and Hind, square corners, light mode only, no emoji."
+ ],
+ "submit_agent": "branding",
+ "submit_to": "Branding",
+ "topic": "dashboard-standard-main",
+ "deck_size": 10,
+ "board": "branding",
+ "audience": "Max",
+ "requested": true,
+ "caption_rule": "R105",
+ "review_doc": "/workspace/ops/brand/dashboard-review-2026-10-17.md",
+ "request": "Max, Oct 17 2026 10:15-10:16 PM ICT: review every dashboard, overall rules for all dashboards, especially the main dashboard; propose changes in a deck.",
+ "applies_to": [
+  "Apps Home https://webermanapps.github.io/a-o956qercs5ubd57y/",
+  "all 21 agent boards (kit/agent-dashboards.json)",
+  "UpKeep Operator Dash upkeep-owner-xhcdx0"
+ ],
+ "sources": {
+  "content": "tools/build_dashboard_standard.py",
+  "pictures": "img/dashboard-standard (HTML mocks of live boards, neutral text)"
+ },
+ "pairs": [
+  {
+   "group": "Share",
+   "category": "Share",
+   "app": "Branding",
+   "ask": "Apps Home: Share button, should Share stay a big outlined button at the bottom of Apps Home or move to the same header icon every agent board uses?",
+   "optionA": {
+    "id": "mdr_ah_share_a",
+    "label": "Bottom Share Button (As Now)",
+    "desc": "Outlined Share above the Machan credit.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 738\" width=\"786\" height=\"738\"><rect width=\"786\" height=\"738\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ah_share_a.jpg\" xlink:href=\"img/dashboard-standard/ah_share_a.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"738\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "mdr_ah_share_b",
+    "label": "Header Share Icon",
+    "desc": "44px icon top right; footer is the credit only.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 694\" width=\"786\" height=\"694\"><rect width=\"786\" height=\"694\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ah_share_b.jpg\" xlink:href=\"img/dashboard-standard/ah_share_b.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"694\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "main-dashboard-rules-deck-01",
+   "repeat": false
+  },
+  {
+   "group": "Freshness",
+   "category": "Freshness",
+   "app": "Branding",
+   "ask": "Apps Home: Updated stamp, should the Updated stamp stay a typed date or show the real age from the data with a Stale tag after a day, on Apps Home and every board?",
+   "optionA": {
+    "id": "mdr_ah_stamp_a",
+    "label": "Typed Date (As Now)",
+    "desc": "Oct 16 10:11 AM on Apps Home, Oct 15 on boards.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 424\" width=\"786\" height=\"424\"><rect width=\"786\" height=\"424\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ah_stamp_a.jpg\" xlink:href=\"img/dashboard-standard/ah_stamp_a.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"424\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "mdr_ah_stamp_b",
+    "label": "Real Age + Stale Tag",
+    "desc": "Updated 4 min ago; square Stale tag after 24h.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 464\" width=\"786\" height=\"464\"><rect width=\"786\" height=\"464\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ah_stamp_b.jpg\" xlink:href=\"img/dashboard-standard/ah_stamp_b.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"464\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "main-dashboard-rules-deck-02",
+   "repeat": false
+  },
+  {
+   "group": "Order",
+   "category": "Order",
+   "app": "Branding",
+   "ask": "Apps Home: Phone top order, should the three utility rows stay above the Grok Bot card on a phone or should Grok Bot come first?",
+   "optionA": {
+    "id": "mdr_ah_order_a",
+    "label": "Utility Rows First (As Now)",
+    "desc": "Requested changes, Deck Building, Decks Today.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 826\" width=\"786\" height=\"826\"><rect width=\"786\" height=\"826\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ah_order_a.jpg\" xlink:href=\"img/dashboard-standard/ah_order_a.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"826\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "mdr_ah_order_b",
+    "label": "Grok Bot First",
+    "desc": "Main bot on top, utility rows after it.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 826\" width=\"786\" height=\"826\"><rect width=\"786\" height=\"826\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ah_order_b.jpg\" xlink:href=\"img/dashboard-standard/ah_order_b.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"826\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "main-dashboard-rules-deck-03",
+   "repeat": false
+  },
+  {
+   "group": "Desktop Grid",
+   "category": "Desktop Grid",
+   "app": "Branding",
+   "ask": "Apps Home: Desktop grid, should the Grok Bot card stay half width with uneven agent columns at 1280 or span the row with equal-height columns?",
+   "optionA": {
+    "id": "mdr_ah_grid_a",
+    "label": "Half-Width Grok Bot (As Now)",
+    "desc": "Blank space beside it and under short columns.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 738\" width=\"786\" height=\"738\"><rect width=\"786\" height=\"738\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ah_grid_a.jpg\" xlink:href=\"img/dashboard-standard/ah_grid_a.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"738\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "mdr_ah_grid_b",
+    "label": "Full Row, Even Columns",
+    "desc": "Grok Bot spans; three lists match height.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 738\" width=\"786\" height=\"738\"><rect width=\"786\" height=\"738\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ah_grid_b.jpg\" xlink:href=\"img/dashboard-standard/ah_grid_b.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"738\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "main-dashboard-rules-deck-04",
+   "repeat": false
+  },
+  {
+   "group": "Type Floor",
+   "category": "Type Floor",
+   "app": "Branding",
+   "ask": "Apps Home: Small caps labels, should the 9 to 10px letter-spaced labels like Open Dashboard stay on every row or go, with nothing under 12px anywhere?",
+   "optionA": {
+    "id": "mdr_ah_micro_a",
+    "label": "Tiny Caps Labels (As Now)",
+    "desc": "Open Dashboard repeated on every agent row.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 624\" width=\"786\" height=\"624\"><rect width=\"786\" height=\"624\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ah_micro_a.jpg\" xlink:href=\"img/dashboard-standard/ah_micro_a.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"624\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "mdr_ah_micro_b",
+    "label": "12px Floor, Arrow Only",
+    "desc": "Whole row is the link; plain 13px labels.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 684\" width=\"786\" height=\"684\"><rect width=\"786\" height=\"684\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ah_micro_b.jpg\" xlink:href=\"img/dashboard-standard/ah_micro_b.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"684\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "main-dashboard-rules-deck-05",
+   "repeat": false
+  },
+  {
+   "group": "Counters",
+   "category": "Counters",
+   "app": "Branding",
+   "ask": "Apps Home: Deck counters, should each page keep its own deck numbers or should every counter read the one shared deck-counts file and show once per page?",
+   "optionA": {
+    "id": "mdr_ah_count_a",
+    "label": "Separate Numbers (As Now)",
+    "desc": "39 here, 0 and 0.9 on the Grok Bot board.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 544\" width=\"786\" height=\"544\"><rect width=\"786\" height=\"544\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ah_count_a.jpg\" xlink:href=\"img/dashboard-standard/ah_count_a.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"544\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "mdr_ah_count_b",
+    "label": "One Shared Count",
+    "desc": "Same number everywhere, header only.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 420\" width=\"786\" height=\"420\"><rect width=\"786\" height=\"420\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ah_count_b.jpg\" xlink:href=\"img/dashboard-standard/ah_count_b.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"420\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "main-dashboard-rules-deck-06",
+   "repeat": false
+  },
+  {
+   "group": "Roster",
+   "category": "Roster",
+   "app": "Branding",
+   "ask": "Apps Home: Agent list, should Apps Home keep its own agent list or build its rows from the shared agent-dashboards list every tool uses?",
+   "optionA": {
+    "id": "mdr_ah_roster_a",
+    "label": "Own List (As Now)",
+    "desc": "Shows Writer, which has no board in the kit list.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 704\" width=\"786\" height=\"704\"><rect width=\"786\" height=\"704\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ah_roster_a.jpg\" xlink:href=\"img/dashboard-standard/ah_roster_a.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"704\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "mdr_ah_roster_b",
+    "label": "Shared List",
+    "desc": "Rows come from kit/agent-dashboards.json.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 616\" width=\"786\" height=\"616\"><rect width=\"786\" height=\"616\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ah_roster_b.jpg\" xlink:href=\"img/dashboard-standard/ah_roster_b.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"616\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "main-dashboard-rules-deck-07",
+   "repeat": false
+  },
+  {
+   "group": "Status",
+   "category": "Status",
+   "app": "Branding",
+   "ask": "Apps Home: Working dot, should a working agent keep the small unlabeled green dot or get the square Working tag Grok Bot already uses?",
+   "optionA": {
+    "id": "mdr_ah_live_a",
+    "label": "Green Dot (As Now)",
+    "desc": "Small dot beside the name, no label.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 488\" width=\"786\" height=\"488\"><rect width=\"786\" height=\"488\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ah_live_a.jpg\" xlink:href=\"img/dashboard-standard/ah_live_a.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"488\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "mdr_ah_live_b",
+    "label": "Square Working Tag",
+    "desc": "Same tag as Grok Bot's Working Now chips.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 528\" width=\"786\" height=\"528\"><rect width=\"786\" height=\"528\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ah_live_b.jpg\" xlink:href=\"img/dashboard-standard/ah_live_b.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"528\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "main-dashboard-rules-deck-08",
+   "repeat": false
+  },
+  {
+   "group": "Sticky Bar",
+   "category": "Sticky Bar",
+   "app": "Branding",
+   "ask": "Apps Home: Top bar on scroll, should the Apps Home top bar stay pinned for the whole page or use the slim bar that boards show for about one screen?",
+   "optionA": {
+    "id": "mdr_ah_sticky_a",
+    "label": "Always Pinned (As Now)",
+    "desc": "57px bar stays on screen the whole way down.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 732\" width=\"786\" height=\"732\"><rect width=\"786\" height=\"732\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ah_sticky_a.jpg\" xlink:href=\"img/dashboard-standard/ah_sticky_a.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"732\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "mdr_ah_sticky_b",
+    "label": "Slim Bar, Then Hides",
+    "desc": "48px bar for about one screen (R87).",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 772\" width=\"786\" height=\"772\"><rect width=\"786\" height=\"772\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ah_sticky_b.jpg\" xlink:href=\"img/dashboard-standard/ah_sticky_b.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"772\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "main-dashboard-rules-deck-09",
+   "repeat": false
+  },
+  {
+   "group": "Fold-Downs",
+   "category": "Fold-Downs",
+   "app": "Branding",
+   "ask": "Apps Home: Fold-down rows, should Apps Home keep its own white rounded fold-downs or use the one 48px fold-down row the agent boards use?",
+   "optionA": {
+    "id": "mdr_ah_fold_a",
+    "label": "Own Fold Look (As Now)",
+    "desc": "56px, 10px corners, white; boards differ.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 404\" width=\"786\" height=\"404\"><rect width=\"786\" height=\"404\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ah_fold_a.jpg\" xlink:href=\"img/dashboard-standard/ah_fold_a.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"404\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "mdr_ah_fold_b",
+    "label": "One Fold Row Everywhere",
+    "desc": "48px Khand row, title, count, same chevron.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 786 392\" width=\"786\" height=\"392\"><rect width=\"786\" height=\"392\" fill=\"#FFFFFF\"/><image href=\"img/dashboard-standard/ah_fold_b.jpg\" xlink:href=\"img/dashboard-standard/ah_fold_b.jpg\" x=\"0\" y=\"0\" width=\"786\" height=\"392\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "main-dashboard-rules-deck-10",
+   "repeat": false
+  }
+ ],
+ "share": true,
+ "notes": true
+}
