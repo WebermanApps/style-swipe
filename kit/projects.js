@@ -1,8 +1,9 @@
-/* Document Center (R100; was Ongoing Projects; kit op5, Branding Agent, Oct 17 2026).
+/* Document Center (R100; was Ongoing Projects; kit op6, Branding Agent, Oct 17 2026).
    op5 (R109 + R106 fold-down, Oct 17 2026 20:15 ICT): per-card Quick note (app "doc-note") and a closed-by-default fold-down header.
+   op6 (R109b, Oct 17 2026 20:35 ICT): Quick note and Hand off on every 'More (n)' row too (same docNote/openHandoff code path and gating), so every document has a Note.
    Usage on a kit board (after mw-layout.js):
-     <link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/projects.css?v=op5">
-     script src=".../style-swipe/kit/projects.js?v=op5" data-projects="projects.json" defer (after mw-layout.js)
+     <link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/projects.css?v=op6">
+     script src=".../style-swipe/kit/projects.js?v=op6" data-projects="projects.json" defer (after mw-layout.js)
    or place <section id="mw-projects" data-mw-projects="projects.json"></section> anywhere; the kit moves it to the top of #mw-mid
    (right under the branded header divider, before the agent's own content).
    Data: board projects.json (schema: ops/brand/projects.schema.json), written only by /workspace/ops/brand/pin_project.py.
@@ -15,7 +16,7 @@
    No crypto lives here: decryption is delegated to Security's viewer through ProjectsSection.storage.encrypted. */
 (function(){
 'use strict';
-var V='op5',MAX=6,EXCLUDE=/a-o956qercs5ubd57y|home-guide|finish-questions|room-photos|room-quiz|homes\.maxweberman\.com|share-x3l9xcxc1eut/;
+var V='op6',MAX=6,EXCLUDE=/a-o956qercs5ubd57y|home-guide|finish-questions|room-photos|room-quiz|homes\.maxweberman\.com|share-x3l9xcxc1eut/;
 var me=document.currentScript;
 function el(t,c,txt){var e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e}
 function svg(d){var s=document.createElementNS('http://www.w3.org/2000/svg','svg');s.setAttribute('viewBox','0 0 24 24');s.setAttribute('aria-hidden','true');s.innerHTML=d;return s}
@@ -173,8 +174,9 @@ function docnoteAllowed(p){var o=String(ownerAgent(p)||'').toLowerCase();return 
 function purgeNoteQueue(){try{var a=JSON.parse(localStorage.getItem(QK_SUBMIT)||'[]');if(!Array.isArray(a))return;var k=a.filter(function(x){return!(x&&x.app==='doc-note')});
  if(k.length!==a.length){if(k.length)localStorage.setItem(QK_SUBMIT,JSON.stringify(k));else localStorage.removeItem(QK_SUBMIT)}}catch(_){}}
 var dnSeq=0;
-function docNote(p){
- var n=++dnSeq,w=el('div','op-dn'),ob=btn('op-dn-btn','note','Note','Quick note');ob.setAttribute('aria-expanded','false');
+/* row=true (op6, More rows): same control; wrapper is display:contents so the Note button sits in the row and the form/status wrap below it */
+function docNote(p,row){
+ var n=++dnSeq,w=el('div','op-dn'+(row?' op-dn--row':'')),ob=btn('op-dn-btn','note','Note',row?'Quick note on '+p.title:'Quick note');ob.setAttribute('aria-expanded','false');
  var f=el('form','op-dn-form');f.id='op-dn-f'+n;f.hidden=true;f.noValidate=true;f.autocomplete='off';ob.setAttribute('aria-controls',f.id);
  var lb=el('label','op-dn-l','Quick note');lb.htmlFor='op-dn-t'+n;
  var ta=el('textarea','op-dn-ta');ta.id='op-dn-t'+n;ta.rows=3;ta.maxLength=NOTE_MAX;ta.placeholder='Type a short note';ta.setAttribute('autocomplete','off');ta.setAttribute('aria-describedby','op-dn-c'+n);
@@ -245,7 +247,9 @@ function card(p,i){
 function olderList(rest){
  var d=el('details','op-older'),s=el('summary');s.append(el('span',null,'More ('+rest.length+')'),svg(I.chev));d.appendChild(s);
  var ul=el('ul','op-list');rest.forEach(function(p){var li=el('li'),t=el('div','op-lt');var k=kindOf(p);li.className='op-k-'+k;t.append(el('b',null,p.title),el('span','op-meta',KIND[k]+' \u00b7 '+docDate(p)));
-  li.append(t,act(p,'open',t),act(p,'dl',t));ul.appendChild(li)});
+  li.append(t,act(p,'open',t),act(p,'dl',t));
+  if(handoffAllowed(p)){var hb=btn('op-btn--ho op-ho-row','ho','Hand off','Hand off '+p.title);hb.onclick=function(){openHandoff(p,hb)};li.appendChild(hb)}
+  if(docnoteAllowed(p))li.appendChild(docNote(p,true));ul.appendChild(li)});
  d.appendChild(ul);return d}
 
 /* op5 fold-down (Max Oct 17 2026 20:16 ICT): same look as the Morning Report / To-Do List fold-downs (48px summary row, title + count + chevron),

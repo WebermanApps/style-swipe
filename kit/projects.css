@@ -1,4 +1,4 @@
-/* Document Center (R100; was Ongoing Projects; kit op5, Branding Agent, Oct 17 2026; op5 = R109 Quick note + fold-down).
+/* Document Center (R100; was Ongoing Projects; kit op6, Branding Agent, Oct 17 2026; op5 = R109 Quick note + fold-down; op6 = Note/Hand off on More rows).
    One uniform section, first in #mw-mid (right under the branded header divider, before the agent's own content).
    Light only: white cards, #FAF6EE bands, #e3ddd2 borders, Khand headings, Hind body, 10px card corners, subtle accents. */
 #mw-projects{--op-border:#e3ddd2;--op-band:#FAF6EE;--op-ink:#1a1a1a;--op-muted:#5c574f;--op-accent:#0B6E4F;--op-gold:#7A5A12;--op-r:10px;
@@ -156,3 +156,14 @@ html.op-ho-lock{overflow:hidden}
 #mw-projects .op-dn-msg.ok{color:#0B6E4F;border-color:#cfe5d8;background:#EEF6F1;font-weight:600}
 #mw-projects .op-dn-msg.err{color:#8a3b12;border-color:#f0d6c8;background:#FDF3EE}
 @media (hover:hover){#mw-projects .op-dn-b:not(:disabled):hover{background:#FAF6EE}#mw-projects .op-dn-send:not(:disabled):hover{background:#095c42}}
+/* ---- op6 (R109b): Quick note + Hand off on every More row. Compact: small buttons in the row, note form expands inline under the row. 44px, square. ---- */
+#mw-projects .op-list li{flex-wrap:wrap}
+#mw-projects .op-list .op-btn{min-height:44px;min-width:44px}
+#mw-projects .op-dn--row{display:contents}
+#mw-projects .op-list .op-btn.op-ho-row{flex:0 0 auto;width:auto;margin:0;min-height:44px;font-size:14px;border-radius:0}
+#mw-projects .op-list .op-btn.op-dn-btn{flex:0 0 auto;width:auto;min-height:44px;padding:0 12px;font-size:14px}
+#mw-projects .op-list .op-btn.op-dn-btn span{display:inline}
+#mw-projects .op-list .op-btn.op-dn-btn.on{border-bottom-color:#e3ddd2}
+#mw-projects .op-dn--row>.op-dn-form{flex:0 0 100%;order:10;border-top:1px solid #e3ddd2}
+#mw-projects .op-dn--row>.op-dn-msg{flex:0 0 100%;order:11;margin:0}
+@media (max-width:767px){#mw-projects .op-list .op-lt{flex:0 0 100%}#mw-projects .op-list .op-btn:not(.op-dn-btn){flex:1 1 0}}
