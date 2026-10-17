@@ -1,4 +1,4 @@
-/* Ongoing Projects (R100; kit op2, Branding Agent, Oct 17 2026).
+/* Document Center (R100; was Ongoing Projects; kit op4, Branding Agent, Oct 17 2026).
    One uniform section, first in #mw-mid (right under the branded header divider, before the agent's own content).
    Light only: white cards, #FAF6EE bands, #e3ddd2 borders, Khand headings, Hind body, 10px card corners, subtle accents. */
 #mw-projects{--op-border:#e3ddd2;--op-band:#FAF6EE;--op-ink:#1a1a1a;--op-muted:#5c574f;--op-accent:#0B6E4F;--op-gold:#7A5A12;--op-r:10px;
@@ -99,3 +99,25 @@ html.op-ho-lock{overflow:hidden}
 .op-ho button:focus-visible{outline:2px solid #0B6E4F;outline-offset:2px}
 @media (min-width:768px){.op-ho-bg{align-items:center;padding:24px}.op-ho{max-width:440px;border-radius:12px;padding:20px 20px 18px;box-shadow:0 12px 40px rgba(26,26,26,.16)}}
 .op-ho [hidden],#mw-projects [hidden]{display:none!important}
+/* ---- Document Center look (op4): cream panel, doc-type badges in brand pops (terracotta, lagoon, jungle) ---- */
+#mw-projects{--op-terra:#A8462A;--op-terra-bg:#FBEEE8;--op-lagoon:#1C6D86;--op-lagoon-bg:#E8F3F6;--op-jungle:#2E6B3F;--op-jungle-bg:#EAF4EC;--op-amber:#8A5A0C;--op-amber-bg:#FBF2DF;
+ background:var(--op-band);border:1px solid #ece4d4;border-radius:12px;padding:12px 12px 14px}
+#mw-projects .op-head{align-items:flex-start;margin-bottom:10px}
+#mw-projects .op-ttl{min-width:0}
+#mw-projects .op-h{font-size:20px}
+#mw-projects .op-h svg{stroke:var(--op-terra)}
+#mw-projects .op-sub{margin:2px 0 0 28px;font-size:13.5px;line-height:1.3;color:var(--op-muted)}
+#mw-projects .op-card{border-top:3px solid var(--op-kc,var(--op-border))}
+#mw-projects .op-thumb{background:#fff}
+#mw-projects .op-type{font:700 11.5px/1.35 Hind,sans-serif;letter-spacing:.08em;color:var(--op-kc,var(--op-muted));background:var(--op-kb,#fff);border-color:transparent;box-shadow:0 1px 2px rgba(26,26,26,.08)}
+#mw-projects .op-k-pdf{--op-kc:var(--op-terra);--op-kb:var(--op-terra-bg)}
+#mw-projects .op-k-ppt{--op-kc:var(--op-amber);--op-kb:var(--op-amber-bg)}
+#mw-projects .op-k-doc{--op-kc:var(--op-lagoon);--op-kb:var(--op-lagoon-bg)}
+#mw-projects .op-k-xls{--op-kc:var(--op-jungle);--op-kb:var(--op-jungle-bg)}
+#mw-projects .op-k-img{--op-kc:#6E5A86;--op-kb:#F2EEF6}
+#mw-projects .op-k-other{--op-kc:var(--op-muted);--op-kb:#fff}
+#mw-projects .op-list li .op-meta{color:var(--op-kc,var(--op-muted))}
+#mw-projects .op-empty--box{display:flex;align-items:center;gap:12px;padding:14px;background:#fff;border:1px dashed #d9d1c3;border-radius:var(--op-r)}
+#mw-projects .op-empty--box svg{flex:none;width:28px;height:28px;fill:none;stroke:var(--op-lagoon);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+#mw-projects .op-empty--box p{margin:0;font-size:15px;line-height:1.4;color:var(--op-muted)}
+@media (min-width:768px){#mw-projects{padding:14px 16px 16px}#mw-projects .op-head{align-items:center}}

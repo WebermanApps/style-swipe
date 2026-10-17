@@ -1,4 +1,4 @@
-/* Ongoing Projects (R100; kit op2, Branding Agent, Oct 17 2026).
+/* Document Center (R100; was Ongoing Projects; kit op4, Branding Agent, Oct 17 2026).
    Usage on a kit board (after mw-layout.js):
      <link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/projects.css?v=op2">
      script src=".../style-swipe/kit/projects.js?v=op2" data-projects="projects.json" defer (after mw-layout.js)
@@ -14,12 +14,12 @@
    No crypto lives here: decryption is delegated to Security's viewer through ProjectsSection.storage.encrypted. */
 (function(){
 'use strict';
-var V='op3',MAX=6,EXCLUDE=/a-o956qercs5ubd57y|home-guide|finish-questions|room-photos|room-quiz|homes\.maxweberman\.com|share-x3l9xcxc1eut/;
+var V='op4',MAX=6,EXCLUDE=/a-o956qercs5ubd57y|home-guide|finish-questions|room-photos|room-quiz|homes\.maxweberman\.com|share-x3l9xcxc1eut/;
 var me=document.currentScript;
 function el(t,c,txt){var e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e}
 function svg(d){var s=document.createElementNS('http://www.w3.org/2000/svg','svg');s.setAttribute('viewBox','0 0 24 24');s.setAttribute('aria-hidden','true');s.innerHTML=d;return s}
 var I={folder:'<path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>',open:'<path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 01-1 1H5a1 1 0 01-1-1V7a1 1 0 011-1h5"/>',
- dl:'<path d="M12 4v11M7 10l5 5 5-5M5 20h14"/>',ho:'<path d="M4 12h12M12 6l6 6-6 6"/><path d="M20 5v14"/>',chev:'<path d="M6 9l6 6 6-6"/>',prev:'<path d="M15 6l-6 6 6 6"/>',next:'<path d="M9 6l6 6-6 6"/>'};
+ dl:'<path d="M12 4v11M7 10l5 5 5-5M5 20h14"/>',ho:'<path d="M4 12h12M12 6l6 6-6 6"/><path d="M20 5v14"/>',doc:'<path d="M7 3h7l5 5v12a1 1 0 01-1 1H7a1 1 0 01-1-1V4a1 1 0 011-1z"/><path d="M14 3v5h5M9 13h6M9 17h6"/>',chev:'<path d="M6 9l6 6 6-6"/>',prev:'<path d="M15 6l-6 6 6 6"/>',next:'<path d="M9 6l6 6-6 6"/>'};
 function isLocal(){return location.protocol==='file:'||/^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname)}
 /* only board-relative paths: no scheme, no leading slash, no .. (a tampered projects.json cannot point elsewhere) */
 function safePath(p){return typeof p==='string'&&p.length<300&&!/^[a-z][a-z0-9+.-]*:|^\/|\\|(^|\/)\.\.(\/|$)/i.test(p)?p:null}
@@ -48,6 +48,18 @@ function getBlob(ref){var s=storage[mode]||storage.none;return s.blob(ref)}
 function fmtDate(s){var d=new Date(s);if(isNaN(d))return '';var now=new Date(),o={month:'short',day:'numeric'};if(d.getFullYear()!==now.getFullYear())o.year='numeric';
  return d.toLocaleDateString('en-US',o)}
 function typeOf(p){return String(p.type||(p.file&&p.file.name||'').split('.').pop()||'File').toUpperCase().slice(0,5)}
+/* doc-type badge (op4). Untrusted input: p.type is checked against a fixed whitelist, else derived from type/MIME/extension;
+   anything unknown is 'other'. Labels come only from KIND and are set with textContent. */
+var KIND={pdf:'PDF',ppt:'PPT',doc:'DOC',xls:'XLS',img:'IMG',other:'FILE'};
+function kindOf(p){var t=String(p.type||'').toLowerCase();if(Object.prototype.hasOwnProperty.call(KIND,t))return t;
+ var f=p.file||{},m=String(f.mime||'').toLowerCase(),e=String(f.name||'').toLowerCase().split('.').pop(),s=t+' '+e;
+ if(/\bpdf\b/.test(s)||m==='application/pdf')return 'pdf';
+ if(/\b(pptx?|odp|key)\b/.test(s)||/presentation|powerpoint/.test(m))return 'ppt';
+ if(/\b(docx?|odt|rtf)\b/.test(s)||/wordprocessing|msword|opendocument\.text/.test(m))return 'doc';
+ if(/\b(xlsx?|ods|csv)\b/.test(s)||/spreadsheet|ms-excel|text\/csv/.test(m))return 'xls';
+ if(/\b(png|jpe?g|gif|webp|heic)\b/.test(s)||/^image\//.test(m))return 'img';
+ return 'other'}
+function docDate(p){return p.date?fmtDate(p.date):'Updated '+fmtDate(p.updated)}
 
 var urls=[];function track(u){urls.push(u);return u}
 addEventListener('pagehide',function(){urls.forEach(function(u){try{URL.revokeObjectURL(u)}catch(_){}})});
@@ -167,10 +179,10 @@ function thumbInto(p,img,ph){
 function card(p,i){
  var c=el('article','op-card');c.setAttribute('aria-label',p.title);
  var th=el('div','op-thumb'),img=el('img'),ph=el('div','op-ph',typeOf(p));img.alt='';img.decoding='async';
- th.append(img,ph,el('span','op-type',typeOf(p)));c.appendChild(th);
+ var k=kindOf(p);c.classList.add('op-k-'+k);th.append(img,ph,el('span','op-type',KIND[k]));c.appendChild(th);
  thumbInto(p,img,ph);
  var bd=el('div','op-body');bd.appendChild(el('h3','op-t',p.title));
- bd.appendChild(el('p','op-meta',typeOf(p)+' \u00b7 Updated '+fmtDate(p.updated)));
+ bd.appendChild(el('p','op-meta',docDate(p)));
  var bs=el('div','op-btns'),o=act(p,'open',bd),d=act(p,'dl',bd);bs.append(o,d);bd.appendChild(bs);
  if(handoffAllowed(p)){var hb=btn('op-btn--ho','ho','Hand off project');hb.onclick=function(){openHandoff(p,hb)};bd.appendChild(hb)}
  var mb=el('button','op-more-btn');mb.type='button';mb.append(el('span',null,'Tell me more'),svg(I.chev));var id='op-d-'+i;mb.setAttribute('aria-expanded','false');mb.setAttribute('aria-controls',id);
@@ -183,17 +195,18 @@ function card(p,i){
 
 function olderList(rest){
  var d=el('details','op-older'),s=el('summary');s.append(el('span',null,'More ('+rest.length+')'),svg(I.chev));d.appendChild(s);
- var ul=el('ul','op-list');rest.forEach(function(p){var li=el('li'),t=el('div','op-lt');t.append(el('b',null,p.title),el('span','op-meta',typeOf(p)+' \u00b7 '+fmtDate(p.updated)));
+ var ul=el('ul','op-list');rest.forEach(function(p){var li=el('li'),t=el('div','op-lt');var k=kindOf(p);li.className='op-k-'+k;t.append(el('b',null,p.title),el('span','op-meta',KIND[k]+' \u00b7 '+docDate(p)));
   li.append(t,act(p,'open',t),act(p,'dl',t));ul.appendChild(li)});
  d.appendChild(ul);return d}
 
 function render(sec,list){
  sec.textContent='';sec.style.removeProperty('display');
- var hd=el('div','op-head'),h=el('h2','op-h');h.append(svg(I.folder),document.createTextNode('Ongoing Projects'));hd.appendChild(h);
- if(list.length)hd.appendChild(el('span','op-count','('+list.length+')'));
- var nav=el('div','op-nav'),pv=el('button'),nx=el('button');pv.type=nx.type='button';pv.setAttribute('aria-label','Previous projects');nx.setAttribute('aria-label','Next projects');pv.appendChild(svg(I.prev));nx.appendChild(svg(I.next));nav.append(pv,nx);hd.appendChild(nav);sec.appendChild(hd);
- if(!list.length){sec.appendChild(el('p','op-empty','No ongoing projects yet.'));nav.hidden=true;return}
- var tr=el('div','op-track');tr.setAttribute('role','list');tr.setAttribute('aria-label','Ongoing Projects');
+ var hd=el('div','op-head'),h=el('h2','op-h');h.append(svg(I.doc),document.createTextNode('Document Center'));
+ if(list.length)h.appendChild(el('span','op-count','('+list.length+')'));
+ var tt=el('div','op-ttl');tt.append(h,el('p','op-sub','Your agent\u2019s working documents'));hd.appendChild(tt);
+ var nav=el('div','op-nav'),pv=el('button'),nx=el('button');pv.type=nx.type='button';pv.setAttribute('aria-label','Previous documents');nx.setAttribute('aria-label','Next documents');pv.appendChild(svg(I.prev));nx.appendChild(svg(I.next));nav.append(pv,nx);hd.appendChild(nav);sec.appendChild(hd);
+ if(!list.length){var em=el('div','op-empty op-empty--box');em.append(svg(I.doc),el('p',null,'No documents yet. Your agent will pin PDFs, slides and docs here as it makes them.'));sec.appendChild(em);nav.hidden=true;return}
+ var tr=el('div','op-track');tr.setAttribute('role','list');tr.setAttribute('aria-label','Document Center');
  list.slice(0,MAX).forEach(function(p,i){var c=card(p,i);c.setAttribute('role','listitem');tr.appendChild(c)});sec.appendChild(tr);
  function upd(){pv.disabled=tr.scrollLeft<4;nx.disabled=tr.scrollLeft+tr.clientWidth>=tr.scrollWidth-4;nav.style.visibility=tr.scrollWidth>tr.clientWidth+4?'visible':'hidden'}
  function step(dir){var c=tr.querySelector('.op-card');tr.scrollBy({left:dir*(c?c.getBoundingClientRect().width+12:tr.clientWidth),behavior:'smooth'})}
@@ -216,7 +229,7 @@ function mount(){
  var sec=document.getElementById('mw-projects')||document.querySelector('[data-mw-projects]');
  if(!sec){sec=el('section');sec.id='mw-projects'}
  sec.id='mw-projects';sec.style.removeProperty('display'); /* mw-layout hides EMPTY .mw-section blocks at layout time; ours fills async */
- sec.classList.add('mw-section','mw-projects');sec.setAttribute('data-mw-slot','projects');sec.setAttribute('aria-label','Ongoing Projects');
+ sec.classList.add('mw-section','mw-projects');sec.setAttribute('data-mw-slot','projects');sec.setAttribute('aria-label','Document Center');
  var mid=document.getElementById('mw-mid');
  if(mid){if(mid.firstChild!==sec)mid.insertBefore(sec,mid.firstChild)}
  else{var div=document.querySelector('#mw-bh .mw-bh-divider'),bh=document.getElementById('mw-bh');if(bh)bh.after(sec);else if(!sec.parentNode)(document.querySelector('main')||document.body).prepend(sec)}
@@ -225,7 +238,7 @@ function mount(){
 var started=false;
 function start(){if(started)return;started=true;var sec=mount();if(!sec)return;
  var src=sec.getAttribute('data-mw-projects')||base();if(sec.getAttribute('data-mw-handoff')==='off')handoffBoardOff=true;
- var ph=el('p','op-empty','Loading projects');sec.textContent='';sec.appendChild(ph);
+ var ph=el('p','op-empty','Loading documents');sec.textContent='';sec.appendChild(ph);
  load(src).then(function(j){render(sec,normalize(j))}).catch(function(){render(sec,[])});
  /* mw-layout may rebuild #mw-mid later; keep the section first */
  document.addEventListener('mw-layout',function(){mount()})}
