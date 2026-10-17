@@ -13,9 +13,12 @@
    ly9 (Team Improvement Deck results, Max Oct 16 2026; Branding Oct 17): Share is a small icon in the Command Center header (footer Share button removed);
    a slim header bar stays at the top for about one screen of scrolling, then goes away; Morning Report shows a square Late tag (report.json late/minutes_late)
    and up to three headline cards (report.json headlines or top3); a board block marked data-mw-slot="todo" becomes the 'To-Do List' section, first in the middle.
-   ly12 (Oct 17 2026, Branding): R106 header order (Morning Report > To-Do List fold-down > Document Center > divider) and R104 (loads kit/mw-back.js). */
+   ly12 (Oct 17 2026, Branding): R106 header order (Morning Report > To-Do List fold-down > Document Center > divider) and R104 (loads kit/mw-back.js).
+   ly13 (Oct 17 2026, Branding; R106 rollout, needs Security review): R106 flag ON. To-Do count prefers the source's own summary/heading number
+   (Grok Bot pages its list 10 at a time, so a li count undercounts); an empty To-Do source gets a plain-text empty line. DOM work is node moves only
+   (appendChild/insertBefore of the board's existing nodes) plus kit-made elements filled with textContent; no innerHTML from board or JSON data. */
 (function(){
-var V='ly12',R106=false/* R106 STAGED: held until Security clears the Document Center fold-down (projects.js, R109); flip to true to ship */,MACHAN="<span class=\"mw-machan\" style=\"display:inline-flex;align-items:center;gap:6px;vertical-align:middle;white-space:nowrap\"><svg class=\"mw-machan-mark\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" aria-hidden=\"true\" focusable=\"false\" style=\"display:block;flex:none;width:22px;height:22px\"><path d=\"M12 5.2C11.2 3 9.4 2 7.6 2.3c.3 1.9 1.9 3.2 4.4 2.9z\" fill=\"#3F7D58\"/><path d=\"M12 5.2c.8-2.2 2.6-3.2 4.4-2.9-.3 1.9-1.9 3.2-4.4 2.9z\" fill=\"#5E9A6E\"/><rect x=\"3.5\" y=\"5.5\" width=\"17\" height=\"16\" rx=\"7\" fill=\"#C8643F\"/><rect x=\"5.5\" y=\"9\" width=\"13\" height=\"10\" rx=\"5\" fill=\"#FAF6EE\"/><circle cx=\"9.6\" cy=\"13.3\" r=\"1.35\" fill=\"#2E6F86\"/><circle cx=\"14.4\" cy=\"13.3\" r=\"1.35\" fill=\"#2E6F86\"/><path d=\"M10.6 16.1q1.4 1.1 2.8 0\" fill=\"none\" stroke=\"#C8643F\" stroke-width=\"1.1\" stroke-linecap=\"round\"/><circle cx=\"7.6\" cy=\"15.6\" r=\".9\" fill=\"#E9B9A3\"/><circle cx=\"16.4\" cy=\"15.6\" r=\".9\" fill=\"#E9B9A3\"/></svg>Built by Machan</span>",K='https://webermanapps.github.io/style-swipe/kit/',HOME='https://webermanapps.github.io/a-o956qercs5ubd57y/';
+var V='ly13',R106=true/* R106 ON in ly13 (Security cleared the Document Center fold-down in projects.js op5, e58b17a) */,MACHAN="<span class=\"mw-machan\" style=\"display:inline-flex;align-items:center;gap:6px;vertical-align:middle;white-space:nowrap\"><svg class=\"mw-machan-mark\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" aria-hidden=\"true\" focusable=\"false\" style=\"display:block;flex:none;width:22px;height:22px\"><path d=\"M12 5.2C11.2 3 9.4 2 7.6 2.3c.3 1.9 1.9 3.2 4.4 2.9z\" fill=\"#3F7D58\"/><path d=\"M12 5.2c.8-2.2 2.6-3.2 4.4-2.9-.3 1.9-1.9 3.2-4.4 2.9z\" fill=\"#5E9A6E\"/><rect x=\"3.5\" y=\"5.5\" width=\"17\" height=\"16\" rx=\"7\" fill=\"#C8643F\"/><rect x=\"5.5\" y=\"9\" width=\"13\" height=\"10\" rx=\"5\" fill=\"#FAF6EE\"/><circle cx=\"9.6\" cy=\"13.3\" r=\"1.35\" fill=\"#2E6F86\"/><circle cx=\"14.4\" cy=\"13.3\" r=\"1.35\" fill=\"#2E6F86\"/><path d=\"M10.6 16.1q1.4 1.1 2.8 0\" fill=\"none\" stroke=\"#C8643F\" stroke-width=\"1.1\" stroke-linecap=\"round\"/><circle cx=\"7.6\" cy=\"15.6\" r=\".9\" fill=\"#E9B9A3\"/><circle cx=\"16.4\" cy=\"15.6\" r=\".9\" fill=\"#E9B9A3\"/></svg>Built by Machan</span>",K='https://webermanapps.github.io/style-swipe/kit/',HOME='https://webermanapps.github.io/a-o956qercs5ubd57y/';
 var q=function(s,r){return (r||document).querySelector(s)},qa=function(s,r){return [].slice.call((r||document).querySelectorAll(s))};
 var slot=function(n){return q('[data-mw-slot="'+n+'"]')};var MR=/^\s*morning report/i;
 function mk(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
@@ -90,7 +93,7 @@ function run(){if(document.body.dataset.mwLayout===V)return;var cc=q('.mw-cc-hea
  var wd=mk('details','mw-bh-working');wd.id='mw-working';wd.hidden=true;var ws=mk('summary');ws.append(mk('span','mw-mr-t','Working On'),mk('span','mw-chev'));wd.appendChild(ws);var wb=mk('div','mw-mr-body');wb.appendChild(mk('p','mw-mr-sub mw-wo-doing',''));wd.appendChild(wb);working(wd);
  /* ly12 R106 (Max Oct 17 2026 19:53 ICT): header = Command Center > decks + counter > (Working On) > Morning Report > To-Do List fold-down
     (closed, same look as Morning Report) > Document Center > divider. To-Do source: [data-mw-slot="todo"], else #todos (Grok Bot). */
- /* R106 is STAGED (held until Security clears the Document Center fold-down in projects.js, R109): flip R106=true to ship. */
+ /* R106 is ON from ly13 (projects.js op5 fold-down cleared by Security, e58b17a). */
  var tsrc=R106?(slot('todo')||q('details#todos')||q('#todos')):null,td=null;
  if(tsrc&&!tsrc.closest('#mw-bh,#mw-bf')){td=mk('details','mw-bh-morning mw-bh-todo');td.id='mw-todo';
   /* Max 20:16 ICT: always-open To-Do blocks (ul, section, div, details) are wrapped into a closed fold-down; header row = title + count like Morning Report.
@@ -99,10 +102,14 @@ function run(){if(document.body.dataset.mwLayout===V)return;var cc=q('.mw-cc-hea
   var tsm=mk('summary'),tn=mk('span','mw-mr-n','');tsm.append(mk('span','mw-mr-t',tt),tn,mk('span','mw-chev'));td.appendChild(tsm);var tb=mk('div','mw-mr-body');td.appendChild(tb);
   if(tsrc.tagName==='DETAILS'){tsrc.open=true;tsrc.classList.add('mw-todo-src')}tsrc.classList.add('mw-todo');tsrc.hidden=false;
   var th0=q('h2,h3',tsrc);if(th0&&/^\s*(to-?do( list|'?s)?|waiting on max|needs? (you|max)|open items|decisions needed)\s*[\d·\s]*$/i.test(th0.textContent))th0.classList.add('mw-todo-h');tb.appendChild(tsrc);
-  var cnt=function(){var L=qa('li',tsrc).filter(function(li){return !li.parentElement.closest('li')&&getComputedStyle(li).display!=='none'}).length;
+  /* ly13 count: 1) data-mw-todo-count, 2) the number in the source's own summary/heading (e.g. Grok Bot "To-Do's (87)", Construction "Decisions Needed · 6"),
+     3) visible top-level li, 4) .mlist children. Empty source: one plain-text line (textContent), removed again once items arrive. */
+  var emp=null,cnt=function(){var L=0,ac=tsrc.getAttribute('data-mw-todo-count');if(ac&&/^\d+$/.test(ac))L=+ac;
+   if(!L){var sm0=q(':scope>summary',tsrc)||th0;var mm=sm0&&sm0.textContent.match(/(\d+)/);if(mm)L=+mm[1]}
+   if(!L)L=qa('li',tsrc).filter(function(li){return !li.parentElement.closest('li')&&getComputedStyle(li).display!=='none'}).length;
    if(!L){var ml=q('.mlist',tsrc)||(tsrc.classList.contains('mlist')?tsrc:null);if(ml)L=[].slice.call(ml.children).filter(function(c){return c.nodeType===1}).length}
-   if(!L){var sm0=q(':scope>summary',tsrc)||th0;var mm=sm0&&sm0.textContent.match(/\b(\d+)\b/);if(mm)L=+mm[1]}
-   tn.textContent=L?'('+L+')':''};cnt();var tci=0;try{new MutationObserver(function(){clearTimeout(tci);tci=setTimeout(cnt,120)}).observe(tsrc,{childList:true,subtree:true})}catch(_){}}
+   tn.textContent=L?'('+L+')':'';
+   var blank=!L&&!tsrc.textContent.trim();if(blank&&!emp){emp=mk('p','mw-mr-sub mw-todo-empty','Nothing waiting on you right now.');tb.appendChild(emp)}else if(!blank&&emp&&tsrc.textContent.trim()){emp.remove();emp=null}};cnt();var tci=0;try{new MutationObserver(function(){clearTimeout(tci);tci=setTimeout(cnt,120)}).observe(tsrc,{childList:true,subtree:true})}catch(_){}}
  var dsrc=R106?(q('#mw-projects')||q('[data-mw-projects]')):null,dw=null;if(dsrc&&!dsrc.closest('#mw-bf')){dw=mk('div','mw-bh-docs');dw.appendChild(dsrc)}
  bh.append(home,ncc,decks,wd,md);if(td)bh.append(td);if(dw)bh.append(dw);bh.append(mk('hr','mw-bh-divider'));
  cc.style.setProperty('display','none','important');cc.setAttribute('aria-hidden','true');
@@ -148,6 +155,17 @@ function run(){if(document.body.dataset.mwLayout===V)return;var cc=q('.mw-cc-hea
  var tries=0,iv=setInterval(function(){stdShelfHead(decks);tries++;if((q('.ds-head',decks)&&tries>6)||tries>30){zeroCounter(decks);clearInterval(iv)}},500);
  var sh2=0,ivh=setInterval(function(){stdShelfHead(decks);if(++sh2>20)clearInterval(ivh)},1000);
  place();addEventListener('resize',function(){place();column()});var pn=0,pv=setInterval(function(){place();if(++pn>30)clearInterval(pv)},500);try{new ResizeObserver(function(){place()}).observe(document.getElementById('mw-mid')||document.body)}catch(_){}addEventListener('load',place);setTimeout(place,1500);setTimeout(place,4000);
- document.dispatchEvent(new CustomEvent('mw-layout'))}
+ document.dispatchEvent(new CustomEvent('mw-layout'));
+ /* ly13 R106: kit/projects.js (op5, not edited here) re-mounts #mw-projects as the first child of #mw-mid on start and on every 'mw-layout'
+    event. Move that same node back into the header slot (.mw-bh-docs, above the divider). Node move only; projects.js is never re-run. */
+ if(R106){var homeDocs=function(){var p=q('#mw-projects')||q('[data-mw-projects]');if(!p||p.closest('#mw-bf'))return;
+   if(!dw){dw=mk('div','mw-bh-docs');bh.insertBefore(dw,q(':scope>.mw-bh-divider',bh))}if(p.parentNode!==dw)dw.appendChild(p)};
+  /* ly13: the Document Center used to be #mw-mid's first child; now a board block is, and a negative margin-top on it (Construction .wrap)
+     would collapse through #mw-mid and slide it under the divider. Zero only NEGATIVE top margins down the first-visible-child chain. */
+  var midTop=function(){var e=mid;for(var dd=0;dd<5&&e;dd++){var f=[].slice.call(e.children).filter(function(c){var k=getComputedStyle(c);return k.display!=='none'&&k.position!=='fixed'&&k.position!=='absolute'&&!/^(SCRIPT|STYLE|LINK|TEMPLATE)$/.test(c.tagName)})[0];
+   if(!f)return;if(parseFloat(getComputedStyle(f).marginTop)<0)f.style.setProperty('margin-top','0','important');var ek=getComputedStyle(f);if(parseFloat(ek.paddingTop)>0||parseFloat(ek.borderTopWidth)>0)return;e=f}};
+  var homeAll=function(){homeDocs();midTop()};
+  homeAll();[0,300,1000,2500].forEach(function(t){setTimeout(homeAll,t)});
+  try{var dmo=new MutationObserver(homeAll);dmo.observe(mid,{childList:true});dmo.observe(document.body,{childList:true});setTimeout(function(){dmo.disconnect()},15000)}catch(_){}}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',run);else run();
 window.MWLayout={run:run,version:V,machan:MACHAN};})();
