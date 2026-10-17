@@ -89,7 +89,7 @@ function doOpen(p,btn,host){
   .catch(function(e){note(host,e.message)}).then(function(){busy(btn,false)});return}
  var w=null;try{w=window.open('','_blank')}catch(_){} /* open synchronously so popup blockers allow it */
  busy(btn,true);
- getBlob(ref).then(function(b){var u=track(URL.createObjectURL(b));if(w&&!w.closed){w.location.href=u}else{location.assign(u)}})
+ getBlob(ref).then(function(b){var u=track(URL.createObjectURL(b));if(w&&!w.closed){w.location.href=u}else{saveBlob(u,safeName(p,b))}}) /* popup blocked: download, never navigate (Security follow-up) */
  .catch(function(e){if(w)try{w.close()}catch(_){}note(host,e.message)}).then(function(){busy(btn,false)})}
 function doDownload(p,btn,host){
  if(!p.file)return;busy(btn,true);
