@@ -209,9 +209,16 @@ def P2(g, el, sentence, a, b):
 pairs, O, add = deck("wwfl_", "UpKeep")
 _n = [0]
 AS = ("As Picked (Rows Stay Plain)",)
-P2("Colour Re-Ask", "Air & Safety card colour", "mustard yellow (warmer, stands out) or jungle green (calmer, sits closer to the brand greens), shown in the whole section?",
-  ("mustard", "Mustard Yellow", "Warmer; stands out next to Water and Heating.", "playful", mock({"scroll": 2}, note=("Mustard yellow title and box", "Swiped to Air & Safety; asked again (skipped)"))),
-  ("jungle", "Jungle Green", "Calmer; only brand accents in the row.", "calm", mock({"scroll": 2, "safety": "j"}, note=("Jungle green title and box", "Swiped to Air & Safety; same size"))))
+# Pick 1 = the carried-over 08 re-ask (queue/carry_over.json 'what-we-take-care-of-compact-polish', reworded by the Deck Results
+# Handler, style-swipe 750e8ac), with Max's 'Website: ...' label; option ids are the carry-over's new_ids. Consumed below via carry_over.
+RW = {"q": "Air & Safety card: should its accent stay warm mustard (as now) or match the other cards in brand jungle green?",
+      "a": ("Keep Warm Mustard", "Air & Safety stays the one warm yellow-brown card, as live now.", "wwcp_08r_mustard"),
+      "b": ("Match In Jungle Green", "Air & Safety uses brand green like the rest of the palette.", "wwcp_08r_jungle")}
+_n[0] += 1; _ask = "Website: What We Take Care Of, " + RW["q"].replace("Air & Safety card: s", "Air & Safety card, s", 1)
+assert not [x for x in caption_rule.check(_ask) if not x.startswith("vague location")], _ask
+_oa = O("x", RW["a"][0], RW["a"][1], "playful", mock({"scroll": 2}, note=("Warm mustard, as live now", "Whole section, swiped to Air & Safety"))); _oa["id"] = RW["a"][2]
+_ob = O("x", RW["b"][0], RW["b"][1], "calm", mock({"scroll": 2, "safety": "j"}, note=("Brand jungle green", "Whole section, swiped to Air & Safety"))); _ob["id"] = RW["b"][2]
+add("Colour Re-Ask", "Colour Re-Ask", _oa, _ob, _ask, purpose="reask")
 P2("Card Flip", "whole-card flip", "rows stay plain as you picked, so should tapping the whole card flip it to show every service, its plan and visits a year, or keep the card as it is?",
   ("asis", "Card As Picked", "Plain rows, no tap; See All under the cards.", "calm", mock(note=("Your picks applied, no tap", "Water first, 52px box, 14.5px names"))),
   ("flip", "Whole Card Flips", "Flip icon on the card; back lists all services.", "playful", mock({"more": "flip"}, close=c_flip, note=("Tap anywhere on the card to flip", "Rows stay plain; the card is the button"))))
@@ -246,6 +253,12 @@ publish(DID, NAME, "UpKeep", pairs, {"brands": [
         "applied_picks": "Compact Polish 21:32 ICT: 1B more row room, 2B 14.5px names, 3B regular weight, 4A two icons, 5B 52px box, 6B Water first, 7B plain list no tap, 8 skipped (re-asked first here), 9B Moisture Scan, 10B See All under the cards",
         "sources": {"content": "tools/build_upkeep_wwtco_fresh.py", "site": "WebermanApps/smart-upkeep d49e1d8 app.js (WW_CATS, WW_WI, home() svc, TIER_NOTE), styles.css .ca-*; sheet photo is an example"}}, seed=10174, n=8, first=1)
 order = [p["ask"] for p in pairs]; dj = json.load(open(f"decks/{DID}.json")); dj["pairs"].sort(key=lambda p: order.index(p["ask"]))
+for i, p in enumerate(dj["pairs"], 1): p["id"] = f"{DID}-{i:02d}"
+import carry_over
+_old = "upkeep-what-we-take-care-of-compact-polish-deck-08"
+_c = carry_over.carried_first("what-we-take-care-of-compact-polish", dj["pairs"])  # consumes the carry-over entry the normal way
+dj["pairs"] = [p for p in _c if p.get("id") != _old]  # the carried pair is already pick 1, reworded; no duplicate
+dj["pairs"][0]["carried_from"] = _old
 for i, p in enumerate(dj["pairs"], 1): p["id"] = f"{DID}-{i:02d}"
 json.dump(dj, open(f"decks/{DID}.json", "w"), indent=1, ensure_ascii=False)
 from agent_links import patch as link_patch
