@@ -11,11 +11,13 @@
    op9 (Oct 17 2026 22:40 ICT, Max rule 22:25, Security-cleared): Hand Off refuses UpKeep 2 / UpKeep Security / UpKeep Comand (names and ids 6cc83bb6..., 71b1ec8b...)
      with 'Hand off to UpKeep instead'; 'UpKeep Develop' or id f0d420ad... resolves to UpKeep.
    op10 (Oct 17 2026 22:50 ICT, Security-cleared): UpKeep 2 / Two / ii and Grok Bot 2 entries also catch a joined 'agent' (_, -, or no space).
+   op11 (Oct 17 2026 22:55 ICT, Max 22:54 + Security-approved): also refuses Ethan (6cc83bb6's new name; exact, anchored), UpKeep Operator,
+     UpKeep Command Center and UpKeep Commander; 'UpKeep Developer' resolves to UpKeep.
    Needs submit.js at style-swipe 9921428 (sha256 9ec3cbd7...; doc-remove auth-gated incl. WellNest and never queued):
      <script src="https://webermanapps.github.io/style-swipe/submit.js?v=9921428"></script>
    Usage on a kit board (after mw-layout.js):
      <link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/projects.css?v=op8">
-     script src=".../style-swipe/kit/projects.js?v=op10" data-projects="projects.json" defer (after mw-layout.js)
+     script src=".../style-swipe/kit/projects.js?v=op11" data-projects="projects.json" defer (after mw-layout.js)
    or place <section id="mw-projects" data-mw-projects="projects.json"></section> anywhere; the kit moves it to the top of #mw-mid
    (right under the branded header divider, before the agent's own content).
    Data: board projects.json (schema: ops/brand/projects.schema.json), written only by /workspace/ops/brand/pin_project.py.
@@ -28,7 +30,7 @@
    No crypto lives here: decryption is delegated to Security's viewer through ProjectsSection.storage.encrypted. */
 (function(){
 'use strict';
-var V='op10',SUBMIT_PIN='9921428',MAX=6,EXCLUDE=/a-o956qercs5ubd57y|home-guide|finish-questions|room-photos|room-quiz|homes\.maxweberman\.com|share-x3l9xcxc1eut/;
+var V='op11',SUBMIT_PIN='9921428',MAX=6,EXCLUDE=/a-o956qercs5ubd57y|home-guide|finish-questions|room-photos|room-quiz|homes\.maxweberman\.com|share-x3l9xcxc1eut/;
 var me=document.currentScript;
 function el(t,c,txt){var e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e}
 /* op7: icons are built as SVG nodes from fixed path data (no HTML strings) */
@@ -109,8 +111,8 @@ function doDownload(p,btn,host){
 var HANDOFF_OFF={};
 var TEAM_FALLBACK={"blog":"Blog Agent","blueprint":"Blueprint Agent","branding":"Branding Agent","coach":"Coach Agent","construction":"Construction Agent","dump":"Dump Agent","email-sorting":"Email Sorting Agent","grok-bot":"Grok Bot","household":"Household","japan-cottage":"Japan Cottage Agent","jokes":"Jokes Agent","legal":"Legal Agent","miles":"Miles Agent","portfolio":"Portfolio Agent","prop":"Prop Agent","research":"Research Agent","scout":"Scout Agent","security":"Security Agent","thai":"Thai Agent","upkeep":"UpKeep Agent","video-photo":"Video & Photo Agent","wellnest":"WellNest Agent"};
 var team=null;
-var UK2_DENY=/^(upkeep[\s_-]*(?:2|two|ii)(?:[\s_-]*agent)?|grok[\s_-]*bot[\s_-]*(?:2|two|ii)(?:[\s_-]*agent)?|upkeep[\s\S]*grok[\s_-]*bot[\s_-]*(?:2|two|ii)[\s\S]*|upkeep[\s_-]*sec(?:urity)?(?:[\s_-]*agent)?|upkeep[\s_-]*comm?and(?:[\s_-]*agent)?|6cc83bb6-0d7a-4bc3-a100-f5df62928c83|71b1ec8b-37b3-414e-9813-117c06afb06b)$/i; /* Max 22:25 ICT Oct 17 2026: only UpKeep may talk to UpKeep 2 (also UpKeep Security and the UpKeep Comand rename, Security-approved) */
-var UK_ALIAS=/^(upkeep[\s_-]*develop(?:[\s_-]*agent)?|f0d420ad-d37e-44d3-be6f-053da2b6e24d)$/i; /* UpKeep (f0d420ad) is displayed as 'UpKeep Develop': typed name or id resolves to slug upkeep */
+var UK2_DENY=/^(upkeep[\s_-]*(?:2|two|ii)(?:[\s_-]*agent)?|grok[\s_-]*bot[\s_-]*(?:2|two|ii)(?:[\s_-]*agent)?|upkeep[\s\S]*grok[\s_-]*bot[\s_-]*(?:2|two|ii)[\s\S]*|upkeep[\s_-]*sec(?:urity)?(?:[\s_-]*agent)?|upkeep[\s_-]*comm?and(?:[\s_-]*cent(?:er|re))?(?:[\s_-]*agent)?|upkeep[\s_-]*comm?ander(?:[\s_-]*agent)?|upkeep[\s_-]*operator(?:[\s_-]*agent)?|ethan(?:[\s_-]*agent)?|6cc83bb6-0d7a-4bc3-a100-f5df62928c83|71b1ec8b-37b3-414e-9813-117c06afb06b)$/i; /* Max 22:25 ICT Oct 17 2026: only UpKeep may talk to UpKeep 2 (also UpKeep Security and the UpKeep Comand rename, Security-approved) */
+var UK_ALIAS=/^(upkeep[\s_-]*develop(?:er)?(?:[\s_-]*agent)?|f0d420ad-d37e-44d3-be6f-053da2b6e24d)$/i; /* UpKeep (f0d420ad) is displayed as 'UpKeep Develop': typed name or id resolves to slug upkeep */
 function uk2(s){if(/^(6cc83bb6-0d7a-4bc3-a100-f5df62928c83|71b1ec8b-37b3-414e-9813-117c06afb06b)$/.test(String(s||'').trim().toLowerCase()))return true;s=String(s||'').replace(/\bagent\b/ig,'').replace(/[^a-z0-9]+/ig,' ').trim();return UK2_DENY.test(s)||UK2_DENY.test(s.replace(/ /g,''))}
 function kitBase(){var s=me&&me.src;return s?s.replace(/[^\/]*$/,''):'https://webermanapps.github.io/style-swipe/kit/'}
 function slugify(s){return String(s).toLowerCase().replace(/&/g,' ').replace(/\bagent\b/g,'').trim().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}
