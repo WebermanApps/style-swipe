@@ -8,11 +8,13 @@
      the card goes away only when the owner republishes projects.json via pin_project.py --unpin <id> --archive), and an in-page document view
      with a collapsible 'Note to <owner>' box (same docNote send path; never reads the document). Encrypted boards need the staged
      enc_file_viewer.js mwEncView hook (Security review) for the in-page view; without it they keep the old new-tab open.
+   op9 (Oct 17 2026 22:40 ICT, Max rule 22:25, Security-cleared): Hand Off refuses UpKeep 2 / UpKeep Security / UpKeep Comand (names and ids 6cc83bb6..., 71b1ec8b...)
+     with 'Hand off to UpKeep instead'; 'UpKeep Develop' or id f0d420ad... resolves to UpKeep.
    Needs submit.js at style-swipe 9921428 (sha256 9ec3cbd7...; doc-remove auth-gated incl. WellNest and never queued):
      <script src="https://webermanapps.github.io/style-swipe/submit.js?v=9921428"></script>
    Usage on a kit board (after mw-layout.js):
      <link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/projects.css?v=op8">
-     script src=".../style-swipe/kit/projects.js?v=op8" data-projects="projects.json" defer (after mw-layout.js)
+     script src=".../style-swipe/kit/projects.js?v=op9" data-projects="projects.json" defer (after mw-layout.js)
    or place <section id="mw-projects" data-mw-projects="projects.json"></section> anywhere; the kit moves it to the top of #mw-mid
    (right under the branded header divider, before the agent's own content).
    Data: board projects.json (schema: ops/brand/projects.schema.json), written only by /workspace/ops/brand/pin_project.py.
@@ -25,7 +27,7 @@
    No crypto lives here: decryption is delegated to Security's viewer through ProjectsSection.storage.encrypted. */
 (function(){
 'use strict';
-var V='op8',SUBMIT_PIN='9921428',MAX=6,EXCLUDE=/a-o956qercs5ubd57y|home-guide|finish-questions|room-photos|room-quiz|homes\.maxweberman\.com|share-x3l9xcxc1eut/;
+var V='op9',SUBMIT_PIN='9921428',MAX=6,EXCLUDE=/a-o956qercs5ubd57y|home-guide|finish-questions|room-photos|room-quiz|homes\.maxweberman\.com|share-x3l9xcxc1eut/;
 var me=document.currentScript;
 function el(t,c,txt){var e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e}
 /* op7: icons are built as SVG nodes from fixed path data (no HTML strings) */
@@ -106,13 +108,16 @@ function doDownload(p,btn,host){
 var HANDOFF_OFF={};
 var TEAM_FALLBACK={"blog":"Blog Agent","blueprint":"Blueprint Agent","branding":"Branding Agent","coach":"Coach Agent","construction":"Construction Agent","dump":"Dump Agent","email-sorting":"Email Sorting Agent","grok-bot":"Grok Bot","household":"Household","japan-cottage":"Japan Cottage Agent","jokes":"Jokes Agent","legal":"Legal Agent","miles":"Miles Agent","portfolio":"Portfolio Agent","prop":"Prop Agent","research":"Research Agent","scout":"Scout Agent","security":"Security Agent","thai":"Thai Agent","upkeep":"UpKeep Agent","video-photo":"Video & Photo Agent","wellnest":"WellNest Agent"};
 var team=null;
+var UK2_DENY=/^(upkeep[\s_-]*(?:2|two|ii)|grok[\s_-]*bot[\s_-]*(?:2|two|ii)|upkeep[\s\S]*grok[\s_-]*bot[\s_-]*(?:2|two|ii)[\s\S]*|upkeep[\s_-]*sec(?:urity)?(?:[\s_-]*agent)?|upkeep[\s_-]*comm?and(?:[\s_-]*agent)?|6cc83bb6-0d7a-4bc3-a100-f5df62928c83|71b1ec8b-37b3-414e-9813-117c06afb06b)$/i; /* Max 22:25 ICT Oct 17 2026: only UpKeep may talk to UpKeep 2 (also UpKeep Security and the UpKeep Comand rename, Security-approved) */
+var UK_ALIAS=/^(upkeep[\s_-]*develop(?:[\s_-]*agent)?|f0d420ad-d37e-44d3-be6f-053da2b6e24d)$/i; /* UpKeep (f0d420ad) is displayed as 'UpKeep Develop': typed name or id resolves to slug upkeep */
+function uk2(s){if(/^(6cc83bb6-0d7a-4bc3-a100-f5df62928c83|71b1ec8b-37b3-414e-9813-117c06afb06b)$/.test(String(s||'').trim().toLowerCase()))return true;s=String(s||'').replace(/\bagent\b/ig,'').replace(/[^a-z0-9]+/ig,' ').trim();return UK2_DENY.test(s)||UK2_DENY.test(s.replace(/ /g,''))}
 function kitBase(){var s=me&&me.src;return s?s.replace(/[^\/]*$/,''):'https://webermanapps.github.io/style-swipe/kit/'}
 function slugify(s){return String(s).toLowerCase().replace(/&/g,' ').replace(/\bagent\b/g,'').trim().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}
 function loadTeam(){if(team)return Promise.resolve(team);var m={};Object.keys(TEAM_FALLBACK).forEach(function(k){m[k]=TEAM_FALLBACK[k]});
  var b=kitBase();
  return Promise.all([fetch(b+'agent-dashboards.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){var n=j&&j.names||{};Object.keys(n).forEach(function(k){m[k]=n[k]})}).catch(function(){}),
   fetch(b+'agent-status.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){(j&&j.agents||[]).forEach(function(a){var s=slugify(a.agent);if(s&&!m[s])m[s]=a.agent})}).catch(function(){})])
- .then(function(){team=Object.keys(m).map(function(k){return{slug:k,name:m[k]}}).sort(function(a,b){return a.name.localeCompare(b.name)});return team})}
+ .then(function(){Object.keys(m).forEach(function(k){if(uk2(k)||uk2(m[k]))delete m[k]});team=Object.keys(m).map(function(k){return{slug:k,name:m[k]}}).sort(function(a,b){return a.name.localeCompare(b.name)});return team})}
 function ownerAgent(p){return p.agent||document.body.getAttribute('data-mw-agent')||(document.querySelector('[data-agent-name]')||{getAttribute:function(){return ''}}).getAttribute('data-agent-name')||''}
 function handoffPayload(p,to,note){return{project_id:p.id,owner_agent:ownerAgent(p),to_agents:to.map(function(t){return t.slug}),note:note||''}}
 var handoffBoardOff=false;
@@ -135,8 +140,8 @@ function openHandoff(p,opener){
  box.append(x,h,sub,lab,field,sug,nl,nt,msg,row);bg.appendChild(box);document.body.appendChild(bg);document.documentElement.classList.add('op-ho-lock');
  var picked=[],act=-1,cur=[],state='idle';
  function drawChips(){chips.textContent='';picked.forEach(function(t,i){var c=el('span','op-ho-chip');c.appendChild(el('span',null,t.name));var r=el('button');r.type='button';r.setAttribute('aria-label','Remove '+t.name);r.textContent='\u00d7';r.onclick=function(){picked.splice(i,1);drawChips();inp.focus()};c.appendChild(r);chips.appendChild(c)});inp.placeholder=picked.length?'Add another':'Type an agent name';validate()}
- function add(t){if(!t||!t.slug)return;if(!picked.some(function(q){return q.slug===t.slug}))picked.push(t);inp.value='';hide();drawChips()}
- function addTyped(){var v=inp.value.replace(/,/g,' ').trim();if(!v)return false;var s=slugify(v),hit=(team||[]).filter(function(t){return t.slug===s||t.name.toLowerCase()===v.toLowerCase()||slugify(t.name)===s})[0];
+ function add(t){if(!t||!t.slug)return;if(uk2(t.slug)||uk2(t.name)){inp.value='';hide();msg.className='op-ho-msg err';msg.textContent='That agent cannot receive hand-offs. Hand off to UpKeep instead.';return}if(!picked.some(function(q){return q.slug===t.slug}))picked.push(t);inp.value='';hide();drawChips()}
+ function addTyped(){var v=inp.value.replace(/,/g,' ').trim();if(!v)return false;var s=UK_ALIAS.test(v)?'upkeep':slugify(v),hit=(team||[]).filter(function(t){return t.slug===s||t.name.toLowerCase()===v.toLowerCase()||slugify(t.name)===s})[0];
   add(hit||{slug:s||v.toLowerCase(),name:v,free:true});return true}
  function hide(){sug.hidden=true;inp.setAttribute('aria-expanded','false');act=-1;inp.removeAttribute('aria-activedescendant')}
  function show(){var v=inp.value.trim().toLowerCase();if(!team){hide();return}
@@ -165,7 +170,7 @@ function openHandoff(p,opener){
  document.addEventListener('keydown',esc);
  x.onclick=function(){if(state!=='sending')close()};cancel.onclick=close;bg.addEventListener('mousedown',function(e){if(e.target===bg&&state!=='sending')close()});
  box.addEventListener('submit',function(e){e.preventDefault();if(state==='sent'){close();return}if(state==='sending')return;
-  addTyped();if(!picked.length){setState('fail','Add at least one agent.');inp.focus();return}
+  addTyped();picked=picked.filter(function(t){return!(uk2(t.slug)||uk2(t.name))});if(!picked.length){setState('fail','Add at least one agent.');inp.focus();return}
   var S=window.MWSubmit;if(!S||typeof S.send!=='function'){setState('fail','Sending is not set up on this page yet. Nothing was sent.');return}
   var body=handoffPayload(p,picked,nt.value.trim()),who=listNames(picked);setState('sending');
   Promise.resolve().then(function(){return S.send({agent:body.owner_agent||'grok-bot',app:'project-handoff',deck:p.id,results:body,notes:''})})

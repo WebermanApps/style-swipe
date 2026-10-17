@@ -12,7 +12,7 @@ from household_content import DECKS
 from household_fresh_content import FRESH, ART_KEY, ART_NAME, ART_PAIRS  # fresh round, Oct 16 2026
 DECKS = {**DECKS, **FRESH}
 LETTERS = string.ascii_lowercase
-CC11 = '<script src="https://webermanapps.github.io/style-swipe/kit/mw-chat.js?v=cc11" data-agent-id="c59ffdde-28bf-4ad7-8dd8-22f5e941647d" data-agent-name="Household" defer></script>'
+CC11 = '<script src="https://webermanapps.github.io/style-swipe/kit/mw-chat.js?v=cc12" data-agent-id="c59ffdde-28bf-4ad7-8dd8-22f5e941647d" data-agent-name="Household" defer></script>'
 def page(did, slug):
     HEAD = f'<base href="../">\n<meta name="robots" content="noindex">\n<script>window.DEFAULT_DECK="{did}"</script>\n<style>:root{{--bg:#FFFFFF}}html,body{{background:#FFFFFF!important}}</style>\n'
     s = open("index.template.html").read().replace("<head>", "<head>\n" + HEAD, 1)
