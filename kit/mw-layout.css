@@ -104,3 +104,24 @@ body.mw-hero-behind-header #mw-bh.mw-branded-header{background:transparent!impor
 #mw-bh details.mw-bh-working[hidden]{display:none!important}
 #mw-bh details.mw-bh-working:not([hidden])+details.mw-bh-morning{margin-top:12px!important}
 #mw-bh .mw-wo-doing{margin:0!important;color:var(--bh-ink)!important;font:500 16px/22px var(--bh-body)!important}
+
+/* ly9 (Team Improvement Deck results, Oct 17 2026): header Share icon, sticky-for-a-bit bar, Morning Report Late tag + headline cards, To-Do List section */
+#mw-bh .mw-bh-cc{position:relative!important}
+#mw-bh .mw-bh-share,.mw-stick .mw-bh-share{position:absolute;top:0;right:0;width:44px;height:44px;display:inline-flex;align-items:center;justify-content:center;background:#fff!important;border:1px solid #e3ddd2!important;border-radius:0!important;color:#0A0A0A!important;cursor:pointer;padding:0!important;margin:0!important}
+#mw-bh .mw-bh-share:hover{background:#FAF6EE!important}
+.mw-bh-share .mw-bh-share-ok{display:none;position:absolute;top:48px;right:0;white-space:nowrap;font:600 12px/1 Hind,sans-serif;background:#0A0A0A;color:#fff;padding:6px 8px}
+.mw-bh-share.is-copied .mw-bh-share-ok{display:block}
+#mw-bh .mw-bh-text{padding-right:52px!important}
+.mw-stick{position:fixed;top:0;left:0;right:0;z-index:60;height:48px;display:flex;align-items:center;gap:10px;padding:0 max(16px,calc((100vw - 1100px)/2));background:#fff;border-bottom:1px solid #d9d1c3;transform:translateY(-100%);opacity:0;transition:transform .25s ease,opacity .25s ease;pointer-events:none;font-family:Khand,sans-serif}
+.mw-stick.is-on{transform:none;opacity:1;pointer-events:auto}
+.mw-stick-home{display:inline-flex;width:32px;height:32px;align-items:center;justify-content:center;border:1px solid #e3ddd2;color:#0A0A0A}
+.mw-stick-t{flex:1;min-width:0;text-align:left;background:none;border:0;padding:0;font:600 19px/1 Khand,sans-serif;color:#0A0A0A;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:pointer}
+.mw-stick .mw-bh-share{position:static;width:36px;height:36px}
+.mw-mr-late{display:inline-block;margin-left:10px;padding:2px 7px;font:600 11px/1.3 Hind,sans-serif;letter-spacing:.3px;text-transform:uppercase;color:#9A3412;background:#FFF4EC;border:1px solid #F1C9AE;border-radius:0}
+.mw-mr-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:4px 0 12px}
+.mw-mr-card{background:#fff;border:1px solid #e3ddd2;border-top:3px solid #D4A017;padding:10px 12px;font:400 13.5px/1.45 Hind,sans-serif;color:#333}
+.mw-mr-card b{display:block;font:600 16px/1.2 Khand,sans-serif;color:#0A0A0A;margin-bottom:4px}
+.mw-mr-card span{display:block}
+@media(max-width:600px){.mw-mr-cards{grid-template-columns:1fr}}
+.mw-todo h2,.mw-todo h3{font-family:Khand,sans-serif}
+.mw-progress{height:6px;background:#EFEAE1;border-radius:0;overflow:hidden}.mw-progress>i{display:block;height:100%;background:#0B6E4F}

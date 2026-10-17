@@ -9,9 +9,12 @@
    Per-board differences allowed in the header: logo, name, description (plus deck / report / routine content).
    Markers (optional): data-mw-slot="shelf|morning|hero|routines". Old footers are folded into the middle; old Apps Home links removed.
    Agent boards only (Apps Home, deck pages and the share page never load this file).
-   Usage: <link rel="stylesheet" href=".../kit/mw-layout.css?v=ly8"><script src=".../kit/mw-layout.js?v=ly8" defer></script> */
+   Usage: <link rel="stylesheet" href=".../kit/mw-layout.css?v=ly8"><script src=".../kit/mw-layout.js?v=ly8" defer></script> (ly9 ships under the same URLs)
+   ly9 (Team Improvement Deck results, Max Oct 16 2026; Branding Oct 17): Share is a small icon in the Command Center header (footer Share button removed);
+   a slim header bar stays at the top for about one screen of scrolling, then goes away; Morning Report shows a square Late tag (report.json late/minutes_late)
+   and up to three headline cards (report.json headlines or top3); a board block marked data-mw-slot="todo" becomes the 'To-Do List' section, first in the middle. */
 (function(){
-var V='ly8',MACHAN="<span class=\"mw-machan\" style=\"display:inline-flex;align-items:center;gap:6px;vertical-align:middle;white-space:nowrap\"><svg class=\"mw-machan-mark\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" aria-hidden=\"true\" focusable=\"false\" style=\"display:block;flex:none;width:22px;height:22px\"><path d=\"M12 5.2C11.2 3 9.4 2 7.6 2.3c.3 1.9 1.9 3.2 4.4 2.9z\" fill=\"#3F7D58\"/><path d=\"M12 5.2c.8-2.2 2.6-3.2 4.4-2.9-.3 1.9-1.9 3.2-4.4 2.9z\" fill=\"#5E9A6E\"/><rect x=\"3.5\" y=\"5.5\" width=\"17\" height=\"16\" rx=\"7\" fill=\"#C8643F\"/><rect x=\"5.5\" y=\"9\" width=\"13\" height=\"10\" rx=\"5\" fill=\"#FAF6EE\"/><circle cx=\"9.6\" cy=\"13.3\" r=\"1.35\" fill=\"#2E6F86\"/><circle cx=\"14.4\" cy=\"13.3\" r=\"1.35\" fill=\"#2E6F86\"/><path d=\"M10.6 16.1q1.4 1.1 2.8 0\" fill=\"none\" stroke=\"#C8643F\" stroke-width=\"1.1\" stroke-linecap=\"round\"/><circle cx=\"7.6\" cy=\"15.6\" r=\".9\" fill=\"#E9B9A3\"/><circle cx=\"16.4\" cy=\"15.6\" r=\".9\" fill=\"#E9B9A3\"/></svg>Built by Machan</span>",K='https://webermanapps.github.io/style-swipe/kit/',HOME='https://webermanapps.github.io/a-o956qercs5ubd57y/';
+var V='ly9',MACHAN="<span class=\"mw-machan\" style=\"display:inline-flex;align-items:center;gap:6px;vertical-align:middle;white-space:nowrap\"><svg class=\"mw-machan-mark\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" aria-hidden=\"true\" focusable=\"false\" style=\"display:block;flex:none;width:22px;height:22px\"><path d=\"M12 5.2C11.2 3 9.4 2 7.6 2.3c.3 1.9 1.9 3.2 4.4 2.9z\" fill=\"#3F7D58\"/><path d=\"M12 5.2c.8-2.2 2.6-3.2 4.4-2.9-.3 1.9-1.9 3.2-4.4 2.9z\" fill=\"#5E9A6E\"/><rect x=\"3.5\" y=\"5.5\" width=\"17\" height=\"16\" rx=\"7\" fill=\"#C8643F\"/><rect x=\"5.5\" y=\"9\" width=\"13\" height=\"10\" rx=\"5\" fill=\"#FAF6EE\"/><circle cx=\"9.6\" cy=\"13.3\" r=\"1.35\" fill=\"#2E6F86\"/><circle cx=\"14.4\" cy=\"13.3\" r=\"1.35\" fill=\"#2E6F86\"/><path d=\"M10.6 16.1q1.4 1.1 2.8 0\" fill=\"none\" stroke=\"#C8643F\" stroke-width=\"1.1\" stroke-linecap=\"round\"/><circle cx=\"7.6\" cy=\"15.6\" r=\".9\" fill=\"#E9B9A3\"/><circle cx=\"16.4\" cy=\"15.6\" r=\".9\" fill=\"#E9B9A3\"/></svg>Built by Machan</span>",K='https://webermanapps.github.io/style-swipe/kit/',HOME='https://webermanapps.github.io/a-o956qercs5ubd57y/';
 var q=function(s,r){return (r||document).querySelector(s)},qa=function(s,r){return [].slice.call((r||document).querySelectorAll(s))};
 var slot=function(n){return q('[data-mw-slot="'+n+'"]')};var MR=/^\s*morning report/i;
 function mk(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
@@ -25,7 +28,21 @@ function findMorning(){var e=slot('morning')||q('#morning-report')||q('#morning'
  for(var j=0;j<hs.length;j++){var h=hs[j];if(!MR.test(h.textContent)||h.closest('a,nav,.mw-cc-header,[data-routines],#routines,footer,.ds-sec,script,#mw-bh,#mw-bf'))continue;
   var c=h.closest('section,article,details,.card,.report');if(c&&c!==document.body&&c.tagName!=='MAIN')return c}return null}
 function share(){var u=location.href.split('#')[0],t=document.title;if(navigator.share){navigator.share({title:t,url:u}).catch(function(){});return}
- try{navigator.clipboard.writeText(u)}catch(_){}var b=q('#mw-bf .mw-std-share');if(b){b.textContent='Link copied';setTimeout(function(){b.textContent='Share'},1600)}}
+ try{navigator.clipboard.writeText(u)}catch(_){}qa('.mw-bh-share').forEach(function(b){b.classList.add('is-copied');b.setAttribute('aria-label','Link copied');setTimeout(function(){b.classList.remove('is-copied');b.setAttribute('aria-label','Share')},1600)})}
+var SHAREIC='<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M12 15V3"/><path d="M7 8l5-5 5 5"/><path d="M5 12v9h14v-9"/></svg>';function shareBtn(){var b=mk('button','mw-bh-share');b.type='button';b.setAttribute('aria-label','Share');b.title='Share';b.innerHTML=SHAREIC+'<span class="mw-bh-share-ok">Link copied</span>';b.addEventListener('click',share);return b}
+/* ly9 report extras: square Late tag + up to three headline cards, from the board's report.json (no-store) */
+function reportExtras(md,body){fetch('report.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).then(function(j){if(!j)return;
+ if(j.late===true||(typeof j.late==='number'&&j.late>0)||j.minutes_late>0){var m=j.minutes_late||(typeof j.late==='number'?j.late:0);
+  if(!m&&j.posted_at&&j.due&&/T/.test(j.due)){var d=(Date.parse(j.posted_at)-Date.parse(j.due))/60000;if(d>0)m=Math.round(d)}
+  var tg=mk('span','mw-mr-late',m?'Late '+m+' min':'Late');tg.title=j.late_reason||j.late_note||'Posted after its due time';var sm=q('summary',md);if(sm&&!q('.mw-mr-late',sm))sm.insertBefore(tg,q('.mw-chev',sm))}
+ var H=(j.headlines||j.top3||[]).slice(0,3);if(H.length&&!q('.mw-mr-cards',body)){var w=mk('div','mw-mr-cards');H.forEach(function(h){var c=mk('div','mw-mr-card');
+  if(typeof h==='string'){var cut=h.split(/(?<=[.:;])\s|\s\(/)[0];c.append(mk('b','',cut.length>70?cut.slice(0,68).replace(/\s+\S*$/,'')+'\u2026':cut));if(h.length>cut.length+2)c.append(mk('span','',h))}
+  else{c.append(mk('b','',h.title||h.head||''));if(h.text||h.body)c.append(mk('span','',h.text||h.body))}w.appendChild(c)});body.insertBefore(w,body.firstChild)}}).catch(function(){})}
+/* ly9 sticky-for-a-bit (Max note: sticky for a little bit, then goes away): slim bar after the header leaves the screen, for about one screen of scrolling */
+function stickBar(bh,title){var bar=mk('div','mw-stick');bar.setAttribute('aria-hidden','true');var a=mk('a','mw-stick-home');a.href=HOME;a.innerHTML='<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg>';a.tabIndex=-1;
+ var t=mk('button','mw-stick-t',title);t.type='button';t.tabIndex=-1;t.addEventListener('click',function(){scrollTo({top:0,behavior:'smooth'})});var sb=shareBtn();sb.tabIndex=-1;bar.append(a,t,sb);document.body.appendChild(bar);
+ var tick=false;function upd(){tick=false;var r=bh.getBoundingClientRect(),y=window.scrollY||0,end=bh.offsetTop+bh.offsetHeight+Math.round(window.innerHeight*1.0),on=r.bottom<0&&y<end;bar.classList.toggle('is-on',on)}
+ addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});addEventListener('resize',upd);upd()}
 function zeroCounter(sh){var head=q('.ds-head',sh);if(!head)return;var st=q('.ds-stats',head);if(!st){st=mk('div','ds-stats');head.appendChild(st)}
  if(st.hidden||!st.children.length){st.textContent='';[['0','decks today'],['0','decks all-time']].forEach(function(p){var s=mk('span','ds-stat');s.append(mk('b','',p[0]),mk('span','',p[1]));st.appendChild(s)});st.hidden=false}}
 function stdShelfHead(sh){var h=q('.ds-head h2',sh);if(h&&h.textContent!=='Ready To Swipe')h.textContent='Ready To Swipe'}
@@ -58,7 +75,7 @@ function run(){if(document.body.dataset.mwLayout===V)return;var cc=q('.mw-cc-hea
  if(src){var pic=q('img',src);if(pic){var im=mk('img');im.src=pic.currentSrc||pic.src;im.alt=pic.alt||'';lg.appendChild(im)}else{var sv=q('svg',src);if(sv)lg.appendChild(sv.cloneNode(true))}}
  else if(cc.dataset.ccLogo){var im2=mk('img');im2.src=cc.dataset.ccLogo;im2.alt='';lg.appendChild(im2)}
  var tx=mk('div','mw-bh-text'),t0=q('.mw-cc-title',cc)||q('h1',cc),d0=q('.mw-cc-desc',cc)||q('p',cc);
- tx.append(mk('h1','mw-bh-title',t0?t0.textContent.trim():(cc.dataset.ccName||'')+' Command Center'),mk('p','mw-bh-desc',d0?d0.textContent.trim():(cc.dataset.ccDesc||'')));ncc.append(lg,tx);
+ tx.append(mk('h1','mw-bh-title',t0?t0.textContent.trim():(cc.dataset.ccName||'')+' Command Center'),mk('p','mw-bh-desc',d0?d0.textContent.trim():(cc.dataset.ccDesc||'')));ncc.append(lg,tx,shareBtn());
  var decks=mk('div','mw-bh-decks');if(!shelf){shelf=mk('section');shelf.setAttribute('data-shelf','shelf.json');need('deck-shelf.js',false)}decks.appendChild(shelf);
  var md=mk('details','mw-bh-morning');md.id='mw-morning';var sm=mk('summary');sm.append(mk('span','mw-mr-t','Morning Report'),mk('span','mw-chev'));md.appendChild(sm);var body=mk('div','mw-mr-body');md.appendChild(body);
  if(mor){if(mor.tagName==='DETAILS'){var os=q(':scope>summary',mor);if(os){var st=os.textContent.replace(/\s+/g,' ').replace(MR,'').replace(/^[\s·\-:]+/,'').trim();if(st)body.appendChild(mk('p','mw-mr-sub',st))}
@@ -68,14 +85,16 @@ function run(){if(document.body.dataset.mwLayout===V)return;var cc=q('.mw-cc-hea
  bh.append(home,ncc,decks,wd,md,mk('hr','mw-bh-divider'));
  cc.style.setProperty('display','none','important');cc.setAttribute('aria-hidden','true');
  document.body.insertBefore(bh,document.body.firstChild);
+ reportExtras(md,body);stickBar(bh,tx.firstChild.textContent);
  var after=bh;heroes.forEach(function(h){after.after(h);after=h});
+ var todo=slot('todo');if(todo){todo.classList.add('mw-todo');var th=q('h2,h3',todo);if(th&&/waiting on max|needs? (you|max)|to-?do/i.test(th.textContent))th.textContent='To-Do List';after.after(todo);after=todo}
  /* anything else the old header carried (greeting, updated time, buttons) moves to the middle */
  var ex=mk('div','mw-cc-extras');[].slice.call(cc.children).forEach(function(c){if(!c.matches('.mw-cc-logo,.mw-cc-text'))ex.appendChild(c)});
  var otx=q('.mw-cc-text',cc);if(otx)[].slice.call(otx.children).forEach(function(c){if(c!==t0&&c!==d0)ex.appendChild(c)});
  if(ex.children.length){after.after(ex);after=ex}
  var bf=mk('div','mw-branded-footer');bf.id='mw-bf';var rw=mk('div','mw-bf-routines');
  if(!rout){rout=mk('section');rout.setAttribute('data-routines','routines.json');need('routines-section.js',false)}rw.appendChild(rout);
- var sf=mk('div','mw-bf-standard'),sb=mk('button','mw-std-share','Share');sb.type='button';sb.addEventListener('click',share);var ba=mk('a','mw-built');ba.innerHTML=MACHAN;ba.href='https://maxweberman.com';sf.append(sb,ba);
+ var sf=mk('div','mw-bf-standard'),ba=mk('a','mw-built');ba.innerHTML=MACHAN;ba.href='https://maxweberman.com';sf.append(ba);
  bf.append(mk('hr','mw-bf-divider'),rw,sf);
  var tail=qa('body>script,body>style,body>template');document.body.appendChild(bf);tail.forEach(function(s){document.body.appendChild(s)});
  /* ly7 (Max Oct 16 2026 21:36 ICT): no stray 'Board · Updated / Add To Home Screen / Share' row under the header. Updated + Add To Home Screen move next to the footer Share; Share is not duplicated. */

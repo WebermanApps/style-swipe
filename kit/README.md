@@ -54,3 +54,12 @@ Or `<meta name="mw-agent-id">` (+ `mw-agent-name`), `data-agent="<slug>"` (regis
 - Branded header: "Working On" dropdown directly above Morning Report, same style, closed by default, only while the board's agent is working; body is one short line (`doing`).
 - Data: ONE shared file `kit/agent-status.json` (`{"as_of","agents":[{"agent","working","doing"}]}`), fetched with `cache:'no-store'` + `?t=` cache-bust, refreshed every 60s and on tab focus. Published by `/workspace/ops/agent-activity/publish_kit_status.py` (sanitized copy of agent_status.json).
 - Board agent: `data-mw-agent` on any element, else `<meta name="mw-agent-name">`, else mw-chat `data-agent-name`, else `.mw-cc-header[data-cc-name]`, else the page title ("X Command Center"). Names match ignoring "Agent", case and "&".
+
+## ly9 + routines v6 (Team Improvement Deck results, Max Oct 16 2026; Branding Oct 17 2026)
+Same URLs (mw-layout ?v=ly8, routines-section ?v=5), so boards need no republish.
+- Share: small square icon in the Command Center header (`.mw-bh-share`); the footer Share button is gone (footer = Routines, then Machan credit).
+- Sticky for a bit: once the branded header scrolls off, a slim bar (`.mw-stick`: Apps Home, board name, Share) stays at the top for about one more screen of scrolling, then goes away.
+- Morning Report: square "Late N min" tag from report.json `late` + `minutes_late` (or posted_at minus due); up to three headline cards from report.json `headlines` ([{title,text}]) or `top3` (strings).
+- To-Do List: a board block marked `data-mw-slot="todo"` moves to the first middle slot; a "Waiting On Max" heading there reads "To-Do List".
+- `.mw-progress > i` thin progress bar for feed/report bars (Progress Bar picked over dots).
+- Routines v6: times read "4:40 AM Daily"; rows grouped "Daily And Beyond", "Several Times A Day", then "Paused"; tapping a row or "See All" opens one details drawer (no inline expand). Square Active/Paused tag kept.
