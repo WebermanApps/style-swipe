@@ -1,9 +1,11 @@
-/* Document Center (R100; was Ongoing Projects; kit op6, Branding Agent, Oct 17 2026).
+/* Document Center (R100; was Ongoing Projects; kit op7, Branding Agent, Oct 17 2026).
    op5 (R109 + R106 fold-down, Oct 17 2026 20:15 ICT): per-card Quick note (app "doc-note") and a closed-by-default fold-down header.
    op6 (R109b, Oct 17 2026 20:35 ICT): Quick note and Hand off on every 'More (n)' row too (same docNote/openHandoff code path and gating), so every document has a Note.
+   op7 (R109c, Oct 17 2026 20:45 ICT, UpKeep): absolute https:// URLs in descriptions become links (linkify/safeLink: new URL() + protocol==='https:',
+     built with createElement('a') + textContent, rel=noopener noreferrer, target=_blank); everything else is text nodes; no HTML-string APIs anywhere in the kit file.
    Usage on a kit board (after mw-layout.js):
-     <link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/projects.css?v=op6">
-     script src=".../style-swipe/kit/projects.js?v=op6" data-projects="projects.json" defer (after mw-layout.js)
+     <link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/projects.css?v=op7">
+     script src=".../style-swipe/kit/projects.js?v=op7" data-projects="projects.json" defer (after mw-layout.js)
    or place <section id="mw-projects" data-mw-projects="projects.json"></section> anywhere; the kit moves it to the top of #mw-mid
    (right under the branded header divider, before the agent's own content).
    Data: board projects.json (schema: ops/brand/projects.schema.json), written only by /workspace/ops/brand/pin_project.py.
@@ -16,12 +18,14 @@
    No crypto lives here: decryption is delegated to Security's viewer through ProjectsSection.storage.encrypted. */
 (function(){
 'use strict';
-var V='op6',MAX=6,EXCLUDE=/a-o956qercs5ubd57y|home-guide|finish-questions|room-photos|room-quiz|homes\.maxweberman\.com|share-x3l9xcxc1eut/;
+var V='op7',MAX=6,EXCLUDE=/a-o956qercs5ubd57y|home-guide|finish-questions|room-photos|room-quiz|homes\.maxweberman\.com|share-x3l9xcxc1eut/;
 var me=document.currentScript;
 function el(t,c,txt){var e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e}
-function svg(d){var s=document.createElementNS('http://www.w3.org/2000/svg','svg');s.setAttribute('viewBox','0 0 24 24');s.setAttribute('aria-hidden','true');s.innerHTML=d;return s}
-var I={folder:'<path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>',open:'<path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 01-1 1H5a1 1 0 01-1-1V7a1 1 0 011-1h5"/>',
- dl:'<path d="M12 4v11M7 10l5 5 5-5M5 20h14"/>',ho:'<path d="M4 12h12M12 6l6 6-6 6"/><path d="M20 5v14"/>',doc:'<path d="M7 3h7l5 5v12a1 1 0 01-1 1H7a1 1 0 01-1-1V4a1 1 0 011-1z"/><path d="M14 3v5h5M9 13h6M9 17h6"/>',chev:'<path d="M6 9l6 6 6-6"/>',note:'<path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13 7l4 4"/>',prev:'<path d="M15 6l-6 6 6 6"/>',next:'<path d="M9 6l6 6-6 6"/>'};
+/* op7: icons are built as SVG nodes from fixed path data (no HTML strings) */
+var NS='http://www.w3.org/2000/svg';
+function svg(d){var s=document.createElementNS(NS,'svg');s.setAttribute('viewBox','0 0 24 24');s.setAttribute('aria-hidden','true');[].concat(d).forEach(function(x){var q=document.createElementNS(NS,'path');q.setAttribute('d',x);s.appendChild(q)});return s}
+var I={folder:['M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z'],open:['M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 01-1 1H5a1 1 0 01-1-1V7a1 1 0 011-1h5'],
+ dl:['M12 4v11M7 10l5 5 5-5M5 20h14'],ho:['M4 12h12M12 6l6 6-6 6','M20 5v14'],doc:['M7 3h7l5 5v12a1 1 0 01-1 1H7a1 1 0 01-1-1V4a1 1 0 011-1z','M14 3v5h5M9 13h6M9 17h6'],chev:['M6 9l6 6 6-6'],note:['M4 20h4L19 9l-4-4L4 16z','M13 7l4 4'],prev:['M15 6l-6 6 6 6'],next:['M9 6l6 6-6 6']};
 function isLocal(){return location.protocol==='file:'||/^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname)}
 /* only board-relative paths: no scheme, no leading slash, no .. (a tampered projects.json cannot point elsewhere) */
 function safePath(p){return typeof p==='string'&&p.length<300&&!/^[a-z][a-z0-9+.-]*:|^\/|\\|(^|\/)\.\.(\/|$)/i.test(p)?p:null}
@@ -105,7 +109,7 @@ var hoOpen=null;
 function openHandoff(p,opener){
  if(hoOpen)hoOpen.close();
  var bg=el('div','op-ho-bg'),box=el('form','op-ho');box.setAttribute('role','dialog');box.setAttribute('aria-modal','true');box.setAttribute('aria-labelledby','op-ho-t');box.noValidate=true;box.autocomplete='off';
- var x=el('button','op-ho-x');x.type='button';x.setAttribute('aria-label','Close');x.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>';
+ var x=el('button','op-ho-x');x.type='button';x.setAttribute('aria-label','Close');x.appendChild(svg('M6 6l12 12M18 6L6 18'));
  var h=el('h2','op-ho-h','Hand Off Project');h.id='op-ho-t';
  var sub=el('p','op-ho-sub',p.title);
  var lab=el('label','op-ho-l','To');lab.htmlFor='op-ho-in';
@@ -208,6 +212,28 @@ function docNote(p,row){
   .catch(function(){purgeNoteQueue();busyN(false);say('Something went wrong. Nothing was sent. Try again.','err');ta.focus()})});
  count();return w}
 
+/* ---- op7 (R109c, UpKeep): safe links in descriptions. Untrusted input (projects.json desc).
+   Only absolute https:// URLs become links; a URL glued to a scheme/word (e.g. "javascript:https://...") stays text.
+   Trailing punctuation (.,;:!?'" quotes, unbalanced closing brackets) is left outside the link.
+   href is set only from new URL(); protocol must be exactly 'https:', a host is required, no user:pass@.
+   javascript:, data:, http: and anything else never match and stay plain text. Link text via textContent; no HTML is ever parsed. */
+var URL_RE=/https:\/\/[^\s<>"'`\u0000-\u001f\u007f]+/gi,URL_MAX=2048;
+function trimUrl(u){var t,o;while(u.length){t=u.charAt(u.length-1);
+  if(/[.,;:!?'"\u2018\u2019\u201c\u201d\u00bb*]/.test(t)){u=u.slice(0,-1);continue}
+  o={')':'(',']':'[','}':'{'}[t];if(o&&u.split(o).length<u.split(t).length){u=u.slice(0,-1);continue}
+  break}return u}
+function safeLink(s){if(typeof s!=='string'||s.length<9||s.length>URL_MAX)return null;var u;try{u=new URL(s)}catch(_){return null}
+ if(u.protocol!=='https:'||!u.hostname||u.username||u.password)return null;
+ var a=document.createElement('a');a.href=u.href;a.textContent=s;a.rel='noopener noreferrer';a.target='_blank';a.className='op-link';return a}
+function linkify(txt){var s=String(txt==null?'':txt),f=document.createDocumentFragment(),last=0,m,re=new RegExp(URL_RE.source,'gi');
+ while((m=re.exec(s))){var i=m.index,pre=i?s.charAt(i-1):'';
+  if(pre&&/[\w:\/.@%+~&=#-]/.test(pre))continue; /* glued to a scheme or word: not a standalone https URL */
+  var u=trimUrl(m[0]),a=safeLink(u);if(!a)continue;
+  if(i>last)f.appendChild(document.createTextNode(s.slice(last,i)));
+  f.appendChild(a);last=i+u.length;re.lastIndex=last}
+ if(last<s.length)f.appendChild(document.createTextNode(s.slice(last)));
+ return f}
+
 function btn(cls,icon,label,aria){var b=el('button','op-btn '+cls);b.type='button';b.appendChild(svg(I[icon]));b.appendChild(el('span',null,label));if(aria)b.setAttribute('aria-label',aria);return b}
 
 /* encrypted mode uses Security's documented markup exactly: Open = a[data-enc-file], Download = a[data-enc-file][data-enc-download],
@@ -238,7 +264,7 @@ function card(p,i){
  if(docnoteAllowed(p))bd.appendChild(docNote(p));
  var mb=el('button','op-more-btn');mb.type='button';mb.append(el('span',null,'Tell me more'),svg(I.chev));var id='op-d-'+i;mb.setAttribute('aria-expanded','false');mb.setAttribute('aria-controls',id);
  var dt=el('div','op-details');dt.id=id;dt.hidden=true;
- if(p.desc)dt.appendChild(el('p',null,p.desc));
+ if(p.desc){var dp=el('p','op-desc');dp.appendChild(linkify(p.desc));dt.appendChild(dp)}
  var bits=[];if(p.file&&p.file.name)bits.push(p.file.name);if(p.pages)bits.push(p.pages+(p.type&&/pptx?|key/i.test(p.type)?' slides':' pages'));if(p.size)bits.push(Math.max(1,Math.round(p.size/1024))+' KB');if(p.agent)bits.push('Pinned by '+p.agent);if(p.created&&p.created!==p.updated)bits.push('Added '+fmtDate(p.created));
  if(bits.length)dt.appendChild(el('small',null,bits.join(' \u00b7 ')));if(!dt.childNodes.length)dt.appendChild(el('p',null,'No extra details yet.'));
  mb.onclick=function(){var x=mb.getAttribute('aria-expanded')!=='true';mb.setAttribute('aria-expanded',String(x));dt.hidden=!x;mb.firstChild.textContent=x?'Show less':'Tell me more'};
@@ -300,5 +326,5 @@ function start(){if(started)return;started=true;var sec=mount();if(!sec)return;
  document.addEventListener('mw-layout',function(){mount()})}
 document.addEventListener('mw-layout',start);
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',function(){setTimeout(start,document.getElementById('mw-bh')?0:600)});else setTimeout(start,600);
-window.ProjectsSection={v:V,storage:storage,setMode:function(m){if(storage[m])mode=m},render:render,normalize:normalize,safePath:safePath,handoffPayload:handoffPayload,openHandoff:openHandoff,docnotePayload:docnotePayload,docnoteAllowed:docnoteAllowed};
+window.ProjectsSection={v:V,storage:storage,setMode:function(m){if(storage[m])mode=m},render:render,normalize:normalize,safePath:safePath,handoffPayload:handoffPayload,openHandoff:openHandoff,docnotePayload:docnotePayload,docnoteAllowed:docnoteAllowed,linkify:linkify,safeLink:safeLink};
 })();

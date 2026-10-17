@@ -1,4 +1,4 @@
-/* Document Center (R100; was Ongoing Projects; kit op6, Branding Agent, Oct 17 2026; op5 = R109 Quick note + fold-down; op6 = Note/Hand off on More rows).
+/* Document Center (R100; was Ongoing Projects; kit op7, Branding Agent, Oct 17 2026; op5 = R109 Quick note + fold-down; op6 = Note/Hand off on More rows; op7 = safe links in descriptions).
    One uniform section, first in #mw-mid (right under the branded header divider, before the agent's own content).
    Light only: white cards, #FAF6EE bands, #e3ddd2 borders, Khand headings, Hind body, 10px card corners, subtle accents. */
 #mw-projects{--op-border:#e3ddd2;--op-band:#FAF6EE;--op-ink:#1a1a1a;--op-muted:#5c574f;--op-accent:#0B6E4F;--op-gold:#7A5A12;--op-r:10px;
@@ -167,3 +167,11 @@ html.op-ho-lock{overflow:hidden}
 #mw-projects .op-dn--row>.op-dn-form{flex:0 0 100%;order:10;border-top:1px solid #e3ddd2}
 #mw-projects .op-dn--row>.op-dn-msg{flex:0 0 100%;order:11;margin:0}
 @media (max-width:767px){#mw-projects .op-list .op-lt{flex:0 0 100%}#mw-projects .op-list .op-btn:not(.op-dn-btn){flex:1 1 0}}
+/* ---- op7 (R109c, UpKeep): https links in document descriptions. Kit accent + underline on the light (white) details panel.
+   Inline links cannot be 44px tall without breaking the text flow, so vertical padding grows the tap area to ~44px without moving the lines. ---- */
+#mw-projects .op-details .op-desc{background:#fff;color:#333;color-scheme:light only}
+#mw-projects .op-details a.op-link{color:var(--op-accent);background:transparent;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;
+ font-weight:600;overflow-wrap:anywhere;word-break:break-word;padding:12px 0;margin:-12px 0;border-radius:2px;-webkit-tap-highlight-color:rgba(11,110,79,.15);cursor:pointer}
+#mw-projects .op-details a.op-link:visited{color:var(--op-accent)}
+@media (hover:hover){#mw-projects .op-details a.op-link:hover{color:#095c42;text-decoration-thickness:2px}}
+#mw-projects .op-details a.op-link:focus-visible{outline:2px solid var(--op-accent);outline-offset:2px}
