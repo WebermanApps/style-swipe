@@ -15,6 +15,22 @@ DECKS = [
      "Every card is a mini card mockup of the actual Machan story text (brand-story.md and the story carousel); only the five real pieces of lore, no new facts."),
 ]
 UPKEEP = re.compile(r"upkeep|smart upkeep", re.I)
+def finish_page(slug, name):
+    """Page finish: the deck's own title, the light cream page background Max asked for, and the template's standard
+    'Built by Machan' footer link with the v3 wink mark kept (Machan decks are not UpKeep; Max, Oct 18 2026 22:19 ICT).
+    Only this deck's page changes."""
+    pg = os.path.join(slug, "index.html"); h = open(pg).read()
+    if "const D=" in h: return
+    h = re.sub(r"<title>[^<]*</title>", f"<title>{name} · Style Swipe</title>", h, count=1)
+    h = h.replace("<style>:root{--bg:#FFFFFF}html,body{background:#FFFFFF!important}", "<style>:root{--bg:#FAF6EE!important}:root,:root body{background:#FAF6EE!important}", 1)
+    assert '<a class="builtby' in h and "M13 13.1q1.4 1.25 2.8 0" in h, "standard footer with the v3 wink mark"
+    open(pg, "w").write(h)
+if "--pages-only" in sys.argv:
+    # Rewrite only the two deck pages from index.template.html (deck JSON untouched), then relock with lock_pages.py.
+    from md1018_kit import page
+    for did, name, slug, *_ in DECKS:
+        sl, url = page(did, slug); finish_page(sl, name); print(did, url)
+    sys.exit(0)
 out = {}
 for did, name, slug, fn, seed, ex in DECKS:
     pairs = fn()
@@ -26,13 +42,6 @@ for did, name, slug, fn, seed, ex in DECKS:
     dj["sources"] = {"story": "/workspace/machan/brand-story.md", "carousel": "/workspace/machan/story-carousel/index.html",
                      "mark": "assets/machan-mark-v3-wink.svg (pitch-v3-1018)", "builder": "tools/build_machan_1018.py"}
     json.dump(dj, open(f"decks/{did}.json", "w"), indent=1, ensure_ascii=False)
-    # Same page finish as tonight's decks: the deck's own title, no 'built by' footer link (Share stays at the bottom),
-    # plus the light cream page background Max asked for. Only this deck's page changes.
-    pg = os.path.join(r["slug"], "index.html"); h = open(pg).read()
-    if "const D=" not in h:
-        h = re.sub(r"<title>[^<]*</title>", f"<title>{name} · Style Swipe</title>", h, count=1)
-        h = re.sub(r'\s*<a class="builtby[^"]*"[^>]*>.*?</a>', "", h, count=1, flags=re.S)
-        h = h.replace("<style>:root{--bg:#FFFFFF}html,body{background:#FFFFFF!important}", "<style>:root{--bg:#FAF6EE!important}:root,:root body{background:#FAF6EE!important}", 1)
-        open(pg, "w").write(h)
+    finish_page(r["slug"], name)
     out[did] = r; print(did, r["url"], len(r["titles"]))
 json.dump(out, open("/workspace/wt/machan-decks-1018/built.json", "w"), indent=1, ensure_ascii=False)
