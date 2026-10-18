@@ -1,0 +1,516 @@
+{
+ "date": "upkeep-funnel-gathering-client-info-deck",
+ "version": 4,
+ "owner": "Max Weberman",
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "Funnel: Gathering Client Info",
+ "generated_at": "2026-10-18T15:56:06+07:00",
+ "status": "published",
+ "feeling_counts": {
+  "practical": 6,
+  "calm": 9,
+  "playful": 2,
+  "focused": 2,
+  "warm": 1
+ },
+ "groups": {
+  "Home Photos": 2,
+  "Your Home": 6,
+  "Contact": 1,
+  "Access": 1
+ },
+ "apps": {
+  "UpKeep": 10
+ },
+ "freshness": {
+  "option_slots": 20,
+  "never_shown_before": 20,
+  "share": 1.0
+ },
+ "warnings": [],
+ "submit_agent": "upkeep",
+ "submit_to": "UpKeep Agent f0d420ad-d37e-44d3-be6f-053da2b6e24d",
+ "board": "upkeep",
+ "topic": "upkeep-funnel-gathering-client-info-deck",
+ "shelf": true,
+ "audience": "Max",
+ "requested": true,
+ "request": "Max Oct 18 2026 15:52 ICT: 4 new pinned UpKeep decks (pitch remake x2 phone-first, funnel info, funnel subscribe and pay); 10 picks, Notes, light mode",
+ "pinned": true,
+ "example_data": "All numbers, names and addresses on cards are labelled samples or placeholders; no real customer details.",
+ "deck_size": 10,
+ "caption_rule": "R105",
+ "notes": true,
+ "built_by": "Branding",
+ "built_at_note": "Morning decks Oct 18 2026 (daily work report 2026-10-17, rules 3 and 5)",
+ "sources": {
+  "report": "/workspace/ops/brand/daily-work-report/2026-10-17.md",
+  "rulebook": "/workspace/ops/brand/dashboard-rulebook.md",
+  "builder": "tools/build_morning_decks_1018.py"
+ },
+ "pairs": [
+  {
+   "group": "Your Home",
+   "category": "Home type",
+   "app": "UpKeep",
+   "ask": "Smart Upkeep Sign Up · Your Home: Home type, should home type be picked from picture tiles or from a simple dropdown?",
+   "optionA": {
+    "id": "p4fi_01tiles",
+    "label": "Picture Tiles",
+    "desc": "House, condo, townhome as tappable tiles.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">SMART UPKEEP SIGN UP · YOUR HOME</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >What kind of home?</text><rect x=\"14.0\" y=\"56\" width=\"102.0\" height=\"60\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24.0\" y=\"66\" width=\"24\" height=\"24\" rx=\"6\" fill=\"#C1502E1F\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(28.0,70) scale(0.6666666666666666)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/></g><text x=\"24.0\" y=\"106\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >House</text><rect x=\"124.0\" y=\"56\" width=\"102.0\" height=\"60\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"134.0\" y=\"66\" width=\"24\" height=\"24\" rx=\"6\" fill=\"#05668D1F\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(138.0,70) scale(0.6666666666666666)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#05668D\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/></g><text x=\"134.0\" y=\"106\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Condo</text><rect x=\"14.0\" y=\"124\" width=\"102.0\" height=\"60\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"24.0\" y=\"134\" width=\"24\" height=\"24\" rx=\"6\" fill=\"#0B6E4F1F\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(28.0,138) scale(0.6666666666666666)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#0B6E4F\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/></g><text x=\"24.0\" y=\"174\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Townhome</text><rect x=\"124.0\" y=\"124\" width=\"102.0\" height=\"60\" rx=\"9\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><rect x=\"134.0\" y=\"134\" width=\"24\" height=\"24\" rx=\"6\" fill=\"#D4A0171F\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(138.0,138) scale(0.6666666666666666)\"><path d=\"M3 12 V4 H11 L21 14 L13 22 Z\" fill=\"none\" stroke=\"#D4A017\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><circle cx=\"7.5\" cy=\"8.5\" r=\"1.6\" fill=\"#D4A017\"/></g><text x=\"134.0\" y=\"174\" font-size=\"10\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Other</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Quick tap</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "p4fi_01drop",
+    "label": "Simple Dropdown",
+    "desc": "One box, opens a list.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">SMART UPKEEP SIGN UP · YOUR HOME</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >What kind of home?</text><rect x=\"14\" y=\"56\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,62) scale(0.6666666666666666)\"><path d=\"M5 9 L12 16 L19 9\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"44\" y=\"74\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Choose home type</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Short screen</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-funnel-gathering-client-info-deck-01",
+   "repeat": false
+  },
+  {
+   "group": "Your Home",
+   "category": "Home size",
+   "app": "UpKeep",
+   "ask": "Smart Upkeep Sign Up · Your Home: Home size, should home size be asked as rough range chips or as an exact square feet box?",
+   "optionA": {
+    "id": "p4fi_02chips",
+    "label": "Range Chips",
+    "desc": "Under 1,500 / 1,500 to 2,500 / 2,500+.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">SMART UPKEEP SIGN UP · YOUR HOME</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >About how big?</text><rect x=\"14\" y=\"56\" width=\"57.37500000000001\" height=\"15.0\" rx=\"6\" fill=\"#C1502E1A\" stroke=\"#C1502E66\" stroke-width=\"1\" /><text x=\"42.6875\" y=\"66.5\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Under 1,500</text><rect x=\"77.375\" y=\"56\" width=\"69.75\" height=\"15.0\" rx=\"6\" fill=\"#05668D1A\" stroke=\"#05668D66\" stroke-width=\"1\" /><text x=\"112.25\" y=\"66.5\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >1,500 to 2,500</text><rect x=\"153.125\" y=\"56\" width=\"36.75\" height=\"15.0\" rx=\"6\" fill=\"#0B6E4F1A\" stroke=\"#0B6E4F66\" stroke-width=\"1\" /><text x=\"171.5\" y=\"66.5\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >2,500+</text><text x=\"14\" y=\"88.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Square feet, a guess is fine</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >No looking it up</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "p4fi_02exact",
+    "label": "Exact Square Feet",
+    "desc": "Type the number.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">SMART UPKEEP SIGN UP · YOUR HOME</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Square feet</text><rect x=\"14\" y=\"56\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,62) scale(0.6666666666666666)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"2\" stroke-linejoin=\"round\"/></g><text x=\"44\" y=\"74\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >e.g. 1,850</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Precise</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-funnel-gathering-client-info-deck-02",
+   "repeat": false
+  },
+  {
+   "group": "Your Home",
+   "category": "Home systems",
+   "app": "UpKeep",
+   "ask": "Smart Upkeep Sign Up · Your Home: Home systems, should home systems like furnace and water heater be picked from a checklist or from icon tiles you tap on?",
+   "optionA": {
+    "id": "p4fi_03check",
+    "label": "Checklist",
+    "desc": "Tick each system the home has.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">SMART UPKEEP SIGN UP · YOUR HOME</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >What's in the home?</text><rect x=\"14\" y=\"58\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M17 64 l2.5 2.5 4.5 -5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"1.8\"/><text x=\"34\" y=\"67.5\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Furnace</text><line x1=\"34\" y1=\"75\" x2=\"226\" y2=\"75\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"80\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M17 86 l2.5 2.5 4.5 -5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"1.8\"/><text x=\"34\" y=\"89.5\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Central air</text><line x1=\"34\" y1=\"97\" x2=\"226\" y2=\"97\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"102\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M17 108 l2.5 2.5 4.5 -5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"1.8\"/><text x=\"34\" y=\"111.5\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Water heater</text><line x1=\"34\" y1=\"119\" x2=\"226\" y2=\"119\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"124\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"133.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Sump pump</text><line x1=\"34\" y1=\"141\" x2=\"226\" y2=\"141\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"146\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"155.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Sprinklers</text><line x1=\"34\" y1=\"163\" x2=\"226\" y2=\"163\" stroke=\"#E5E0D8\"/><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fast to scan</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "p4fi_03tiles",
+    "label": "Icon Tiles",
+    "desc": "Tap tiles to switch them on.",
+    "tags": [
+     "playful"
+    ],
+    "feeling": "playful",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">SMART UPKEEP SIGN UP · YOUR HOME</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >What's in the home?</text><rect x=\"14.0\" y=\"56\" width=\"102.0\" height=\"56\" rx=\"9\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(24.0,66) scale(0.75)\"><path d=\"M3 11 L12 4 L21 11 V20 H3 Z\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/></g><text x=\"24.0\" y=\"102\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Furnace</text><rect x=\"124.0\" y=\"56\" width=\"102.0\" height=\"56\" rx=\"9\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(134.0,66) scale(0.75)\"><path d=\"M12 3 L14.6 9 L21 9.5 L16 13.6 L17.6 20 L12 16.5 L6.4 20 L8 13.6 L3 9.5 L9.4 9 Z\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/></g><text x=\"134.0\" y=\"102\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Central air</text><rect x=\"14.0\" y=\"120\" width=\"102.0\" height=\"56\" rx=\"9\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(24.0,130) scale(0.75)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"2.2\"/><path d=\"M12 6 V12 L16 14\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"2.2\" stroke-linecap=\"round\"/></g><text x=\"24.0\" y=\"166\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Water heater</text><rect x=\"124.0\" y=\"120\" width=\"102.0\" height=\"56\" rx=\"9\" fill=\"#D4A017\" stroke=\"none\" stroke-width=\"1\" /><g transform=\"translate(134.0,130) scale(0.75)\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"2.2\"/><path d=\"M7 12.5 l3.5 3.5 6.5 -7\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text x=\"134.0\" y=\"166\" font-size=\"10\" fill=\"#FFFFFF\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Sump pump</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fun to tap</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-funnel-gathering-client-info-deck-03",
+   "repeat": false
+  },
+  {
+   "group": "Your Home",
+   "category": "System age",
+   "app": "UpKeep",
+   "ask": "Smart Upkeep Sign Up · Your Home: System age, when asking a system's age should there be a Not sure chip or should a rough age be required?",
+   "optionA": {
+    "id": "p4fi_04ns",
+    "label": "Not Sure Chip",
+    "desc": "Pick an age range or Not sure.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">SMART UPKEEP SIGN UP · YOUR HOME</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Water heater age</text><rect x=\"14\" y=\"56\" width=\"40.875\" height=\"15.0\" rx=\"6\" fill=\"#0B6E4F1A\" stroke=\"#0B6E4F66\" stroke-width=\"1\" /><text x=\"34.4375\" y=\"66.5\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >0-5 yrs</text><rect x=\"60.875\" y=\"56\" width=\"45.0\" height=\"15.0\" rx=\"6\" fill=\"#05668D1A\" stroke=\"#05668D66\" stroke-width=\"1\" /><text x=\"83.375\" y=\"66.5\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >5-10 yrs</text><rect x=\"111.875\" y=\"56\" width=\"40.875\" height=\"15.0\" rx=\"6\" fill=\"#C1502E1A\" stroke=\"#C1502E66\" stroke-width=\"1\" /><text x=\"132.3125\" y=\"66.5\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >10+ yrs</text><rect x=\"158.75\" y=\"56\" width=\"45.0\" height=\"15.0\" rx=\"6\" fill=\"#5252521A\" stroke=\"#52525266\" stroke-width=\"1\" /><text x=\"181.25\" y=\"66.5\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Not sure</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >No one gets stuck</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "p4fi_04req",
+    "label": "Rough Age Required",
+    "desc": "An age range must be picked.",
+    "tags": [
+     "focused"
+    ],
+    "feeling": "focused",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">SMART UPKEEP SIGN UP · YOUR HOME</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Water heater age</text><rect x=\"14\" y=\"56\" width=\"40.875\" height=\"15.0\" rx=\"6\" fill=\"#0B6E4F1A\" stroke=\"#0B6E4F66\" stroke-width=\"1\" /><text x=\"34.4375\" y=\"66.5\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >0-5 yrs</text><rect x=\"60.875\" y=\"56\" width=\"45.0\" height=\"15.0\" rx=\"6\" fill=\"#05668D1A\" stroke=\"#05668D66\" stroke-width=\"1\" /><text x=\"83.375\" y=\"66.5\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >5-10 yrs</text><rect x=\"111.875\" y=\"56\" width=\"40.875\" height=\"15.0\" rx=\"6\" fill=\"#C1502E1A\" stroke=\"#C1502E66\" stroke-width=\"1\" /><text x=\"132.3125\" y=\"66.5\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >10+ yrs</text><text x=\"14\" y=\"88.0\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Required</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Better data for the tech</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-funnel-gathering-client-info-deck-04",
+   "repeat": false
+  },
+  {
+   "group": "Home Photos",
+   "category": "Home snapshots",
+   "app": "UpKeep",
+   "ask": "Smart Upkeep Sign Up · Your Home: Home snapshots, should photos be a guided shot list or one open upload box?",
+   "optionA": {
+    "id": "p4fi_05guided",
+    "label": "Guided Shot List",
+    "desc": "Front, furnace, water heater, electrical panel.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">SMART UPKEEP SIGN UP · YOUR HOME</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Snap a few photos</text><rect x=\"14\" y=\"58\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M17 64 l2.5 2.5 4.5 -5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"1.8\"/><text x=\"34\" y=\"67.5\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Front of home</text><line x1=\"34\" y1=\"75\" x2=\"226\" y2=\"75\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"80\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"89.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Furnace</text><line x1=\"34\" y1=\"97\" x2=\"226\" y2=\"97\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"102\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"111.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Water heater</text><line x1=\"34\" y1=\"119\" x2=\"226\" y2=\"119\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"124\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#BDB6AA\" stroke-width=\"1.2\" /><text x=\"34\" y=\"133.5\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Electrical panel</text><line x1=\"34\" y1=\"141\" x2=\"226\" y2=\"141\" stroke=\"#E5E0D8\"/><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Tech knows what to expect</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "p4fi_05open",
+    "label": "One Upload Box",
+    "desc": "Add any photos you like.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">SMART UPKEEP SIGN UP · YOUR HOME</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Add photos</text><g transform=\"translate(0,56)\"><rect x=\"14\" y=\"0\" width=\"212\" height=\"90\" rx=\"8\" fill=\"#FAF6EE\" stroke=\"#BDB6AA\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"120\" y=\"50\" font-size=\"9\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Tap to add photos</text></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Simple</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-funnel-gathering-client-info-deck-05",
+   "repeat": false
+  },
+  {
+   "group": "Home Photos",
+   "category": "Photo timing",
+   "app": "UpKeep",
+   "ask": "Smart Upkeep Sign Up · Your Home: Photo timing, should photos be asked during sign-up with a Skip link or left for the tech to take on the first visit?",
+   "optionA": {
+    "id": "p4fi_06now",
+    "label": "Now, With Skip",
+    "desc": "Ask now, a clear Skip for later link.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">SMART UPKEEP SIGN UP · YOUR HOME</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Snap a few photos</text><rect x=\"14.0\" y=\"56\" width=\"66.66666666666667\" height=\"60\" rx=\"6\" fill=\"#C1502E1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M24.533333333333335 105.19999999999999 V84.67999999999999 L47.333333333333336 68.71999999999998 L70.13333333333334 84.67999999999999 V105.19999999999999 Z\" fill=\"#FFFFFF\" stroke=\"#C1502E\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><rect x=\"42.77333333333333\" y=\"91.51999999999998\" width=\"9.120000000000001\" height=\"13.68\" rx=\"0\" fill=\"#C1502E55\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"86.66666666666667\" y=\"56\" width=\"66.66666666666667\" height=\"60\" rx=\"6\" fill=\"#05668D1A\" stroke=\"none\" stroke-width=\"1\" /><path d=\"M86.66666666666667 98.0 H153.33333333333334 M106.66666666666667 56 V98.0\" stroke=\"#05668D66\" stroke-width=\"1.2\"/><rect x=\"116.66666666666667\" y=\"83.0\" width=\"23.333333333333332\" height=\"15.0\" rx=\"3\" fill=\"#05668D44\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"92.0\" y=\"68.0\" width=\"10.0\" height=\"18.0\" rx=\"2\" fill=\"#FFFFFF\" stroke=\"#05668D88\" stroke-width=\"1\" /><rect x=\"159.33333333333334\" y=\"56\" width=\"66.66666666666667\" height=\"60\" rx=\"6\" fill=\"#0B6E4F1A\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"207.33333333333334\" cy=\"74.0\" r=\"7.199999999999999\" fill=\"#D4A01788\"/><path d=\"M159.33333333333334 107.0 Q179.33333333333334 86.0 196.0 98.0 T226.0 92.0 V116 H159.33333333333334 Z\" fill=\"#0B6E4F55\"/><rect x=\"14\" y=\"124\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"140.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">ADD PHOTOS</text><text x=\"120\" y=\"170\" font-size=\"8\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\" text-decoration=\"underline\">SKIP FOR NOW</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Head start for the tech</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "p4fi_06visit",
+    "label": "Tech Takes Them",
+    "desc": "A note: your tech takes photos on visit one.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">SMART UPKEEP SIGN UP · YOUR HOME</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Photos</text><rect x=\"14\" y=\"56\" width=\"212\" height=\"34\" rx=\"6\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"56\" width=\"3\" height=\"34\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"70\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Your tech takes photos</text><text x=\"22\" y=\"82\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >on the first visit, nothing to do now</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Shorter sign-up</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-funnel-gathering-client-info-deck-06",
+   "repeat": false
+  },
+  {
+   "group": "Contact",
+   "category": "Contact preference",
+   "app": "UpKeep",
+   "ask": "Smart Upkeep Sign Up · Your Home: Contact preference, should the client pick how we reach them with Text, Call and Email chips or should we default to text?",
+   "optionA": {
+    "id": "p4fi_07chips",
+    "label": "Text, Call, Email Chips",
+    "desc": "Pick one or more.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">SMART UPKEEP SIGN UP · YOUR HOME</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >How should we reach you?</text><rect x=\"14\" y=\"56\" width=\"28.5\" height=\"15.0\" rx=\"6\" fill=\"#C1502E1A\" stroke=\"#C1502E66\" stroke-width=\"1\" /><text x=\"28.25\" y=\"66.5\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Text</text><rect x=\"48.5\" y=\"56\" width=\"28.5\" height=\"15.0\" rx=\"6\" fill=\"#05668D1A\" stroke=\"#05668D66\" stroke-width=\"1\" /><text x=\"62.75\" y=\"66.5\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Call</text><rect x=\"83.0\" y=\"56\" width=\"32.625\" height=\"15.0\" rx=\"6\" fill=\"#0B6E4F1A\" stroke=\"#0B6E4F66\" stroke-width=\"1\" /><text x=\"99.3125\" y=\"66.5\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >Email</text><rect x=\"14\" y=\"79.0\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,85.0) scale(0.6666666666666666)\"><rect x=\"6\" y=\"2\" width=\"12\" height=\"20\" rx=\"2\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"2\"/><circle cx=\"12\" cy=\"18\" r=\"1\" fill=\"#C1502E\"/></g><text x=\"44\" y=\"97.0\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Mobile number</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Their choice</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "p4fi_07text",
+    "label": "Text By Default",
+    "desc": "Mobile number with a We text you line.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">SMART UPKEEP SIGN UP · YOUR HOME</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Mobile number</text><rect x=\"14\" y=\"56\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><g transform=\"translate(22,62) scale(0.6666666666666666)\"><rect x=\"6\" y=\"2\" width=\"12\" height=\"20\" rx=\"2\" fill=\"none\" stroke=\"#C1502E\" stroke-width=\"2\"/><circle cx=\"12\" cy=\"18\" r=\"1\" fill=\"#C1502E\"/></g><text x=\"44\" y=\"74\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >(555) 000-0000</text><text x=\"14\" y=\"101\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >We text visit reminders</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Fewer choices</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-funnel-gathering-client-info-deck-07",
+   "repeat": false
+  },
+  {
+   "group": "Access",
+   "category": "Access notes",
+   "app": "UpKeep",
+   "ask": "Smart Upkeep Sign Up · Your Home: Access notes, should gate codes pets and lockbox details be quick on and off switches or one free text box?",
+   "optionA": {
+    "id": "p4fi_08tog",
+    "label": "Quick Switches",
+    "desc": "Pets, gate, lockbox switches with a short box.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">SMART UPKEEP SIGN UP · YOUR HOME</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Getting in</text><text x=\"14\" y=\"71\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Pets at home</text><rect x=\"196\" y=\"61\" width=\"28\" height=\"15\" rx=\"7.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"216\" cy=\"68.5\" r=\"5.5\" fill=\"#FFFFFF\"/><line x1=\"14\" y1=\"80\" x2=\"226\" y2=\"80\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"97\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Gate code</text><rect x=\"196\" y=\"87\" width=\"28\" height=\"15\" rx=\"7.5\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"204\" cy=\"94.5\" r=\"5.5\" fill=\"#FFFFFF\"/><line x1=\"14\" y1=\"106\" x2=\"226\" y2=\"106\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"123\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Lockbox</text><rect x=\"196\" y=\"113\" width=\"28\" height=\"15\" rx=\"7.5\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><circle cx=\"216\" cy=\"120.5\" r=\"5.5\" fill=\"#FFFFFF\"/><line x1=\"14\" y1=\"132\" x2=\"226\" y2=\"132\" stroke=\"#E5E0D8\"/><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Nothing missed</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "p4fi_08free",
+    "label": "One Free Text Box",
+    "desc": "Tell us anything we should know.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">SMART UPKEEP SIGN UP · YOUR HOME</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Getting in</text><g transform=\"translate(0,56)\"><rect x=\"14\" y=\"0\" width=\"212\" height=\"80\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#0A0A0A\" stroke-width=\"1.2\" /><text x=\"22\" y=\"18\" font-size=\"8\" fill=\"#9A948A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Gate code, pets, parking...</text></g><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Open and flexible</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-funnel-gathering-client-info-deck-08",
+   "repeat": false
+  },
+  {
+   "group": "Your Home",
+   "category": "Why we ask",
+   "app": "UpKeep",
+   "ask": "Smart Upkeep Sign Up · Your Home: Why we ask, should each question carry a small why-we-ask line under it or an info icon that opens it on tap?",
+   "optionA": {
+    "id": "p4fi_09line",
+    "label": "Why-We-Ask Line",
+    "desc": "A grey line under each question.",
+    "tags": [
+     "warm"
+    ],
+    "feeling": "warm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">SMART UPKEEP SIGN UP · YOUR HOME</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Water heater age</text><text x=\"14\" y=\"65\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Helps your tech plan flushes and checks</text><rect x=\"14\" y=\"70\" width=\"40.875\" height=\"15.0\" rx=\"6\" fill=\"#0B6E4F1A\" stroke=\"#0B6E4F66\" stroke-width=\"1\" /><text x=\"34.4375\" y=\"80.5\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >0-5 yrs</text><rect x=\"60.875\" y=\"70\" width=\"45.0\" height=\"15.0\" rx=\"6\" fill=\"#05668D1A\" stroke=\"#05668D66\" stroke-width=\"1\" /><text x=\"83.375\" y=\"80.5\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >5-10 yrs</text><rect x=\"111.875\" y=\"70\" width=\"40.875\" height=\"15.0\" rx=\"6\" fill=\"#C1502E1A\" stroke=\"#C1502E66\" stroke-width=\"1\" /><text x=\"132.3125\" y=\"80.5\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >10+ yrs</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Builds trust</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "p4fi_09icon",
+    "label": "Info Icon On Tap",
+    "desc": "A small i icon opens the reason.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">SMART UPKEEP SIGN UP · YOUR HOME</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><g transform=\"translate(0,34)\"><text x=\"14\" y=\"14\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Water heater age</text><circle cx=\"130\" cy=\"9\" r=\"6\" fill=\"none\" stroke=\"#05668D\"/><text x=\"130\" y=\"12\" font-size=\"8\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"700\" >i</text></g><rect x=\"14\" y=\"58\" width=\"40.875\" height=\"15.0\" rx=\"6\" fill=\"#0B6E4F1A\" stroke=\"#0B6E4F66\" stroke-width=\"1\" /><text x=\"34.4375\" y=\"68.5\" font-size=\"7.5\" fill=\"#0B6E4F\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >0-5 yrs</text><rect x=\"60.875\" y=\"58\" width=\"45.0\" height=\"15.0\" rx=\"6\" fill=\"#05668D1A\" stroke=\"#05668D66\" stroke-width=\"1\" /><text x=\"83.375\" y=\"68.5\" font-size=\"7.5\" fill=\"#05668D\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >5-10 yrs</text><rect x=\"111.875\" y=\"58\" width=\"40.875\" height=\"15.0\" rx=\"6\" fill=\"#C1502E1A\" stroke=\"#C1502E66\" stroke-width=\"1\" /><text x=\"132.3125\" y=\"68.5\" font-size=\"7.5\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" >10+ yrs</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Cleaner screen</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-funnel-gathering-client-info-deck-09",
+   "repeat": false
+  },
+  {
+   "group": "Your Home",
+   "category": "Home recap",
+   "app": "UpKeep",
+   "ask": "Smart Upkeep Sign Up · Your Home: Home recap, after the home questions should a home card recap the answers with Edit or go straight on to plans?",
+   "optionA": {
+    "id": "p4fi_10recap",
+    "label": "Home Card Recap",
+    "desc": "One card: type, size, systems, Edit.",
+    "tags": [
+     "practical"
+    ],
+    "feeling": "practical",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">SMART UPKEEP SIGN UP · YOUR HOME</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"48\" font-size=\"14\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Your home</text><text x=\"14\" y=\"69\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Type</text><text x=\"226\" y=\"69\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"700\" >House</text><line x1=\"14\" y1=\"75\" x2=\"226\" y2=\"75\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"89\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Size</text><text x=\"226\" y=\"89\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"700\" >1,500 to 2,500</text><line x1=\"14\" y1=\"95\" x2=\"226\" y2=\"95\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"109\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Systems</text><text x=\"226\" y=\"109\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"700\" >4 picked</text><line x1=\"14\" y1=\"115\" x2=\"226\" y2=\"115\" stroke=\"#E5E0D8\"/><text x=\"14\" y=\"129\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"500\" >Photos</text><text x=\"226\" y=\"129\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Hind\" font-weight=\"700\" >3 added</text><line x1=\"14\" y1=\"135\" x2=\"226\" y2=\"135\" stroke=\"#E5E0D8\"/><text x=\"120\" y=\"154\" font-size=\"8\" fill=\"#C1502E\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\" text-decoration=\"underline\">EDIT</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Catch mistakes</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Sample answers</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "optionB": {
+    "id": "p4fi_10go",
+    "label": "Straight To Plans",
+    "desc": "No recap, plans come next.",
+    "tags": [
+     "calm"
+    ],
+    "feeling": "calm",
+    "notes": true,
+    "share": true,
+    "visual": {
+     "type": "hm",
+     "m": "svg",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" width=\"240\" height=\"300\" style=\"max-width:100%;height:auto\"><clipPath id=\"c\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#c)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"26\" rx=\"0\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><text x=\"12\" y=\"17\" font-size=\"7.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"700\" letter-spacing=\"1\">SMART UPKEEP SIGN UP · YOUR HOME</text><line x1=\"0\" y1=\"26\" x2=\"240\" y2=\"26\" stroke=\"#E5E0D8\"/><rect x=\"14\" y=\"34\" width=\"212\" height=\"34\" rx=\"6\" fill=\"#FAF6EE\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"14\" y=\"34\" width=\"3\" height=\"34\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"22\" y=\"48\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Thanks, got it</text><text x=\"22\" y=\"60\" font-size=\"7.5\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" >Next: pick your plan</text><rect x=\"14\" y=\"74\" width=\"212\" height=\"26\" rx=\"0\" fill=\"#C1502E\" stroke=\"#C1502E\" stroke-width=\"1.5\" /><text x=\"120.0\" y=\"90.24\" font-size=\"9\" fill=\"#FFFFFF\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1.2\">SEE PLANS</text><rect x=\"12\" y=\"252\" width=\"3\" height=\"24\" rx=\"0\" fill=\"#C1502E\" stroke=\"none\" stroke-width=\"1\" /><text x=\"20\" y=\"262\" font-size=\"8.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Faster</text><text x=\"20\" y=\"274\" font-size=\"7.8\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"400\" ></text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>",
+     "bg": "#FFFFFF"
+    }
+   },
+   "purpose": "new",
+   "retest": false,
+   "notes": true,
+   "share": true,
+   "id": "upkeep-funnel-gathering-client-info-deck-10",
+   "repeat": false
+  }
+ ],
+ "share": true
+}
