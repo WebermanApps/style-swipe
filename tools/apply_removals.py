@@ -79,8 +79,28 @@ def inbox_records():
         if k not in best or (j.get("sentAt") or "") > (best[k].get("sentAt") or ""): best[k] = {"board": b, "deck": d, "removed": r.get("removed") is not False, "sentAt": j.get("sentAt")}
     return list(best.values())
 if __name__ == "__main__":
-    a = sys.argv[1:]; dry = "--dry-run" in a; a = [x for x in a if x != "--dry-run"]
-    if not a: sys.exit(__doc__)
+    a = sys.argv[1:]
+    # Strict args (Security fix, Oct 18 2026): -h/--help prints usage (exit 0); unknown flags, missing values or extra
+    # arguments print usage and exit 2 BEFORE any inbox read or shelf.json write.
+    def _bad(m): print(m, file=sys.stderr); print(__doc__, file=sys.stderr); sys.exit(2)
+    if any(x in ("-h", "--help") for x in a): print(__doc__); sys.exit(0)
+    if not a: _bad("missing mode")
+    if a[0] == "inbox": _ok, _val, _npos = {"--dry-run", "--no-push-note"}, set(), 1
+    elif a[0] == "apply": _ok, _val, _npos = {"--dry-run", "--undo"}, {"--board", "--deck"}, 1
+    elif a[0].startswith("-"): _bad(f"unknown flag: {a[0]}")
+    else: _ok, _val, _npos = {"--dry-run"}, set(), 1
+    _pos, _i, _seen = [], 0, set()
+    while _i < len(a):
+        x = a[_i]
+        if x in _val:
+            if _i + 1 >= len(a) or a[_i + 1].startswith("-"): _bad(f"{x} needs a value")
+            _seen.add(x); _i += 2; continue
+        if x.startswith("-") and x not in _ok: _bad(f"unknown flag for {a[0]}: {x}")
+        if not x.startswith("-"): _pos.append(x)
+        _i += 1
+    if len(_pos) != _npos: _bad(f"{a[0]}: unexpected argument(s): {' '.join(_pos[1:])}")
+    if a[0] == "apply" and _seen != {"--board", "--deck"}: _bad("apply needs --board and --deck")
+    dry = "--dry-run" in a; a = [x for x in a if x != "--dry-run"]
     if a[0] == "inbox": recs = inbox_records()
     elif a[0] == "apply":
         o = lambda k: a[a.index(k) + 1] if k in a else None
