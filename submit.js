@@ -18,7 +18,7 @@
   /* Password gate (Oct 13 2026 rule): first Submit on a device asks for the team password.
      Only its SHA-256 is stored here. agent==='wellnest' skips the gate. Payloads carry auth:true + authKey (hash prefix). */
   var PH='6df85d68da9f1f949bc43346a2d84643736b955194f25738fd74100ae1874523',AK='mw-submit-auth2',AP=PH.slice(0,8);
-  function exempt(a,app){return String(a||'').toLowerCase()==='wellnest'&&['project-handoff','doc-note','doc-remove'].indexOf(String(app||'').trim().toLowerCase())<0;}
+  function exempt(a,app,dk){var ap=String(app||'').trim().toLowerCase(),ag=String(a||'').toLowerCase();if(['project-handoff','doc-note','doc-remove'].indexOf(ap)>=0)return false;return ag==='wellnest'||(ag==='branding'&&String(dk||'')==='dadbook-1');} /* Security Oct 19 2026 (Max OK 8:57 PM ICT): dadbook-1 deck exempt from team password; server caps + treats rows as untrusted */
   function authed(){try{return localStorage.getItem(AK)===AP}catch(_){return false}}
   function sha256js(str){function R(n,x){return(x>>>n)|(x<<(32-n))}var K=[],H=[],P=[],i,j,c=2;function prime(n){for(var d=2;d*d<=n;d++)if(n%d===0)return false;return true}
     while(P.length<64){if(prime(c))P.push(c);c++}for(i=0;i<64;i++){K[i]=(Math.pow(P[i],1/3)%1)*4294967296|0;if(i<8)H[i]=(Math.pow(P[i],1/2)%1)*4294967296|0}
@@ -52,13 +52,13 @@
         else{err.textContent='Wrong password. Nothing was sent.';inp.value='';inp.focus();}});});
     });return pending;}
   /* gate(agent) -> Promise<bool>. true = OK to send. Custom submit code must call this (or use send/post). */
-  function gate(agent,app){if(exempt(agent,app)||authed())return Promise.resolve(true);return ask();}
-  function stamp(p){if(!exempt(p.agent,p.app)&&authed()){p.auth=true;p.authKey=AP;}return p;}
+  function gate(agent,app,dk){if(exempt(agent,app,dk)||authed())return Promise.resolve(true);return ask();}
+  function stamp(p){if(!exempt(p.agent,p.app,p.deck)&&authed()){p.auth=true;p.authKey=AP;}return p;}
   function css(){if(document.getElementById('mws-css'))return;var s=document.createElement('style');s.id='mws-css';s.textContent=CSS;document.head.appendChild(s);}
   function q(){try{return JSON.parse(localStorage.getItem(QK)||'[]')}catch(_){return[]}}
   function setQ(a){try{localStorage.setItem(QK,JSON.stringify(a))}catch(_){}}
   function post(p){stamp(p);return fetch(URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(p)});}
-  function flush(){var all=q(),a=[],hold=[];all.forEach(function(p){(exempt(p.agent,p.app)||authed()?a:hold).push(p)});if(!a.length)return Promise.resolve(0);setQ(hold);var left=[];
+  function flush(){var all=q(),a=[],hold=[];all.forEach(function(p){(exempt(p.agent,p.app,p.deck)||authed()?a:hold).push(p)});if(!a.length)return Promise.resolve(0);setQ(hold);var left=[];
     return Promise.all(a.map(function(p){return post(p).catch(function(){left.push(p)})})).then(function(){if(left.length)setQ(q().concat(left));return a.length-left.length;});}
   function button(el,o){css();o=o||{};
     var wrap=document.createElement('div');wrap.className='mws-wrap';
@@ -70,7 +70,7 @@
       if(s==='sending'){b.textContent='Sending';b.disabled=true;m.textContent='';}
       if(s==='sent'){b.innerHTML=CHECK+'<span>Sent</span>';b.classList.add('sent');m.textContent='Sent. Tap again to send an update.';}
       if(s==='fail'){b.textContent='Not Sent Yet';b.classList.add('fail');m.textContent='Saved on this device. Tap to retry; it also retries when you reopen.';}}
-    b.addEventListener('click',function(){if(b.disabled)return;b.disabled=true;gate(o.agent,o.app).then(function(ok){b.disabled=false;if(!ok){state('idle');m.textContent='Password needed. Nothing was sent.';return;}state('sending');
+    b.addEventListener('click',function(){if(b.disabled)return;b.disabled=true;gate(o.agent,o.app,o.deck).then(function(ok){b.disabled=false;if(!ok){state('idle');m.textContent='Password needed. Nothing was sent.';return;}state('sending');
       var p={agent:o.agent,app:o.app,deck:o.deck,results:o.getResults?o.getResults():null,notes:o.getNotes?o.getNotes():'',sentAt:new Date().toISOString(),ua:navigator.userAgent};
       post(p).then(function(){state('sent')},function(){setQ(q().concat([p]));state('fail')});});});
     state(q().some(function(p){return p.agent===o.agent&&p.deck===o.deck})?'fail':'idle');
@@ -78,7 +78,7 @@
     return {el:wrap,state:state};}
   /* send(o): one-shot submit with no button (mid-deck partial). o: {agent,app,deck,results,notes,partial,answered,total,unanswered,test}.
      Resolves true when posted, false when queued on device for retry. o.noQueue (always on for apps 'doc-note' and 'doc-remove'): never queued, just resolves false. */
-  function send(o){o=o||{};return gate(o.agent,o.app).then(function(ok){if(!ok){w.MWSubmit.blocked=true;return false;}w.MWSubmit.blocked=false;var p={agent:o.agent,app:o.app,deck:o.deck,results:o.results||null,notes:o.notes||'',sentAt:new Date().toISOString(),ua:navigator.userAgent};
+  function send(o){o=o||{};return gate(o.agent,o.app,o.deck).then(function(ok){if(!ok){w.MWSubmit.blocked=true;return false;}w.MWSubmit.blocked=false;var p={agent:o.agent,app:o.app,deck:o.deck,results:o.results||null,notes:o.notes||'',sentAt:new Date().toISOString(),ua:navigator.userAgent};
     ['partial','answered','total','unanswered','test'].forEach(function(k){if(o[k]!==undefined)p[k]=o[k]});
     var nq=o.noQueue||['doc-note','doc-remove'].indexOf(String(o.app||'').trim().toLowerCase())>=0;return post(p).then(function(){return true},function(){if(!nq)setQ(q().concat([p]));return false});});}
   w.MWSubmit={button:button,send:send,flush:flush,gate:gate,isAuthed:authed,url:URL,blocked:false};
