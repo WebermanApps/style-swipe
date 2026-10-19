@@ -1,4 +1,4 @@
-"""Member Catalog Deck Two, Oct 19 2026 (Max submitted round 1 at 11:48 ICT; round two refines his winners, one coherent list-detail catalog). Usage: python3 tools/build_mcd_1019.py <outdir>   (from the repo root)
+"""Member Catalog Refinements (renamed from Member Catalog Deck Two, Max Oct 19 11:57 ICT: no numbers or number words in deck names), Oct 19 2026 (Max submitted round 1 at 11:48 ICT; round two refines his winners, one coherent list-detail catalog). Usage: python3 tools/build_mcd_1019.py <outdir>   (from the repo root)
 Same kit and process as build_wnc_1019.py (team_kit publish, md1018_kit page writer, standard white deck look, 'Built by Max Weberman'
 footer, Notes + Share). 20 this-or-that pairs (no 10-pick cap: Max asked for 20). Results route to Branding (Swatch), picks logged only.
 Listed on the Branding board's Max's Picks (requested flow), not on any UpKeep board (Max, Oct 19 11:31 ICT: no swipe decks on UpKeep boards for now).
@@ -13,13 +13,13 @@ from md1018_kit import page, EMOJI
 from split_deck import theme_name_ok
 import mcd1019b as C
 BR = dict(submit_agent="branding", submit_to="Branding Agent 3fac5054-3a3d-49b1-af61-59883f7fdc78", board="branding", audience="Max")
-DID, NAME, SLUG = "branding-member-catalog-deck-two", "Member Catalog Deck Two", "member-catalog-two"
+DID, NAME, SLUG = "branding-member-catalog-deck-two", "Member Catalog Refinements", "member-catalog-two"
 REQ = ("Oct 19 2026 11:48 ICT: Max submitted round one (branding-member-catalog-deck) and asked for round two refining his winners. Original ask 11:29 ICT: Max asked directly for a 20-card this-or-that deck to design the Members section of the UpKeep Members Command Center: "
        "an easy catalog of every Smart Upkeep member, organized into name and contact info, home info and membership info. Laptop-first, phone must work.")
 BAD = re.compile(r"wickfield|2573|thai|thailand|[\u0E00-\u0E7F]", re.I)
 if __name__ == "__main__":
     outdir = sys.argv[1]; os.makedirs(outdir, exist_ok=True); pairs = C.T_MEMBERS2(); n = len(pairs); assert n == 20
-    assert not re.search(r"\d", NAME)  # name given by Max verbatim; theme_name_ok would reject the trailing "Two"
+    assert theme_name_ok(NAME) and not re.search(r"\d", NAME)
     caption_rule.guard(pairs, DID); blob = json.dumps(pairs, ensure_ascii=False)
     assert not EMOJI.search(blob), "emoji"; assert not BAD.search(blob), BAD.search(blob)
     assert all("SAMPLE" in p[k]["visual"]["svg"] for p in pairs for k in ("optionA", "optionB")), "Sample label"
