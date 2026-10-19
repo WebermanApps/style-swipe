@@ -124,7 +124,7 @@ function run(){if(document.body.dataset.mwLayout===V)return;var cc=q('.mw-cc-hea
  if(ex.children.length){after.after(ex);after=ex}
  var bf=mk('div','mw-branded-footer');bf.id='mw-bf';var rw=mk('div','mw-bf-routines');
  if(!rout){rout=mk('section');rout.setAttribute('data-routines','routines.json');need('routines-section.js',false)}rw.appendChild(rout);
- var sf=mk('div','mw-bf-standard'),ba=mk('a','mw-built');ba.innerHTML=MACHAN;ba.href='https://maxweberman.com';sf.append(ba);
+ var sf=mk('div','mw-bf-standard'),ba=mk('a','mw-built');ba.innerHTML=MACHAN;ba.href='https://webermanapps.github.io/style-swipe/machan-story-awczm5/';sf.append(ba);
  bf.append(mk('hr','mw-bf-divider'),rw,sf);
  var tail=qa('body>script,body>style,body>template');document.body.appendChild(bf);tail.forEach(function(s){document.body.appendChild(s)});
  /* ly7 (Max Oct 16 2026 21:36 ICT): no stray 'Board · Updated / Add To Home Screen / Share' row under the header. Updated + Add To Home Screen move next to the footer Share; Share is not duplicated. */
