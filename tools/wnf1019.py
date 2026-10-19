@@ -19,17 +19,17 @@ def T_CAN():
       ("lgm", "Lemongrass, Ginger, Mint", "Zesty and cooling together.", "fresh", B("Lemongrass, ginger, mint", "Reform", "Green tea", ["Lemongrass", "Ginger", "Mint"], "Zesty and cool")),
       ("klb", "Kaffir Lime, Lemon Basil, Ginger", "Citrus-leaf brightness with warmth.", "bold", B("Kaffir lime, lemon basil, ginger", "Reform", "Green tea", ["Kaffir lime", "Lemon basil", "Ginger"], "Citrus and warmth")))
     P("Herb pairing", L, "Reform herbs on oolong", "which herbs suit Reform on an oolong base?",
-      ("gop", "Ginger And Orange Peel", "Warm and sweet-citrus over toasty oolong.", "warm", B("Ginger, orange peel", "Reform", "Oolong", ["Ginger", "Orange peel", "Lemongrass"], "Warm citrus")),
+      ("gop", "Ginger And Orange Peel (New)", "Warm and sweet-citrus over toasty oolong; orange peel is new.", "warm", B("Ginger, orange peel", "Reform", "Oolong", ["Ginger", "Orange peel", "Lemongrass"], "Warm citrus")),
       ("tbm", "Thai Basil And Mint", "Herbal and fresh over the roast.", "fresh", B("Thai basil, mint", "Reform", "Oolong", ["Thai basil", "Mint", "Ginger"], "Herbal and fresh")))
     P("Base tea", L, "Core Reset base tea", "should Core Reset start from white tea or oolong?",
       ("white", "White Tea Base", "Soft, light and delicate.", "calm", B("White tea base", "Core Reset", "White tea", ["Chrysanthemum", "Jasmine", "Longan"], "Soft and light")),
       ("oolong", "Oolong Base", "A little deeper, still smooth.", "warm", B("Oolong base", "Core Reset", "Oolong", ["Holy basil", "Longan", "Ginger"], "Smooth and deeper")))
-    P("Herb pairing", L, "Core Reset herbs on white tea", "which flowers suit Core Reset on white tea?",
+    P("Herb pairing", L, "Core Reset herbs on white tea", "which herbs and flowers suit Core Reset on white tea?",
       ("cj", "Chrysanthemum And Jasmine", "Two classic white-tea flowers.", "calm", B("Chrysanthemum, jasmine", "Core Reset", "White tea", ["Chrysanthemum", "Jasmine", "Longan"], "Floral and soft")),
-      ("rl", "Rose And Lemongrass", "Floral with a clean citrus line.", "fresh", B("Rose, lemongrass", "Core Reset", "White tea", ["Rose", "Lemongrass", "Mint"], "Floral and clean")))
+      ("hl", "Holy Basil And Lemongrass", "Herby with a clean citrus line.", "fresh", B("Holy basil, lemongrass", "Core Reset", "White tea", ["Holy basil", "Lemongrass", "Mint"], "Herby and clean")))
     P("Herb pairing", L, "Core Reset herbs on oolong", "which herbs suit Core Reset on oolong?",
       ("hl", "Holy Basil And Longan", "Herbal with a gentle dried-fruit sweetness.", "calm", B("Holy basil, longan", "Core Reset", "Oolong", ["Holy basil", "Longan", "Chrysanthemum"], "Herbal and sweet")),
-      ("og", "Osmanthus And Ginger", "Apricot-like flower with soft warmth.", "warm", B("Osmanthus, ginger", "Core Reset", "Oolong", ["Osmanthus", "Ginger", "Longan"], "Floral warmth")))
+      ("og", "Osmanthus (New) And Ginger", "Apricot-like flower with soft warmth; osmanthus is new.", "warm", B("Osmanthus, ginger", "Core Reset", "Oolong", ["Osmanthus", "Ginger", "Longan"], "Floral warmth")))
     P("Base tea", L, "Lengthen base tea", "should Lengthen start from green tea or white tea?",
       ("green", "Green Tea Base", "Clean and lively.", "fresh", B("Green tea base", "Lengthen", "Green tea", ["Jasmine", "Mint", "Lemongrass"], "Clean and lively")),
       ("white", "White Tea Base", "Airy and gentle.", "calm", B("White tea base", "Lengthen", "White tea", ["Chrysanthemum", "Butterfly pea", "Lemongrass"], "Airy and gentle")))
@@ -38,7 +38,7 @@ def T_CAN():
       ("bpl", "Butterfly Pea And Lemongrass", "Deep blue cup with citrus notes.", "playful", B("Butterfly pea, lemongrass", "Lengthen", "Green tea", ["Butterfly pea", "Lemongrass", "Mint"], "Blue and citrus")))
     P("Herb pairing", L, "Lengthen herbs on white tea", "which herbs suit Lengthen on white tea?",
       ("cbp", "Chrysanthemum And Butterfly Pea", "Gold flower, blue tint, very gentle.", "calm", B("Chrysanthemum, butterfly pea", "Lengthen", "White tea", ["Chrysanthemum", "Butterfly pea", "Lemongrass"], "Gentle and floral")),
-      ("rm", "Rose And Mint", "Soft floral with a cool finish.", "fresh", B("Rose, mint", "Lengthen", "White tea", ["Rose", "Mint", "Jasmine"], "Floral and cool")))
+      ("jm", "Jasmine And Mint", "Soft floral with a cool finish.", "fresh", B("Jasmine, mint", "Lengthen", "White tea", ["Jasmine", "Mint", "Lemon basil"], "Floral and cool")))
     P("Base tea", L, "Tea strength", "should each blend be mostly tea with herbs or mostly herbs on a lighter tea base?",
       ("tea", "Tea-Led Blend", "Base tea is the main taste, herbs support it.", "focused", cc("Tea-led blend", pc(name="Reform", tag="Tea-led, herbs support"))),
       ("herb", "Herb-Led Blend", "Herbs lead, a lighter tea base underneath.", "calm", cc("Herb-led blend", pc(name="Reform", tag="Herb-led, light tea base"))))

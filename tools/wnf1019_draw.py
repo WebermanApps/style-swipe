@@ -72,7 +72,10 @@ ICOL = {"Assam Miang": "#7A5A2E", "Oolong": "#A0763A", "Mulberry leaf": "#5E8C3A
         "Mango": "#F0A830", "Tamarind": "#7A4A2A", "Green tea": "#7E9A4A", "White tea": "#E6DCC4", "Orange peel": "#E8892B", "Osmanthus": "#E9A23B", "Rose": "#D9667E"}
 def swatch(cx, cy, r, name):
     col = ICOL.get(name, "#999"); s = C(cx, cy, r, col + "33", col, 2) + C(cx, cy, r * .55, col)
-    return s + T(cx, cy + r + 18, name, 13, INKW, HIND, 600)
+    s += T(cx, cy + r + 18, name, 13, INKW, HIND, 600)
+    if name in ("Osmanthus", "Orange peel"):  # not in Max's Oct 19 ingredients deck: always marked New
+        s += R(cx - 20, cy - r - 22, 40, 16, "#FFFFFF", "#B7860B", 8, 1.4) + T(cx, cy - r - 10, "New", 11, "#8A6510", HIND, 700)
+    return s
 def blend_card(note, theme, base, ings, mood):
     s = R(0, 0, 480, 600, "#FBFAF7") + R(30, 64, 420, 470, "#FFFFFF", "#E6DFD1", 14) + R(30, 64, 420, 8, KRAFT, rx=4)
     s += T(240, 112, theme.upper(), 22, INKW, MONO, 600, extra='letter-spacing="4"') + T(240, 142, mood, 15, MUTEW, HIND, 400, extra='font-style="italic"')
