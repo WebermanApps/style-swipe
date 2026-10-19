@@ -88,7 +88,7 @@
 #mw-mid.mw-middle{display:block!important;position:relative!important;box-sizing:border-box!important;margin:0!important;padding:0!important;float:none!important;max-width:none!important;min-width:0!important}
 /* ly5 margin fix (ref grokbot-cc 43699cb): CSS fallback so the middle sits in the same centered 1100px column even before/without JS placement; heroes ([data-mw-slot=hero]) stay outside #mw-mid, full width (WellNest). */
 #mw-mid.mw-middle{width:min(1100px,calc(100% - 32px))!important;margin-left:auto!important;margin-right:auto!important}
-/* ly5 (Oct 16 2026, Branding Agent): standard footer credit = Machan mark (22px inline SVG) + 'Built by Machan', links to maxweberman.com */
+/* ly5 (Oct 16 2026, Branding Agent): standard footer credit = Machan mark (22px inline SVG) + 'Built by Machan', links to the Machan story (style-swipe/machan-story-awczm5) */
 #mw-bf a.mw-built{display:inline-flex!important;align-items:center!important;min-height:44px!important;text-decoration:none!important;color:var(--bh-muted)!important}
 #mw-bf a.mw-built .mw-machan{display:inline-flex!important;align-items:center!important;gap:6px!important;font:500 14px/18px var(--bh-body)!important;color:var(--bh-muted)!important;text-decoration:underline!important;text-decoration-color:#d9d1c3!important;text-underline-offset:3px!important}
 #mw-bf a.mw-built .mw-machan-mark{display:block!important;width:22px!important;height:22px!important;flex:none!important}
@@ -176,3 +176,8 @@ body.mw-hero-behind-header #mw-bh.mw-branded-header{background:transparent!impor
 @media(min-width:700px){#mw-bh .mw-bh-action .mw-act-label,#mw-bh .mw-bh-action [data-label]{display:inline!important}}
 /* ly13 R106 rollout: plain empty line inside an empty To-Do fold-down */
 #mw-bh .mw-bh-todo .mw-todo-empty{margin:0!important;padding:4px 0 0!important}
+
+/* ly14n (Oct 19 2026, Branding): Built by Machan wink, same motion as the boards' mw-mt footer. Hover, keyboard focus or tap (:active) makes Machan wink; reduced motion keeps the still wink. CSS only. */
+#mw-bf a.mw-built .mw-machan-mark{transform-origin:50% 62%}#mw-bf a.mw-built .mw-machan-mark path[d^="M13 13.1"]{transform-box:fill-box;transform-origin:50% 40%}
+@media (prefers-reduced-motion:no-preference){#mw-bf a.mw-built:hover .mw-machan-mark,#mw-bf a.mw-built:focus-visible .mw-machan-mark,#mw-bf a.mw-built:active .mw-machan-mark{animation:mwWkT .62s ease-in-out}#mw-bf a.mw-built:hover .mw-machan-mark path[d^="M13 13.1"],#mw-bf a.mw-built:focus-visible .mw-machan-mark path[d^="M13 13.1"],#mw-bf a.mw-built:active .mw-machan-mark path[d^="M13 13.1"]{animation:mwWkE .62s ease-in-out}}
+@keyframes mwWkT{0%,100%{transform:none}35%,60%{transform:rotate(-7deg) scale(1.06)}}@keyframes mwWkE{0%,100%{transform:none}35%,60%{transform:scaleY(1.9)}}

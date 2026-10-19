@@ -1615,5 +1615,41 @@ try{const _sr=submitResults;submitResults=function(){const r=_sr.apply(this,argu
  r.keep=picks.filter(p=>p.answer==='yes').map(p=>lab(p.card_id));r.delete=picks.filter(p=>p.answer==='no').map(p=>lab(p.card_id))}}catch(e){}return r}}catch(e){}
 })();</script>
 <!--/mw-r116-->
+<!--mw-wink v1--><style id="mw-wink">/* Built by Machan wink (same motion as the boards' mw-mt footer): hover, keyboard focus or tap makes Machan wink; reduced motion keeps the still wink. */
+.mw-machan-mark{transform-origin:50% 62%}.mw-machan-mark path[d^="M13 13.1"]{transform-box:fill-box;transform-origin:50% 40%}
+@media (prefers-reduced-motion:no-preference){a:hover>.mw-machan .mw-machan-mark,a:focus-visible>.mw-machan .mw-machan-mark,a.mw-wink>.mw-machan .mw-machan-mark{animation:mwWkT .62s ease-in-out}
+a:hover>.mw-machan .mw-machan-mark path[d^="M13 13.1"],a:focus-visible>.mw-machan .mw-machan-mark path[d^="M13 13.1"],a.mw-wink>.mw-machan .mw-machan-mark path[d^="M13 13.1"]{animation:mwWkE .62s ease-in-out}}
+@keyframes mwWkT{0%,100%{transform:none}35%,60%{transform:rotate(-7deg) scale(1.06)}}@keyframes mwWkE{0%,100%{transform:none}35%,60%{transform:scaleY(1.9)}}
+</style><script id="mw-wink-js">/* tap = wink: adds a class for 0.7s on touchstart of a Built by Machan link; nothing else */
+(function(){document.addEventListener('touchstart',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a||!a.querySelector(':scope>.mw-machan'))return;a.classList.remove('mw-wink');void a.offsetWidth;a.classList.add('mw-wink');setTimeout(function(){a.classList.remove('mw-wink')},700)},{passive:true})})();
+</script><!--/mw-wink-->
+<!--mw-pairfit v1--><style id="mw-pairfit">/* mw-pairfit v1 (Max, Oct 19 2026 11:26 PM ICT): a pair sits side by side from 700px up; under 700px it stays side by side unless BOTH options are landscape (aspect > 1.2), then it stacks. */
+@media (min-width:700px){.pair,.opts:not(.single){grid-template-columns:1fr 1fr!important}}
+@media (max-width:699.98px){.pair{grid-template-columns:1fr 1fr!important;gap:8px!important}.pair.mw-pair-wide,.pair.wide{grid-template-columns:1fr!important;gap:14px!important}
+.opts.mw-pair-wide{grid-template-columns:1fr!important;grid-template-rows:minmax(0,1fr) minmax(0,1fr)!important}}
+</style><script id="mw-pairfit-js">/* mw-pairfit v1: reads each option's aspect from data-aspect, else from its visual (.stage / .vis): a card with its own text uses its CSS aspect-ratio (none = not landscape);
+ otherwise the main <img> natural size, <video> size, <canvas> size, or <svg> viewBox (an <svg> whose <image> fills 30%+ of it uses that image's width/height attributes). Read-only: it loads nothing, fetches nothing and only toggles one class. */
+(function(){var R=1.2,SEL='.pair,.opts:not(.single)',q=0;
+function num(v){if(!v)return 0;var m=String(v).split(/[\/:x]/),a=parseFloat(m[0]),b=m.length>1?parseFloat(m[1]):1;return a>0&&b>0?a/b:0}
+function txt(v){var w=document.createTreeWalker(v,NodeFilter.SHOW_TEXT,null),n;while((n=w.nextNode()))if(n.nodeValue.trim()&&!(n.parentElement&&n.parentElement.closest('svg,script,style')))return true;return false}
+function ar(o){var d=o.hasAttribute('data-aspect')?o:o.querySelector('[data-aspect]');if(d){var x=num(d.getAttribute('data-aspect'));if(x)return x}
+ var v=o.querySelector('.stage,.vis'),L;
+ if(v){if(txt(v)){var c=v.firstElementChild;return c?num(getComputedStyle(c).aspectRatio.replace('auto','').trim()):0}L=v.querySelectorAll('img,video,canvas,svg')}
+ else L=o.querySelectorAll('img,video,canvas,svg');
+ var best=null,ba=0;[].forEach.call(L,function(e){if(e.closest('.tick,.heart,.side,.k,.ol,.ic'))return;if(e.tagName.toLowerCase()==='svg'&&e.parentElement&&e.parentElement.closest('svg'))return;var r=e.getBoundingClientRect(),a=r.width*r.height;if(a>ba){ba=a;best=e}});
+ if(!best||ba<1500)return 0;var t=best.tagName.toLowerCase();
+ if(t==='img')return best.naturalWidth&&best.naturalHeight?best.naturalWidth/best.naturalHeight:0;
+ if(t==='video')return best.videoWidth&&best.videoHeight?best.videoWidth/best.videoHeight:num(best.getAttribute('width')+'/'+best.getAttribute('height'));
+ if(t==='canvas')return best.width&&best.height?best.width/best.height:0;
+ var vb=best.viewBox&&best.viewBox.baseVal,sw=vb&&vb.width?vb.width:parseFloat(best.getAttribute('width')),sh=vb&&vb.height?vb.height:parseFloat(best.getAttribute('height')),im=null,ia=0;
+ [].forEach.call(best.querySelectorAll('image'),function(i){var w=parseFloat(i.getAttribute('width')),h=parseFloat(i.getAttribute('height'));if(w>0&&h>0&&w*h>ia){ia=w*h;im=w/h}});
+ if(im&&sw&&sh&&ia>=.3*sw*sh)return im;return sw>0&&sh>0?sw/sh:0}
+function fit(p){var o=[].filter.call(p.children,function(c){return c.classList.contains('opt')});var w=o.length===2&&ar(o[0])>R&&ar(o[1])>R;if(p.classList.contains('mw-pair-wide')!==w)p.classList.toggle('mw-pair-wide',w)}
+function all(){q=0;[].forEach.call(document.querySelectorAll(SEL),fit)}
+function soon(){if(!q)q=requestAnimationFrame(all)}
+document.addEventListener('load',function(e){var t=e.target;if(t&&(t.tagName==='IMG'||t.tagName==='image')&&t.closest&&t.closest(SEL))soon()},true);
+document.addEventListener('loadedmetadata',function(e){if(e.target&&e.target.closest&&e.target.closest(SEL))soon()},true);
+new MutationObserver(soon).observe(document.documentElement,{childList:true,subtree:true});soon()})();
+</script><!--/mw-pairfit-->
 </body>
 </html>

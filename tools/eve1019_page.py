@@ -219,4 +219,33 @@ $('copy').onclick=async()=>{const t=picksText();try{await navigator.clipboard.wr
 $('toEnd').onclick=()=>show('s-end');$('review').onclick=()=>{S.i=0;render();show('s-deck')};
 addEventListener('hashchange',()=>{const h=location.hash.slice(1),m=h.match(/^deck-(\d+)$/),on=id=>$(id).classList.contains('on');if(m){const k=Math.min(N-1,Math.max(0,+m[1]-1));if(k!==S.i||!on('s-deck')){S.i=k;save();render();if(!on('s-deck'))show('s-deck')}}else if(h==='send'&&!on('s-send'))toSend();else if(h==='end'&&!on('s-end'))show('s-end');else if((h===''||h==='cover')&&!on('s-cover'))show('s-cover')});
 (function(){const h=location.hash.slice(1),m=h.match(/^deck-(\d+)$/);if(m){S.i=Math.min(N-1,Math.max(0,+m[1]-1));render();show('s-deck')}else if(h==='send')toSend();else if(h==='end')show('s-end');else render()})();
-</script></body></html>'''
+</script>
+<!--mw-pairfit v1--><style id="mw-pairfit">/* mw-pairfit v1 (Max, Oct 19 2026 11:26 PM ICT): a pair sits side by side from 700px up; under 700px it stays side by side unless BOTH options are landscape (aspect > 1.2), then it stacks. */
+@media (min-width:700px){.pair,.opts:not(.single){grid-template-columns:1fr 1fr!important}}
+@media (max-width:699.98px){.pair{grid-template-columns:1fr 1fr!important;gap:8px!important}.pair.mw-pair-wide,.pair.wide{grid-template-columns:1fr!important;gap:14px!important}
+.opts.mw-pair-wide{grid-template-columns:1fr!important;grid-template-rows:minmax(0,1fr) minmax(0,1fr)!important}}
+</style><script id="mw-pairfit-js">/* mw-pairfit v1: reads each option's aspect from data-aspect, else from its visual (.stage / .vis): a card with its own text uses its CSS aspect-ratio (none = not landscape);
+ otherwise the main <img> natural size, <video> size, <canvas> size, or <svg> viewBox (an <svg> whose <image> fills 30%+ of it uses that image's width/height attributes). Read-only: it loads nothing, fetches nothing and only toggles one class. */
+(function(){var R=1.2,SEL='.pair,.opts:not(.single)',q=0;
+function num(v){if(!v)return 0;var m=String(v).split(/[\/:x]/),a=parseFloat(m[0]),b=m.length>1?parseFloat(m[1]):1;return a>0&&b>0?a/b:0}
+function txt(v){var w=document.createTreeWalker(v,NodeFilter.SHOW_TEXT,null),n;while((n=w.nextNode()))if(n.nodeValue.trim()&&!(n.parentElement&&n.parentElement.closest('svg,script,style')))return true;return false}
+function ar(o){var d=o.hasAttribute('data-aspect')?o:o.querySelector('[data-aspect]');if(d){var x=num(d.getAttribute('data-aspect'));if(x)return x}
+ var v=o.querySelector('.stage,.vis'),L;
+ if(v){if(txt(v)){var c=v.firstElementChild;return c?num(getComputedStyle(c).aspectRatio.replace('auto','').trim()):0}L=v.querySelectorAll('img,video,canvas,svg')}
+ else L=o.querySelectorAll('img,video,canvas,svg');
+ var best=null,ba=0;[].forEach.call(L,function(e){if(e.closest('.tick,.heart,.side,.k,.ol,.ic'))return;if(e.tagName.toLowerCase()==='svg'&&e.parentElement&&e.parentElement.closest('svg'))return;var r=e.getBoundingClientRect(),a=r.width*r.height;if(a>ba){ba=a;best=e}});
+ if(!best||ba<1500)return 0;var t=best.tagName.toLowerCase();
+ if(t==='img')return best.naturalWidth&&best.naturalHeight?best.naturalWidth/best.naturalHeight:0;
+ if(t==='video')return best.videoWidth&&best.videoHeight?best.videoWidth/best.videoHeight:num(best.getAttribute('width')+'/'+best.getAttribute('height'));
+ if(t==='canvas')return best.width&&best.height?best.width/best.height:0;
+ var vb=best.viewBox&&best.viewBox.baseVal,sw=vb&&vb.width?vb.width:parseFloat(best.getAttribute('width')),sh=vb&&vb.height?vb.height:parseFloat(best.getAttribute('height')),im=null,ia=0;
+ [].forEach.call(best.querySelectorAll('image'),function(i){var w=parseFloat(i.getAttribute('width')),h=parseFloat(i.getAttribute('height'));if(w>0&&h>0&&w*h>ia){ia=w*h;im=w/h}});
+ if(im&&sw&&sh&&ia>=.3*sw*sh)return im;return sw>0&&sh>0?sw/sh:0}
+function fit(p){var o=[].filter.call(p.children,function(c){return c.classList.contains('opt')});var w=o.length===2&&ar(o[0])>R&&ar(o[1])>R;if(p.classList.contains('mw-pair-wide')!==w)p.classList.toggle('mw-pair-wide',w)}
+function all(){q=0;[].forEach.call(document.querySelectorAll(SEL),fit)}
+function soon(){if(!q)q=requestAnimationFrame(all)}
+document.addEventListener('load',function(e){var t=e.target;if(t&&(t.tagName==='IMG'||t.tagName==='image')&&t.closest&&t.closest(SEL))soon()},true);
+document.addEventListener('loadedmetadata',function(e){if(e.target&&e.target.closest&&e.target.closest(SEL))soon()},true);
+new MutationObserver(soon).observe(document.documentElement,{childList:true,subtree:true});soon()})();
+</script><!--/mw-pairfit-->
+</body></html>'''

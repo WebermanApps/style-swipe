@@ -38,11 +38,11 @@ Or `<meta name="mw-agent-id">` (+ `mw-agent-name`), `data-agent="<slug>"` (regis
 ## ly1: uniform board layout (R76, Max Oct 16 2026 12:09 ICT)
 ```html
 <link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/mw-layout.css?v=ly8">
-<script src="https://webermanapps.github.io/style-swipe/kit/mw-layout.js?v=ly14m" defer></script>
+<script src="https://webermanapps.github.io/style-swipe/kit/mw-layout.js?v=ly14n" defer></script>
 ```
 - **Branded header** (`.mw-branded-header`): `.mw-bh-cc` Command Center header, `.mw-bh-decks` deck shelf + counter, `.mw-bh-morning` Morning Report dropdown (closed by default).
 - Middle content: everything else; `data-mw-slot="hero"` items go first (WellNest hero, Grok Bot Top Priorities).
-- **Branded footer** (`.mw-branded-footer`): `.mw-bf-routines` Routines, then `.mw-bf-standard` standard footer (Share + Machan mark + "Built by Machan" -> maxweberman.com; kit ly5; added if missing).
+- **Branded footer** (`.mw-branded-footer`): `.mw-bf-routines` Routines, then `.mw-bf-standard` standard footer (Share + Machan mark + "Built by Machan" -> Machan story (style-swipe/machan-story-awczm5/); kit ly5; added if missing).
 - **R81 (ly6)**: `body.mw-hero-behind-header` makes `#mw-bh.mw-branded-header` background transparent with no box-shadow (opt-in; WellNest render behind the header). Other boards unaffected.
 - **ly7**: stray rows under the header (`nav.topnav`, `.mw-cc-extras`, `.mw-topbar`) are emptied: Share removed (footer has it), "Updated ..." and Add To Home Screen move into `.mw-bf-extras` in the standard footer next to Share; the empty row is hidden.
 - Markers override detection: `data-mw-slot="header|shelf|counter|morning|hero|routines|footer-pre|footer"`; `data-mw-keep` skips the Morning Report wrap.
