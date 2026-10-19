@@ -38,7 +38,7 @@ Or `<meta name="mw-agent-id">` (+ `mw-agent-name`), `data-agent="<slug>"` (regis
 ## ly1: uniform board layout (R76, Max Oct 16 2026 12:09 ICT)
 ```html
 <link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/mw-layout.css?v=ly8">
-<script src="https://webermanapps.github.io/style-swipe/kit/mw-layout.js?v=ly8" defer></script>
+<script src="https://webermanapps.github.io/style-swipe/kit/mw-layout.js?v=ly14m" defer></script>
 ```
 - **Branded header** (`.mw-branded-header`): `.mw-bh-cc` Command Center header, `.mw-bh-decks` deck shelf + counter, `.mw-bh-morning` Morning Report dropdown (closed by default).
 - Middle content: everything else; `data-mw-slot="hero"` items go first (WellNest hero, Grok Bot Top Priorities).
