@@ -1,7 +1,7 @@
 """Art Taste Deck page (Max Oct 19 2026 10:58 PM ICT: 'show me a swipe deck with art. lets start to figure out what kind of art i like.').
 The Max deck style (tools/eve1019_page.py TPL: dadbook layout in Max's brand, Khand + Hind, cream, terracotta / lagoon / jungle pops,
-subtle shine and glow, Both / Neither / Love / Notes, 'Next deck coming shortly.', 'Built by Max Weberman' -> maxweberman.com) patched so
-the ART is the hero: each option is a large framed artwork (img/<key>.jpg next to the page) with title, artist, year, a one-line
+subtle shine and glow, Both / Neither / Love / Notes, 'Next deck coming shortly.', then (Max Oct 19 2026 11:27 PM ICT) footer 'Built by Machan' -> the Machan story page) patched so
+the ART is the hero (pairs side by side from 700px up; on phones side by side unless both images are wide landscapes, then stacked): each option is a large framed artwork (img/<key>.jpg next to the page) with title, artist, year, a one-line
 'what it is', three tags (style, era, mood) and a small image credit (source link + license). Team-gated submit via ../submit.js (unchanged).
 Results: version-4 pairs format plus artA / artB {key,title,artist,year,style,era,mood} so follow-up decks can narrow by tag.
 Usage: write(deck_json_dict, slug, meta) -> path   (meta: kicker, lede, em, h1, strip, art{key:{...}})"""
@@ -46,7 +46,14 @@ function preload(k){const p=D.pairs[k];if(!p)return;[p.A,p.B].forEach(o=>{const 
         "$('kicker').textContent=D.kicker;$('lede').textContent=D.lede;$('strip').innerHTML=(D.strip||[]).map(k=>`<img src=\"img/${k}.jpg\" alt=\"\">`).join('');")
     rep("(()=>{const t=D.title,e=D.em", "(()=>{const t=D.h1||D.title,e=D.em")
     rep("</style></head>", """@media (min-width:1600px){.hero .lac{max-width:980px}.strip img{height:150px;max-width:240px}}
-@media (min-width:2200px){.hero .lac{max-width:1360px;padding:56px 60px 50px}h1{font-size:108px}.lede{font-size:27px}.strip{gap:14px;margin-bottom:26px}.strip img{height:260px;max-width:420px;border-radius:10px}.steps span{font-size:21px}.steps b{width:40px;height:40px;font-size:22px}.hero .btn{min-height:66px;font-size:25px;padding:0 44px}.lab{font-size:17px}}
+@media (min-width:2200px){.hero .lac{max-width:1360px;padding:56px 60px 50px}h1{font-size:108px}.lede{font-size:27px}.strip{gap:14px;margin-bottom:26px}.strip img{height:260px;max-width:420px;border-radius:10px}.steps span{font-size:21px}.steps b{width:40px;height:40px;font-size:22px}.hero .btn{min-height:66px;font-size:25px;padding:0 44px}.lab{font-size:17px}.endc h2{font-size:72px}.endc p{font-size:26px}.tri i{width:52px;height:4px}}
+</style></head>""")
+    rep('<footer><a href="https://maxweberman.com"><span>Built by Max Weberman</span></a></footer>',
+        '<footer><a href="https://webermanapps.github.io/style-swipe/machan-story-awczm5/"><span>Built by Machan</span></a></footer>')
+    rep('<div class="pair" id="pair">', '<div class="pair${(p.A.w/p.A.h>1.15&&p.B.w/p.B.h>1.15)?\' wide\':\' duo\'}" id="pair">')
+    rep("</style></head>", """@media (max-width:699px){.pair.duo{grid-template-columns:1fr 1fr;gap:8px}.pair.duo .frame{padding:6px;min-height:120px}.pair.duo .frame img{max-height:44vh}
+.pair.duo .opt .ol{display:block;padding:8px 8px 10px}.pair.duo .opt .k{float:left;margin:0 6px 2px 0;width:22px;height:22px;font-size:13px}.pair.duo .opt .ot{font-size:16px}.pair.duo .opt .oa,.pair.duo .opt .od{font-size:12.5px;line-height:1.35}
+.pair.duo .opt .tg{gap:3px}.pair.duo .opt .tg i{font-size:10px;padding:1px 6px}.pair.duo .opt .cr{padding:0 8px 8px;font-size:9.5px}.pair.duo .tick{width:24px;height:24px;top:6px;right:6px}}
 </style></head>""")
     rep("<p>Thank you, Max.</p>", "<p>Thank you, Max. Your picks shape the next one.</p>")
     return T
