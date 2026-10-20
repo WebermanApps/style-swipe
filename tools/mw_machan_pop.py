@@ -14,8 +14,18 @@ def apply(t,made=None):
     if made and 'class="mw-made"' not in t:
         i=t.find('</h1>')
         if i>0: t=t[:i+5]+'<p class="mw-made">'+made+'</p>'+t[i+5:]
+    t=media_stop(t)
     i=t.rfind('</body>')
     return t[:i]+BLK+t[i:] if i>=0 else t+BLK
+
+# Media stop (Oct 20 2026 ICT): pause+reset every <audio>/<video>/Audio() on card change, swipe, Next/Back/Skip,
+# answer-advance, Machan Decides, end/send screen and when the page is hidden; resets play buttons. Idempotent.
+MS='<!--mw-media-stop v1--><script id="mw-media-stop">(function(){if(window.__mwms)return;window.__mwms=1;\nvar M=new Set(),P=HTMLMediaElement.prototype,op=P.play;P.play=function(){M.add(this);return op.apply(this,arguments)};\nvar PB=\'.playpill,.v-sound,.v-sound *,[data-audio],[data-mwplay],.mw-play,.playbtn,.play-btn,.pi,.pl\';\nfunction isPlay(el){try{return !!(el&&el.closest&&el.closest(PB))}catch(_){return false}}\nfunction stop(){var any=0;document.querySelectorAll(\'audio,video\').forEach(function(a){M.add(a)});\nM.forEach(function(a){try{if(!a.paused)any=1;a.pause();if(a.currentTime)a.currentTime=0}catch(_){}});\ntry{if(typeof window.stopAllAudio===\'function\')window.stopAllAudio()}catch(_){}\ntry{if(typeof window.setPillState===\'function\')window.setPillState()}catch(_){}\ndocument.querySelectorAll(\'.playpill,.v-sound,[data-audio],[data-mwplay]\').forEach(function(b){b.classList.remove(\'playing\');if(b.hasAttribute(\'aria-pressed\'))b.setAttribute(\'aria-pressed\',\'false\');var i=b.querySelector(\'.pi\');if(i&&/❚|■/.test(i.textContent))i.textContent=\'▶\'});return any}\nwindow.mwStopMedia=stop;\n/* wrap card-change functions (global function declarations) */\n[\'render\',\'go\',\'next\',\'back\',\'skip\',\'advance\',\'show\',\'showEnd\',\'toSend\',\'machanDecides\',\'decide\',\'finish\'].forEach(function(n){var f=window[n];if(typeof f!==\'function\'||f.__mwms)return;var w=function(){stop();return f.apply(this,arguments)};w.__mwms=1;try{window[n]=w}catch(_){}});\n/* taps on nav/answer controls (not the play button) */\ndocument.addEventListener(\'click\',function(e){var t=e.target;if(isPlay(t))return;if(t.closest&&t.closest(\'button,a,[role=button],.opt,.tile,.choice,[data-side],[data-act]\'))stop()},true);\n/* swipes */\nvar sx=null,sy=0;document.addEventListener(\'pointerdown\',function(e){sx=isPlay(e.target)?null:e.clientX;sy=e.clientY},true);\ndocument.addEventListener(\'pointerup\',function(e){if(sx!==null&&Math.abs(e.clientX-sx)>40&&Math.abs(e.clientX-sx)>Math.abs(e.clientY-sy))stop();sx=null},true);\ndocument.addEventListener(\'touchstart\',function(e){var p=e.touches[0];sx=isPlay(e.target)?null:p.clientX;sy=p.clientY},{capture:true,passive:true});\ndocument.addEventListener(\'touchend\',function(e){var p=e.changedTouches[0];if(sx!==null&&p&&Math.abs(p.clientX-sx)>40&&Math.abs(p.clientX-sx)>Math.abs(p.clientY-sy))stop();sx=null},{capture:true,passive:true});\ndocument.addEventListener(\'keydown\',function(e){if(/^Arrow(Left|Right)$|^Escape$/.test(e.key))stop()},true);\ndocument.addEventListener(\'visibilitychange\',function(){if(document.hidden)stop()});\nwindow.addEventListener(\'pagehide\',stop);window.addEventListener(\'hashchange\',stop);window.addEventListener(\'popstate\',stop);\n})();</script><!--/mw-media-stop-->\n'
+def media_stop(t):
+    t=re.sub(r'<!--mw-media-stop v\d+-->.*?<!--/mw-media-stop-->','',t,flags=re.S)
+    if not re.search(r'<audio|<video|new Audio\(|\.mp3|\.mp4',t): return t
+    i=t.rfind('</body>')
+    return t[:i]+MS+t[i:] if i>=0 else t+MS
 
 import atexit,time
 from pathlib import Path
@@ -29,7 +39,7 @@ def _hook():
             if f.stat().st_mtime<_T0: continue
             t=f.read_text()
         except Exception: continue
-        if "K='mwPagesKey'" in t or not _FOOT.search(t): continue
-        n=apply(t,made=today())
+        if "K='mwPagesKey'" in t: continue
+        n=apply(t,made=today()) if _FOOT.search(t) else media_stop(t)
         if n!=t: f.write_text(n)
 atexit.register(_hook)
