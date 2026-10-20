@@ -29,7 +29,8 @@ const today=()=>new Date().toLocaleDateString('en-CA');
    completed list kit/completed-decks.json ({ids:[...]} written by ops/submit/mark_completed.py), so it can't be re-swiped.
    Shelves re-render on back-navigation (pageshow), on another tab's submit (storage) and on the 'mw-deck-done' event. */
 const CDONE=new Set(),CURL='https://webermanapps.github.io/style-swipe/kit/completed-decks.json';
-const sub=d=>!!(d.id&&(LS('styleSwipe:submitted:'+d.id)||LS('mw-deck-done:'+d.id)||CDONE.has(d.id)));
+const perm=d=>d.permanent===true||d.slot==='permanent';
+const sub=d=>!!(d.id&&(LS('styleSwipe:submitted:'+d.id)||(!perm(d)&&(LS('mw-deck-done:'+d.id)||CDONE.has(d.id)))));
 
 const ALL='https://webermanapps.github.io/branding-djqmb410/decks/';
 /* v11 / kit ly12 (R104, Max Oct 17 2026 19:39 ICT): deck cards open in the SAME tab with from=<this board> (+ from_name), so the deck page's
