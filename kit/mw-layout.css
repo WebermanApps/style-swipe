@@ -181,3 +181,23 @@ body.mw-hero-behind-header #mw-bh.mw-branded-header{background:transparent!impor
 #mw-bf a.mw-built .mw-machan-mark{transform-origin:50% 62%}#mw-bf a.mw-built .mw-machan-mark path[d^="M13 13.1"]{transform-box:fill-box;transform-origin:50% 40%}
 @media (prefers-reduced-motion:no-preference){#mw-bf a.mw-built:hover .mw-machan-mark,#mw-bf a.mw-built:focus-visible .mw-machan-mark,#mw-bf a.mw-built:active .mw-machan-mark{animation:mwWkT .62s ease-in-out}#mw-bf a.mw-built:hover .mw-machan-mark path[d^="M13 13.1"],#mw-bf a.mw-built:focus-visible .mw-machan-mark path[d^="M13 13.1"],#mw-bf a.mw-built:active .mw-machan-mark path[d^="M13 13.1"]{animation:mwWkE .62s ease-in-out}}
 @keyframes mwWkT{0%,100%{transform:none}35%,60%{transform:rotate(-7deg) scale(1.06)}}@keyframes mwWkE{0%,100%{transform:none}35%,60%{transform:scaleY(1.9)}}
+
+/* ly15 spacing pass (Machan, Oct 20 2026 15:24 ICT, Branding). One spacing scale for every board: 8 / 12 / 16 / 24 / 32px.
+   - Equal section rhythm at every width: 16px above + 16px below the hairline = 32px between sections (was 80px on phones, 36px on desktop: margin+padding doubled).
+   - Header and footer sit 24px from the middle at every width (was 24 phone / 20 desktop).
+   - Non-visual children of .mw-sections (script, style, template, [hidden]) no longer render as blocks: they made stray empty sections and 245px of sideways scroll on phones.
+   - Grid gutters: tile grids 12px, tight lists and chips 8px, columns 16px. Spacing only; content, order and features unchanged. */
+:root{--mw-s1:8px;--mw-s2:12px;--mw-s3:16px;--mw-s4:24px;--mw-s5:32px}
+html:root,#mw-mid .mw-sections,#mw-mid.mw-middle,body>.mw-sections{--mw-section-gap:var(--mw-s3)!important}
+#mw-bh,#mw-bf{--bh-gap:var(--mw-s4)!important}
+.mw-sections>:is(script,style,template,link,meta,[hidden]),.mw-section[hidden]{display:none!important}
+.ds-sec+.mw-section,.mw-sections>.ds-sec+*{margin-top:var(--mw-s3)!important;padding-top:var(--mw-s3)!important}
+#mw-mid :is(.grid,.apps,.apps3,.vids,.minis,.tiles,.excards,.irow,.topics,.bign){gap:var(--mw-s2)!important}
+#mw-mid :is(.rows,.blg,.ptl,.chips,.qbs,.sm-chips){gap:var(--mw-s1)!important}
+.mw-cols{gap:var(--mw-s3)!important}
+@media(min-width:768px){#mw-bh .ds-strip,.ds-sec .ds-strip{gap:var(--mw-s2)!important}}
+/* boards that hard-code their own section margins (24/28/36px) follow the same 32px rhythm */
+#mw-mid .mw-sections>*+*{margin-top:var(--mw-section-gap)!important}
+#mw-mid .mw-sections>:first-child{margin-top:0!important}
+/* phone: full-bleed sticky top bars inside the middle column stop at the screen edge (no sideways scroll) */
+@media(max-width:767px){#mw-mid .mw-top{margin-left:-16px!important;margin-right:-16px!important;padding-left:16px!important;padding-right:16px!important}}
