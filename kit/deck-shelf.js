@@ -24,7 +24,12 @@
 const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
 const LS=k=>{try{return localStorage.getItem(k)}catch(_){return null}};
 const today=()=>new Date().toLocaleDateString('en-CA');
-const sub=d=>!!(d.id&&LS('styleSwipe:submitted:'+d.id));
+/* v12 (Machan Oct 20 2026, deck ping system): a submitted deck leaves every board at once. Done = this browser's
+   styleSwipe:submitted:<id> or mw-deck-done:<id> (set by submit.js on a full Submit), or listed in the server-side
+   completed list kit/completed-decks.json ({ids:[...]} written by ops/submit/mark_completed.py), so it can't be re-swiped.
+   Shelves re-render on back-navigation (pageshow), on another tab's submit (storage) and on the 'mw-deck-done' event. */
+const CDONE=new Set(),CURL='https://webermanapps.github.io/style-swipe/kit/completed-decks.json';
+const sub=d=>!!(d.id&&(LS('styleSwipe:submitted:'+d.id)||LS('mw-deck-done:'+d.id)||CDONE.has(d.id)));
 
 const ALL='https://webermanapps.github.io/branding-djqmb410/decks/';
 /* v11 / kit ly12 (R104, Max Oct 17 2026 19:39 ICT): deck cards open in the SAME tab with from=<this board> (+ from_name), so the deck page's
@@ -128,7 +133,13 @@ function render(box,J,o){o=o||{};J=J||{};const B=boardOf(box,J),ids=doneIds(J),l
   if(d.id||d.url)removable(a,{board:B,agent:J.agent||B,deck:d.id||d.url,name:d.name,onChange:()=>render(box,J,o)});g.append(a)});
  box.append(g);if(decks.length>2){const dt=el('div','ds-dots');dt.setAttribute('aria-hidden','true');decks.forEach((_,i)=>dt.append(el('i',i?'':'on')));box.append(dt);
   g.addEventListener('scroll',()=>{const w=g.scrollWidth-g.clientWidth,k=w>0?Math.round(g.scrollLeft/w*(decks.length-1)):0;[...dt.children].forEach((x,i)=>x.className=i===k?'on':'')},{passive:true})}}
+const CP=fetch(CURL+'?'+Date.now(),{cache:'no-store'}).then(r=>r.ok?r.json():null).then(j=>{((j&&j.ids)||[]).forEach(x=>x&&CDONE.add(String(x)))}).catch(()=>{});
 function init(){document.querySelectorAll('[data-shelf],[data-launcher]').forEach(b=>{if(b.dataset.dsDone)return;b.dataset.dsDone=1;
- fetch((b.dataset.shelf||b.dataset.launcher)+'?'+Date.now()).then(r=>r.json()).then(J=>render(b,J)).catch(()=>render(b,{decks:[]}))})}
-window.DeckShelf={render,CAP,sortDecks,answered,touched,finished,isNew,seenKey,VERSION:11,fromUrl,removable,isRemoved,boardOf,toast,removed:b=>b._dsRemoved||[],queued:b=>b._dsQueued||[],finishedOf:b=>b._dsFinished||[]};window.DeckLauncher=window.DeckLauncher||{render};
+ const sp=fetch((b.dataset.shelf||b.dataset.launcher)+'?'+Date.now()).then(r=>r.json()).catch(()=>({decks:[]}));
+ Promise.all([sp,CP]).then(([J])=>{b._dsJ=J;render(b,J)})})}
+function rerender(){document.querySelectorAll('[data-shelf],[data-launcher]').forEach(b=>{if(b._dsJ)render(b,b._dsJ)})}
+addEventListener('pageshow',e=>{if(e.persisted)rerender()});
+addEventListener('storage',e=>{if(e.key&&/^(mw-deck-done:|styleSwipe:submitted:)/.test(e.key))rerender()});
+addEventListener('mw-deck-done',rerender);
+window.DeckShelf={render,CAP,sortDecks,answered,touched,finished,isNew,seenKey,VERSION:12,completed:CDONE,rerender,fromUrl,removable,isRemoved,boardOf,toast,removed:b=>b._dsRemoved||[],queued:b=>b._dsQueued||[],finishedOf:b=>b._dsFinished||[]};window.DeckLauncher=window.DeckLauncher||{render};
 document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init()})();

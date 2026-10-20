@@ -80,7 +80,13 @@
      Resolves true when posted, false when queued on device for retry. o.noQueue (always on for apps 'doc-note' and 'doc-remove'): never queued, just resolves false. */
   function send(o){o=o||{};return gate(o.agent,o.app,o.deck).then(function(ok){if(!ok){w.MWSubmit.blocked=true;return false;}w.MWSubmit.blocked=false;var p={agent:o.agent,app:o.app,deck:o.deck,results:o.results||null,notes:o.notes||'',sentAt:new Date().toISOString(),ua:navigator.userAgent};
     ['partial','answered','total','unanswered','test'].forEach(function(k){if(o[k]!==undefined)p[k]=o[k]});
-    var nq=o.noQueue||['doc-note','doc-remove'].indexOf(String(o.app||'').trim().toLowerCase())>=0;return post(p).then(function(){return true},function(){if(!nq)setQ(q().concat([p]));return false});});}
+    var nq=o.noQueue||['doc-note','doc-remove'].indexOf(String(o.app||'').trim().toLowerCase())>=0;return post(p).then(function(){markDone(o);return true},function(){if(!nq){setQ(q().concat([p]));markDone(o)}return false});});}
+  /* Deck ping system (Machan Oct 20 2026): a full (non-partial, non-test) deck Submit marks the deck done in this browser
+     right away, so every board shelf (kit/deck-shelf.js v12) hides it at once; server side, ops/submit/mark_completed.py
+     adds it to kit/completed-decks.json for other devices. Non-deck apps (remove/doc/handoff/gate) are ignored. */
+  function markDone(o){try{var ap=String(o.app||'').trim().toLowerCase();if(!o.deck||o.partial||o.test||/-gate$/.test(ap)||['deck-remove','doc-note','doc-remove','project-handoff','test'].indexOf(ap)>=0)return;
+    var t=String(Date.now());localStorage.setItem('mw-deck-done:'+o.deck,t);localStorage.setItem('styleSwipe:submitted:'+o.deck,t);
+    w.dispatchEvent(new CustomEvent('mw-deck-done',{detail:{deck:o.deck,agent:o.agent}}))}catch(_){}}
   w.MWSubmit={button:button,send:send,flush:flush,gate:gate,isAuthed:authed,url:URL,blocked:false};
   w.addEventListener('online',flush);
 })(window);
