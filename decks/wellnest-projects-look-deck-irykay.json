@@ -1,0 +1,220 @@
+{
+ "date": "wellnest-projects-look-deck-irykay",
+ "version": 1,
+ "format": "pairs",
+ "english_only": true,
+ "light_only": true,
+ "title": "WellNest Projects Look Deck",
+ "generated_at": "2026-10-20T02:55:56+00:00",
+ "status": "published",
+ "submit_agent": "wellnest",
+ "board": "wellnest-dashboard",
+ "audience": "Max",
+ "requested": true,
+ "deck_size": 11,
+ "built_by": "Branding (Swatch) for WellNest",
+ "page": "wellnest-projects-look-deck-irykay/",
+ "deck_style": "max-deck (dadbook layout in Max's brand)",
+ "project": "WellNest dashboard: new Projects section (carousel of 4 projects, expand in place to a rotatable render plus description)",
+ "example_data": "All app screens are rendered HTML mockups with made-up SAMPLE data (sample project notes, .example domains).",
+ "pairs": [
+  {
+   "id": "wellnest-projects-look-deck-irykay-01",
+   "group": "Carousel style",
+   "category": "Carousel style",
+   "ask": "How do you move through the 4 projects?",
+   "optionA": {
+    "id": "wellnest-projects-look-deck-irykay_01a_carousel",
+    "label": "Snap scroll",
+    "desc": "Swipe sideways; each thumbnail snaps into place. The next one peeks in at the edge.",
+    "more": "Feels native on phone; trackpad and shift-scroll on wide screens."
+   },
+   "optionB": {
+    "id": "wellnest-projects-look-deck-irykay_01b_carousel",
+    "label": "Arrows plus dots",
+    "desc": "Left and right arrows with four dots underneath showing where you are.",
+    "more": "Clear on wide screens; still swipeable on phone."
+   }
+  },
+  {
+   "id": "wellnest-projects-look-deck-irykay-02",
+   "group": "Thumbnail size and shape",
+   "category": "Thumbnail size and shape",
+   "ask": "What shape are the thumbnails?",
+   "optionA": {
+    "id": "wellnest-projects-look-deck-irykay_02a_thumb",
+    "label": "Square",
+    "desc": "Even square tiles, product centred.",
+    "more": "Compact; more of the row fits."
+   },
+   "optionB": {
+    "id": "wellnest-projects-look-deck-irykay_02b_thumb",
+    "label": "Tall card",
+    "desc": "Taller portrait cards, like a product poster.",
+    "more": "More presence; fewer per screen."
+   }
+  },
+  {
+   "id": "wellnest-projects-look-deck-irykay-03",
+   "group": "Title placement",
+   "category": "Title placement",
+   "ask": "Where does the project name sit?",
+   "optionA": {
+    "id": "wellnest-projects-look-deck-irykay_03a_title",
+    "label": "Under the thumbnail",
+    "desc": "Name in Khand below the picture.",
+    "more": "Picture stays clean."
+   },
+   "optionB": {
+    "id": "wellnest-projects-look-deck-irykay_03b_title",
+    "label": "Overlaid",
+    "desc": "Name on a soft dark fade at the bottom of the picture.",
+    "more": "Tighter, more editorial."
+   }
+  },
+  {
+   "id": "wellnest-projects-look-deck-irykay-04",
+   "group": "Expand view",
+   "category": "Expand view",
+   "ask": "What happens when you tap a thumbnail?",
+   "optionA": {
+    "id": "wellnest-projects-look-deck-irykay_04a_expand",
+    "label": "Inline expand",
+    "desc": "The row stays; the tapped project opens in place below it.",
+    "more": "You keep your place on the dashboard."
+   },
+   "optionB": {
+    "id": "wellnest-projects-look-deck-irykay_04b_expand",
+    "label": "Full-screen overlay",
+    "desc": "The project fills the screen over a dim backdrop, with a close X.",
+    "more": "Bigger render; dashboard waits behind."
+   }
+  },
+  {
+   "id": "wellnest-projects-look-deck-irykay-05",
+   "group": "360 viewer controls",
+   "category": "360 viewer controls",
+   "ask": "How do you turn the product?",
+   "optionA": {
+    "id": "wellnest-projects-look-deck-irykay_05a_viewer",
+    "label": "Drag to rotate",
+    "desc": "Grab the render and drag; it turns with your finger or mouse.",
+    "more": "A small hand hint shows once, then hides."
+   },
+   "optionB": {
+    "id": "wellnest-projects-look-deck-irykay_05b_viewer",
+    "label": "Angle buttons or slider",
+    "desc": "Front, Side, Back, Top buttons, plus a slider to scrub the turn.",
+    "more": "Exact angles; good for comparing labels."
+   }
+  },
+  {
+   "id": "wellnest-projects-look-deck-irykay-06",
+   "group": "Auto-spin",
+   "category": "Auto-spin",
+   "ask": "Does the product turn on its own when it opens?",
+   "optionA": {
+    "id": "wellnest-projects-look-deck-irykay_06a_spin",
+    "label": "Auto-spin on",
+    "desc": "Slow turn until you touch it; stops for reduced-motion users.",
+    "more": "Shows every side without effort."
+   },
+   "optionB": {
+    "id": "wellnest-projects-look-deck-irykay_06b_spin",
+    "label": "Auto-spin off",
+    "desc": "Opens still, front facing. You turn it when you want.",
+    "more": "Calmer; label reads first."
+   }
+  },
+  {
+   "id": "wellnest-projects-look-deck-irykay-07",
+   "group": "Description layout",
+   "category": "Description layout",
+   "ask": "Where does the description go?",
+   "optionA": {
+    "id": "wellnest-projects-look-deck-irykay_07a_desc",
+    "label": "Beside the render",
+    "desc": "Render on the left, what is in it, inspiration and status on the right. Stacks on phone.",
+    "more": "Uses wide screens well."
+   },
+   "optionB": {
+    "id": "wellnest-projects-look-deck-irykay_07b_desc",
+    "label": "Below the render",
+    "desc": "Render full width, description underneath.",
+    "more": "Same on every screen."
+   }
+  },
+  {
+   "id": "wellnest-projects-look-deck-irykay-08",
+   "group": "Status style",
+   "category": "Status style",
+   "ask": "How is project status shown?",
+   "optionA": {
+    "id": "wellnest-projects-look-deck-irykay_08a_status",
+    "label": "Pill",
+    "desc": "A small coloured pill: Idea, Planning, In design, Sampling.",
+    "more": "Quick to scan."
+   },
+   "optionB": {
+    "id": "wellnest-projects-look-deck-irykay_08b_status",
+    "label": "Progress line",
+    "desc": "A thin line from Idea to Launch, filled to where it is.",
+    "more": "Shows how far along."
+   }
+  },
+  {
+   "id": "wellnest-projects-look-deck-irykay-09",
+   "group": "Shine level",
+   "category": "Shine level",
+   "ask": "How much shine on the cards?",
+   "optionA": {
+    "id": "wellnest-projects-look-deck-irykay_09a_shine",
+    "label": "Barely",
+    "desc": "A hairline highlight on the top edge; you notice it only up close.",
+    "more": "Quiet, premium."
+   },
+   "optionB": {
+    "id": "wellnest-projects-look-deck-irykay_09b_shine",
+    "label": "Soft glow",
+    "desc": "A gentle warm glow and a slow sheen pass on hover.",
+    "more": "A little more sparkle, still light."
+   }
+  },
+  {
+   "id": "wellnest-projects-look-deck-irykay-10",
+   "group": "Section header and divider",
+   "category": "Section header and divider",
+   "ask": "How does the Projects section start?",
+   "optionA": {
+    "id": "wellnest-projects-look-deck-irykay_10a_header",
+    "label": "Khand title, terracotta bar",
+    "desc": "\"PROJECTS\" in Khand caps with a short terracotta underline.",
+    "more": "Matches other dashboard headers."
+   },
+   "optionB": {
+    "id": "wellnest-projects-look-deck-irykay_10b_header",
+    "label": "Title, count and leaf line",
+    "desc": "\"Projects · 4\" with a full-width line and a small green leaf in the middle.",
+    "more": "Echoes the footer leaf divider."
+   }
+  },
+  {
+   "id": "wellnest-projects-look-deck-irykay-11",
+   "group": "Bonus card: render background",
+   "category": "Bonus card: render background",
+   "ask": "What sits behind the 3D render?",
+   "optionA": {
+    "id": "wellnest-projects-look-deck-irykay_11a_bonus",
+    "label": "Cream",
+    "desc": "Plain WellNest cream behind the product.",
+    "more": "Calm; product colour pops."
+   },
+   "optionB": {
+    "id": "wellnest-projects-look-deck-irykay_11b_bonus",
+    "label": "Soft gradient",
+    "desc": "A soft lagoon-to-cream gradient, like studio light.",
+    "more": "More depth for the 3D feel."
+   }
+  }
+ ]
+}
