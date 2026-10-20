@@ -30,7 +30,7 @@ class Sheet:
         s.e=[];s.name=name;s.num=num;s.scale=scale;s.north=north;s.nx=nx;s.ny=ny
     def add(s,x): s.e.append(x); return s
     def t(s,x,y,txt,sz=8,anc='middle',w=600,col=INK,rot=0,ital=False):
-        sz=round(sz*1.12,2); tr=f' transform="rotate({rot} {x} {y})"' if rot else ''
+        txt=str(txt).replace('&','&amp;'); sz=round(sz*1.12,2); tr=f' transform="rotate({rot} {x} {y})"' if rot else ''
         st=' font-style="italic"' if ital else ''
         return s.add(f'<text x="{x:.1f}" y="{y:.1f}" font-size="{sz}" text-anchor="{anc}" font-weight="{w}" fill="{col}" stroke="{BG}" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round"{st}{tr}>{txt}</text>')
     def line(s,x1,y1,x2,y2,w=1,col=INK,dash=None):
