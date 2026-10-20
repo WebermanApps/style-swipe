@@ -27,10 +27,13 @@
                  page-unlock key into a Blob. Thumbnails too (blob: URL img src). An encrypted index (projects.json {"index":"files/x.enc"})
                  is decrypted the same way, so titles and filenames need not be public.
      "private"   hook only (e.g. a private signed-URL backend); refuses until implemented.
+   op12 (Oct 20 2026 ICT, Security-approved): .mp4 video preview in the in-page view. video/mp4 only (declared MIME AND .mp4 name), <= 50 MB,
+     <video controls preload=metadata playsinline> (no autoplay/loop/crossorigin); src is only a kit-made blob: URL of the in-memory decrypted Blob,
+     revoked and src cleared on close and when switching files; nothing is written to disk or cache. Closing the view stops any audio/video.
    No crypto lives here: decryption is delegated to Security's viewer through ProjectsSection.storage.encrypted. */
 (function(){
 'use strict';
-var V='op11',SUBMIT_PIN='9921428',MAX=6,EXCLUDE=/a-o956qercs5ubd57y|home-guide|finish-questions|room-photos|room-quiz|homes\.maxweberman\.com|share-x3l9xcxc1eut/;
+var V='op12',SUBMIT_PIN='9921428',MAX=6,EXCLUDE=/a-o956qercs5ubd57y|home-guide|finish-questions|room-photos|room-quiz|homes\.maxweberman\.com|share-x3l9xcxc1eut/;
 var me=document.currentScript;
 function el(t,c,txt){var e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e}
 /* op7: icons are built as SVG nodes from fixed path data (no HTML strings) */
@@ -89,6 +92,9 @@ function safeName(p,b){var n=String((b&&b.__name)||(p.file&&p.file.name)||p.titl
 function saveBlob(u,name){var a=el('a');a.href=u;a.download=name;a.rel='noopener';a.hidden=true;document.body.appendChild(a);a.click();a.remove();setTimeout(function(){try{URL.revokeObjectURL(u)}catch(_){}},1500)}
 function doOpen(p,btn,host){
  var ref=p.preview||p.file;if(!ref)return;
+ if(isMp4(ref.mime,ref.name)){busy(btn,true); /* op12: video view; the kit makes (and revokes) its own blob: URL */
+  getBlob(ref).then(function(b){if(!openView(p,null,ref.mime,btn,b,ref.name)){var u=track(URL.createObjectURL(b));saveBlob(u,safeName(p,b))}})
+  .catch(function(e){note(host,e.message)}).then(function(){busy(btn,false)});return}
  if(viewKind(ref.mime||(p.preview?'application/pdf':''))){busy(btn,true); /* op8: in-page view (no popup needed) */
   getBlob(ref).then(function(b){var u=track(URL.createObjectURL(b));if(!openView(p,u,b.type||ref.mime,btn))saveBlob(u,safeName(p,b))}) /* not viewable after all: download, never navigate to the blob */
   .catch(function(e){note(host,e.message)}).then(function(){busy(btn,false)});return}
@@ -304,26 +310,43 @@ function docRemove(p,host,row){
    reads the decrypted bytes. Encrypted boards: the staged enc_file_viewer.js calls window.mwEncView({url,mime},link) (Security review). */
 var dvOpen=null,linkProj=typeof WeakMap==='function'?new WeakMap():null;
 function viewKind(m){m=String(m||'').toLowerCase().split(';')[0].trim();return m==='application/pdf'?'pdf':/^image\/(png|jpe?g|gif|webp)$/.test(m)?'img':m==='text/plain'?'txt':''}
-function openView(p,url,mime,opener){
- var k=viewKind(mime);if(!k||typeof url!=='string'||url.indexOf('blob:')!==0)return false;
+/* op12 video: video/mp4 by declared type AND .mp4 name, Blob of 1 byte..50,000,000 bytes */
+var VID_MAX=50000000; /* = encrypt_file.py MAX_BYTES (smaller than 50 MiB) */
+function isMp4(m,n){return String(m||'').toLowerCase().split(';')[0].trim()==='video/mp4'&&/\.mp4$/i.test(String(n||''))}
+function vidOk(b){return typeof Blob==='function'&&b instanceof Blob&&b.size>0&&b.size<=VID_MAX}
+function stopMedia(root){[].forEach.call(root.querySelectorAll('video,audio'),function(m){try{m.pause()}catch(_){}})}
+function openView(p,url,mime,opener,vblob,vname){
+ var k,vurl=null;
+ if(vblob!=null){if(!isMp4(mime,vname)||!vidOk(vblob))return false;k='video'}
+ else{k=viewKind(mime);if(!k||typeof url!=='string'||url.indexOf('blob:')!==0)return false}
  if(dvOpen)dvOpen.close();
  var bg=el('div','op-dv-bg'),box=el('div','op-dv');box.setAttribute('role','dialog');box.setAttribute('aria-modal','true');box.setAttribute('aria-labelledby','op-dv-t');
  var hd=el('div','op-dv-hd'),h=el('h2','op-dv-h',p.title);h.id='op-dv-t';
  var nt=el('a','op-dv-tab');nt.href=url;nt.target='_blank';nt.rel='noopener noreferrer';nt.append(svg(I.open),el('span',null,'New tab'));nt.setAttribute('aria-label','Open '+p.title+' in a new tab');
- var x=el('button','op-dv-x');x.type='button';x.setAttribute('aria-label','Close');x.appendChild(svg('M6 6l12 12M18 6L6 18'));hd.append(h,nt,x);
+ var x=el('button','op-dv-x');x.type='button';x.setAttribute('aria-label','Close');x.appendChild(svg('M6 6l12 12M18 6L6 18'));if(k==='video')hd.append(h,x);else hd.append(h,nt,x);
  var dv=el('div','op-dv-doc op-dv-'+k);
- if(k==='img'){var im=el('img');im.alt=p.title;im.src=url;dv.appendChild(im)}
+ var vd=null;
+ if(k==='video'){vd=el('video');vd.controls=true;vd.preload='metadata';vd.setAttribute('playsinline','');vd.setAttribute('aria-label',p.title);vd.style.cssText='max-width:100%;max-height:100%;margin:auto;display:block;background:#000';
+  vurl=URL.createObjectURL(vblob.type==='video/mp4'?vblob:new Blob([vblob],{type:'video/mp4'}));vd.src=vurl;dv.appendChild(vd)}
+ else if(k==='img'){var im=el('img');im.alt=p.title;im.src=url;dv.appendChild(im)}
  else{var fr=el('iframe');fr.title=p.title;if(k==='txt')fr.setAttribute('sandbox','');fr.src=url;dv.appendChild(fr)}
  box.append(hd,dv);if(docnoteAllowed(p))box.appendChild(docNote(p,'view'));
  bg.appendChild(box);(document.getElementById('mw-projects')||document.body).appendChild(bg);document.documentElement.classList.add('op-ho-lock');
- function close(){document.removeEventListener('keydown',esc);bg.remove();document.documentElement.classList.remove('op-ho-lock');dvOpen=null;try{opener&&opener.focus()}catch(_){}}
+ function close(){document.removeEventListener('keydown',esc);stopMedia(box);
+  if(vd){vd.removeAttribute('src');try{vd.load()}catch(_){}}if(vurl){try{URL.revokeObjectURL(vurl)}catch(_){}vurl=null}
+  bg.remove();document.documentElement.classList.remove('op-ho-lock');dvOpen=null;try{opener&&opener.focus()}catch(_){}}
  function esc(e){if(e.defaultPrevented)return;if(e.key==='Escape'){close();return}
   if(e.key==='Tab'){var f=[].filter.call(box.querySelectorAll('a[href],button,textarea'),function(n){return!n.disabled&&!n.hidden&&n.offsetParent});if(!f.length)return;var a=f[0],z=f[f.length-1];
    if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus()}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus()}}}
  document.addEventListener('keydown',esc);x.onclick=close;bg.addEventListener('mousedown',function(e){if(e.target===bg)close()});
  setTimeout(function(){x.focus()},30);dvOpen={close:close};return true}
 /* hook for the staged enc_file_viewer.js: gets only {url (blob:), mime} and the clicked link; returns true when shown here */
-window.mwEncView=function(f,link){var p=linkProj&&link&&linkProj.get(link);if(!p||!f)return false;return openView(p,f.url,f.mime,link)};
+window.mwEncView=function(f,link){var p=linkProj&&link&&linkProj.get(link);if(!p||!f)return false;
+ var ref=p.preview||p.file||{};
+ if(isMp4(f.mime,ref.name)){var v=window.mwEncFile,sp=link.getAttribute('data-enc-file');if(!v||typeof v.decrypt!=='function'||!sp)return false;
+  /* op12: decrypt() is the viewer's in-memory promise for this file (already resolved); take its Blob, never its URL */
+  v.decrypt(sp).then(function(r){if(!openView(p,null,f.mime,link,r&&r.blob,ref.name)){var c=link.closest&&link.closest('.op-body,.op-row');if(c)note(c,'This video is too large to preview here (50 MB max). Use Download.')}}).catch(function(){});return true}
+ return openView(p,f.url,f.mime,link)};
 
 function btn(cls,icon,label,aria){var b=el('button','op-btn '+cls);b.type='button';b.appendChild(svg(I[icon]));b.appendChild(el('span',null,label));if(aria)b.setAttribute('aria-label',aria);return b}
 
