@@ -1,5 +1,5 @@
 """Scheduling Board Layout Deck, Oct 19 2026 (Max's review relayed via Swatch). Usage: python3 tools/build_sched_1019.py <outdir> (from repo root).
-Same kit and process as build_mcd2_1019.py (team_kit publish, md1018_kit page writer, standard white deck look, 'Built by Max Weberman'
+Same kit and process as build_mcd2_1019.py (team_kit publish, md1018_kit page writer, standard white deck look, 'Built by Machan'
 footer, Notes + Share). Results route to Branding, picks logged only. PRIVACY: Tech Dash 1-3 / Van 1-3, first names or member IDs only, TEST data."""
 import json, os, re, sys
 sys.path.insert(0, os.path.dirname(__file__))

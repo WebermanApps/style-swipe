@@ -48,8 +48,8 @@ if __name__ == "__main__":
             if cream: h = h.replace("<style>:root{--bg:#FFFFFF}html,body{background:#FFFFFF!important}", "<style>:root{--bg:#FAF6EE!important}:root,:root body{background:#FAF6EE!important}", 1)
             i = h.index('<a class="builtby'); j = h.index("</a>", i); a_ = h[i:j]
             assert 'href="https://maxweberman.com"' in a_, "builtby link"
-            h = h[:i] + a_.replace("Built by Machan", "Built by Max Weberman") + h[j:]
-            assert "Built by Max Weberman" in h[i:i + len(a_) + 20]
+            h = h[:i] + a_.replace("Built by Machan", "Built by Machan") + h[j:]
+            assert "Built by Machan" in h[i:i + len(a_) + 20]
             open(pg, "w").write(h)
         built.append({"id": did, "name": name, "url": url, "slug": slug, "total": n, "titles": order,
                       "labels": [f"{p['optionA']['label']} vs {p['optionB']['label']}" for p in dj["pairs"]]}); print(did, url, n)

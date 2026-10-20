@@ -1,5 +1,5 @@
 """UpKeep board decks, Oct 19 2026 (Max via UpKeep Develop 12:02 ICT; updates 12:04, 12:06, 12:07 ICT). Usage: python3 tools/build_ukhf_1019.py <outdir>  (repo root)
-Same kit and process as build_mcd_1019.py (team_kit publish, md1018_kit page writer, standard white deck look, 'Built by Max Weberman'
+Same kit and process as build_mcd_1019.py (team_kit publish, md1018_kit page writer, standard white deck look, 'Built by Machan'
 footer, Notes + Share). Results route to Branding (Swatch), picks logged only. Listed at the top of Max's Picks on the Branding board shelf,
 NOT on any UpKeep board (Max: UpKeep boards have no swipe decks for now). Command Center left out (undecided).
   UpKeep Board Header Deck (20): header + Emergency Alerts + To-Do List + Documents Center (decided 12:07: pings/flags, To-Do, Documents in the header)
@@ -61,10 +61,10 @@ if __name__ == "__main__":
         if "const D=" not in h:
             h = re.sub(r"<title>[^<]*</title>", f"<title>{NAME} · Style Swipe</title>", h, count=1)
             assert '<a class="builtby' in h and "maxweberman.com" in h, "standard footer"
-            # deck page footer must read 'Built by Max Weberman' (Max, Oct 19 12:02 ICT); the template link text reads Built by Machan
+            # deck page footer must read 'Built by Machan' (Max, Oct 19 12:02 ICT); the template link text reads Built by Machan
             i = h.index('<a class="builtby'); j = h.index("</a>", i); a_ = h[i:j]
             assert 'href="https://maxweberman.com"' in a_ and "Built by Machan" in a_, "builtby link"
-            h = h[:i] + a_.replace("Built by Machan", "Built by Max Weberman") + h[j:]
+            h = h[:i] + a_.replace("Built by Machan", "Built by Machan") + h[j:]
             open(pg, "w").write(h)
         built.append({"id": DID, "name": NAME, "url": url, "slug": slug, "total": n, "titles": order}); print(DID, url, n)
     json.dump(built, open(os.path.join(outdir, "built.json"), "w"), indent=1)

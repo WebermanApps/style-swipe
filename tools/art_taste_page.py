@@ -48,7 +48,7 @@ function preload(k){const p=D.pairs[k];if(!p)return;[p.A,p.B].forEach(o=>{const 
     rep("</style></head>", """@media (min-width:1600px){.hero .lac{max-width:980px}.strip img{height:150px;max-width:240px}}
 @media (min-width:2200px){.hero .lac{max-width:1360px;padding:56px 60px 50px}h1{font-size:108px}.lede{font-size:27px}.strip{gap:14px;margin-bottom:26px}.strip img{height:260px;max-width:420px;border-radius:10px}.steps span{font-size:21px}.steps b{width:40px;height:40px;font-size:22px}.hero .btn{min-height:66px;font-size:25px;padding:0 44px}.lab{font-size:17px}.endc h2{font-size:72px}.endc p{font-size:26px}.tri i{width:52px;height:4px}}
 </style></head>""")
-    rep('<footer><a href="https://maxweberman.com"><span>Built by Max Weberman</span></a></footer>',
+    rep('<footer><a href="https://maxweberman.com"><span>Built by Machan</span></a></footer>',
         '<footer><a href="https://webermanapps.github.io/style-swipe/machan-story-awczm5/"><span>Built by Machan</span></a></footer>')
     rep('<div class="pair" id="pair">', '<div class="pair${(p.A.w/p.A.h>1.15&&p.B.w/p.B.h>1.15)?\' wide\':\' duo\'}" id="pair">')
     rep("</style></head>", """@media (max-width:699px){.pair.duo{grid-template-columns:1fr 1fr;gap:8px}.pair.duo .frame{padding:6px;min-height:120px}.pair.duo .frame img{max-height:44vh}

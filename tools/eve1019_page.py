@@ -1,6 +1,6 @@
 """Deck page in Max's NEW deck style (Max chose it Oct 19 2026 evening): the dadbook layout (pitch-style cover with simple steps, an elegant
 card with Both / Neither / Love heart / Notes, subtle top-edge shine and slow sheen, warm glow, clean last page 'Next deck coming shortly.')
-in Max's own brand: Khand + Hind (no book serif), cream base, terracotta / lagoon / jungle pops, 'Built by Max Weberman' footer to
+in Max's own brand: Khand + Hind (no book serif), cream base, terracotta / lagoon / jungle pops, 'Built by Machan' footer to
 maxweberman.com. Team-gated submit: ../submit.js (MWSubmit.send asks for the team password; not edited). Results keep the version-4 pairs
 format (choice A / B / both / neither / skip, loveA / loveB) so the pull + stats pipeline reads them unchanged.
 Usage (from tools/build_eve_1019.py): write(deck_json_dict, slug, meta) -> path"""
@@ -160,7 +160,7 @@ footer a span{border-bottom:1px solid rgba(138,74,46,.35)}footer a:hover{color:v
  <section class="scr" id="s-end" aria-label="Done">
   <div class="endc"><div class="tri" aria-hidden="true"><i></i><i></i><i></i></div><h2>Next deck coming shortly.</h2><p>Thank you, Max.</p></div>
  </section>
- <footer><a href="https://maxweberman.com"><span>Built by Max Weberman</span></a></footer>
+ <footer><a href="https://maxweberman.com"><span>Built by Machan</span></a></footer>
 </div>
 <script src="../submit.js?v=gr2"></script>
 <script>

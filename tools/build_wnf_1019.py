@@ -1,5 +1,5 @@
 """WellNest follow-up decks from Max's Oct 19 2026 results (Max asked 11:57 ICT). Usage: python3 tools/build_wnf_1019.py <outdir>  (from repo root)
-Same kit and process as build_wnc_1019.py (team_kit publish, md1018_kit page, standard white deck look, Built by Max Weberman footer, Notes + Share).
+Same kit and process as build_wnc_1019.py (team_kit publish, md1018_kit page, standard white deck look, Built by Machan footer, Notes + Share).
 20 pairs each, names pass theme_name_ok (no numbers or number words). Results route to Branding (submit_agent branding), picks logged only.
 Listed on the wellnest-dashboard shelf like 180c065. Guard: no temple / sacred / cannabis words, no prices or health claims."""
 import json, os, re, sys

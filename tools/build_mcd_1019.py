@@ -1,5 +1,5 @@
 """Member Catalog Deck, Oct 19 2026 (Max asked directly 11:29 ICT). Usage: python3 tools/build_mcd_1019.py <outdir>   (from the repo root)
-Same kit and process as build_wnc_1019.py (team_kit publish, md1018_kit page writer, standard white deck look, 'Built by Max Weberman'
+Same kit and process as build_wnc_1019.py (team_kit publish, md1018_kit page writer, standard white deck look, 'Built by Machan'
 footer, Notes + Share). 20 this-or-that pairs (no 10-pick cap: Max asked for 20). Results route to Branding (Swatch), picks logged only.
 Listed on the Branding board's Max's Picks (requested flow), not on any UpKeep board (Max, Oct 19 11:31 ICT: no swipe decks on UpKeep boards for now).
 PRIVACY: invented sample members only (no ops-private data); guard below fails the build on real-address markers or Thai references."""
