@@ -2,6 +2,7 @@
 """UpKeep (Smart Upkeep) Investor Pitch Deck (Oct 16 2026): 20 text this-or-that pairs with drawn SVG slide thumbnails (no images).
 Same pattern as build_upkeep_forecasting.py; square corners; mw-chat cc11 to UpKeep; submit_agent upkeep.
 Content: tools/upkeep_investor_deck_content.py. Slug kept in queue/upkeep-investor-slugs.json."""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()  # fail build if card-media max-height:100% returns
 import sys, os, json, re, string, secrets
 sys.path.insert(0, os.path.dirname(__file__))

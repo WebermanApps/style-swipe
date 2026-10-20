@@ -4,6 +4,7 @@ Deck 1 (Look And Personality): drawn SVG mockups of the v3 wink mark (assets/mac
 footer context. Deck 2 (Origin Story): mini card mockups of the actual story text from /workspace/machan/brand-story.md and the
 story carousel. Uses only the five real pieces of lore already in the story; no new facts. Palette: terracotta #C1502E,
 lagoon #05668D, jungle #0B6E4F, cream #FAF6EE. Picks are logged only, never implemented automatically."""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 from md1018_kit import *
 from draft_svg import crisp
 from team_kit import wrap

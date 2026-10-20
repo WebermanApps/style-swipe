@@ -2,6 +2,7 @@
 """Build Style Swipe deck rulebook-tiebreak: Rulebook Tiebreak Deck (Oct 14 2026). Follow-up to Rulebook Clash (results/rulebook-clash.txt):
 carried skip first (C7 pure white vs cream), C9 accents re-asked (Max picked both), scope checks for the settled C1/C4/C5 picks,
 and the C8 open dashboard tiebreaks from dashboard-style.md. Max brand. Submit -> agent 'branding'."""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import sys, os; sys.path.insert(0, os.path.dirname(__file__))
 from team_kit import deck, publish
 from draft_svg import TERRA, LAGOON, JUNGLE, SAFFRON

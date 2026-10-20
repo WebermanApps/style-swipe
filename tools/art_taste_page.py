@@ -5,6 +5,7 @@ the ART is the hero (pairs side by side from 700px up; on phones side by side un
 'what it is', three tags (style, era, mood) and a small image credit (source link + license). Team-gated submit via ../submit.js (unchanged).
 Results: version-4 pairs format plus artA / artB {key,title,artist,year,style,era,mood} so follow-up decks can narrow by tag.
 Usage: write(deck_json_dict, slug, meta) -> path   (meta: kicker, lede, em, h1, strip, art{key:{...}})"""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import json, os, html
 from eve1019_page import TPL as BASE
 def _patch(T):

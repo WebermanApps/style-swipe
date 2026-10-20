@@ -2,6 +2,7 @@
 Five 10-pair decks, one per deck Max swiped after 4:07 PM. Skips come back reworded; every pick goes one notch further. Close-up drawings
 (360x210) of the decided uk11 board state, light only, Khand + Hind, terracotta / lagoon / jungle. PRIVACY: TEST / SAMPLE data only,
 Tech Dash 1-3, first names, city-level areas; no contact details of any kind."""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 from md1018_kit import make
 from mcd1019 import T, R, C, L, chev, chip, INK, MUTE, LINE, CREAM, WHITE, TERRA, LAGOON, JUNGLE, SOFT
 from ukhf1019_kit import mark, tri, share_ic, warn, check, checkc, docic, kw, SAFF, COAL

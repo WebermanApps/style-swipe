@@ -2,6 +2,7 @@
 Same kit and process as build_wnc_1019.py (team_kit publish, md1018_kit page, standard white deck look, Built by Machan footer, Notes + Share).
 20 pairs each, names pass theme_name_ok (no numbers or number words). Results route to Branding (submit_agent branding), picks logged only.
 Listed on the wellnest-dashboard shelf like 180c065. Guard: no temple / sacred / cannabis words, no prices or health claims."""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import json, os, re, sys
 sys.path.insert(0, os.path.dirname(__file__))
 import draft_svg, trim_deck

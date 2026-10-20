@@ -7,6 +7,7 @@ photos only on job cards). Each option is a drawn tech app phone screen: 240x300
 240x520 screen (class tad-m) under 600px, so the phone shows a real full-width screen. Example data only.
 R105 captions ('Tech App <screen>: <element>, <one sentence>') guarded by tools/caption_rule.py.
 Page written UNLOCKED: lock before commit.   usage: build_tech_app_day_flow.py [--preview DIR]"""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()
 import sys, os, json, string, secrets
 from draft_svg import t, rect, dot, ln, ic, INK, MUTE, LINE, TERRA, LAGOON, JUNGLE, SAFFRON, crisp

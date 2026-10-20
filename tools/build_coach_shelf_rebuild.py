@@ -7,6 +7,7 @@
    "Header And Footer Details": 10 open questions on the R76/R79/R87/R106 branded header and footer. No Share-placement questions
    (waiting on Max), nothing from the open Main Dashboard Rules / All Boards Rules decks (S1-S18), nothing a rule already settles.
 Kept picks keep their option ids, svgs and order; new picks get drawn mockups (R89). R105 captions, light only, Khand/Hind, no Thai."""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import json, re, sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from team_kit import *

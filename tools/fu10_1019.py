@@ -2,6 +2,7 @@
 Nine 10-pair decks, each one level past his Oct 19 picks and notes (no decided pair repeated). UpKeep decks reuse the Oct 19 board kits
 (ukhf1019_*, sched1019) drawn in the decided state, with a terracotta CLOSE-UP panel showing the one element being asked.
 Machan decks reuse machan1018 / mfu1019 (light cream). PRIVACY: Tech Dash 1-3 / Van 1-3, first names or member IDs, TEST / SAMPLE only."""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 from md1018_kit import make
 from ukhf1019_kit import *
 from ukhf1019_kit import frame as kframe

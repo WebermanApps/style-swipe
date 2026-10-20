@@ -3,6 +3,7 @@
 thumbnails and carousels for the Research, Coach, Legal and Security boards (ideas sections first). Real board content.
 White + light beige, square corners, Khand/Hind, no emoji, labels >= 8 units. Writes pairs JSON for tools/ready_shelf.py build --source.
 Submit -> branding."""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import sys, os, json; sys.path.insert(0, os.path.dirname(__file__))
 from team_kit import deck
 from draft_svg import TERRA, LAGOON, JUNGLE, SAFFRON, W

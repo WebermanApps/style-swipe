@@ -2,6 +2,7 @@
 Usage: python3 tools/build_founder_1018.py <outdir>   (from the repo root)
 Follows build_fu2045_1018.py / build_pitchv3_1018.py (md1018_kit.ship; drops owner/meta, the personal built-by footer link, and
 titles the page after the deck) plus the cream page background used by build_machan_1018.py. Picks are logged only, never applied."""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import json, os, re, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from md1018_kit import ship

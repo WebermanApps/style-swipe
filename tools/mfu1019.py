@@ -8,6 +8,7 @@
                                   density split. Head-to-heads between the bottom winners plus density, corners, button set, copy and summary.
 Uses the v3 mark and frames from machan1018 (light cream, Khand/Hind). Five lore pieces only: Diospyros, the 事事如意 wish, the Korean tiger tale,
 the Ozark seed forecast, the Nagasaki survivor tree. Story text says just Machan (Max's pick), never names Max."""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 from md1018_kit import make
 import machan1018 as M
 from machan1018 import mark, look_card, footer_strip, frame, story_card, divider_card, empty_card, leaf_glyph, T, TALE, CR, BORD, HEAD, LEAD, GREY, LEAF1, LEAF2, BLUSH

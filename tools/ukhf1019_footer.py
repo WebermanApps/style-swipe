@@ -1,6 +1,7 @@
 """UpKeep Board Footer Deck (Oct 19 2026, Max via UpKeep Develop 12:02 ICT; decided 12:07 ICT: Emergency Alerts, pings-as-alerts,
 To-Do and Documents live in the header; the footer holds the Ping Record with its ping schedule, Routines and the footer finish).
 Members board example, 20 this-or-that pairs. Invented SAMPLE data only."""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 from md1018_kit import make
 from ukhf1019_kit import *
 PINGS = [("Oct 19, 11:42", "18 min ago", "SAMPLE Member A", "Message", "Asks to move the fall visit a week later, mornings only", None, "TEST", "New", None),

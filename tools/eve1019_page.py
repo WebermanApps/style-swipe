@@ -4,6 +4,7 @@ in Max's own brand: Khand + Hind (no book serif), cream base, terracotta / lagoo
 maxweberman.com. Team-gated submit: ../submit.js (MWSubmit.send asks for the team password; not edited). Results keep the version-4 pairs
 format (choice A / B / both / neither / skip, loveA / loveB) so the pull + stats pipeline reads them unchanged.
 Usage (from tools/build_eve_1019.py): write(deck_json_dict, slug, meta) -> path"""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import json, os, html
 def _ask(a):
     loc, rest = a.split(":", 1); el, q = rest.split(",", 1); return loc.strip(), el.strip(), q.strip()[:1].upper() + q.strip()[1:]

@@ -1,4 +1,5 @@
 """Card SVG shared with build_wn_business.py (copied so other boards render identically)."""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 from draft_svg import t, rect
 from team_kit import shareic, wrap
 BG, INK, MUTE, LINE = "#FFFFFF", "#0A0A0A", "#525252", "#E5E0D8"

@@ -2,6 +2,7 @@
 """Build Style Swipe deck questions-center: Questions Center Deck (Oct 14 2026). 20 pairs on how the Questions Center should look and work
 (Grok Bot Command Center, just below the Evening Report dropdown; same format reused for Legal, Research, Coach).
 Sample content: /workspace/ops/grokbot/decisions-2026-10-14.md. Submit -> agent 'grok-bot'."""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import sys, os; sys.path.insert(0, os.path.dirname(__file__))
 from team_kit import deck, publish
 from draft_svg import TERRA, LAGOON, JUNGLE, SAFFRON

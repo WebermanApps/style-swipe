@@ -12,6 +12,7 @@ of only the page) before commit.
 R105 (Max Oct 17 2026 19:46 ICT): every pick's ask is 'Research New Ideas Deck: <idea area>, <one plain sentence>' (r105_ask(); caption_rule.guard).
 R110 (Max Oct 17 2026 20:20 ICT): a deck that carries any UpKeep / Smart Upkeep idea never carries a Thai one (is_thai(); asserted).
 usage: new_ideas.py [--dry] | --refill | --rebuild <deck_id>   (rebuild = same slug and ideas, fresh drawings/text)"""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()
 import sys, os, json, string, secrets, datetime, random
 from team_kit import deck as kdeck, publish, BLK

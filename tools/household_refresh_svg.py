@@ -3,6 +3,7 @@
   photo_card  real Commons photo filling the top, credit line under the text
   art_card    real CC0 artwork shown whole on cream, credit line
   drawn_card  clean drawn illustration (MOTIFS, 120x120 line drawings) with two short fact chips"""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import html, hashlib
 INK, MUTE, FOOT, CREAM, BD = "#0A0A0A", "#525252", "#8A8580", "#FAF6EE", "#E3DDD2"
 W, H = 240, 300

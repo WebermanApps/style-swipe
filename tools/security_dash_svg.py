@@ -1,4 +1,5 @@
 """Security Dashboard Setup Deck card: label + mini dashboard mockup in the kit look (white, #FAF6EE / #e3ddd2, Khand/Hind, square corners)."""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 from draft_svg import t, rect
 from team_kit import shareic, wrap
 INK, MUTE, CREAM, LINE, GREEN, AMBER, RED = "#0A0A0A", "#525252", "#FAF6EE", "#e3ddd2", "#2E7D4F", "#C98A12", "#B3402A"

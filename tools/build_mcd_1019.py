@@ -3,6 +3,7 @@ Same kit and process as build_wnc_1019.py (team_kit publish, md1018_kit page wri
 footer, Notes + Share). 20 this-or-that pairs (no 10-pick cap: Max asked for 20). Results route to Branding (Swatch), picks logged only.
 Listed on the Branding board's Max's Picks (requested flow), not on any UpKeep board (Max, Oct 19 11:31 ICT: no swipe decks on UpKeep boards for now).
 PRIVACY: invented sample members only (no ops-private data); guard below fails the build on real-address markers or Thai references."""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import json, os, re, sys
 sys.path.insert(0, os.path.dirname(__file__))
 import draft_svg, trim_deck

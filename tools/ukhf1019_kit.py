@@ -4,6 +4,7 @@ Laptop-first drawn SVG mockups (1366-wide browser frame, drawn at 452 units), li
 lagoon and jungle accents, Khand + Hind, the Smart Upkeep 'UP' house mark redrawn as vector (roof chevron + UP).
 Folds copy the kit dashboard fold-downs (mw-layout.css details.mw-bh-morning: cream summary bar, 1px line, Khand label, count, chevron).
 PRIVACY: invented sample data only, every card tagged SAMPLE (or TEST / SAMPLE); no real names, addresses or phones."""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 from mcd1019 import T, R, C, L, chev, chip, INK, MUTE, LINE, CREAM, WHITE, TERRA, LAGOON, JUNGLE, SOFT
 from draft_svg import screen
 SAFF = "#B7860B"; COAL = "#3F3A33"; RED = "#B42318"

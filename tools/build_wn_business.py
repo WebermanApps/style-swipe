@@ -3,6 +3,7 @@
 (5 shelf + 5 refill pool). Content: tools/wn_business_content.py. Same page pattern as build_wn_series.py
 (white page + beige accents, wn-deck-done on real submit, Back -> wellnest-dashboard/?done=<deckId>), team_kit.publish (Notes + Share on),
 Khand/Hind, submit_agent wellnest. usage: build_wn_business.py [key ...]  -> prints JSON lines {deckId,name,url}"""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()  # fail build if card-media max-height:100% returns
 import sys, os, json, re, string, secrets
 sys.path.insert(0, os.path.dirname(__file__))

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Roselle Packaging Polish Deck (Oct 16 2026 21:44 ICT): 20 small refinements of the real WellNest roselle pouch. Content tools/wn_roselle_content.py.
 Drawn mockups follow the real pouch (img/wn-roselle/ref-*.jpg, inset as 'Today'). Same page shell as tools/build_wn_tea.py. usage: build_wn_roselle.py"""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()
 import sys, os, json, re, string, secrets, base64
 sys.path.insert(0, os.path.dirname(__file__))

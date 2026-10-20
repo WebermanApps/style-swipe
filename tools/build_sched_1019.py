@@ -1,6 +1,7 @@
 """Scheduling Board Layout Deck, Oct 19 2026 (Max's review relayed via Swatch). Usage: python3 tools/build_sched_1019.py <outdir> (from repo root).
 Same kit and process as build_mcd2_1019.py (team_kit publish, md1018_kit page writer, standard white deck look, 'Built by Machan'
 footer, Notes + Share). Results route to Branding, picks logged only. PRIVACY: Tech Dash 1-3 / Van 1-3, first names or member IDs only, TEST data."""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import json, os, re, sys
 sys.path.insert(0, os.path.dirname(__file__))
 import draft_svg, trim_deck

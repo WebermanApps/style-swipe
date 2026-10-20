@@ -2,6 +2,7 @@
 PowerHaus Can Look, Tea Theme Blends and Farm Basket Build, none of their pairs repeated). Usage: python3 tools/build_wn10_1019.py <outdir>  (repo root)
 Same kit as build_fu10_1019.py; results route to WellNest (submit_agent wellnest), picks logged only; listed at the top of the wellnest-dashboard shelf.
 Guards: no rose (Max passed on Highland Rose), osmanthus / orange peel marked New, no temple / cannabis / hemp words, no health claims or prices."""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import json, os, re, sys
 sys.path.insert(0, os.path.dirname(__file__))
 import draft_svg, trim_deck

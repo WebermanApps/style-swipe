@@ -2,6 +2,7 @@
 Full-card drawn mockups (uk5_art card frame: accent bar, label, Built by Machan) with team_kit blocks drawn at full scale (mockups fill the card),
 SPLIT() for multi-view topics (two phone views side by side + a full-size detail strip), people/slides/charts from uk5_art.
 All numbers are labeled example data or placeholders. Option = (key, label, desc, feel, svg)."""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import math
 from draft_svg import t, rect, dot, ln, esc, ic, btn, tag, lbl, crisp, INK, MUTE, LINE, SOFT, TERRA, LAGOON, JUNGLE, SAFFRON
 from team_kit import BLK, wrap, mono, photo, shareic

@@ -2,6 +2,7 @@
 """Oct 16 2026 (Max): Machan Mark Options Deck, 11 pairs (Max asked for 11, overrides 20). 22 variations of
 /workspace/ops/brand/machan-mark.svg; each card shows the mark large AND at real 22px beside 'Built by Machan'.
 Chat to Branding, submit_agent branding. Slug: descriptive + random letters (queue/machan-mark-slugs.json)."""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()
 import sys, os, json, string, secrets
 from team_kit import deck, publish

@@ -7,6 +7,7 @@ pair in agent-dashboards, folio/upkeep/deck-board (+Details) and rulebook-tiebre
 Pattern copied from build_agent_dashboards.py (team_kit.publish, dash_kit). Crisp text: every full-scale label >= 8
 viewBox units (mockups are vector SVG, so they render sharp at 2x/3x). Routing:
 /workspace/ops/brand/agent-dashboards-more-routing.md. Submit -> agent 'branding'. Drawn example mockups only."""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import sys, os, re, json; sys.path.insert(0, os.path.dirname(__file__))
 from team_kit import deck, publish
 from draft_svg import TERRA, LAGOON, JUNGLE, SAFFRON, W

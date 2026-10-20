@@ -6,6 +6,7 @@ Max standard look: white + #FAF6EE/#e3ddd2, Khand/Hind, square corners, no emoji
 Site plan cards use crops of Render 2 / Render 3 (Dropbox /The WellNest/Photos for Presentation) in img/wn-site/.
 Submit -> wellnest; wn-deck-done on real submit; Back -> wellnest-dashboard/?done=<deckId>; mw-chat cc11 to WellNest Agent.
 usage: build_wn_refresh.py [key ...]"""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()  # fail build if card-media max-height:100% returns
 import sys, os, json, re, string, secrets, base64
 sys.path.insert(0, os.path.dirname(__file__))

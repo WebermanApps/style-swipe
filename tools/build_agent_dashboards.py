@@ -5,6 +5,7 @@ Security, Research, Coach, Miles, Thai, Apps Home, Portfolio, WellNest). Skips e
 /workspace/ops/brand/dashboard-rulebook.md (R1-R64, Settled Oct 14), the folio/upkeep/deck-board (+Details) decks,
 and C7/C8 (Tiebreak deck). No live/customer apps. Pattern copied from build_info_gather.py (team_kit.publish, dash_kit).
 Routing: /workspace/ops/brand/agent-dashboards-routing.md. Submit -> agent 'branding'. Drawn example mockups only."""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import sys, os; sys.path.insert(0, os.path.dirname(__file__))
 from team_kit import deck, publish
 from draft_svg import TERRA, LAGOON, JUNGLE, SAFFRON, W

@@ -1,4 +1,5 @@
 """Follow-ons E (Oct 17 2026): WellNest Tea Energy Line recipe, Grok Bot Follow-Through, Branding Mixed Deck: Up Keep next round."""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import os, json, re
 from fu1017_kit import *
 import sys; sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))

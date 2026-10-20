@@ -8,6 +8,7 @@ NOT on any UpKeep board (Max: UpKeep boards have no swipe decks for now). Comman
   Tools And Equipment Board Deck (18): Tech Tool Bag, Van Inventory Tracking, Ordering; tool list / van setup / suppliers shown as Open; Max approval step
 Cards: tools/ukhf1019_kit.py, ukhf1019_header.py, ukhf1019_footer.py, ukhf1019_tech.py, ukhf1019_tools.py.
 PRIVACY: invented SAMPLE data only; guard fails the build on real-address markers, Thai references or emoji."""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import json, os, re, sys
 sys.path.insert(0, os.path.dirname(__file__))
 import draft_svg, trim_deck

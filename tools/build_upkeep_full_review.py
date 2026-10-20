@@ -10,6 +10,7 @@ example or TEST data. R105 captions guarded by caption_rule. No Thai references 
 Not re-asked (Job 6 888e752 + queued decks): member header, Did You Know, visit history, open items, trust tags, sign-up form
 errors, forecast, pitch, attire, video pop-up, console layout/KPI/member table/phone/map/calendar, Face ID and sign-in link.
 Pages written UNLOCKED: lock before commit.   usage: build_upkeep_full_review.py [--preview DIR] [--only KEY]"""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()
 import sys, os, json, string, secrets, re
 from draft_svg import t, rect, dot, ln, ic, INK, MUTE, LINE, TERRA, LAGOON, JUNGLE, SAFFRON, crisp

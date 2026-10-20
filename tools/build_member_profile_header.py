@@ -7,6 +7,7 @@ Brand from smartkeep/funnel-app/member: white base, #EFEDE9 band, terracotta/lag
 Trust badges: approved set only. No home health score (Max dropped it). Add-ons = one 'My Add-Ons' list. Names/addresses are fake.
 Same template/kit as build_followups_1017.py (R89 look, header Share, Notes, This/Both/Love/That/Neither). Page written UNLOCKED:
 lock before commit.  usage: build_member_profile_header.py [--preview DIR]"""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()
 import sys, os, json, string, secrets
 from draft_svg import t, rect, dot, ln, ic, INK, MUTE, LINE, TERRA, LAGOON, JUNGLE, SAFFRON

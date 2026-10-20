@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Art Deck (Household board): downloads real CC0 artworks from the Art Institute of Chicago API into img/art/ (credits in img/art/credits.json),
 then publishes a 20-pair image deck with the same page pattern as build_household.py (white, beige accents, Khand/Hind, Notes + Share)."""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()  # fail build if card-media max-height:100% returns
 import sys, os, json, re, string, secrets, urllib.request, html
 sys.path.insert(0, os.path.dirname(__file__))

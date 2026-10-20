@@ -2,6 +2,7 @@
 """Build Style Swipe deck rulebook-clash: Rulebook Clash Deck (Oct 14 2026). One pair per conflict in 'Conflicts for Max'
 (/workspace/ops/brand/dashboard-rulebook.md); C1 and C7 (three-way) get two pairs; C8 skipped (open tiebreaks, no clear two options).
 Each side quotes one competing rule, with a drawn mockup. Max brand. Submit -> agent 'branding'."""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import sys, os; sys.path.insert(0, os.path.dirname(__file__))
 from team_kit import deck, publish
 from draft_svg import TERRA, LAGOON, JUNGLE, SAFFRON

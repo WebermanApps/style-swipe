@@ -2,6 +2,7 @@
 Usage: python3 tools/build_machan_1018.py   (from the repo root). Same kit as build_hero_1018.py (md1018_kit.ship).
 Writes /workspace/wt/machan-decks-1018/built.json. Machan is Max's personal mascot (not UpKeep): results go to Branding and
 the decks sit on the Branding board (Max's Picks). Picks are logged only, never implemented automatically."""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import json, os, re, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from md1018_kit import ship

@@ -3,6 +3,7 @@ i like 10 at a time'). Usage: python3 tools/build_fu10_1019.py <outdir> [deck id
 Same kit and process as build_sched_1019.py / build_ukhf_1019.py / build_mfu_1019.py: team_kit publish, md1018_kit page writer, standard deck look,
 'Built by Machan' footer to maxweberman.com, Notes + Share. Results route to Branding, picks logged only. Cards: tools/fu10_1019.py.
 Each deck asks the next level after his Oct 19 picks and notes; no decided pair is repeated."""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import json, os, re, sys
 sys.path.insert(0, os.path.dirname(__file__))
 import draft_svg, trim_deck

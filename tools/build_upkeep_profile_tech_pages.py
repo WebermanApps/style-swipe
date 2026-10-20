@@ -5,6 +5,7 @@
 Source: live member/tech prototypes (sample data only) + UpKeep notes; avoids asks already in Member Profile/Member Tools decks.
 Standard deck page (index.template.html: Notes, Share, Built by Machan footer), mw-chat to UpKeep Agent, submit_agent upkeep.
 Slugs: descriptive + random letters (no numbers), kept in queue/upkeep-page-deck-slugs.json."""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()
 import sys, os, json, re, string, secrets
 from team_kit import deck, publish, TERRA, LAGOON, JUNGLE, SAFFRON, INK

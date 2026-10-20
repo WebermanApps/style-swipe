@@ -10,6 +10,7 @@ make sure a new deck is built with the same type of content"). One follow-on per
 Page: R89 deck look (white page, 10px card corners), header Share (uk5 pattern), Back + jump list + Notes + This/Both/Love/That/Neither
 from index.template.html, chat to the owning agent (submit_to), Built by Machan footer. Pages are written UNLOCKED: lock before commit.
 usage: build_round3_1017.py fu1017_round3 [deck_id ...]   -> prints JSON list to stdout and writes queue/round3-1017-out.json"""
+import sys as _mws,os as _mwo;_mws.path.insert(0,_mwo.path.dirname(_mwo.path.abspath(__file__))+('' if _mwo.path.basename(_mwo.path.dirname(_mwo.path.abspath(__file__)))=='tools' else '/tools'));import mw_machan_pop  # Machan pop-up + cover date (Oct 20 2026 ICT)
 import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__))); import media_rule; media_rule.guard()
 import sys, os, json, re, string, secrets, importlib, datetime
 from team_kit import deck as kdeck, publish
