@@ -2,7 +2,7 @@
    MWSubmit.button(el,{agent,app,deck,getResults:()=>obj,getNotes:()=>str})
    MWSubmit.send({agent,app,deck,results,notes,partial,answered,total,unanswered,test}) -> Promise<bool>  (mid-deck Submit)
    POSTs text/plain JSON (no-cors) to the shared Apps Script receiver. No token in client code.
-   PASSWORD GATE: every send goes through MWSubmit.gate(agent) (skipped for agent 'wellnest' except apps 'project-handoff', 'doc-note' and 'doc-remove'). Custom code: await MWSubmit.gate(agent) or just use MWSubmit.send.
+   PASSWORD GATE: every send goes through MWSubmit.gate(agent) (skipped for agent 'wellnest' except apps 'project-handoff', 'doc-note', 'doc-remove', 'todo-remove' and 'todo-remove-all'). Custom code: await MWSubmit.gate(agent) or just use MWSubmit.send.
    send() resolves false with MWSubmit.blocked=true when the password was not given (nothing sent, nothing queued). */
 (function(w){
   var URL='https://script.google.com/macros/s/AKfycbwoYorVuS4ZQdlmPM0CAYQ5qOoeuR4GjMk5Myg7rLpurHxt_6iqyZgJgYaxuZqoQdv7/exec';
@@ -18,7 +18,7 @@
   /* Password gate (Oct 13 2026 rule): first Submit on a device asks for the team password.
      Only its SHA-256 is stored here. agent==='wellnest' skips the gate. Payloads carry auth:true + authKey (hash prefix). */
   var PH='6df85d68da9f1f949bc43346a2d84643736b955194f25738fd74100ae1874523',AK='mw-submit-auth2',AP=PH.slice(0,8);
-  function exempt(a,app,dk){var ap=String(app||'').trim().toLowerCase(),ag=String(a||'').toLowerCase();if(['project-handoff','doc-note','doc-remove'].indexOf(ap)>=0)return false;return ag==='wellnest'||(ag==='branding'&&String(dk||'')==='dadbook-1');} /* Security Oct 19 2026 (Max OK 8:57 PM ICT): dadbook-1 deck exempt from team password; server caps + treats rows as untrusted */
+  function exempt(a,app,dk){var ap=String(app||'').trim().toLowerCase(),ag=String(a||'').toLowerCase();if(['project-handoff','doc-note','doc-remove','todo-remove','todo-remove-all'].indexOf(ap)>=0)return false;return ag==='wellnest'||(ag==='branding'&&String(dk||'')==='dadbook-1');} /* Security Oct 19 2026 (Max OK 8:57 PM ICT): dadbook-1 deck exempt from team password; server caps + treats rows as untrusted */
   function authed(){try{return localStorage.getItem(AK)===AP}catch(_){return false}}
   function sha256js(str){function R(n,x){return(x>>>n)|(x<<(32-n))}var K=[],H=[],P=[],i,j,c=2;function prime(n){for(var d=2;d*d<=n;d++)if(n%d===0)return false;return true}
     while(P.length<64){if(prime(c))P.push(c);c++}for(i=0;i<64;i++){K[i]=(Math.pow(P[i],1/3)%1)*4294967296|0;if(i<8)H[i]=(Math.pow(P[i],1/2)%1)*4294967296|0}
@@ -77,14 +77,14 @@
     flush().then(function(n){if(n&&!q().some(function(p){return p.agent===o.agent&&p.deck===o.deck}))state('sent')});
     return {el:wrap,state:state};}
   /* send(o): one-shot submit with no button (mid-deck partial). o: {agent,app,deck,results,notes,partial,answered,total,unanswered,test}.
-     Resolves true when posted, false when queued on device for retry. o.noQueue (always on for apps 'doc-note' and 'doc-remove'): never queued, just resolves false. */
+     Resolves true when posted, false when queued on device for retry. o.noQueue (always on for apps 'doc-note', 'doc-remove', 'todo-remove' and 'todo-remove-all'): never queued, just resolves false. */
   function send(o){o=o||{};return gate(o.agent,o.app,o.deck).then(function(ok){if(!ok){w.MWSubmit.blocked=true;return false;}w.MWSubmit.blocked=false;var p={agent:o.agent,app:o.app,deck:o.deck,results:o.results||null,notes:o.notes||'',sentAt:new Date().toISOString(),ua:navigator.userAgent};
     ['partial','answered','total','unanswered','test'].forEach(function(k){if(o[k]!==undefined)p[k]=o[k]});
-    var nq=o.noQueue||['doc-note','doc-remove'].indexOf(String(o.app||'').trim().toLowerCase())>=0;return post(p).then(function(){markDone(o);return true},function(){if(!nq){setQ(q().concat([p]));markDone(o)}return false});});}
+    var nq=o.noQueue||['doc-note','doc-remove','todo-remove','todo-remove-all'].indexOf(String(o.app||'').trim().toLowerCase())>=0;return post(p).then(function(){markDone(o);return true},function(){if(!nq){setQ(q().concat([p]));markDone(o)}return false});});}
   /* Deck ping system (Machan Oct 20 2026): a full (non-partial, non-test) deck Submit marks the deck done in this browser
      right away, so every board shelf (kit/deck-shelf.js v12) hides it at once; server side, ops/submit/mark_completed.py
      adds it to kit/completed-decks.json for other devices. Non-deck apps (remove/doc/handoff/gate) are ignored. */
-  function markDone(o){try{var ap=String(o.app||'').trim().toLowerCase();if(!o.deck||o.partial||o.test||/-gate$/.test(ap)||['deck-remove','doc-note','doc-remove','project-handoff','test'].indexOf(ap)>=0)return;
+  function markDone(o){try{var ap=String(o.app||'').trim().toLowerCase();if(!o.deck||o.partial||o.test||/-gate$/.test(ap)||['deck-remove','doc-note','doc-remove','todo-remove','todo-remove-all','project-handoff','test'].indexOf(ap)>=0)return;
     var t=String(Date.now());localStorage.setItem('mw-deck-done:'+o.deck,t);localStorage.setItem('styleSwipe:submitted:'+o.deck,t);
     w.dispatchEvent(new CustomEvent('mw-deck-done',{detail:{deck:o.deck,agent:o.agent}}))}catch(_){}}
   w.MWSubmit={button:button,send:send,flush:flush,gate:gate,isAuthed:authed,url:URL,blocked:false};

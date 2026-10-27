@@ -1,4 +1,4 @@
-/* Board layout kit ly7 (footer extras: Updated + Add To Home Screen; ly6 R81 hero-behind-header opt-in; ly5 Machan footer mark; was ly4) (STRICT R79, Max Oct 16 2026 13:21-13:23 ICT). Branded header (#mw-bh) and branded footer (#mw-bf) are LOCKED:
+/* Board layout kit ly16 (todo delete-one/all; was ly7 footer extras: Updated + Add To Home Screen; ly6 R81 hero-behind-header opt-in; ly5 Machan footer mark; was ly4) (STRICT R79, Max Oct 16 2026 13:21-13:23 ICT). Branded header (#mw-bh) and branded footer (#mw-bf) are LOCKED:
    pixel-identical on every agent board, Max's white + light beige, Khand/Hind, square corners. Scoped tokens + :where() resets + !important.
    Board CSS must not target #mw-bh / #mw-bf. Agent branding lives only in the middle section. */
 #mw-bh,#mw-bf{--bh-bg:#fff;--bh-beige:#FAF6EE;--bh-line:#e3ddd2;--bh-ink:#171717;--bh-text:#0A0A0A;--bh-muted:#737373;--bh-green:#0B6E4F;
@@ -202,3 +202,26 @@ html.mw-sp15 #mw-mid .mw-sections>*+*{margin-top:var(--mw-section-gap)!important
 html.mw-sp15 #mw-mid .mw-sections>:first-child{margin-top:0!important}
 /* phone: full-bleed sticky top bars inside the middle column stop at the screen edge (no sideways scroll) */
 @media(max-width:767px){html.mw-sp15 #mw-mid .mw-top{margin-left:-16px!important;margin-right:-16px!important;padding-left:16px!important;padding-right:16px!important}}
+
+/* ly16 (Oct 27 2026, Branding; Machan standing rule 3:19 PM ICT): To-Do delete-one + delete-all.
+   Light only, square corners, 44px hit targets, stroke X. Same family as Document Center Remove (R111). */
+#mw-bh .mw-bh-todo .mw-todo-rm-bar{display:flex!important;justify-content:flex-end!important;align-items:center!important;gap:8px!important;margin:0 0 10px!important;padding:0!important}
+#mw-bh .mw-bh-todo .mw-todo-rm-all{appearance:none;-webkit-appearance:none;min-height:44px!important;padding:0 14px!important;margin:0!important;border:1px solid #f0d6c8!important;border-radius:0!important;background:#FDF3EE!important;color:#8a3b12!important;font:600 14px/1.2 Hind,sans-serif!important;cursor:pointer!important;letter-spacing:normal!important;text-transform:none!important}
+#mw-bh .mw-bh-todo .mw-todo-rm-all:focus-visible{outline:2px solid #0B6E4F!important;outline-offset:2px!important}
+@media (hover:hover){#mw-bh .mw-bh-todo .mw-todo-rm-all:hover{background:#fae8df!important}}
+#mw-bh .mw-bh-todo .mw-todo-rm-host,#mw-bh .mw-bh-todo li[data-mw-todo-rm="1"],#mw-bh .mw-bh-todo .mlist>[data-mw-todo-rm="1"]{position:relative!important}
+#mw-bh .mw-bh-todo .mw-todo-rm{position:absolute!important;top:0!important;right:0!important;z-index:2!important;margin:0!important;padding:0!important}
+#mw-bh .mw-bh-todo .mw-todo-rm-x{appearance:none;-webkit-appearance:none;display:inline-flex!important;align-items:center!important;justify-content:center!important;width:44px!important;height:44px!important;min-width:44px!important;min-height:44px!important;padding:0!important;margin:0!important;border:1px solid #e3ddd2!important;border-radius:0!important;background:#fff!important;color:#8a3b12!important;cursor:pointer!important;box-shadow:none!important}
+#mw-bh .mw-bh-todo .mw-todo-rm-x svg{width:18px!important;height:18px!important;display:block!important}
+#mw-bh .mw-bh-todo .mw-todo-rm-x:focus-visible{outline:2px solid #0B6E4F!important;outline-offset:2px!important}
+@media (hover:hover){#mw-bh .mw-bh-todo .mw-todo-rm-x:hover{background:#FDF3EE!important;border-color:#f0d6c8!important}}
+#mw-bh .mw-bh-todo .mw-todo-rm-cf{margin:8px 0 0!important;padding:10px!important;background:#FDF3EE!important;border:1px solid #f0d6c8!important;border-radius:0!important;color:#1a1a1a!important}
+#mw-bh .mw-bh-todo .mw-todo-rm-q{margin:0 0 10px!important;font:500 15px/1.35 Hind,sans-serif!important;overflow-wrap:anywhere!important}
+#mw-bh .mw-bh-todo .mw-todo-rm-row{display:flex!important;gap:8px!important;flex-wrap:wrap!important}
+#mw-bh .mw-bh-todo .mw-todo-rm-b{appearance:none;-webkit-appearance:none;flex:1 1 auto!important;min-height:44px!important;padding:0 14px!important;border-radius:0!important;font:600 15px/1.2 Hind,sans-serif!important;cursor:pointer!important;letter-spacing:normal!important;text-transform:none!important}
+#mw-bh .mw-bh-todo .mw-todo-rm-cancel{background:#fff!important;color:#1a1a1a!important;border:1px solid #e3ddd2!important}
+#mw-bh .mw-bh-todo .mw-todo-rm-go{background:#8a3b12!important;color:#fff!important;border:1px solid #8a3b12!important}
+#mw-bh .mw-bh-todo .mw-todo-rm-b:focus-visible{outline:2px solid #0B6E4F!important;outline-offset:2px!important}
+#mw-bh .mw-bh-todo .mw-todo-rm-msg{margin:8px 0 0!important;font:400 14px/1.35 Hind,sans-serif!important;color:#8a3b12!important}
+#mw-bh .mw-bh-todo .mw-todo-gone{display:none!important}
+#mw-bh .mw-bh-todo .mw-todo-all-gone{display:none!important}

@@ -18,11 +18,16 @@
    (Grok Bot pages its list 10 at a time, so a li count undercounts); an empty To-Do source gets a plain-text empty line. DOM work is node moves only
    (appendChild/insertBefore of the board's existing nodes) plus kit-made elements filled with textContent; no innerHTML from board or JSON data.
    ly14m (Oct 19 2026, Branding; Security-approved cache bump): standard footer 'Built by Machan' links to the Machan story (75ac7e2); boards load ?v=ly14m.
-   ly14n (Oct 19 2026, Branding; Max 11:25 PM ICT 'every deck ... built by machan'): cache bump only; the Built by Machan wink (hover / focus / tap) is pure CSS in mw-layout.css. No JS logic change. */
+   ly14n (Oct 19 2026, Branding; Max 11:25 PM ICT 'every deck ... built by machan'): cache bump only; the Built by Machan wink (hover / focus / tap) is pure CSS in mw-layout.css. No JS logic change.
+   ly16 (Oct 27 2026, Branding; Machan standing rule 3:19 PM ICT): To-Do List fold-down gets delete-one + delete-all.
+   Inline confirm (no window.confirm), light only, 44px targets, stroke X. Kit never mutates board files: submits
+   app todo-remove / todo-remove-all (noQueue:true) and hides locally via localStorage mwTodoGone:<boardHostPath>
+   so Machan's deletes survive soft refresh / kit sync until the owner republishes without those items.
+*/
 (function(){
 /* ly15 spacing pass (Oct 20 2026, Branding): opt-in class for the Branding-styled boards only (UpKeep, Apps Home and other boards untouched); rules in mw-layout.css under html.mw-sp15 */
 try{if(['blog-dashboard','blueprint-dashboard','branding-djqmb410','cd-4thwrkpz54','coach-dashboard','grokbot-cc-7b9szx1e','household-dashboard','jc-cc-e034959dac7d','legal-0a84f667080d','miles-dashboard','portfolio-dashboard','prop-dashboard','rd-3k3k8jcaqb','scout-dashboard','security-07940c684c','thai-vocab-quiz','wellnest-dashboard'].indexOf(location.pathname.split('/')[1])>-1)document.documentElement.classList.add('mw-sp15')}catch(e){}
-var V='ly14n',R106=true/* R106 ON in ly13 (Security cleared the Document Center fold-down in projects.js op5, e58b17a) */,MACHAN="<span class=\"mw-machan\" style=\"display:inline-flex;align-items:center;gap:6px;vertical-align:middle;white-space:nowrap\"><svg class=\"mw-machan-mark\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" aria-hidden=\"true\" focusable=\"false\" style=\"display:block;flex:none;width:22px;height:22px\"><path d=\"M12 5.2C11.2 3 9.4 2 7.6 2.3c.3 1.9 1.9 3.2 4.4 2.9z\" fill=\"#3F7D58\"/><path d=\"M12 5.2c.8-2.2 2.6-3.2 4.4-2.9-.3 1.9-1.9 3.2-4.4 2.9z\" fill=\"#5E9A6E\"/><rect x=\"3.5\" y=\"5.5\" width=\"17\" height=\"16\" rx=\"7\" fill=\"#C8643F\"/><rect x=\"5.5\" y=\"9\" width=\"13\" height=\"10\" rx=\"5\" fill=\"#FAF6EE\"/><circle cx=\"9.6\" cy=\"13.3\" r=\"1.35\" fill=\"#2E6F86\"/><path d=\"M13 13.1q1.4 1.25 2.8 0\" fill=\"none\" stroke=\"#2E6F86\" stroke-width=\"1.1\" stroke-linecap=\"round\"/><path d=\"M10.6 16.1q1.4 1.1 2.8 0\" fill=\"none\" stroke=\"#C8643F\" stroke-width=\"1.1\" stroke-linecap=\"round\"/><circle cx=\"7.6\" cy=\"15.6\" r=\".9\" fill=\"#E9B9A3\"/><circle cx=\"16.4\" cy=\"15.6\" r=\".9\" fill=\"#E9B9A3\"/></svg>Built by Machan</span>",K='https://webermanapps.github.io/style-swipe/kit/',HOME='https://webermanapps.github.io/a-o956qercs5ubd57y/';
+var V='ly16',R106=true/* R106 ON in ly13 (Security cleared the Document Center fold-down in projects.js op5, e58b17a) */,MACHAN="<span class=\"mw-machan\" style=\"display:inline-flex;align-items:center;gap:6px;vertical-align:middle;white-space:nowrap\"><svg class=\"mw-machan-mark\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" aria-hidden=\"true\" focusable=\"false\" style=\"display:block;flex:none;width:22px;height:22px\"><path d=\"M12 5.2C11.2 3 9.4 2 7.6 2.3c.3 1.9 1.9 3.2 4.4 2.9z\" fill=\"#3F7D58\"/><path d=\"M12 5.2c.8-2.2 2.6-3.2 4.4-2.9-.3 1.9-1.9 3.2-4.4 2.9z\" fill=\"#5E9A6E\"/><rect x=\"3.5\" y=\"5.5\" width=\"17\" height=\"16\" rx=\"7\" fill=\"#C8643F\"/><rect x=\"5.5\" y=\"9\" width=\"13\" height=\"10\" rx=\"5\" fill=\"#FAF6EE\"/><circle cx=\"9.6\" cy=\"13.3\" r=\"1.35\" fill=\"#2E6F86\"/><path d=\"M13 13.1q1.4 1.25 2.8 0\" fill=\"none\" stroke=\"#2E6F86\" stroke-width=\"1.1\" stroke-linecap=\"round\"/><path d=\"M10.6 16.1q1.4 1.1 2.8 0\" fill=\"none\" stroke=\"#C8643F\" stroke-width=\"1.1\" stroke-linecap=\"round\"/><circle cx=\"7.6\" cy=\"15.6\" r=\".9\" fill=\"#E9B9A3\"/><circle cx=\"16.4\" cy=\"15.6\" r=\".9\" fill=\"#E9B9A3\"/></svg>Built by Machan</span>",K='https://webermanapps.github.io/style-swipe/kit/',HOME='https://webermanapps.github.io/a-o956qercs5ubd57y/';
 var q=function(s,r){return (r||document).querySelector(s)},qa=function(s,r){return [].slice.call((r||document).querySelectorAll(s))};
 var slot=function(n){return q('[data-mw-slot="'+n+'"]')};var MR=/^\s*morning report/i;
 function mk(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
@@ -74,6 +79,98 @@ function working(wd){var me=norm(boardAgent());if(!me){wd.hidden=true;return}
  function upd(){fetch(ST+'?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).then(function(j){var a=null;((j&&j.agents)||[]).forEach(function(x){if(norm(x.agent)===me)a=x});
   if(a&&a.working){q('.mw-wo-doing',wd).textContent=a.doing||'Working';wd.hidden=false}else{wd.hidden=true;wd.open=false}}).catch(function(){})}
  upd();setInterval(upd,60000);document.addEventListener('visibilitychange',function(){if(!document.hidden)upd()})}
+
+/* ly16 (Machan Oct 27 2026 3:19 PM ICT standing rule): delete-one + delete-all on the To-Do fold-down.
+   Kit never permanently mutates board files. On confirm: hide the row(s) immediately, persist keys in
+   localStorage (mwTodoGone:<host+path>), and MWSubmit.send app "todo-remove" / "todo-remove-all" with
+   noQueue:true (submit.js allowlists them like doc-remove). Owner agents drop the item from source and republish. */
+function todoBoardKey(){try{var p=location.pathname.replace(/\/index\.html$/i,'').replace(/\/+$/,'')||'/';return String(location.host||'')+p}catch(_){return 'unknown'}}
+function todoOwnerSlug(){var a=(document.body&&document.body.getAttribute('data-mw-agent'))||'';if(a)return a.trim().toLowerCase();
+ var e=q('script[data-mw-agent]')||q('[data-mw-agent]');if(e){var v=e.getAttribute('data-mw-agent');if(v)return v.trim().toLowerCase()}
+ var path=(location.pathname.split('/')[1]||'').toLowerCase(),MAP={
+  'blog-dashboard':'blog','blueprint-dashboard':'blueprint','branding-djqmb410':'branding','cd-4thwrkpz54':'construction',
+  'coach-dashboard':'coach','dump-dashboard':'dump','grokbot-cc-7b9szx1e':'grok-bot','household-dashboard':'household',
+  'jc-cc-e034959dac7d':'japan-cottage','jokes-cc-5a640f18188c':'jokes','legal-0a84f667080d':'legal','miles-dashboard':'miles',
+  'portfolio-dashboard':'portfolio','prop-dashboard':'prop','rd-3k3k8jcaqb':'research','scout-dashboard':'scout',
+  'security-07940c684c':'security','thai-vocab-quiz':'thai','upkeep-cc-d36d3521':'upkeep','video-photo-dashboard-70m4sfrw':'video-photo',
+  'wellnest-dashboard':'wellnest'};
+ return MAP[path]||norm(boardAgent()).replace(/\s+/g,'-')||'grok-bot'}
+function todoHash(s){s=String(s||'');var h=2166136261>>>0;for(var i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)>>>0}return ('00000000'+h.toString(16)).slice(-8)}
+function todoItemKey(el){if(!el||el.nodeType!==1)return '';
+ var pinned=el.getAttribute('data-mw-todo-key');if(pinned)return pinned;
+ var id=el.getAttribute('data-todo-id')||el.getAttribute('data-id')||el.id;if(id){var k='id:'+String(id).slice(0,120);el.setAttribute('data-mw-todo-key',k);return k}
+ /* Hash only the row's own text, ignoring kit chrome (.mw-todo-rm*) we append */
+ var clone=el.cloneNode(true);qa('.mw-todo-rm,.mw-todo-rm-cf,.mw-todo-rm-x',clone).forEach(function(n){n.remove()});
+ var t=(clone.textContent||'').replace(/\s+/g,' ').trim().slice(0,240);if(!t)return '';
+ var k='t:'+todoHash(t);el.setAttribute('data-mw-todo-key',k);return k}
+function todoLoadGone(k){try{var a=JSON.parse(localStorage.getItem(k)||'[]');return Array.isArray(a)?a.filter(function(x){return typeof x==='string'&&x}):[]}catch(_){return[]}}
+function todoSaveGone(k,a){try{localStorage.setItem(k,JSON.stringify(a.slice(0,500)))}catch(_){}}
+function todoSvgX(){var NS='http://www.w3.org/2000/svg',s=document.createElementNS(NS,'svg');s.setAttribute('viewBox','0 0 24 24');s.setAttribute('aria-hidden','true');
+ [['M6 6l12 12'],['M18 6L6 18']].forEach(function(d){var p=document.createElementNS(NS,'path');p.setAttribute('d',d[0]);p.setAttribute('fill','none');p.setAttribute('stroke','currentColor');p.setAttribute('stroke-width','2');p.setAttribute('stroke-linecap','square');s.appendChild(p)});return s}
+function todoItems(tsrc){var out=[],seen={};
+ qa('li',tsrc).forEach(function(li){if(li.parentElement&&li.parentElement.closest('li'))return;if(li.closest('.mw-todo-rm,.mw-todo-rm-all,.mw-todo-empty'))return;out.push(li)});
+ if(!out.length){var ml=q('.mlist',tsrc)||(tsrc.classList.contains('mlist')?tsrc:null);
+  if(ml)[].slice.call(ml.children).forEach(function(c){if(c.nodeType===1&&!c.classList.contains('mw-todo-rm')&&!c.classList.contains('mw-todo-rm-cf'))out.push(c)})}
+ return out.filter(function(el){var k=todoItemKey(el);if(!k||seen[k])return false;seen[k]=1;return true})}
+function todoRemoveWire(tsrc,td,tb,tn,cntRef){
+ var SK='mwTodoGone:'+todoBoardKey(),board=todoBoardKey(),owner=todoOwnerSlug(),seq=0;
+ var gone=todoLoadGone(SK),goneSet={};gone.forEach(function(k){goneSet[k]=1});
+ var bar=null,allCf=null,emp=null;
+ function visibleCount(){return todoItems(tsrc).filter(function(el){return !el.classList.contains('mw-todo-gone')&&getComputedStyle(el).display!=='none'}).length}
+ function ensureEmpty(){var L=visibleCount();tn.textContent=L?'('+L+')':'';
+  if(!L){if(!emp){emp=mk('p','mw-mr-sub mw-todo-empty','Nothing waiting on you right now.');tb.appendChild(emp)}tsrc.classList.add('mw-todo-all-gone')}
+  else{if(emp){emp.remove();emp=null}tsrc.classList.remove('mw-todo-all-gone')}
+  if(bar)bar.hidden=!L;if(typeof cntRef==='function'){/* keep MutationObserver cnt in sync via display */} }
+ function hideEl(el,key){el.classList.add('mw-todo-gone');el.setAttribute('data-mw-todo-gone',key);el.style.setProperty('display','none','important');
+  if(!goneSet[key]){goneSet[key]=1;gone.push(key);todoSaveGone(SK,gone)}}
+ function applyGone(){todoItems(tsrc).forEach(function(el){var k=todoItemKey(el);if(k&&goneSet[k])hideEl(el,k)});
+  /* prune keys that no longer match any source item (owner republished without them) */
+  var live={};todoItems(tsrc).forEach(function(el){var k=todoItemKey(el);if(k)live[k]=1});
+  var next=gone.filter(function(k){return live[k]||goneSet[k]&&live[k]}); /* keep keys still present (hidden) */
+  next=gone.filter(function(k){return !!live[k]});
+  if(next.length!==gone.length){gone=next;goneSet={};gone.forEach(function(k){goneSet[k]=1});todoSaveGone(SK,gone)}
+  ensureEmpty()}
+ function send(app,results){var S=window.MWSubmit;if(!S||typeof S.send!=='function')return Promise.resolve('nosubmit');
+  if(navigator.onLine===false)return Promise.resolve('offline');
+  return Promise.resolve().then(function(){return S.send({agent:owner||'grok-bot',app:app,deck:board,results:results,notes:'',noQueue:true})})
+   .then(function(ok){return ok?'ok':(S.blocked?'blocked':'fail')},function(){return 'fail'})}
+ function mkConfirm(host,question,onGo){var n=++seq,cf=mk('div','mw-todo-rm-cf');cf.id='mw-todo-cf'+n;cf.setAttribute('role','group');
+  var qel=mk('p','mw-todo-rm-q',question);qel.id='mw-todo-q'+n;cf.setAttribute('aria-labelledby',qel.id);
+  var row=mk('div','mw-todo-rm-row'),cx=mk('button','mw-todo-rm-b mw-todo-rm-cancel','Cancel'),go=mk('button','mw-todo-rm-b mw-todo-rm-go','Delete');
+  cx.type='button';go.type='button';row.append(cx,go);var msg=mk('p','mw-todo-rm-msg');msg.setAttribute('role','status');msg.setAttribute('aria-live','polite');msg.hidden=true;
+  cf.append(qel,row,msg);host.appendChild(cf);
+  var sending=false;
+  function shut(){if(sending)return;cf.remove()}
+  cx.onclick=function(){shut()};
+  cf.addEventListener('keydown',function(e){if(e.key==='Escape'){e.preventDefault();e.stopPropagation();cx.click()}});
+  go.onclick=function(){if(sending)return;sending=true;go.disabled=true;cx.disabled=true;go.textContent='Deleting…';go.setAttribute('aria-busy','true');
+   Promise.resolve().then(onGo).then(function(res){sending=false;go.removeAttribute('aria-busy');
+    /* Hide already applied in onGo for ok paths; always close. Local hide is the source of truth. */
+    if(res==='abort'){go.textContent='Delete';go.disabled=false;cx.disabled=false;return}
+    shut()})};
+  setTimeout(function(){try{cx.focus()}catch(_){}},0);return cf}
+ function wireOne(el){if(el.getAttribute('data-mw-todo-rm')==='1')return;el.setAttribute('data-mw-todo-rm','1');
+  if(getComputedStyle(el).position==='static')el.classList.add('mw-todo-rm-host');
+  var wrap=mk('div','mw-todo-rm');var btn=mk('button','mw-todo-rm-x');btn.type='button';btn.setAttribute('aria-label','Remove this item');btn.appendChild(todoSvgX());
+  wrap.appendChild(btn);el.appendChild(wrap);
+  btn.onclick=function(ev){ev.preventDefault();ev.stopPropagation();
+   if(q('.mw-todo-rm-cf',el))return;
+   mkConfirm(el,'Remove this item?',function(){var key=todoItemKey(el);if(!key)return 'abort';
+    hideEl(el,key);ensureEmpty();
+    return send('todo-remove',{board:board,item_id:key,owner_agent:owner}).catch(function(){return 'fail'})})}}
+ function wireAll(){todoItems(tsrc).forEach(function(el){if(!el.classList.contains('mw-todo-gone'))wireOne(el)});ensureEmpty()}
+ function ensureBar(){if(bar)return;bar=mk('div','mw-todo-rm-bar');
+  var b=mk('button','mw-todo-rm-all','Delete all');b.type='button';b.setAttribute('aria-label','Delete all items on this list');
+  bar.appendChild(b);tb.insertBefore(bar,tb.firstChild);
+  b.onclick=function(){var n=visibleCount();if(!n)return;if(allCf){allCf.remove();allCf=null}
+   allCf=mkConfirm(bar,'Delete all '+n+' item'+(n===1?'':'s')+' on this list?',function(){
+    var keys=[];todoItems(tsrc).forEach(function(el){var k=todoItemKey(el);if(!k)return;keys.push(k);hideEl(el,k)});
+    ensureEmpty();allCf=null;
+    return send('todo-remove-all',{board:board,owner_agent:owner,count:keys.length,item_ids:keys.slice(0,200)})})}}
+ applyGone();ensureBar();wireAll();
+ var tci=0;try{new MutationObserver(function(){clearTimeout(tci);tci=setTimeout(function(){applyGone();wireAll()},120)}).observe(tsrc,{childList:true,subtree:true})}catch(_){}
+ /* expose a recount hook used by the outer cnt */
+ return {recount:ensureEmpty,visibleCount:visibleCount}}
 function run(){if(document.body.dataset.mwLayout===V)return;var cc=q('.mw-cc-header');if(!cc)return;document.body.dataset.mwLayout=V;fonts();
  need('mw-layout.css',true);need('deck-shelf.css',true);need('routines-section.css',true);need('mw-back.js',false);/* ly12 R104 history-first back helper */
  var heroes=qa('[data-mw-slot="hero"]');
@@ -108,12 +205,16 @@ function run(){if(document.body.dataset.mwLayout===V)return;var cc=q('.mw-cc-hea
   var th0=q('h2,h3',tsrc);if(th0&&/^\s*(to-?do( list|'?s)?|waiting on max|needs? (you|max)|open items|decisions needed)\s*[\d·\s]*$/i.test(th0.textContent))th0.classList.add('mw-todo-h');tb.appendChild(tsrc);
   /* ly13 count: 1) data-mw-todo-count, 2) the number in the source's own summary/heading (e.g. Grok Bot "To-Do's (87)", Construction "Decisions Needed · 6"),
      3) visible top-level li, 4) .mlist children. Empty source: one plain-text line (textContent), removed again once items arrive. */
-  var emp=null,cnt=function(){var L=0,ac=tsrc.getAttribute('data-mw-todo-count'),has=ac!=null&&/^\d+$/.test(ac.trim());if(has)L=+ac.trim();
-   if(!has&&!L){var sm0=q(':scope>summary',tsrc)||th0;var mm=sm0&&sm0.textContent.match(/(\d+)/);if(mm)L=+mm[1]}
-   if(!has&&!L)L=qa('li',tsrc).filter(function(li){return !li.parentElement.closest('li')&&getComputedStyle(li).display!=='none'}).length;
-   if(!has&&!L){var ml=q('.mlist',tsrc)||(tsrc.classList.contains('mlist')?tsrc:null);if(ml)L=[].slice.call(ml.children).filter(function(c){return c.nodeType===1}).length}
+  var emp=null,todoRm=null,cnt=function(){var L=0,ac=tsrc.getAttribute('data-mw-todo-count'),has=ac!=null&&/^\d+$/.test(ac.trim());
+   var goneActive=!!q('.mw-todo-gone',tsrc);
+   if(has&&!goneActive)L=+ac.trim();
+   if((!has||goneActive)&&!L){var sm0=q(':scope>summary',tsrc)||th0;var mm=sm0&&sm0.textContent.match(/(\d+)/);if(mm&&!goneActive)L=+mm[1]}
+   if((!has||goneActive)&&!L)L=qa('li',tsrc).filter(function(li){return !li.parentElement.closest('li')&&!li.classList.contains('mw-todo-gone')&&getComputedStyle(li).display!=='none'}).length;
+   if((!has||goneActive)&&!L){var ml=q('.mlist',tsrc)||(tsrc.classList.contains('mlist')?tsrc:null);if(ml)L=[].slice.call(ml.children).filter(function(c){return c.nodeType===1&&!c.classList.contains('mw-todo-gone')&&getComputedStyle(c).display!=='none'}).length}
    tn.textContent=L?'('+L+')':'';
-   var blank=!L&&!tsrc.textContent.trim();if(blank&&!emp){emp=mk('p','mw-mr-sub mw-todo-empty','Nothing waiting on you right now.');tb.appendChild(emp)}else if(!blank&&emp&&tsrc.textContent.trim()){emp.remove();emp=null}};cnt();var tci=0;try{new MutationObserver(function(){clearTimeout(tci);tci=setTimeout(cnt,120)}).observe(tsrc,{childList:true,subtree:true})}catch(_){}}
+   var blank=!L&&(!tsrc.textContent.trim()||goneActive);if(blank&&!emp){emp=mk('p','mw-mr-sub mw-todo-empty','Nothing waiting on you right now.');tb.appendChild(emp)}else if(!blank&&emp){emp.remove();emp=null}};
+  try{todoRm=todoRemoveWire(tsrc,td,tb,tn,cnt)}catch(ex){try{console.warn('mw-todo-rm',ex)}catch(_){}}
+  cnt();var tci=0;try{new MutationObserver(function(){clearTimeout(tci);tci=setTimeout(cnt,120)}).observe(tsrc,{childList:true,subtree:true})}catch(_){}}
  var dsrc=R106?(q('#mw-projects')||q('[data-mw-projects]')):null,dw=null;if(dsrc&&!dsrc.closest('#mw-bf')){dw=mk('div','mw-bh-docs');dw.appendChild(dsrc)}
  bh.append(home,ncc,decks,wd,md);if(td)bh.append(td);if(dw)bh.append(dw);bh.append(mk('hr','mw-bh-divider'));
  cc.style.setProperty('display','none','important');cc.setAttribute('aria-hidden','true');
