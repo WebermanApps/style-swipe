@@ -123,8 +123,10 @@ function render(box,J,o){o=o||{};J=J||{};const B=boardOf(box,J),ids=doneIds(J),l
  const ordered=order(live),seen=new Set(ordered.map(d=>d.url)),q=queueOf(J,ids,seen,B),decks=ordered.slice(0,cap);
  for(const d of q){if(decks.length>=cap)break;decks.push(Object.assign({},d,{fromQueue:true}));seen.add(d.url)}
  box._dsQueued=ordered.slice(cap).concat(q.filter(d=>!decks.some(x=>x.url===d.url)));box._dsFinished=norm(J,o).filter(d=>finished(d,ids)&&!isRemoved(B,d));box._dsRemoved=norm(J,o).filter(d=>isRemoved(B,d));box.textContent='';box.classList.add('ds-sec');box.id=box.id||'ready-to-swipe';
- const h=el('div','ds-head');h.append(el('h2','','Ready To Swipe'));const n=doneToday(J);if(n)h.append(el('span','ds-done',n+' done today'));const st=el('div','ds-stats');st.hidden=true;h.append(st);const allU=box.dataset.all||J.all_url||ALL;if(!box.hasAttribute('data-shelf-nocap')){const al=el('a','ds-all','All Decks');al.href=allU;h.insertBefore(al,st)}box.append(h);paintStats(box,J);
- if(!decks.length){const p=el('p','ds-empty','All caught up. New decks are on the way. ');const l=el('a','','Deck Building');l.href=allU;p.append(l);box.append(p);return}
+ const h=el('div','ds-head');const h2=el('h2','');const tg=el('button','ds-tog');tg.type='button';tg.setAttribute('aria-expanded',box._dsOpen?'true':'false');tg.append(el('span','ds-tt','Ready To Swipe'),el('span','ds-cnt',' ('+decks.length+')'),el('span','ds-chev'));h2.append(tg);h.append(h2);
+ /* v13 (Machan Nov 3 2026): deck shelf is collapsible and starts CLOSED; header shows name + count. */
+ const bd=el('div','ds-body');bd.hidden=!box._dsOpen;tg.addEventListener('click',()=>{box._dsOpen=!box._dsOpen;bd.hidden=!box._dsOpen;tg.setAttribute('aria-expanded',box._dsOpen?'true':'false')});const n=doneToday(J);if(n)h.append(el('span','ds-done',n+' done today'));const st=el('div','ds-stats');st.hidden=true;h.append(st);const allU=box.dataset.all||J.all_url||ALL;if(!box.hasAttribute('data-shelf-nocap')){const al=el('a','ds-all','All Decks');al.href=allU;h.insertBefore(al,st)}box.append(h,bd);paintStats(box,J);
+ if(!decks.length){const p=el('p','ds-empty','All caught up. New decks are on the way. ');const l=el('a','','Deck Building');l.href=allU;p.append(l);bd.append(p);return}
  const g=el('div','ds-strip');g.setAttribute('role','list');
  decks.forEach(d=>{const a=el('a','ds-card');a.href=fromUrl(d.url);a.setAttribute('role','listitem');const tag=tagOf(d),s=started(d);a.style.setProperty('--ds-c',d.color||col(tag));
   if(s)a.classList.add('ds-started');/* v11 R104: same tab, so Return can use browser history */
@@ -132,7 +134,7 @@ function render(box,J,o){o=o||{};J=J||{};const B=boardOf(box,J),ids=doneIds(J),l
   if(isNew(d)){a.classList.add('ds-isnew');a.append(el('span','ds-new','New'))}
   a.addEventListener('click',()=>{try{localStorage.setItem(seenKey(d),'1')}catch(_){}a.classList.remove('ds-isnew');const b=a.querySelector('.ds-new');if(b)b.remove()});
   if(d.id||d.url)removable(a,{board:B,agent:J.agent||B,deck:d.id||d.url,name:d.name,onChange:()=>render(box,J,o)});g.append(a)});
- box.append(g);if(decks.length>2){const dt=el('div','ds-dots');dt.setAttribute('aria-hidden','true');decks.forEach((_,i)=>dt.append(el('i',i?'':'on')));box.append(dt);
+ bd.append(g);if(decks.length>2){const dt=el('div','ds-dots');dt.setAttribute('aria-hidden','true');decks.forEach((_,i)=>dt.append(el('i',i?'':'on')));bd.append(dt);
   g.addEventListener('scroll',()=>{const w=g.scrollWidth-g.clientWidth,k=w>0?Math.round(g.scrollLeft/w*(decks.length-1)):0;[...dt.children].forEach((x,i)=>x.className=i===k?'on':'')},{passive:true})}}
 const CP=fetch(CURL+'?'+Date.now(),{cache:'no-store'}).then(r=>r.ok?r.json():null).then(j=>{((j&&j.ids)||[]).forEach(x=>x&&CDONE.add(String(x)))}).catch(()=>{});
 function init(){document.querySelectorAll('[data-shelf],[data-launcher]').forEach(b=>{if(b.dataset.dsDone)return;b.dataset.dsDone=1;
@@ -142,5 +144,5 @@ function rerender(){document.querySelectorAll('[data-shelf],[data-launcher]').fo
 addEventListener('pageshow',e=>{if(e.persisted)rerender()});
 addEventListener('storage',e=>{if(e.key&&/^(mw-deck-done:|styleSwipe:submitted:)/.test(e.key))rerender()});
 addEventListener('mw-deck-done',rerender);
-window.DeckShelf={render,CAP,sortDecks,answered,touched,finished,isNew,seenKey,VERSION:12,completed:CDONE,rerender,fromUrl,removable,isRemoved,boardOf,toast,removed:b=>b._dsRemoved||[],queued:b=>b._dsQueued||[],finishedOf:b=>b._dsFinished||[]};window.DeckLauncher=window.DeckLauncher||{render};
+window.DeckShelf={render,CAP,sortDecks,answered,touched,finished,isNew,seenKey,VERSION:13,completed:CDONE,rerender,fromUrl,removable,isRemoved,boardOf,toast,removed:b=>b._dsRemoved||[],queued:b=>b._dsQueued||[],finishedOf:b=>b._dsFinished||[]};window.DeckLauncher=window.DeckLauncher||{render};
 document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init()})();

@@ -40,3 +40,6 @@
 .ds-toast.on{opacity:1;transform:translate(-50%,0);pointer-events:auto}
 .ds-toast span::after{content:' \00b7';color:#A3A3A3}
 .ds-undo{background:transparent;border:0;color:#7FD1AE;font:600 14px/1 Hind,system-ui,sans-serif;min-height:36px;min-width:44px;padding:0 12px;cursor:pointer;border-radius:999px}
+
+/* v13 collapsible shelf, default closed */
+.ds-tog{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:4px;font:inherit;color:inherit}.ds-tog:focus-visible{outline:2px solid #05668D;outline-offset:2px;border-radius:4px}.ds-cnt{color:#525252;font-weight:500}.ds-chev{width:8px;height:8px;margin-left:6px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:transform .15s}.ds-tog[aria-expanded=true] .ds-chev{transform:rotate(-135deg) translateY(-2px)}
